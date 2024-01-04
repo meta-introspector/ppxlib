@@ -77,24 +77,24 @@ let main () =
       let buf = Buffer.create (String.length file_contents + 1024) in
       let ppf = Format.formatter_of_buffer buf in
       setup_printers ppf;
-      Topfind.log := ignore;
+      (*      Topfind.log := ignore; *)
 
       let _ = Warnings.parse_options false "@a-4-29-40-41-42-44-45-48-58" in
       Clflags.real_paths := false;
       Toploop.initialize_toplevel_env ();
 
-      (* Findlib stuff *)
-      let preds = [ "toploop" ] in
-      let preds =
-        match Sys.backend_type with
-        | Native -> "native" :: preds
-        | Bytecode -> "byte" :: preds
-        | Other _ -> preds
-      in
-      Topfind.add_predicates preds;
-      (* This just adds the include directories since the [ppx] library
-         is statically linked in *)
-      Topfind.load_deeply [ "ppxlib" ];
+      (* (\* Findlib stuff *\) *)
+      (* let preds = [ "toploop" ] in *)
+      (* let preds = *)
+      (*   match Sys.backend_type with *)
+      (*   | Native -> "native" :: preds *)
+      (*   | Bytecode -> "byte" :: preds *)
+      (*   | Other _ -> preds *)
+      (* in *)
+      (* Topfind.add_predicates preds; *)
+      (* (\* This just adds the include directories since the [ppx] library *)
+      (*    is statically linked in *\) *)
+      (* Topfind.load_deeply [ "ppxlib" ]; *)
 
       List.iter chunks ~f:(fun (pos, s) ->
           Format.fprintf ppf "%s[%%%%expect{|@." s;
