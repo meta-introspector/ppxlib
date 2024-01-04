@@ -1,0 +1,9 @@
+0.220s 73.9MB 26.5MB 28.3MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.pp.ml
+  0.206s 71.0MB 26.5MB 28.3MB typing
+  0.009s 2.00MB ------ ------ generate
+    0.001s 2.00MB ------ ------ compile_phrases
+      ------ 2.00MB ------ ------ regalloc
+    0.006s ------ ------ ------ assemble
+    0.002s ------ ------ ------ other
+  0.004s 0.88MB ------ ------ other
+0.010s 3.11MB 1.79MB ------ other

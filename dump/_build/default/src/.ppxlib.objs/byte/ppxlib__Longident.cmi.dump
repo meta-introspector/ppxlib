@@ -1,0 +1,419 @@
+[
+  signature_item (src/longident.mli[1,0+0]..[1,0+48])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/longident.mli[1,0+0]..[1,0+48])
+        Pstr_eval
+        expression (src/longident.mli[1,0+0]..[1,0+48])
+          Pexp_constant PConst_string(" Overrides the [Longident] module of OCaml ",(src/longident.mli[1,0+0]..[1,0+48]),None)
+    ]
+  signature_item (src/longident.mli[3,50+0]..[3,50+12])
+    Psig_open Override "Import" (src/longident.mli[3,50+6]..[3,50+12])
+  signature_item (src/longident.mli[5,64+0]..[5,64+76])
+    Psig_type Rec
+    [
+      type_declaration "t" (src/longident.mli[5,64+5]..[5,64+6]) (src/longident.mli[5,64+0]..[5,64+76])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (src/longident.mli[5,64+21]..[5,64+37])
+                "Lident" (src/longident.mli[5,64+21]..[5,64+27])
+                [
+                  core_type (src/longident.mli[5,64+31]..[5,64+37])
+                    Ptyp_constr "string" (src/longident.mli[5,64+31]..[5,64+37])
+                    []
+                ]
+                None
+              (src/longident.mli[5,64+38]..[5,64+58])
+                "Ldot" (src/longident.mli[5,64+40]..[5,64+44])
+                [
+                  core_type (src/longident.mli[5,64+48]..[5,64+49])
+                    Ptyp_constr "t" (src/longident.mli[5,64+48]..[5,64+49])
+                    []
+                  core_type (src/longident.mli[5,64+52]..[5,64+58])
+                    Ptyp_constr "string" (src/longident.mli[5,64+52]..[5,64+58])
+                    []
+                ]
+                None
+              (src/longident.mli[5,64+59]..[5,64+76])
+                "Lapply" (src/longident.mli[5,64+61]..[5,64+67])
+                [
+                  core_type (src/longident.mli[5,64+71]..[5,64+72])
+                    Ptyp_constr "t" (src/longident.mli[5,64+71]..[5,64+72])
+                    []
+                  core_type (src/longident.mli[5,64+75]..[5,64+76])
+                    Ptyp_constr "t" (src/longident.mli[5,64+75]..[5,64+76])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/longident.mli[5,64+9]..[5,64+18])
+              Ptyp_constr "longident" (src/longident.mli[5,64+9]..[5,64+18])
+              []
+    ]
+  signature_item (src/longident.mli[7,142+0]..[7,142+27])
+    Psig_value
+    value_description "compare" (src/longident.mli[7,142+4]..[7,142+11]) (src/longident.mli[7,142+0]..[7,142+27])
+      core_type (src/longident.mli[7,142+14]..[7,142+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/longident.mli[7,142+14]..[7,142+15])
+          Ptyp_constr "t" (src/longident.mli[7,142+14]..[7,142+15])
+          []
+        core_type (src/longident.mli[7,142+19]..[7,142+27])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/longident.mli[7,142+19]..[7,142+20])
+            Ptyp_constr "t" (src/longident.mli[7,142+19]..[7,142+20])
+            []
+          core_type (src/longident.mli[7,142+24]..[7,142+27])
+            Ptyp_constr "int" (src/longident.mli[7,142+24]..[7,142+27])
+            []
+      []
+  signature_item (src/longident.mli[8,170+0]..[8,170+27])
+    Psig_value
+    value_description "sexp_of_t" (src/longident.mli[8,170+4]..[8,170+13]) (src/longident.mli[8,170+0]..[8,170+27])
+      core_type (src/longident.mli[8,170+16]..[8,170+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/longident.mli[8,170+16]..[8,170+17])
+          Ptyp_constr "t" (src/longident.mli[8,170+16]..[8,170+17])
+          []
+        core_type (src/longident.mli[8,170+21]..[8,170+27])
+          Ptyp_constr "Sexp.t" (src/longident.mli[8,170+21]..[8,170+27])
+          []
+      []
+  signature_item (src/longident.mli[9,198+0]..[9,198+34])
+    Psig_value
+    value_description "flatten_exn" (src/longident.mli[9,198+4]..[9,198+15]) (src/longident.mli[9,198+0]..[9,198+34])
+      core_type (src/longident.mli[9,198+18]..[9,198+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/longident.mli[9,198+18]..[9,198+19])
+          Ptyp_constr "t" (src/longident.mli[9,198+18]..[9,198+19])
+          []
+        core_type (src/longident.mli[9,198+23]..[9,198+34])
+          Ptyp_constr "list" (src/longident.mli[9,198+30]..[9,198+34])
+          [
+            core_type (src/longident.mli[9,198+23]..[9,198+29])
+              Ptyp_constr "string" (src/longident.mli[9,198+23]..[9,198+29])
+              []
+          ]
+      []
+  signature_item (src/longident.mli[10,233+0]..[10,233+26])
+    Psig_value
+    value_description "last_exn" (src/longident.mli[10,233+4]..[10,233+12]) (src/longident.mli[10,233+0]..[10,233+26])
+      core_type (src/longident.mli[10,233+15]..[10,233+26])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/longident.mli[10,233+15]..[10,233+16])
+          Ptyp_constr "t" (src/longident.mli[10,233+15]..[10,233+16])
+          []
+        core_type (src/longident.mli[10,233+20]..[10,233+26])
+          Ptyp_constr "string" (src/longident.mli[10,233+20]..[10,233+26])
+          []
+      []
+  signature_item (src/longident.mli[12,261+0]..[12,261+23])
+    Psig_value
+    value_description "parse" (src/longident.mli[12,261+4]..[12,261+9]) (src/longident.mli[12,261+0]..[12,261+23])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/longident.mli[13,285+0]..[15,444+73])
+            Pstr_eval
+            expression (src/longident.mli[13,285+0]..[15,444+73])
+              Pexp_constant PConst_string(" Parses the given string as a longident, properly handling infix operators\n    which may contain '.'. Note that it does not parse [Lapply _] longidents and\n    will raise [Invalid_argument _] if passed values such as [\"A(B)\"]. ",(src/longident.mli[13,285+0]..[15,444+73]),None)
+        ]
+      core_type (src/longident.mli[12,261+12]..[12,261+23])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/longident.mli[12,261+12]..[12,261+18])
+          Ptyp_constr "string" (src/longident.mli[12,261+12]..[12,261+18])
+          []
+        core_type (src/longident.mli[12,261+22]..[12,261+23])
+          Ptyp_constr "t" (src/longident.mli[12,261+22]..[12,261+23])
+          []
+      []
+  signature_item (src/longident.mli[17,519+0]..[17,519+22])
+    Psig_value
+    value_description "name" (src/longident.mli[17,519+4]..[17,519+8]) (src/longident.mli[17,519+0]..[17,519+22])
+      core_type (src/longident.mli[17,519+11]..[17,519+22])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/longident.mli[17,519+11]..[17,519+12])
+          Ptyp_constr "t" (src/longident.mli[17,519+11]..[17,519+12])
+          []
+        core_type (src/longident.mli[17,519+16]..[17,519+22])
+          Ptyp_constr "string" (src/longident.mli[17,519+16]..[17,519+22])
+          []
+      []
+  signature_item (src/longident.mli[19,543+0]..[19,543+36])
+    Psig_module "Map" (src/longident.mli[19,543+7]..[19,543+10])
+    module_type (src/longident.mli[19,543+13]..[19,543+36])
+      Pmty_with
+      module_type (src/longident.mli[19,543+13]..[19,543+18])
+        Pmty_ident "Map.S" (src/longident.mli[19,543+13]..[19,543+18])
+      [
+        Pwith_type "key" (src/longident.mli[19,543+29]..[19,543+32])
+          type_declaration "key" (src/longident.mli[19,543+29]..[19,543+32]) (src/longident.mli[19,543+24]..[19,543+36])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (src/longident.mli[19,543+35]..[19,543+36])
+                  Ptyp_constr "t" (src/longident.mli[19,543+35]..[19,543+36])
+                  []
+      ]
+  signature_item (src/longident.mli[20,580+0]..[20,580+36])
+    Psig_module "Set" (src/longident.mli[20,580+7]..[20,580+10])
+    module_type (src/longident.mli[20,580+13]..[20,580+36])
+      Pmty_with
+      module_type (src/longident.mli[20,580+13]..[20,580+18])
+        Pmty_ident "Set.S" (src/longident.mli[20,580+13]..[20,580+18])
+      [
+        Pwith_type "elt" (src/longident.mli[20,580+29]..[20,580+32])
+          type_declaration "elt" (src/longident.mli[20,580+29]..[20,580+32]) (src/longident.mli[20,580+24]..[20,580+36])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (src/longident.mli[20,580+35]..[20,580+36])
+                  Ptyp_constr "t" (src/longident.mli[20,580+35]..[20,580+36])
+                  []
+      ]
+]
+
+[@@@ocaml.text " Overrides the [Longident] module of OCaml "]
+open! Import
+type t = longident =
+  | Lident of string 
+  | Ldot of t * string 
+  | Lapply of t * t 
+val compare : t -> t -> int
+val sexp_of_t : t -> Sexp.t
+val flatten_exn : t -> string list
+val last_exn : t -> string
+val parse : string -> t[@@ocaml.doc
+                         " Parses the given string as a longident, properly handling infix operators\n    which may contain '.'. Note that it does not parse [Lapply _] longidents and\n    will raise [Invalid_argument _] if passed values such as [\"A(B)\"]. "]
+val name : t -> string
+module Map : Map.S with type  key =  t
+module Set : Set.S with type  elt =  t
+[
+  signature_item (src/longident.mli[1,0+0]..src/longident.mli[1,0+48])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/longident.mli[1,0+0]..[1,0+48])
+        Pstr_eval
+        expression (src/longident.mli[1,0+0]..[1,0+48])
+          Pexp_constant PConst_string(" Overrides the [Longident] module of OCaml ",(src/longident.mli[1,0+0]..[1,0+48]),None)
+    ]
+  signature_item (src/longident.mli[3,50+0]..src/longident.mli[3,50+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/longident.mli[5,64+0]..src/longident.mli[5,64+76])
+    Tsig_type Rec
+    [
+      type_declaration t/550 (src/longident.mli[5,64+0]..src/longident.mli[5,64+76])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (src/longident.mli[5,64+21]..src/longident.mli[5,64+37])
+                Lident/551
+                [
+                  core_type (src/longident.mli[5,64+31]..src/longident.mli[5,64+37])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+              (src/longident.mli[5,64+38]..src/longident.mli[5,64+58])
+                Ldot/552
+                [
+                  core_type (src/longident.mli[5,64+48]..src/longident.mli[5,64+49])
+                    Ttyp_constr "t/550"
+                    []
+                  core_type (src/longident.mli[5,64+52]..src/longident.mli[5,64+58])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+              (src/longident.mli[5,64+59]..src/longident.mli[5,64+76])
+                Lapply/553
+                [
+                  core_type (src/longident.mli[5,64+71]..src/longident.mli[5,64+72])
+                    Ttyp_constr "t/550"
+                    []
+                  core_type (src/longident.mli[5,64+75]..src/longident.mli[5,64+76])
+                    Ttyp_constr "t/550"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/longident.mli[5,64+9]..src/longident.mli[5,64+18])
+              Ttyp_constr "Ppxlib__!.Import.longident"
+              []
+    ]
+  signature_item (src/longident.mli[7,142+0]..src/longident.mli[7,142+27])
+    Tsig_value
+    value_description compare/818 (src/longident.mli[7,142+0]..src/longident.mli[7,142+27])
+      core_type (src/longident.mli[7,142+14]..src/longident.mli[7,142+27])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/longident.mli[7,142+14]..src/longident.mli[7,142+15])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/longident.mli[7,142+19]..src/longident.mli[7,142+27])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/longident.mli[7,142+19]..src/longident.mli[7,142+20])
+            Ttyp_constr "t/550"
+            []
+          core_type (src/longident.mli[7,142+24]..src/longident.mli[7,142+27])
+            Ttyp_constr "int/1!"
+            []
+      []
+  signature_item (src/longident.mli[8,170+0]..src/longident.mli[8,170+27])
+    Tsig_value
+    value_description sexp_of_t/862 (src/longident.mli[8,170+0]..src/longident.mli[8,170+27])
+      core_type (src/longident.mli[8,170+16]..src/longident.mli[8,170+27])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/longident.mli[8,170+16]..src/longident.mli[8,170+17])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/longident.mli[8,170+21]..src/longident.mli[8,170+27])
+          Ttyp_constr "Ppxlib__!.Import.Sexp.t"
+          []
+      []
+  signature_item (src/longident.mli[9,198+0]..src/longident.mli[9,198+34])
+    Tsig_value
+    value_description flatten_exn/863 (src/longident.mli[9,198+0]..src/longident.mli[9,198+34])
+      core_type (src/longident.mli[9,198+18]..src/longident.mli[9,198+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/longident.mli[9,198+18]..src/longident.mli[9,198+19])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/longident.mli[9,198+23]..src/longident.mli[9,198+34])
+          Ttyp_constr "list/11!"
+          [
+            core_type (src/longident.mli[9,198+23]..src/longident.mli[9,198+29])
+              Ttyp_constr "string/17!"
+              []
+          ]
+      []
+  signature_item (src/longident.mli[10,233+0]..src/longident.mli[10,233+26])
+    Tsig_value
+    value_description last_exn/864 (src/longident.mli[10,233+0]..src/longident.mli[10,233+26])
+      core_type (src/longident.mli[10,233+15]..src/longident.mli[10,233+26])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/longident.mli[10,233+15]..src/longident.mli[10,233+16])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/longident.mli[10,233+20]..src/longident.mli[10,233+26])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/longident.mli[12,261+0]..src/longident.mli[12,261+23])
+    Tsig_value
+    value_description parse/865 (src/longident.mli[12,261+0]..src/longident.mli[12,261+23])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/longident.mli[13,285+0]..[15,444+73])
+            Pstr_eval
+            expression (src/longident.mli[13,285+0]..[15,444+73])
+              Pexp_constant PConst_string(" Parses the given string as a longident, properly handling infix operators\n    which may contain '.'. Note that it does not parse [Lapply _] longidents and\n    will raise [Invalid_argument _] if passed values such as [\"A(B)\"]. ",(src/longident.mli[13,285+0]..[15,444+73]),None)
+        ]
+      core_type (src/longident.mli[12,261+12]..src/longident.mli[12,261+23])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/longident.mli[12,261+12]..src/longident.mli[12,261+18])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/longident.mli[12,261+22]..src/longident.mli[12,261+23])
+          Ttyp_constr "t/550"
+          []
+      []
+  signature_item (src/longident.mli[17,519+0]..src/longident.mli[17,519+22])
+    Tsig_value
+    value_description name/866 (src/longident.mli[17,519+0]..src/longident.mli[17,519+22])
+      core_type (src/longident.mli[17,519+11]..src/longident.mli[17,519+22])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/longident.mli[17,519+11]..src/longident.mli[17,519+12])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/longident.mli[17,519+16]..src/longident.mli[17,519+22])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/longident.mli[19,543+0]..src/longident.mli[19,543+36])
+    Tsig_module "Map/1090"
+    module_type (src/longident.mli[19,543+13]..src/longident.mli[19,543+36])
+      Tmty_with
+      module_type (src/longident.mli[19,543+13]..src/longident.mli[19,543+18])
+        Tmty_ident "Stdlib!.Map.S"
+      [
+        "key/1006"
+          Twith_type
+            type_declaration key/1006 (src/longident.mli[19,543+24]..src/longident.mli[19,543+36])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/longident.mli[19,543+35]..src/longident.mli[19,543+36])
+                    Ttyp_constr "t/550"
+                    []
+      ]
+  signature_item (src/longident.mli[20,580+0]..src/longident.mli[20,580+36])
+    Tsig_module "Set/1324"
+    module_type (src/longident.mli[20,580+13]..src/longident.mli[20,580+36])
+      Tmty_with
+      module_type (src/longident.mli[20,580+13]..src/longident.mli[20,580+18])
+        Tmty_ident "Stdlib!.Set.S"
+      [
+        "elt/1236"
+          Twith_type
+            type_declaration elt/1236 (src/longident.mli[20,580+24]..src/longident.mli[20,580+36])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/longident.mli[20,580+35]..src/longident.mli[20,580+36])
+                    Ttyp_constr "t/550"
+                    []
+      ]
+]
+

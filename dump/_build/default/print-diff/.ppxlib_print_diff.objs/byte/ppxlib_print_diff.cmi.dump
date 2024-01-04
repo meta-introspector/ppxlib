@@ -1,0 +1,148 @@
+[
+  signature_item (print-diff/ppxlib_print_diff.mli[1,0+0]..[8,183+6])
+    Psig_value
+    value_description "print" (print-diff/ppxlib_print_diff.mli[1,0+4]..[1,0+9]) (print-diff/ppxlib_print_diff.mli[1,0+0]..[8,183+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (print-diff/ppxlib_print_diff.mli[9,190+0]..[11,343+31])
+            Pstr_eval
+            expression (print-diff/ppxlib_print_diff.mli[9,190+0]..[11,343+31])
+              Pexp_constant PConst_string(" Diff two files. Use [diff_command] to specify what command to use. If not\n    specified [patdiff] is used, with a fallback to [diff -u] if [patdiff]\n    produces no differences. ",(print-diff/ppxlib_print_diff.mli[9,190+0]..[11,343+31]),None)
+        ]
+      core_type (print-diff/ppxlib_print_diff.mli[2,12+2]..[8,183+6])
+        Ptyp_arrow
+        Optional "diff_command"
+        core_type (print-diff/ppxlib_print_diff.mli[2,12+16]..[2,12+22])
+          Ptyp_constr "string" (print-diff/ppxlib_print_diff.mli[2,12+16]..[2,12+22])
+          []
+        core_type (print-diff/ppxlib_print_diff.mli[3,38+2]..[8,183+6])
+          Ptyp_arrow
+          Optional "extra_patdiff_args"
+          core_type (print-diff/ppxlib_print_diff.mli[3,38+22]..[3,38+33])
+            attribute "ocaml.doc"
+              [
+                structure_item (print-diff/ppxlib_print_diff.mli[3,38+34]..[3,38+52])
+                  Pstr_eval
+                  expression (print-diff/ppxlib_print_diff.mli[3,38+34]..[3,38+52])
+                    Pexp_constant PConst_string(" default: [] ",(print-diff/ppxlib_print_diff.mli[3,38+34]..[3,38+52]),None)
+              ]
+            Ptyp_constr "list" (print-diff/ppxlib_print_diff.mli[3,38+29]..[3,38+33])
+            [
+              core_type (print-diff/ppxlib_print_diff.mli[3,38+22]..[3,38+28])
+                Ptyp_constr "string" (print-diff/ppxlib_print_diff.mli[3,38+22]..[3,38+28])
+                []
+            ]
+          core_type (print-diff/ppxlib_print_diff.mli[4,94+2]..[8,183+6])
+            Ptyp_arrow
+            Optional "use_color"
+            core_type (print-diff/ppxlib_print_diff.mli[4,94+13]..[4,94+17])
+              attribute "ocaml.doc"
+                [
+                  structure_item (print-diff/ppxlib_print_diff.mli[4,94+18]..[4,94+39])
+                    Pstr_eval
+                    expression (print-diff/ppxlib_print_diff.mli[4,94+18]..[4,94+39])
+                      Pexp_constant PConst_string(" default: false ",(print-diff/ppxlib_print_diff.mli[4,94+18]..[4,94+39]),None)
+                ]
+              Ptyp_constr "bool" (print-diff/ppxlib_print_diff.mli[4,94+13]..[4,94+17])
+              []
+            core_type (print-diff/ppxlib_print_diff.mli[5,137+2]..[8,183+6])
+              Ptyp_arrow
+              Labelled "file1"
+              core_type (print-diff/ppxlib_print_diff.mli[5,137+8]..[5,137+14])
+                Ptyp_constr "string" (print-diff/ppxlib_print_diff.mli[5,137+8]..[5,137+14])
+                []
+              core_type (print-diff/ppxlib_print_diff.mli[6,155+2]..[8,183+6])
+                Ptyp_arrow
+                Labelled "file2"
+                core_type (print-diff/ppxlib_print_diff.mli[6,155+8]..[6,155+14])
+                  Ptyp_constr "string" (print-diff/ppxlib_print_diff.mli[6,155+8]..[6,155+14])
+                  []
+                core_type (print-diff/ppxlib_print_diff.mli[7,173+2]..[8,183+6])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (print-diff/ppxlib_print_diff.mli[7,173+2]..[7,173+6])
+                    Ptyp_constr "unit" (print-diff/ppxlib_print_diff.mli[7,173+2]..[7,173+6])
+                    []
+                  core_type (print-diff/ppxlib_print_diff.mli[8,183+2]..[8,183+6])
+                    Ptyp_constr "unit" (print-diff/ppxlib_print_diff.mli[8,183+2]..[8,183+6])
+                    []
+      []
+]
+
+val print :
+  ?diff_command:string ->
+    ?extra_patdiff_args:((string list)[@ocaml.doc " default: [] "]) ->
+      ?use_color:((bool)[@ocaml.doc " default: false "]) ->
+        file1:string -> file2:string -> unit -> unit[@@ocaml.doc
+                                                      " Diff two files. Use [diff_command] to specify what command to use. If not\n    specified [patdiff] is used, with a fallback to [diff -u] if [patdiff]\n    produces no differences. "]
+[
+  signature_item (print-diff/ppxlib_print_diff.mli[1,0+0]..print-diff/ppxlib_print_diff.mli[8,183+6])
+    Tsig_value
+    value_description print/86 (print-diff/ppxlib_print_diff.mli[1,0+0]..print-diff/ppxlib_print_diff.mli[8,183+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (print-diff/ppxlib_print_diff.mli[9,190+0]..[11,343+31])
+            Pstr_eval
+            expression (print-diff/ppxlib_print_diff.mli[9,190+0]..[11,343+31])
+              Pexp_constant PConst_string(" Diff two files. Use [diff_command] to specify what command to use. If not\n    specified [patdiff] is used, with a fallback to [diff -u] if [patdiff]\n    produces no differences. ",(print-diff/ppxlib_print_diff.mli[9,190+0]..[11,343+31]),None)
+        ]
+      core_type (print-diff/ppxlib_print_diff.mli[2,12+2]..print-diff/ppxlib_print_diff.mli[8,183+6])
+        Ttyp_arrow
+        Optional "diff_command"
+        core_type (print-diff/ppxlib_print_diff.mli[2,12+16]..print-diff/ppxlib_print_diff.mli[2,12+22])
+          Ttyp_constr "string/17!"
+          []
+        core_type (print-diff/ppxlib_print_diff.mli[3,38+2]..print-diff/ppxlib_print_diff.mli[8,183+6])
+          Ttyp_arrow
+          Optional "extra_patdiff_args"
+          core_type (print-diff/ppxlib_print_diff.mli[3,38+22]..print-diff/ppxlib_print_diff.mli[3,38+33])
+            attribute "ocaml.doc"
+              [
+                structure_item (print-diff/ppxlib_print_diff.mli[3,38+34]..[3,38+52])
+                  Pstr_eval
+                  expression (print-diff/ppxlib_print_diff.mli[3,38+34]..[3,38+52])
+                    Pexp_constant PConst_string(" default: [] ",(print-diff/ppxlib_print_diff.mli[3,38+34]..[3,38+52]),None)
+              ]
+            Ttyp_constr "list/11!"
+            [
+              core_type (print-diff/ppxlib_print_diff.mli[3,38+22]..print-diff/ppxlib_print_diff.mli[3,38+28])
+                Ttyp_constr "string/17!"
+                []
+            ]
+          core_type (print-diff/ppxlib_print_diff.mli[4,94+2]..print-diff/ppxlib_print_diff.mli[8,183+6])
+            Ttyp_arrow
+            Optional "use_color"
+            core_type (print-diff/ppxlib_print_diff.mli[4,94+13]..print-diff/ppxlib_print_diff.mli[4,94+17])
+              attribute "ocaml.doc"
+                [
+                  structure_item (print-diff/ppxlib_print_diff.mli[4,94+18]..[4,94+39])
+                    Pstr_eval
+                    expression (print-diff/ppxlib_print_diff.mli[4,94+18]..[4,94+39])
+                      Pexp_constant PConst_string(" default: false ",(print-diff/ppxlib_print_diff.mli[4,94+18]..[4,94+39]),None)
+                ]
+              Ttyp_constr "bool/5!"
+              []
+            core_type (print-diff/ppxlib_print_diff.mli[5,137+2]..print-diff/ppxlib_print_diff.mli[8,183+6])
+              Ttyp_arrow
+              Labelled "file1"
+              core_type (print-diff/ppxlib_print_diff.mli[5,137+8]..print-diff/ppxlib_print_diff.mli[5,137+14])
+                Ttyp_constr "string/17!"
+                []
+              core_type (print-diff/ppxlib_print_diff.mli[6,155+2]..print-diff/ppxlib_print_diff.mli[8,183+6])
+                Ttyp_arrow
+                Labelled "file2"
+                core_type (print-diff/ppxlib_print_diff.mli[6,155+8]..print-diff/ppxlib_print_diff.mli[6,155+14])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (print-diff/ppxlib_print_diff.mli[7,173+2]..print-diff/ppxlib_print_diff.mli[8,183+6])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (print-diff/ppxlib_print_diff.mli[7,173+2]..print-diff/ppxlib_print_diff.mli[7,173+6])
+                    Ttyp_constr "unit/6!"
+                    []
+                  core_type (print-diff/ppxlib_print_diff.mli[8,183+2]..print-diff/ppxlib_print_diff.mli[8,183+6])
+                    Ttyp_constr "unit/6!"
+                    []
+      []
+]
+

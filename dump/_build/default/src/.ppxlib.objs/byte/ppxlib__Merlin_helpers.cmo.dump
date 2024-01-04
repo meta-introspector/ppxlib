@@ -1,0 +1,714 @@
+[
+  structure_item (src/merlin_helpers.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (src/merlin_helpers.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (src/merlin_helpers.ml[1,0+6]..[1,0+12])
+  structure_item (src/merlin_helpers.ml[3,14+0]..[3,14+71])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[3,14+4]..[3,14+17])
+          Ppat_var "mk_attr_noloc" (src/merlin_helpers.ml[3,14+4]..[3,14+17])
+        expression (src/merlin_helpers.ml[3,14+18]..[3,14+71]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/merlin_helpers.ml[3,14+18]..[3,14+21])
+            Ppat_var "txt" (src/merlin_helpers.ml[3,14+18]..[3,14+21])
+          expression (src/merlin_helpers.ml[3,14+24]..[3,14+71])
+            Pexp_apply
+            expression (src/merlin_helpers.ml[3,14+24]..[3,14+42])
+              Pexp_ident "Ast_helper.Attr.mk" (src/merlin_helpers.ml[3,14+24]..[3,14+42])
+            [
+              <arg>
+              Nolabel
+                expression (src/merlin_helpers.ml[3,14+43]..[3,14+71])
+                  Pexp_open Fresh
+                  module_expr (src/merlin_helpers.ml[3,14+43]..[3,14+51])
+                    Pmod_ident "Location" (src/merlin_helpers.ml[3,14+43]..[3,14+51])
+                  expression (src/merlin_helpers.ml[3,14+52]..[3,14+71])
+                    Pexp_record
+                    [
+                      "txt" (src/merlin_helpers.ml[3,14+54]..[3,14+57])
+                        expression (src/merlin_helpers.ml[3,14+54]..[3,14+57]) ghost
+                          Pexp_ident "txt" (src/merlin_helpers.ml[3,14+54]..[3,14+57]) ghost
+                      "loc" (src/merlin_helpers.ml[3,14+59]..[3,14+62])
+                        expression (src/merlin_helpers.ml[3,14+65]..[3,14+69])
+                          Pexp_ident "none" (src/merlin_helpers.ml[3,14+65]..[3,14+69])
+                    ]
+                    None
+            ]
+    ]
+  structure_item (src/merlin_helpers.ml[4,86+0]..[4,86+70])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[4,86+4]..[4,86+30]) ghost
+          Ppat_constraint
+          pattern (src/merlin_helpers.ml[4,86+4]..[4,86+18])
+            Ppat_var "hide_attribute" (src/merlin_helpers.ml[4,86+4]..[4,86+18])
+          core_type (src/merlin_helpers.ml[4,86+21]..[4,86+30]) ghost
+            Ptyp_poly
+            core_type (src/merlin_helpers.ml[4,86+21]..[4,86+30])
+              Ptyp_constr "attribute" (src/merlin_helpers.ml[4,86+21]..[4,86+30])
+              []
+        expression (src/merlin_helpers.ml[4,86+4]..[4,86+70]) ghost
+          Pexp_constraint
+          expression (src/merlin_helpers.ml[4,86+33]..[4,86+70])
+            Pexp_apply
+            expression (src/merlin_helpers.ml[4,86+33]..[4,86+46])
+              Pexp_ident "mk_attr_noloc" (src/merlin_helpers.ml[4,86+33]..[4,86+46])
+            [
+              <arg>
+              Nolabel
+                expression (src/merlin_helpers.ml[4,86+47]..[4,86+60])
+                  Pexp_constant PConst_string("merlin.hide",(src/merlin_helpers.ml[4,86+48]..[4,86+59]),None)
+              <arg>
+              Nolabel
+                expression (src/merlin_helpers.ml[4,86+61]..[4,86+70])
+                  Pexp_construct "PStr" (src/merlin_helpers.ml[4,86+62]..[4,86+66])
+                  Some
+                    expression (src/merlin_helpers.ml[4,86+67]..[4,86+69])
+                      Pexp_construct "[]" (src/merlin_helpers.ml[4,86+67]..[4,86+69])
+                      None
+            ]
+          core_type (src/merlin_helpers.ml[4,86+21]..[4,86+30])
+            Ptyp_constr "attribute" (src/merlin_helpers.ml[4,86+21]..[4,86+30])
+            []
+    ]
+  structure_item (src/merlin_helpers.ml[5,157+0]..[5,157+72])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[5,157+4]..[5,157+31]) ghost
+          Ppat_constraint
+          pattern (src/merlin_helpers.ml[5,157+4]..[5,157+19])
+            Ppat_var "focus_attribute" (src/merlin_helpers.ml[5,157+4]..[5,157+19])
+          core_type (src/merlin_helpers.ml[5,157+22]..[5,157+31]) ghost
+            Ptyp_poly
+            core_type (src/merlin_helpers.ml[5,157+22]..[5,157+31])
+              Ptyp_constr "attribute" (src/merlin_helpers.ml[5,157+22]..[5,157+31])
+              []
+        expression (src/merlin_helpers.ml[5,157+4]..[5,157+72]) ghost
+          Pexp_constraint
+          expression (src/merlin_helpers.ml[5,157+34]..[5,157+72])
+            Pexp_apply
+            expression (src/merlin_helpers.ml[5,157+34]..[5,157+47])
+              Pexp_ident "mk_attr_noloc" (src/merlin_helpers.ml[5,157+34]..[5,157+47])
+            [
+              <arg>
+              Nolabel
+                expression (src/merlin_helpers.ml[5,157+48]..[5,157+62])
+                  Pexp_constant PConst_string("merlin.focus",(src/merlin_helpers.ml[5,157+49]..[5,157+61]),None)
+              <arg>
+              Nolabel
+                expression (src/merlin_helpers.ml[5,157+63]..[5,157+72])
+                  Pexp_construct "PStr" (src/merlin_helpers.ml[5,157+64]..[5,157+68])
+                  Some
+                    expression (src/merlin_helpers.ml[5,157+69]..[5,157+71])
+                      Pexp_construct "[]" (src/merlin_helpers.ml[5,157+69]..[5,157+71])
+                      None
+            ]
+          core_type (src/merlin_helpers.ml[5,157+22]..[5,157+31])
+            Ptyp_constr "attribute" (src/merlin_helpers.ml[5,157+22]..[5,157+31])
+            []
+    ]
+  structure_item (src/merlin_helpers.ml[7,231+0]..[8,280+64])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[7,231+4]..[7,231+16])
+          Ppat_var "hide_pattern" (src/merlin_helpers.ml[7,231+4]..[7,231+16])
+        expression (src/merlin_helpers.ml[7,231+17]..[8,280+64]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/merlin_helpers.ml[7,231+17]..[7,231+46])
+            Ppat_alias "p" (src/merlin_helpers.ml[7,231+44]..[7,231+45])
+            pattern (src/merlin_helpers.ml[7,231+18]..[7,231+40])
+              Ppat_record Open
+              [
+                "ppat_attributes" (src/merlin_helpers.ml[7,231+20]..[7,231+35]) ghost
+                  pattern (src/merlin_helpers.ml[7,231+20]..[7,231+35])
+                    Ppat_var "ppat_attributes" (src/merlin_helpers.ml[7,231+20]..[7,231+35])
+              ]
+          expression (src/merlin_helpers.ml[8,280+2]..[8,280+64])
+            Pexp_record
+            [
+              "ppat_attributes" (src/merlin_helpers.ml[8,280+11]..[8,280+26])
+                expression (src/merlin_helpers.ml[8,280+29]..[8,280+62])
+                  Pexp_construct "::" (src/merlin_helpers.ml[8,280+44]..[8,280+46])
+                  Some
+                    expression (src/merlin_helpers.ml[8,280+29]..[8,280+62]) ghost
+                      Pexp_tuple
+                      [
+                        expression (src/merlin_helpers.ml[8,280+29]..[8,280+43])
+                          Pexp_ident "hide_attribute" (src/merlin_helpers.ml[8,280+29]..[8,280+43])
+                        expression (src/merlin_helpers.ml[8,280+47]..[8,280+62])
+                          Pexp_ident "ppat_attributes" (src/merlin_helpers.ml[8,280+47]..[8,280+62])
+                      ]
+            ]
+            Some
+              expression (src/merlin_helpers.ml[8,280+4]..[8,280+5])
+                Pexp_ident "p" (src/merlin_helpers.ml[8,280+4]..[8,280+5])
+    ]
+  structure_item (src/merlin_helpers.ml[10,346+0]..[11,396+65])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[10,346+4]..[10,346+17])
+          Ppat_var "focus_pattern" (src/merlin_helpers.ml[10,346+4]..[10,346+17])
+        expression (src/merlin_helpers.ml[10,346+18]..[11,396+65]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/merlin_helpers.ml[10,346+18]..[10,346+47])
+            Ppat_alias "p" (src/merlin_helpers.ml[10,346+45]..[10,346+46])
+            pattern (src/merlin_helpers.ml[10,346+19]..[10,346+41])
+              Ppat_record Open
+              [
+                "ppat_attributes" (src/merlin_helpers.ml[10,346+21]..[10,346+36]) ghost
+                  pattern (src/merlin_helpers.ml[10,346+21]..[10,346+36])
+                    Ppat_var "ppat_attributes" (src/merlin_helpers.ml[10,346+21]..[10,346+36])
+              ]
+          expression (src/merlin_helpers.ml[11,396+2]..[11,396+65])
+            Pexp_record
+            [
+              "ppat_attributes" (src/merlin_helpers.ml[11,396+11]..[11,396+26])
+                expression (src/merlin_helpers.ml[11,396+29]..[11,396+63])
+                  Pexp_construct "::" (src/merlin_helpers.ml[11,396+45]..[11,396+47])
+                  Some
+                    expression (src/merlin_helpers.ml[11,396+29]..[11,396+63]) ghost
+                      Pexp_tuple
+                      [
+                        expression (src/merlin_helpers.ml[11,396+29]..[11,396+44])
+                          Pexp_ident "focus_attribute" (src/merlin_helpers.ml[11,396+29]..[11,396+44])
+                        expression (src/merlin_helpers.ml[11,396+48]..[11,396+63])
+                          Pexp_ident "ppat_attributes" (src/merlin_helpers.ml[11,396+48]..[11,396+63])
+                      ]
+            ]
+            Some
+              expression (src/merlin_helpers.ml[11,396+4]..[11,396+5])
+                Pexp_ident "p" (src/merlin_helpers.ml[11,396+4]..[11,396+5])
+    ]
+  structure_item (src/merlin_helpers.ml[13,463+0]..[14,515+64])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[13,463+4]..[13,463+19])
+          Ppat_var "hide_expression" (src/merlin_helpers.ml[13,463+4]..[13,463+19])
+        expression (src/merlin_helpers.ml[13,463+20]..[14,515+64]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/merlin_helpers.ml[13,463+20]..[13,463+49])
+            Ppat_alias "e" (src/merlin_helpers.ml[13,463+47]..[13,463+48])
+            pattern (src/merlin_helpers.ml[13,463+21]..[13,463+43])
+              Ppat_record Open
+              [
+                "pexp_attributes" (src/merlin_helpers.ml[13,463+23]..[13,463+38]) ghost
+                  pattern (src/merlin_helpers.ml[13,463+23]..[13,463+38])
+                    Ppat_var "pexp_attributes" (src/merlin_helpers.ml[13,463+23]..[13,463+38])
+              ]
+          expression (src/merlin_helpers.ml[14,515+2]..[14,515+64])
+            Pexp_record
+            [
+              "pexp_attributes" (src/merlin_helpers.ml[14,515+11]..[14,515+26])
+                expression (src/merlin_helpers.ml[14,515+29]..[14,515+62])
+                  Pexp_construct "::" (src/merlin_helpers.ml[14,515+44]..[14,515+46])
+                  Some
+                    expression (src/merlin_helpers.ml[14,515+29]..[14,515+62]) ghost
+                      Pexp_tuple
+                      [
+                        expression (src/merlin_helpers.ml[14,515+29]..[14,515+43])
+                          Pexp_ident "hide_attribute" (src/merlin_helpers.ml[14,515+29]..[14,515+43])
+                        expression (src/merlin_helpers.ml[14,515+47]..[14,515+62])
+                          Pexp_ident "pexp_attributes" (src/merlin_helpers.ml[14,515+47]..[14,515+62])
+                      ]
+            ]
+            Some
+              expression (src/merlin_helpers.ml[14,515+4]..[14,515+5])
+                Pexp_ident "e" (src/merlin_helpers.ml[14,515+4]..[14,515+5])
+    ]
+  structure_item (src/merlin_helpers.ml[16,581+0]..[17,634+65])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[16,581+4]..[16,581+20])
+          Ppat_var "focus_expression" (src/merlin_helpers.ml[16,581+4]..[16,581+20])
+        expression (src/merlin_helpers.ml[16,581+21]..[17,634+65]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/merlin_helpers.ml[16,581+21]..[16,581+50])
+            Ppat_alias "e" (src/merlin_helpers.ml[16,581+48]..[16,581+49])
+            pattern (src/merlin_helpers.ml[16,581+22]..[16,581+44])
+              Ppat_record Open
+              [
+                "pexp_attributes" (src/merlin_helpers.ml[16,581+24]..[16,581+39]) ghost
+                  pattern (src/merlin_helpers.ml[16,581+24]..[16,581+39])
+                    Ppat_var "pexp_attributes" (src/merlin_helpers.ml[16,581+24]..[16,581+39])
+              ]
+          expression (src/merlin_helpers.ml[17,634+2]..[17,634+65])
+            Pexp_record
+            [
+              "pexp_attributes" (src/merlin_helpers.ml[17,634+11]..[17,634+26])
+                expression (src/merlin_helpers.ml[17,634+29]..[17,634+63])
+                  Pexp_construct "::" (src/merlin_helpers.ml[17,634+45]..[17,634+47])
+                  Some
+                    expression (src/merlin_helpers.ml[17,634+29]..[17,634+63]) ghost
+                      Pexp_tuple
+                      [
+                        expression (src/merlin_helpers.ml[17,634+29]..[17,634+44])
+                          Pexp_ident "focus_attribute" (src/merlin_helpers.ml[17,634+29]..[17,634+44])
+                        expression (src/merlin_helpers.ml[17,634+48]..[17,634+63])
+                          Pexp_ident "pexp_attributes" (src/merlin_helpers.ml[17,634+48]..[17,634+63])
+                      ]
+            ]
+            Some
+              expression (src/merlin_helpers.ml[17,634+4]..[17,634+5])
+                Pexp_ident "e" (src/merlin_helpers.ml[17,634+4]..[17,634+5])
+    ]
+]
+
+open! Import
+let mk_attr_noloc txt =
+  Ast_helper.Attr.mk (let open Location in { txt; loc = none })
+let hide_attribute : attribute = mk_attr_noloc "merlin.hide" (PStr [])
+let focus_attribute : attribute = mk_attr_noloc "merlin.focus" (PStr [])
+let hide_pattern ({ ppat_attributes;_} as p) =
+  { p with ppat_attributes = (hide_attribute :: ppat_attributes) }
+let focus_pattern ({ ppat_attributes;_} as p) =
+  { p with ppat_attributes = (focus_attribute :: ppat_attributes) }
+let hide_expression ({ pexp_attributes;_} as e) =
+  { e with pexp_attributes = (hide_attribute :: pexp_attributes) }
+let focus_expression ({ pexp_attributes;_} as e) =
+  { e with pexp_attributes = (focus_attribute :: pexp_attributes) }
+[
+  structure_item (src/merlin_helpers.ml[1,0+0]..src/merlin_helpers.ml[1,0+12])
+    Tstr_open Override
+    module_expr (src/merlin_helpers.ml[1,0+6]..src/merlin_helpers.ml[1,0+12])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/merlin_helpers.ml[3,14+0]..src/merlin_helpers.ml[3,14+71])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[3,14+4]..src/merlin_helpers.ml[3,14+17])
+          Tpat_var "mk_attr_noloc/550"
+        expression (src/merlin_helpers.ml[3,14+18]..src/merlin_helpers.ml[3,14+71]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/merlin_helpers.ml[3,14+18]..src/merlin_helpers.ml[3,14+21])
+                Tpat_var "txt/552"
+              expression (src/merlin_helpers.ml[3,14+24]..src/merlin_helpers.ml[3,14+71])
+                Texp_apply
+                expression (src/merlin_helpers.ml[3,14+24]..src/merlin_helpers.ml[3,14+42])
+                  Texp_ident "Ppxlib__!.Import.Ast_helper.Attr.mk"
+                [
+                  <arg>
+                    Optional "loc"
+                    expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                      Texp_construct "None"
+                      []
+                  <arg>
+                    Nolabel
+                    expression (src/merlin_helpers.ml[3,14+43]..src/merlin_helpers.ml[3,14+71])
+                      Texp_open Fresh
+                      module_expr (src/merlin_helpers.ml[3,14+43]..src/merlin_helpers.ml[3,14+51])
+                        Tmod_ident "Ppxlib__!.Location"
+                      expression (src/merlin_helpers.ml[3,14+52]..src/merlin_helpers.ml[3,14+71])
+                        Texp_record
+                          fields =
+                            [
+                              "txt"
+                                expression (src/merlin_helpers.ml[3,14+54]..src/merlin_helpers.ml[3,14+57]) ghost
+                                  Texp_ident "txt/552"
+                              "loc"
+                                expression (src/merlin_helpers.ml[3,14+65]..src/merlin_helpers.ml[3,14+69])
+                                  Texp_ident "Ppxlib__!.Location.none"
+                            ]
+                          representation =
+                            Record_regular
+                          extended_expression =
+                            None
+                ]
+          ]
+    ]
+  structure_item (src/merlin_helpers.ml[4,86+0]..src/merlin_helpers.ml[4,86+70])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[4,86+4]..src/merlin_helpers.ml[4,86+18])
+          Tpat_extra_constraint
+          core_type (src/merlin_helpers.ml[4,86+21]..src/merlin_helpers.ml[4,86+30]) ghost
+            Ttyp_poly
+            core_type (src/merlin_helpers.ml[4,86+21]..src/merlin_helpers.ml[4,86+30])
+              Ttyp_constr "Ppxlib__!.Import.attribute"
+              []
+          pattern (src/merlin_helpers.ml[4,86+4]..src/merlin_helpers.ml[4,86+18])
+            Tpat_var "hide_attribute/1559"
+        expression (src/merlin_helpers.ml[4,86+33]..src/merlin_helpers.ml[4,86+70])
+          Texp_constraint
+          core_type (src/merlin_helpers.ml[4,86+21]..src/merlin_helpers.ml[4,86+30])
+            Ttyp_constr "Ppxlib__!.Import.attribute"
+            []
+            Texp_apply
+            expression (src/merlin_helpers.ml[4,86+33]..src/merlin_helpers.ml[4,86+46])
+              Texp_ident "mk_attr_noloc/550"
+            [
+              <arg>
+                Nolabel
+                expression (src/merlin_helpers.ml[4,86+47]..src/merlin_helpers.ml[4,86+60])
+                  Texp_constant Const_string("merlin.hide",(src/merlin_helpers.ml[4,86+48]..src/merlin_helpers.ml[4,86+59]),None)
+              <arg>
+                Nolabel
+                expression (src/merlin_helpers.ml[4,86+61]..src/merlin_helpers.ml[4,86+70])
+                  Texp_construct "PStr"
+                  [
+                    expression (src/merlin_helpers.ml[4,86+67]..src/merlin_helpers.ml[4,86+69])
+                      Texp_construct "[]"
+                      []
+                  ]
+            ]
+    ]
+  structure_item (src/merlin_helpers.ml[5,157+0]..src/merlin_helpers.ml[5,157+72])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[5,157+4]..src/merlin_helpers.ml[5,157+19])
+          Tpat_extra_constraint
+          core_type (src/merlin_helpers.ml[5,157+22]..src/merlin_helpers.ml[5,157+31]) ghost
+            Ttyp_poly
+            core_type (src/merlin_helpers.ml[5,157+22]..src/merlin_helpers.ml[5,157+31])
+              Ttyp_constr "Ppxlib__!.Import.attribute"
+              []
+          pattern (src/merlin_helpers.ml[5,157+4]..src/merlin_helpers.ml[5,157+19])
+            Tpat_var "focus_attribute/1952"
+        expression (src/merlin_helpers.ml[5,157+34]..src/merlin_helpers.ml[5,157+72])
+          Texp_constraint
+          core_type (src/merlin_helpers.ml[5,157+22]..src/merlin_helpers.ml[5,157+31])
+            Ttyp_constr "Ppxlib__!.Import.attribute"
+            []
+            Texp_apply
+            expression (src/merlin_helpers.ml[5,157+34]..src/merlin_helpers.ml[5,157+47])
+              Texp_ident "mk_attr_noloc/550"
+            [
+              <arg>
+                Nolabel
+                expression (src/merlin_helpers.ml[5,157+48]..src/merlin_helpers.ml[5,157+62])
+                  Texp_constant Const_string("merlin.focus",(src/merlin_helpers.ml[5,157+49]..src/merlin_helpers.ml[5,157+61]),None)
+              <arg>
+                Nolabel
+                expression (src/merlin_helpers.ml[5,157+63]..src/merlin_helpers.ml[5,157+72])
+                  Texp_construct "PStr"
+                  [
+                    expression (src/merlin_helpers.ml[5,157+69]..src/merlin_helpers.ml[5,157+71])
+                      Texp_construct "[]"
+                      []
+                  ]
+            ]
+    ]
+  structure_item (src/merlin_helpers.ml[7,231+0]..src/merlin_helpers.ml[8,280+64])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[7,231+4]..src/merlin_helpers.ml[7,231+16])
+          Tpat_var "hide_pattern/1953"
+        expression (src/merlin_helpers.ml[7,231+17]..src/merlin_helpers.ml[8,280+64]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/merlin_helpers.ml[7,231+17]..src/merlin_helpers.ml[7,231+46])
+                Tpat_alias "p/1956"
+                pattern (src/merlin_helpers.ml[7,231+18]..src/merlin_helpers.ml[7,231+40])
+                  Tpat_record
+                  [
+                    "ppat_attributes"
+                      pattern (src/merlin_helpers.ml[7,231+20]..src/merlin_helpers.ml[7,231+35])
+                        Tpat_var "ppat_attributes/1955"
+                  ]
+              expression (src/merlin_helpers.ml[8,280+2]..src/merlin_helpers.ml[8,280+64])
+                Texp_record
+                  fields =
+                    [
+                      <kept>                      <kept>                      <kept>                      "ppat_attributes"
+                        expression (src/merlin_helpers.ml[8,280+29]..src/merlin_helpers.ml[8,280+62])
+                          Texp_construct "::"
+                          [
+                            expression (src/merlin_helpers.ml[8,280+29]..src/merlin_helpers.ml[8,280+43])
+                              Texp_ident "hide_attribute/1559"
+                            expression (src/merlin_helpers.ml[8,280+47]..src/merlin_helpers.ml[8,280+62])
+                              Texp_ident "ppat_attributes/1955"
+                          ]
+                    ]
+                  representation =
+                    Record_regular
+                  extended_expression =
+                    Some
+                      expression (src/merlin_helpers.ml[8,280+4]..src/merlin_helpers.ml[8,280+5])
+                        Texp_ident "p/1956"
+          ]
+    ]
+  structure_item (src/merlin_helpers.ml[10,346+0]..src/merlin_helpers.ml[11,396+65])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[10,346+4]..src/merlin_helpers.ml[10,346+17])
+          Tpat_var "focus_pattern/1957"
+        expression (src/merlin_helpers.ml[10,346+18]..src/merlin_helpers.ml[11,396+65]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/merlin_helpers.ml[10,346+18]..src/merlin_helpers.ml[10,346+47])
+                Tpat_alias "p/1960"
+                pattern (src/merlin_helpers.ml[10,346+19]..src/merlin_helpers.ml[10,346+41])
+                  Tpat_record
+                  [
+                    "ppat_attributes"
+                      pattern (src/merlin_helpers.ml[10,346+21]..src/merlin_helpers.ml[10,346+36])
+                        Tpat_var "ppat_attributes/1959"
+                  ]
+              expression (src/merlin_helpers.ml[11,396+2]..src/merlin_helpers.ml[11,396+65])
+                Texp_record
+                  fields =
+                    [
+                      <kept>                      <kept>                      <kept>                      "ppat_attributes"
+                        expression (src/merlin_helpers.ml[11,396+29]..src/merlin_helpers.ml[11,396+63])
+                          Texp_construct "::"
+                          [
+                            expression (src/merlin_helpers.ml[11,396+29]..src/merlin_helpers.ml[11,396+44])
+                              Texp_ident "focus_attribute/1952"
+                            expression (src/merlin_helpers.ml[11,396+48]..src/merlin_helpers.ml[11,396+63])
+                              Texp_ident "ppat_attributes/1959"
+                          ]
+                    ]
+                  representation =
+                    Record_regular
+                  extended_expression =
+                    Some
+                      expression (src/merlin_helpers.ml[11,396+4]..src/merlin_helpers.ml[11,396+5])
+                        Texp_ident "p/1960"
+          ]
+    ]
+  structure_item (src/merlin_helpers.ml[13,463+0]..src/merlin_helpers.ml[14,515+64])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[13,463+4]..src/merlin_helpers.ml[13,463+19])
+          Tpat_var "hide_expression/1961"
+        expression (src/merlin_helpers.ml[13,463+20]..src/merlin_helpers.ml[14,515+64]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/merlin_helpers.ml[13,463+20]..src/merlin_helpers.ml[13,463+49])
+                Tpat_alias "e/1964"
+                pattern (src/merlin_helpers.ml[13,463+21]..src/merlin_helpers.ml[13,463+43])
+                  Tpat_record
+                  [
+                    "pexp_attributes"
+                      pattern (src/merlin_helpers.ml[13,463+23]..src/merlin_helpers.ml[13,463+38])
+                        Tpat_var "pexp_attributes/1963"
+                  ]
+              expression (src/merlin_helpers.ml[14,515+2]..src/merlin_helpers.ml[14,515+64])
+                Texp_record
+                  fields =
+                    [
+                      <kept>                      <kept>                      <kept>                      "pexp_attributes"
+                        expression (src/merlin_helpers.ml[14,515+29]..src/merlin_helpers.ml[14,515+62])
+                          Texp_construct "::"
+                          [
+                            expression (src/merlin_helpers.ml[14,515+29]..src/merlin_helpers.ml[14,515+43])
+                              Texp_ident "hide_attribute/1559"
+                            expression (src/merlin_helpers.ml[14,515+47]..src/merlin_helpers.ml[14,515+62])
+                              Texp_ident "pexp_attributes/1963"
+                          ]
+                    ]
+                  representation =
+                    Record_regular
+                  extended_expression =
+                    Some
+                      expression (src/merlin_helpers.ml[14,515+4]..src/merlin_helpers.ml[14,515+5])
+                        Texp_ident "e/1964"
+          ]
+    ]
+  structure_item (src/merlin_helpers.ml[16,581+0]..src/merlin_helpers.ml[17,634+65])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/merlin_helpers.ml[16,581+4]..src/merlin_helpers.ml[16,581+20])
+          Tpat_var "focus_expression/1965"
+        expression (src/merlin_helpers.ml[16,581+21]..src/merlin_helpers.ml[17,634+65]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/merlin_helpers.ml[16,581+21]..src/merlin_helpers.ml[16,581+50])
+                Tpat_alias "e/1968"
+                pattern (src/merlin_helpers.ml[16,581+22]..src/merlin_helpers.ml[16,581+44])
+                  Tpat_record
+                  [
+                    "pexp_attributes"
+                      pattern (src/merlin_helpers.ml[16,581+24]..src/merlin_helpers.ml[16,581+39])
+                        Tpat_var "pexp_attributes/1967"
+                  ]
+              expression (src/merlin_helpers.ml[17,634+2]..src/merlin_helpers.ml[17,634+65])
+                Texp_record
+                  fields =
+                    [
+                      <kept>                      <kept>                      <kept>                      "pexp_attributes"
+                        expression (src/merlin_helpers.ml[17,634+29]..src/merlin_helpers.ml[17,634+63])
+                          Texp_construct "::"
+                          [
+                            expression (src/merlin_helpers.ml[17,634+29]..src/merlin_helpers.ml[17,634+44])
+                              Texp_ident "focus_attribute/1952"
+                            expression (src/merlin_helpers.ml[17,634+48]..src/merlin_helpers.ml[17,634+63])
+                              Texp_ident "pexp_attributes/1967"
+                          ]
+                    ]
+                  representation =
+                    Record_regular
+                  extended_expression =
+                    Some
+                      expression (src/merlin_helpers.ml[17,634+4]..src/merlin_helpers.ml[17,634+5])
+                        Texp_ident "e/1968"
+          ]
+    ]
+]
+
+(setglobal Ppxlib__Merlin_helpers!
+  (let
+    (mk_attr_noloc/550 =
+       (function txt/552
+         (funct-body Ppxlib__Merlin_helpers.mk_attr_noloc src/merlin_helpers.ml(3)<ghost>:32-85
+           (before Ppxlib__Merlin_helpers.mk_attr_noloc src/merlin_helpers.ml(3):38-85
+             (after Ppxlib__Merlin_helpers.mk_attr_noloc src/merlin_helpers.ml(3):38-85
+               (apply
+                 (field_imm 0
+                   (field_imm 3 (global Ppxlib_ast__Ast_helper_lite!)))
+                 0
+                 (makeblock 0 txt/552
+                   (field_imm 2 (global Ppxlib__Location!))))))))
+     hide_attribute/1559 =
+       (after Ppxlib__Merlin_helpers.hide_attribute src/merlin_helpers.ml(4):119-156
+         (apply mk_attr_noloc/550 "merlin.hide" [0: 0]))
+     focus_attribute/1952 =
+       (after Ppxlib__Merlin_helpers.focus_attribute src/merlin_helpers.ml(5):191-229
+         (apply mk_attr_noloc/550 "merlin.focus" [0: 0]))
+     hide_pattern/1953 =
+       (function p/1956
+         (funct-body Ppxlib__Merlin_helpers.hide_pattern src/merlin_helpers.ml(7)<ghost>:248-344
+           (let
+             (ppat_attributes/1955 =a (field_imm 3 p/1956)
+              *match*/9205 =a (field_imm 2 p/1956)
+              *match*/9204 =a (field_imm 1 p/1956)
+              *match*/9203 =a (field_imm 0 p/1956))
+             (before Ppxlib__Merlin_helpers.hide_pattern src/merlin_helpers.ml(8):282-344
+               (let (init/9202 = p/1956)
+                 (makeblock 0 (field_imm 0 init/9202) (field_imm 1 init/9202)
+                   (field_imm 2 init/9202)
+                   (makeblock 0 hide_attribute/1559 ppat_attributes/1955)))))))
+     focus_pattern/1957 =
+       (function p/1960
+         (funct-body Ppxlib__Merlin_helpers.focus_pattern src/merlin_helpers.ml(10)<ghost>:364-461
+           (let
+             (ppat_attributes/1959 =a (field_imm 3 p/1960)
+              *match*/9209 =a (field_imm 2 p/1960)
+              *match*/9208 =a (field_imm 1 p/1960)
+              *match*/9207 =a (field_imm 0 p/1960))
+             (before Ppxlib__Merlin_helpers.focus_pattern src/merlin_helpers.ml(11):398-461
+               (let (init/9206 = p/1960)
+                 (makeblock 0 (field_imm 0 init/9206) (field_imm 1 init/9206)
+                   (field_imm 2 init/9206)
+                   (makeblock 0 focus_attribute/1952 ppat_attributes/1959)))))))
+     hide_expression/1961 =
+       (function e/1964
+         (funct-body Ppxlib__Merlin_helpers.hide_expression src/merlin_helpers.ml(13)<ghost>:483-579
+           (let
+             (pexp_attributes/1963 =a (field_imm 3 e/1964)
+              *match*/9213 =a (field_imm 2 e/1964)
+              *match*/9212 =a (field_imm 1 e/1964)
+              *match*/9211 =a (field_imm 0 e/1964))
+             (before Ppxlib__Merlin_helpers.hide_expression src/merlin_helpers.ml(14):517-579
+               (let (init/9210 = e/1964)
+                 (makeblock 0 (field_imm 0 init/9210) (field_imm 1 init/9210)
+                   (field_imm 2 init/9210)
+                   (makeblock 0 hide_attribute/1559 pexp_attributes/1963)))))))
+     focus_expression/1965 =
+       (function e/1968
+         (funct-body Ppxlib__Merlin_helpers.focus_expression src/merlin_helpers.ml(16)<ghost>:602-699
+           (let
+             (pexp_attributes/1967 =a (field_imm 3 e/1968)
+              *match*/9217 =a (field_imm 2 e/1968)
+              *match*/9216 =a (field_imm 1 e/1968)
+              *match*/9215 =a (field_imm 0 e/1968))
+             (before Ppxlib__Merlin_helpers.focus_expression src/merlin_helpers.ml(17):636-699
+               (let (init/9214 = e/1968)
+                 (makeblock 0 (field_imm 0 init/9214) (field_imm 1 init/9214)
+                   (field_imm 2 init/9214)
+                   (makeblock 0 focus_attribute/1952 pexp_attributes/1967))))))))
+    (pseudo <unknown location>
+      (makeblock 0 hide_attribute/1559 focus_attribute/1952 hide_pattern/1953
+        focus_pattern/1957 hide_expression/1961 focus_expression/1965))))
+(setglobal Ppxlib__Merlin_helpers!
+  (let
+    (mk_attr_noloc/550 =
+       (function txt/552
+         (funct-body Ppxlib__Merlin_helpers.mk_attr_noloc src/merlin_helpers.ml(3)<ghost>:32-85
+           (before Ppxlib__Merlin_helpers.mk_attr_noloc src/merlin_helpers.ml(3):38-85
+             (after Ppxlib__Merlin_helpers.mk_attr_noloc src/merlin_helpers.ml(3):38-85
+               (apply
+                 (field_imm 0
+                   (field_imm 3 (global Ppxlib_ast__Ast_helper_lite!)))
+                 0
+                 (makeblock 0 txt/552
+                   (field_imm 2 (global Ppxlib__Location!))))))))
+     hide_attribute/1559 =
+       (after Ppxlib__Merlin_helpers.hide_attribute src/merlin_helpers.ml(4):119-156
+         (apply mk_attr_noloc/550 "merlin.hide" [0: 0]))
+     focus_attribute/1952 =
+       (after Ppxlib__Merlin_helpers.focus_attribute src/merlin_helpers.ml(5):191-229
+         (apply mk_attr_noloc/550 "merlin.focus" [0: 0]))
+     hide_pattern/1953 =
+       (function p/1956
+         (funct-body Ppxlib__Merlin_helpers.hide_pattern src/merlin_helpers.ml(7)<ghost>:248-344
+           (let (ppat_attributes/1955 =a (field_imm 3 p/1956))
+             (before Ppxlib__Merlin_helpers.hide_pattern src/merlin_helpers.ml(8):282-344
+               (let (init/9202 = p/1956)
+                 (makeblock 0 (field_imm 0 init/9202) (field_imm 1 init/9202)
+                   (field_imm 2 init/9202)
+                   (makeblock 0 hide_attribute/1559 ppat_attributes/1955)))))))
+     focus_pattern/1957 =
+       (function p/1960
+         (funct-body Ppxlib__Merlin_helpers.focus_pattern src/merlin_helpers.ml(10)<ghost>:364-461
+           (let (ppat_attributes/1959 =a (field_imm 3 p/1960))
+             (before Ppxlib__Merlin_helpers.focus_pattern src/merlin_helpers.ml(11):398-461
+               (let (init/9206 = p/1960)
+                 (makeblock 0 (field_imm 0 init/9206) (field_imm 1 init/9206)
+                   (field_imm 2 init/9206)
+                   (makeblock 0 focus_attribute/1952 ppat_attributes/1959)))))))
+     hide_expression/1961 =
+       (function e/1964
+         (funct-body Ppxlib__Merlin_helpers.hide_expression src/merlin_helpers.ml(13)<ghost>:483-579
+           (let (pexp_attributes/1963 =a (field_imm 3 e/1964))
+             (before Ppxlib__Merlin_helpers.hide_expression src/merlin_helpers.ml(14):517-579
+               (let (init/9210 = e/1964)
+                 (makeblock 0 (field_imm 0 init/9210) (field_imm 1 init/9210)
+                   (field_imm 2 init/9210)
+                   (makeblock 0 hide_attribute/1559 pexp_attributes/1963)))))))
+     focus_expression/1965 =
+       (function e/1968
+         (funct-body Ppxlib__Merlin_helpers.focus_expression src/merlin_helpers.ml(16)<ghost>:602-699
+           (let (pexp_attributes/1967 =a (field_imm 3 e/1968))
+             (before Ppxlib__Merlin_helpers.focus_expression src/merlin_helpers.ml(17):636-699
+               (let (init/9214 = e/1968)
+                 (makeblock 0 (field_imm 0 init/9214) (field_imm 1 init/9214)
+                   (field_imm 2 init/9214)
+                   (makeblock 0 focus_attribute/1952 pexp_attributes/1967))))))))
+    (pseudo <unknown location>
+      (makeblock 0 hide_attribute/1559 focus_attribute/1952 hide_pattern/1953
+        focus_pattern/1957 hide_expression/1961 focus_expression/1965))))

@@ -1,0 +1,9 @@
+0.007s 8.46MB 2.15MB 2.15MB test/deriving_warning/disable/ppx_warning_flags_test.pp.ml
+  0.001s 2.00MB 0.37MB 0.37MB typing
+  ------ 0.13MB ------ ------ transl
+  0.003s 2.00MB ------ ------ generate
+    ------ 2.00MB ------ ------ compile_phrases
+      ------ 2.00MB ------ ------ comballoc
+    0.002s ------ ------ ------ assemble
+  0.003s 4.32MB 1.77MB 2.15MB other
+0.004s ------ ------ ------ other

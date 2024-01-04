@@ -1,0 +1,565 @@
+[
+  structure_item (ast/pp/pp.ml[1,0+0]..[16,572+12])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/pp/pp.ml[1,0+4]..[1,0+6])
+          Ppat_construct "()" (ast/pp/pp.ml[1,0+4]..[1,0+6])
+          None
+        expression (ast/pp/pp.ml[2,9+2]..[16,572+12])
+          Pexp_match
+          expression (ast/pp/pp.ml[2,9+8]..[2,9+16])
+            Pexp_ident "Sys.argv" (ast/pp/pp.ml[2,9+8]..[2,9+16])
+          [
+            <case>
+              pattern (ast/pp/pp.ml[3,31+4]..[3,31+37])
+                Ppat_array
+                [
+                  pattern (ast/pp/pp.ml[3,31+7]..[3,31+8])
+                    Ppat_any
+                  pattern (ast/pp/pp.ml[3,31+10]..[3,31+27])
+                    Ppat_var "ocaml_version_str" (ast/pp/pp.ml[3,31+10]..[3,31+27])
+                  pattern (ast/pp/pp.ml[3,31+29]..[3,31+34])
+                    Ppat_var "fname" (ast/pp/pp.ml[3,31+29]..[3,31+34])
+                ]
+              expression (ast/pp/pp.ml[4,72+6]..[13,421+63])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (ast/pp/pp.ml[4,72+10]..[4,72+23])
+                      Ppat_var "ocaml_version" (ast/pp/pp.ml[4,72+10]..[4,72+23])
+                    expression (ast/pp/pp.ml[5,98+8]..[9,319+18])
+                      Pexp_match
+                      expression (ast/pp/pp.ml[5,98+14]..[5,98+59])
+                        Pexp_apply
+                        expression (ast/pp/pp.ml[5,98+14]..[5,98+41])
+                          Pexp_ident "Supported_version.of_string" (ast/pp/pp.ml[5,98+14]..[5,98+41])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp.ml[5,98+42]..[5,98+59])
+                              Pexp_ident "ocaml_version_str" (ast/pp/pp.ml[5,98+42]..[5,98+59])
+                        ]
+                      [
+                        <case>
+                          pattern (ast/pp/pp.ml[6,163+10]..[6,163+16])
+                            Ppat_construct "Some" (ast/pp/pp.ml[6,163+10]..[6,163+14])
+                            Some
+                              pattern (ast/pp/pp.ml[6,163+15]..[6,163+16])
+                                Ppat_var "v" (ast/pp/pp.ml[6,163+15]..[6,163+16])
+                          expression (ast/pp/pp.ml[6,163+20]..[6,163+62])
+                            Pexp_apply
+                            expression (ast/pp/pp.ml[6,163+20]..[6,163+33])
+                              Pexp_ident "string_of_int" (ast/pp/pp.ml[6,163+20]..[6,163+33])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp.ml[6,163+34]..[6,163+62])
+                                  Pexp_apply
+                                  expression (ast/pp/pp.ml[6,163+35]..[6,163+59])
+                                    Pexp_ident "Supported_version.to_int" (ast/pp/pp.ml[6,163+35]..[6,163+59])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp.ml[6,163+60]..[6,163+61])
+                                        Pexp_ident "v" (ast/pp/pp.ml[6,163+60]..[6,163+61])
+                                  ]
+                            ]
+                        <case>
+                          pattern (ast/pp/pp.ml[7,226+10]..[7,226+14])
+                            Ppat_construct "None" (ast/pp/pp.ml[7,226+10]..[7,226+14])
+                            None
+                          expression (ast/pp/pp.ml[8,244+12]..[9,319+18])
+                            Pexp_sequence
+                            expression (ast/pp/pp.ml[8,244+12]..[8,244+73])
+                              Pexp_apply
+                              expression (ast/pp/pp.ml[8,244+12]..[8,244+26])
+                                Pexp_ident "Printf.eprintf" (ast/pp/pp.ml[8,244+12]..[8,244+26])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (ast/pp/pp.ml[8,244+27]..[8,244+55])
+                                    Pexp_constant PConst_string("Unknown OCaml version %s\n",(ast/pp/pp.ml[8,244+28]..[8,244+54]),None)
+                                <arg>
+                                Nolabel
+                                  expression (ast/pp/pp.ml[8,244+56]..[8,244+73])
+                                    Pexp_ident "ocaml_version_str" (ast/pp/pp.ml[8,244+56]..[8,244+73])
+                              ]
+                            expression (ast/pp/pp.ml[9,319+12]..[9,319+18])
+                              Pexp_apply
+                              expression (ast/pp/pp.ml[9,319+12]..[9,319+16])
+                                Pexp_ident "exit" (ast/pp/pp.ml[9,319+12]..[9,319+16])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (ast/pp/pp.ml[9,319+17]..[9,319+18])
+                                    Pexp_constant PConst_int (1,None)
+                              ]
+                      ]
+                ]
+                expression (ast/pp/pp.ml[11,347+6]..[13,421+63])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (ast/pp/pp.ml[11,347+10]..[11,347+12])
+                        Ppat_var "ic" (ast/pp/pp.ml[11,347+10]..[11,347+12])
+                      expression (ast/pp/pp.ml[11,347+15]..[11,347+32])
+                        Pexp_apply
+                        expression (ast/pp/pp.ml[11,347+15]..[11,347+26])
+                          Pexp_ident "open_in_bin" (ast/pp/pp.ml[11,347+15]..[11,347+26])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp.ml[11,347+27]..[11,347+32])
+                              Pexp_ident "fname" (ast/pp/pp.ml[11,347+27]..[11,347+32])
+                        ]
+                  ]
+                  expression (ast/pp/pp.ml[12,383+6]..[13,421+63])
+                    Pexp_sequence
+                    expression (ast/pp/pp.ml[12,383+6]..[12,383+36])
+                      Pexp_apply
+                      expression (ast/pp/pp.ml[12,383+6]..[12,383+19])
+                        Pexp_ident "Printf.printf" (ast/pp/pp.ml[12,383+6]..[12,383+19])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ast/pp/pp.ml[12,383+20]..[12,383+30])
+                            Pexp_constant PConst_string("# 1 %S\n",(ast/pp/pp.ml[12,383+21]..[12,383+29]),None)
+                        <arg>
+                        Nolabel
+                          expression (ast/pp/pp.ml[12,383+31]..[12,383+36])
+                            Pexp_ident "fname" (ast/pp/pp.ml[12,383+31]..[12,383+36])
+                      ]
+                    expression (ast/pp/pp.ml[13,421+6]..[13,421+63])
+                      Pexp_apply
+                      expression (ast/pp/pp.ml[13,421+6]..[13,421+24])
+                        Pexp_ident "Pp_rewrite.rewrite" (ast/pp/pp.ml[13,421+6]..[13,421+24])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ast/pp/pp.ml[13,421+25]..[13,421+38])
+                            Pexp_ident "ocaml_version" (ast/pp/pp.ml[13,421+25]..[13,421+38])
+                        <arg>
+                        Nolabel
+                          expression (ast/pp/pp.ml[13,421+39]..[13,421+63])
+                            Pexp_apply
+                            expression (ast/pp/pp.ml[13,421+40]..[13,421+59])
+                              Pexp_ident "Lexing.from_channel" (ast/pp/pp.ml[13,421+40]..[13,421+59])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp.ml[13,421+60]..[13,421+62])
+                                  Pexp_ident "ic" (ast/pp/pp.ml[13,421+60]..[13,421+62])
+                            ]
+                      ]
+            <case>
+              pattern (ast/pp/pp.ml[14,485+4]..[14,485+5])
+                Ppat_any
+              expression (ast/pp/pp.ml[15,494+6]..[16,572+12])
+                Pexp_sequence
+                expression (ast/pp/pp.ml[15,494+6]..[15,494+76])
+                  Pexp_apply
+                  expression (ast/pp/pp.ml[15,494+6]..[15,494+20])
+                    Pexp_ident "Printf.eprintf" (ast/pp/pp.ml[15,494+6]..[15,494+20])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp.ml[15,494+21]..[15,494+56])
+                        Pexp_constant PConst_string("%s: <ocaml-version> <file-name>\n",(ast/pp/pp.ml[15,494+22]..[15,494+55]),None)
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp.ml[15,494+57]..[15,494+76])
+                        Pexp_ident "Sys.executable_name" (ast/pp/pp.ml[15,494+57]..[15,494+76])
+                  ]
+                expression (ast/pp/pp.ml[16,572+6]..[16,572+12])
+                  Pexp_apply
+                  expression (ast/pp/pp.ml[16,572+6]..[16,572+10])
+                    Pexp_ident "exit" (ast/pp/pp.ml[16,572+6]..[16,572+10])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp.ml[16,572+11]..[16,572+12])
+                        Pexp_constant PConst_int (2,None)
+                  ]
+          ]
+    ]
+]
+
+let () =
+  match Sys.argv with
+  | [|_;ocaml_version_str;fname|] ->
+      let ocaml_version =
+        match Supported_version.of_string ocaml_version_str with
+        | Some v -> string_of_int (Supported_version.to_int v)
+        | None ->
+            (Printf.eprintf "Unknown OCaml version %s\n" ocaml_version_str;
+             exit 1) in
+      let ic = open_in_bin fname in
+      (Printf.printf "# 1 %S\n" fname;
+       Pp_rewrite.rewrite ocaml_version (Lexing.from_channel ic))
+  | _ ->
+      (Printf.eprintf "%s: <ocaml-version> <file-name>\n" Sys.executable_name;
+       exit 2)
+[
+  structure_item (ast/pp/pp.ml[1,0+0]..ast/pp/pp.ml[16,572+12])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/pp/pp.ml[1,0+4]..ast/pp/pp.ml[1,0+6])
+          Tpat_construct "()"
+          []
+        expression (ast/pp/pp.ml[2,9+2]..ast/pp/pp.ml[16,572+12])
+          Texp_match
+          expression (ast/pp/pp.ml[2,9+8]..ast/pp/pp.ml[2,9+16])
+            Texp_ident "Stdlib!.Sys.argv"
+          [
+            <case>
+              pattern (ast/pp/pp.ml[3,31+4]..ast/pp/pp.ml[3,31+37])
+                Tpat_value
+                pattern (ast/pp/pp.ml[3,31+4]..ast/pp/pp.ml[3,31+37])
+                  Tpat_array
+                  [
+                    pattern (ast/pp/pp.ml[3,31+7]..ast/pp/pp.ml[3,31+8])
+                      Tpat_any
+                    pattern (ast/pp/pp.ml[3,31+10]..ast/pp/pp.ml[3,31+27])
+                      Tpat_var "ocaml_version_str/170"
+                    pattern (ast/pp/pp.ml[3,31+29]..ast/pp/pp.ml[3,31+34])
+                      Tpat_var "fname/171"
+                  ]
+              expression (ast/pp/pp.ml[4,72+6]..ast/pp/pp.ml[13,421+63])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (ast/pp/pp.ml[4,72+10]..ast/pp/pp.ml[4,72+23])
+                      Tpat_var "ocaml_version/172"
+                    expression (ast/pp/pp.ml[5,98+8]..ast/pp/pp.ml[9,319+18])
+                      Texp_match
+                      expression (ast/pp/pp.ml[5,98+14]..ast/pp/pp.ml[5,98+59])
+                        Texp_apply
+                        expression (ast/pp/pp.ml[5,98+14]..ast/pp/pp.ml[5,98+41])
+                          Texp_ident "Supported_version!.of_string"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (ast/pp/pp.ml[5,98+42]..ast/pp/pp.ml[5,98+59])
+                              Texp_ident "ocaml_version_str/170"
+                        ]
+                      [
+                        <case>
+                          pattern (ast/pp/pp.ml[6,163+10]..ast/pp/pp.ml[6,163+16])
+                            Tpat_value
+                            pattern (ast/pp/pp.ml[6,163+10]..ast/pp/pp.ml[6,163+16])
+                              Tpat_construct "Some"
+                              [
+                                pattern (ast/pp/pp.ml[6,163+15]..ast/pp/pp.ml[6,163+16])
+                                  Tpat_var "v/174"
+                              ]
+                          expression (ast/pp/pp.ml[6,163+20]..ast/pp/pp.ml[6,163+62])
+                            Texp_apply
+                            expression (ast/pp/pp.ml[6,163+20]..ast/pp/pp.ml[6,163+33])
+                              Texp_ident "Stdlib!.string_of_int"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (ast/pp/pp.ml[6,163+34]..ast/pp/pp.ml[6,163+62])
+                                  Texp_apply
+                                  expression (ast/pp/pp.ml[6,163+35]..ast/pp/pp.ml[6,163+59])
+                                    Texp_ident "Supported_version!.to_int"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (ast/pp/pp.ml[6,163+60]..ast/pp/pp.ml[6,163+61])
+                                        Texp_ident "v/174"
+                                  ]
+                            ]
+                        <case>
+                          pattern (ast/pp/pp.ml[7,226+10]..ast/pp/pp.ml[7,226+14])
+                            Tpat_value
+                            pattern (ast/pp/pp.ml[7,226+10]..ast/pp/pp.ml[7,226+14])
+                              Tpat_construct "None"
+                              []
+                          expression (ast/pp/pp.ml[8,244+12]..ast/pp/pp.ml[9,319+18])
+                            Texp_sequence
+                            expression (ast/pp/pp.ml[8,244+12]..ast/pp/pp.ml[8,244+73])
+                              Texp_apply
+                              expression (ast/pp/pp.ml[8,244+12]..ast/pp/pp.ml[8,244+26])
+                                Texp_ident "Stdlib!.Printf.eprintf"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55])
+                                    Texp_construct "CamlinternalFormatBasics.Format"
+                                    [
+                                      expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.String_literal"
+                                        [
+                                          expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                            Texp_constant Const_string("Unknown OCaml version ",(ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost,None)
+                                          expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                            Texp_construct "CamlinternalFormatBasics.String"
+                                            [
+                                              expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                                Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                []
+                                              expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                                Texp_construct "CamlinternalFormatBasics.Char_literal"
+                                                [
+                                                  expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                                    Texp_constant Const_char 0a
+                                                  expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                                    Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                    []
+                                                ]
+                                            ]
+                                        ]
+                                      expression (ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost
+                                        Texp_constant Const_string("Unknown OCaml version %s\n",(ast/pp/pp.ml[8,244+27]..ast/pp/pp.ml[8,244+55]) ghost,None)
+                                    ]
+                                <arg>
+                                  Nolabel
+                                  expression (ast/pp/pp.ml[8,244+56]..ast/pp/pp.ml[8,244+73])
+                                    Texp_ident "ocaml_version_str/170"
+                              ]
+                            expression (ast/pp/pp.ml[9,319+12]..ast/pp/pp.ml[9,319+18])
+                              Texp_apply
+                              expression (ast/pp/pp.ml[9,319+12]..ast/pp/pp.ml[9,319+16])
+                                Texp_ident "Stdlib!.exit"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (ast/pp/pp.ml[9,319+17]..ast/pp/pp.ml[9,319+18])
+                                    Texp_constant Const_int 1
+                              ]
+                      ]
+                      []
+                ]
+                expression (ast/pp/pp.ml[11,347+6]..ast/pp/pp.ml[13,421+63])
+                  Texp_let Nonrec
+                  [
+                    <def>
+                      pattern (ast/pp/pp.ml[11,347+10]..ast/pp/pp.ml[11,347+12])
+                        Tpat_var "ic/208"
+                      expression (ast/pp/pp.ml[11,347+15]..ast/pp/pp.ml[11,347+32])
+                        Texp_apply
+                        expression (ast/pp/pp.ml[11,347+15]..ast/pp/pp.ml[11,347+26])
+                          Texp_ident "Stdlib!.open_in_bin"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (ast/pp/pp.ml[11,347+27]..ast/pp/pp.ml[11,347+32])
+                              Texp_ident "fname/171"
+                        ]
+                  ]
+                  expression (ast/pp/pp.ml[12,383+6]..ast/pp/pp.ml[13,421+63])
+                    Texp_sequence
+                    expression (ast/pp/pp.ml[12,383+6]..ast/pp/pp.ml[12,383+36])
+                      Texp_apply
+                      expression (ast/pp/pp.ml[12,383+6]..ast/pp/pp.ml[12,383+19])
+                        Texp_ident "Stdlib!.Printf.printf"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30])
+                            Texp_construct "CamlinternalFormatBasics.Format"
+                            [
+                              expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                Texp_construct "CamlinternalFormatBasics.String_literal"
+                                [
+                                  expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                    Texp_constant Const_string("# 1 ",(ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost,None)
+                                  expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                    Texp_construct "CamlinternalFormatBasics.Caml_string"
+                                    [
+                                      expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.No_padding"
+                                        []
+                                      expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.Char_literal"
+                                        [
+                                          expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                            Texp_constant Const_char 0a
+                                          expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                            Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                            []
+                                        ]
+                                    ]
+                                ]
+                              expression (ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost
+                                Texp_constant Const_string("# 1 %S\n",(ast/pp/pp.ml[12,383+20]..ast/pp/pp.ml[12,383+30]) ghost,None)
+                            ]
+                        <arg>
+                          Nolabel
+                          expression (ast/pp/pp.ml[12,383+31]..ast/pp/pp.ml[12,383+36])
+                            Texp_ident "fname/171"
+                      ]
+                    expression (ast/pp/pp.ml[13,421+6]..ast/pp/pp.ml[13,421+63])
+                      Texp_apply
+                      expression (ast/pp/pp.ml[13,421+6]..ast/pp/pp.ml[13,421+24])
+                        Texp_ident "Dune__exe!.Pp_rewrite.rewrite"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (ast/pp/pp.ml[13,421+25]..ast/pp/pp.ml[13,421+38])
+                            Texp_ident "ocaml_version/172"
+                        <arg>
+                          Nolabel
+                          expression (ast/pp/pp.ml[13,421+39]..ast/pp/pp.ml[13,421+63])
+                            Texp_apply
+                            expression (ast/pp/pp.ml[13,421+40]..ast/pp/pp.ml[13,421+59])
+                              Texp_ident "Stdlib!.Lexing.from_channel"
+                            [
+                              <arg>
+                                Optional "with_positions"
+                                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                  Texp_construct "None"
+                                  []
+                              <arg>
+                                Nolabel
+                                expression (ast/pp/pp.ml[13,421+60]..ast/pp/pp.ml[13,421+62])
+                                  Texp_ident "ic/208"
+                            ]
+                      ]
+            <case>
+              pattern (ast/pp/pp.ml[14,485+4]..ast/pp/pp.ml[14,485+5])
+                Tpat_value
+                pattern (ast/pp/pp.ml[14,485+4]..ast/pp/pp.ml[14,485+5])
+                  Tpat_any
+              expression (ast/pp/pp.ml[15,494+6]..ast/pp/pp.ml[16,572+12])
+                Texp_sequence
+                expression (ast/pp/pp.ml[15,494+6]..ast/pp/pp.ml[15,494+76])
+                  Texp_apply
+                  expression (ast/pp/pp.ml[15,494+6]..ast/pp/pp.ml[15,494+20])
+                    Texp_ident "Stdlib!.Printf.eprintf"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56])
+                        Texp_construct "CamlinternalFormatBasics.Format"
+                        [
+                          expression (ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost
+                            Texp_construct "CamlinternalFormatBasics.String"
+                            [
+                              expression (ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost
+                                Texp_construct "CamlinternalFormatBasics.No_padding"
+                                []
+                              expression (ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost
+                                Texp_construct "CamlinternalFormatBasics.String_literal"
+                                [
+                                  expression (ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost
+                                    Texp_constant Const_string(": <ocaml-version> <file-name>\n",(ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost,None)
+                                  expression (ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost
+                                    Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                    []
+                                ]
+                            ]
+                          expression (ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost
+                            Texp_constant Const_string("%s: <ocaml-version> <file-name>\n",(ast/pp/pp.ml[15,494+21]..ast/pp/pp.ml[15,494+56]) ghost,None)
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (ast/pp/pp.ml[15,494+57]..ast/pp/pp.ml[15,494+76])
+                        Texp_ident "Stdlib!.Sys.executable_name"
+                  ]
+                expression (ast/pp/pp.ml[16,572+6]..ast/pp/pp.ml[16,572+12])
+                  Texp_apply
+                  expression (ast/pp/pp.ml[16,572+6]..ast/pp/pp.ml[16,572+10])
+                    Texp_ident "Stdlib!.exit"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (ast/pp/pp.ml[16,572+11]..ast/pp/pp.ml[16,572+12])
+                        Texp_constant Const_int 2
+                  ]
+          ]
+          []
+    ]
+]
+
+(seq
+  (let
+    (*match*/634 =
+       (let (*match*/629 = (caml_sys_argv 0))
+         (catch
+           (let (len/631 =a (array.length[addr] *match*/629))
+             (if (!= len/631 3) (exit 1)
+               (let
+                 (*match*/630 =o (array.unsafe_get[addr] *match*/629 0)
+                  ocaml_version_str/170 =o
+                    (array.unsafe_get[addr] *match*/629 1)
+                  fname/171 =o (array.unsafe_get[addr] *match*/629 2)
+                  ocaml_version/172 =
+                    (let
+                      (*match*/354 =
+                         (apply (field_imm 3 (global Supported_version!))
+                           ocaml_version_str/170))
+                      (if *match*/354
+                        (let (v/174 =a (field_imm 0 *match*/354))
+                          (apply (field_imm 35 (global Stdlib!))
+                            (apply (field_imm 2 (global Supported_version!))
+                              v/174)))
+                        (seq
+                          (apply (field_imm 2 (global Stdlib__printf!))
+                            [0:
+                             [11:
+                              "Unknown OCaml version " [2: 0 [12: '\n' 0]]]
+                             "Unknown OCaml version %s\n"]
+                            ocaml_version_str/170)
+                          (apply (field_imm 101 (global Stdlib!)) 1))))
+                  ic/208 = (apply (field_imm 82 (global Stdlib!)) fname/171))
+                 (seq
+                   (apply (field_imm 1 (global Stdlib__printf!))
+                     [0: [11: "# 1 " [3: 0 [12: '\n' 0]]] "# 1 %S\n"]
+                     fname/171)
+                   (apply (field_imm 0 (global Dune__exe__Pp_rewrite!))
+                     ocaml_version/172
+                     (apply (field_imm 1 (global Stdlib__lexing!)) 0 ic/208))))))
+          with (1)
+           (seq
+             (apply (field_imm 2 (global Stdlib__printf!))
+               [0:
+                [2: 0 [11: ": <ocaml-version> <file-name>\n" 0]]
+                "%s: <ocaml-version> <file-name>\n"]
+               (field_imm 0 (global Stdlib__sys!)))
+             (apply (field_imm 101 (global Stdlib!)) 2)))))
+    0)
+  0)
+(seq
+  (let
+    (*match*/634 =
+       (let (*match*/629 = (caml_sys_argv 0))
+         (if (!= (array.length[addr] *match*/629) 3)
+           (seq
+             (apply (field_imm 2 (global Stdlib__printf!))
+               [0:
+                [2: 0 [11: ": <ocaml-version> <file-name>\n" 0]]
+                "%s: <ocaml-version> <file-name>\n"]
+               (field_imm 0 (global Stdlib__sys!)))
+             (apply (field_imm 101 (global Stdlib!)) 2))
+           (let
+             (ocaml_version_str/170 =o (array.unsafe_get[addr] *match*/629 1)
+              fname/171 =o (array.unsafe_get[addr] *match*/629 2)
+              ocaml_version/172 =
+                (let
+                  (*match*/354 =
+                     (apply (field_imm 3 (global Supported_version!))
+                       ocaml_version_str/170))
+                  (if *match*/354
+                    (apply (field_imm 35 (global Stdlib!))
+                      (apply (field_imm 2 (global Supported_version!))
+                        (field_imm 0 *match*/354)))
+                    (seq
+                      (apply (field_imm 2 (global Stdlib__printf!))
+                        [0:
+                         [11: "Unknown OCaml version " [2: 0 [12: '\n' 0]]]
+                         "Unknown OCaml version %s\n"]
+                        ocaml_version_str/170)
+                      (apply (field_imm 101 (global Stdlib!)) 1))))
+              ic/208 = (apply (field_imm 82 (global Stdlib!)) fname/171))
+             (seq
+               (apply (field_imm 1 (global Stdlib__printf!))
+                 [0: [11: "# 1 " [3: 0 [12: '\n' 0]]] "# 1 %S\n"] fname/171)
+               (apply (field_imm 0 (global Dune__exe__Pp_rewrite!))
+                 ocaml_version/172
+                 (apply (field_imm 1 (global Stdlib__lexing!)) 0 ic/208)))))))
+    0)
+  0)

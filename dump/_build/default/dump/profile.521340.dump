@@ -1,0 +1,8 @@
+0.294s  233MB 32.5MB 32.5MB src/location_check.ml
+  0.007s 6.24MB 2.03MB 2.03MB parsing
+    0.007s 6.24MB 2.03MB 2.03MB parser
+  0.224s  130MB 28.8MB 30.9MB typing
+  0.014s 14.5MB 0.68MB 31.6MB transl
+  0.021s 36.0MB 0.85MB 32.4MB generate
+  0.028s 46.2MB 0.12MB 32.5MB other
+0.007s ------ ------ ------ other

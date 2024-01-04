@@ -1,0 +1,6 @@
+0.046s 2.72MB 1.40MB 1.40MB test/driver/skip-hash-bang/test2.exe
+  0.002s 2.72MB 1.40MB 1.40MB regalloc
+  0.003s ------ ------ ------ assemble
+  0.040s ------ ------ ------ c-linker
+  0.001s ------ ------ ------ other
+0.005s ------ ------ ------ other

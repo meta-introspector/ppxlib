@@ -1,0 +1,6 @@
+0.079s 20.9MB 6.57MB 6.57MB src/name.mli
+  0.006s 2.89MB 1.57MB 1.57MB parsing
+    0.006s 2.89MB 1.57MB 1.57MB parser
+  0.063s 14.0MB 4.46MB 6.03MB typing
+  0.010s 4.00MB 0.53MB 6.57MB other
+0.008s ------ ------ ------ other

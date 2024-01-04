@@ -1,0 +1,4 @@
+0.010s - - - test/deriving/inline/example/ppx_deriving_example.cmxs
+  0.003s - - - assemble
+  0.007s - - - c-linker
+0.004s - - - other

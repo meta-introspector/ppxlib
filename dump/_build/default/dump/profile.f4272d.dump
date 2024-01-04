@@ -1,0 +1,18 @@
+0.264s 90.4MB 22.3MB 24.0MB metaquot_lifters/ppxlib_metaquot_lifters.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ parser
+  0.231s 62.7MB 20.6MB 22.3MB typing
+  0.002s 0.04MB ------ ------ transl
+  0.019s 15.4MB 1.37MB 23.7MB generate
+    0.010s 11.0MB 1.03MB 23.4MB compile_phrases
+      0.001s 0.17MB ------ ------ selection
+      0.001s 2.00MB 0.18MB 22.5MB liveness
+      0.001s ------ ------ ------ spill
+      ------ 0.17MB ------ ------ split
+      0.004s 6.36MB 0.65MB 23.2MB regalloc
+      0.001s 0.31MB ------ ------ emit
+      0.001s 2.00MB 0.18MB 23.4MB other
+    0.004s ------ ------ ------ assemble
+    0.004s 4.37MB 0.34MB 23.7MB other
+  0.013s 12.2MB 0.31MB 24.0MB other
+0.016s 3.02MB 1.72MB ------ other

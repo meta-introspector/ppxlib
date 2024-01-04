@@ -1,0 +1,1573 @@
+[
+  structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Pstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[1,0+0]..[1,0+9])
+    Pstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[1,0+5]..[1,0+9])
+      Pmod_ident "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[1,0+5]..[1,0+9])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[2,10+0]..[2,10+11])
+    Pstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[2,10+5]..[2,10+11])
+      Pmod_ident "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[2,10+5]..[2,10+11])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[3,22+0]..[3,22+24])
+    Pstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[3,22+5]..[3,22+24])
+      Pmod_ident "Ast_builder.Default" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[3,22+5]..[3,22+24])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+0]..[4,47+20])
+    Pstr_module
+    "Attrs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+7]..[4,47+12])
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+15]..[4,47+20])
+        Pmod_ident "Attrs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+15]..[4,47+20])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+0]..[5,68+46])
+    Pstr_module
+    "Record_field_attrs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+7]..[5,68+25])
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+28]..[5,68+46])
+        Pmod_ident "Record_field_attrs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+28]..[5,68+46])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[6,115+0]..[6,115+19])
+    Pstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[6,115+5]..[6,115+19])
+      Pmod_ident "Expand_sexp_of" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[6,115+5]..[6,115+19])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[7,135+0]..[7,135+19])
+    Pstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[7,135+5]..[7,135+19])
+      Pmod_ident "Expand_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[7,135+5]..[7,135+19])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[9,156+0]..[19,576+3])
+    Pstr_module
+    "Sexp_of" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[9,156+7]..[9,156+14])
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[9,156+17]..[19,576+3])
+        Pmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+2]..[11,206+86])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+6]..[10,180+20])
+                  Ppat_var "type_extension" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+6]..[10,180+20])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+21]..[11,206+86]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+21]..[10,180+23])
+                    Ppat_var "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+21]..[10,180+23])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+4]..[11,206+86])
+                    Pexp_apply
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+4]..[11,206+40])
+                      Pexp_ident "Sig_generate_sexp_of.type_of_sexp_of" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+4]..[11,206+40])
+                    [
+                      <arg>
+                      Labelled "loc"
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+46]..[11,206+83])
+                          Pexp_record
+                          [
+                            "loc_ghost" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+65]..[11,206+74])
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+77]..[11,206+81])
+                                Pexp_construct "true" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+77]..[11,206+81])
+                                None
+                          ]
+                          Some
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+48]..[11,206+59])
+                              Pexp_field
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+48]..[11,206+50])
+                                Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+48]..[11,206+50])
+                              "ptyp_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+51]..[11,206+59])
+                      <arg>
+                      Nolabel
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+84]..[11,206+86])
+                          Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+84]..[11,206+86])
+                    ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+2]..[14,299+62])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+6]..[14,299+15])
+                  Ppat_var "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+6]..[14,299+15])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+16]..[14,299+62]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+16]..[14,299+18])
+                    Ppat_var "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+16]..[14,299+18])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+21]..[14,299+62])
+                    Pexp_apply
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+21]..[14,299+59])
+                      Pexp_ident "Str_generate_sexp_of.sexp_of_core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+21]..[14,299+59])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+60]..[14,299+62])
+                          Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+60]..[14,299+62])
+                    ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+2]..[15,362+49])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+6]..[15,362+19])
+                  Ppat_var "sig_type_decl" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+6]..[15,362+19])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+22]..[15,362+49])
+                  Pexp_ident "Sig_generate_sexp_of.mk_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+22]..[15,362+49])
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+2]..[16,412+53])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+6]..[16,412+19])
+                  Ppat_var "sig_exception" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+6]..[16,412+19])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+22]..[16,412+53])
+                  Pexp_ident "Sig_generate_sexp_of.mk_sig_exn" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+22]..[16,412+53])
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+2]..[17,466+54])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+6]..[17,466+19])
+                  Ppat_var "str_type_decl" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+6]..[17,466+19])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+22]..[17,466+54])
+                  Pexp_ident "Str_generate_sexp_of.sexp_of_tds" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+22]..[17,466+54])
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+2]..[18,521+54])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+6]..[18,521+19])
+                  Ppat_var "str_exception" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+6]..[18,521+19])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+22]..[18,521+54])
+                  Pexp_ident "Str_generate_sexp_of.sexp_of_exn" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+22]..[18,521+54])
+            ]
+        ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+0]..[21,581+43])
+    Pstr_module
+    "Sexp_grammar" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+7]..[21,581+19])
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+22]..[21,581+43])
+        Pmod_ident "Ppx_sexp_conv_grammar" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+22]..[21,581+43])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[23,626+0]..[34,999+3])
+    Pstr_module
+    "Of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[23,626+7]..[23,626+14])
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[23,626+17]..[34,999+3])
+        Pmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+2]..[24,650+82])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+6]..[24,650+20])
+                  Ppat_var "type_extension" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+6]..[24,650+20])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+21]..[24,650+82]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+21]..[24,650+23])
+                    Ppat_var "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+21]..[24,650+23])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+26]..[24,650+82])
+                    Pexp_apply
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+26]..[24,650+62])
+                      Pexp_ident "Sig_generate_of_sexp.type_of_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+26]..[24,650+62])
+                    [
+                      <arg>
+                      Labelled "loc"
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+68]..[24,650+79])
+                          Pexp_field
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+68]..[24,650+70])
+                            Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+68]..[24,650+70])
+                          "ptyp_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+71]..[24,650+79])
+                      <arg>
+                      Nolabel
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+80]..[24,650+82])
+                          Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+80]..[24,650+82])
+                    ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+2]..[25,733+56])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+6]..[25,733+15])
+                  Ppat_var "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+6]..[25,733+15])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+18]..[25,733+56])
+                  Pexp_ident "Str_generate_of_sexp.core_type_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+18]..[25,733+56])
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+2]..[28,834+52])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+6]..[27,791+19])
+                  Ppat_var "sig_type_decl" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+6]..[27,791+19])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+20]..[28,834+52]) ghost
+                  Pexp_fun
+                  Labelled "poly"
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+21]..[27,791+25])
+                    Ppat_var "poly" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+21]..[27,791+25])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+26]..[28,834+52]) ghost
+                    Pexp_fun
+                    Labelled "loc"
+                    None
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+27]..[27,791+30])
+                      Ppat_var "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+27]..[27,791+30])
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+31]..[28,834+52]) ghost
+                      Pexp_fun
+                      Labelled "path"
+                      None
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+32]..[27,791+36])
+                        Ppat_var "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+32]..[27,791+36])
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+37]..[28,834+52]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+37]..[27,791+40])
+                          Ppat_var "tds" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+37]..[27,791+40])
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+4]..[28,834+52])
+                          Pexp_apply
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+4]..[28,834+31])
+                            Pexp_ident "Sig_generate_of_sexp.mk_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+4]..[28,834+31])
+                          [
+                            <arg>
+                            Labelled "poly"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+33]..[28,834+37])
+                                Pexp_ident "poly" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+33]..[28,834+37])
+                            <arg>
+                            Labelled "loc"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+39]..[28,834+42])
+                                Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+39]..[28,834+42])
+                            <arg>
+                            Labelled "path"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+44]..[28,834+48])
+                                Pexp_ident "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+44]..[28,834+48])
+                            <arg>
+                            Nolabel
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+49]..[28,834+52])
+                                Pexp_ident "tds" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+49]..[28,834+52])
+                          ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+2]..[32,936+57])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+6]..[31,893+19])
+                  Ppat_var "str_type_decl" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+6]..[31,893+19])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+20]..[32,936+57]) ghost
+                  Pexp_fun
+                  Labelled "loc"
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+21]..[31,893+24])
+                    Ppat_var "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+21]..[31,893+24])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+25]..[32,936+57]) ghost
+                    Pexp_fun
+                    Labelled "poly"
+                    None
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+26]..[31,893+30])
+                      Ppat_var "poly" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+26]..[31,893+30])
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+31]..[32,936+57]) ghost
+                      Pexp_fun
+                      Labelled "path"
+                      None
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+32]..[31,893+36])
+                        Ppat_var "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+32]..[31,893+36])
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+37]..[32,936+57]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+37]..[31,893+40])
+                          Ppat_var "tds" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+37]..[31,893+40])
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+4]..[32,936+57])
+                          Pexp_apply
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+4]..[32,936+36])
+                            Pexp_ident "Str_generate_of_sexp.tds_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+4]..[32,936+36])
+                          [
+                            <arg>
+                            Labelled "loc"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+38]..[32,936+41])
+                                Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+38]..[32,936+41])
+                            <arg>
+                            Labelled "poly"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+43]..[32,936+47])
+                                Pexp_ident "poly" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+43]..[32,936+47])
+                            <arg>
+                            Labelled "path"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+49]..[32,936+53])
+                                Pexp_ident "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+49]..[32,936+53])
+                            <arg>
+                            Nolabel
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+54]..[32,936+57])
+                                Pexp_ident "tds" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+54]..[32,936+57])
+                          ]
+            ]
+        ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[36,1004+0]..[55,1515+3])
+    Pstr_module
+    "Sig_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[36,1004+7]..[36,1004+15])
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[36,1004+18]..[55,1515+3])
+        Pmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+2]..[41,1195+7])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+6]..[37,1029+12])
+                  Ppat_var "mk_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+6]..[37,1029+12])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+13]..[41,1195+7]) ghost
+                  Pexp_fun
+                  Labelled "loc"
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+14]..[37,1029+17])
+                    Ppat_var "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+14]..[37,1029+17])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+18]..[41,1195+7]) ghost
+                    Pexp_fun
+                    Labelled "path"
+                    None
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+19]..[37,1029+23])
+                      Ppat_var "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+19]..[37,1029+23])
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+24]..[41,1195+7]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+24]..[37,1029+29])
+                        Ppat_var "decls" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+24]..[37,1029+29])
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[38,1061+4]..[41,1195+7])
+                        Pexp_apply
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[38,1061+4]..[38,1061+15])
+                          Pexp_ident "List.concat" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[38,1061+4]..[38,1061+15])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+6]..[41,1195+7])
+                              Pexp_construct "::" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+8]..[41,1195+7]) ghost
+                              Some
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+8]..[41,1195+7]) ghost
+                                  Pexp_tuple
+                                  [
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+8]..[39,1077+52])
+                                      Pexp_apply
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+8]..[39,1077+35])
+                                        Pexp_ident "Sig_generate_sexp_of.mk_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+8]..[39,1077+35])
+                                      [
+                                        <arg>
+                                        Labelled "loc"
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+37]..[39,1077+40])
+                                            Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+37]..[39,1077+40])
+                                        <arg>
+                                        Labelled "path"
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+42]..[39,1077+46])
+                                            Pexp_ident "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+42]..[39,1077+46])
+                                        <arg>
+                                        Nolabel
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+47]..[39,1077+52])
+                                            Pexp_ident "decls" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+47]..[39,1077+52])
+                                      ]
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..[41,1195+7]) ghost
+                                      Pexp_construct "::" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..[41,1195+7]) ghost
+                                      Some
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..[41,1195+7]) ghost
+                                          Pexp_tuple
+                                          [
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..[40,1130+64])
+                                              Pexp_apply
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..[40,1130+35])
+                                                Pexp_ident "Sig_generate_of_sexp.mk_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..[40,1130+35])
+                                              [
+                                                <arg>
+                                                Labelled "poly"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+42]..[40,1130+47])
+                                                    Pexp_construct "false" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+42]..[40,1130+47])
+                                                    None
+                                                <arg>
+                                                Labelled "loc"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+49]..[40,1130+52])
+                                                    Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+49]..[40,1130+52])
+                                                <arg>
+                                                Labelled "path"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+54]..[40,1130+58])
+                                                    Pexp_ident "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+54]..[40,1130+58])
+                                                <arg>
+                                                Nolabel
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+59]..[40,1130+64])
+                                                    Pexp_ident "decls" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+59]..[40,1130+64])
+                                              ]
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+6]..[41,1195+7]) ghost
+                                              Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+6]..[41,1195+7]) ghost
+                                              None
+                                          ]
+                                  ]
+                        ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+2]..[53,1472+37])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+6]..[44,1209+19])
+                  Ppat_var "sig_type_decl" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+6]..[44,1209+19])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+20]..[53,1472+37]) ghost
+                  Pexp_fun
+                  Labelled "loc"
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+21]..[44,1209+24])
+                    Ppat_var "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+21]..[44,1209+24])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+25]..[53,1472+37]) ghost
+                    Pexp_fun
+                    Labelled "path"
+                    None
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+26]..[44,1209+30])
+                      Ppat_var "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+26]..[44,1209+30])
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+31]..[53,1472+37]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+31]..[44,1209+52])
+                        Ppat_alias "decls" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+46]..[44,1209+51])
+                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+32]..[44,1209+42])
+                          Ppat_tuple
+                          [
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+33]..[44,1209+36])
+                              Ppat_var "_rf" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+33]..[44,1209+36])
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+38]..[44,1209+41])
+                              Ppat_var "tds" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+38]..[44,1209+41])
+                          ]
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[45,1264+4]..[53,1472+37])
+                        Pexp_match
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[46,1274+6]..[50,1387+11])
+                          Pexp_apply
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[46,1274+6]..[46,1274+18])
+                            Pexp_ident "mk_named_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[46,1274+6]..[46,1274+18])
+                          [
+                            <arg>
+                            Labelled "loc"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[47,1293+9]..[47,1293+12])
+                                Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[47,1293+9]..[47,1293+12])
+                            <arg>
+                            Labelled "sg_name"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[48,1306+17]..[48,1306+38])
+                                Pexp_constant PConst_string("Sexplib0.Sexpable.S",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[48,1306+18]..[48,1306+37]),None)
+                            <arg>
+                            Labelled "handle_polymorphic_variant"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[49,1345+36]..[49,1345+41])
+                                Pexp_construct "false" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[49,1345+36]..[49,1345+41])
+                                None
+                            <arg>
+                            Nolabel
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[50,1387+8]..[50,1387+11])
+                                Pexp_ident "tds" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[50,1387+8]..[50,1387+11])
+                          ]
+                        [
+                          <case>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+6]..[52,1408+24])
+                              Ppat_construct "Some" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+6]..[52,1408+10])
+                              Some
+                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+11]..[52,1408+24])
+                                  Ppat_var "include_infos" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+11]..[52,1408+24])
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+28]..[52,1408+63])
+                              Pexp_construct "::" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+30]..[52,1408+63]) ghost
+                              Some
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+30]..[52,1408+63]) ghost
+                                  Pexp_tuple
+                                  [
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+30]..[52,1408+61])
+                                      Pexp_apply
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+30]..[52,1408+42])
+                                        Pexp_ident "psig_include" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+30]..[52,1408+42])
+                                      [
+                                        <arg>
+                                        Labelled "loc"
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+44]..[52,1408+47])
+                                            Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+44]..[52,1408+47])
+                                        <arg>
+                                        Nolabel
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+48]..[52,1408+61])
+                                            Pexp_ident "include_infos" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+48]..[52,1408+61])
+                                      ]
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+62]..[52,1408+63]) ghost
+                                      Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+62]..[52,1408+63]) ghost
+                                      None
+                                  ]
+                          <case>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+6]..[53,1472+10])
+                              Ppat_construct "None" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+6]..[53,1472+10])
+                              None
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+14]..[53,1472+37])
+                              Pexp_apply
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+14]..[53,1472+20])
+                                Pexp_ident "mk_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+14]..[53,1472+20])
+                              [
+                                <arg>
+                                Labelled "loc"
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+22]..[53,1472+25])
+                                    Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+22]..[53,1472+25])
+                                <arg>
+                                Labelled "path"
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+27]..[53,1472+31])
+                                    Pexp_ident "path" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+27]..[53,1472+31])
+                                <arg>
+                                Nolabel
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+32]..[53,1472+37])
+                                    Pexp_ident "decls" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+32]..[53,1472+37])
+                              ]
+                        ]
+            ]
+        ]
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+open Base
+open Ppxlib
+open Ast_builder.Default
+module Attrs = Attrs
+module Record_field_attrs = Record_field_attrs
+open Expand_sexp_of
+open Expand_of_sexp
+module Sexp_of =
+  struct
+    let type_extension ty =
+      Sig_generate_sexp_of.type_of_sexp_of
+        ~loc:{ (ty.ptyp_loc) with loc_ghost = true } ty
+    let core_type ty = Str_generate_sexp_of.sexp_of_core_type ty
+    let sig_type_decl = Sig_generate_sexp_of.mk_sig
+    let sig_exception = Sig_generate_sexp_of.mk_sig_exn
+    let str_type_decl = Str_generate_sexp_of.sexp_of_tds
+    let str_exception = Str_generate_sexp_of.sexp_of_exn
+  end
+module Sexp_grammar = Ppx_sexp_conv_grammar
+module Of_sexp =
+  struct
+    let type_extension ty =
+      Sig_generate_of_sexp.type_of_of_sexp ~loc:(ty.ptyp_loc) ty
+    let core_type = Str_generate_of_sexp.core_type_of_sexp
+    let sig_type_decl ~poly  ~loc  ~path  tds =
+      Sig_generate_of_sexp.mk_sig ~poly ~loc ~path tds
+    let str_type_decl ~loc  ~poly  ~path  tds =
+      Str_generate_of_sexp.tds_of_sexp ~loc ~poly ~path tds
+  end
+module Sig_sexp =
+  struct
+    let mk_sig ~loc  ~path  decls =
+      List.concat
+        [Sig_generate_sexp_of.mk_sig ~loc ~path decls;
+        Sig_generate_of_sexp.mk_sig ~poly:false ~loc ~path decls]
+    let sig_type_decl ~loc  ~path  ((_rf, tds) as decls) =
+      match mk_named_sig ~loc ~sg_name:"Sexplib0.Sexpable.S"
+              ~handle_polymorphic_variant:false tds
+      with
+      | Some include_infos -> [psig_include ~loc include_infos]
+      | None -> mk_sig ~loc ~path decls
+  end
+[
+  structure_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[1,0+9])
+    Tstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[1,0+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[1,0+9])
+      Tmod_ident "Base!"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[2,10+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[2,10+11])
+    Tstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[2,10+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[2,10+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[3,22+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[3,22+24])
+    Tstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[3,22+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[3,22+24])
+      Tmod_ident "Ppxlib!.Ast_builder.Default"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+20])
+    Tstr_module
+    Attrs/2223
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[4,47+20])
+        Tmod_ident "Ppx_sexp_conv_expander__!.Attrs"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+46])
+    Tstr_module
+    Record_field_attrs/2224
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[5,68+46])
+        Tmod_ident "Ppx_sexp_conv_expander__!.Record_field_attrs"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[6,115+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[6,115+19])
+    Tstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[6,115+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[6,115+19])
+      Tmod_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[7,135+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[7,135+19])
+    Tstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[7,135+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[7,135+19])
+      Tmod_ident "Ppx_sexp_conv_expander__!.Expand_of_sexp"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[9,156+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[19,576+3])
+    Tstr_module
+    Sexp_of/3080
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[9,156+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[19,576+3])
+        Tmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+86])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+20])
+                  Tpat_var "type_extension/2243"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+86]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[10,180+23])
+                        Tpat_var "ty/2244"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+86])
+                        Texp_apply
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+40])
+                          Texp_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of.Sig_generate_sexp_of.type_of_sexp_of"
+                        [
+                          <arg>
+                            Labelled "loc"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+46]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+83])
+                              Texp_record
+                                fields =
+                                  [
+                                    <kept>                                    <kept>                                    "loc_ghost"
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+77]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+81])
+                                        Texp_construct "true"
+                                        []
+                                  ]
+                                representation =
+                                  Record_regular
+                                extended_expression =
+                                  Some
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+48]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+59])
+                                      Texp_field
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+48]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+50])
+                                        Texp_ident "ty/2244"
+                                      "ptyp_loc"
+                          <arg>
+                            Nolabel
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+84]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[11,206+86])
+                              Texp_ident "ty/2244"
+                        ]
+                  ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+62])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+15])
+                  Tpat_var "core_type/3070"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+62]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+18])
+                        Tpat_var "ty/3072"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+62])
+                        Texp_apply
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+59])
+                          Texp_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of.Str_generate_sexp_of.sexp_of_core_type"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+60]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[14,299+62])
+                              Texp_ident "ty/3072"
+                        ]
+                  ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+49])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+19])
+                  Tpat_var "sig_type_decl/3076"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[15,362+49])
+                  Texp_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of.Sig_generate_sexp_of.mk_sig"
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+53])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+19])
+                  Tpat_var "sig_exception/3077"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[16,412+53])
+                  Texp_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of.Sig_generate_sexp_of.mk_sig_exn"
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+54])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+19])
+                  Tpat_var "str_type_decl/3078"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[17,466+54])
+                  Texp_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of.Str_generate_sexp_of.sexp_of_tds"
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+54])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+19])
+                  Tpat_var "str_exception/3079"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[18,521+54])
+                  Texp_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of.Str_generate_sexp_of.sexp_of_exn"
+            ]
+        ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+43])
+    Tstr_module
+    Sexp_grammar/3081
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[21,581+43])
+        Tmod_ident "Ppx_sexp_conv_expander__!.Ppx_sexp_conv_grammar"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[23,626+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[34,999+3])
+    Tstr_module
+    Of_sexp/3705
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[23,626+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[34,999+3])
+        Tmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+82])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+20])
+                  Tpat_var "type_extension/3082"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+82]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+23])
+                        Tpat_var "ty/3083"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+82])
+                        Texp_apply
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+62])
+                          Texp_ident "Ppx_sexp_conv_expander__!.Expand_of_sexp.Sig_generate_of_sexp.type_of_of_sexp"
+                        [
+                          <arg>
+                            Labelled "loc"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+68]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+79])
+                              Texp_field
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+68]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+70])
+                                Texp_ident "ty/3083"
+                              "ptyp_loc"
+                          <arg>
+                            Nolabel
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+80]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[24,650+82])
+                              Texp_ident "ty/3083"
+                        ]
+                  ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+56])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+15])
+                  Tpat_var "core_type/3088"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[25,733+56])
+                  Texp_ident "Ppx_sexp_conv_expander__!.Expand_of_sexp.Str_generate_of_sexp.core_type_of_sexp"
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+52])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+19])
+                  Tpat_var "sig_type_decl/3091"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+52]) ghost
+                  Texp_function
+                  Labelled "poly"
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+25])
+                        Tpat_var "poly/3093"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+52]) ghost
+                        Texp_function
+                        Labelled "loc"
+                        [
+                          <case>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+30])
+                              Tpat_var "loc/3094"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+31]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+52]) ghost
+                              Texp_function
+                              Labelled "path"
+                              [
+                                <case>
+                                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+36])
+                                    Tpat_var "path/3095"
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+37]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+52]) ghost
+                                    Texp_function
+                                    Nolabel
+                                    [
+                                      <case>
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+37]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[27,791+40])
+                                          Tpat_var "tds/3096"
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+52])
+                                          Texp_apply
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+31])
+                                            Texp_ident "Ppx_sexp_conv_expander__!.Expand_of_sexp.Sig_generate_of_sexp.mk_sig"
+                                          [
+                                            <arg>
+                                              Labelled "poly"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+33]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+37])
+                                                Texp_ident "poly/3093"
+                                            <arg>
+                                              Labelled "loc"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+42])
+                                                Texp_ident "loc/3094"
+                                            <arg>
+                                              Labelled "path"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+44]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+48])
+                                                Texp_ident "path/3095"
+                                            <arg>
+                                              Nolabel
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+49]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[28,834+52])
+                                                Texp_ident "tds/3096"
+                                          ]
+                                    ]
+                              ]
+                        ]
+                  ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+57])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+19])
+                  Tpat_var "str_type_decl/3699"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+57]) ghost
+                  Texp_function
+                  Labelled "loc"
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+24])
+                        Tpat_var "loc/3701"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+57]) ghost
+                        Texp_function
+                        Labelled "poly"
+                        [
+                          <case>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+30])
+                              Tpat_var "poly/3702"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+31]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+57]) ghost
+                              Texp_function
+                              Labelled "path"
+                              [
+                                <case>
+                                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+36])
+                                    Tpat_var "path/3703"
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+37]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+57]) ghost
+                                    Texp_function
+                                    Nolabel
+                                    [
+                                      <case>
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+37]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[31,893+40])
+                                          Tpat_var "tds/3704"
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+57])
+                                          Texp_apply
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+36])
+                                            Texp_ident "Ppx_sexp_conv_expander__!.Expand_of_sexp.Str_generate_of_sexp.tds_of_sexp"
+                                          [
+                                            <arg>
+                                              Labelled "loc"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+38]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+41])
+                                                Texp_ident "loc/3701"
+                                            <arg>
+                                              Labelled "poly"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+43]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+47])
+                                                Texp_ident "poly/3702"
+                                            <arg>
+                                              Labelled "path"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+49]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+53])
+                                                Texp_ident "path/3703"
+                                            <arg>
+                                              Nolabel
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+54]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[32,936+57])
+                                                Texp_ident "tds/3704"
+                                          ]
+                                    ]
+                              ]
+                        ]
+                  ]
+            ]
+        ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[36,1004+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[55,1515+3])
+    Tstr_module
+    Sig_sexp/4181
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[36,1004+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[55,1515+3])
+        Tmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+12])
+                  Tpat_var "mk_sig/3706"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7]) ghost
+                  Texp_function
+                  Labelled "loc"
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+17])
+                        Tpat_var "loc/3708"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7]) ghost
+                        Texp_function
+                        Labelled "path"
+                        [
+                          <case>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+23])
+                              Tpat_var "path/3709"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7]) ghost
+                              Texp_function
+                              Nolabel
+                              [
+                                <case>
+                                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[37,1029+29])
+                                    Tpat_var "decls/3710"
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[38,1061+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7])
+                                    Texp_apply
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[38,1061+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[38,1061+15])
+                                      Texp_ident "Base!.List.concat"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7])
+                                          Texp_construct "::"
+                                          [
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+52])
+                                              Texp_apply
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+35])
+                                                Texp_ident "Ppx_sexp_conv_expander__!.Expand_sexp_of.Sig_generate_sexp_of.mk_sig"
+                                              [
+                                                <arg>
+                                                  Labelled "loc"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+37]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+40])
+                                                    Texp_ident "loc/3708"
+                                                <arg>
+                                                  Labelled "path"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+42]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+46])
+                                                    Texp_ident "path/3709"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+47]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[39,1077+52])
+                                                    Texp_ident "decls/3710"
+                                              ]
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7]) ghost
+                                              Texp_construct "::"
+                                              [
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+64])
+                                                  Texp_apply
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+35])
+                                                    Texp_ident "Ppx_sexp_conv_expander__!.Expand_of_sexp.Sig_generate_of_sexp.mk_sig"
+                                                  [
+                                                    <arg>
+                                                      Labelled "poly"
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+42]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+47])
+                                                        Texp_construct "false"
+                                                        []
+                                                    <arg>
+                                                      Labelled "loc"
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+49]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+52])
+                                                        Texp_ident "loc/3708"
+                                                    <arg>
+                                                      Labelled "path"
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+54]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+58])
+                                                        Texp_ident "path/3709"
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+59]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[40,1130+64])
+                                                        Texp_ident "decls/3710"
+                                                  ]
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[41,1195+7]) ghost
+                                                  Texp_construct "[]"
+                                                  []
+                                              ]
+                                          ]
+                                    ]
+                              ]
+                        ]
+                  ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+37])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+19])
+                  Tpat_var "sig_type_decl/3711"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+37]) ghost
+                  Texp_function
+                  Labelled "loc"
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+24])
+                        Tpat_var "loc/3713"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+37]) ghost
+                        Texp_function
+                        Labelled "path"
+                        [
+                          <case>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+30])
+                              Tpat_var "path/3714"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+31]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+37]) ghost
+                              Texp_function
+                              Nolabel
+                              [
+                                <case>
+                                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+31]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+52])
+                                    Tpat_alias "decls/3717"
+                                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+42])
+                                      Tpat_tuple
+                                      [
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+33]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+36])
+                                          Tpat_var "_rf/3715"
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+38]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[44,1209+41])
+                                          Tpat_var "tds/3716"
+                                      ]
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[45,1264+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+37])
+                                    Texp_match
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[46,1274+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[50,1387+11])
+                                      Texp_apply
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[46,1274+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[46,1274+18])
+                                        Texp_ident "Ppxlib!.mk_named_sig"
+                                      [
+                                        <arg>
+                                          Labelled "loc"
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[47,1293+9]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[47,1293+12])
+                                            Texp_ident "loc/3713"
+                                        <arg>
+                                          Labelled "sg_name"
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[48,1306+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[48,1306+38])
+                                            Texp_constant Const_string("Sexplib0.Sexpable.S",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[48,1306+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[48,1306+37]),None)
+                                        <arg>
+                                          Labelled "handle_polymorphic_variant"
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[49,1345+36]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[49,1345+41])
+                                            Texp_construct "false"
+                                            []
+                                        <arg>
+                                          Nolabel
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[50,1387+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[50,1387+11])
+                                            Texp_ident "tds/3716"
+                                      ]
+                                    [
+                                      <case>
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+24])
+                                          Tpat_value
+                                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+24])
+                                            Tpat_construct "Some"
+                                            [
+                                              pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+24])
+                                                Tpat_var "include_infos/4180"
+                                            ]
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+63])
+                                          Texp_construct "::"
+                                          [
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+30]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+61])
+                                              Texp_apply
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+30]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+42])
+                                                Texp_ident "Ppxlib!.Ast_builder.Default.psig_include"
+                                              [
+                                                <arg>
+                                                  Labelled "loc"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+44]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+47])
+                                                    Texp_ident "loc/3713"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+48]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+61])
+                                                    Texp_ident "include_infos/4180"
+                                              ]
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+62]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[52,1408+63]) ghost
+                                              Texp_construct "[]"
+                                              []
+                                          ]
+                                      <case>
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+10])
+                                          Tpat_value
+                                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+10])
+                                            Tpat_construct "None"
+                                            []
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+37])
+                                          Texp_apply
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+20])
+                                            Texp_ident "mk_sig/3706"
+                                          [
+                                            <arg>
+                                              Labelled "loc"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+25])
+                                                Texp_ident "loc/3713"
+                                            <arg>
+                                              Labelled "path"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+31])
+                                                Texp_ident "path/3714"
+                                            <arg>
+                                              Nolabel
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.ml[53,1472+37])
+                                                Texp_ident "decls/3717"
+                                          ]
+                                    ]
+                                    []
+                              ]
+                        ]
+                  ]
+            ]
+        ]
+]
+
+(seq
+  (seq
+    (let
+      (type_extension/2243 =
+         (function ty/2244
+           (apply
+             (field_imm 0
+               (field_imm 0 (global Ppx_sexp_conv_expander__Expand_sexp_of!)))
+             (let (init/13758 = (field_imm 1 ty/2244))
+               (makeblock 0 (field_imm 0 init/13758) (field_imm 1 init/13758)
+                 1))
+             ty/2244)))
+      (setfield_ptr(root-init) 4 (global Ppx_sexp_conv_expander!)
+        type_extension/2243))
+    (let
+      (core_type/3070 =
+         (function ty/3072
+           (apply
+             (field_imm 0
+               (field_imm 1 (global Ppx_sexp_conv_expander__Expand_sexp_of!)))
+             ty/3072)))
+      (setfield_ptr(root-init) 5 (global Ppx_sexp_conv_expander!)
+        core_type/3070))
+    (let
+      (sig_type_decl/3076 =
+         (field_imm 1
+           (field_imm 0 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 6 (global Ppx_sexp_conv_expander!)
+        sig_type_decl/3076))
+    (let
+      (sig_exception/3077 =
+         (field_imm 2
+           (field_imm 0 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 7 (global Ppx_sexp_conv_expander!)
+        sig_exception/3077))
+    (let
+      (str_type_decl/3078 =
+         (field_imm 1
+           (field_imm 1 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 8 (global Ppx_sexp_conv_expander!)
+        str_type_decl/3078))
+    (let
+      (str_exception/3079 =
+         (field_imm 2
+           (field_imm 1 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 9 (global Ppx_sexp_conv_expander!)
+        str_exception/3079))
+    0)
+  (let
+    (Sexp_of/3080 =
+       (makeblock 0 (field_imm 4 (global Ppx_sexp_conv_expander!))
+         (field_imm 5 (global Ppx_sexp_conv_expander!))
+         (field_imm 6 (global Ppx_sexp_conv_expander!))
+         (field_imm 7 (global Ppx_sexp_conv_expander!))
+         (field_imm 8 (global Ppx_sexp_conv_expander!))
+         (field_imm 9 (global Ppx_sexp_conv_expander!))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Ppx_sexp_conv_expander!)
+        Sexp_of/3080)
+      (let
+        (type_extension/3082 =
+           (function ty/3083
+             (apply
+               (field_imm 0
+                 (field_imm 0
+                   (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+               (field_imm 1 ty/3083) ty/3083)))
+        (setfield_ptr(root-init) 10 (global Ppx_sexp_conv_expander!)
+          type_extension/3082))
+      (let
+        (core_type/3088 =
+           (field_imm 0
+             (field_imm 1 (global Ppx_sexp_conv_expander__Expand_of_sexp!))))
+        (setfield_ptr(root-init) 11 (global Ppx_sexp_conv_expander!)
+          core_type/3088))
+      (let
+        (sig_type_decl/3091 =
+           (function poly/3093 loc/3094 path/3095 tds/3096
+             (apply
+               (field_imm 1
+                 (field_imm 0
+                   (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+               poly/3093 loc/3094 path/3095 tds/3096)))
+        (setfield_ptr(root-init) 12 (global Ppx_sexp_conv_expander!)
+          sig_type_decl/3091))
+      (let
+        (str_type_decl/3699 =
+           (function loc/3701 poly/3702 path/3703 tds/3704
+             (apply
+               (field_imm 1
+                 (field_imm 1
+                   (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+               loc/3701 poly/3702 path/3703 tds/3704)))
+        (setfield_ptr(root-init) 13 (global Ppx_sexp_conv_expander!)
+          str_type_decl/3699))
+      0
+      (let
+        (Of_sexp/3705 =
+           (makeblock 0 (field_imm 10 (global Ppx_sexp_conv_expander!))
+             (field_imm 11 (global Ppx_sexp_conv_expander!))
+             (field_imm 12 (global Ppx_sexp_conv_expander!))
+             (field_imm 13 (global Ppx_sexp_conv_expander!))))
+        (seq
+          (setfield_ptr(root-init) 1 (global Ppx_sexp_conv_expander!)
+            Of_sexp/3705)
+          (let
+            (mk_sig/3706 =
+               (function loc/3708 path/3709 decls/3710
+                 (apply (field_imm 137 (global Base__List!))
+                   (makeblock 0
+                     (apply
+                       (field_imm 1
+                         (field_imm 0
+                           (global Ppx_sexp_conv_expander__Expand_sexp_of!)))
+                       loc/3708 path/3709 decls/3710)
+                     (makeblock 0
+                       (apply
+                         (field_imm 1
+                           (field_imm 0
+                             (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+                         0 loc/3708 path/3709 decls/3710)
+                       0)))))
+            (setfield_ptr(root-init) 14 (global Ppx_sexp_conv_expander!)
+              mk_sig/3706))
+          (let
+            (sig_type_decl/3711 =
+               (function loc/3713 path/3714 decls/3717
+                 (let
+                   (tds/3716 =a (field_imm 1 decls/3717)
+                    _rf/3715 =a (field_imm 0 decls/3717)
+                    *match*/13759 =
+                      (apply (field_imm 21 (global Ppxlib!)) loc/3713
+                        "Sexplib0.Sexpable.S" 0 tds/3716))
+                   (if *match*/13759
+                     (let (include_infos/4180 =a (field_imm 0 *match*/13759))
+                       (makeblock 0
+                         (apply
+                           (field_imm 143
+                             (field_imm 0 (global Ppxlib__Ast_builder!)))
+                           loc/3713 include_infos/4180)
+                         0))
+                     (apply (field_imm 14 (global Ppx_sexp_conv_expander!))
+                       loc/3713 path/3714 decls/3717)))))
+            (setfield_ptr(root-init) 15 (global Ppx_sexp_conv_expander!)
+              sig_type_decl/3711))
+          0
+          (let
+            (Sig_sexp/4181 =
+               (makeblock 0 (field_imm 14 (global Ppx_sexp_conv_expander!))
+                 (field_imm 15 (global Ppx_sexp_conv_expander!))))
+            (seq
+              (setfield_ptr(root-init) 3 (global Ppx_sexp_conv_expander!)
+                (makeblock 0 (field_mut 1 Sig_sexp/4181)))
+              (setfield_ptr(root-init) 2 (global Ppx_sexp_conv_expander!)
+                (global Ppx_sexp_conv_expander__Ppx_sexp_conv_grammar!)))))))))
+(seq
+  (seq
+    (let
+      (type_extension/2243 =
+         (function ty/2244
+           (apply
+             (field_imm 0
+               (field_imm 0 (global Ppx_sexp_conv_expander__Expand_sexp_of!)))
+             (let (init/13758 = (field_imm 1 ty/2244))
+               (makeblock 0 (field_imm 0 init/13758) (field_imm 1 init/13758)
+                 1))
+             ty/2244)))
+      (setfield_ptr(root-init) 4 (global Ppx_sexp_conv_expander!)
+        type_extension/2243))
+    (let
+      (core_type/3070 =
+         (function ty/3072
+           (apply
+             (field_imm 0
+               (field_imm 1 (global Ppx_sexp_conv_expander__Expand_sexp_of!)))
+             ty/3072)))
+      (setfield_ptr(root-init) 5 (global Ppx_sexp_conv_expander!)
+        core_type/3070))
+    (let
+      (sig_type_decl/3076 =
+         (field_imm 1
+           (field_imm 0 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 6 (global Ppx_sexp_conv_expander!)
+        sig_type_decl/3076))
+    (let
+      (sig_exception/3077 =
+         (field_imm 2
+           (field_imm 0 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 7 (global Ppx_sexp_conv_expander!)
+        sig_exception/3077))
+    (let
+      (str_type_decl/3078 =
+         (field_imm 1
+           (field_imm 1 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 8 (global Ppx_sexp_conv_expander!)
+        str_type_decl/3078))
+    (let
+      (str_exception/3079 =
+         (field_imm 2
+           (field_imm 1 (global Ppx_sexp_conv_expander__Expand_sexp_of!))))
+      (setfield_ptr(root-init) 9 (global Ppx_sexp_conv_expander!)
+        str_exception/3079))
+    0)
+  (let
+    (Sexp_of/3080 =
+       (makeblock 0 (field_imm 4 (global Ppx_sexp_conv_expander!))
+         (field_imm 5 (global Ppx_sexp_conv_expander!))
+         (field_imm 6 (global Ppx_sexp_conv_expander!))
+         (field_imm 7 (global Ppx_sexp_conv_expander!))
+         (field_imm 8 (global Ppx_sexp_conv_expander!))
+         (field_imm 9 (global Ppx_sexp_conv_expander!))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Ppx_sexp_conv_expander!)
+        Sexp_of/3080)
+      (let
+        (type_extension/3082 =
+           (function ty/3083
+             (apply
+               (field_imm 0
+                 (field_imm 0
+                   (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+               (field_imm 1 ty/3083) ty/3083)))
+        (setfield_ptr(root-init) 10 (global Ppx_sexp_conv_expander!)
+          type_extension/3082))
+      (let
+        (core_type/3088 =
+           (field_imm 0
+             (field_imm 1 (global Ppx_sexp_conv_expander__Expand_of_sexp!))))
+        (setfield_ptr(root-init) 11 (global Ppx_sexp_conv_expander!)
+          core_type/3088))
+      (let
+        (sig_type_decl/3091 =
+           (function poly/3093 loc/3094 path/3095 tds/3096
+             (apply
+               (field_imm 1
+                 (field_imm 0
+                   (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+               poly/3093 loc/3094 path/3095 tds/3096)))
+        (setfield_ptr(root-init) 12 (global Ppx_sexp_conv_expander!)
+          sig_type_decl/3091))
+      (let
+        (str_type_decl/3699 =
+           (function loc/3701 poly/3702 path/3703 tds/3704
+             (apply
+               (field_imm 1
+                 (field_imm 1
+                   (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+               loc/3701 poly/3702 path/3703 tds/3704)))
+        (setfield_ptr(root-init) 13 (global Ppx_sexp_conv_expander!)
+          str_type_decl/3699))
+      0
+      (let
+        (Of_sexp/3705 =
+           (makeblock 0 (field_imm 10 (global Ppx_sexp_conv_expander!))
+             (field_imm 11 (global Ppx_sexp_conv_expander!))
+             (field_imm 12 (global Ppx_sexp_conv_expander!))
+             (field_imm 13 (global Ppx_sexp_conv_expander!))))
+        (seq
+          (setfield_ptr(root-init) 1 (global Ppx_sexp_conv_expander!)
+            Of_sexp/3705)
+          (let
+            (mk_sig/3706 =
+               (function loc/3708 path/3709 decls/3710
+                 (apply (field_imm 137 (global Base__List!))
+                   (makeblock 0
+                     (apply
+                       (field_imm 1
+                         (field_imm 0
+                           (global Ppx_sexp_conv_expander__Expand_sexp_of!)))
+                       loc/3708 path/3709 decls/3710)
+                     (makeblock 0
+                       (apply
+                         (field_imm 1
+                           (field_imm 0
+                             (global Ppx_sexp_conv_expander__Expand_of_sexp!)))
+                         0 loc/3708 path/3709 decls/3710)
+                       0)))))
+            (setfield_ptr(root-init) 14 (global Ppx_sexp_conv_expander!)
+              mk_sig/3706))
+          (let
+            (sig_type_decl/3711 =
+               (function loc/3713 path/3714 decls/3717
+                 (let
+                   (*match*/13759 =
+                      (apply (field_imm 21 (global Ppxlib!)) loc/3713
+                        "Sexplib0.Sexpable.S" 0 (field_imm 1 decls/3717)))
+                   (if *match*/13759
+                     (makeblock 0
+                       (apply
+                         (field_imm 143
+                           (field_imm 0 (global Ppxlib__Ast_builder!)))
+                         loc/3713 (field_imm 0 *match*/13759))
+                       0)
+                     (apply (field_imm 14 (global Ppx_sexp_conv_expander!))
+                       loc/3713 path/3714 decls/3717)))))
+            (setfield_ptr(root-init) 15 (global Ppx_sexp_conv_expander!)
+              sig_type_decl/3711))
+          0
+          (let
+            (Sig_sexp/4181 =
+               (makeblock 0 (field_imm 14 (global Ppx_sexp_conv_expander!))
+                 (field_imm 15 (global Ppx_sexp_conv_expander!))))
+            (seq
+              (setfield_ptr(root-init) 3 (global Ppx_sexp_conv_expander!)
+                (makeblock 0 (field_mut 1 Sig_sexp/4181)))
+              (setfield_ptr(root-init) 2 (global Ppx_sexp_conv_expander!)
+                (global Ppx_sexp_conv_expander__Ppx_sexp_conv_grammar!)))))))))

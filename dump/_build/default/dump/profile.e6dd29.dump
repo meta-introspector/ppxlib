@@ -1,0 +1,12 @@
+0.143s 24.6MB 3.25MB 3.25MB test/501_migrations/compare_on.exe
+  ------ 2.00MB 0.18MB 0.18MB cmm_invariants
+  0.001s 2.16MB 0.15MB 0.34MB selection
+  ------ 0.20MB ------ ------ cse
+  0.001s 1.30MB 0.06MB 0.40MB liveness
+  0.002s 2.90MB 1.58MB 1.99MB spill
+  0.001s 0.10MB ------ ------ split
+  0.004s 13.4MB 0.96MB 2.96MB regalloc
+  0.004s ------ ------ ------ assemble
+  0.126s ------ ------ ------ c-linker
+  0.003s 2.45MB 0.29MB 3.25MB other
+0.004s ------ ------ ------ other

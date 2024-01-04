@@ -1,0 +1,479 @@
+[
+  structure_item (src/cinaps/ppxlib_cinaps_helpers.ml[1,0+0]..[1,0+7])
+    Pstr_open Fresh
+    module_expr (src/cinaps/ppxlib_cinaps_helpers.ml[1,0+5]..[1,0+7])
+      Pmod_ident "Re" (src/cinaps/ppxlib_cinaps_helpers.ml[1,0+5]..[1,0+7])
+  structure_item (src/cinaps/ppxlib_cinaps_helpers.ml[3,9+0]..[22,498+56])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[3,9+4]..[3,9+14])
+          Ppat_var "str_to_sig" (src/cinaps/ppxlib_cinaps_helpers.ml[3,9+4]..[3,9+14])
+        expression (src/cinaps/ppxlib_cinaps_helpers.ml[4,26+2]..[22,498+56])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[4,26+6]..[4,26+8])
+                Ppat_var "re" (src/cinaps/ppxlib_cinaps_helpers.ml[4,26+6]..[4,26+8])
+              expression (src/cinaps/ppxlib_cinaps_helpers.ml[5,37+4]..[6,52+78])
+                Pexp_apply
+                expression (src/cinaps/ppxlib_cinaps_helpers.ml[5,37+4]..[5,37+14])
+                  Pexp_ident "Str.regexp" (src/cinaps/ppxlib_cinaps_helpers.ml[5,37+4]..[5,37+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (src/cinaps/ppxlib_cinaps_helpers.ml[6,52+6]..[6,52+78])
+                      Pexp_constant PConst_string ("\\(_?[sS]tructure\\|impl\\(ementation\\)?\\|str_\\|_str\\|\\b\\(st\\|Str\\)\\b\\)",(src/cinaps/ppxlib_cinaps_helpers.ml[6,52+8]..[6,52+76]),Some "")
+                ]
+          ]
+          expression (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+2]..[22,498+56])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+6]..[8,136+9])
+                  Ppat_var "map" (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+6]..[8,136+9])
+                expression (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+10]..[20,469+23]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+10]..[8,136+11])
+                    Ppat_var "s" (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+10]..[8,136+11])
+                  expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+4]..[20,469+23])
+                    Pexp_match
+                    expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+10]..[9,150+30])
+                      Pexp_apply
+                      expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+10]..[9,150+28])
+                        Pexp_ident "Str.matched_string" (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+10]..[9,150+28])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+29]..[9,150+30])
+                            Pexp_ident "s" (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+29]..[9,150+30])
+                      ]
+                    [
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[10,186+6]..[10,186+10])
+                          Ppat_constant PConst_string("st",(src/cinaps/ppxlib_cinaps_helpers.ml[10,186+7]..[10,186+9]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[10,186+14]..[10,186+18])
+                          Pexp_constant PConst_string("sg",(src/cinaps/ppxlib_cinaps_helpers.ml[10,186+15]..[10,186+17]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[11,205+6]..[11,205+11])
+                          Ppat_constant PConst_string("Str",(src/cinaps/ppxlib_cinaps_helpers.ml[11,205+7]..[11,205+10]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[11,205+15]..[11,205+20])
+                          Pexp_constant PConst_string("Sig",(src/cinaps/ppxlib_cinaps_helpers.ml[11,205+16]..[11,205+19]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[12,226+6]..[12,226+17])
+                          Ppat_constant PConst_string("structure",(src/cinaps/ppxlib_cinaps_helpers.ml[12,226+7]..[12,226+16]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[12,226+21]..[12,226+32])
+                          Pexp_constant PConst_string("signature",(src/cinaps/ppxlib_cinaps_helpers.ml[12,226+22]..[12,226+31]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[13,259+6]..[13,259+17])
+                          Ppat_constant PConst_string("Structure",(src/cinaps/ppxlib_cinaps_helpers.ml[13,259+7]..[13,259+16]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[13,259+21]..[13,259+32])
+                          Pexp_constant PConst_string("Signature",(src/cinaps/ppxlib_cinaps_helpers.ml[13,259+22]..[13,259+31]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[14,292+6]..[14,292+18])
+                          Ppat_constant PConst_string("_structure",(src/cinaps/ppxlib_cinaps_helpers.ml[14,292+7]..[14,292+17]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[14,292+22]..[14,292+34])
+                          Pexp_constant PConst_string("_signature",(src/cinaps/ppxlib_cinaps_helpers.ml[14,292+23]..[14,292+33]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[15,327+6]..[15,327+18])
+                          Ppat_constant PConst_string("_Structure",(src/cinaps/ppxlib_cinaps_helpers.ml[15,327+7]..[15,327+17]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[15,327+22]..[15,327+34])
+                          Pexp_constant PConst_string("_Signature",(src/cinaps/ppxlib_cinaps_helpers.ml[15,327+23]..[15,327+33]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[16,362+6]..[16,362+12])
+                          Ppat_constant PConst_string("str_",(src/cinaps/ppxlib_cinaps_helpers.ml[16,362+7]..[16,362+11]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[16,362+16]..[16,362+22])
+                          Pexp_constant PConst_string("sig_",(src/cinaps/ppxlib_cinaps_helpers.ml[16,362+17]..[16,362+21]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[17,385+6]..[17,385+12])
+                          Ppat_constant PConst_string("_str",(src/cinaps/ppxlib_cinaps_helpers.ml[17,385+7]..[17,385+11]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[17,385+16]..[17,385+22])
+                          Pexp_constant PConst_string("_sig",(src/cinaps/ppxlib_cinaps_helpers.ml[17,385+17]..[17,385+21]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[18,408+6]..[18,408+22])
+                          Ppat_constant PConst_string("implementation",(src/cinaps/ppxlib_cinaps_helpers.ml[18,408+7]..[18,408+21]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[18,408+26]..[18,408+37])
+                          Pexp_constant PConst_string("interface",(src/cinaps/ppxlib_cinaps_helpers.ml[18,408+27]..[18,408+36]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[19,446+6]..[19,446+12])
+                          Ppat_constant PConst_string("impl",(src/cinaps/ppxlib_cinaps_helpers.ml[19,446+7]..[19,446+11]),None)
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[19,446+16]..[19,446+22])
+                          Pexp_constant PConst_string("intf",(src/cinaps/ppxlib_cinaps_helpers.ml[19,446+17]..[19,446+21]),None)
+                      <case>
+                        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+6]..[20,469+7])
+                          Ppat_any
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+11]..[20,469+23])
+                          Pexp_assert
+                          expression (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+18]..[20,469+23])
+                            Pexp_construct "false" (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+18]..[20,469+23])
+                            None
+                    ]
+            ]
+            expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+2]..[22,498+56])
+              Pexp_fun
+              Nolabel
+              None
+              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+6]..[22,498+7])
+                Ppat_var "s" (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+6]..[22,498+7])
+              expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+11]..[22,498+56])
+                Pexp_apply
+                expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+11]..[22,498+23])
+                  Pexp_ident "print_string" (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+11]..[22,498+23])
+                [
+                  <arg>
+                  Nolabel
+                    expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+24]..[22,498+56])
+                      Pexp_apply
+                      expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+25]..[22,498+46])
+                        Pexp_ident "Str.global_substitute" (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+25]..[22,498+46])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+47]..[22,498+49])
+                            Pexp_ident "re" (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+47]..[22,498+49])
+                        <arg>
+                        Nolabel
+                          expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+50]..[22,498+53])
+                            Pexp_ident "map" (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+50]..[22,498+53])
+                        <arg>
+                        Nolabel
+                          expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+54]..[22,498+55])
+                            Pexp_ident "s" (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+54]..[22,498+55])
+                      ]
+                ]
+    ]
+]
+
+open Re
+let str_to_sig =
+  let re =
+    Str.regexp
+      {|\(_?[sS]tructure\|impl\(ementation\)?\|str_\|_str\|\b\(st\|Str\)\b\)|} in
+  let map s =
+    match Str.matched_string s with
+    | "st" -> "sg"
+    | "Str" -> "Sig"
+    | "structure" -> "signature"
+    | "Structure" -> "Signature"
+    | "_structure" -> "_signature"
+    | "_Structure" -> "_Signature"
+    | "str_" -> "sig_"
+    | "_str" -> "_sig"
+    | "implementation" -> "interface"
+    | "impl" -> "intf"
+    | _ -> assert false in
+  fun s -> print_string (Str.global_substitute re map s)
+[
+  structure_item (src/cinaps/ppxlib_cinaps_helpers.ml[1,0+0]..src/cinaps/ppxlib_cinaps_helpers.ml[1,0+7])
+    Tstr_open Fresh
+    module_expr (src/cinaps/ppxlib_cinaps_helpers.ml[1,0+5]..src/cinaps/ppxlib_cinaps_helpers.ml[1,0+7])
+      Tmod_ident "Re!"
+  structure_item (src/cinaps/ppxlib_cinaps_helpers.ml[3,9+0]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+56])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/cinaps/ppxlib_cinaps_helpers.ml[3,9+4]..src/cinaps/ppxlib_cinaps_helpers.ml[3,9+14])
+          Tpat_var "str_to_sig/103"
+        expression (src/cinaps/ppxlib_cinaps_helpers.ml[4,26+2]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+56])
+          Texp_let Nonrec
+          [
+            <def>
+              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[4,26+6]..src/cinaps/ppxlib_cinaps_helpers.ml[4,26+8])
+                Tpat_var "re/104"
+              expression (src/cinaps/ppxlib_cinaps_helpers.ml[5,37+4]..src/cinaps/ppxlib_cinaps_helpers.ml[6,52+78])
+                Texp_apply
+                expression (src/cinaps/ppxlib_cinaps_helpers.ml[5,37+4]..src/cinaps/ppxlib_cinaps_helpers.ml[5,37+14])
+                  Texp_ident "Re!.Str.regexp"
+                [
+                  <arg>
+                    Nolabel
+                    expression (src/cinaps/ppxlib_cinaps_helpers.ml[6,52+6]..src/cinaps/ppxlib_cinaps_helpers.ml[6,52+78])
+                      Texp_constant Const_string ("\\(_?[sS]tructure\\|impl\\(ementation\\)?\\|str_\\|_str\\|\\b\\(st\\|Str\\)\\b\\)",(src/cinaps/ppxlib_cinaps_helpers.ml[6,52+8]..src/cinaps/ppxlib_cinaps_helpers.ml[6,52+76]),Some "")
+                ]
+          ]
+          expression (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+2]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+56])
+            Texp_let Nonrec
+            [
+              <def>
+                pattern (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+6]..src/cinaps/ppxlib_cinaps_helpers.ml[8,136+9])
+                  Tpat_var "map/155"
+                expression (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+10]..src/cinaps/ppxlib_cinaps_helpers.ml[20,469+23]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/cinaps/ppxlib_cinaps_helpers.ml[8,136+10]..src/cinaps/ppxlib_cinaps_helpers.ml[8,136+11])
+                        Tpat_var "s/157"
+                      expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+4]..src/cinaps/ppxlib_cinaps_helpers.ml[20,469+23])
+                        Texp_match
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+10]..src/cinaps/ppxlib_cinaps_helpers.ml[9,150+30])
+                          Texp_apply
+                          expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+10]..src/cinaps/ppxlib_cinaps_helpers.ml[9,150+28])
+                            Texp_ident "Re!.Str.matched_string"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (src/cinaps/ppxlib_cinaps_helpers.ml[9,150+29]..src/cinaps/ppxlib_cinaps_helpers.ml[9,150+30])
+                                Texp_ident "s/157"
+                          ]
+                        [
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[10,186+6]..src/cinaps/ppxlib_cinaps_helpers.ml[10,186+10])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[10,186+6]..src/cinaps/ppxlib_cinaps_helpers.ml[10,186+10])
+                                Tpat_constant Const_string("st",(src/cinaps/ppxlib_cinaps_helpers.ml[10,186+7]..src/cinaps/ppxlib_cinaps_helpers.ml[10,186+9]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[10,186+14]..src/cinaps/ppxlib_cinaps_helpers.ml[10,186+18])
+                              Texp_constant Const_string("sg",(src/cinaps/ppxlib_cinaps_helpers.ml[10,186+15]..src/cinaps/ppxlib_cinaps_helpers.ml[10,186+17]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[11,205+6]..src/cinaps/ppxlib_cinaps_helpers.ml[11,205+11])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[11,205+6]..src/cinaps/ppxlib_cinaps_helpers.ml[11,205+11])
+                                Tpat_constant Const_string("Str",(src/cinaps/ppxlib_cinaps_helpers.ml[11,205+7]..src/cinaps/ppxlib_cinaps_helpers.ml[11,205+10]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[11,205+15]..src/cinaps/ppxlib_cinaps_helpers.ml[11,205+20])
+                              Texp_constant Const_string("Sig",(src/cinaps/ppxlib_cinaps_helpers.ml[11,205+16]..src/cinaps/ppxlib_cinaps_helpers.ml[11,205+19]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[12,226+6]..src/cinaps/ppxlib_cinaps_helpers.ml[12,226+17])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[12,226+6]..src/cinaps/ppxlib_cinaps_helpers.ml[12,226+17])
+                                Tpat_constant Const_string("structure",(src/cinaps/ppxlib_cinaps_helpers.ml[12,226+7]..src/cinaps/ppxlib_cinaps_helpers.ml[12,226+16]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[12,226+21]..src/cinaps/ppxlib_cinaps_helpers.ml[12,226+32])
+                              Texp_constant Const_string("signature",(src/cinaps/ppxlib_cinaps_helpers.ml[12,226+22]..src/cinaps/ppxlib_cinaps_helpers.ml[12,226+31]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[13,259+6]..src/cinaps/ppxlib_cinaps_helpers.ml[13,259+17])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[13,259+6]..src/cinaps/ppxlib_cinaps_helpers.ml[13,259+17])
+                                Tpat_constant Const_string("Structure",(src/cinaps/ppxlib_cinaps_helpers.ml[13,259+7]..src/cinaps/ppxlib_cinaps_helpers.ml[13,259+16]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[13,259+21]..src/cinaps/ppxlib_cinaps_helpers.ml[13,259+32])
+                              Texp_constant Const_string("Signature",(src/cinaps/ppxlib_cinaps_helpers.ml[13,259+22]..src/cinaps/ppxlib_cinaps_helpers.ml[13,259+31]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[14,292+6]..src/cinaps/ppxlib_cinaps_helpers.ml[14,292+18])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[14,292+6]..src/cinaps/ppxlib_cinaps_helpers.ml[14,292+18])
+                                Tpat_constant Const_string("_structure",(src/cinaps/ppxlib_cinaps_helpers.ml[14,292+7]..src/cinaps/ppxlib_cinaps_helpers.ml[14,292+17]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[14,292+22]..src/cinaps/ppxlib_cinaps_helpers.ml[14,292+34])
+                              Texp_constant Const_string("_signature",(src/cinaps/ppxlib_cinaps_helpers.ml[14,292+23]..src/cinaps/ppxlib_cinaps_helpers.ml[14,292+33]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[15,327+6]..src/cinaps/ppxlib_cinaps_helpers.ml[15,327+18])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[15,327+6]..src/cinaps/ppxlib_cinaps_helpers.ml[15,327+18])
+                                Tpat_constant Const_string("_Structure",(src/cinaps/ppxlib_cinaps_helpers.ml[15,327+7]..src/cinaps/ppxlib_cinaps_helpers.ml[15,327+17]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[15,327+22]..src/cinaps/ppxlib_cinaps_helpers.ml[15,327+34])
+                              Texp_constant Const_string("_Signature",(src/cinaps/ppxlib_cinaps_helpers.ml[15,327+23]..src/cinaps/ppxlib_cinaps_helpers.ml[15,327+33]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[16,362+6]..src/cinaps/ppxlib_cinaps_helpers.ml[16,362+12])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[16,362+6]..src/cinaps/ppxlib_cinaps_helpers.ml[16,362+12])
+                                Tpat_constant Const_string("str_",(src/cinaps/ppxlib_cinaps_helpers.ml[16,362+7]..src/cinaps/ppxlib_cinaps_helpers.ml[16,362+11]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[16,362+16]..src/cinaps/ppxlib_cinaps_helpers.ml[16,362+22])
+                              Texp_constant Const_string("sig_",(src/cinaps/ppxlib_cinaps_helpers.ml[16,362+17]..src/cinaps/ppxlib_cinaps_helpers.ml[16,362+21]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[17,385+6]..src/cinaps/ppxlib_cinaps_helpers.ml[17,385+12])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[17,385+6]..src/cinaps/ppxlib_cinaps_helpers.ml[17,385+12])
+                                Tpat_constant Const_string("_str",(src/cinaps/ppxlib_cinaps_helpers.ml[17,385+7]..src/cinaps/ppxlib_cinaps_helpers.ml[17,385+11]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[17,385+16]..src/cinaps/ppxlib_cinaps_helpers.ml[17,385+22])
+                              Texp_constant Const_string("_sig",(src/cinaps/ppxlib_cinaps_helpers.ml[17,385+17]..src/cinaps/ppxlib_cinaps_helpers.ml[17,385+21]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[18,408+6]..src/cinaps/ppxlib_cinaps_helpers.ml[18,408+22])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[18,408+6]..src/cinaps/ppxlib_cinaps_helpers.ml[18,408+22])
+                                Tpat_constant Const_string("implementation",(src/cinaps/ppxlib_cinaps_helpers.ml[18,408+7]..src/cinaps/ppxlib_cinaps_helpers.ml[18,408+21]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[18,408+26]..src/cinaps/ppxlib_cinaps_helpers.ml[18,408+37])
+                              Texp_constant Const_string("interface",(src/cinaps/ppxlib_cinaps_helpers.ml[18,408+27]..src/cinaps/ppxlib_cinaps_helpers.ml[18,408+36]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[19,446+6]..src/cinaps/ppxlib_cinaps_helpers.ml[19,446+12])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[19,446+6]..src/cinaps/ppxlib_cinaps_helpers.ml[19,446+12])
+                                Tpat_constant Const_string("impl",(src/cinaps/ppxlib_cinaps_helpers.ml[19,446+7]..src/cinaps/ppxlib_cinaps_helpers.ml[19,446+11]),None)
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[19,446+16]..src/cinaps/ppxlib_cinaps_helpers.ml[19,446+22])
+                              Texp_constant Const_string("intf",(src/cinaps/ppxlib_cinaps_helpers.ml[19,446+17]..src/cinaps/ppxlib_cinaps_helpers.ml[19,446+21]),None)
+                          <case>
+                            pattern (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+6]..src/cinaps/ppxlib_cinaps_helpers.ml[20,469+7])
+                              Tpat_value
+                              pattern (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+6]..src/cinaps/ppxlib_cinaps_helpers.ml[20,469+7])
+                                Tpat_any
+                            expression (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+11]..src/cinaps/ppxlib_cinaps_helpers.ml[20,469+23])
+                              Texp_assert                              expression (src/cinaps/ppxlib_cinaps_helpers.ml[20,469+18]..src/cinaps/ppxlib_cinaps_helpers.ml[20,469+23])
+                                Texp_construct "false"
+                                []
+                        ]
+                        []
+                  ]
+            ]
+            expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+2]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+56])
+              Texp_function
+              Nolabel
+              [
+                <case>
+                  pattern (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+6]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+7])
+                    Tpat_var "s/158"
+                  expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+11]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+56])
+                    Texp_apply
+                    expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+11]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+23])
+                      Texp_ident "Stdlib!.print_string"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+24]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+56])
+                          Texp_apply
+                          expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+25]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+46])
+                            Texp_ident "Re!.Str.global_substitute"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+47]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+49])
+                                Texp_ident "re/104"
+                            <arg>
+                              Nolabel
+                              expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+50]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+53])
+                                Texp_ident "map/155"
+                            <arg>
+                              Nolabel
+                              expression (src/cinaps/ppxlib_cinaps_helpers.ml[22,498+54]..src/cinaps/ppxlib_cinaps_helpers.ml[22,498+55])
+                                Texp_ident "s/158"
+                          ]
+                    ]
+              ]
+    ]
+]
+
+(setglobal Ppxlib_cinaps_helpers!
+  (let
+    (str_to_sig/103 =
+       (let
+         (re/104 =
+            (after Ppxlib_cinaps_helpers.str_to_sig src/cinaps/ppxlib_cinaps_helpers.ml(5):41-130
+              (apply (field_imm 0 (global Re__Str!))
+                "\\(_?[sS]tructure\\|impl\\(ementation\\)?\\|str_\\|_str\\|\\b\\(st\\|Str\\)\\b\\)")))
+         (before Ppxlib_cinaps_helpers.str_to_sig src/cinaps/ppxlib_cinaps_helpers.ml(8):138-554
+           (let
+             (map/155 =
+                (function s/157
+                  (funct-body Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(8)<ghost>:146-492
+                    (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(9):154-492
+                      (let
+                        (*match*/440 =
+                           (after Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(9):160-180
+                             (apply (field_imm 9 (global Re__Str!)) s/157)))
+                        (catch
+                          (stringswitch *match*/440
+                           case "Str":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(11):220-225
+                              "Sig")
+                           case "Structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(13):280-291
+                              "Signature")
+                           case "_Structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(15):349-361
+                              "_Signature")
+                           case "_str":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(17):401-407
+                              "_sig")
+                           case "_structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(14):314-326
+                              "_signature")
+                           case "impl":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(19):462-468
+                              "intf")
+                           case "implementation":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(18):434-445
+                              "interface")
+                           case "st":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(10):200-204
+                              "sg")
+                           case "str_":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(16):378-384
+                              "sig_")
+                           case "structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(12):247-258
+                              "signature")
+                           default: (exit 1))
+                         with (1)
+                          (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(20):480-492
+                            (raise
+                              (after Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(20):480-492
+                                (makeblock 0 (global Assert_failure/30!)
+                                  [0:
+                                   "src/cinaps/ppxlib_cinaps_helpers.ml" 20
+                                   11]))))))))))
+             (before Ppxlib_cinaps_helpers.str_to_sig src/cinaps/ppxlib_cinaps_helpers.ml(22):500-554
+               (function s/158
+                 (funct-body Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):500-554
+                   (before Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):509-554
+                     (after Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):509-554
+                       (apply (field_imm 44 (global Stdlib!))
+                         (after Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):522-554
+                           (apply (field_imm 17 (global Re__Str!)) re/104
+                             map/155 s/158))))))))))))
+    (pseudo <unknown location> (makeblock 0 str_to_sig/103))))
+(setglobal Ppxlib_cinaps_helpers!
+  (let
+    (str_to_sig/103 =
+       (let
+         (re/104 =
+            (after Ppxlib_cinaps_helpers.str_to_sig src/cinaps/ppxlib_cinaps_helpers.ml(5):41-130
+              (apply (field_imm 0 (global Re__Str!))
+                "\\(_?[sS]tructure\\|impl\\(ementation\\)?\\|str_\\|_str\\|\\b\\(st\\|Str\\)\\b\\)")))
+         (before Ppxlib_cinaps_helpers.str_to_sig src/cinaps/ppxlib_cinaps_helpers.ml(8):138-554
+           (let
+             (map/155 =
+                (function s/157
+                  (funct-body Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(8)<ghost>:146-492
+                    (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(9):154-492
+                      (let
+                        (*match*/440 =
+                           (after Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(9):160-180
+                             (apply (field_imm 9 (global Re__Str!)) s/157)))
+                        (catch
+                          (stringswitch *match*/440
+                           case "Str":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(11):220-225
+                              "Sig")
+                           case "Structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(13):280-291
+                              "Signature")
+                           case "_Structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(15):349-361
+                              "_Signature")
+                           case "_str":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(17):401-407
+                              "_sig")
+                           case "_structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(14):314-326
+                              "_signature")
+                           case "impl":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(19):462-468
+                              "intf")
+                           case "implementation":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(18):434-445
+                              "interface")
+                           case "st":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(10):200-204
+                              "sg")
+                           case "str_":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(16):378-384
+                              "sig_")
+                           case "structure":
+                            (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(12):247-258
+                              "signature")
+                           default: (exit 1))
+                         with (1)
+                          (before Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(20):480-492
+                            (raise
+                              (after Ppxlib_cinaps_helpers.str_to_sig.map src/cinaps/ppxlib_cinaps_helpers.ml(20):480-492
+                                (makeblock 0 (global Assert_failure/30!)
+                                  [0:
+                                   "src/cinaps/ppxlib_cinaps_helpers.ml" 20
+                                   11]))))))))))
+             (before Ppxlib_cinaps_helpers.str_to_sig src/cinaps/ppxlib_cinaps_helpers.ml(22):500-554
+               (function s/158
+                 (funct-body Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):500-554
+                   (before Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):509-554
+                     (after Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):509-554
+                       (apply (field_imm 44 (global Stdlib!))
+                         (after Ppxlib_cinaps_helpers.str_to_sig.(fun) src/cinaps/ppxlib_cinaps_helpers.ml(22):522-554
+                           (apply (field_imm 17 (global Re__Str!)) re/104
+                             map/155 s/158))))))))))))
+    (pseudo <unknown location> (makeblock 0 str_to_sig/103))))

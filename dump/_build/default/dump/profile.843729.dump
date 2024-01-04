@@ -1,0 +1,24 @@
+0.199s  392MB 36.7MB 38.5MB src/ast_builder_generated.ml
+  0.003s 9.01MB 1.28MB 3.00MB parsing
+    0.003s 9.01MB 1.28MB 3.00MB parser
+  0.075s 97.7MB 19.7MB 22.7MB typing
+  0.008s 10.6MB 0.56MB 23.3MB transl
+  0.086s  173MB 14.9MB 38.2MB generate
+    ------ 0.35MB ------ ------ cmm
+    0.060s  138MB 12.8MB 36.1MB compile_phrases
+      0.003s 8.65MB 0.75MB 24.0MB selection
+      0.001s 2.00MB 0.37MB 24.4MB polling
+      0.002s 4.61MB 0.53MB 24.9MB cse
+      0.002s 2.37MB 0.18MB 25.1MB liveness
+      0.001s 0.24MB ------ ------ deadcode
+      0.006s 9.42MB 0.59MB 25.7MB spill
+      0.002s 2.00MB 0.53MB 26.2MB split
+      0.037s  102MB 9.00MB 35.2MB regalloc
+      0.001s 2.00MB 0.15MB 35.4MB linearize
+      ------ 0.54MB ------ ------ scheduling
+      0.001s 2.00MB 0.18MB 35.6MB emit
+      0.005s 2.44MB 0.53MB 36.1MB other
+    0.013s ------ ------ ------ assemble
+    0.013s 34.2MB 2.06MB 38.2MB other
+  0.026s  101MB 0.28MB 38.5MB other
+0.006s 3.04MB 1.72MB ------ other

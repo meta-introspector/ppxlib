@@ -1,0 +1,10 @@
+0.165s 65.5MB 21.4MB 23.1MB test/driver/exception_handling/extender.ml
+  0.154s 61.3MB 21.2MB 22.9MB typing
+  0.007s 4.06MB 0.21MB 23.1MB generate
+    0.002s 2.06MB 0.21MB 23.1MB compile_phrases
+      ------ 0.06MB ------ ------ deadcode
+      0.001s 2.00MB 0.21MB 23.1MB regalloc
+    0.004s ------ ------ ------ assemble
+    0.001s 2.00MB ------ ------ other
+  0.003s 0.04MB ------ ------ other
+0.016s 3.02MB 1.72MB ------ other

@@ -1,0 +1,13 @@
+0.118s 58.7MB 13.9MB 15.6MB src/import.ml
+  0.087s 45.7MB 13.3MB 15.0MB typing
+  0.022s 6.32MB 0.37MB 15.4MB generate
+    0.009s 4.28MB 0.34MB 15.3MB compile_phrases
+      0.001s 0.02MB ------ ------ selection
+      0.001s ------ ------ ------ liveness
+      0.002s 2.00MB 0.25MB 15.2MB spill
+      0.002s 0.25MB ------ ------ regalloc
+      0.001s 2.00MB 0.09MB 15.3MB emit
+    0.008s ------ ------ ------ assemble
+    0.005s 2.04MB 0.03MB 15.4MB other
+  0.010s 6.61MB 0.18MB 15.6MB other
+0.007s 3.03MB 1.69MB ------ other

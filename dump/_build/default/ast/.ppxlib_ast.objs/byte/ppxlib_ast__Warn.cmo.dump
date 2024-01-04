@@ -1,0 +1,223 @@
+[
+  structure_item (ast/warn.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (ast/warn.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (ast/warn.ml[1,0+6]..[1,0+12])
+  structure_item (ast/warn.ml[3,14+0]..[3,14+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[3,14+4]..[3,14+25])
+          Ppat_var "default_print_warning" (ast/warn.ml[3,14+4]..[3,14+25])
+        expression (ast/warn.ml[3,14+26]..[3,14+35]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/warn.ml[3,14+26]..[3,14+30])
+            Ppat_var "_loc" (ast/warn.ml[3,14+26]..[3,14+30])
+          expression (ast/warn.ml[3,14+33]..[3,14+35])
+            Pexp_construct "()" (ast/warn.ml[3,14+33]..[3,14+35])
+            None
+    ]
+  structure_item (ast/warn.ml[4,50+0]..[4,50+52])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[4,50+4]..[4,50+24])
+          Ppat_var "about_ite_branch_ref" (ast/warn.ml[4,50+4]..[4,50+24])
+        expression (ast/warn.ml[4,50+27]..[4,50+52])
+          Pexp_apply
+          expression (ast/warn.ml[4,50+27]..[4,50+30])
+            Pexp_ident "ref" (ast/warn.ml[4,50+27]..[4,50+30])
+          [
+            <arg>
+            Nolabel
+              expression (ast/warn.ml[4,50+31]..[4,50+52])
+                Pexp_ident "default_print_warning" (ast/warn.ml[4,50+31]..[4,50+52])
+          ]
+    ]
+  structure_item (ast/warn.ml[5,103+0]..[5,103+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[5,103+4]..[5,103+25])
+          Ppat_var "care_about_ite_branch" (ast/warn.ml[5,103+4]..[5,103+25])
+        expression (ast/warn.ml[5,103+28]..[5,103+37])
+          Pexp_apply
+          expression (ast/warn.ml[5,103+28]..[5,103+31])
+            Pexp_ident "ref" (ast/warn.ml[5,103+28]..[5,103+31])
+          [
+            <arg>
+            Nolabel
+              expression (ast/warn.ml[5,103+32]..[5,103+37])
+                Pexp_construct "false" (ast/warn.ml[5,103+32]..[5,103+37])
+                None
+          ]
+    ]
+  structure_item (ast/warn.ml[6,141+0]..[6,141+52])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[6,141+4]..[6,141+20])
+          Ppat_var "about_ite_branch" (ast/warn.ml[6,141+4]..[6,141+20])
+        expression (ast/warn.ml[6,141+21]..[6,141+52]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/warn.ml[6,141+21]..[6,141+24])
+            Ppat_var "loc" (ast/warn.ml[6,141+21]..[6,141+24])
+          expression (ast/warn.ml[6,141+27]..[6,141+52])
+            Pexp_apply
+            expression (ast/warn.ml[6,141+27]..[6,141+48])
+              Pexp_apply
+              expression (ast/warn.ml[6,141+27]..[6,141+28])
+                Pexp_ident "!" (ast/warn.ml[6,141+27]..[6,141+28])
+              [
+                <arg>
+                Nolabel
+                  expression (ast/warn.ml[6,141+28]..[6,141+48])
+                    Pexp_ident "about_ite_branch_ref" (ast/warn.ml[6,141+28]..[6,141+48])
+              ]
+            [
+              <arg>
+              Nolabel
+                expression (ast/warn.ml[6,141+49]..[6,141+52])
+                  Pexp_ident "loc" (ast/warn.ml[6,141+49]..[6,141+52])
+            ]
+    ]
+]
+
+open! Import
+let default_print_warning _loc = ()
+let about_ite_branch_ref = ref default_print_warning
+let care_about_ite_branch = ref false
+let about_ite_branch loc = (!about_ite_branch_ref) loc
+[
+  structure_item (ast/warn.ml[1,0+0]..ast/warn.ml[1,0+12])
+    Tstr_open Override
+    module_expr (ast/warn.ml[1,0+6]..ast/warn.ml[1,0+12])
+      Tmod_ident "Ppxlib_ast__!.Import"
+  structure_item (ast/warn.ml[3,14+0]..ast/warn.ml[3,14+35])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[3,14+4]..ast/warn.ml[3,14+25])
+          Tpat_var "default_print_warning/245"
+        expression (ast/warn.ml[3,14+26]..ast/warn.ml[3,14+35]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/warn.ml[3,14+26]..ast/warn.ml[3,14+30])
+                Tpat_var "_loc/247"
+              expression (ast/warn.ml[3,14+33]..ast/warn.ml[3,14+35])
+                Texp_construct "()"
+                []
+          ]
+    ]
+  structure_item (ast/warn.ml[4,50+0]..ast/warn.ml[4,50+52])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[4,50+4]..ast/warn.ml[4,50+24])
+          Tpat_var "about_ite_branch_ref/248"
+        expression (ast/warn.ml[4,50+27]..ast/warn.ml[4,50+52])
+          Texp_apply
+          expression (ast/warn.ml[4,50+27]..ast/warn.ml[4,50+30])
+            Texp_ident "Stdlib!.ref"
+          [
+            <arg>
+              Nolabel
+              expression (ast/warn.ml[4,50+31]..ast/warn.ml[4,50+52])
+                Texp_ident "default_print_warning/245"
+          ]
+    ]
+  structure_item (ast/warn.ml[5,103+0]..ast/warn.ml[5,103+37])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[5,103+4]..ast/warn.ml[5,103+25])
+          Tpat_var "care_about_ite_branch/249"
+        expression (ast/warn.ml[5,103+28]..ast/warn.ml[5,103+37])
+          Texp_apply
+          expression (ast/warn.ml[5,103+28]..ast/warn.ml[5,103+31])
+            Texp_ident "Stdlib!.ref"
+          [
+            <arg>
+              Nolabel
+              expression (ast/warn.ml[5,103+32]..ast/warn.ml[5,103+37])
+                Texp_construct "false"
+                []
+          ]
+    ]
+  structure_item (ast/warn.ml[6,141+0]..ast/warn.ml[6,141+52])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/warn.ml[6,141+4]..ast/warn.ml[6,141+20])
+          Tpat_var "about_ite_branch/250"
+        expression (ast/warn.ml[6,141+21]..ast/warn.ml[6,141+52]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/warn.ml[6,141+21]..ast/warn.ml[6,141+24])
+                Tpat_var "loc/252"
+              expression (ast/warn.ml[6,141+27]..ast/warn.ml[6,141+52])
+                Texp_apply
+                expression (ast/warn.ml[6,141+27]..ast/warn.ml[6,141+48])
+                  Texp_apply
+                  expression (ast/warn.ml[6,141+27]..ast/warn.ml[6,141+28])
+                    Texp_ident "Stdlib!.!"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (ast/warn.ml[6,141+28]..ast/warn.ml[6,141+48])
+                        Texp_ident "about_ite_branch_ref/248"
+                  ]
+                [
+                  <arg>
+                    Nolabel
+                    expression (ast/warn.ml[6,141+49]..ast/warn.ml[6,141+52])
+                      Texp_ident "loc/252"
+                ]
+          ]
+    ]
+]
+
+(setglobal Ppxlib_ast__Warn!
+  (let
+    (default_print_warning/245 =
+       (function _loc/247
+         (funct-body Ppxlib_ast__Warn.default_print_warning ast/warn.ml(3)<ghost>:40-49
+           (before Ppxlib_ast__Warn.default_print_warning ast/warn.ml(3):47-49
+             0)))
+     about_ite_branch_ref/248 = (makemutable 0 default_print_warning/245)
+     care_about_ite_branch/249 = (makemutable 0 0)
+     about_ite_branch/250 =
+       (function loc/252
+         (funct-body Ppxlib_ast__Warn.about_ite_branch ast/warn.ml(6)<ghost>:162-193
+           (before Ppxlib_ast__Warn.about_ite_branch ast/warn.ml(6):168-193
+             (after Ppxlib_ast__Warn.about_ite_branch ast/warn.ml(6):168-193
+               (apply (field_mut 0 about_ite_branch_ref/248) loc/252))))))
+    (pseudo <unknown location>
+      (makeblock 0 care_about_ite_branch/249 about_ite_branch_ref/248
+        about_ite_branch/250))))
+(setglobal Ppxlib_ast__Warn!
+  (let
+    (default_print_warning/245 =
+       (function _loc/247
+         (funct-body Ppxlib_ast__Warn.default_print_warning ast/warn.ml(3)<ghost>:40-49
+           (before Ppxlib_ast__Warn.default_print_warning ast/warn.ml(3):47-49
+             0)))
+     about_ite_branch_ref/248 = (makemutable 0 default_print_warning/245)
+     care_about_ite_branch/249 = (makemutable 0 0)
+     about_ite_branch/250 =
+       (function loc/252
+         (funct-body Ppxlib_ast__Warn.about_ite_branch ast/warn.ml(6)<ghost>:162-193
+           (before Ppxlib_ast__Warn.about_ite_branch ast/warn.ml(6):168-193
+             (after Ppxlib_ast__Warn.about_ite_branch ast/warn.ml(6):168-193
+               (apply (field_mut 0 about_ite_branch_ref/248) loc/252))))))
+    (pseudo <unknown location>
+      (makeblock 0 care_about_ite_branch/249 about_ite_branch_ref/248
+        about_ite_branch/250))))

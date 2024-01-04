@@ -1,0 +1,479 @@
+[
+  signature_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Psig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..[1,0+64])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..[1,0+64])
+        Pstr_eval
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..[1,0+64])
+          Pexp_constant PConst_string(" Represents freshly generated names at ppx expansion time. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..[1,0+64]),None)
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[3,66+0]..[3,66+10])
+    Psig_open Override "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[3,66+6]..[3,66+10])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[4,77+0]..[4,77+11])
+    Psig_open Fresh "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[4,77+5]..[4,77+11])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[6,90+0]..[6,90+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[6,90+5]..[6,90+6]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[6,90+0]..[6,90+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+0]..[9,166+40])
+    Psig_value
+    value_description "create" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+4]..[9,166+10]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+0]..[9,166+40])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[8,98+0]..[8,98+67])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[8,98+0]..[8,98+67])
+              Pexp_constant PConst_string(" Creates a new fresh name using the given string as a prefix. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[8,98+0]..[8,98+67]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+13]..[9,166+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+13]..[9,166+19])
+          Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+13]..[9,166+19])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+23]..[9,166+40])
+          Ptyp_arrow
+          Labelled "loc"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+27]..[9,166+35])
+            Ptyp_constr "location" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+27]..[9,166+35])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+39]..[9,166+40])
+            Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+39]..[9,166+40])
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+0]..[12,279+35])
+    Psig_value
+    value_description "of_string_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+4]..[12,279+17]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+0]..[12,279+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[11,208+0]..[11,208+70])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[11,208+0]..[11,208+70])
+              Pexp_constant PConst_string(" [of_string_loc { loc; txt }] is equivalent to [create txt ~loc] ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[11,208+0]..[11,208+70]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+20]..[12,279+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+20]..[12,279+30])
+          Ptyp_constr "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+27]..[12,279+30])
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+20]..[12,279+26])
+              Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+20]..[12,279+26])
+              []
+          ]
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+34]..[12,279+35])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+34]..[12,279+35])
+          []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+0]..[15,375+35])
+    Psig_value
+    value_description "to_string_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+4]..[15,375+17]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+0]..[15,375+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[14,316+0]..[14,316+58])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[14,316+0]..[14,316+58])
+              Pexp_constant PConst_string(" Extracts the freshly created name and its location. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[14,316+0]..[14,316+58]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+20]..[15,375+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+20]..[15,375+21])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+20]..[15,375+21])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+25]..[15,375+35])
+          Ptyp_constr "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+32]..[15,375+35])
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+25]..[15,375+31])
+              Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+25]..[15,375+31])
+              []
+          ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+0]..[18,473+32])
+    Psig_value
+    value_description "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+4]..[18,473+14]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+0]..[18,473+32])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[17,412+0]..[17,412+60])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[17,412+0]..[17,412+60])
+              Pexp_constant PConst_string(" Constructs an expression referring to the fresh name. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[17,412+0]..[17,412+60]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+17]..[18,473+32])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+17]..[18,473+18])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+17]..[18,473+18])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+22]..[18,473+32])
+          Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+22]..[18,473+32])
+          []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+0]..[21,559+26])
+    Psig_value
+    value_description "pattern" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+4]..[21,559+11]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+0]..[21,559+26])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[20,507+0]..[20,507+51])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[20,507+0]..[20,507+51])
+              Pexp_constant PConst_string(" Constructs a pattern binding the fresh name. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[20,507+0]..[20,507+51]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+14]..[21,559+26])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+14]..[21,559+15])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+14]..[21,559+15])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+19]..[21,559+26])
+          Ptyp_constr "pattern" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+19]..[21,559+26])
+          []
+      []
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+[@@@ocaml.text " Represents freshly generated names at ppx expansion time. "]
+open! Base
+open Ppxlib
+type t
+val create : string -> loc:location -> t[@@ocaml.doc
+                                          " Creates a new fresh name using the given string as a prefix. "]
+val of_string_loc : string loc -> t[@@ocaml.doc
+                                     " [of_string_loc { loc; txt }] is equivalent to [create txt ~loc] "]
+val to_string_loc : t -> string loc[@@ocaml.doc
+                                     " Extracts the freshly created name and its location. "]
+val expression : t -> expression[@@ocaml.doc
+                                  " Constructs an expression referring to the fresh name. "]
+val pattern : t -> pattern[@@ocaml.doc
+                            " Constructs a pattern binding the fresh name. "]
+[
+  signature_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tsig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+64])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..[1,0+64])
+        Pstr_eval
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..[1,0+64])
+          Pexp_constant PConst_string(" Represents freshly generated names at ppx expansion time. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[1,0+0]..[1,0+64]),None)
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[3,66+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[3,66+10])
+    Tsig_open Override "Base!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[4,77+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[4,77+11])
+    Tsig_open Fresh "Ppxlib!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[6,90+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[6,90+6])
+    Tsig_type Rec
+    [
+      type_declaration t/656 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[6,90+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[6,90+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+40])
+    Tsig_value
+    value_description create/657 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+40])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[8,98+0]..[8,98+67])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[8,98+0]..[8,98+67])
+              Pexp_constant PConst_string(" Creates a new fresh name using the given string as a prefix. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[8,98+0]..[8,98+67]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+40])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+19])
+          Ttyp_constr "Base!.string"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+23]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+40])
+          Ttyp_arrow
+          Labelled "loc"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+35])
+            Ttyp_constr "Ppxlib!.location"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[9,166+40])
+            Ttyp_constr "t/656"
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+35])
+    Tsig_value
+    value_description of_string_loc/658 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[11,208+0]..[11,208+70])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[11,208+0]..[11,208+70])
+              Pexp_constant PConst_string(" [of_string_loc { loc; txt }] is equivalent to [create txt ~loc] ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[11,208+0]..[11,208+70]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+35])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+30])
+          Ttyp_constr "Ppxlib!.loc"
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+26])
+              Ttyp_constr "Base!.string"
+              []
+          ]
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[12,279+35])
+          Ttyp_constr "t/656"
+          []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+35])
+    Tsig_value
+    value_description to_string_loc/659 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[14,316+0]..[14,316+58])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[14,316+0]..[14,316+58])
+              Pexp_constant PConst_string(" Extracts the freshly created name and its location. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[14,316+0]..[14,316+58]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+35])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+21])
+          Ttyp_constr "t/656"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+35])
+          Ttyp_constr "Ppxlib!.loc"
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[15,375+31])
+              Ttyp_constr "Base!.string"
+              []
+          ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+32])
+    Tsig_value
+    value_description expression/660 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+32])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[17,412+0]..[17,412+60])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[17,412+0]..[17,412+60])
+              Pexp_constant PConst_string(" Constructs an expression referring to the fresh name. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[17,412+0]..[17,412+60]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+32])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+18])
+          Ttyp_constr "t/656"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[18,473+32])
+          Ttyp_constr "Ppxlib!.expression"
+          []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+26])
+    Tsig_value
+    value_description pattern/661 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+26])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[20,507+0]..[20,507+51])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[20,507+0]..[20,507+51])
+              Pexp_constant PConst_string(" Constructs a pattern binding the fresh name. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[20,507+0]..[20,507+51]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+26])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+15])
+          Ttyp_constr "t/656"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/fresh_name.mli[21,559+26])
+          Ttyp_constr "Ppxlib!.pattern"
+          []
+      []
+]
+

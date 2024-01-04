@@ -1,0 +1,6 @@
+0.084s  116MB 23.6MB 23.6MB src/ast_traverse.mli
+  0.001s 2.89MB 1.53MB 1.53MB parsing
+    0.001s 2.89MB 1.53MB 1.53MB parser
+  0.067s  111MB 21.5MB 23.1MB typing
+  0.016s 2.46MB 0.50MB 23.6MB other
+0.004s ------ ------ ------ other

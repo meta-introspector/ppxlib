@@ -1,0 +1,1079 @@
+[
+  signature_item (src/ast_builder.mli[1,0+0]..[3,158+48])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/ast_builder.mli[1,0+0]..[3,158+48])
+        Pstr_eval
+        expression (src/ast_builder.mli[1,0+0]..[3,158+48])
+          Pexp_constant PConst_string(" [Ast_builder] is a module to generate OCaml AST fragments. It provides a\n    shorter syntax than directly using the {!Parsetree} constructors, as well as\n    a better stability than the constructors. ",(src/ast_builder.mli[1,0+0]..[3,158+48]),None)
+    ]
+  signature_item (src/ast_builder.mli[5,208+0]..[5,208+12])
+    Psig_open Override "Import" (src/ast_builder.mli[5,208+6]..[5,208+12])
+  signature_item (src/ast_builder.mli[7,222+0]..[12,381+14])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/ast_builder.mli[7,222+0]..[12,381+14])
+        Pstr_eval
+        expression (src/ast_builder.mli[7,222+0]..[12,381+14])
+          Pexp_constant PConst_string(" {1 Link to the tutorial}\n\n    For a detailed explanation on this module, refer to the\n    {{!\"generating-code\".ast_builder} relevant} part of the manual.\n\n    {1 API} ",(src/ast_builder.mli[7,222+0]..[12,381+14]),None)
+    ]
+  signature_item (src/ast_builder.mli[16,488+0]..[61,1926+3])
+    Psig_module "Default" (src/ast_builder.mli[16,488+7]..[16,488+14])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/ast_builder.mli[14,397+0]..[15,472+15])
+            Pstr_eval
+            expression (src/ast_builder.mli[14,397+0]..[15,472+15])
+              Pexp_constant PConst_string(" Helpers taking a [~loc] argument. This module is meant to be opened or\n    aliased. ",(src/ast_builder.mli[14,397+0]..[15,472+15]),None)
+        ]
+    module_type (src/ast_builder.mli[16,488+17]..[61,1926+3])
+      Pmty_signature
+      [
+        signature_item (src/ast_builder.mli[17,509+2]..[19,557+64])
+          Psig_module "Located" (src/ast_builder.mli[17,509+9]..[17,509+16])
+          module_type (src/ast_builder.mli[18,528+4]..[19,557+64])
+            Pmty_with
+            module_type (src/ast_builder.mli[18,528+4]..[18,528+28])
+              Pmty_ident "Ast_builder_intf.Located" (src/ast_builder.mli[18,528+4]..[18,528+28])
+            [
+              Pwith_typesubst "with_loc" (src/ast_builder.mli[19,557+19]..[19,557+27])
+                type_declaration "with_loc" (src/ast_builder.mli[19,557+19]..[19,557+27]) (src/ast_builder.mli[19,557+11]..[19,557+64])
+                  ptype_params =
+                    [
+                      core_type (src/ast_builder.mli[19,557+16]..[19,557+18])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (src/ast_builder.mli[19,557+31]..[19,557+64])
+                        Ptyp_constr "Ast_builder_intf.with_location" (src/ast_builder.mli[19,557+34]..[19,557+64])
+                        [
+                          core_type (src/ast_builder.mli[19,557+31]..[19,557+33])
+                            Ptyp_var a
+                        ]
+            ]
+        signature_item (src/ast_builder.mli[21,623+2]..[21,623+48])
+          Psig_include
+          module_type (src/ast_builder.mli[21,623+10]..[21,623+48])
+            Pmty_typeof
+            module_expr (src/ast_builder.mli[21,623+25]..[21,623+48])
+              Pmod_ident "Ast_builder_generated.M" (src/ast_builder.mli[21,623+25]..[21,623+48])
+        signature_item (src/ast_builder.mli[23,673+2]..[46,1552+5])
+          Psig_module "Latest" (src/ast_builder.mli[23,673+9]..[23,673+15])
+          module_type (src/ast_builder.mli[23,673+18]..[46,1552+5])
+            Pmty_signature
+            [
+              signature_item (src/ast_builder.mli[24,695+4]..[30,1165+38])
+                Psig_attribute "ocaml.text"
+                [
+                  structure_item (src/ast_builder.mli[24,695+4]..[30,1165+38])
+                    Pstr_eval
+                    expression (src/ast_builder.mli[24,695+4]..[30,1165+38])
+                      Pexp_constant PConst_string(" This module contains updated versions of node constructors that were\n        kept stable when the node changed. For every function in this module,\n        there's an equally-named function outside this module. The function\n        outside this module will stay stable, whereas the function inside this\n        module will adapt potential upcoming new compiler features. Only use a\n        function in this module, if the equally-named one outside this module is\n        missing a feature you need. ",(src/ast_builder.mli[24,695+4]..[30,1165+38]),None)
+                ]
+              signature_item (src/ast_builder.mli[32,1205+4]..[36,1318+13])
+                Psig_value
+                value_description "ppat_construct" (src/ast_builder.mli[32,1205+8]..[32,1205+22]) (src/ast_builder.mli[32,1205+4]..[36,1318+13])
+                  core_type (src/ast_builder.mli[33,1230+6]..[36,1318+13])
+                    Ptyp_arrow
+                    Labelled "loc"
+                    core_type (src/ast_builder.mli[33,1230+10]..[33,1230+18])
+                      Ptyp_constr "location" (src/ast_builder.mli[33,1230+10]..[33,1230+18])
+                      []
+                    core_type (src/ast_builder.mli[34,1252+6]..[36,1318+13])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder.mli[34,1252+6]..[34,1252+19])
+                        Ptyp_constr "loc" (src/ast_builder.mli[34,1252+16]..[34,1252+19])
+                        [
+                          core_type (src/ast_builder.mli[34,1252+6]..[34,1252+15])
+                            Ptyp_constr "longident" (src/ast_builder.mli[34,1252+6]..[34,1252+15])
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[35,1275+6]..[36,1318+13])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder.mli[35,1275+6]..[35,1275+39])
+                          Ptyp_constr "option" (src/ast_builder.mli[35,1275+33]..[35,1275+39])
+                          [
+                            core_type (src/ast_builder.mli[35,1275+7]..[35,1275+31])
+                              Ptyp_tuple
+                              [
+                                core_type (src/ast_builder.mli[35,1275+7]..[35,1275+21])
+                                  Ptyp_constr "list" (src/ast_builder.mli[35,1275+17]..[35,1275+21])
+                                  [
+                                    core_type (src/ast_builder.mli[35,1275+7]..[35,1275+16])
+                                      Ptyp_constr "loc" (src/ast_builder.mli[35,1275+13]..[35,1275+16])
+                                      [
+                                        core_type (src/ast_builder.mli[35,1275+7]..[35,1275+12])
+                                          Ptyp_constr "label" (src/ast_builder.mli[35,1275+7]..[35,1275+12])
+                                          []
+                                      ]
+                                  ]
+                                core_type (src/ast_builder.mli[35,1275+24]..[35,1275+31])
+                                  Ptyp_constr "pattern" (src/ast_builder.mli[35,1275+24]..[35,1275+31])
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[36,1318+6]..[36,1318+13])
+                          Ptyp_constr "pattern" (src/ast_builder.mli[36,1318+6]..[36,1318+13])
+                          []
+                  []
+              signature_item (src/ast_builder.mli[38,1333+4]..[45,1522+29])
+                Psig_value
+                value_description "constructor_declaration" (src/ast_builder.mli[38,1333+8]..[38,1333+31]) (src/ast_builder.mli[38,1333+4]..[45,1522+29])
+                  core_type (src/ast_builder.mli[39,1367+6]..[45,1522+29])
+                    Ptyp_arrow
+                    Labelled "loc"
+                    core_type (src/ast_builder.mli[39,1367+10]..[39,1367+18])
+                      Ptyp_constr "location" (src/ast_builder.mli[39,1367+10]..[39,1367+18])
+                      []
+                    core_type (src/ast_builder.mli[40,1389+6]..[45,1522+29])
+                      Ptyp_arrow
+                      Labelled "name"
+                      core_type (src/ast_builder.mli[40,1389+11]..[40,1389+20])
+                        Ptyp_constr "loc" (src/ast_builder.mli[40,1389+17]..[40,1389+20])
+                        [
+                          core_type (src/ast_builder.mli[40,1389+11]..[40,1389+16])
+                            Ptyp_constr "label" (src/ast_builder.mli[40,1389+11]..[40,1389+16])
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[41,1413+6]..[45,1522+29])
+                        Ptyp_arrow
+                        Labelled "vars"
+                        core_type (src/ast_builder.mli[41,1413+11]..[41,1413+25])
+                          Ptyp_constr "list" (src/ast_builder.mli[41,1413+21]..[41,1413+25])
+                          [
+                            core_type (src/ast_builder.mli[41,1413+11]..[41,1413+20])
+                              Ptyp_constr "loc" (src/ast_builder.mli[41,1413+17]..[41,1413+20])
+                              [
+                                core_type (src/ast_builder.mli[41,1413+11]..[41,1413+16])
+                                  Ptyp_constr "label" (src/ast_builder.mli[41,1413+11]..[41,1413+16])
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[42,1442+6]..[45,1522+29])
+                          Ptyp_arrow
+                          Labelled "args"
+                          core_type (src/ast_builder.mli[42,1442+11]..[42,1442+32])
+                            Ptyp_constr "constructor_arguments" (src/ast_builder.mli[42,1442+11]..[42,1442+32])
+                            []
+                          core_type (src/ast_builder.mli[43,1478+6]..[45,1522+29])
+                            Ptyp_arrow
+                            Labelled "res"
+                            core_type (src/ast_builder.mli[43,1478+10]..[43,1478+26])
+                              Ptyp_constr "option" (src/ast_builder.mli[43,1478+20]..[43,1478+26])
+                              [
+                                core_type (src/ast_builder.mli[43,1478+10]..[43,1478+19])
+                                  Ptyp_constr "core_type" (src/ast_builder.mli[43,1478+10]..[43,1478+19])
+                                  []
+                              ]
+                            core_type (src/ast_builder.mli[44,1508+6]..[45,1522+29])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/ast_builder.mli[44,1508+6]..[44,1508+10])
+                                Ptyp_constr "unit" (src/ast_builder.mli[44,1508+6]..[44,1508+10])
+                                []
+                              core_type (src/ast_builder.mli[45,1522+6]..[45,1522+29])
+                                Ptyp_constr "constructor_declaration" (src/ast_builder.mli[45,1522+6]..[45,1522+29])
+                                []
+                  []
+            ]
+        signature_item (src/ast_builder.mli[48,1559+2]..[49,1582+62])
+          Psig_value
+          value_description "ppat_construct" (src/ast_builder.mli[48,1559+6]..[48,1559+20]) (src/ast_builder.mli[48,1559+2]..[49,1582+62])
+            core_type (src/ast_builder.mli[49,1582+4]..[49,1582+62])
+              Ptyp_arrow
+              Labelled "loc"
+              core_type (src/ast_builder.mli[49,1582+8]..[49,1582+16])
+                Ptyp_constr "location" (src/ast_builder.mli[49,1582+8]..[49,1582+16])
+                []
+              core_type (src/ast_builder.mli[49,1582+20]..[49,1582+62])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder.mli[49,1582+20]..[49,1582+33])
+                  Ptyp_constr "loc" (src/ast_builder.mli[49,1582+30]..[49,1582+33])
+                  [
+                    core_type (src/ast_builder.mli[49,1582+20]..[49,1582+29])
+                      Ptyp_constr "longident" (src/ast_builder.mli[49,1582+20]..[49,1582+29])
+                      []
+                  ]
+                core_type (src/ast_builder.mli[49,1582+37]..[49,1582+62])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder.mli[49,1582+37]..[49,1582+51])
+                    Ptyp_constr "option" (src/ast_builder.mli[49,1582+45]..[49,1582+51])
+                    [
+                      core_type (src/ast_builder.mli[49,1582+37]..[49,1582+44])
+                        Ptyp_constr "pattern" (src/ast_builder.mli[49,1582+37]..[49,1582+44])
+                        []
+                    ]
+                  core_type (src/ast_builder.mli[49,1582+55]..[49,1582+62])
+                    Ptyp_constr "pattern" (src/ast_builder.mli[49,1582+55]..[49,1582+62])
+                    []
+            []
+        signature_item (src/ast_builder.mli[51,1646+2]..[56,1782+27])
+          Psig_value
+          value_description "constructor_declaration" (src/ast_builder.mli[51,1646+6]..[51,1646+29]) (src/ast_builder.mli[51,1646+2]..[56,1782+27])
+            core_type (src/ast_builder.mli[52,1678+4]..[56,1782+27])
+              Ptyp_arrow
+              Labelled "loc"
+              core_type (src/ast_builder.mli[52,1678+8]..[52,1678+16])
+                Ptyp_constr "location" (src/ast_builder.mli[52,1678+8]..[52,1678+16])
+                []
+              core_type (src/ast_builder.mli[53,1698+4]..[56,1782+27])
+                Ptyp_arrow
+                Labelled "name"
+                core_type (src/ast_builder.mli[53,1698+9]..[53,1698+18])
+                  Ptyp_constr "loc" (src/ast_builder.mli[53,1698+15]..[53,1698+18])
+                  [
+                    core_type (src/ast_builder.mli[53,1698+9]..[53,1698+14])
+                      Ptyp_constr "label" (src/ast_builder.mli[53,1698+9]..[53,1698+14])
+                      []
+                  ]
+                core_type (src/ast_builder.mli[54,1720+4]..[56,1782+27])
+                  Ptyp_arrow
+                  Labelled "args"
+                  core_type (src/ast_builder.mli[54,1720+9]..[54,1720+30])
+                    Ptyp_constr "constructor_arguments" (src/ast_builder.mli[54,1720+9]..[54,1720+30])
+                    []
+                  core_type (src/ast_builder.mli[55,1754+4]..[56,1782+27])
+                    Ptyp_arrow
+                    Labelled "res"
+                    core_type (src/ast_builder.mli[55,1754+8]..[55,1754+24])
+                      Ptyp_constr "option" (src/ast_builder.mli[55,1754+18]..[55,1754+24])
+                      [
+                        core_type (src/ast_builder.mli[55,1754+8]..[55,1754+17])
+                          Ptyp_constr "core_type" (src/ast_builder.mli[55,1754+8]..[55,1754+17])
+                          []
+                      ]
+                    core_type (src/ast_builder.mli[56,1782+4]..[56,1782+27])
+                      Ptyp_constr "constructor_declaration" (src/ast_builder.mli[56,1782+4]..[56,1782+27])
+                      []
+            []
+        signature_item (src/ast_builder.mli[58,1811+2]..[60,1861+64])
+          Psig_include
+          module_type (src/ast_builder.mli[59,1821+4]..[60,1861+64])
+            Pmty_with
+            module_type (src/ast_builder.mli[59,1821+4]..[59,1821+39])
+              Pmty_ident "Ast_builder_intf.Additional_helpers" (src/ast_builder.mli[59,1821+4]..[59,1821+39])
+            [
+              Pwith_typesubst "with_loc" (src/ast_builder.mli[60,1861+19]..[60,1861+27])
+                type_declaration "with_loc" (src/ast_builder.mli[60,1861+19]..[60,1861+27]) (src/ast_builder.mli[60,1861+11]..[60,1861+64])
+                  ptype_params =
+                    [
+                      core_type (src/ast_builder.mli[60,1861+16]..[60,1861+18])
+                        Ptyp_var a
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (src/ast_builder.mli[60,1861+31]..[60,1861+64])
+                        Ptyp_constr "Ast_builder_intf.with_location" (src/ast_builder.mli[60,1861+34]..[60,1861+64])
+                        [
+                          core_type (src/ast_builder.mli[60,1861+31]..[60,1861+33])
+                            Ptyp_var a
+                        ]
+            ]
+      ]
+  signature_item (src/ast_builder.mli[63,1931+0]..[63,1931+38])
+    Psig_modtype "Loc" (src/ast_builder.mli[63,1931+12]..[63,1931+15])
+      module_type (src/ast_builder.mli[63,1931+18]..[63,1931+38])
+        Pmty_ident "Ast_builder_intf.Loc" (src/ast_builder.mli[63,1931+18]..[63,1931+38])
+  signature_item (src/ast_builder.mli[65,1971+0]..[96,3062+3])
+    Psig_modtype "S" (src/ast_builder.mli[65,1971+12]..[65,1971+13])
+      module_type (src/ast_builder.mli[65,1971+16]..[96,3062+3])
+        Pmty_signature
+        [
+          signature_item (src/ast_builder.mli[66,1991+2]..[66,1991+28])
+            Psig_include
+            module_type (src/ast_builder.mli[66,1991+10]..[66,1991+28])
+              Pmty_ident "Ast_builder_intf.S" (src/ast_builder.mli[66,1991+10]..[66,1991+28])
+          signature_item (src/ast_builder.mli[68,2021+2]..[87,2844+5])
+            Psig_module "Latest" (src/ast_builder.mli[68,2021+9]..[68,2021+15])
+            module_type (src/ast_builder.mli[68,2021+18]..[87,2844+5])
+              Pmty_signature
+              [
+                signature_item (src/ast_builder.mli[69,2043+4]..[75,2513+38])
+                  Psig_attribute "ocaml.text"
+                  [
+                    structure_item (src/ast_builder.mli[69,2043+4]..[75,2513+38])
+                      Pstr_eval
+                      expression (src/ast_builder.mli[69,2043+4]..[75,2513+38])
+                        Pexp_constant PConst_string(" This module contains updated versions of node constructors that were\n        kept stable when the node changed. For every function in this module,\n        there's an equally-named function outside this module. The function\n        outside this module will stay stable, whereas the function inside this\n        module will adapt potential upcoming new compiler features. Only use a\n        function in this module, if the equally-named one outside this module is\n        missing a feature you need. ",(src/ast_builder.mli[69,2043+4]..[75,2513+38]),None)
+                  ]
+                signature_item (src/ast_builder.mli[77,2553+4]..[78,2578+67])
+                  Psig_value
+                  value_description "ppat_construct" (src/ast_builder.mli[77,2553+8]..[77,2553+22]) (src/ast_builder.mli[77,2553+4]..[78,2578+67])
+                    core_type (src/ast_builder.mli[78,2578+6]..[78,2578+67])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder.mli[78,2578+6]..[78,2578+19])
+                        Ptyp_constr "loc" (src/ast_builder.mli[78,2578+16]..[78,2578+19])
+                        [
+                          core_type (src/ast_builder.mli[78,2578+6]..[78,2578+15])
+                            Ptyp_constr "longident" (src/ast_builder.mli[78,2578+6]..[78,2578+15])
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[78,2578+23]..[78,2578+67])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder.mli[78,2578+23]..[78,2578+56])
+                          Ptyp_constr "option" (src/ast_builder.mli[78,2578+50]..[78,2578+56])
+                          [
+                            core_type (src/ast_builder.mli[78,2578+24]..[78,2578+48])
+                              Ptyp_tuple
+                              [
+                                core_type (src/ast_builder.mli[78,2578+24]..[78,2578+38])
+                                  Ptyp_constr "list" (src/ast_builder.mli[78,2578+34]..[78,2578+38])
+                                  [
+                                    core_type (src/ast_builder.mli[78,2578+24]..[78,2578+33])
+                                      Ptyp_constr "loc" (src/ast_builder.mli[78,2578+30]..[78,2578+33])
+                                      [
+                                        core_type (src/ast_builder.mli[78,2578+24]..[78,2578+29])
+                                          Ptyp_constr "label" (src/ast_builder.mli[78,2578+24]..[78,2578+29])
+                                          []
+                                      ]
+                                  ]
+                                core_type (src/ast_builder.mli[78,2578+41]..[78,2578+48])
+                                  Ptyp_constr "pattern" (src/ast_builder.mli[78,2578+41]..[78,2578+48])
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[78,2578+60]..[78,2578+67])
+                          Ptyp_constr "pattern" (src/ast_builder.mli[78,2578+60]..[78,2578+67])
+                          []
+                    []
+                signature_item (src/ast_builder.mli[80,2647+4]..[86,2814+29])
+                  Psig_value
+                  value_description "constructor_declaration" (src/ast_builder.mli[80,2647+8]..[80,2647+31]) (src/ast_builder.mli[80,2647+4]..[86,2814+29])
+                    core_type (src/ast_builder.mli[81,2681+6]..[86,2814+29])
+                      Ptyp_arrow
+                      Labelled "name"
+                      core_type (src/ast_builder.mli[81,2681+11]..[81,2681+20])
+                        Ptyp_constr "loc" (src/ast_builder.mli[81,2681+17]..[81,2681+20])
+                        [
+                          core_type (src/ast_builder.mli[81,2681+11]..[81,2681+16])
+                            Ptyp_constr "label" (src/ast_builder.mli[81,2681+11]..[81,2681+16])
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[82,2705+6]..[86,2814+29])
+                        Ptyp_arrow
+                        Labelled "vars"
+                        core_type (src/ast_builder.mli[82,2705+11]..[82,2705+25])
+                          Ptyp_constr "list" (src/ast_builder.mli[82,2705+21]..[82,2705+25])
+                          [
+                            core_type (src/ast_builder.mli[82,2705+11]..[82,2705+20])
+                              Ptyp_constr "loc" (src/ast_builder.mli[82,2705+17]..[82,2705+20])
+                              [
+                                core_type (src/ast_builder.mli[82,2705+11]..[82,2705+16])
+                                  Ptyp_constr "label" (src/ast_builder.mli[82,2705+11]..[82,2705+16])
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[83,2734+6]..[86,2814+29])
+                          Ptyp_arrow
+                          Labelled "args"
+                          core_type (src/ast_builder.mli[83,2734+11]..[83,2734+32])
+                            Ptyp_constr "constructor_arguments" (src/ast_builder.mli[83,2734+11]..[83,2734+32])
+                            []
+                          core_type (src/ast_builder.mli[84,2770+6]..[86,2814+29])
+                            Ptyp_arrow
+                            Labelled "res"
+                            core_type (src/ast_builder.mli[84,2770+10]..[84,2770+26])
+                              Ptyp_constr "option" (src/ast_builder.mli[84,2770+20]..[84,2770+26])
+                              [
+                                core_type (src/ast_builder.mli[84,2770+10]..[84,2770+19])
+                                  Ptyp_constr "core_type" (src/ast_builder.mli[84,2770+10]..[84,2770+19])
+                                  []
+                              ]
+                            core_type (src/ast_builder.mli[85,2800+6]..[86,2814+29])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/ast_builder.mli[85,2800+6]..[85,2800+10])
+                                Ptyp_constr "unit" (src/ast_builder.mli[85,2800+6]..[85,2800+10])
+                                []
+                              core_type (src/ast_builder.mli[86,2814+6]..[86,2814+29])
+                                Ptyp_constr "constructor_declaration" (src/ast_builder.mli[86,2814+6]..[86,2814+29])
+                                []
+                    []
+              ]
+          signature_item (src/ast_builder.mli[89,2851+2]..[89,2851+65])
+            Psig_value
+            value_description "ppat_construct" (src/ast_builder.mli[89,2851+6]..[89,2851+20]) (src/ast_builder.mli[89,2851+2]..[89,2851+65])
+              core_type (src/ast_builder.mli[89,2851+23]..[89,2851+65])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder.mli[89,2851+23]..[89,2851+36])
+                  Ptyp_constr "loc" (src/ast_builder.mli[89,2851+33]..[89,2851+36])
+                  [
+                    core_type (src/ast_builder.mli[89,2851+23]..[89,2851+32])
+                      Ptyp_constr "longident" (src/ast_builder.mli[89,2851+23]..[89,2851+32])
+                      []
+                  ]
+                core_type (src/ast_builder.mli[89,2851+40]..[89,2851+65])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder.mli[89,2851+40]..[89,2851+54])
+                    Ptyp_constr "option" (src/ast_builder.mli[89,2851+48]..[89,2851+54])
+                    [
+                      core_type (src/ast_builder.mli[89,2851+40]..[89,2851+47])
+                        Ptyp_constr "pattern" (src/ast_builder.mli[89,2851+40]..[89,2851+47])
+                        []
+                    ]
+                  core_type (src/ast_builder.mli[89,2851+58]..[89,2851+65])
+                    Ptyp_constr "pattern" (src/ast_builder.mli[89,2851+58]..[89,2851+65])
+                    []
+              []
+          signature_item (src/ast_builder.mli[91,2918+2]..[95,3034+27])
+            Psig_value
+            value_description "constructor_declaration" (src/ast_builder.mli[91,2918+6]..[91,2918+29]) (src/ast_builder.mli[91,2918+2]..[95,3034+27])
+              core_type (src/ast_builder.mli[92,2950+4]..[95,3034+27])
+                Ptyp_arrow
+                Labelled "name"
+                core_type (src/ast_builder.mli[92,2950+9]..[92,2950+18])
+                  Ptyp_constr "loc" (src/ast_builder.mli[92,2950+15]..[92,2950+18])
+                  [
+                    core_type (src/ast_builder.mli[92,2950+9]..[92,2950+14])
+                      Ptyp_constr "label" (src/ast_builder.mli[92,2950+9]..[92,2950+14])
+                      []
+                  ]
+                core_type (src/ast_builder.mli[93,2972+4]..[95,3034+27])
+                  Ptyp_arrow
+                  Labelled "args"
+                  core_type (src/ast_builder.mli[93,2972+9]..[93,2972+30])
+                    Ptyp_constr "constructor_arguments" (src/ast_builder.mli[93,2972+9]..[93,2972+30])
+                    []
+                  core_type (src/ast_builder.mli[94,3006+4]..[95,3034+27])
+                    Ptyp_arrow
+                    Labelled "res"
+                    core_type (src/ast_builder.mli[94,3006+8]..[94,3006+24])
+                      Ptyp_constr "option" (src/ast_builder.mli[94,3006+18]..[94,3006+24])
+                      [
+                        core_type (src/ast_builder.mli[94,3006+8]..[94,3006+17])
+                          Ptyp_constr "core_type" (src/ast_builder.mli[94,3006+8]..[94,3006+17])
+                          []
+                      ]
+                    core_type (src/ast_builder.mli[95,3034+4]..[95,3034+27])
+                      Ptyp_constr "constructor_declaration" (src/ast_builder.mli[95,3034+4]..[95,3034+27])
+                      []
+              []
+        ]
+  signature_item (src/ast_builder.mli[99,3131+0]..[99,3131+27])
+    Psig_module "Make" (src/ast_builder.mli[99,3131+7]..[99,3131+11])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/ast_builder.mli[98,3067+0]..[98,3067+63])
+            Pstr_eval
+            expression (src/ast_builder.mli[98,3067+0]..[98,3067+63])
+              Pexp_constant PConst_string(" Build Ast helpers with the location argument factorized. ",(src/ast_builder.mli[98,3067+0]..[98,3067+63]),None)
+        ]
+    module_type (src/ast_builder.mli[99,3131+12]..[99,3131+27])
+      Pmty_functor "Loc" (src/ast_builder.mli[99,3131+13]..[99,3131+16])
+      module_type (src/ast_builder.mli[99,3131+19]..[99,3131+22])
+        Pmty_ident "Loc" (src/ast_builder.mli[99,3131+19]..[99,3131+22])
+      module_type (src/ast_builder.mli[99,3131+26]..[99,3131+27])
+        Pmty_ident "S" (src/ast_builder.mli[99,3131+26]..[99,3131+27])
+  signature_item (src/ast_builder.mli[101,3160+0]..[101,3160+35])
+    Psig_value
+    value_description "make" (src/ast_builder.mli[101,3160+4]..[101,3160+8]) (src/ast_builder.mli[101,3160+0]..[101,3160+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/ast_builder.mli[102,3196+0]..[102,3196+36])
+            Pstr_eval
+            expression (src/ast_builder.mli[102,3196+0]..[102,3196+36])
+              Pexp_constant PConst_string(" Functional version of [Make]. ",(src/ast_builder.mli[102,3196+0]..[102,3196+36]),None)
+        ]
+      core_type (src/ast_builder.mli[101,3160+11]..[101,3160+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/ast_builder.mli[101,3160+11]..[101,3160+21])
+          Ptyp_constr "Location.t" (src/ast_builder.mli[101,3160+11]..[101,3160+21])
+          []
+        core_type (src/ast_builder.mli[101,3160+25]..[101,3160+35])
+          Ptyp_package "S" (src/ast_builder.mli[101,3160+33]..[101,3160+34])
+          []
+      []
+]
+
+[@@@ocaml.text
+  " [Ast_builder] is a module to generate OCaml AST fragments. It provides a\n    shorter syntax than directly using the {!Parsetree} constructors, as well as\n    a better stability than the constructors. "]
+open! Import
+[@@@ocaml.text
+  " {1 Link to the tutorial}\n\n    For a detailed explanation on this module, refer to the\n    {{!\"generating-code\".ast_builder} relevant} part of the manual.\n\n    {1 API} "]
+module Default :
+sig
+  module Located :
+  Ast_builder_intf.Located with type 'a with_loc := 
+    'a Ast_builder_intf.with_location
+  include module type of Ast_builder_generated.M
+  module Latest :
+  sig
+    [@@@ocaml.text
+      " This module contains updated versions of node constructors that were\n        kept stable when the node changed. For every function in this module,\n        there's an equally-named function outside this module. The function\n        outside this module will stay stable, whereas the function inside this\n        module will adapt potential upcoming new compiler features. Only use a\n        function in this module, if the equally-named one outside this module is\n        missing a feature you need. "]
+    val ppat_construct :
+      loc:location ->
+        longident loc -> (label loc list * pattern) option -> pattern
+    val constructor_declaration :
+      loc:location ->
+        name:label loc ->
+          vars:label loc list ->
+            args:constructor_arguments ->
+              res:core_type option -> unit -> constructor_declaration
+  end
+  val ppat_construct :
+    loc:location -> longident loc -> pattern option -> pattern
+  val constructor_declaration :
+    loc:location ->
+      name:label loc ->
+        args:constructor_arguments ->
+          res:core_type option -> constructor_declaration
+  include
+    Ast_builder_intf.Additional_helpers with type 'a with_loc := 
+      'a Ast_builder_intf.with_location
+end[@@ocaml.doc
+     " Helpers taking a [~loc] argument. This module is meant to be opened or\n    aliased. "]
+module type Loc  = Ast_builder_intf.Loc
+module type S  =
+  sig
+    include Ast_builder_intf.S
+    module Latest :
+    sig
+      [@@@ocaml.text
+        " This module contains updated versions of node constructors that were\n        kept stable when the node changed. For every function in this module,\n        there's an equally-named function outside this module. The function\n        outside this module will stay stable, whereas the function inside this\n        module will adapt potential upcoming new compiler features. Only use a\n        function in this module, if the equally-named one outside this module is\n        missing a feature you need. "]
+      val ppat_construct :
+        longident loc -> (label loc list * pattern) option -> pattern
+      val constructor_declaration :
+        name:label loc ->
+          vars:label loc list ->
+            args:constructor_arguments ->
+              res:core_type option -> unit -> constructor_declaration
+    end
+    val ppat_construct : longident loc -> pattern option -> pattern
+    val constructor_declaration :
+      name:label loc ->
+        args:constructor_arguments ->
+          res:core_type option -> constructor_declaration
+  end
+module Make : functor (Loc : Loc) -> S[@@ocaml.doc
+                                        " Build Ast helpers with the location argument factorized. "]
+val make : Location.t -> (module S)[@@ocaml.doc
+                                     " Functional version of [Make]. "]
+[
+  signature_item (src/ast_builder.mli[1,0+0]..src/ast_builder.mli[3,158+48])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/ast_builder.mli[1,0+0]..[3,158+48])
+        Pstr_eval
+        expression (src/ast_builder.mli[1,0+0]..[3,158+48])
+          Pexp_constant PConst_string(" [Ast_builder] is a module to generate OCaml AST fragments. It provides a\n    shorter syntax than directly using the {!Parsetree} constructors, as well as\n    a better stability than the constructors. ",(src/ast_builder.mli[1,0+0]..[3,158+48]),None)
+    ]
+  signature_item (src/ast_builder.mli[5,208+0]..src/ast_builder.mli[5,208+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/ast_builder.mli[7,222+0]..src/ast_builder.mli[12,381+14])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/ast_builder.mli[7,222+0]..[12,381+14])
+        Pstr_eval
+        expression (src/ast_builder.mli[7,222+0]..[12,381+14])
+          Pexp_constant PConst_string(" {1 Link to the tutorial}\n\n    For a detailed explanation on this module, refer to the\n    {{!\"generating-code\".ast_builder} relevant} part of the manual.\n\n    {1 API} ",(src/ast_builder.mli[7,222+0]..[12,381+14]),None)
+    ]
+  signature_item (src/ast_builder.mli[16,488+0]..src/ast_builder.mli[61,1926+3])
+    Tsig_module "Default/2154"
+      attribute "ocaml.doc"
+        [
+          structure_item (src/ast_builder.mli[14,397+0]..[15,472+15])
+            Pstr_eval
+            expression (src/ast_builder.mli[14,397+0]..[15,472+15])
+              Pexp_constant PConst_string(" Helpers taking a [~loc] argument. This module is meant to be opened or\n    aliased. ",(src/ast_builder.mli[14,397+0]..[15,472+15]),None)
+        ]
+    module_type (src/ast_builder.mli[16,488+17]..src/ast_builder.mli[61,1926+3])
+      Tmty_signature
+      [
+        signature_item (src/ast_builder.mli[17,509+2]..src/ast_builder.mli[19,557+64])
+          Tsig_module "Located/1351"
+          module_type (src/ast_builder.mli[18,528+4]..src/ast_builder.mli[19,557+64])
+            Tmty_with
+            module_type (src/ast_builder.mli[18,528+4]..src/ast_builder.mli[18,528+28])
+              Tmty_ident "Ppxlib__!.Ast_builder_intf.Located"
+            [
+              "with_loc/904"
+                Twith_typesubst
+                  type_declaration with_loc/904 (src/ast_builder.mli[19,557+11]..src/ast_builder.mli[19,557+64])
+                    ptype_params =
+                      [
+                        core_type (src/ast_builder.mli[19,557+16]..src/ast_builder.mli[19,557+18])
+                          Ttyp_var a
+                      ]
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ttype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (src/ast_builder.mli[19,557+31]..src/ast_builder.mli[19,557+64])
+                          Ttyp_constr "Ppxlib__!.Ast_builder_intf.with_location"
+                          [
+                            core_type (src/ast_builder.mli[19,557+31]..src/ast_builder.mli[19,557+33])
+                              Ttyp_var a
+                          ]
+            ]
+        signature_item (src/ast_builder.mli[21,623+2]..src/ast_builder.mli[21,623+48])
+          Tsig_include
+          module_type (src/ast_builder.mli[21,623+10]..src/ast_builder.mli[21,623+48])
+            Tmty_typeof
+            module_expr (src/ast_builder.mli[21,623+25]..src/ast_builder.mli[21,623+48])
+              Tmod_ident "Ppxlib__!.Ast_builder_generated.M"
+        signature_item (src/ast_builder.mli[23,673+2]..src/ast_builder.mli[46,1552+5])
+          Tsig_module "Latest/2043"
+          module_type (src/ast_builder.mli[23,673+18]..src/ast_builder.mli[46,1552+5])
+            Tmty_signature
+            [
+              signature_item (src/ast_builder.mli[24,695+4]..src/ast_builder.mli[30,1165+38])
+                Tsig_attribute "ocaml.text"
+                [
+                  structure_item (src/ast_builder.mli[24,695+4]..[30,1165+38])
+                    Pstr_eval
+                    expression (src/ast_builder.mli[24,695+4]..[30,1165+38])
+                      Pexp_constant PConst_string(" This module contains updated versions of node constructors that were\n        kept stable when the node changed. For every function in this module,\n        there's an equally-named function outside this module. The function\n        outside this module will stay stable, whereas the function inside this\n        module will adapt potential upcoming new compiler features. Only use a\n        function in this module, if the equally-named one outside this module is\n        missing a feature you need. ",(src/ast_builder.mli[24,695+4]..[30,1165+38]),None)
+                ]
+              signature_item (src/ast_builder.mli[32,1205+4]..src/ast_builder.mli[36,1318+13])
+                Tsig_value
+                value_description ppat_construct/2041 (src/ast_builder.mli[32,1205+4]..src/ast_builder.mli[36,1318+13])
+                  core_type (src/ast_builder.mli[33,1230+6]..src/ast_builder.mli[36,1318+13])
+                    Ttyp_arrow
+                    Labelled "loc"
+                    core_type (src/ast_builder.mli[33,1230+10]..src/ast_builder.mli[33,1230+18])
+                      Ttyp_constr "Ppxlib__!.Import.location"
+                      []
+                    core_type (src/ast_builder.mli[34,1252+6]..src/ast_builder.mli[36,1318+13])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder.mli[34,1252+6]..src/ast_builder.mli[34,1252+19])
+                        Ttyp_constr "Ppxlib__!.Import.loc"
+                        [
+                          core_type (src/ast_builder.mli[34,1252+6]..src/ast_builder.mli[34,1252+15])
+                            Ttyp_constr "Ppxlib__!.Import.longident"
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[35,1275+6]..src/ast_builder.mli[36,1318+13])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder.mli[35,1275+6]..src/ast_builder.mli[35,1275+39])
+                          Ttyp_constr "option/12!"
+                          [
+                            core_type (src/ast_builder.mli[35,1275+7]..src/ast_builder.mli[35,1275+31])
+                              Ttyp_tuple
+                              [
+                                core_type (src/ast_builder.mli[35,1275+7]..src/ast_builder.mli[35,1275+21])
+                                  Ttyp_constr "list/11!"
+                                  [
+                                    core_type (src/ast_builder.mli[35,1275+7]..src/ast_builder.mli[35,1275+16])
+                                      Ttyp_constr "Ppxlib__!.Import.loc"
+                                      [
+                                        core_type (src/ast_builder.mli[35,1275+7]..src/ast_builder.mli[35,1275+12])
+                                          Ttyp_constr "Ppxlib__!.Import.label"
+                                          []
+                                      ]
+                                  ]
+                                core_type (src/ast_builder.mli[35,1275+24]..src/ast_builder.mli[35,1275+31])
+                                  Ttyp_constr "Ppxlib__!.Import.pattern"
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[36,1318+6]..src/ast_builder.mli[36,1318+13])
+                          Ttyp_constr "Ppxlib__!.Import.pattern"
+                          []
+                  []
+              signature_item (src/ast_builder.mli[38,1333+4]..src/ast_builder.mli[45,1522+29])
+                Tsig_value
+                value_description constructor_declaration/2042 (src/ast_builder.mli[38,1333+4]..src/ast_builder.mli[45,1522+29])
+                  core_type (src/ast_builder.mli[39,1367+6]..src/ast_builder.mli[45,1522+29])
+                    Ttyp_arrow
+                    Labelled "loc"
+                    core_type (src/ast_builder.mli[39,1367+10]..src/ast_builder.mli[39,1367+18])
+                      Ttyp_constr "Ppxlib__!.Import.location"
+                      []
+                    core_type (src/ast_builder.mli[40,1389+6]..src/ast_builder.mli[45,1522+29])
+                      Ttyp_arrow
+                      Labelled "name"
+                      core_type (src/ast_builder.mli[40,1389+11]..src/ast_builder.mli[40,1389+20])
+                        Ttyp_constr "Ppxlib__!.Import.loc"
+                        [
+                          core_type (src/ast_builder.mli[40,1389+11]..src/ast_builder.mli[40,1389+16])
+                            Ttyp_constr "Ppxlib__!.Import.label"
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[41,1413+6]..src/ast_builder.mli[45,1522+29])
+                        Ttyp_arrow
+                        Labelled "vars"
+                        core_type (src/ast_builder.mli[41,1413+11]..src/ast_builder.mli[41,1413+25])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/ast_builder.mli[41,1413+11]..src/ast_builder.mli[41,1413+20])
+                              Ttyp_constr "Ppxlib__!.Import.loc"
+                              [
+                                core_type (src/ast_builder.mli[41,1413+11]..src/ast_builder.mli[41,1413+16])
+                                  Ttyp_constr "Ppxlib__!.Import.label"
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[42,1442+6]..src/ast_builder.mli[45,1522+29])
+                          Ttyp_arrow
+                          Labelled "args"
+                          core_type (src/ast_builder.mli[42,1442+11]..src/ast_builder.mli[42,1442+32])
+                            Ttyp_constr "Ppxlib__!.Import.constructor_arguments"
+                            []
+                          core_type (src/ast_builder.mli[43,1478+6]..src/ast_builder.mli[45,1522+29])
+                            Ttyp_arrow
+                            Labelled "res"
+                            core_type (src/ast_builder.mli[43,1478+10]..src/ast_builder.mli[43,1478+26])
+                              Ttyp_constr "option/12!"
+                              [
+                                core_type (src/ast_builder.mli[43,1478+10]..src/ast_builder.mli[43,1478+19])
+                                  Ttyp_constr "Ppxlib__!.Import.core_type"
+                                  []
+                              ]
+                            core_type (src/ast_builder.mli[44,1508+6]..src/ast_builder.mli[45,1522+29])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/ast_builder.mli[44,1508+6]..src/ast_builder.mli[44,1508+10])
+                                Ttyp_constr "unit/6!"
+                                []
+                              core_type (src/ast_builder.mli[45,1522+6]..src/ast_builder.mli[45,1522+29])
+                                Ttyp_constr "Ppxlib__!.Import.constructor_declaration"
+                                []
+                  []
+            ]
+        signature_item (src/ast_builder.mli[48,1559+2]..src/ast_builder.mli[49,1582+62])
+          Tsig_value
+          value_description ppat_construct/2044 (src/ast_builder.mli[48,1559+2]..src/ast_builder.mli[49,1582+62])
+            core_type (src/ast_builder.mli[49,1582+4]..src/ast_builder.mli[49,1582+62])
+              Ttyp_arrow
+              Labelled "loc"
+              core_type (src/ast_builder.mli[49,1582+8]..src/ast_builder.mli[49,1582+16])
+                Ttyp_constr "Ppxlib__!.Import.location"
+                []
+              core_type (src/ast_builder.mli[49,1582+20]..src/ast_builder.mli[49,1582+62])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder.mli[49,1582+20]..src/ast_builder.mli[49,1582+33])
+                  Ttyp_constr "Ppxlib__!.Import.loc"
+                  [
+                    core_type (src/ast_builder.mli[49,1582+20]..src/ast_builder.mli[49,1582+29])
+                      Ttyp_constr "Ppxlib__!.Import.longident"
+                      []
+                  ]
+                core_type (src/ast_builder.mli[49,1582+37]..src/ast_builder.mli[49,1582+62])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder.mli[49,1582+37]..src/ast_builder.mli[49,1582+51])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/ast_builder.mli[49,1582+37]..src/ast_builder.mli[49,1582+44])
+                        Ttyp_constr "Ppxlib__!.Import.pattern"
+                        []
+                    ]
+                  core_type (src/ast_builder.mli[49,1582+55]..src/ast_builder.mli[49,1582+62])
+                    Ttyp_constr "Ppxlib__!.Import.pattern"
+                    []
+            []
+        signature_item (src/ast_builder.mli[51,1646+2]..src/ast_builder.mli[56,1782+27])
+          Tsig_value
+          value_description constructor_declaration/2045 (src/ast_builder.mli[51,1646+2]..src/ast_builder.mli[56,1782+27])
+            core_type (src/ast_builder.mli[52,1678+4]..src/ast_builder.mli[56,1782+27])
+              Ttyp_arrow
+              Labelled "loc"
+              core_type (src/ast_builder.mli[52,1678+8]..src/ast_builder.mli[52,1678+16])
+                Ttyp_constr "Ppxlib__!.Import.location"
+                []
+              core_type (src/ast_builder.mli[53,1698+4]..src/ast_builder.mli[56,1782+27])
+                Ttyp_arrow
+                Labelled "name"
+                core_type (src/ast_builder.mli[53,1698+9]..src/ast_builder.mli[53,1698+18])
+                  Ttyp_constr "Ppxlib__!.Import.loc"
+                  [
+                    core_type (src/ast_builder.mli[53,1698+9]..src/ast_builder.mli[53,1698+14])
+                      Ttyp_constr "Ppxlib__!.Import.label"
+                      []
+                  ]
+                core_type (src/ast_builder.mli[54,1720+4]..src/ast_builder.mli[56,1782+27])
+                  Ttyp_arrow
+                  Labelled "args"
+                  core_type (src/ast_builder.mli[54,1720+9]..src/ast_builder.mli[54,1720+30])
+                    Ttyp_constr "Ppxlib__!.Import.constructor_arguments"
+                    []
+                  core_type (src/ast_builder.mli[55,1754+4]..src/ast_builder.mli[56,1782+27])
+                    Ttyp_arrow
+                    Labelled "res"
+                    core_type (src/ast_builder.mli[55,1754+8]..src/ast_builder.mli[55,1754+24])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/ast_builder.mli[55,1754+8]..src/ast_builder.mli[55,1754+17])
+                          Ttyp_constr "Ppxlib__!.Import.core_type"
+                          []
+                      ]
+                    core_type (src/ast_builder.mli[56,1782+4]..src/ast_builder.mli[56,1782+27])
+                      Ttyp_constr "Ppxlib__!.Import.constructor_declaration"
+                      []
+            []
+        signature_item (src/ast_builder.mli[58,1811+2]..src/ast_builder.mli[60,1861+64])
+          Tsig_include
+          module_type (src/ast_builder.mli[59,1821+4]..src/ast_builder.mli[60,1861+64])
+            Tmty_with
+            module_type (src/ast_builder.mli[59,1821+4]..src/ast_builder.mli[59,1821+39])
+              Tmty_ident "Ppxlib__!.Ast_builder_intf.Additional_helpers"
+            [
+              "with_loc/860"
+                Twith_typesubst
+                  type_declaration with_loc/860 (src/ast_builder.mli[60,1861+11]..src/ast_builder.mli[60,1861+64])
+                    ptype_params =
+                      [
+                        core_type (src/ast_builder.mli[60,1861+16]..src/ast_builder.mli[60,1861+18])
+                          Ttyp_var a
+                      ]
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ttype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (src/ast_builder.mli[60,1861+31]..src/ast_builder.mli[60,1861+64])
+                          Ttyp_constr "Ppxlib__!.Ast_builder_intf.with_location"
+                          [
+                            core_type (src/ast_builder.mli[60,1861+31]..src/ast_builder.mli[60,1861+33])
+                              Ttyp_var a
+                          ]
+            ]
+      ]
+  signature_item (src/ast_builder.mli[63,1931+0]..src/ast_builder.mli[63,1931+38])
+    Tsig_modtype "Loc/2155"
+      module_type (src/ast_builder.mli[63,1931+18]..src/ast_builder.mli[63,1931+38])
+        Tmty_ident "Ppxlib__!.Ast_builder_intf.Loc"
+  signature_item (src/ast_builder.mli[65,1971+0]..src/ast_builder.mli[96,3062+3])
+    Tsig_modtype "S/2375"
+      module_type (src/ast_builder.mli[65,1971+16]..src/ast_builder.mli[96,3062+3])
+        Tmty_signature
+        [
+          signature_item (src/ast_builder.mli[66,1991+2]..src/ast_builder.mli[66,1991+28])
+            Tsig_include
+            module_type (src/ast_builder.mli[66,1991+10]..src/ast_builder.mli[66,1991+28])
+              Tmty_ident "Ppxlib__!.Ast_builder_intf.S"
+          signature_item (src/ast_builder.mli[68,2021+2]..src/ast_builder.mli[87,2844+5])
+            Tsig_module "Latest/2372"
+            module_type (src/ast_builder.mli[68,2021+18]..src/ast_builder.mli[87,2844+5])
+              Tmty_signature
+              [
+                signature_item (src/ast_builder.mli[69,2043+4]..src/ast_builder.mli[75,2513+38])
+                  Tsig_attribute "ocaml.text"
+                  [
+                    structure_item (src/ast_builder.mli[69,2043+4]..[75,2513+38])
+                      Pstr_eval
+                      expression (src/ast_builder.mli[69,2043+4]..[75,2513+38])
+                        Pexp_constant PConst_string(" This module contains updated versions of node constructors that were\n        kept stable when the node changed. For every function in this module,\n        there's an equally-named function outside this module. The function\n        outside this module will stay stable, whereas the function inside this\n        module will adapt potential upcoming new compiler features. Only use a\n        function in this module, if the equally-named one outside this module is\n        missing a feature you need. ",(src/ast_builder.mli[69,2043+4]..[75,2513+38]),None)
+                  ]
+                signature_item (src/ast_builder.mli[77,2553+4]..src/ast_builder.mli[78,2578+67])
+                  Tsig_value
+                  value_description ppat_construct/2370 (src/ast_builder.mli[77,2553+4]..src/ast_builder.mli[78,2578+67])
+                    core_type (src/ast_builder.mli[78,2578+6]..src/ast_builder.mli[78,2578+67])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder.mli[78,2578+6]..src/ast_builder.mli[78,2578+19])
+                        Ttyp_constr "Ppxlib__!.Import.loc"
+                        [
+                          core_type (src/ast_builder.mli[78,2578+6]..src/ast_builder.mli[78,2578+15])
+                            Ttyp_constr "Ppxlib__!.Import.longident"
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[78,2578+23]..src/ast_builder.mli[78,2578+67])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder.mli[78,2578+23]..src/ast_builder.mli[78,2578+56])
+                          Ttyp_constr "option/12!"
+                          [
+                            core_type (src/ast_builder.mli[78,2578+24]..src/ast_builder.mli[78,2578+48])
+                              Ttyp_tuple
+                              [
+                                core_type (src/ast_builder.mli[78,2578+24]..src/ast_builder.mli[78,2578+38])
+                                  Ttyp_constr "list/11!"
+                                  [
+                                    core_type (src/ast_builder.mli[78,2578+24]..src/ast_builder.mli[78,2578+33])
+                                      Ttyp_constr "Ppxlib__!.Import.loc"
+                                      [
+                                        core_type (src/ast_builder.mli[78,2578+24]..src/ast_builder.mli[78,2578+29])
+                                          Ttyp_constr "Ppxlib__!.Import.label"
+                                          []
+                                      ]
+                                  ]
+                                core_type (src/ast_builder.mli[78,2578+41]..src/ast_builder.mli[78,2578+48])
+                                  Ttyp_constr "Ppxlib__!.Import.pattern"
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[78,2578+60]..src/ast_builder.mli[78,2578+67])
+                          Ttyp_constr "Ppxlib__!.Import.pattern"
+                          []
+                    []
+                signature_item (src/ast_builder.mli[80,2647+4]..src/ast_builder.mli[86,2814+29])
+                  Tsig_value
+                  value_description constructor_declaration/2371 (src/ast_builder.mli[80,2647+4]..src/ast_builder.mli[86,2814+29])
+                    core_type (src/ast_builder.mli[81,2681+6]..src/ast_builder.mli[86,2814+29])
+                      Ttyp_arrow
+                      Labelled "name"
+                      core_type (src/ast_builder.mli[81,2681+11]..src/ast_builder.mli[81,2681+20])
+                        Ttyp_constr "Ppxlib__!.Import.loc"
+                        [
+                          core_type (src/ast_builder.mli[81,2681+11]..src/ast_builder.mli[81,2681+16])
+                            Ttyp_constr "Ppxlib__!.Import.label"
+                            []
+                        ]
+                      core_type (src/ast_builder.mli[82,2705+6]..src/ast_builder.mli[86,2814+29])
+                        Ttyp_arrow
+                        Labelled "vars"
+                        core_type (src/ast_builder.mli[82,2705+11]..src/ast_builder.mli[82,2705+25])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/ast_builder.mli[82,2705+11]..src/ast_builder.mli[82,2705+20])
+                              Ttyp_constr "Ppxlib__!.Import.loc"
+                              [
+                                core_type (src/ast_builder.mli[82,2705+11]..src/ast_builder.mli[82,2705+16])
+                                  Ttyp_constr "Ppxlib__!.Import.label"
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder.mli[83,2734+6]..src/ast_builder.mli[86,2814+29])
+                          Ttyp_arrow
+                          Labelled "args"
+                          core_type (src/ast_builder.mli[83,2734+11]..src/ast_builder.mli[83,2734+32])
+                            Ttyp_constr "Ppxlib__!.Import.constructor_arguments"
+                            []
+                          core_type (src/ast_builder.mli[84,2770+6]..src/ast_builder.mli[86,2814+29])
+                            Ttyp_arrow
+                            Labelled "res"
+                            core_type (src/ast_builder.mli[84,2770+10]..src/ast_builder.mli[84,2770+26])
+                              Ttyp_constr "option/12!"
+                              [
+                                core_type (src/ast_builder.mli[84,2770+10]..src/ast_builder.mli[84,2770+19])
+                                  Ttyp_constr "Ppxlib__!.Import.core_type"
+                                  []
+                              ]
+                            core_type (src/ast_builder.mli[85,2800+6]..src/ast_builder.mli[86,2814+29])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/ast_builder.mli[85,2800+6]..src/ast_builder.mli[85,2800+10])
+                                Ttyp_constr "unit/6!"
+                                []
+                              core_type (src/ast_builder.mli[86,2814+6]..src/ast_builder.mli[86,2814+29])
+                                Ttyp_constr "Ppxlib__!.Import.constructor_declaration"
+                                []
+                    []
+              ]
+          signature_item (src/ast_builder.mli[89,2851+2]..src/ast_builder.mli[89,2851+65])
+            Tsig_value
+            value_description ppat_construct/2373 (src/ast_builder.mli[89,2851+2]..src/ast_builder.mli[89,2851+65])
+              core_type (src/ast_builder.mli[89,2851+23]..src/ast_builder.mli[89,2851+65])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder.mli[89,2851+23]..src/ast_builder.mli[89,2851+36])
+                  Ttyp_constr "Ppxlib__!.Import.loc"
+                  [
+                    core_type (src/ast_builder.mli[89,2851+23]..src/ast_builder.mli[89,2851+32])
+                      Ttyp_constr "Ppxlib__!.Import.longident"
+                      []
+                  ]
+                core_type (src/ast_builder.mli[89,2851+40]..src/ast_builder.mli[89,2851+65])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder.mli[89,2851+40]..src/ast_builder.mli[89,2851+54])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/ast_builder.mli[89,2851+40]..src/ast_builder.mli[89,2851+47])
+                        Ttyp_constr "Ppxlib__!.Import.pattern"
+                        []
+                    ]
+                  core_type (src/ast_builder.mli[89,2851+58]..src/ast_builder.mli[89,2851+65])
+                    Ttyp_constr "Ppxlib__!.Import.pattern"
+                    []
+              []
+          signature_item (src/ast_builder.mli[91,2918+2]..src/ast_builder.mli[95,3034+27])
+            Tsig_value
+            value_description constructor_declaration/2374 (src/ast_builder.mli[91,2918+2]..src/ast_builder.mli[95,3034+27])
+              core_type (src/ast_builder.mli[92,2950+4]..src/ast_builder.mli[95,3034+27])
+                Ttyp_arrow
+                Labelled "name"
+                core_type (src/ast_builder.mli[92,2950+9]..src/ast_builder.mli[92,2950+18])
+                  Ttyp_constr "Ppxlib__!.Import.loc"
+                  [
+                    core_type (src/ast_builder.mli[92,2950+9]..src/ast_builder.mli[92,2950+14])
+                      Ttyp_constr "Ppxlib__!.Import.label"
+                      []
+                  ]
+                core_type (src/ast_builder.mli[93,2972+4]..src/ast_builder.mli[95,3034+27])
+                  Ttyp_arrow
+                  Labelled "args"
+                  core_type (src/ast_builder.mli[93,2972+9]..src/ast_builder.mli[93,2972+30])
+                    Ttyp_constr "Ppxlib__!.Import.constructor_arguments"
+                    []
+                  core_type (src/ast_builder.mli[94,3006+4]..src/ast_builder.mli[95,3034+27])
+                    Ttyp_arrow
+                    Labelled "res"
+                    core_type (src/ast_builder.mli[94,3006+8]..src/ast_builder.mli[94,3006+24])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/ast_builder.mli[94,3006+8]..src/ast_builder.mli[94,3006+17])
+                          Ttyp_constr "Ppxlib__!.Import.core_type"
+                          []
+                      ]
+                    core_type (src/ast_builder.mli[95,3034+4]..src/ast_builder.mli[95,3034+27])
+                      Ttyp_constr "Ppxlib__!.Import.constructor_declaration"
+                      []
+              []
+        ]
+  signature_item (src/ast_builder.mli[99,3131+0]..src/ast_builder.mli[99,3131+27])
+    Tsig_module "Make/2377"
+      attribute "ocaml.doc"
+        [
+          structure_item (src/ast_builder.mli[98,3067+0]..[98,3067+63])
+            Pstr_eval
+            expression (src/ast_builder.mli[98,3067+0]..[98,3067+63])
+              Pexp_constant PConst_string(" Build Ast helpers with the location argument factorized. ",(src/ast_builder.mli[98,3067+0]..[98,3067+63]),None)
+        ]
+    module_type (src/ast_builder.mli[99,3131+12]..src/ast_builder.mli[99,3131+27])
+      Tmty_functor "Loc/2376"
+      module_type (src/ast_builder.mli[99,3131+19]..src/ast_builder.mli[99,3131+22])
+        Tmty_ident "Loc/2155"
+      module_type (src/ast_builder.mli[99,3131+26]..src/ast_builder.mli[99,3131+27])
+        Tmty_ident "S/2375"
+  signature_item (src/ast_builder.mli[101,3160+0]..src/ast_builder.mli[101,3160+35])
+    Tsig_value
+    value_description make/2410 (src/ast_builder.mli[101,3160+0]..src/ast_builder.mli[101,3160+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/ast_builder.mli[102,3196+0]..[102,3196+36])
+            Pstr_eval
+            expression (src/ast_builder.mli[102,3196+0]..[102,3196+36])
+              Pexp_constant PConst_string(" Functional version of [Make]. ",(src/ast_builder.mli[102,3196+0]..[102,3196+36]),None)
+        ]
+      core_type (src/ast_builder.mli[101,3160+11]..src/ast_builder.mli[101,3160+35])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/ast_builder.mli[101,3160+11]..src/ast_builder.mli[101,3160+21])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+        core_type (src/ast_builder.mli[101,3160+25]..src/ast_builder.mli[101,3160+35])
+          Ttyp_package "S/2375"
+          []
+      []
+]
+

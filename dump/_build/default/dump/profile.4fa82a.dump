@@ -1,0 +1,7 @@
+0.006s 5.07MB 1.90MB 1.90MB test/deriving/inline/example/ppx_deriving_example.pp.ml
+  0.001s 0.14MB ------ ------ typing
+  ------ 2.00MB 0.31MB 0.31MB transl
+  0.003s ------ ------ ------ generate
+    0.002s ------ ------ ------ assemble
+  0.002s 2.93MB 1.58MB 1.90MB other
+0.005s ------ ------ ------ other

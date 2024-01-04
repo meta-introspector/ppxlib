@@ -1,0 +1,7 @@
+0.101s 35.7MB 11.8MB 11.8MB src/code_path.ml
+  0.007s 2.90MB 1.57MB 1.57MB parsing
+    0.007s 2.90MB 1.57MB 1.57MB parser
+  0.083s 24.8MB 10.1MB 11.7MB typing
+  0.003s 4.03MB 0.06MB ------ generate
+  0.007s 4.04MB 0.03MB 11.8MB other
+0.010s ------ ------ ------ other

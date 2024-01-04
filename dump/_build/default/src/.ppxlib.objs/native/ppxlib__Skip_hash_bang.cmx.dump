@@ -1,0 +1,679 @@
+[
+  structure_item (src/skip_hash_bang.mll[2,31+0]..[2,31+11])
+    Pstr_open Fresh
+    module_expr (src/skip_hash_bang.mll[2,31+5]..[2,31+11])
+      Pmod_ident "Lexing" (src/skip_hash_bang.mll[2,31+5]..[2,31+11])
+  structure_item (src/skip_hash_bang.mll[4,44+0]..[9,222+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/skip_hash_bang.mll[4,44+4]..[4,44+14])
+          Ppat_var "update_loc" (src/skip_hash_bang.mll[4,44+4]..[4,44+14])
+        expression (src/skip_hash_bang.mll[4,44+15]..[9,222+3]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/skip_hash_bang.mll[4,44+15]..[4,44+21])
+            Ppat_var "lexbuf" (src/skip_hash_bang.mll[4,44+15]..[4,44+21])
+          expression (src/skip_hash_bang.mll[4,44+22]..[9,222+3]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/skip_hash_bang.mll[4,44+22]..[4,44+35])
+              Ppat_var "lines_to_skip" (src/skip_hash_bang.mll[4,44+22]..[4,44+35])
+            expression (src/skip_hash_bang.mll[5,82+2]..[9,222+3])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (src/skip_hash_bang.mll[5,82+6]..[5,82+9])
+                    Ppat_var "pos" (src/skip_hash_bang.mll[5,82+6]..[5,82+9])
+                  expression (src/skip_hash_bang.mll[5,82+12]..[5,82+29])
+                    Pexp_field
+                    expression (src/skip_hash_bang.mll[5,82+12]..[5,82+18])
+                      Pexp_ident "lexbuf" (src/skip_hash_bang.mll[5,82+12]..[5,82+18])
+                    "lex_curr_p" (src/skip_hash_bang.mll[5,82+19]..[5,82+29])
+              ]
+              expression (src/skip_hash_bang.mll[6,115+2]..[9,222+3])
+                Pexp_setfield
+                expression (src/skip_hash_bang.mll[6,115+2]..[6,115+8])
+                  Pexp_ident "lexbuf" (src/skip_hash_bang.mll[6,115+2]..[6,115+8])
+                "lex_curr_p" (src/skip_hash_bang.mll[6,115+9]..[6,115+19])
+                expression (src/skip_hash_bang.mll[6,115+23]..[9,222+3])
+                  Pexp_record
+                  [
+                    "pos_lnum" (src/skip_hash_bang.mll[7,149+4]..[7,149+12])
+                      expression (src/skip_hash_bang.mll[7,149+15]..[7,149+43])
+                        Pexp_apply
+                        expression (src/skip_hash_bang.mll[7,149+28]..[7,149+29])
+                          Pexp_ident "+" (src/skip_hash_bang.mll[7,149+28]..[7,149+29])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (src/skip_hash_bang.mll[7,149+15]..[7,149+27])
+                              Pexp_field
+                              expression (src/skip_hash_bang.mll[7,149+15]..[7,149+18])
+                                Pexp_ident "pos" (src/skip_hash_bang.mll[7,149+15]..[7,149+18])
+                              "pos_lnum" (src/skip_hash_bang.mll[7,149+19]..[7,149+27])
+                          <arg>
+                          Nolabel
+                            expression (src/skip_hash_bang.mll[7,149+30]..[7,149+43])
+                              Pexp_ident "lines_to_skip" (src/skip_hash_bang.mll[7,149+30]..[7,149+43])
+                        ]
+                    "pos_bol" (src/skip_hash_bang.mll[8,194+4]..[8,194+11])
+                      expression (src/skip_hash_bang.mll[8,194+14]..[8,194+26])
+                        Pexp_field
+                        expression (src/skip_hash_bang.mll[8,194+14]..[8,194+17])
+                          Pexp_ident "pos" (src/skip_hash_bang.mll[8,194+14]..[8,194+17])
+                        "pos_cnum" (src/skip_hash_bang.mll[8,194+18]..[8,194+26])
+                  ]
+                  Some
+                    expression (src/skip_hash_bang.mll[6,115+25]..[6,115+28])
+                      Pexp_ident "pos" (src/skip_hash_bang.mll[6,115+25]..[6,115+28])
+    ]
+  structure_item (src/skip_hash_bang.ml[13,256+0]..[103,5399+1])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/skip_hash_bang.ml[13,256+4]..[13,256+22])
+          Ppat_var "__ocaml_lex_tables" (src/skip_hash_bang.ml[13,256+4]..[13,256+22])
+        expression (src/skip_hash_bang.ml[13,256+25]..[103,5399+1])
+          Pexp_record
+          [
+            "Lexing.lex_base" (src/skip_hash_bang.ml[14,283+2]..[14,283+17])
+              expression (src/skip_hash_bang.ml[15,303+3]..[16,373+13])
+                Pexp_constant PConst_string("\000\000\000\000\000\000\001\000\001\000\002\000\001\000\003\000\255\255",(src/skip_hash_bang.ml[15,303+4]..[16,373+12]),None)
+            "Lexing.lex_backtrk" (src/skip_hash_bang.ml[17,388+2]..[17,388+20])
+              expression (src/skip_hash_bang.ml[18,411+3]..[19,481+13])
+                Pexp_constant PConst_string("\002\000\255\255\255\255\001\000\255\255\255\255\255\255\255\255\255\255",(src/skip_hash_bang.ml[18,411+4]..[19,481+12]),None)
+            "Lexing.lex_default" (src/skip_hash_bang.ml[20,496+2]..[20,496+20])
+              expression (src/skip_hash_bang.ml[21,519+3]..[22,589+13])
+                Pexp_constant PConst_string("\255\255\255\255\002\000\005\000\255\255\005\000\255\255\255\255\000\000",(src/skip_hash_bang.ml[21,519+4]..[22,589+12]),None)
+            "Lexing.lex_trans" (src/skip_hash_bang.ml[23,604+2]..[23,604+18])
+              expression (src/skip_hash_bang.ml[24,625+3]..[56,2865+37])
+                Pexp_constant PConst_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000\004\000\004\000\b\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\002\000\006\000\001\000\007\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\255\255\255\255\255\255\000\000",(src/skip_hash_bang.ml[24,625+4]..[56,2865+36]),None)
+            "Lexing.lex_check" (src/skip_hash_bang.ml[57,2904+2]..[57,2904+18])
+              expression (src/skip_hash_bang.ml[58,2925+3]..[90,5165+37])
+                Pexp_constant PConst_string("\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\007\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\001\000\004\000\000\000\006\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\255\255",(src/skip_hash_bang.ml[58,2925+4]..[90,5165+36]),None)
+            "Lexing.lex_base_code" (src/skip_hash_bang.ml[91,5204+2]..[91,5204+22])
+              expression (src/skip_hash_bang.ml[92,5229+3]..[92,5229+5])
+                Pexp_constant PConst_string("",(src/skip_hash_bang.ml[92,5229+4]..[92,5229+4]),None)
+            "Lexing.lex_backtrk_code" (src/skip_hash_bang.ml[93,5236+2]..[93,5236+25])
+              expression (src/skip_hash_bang.ml[94,5264+3]..[94,5264+5])
+                Pexp_constant PConst_string("",(src/skip_hash_bang.ml[94,5264+4]..[94,5264+4]),None)
+            "Lexing.lex_default_code" (src/skip_hash_bang.ml[95,5271+2]..[95,5271+25])
+              expression (src/skip_hash_bang.ml[96,5299+3]..[96,5299+5])
+                Pexp_constant PConst_string("",(src/skip_hash_bang.ml[96,5299+4]..[96,5299+4]),None)
+            "Lexing.lex_trans_code" (src/skip_hash_bang.ml[97,5306+2]..[97,5306+23])
+              expression (src/skip_hash_bang.ml[98,5332+3]..[98,5332+5])
+                Pexp_constant PConst_string("",(src/skip_hash_bang.ml[98,5332+4]..[98,5332+4]),None)
+            "Lexing.lex_check_code" (src/skip_hash_bang.ml[99,5339+2]..[99,5339+23])
+              expression (src/skip_hash_bang.ml[100,5365+3]..[100,5365+5])
+                Pexp_constant PConst_string("",(src/skip_hash_bang.ml[100,5365+4]..[100,5365+4]),None)
+            "Lexing.lex_code" (src/skip_hash_bang.ml[101,5372+2]..[101,5372+17])
+              expression (src/skip_hash_bang.ml[102,5392+3]..[102,5392+5])
+                Pexp_constant PConst_string("",(src/skip_hash_bang.ml[102,5392+4]..[102,5392+4]),None)
+          ]
+          None
+    ]
+  structure_item (src/skip_hash_bang.ml[105,5402+0]..[125,5957+61])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (src/skip_hash_bang.ml[105,5402+8]..[105,5402+22])
+          Ppat_var "skip_hash_bang" (src/skip_hash_bang.ml[105,5402+8]..[105,5402+22])
+        expression (src/skip_hash_bang.ml[105,5402+23]..[106,5434+42]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/skip_hash_bang.ml[105,5402+23]..[105,5402+29])
+            Ppat_var "lexbuf" (src/skip_hash_bang.ml[105,5402+23]..[105,5402+29])
+          expression (src/skip_hash_bang.ml[106,5434+3]..[106,5434+42])
+            Pexp_apply
+            expression (src/skip_hash_bang.ml[106,5434+3]..[106,5434+33])
+              Pexp_ident "__ocaml_lex_skip_hash_bang_rec" (src/skip_hash_bang.ml[106,5434+3]..[106,5434+33])
+            [
+              <arg>
+              Nolabel
+                expression (src/skip_hash_bang.ml[106,5434+34]..[106,5434+40])
+                  Pexp_ident "lexbuf" (src/skip_hash_bang.ml[106,5434+34]..[106,5434+40])
+              <arg>
+              Nolabel
+                expression (src/skip_hash_bang.ml[106,5434+41]..[106,5434+42])
+                  Pexp_constant PConst_int (0,None)
+            ]
+      <def>
+        pattern (src/skip_hash_bang.ml[107,5477+4]..[107,5477+34])
+          Ppat_var "__ocaml_lex_skip_hash_bang_rec" (src/skip_hash_bang.ml[107,5477+4]..[107,5477+34])
+        expression (src/skip_hash_bang.ml[107,5477+35]..[125,5957+61]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/skip_hash_bang.ml[107,5477+35]..[107,5477+41])
+            Ppat_var "lexbuf" (src/skip_hash_bang.ml[107,5477+35]..[107,5477+41])
+          expression (src/skip_hash_bang.ml[107,5477+42]..[125,5957+61]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/skip_hash_bang.ml[107,5477+42]..[107,5477+59])
+              Ppat_var "__ocaml_lex_state" (src/skip_hash_bang.ml[107,5477+42]..[107,5477+59])
+            expression (src/skip_hash_bang.ml[108,5539+2]..[125,5957+61])
+              Pexp_match
+              expression (src/skip_hash_bang.ml[108,5539+8]..[108,5539+65])
+                Pexp_apply
+                expression (src/skip_hash_bang.ml[108,5539+8]..[108,5539+21])
+                  Pexp_ident "Lexing.engine" (src/skip_hash_bang.ml[108,5539+8]..[108,5539+21])
+                [
+                  <arg>
+                  Nolabel
+                    expression (src/skip_hash_bang.ml[108,5539+22]..[108,5539+40])
+                      Pexp_ident "__ocaml_lex_tables" (src/skip_hash_bang.ml[108,5539+22]..[108,5539+40])
+                  <arg>
+                  Nolabel
+                    expression (src/skip_hash_bang.ml[108,5539+41]..[108,5539+58])
+                      Pexp_ident "__ocaml_lex_state" (src/skip_hash_bang.ml[108,5539+41]..[108,5539+58])
+                  <arg>
+                  Nolabel
+                    expression (src/skip_hash_bang.ml[108,5539+59]..[108,5539+65])
+                      Pexp_ident "lexbuf" (src/skip_hash_bang.ml[108,5539+59]..[108,5539+65])
+                ]
+              [
+                <case>
+                  pattern (src/skip_hash_bang.ml[109,5610+8]..[109,5610+9])
+                    Ppat_constant PConst_int (0,None)
+                  expression (src/skip_hash_bang.mll[14,5653+6]..[14,5653+29])
+                    Pexp_apply
+                    expression (src/skip_hash_bang.mll[14,5653+8]..[14,5653+18])
+                      Pexp_ident "update_loc" (src/skip_hash_bang.mll[14,5653+8]..[14,5653+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (src/skip_hash_bang.mll[14,5653+19]..[14,5653+25])
+                          Pexp_ident "lexbuf" (src/skip_hash_bang.mll[14,5653+19]..[14,5653+25])
+                      <arg>
+                      Nolabel
+                        expression (src/skip_hash_bang.mll[14,5653+26]..[14,5653+27])
+                          Pexp_constant PConst_int (3,None)
+                    ]
+                <case>
+                  pattern (src/skip_hash_bang.ml[114,5714+4]..[114,5714+5])
+                    Ppat_constant PConst_int (1,None)
+                  expression (src/skip_hash_bang.mll[16,5753+6]..[16,5753+29])
+                    Pexp_apply
+                    expression (src/skip_hash_bang.mll[16,5753+8]..[16,5753+18])
+                      Pexp_ident "update_loc" (src/skip_hash_bang.mll[16,5753+8]..[16,5753+18])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (src/skip_hash_bang.mll[16,5753+19]..[16,5753+25])
+                          Pexp_ident "lexbuf" (src/skip_hash_bang.mll[16,5753+19]..[16,5753+25])
+                      <arg>
+                      Nolabel
+                        expression (src/skip_hash_bang.mll[16,5753+26]..[16,5753+27])
+                          Pexp_constant PConst_int (1,None)
+                    ]
+                <case>
+                  pattern (src/skip_hash_bang.ml[119,5814+4]..[119,5814+5])
+                    Ppat_constant PConst_int (2,None)
+                  expression (src/skip_hash_bang.mll[17,5853+7]..[17,5853+13])
+                    Pexp_construct "()" (src/skip_hash_bang.mll[17,5853+9]..[17,5853+11])
+                    None
+                <case>
+                  pattern (src/skip_hash_bang.ml[124,5898+4]..[124,5898+21])
+                    Ppat_var "__ocaml_lex_state" (src/skip_hash_bang.ml[124,5898+4]..[124,5898+21])
+                  expression (src/skip_hash_bang.ml[124,5898+25]..[125,5957+61])
+                    Pexp_sequence
+                    expression (src/skip_hash_bang.ml[124,5898+25]..[124,5898+57])
+                      Pexp_apply
+                      expression (src/skip_hash_bang.ml[124,5898+25]..[124,5898+50])
+                        Pexp_field
+                        expression (src/skip_hash_bang.ml[124,5898+25]..[124,5898+31])
+                          Pexp_ident "lexbuf" (src/skip_hash_bang.ml[124,5898+25]..[124,5898+31])
+                        "Lexing.refill_buff" (src/skip_hash_bang.ml[124,5898+32]..[124,5898+50])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/skip_hash_bang.ml[124,5898+51]..[124,5898+57])
+                            Pexp_ident "lexbuf" (src/skip_hash_bang.ml[124,5898+51]..[124,5898+57])
+                      ]
+                    expression (src/skip_hash_bang.ml[125,5957+6]..[125,5957+61])
+                      Pexp_apply
+                      expression (src/skip_hash_bang.ml[125,5957+6]..[125,5957+36])
+                        Pexp_ident "__ocaml_lex_skip_hash_bang_rec" (src/skip_hash_bang.ml[125,5957+6]..[125,5957+36])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/skip_hash_bang.ml[125,5957+37]..[125,5957+43])
+                            Pexp_ident "lexbuf" (src/skip_hash_bang.ml[125,5957+37]..[125,5957+43])
+                        <arg>
+                        Nolabel
+                          expression (src/skip_hash_bang.ml[125,5957+44]..[125,5957+61])
+                            Pexp_ident "__ocaml_lex_state" (src/skip_hash_bang.ml[125,5957+44]..[125,5957+61])
+                      ]
+              ]
+    ]
+]
+
+open Lexing
+let update_loc lexbuf lines_to_skip =
+  let pos = lexbuf.lex_curr_p in
+  lexbuf.lex_curr_p <-
+    {
+      pos with
+      pos_lnum = (pos.pos_lnum + lines_to_skip);
+      pos_bol = (pos.pos_cnum)
+    }
+let __ocaml_lex_tables =
+  {
+    Lexing.lex_base =
+      "\000\000\000\000\000\000\001\000\001\000\002\000\001\000\003\000\255\255";
+    Lexing.lex_backtrk =
+      "\002\000\255\255\255\255\001\000\255\255\255\255\255\255\255\255\255\255";
+    Lexing.lex_default =
+      "\255\255\255\255\002\000\005\000\255\255\005\000\255\255\255\255\000\000";
+    Lexing.lex_trans =
+      "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000\004\000\004\000\b\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\002\000\006\000\001\000\007\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\255\255\255\255\255\255\000\000";
+    Lexing.lex_check =
+      "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\007\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\001\000\004\000\000\000\006\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\255\255";
+    Lexing.lex_base_code = "";
+    Lexing.lex_backtrk_code = "";
+    Lexing.lex_default_code = "";
+    Lexing.lex_trans_code = "";
+    Lexing.lex_check_code = "";
+    Lexing.lex_code = ""
+  }
+let rec skip_hash_bang lexbuf = __ocaml_lex_skip_hash_bang_rec lexbuf 0
+and __ocaml_lex_skip_hash_bang_rec lexbuf __ocaml_lex_state =
+  match Lexing.engine __ocaml_lex_tables __ocaml_lex_state lexbuf with
+  | 0 -> update_loc lexbuf 3
+  | 1 -> update_loc lexbuf 1
+  | 2 -> ()
+  | __ocaml_lex_state ->
+      (lexbuf.Lexing.refill_buff lexbuf;
+       __ocaml_lex_skip_hash_bang_rec lexbuf __ocaml_lex_state)
+[
+  structure_item (src/skip_hash_bang.mll[2,31+0]..src/skip_hash_bang.mll[2,31+11])
+    Tstr_open Fresh
+    module_expr (src/skip_hash_bang.mll[2,31+5]..src/skip_hash_bang.mll[2,31+11])
+      Tmod_ident "Stdlib!.Lexing"
+  structure_item (src/skip_hash_bang.mll[4,44+0]..src/skip_hash_bang.mll[9,222+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/skip_hash_bang.mll[4,44+4]..src/skip_hash_bang.mll[4,44+14])
+          Tpat_var "update_loc/147"
+        expression (src/skip_hash_bang.mll[4,44+15]..src/skip_hash_bang.mll[9,222+3]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/skip_hash_bang.mll[4,44+15]..src/skip_hash_bang.mll[4,44+21])
+                Tpat_var "lexbuf/149"
+              expression (src/skip_hash_bang.mll[4,44+22]..src/skip_hash_bang.mll[9,222+3]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/skip_hash_bang.mll[4,44+22]..src/skip_hash_bang.mll[4,44+35])
+                      Tpat_var "lines_to_skip/150"
+                    expression (src/skip_hash_bang.mll[5,82+2]..src/skip_hash_bang.mll[9,222+3])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (src/skip_hash_bang.mll[5,82+6]..src/skip_hash_bang.mll[5,82+9])
+                            Tpat_var "pos/151"
+                          expression (src/skip_hash_bang.mll[5,82+12]..src/skip_hash_bang.mll[5,82+29])
+                            Texp_field
+                            expression (src/skip_hash_bang.mll[5,82+12]..src/skip_hash_bang.mll[5,82+18])
+                              Texp_ident "lexbuf/149"
+                            "lex_curr_p"
+                      ]
+                      expression (src/skip_hash_bang.mll[6,115+2]..src/skip_hash_bang.mll[9,222+3])
+                        Texp_setfield
+                        expression (src/skip_hash_bang.mll[6,115+2]..src/skip_hash_bang.mll[6,115+8])
+                          Texp_ident "lexbuf/149"
+                        "lex_curr_p"
+                        expression (src/skip_hash_bang.mll[6,115+23]..src/skip_hash_bang.mll[9,222+3])
+                          Texp_record
+                            fields =
+                              [
+                                <kept>                                "pos_lnum"
+                                  expression (src/skip_hash_bang.mll[7,149+15]..src/skip_hash_bang.mll[7,149+43])
+                                    Texp_apply
+                                    expression (src/skip_hash_bang.mll[7,149+28]..src/skip_hash_bang.mll[7,149+29])
+                                      Texp_ident "Stdlib!.+"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (src/skip_hash_bang.mll[7,149+15]..src/skip_hash_bang.mll[7,149+27])
+                                          Texp_field
+                                          expression (src/skip_hash_bang.mll[7,149+15]..src/skip_hash_bang.mll[7,149+18])
+                                            Texp_ident "pos/151"
+                                          "pos_lnum"
+                                      <arg>
+                                        Nolabel
+                                        expression (src/skip_hash_bang.mll[7,149+30]..src/skip_hash_bang.mll[7,149+43])
+                                          Texp_ident "lines_to_skip/150"
+                                    ]
+                                "pos_bol"
+                                  expression (src/skip_hash_bang.mll[8,194+14]..src/skip_hash_bang.mll[8,194+26])
+                                    Texp_field
+                                    expression (src/skip_hash_bang.mll[8,194+14]..src/skip_hash_bang.mll[8,194+17])
+                                      Texp_ident "pos/151"
+                                    "pos_cnum"
+                                <kept>                              ]
+                            representation =
+                              Record_regular
+                            extended_expression =
+                              Some
+                                expression (src/skip_hash_bang.mll[6,115+25]..src/skip_hash_bang.mll[6,115+28])
+                                  Texp_ident "pos/151"
+                ]
+          ]
+    ]
+  structure_item (src/skip_hash_bang.ml[13,256+0]..src/skip_hash_bang.ml[103,5399+1])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/skip_hash_bang.ml[13,256+4]..src/skip_hash_bang.ml[13,256+22])
+          Tpat_var "__ocaml_lex_tables/155"
+        expression (src/skip_hash_bang.ml[13,256+25]..src/skip_hash_bang.ml[103,5399+1])
+          Texp_record
+            fields =
+              [
+                "Lexing.lex_base"
+                  expression (src/skip_hash_bang.ml[15,303+3]..src/skip_hash_bang.ml[16,373+13])
+                    Texp_constant Const_string("\000\000\000\000\000\000\001\000\001\000\002\000\001\000\003\000\255\255",(src/skip_hash_bang.ml[15,303+4]..src/skip_hash_bang.ml[16,373+12]),None)
+                "Lexing.lex_backtrk"
+                  expression (src/skip_hash_bang.ml[18,411+3]..src/skip_hash_bang.ml[19,481+13])
+                    Texp_constant Const_string("\002\000\255\255\255\255\001\000\255\255\255\255\255\255\255\255\255\255",(src/skip_hash_bang.ml[18,411+4]..src/skip_hash_bang.ml[19,481+12]),None)
+                "Lexing.lex_default"
+                  expression (src/skip_hash_bang.ml[21,519+3]..src/skip_hash_bang.ml[22,589+13])
+                    Texp_constant Const_string("\255\255\255\255\002\000\005\000\255\255\005\000\255\255\255\255\000\000",(src/skip_hash_bang.ml[21,519+4]..src/skip_hash_bang.ml[22,589+12]),None)
+                "Lexing.lex_trans"
+                  expression (src/skip_hash_bang.ml[24,625+3]..src/skip_hash_bang.ml[56,2865+37])
+                    Texp_constant Const_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000\004\000\004\000\b\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\002\000\006\000\001\000\007\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\255\255\255\255\255\255\000\000",(src/skip_hash_bang.ml[24,625+4]..src/skip_hash_bang.ml[56,2865+36]),None)
+                "Lexing.lex_check"
+                  expression (src/skip_hash_bang.ml[58,2925+3]..src/skip_hash_bang.ml[90,5165+37])
+                    Texp_constant Const_string("\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\007\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\001\000\004\000\000\000\006\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\255\255",(src/skip_hash_bang.ml[58,2925+4]..src/skip_hash_bang.ml[90,5165+36]),None)
+                "Lexing.lex_base_code"
+                  expression (src/skip_hash_bang.ml[92,5229+3]..src/skip_hash_bang.ml[92,5229+5])
+                    Texp_constant Const_string("",(src/skip_hash_bang.ml[92,5229+4]..src/skip_hash_bang.ml[92,5229+4]),None)
+                "Lexing.lex_backtrk_code"
+                  expression (src/skip_hash_bang.ml[94,5264+3]..src/skip_hash_bang.ml[94,5264+5])
+                    Texp_constant Const_string("",(src/skip_hash_bang.ml[94,5264+4]..src/skip_hash_bang.ml[94,5264+4]),None)
+                "Lexing.lex_default_code"
+                  expression (src/skip_hash_bang.ml[96,5299+3]..src/skip_hash_bang.ml[96,5299+5])
+                    Texp_constant Const_string("",(src/skip_hash_bang.ml[96,5299+4]..src/skip_hash_bang.ml[96,5299+4]),None)
+                "Lexing.lex_trans_code"
+                  expression (src/skip_hash_bang.ml[98,5332+3]..src/skip_hash_bang.ml[98,5332+5])
+                    Texp_constant Const_string("",(src/skip_hash_bang.ml[98,5332+4]..src/skip_hash_bang.ml[98,5332+4]),None)
+                "Lexing.lex_check_code"
+                  expression (src/skip_hash_bang.ml[100,5365+3]..src/skip_hash_bang.ml[100,5365+5])
+                    Texp_constant Const_string("",(src/skip_hash_bang.ml[100,5365+4]..src/skip_hash_bang.ml[100,5365+4]),None)
+                "Lexing.lex_code"
+                  expression (src/skip_hash_bang.ml[102,5392+3]..src/skip_hash_bang.ml[102,5392+5])
+                    Texp_constant Const_string("",(src/skip_hash_bang.ml[102,5392+4]..src/skip_hash_bang.ml[102,5392+4]),None)
+              ]
+            representation =
+              Record_regular
+            extended_expression =
+              None
+    ]
+  structure_item (src/skip_hash_bang.ml[105,5402+0]..src/skip_hash_bang.ml[125,5957+61])
+    Tstr_value Rec
+    [
+      <def>
+        pattern (src/skip_hash_bang.ml[105,5402+8]..src/skip_hash_bang.ml[105,5402+22])
+          Tpat_var "skip_hash_bang/156"
+        expression (src/skip_hash_bang.ml[105,5402+23]..src/skip_hash_bang.ml[106,5434+42]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/skip_hash_bang.ml[105,5402+23]..src/skip_hash_bang.ml[105,5402+29])
+                Tpat_var "lexbuf/158"
+              expression (src/skip_hash_bang.ml[106,5434+3]..src/skip_hash_bang.ml[106,5434+42])
+                Texp_apply
+                expression (src/skip_hash_bang.ml[106,5434+3]..src/skip_hash_bang.ml[106,5434+33])
+                  Texp_ident "__ocaml_lex_skip_hash_bang_rec/157"
+                [
+                  <arg>
+                    Nolabel
+                    expression (src/skip_hash_bang.ml[106,5434+34]..src/skip_hash_bang.ml[106,5434+40])
+                      Texp_ident "lexbuf/158"
+                  <arg>
+                    Nolabel
+                    expression (src/skip_hash_bang.ml[106,5434+41]..src/skip_hash_bang.ml[106,5434+42])
+                      Texp_constant Const_int 0
+                ]
+          ]
+      <def>
+        pattern (src/skip_hash_bang.ml[107,5477+4]..src/skip_hash_bang.ml[107,5477+34])
+          Tpat_var "__ocaml_lex_skip_hash_bang_rec/157"
+        expression (src/skip_hash_bang.ml[107,5477+35]..src/skip_hash_bang.ml[125,5957+61]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/skip_hash_bang.ml[107,5477+35]..src/skip_hash_bang.ml[107,5477+41])
+                Tpat_var "lexbuf/159"
+              expression (src/skip_hash_bang.ml[107,5477+42]..src/skip_hash_bang.ml[125,5957+61]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/skip_hash_bang.ml[107,5477+42]..src/skip_hash_bang.ml[107,5477+59])
+                      Tpat_var "__ocaml_lex_state/160"
+                    expression (src/skip_hash_bang.ml[108,5539+2]..src/skip_hash_bang.ml[125,5957+61])
+                      Texp_match
+                      expression (src/skip_hash_bang.ml[108,5539+8]..src/skip_hash_bang.ml[108,5539+65])
+                        Texp_apply
+                        expression (src/skip_hash_bang.ml[108,5539+8]..src/skip_hash_bang.ml[108,5539+21])
+                          Texp_ident "Stdlib!.Lexing.engine"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (src/skip_hash_bang.ml[108,5539+22]..src/skip_hash_bang.ml[108,5539+40])
+                              Texp_ident "__ocaml_lex_tables/155"
+                          <arg>
+                            Nolabel
+                            expression (src/skip_hash_bang.ml[108,5539+41]..src/skip_hash_bang.ml[108,5539+58])
+                              Texp_ident "__ocaml_lex_state/160"
+                          <arg>
+                            Nolabel
+                            expression (src/skip_hash_bang.ml[108,5539+59]..src/skip_hash_bang.ml[108,5539+65])
+                              Texp_ident "lexbuf/159"
+                        ]
+                      [
+                        <case>
+                          pattern (src/skip_hash_bang.ml[109,5610+8]..src/skip_hash_bang.ml[109,5610+9])
+                            Tpat_value
+                            pattern (src/skip_hash_bang.ml[109,5610+8]..src/skip_hash_bang.ml[109,5610+9])
+                              Tpat_constant Const_int 0
+                          expression (src/skip_hash_bang.mll[14,5653+6]..src/skip_hash_bang.mll[14,5653+29])
+                            Texp_apply
+                            expression (src/skip_hash_bang.mll[14,5653+8]..src/skip_hash_bang.mll[14,5653+18])
+                              Texp_ident "update_loc/147"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (src/skip_hash_bang.mll[14,5653+19]..src/skip_hash_bang.mll[14,5653+25])
+                                  Texp_ident "lexbuf/159"
+                              <arg>
+                                Nolabel
+                                expression (src/skip_hash_bang.mll[14,5653+26]..src/skip_hash_bang.mll[14,5653+27])
+                                  Texp_constant Const_int 3
+                            ]
+                        <case>
+                          pattern (src/skip_hash_bang.ml[114,5714+4]..src/skip_hash_bang.ml[114,5714+5])
+                            Tpat_value
+                            pattern (src/skip_hash_bang.ml[114,5714+4]..src/skip_hash_bang.ml[114,5714+5])
+                              Tpat_constant Const_int 1
+                          expression (src/skip_hash_bang.mll[16,5753+6]..src/skip_hash_bang.mll[16,5753+29])
+                            Texp_apply
+                            expression (src/skip_hash_bang.mll[16,5753+8]..src/skip_hash_bang.mll[16,5753+18])
+                              Texp_ident "update_loc/147"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (src/skip_hash_bang.mll[16,5753+19]..src/skip_hash_bang.mll[16,5753+25])
+                                  Texp_ident "lexbuf/159"
+                              <arg>
+                                Nolabel
+                                expression (src/skip_hash_bang.mll[16,5753+26]..src/skip_hash_bang.mll[16,5753+27])
+                                  Texp_constant Const_int 1
+                            ]
+                        <case>
+                          pattern (src/skip_hash_bang.ml[119,5814+4]..src/skip_hash_bang.ml[119,5814+5])
+                            Tpat_value
+                            pattern (src/skip_hash_bang.ml[119,5814+4]..src/skip_hash_bang.ml[119,5814+5])
+                              Tpat_constant Const_int 2
+                          expression (src/skip_hash_bang.mll[17,5853+7]..src/skip_hash_bang.mll[17,5853+13])
+                            Texp_construct "()"
+                            []
+                        <case>
+                          pattern (src/skip_hash_bang.ml[124,5898+4]..src/skip_hash_bang.ml[124,5898+21])
+                            Tpat_value
+                            pattern (src/skip_hash_bang.ml[124,5898+4]..src/skip_hash_bang.ml[124,5898+21])
+                              Tpat_var "__ocaml_lex_state/161"
+                          expression (src/skip_hash_bang.ml[124,5898+25]..src/skip_hash_bang.ml[125,5957+61])
+                            Texp_sequence
+                            expression (src/skip_hash_bang.ml[124,5898+25]..src/skip_hash_bang.ml[124,5898+57])
+                              Texp_apply
+                              expression (src/skip_hash_bang.ml[124,5898+25]..src/skip_hash_bang.ml[124,5898+50])
+                                Texp_field
+                                expression (src/skip_hash_bang.ml[124,5898+25]..src/skip_hash_bang.ml[124,5898+31])
+                                  Texp_ident "lexbuf/159"
+                                "Lexing.refill_buff"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (src/skip_hash_bang.ml[124,5898+51]..src/skip_hash_bang.ml[124,5898+57])
+                                    Texp_ident "lexbuf/159"
+                              ]
+                            expression (src/skip_hash_bang.ml[125,5957+6]..src/skip_hash_bang.ml[125,5957+61])
+                              Texp_apply
+                              expression (src/skip_hash_bang.ml[125,5957+6]..src/skip_hash_bang.ml[125,5957+36])
+                                Texp_ident "__ocaml_lex_skip_hash_bang_rec/157"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (src/skip_hash_bang.ml[125,5957+37]..src/skip_hash_bang.ml[125,5957+43])
+                                    Texp_ident "lexbuf/159"
+                                <arg>
+                                  Nolabel
+                                  expression (src/skip_hash_bang.ml[125,5957+44]..src/skip_hash_bang.ml[125,5957+61])
+                                    Texp_ident "__ocaml_lex_state/161"
+                              ]
+                      ]
+                      []
+                ]
+          ]
+    ]
+]
+
+(seq
+  (let
+    (update_loc/147 =
+       (function lexbuf/149 lines_to_skip/150[int]
+         (let (pos/151 = (field_mut 11 lexbuf/149))
+           (setfield_ptr 11 lexbuf/149
+             (let (init/397 = pos/151)
+               (makeblock 0 (*,int,int,int) (field_imm 0 init/397)
+                 (+ (field_int 1 pos/151) lines_to_skip/150)
+                 (field_int 3 pos/151) (field_int 3 init/397)))))))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Skip_hash_bang!)
+      update_loc/147))
+  (let
+    (__ocaml_lex_tables/155 =
+       [0:
+        "\000\000\000\000\000\000\001\000\001\000\002\000\001\000\003\000\255\255"
+        "\002\000\255\255\255\255\001\000\255\255\255\255\255\255\255\255\255\255"
+        "\255\255\255\255\002\000\005\000\255\255\005\000\255\255\255\255\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000\004\000\004\000\b\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\002\000\006\000\001\000\007\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\255\255\255\255\255\255\000\000"
+        "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\007\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\001\000\004\000\000\000\006\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\255\255"
+        "" "" "" "" "" ""])
+    (setfield_ptr(root-init) 2 (global Ppxlib__Skip_hash_bang!)
+      __ocaml_lex_tables/155))
+  (letrec
+    (skip_hash_bang/156
+       (function lexbuf/158
+         (apply __ocaml_lex_skip_hash_bang_rec/157 lexbuf/158 0))
+      __ocaml_lex_skip_hash_bang_rec/157
+        (function lexbuf/159 __ocaml_lex_state/160[int]
+          (let
+            (__ocaml_lex_state/161 =
+               (apply (field_imm 19 (global Stdlib__lexing!))
+                 (field_imm 2 (global Ppxlib__Skip_hash_bang!))
+                 __ocaml_lex_state/160 lexbuf/159))
+            (catch
+              (if (isout 2 __ocaml_lex_state/161) (exit 1)
+                (switch* __ocaml_lex_state/161
+                 case int 0:
+                  (apply (field_imm 1 (global Ppxlib__Skip_hash_bang!))
+                    lexbuf/159 3)
+                 case int 1:
+                  (apply (field_imm 1 (global Ppxlib__Skip_hash_bang!))
+                    lexbuf/159 1)
+                 case int 2: 0))
+             with (1)
+              (seq (apply (field_imm 0 lexbuf/159) lexbuf/159)
+                (apply __ocaml_lex_skip_hash_bang_rec/157 lexbuf/159
+                  __ocaml_lex_state/161))))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Ppxlib__Skip_hash_bang!)
+        skip_hash_bang/156)
+      (setfield_ptr(root-init) 3 (global Ppxlib__Skip_hash_bang!)
+        __ocaml_lex_skip_hash_bang_rec/157)))
+  0)
+(seq
+  (let
+    (update_loc/147 =
+       (function lexbuf/149 lines_to_skip/150[int]
+         (let (pos/151 = (field_mut 11 lexbuf/149))
+           (setfield_ptr 11 lexbuf/149
+             (makeblock 0 (*,int,int,int) (field_imm 0 pos/151)
+               (+ (field_int 1 pos/151) lines_to_skip/150)
+               (field_int 3 pos/151) (field_int 3 pos/151))))))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Skip_hash_bang!)
+      update_loc/147))
+  (let
+    (__ocaml_lex_tables/155 =
+       [0:
+        "\000\000\000\000\000\000\001\000\001\000\002\000\001\000\003\000\255\255"
+        "\002\000\255\255\255\255\001\000\255\255\255\255\255\255\255\255\255\255"
+        "\255\255\255\255\002\000\005\000\255\255\005\000\255\255\255\255\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000\004\000\004\000\b\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\002\000\006\000\001\000\007\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\255\255\255\255\255\255\000\000"
+        "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\007\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\001\000\004\000\000\000\006\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\002\000\003\000\005\000\255\255"
+        "" "" "" "" "" ""])
+    (setfield_ptr(root-init) 2 (global Ppxlib__Skip_hash_bang!)
+      __ocaml_lex_tables/155))
+  (letrec
+    (skip_hash_bang/156
+       (function lexbuf/158
+         (apply __ocaml_lex_skip_hash_bang_rec/157 lexbuf/158 0))
+      __ocaml_lex_skip_hash_bang_rec/157
+        (function lexbuf/159 __ocaml_lex_state/160[int]
+          (let
+            (__ocaml_lex_state/161 =
+               (apply (field_imm 19 (global Stdlib__lexing!))
+                 (field_imm 2 (global Ppxlib__Skip_hash_bang!))
+                 __ocaml_lex_state/160 lexbuf/159))
+            (if (isout 2 __ocaml_lex_state/161)
+              (seq (apply (field_imm 0 lexbuf/159) lexbuf/159)
+                (apply __ocaml_lex_skip_hash_bang_rec/157 lexbuf/159
+                  __ocaml_lex_state/161))
+              (switch* __ocaml_lex_state/161
+               case int 0:
+                (apply (field_imm 1 (global Ppxlib__Skip_hash_bang!))
+                  lexbuf/159 3)
+               case int 1:
+                (apply (field_imm 1 (global Ppxlib__Skip_hash_bang!))
+                  lexbuf/159 1)
+               case int 2: 0)))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Ppxlib__Skip_hash_bang!)
+        skip_hash_bang/156)
+      (setfield_ptr(root-init) 3 (global Ppxlib__Skip_hash_bang!)
+        __ocaml_lex_skip_hash_bang_rec/157)))
+  0)

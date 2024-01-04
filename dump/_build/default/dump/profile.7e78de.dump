@@ -1,0 +1,8 @@
+0.764s  488MB 50.3MB 50.3MB src/driver.ml
+  0.013s 10.9MB 2.69MB 2.69MB parsing
+    0.013s 10.9MB 2.69MB 2.69MB parser
+  0.676s  293MB 44.7MB 47.4MB typing
+  0.007s 10.6MB 0.81MB 48.2MB transl
+  0.020s 74.2MB 1.83MB 50.1MB generate
+  0.048s 99.2MB 0.21MB 50.3MB other
+0.008s ------ ------ ------ other

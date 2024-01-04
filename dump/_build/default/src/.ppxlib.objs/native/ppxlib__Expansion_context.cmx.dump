@@ -1,0 +1,1935 @@
+[
+  structure_item (src/expansion_context.ml[1,0+0]..[18,635+3])
+    Pstr_module
+    "Base" (src/expansion_context.ml[1,0+7]..[1,0+11])
+      module_expr (src/expansion_context.ml[1,0+14]..[18,635+3])
+        Pmod_structure
+        [
+          structure_item (src/expansion_context.ml[2,21+2]..[2,21+79])
+            Pstr_type Rec
+            [
+              type_declaration "t" (src/expansion_context.ml[2,21+7]..[2,21+8]) (src/expansion_context.ml[2,21+2]..[2,21+79])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_record
+                    [
+                      (src/expansion_context.ml[2,21+13]..[2,21+32])
+                        Immutable
+                        "tool_name" (src/expansion_context.ml[2,21+13]..[2,21+22])                        core_type (src/expansion_context.ml[2,21+25]..[2,21+31])
+                          Ptyp_constr "string" (src/expansion_context.ml[2,21+25]..[2,21+31])
+                          []
+                      (src/expansion_context.ml[2,21+33]..[2,21+57])
+                        Immutable
+                        "code_path" (src/expansion_context.ml[2,21+33]..[2,21+42])                        core_type (src/expansion_context.ml[2,21+45]..[2,21+56])
+                          Ptyp_constr "Code_path.t" (src/expansion_context.ml[2,21+45]..[2,21+56])
+                          []
+                      (src/expansion_context.ml[2,21+58]..[2,21+77])
+                        Immutable
+                        "input_name" (src/expansion_context.ml[2,21+58]..[2,21+68])                        core_type (src/expansion_context.ml[2,21+71]..[2,21+77])
+                          Ptyp_constr "string" (src/expansion_context.ml[2,21+71]..[2,21+77])
+                          []
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (src/expansion_context.ml[4,102+2]..[6,208+40])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[4,102+6]..[4,102+15])
+                  Ppat_var "top_level" (src/expansion_context.ml[4,102+6]..[4,102+15])
+                expression (src/expansion_context.ml[4,102+16]..[6,208+40]) ghost
+                  Pexp_fun
+                  Labelled "tool_name"
+                  None
+                  pattern (src/expansion_context.ml[4,102+17]..[4,102+26])
+                    Ppat_var "tool_name" (src/expansion_context.ml[4,102+17]..[4,102+26])
+                  expression (src/expansion_context.ml[4,102+27]..[6,208+40]) ghost
+                    Pexp_fun
+                    Labelled "file_path"
+                    None
+                    pattern (src/expansion_context.ml[4,102+28]..[4,102+37])
+                      Ppat_var "file_path" (src/expansion_context.ml[4,102+28]..[4,102+37])
+                    expression (src/expansion_context.ml[4,102+38]..[6,208+40]) ghost
+                      Pexp_fun
+                      Labelled "input_name"
+                      None
+                      pattern (src/expansion_context.ml[4,102+39]..[4,102+49])
+                        Ppat_var "input_name" (src/expansion_context.ml[4,102+39]..[4,102+49])
+                      expression (src/expansion_context.ml[5,154+4]..[6,208+40])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (src/expansion_context.ml[5,154+8]..[5,154+17])
+                              Ppat_var "code_path" (src/expansion_context.ml[5,154+8]..[5,154+17])
+                            expression (src/expansion_context.ml[5,154+20]..[5,154+50])
+                              Pexp_apply
+                              expression (src/expansion_context.ml[5,154+20]..[5,154+39])
+                                Pexp_ident "Code_path.top_level" (src/expansion_context.ml[5,154+20]..[5,154+39])
+                              [
+                                <arg>
+                                Labelled "file_path"
+                                  expression (src/expansion_context.ml[5,154+41]..[5,154+50])
+                                    Pexp_ident "file_path" (src/expansion_context.ml[5,154+41]..[5,154+50])
+                              ]
+                        ]
+                        expression (src/expansion_context.ml[6,208+4]..[6,208+40])
+                          Pexp_record
+                          [
+                            "tool_name" (src/expansion_context.ml[6,208+6]..[6,208+15])
+                              expression (src/expansion_context.ml[6,208+6]..[6,208+15]) ghost
+                                Pexp_ident "tool_name" (src/expansion_context.ml[6,208+6]..[6,208+15]) ghost
+                            "code_path" (src/expansion_context.ml[6,208+17]..[6,208+26])
+                              expression (src/expansion_context.ml[6,208+17]..[6,208+26]) ghost
+                                Pexp_ident "code_path" (src/expansion_context.ml[6,208+17]..[6,208+26]) ghost
+                            "input_name" (src/expansion_context.ml[6,208+28]..[6,208+38])
+                              expression (src/expansion_context.ml[6,208+28]..[6,208+38]) ghost
+                                Pexp_ident "input_name" (src/expansion_context.ml[6,208+28]..[6,208+38]) ghost
+                          ]
+                          None
+            ]
+          structure_item (src/expansion_context.ml[8,250+2]..[8,250+31])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[8,250+6]..[8,250+15])
+                  Ppat_var "code_path" (src/expansion_context.ml[8,250+6]..[8,250+15])
+                expression (src/expansion_context.ml[8,250+16]..[8,250+31]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[8,250+16]..[8,250+17])
+                    Ppat_var "t" (src/expansion_context.ml[8,250+16]..[8,250+17])
+                  expression (src/expansion_context.ml[8,250+20]..[8,250+31])
+                    Pexp_field
+                    expression (src/expansion_context.ml[8,250+20]..[8,250+21])
+                      Pexp_ident "t" (src/expansion_context.ml[8,250+20]..[8,250+21])
+                    "code_path" (src/expansion_context.ml[8,250+22]..[8,250+31])
+            ]
+          structure_item (src/expansion_context.ml[9,282+2]..[9,282+33])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[9,282+6]..[9,282+16])
+                  Ppat_var "input_name" (src/expansion_context.ml[9,282+6]..[9,282+16])
+                expression (src/expansion_context.ml[9,282+17]..[9,282+33]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[9,282+17]..[9,282+18])
+                    Ppat_var "t" (src/expansion_context.ml[9,282+17]..[9,282+18])
+                  expression (src/expansion_context.ml[9,282+21]..[9,282+33])
+                    Pexp_field
+                    expression (src/expansion_context.ml[9,282+21]..[9,282+22])
+                      Pexp_ident "t" (src/expansion_context.ml[9,282+21]..[9,282+22])
+                    "input_name" (src/expansion_context.ml[9,282+23]..[9,282+33])
+            ]
+          structure_item (src/expansion_context.ml[10,316+2]..[10,316+31])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[10,316+6]..[10,316+15])
+                  Ppat_var "tool_name" (src/expansion_context.ml[10,316+6]..[10,316+15])
+                expression (src/expansion_context.ml[10,316+16]..[10,316+31]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[10,316+16]..[10,316+17])
+                    Ppat_var "t" (src/expansion_context.ml[10,316+16]..[10,316+17])
+                  expression (src/expansion_context.ml[10,316+20]..[10,316+31])
+                    Pexp_field
+                    expression (src/expansion_context.ml[10,316+20]..[10,316+21])
+                      Pexp_ident "t" (src/expansion_context.ml[10,316+20]..[10,316+21])
+                    "tool_name" (src/expansion_context.ml[10,316+22]..[10,316+31])
+            ]
+          structure_item (src/expansion_context.ml[11,348+2]..[11,348+76])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[11,348+6]..[11,348+16])
+                  Ppat_var "enter_expr" (src/expansion_context.ml[11,348+6]..[11,348+16])
+                expression (src/expansion_context.ml[11,348+17]..[11,348+76]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[11,348+17]..[11,348+18])
+                    Ppat_var "t" (src/expansion_context.ml[11,348+17]..[11,348+18])
+                  expression (src/expansion_context.ml[11,348+21]..[11,348+76])
+                    Pexp_record
+                    [
+                      "code_path" (src/expansion_context.ml[11,348+30]..[11,348+39])
+                        expression (src/expansion_context.ml[11,348+42]..[11,348+74])
+                          Pexp_apply
+                          expression (src/expansion_context.ml[11,348+42]..[11,348+62])
+                            Pexp_ident "Code_path.enter_expr" (src/expansion_context.ml[11,348+42]..[11,348+62])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (src/expansion_context.ml[11,348+63]..[11,348+74])
+                                Pexp_field
+                                expression (src/expansion_context.ml[11,348+63]..[11,348+64])
+                                  Pexp_ident "t" (src/expansion_context.ml[11,348+63]..[11,348+64])
+                                "code_path" (src/expansion_context.ml[11,348+65]..[11,348+74])
+                          ]
+                    ]
+                    Some
+                      expression (src/expansion_context.ml[11,348+23]..[11,348+24])
+                        Pexp_ident "t" (src/expansion_context.ml[11,348+23]..[11,348+24])
+            ]
+          structure_item (src/expansion_context.ml[13,426+2]..[14,459+71])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[13,426+6]..[13,426+18])
+                  Ppat_var "enter_module" (src/expansion_context.ml[13,426+6]..[13,426+18])
+                expression (src/expansion_context.ml[13,426+19]..[14,459+71]) ghost
+                  Pexp_fun
+                  Labelled "loc"
+                  None
+                  pattern (src/expansion_context.ml[13,426+20]..[13,426+23])
+                    Ppat_var "loc" (src/expansion_context.ml[13,426+20]..[13,426+23])
+                  expression (src/expansion_context.ml[13,426+24]..[14,459+71]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (src/expansion_context.ml[13,426+24]..[13,426+28])
+                      Ppat_var "name" (src/expansion_context.ml[13,426+24]..[13,426+28])
+                    expression (src/expansion_context.ml[13,426+29]..[14,459+71]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (src/expansion_context.ml[13,426+29]..[13,426+30])
+                        Ppat_var "t" (src/expansion_context.ml[13,426+29]..[13,426+30])
+                      expression (src/expansion_context.ml[14,459+4]..[14,459+71])
+                        Pexp_record
+                        [
+                          "code_path" (src/expansion_context.ml[14,459+13]..[14,459+22])
+                            expression (src/expansion_context.ml[14,459+25]..[14,459+69])
+                              Pexp_apply
+                              expression (src/expansion_context.ml[14,459+25]..[14,459+47])
+                                Pexp_ident "Code_path.enter_module" (src/expansion_context.ml[14,459+25]..[14,459+47])
+                              [
+                                <arg>
+                                Labelled "loc"
+                                  expression (src/expansion_context.ml[14,459+49]..[14,459+52])
+                                    Pexp_ident "loc" (src/expansion_context.ml[14,459+49]..[14,459+52])
+                                <arg>
+                                Nolabel
+                                  expression (src/expansion_context.ml[14,459+53]..[14,459+57])
+                                    Pexp_ident "name" (src/expansion_context.ml[14,459+53]..[14,459+57])
+                                <arg>
+                                Nolabel
+                                  expression (src/expansion_context.ml[14,459+58]..[14,459+69])
+                                    Pexp_field
+                                    expression (src/expansion_context.ml[14,459+58]..[14,459+59])
+                                      Pexp_ident "t" (src/expansion_context.ml[14,459+58]..[14,459+59])
+                                    "code_path" (src/expansion_context.ml[14,459+60]..[14,459+69])
+                              ]
+                        ]
+                        Some
+                          expression (src/expansion_context.ml[14,459+6]..[14,459+7])
+                            Pexp_ident "t" (src/expansion_context.ml[14,459+6]..[14,459+7])
+            ]
+          structure_item (src/expansion_context.ml[16,532+2]..[17,564+70])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[16,532+6]..[16,532+17])
+                  Ppat_var "enter_value" (src/expansion_context.ml[16,532+6]..[16,532+17])
+                expression (src/expansion_context.ml[16,532+18]..[17,564+70]) ghost
+                  Pexp_fun
+                  Labelled "loc"
+                  None
+                  pattern (src/expansion_context.ml[16,532+19]..[16,532+22])
+                    Ppat_var "loc" (src/expansion_context.ml[16,532+19]..[16,532+22])
+                  expression (src/expansion_context.ml[16,532+23]..[17,564+70]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (src/expansion_context.ml[16,532+23]..[16,532+27])
+                      Ppat_var "name" (src/expansion_context.ml[16,532+23]..[16,532+27])
+                    expression (src/expansion_context.ml[16,532+28]..[17,564+70]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (src/expansion_context.ml[16,532+28]..[16,532+29])
+                        Ppat_var "t" (src/expansion_context.ml[16,532+28]..[16,532+29])
+                      expression (src/expansion_context.ml[17,564+4]..[17,564+70])
+                        Pexp_record
+                        [
+                          "code_path" (src/expansion_context.ml[17,564+13]..[17,564+22])
+                            expression (src/expansion_context.ml[17,564+25]..[17,564+68])
+                              Pexp_apply
+                              expression (src/expansion_context.ml[17,564+25]..[17,564+46])
+                                Pexp_ident "Code_path.enter_value" (src/expansion_context.ml[17,564+25]..[17,564+46])
+                              [
+                                <arg>
+                                Labelled "loc"
+                                  expression (src/expansion_context.ml[17,564+48]..[17,564+51])
+                                    Pexp_ident "loc" (src/expansion_context.ml[17,564+48]..[17,564+51])
+                                <arg>
+                                Nolabel
+                                  expression (src/expansion_context.ml[17,564+52]..[17,564+56])
+                                    Pexp_ident "name" (src/expansion_context.ml[17,564+52]..[17,564+56])
+                                <arg>
+                                Nolabel
+                                  expression (src/expansion_context.ml[17,564+57]..[17,564+68])
+                                    Pexp_field
+                                    expression (src/expansion_context.ml[17,564+57]..[17,564+58])
+                                      Pexp_ident "t" (src/expansion_context.ml[17,564+57]..[17,564+58])
+                                    "code_path" (src/expansion_context.ml[17,564+59]..[17,564+68])
+                              ]
+                        ]
+                        Some
+                          expression (src/expansion_context.ml[17,564+6]..[17,564+7])
+                            Pexp_ident "t" (src/expansion_context.ml[17,564+6]..[17,564+7])
+            ]
+        ]
+  structure_item (src/expansion_context.ml[20,640+0]..[32,1098+3])
+    Pstr_module
+    "Extension" (src/expansion_context.ml[20,640+7]..[20,640+16])
+      module_expr (src/expansion_context.ml[20,640+19]..[32,1098+3])
+        Pmod_structure
+        [
+          structure_item (src/expansion_context.ml[21,666+2]..[21,666+62])
+            Pstr_type Rec
+            [
+              type_declaration "t" (src/expansion_context.ml[21,666+7]..[21,666+8]) (src/expansion_context.ml[21,666+2]..[21,666+62])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_record
+                    [
+                      (src/expansion_context.ml[21,666+13]..[21,666+46])
+                        Immutable
+                        "extension_point_loc" (src/expansion_context.ml[21,666+13]..[21,666+32])                        core_type (src/expansion_context.ml[21,666+35]..[21,666+45])
+                          Ptyp_constr "Location.t" (src/expansion_context.ml[21,666+35]..[21,666+45])
+                          []
+                      (src/expansion_context.ml[21,666+47]..[21,666+60])
+                        Immutable
+                        "base" (src/expansion_context.ml[21,666+47]..[21,666+51])                        core_type (src/expansion_context.ml[21,666+54]..[21,666+60])
+                          Ptyp_constr "Base.t" (src/expansion_context.ml[21,666+54]..[21,666+60])
+                          []
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (src/expansion_context.ml[23,730+2]..[23,730+72])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[23,730+6]..[23,730+10])
+                  Ppat_var "make" (src/expansion_context.ml[23,730+6]..[23,730+10])
+                expression (src/expansion_context.ml[23,730+11]..[23,730+72]) ghost
+                  Pexp_fun
+                  Labelled "extension_point_loc"
+                  None
+                  pattern (src/expansion_context.ml[23,730+12]..[23,730+31])
+                    Ppat_var "extension_point_loc" (src/expansion_context.ml[23,730+12]..[23,730+31])
+                  expression (src/expansion_context.ml[23,730+32]..[23,730+72]) ghost
+                    Pexp_fun
+                    Labelled "base"
+                    None
+                    pattern (src/expansion_context.ml[23,730+33]..[23,730+37])
+                      Ppat_var "base" (src/expansion_context.ml[23,730+33]..[23,730+37])
+                    expression (src/expansion_context.ml[23,730+38]..[23,730+72]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (src/expansion_context.ml[23,730+38]..[23,730+40])
+                        Ppat_construct "()" (src/expansion_context.ml[23,730+38]..[23,730+40])
+                        None
+                      expression (src/expansion_context.ml[23,730+43]..[23,730+72])
+                        Pexp_record
+                        [
+                          "extension_point_loc" (src/expansion_context.ml[23,730+45]..[23,730+64])
+                            expression (src/expansion_context.ml[23,730+45]..[23,730+64]) ghost
+                              Pexp_ident "extension_point_loc" (src/expansion_context.ml[23,730+45]..[23,730+64]) ghost
+                          "base" (src/expansion_context.ml[23,730+66]..[23,730+70])
+                            expression (src/expansion_context.ml[23,730+66]..[23,730+70]) ghost
+                              Pexp_ident "base" (src/expansion_context.ml[23,730+66]..[23,730+70]) ghost
+                        ]
+                        None
+            ]
+          structure_item (src/expansion_context.ml[24,803+2]..[24,803+51])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[24,803+6]..[24,803+25])
+                  Ppat_var "extension_point_loc" (src/expansion_context.ml[24,803+6]..[24,803+25])
+                expression (src/expansion_context.ml[24,803+26]..[24,803+51]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[24,803+26]..[24,803+27])
+                    Ppat_var "t" (src/expansion_context.ml[24,803+26]..[24,803+27])
+                  expression (src/expansion_context.ml[24,803+30]..[24,803+51])
+                    Pexp_field
+                    expression (src/expansion_context.ml[24,803+30]..[24,803+31])
+                      Pexp_ident "t" (src/expansion_context.ml[24,803+30]..[24,803+31])
+                    "extension_point_loc" (src/expansion_context.ml[24,803+32]..[24,803+51])
+            ]
+          structure_item (src/expansion_context.ml[25,855+2]..[25,855+36])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[25,855+6]..[25,855+15])
+                  Ppat_var "code_path" (src/expansion_context.ml[25,855+6]..[25,855+15])
+                expression (src/expansion_context.ml[25,855+16]..[25,855+36]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[25,855+16]..[25,855+17])
+                    Ppat_var "t" (src/expansion_context.ml[25,855+16]..[25,855+17])
+                  expression (src/expansion_context.ml[25,855+20]..[25,855+36])
+                    Pexp_field
+                    expression (src/expansion_context.ml[25,855+20]..[25,855+26])
+                      Pexp_field
+                      expression (src/expansion_context.ml[25,855+20]..[25,855+21])
+                        Pexp_ident "t" (src/expansion_context.ml[25,855+20]..[25,855+21])
+                      "base" (src/expansion_context.ml[25,855+22]..[25,855+26])
+                    "code_path" (src/expansion_context.ml[25,855+27]..[25,855+36])
+            ]
+          structure_item (src/expansion_context.ml[26,892+2]..[26,892+38])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[26,892+6]..[26,892+16])
+                  Ppat_var "input_name" (src/expansion_context.ml[26,892+6]..[26,892+16])
+                expression (src/expansion_context.ml[26,892+17]..[26,892+38]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[26,892+17]..[26,892+18])
+                    Ppat_var "t" (src/expansion_context.ml[26,892+17]..[26,892+18])
+                  expression (src/expansion_context.ml[26,892+21]..[26,892+38])
+                    Pexp_field
+                    expression (src/expansion_context.ml[26,892+21]..[26,892+27])
+                      Pexp_field
+                      expression (src/expansion_context.ml[26,892+21]..[26,892+22])
+                        Pexp_ident "t" (src/expansion_context.ml[26,892+21]..[26,892+22])
+                      "base" (src/expansion_context.ml[26,892+23]..[26,892+27])
+                    "input_name" (src/expansion_context.ml[26,892+28]..[26,892+38])
+            ]
+          structure_item (src/expansion_context.ml[27,931+2]..[27,931+36])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[27,931+6]..[27,931+15])
+                  Ppat_var "tool_name" (src/expansion_context.ml[27,931+6]..[27,931+15])
+                expression (src/expansion_context.ml[27,931+16]..[27,931+36]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[27,931+16]..[27,931+17])
+                    Ppat_var "t" (src/expansion_context.ml[27,931+16]..[27,931+17])
+                  expression (src/expansion_context.ml[27,931+20]..[27,931+36])
+                    Pexp_field
+                    expression (src/expansion_context.ml[27,931+20]..[27,931+26])
+                      Pexp_field
+                      expression (src/expansion_context.ml[27,931+20]..[27,931+21])
+                        Pexp_ident "t" (src/expansion_context.ml[27,931+20]..[27,931+21])
+                      "base" (src/expansion_context.ml[27,931+22]..[27,931+26])
+                    "tool_name" (src/expansion_context.ml[27,931+27]..[27,931+36])
+            ]
+          structure_item (src/expansion_context.ml[29,969+2]..[31,1039+58])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[29,969+6]..[29,969+23])
+                  Ppat_var "with_loc_and_path" (src/expansion_context.ml[29,969+6]..[29,969+23])
+                expression (src/expansion_context.ml[29,969+24]..[31,1039+58]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[29,969+24]..[29,969+25])
+                    Ppat_var "f" (src/expansion_context.ml[29,969+24]..[29,969+25])
+                  expression (src/expansion_context.ml[29,969+26]..[31,1039+58]) ghost
+                    Pexp_fun
+                    Labelled "ctxt"
+                    None
+                    pattern (src/expansion_context.ml[29,969+27]..[29,969+31])
+                      Ppat_var "ctxt" (src/expansion_context.ml[29,969+27]..[29,969+31])
+                    expression (src/expansion_context.ml[30,1003+4]..[31,1039+58])
+                      Pexp_apply
+                      expression (src/expansion_context.ml[30,1003+4]..[30,1003+5])
+                        Pexp_ident "f" (src/expansion_context.ml[30,1003+4]..[30,1003+5])
+                      [
+                        <arg>
+                        Labelled "loc"
+                          expression (src/expansion_context.ml[30,1003+11]..[30,1003+35])
+                            Pexp_field
+                            expression (src/expansion_context.ml[30,1003+11]..[30,1003+15])
+                              Pexp_ident "ctxt" (src/expansion_context.ml[30,1003+11]..[30,1003+15])
+                            "extension_point_loc" (src/expansion_context.ml[30,1003+16]..[30,1003+35])
+                        <arg>
+                        Labelled "path"
+                          expression (src/expansion_context.ml[31,1039+12]..[31,1039+58])
+                            Pexp_apply
+                            expression (src/expansion_context.ml[31,1039+13]..[31,1039+37])
+                              Pexp_ident "Code_path.to_string_path" (src/expansion_context.ml[31,1039+13]..[31,1039+37])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_context.ml[31,1039+38]..[31,1039+57])
+                                  Pexp_field
+                                  expression (src/expansion_context.ml[31,1039+38]..[31,1039+47])
+                                    Pexp_field
+                                    expression (src/expansion_context.ml[31,1039+38]..[31,1039+42])
+                                      Pexp_ident "ctxt" (src/expansion_context.ml[31,1039+38]..[31,1039+42])
+                                    "base" (src/expansion_context.ml[31,1039+43]..[31,1039+47])
+                                  "code_path" (src/expansion_context.ml[31,1039+48]..[31,1039+57])
+                            ]
+                      ]
+            ]
+        ]
+  structure_item (src/expansion_context.ml[34,1103+0]..[49,1603+3])
+    Pstr_module
+    "Deriver" (src/expansion_context.ml[34,1103+7]..[34,1103+14])
+      module_expr (src/expansion_context.ml[34,1103+17]..[49,1603+3])
+        Pmod_structure
+        [
+          structure_item (src/expansion_context.ml[35,1127+2]..[35,1127+74])
+            Pstr_type Rec
+            [
+              type_declaration "t" (src/expansion_context.ml[35,1127+7]..[35,1127+8]) (src/expansion_context.ml[35,1127+2]..[35,1127+74])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_record
+                    [
+                      (src/expansion_context.ml[35,1127+13]..[35,1127+43])
+                        Immutable
+                        "derived_item_loc" (src/expansion_context.ml[35,1127+13]..[35,1127+29])                        core_type (src/expansion_context.ml[35,1127+32]..[35,1127+42])
+                          Ptyp_constr "Location.t" (src/expansion_context.ml[35,1127+32]..[35,1127+42])
+                          []
+                      (src/expansion_context.ml[35,1127+44]..[35,1127+58])
+                        Immutable
+                        "inline" (src/expansion_context.ml[35,1127+44]..[35,1127+50])                        core_type (src/expansion_context.ml[35,1127+53]..[35,1127+57])
+                          Ptyp_constr "bool" (src/expansion_context.ml[35,1127+53]..[35,1127+57])
+                          []
+                      (src/expansion_context.ml[35,1127+59]..[35,1127+72])
+                        Immutable
+                        "base" (src/expansion_context.ml[35,1127+59]..[35,1127+63])                        core_type (src/expansion_context.ml[35,1127+66]..[35,1127+72])
+                          Ptyp_constr "Base.t" (src/expansion_context.ml[35,1127+66]..[35,1127+72])
+                          []
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (src/expansion_context.ml[37,1203+2]..[38,1251+38])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[37,1203+6]..[37,1203+10])
+                  Ppat_var "make" (src/expansion_context.ml[37,1203+6]..[37,1203+10])
+                expression (src/expansion_context.ml[37,1203+11]..[38,1251+38]) ghost
+                  Pexp_fun
+                  Labelled "derived_item_loc"
+                  None
+                  pattern (src/expansion_context.ml[37,1203+12]..[37,1203+28])
+                    Ppat_var "derived_item_loc" (src/expansion_context.ml[37,1203+12]..[37,1203+28])
+                  expression (src/expansion_context.ml[37,1203+29]..[38,1251+38]) ghost
+                    Pexp_fun
+                    Labelled "inline"
+                    None
+                    pattern (src/expansion_context.ml[37,1203+30]..[37,1203+36])
+                      Ppat_var "inline" (src/expansion_context.ml[37,1203+30]..[37,1203+36])
+                    expression (src/expansion_context.ml[37,1203+37]..[38,1251+38]) ghost
+                      Pexp_fun
+                      Labelled "base"
+                      None
+                      pattern (src/expansion_context.ml[37,1203+38]..[37,1203+42])
+                        Ppat_var "base" (src/expansion_context.ml[37,1203+38]..[37,1203+42])
+                      expression (src/expansion_context.ml[37,1203+43]..[38,1251+38]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (src/expansion_context.ml[37,1203+43]..[37,1203+45])
+                          Ppat_construct "()" (src/expansion_context.ml[37,1203+43]..[37,1203+45])
+                          None
+                        expression (src/expansion_context.ml[38,1251+4]..[38,1251+38])
+                          Pexp_record
+                          [
+                            "derived_item_loc" (src/expansion_context.ml[38,1251+6]..[38,1251+22])
+                              expression (src/expansion_context.ml[38,1251+6]..[38,1251+22]) ghost
+                                Pexp_ident "derived_item_loc" (src/expansion_context.ml[38,1251+6]..[38,1251+22]) ghost
+                            "base" (src/expansion_context.ml[38,1251+24]..[38,1251+28])
+                              expression (src/expansion_context.ml[38,1251+24]..[38,1251+28]) ghost
+                                Pexp_ident "base" (src/expansion_context.ml[38,1251+24]..[38,1251+28]) ghost
+                            "inline" (src/expansion_context.ml[38,1251+30]..[38,1251+36])
+                              expression (src/expansion_context.ml[38,1251+30]..[38,1251+36]) ghost
+                                Pexp_ident "inline" (src/expansion_context.ml[38,1251+30]..[38,1251+36]) ghost
+                          ]
+                          None
+            ]
+          structure_item (src/expansion_context.ml[40,1291+2]..[40,1291+45])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[40,1291+6]..[40,1291+22])
+                  Ppat_var "derived_item_loc" (src/expansion_context.ml[40,1291+6]..[40,1291+22])
+                expression (src/expansion_context.ml[40,1291+23]..[40,1291+45]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[40,1291+23]..[40,1291+24])
+                    Ppat_var "t" (src/expansion_context.ml[40,1291+23]..[40,1291+24])
+                  expression (src/expansion_context.ml[40,1291+27]..[40,1291+45])
+                    Pexp_field
+                    expression (src/expansion_context.ml[40,1291+27]..[40,1291+28])
+                      Pexp_ident "t" (src/expansion_context.ml[40,1291+27]..[40,1291+28])
+                    "derived_item_loc" (src/expansion_context.ml[40,1291+29]..[40,1291+45])
+            ]
+          structure_item (src/expansion_context.ml[41,1337+2]..[41,1337+36])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[41,1337+6]..[41,1337+15])
+                  Ppat_var "code_path" (src/expansion_context.ml[41,1337+6]..[41,1337+15])
+                expression (src/expansion_context.ml[41,1337+16]..[41,1337+36]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[41,1337+16]..[41,1337+17])
+                    Ppat_var "t" (src/expansion_context.ml[41,1337+16]..[41,1337+17])
+                  expression (src/expansion_context.ml[41,1337+20]..[41,1337+36])
+                    Pexp_field
+                    expression (src/expansion_context.ml[41,1337+20]..[41,1337+26])
+                      Pexp_field
+                      expression (src/expansion_context.ml[41,1337+20]..[41,1337+21])
+                        Pexp_ident "t" (src/expansion_context.ml[41,1337+20]..[41,1337+21])
+                      "base" (src/expansion_context.ml[41,1337+22]..[41,1337+26])
+                    "code_path" (src/expansion_context.ml[41,1337+27]..[41,1337+36])
+            ]
+          structure_item (src/expansion_context.ml[42,1374+2]..[42,1374+38])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[42,1374+6]..[42,1374+16])
+                  Ppat_var "input_name" (src/expansion_context.ml[42,1374+6]..[42,1374+16])
+                expression (src/expansion_context.ml[42,1374+17]..[42,1374+38]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[42,1374+17]..[42,1374+18])
+                    Ppat_var "t" (src/expansion_context.ml[42,1374+17]..[42,1374+18])
+                  expression (src/expansion_context.ml[42,1374+21]..[42,1374+38])
+                    Pexp_field
+                    expression (src/expansion_context.ml[42,1374+21]..[42,1374+27])
+                      Pexp_field
+                      expression (src/expansion_context.ml[42,1374+21]..[42,1374+22])
+                        Pexp_ident "t" (src/expansion_context.ml[42,1374+21]..[42,1374+22])
+                      "base" (src/expansion_context.ml[42,1374+23]..[42,1374+27])
+                    "input_name" (src/expansion_context.ml[42,1374+28]..[42,1374+38])
+            ]
+          structure_item (src/expansion_context.ml[43,1413+2]..[43,1413+36])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[43,1413+6]..[43,1413+15])
+                  Ppat_var "tool_name" (src/expansion_context.ml[43,1413+6]..[43,1413+15])
+                expression (src/expansion_context.ml[43,1413+16]..[43,1413+36]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[43,1413+16]..[43,1413+17])
+                    Ppat_var "t" (src/expansion_context.ml[43,1413+16]..[43,1413+17])
+                  expression (src/expansion_context.ml[43,1413+20]..[43,1413+36])
+                    Pexp_field
+                    expression (src/expansion_context.ml[43,1413+20]..[43,1413+26])
+                      Pexp_field
+                      expression (src/expansion_context.ml[43,1413+20]..[43,1413+21])
+                        Pexp_ident "t" (src/expansion_context.ml[43,1413+20]..[43,1413+21])
+                      "base" (src/expansion_context.ml[43,1413+22]..[43,1413+26])
+                    "tool_name" (src/expansion_context.ml[43,1413+27]..[43,1413+36])
+            ]
+          structure_item (src/expansion_context.ml[44,1450+2]..[44,1450+25])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[44,1450+6]..[44,1450+12])
+                  Ppat_var "inline" (src/expansion_context.ml[44,1450+6]..[44,1450+12])
+                expression (src/expansion_context.ml[44,1450+13]..[44,1450+25]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[44,1450+13]..[44,1450+14])
+                    Ppat_var "t" (src/expansion_context.ml[44,1450+13]..[44,1450+14])
+                  expression (src/expansion_context.ml[44,1450+17]..[44,1450+25])
+                    Pexp_field
+                    expression (src/expansion_context.ml[44,1450+17]..[44,1450+18])
+                      Pexp_ident "t" (src/expansion_context.ml[44,1450+17]..[44,1450+18])
+                    "inline" (src/expansion_context.ml[44,1450+19]..[44,1450+25])
+            ]
+          structure_item (src/expansion_context.ml[46,1477+2]..[48,1544+58])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[46,1477+6]..[46,1477+23])
+                  Ppat_var "with_loc_and_path" (src/expansion_context.ml[46,1477+6]..[46,1477+23])
+                expression (src/expansion_context.ml[46,1477+24]..[48,1544+58]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/expansion_context.ml[46,1477+24]..[46,1477+25])
+                    Ppat_var "f" (src/expansion_context.ml[46,1477+24]..[46,1477+25])
+                  expression (src/expansion_context.ml[46,1477+26]..[48,1544+58]) ghost
+                    Pexp_fun
+                    Labelled "ctxt"
+                    None
+                    pattern (src/expansion_context.ml[46,1477+27]..[46,1477+31])
+                      Ppat_var "ctxt" (src/expansion_context.ml[46,1477+27]..[46,1477+31])
+                    expression (src/expansion_context.ml[47,1511+4]..[48,1544+58])
+                      Pexp_apply
+                      expression (src/expansion_context.ml[47,1511+4]..[47,1511+5])
+                        Pexp_ident "f" (src/expansion_context.ml[47,1511+4]..[47,1511+5])
+                      [
+                        <arg>
+                        Labelled "loc"
+                          expression (src/expansion_context.ml[47,1511+11]..[47,1511+32])
+                            Pexp_field
+                            expression (src/expansion_context.ml[47,1511+11]..[47,1511+15])
+                              Pexp_ident "ctxt" (src/expansion_context.ml[47,1511+11]..[47,1511+15])
+                            "derived_item_loc" (src/expansion_context.ml[47,1511+16]..[47,1511+32])
+                        <arg>
+                        Labelled "path"
+                          expression (src/expansion_context.ml[48,1544+12]..[48,1544+58])
+                            Pexp_apply
+                            expression (src/expansion_context.ml[48,1544+13]..[48,1544+37])
+                              Pexp_ident "Code_path.to_string_path" (src/expansion_context.ml[48,1544+13]..[48,1544+37])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_context.ml[48,1544+38]..[48,1544+57])
+                                  Pexp_field
+                                  expression (src/expansion_context.ml[48,1544+38]..[48,1544+47])
+                                    Pexp_field
+                                    expression (src/expansion_context.ml[48,1544+38]..[48,1544+42])
+                                      Pexp_ident "ctxt" (src/expansion_context.ml[48,1544+38]..[48,1544+42])
+                                    "base" (src/expansion_context.ml[48,1544+43]..[48,1544+47])
+                                  "code_path" (src/expansion_context.ml[48,1544+48]..[48,1544+57])
+                            ]
+                      ]
+            ]
+        ]
+]
+
+module Base =
+  struct
+    type t = {
+      tool_name: string ;
+      code_path: Code_path.t ;
+      input_name: string }
+    let top_level ~tool_name  ~file_path  ~input_name  =
+      let code_path = Code_path.top_level ~file_path in
+      { tool_name; code_path; input_name }
+    let code_path t = t.code_path
+    let input_name t = t.input_name
+    let tool_name t = t.tool_name
+    let enter_expr t =
+      { t with code_path = (Code_path.enter_expr t.code_path) }
+    let enter_module ~loc  name t =
+      { t with code_path = (Code_path.enter_module ~loc name t.code_path) }
+    let enter_value ~loc  name t =
+      { t with code_path = (Code_path.enter_value ~loc name t.code_path) }
+  end
+module Extension =
+  struct
+    type t = {
+      extension_point_loc: Location.t ;
+      base: Base.t }
+    let make ~extension_point_loc  ~base  () = { extension_point_loc; base }
+    let extension_point_loc t = t.extension_point_loc
+    let code_path t = (t.base).code_path
+    let input_name t = (t.base).input_name
+    let tool_name t = (t.base).tool_name
+    let with_loc_and_path f ~ctxt  =
+      f ~loc:(ctxt.extension_point_loc)
+        ~path:(Code_path.to_string_path (ctxt.base).code_path)
+  end
+module Deriver =
+  struct
+    type t = {
+      derived_item_loc: Location.t ;
+      inline: bool ;
+      base: Base.t }
+    let make ~derived_item_loc  ~inline  ~base  () =
+      { derived_item_loc; base; inline }
+    let derived_item_loc t = t.derived_item_loc
+    let code_path t = (t.base).code_path
+    let input_name t = (t.base).input_name
+    let tool_name t = (t.base).tool_name
+    let inline t = t.inline
+    let with_loc_and_path f ~ctxt  =
+      f ~loc:(ctxt.derived_item_loc)
+        ~path:(Code_path.to_string_path (ctxt.base).code_path)
+  end
+[
+  structure_item (src/expansion_context.ml[1,0+0]..src/expansion_context.ml[18,635+3])
+    Tstr_module
+    Base/911
+      module_expr (src/expansion_context.ml[1,0+14]..src/expansion_context.ml[18,635+3])
+        Tmod_structure
+        [
+          structure_item (src/expansion_context.ml[2,21+2]..src/expansion_context.ml[2,21+79])
+            Tstr_type Rec
+            [
+              type_declaration t/120 (src/expansion_context.ml[2,21+2]..src/expansion_context.ml[2,21+79])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_record
+                    [
+                      (src/expansion_context.ml[2,21+13]..src/expansion_context.ml[2,21+32])
+                        Immutable
+                        tool_name/121                        core_type (src/expansion_context.ml[2,21+25]..src/expansion_context.ml[2,21+31])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[2,21+25]..src/expansion_context.ml[2,21+31])
+                            Ttyp_constr "string/17!"
+                            []
+                      (src/expansion_context.ml[2,21+33]..src/expansion_context.ml[2,21+57])
+                        Immutable
+                        code_path/137                        core_type (src/expansion_context.ml[2,21+45]..src/expansion_context.ml[2,21+56])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[2,21+45]..src/expansion_context.ml[2,21+56])
+                            Ttyp_constr "Ppxlib__!.Code_path.t"
+                            []
+                      (src/expansion_context.ml[2,21+58]..src/expansion_context.ml[2,21+77])
+                        Immutable
+                        input_name/138                        core_type (src/expansion_context.ml[2,21+71]..src/expansion_context.ml[2,21+77])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[2,21+71]..src/expansion_context.ml[2,21+77])
+                            Ttyp_constr "string/17!"
+                            []
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (src/expansion_context.ml[4,102+2]..src/expansion_context.ml[6,208+40])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[4,102+6]..src/expansion_context.ml[4,102+15])
+                  Tpat_var "top_level/139"
+                expression (src/expansion_context.ml[4,102+16]..src/expansion_context.ml[6,208+40]) ghost
+                  Texp_function
+                  Labelled "tool_name"
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[4,102+17]..src/expansion_context.ml[4,102+26])
+                        Tpat_var "tool_name/141"
+                      expression (src/expansion_context.ml[4,102+27]..src/expansion_context.ml[6,208+40]) ghost
+                        Texp_function
+                        Labelled "file_path"
+                        [
+                          <case>
+                            pattern (src/expansion_context.ml[4,102+28]..src/expansion_context.ml[4,102+37])
+                              Tpat_var "file_path/142"
+                            expression (src/expansion_context.ml[4,102+38]..src/expansion_context.ml[6,208+40]) ghost
+                              Texp_function
+                              Labelled "input_name"
+                              [
+                                <case>
+                                  pattern (src/expansion_context.ml[4,102+39]..src/expansion_context.ml[4,102+49])
+                                    Tpat_var "input_name/143"
+                                  expression (src/expansion_context.ml[5,154+4]..src/expansion_context.ml[6,208+40])
+                                    Texp_let Nonrec
+                                    [
+                                      <def>
+                                        pattern (src/expansion_context.ml[5,154+8]..src/expansion_context.ml[5,154+17])
+                                          Tpat_var "code_path/144"
+                                        expression (src/expansion_context.ml[5,154+20]..src/expansion_context.ml[5,154+50])
+                                          Texp_apply
+                                          expression (src/expansion_context.ml[5,154+20]..src/expansion_context.ml[5,154+39])
+                                            Texp_ident "Ppxlib__!.Code_path.top_level"
+                                          [
+                                            <arg>
+                                              Labelled "file_path"
+                                              expression (src/expansion_context.ml[5,154+41]..src/expansion_context.ml[5,154+50])
+                                                Texp_ident "file_path/142"
+                                          ]
+                                    ]
+                                    expression (src/expansion_context.ml[6,208+4]..src/expansion_context.ml[6,208+40])
+                                      Texp_record
+                                        fields =
+                                          [
+                                            "tool_name"
+                                              expression (src/expansion_context.ml[6,208+6]..src/expansion_context.ml[6,208+15]) ghost
+                                                Texp_ident "tool_name/141"
+                                            "code_path"
+                                              expression (src/expansion_context.ml[6,208+17]..src/expansion_context.ml[6,208+26]) ghost
+                                                Texp_ident "code_path/144"
+                                            "input_name"
+                                              expression (src/expansion_context.ml[6,208+28]..src/expansion_context.ml[6,208+38]) ghost
+                                                Texp_ident "input_name/143"
+                                          ]
+                                        representation =
+                                          Record_regular
+                                        extended_expression =
+                                          None
+                              ]
+                        ]
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[8,250+2]..src/expansion_context.ml[8,250+31])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[8,250+6]..src/expansion_context.ml[8,250+15])
+                  Tpat_var "code_path/146"
+                expression (src/expansion_context.ml[8,250+16]..src/expansion_context.ml[8,250+31]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[8,250+16]..src/expansion_context.ml[8,250+17])
+                        Tpat_var "t/148"
+                      expression (src/expansion_context.ml[8,250+20]..src/expansion_context.ml[8,250+31])
+                        Texp_field
+                        expression (src/expansion_context.ml[8,250+20]..src/expansion_context.ml[8,250+21])
+                          Texp_ident "t/148"
+                        "code_path"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[9,282+2]..src/expansion_context.ml[9,282+33])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[9,282+6]..src/expansion_context.ml[9,282+16])
+                  Tpat_var "input_name/149"
+                expression (src/expansion_context.ml[9,282+17]..src/expansion_context.ml[9,282+33]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[9,282+17]..src/expansion_context.ml[9,282+18])
+                        Tpat_var "t/151"
+                      expression (src/expansion_context.ml[9,282+21]..src/expansion_context.ml[9,282+33])
+                        Texp_field
+                        expression (src/expansion_context.ml[9,282+21]..src/expansion_context.ml[9,282+22])
+                          Texp_ident "t/151"
+                        "input_name"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[10,316+2]..src/expansion_context.ml[10,316+31])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[10,316+6]..src/expansion_context.ml[10,316+15])
+                  Tpat_var "tool_name/152"
+                expression (src/expansion_context.ml[10,316+16]..src/expansion_context.ml[10,316+31]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[10,316+16]..src/expansion_context.ml[10,316+17])
+                        Tpat_var "t/154"
+                      expression (src/expansion_context.ml[10,316+20]..src/expansion_context.ml[10,316+31])
+                        Texp_field
+                        expression (src/expansion_context.ml[10,316+20]..src/expansion_context.ml[10,316+21])
+                          Texp_ident "t/154"
+                        "tool_name"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[11,348+2]..src/expansion_context.ml[11,348+76])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[11,348+6]..src/expansion_context.ml[11,348+16])
+                  Tpat_var "enter_expr/155"
+                expression (src/expansion_context.ml[11,348+17]..src/expansion_context.ml[11,348+76]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[11,348+17]..src/expansion_context.ml[11,348+18])
+                        Tpat_var "t/157"
+                      expression (src/expansion_context.ml[11,348+21]..src/expansion_context.ml[11,348+76])
+                        Texp_record
+                          fields =
+                            [
+                              <kept>                              "code_path"
+                                expression (src/expansion_context.ml[11,348+42]..src/expansion_context.ml[11,348+74])
+                                  Texp_apply
+                                  expression (src/expansion_context.ml[11,348+42]..src/expansion_context.ml[11,348+62])
+                                    Texp_ident "Ppxlib__!.Code_path.enter_expr"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (src/expansion_context.ml[11,348+63]..src/expansion_context.ml[11,348+74])
+                                        Texp_field
+                                        expression (src/expansion_context.ml[11,348+63]..src/expansion_context.ml[11,348+64])
+                                          Texp_ident "t/157"
+                                        "code_path"
+                                  ]
+                              <kept>                            ]
+                          representation =
+                            Record_regular
+                          extended_expression =
+                            Some
+                              expression (src/expansion_context.ml[11,348+23]..src/expansion_context.ml[11,348+24])
+                                Texp_ident "t/157"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[13,426+2]..src/expansion_context.ml[14,459+71])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[13,426+6]..src/expansion_context.ml[13,426+18])
+                  Tpat_var "enter_module/158"
+                expression (src/expansion_context.ml[13,426+19]..src/expansion_context.ml[14,459+71]) ghost
+                  Texp_function
+                  Labelled "loc"
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[13,426+20]..src/expansion_context.ml[13,426+23])
+                        Tpat_var "loc/160"
+                      expression (src/expansion_context.ml[13,426+24]..src/expansion_context.ml[14,459+71]) ghost
+                        Texp_function
+                        Nolabel
+                        [
+                          <case>
+                            pattern (src/expansion_context.ml[13,426+24]..src/expansion_context.ml[13,426+28])
+                              Tpat_var "name/161"
+                            expression (src/expansion_context.ml[13,426+29]..src/expansion_context.ml[14,459+71]) ghost
+                              Texp_function
+                              Nolabel
+                              [
+                                <case>
+                                  pattern (src/expansion_context.ml[13,426+29]..src/expansion_context.ml[13,426+30])
+                                    Tpat_var "t/162"
+                                  expression (src/expansion_context.ml[14,459+4]..src/expansion_context.ml[14,459+71])
+                                    Texp_record
+                                      fields =
+                                        [
+                                          <kept>                                          "code_path"
+                                            expression (src/expansion_context.ml[14,459+25]..src/expansion_context.ml[14,459+69])
+                                              Texp_apply
+                                              expression (src/expansion_context.ml[14,459+25]..src/expansion_context.ml[14,459+47])
+                                                Texp_ident "Ppxlib__!.Code_path.enter_module"
+                                              [
+                                                <arg>
+                                                  Labelled "loc"
+                                                  expression (src/expansion_context.ml[14,459+49]..src/expansion_context.ml[14,459+52])
+                                                    Texp_ident "loc/160"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (src/expansion_context.ml[14,459+53]..src/expansion_context.ml[14,459+57])
+                                                    Texp_ident "name/161"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (src/expansion_context.ml[14,459+58]..src/expansion_context.ml[14,459+69])
+                                                    Texp_field
+                                                    expression (src/expansion_context.ml[14,459+58]..src/expansion_context.ml[14,459+59])
+                                                      Texp_ident "t/162"
+                                                    "code_path"
+                                              ]
+                                          <kept>                                        ]
+                                      representation =
+                                        Record_regular
+                                      extended_expression =
+                                        Some
+                                          expression (src/expansion_context.ml[14,459+6]..src/expansion_context.ml[14,459+7])
+                                            Texp_ident "t/162"
+                              ]
+                        ]
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[16,532+2]..src/expansion_context.ml[17,564+70])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[16,532+6]..src/expansion_context.ml[16,532+17])
+                  Tpat_var "enter_value/906"
+                expression (src/expansion_context.ml[16,532+18]..src/expansion_context.ml[17,564+70]) ghost
+                  Texp_function
+                  Labelled "loc"
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[16,532+19]..src/expansion_context.ml[16,532+22])
+                        Tpat_var "loc/908"
+                      expression (src/expansion_context.ml[16,532+23]..src/expansion_context.ml[17,564+70]) ghost
+                        Texp_function
+                        Nolabel
+                        [
+                          <case>
+                            pattern (src/expansion_context.ml[16,532+23]..src/expansion_context.ml[16,532+27])
+                              Tpat_var "name/909"
+                            expression (src/expansion_context.ml[16,532+28]..src/expansion_context.ml[17,564+70]) ghost
+                              Texp_function
+                              Nolabel
+                              [
+                                <case>
+                                  pattern (src/expansion_context.ml[16,532+28]..src/expansion_context.ml[16,532+29])
+                                    Tpat_var "t/910"
+                                  expression (src/expansion_context.ml[17,564+4]..src/expansion_context.ml[17,564+70])
+                                    Texp_record
+                                      fields =
+                                        [
+                                          <kept>                                          "code_path"
+                                            expression (src/expansion_context.ml[17,564+25]..src/expansion_context.ml[17,564+68])
+                                              Texp_apply
+                                              expression (src/expansion_context.ml[17,564+25]..src/expansion_context.ml[17,564+46])
+                                                Texp_ident "Ppxlib__!.Code_path.enter_value"
+                                              [
+                                                <arg>
+                                                  Labelled "loc"
+                                                  expression (src/expansion_context.ml[17,564+48]..src/expansion_context.ml[17,564+51])
+                                                    Texp_ident "loc/908"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (src/expansion_context.ml[17,564+52]..src/expansion_context.ml[17,564+56])
+                                                    Texp_ident "name/909"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (src/expansion_context.ml[17,564+57]..src/expansion_context.ml[17,564+68])
+                                                    Texp_field
+                                                    expression (src/expansion_context.ml[17,564+57]..src/expansion_context.ml[17,564+58])
+                                                      Texp_ident "t/910"
+                                                    "code_path"
+                                              ]
+                                          <kept>                                        ]
+                                      representation =
+                                        Record_regular
+                                      extended_expression =
+                                        Some
+                                          expression (src/expansion_context.ml[17,564+6]..src/expansion_context.ml[17,564+7])
+                                            Texp_ident "t/910"
+                              ]
+                        ]
+                  ]
+            ]
+        ]
+  structure_item (src/expansion_context.ml[20,640+0]..src/expansion_context.ml[32,1098+3])
+    Tstr_module
+    Extension/936
+      module_expr (src/expansion_context.ml[20,640+19]..src/expansion_context.ml[32,1098+3])
+        Tmod_structure
+        [
+          structure_item (src/expansion_context.ml[21,666+2]..src/expansion_context.ml[21,666+62])
+            Tstr_type Rec
+            [
+              type_declaration t/912 (src/expansion_context.ml[21,666+2]..src/expansion_context.ml[21,666+62])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_record
+                    [
+                      (src/expansion_context.ml[21,666+13]..src/expansion_context.ml[21,666+46])
+                        Immutable
+                        extension_point_loc/913                        core_type (src/expansion_context.ml[21,666+35]..src/expansion_context.ml[21,666+45])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[21,666+35]..src/expansion_context.ml[21,666+45])
+                            Ttyp_constr "Ppxlib__!.Location.t"
+                            []
+                      (src/expansion_context.ml[21,666+47]..src/expansion_context.ml[21,666+60])
+                        Immutable
+                        base/914                        core_type (src/expansion_context.ml[21,666+54]..src/expansion_context.ml[21,666+60])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[21,666+54]..src/expansion_context.ml[21,666+60])
+                            Ttyp_constr "Base/911.t"
+                            []
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (src/expansion_context.ml[23,730+2]..src/expansion_context.ml[23,730+72])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[23,730+6]..src/expansion_context.ml[23,730+10])
+                  Tpat_var "make/915"
+                expression (src/expansion_context.ml[23,730+11]..src/expansion_context.ml[23,730+72]) ghost
+                  Texp_function
+                  Labelled "extension_point_loc"
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[23,730+12]..src/expansion_context.ml[23,730+31])
+                        Tpat_var "extension_point_loc/917"
+                      expression (src/expansion_context.ml[23,730+32]..src/expansion_context.ml[23,730+72]) ghost
+                        Texp_function
+                        Labelled "base"
+                        [
+                          <case>
+                            pattern (src/expansion_context.ml[23,730+33]..src/expansion_context.ml[23,730+37])
+                              Tpat_var "base/918"
+                            expression (src/expansion_context.ml[23,730+38]..src/expansion_context.ml[23,730+72]) ghost
+                              Texp_function
+                              Nolabel
+                              [
+                                <case>
+                                  pattern (src/expansion_context.ml[23,730+38]..src/expansion_context.ml[23,730+40])
+                                    Tpat_construct "()"
+                                    []
+                                  expression (src/expansion_context.ml[23,730+43]..src/expansion_context.ml[23,730+72])
+                                    Texp_record
+                                      fields =
+                                        [
+                                          "extension_point_loc"
+                                            expression (src/expansion_context.ml[23,730+45]..src/expansion_context.ml[23,730+64]) ghost
+                                              Texp_ident "extension_point_loc/917"
+                                          "base"
+                                            expression (src/expansion_context.ml[23,730+66]..src/expansion_context.ml[23,730+70]) ghost
+                                              Texp_ident "base/918"
+                                        ]
+                                      representation =
+                                        Record_regular
+                                      extended_expression =
+                                        None
+                              ]
+                        ]
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[24,803+2]..src/expansion_context.ml[24,803+51])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[24,803+6]..src/expansion_context.ml[24,803+25])
+                  Tpat_var "extension_point_loc/920"
+                expression (src/expansion_context.ml[24,803+26]..src/expansion_context.ml[24,803+51]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[24,803+26]..src/expansion_context.ml[24,803+27])
+                        Tpat_var "t/922"
+                      expression (src/expansion_context.ml[24,803+30]..src/expansion_context.ml[24,803+51])
+                        Texp_field
+                        expression (src/expansion_context.ml[24,803+30]..src/expansion_context.ml[24,803+31])
+                          Texp_ident "t/922"
+                        "extension_point_loc"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[25,855+2]..src/expansion_context.ml[25,855+36])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[25,855+6]..src/expansion_context.ml[25,855+15])
+                  Tpat_var "code_path/923"
+                expression (src/expansion_context.ml[25,855+16]..src/expansion_context.ml[25,855+36]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[25,855+16]..src/expansion_context.ml[25,855+17])
+                        Tpat_var "t/925"
+                      expression (src/expansion_context.ml[25,855+20]..src/expansion_context.ml[25,855+36])
+                        Texp_field
+                        expression (src/expansion_context.ml[25,855+20]..src/expansion_context.ml[25,855+26])
+                          Texp_field
+                          expression (src/expansion_context.ml[25,855+20]..src/expansion_context.ml[25,855+21])
+                            Texp_ident "t/925"
+                          "base"
+                        "code_path"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[26,892+2]..src/expansion_context.ml[26,892+38])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[26,892+6]..src/expansion_context.ml[26,892+16])
+                  Tpat_var "input_name/926"
+                expression (src/expansion_context.ml[26,892+17]..src/expansion_context.ml[26,892+38]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[26,892+17]..src/expansion_context.ml[26,892+18])
+                        Tpat_var "t/928"
+                      expression (src/expansion_context.ml[26,892+21]..src/expansion_context.ml[26,892+38])
+                        Texp_field
+                        expression (src/expansion_context.ml[26,892+21]..src/expansion_context.ml[26,892+27])
+                          Texp_field
+                          expression (src/expansion_context.ml[26,892+21]..src/expansion_context.ml[26,892+22])
+                            Texp_ident "t/928"
+                          "base"
+                        "input_name"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[27,931+2]..src/expansion_context.ml[27,931+36])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[27,931+6]..src/expansion_context.ml[27,931+15])
+                  Tpat_var "tool_name/929"
+                expression (src/expansion_context.ml[27,931+16]..src/expansion_context.ml[27,931+36]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[27,931+16]..src/expansion_context.ml[27,931+17])
+                        Tpat_var "t/931"
+                      expression (src/expansion_context.ml[27,931+20]..src/expansion_context.ml[27,931+36])
+                        Texp_field
+                        expression (src/expansion_context.ml[27,931+20]..src/expansion_context.ml[27,931+26])
+                          Texp_field
+                          expression (src/expansion_context.ml[27,931+20]..src/expansion_context.ml[27,931+21])
+                            Texp_ident "t/931"
+                          "base"
+                        "tool_name"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[29,969+2]..src/expansion_context.ml[31,1039+58])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[29,969+6]..src/expansion_context.ml[29,969+23])
+                  Tpat_var "with_loc_and_path/932"
+                expression (src/expansion_context.ml[29,969+24]..src/expansion_context.ml[31,1039+58]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[29,969+24]..src/expansion_context.ml[29,969+25])
+                        Tpat_var "f/934"
+                      expression (src/expansion_context.ml[29,969+26]..src/expansion_context.ml[31,1039+58]) ghost
+                        Texp_function
+                        Labelled "ctxt"
+                        [
+                          <case>
+                            pattern (src/expansion_context.ml[29,969+27]..src/expansion_context.ml[29,969+31])
+                              Tpat_var "ctxt/935"
+                            expression (src/expansion_context.ml[30,1003+4]..src/expansion_context.ml[31,1039+58])
+                              Texp_apply
+                              expression (src/expansion_context.ml[30,1003+4]..src/expansion_context.ml[30,1003+5])
+                                Texp_ident "f/934"
+                              [
+                                <arg>
+                                  Labelled "loc"
+                                  expression (src/expansion_context.ml[30,1003+11]..src/expansion_context.ml[30,1003+35])
+                                    Texp_field
+                                    expression (src/expansion_context.ml[30,1003+11]..src/expansion_context.ml[30,1003+15])
+                                      Texp_ident "ctxt/935"
+                                    "extension_point_loc"
+                                <arg>
+                                  Labelled "path"
+                                  expression (src/expansion_context.ml[31,1039+12]..src/expansion_context.ml[31,1039+58])
+                                    Texp_apply
+                                    expression (src/expansion_context.ml[31,1039+13]..src/expansion_context.ml[31,1039+37])
+                                      Texp_ident "Ppxlib__!.Code_path.to_string_path"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_context.ml[31,1039+38]..src/expansion_context.ml[31,1039+57])
+                                          Texp_field
+                                          expression (src/expansion_context.ml[31,1039+38]..src/expansion_context.ml[31,1039+47])
+                                            Texp_field
+                                            expression (src/expansion_context.ml[31,1039+38]..src/expansion_context.ml[31,1039+42])
+                                              Texp_ident "ctxt/935"
+                                            "base"
+                                          "code_path"
+                                    ]
+                              ]
+                        ]
+                  ]
+            ]
+        ]
+  structure_item (src/expansion_context.ml[34,1103+0]..src/expansion_context.ml[49,1603+3])
+    Tstr_module
+    Deriver/966
+      module_expr (src/expansion_context.ml[34,1103+17]..src/expansion_context.ml[49,1603+3])
+        Tmod_structure
+        [
+          structure_item (src/expansion_context.ml[35,1127+2]..src/expansion_context.ml[35,1127+74])
+            Tstr_type Rec
+            [
+              type_declaration t/937 (src/expansion_context.ml[35,1127+2]..src/expansion_context.ml[35,1127+74])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_record
+                    [
+                      (src/expansion_context.ml[35,1127+13]..src/expansion_context.ml[35,1127+43])
+                        Immutable
+                        derived_item_loc/938                        core_type (src/expansion_context.ml[35,1127+32]..src/expansion_context.ml[35,1127+42])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[35,1127+32]..src/expansion_context.ml[35,1127+42])
+                            Ttyp_constr "Ppxlib__!.Location.t"
+                            []
+                      (src/expansion_context.ml[35,1127+44]..src/expansion_context.ml[35,1127+58])
+                        Immutable
+                        inline/939                        core_type (src/expansion_context.ml[35,1127+53]..src/expansion_context.ml[35,1127+57])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[35,1127+53]..src/expansion_context.ml[35,1127+57])
+                            Ttyp_constr "bool/5!"
+                            []
+                      (src/expansion_context.ml[35,1127+59]..src/expansion_context.ml[35,1127+72])
+                        Immutable
+                        base/940                        core_type (src/expansion_context.ml[35,1127+66]..src/expansion_context.ml[35,1127+72])
+                          Ttyp_poly
+                          core_type (src/expansion_context.ml[35,1127+66]..src/expansion_context.ml[35,1127+72])
+                            Ttyp_constr "Base/911.t"
+                            []
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          structure_item (src/expansion_context.ml[37,1203+2]..src/expansion_context.ml[38,1251+38])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[37,1203+6]..src/expansion_context.ml[37,1203+10])
+                  Tpat_var "make/941"
+                expression (src/expansion_context.ml[37,1203+11]..src/expansion_context.ml[38,1251+38]) ghost
+                  Texp_function
+                  Labelled "derived_item_loc"
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[37,1203+12]..src/expansion_context.ml[37,1203+28])
+                        Tpat_var "derived_item_loc/943"
+                      expression (src/expansion_context.ml[37,1203+29]..src/expansion_context.ml[38,1251+38]) ghost
+                        Texp_function
+                        Labelled "inline"
+                        [
+                          <case>
+                            pattern (src/expansion_context.ml[37,1203+30]..src/expansion_context.ml[37,1203+36])
+                              Tpat_var "inline/944"
+                            expression (src/expansion_context.ml[37,1203+37]..src/expansion_context.ml[38,1251+38]) ghost
+                              Texp_function
+                              Labelled "base"
+                              [
+                                <case>
+                                  pattern (src/expansion_context.ml[37,1203+38]..src/expansion_context.ml[37,1203+42])
+                                    Tpat_var "base/945"
+                                  expression (src/expansion_context.ml[37,1203+43]..src/expansion_context.ml[38,1251+38]) ghost
+                                    Texp_function
+                                    Nolabel
+                                    [
+                                      <case>
+                                        pattern (src/expansion_context.ml[37,1203+43]..src/expansion_context.ml[37,1203+45])
+                                          Tpat_construct "()"
+                                          []
+                                        expression (src/expansion_context.ml[38,1251+4]..src/expansion_context.ml[38,1251+38])
+                                          Texp_record
+                                            fields =
+                                              [
+                                                "derived_item_loc"
+                                                  expression (src/expansion_context.ml[38,1251+6]..src/expansion_context.ml[38,1251+22]) ghost
+                                                    Texp_ident "derived_item_loc/943"
+                                                "inline"
+                                                  expression (src/expansion_context.ml[38,1251+30]..src/expansion_context.ml[38,1251+36]) ghost
+                                                    Texp_ident "inline/944"
+                                                "base"
+                                                  expression (src/expansion_context.ml[38,1251+24]..src/expansion_context.ml[38,1251+28]) ghost
+                                                    Texp_ident "base/945"
+                                              ]
+                                            representation =
+                                              Record_regular
+                                            extended_expression =
+                                              None
+                                    ]
+                              ]
+                        ]
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[40,1291+2]..src/expansion_context.ml[40,1291+45])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[40,1291+6]..src/expansion_context.ml[40,1291+22])
+                  Tpat_var "derived_item_loc/947"
+                expression (src/expansion_context.ml[40,1291+23]..src/expansion_context.ml[40,1291+45]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[40,1291+23]..src/expansion_context.ml[40,1291+24])
+                        Tpat_var "t/949"
+                      expression (src/expansion_context.ml[40,1291+27]..src/expansion_context.ml[40,1291+45])
+                        Texp_field
+                        expression (src/expansion_context.ml[40,1291+27]..src/expansion_context.ml[40,1291+28])
+                          Texp_ident "t/949"
+                        "derived_item_loc"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[41,1337+2]..src/expansion_context.ml[41,1337+36])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[41,1337+6]..src/expansion_context.ml[41,1337+15])
+                  Tpat_var "code_path/950"
+                expression (src/expansion_context.ml[41,1337+16]..src/expansion_context.ml[41,1337+36]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[41,1337+16]..src/expansion_context.ml[41,1337+17])
+                        Tpat_var "t/952"
+                      expression (src/expansion_context.ml[41,1337+20]..src/expansion_context.ml[41,1337+36])
+                        Texp_field
+                        expression (src/expansion_context.ml[41,1337+20]..src/expansion_context.ml[41,1337+26])
+                          Texp_field
+                          expression (src/expansion_context.ml[41,1337+20]..src/expansion_context.ml[41,1337+21])
+                            Texp_ident "t/952"
+                          "base"
+                        "code_path"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[42,1374+2]..src/expansion_context.ml[42,1374+38])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[42,1374+6]..src/expansion_context.ml[42,1374+16])
+                  Tpat_var "input_name/953"
+                expression (src/expansion_context.ml[42,1374+17]..src/expansion_context.ml[42,1374+38]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[42,1374+17]..src/expansion_context.ml[42,1374+18])
+                        Tpat_var "t/955"
+                      expression (src/expansion_context.ml[42,1374+21]..src/expansion_context.ml[42,1374+38])
+                        Texp_field
+                        expression (src/expansion_context.ml[42,1374+21]..src/expansion_context.ml[42,1374+27])
+                          Texp_field
+                          expression (src/expansion_context.ml[42,1374+21]..src/expansion_context.ml[42,1374+22])
+                            Texp_ident "t/955"
+                          "base"
+                        "input_name"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[43,1413+2]..src/expansion_context.ml[43,1413+36])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[43,1413+6]..src/expansion_context.ml[43,1413+15])
+                  Tpat_var "tool_name/956"
+                expression (src/expansion_context.ml[43,1413+16]..src/expansion_context.ml[43,1413+36]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[43,1413+16]..src/expansion_context.ml[43,1413+17])
+                        Tpat_var "t/958"
+                      expression (src/expansion_context.ml[43,1413+20]..src/expansion_context.ml[43,1413+36])
+                        Texp_field
+                        expression (src/expansion_context.ml[43,1413+20]..src/expansion_context.ml[43,1413+26])
+                          Texp_field
+                          expression (src/expansion_context.ml[43,1413+20]..src/expansion_context.ml[43,1413+21])
+                            Texp_ident "t/958"
+                          "base"
+                        "tool_name"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[44,1450+2]..src/expansion_context.ml[44,1450+25])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[44,1450+6]..src/expansion_context.ml[44,1450+12])
+                  Tpat_var "inline/959"
+                expression (src/expansion_context.ml[44,1450+13]..src/expansion_context.ml[44,1450+25]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[44,1450+13]..src/expansion_context.ml[44,1450+14])
+                        Tpat_var "t/961"
+                      expression (src/expansion_context.ml[44,1450+17]..src/expansion_context.ml[44,1450+25])
+                        Texp_field
+                        expression (src/expansion_context.ml[44,1450+17]..src/expansion_context.ml[44,1450+18])
+                          Texp_ident "t/961"
+                        "inline"
+                  ]
+            ]
+          structure_item (src/expansion_context.ml[46,1477+2]..src/expansion_context.ml[48,1544+58])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/expansion_context.ml[46,1477+6]..src/expansion_context.ml[46,1477+23])
+                  Tpat_var "with_loc_and_path/962"
+                expression (src/expansion_context.ml[46,1477+24]..src/expansion_context.ml[48,1544+58]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_context.ml[46,1477+24]..src/expansion_context.ml[46,1477+25])
+                        Tpat_var "f/964"
+                      expression (src/expansion_context.ml[46,1477+26]..src/expansion_context.ml[48,1544+58]) ghost
+                        Texp_function
+                        Labelled "ctxt"
+                        [
+                          <case>
+                            pattern (src/expansion_context.ml[46,1477+27]..src/expansion_context.ml[46,1477+31])
+                              Tpat_var "ctxt/965"
+                            expression (src/expansion_context.ml[47,1511+4]..src/expansion_context.ml[48,1544+58])
+                              Texp_apply
+                              expression (src/expansion_context.ml[47,1511+4]..src/expansion_context.ml[47,1511+5])
+                                Texp_ident "f/964"
+                              [
+                                <arg>
+                                  Labelled "loc"
+                                  expression (src/expansion_context.ml[47,1511+11]..src/expansion_context.ml[47,1511+32])
+                                    Texp_field
+                                    expression (src/expansion_context.ml[47,1511+11]..src/expansion_context.ml[47,1511+15])
+                                      Texp_ident "ctxt/965"
+                                    "derived_item_loc"
+                                <arg>
+                                  Labelled "path"
+                                  expression (src/expansion_context.ml[48,1544+12]..src/expansion_context.ml[48,1544+58])
+                                    Texp_apply
+                                    expression (src/expansion_context.ml[48,1544+13]..src/expansion_context.ml[48,1544+37])
+                                      Texp_ident "Ppxlib__!.Code_path.to_string_path"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_context.ml[48,1544+38]..src/expansion_context.ml[48,1544+57])
+                                          Texp_field
+                                          expression (src/expansion_context.ml[48,1544+38]..src/expansion_context.ml[48,1544+47])
+                                            Texp_field
+                                            expression (src/expansion_context.ml[48,1544+38]..src/expansion_context.ml[48,1544+42])
+                                              Texp_ident "ctxt/965"
+                                            "base"
+                                          "code_path"
+                                    ]
+                              ]
+                        ]
+                  ]
+            ]
+        ]
+]
+
+(seq
+  (seq
+    (let
+      (top_level/139 =
+         (function tool_name/141 file_path/142 input_name/143
+           (let
+             (code_path/144 =
+                (apply (field_imm 8 (global Ppxlib__Code_path!))
+                  file_path/142))
+             (makeblock 0 tool_name/141 code_path/144 input_name/143))))
+      (setfield_ptr(root-init) 3 (global Ppxlib__Expansion_context!)
+        top_level/139))
+    (let (code_path/146 = (function t/148 (field_imm 1 t/148)))
+      (setfield_ptr(root-init) 4 (global Ppxlib__Expansion_context!)
+        code_path/146))
+    (let (input_name/149 = (function t/151 (field_imm 2 t/151)))
+      (setfield_ptr(root-init) 5 (global Ppxlib__Expansion_context!)
+        input_name/149))
+    (let (tool_name/152 = (function t/154 (field_imm 0 t/154)))
+      (setfield_ptr(root-init) 6 (global Ppxlib__Expansion_context!)
+        tool_name/152))
+    (let
+      (enter_expr/155 =
+         (function t/157
+           (let (init/2159 = t/157)
+             (makeblock 0 (field_imm 0 init/2159)
+               (apply (field_imm 9 (global Ppxlib__Code_path!))
+                 (field_imm 1 t/157))
+               (field_imm 2 init/2159)))))
+      (setfield_ptr(root-init) 7 (global Ppxlib__Expansion_context!)
+        enter_expr/155))
+    (let
+      (enter_module/158 =
+         (function loc/160 name/161 t/162
+           (let (init/2160 = t/162)
+             (makeblock 0 (field_imm 0 init/2160)
+               (apply (field_imm 10 (global Ppxlib__Code_path!)) loc/160
+                 name/161 (field_imm 1 t/162))
+               (field_imm 2 init/2160)))))
+      (setfield_ptr(root-init) 8 (global Ppxlib__Expansion_context!)
+        enter_module/158))
+    (let
+      (enter_value/906 =
+         (function loc/908 name/909 t/910
+           (let (init/2161 = t/910)
+             (makeblock 0 (field_imm 0 init/2161)
+               (apply (field_imm 11 (global Ppxlib__Code_path!)) loc/908
+                 name/909 (field_imm 1 t/910))
+               (field_imm 2 init/2161)))))
+      (setfield_ptr(root-init) 9 (global Ppxlib__Expansion_context!)
+        enter_value/906))
+    0)
+  (let
+    (Base/911 =
+       (makeblock 0 (field_imm 3 (global Ppxlib__Expansion_context!))
+         (field_imm 4 (global Ppxlib__Expansion_context!))
+         (field_imm 5 (global Ppxlib__Expansion_context!))
+         (field_imm 6 (global Ppxlib__Expansion_context!))
+         (field_imm 7 (global Ppxlib__Expansion_context!))
+         (field_imm 8 (global Ppxlib__Expansion_context!))
+         (field_imm 9 (global Ppxlib__Expansion_context!))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Ppxlib__Expansion_context!)
+        (makeblock 0 (field_mut 1 Base/911) (field_mut 2 Base/911)
+          (field_mut 3 Base/911) (field_mut 0 Base/911)
+          (field_mut 4 Base/911) (field_mut 5 Base/911)
+          (field_mut 6 Base/911)))
+      (let
+        (make/915 =
+           (function extension_point_loc/917 base/918 param/919
+             (makeblock 0 extension_point_loc/917 base/918)))
+        (setfield_ptr(root-init) 10 (global Ppxlib__Expansion_context!)
+          make/915))
+      (let (extension_point_loc/920 = (function t/922 (field_imm 0 t/922)))
+        (setfield_ptr(root-init) 11 (global Ppxlib__Expansion_context!)
+          extension_point_loc/920))
+      (let
+        (code_path/923 = (function t/925 (field_imm 1 (field_imm 1 t/925))))
+        (setfield_ptr(root-init) 12 (global Ppxlib__Expansion_context!)
+          code_path/923))
+      (let
+        (input_name/926 = (function t/928 (field_imm 2 (field_imm 1 t/928))))
+        (setfield_ptr(root-init) 13 (global Ppxlib__Expansion_context!)
+          input_name/926))
+      (let
+        (tool_name/929 = (function t/931 (field_imm 0 (field_imm 1 t/931))))
+        (setfield_ptr(root-init) 14 (global Ppxlib__Expansion_context!)
+          tool_name/929))
+      (let
+        (with_loc_and_path/932 =
+           (function f/934 ctxt/935
+             (apply f/934 (field_imm 0 ctxt/935)
+               (apply (field_imm 7 (global Ppxlib__Code_path!))
+                 (field_imm 1 (field_imm 1 ctxt/935))))))
+        (setfield_ptr(root-init) 15 (global Ppxlib__Expansion_context!)
+          with_loc_and_path/932))
+      0
+      (let
+        (Extension/936 =
+           (makeblock 0 (field_imm 10 (global Ppxlib__Expansion_context!))
+             (field_imm 11 (global Ppxlib__Expansion_context!))
+             (field_imm 12 (global Ppxlib__Expansion_context!))
+             (field_imm 13 (global Ppxlib__Expansion_context!))
+             (field_imm 14 (global Ppxlib__Expansion_context!))
+             (field_imm 15 (global Ppxlib__Expansion_context!))))
+        (seq
+          (setfield_ptr(root-init) 1 (global Ppxlib__Expansion_context!)
+            (makeblock 0 (field_mut 1 Extension/936)
+              (field_mut 2 Extension/936) (field_mut 3 Extension/936)
+              (field_mut 4 Extension/936) (field_mut 5 Extension/936)
+              (field_mut 0 Extension/936)))
+          (let
+            (make/941 =
+               (function derived_item_loc/943 inline/944 base/945 param/946
+                 (makeblock 0 derived_item_loc/943 inline/944 base/945)))
+            (setfield_ptr(root-init) 16 (global Ppxlib__Expansion_context!)
+              make/941))
+          (let (derived_item_loc/947 = (function t/949 (field_imm 0 t/949)))
+            (setfield_ptr(root-init) 17 (global Ppxlib__Expansion_context!)
+              derived_item_loc/947))
+          (let
+            (code_path/950 =
+               (function t/952 (field_imm 1 (field_imm 2 t/952))))
+            (setfield_ptr(root-init) 18 (global Ppxlib__Expansion_context!)
+              code_path/950))
+          (let
+            (input_name/953 =
+               (function t/955 (field_imm 2 (field_imm 2 t/955))))
+            (setfield_ptr(root-init) 19 (global Ppxlib__Expansion_context!)
+              input_name/953))
+          (let
+            (tool_name/956 =
+               (function t/958 (field_imm 0 (field_imm 2 t/958))))
+            (setfield_ptr(root-init) 20 (global Ppxlib__Expansion_context!)
+              tool_name/956))
+          (let (inline/959 = (function t/961 (field_int 1 t/961)))
+            (setfield_ptr(root-init) 21 (global Ppxlib__Expansion_context!)
+              inline/959))
+          (let
+            (with_loc_and_path/962 =
+               (function f/964 ctxt/965
+                 (apply f/964 (field_imm 0 ctxt/965)
+                   (apply (field_imm 7 (global Ppxlib__Code_path!))
+                     (field_imm 1 (field_imm 2 ctxt/965))))))
+            (setfield_ptr(root-init) 22 (global Ppxlib__Expansion_context!)
+              with_loc_and_path/962))
+          0
+          (let
+            (Deriver/966 =
+               (makeblock 0
+                 (field_imm 16 (global Ppxlib__Expansion_context!))
+                 (field_imm 17 (global Ppxlib__Expansion_context!))
+                 (field_imm 18 (global Ppxlib__Expansion_context!))
+                 (field_imm 19 (global Ppxlib__Expansion_context!))
+                 (field_imm 20 (global Ppxlib__Expansion_context!))
+                 (field_imm 21 (global Ppxlib__Expansion_context!))
+                 (field_imm 22 (global Ppxlib__Expansion_context!))))
+            (seq
+              (setfield_ptr(root-init) 2 (global Ppxlib__Expansion_context!)
+                (makeblock 0 (field_mut 1 Deriver/966)
+                  (field_mut 2 Deriver/966) (field_mut 3 Deriver/966)
+                  (field_mut 4 Deriver/966) (field_mut 6 Deriver/966)
+                  (field_mut 5 Deriver/966) (field_mut 0 Deriver/966)))
+              0)))))))
+(seq
+  (seq
+    (let
+      (top_level/139 =
+         (function tool_name/141 file_path/142 input_name/143
+           (let
+             (code_path/144 =
+                (apply (field_imm 8 (global Ppxlib__Code_path!))
+                  file_path/142))
+             (makeblock 0 tool_name/141 code_path/144 input_name/143))))
+      (setfield_ptr(root-init) 3 (global Ppxlib__Expansion_context!)
+        top_level/139))
+    (let (code_path/146 = (function t/148 (field_imm 1 t/148)))
+      (setfield_ptr(root-init) 4 (global Ppxlib__Expansion_context!)
+        code_path/146))
+    (let (input_name/149 = (function t/151 (field_imm 2 t/151)))
+      (setfield_ptr(root-init) 5 (global Ppxlib__Expansion_context!)
+        input_name/149))
+    (let (tool_name/152 = (function t/154 (field_imm 0 t/154)))
+      (setfield_ptr(root-init) 6 (global Ppxlib__Expansion_context!)
+        tool_name/152))
+    (let
+      (enter_expr/155 =
+         (function t/157
+           (makeblock 0 (field_imm 0 t/157)
+             (apply (field_imm 9 (global Ppxlib__Code_path!))
+               (field_imm 1 t/157))
+             (field_imm 2 t/157))))
+      (setfield_ptr(root-init) 7 (global Ppxlib__Expansion_context!)
+        enter_expr/155))
+    (let
+      (enter_module/158 =
+         (function loc/160 name/161 t/162
+           (makeblock 0 (field_imm 0 t/162)
+             (apply (field_imm 10 (global Ppxlib__Code_path!)) loc/160
+               name/161 (field_imm 1 t/162))
+             (field_imm 2 t/162))))
+      (setfield_ptr(root-init) 8 (global Ppxlib__Expansion_context!)
+        enter_module/158))
+    (let
+      (enter_value/906 =
+         (function loc/908 name/909 t/910
+           (makeblock 0 (field_imm 0 t/910)
+             (apply (field_imm 11 (global Ppxlib__Code_path!)) loc/908
+               name/909 (field_imm 1 t/910))
+             (field_imm 2 t/910))))
+      (setfield_ptr(root-init) 9 (global Ppxlib__Expansion_context!)
+        enter_value/906))
+    0)
+  (let
+    (Base/911 =
+       (makeblock 0 (field_imm 3 (global Ppxlib__Expansion_context!))
+         (field_imm 4 (global Ppxlib__Expansion_context!))
+         (field_imm 5 (global Ppxlib__Expansion_context!))
+         (field_imm 6 (global Ppxlib__Expansion_context!))
+         (field_imm 7 (global Ppxlib__Expansion_context!))
+         (field_imm 8 (global Ppxlib__Expansion_context!))
+         (field_imm 9 (global Ppxlib__Expansion_context!))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Ppxlib__Expansion_context!)
+        (makeblock 0 (field_mut 1 Base/911) (field_mut 2 Base/911)
+          (field_mut 3 Base/911) (field_mut 0 Base/911)
+          (field_mut 4 Base/911) (field_mut 5 Base/911)
+          (field_mut 6 Base/911)))
+      (let
+        (make/915 =
+           (function extension_point_loc/917 base/918 param/919
+             (makeblock 0 extension_point_loc/917 base/918)))
+        (setfield_ptr(root-init) 10 (global Ppxlib__Expansion_context!)
+          make/915))
+      (let (extension_point_loc/920 = (function t/922 (field_imm 0 t/922)))
+        (setfield_ptr(root-init) 11 (global Ppxlib__Expansion_context!)
+          extension_point_loc/920))
+      (let
+        (code_path/923 = (function t/925 (field_imm 1 (field_imm 1 t/925))))
+        (setfield_ptr(root-init) 12 (global Ppxlib__Expansion_context!)
+          code_path/923))
+      (let
+        (input_name/926 = (function t/928 (field_imm 2 (field_imm 1 t/928))))
+        (setfield_ptr(root-init) 13 (global Ppxlib__Expansion_context!)
+          input_name/926))
+      (let
+        (tool_name/929 = (function t/931 (field_imm 0 (field_imm 1 t/931))))
+        (setfield_ptr(root-init) 14 (global Ppxlib__Expansion_context!)
+          tool_name/929))
+      (let
+        (with_loc_and_path/932 =
+           (function f/934 ctxt/935
+             (apply f/934 (field_imm 0 ctxt/935)
+               (apply (field_imm 7 (global Ppxlib__Code_path!))
+                 (field_imm 1 (field_imm 1 ctxt/935))))))
+        (setfield_ptr(root-init) 15 (global Ppxlib__Expansion_context!)
+          with_loc_and_path/932))
+      0
+      (let
+        (Extension/936 =
+           (makeblock 0 (field_imm 10 (global Ppxlib__Expansion_context!))
+             (field_imm 11 (global Ppxlib__Expansion_context!))
+             (field_imm 12 (global Ppxlib__Expansion_context!))
+             (field_imm 13 (global Ppxlib__Expansion_context!))
+             (field_imm 14 (global Ppxlib__Expansion_context!))
+             (field_imm 15 (global Ppxlib__Expansion_context!))))
+        (seq
+          (setfield_ptr(root-init) 1 (global Ppxlib__Expansion_context!)
+            (makeblock 0 (field_mut 1 Extension/936)
+              (field_mut 2 Extension/936) (field_mut 3 Extension/936)
+              (field_mut 4 Extension/936) (field_mut 5 Extension/936)
+              (field_mut 0 Extension/936)))
+          (let
+            (make/941 =
+               (function derived_item_loc/943 inline/944 base/945 param/946
+                 (makeblock 0 derived_item_loc/943 inline/944 base/945)))
+            (setfield_ptr(root-init) 16 (global Ppxlib__Expansion_context!)
+              make/941))
+          (let (derived_item_loc/947 = (function t/949 (field_imm 0 t/949)))
+            (setfield_ptr(root-init) 17 (global Ppxlib__Expansion_context!)
+              derived_item_loc/947))
+          (let
+            (code_path/950 =
+               (function t/952 (field_imm 1 (field_imm 2 t/952))))
+            (setfield_ptr(root-init) 18 (global Ppxlib__Expansion_context!)
+              code_path/950))
+          (let
+            (input_name/953 =
+               (function t/955 (field_imm 2 (field_imm 2 t/955))))
+            (setfield_ptr(root-init) 19 (global Ppxlib__Expansion_context!)
+              input_name/953))
+          (let
+            (tool_name/956 =
+               (function t/958 (field_imm 0 (field_imm 2 t/958))))
+            (setfield_ptr(root-init) 20 (global Ppxlib__Expansion_context!)
+              tool_name/956))
+          (let (inline/959 = (function t/961 (field_int 1 t/961)))
+            (setfield_ptr(root-init) 21 (global Ppxlib__Expansion_context!)
+              inline/959))
+          (let
+            (with_loc_and_path/962 =
+               (function f/964 ctxt/965
+                 (apply f/964 (field_imm 0 ctxt/965)
+                   (apply (field_imm 7 (global Ppxlib__Code_path!))
+                     (field_imm 1 (field_imm 2 ctxt/965))))))
+            (setfield_ptr(root-init) 22 (global Ppxlib__Expansion_context!)
+              with_loc_and_path/962))
+          0
+          (let
+            (Deriver/966 =
+               (makeblock 0
+                 (field_imm 16 (global Ppxlib__Expansion_context!))
+                 (field_imm 17 (global Ppxlib__Expansion_context!))
+                 (field_imm 18 (global Ppxlib__Expansion_context!))
+                 (field_imm 19 (global Ppxlib__Expansion_context!))
+                 (field_imm 20 (global Ppxlib__Expansion_context!))
+                 (field_imm 21 (global Ppxlib__Expansion_context!))
+                 (field_imm 22 (global Ppxlib__Expansion_context!))))
+            (seq
+              (setfield_ptr(root-init) 2 (global Ppxlib__Expansion_context!)
+                (makeblock 0 (field_mut 1 Deriver/966)
+                  (field_mut 2 Deriver/966) (field_mut 3 Deriver/966)
+                  (field_mut 4 Deriver/966) (field_mut 6 Deriver/966)
+                  (field_mut 5 Deriver/966) (field_mut 0 Deriver/966)))
+              0)))))))

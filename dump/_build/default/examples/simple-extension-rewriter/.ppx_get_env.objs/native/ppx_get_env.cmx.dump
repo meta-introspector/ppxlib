@@ -1,0 +1,648 @@
+[
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (examples/simple-extension-rewriter/ppx_get_env.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (examples/simple-extension-rewriter/ppx_get_env.ml[1,0+5]..[1,0+11])
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+0]..[12,343+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+4]..[3,13+10])
+          Ppat_var "expand" (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+4]..[3,13+10])
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+11]..[12,343+49]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+12]..[3,13+16])
+            Ppat_var "ctxt" (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+12]..[3,13+16])
+          expression (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+17]..[12,343+49]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+17]..[3,13+24])
+              Ppat_var "env_var" (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+17]..[3,13+24])
+            expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+2]..[12,343+49])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+6]..[4,40+9])
+                    Ppat_var "loc" (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+6]..[4,40+9])
+                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+12]..[4,40+64])
+                    Pexp_apply
+                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+12]..[4,40+59])
+                      Pexp_ident "Expansion_context.Extension.extension_point_loc" (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+12]..[4,40+59])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+60]..[4,40+64])
+                          Pexp_ident "ctxt" (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+60]..[4,40+64])
+                    ]
+              ]
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+2]..[12,343+49])
+                Pexp_match
+                expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+8]..[5,108+26])
+                  Pexp_apply
+                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+8]..[5,108+18])
+                    Pexp_ident "Sys.getenv" (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+8]..[5,108+18])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+19]..[5,108+26])
+                        Pexp_ident "env_var" (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+19]..[5,108+26])
+                  ]
+                [
+                  <case>
+                    pattern (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+4]..[6,140+9])
+                      Ppat_var "value" (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+4]..[6,140+9])
+                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+13]..[6,140+51])
+                      Pexp_apply
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+13]..[6,140+40])
+                        Pexp_ident "Ast_builder.Default.estring" (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+13]..[6,140+40])
+                      [
+                        <arg>
+                        Labelled "loc"
+                          expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+42]..[6,140+45])
+                            Pexp_ident "loc" (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+42]..[6,140+45])
+                        <arg>
+                        Nolabel
+                          expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+46]..[6,140+51])
+                            Pexp_ident "value" (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+46]..[6,140+51])
+                      ]
+                  <case>
+                    pattern (examples/simple-extension-rewriter/ppx_get_env.ml[7,192+4]..[7,192+23])
+                      Ppat_exception
+                      pattern (examples/simple-extension-rewriter/ppx_get_env.ml[7,192+14]..[7,192+23])
+                        Ppat_construct "Not_found" (examples/simple-extension-rewriter/ppx_get_env.ml[7,192+14]..[7,192+23])
+                        None
+                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[8,219+6]..[12,343+49])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (examples/simple-extension-rewriter/ppx_get_env.ml[8,219+10]..[8,219+13])
+                            Ppat_var "ext" (examples/simple-extension-rewriter/ppx_get_env.ml[8,219+10]..[8,219+13])
+                          expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+8]..[10,316+17])
+                            Pexp_apply
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+8]..[9,235+33])
+                              Pexp_ident "Location.error_extensionf" (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+8]..[9,235+33])
+                            [
+                              <arg>
+                              Labelled "loc"
+                                expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+35]..[9,235+38])
+                                  Pexp_ident "loc" (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+35]..[9,235+38])
+                              <arg>
+                              Nolabel
+                                expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..[9,235+80])
+                                  Pexp_constant PConst_string("The environement variable %s is unbound",(examples/simple-extension-rewriter/ppx_get_env.ml[9,235+40]..[9,235+79]),None)
+                              <arg>
+                              Nolabel
+                                expression (examples/simple-extension-rewriter/ppx_get_env.ml[10,316+10]..[10,316+17])
+                                  Pexp_ident "env_var" (examples/simple-extension-rewriter/ppx_get_env.ml[10,316+10]..[10,316+17])
+                            ]
+                      ]
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+6]..[12,343+49])
+                        Pexp_apply
+                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+6]..[12,343+40])
+                          Pexp_ident "Ast_builder.Default.pexp_extension" (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+6]..[12,343+40])
+                        [
+                          <arg>
+                          Labelled "loc"
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+42]..[12,343+45])
+                              Pexp_ident "loc" (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+42]..[12,343+45])
+                          <arg>
+                          Nolabel
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+46]..[12,343+49])
+                              Pexp_ident "ext" (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+46]..[12,343+49])
+                        ]
+                ]
+    ]
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[14,394+0]..[17,526+10])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[14,394+4]..[14,394+16])
+          Ppat_var "my_extension" (examples/simple-extension-rewriter/ppx_get_env.ml[14,394+4]..[14,394+16])
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+2]..[17,526+10])
+          Pexp_apply
+          expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+2]..[15,413+22])
+            Pexp_ident "Extension.V3.declare" (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+2]..[15,413+22])
+          [
+            <arg>
+            Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+23]..[15,413+32])
+                Pexp_constant PConst_string("get_env",(examples/simple-extension-rewriter/ppx_get_env.ml[15,413+24]..[15,413+31]),None)
+            <arg>
+            Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+33]..[15,413+61])
+                Pexp_ident "Extension.Context.expression" (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+33]..[15,413+61])
+            <arg>
+            Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+4]..[16,475+50])
+                Pexp_open Fresh
+                module_expr (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+4]..[16,475+15])
+                  Pmod_ident "Ast_pattern" (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+4]..[16,475+15])
+                expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+17]..[16,475+49])
+                  Pexp_apply
+                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+17]..[16,475+36])
+                    Pexp_ident "single_expr_payload" (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+17]..[16,475+36])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+37]..[16,475+49])
+                        Pexp_apply
+                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+38]..[16,475+45])
+                          Pexp_ident "estring" (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+38]..[16,475+45])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+46]..[16,475+48])
+                              Pexp_ident "__" (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+46]..[16,475+48])
+                        ]
+                  ]
+            <arg>
+            Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[17,526+4]..[17,526+10])
+                Pexp_ident "expand" (examples/simple-extension-rewriter/ppx_get_env.ml[17,526+4]..[17,526+10])
+          ]
+    ]
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+0]..[19,538+58])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+4]..[19,538+8])
+          Ppat_var "rule" (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+4]..[19,538+8])
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+11]..[19,538+58])
+          Pexp_apply
+          expression (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+11]..[19,538+45])
+            Pexp_ident "Ppxlib.Context_free.Rule.extension" (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+11]..[19,538+45])
+          [
+            <arg>
+            Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+46]..[19,538+58])
+                Pexp_ident "my_extension" (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+46]..[19,538+58])
+          ]
+    ]
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+0]..[20,597+65])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+4]..[20,597+6])
+          Ppat_construct "()" (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+4]..[20,597+6])
+          None
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+9]..[20,597+65])
+          Pexp_apply
+          expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+9]..[20,597+39])
+            Pexp_ident "Driver.register_transformation" (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+9]..[20,597+39])
+          [
+            <arg>
+            Labelled "rules"
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+47]..[20,597+55])
+                Pexp_construct "::" (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+49]..[20,597+55]) ghost
+                Some
+                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+49]..[20,597+55]) ghost
+                    Pexp_tuple
+                    [
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+49]..[20,597+53])
+                        Pexp_ident "rule" (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+49]..[20,597+53])
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+54]..[20,597+55]) ghost
+                        Pexp_construct "[]" (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+54]..[20,597+55]) ghost
+                        None
+                    ]
+            <arg>
+            Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+56]..[20,597+65])
+                Pexp_constant PConst_string("get_env",(examples/simple-extension-rewriter/ppx_get_env.ml[20,597+57]..[20,597+64]),None)
+          ]
+    ]
+]
+
+open Ppxlib
+let expand ~ctxt  env_var =
+  let loc = Expansion_context.Extension.extension_point_loc ctxt in
+  match Sys.getenv env_var with
+  | value -> Ast_builder.Default.estring ~loc value
+  | exception Not_found ->
+      let ext =
+        Location.error_extensionf ~loc
+          "The environement variable %s is unbound" env_var in
+      Ast_builder.Default.pexp_extension ~loc ext
+let my_extension =
+  Extension.V3.declare "get_env" Extension.Context.expression
+    (let open Ast_pattern in single_expr_payload (estring __)) expand
+let rule = Ppxlib.Context_free.Rule.extension my_extension
+let () = Driver.register_transformation ~rules:[rule] "get_env"
+[
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[1,0+0]..examples/simple-extension-rewriter/ppx_get_env.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (examples/simple-extension-rewriter/ppx_get_env.ml[1,0+5]..examples/simple-extension-rewriter/ppx_get_env.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+0]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+4]..examples/simple-extension-rewriter/ppx_get_env.ml[3,13+10])
+          Tpat_var "expand/491"
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+11]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+12]..examples/simple-extension-rewriter/ppx_get_env.ml[3,13+16])
+                Tpat_var "ctxt/493"
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+17]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (examples/simple-extension-rewriter/ppx_get_env.ml[3,13+17]..examples/simple-extension-rewriter/ppx_get_env.ml[3,13+24])
+                      Tpat_var "env_var/494"
+                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+2]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+6]..examples/simple-extension-rewriter/ppx_get_env.ml[4,40+9])
+                            Tpat_var "loc/495"
+                          expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+12]..examples/simple-extension-rewriter/ppx_get_env.ml[4,40+64])
+                            Texp_apply
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+12]..examples/simple-extension-rewriter/ppx_get_env.ml[4,40+59])
+                              Texp_ident "Ppxlib!.Expansion_context.Extension.extension_point_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (examples/simple-extension-rewriter/ppx_get_env.ml[4,40+60]..examples/simple-extension-rewriter/ppx_get_env.ml[4,40+64])
+                                  Texp_ident "ctxt/493"
+                            ]
+                      ]
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+2]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49])
+                        Texp_match
+                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+8]..examples/simple-extension-rewriter/ppx_get_env.ml[5,108+26])
+                          Texp_apply
+                          expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+8]..examples/simple-extension-rewriter/ppx_get_env.ml[5,108+18])
+                            Texp_ident "Stdlib!.Sys.getenv"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (examples/simple-extension-rewriter/ppx_get_env.ml[5,108+19]..examples/simple-extension-rewriter/ppx_get_env.ml[5,108+26])
+                                Texp_ident "env_var/494"
+                          ]
+                        [
+                          <case>
+                            pattern (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+4]..examples/simple-extension-rewriter/ppx_get_env.ml[6,140+9])
+                              Tpat_value
+                              pattern (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+4]..examples/simple-extension-rewriter/ppx_get_env.ml[6,140+9])
+                                Tpat_var "value/1284"
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+13]..examples/simple-extension-rewriter/ppx_get_env.ml[6,140+51])
+                              Texp_apply
+                              expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+13]..examples/simple-extension-rewriter/ppx_get_env.ml[6,140+40])
+                                Texp_ident "Ppxlib!.Ast_builder.Default.estring"
+                              [
+                                <arg>
+                                  Labelled "loc"
+                                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+42]..examples/simple-extension-rewriter/ppx_get_env.ml[6,140+45])
+                                    Texp_ident "loc/495"
+                                <arg>
+                                  Nolabel
+                                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[6,140+46]..examples/simple-extension-rewriter/ppx_get_env.ml[6,140+51])
+                                    Texp_ident "value/1284"
+                              ]
+                          <case>
+                            pattern (examples/simple-extension-rewriter/ppx_get_env.ml[7,192+4]..examples/simple-extension-rewriter/ppx_get_env.ml[7,192+23])
+                              Tpat_exception
+                              pattern (examples/simple-extension-rewriter/ppx_get_env.ml[7,192+14]..examples/simple-extension-rewriter/ppx_get_env.ml[7,192+23])
+                                Tpat_construct "Not_found"
+                                []
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[8,219+6]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49])
+                              Texp_let Nonrec
+                              [
+                                <def>
+                                  pattern (examples/simple-extension-rewriter/ppx_get_env.ml[8,219+10]..examples/simple-extension-rewriter/ppx_get_env.ml[8,219+13])
+                                    Tpat_var "ext/3989"
+                                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+8]..examples/simple-extension-rewriter/ppx_get_env.ml[10,316+17])
+                                    Texp_apply
+                                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+8]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+33])
+                                      Texp_ident "Ppxlib!.Location.error_extensionf"
+                                    [
+                                      <arg>
+                                        Labelled "loc"
+                                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+35]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+38])
+                                          Texp_ident "loc/495"
+                                      <arg>
+                                        Nolabel
+                                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80])
+                                          Texp_construct "CamlinternalFormatBasics.Format"
+                                          [
+                                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                              Texp_construct "CamlinternalFormatBasics.String_literal"
+                                              [
+                                                expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                                  Texp_constant Const_string("The environement variable ",(examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost,None)
+                                                expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                                  Texp_construct "CamlinternalFormatBasics.String"
+                                                  [
+                                                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                                      Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                      []
+                                                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                                      Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                      [
+                                                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                                          Texp_constant Const_string(" is unbound",(examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost,None)
+                                                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                                          Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                          []
+                                                      ]
+                                                  ]
+                                              ]
+                                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost
+                                              Texp_constant Const_string("The environement variable %s is unbound",(examples/simple-extension-rewriter/ppx_get_env.ml[9,235+39]..examples/simple-extension-rewriter/ppx_get_env.ml[9,235+80]) ghost,None)
+                                          ]
+                                      <arg>
+                                        Nolabel
+                                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[10,316+10]..examples/simple-extension-rewriter/ppx_get_env.ml[10,316+17])
+                                          Texp_ident "env_var/494"
+                                    ]
+                              ]
+                              expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+6]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49])
+                                Texp_apply
+                                expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+6]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+40])
+                                  Texp_ident "Ppxlib!.Ast_builder.Default.pexp_extension"
+                                [
+                                  <arg>
+                                    Labelled "loc"
+                                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+42]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+45])
+                                      Texp_ident "loc/495"
+                                  <arg>
+                                    Nolabel
+                                    expression (examples/simple-extension-rewriter/ppx_get_env.ml[12,343+46]..examples/simple-extension-rewriter/ppx_get_env.ml[12,343+49])
+                                      Texp_ident "ext/3989"
+                                ]
+                        ]
+                        []
+                ]
+          ]
+    ]
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[14,394+0]..examples/simple-extension-rewriter/ppx_get_env.ml[17,526+10])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[14,394+4]..examples/simple-extension-rewriter/ppx_get_env.ml[14,394+16])
+          Tpat_var "my_extension/4014"
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+2]..examples/simple-extension-rewriter/ppx_get_env.ml[17,526+10])
+          Texp_apply
+          expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+2]..examples/simple-extension-rewriter/ppx_get_env.ml[15,413+22])
+            Texp_ident "Ppxlib!.Extension.V3.declare"
+          [
+            <arg>
+              Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+23]..examples/simple-extension-rewriter/ppx_get_env.ml[15,413+32])
+                Texp_constant Const_string("get_env",(examples/simple-extension-rewriter/ppx_get_env.ml[15,413+24]..examples/simple-extension-rewriter/ppx_get_env.ml[15,413+31]),None)
+            <arg>
+              Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[15,413+33]..examples/simple-extension-rewriter/ppx_get_env.ml[15,413+61])
+                Texp_ident "Ppxlib!.Extension.Context.expression"
+            <arg>
+              Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+4]..examples/simple-extension-rewriter/ppx_get_env.ml[16,475+50])
+                Texp_open Fresh
+                module_expr (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+4]..examples/simple-extension-rewriter/ppx_get_env.ml[16,475+15])
+                  Tmod_ident "Ppxlib!.Ast_pattern"
+                expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+17]..examples/simple-extension-rewriter/ppx_get_env.ml[16,475+49])
+                  Texp_apply
+                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+17]..examples/simple-extension-rewriter/ppx_get_env.ml[16,475+36])
+                    Texp_ident "Ppxlib!.Ast_pattern.single_expr_payload"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+37]..examples/simple-extension-rewriter/ppx_get_env.ml[16,475+49])
+                        Texp_apply
+                        expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+38]..examples/simple-extension-rewriter/ppx_get_env.ml[16,475+45])
+                          Texp_ident "Ppxlib!.Ast_pattern.estring"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (examples/simple-extension-rewriter/ppx_get_env.ml[16,475+46]..examples/simple-extension-rewriter/ppx_get_env.ml[16,475+48])
+                              Texp_ident "Ppxlib!.Ast_pattern.__"
+                        ]
+                  ]
+            <arg>
+              Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[17,526+4]..examples/simple-extension-rewriter/ppx_get_env.ml[17,526+10])
+                Texp_ident "expand/491"
+          ]
+    ]
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+0]..examples/simple-extension-rewriter/ppx_get_env.ml[19,538+58])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+4]..examples/simple-extension-rewriter/ppx_get_env.ml[19,538+8])
+          Tpat_var "rule/4460"
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+11]..examples/simple-extension-rewriter/ppx_get_env.ml[19,538+58])
+          Texp_apply
+          expression (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+11]..examples/simple-extension-rewriter/ppx_get_env.ml[19,538+45])
+            Texp_ident "Ppxlib!.Context_free.Rule.extension"
+          [
+            <arg>
+              Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[19,538+46]..examples/simple-extension-rewriter/ppx_get_env.ml[19,538+58])
+                Texp_ident "my_extension/4014"
+          ]
+    ]
+  structure_item (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+0]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+65])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+4]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+6])
+          Tpat_construct "()"
+          []
+        expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+9]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+65])
+          Texp_apply
+          expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+9]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+39])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+47]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+55])
+                Texp_construct "Some"
+                [
+                  expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+47]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+55])
+                    Texp_construct "::"
+                    [
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+49]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+53])
+                        Texp_ident "rule/4460"
+                      expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+54]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+55]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (examples/simple-extension-rewriter/ppx_get_env.ml[20,597+56]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+65])
+                Texp_constant Const_string("get_env",(examples/simple-extension-rewriter/ppx_get_env.ml[20,597+57]..examples/simple-extension-rewriter/ppx_get_env.ml[20,597+64]),None)
+          ]
+    ]
+]
+
+(seq
+  (let
+    (expand/491 =
+       (function ctxt/493 env_var/494
+         (let
+           (loc/495 =
+              (apply
+                (field_imm 0
+                  (field_imm 1 (global Ppxlib__Expansion_context!)))
+                ctxt/493))
+           (catch
+             (try (exit 1 (caml_sys_getenv env_var/494)) with exn/9193
+               (catch
+                 (if (== exn/9193 (field_imm 10 (global Stdlib!)))
+                   (let
+                     (ext/3989 =
+                        (apply (field_imm 13 (global Ppxlib__Location!))
+                          loc/495
+                          [0:
+                           [11:
+                            "The environement variable "
+                            [2: 0 [11: " is unbound" 0]]]
+                           "The environement variable %s is unbound"]
+                          env_var/494))
+                     (apply
+                       (field_imm 84
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       loc/495 ext/3989))
+                   (exit 2))
+                with (2) (reraise exn/9193)))
+            with (1 value/1284)
+             (apply
+               (field_imm 174 (field_imm 0 (global Ppxlib__Ast_builder!)))
+               loc/495 value/1284)))))
+    (setfield_ptr(root-init) 0 (global Ppx_get_env!) expand/491))
+  (let
+    (my_extension/4014 =
+       (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+         "get_env" (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+         (apply (field_imm 323 (global Ppxlib__Ast_pattern!))
+           (apply (field_imm 311 (global Ppxlib__Ast_pattern!))
+             (field_imm 3 (global Ppxlib__Ast_pattern!))))
+         (field_imm 0 (global Ppx_get_env!))))
+    (setfield_ptr(root-init) 1 (global Ppx_get_env!) my_extension/4014))
+  (let
+    (rule/4460 =
+       (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+         (field_imm 1 (global Ppx_get_env!))))
+    (setfield_ptr(root-init) 2 (global Ppx_get_env!) rule/4460))
+  (let
+    (*match*/9195 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0 (makeblock 0 (field_imm 2 (global Ppx_get_env!)) 0)) 0
+         0 0 0 0 0 0 0 0 0 "get_env"))
+    0)
+  0)
+(seq
+  (let
+    (expand/491 =
+       (function ctxt/493 env_var/494
+         (let
+           (loc/495 =
+              (apply
+                (field_imm 0
+                  (field_imm 1 (global Ppxlib__Expansion_context!)))
+                ctxt/493))
+           (catch
+             (try (exit 1 (caml_sys_getenv env_var/494)) with exn/9193
+               (if (== exn/9193 (field_imm 10 (global Stdlib!)))
+                 (let
+                   (ext/3989 =
+                      (apply (field_imm 13 (global Ppxlib__Location!))
+                        loc/495
+                        [0:
+                         [11:
+                          "The environement variable "
+                          [2: 0 [11: " is unbound" 0]]]
+                         "The environement variable %s is unbound"]
+                        env_var/494))
+                   (apply
+                     (field_imm 84
+                       (field_imm 0 (global Ppxlib__Ast_builder!)))
+                     loc/495 ext/3989))
+                 (reraise exn/9193)))
+            with (1 value/1284)
+             (apply
+               (field_imm 174 (field_imm 0 (global Ppxlib__Ast_builder!)))
+               loc/495 value/1284)))))
+    (setfield_ptr(root-init) 0 (global Ppx_get_env!) expand/491))
+  (let
+    (my_extension/4014 =
+       (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+         "get_env" (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+         (apply (field_imm 323 (global Ppxlib__Ast_pattern!))
+           (apply (field_imm 311 (global Ppxlib__Ast_pattern!))
+             (field_imm 3 (global Ppxlib__Ast_pattern!))))
+         (field_imm 0 (global Ppx_get_env!))))
+    (setfield_ptr(root-init) 1 (global Ppx_get_env!) my_extension/4014))
+  (let
+    (rule/4460 =
+       (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+         (field_imm 1 (global Ppx_get_env!))))
+    (setfield_ptr(root-init) 2 (global Ppx_get_env!) rule/4460))
+  (let
+    (*match*/9195 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0 (makeblock 0 (field_imm 2 (global Ppx_get_env!)) 0)) 0
+         0 0 0 0 0 0 0 0 0 "get_env"))
+    0)
+  0)

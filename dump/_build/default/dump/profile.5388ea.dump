@@ -1,0 +1,7 @@
+0.020s 45.3MB 4.88MB 4.88MB bench/bench.ml
+  0.002s 2.82MB 1.50MB 1.50MB parsing
+    0.002s 2.82MB 1.50MB 1.50MB parser
+  0.012s 18.2MB 3.03MB 4.53MB typing
+  0.003s 10.1MB 0.21MB 4.75MB generate
+  0.004s 14.1MB 0.12MB 4.88MB other
+0.003s ------ ------ ------ other

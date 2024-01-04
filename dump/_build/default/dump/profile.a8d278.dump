@@ -1,0 +1,7 @@
+0.034s 51.8MB 10.4MB 10.4MB ast/import.ml
+  0.002s 2.83MB 1.53MB 1.53MB parsing
+    0.002s 2.83MB 1.53MB 1.53MB parser
+  0.027s 33.5MB 8.53MB 10.0MB typing
+  0.002s 6.09MB 0.09MB 10.1MB generate
+  0.003s 9.33MB 0.31MB 10.4MB other
+0.004s ------ ------ ------ other

@@ -1,0 +1,8 @@
+0.704s  357MB 44.8MB 44.8MB src/deriving.ml
+  0.008s 7.21MB 2.16MB 2.16MB parsing
+    0.008s 7.21MB 2.16MB 2.16MB parser
+  0.612s  226MB 41.1MB 43.2MB typing
+  0.008s 4.32MB 0.28MB 43.5MB transl
+  0.031s 58.1MB 1.16MB 44.7MB generate
+  0.045s 61.4MB 0.15MB 44.8MB other
+0.007s ------ ------ ------ other

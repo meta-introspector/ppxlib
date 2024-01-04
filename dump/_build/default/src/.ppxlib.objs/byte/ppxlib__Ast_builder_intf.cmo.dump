@@ -1,0 +1,2378 @@
+[
+  structure_item (src/ast_builder_intf.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (src/ast_builder_intf.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (src/ast_builder_intf.ml[1,0+6]..[1,0+12])
+  structure_item (src/ast_builder_intf.ml[3,14+0]..[5,59+3])
+    Pstr_modtype "Loc" (src/ast_builder_intf.ml[3,14+12]..[3,14+15])
+      module_type (src/ast_builder_intf.ml[3,14+18]..[5,59+3])
+        Pmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[4,36+2]..[4,36+22])
+            Psig_value
+            value_description "loc" (src/ast_builder_intf.ml[4,36+6]..[4,36+9]) (src/ast_builder_intf.ml[4,36+2]..[4,36+22])
+              core_type (src/ast_builder_intf.ml[4,36+12]..[4,36+22])
+                Ptyp_constr "Location.t" (src/ast_builder_intf.ml[4,36+12]..[4,36+22])
+                []
+              []
+        ]
+  structure_item (src/ast_builder_intf.ml[7,64+0]..[113,4712+3])
+    Pstr_modtype "Additional_helpers" (src/ast_builder_intf.ml[7,64+12]..[7,64+30])
+      module_type (src/ast_builder_intf.ml[7,64+33]..[113,4712+3])
+        Pmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[8,101+2]..[8,101+18])
+            Psig_type Rec
+            [
+              type_declaration "with_loc" (src/ast_builder_intf.ml[8,101+10]..[8,101+18]) (src/ast_builder_intf.ml[8,101+2]..[8,101+18])
+                ptype_params =
+                  [
+                    core_type (src/ast_builder_intf.ml[8,101+7]..[8,101+9])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/ast_builder_intf.ml[10,121+2]..[10,121+41])
+            Psig_value
+            value_description "eint" (src/ast_builder_intf.ml[10,121+6]..[10,121+10]) (src/ast_builder_intf.ml[10,121+2]..[10,121+41])
+              core_type (src/ast_builder_intf.ml[10,121+13]..[10,121+41])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[10,121+33]..[10,121+41])
+                [
+                  core_type (src/ast_builder_intf.ml[10,121+14]..[10,121+31])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[10,121+14]..[10,121+17])
+                      Ptyp_constr "int" (src/ast_builder_intf.ml[10,121+14]..[10,121+17])
+                      []
+                    core_type (src/ast_builder_intf.ml[10,121+21]..[10,121+31])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[10,121+21]..[10,121+31])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[11,163+2]..[11,163+43])
+            Psig_value
+            value_description "echar" (src/ast_builder_intf.ml[11,163+6]..[11,163+11]) (src/ast_builder_intf.ml[11,163+2]..[11,163+43])
+              core_type (src/ast_builder_intf.ml[11,163+14]..[11,163+43])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[11,163+35]..[11,163+43])
+                [
+                  core_type (src/ast_builder_intf.ml[11,163+15]..[11,163+33])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[11,163+15]..[11,163+19])
+                      Ptyp_constr "char" (src/ast_builder_intf.ml[11,163+15]..[11,163+19])
+                      []
+                    core_type (src/ast_builder_intf.ml[11,163+23]..[11,163+33])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[11,163+23]..[11,163+33])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[12,207+2]..[12,207+47])
+            Psig_value
+            value_description "estring" (src/ast_builder_intf.ml[12,207+6]..[12,207+13]) (src/ast_builder_intf.ml[12,207+2]..[12,207+47])
+              core_type (src/ast_builder_intf.ml[12,207+16]..[12,207+47])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[12,207+39]..[12,207+47])
+                [
+                  core_type (src/ast_builder_intf.ml[12,207+17]..[12,207+37])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[12,207+17]..[12,207+23])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[12,207+17]..[12,207+23])
+                      []
+                    core_type (src/ast_builder_intf.ml[12,207+27]..[12,207+37])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[12,207+27]..[12,207+37])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[13,255+2]..[13,255+46])
+            Psig_value
+            value_description "efloat" (src/ast_builder_intf.ml[13,255+6]..[13,255+12]) (src/ast_builder_intf.ml[13,255+2]..[13,255+46])
+              core_type (src/ast_builder_intf.ml[13,255+15]..[13,255+46])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[13,255+38]..[13,255+46])
+                [
+                  core_type (src/ast_builder_intf.ml[13,255+16]..[13,255+36])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[13,255+16]..[13,255+22])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[13,255+16]..[13,255+22])
+                      []
+                    core_type (src/ast_builder_intf.ml[13,255+26]..[13,255+36])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[13,255+26]..[13,255+36])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[14,302+2]..[14,302+45])
+            Psig_value
+            value_description "eint32" (src/ast_builder_intf.ml[14,302+6]..[14,302+12]) (src/ast_builder_intf.ml[14,302+2]..[14,302+45])
+              core_type (src/ast_builder_intf.ml[14,302+15]..[14,302+45])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[14,302+37]..[14,302+45])
+                [
+                  core_type (src/ast_builder_intf.ml[14,302+16]..[14,302+35])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[14,302+16]..[14,302+21])
+                      Ptyp_constr "int32" (src/ast_builder_intf.ml[14,302+16]..[14,302+21])
+                      []
+                    core_type (src/ast_builder_intf.ml[14,302+25]..[14,302+35])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[14,302+25]..[14,302+35])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[15,348+2]..[15,348+45])
+            Psig_value
+            value_description "eint64" (src/ast_builder_intf.ml[15,348+6]..[15,348+12]) (src/ast_builder_intf.ml[15,348+2]..[15,348+45])
+              core_type (src/ast_builder_intf.ml[15,348+15]..[15,348+45])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[15,348+37]..[15,348+45])
+                [
+                  core_type (src/ast_builder_intf.ml[15,348+16]..[15,348+35])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[15,348+16]..[15,348+21])
+                      Ptyp_constr "int64" (src/ast_builder_intf.ml[15,348+16]..[15,348+21])
+                      []
+                    core_type (src/ast_builder_intf.ml[15,348+25]..[15,348+35])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[15,348+25]..[15,348+35])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[16,394+2]..[16,394+53])
+            Psig_value
+            value_description "enativeint" (src/ast_builder_intf.ml[16,394+6]..[16,394+16]) (src/ast_builder_intf.ml[16,394+2]..[16,394+53])
+              core_type (src/ast_builder_intf.ml[16,394+19]..[16,394+53])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[16,394+45]..[16,394+53])
+                [
+                  core_type (src/ast_builder_intf.ml[16,394+20]..[16,394+43])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[16,394+20]..[16,394+29])
+                      Ptyp_constr "nativeint" (src/ast_builder_intf.ml[16,394+20]..[16,394+29])
+                      []
+                    core_type (src/ast_builder_intf.ml[16,394+33]..[16,394+43])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[16,394+33]..[16,394+43])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[17,448+2]..[17,448+43])
+            Psig_value
+            value_description "ebool" (src/ast_builder_intf.ml[17,448+6]..[17,448+11]) (src/ast_builder_intf.ml[17,448+2]..[17,448+43])
+              core_type (src/ast_builder_intf.ml[17,448+14]..[17,448+43])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[17,448+35]..[17,448+43])
+                [
+                  core_type (src/ast_builder_intf.ml[17,448+15]..[17,448+33])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[17,448+15]..[17,448+19])
+                      Ptyp_constr "bool" (src/ast_builder_intf.ml[17,448+15]..[17,448+19])
+                      []
+                    core_type (src/ast_builder_intf.ml[17,448+23]..[17,448+33])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[17,448+23]..[17,448+33])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[18,492+2]..[18,492+38])
+            Psig_value
+            value_description "pint" (src/ast_builder_intf.ml[18,492+6]..[18,492+10]) (src/ast_builder_intf.ml[18,492+2]..[18,492+38])
+              core_type (src/ast_builder_intf.ml[18,492+13]..[18,492+38])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[18,492+30]..[18,492+38])
+                [
+                  core_type (src/ast_builder_intf.ml[18,492+14]..[18,492+28])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[18,492+14]..[18,492+17])
+                      Ptyp_constr "int" (src/ast_builder_intf.ml[18,492+14]..[18,492+17])
+                      []
+                    core_type (src/ast_builder_intf.ml[18,492+21]..[18,492+28])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[18,492+21]..[18,492+28])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[19,531+2]..[19,531+40])
+            Psig_value
+            value_description "pchar" (src/ast_builder_intf.ml[19,531+6]..[19,531+11]) (src/ast_builder_intf.ml[19,531+2]..[19,531+40])
+              core_type (src/ast_builder_intf.ml[19,531+14]..[19,531+40])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[19,531+32]..[19,531+40])
+                [
+                  core_type (src/ast_builder_intf.ml[19,531+15]..[19,531+30])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[19,531+15]..[19,531+19])
+                      Ptyp_constr "char" (src/ast_builder_intf.ml[19,531+15]..[19,531+19])
+                      []
+                    core_type (src/ast_builder_intf.ml[19,531+23]..[19,531+30])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[19,531+23]..[19,531+30])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[20,572+2]..[20,572+44])
+            Psig_value
+            value_description "pstring" (src/ast_builder_intf.ml[20,572+6]..[20,572+13]) (src/ast_builder_intf.ml[20,572+2]..[20,572+44])
+              core_type (src/ast_builder_intf.ml[20,572+16]..[20,572+44])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[20,572+36]..[20,572+44])
+                [
+                  core_type (src/ast_builder_intf.ml[20,572+17]..[20,572+34])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[20,572+17]..[20,572+23])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[20,572+17]..[20,572+23])
+                      []
+                    core_type (src/ast_builder_intf.ml[20,572+27]..[20,572+34])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[20,572+27]..[20,572+34])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[21,617+2]..[21,617+43])
+            Psig_value
+            value_description "pfloat" (src/ast_builder_intf.ml[21,617+6]..[21,617+12]) (src/ast_builder_intf.ml[21,617+2]..[21,617+43])
+              core_type (src/ast_builder_intf.ml[21,617+15]..[21,617+43])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[21,617+35]..[21,617+43])
+                [
+                  core_type (src/ast_builder_intf.ml[21,617+16]..[21,617+33])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[21,617+16]..[21,617+22])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[21,617+16]..[21,617+22])
+                      []
+                    core_type (src/ast_builder_intf.ml[21,617+26]..[21,617+33])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[21,617+26]..[21,617+33])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[22,661+2]..[22,661+42])
+            Psig_value
+            value_description "pint32" (src/ast_builder_intf.ml[22,661+6]..[22,661+12]) (src/ast_builder_intf.ml[22,661+2]..[22,661+42])
+              core_type (src/ast_builder_intf.ml[22,661+15]..[22,661+42])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[22,661+34]..[22,661+42])
+                [
+                  core_type (src/ast_builder_intf.ml[22,661+16]..[22,661+32])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[22,661+16]..[22,661+21])
+                      Ptyp_constr "int32" (src/ast_builder_intf.ml[22,661+16]..[22,661+21])
+                      []
+                    core_type (src/ast_builder_intf.ml[22,661+25]..[22,661+32])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[22,661+25]..[22,661+32])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[23,704+2]..[23,704+42])
+            Psig_value
+            value_description "pint64" (src/ast_builder_intf.ml[23,704+6]..[23,704+12]) (src/ast_builder_intf.ml[23,704+2]..[23,704+42])
+              core_type (src/ast_builder_intf.ml[23,704+15]..[23,704+42])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[23,704+34]..[23,704+42])
+                [
+                  core_type (src/ast_builder_intf.ml[23,704+16]..[23,704+32])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[23,704+16]..[23,704+21])
+                      Ptyp_constr "int64" (src/ast_builder_intf.ml[23,704+16]..[23,704+21])
+                      []
+                    core_type (src/ast_builder_intf.ml[23,704+25]..[23,704+32])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[23,704+25]..[23,704+32])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[24,747+2]..[24,747+50])
+            Psig_value
+            value_description "pnativeint" (src/ast_builder_intf.ml[24,747+6]..[24,747+16]) (src/ast_builder_intf.ml[24,747+2]..[24,747+50])
+              core_type (src/ast_builder_intf.ml[24,747+19]..[24,747+50])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[24,747+42]..[24,747+50])
+                [
+                  core_type (src/ast_builder_intf.ml[24,747+20]..[24,747+40])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[24,747+20]..[24,747+29])
+                      Ptyp_constr "nativeint" (src/ast_builder_intf.ml[24,747+20]..[24,747+29])
+                      []
+                    core_type (src/ast_builder_intf.ml[24,747+33]..[24,747+40])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[24,747+33]..[24,747+40])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[25,798+2]..[25,798+40])
+            Psig_value
+            value_description "pbool" (src/ast_builder_intf.ml[25,798+6]..[25,798+11]) (src/ast_builder_intf.ml[25,798+2]..[25,798+40])
+              core_type (src/ast_builder_intf.ml[25,798+14]..[25,798+40])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[25,798+32]..[25,798+40])
+                [
+                  core_type (src/ast_builder_intf.ml[25,798+15]..[25,798+30])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[25,798+15]..[25,798+19])
+                      Ptyp_constr "bool" (src/ast_builder_intf.ml[25,798+15]..[25,798+19])
+                      []
+                    core_type (src/ast_builder_intf.ml[25,798+23]..[25,798+30])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[25,798+23]..[25,798+30])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[26,839+2]..[26,839+33])
+            Psig_value
+            value_description "eunit" (src/ast_builder_intf.ml[26,839+6]..[26,839+11]) (src/ast_builder_intf.ml[26,839+2]..[26,839+33])
+              core_type (src/ast_builder_intf.ml[26,839+14]..[26,839+33])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[26,839+25]..[26,839+33])
+                [
+                  core_type (src/ast_builder_intf.ml[26,839+14]..[26,839+24])
+                    Ptyp_constr "expression" (src/ast_builder_intf.ml[26,839+14]..[26,839+24])
+                    []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[27,873+2]..[27,873+30])
+            Psig_value
+            value_description "punit" (src/ast_builder_intf.ml[27,873+6]..[27,873+11]) (src/ast_builder_intf.ml[27,873+2]..[27,873+30])
+              core_type (src/ast_builder_intf.ml[27,873+14]..[27,873+30])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[27,873+22]..[27,873+30])
+                [
+                  core_type (src/ast_builder_intf.ml[27,873+14]..[27,873+21])
+                    Ptyp_constr "pattern" (src/ast_builder_intf.ml[27,873+14]..[27,873+21])
+                    []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[29,905+2]..[29,905+44])
+            Psig_value
+            value_description "evar" (src/ast_builder_intf.ml[29,905+6]..[29,905+10]) (src/ast_builder_intf.ml[29,905+2]..[29,905+44])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[30,950+2]..[32,1090+31])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[30,950+2]..[32,1090+31])
+                      Pexp_constant PConst_string(" [evar id] produces a [Pexp_ident _] expression, it parses its input so you\n      can pass any dot-separated identifier, for instance:\n      [evar ~loc \"Foo.bar\"]. ",(src/ast_builder_intf.ml[30,950+2]..[32,1090+31]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[29,905+13]..[29,905+44])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[29,905+36]..[29,905+44])
+                [
+                  core_type (src/ast_builder_intf.ml[29,905+14]..[29,905+34])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[29,905+14]..[29,905+20])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[29,905+14]..[29,905+20])
+                      []
+                    core_type (src/ast_builder_intf.ml[29,905+24]..[29,905+34])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[29,905+24]..[29,905+34])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[34,1123+2]..[34,1123+41])
+            Psig_value
+            value_description "pvar" (src/ast_builder_intf.ml[34,1123+6]..[34,1123+10]) (src/ast_builder_intf.ml[34,1123+2]..[34,1123+41])
+              core_type (src/ast_builder_intf.ml[34,1123+13]..[34,1123+41])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[34,1123+33]..[34,1123+41])
+                [
+                  core_type (src/ast_builder_intf.ml[34,1123+14]..[34,1123+31])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[34,1123+14]..[34,1123+20])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[34,1123+14]..[34,1123+20])
+                      []
+                    core_type (src/ast_builder_intf.ml[34,1123+24]..[34,1123+31])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[34,1123+24]..[34,1123+31])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[36,1166+2]..[36,1166+69])
+            Psig_value
+            value_description "eapply" (src/ast_builder_intf.ml[36,1166+6]..[36,1166+12]) (src/ast_builder_intf.ml[36,1166+2]..[36,1166+69])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[37,1236+2]..[37,1236+46])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[37,1236+2]..[37,1236+46])
+                      Pexp_constant PConst_string(" Same as pexp_apply but without labels ",(src/ast_builder_intf.ml[37,1236+2]..[37,1236+46]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[36,1166+15]..[36,1166+69])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[36,1166+61]..[36,1166+69])
+                [
+                  core_type (src/ast_builder_intf.ml[36,1166+16]..[36,1166+59])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[36,1166+16]..[36,1166+26])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[36,1166+16]..[36,1166+26])
+                      []
+                    core_type (src/ast_builder_intf.ml[36,1166+30]..[36,1166+59])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder_intf.ml[36,1166+30]..[36,1166+45])
+                        Ptyp_constr "list" (src/ast_builder_intf.ml[36,1166+41]..[36,1166+45])
+                        [
+                          core_type (src/ast_builder_intf.ml[36,1166+30]..[36,1166+40])
+                            Ptyp_constr "expression" (src/ast_builder_intf.ml[36,1166+30]..[36,1166+40])
+                            []
+                        ]
+                      core_type (src/ast_builder_intf.ml[36,1166+49]..[36,1166+59])
+                        Ptyp_constr "expression" (src/ast_builder_intf.ml[36,1166+49]..[36,1166+59])
+                        []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[39,1284+2]..[39,1284+69])
+            Psig_value
+            value_description "eabstract" (src/ast_builder_intf.ml[39,1284+6]..[39,1284+15]) (src/ast_builder_intf.ml[39,1284+2]..[39,1284+69])
+              core_type (src/ast_builder_intf.ml[39,1284+18]..[39,1284+69])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[39,1284+61]..[39,1284+69])
+                [
+                  core_type (src/ast_builder_intf.ml[39,1284+19]..[39,1284+59])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[39,1284+19]..[39,1284+31])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[39,1284+27]..[39,1284+31])
+                      [
+                        core_type (src/ast_builder_intf.ml[39,1284+19]..[39,1284+26])
+                          Ptyp_constr "pattern" (src/ast_builder_intf.ml[39,1284+19]..[39,1284+26])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[39,1284+35]..[39,1284+59])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder_intf.ml[39,1284+35]..[39,1284+45])
+                        Ptyp_constr "expression" (src/ast_builder_intf.ml[39,1284+35]..[39,1284+45])
+                        []
+                      core_type (src/ast_builder_intf.ml[39,1284+49]..[39,1284+59])
+                        Ptyp_constr "expression" (src/ast_builder_intf.ml[39,1284+49]..[39,1284+59])
+                        []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[40,1354+2]..[40,1354+58])
+            Psig_value
+            value_description "esequence" (src/ast_builder_intf.ml[40,1354+6]..[40,1354+15]) (src/ast_builder_intf.ml[40,1354+2]..[40,1354+58])
+              core_type (src/ast_builder_intf.ml[40,1354+18]..[40,1354+58])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[40,1354+50]..[40,1354+58])
+                [
+                  core_type (src/ast_builder_intf.ml[40,1354+19]..[40,1354+48])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[40,1354+19]..[40,1354+34])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[40,1354+30]..[40,1354+34])
+                      [
+                        core_type (src/ast_builder_intf.ml[40,1354+19]..[40,1354+29])
+                          Ptyp_constr "expression" (src/ast_builder_intf.ml[40,1354+19]..[40,1354+29])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[40,1354+38]..[40,1354+48])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[40,1354+38]..[40,1354+48])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[41,1413+2]..[41,1413+64])
+            Psig_value
+            value_description "ppat_tuple_opt" (src/ast_builder_intf.ml[41,1413+6]..[41,1413+20]) (src/ast_builder_intf.ml[41,1413+2]..[41,1413+64])
+              core_type (src/ast_builder_intf.ml[41,1413+23]..[41,1413+64])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[41,1413+56]..[41,1413+64])
+                [
+                  core_type (src/ast_builder_intf.ml[41,1413+24]..[41,1413+54])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[41,1413+24]..[41,1413+36])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[41,1413+32]..[41,1413+36])
+                      [
+                        core_type (src/ast_builder_intf.ml[41,1413+24]..[41,1413+31])
+                          Ptyp_constr "pattern" (src/ast_builder_intf.ml[41,1413+24]..[41,1413+31])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[41,1413+40]..[41,1413+54])
+                      Ptyp_constr "option" (src/ast_builder_intf.ml[41,1413+48]..[41,1413+54])
+                      [
+                        core_type (src/ast_builder_intf.ml[41,1413+40]..[41,1413+47])
+                          Ptyp_constr "pattern" (src/ast_builder_intf.ml[41,1413+40]..[41,1413+47])
+                          []
+                      ]
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[42,1478+2]..[42,1478+70])
+            Psig_value
+            value_description "pexp_tuple_opt" (src/ast_builder_intf.ml[42,1478+6]..[42,1478+20]) (src/ast_builder_intf.ml[42,1478+2]..[42,1478+70])
+              core_type (src/ast_builder_intf.ml[42,1478+23]..[42,1478+70])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[42,1478+62]..[42,1478+70])
+                [
+                  core_type (src/ast_builder_intf.ml[42,1478+24]..[42,1478+60])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[42,1478+24]..[42,1478+39])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[42,1478+35]..[42,1478+39])
+                      [
+                        core_type (src/ast_builder_intf.ml[42,1478+24]..[42,1478+34])
+                          Ptyp_constr "expression" (src/ast_builder_intf.ml[42,1478+24]..[42,1478+34])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[42,1478+43]..[42,1478+60])
+                      Ptyp_constr "option" (src/ast_builder_intf.ml[42,1478+54]..[42,1478+60])
+                      [
+                        core_type (src/ast_builder_intf.ml[42,1478+43]..[42,1478+53])
+                          Ptyp_constr "expression" (src/ast_builder_intf.ml[42,1478+43]..[42,1478+53])
+                          []
+                      ]
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[43,1549+2]..[43,1549+71])
+            Psig_value
+            value_description "pconstruct" (src/ast_builder_intf.ml[43,1549+6]..[43,1549+16]) (src/ast_builder_intf.ml[43,1549+2]..[43,1549+71])
+              core_type (src/ast_builder_intf.ml[43,1549+19]..[43,1549+71])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[43,1549+19]..[43,1549+42])
+                  Ptyp_constr "constructor_declaration" (src/ast_builder_intf.ml[43,1549+19]..[43,1549+42])
+                  []
+                core_type (src/ast_builder_intf.ml[43,1549+46]..[43,1549+71])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[43,1549+46]..[43,1549+60])
+                    Ptyp_constr "option" (src/ast_builder_intf.ml[43,1549+54]..[43,1549+60])
+                    [
+                      core_type (src/ast_builder_intf.ml[43,1549+46]..[43,1549+53])
+                        Ptyp_constr "pattern" (src/ast_builder_intf.ml[43,1549+46]..[43,1549+53])
+                        []
+                    ]
+                  core_type (src/ast_builder_intf.ml[43,1549+64]..[43,1549+71])
+                    Ptyp_constr "pattern" (src/ast_builder_intf.ml[43,1549+64]..[43,1549+71])
+                    []
+              []
+          signature_item (src/ast_builder_intf.ml[44,1621+2]..[44,1621+77])
+            Psig_value
+            value_description "econstruct" (src/ast_builder_intf.ml[44,1621+6]..[44,1621+16]) (src/ast_builder_intf.ml[44,1621+2]..[44,1621+77])
+              core_type (src/ast_builder_intf.ml[44,1621+19]..[44,1621+77])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[44,1621+19]..[44,1621+42])
+                  Ptyp_constr "constructor_declaration" (src/ast_builder_intf.ml[44,1621+19]..[44,1621+42])
+                  []
+                core_type (src/ast_builder_intf.ml[44,1621+46]..[44,1621+77])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[44,1621+46]..[44,1621+63])
+                    Ptyp_constr "option" (src/ast_builder_intf.ml[44,1621+57]..[44,1621+63])
+                    [
+                      core_type (src/ast_builder_intf.ml[44,1621+46]..[44,1621+56])
+                        Ptyp_constr "expression" (src/ast_builder_intf.ml[44,1621+46]..[44,1621+56])
+                        []
+                    ]
+                  core_type (src/ast_builder_intf.ml[44,1621+67]..[44,1621+77])
+                    Ptyp_constr "expression" (src/ast_builder_intf.ml[44,1621+67]..[44,1621+77])
+                    []
+              []
+          signature_item (src/ast_builder_intf.ml[45,1699+2]..[45,1699+54])
+            Psig_value
+            value_description "elist" (src/ast_builder_intf.ml[45,1699+6]..[45,1699+11]) (src/ast_builder_intf.ml[45,1699+2]..[45,1699+54])
+              core_type (src/ast_builder_intf.ml[45,1699+14]..[45,1699+54])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[45,1699+46]..[45,1699+54])
+                [
+                  core_type (src/ast_builder_intf.ml[45,1699+15]..[45,1699+44])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[45,1699+15]..[45,1699+30])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[45,1699+26]..[45,1699+30])
+                      [
+                        core_type (src/ast_builder_intf.ml[45,1699+15]..[45,1699+25])
+                          Ptyp_constr "expression" (src/ast_builder_intf.ml[45,1699+15]..[45,1699+25])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[45,1699+34]..[45,1699+44])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[45,1699+34]..[45,1699+44])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[46,1754+2]..[46,1754+48])
+            Psig_value
+            value_description "plist" (src/ast_builder_intf.ml[46,1754+6]..[46,1754+11]) (src/ast_builder_intf.ml[46,1754+2]..[46,1754+48])
+              core_type (src/ast_builder_intf.ml[46,1754+14]..[46,1754+48])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[46,1754+40]..[46,1754+48])
+                [
+                  core_type (src/ast_builder_intf.ml[46,1754+15]..[46,1754+38])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[46,1754+15]..[46,1754+27])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[46,1754+23]..[46,1754+27])
+                      [
+                        core_type (src/ast_builder_intf.ml[46,1754+15]..[46,1754+22])
+                          Ptyp_constr "pattern" (src/ast_builder_intf.ml[46,1754+15]..[46,1754+22])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[46,1754+31]..[46,1754+38])
+                      Ptyp_constr "pattern" (src/ast_builder_intf.ml[46,1754+31]..[46,1754+38])
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[48,1804+2]..[52,1901+23])
+            Psig_value
+            value_description "pstr_value_list" (src/ast_builder_intf.ml[48,1804+6]..[48,1804+21]) (src/ast_builder_intf.ml[48,1804+2]..[52,1901+23])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[53,1925+2]..[54,2006+26])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[53,1925+2]..[54,2006+26])
+                      Pexp_constant PConst_string(" [pstr_value_list ~loc rf vbs] = [pstr_value ~loc rf vbs] if [vbs <> \\[\\]],\n      [\\[\\]] otherwise. ",(src/ast_builder_intf.ml[53,1925+2]..[54,2006+26]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[49,1828+4]..[52,1901+23])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/ast_builder_intf.ml[49,1828+8]..[49,1828+18])
+                  Ptyp_constr "Location.t" (src/ast_builder_intf.ml[49,1828+8]..[49,1828+18])
+                  []
+                core_type (src/ast_builder_intf.ml[50,1850+4]..[52,1901+23])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[50,1850+4]..[50,1850+21])
+                    Ptyp_constr "Asttypes.rec_flag" (src/ast_builder_intf.ml[50,1850+4]..[50,1850+21])
+                    []
+                  core_type (src/ast_builder_intf.ml[51,1875+4]..[52,1901+23])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[51,1875+4]..[51,1875+22])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[51,1875+18]..[51,1875+22])
+                      [
+                        core_type (src/ast_builder_intf.ml[51,1875+4]..[51,1875+17])
+                          Ptyp_constr "value_binding" (src/ast_builder_intf.ml[51,1875+4]..[51,1875+17])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[52,1901+4]..[52,1901+23])
+                      Ptyp_constr "list" (src/ast_builder_intf.ml[52,1901+19]..[52,1901+23])
+                      [
+                        core_type (src/ast_builder_intf.ml[52,1901+4]..[52,1901+18])
+                          Ptyp_constr "structure_item" (src/ast_builder_intf.ml[52,1901+4]..[52,1901+18])
+                          []
+                      ]
+              []
+          signature_item (src/ast_builder_intf.ml[56,2034+2]..[66,2344+72])
+            Psig_value
+            value_description "nonrec_type_declaration" (src/ast_builder_intf.ml[56,2034+6]..[56,2034+29]) (src/ast_builder_intf.ml[56,2034+2]..[66,2344+72])
+              attribute "deprecated"
+                [
+                  structure_item (src/ast_builder_intf.ml[66,2344+6]..[66,2344+71])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[66,2344+6]..[66,2344+71])
+                      Pexp_constant PConst_string("[since 2016-10] use Nonrecursive on the P(str|sig)_type instead",(src/ast_builder_intf.ml[66,2344+7]..[66,2344+70]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[57,2066+4]..[64,2313+12])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[64,2313+4]..[64,2313+12])
+                [
+                  core_type (src/ast_builder_intf.ml[57,2066+5]..[63,2291+20])
+                    Ptyp_arrow
+                    Labelled "name"
+                    core_type (src/ast_builder_intf.ml[57,2066+10]..[57,2066+22])
+                      Ptyp_constr "Loc.t" (src/ast_builder_intf.ml[57,2066+17]..[57,2066+22])
+                      [
+                        core_type (src/ast_builder_intf.ml[57,2066+10]..[57,2066+16])
+                          Ptyp_constr "string" (src/ast_builder_intf.ml[57,2066+10]..[57,2066+16])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[58,2092+4]..[63,2291+20])
+                      Ptyp_arrow
+                      Labelled "params"
+                      core_type (src/ast_builder_intf.ml[58,2092+11]..[58,2092+47])
+                        Ptyp_constr "list" (src/ast_builder_intf.ml[58,2092+43]..[58,2092+47])
+                        [
+                          core_type (src/ast_builder_intf.ml[58,2092+12]..[58,2092+41])
+                            Ptyp_tuple
+                            [
+                              core_type (src/ast_builder_intf.ml[58,2092+12]..[58,2092+21])
+                                Ptyp_constr "core_type" (src/ast_builder_intf.ml[58,2092+12]..[58,2092+21])
+                                []
+                              core_type (src/ast_builder_intf.ml[58,2092+24]..[58,2092+41])
+                                Ptyp_constr "Asttypes.variance" (src/ast_builder_intf.ml[58,2092+24]..[58,2092+41])
+                                []
+                            ]
+                        ]
+                      core_type (src/ast_builder_intf.ml[59,2143+4]..[63,2291+20])
+                        Ptyp_arrow
+                        Labelled "cstrs"
+                        core_type (src/ast_builder_intf.ml[59,2143+10]..[59,2143+51])
+                          Ptyp_constr "list" (src/ast_builder_intf.ml[59,2143+47]..[59,2143+51])
+                          [
+                            core_type (src/ast_builder_intf.ml[59,2143+11]..[59,2143+45])
+                              Ptyp_tuple
+                              [
+                                core_type (src/ast_builder_intf.ml[59,2143+11]..[59,2143+20])
+                                  Ptyp_constr "core_type" (src/ast_builder_intf.ml[59,2143+11]..[59,2143+20])
+                                  []
+                                core_type (src/ast_builder_intf.ml[59,2143+23]..[59,2143+32])
+                                  Ptyp_constr "core_type" (src/ast_builder_intf.ml[59,2143+23]..[59,2143+32])
+                                  []
+                                core_type (src/ast_builder_intf.ml[59,2143+35]..[59,2143+45])
+                                  Ptyp_constr "Location.t" (src/ast_builder_intf.ml[59,2143+35]..[59,2143+45])
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder_intf.ml[60,2198+4]..[63,2291+20])
+                          Ptyp_arrow
+                          Labelled "kind"
+                          core_type (src/ast_builder_intf.ml[60,2198+9]..[60,2198+18])
+                            Ptyp_constr "type_kind" (src/ast_builder_intf.ml[60,2198+9]..[60,2198+18])
+                            []
+                          core_type (src/ast_builder_intf.ml[61,2220+4]..[63,2291+20])
+                            Ptyp_arrow
+                            Labelled "private_"
+                            core_type (src/ast_builder_intf.ml[61,2220+13]..[61,2220+34])
+                              Ptyp_constr "Asttypes.private_flag" (src/ast_builder_intf.ml[61,2220+13]..[61,2220+34])
+                              []
+                            core_type (src/ast_builder_intf.ml[62,2258+4]..[63,2291+20])
+                              Ptyp_arrow
+                              Labelled "manifest"
+                              core_type (src/ast_builder_intf.ml[62,2258+13]..[62,2258+29])
+                                Ptyp_constr "option" (src/ast_builder_intf.ml[62,2258+23]..[62,2258+29])
+                                [
+                                  core_type (src/ast_builder_intf.ml[62,2258+13]..[62,2258+22])
+                                    Ptyp_constr "core_type" (src/ast_builder_intf.ml[62,2258+13]..[62,2258+22])
+                                    []
+                                ]
+                              core_type (src/ast_builder_intf.ml[63,2291+4]..[63,2291+20])
+                                Ptyp_constr "type_declaration" (src/ast_builder_intf.ml[63,2291+4]..[63,2291+20])
+                                []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[68,2418+2]..[69,2453+70])
+            Psig_value
+            value_description "unapplied_type_constr_conv" (src/ast_builder_intf.ml[68,2418+6]..[68,2418+32]) (src/ast_builder_intf.ml[68,2418+2]..[69,2453+70])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[70,2524+2]..[81,3148+26])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[70,2524+2]..[81,3148+26])
+                      Pexp_constant PConst_string(" [unapplied_type_constr_conv] is the standard way to map identifiers to\n      conversion fonctions, for preprocessor that creates values that follow the\n      structure of types. More precisely,\n      [path_conv path (sprintf \"sexp_of_%s\")] is:\n\n      - sexp_of_t if path is \"t\"\n      - A.B.sexp_of_foo if path is \"A.B.foo\"\n      - A.B.sexp_of_f__foo (module A1) (module A2) if path is\n        \"A.B.F(A1)(A2).foo\" [type_constr_conv] also applies it to a list of\n        expression, which both prevents the compiler from allocating useless\n        closures, and almost always what is needed, since type constructors are\n        always applied. ",(src/ast_builder_intf.ml[70,2524+2]..[81,3148+26]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[69,2453+4]..[69,2453+70])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[69,2453+62]..[69,2453+70])
+                [
+                  core_type (src/ast_builder_intf.ml[69,2453+5]..[69,2453+60])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[69,2453+5]..[69,2453+22])
+                      Ptyp_constr "Loc.t" (src/ast_builder_intf.ml[69,2453+17]..[69,2453+22])
+                      [
+                        core_type (src/ast_builder_intf.ml[69,2453+5]..[69,2453+16])
+                          Ptyp_constr "Longident.t" (src/ast_builder_intf.ml[69,2453+5]..[69,2453+16])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[69,2453+26]..[69,2453+60])
+                      Ptyp_arrow
+                      Labelled "f"
+                      core_type (src/ast_builder_intf.ml[69,2453+29]..[69,2453+45])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder_intf.ml[69,2453+29]..[69,2453+35])
+                          Ptyp_constr "string" (src/ast_builder_intf.ml[69,2453+29]..[69,2453+35])
+                          []
+                        core_type (src/ast_builder_intf.ml[69,2453+39]..[69,2453+45])
+                          Ptyp_constr "string" (src/ast_builder_intf.ml[69,2453+39]..[69,2453+45])
+                          []
+                      core_type (src/ast_builder_intf.ml[69,2453+50]..[69,2453+60])
+                        Ptyp_constr "expression" (src/ast_builder_intf.ml[69,2453+50]..[69,2453+60])
+                        []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[83,3176+2]..[85,3282+12])
+            Psig_value
+            value_description "type_constr_conv" (src/ast_builder_intf.ml[83,3176+6]..[83,3176+22]) (src/ast_builder_intf.ml[83,3176+2]..[85,3282+12])
+              core_type (src/ast_builder_intf.ml[84,3201+4]..[85,3282+12])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[85,3282+4]..[85,3282+12])
+                [
+                  core_type (src/ast_builder_intf.ml[84,3201+5]..[84,3201+79])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[84,3201+5]..[84,3201+22])
+                      Ptyp_constr "Loc.t" (src/ast_builder_intf.ml[84,3201+17]..[84,3201+22])
+                      [
+                        core_type (src/ast_builder_intf.ml[84,3201+5]..[84,3201+16])
+                          Ptyp_constr "Longident.t" (src/ast_builder_intf.ml[84,3201+5]..[84,3201+16])
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[84,3201+26]..[84,3201+79])
+                      Ptyp_arrow
+                      Labelled "f"
+                      core_type (src/ast_builder_intf.ml[84,3201+29]..[84,3201+45])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder_intf.ml[84,3201+29]..[84,3201+35])
+                          Ptyp_constr "string" (src/ast_builder_intf.ml[84,3201+29]..[84,3201+35])
+                          []
+                        core_type (src/ast_builder_intf.ml[84,3201+39]..[84,3201+45])
+                          Ptyp_constr "string" (src/ast_builder_intf.ml[84,3201+39]..[84,3201+45])
+                          []
+                      core_type (src/ast_builder_intf.ml[84,3201+50]..[84,3201+79])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder_intf.ml[84,3201+50]..[84,3201+65])
+                          Ptyp_constr "list" (src/ast_builder_intf.ml[84,3201+61]..[84,3201+65])
+                          [
+                            core_type (src/ast_builder_intf.ml[84,3201+50]..[84,3201+60])
+                              Ptyp_constr "expression" (src/ast_builder_intf.ml[84,3201+50]..[84,3201+60])
+                              []
+                          ]
+                        core_type (src/ast_builder_intf.ml[84,3201+69]..[84,3201+79])
+                          Ptyp_constr "expression" (src/ast_builder_intf.ml[84,3201+69]..[84,3201+79])
+                          []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[87,3296+2]..[87,3296+50])
+            Psig_value
+            value_description "eta_reduce" (src/ast_builder_intf.ml[87,3296+6]..[87,3296+16]) (src/ast_builder_intf.ml[87,3296+2]..[87,3296+50])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[88,3347+2]..[107,4515+46])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[88,3347+2]..[107,4515+46])
+                      Pexp_constant PConst_string(" Tries to simplify [fun v1 v2 .. -> f v1 v2 ..] into [f]. Only works when\n      [f] is a path, not an arbitrary expression as that would change the\n      meaning of the code. This can be used either for cleaning up the generated\n      code, or to reduce allocation if [f] is a local variable (the compiler\n      won't optimize the allocation of the closure).\n\n      Eta-reduction can change the types/behavior in some corner cases that are\n      unlikely to show up in generated code:\n\n      - if [f] has optional arguments, eta-expanding [f] can drop them\n      - because labels commute, it can change the type of an expression: $ let f\n        ~x y = x + y let f2 = fun x -> add x;; val f : x:int -> int -> int =\n        <fun> val f2 : int -> x:int -> int = <fun> In fact, if [f] does side\n        effects before receiving all its arguments, and if the eta-expansion is\n        partially applied, eta-reducing could change behavior.\n\n      [eta_reduce_if_possible_and_nonrec] is meant for the case where the\n      resulting expression is going to be bound in a potentially recursive\n      let-binding, where we have to keep the eta-expansion when [rec_flag] is\n      [Recursive] to avoid a compile error. ",(src/ast_builder_intf.ml[88,3347+2]..[107,4515+46]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[87,3296+19]..[87,3296+50])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[87,3296+19]..[87,3296+29])
+                  Ptyp_constr "expression" (src/ast_builder_intf.ml[87,3296+19]..[87,3296+29])
+                  []
+                core_type (src/ast_builder_intf.ml[87,3296+33]..[87,3296+50])
+                  Ptyp_constr "option" (src/ast_builder_intf.ml[87,3296+44]..[87,3296+50])
+                  [
+                    core_type (src/ast_builder_intf.ml[87,3296+33]..[87,3296+43])
+                      Ptyp_constr "expression" (src/ast_builder_intf.ml[87,3296+33]..[87,3296+43])
+                      []
+                  ]
+              []
+          signature_item (src/ast_builder_intf.ml[109,4563+2]..[109,4563+55])
+            Psig_value
+            value_description "eta_reduce_if_possible" (src/ast_builder_intf.ml[109,4563+6]..[109,4563+28]) (src/ast_builder_intf.ml[109,4563+2]..[109,4563+55])
+              core_type (src/ast_builder_intf.ml[109,4563+31]..[109,4563+55])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[109,4563+31]..[109,4563+41])
+                  Ptyp_constr "expression" (src/ast_builder_intf.ml[109,4563+31]..[109,4563+41])
+                  []
+                core_type (src/ast_builder_intf.ml[109,4563+45]..[109,4563+55])
+                  Ptyp_constr "expression" (src/ast_builder_intf.ml[109,4563+45]..[109,4563+55])
+                  []
+              []
+          signature_item (src/ast_builder_intf.ml[111,4620+2]..[112,4662+49])
+            Psig_value
+            value_description "eta_reduce_if_possible_and_nonrec" (src/ast_builder_intf.ml[111,4620+6]..[111,4620+39]) (src/ast_builder_intf.ml[111,4620+2]..[112,4662+49])
+              core_type (src/ast_builder_intf.ml[112,4662+4]..[112,4662+49])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[112,4662+4]..[112,4662+14])
+                  Ptyp_constr "expression" (src/ast_builder_intf.ml[112,4662+4]..[112,4662+14])
+                  []
+                core_type (src/ast_builder_intf.ml[112,4662+18]..[112,4662+49])
+                  Ptyp_arrow
+                  Labelled "rec_flag"
+                  core_type (src/ast_builder_intf.ml[112,4662+27]..[112,4662+35])
+                    Ptyp_constr "rec_flag" (src/ast_builder_intf.ml[112,4662+27]..[112,4662+35])
+                    []
+                  core_type (src/ast_builder_intf.ml[112,4662+39]..[112,4662+49])
+                    Ptyp_constr "expression" (src/ast_builder_intf.ml[112,4662+39]..[112,4662+49])
+                    []
+              []
+        ]
+  structure_item (src/ast_builder_intf.ml[115,4717+0]..[124,4983+3])
+    Pstr_modtype "Located" (src/ast_builder_intf.ml[115,4717+12]..[115,4717+19])
+      module_type (src/ast_builder_intf.ml[115,4717+22]..[124,4983+3])
+        Pmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[116,4743+2]..[116,4743+18])
+            Psig_type Rec
+            [
+              type_declaration "with_loc" (src/ast_builder_intf.ml[116,4743+10]..[116,4743+18]) (src/ast_builder_intf.ml[116,4743+2]..[116,4743+18])
+                ptype_params =
+                  [
+                    core_type (src/ast_builder_intf.ml[116,4743+7]..[116,4743+9])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/ast_builder_intf.ml[117,4762+2]..[117,4762+22])
+            Psig_type Rec
+            [
+              type_declaration "t" (src/ast_builder_intf.ml[117,4762+10]..[117,4762+11]) (src/ast_builder_intf.ml[117,4762+2]..[117,4762+22])
+                ptype_params =
+                  [
+                    core_type (src/ast_builder_intf.ml[117,4762+7]..[117,4762+9])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (src/ast_builder_intf.ml[117,4762+14]..[117,4762+22])
+                      Ptyp_constr "Loc.t" (src/ast_builder_intf.ml[117,4762+17]..[117,4762+22])
+                      [
+                        core_type (src/ast_builder_intf.ml[117,4762+14]..[117,4762+16])
+                          Ptyp_var a
+                      ]
+            ]
+          signature_item (src/ast_builder_intf.ml[119,4786+2]..[119,4786+29])
+            Psig_value
+            value_description "loc" (src/ast_builder_intf.ml[119,4786+6]..[119,4786+9]) (src/ast_builder_intf.ml[119,4786+2]..[119,4786+29])
+              core_type (src/ast_builder_intf.ml[119,4786+12]..[119,4786+29])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[119,4786+12]..[119,4786+15])
+                  Ptyp_constr "t" (src/ast_builder_intf.ml[119,4786+14]..[119,4786+15])
+                  [
+                    core_type (src/ast_builder_intf.ml[119,4786+12]..[119,4786+13])
+                      Ptyp_any
+                  ]
+                core_type (src/ast_builder_intf.ml[119,4786+19]..[119,4786+29])
+                  Ptyp_constr "Location.t" (src/ast_builder_intf.ml[119,4786+19]..[119,4786+29])
+                  []
+              []
+          signature_item (src/ast_builder_intf.ml[120,4816+2]..[120,4816+32])
+            Psig_value
+            value_description "mk" (src/ast_builder_intf.ml[120,4816+6]..[120,4816+8]) (src/ast_builder_intf.ml[120,4816+2]..[120,4816+32])
+              core_type (src/ast_builder_intf.ml[120,4816+11]..[120,4816+32])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[120,4816+24]..[120,4816+32])
+                [
+                  core_type (src/ast_builder_intf.ml[120,4816+12]..[120,4816+22])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[120,4816+12]..[120,4816+14])
+                      Ptyp_var a
+                    core_type (src/ast_builder_intf.ml[120,4816+18]..[120,4816+22])
+                      Ptyp_constr "t" (src/ast_builder_intf.ml[120,4816+21]..[120,4816+22])
+                      [
+                        core_type (src/ast_builder_intf.ml[120,4816+18]..[120,4816+20])
+                          Ptyp_var a
+                      ]
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[121,4849+2]..[121,4849+38])
+            Psig_value
+            value_description "map" (src/ast_builder_intf.ml[121,4849+6]..[121,4849+9]) (src/ast_builder_intf.ml[121,4849+2]..[121,4849+38])
+              core_type (src/ast_builder_intf.ml[121,4849+12]..[121,4849+38])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[121,4849+13]..[121,4849+21])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[121,4849+13]..[121,4849+15])
+                    Ptyp_var a
+                  core_type (src/ast_builder_intf.ml[121,4849+19]..[121,4849+21])
+                    Ptyp_var b
+                core_type (src/ast_builder_intf.ml[121,4849+26]..[121,4849+38])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[121,4849+26]..[121,4849+30])
+                    Ptyp_constr "t" (src/ast_builder_intf.ml[121,4849+29]..[121,4849+30])
+                    [
+                      core_type (src/ast_builder_intf.ml[121,4849+26]..[121,4849+28])
+                        Ptyp_var a
+                    ]
+                  core_type (src/ast_builder_intf.ml[121,4849+34]..[121,4849+38])
+                    Ptyp_constr "t" (src/ast_builder_intf.ml[121,4849+37]..[121,4849+38])
+                    [
+                      core_type (src/ast_builder_intf.ml[121,4849+34]..[121,4849+36])
+                        Ptyp_var b
+                    ]
+              []
+          signature_item (src/ast_builder_intf.ml[122,4888+2]..[122,4888+44])
+            Psig_value
+            value_description "map_lident" (src/ast_builder_intf.ml[122,4888+6]..[122,4888+16]) (src/ast_builder_intf.ml[122,4888+2]..[122,4888+44])
+              core_type (src/ast_builder_intf.ml[122,4888+19]..[122,4888+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[122,4888+19]..[122,4888+27])
+                  Ptyp_constr "t" (src/ast_builder_intf.ml[122,4888+26]..[122,4888+27])
+                  [
+                    core_type (src/ast_builder_intf.ml[122,4888+19]..[122,4888+25])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[122,4888+19]..[122,4888+25])
+                      []
+                  ]
+                core_type (src/ast_builder_intf.ml[122,4888+31]..[122,4888+44])
+                  Ptyp_constr "t" (src/ast_builder_intf.ml[122,4888+43]..[122,4888+44])
+                  [
+                    core_type (src/ast_builder_intf.ml[122,4888+31]..[122,4888+42])
+                      Ptyp_constr "Longident.t" (src/ast_builder_intf.ml[122,4888+31]..[122,4888+42])
+                      []
+                  ]
+              []
+          signature_item (src/ast_builder_intf.ml[123,4933+2]..[123,4933+49])
+            Psig_value
+            value_description "lident" (src/ast_builder_intf.ml[123,4933+6]..[123,4933+12]) (src/ast_builder_intf.ml[123,4933+2]..[123,4933+49])
+              core_type (src/ast_builder_intf.ml[123,4933+15]..[123,4933+49])
+                Ptyp_constr "with_loc" (src/ast_builder_intf.ml[123,4933+41]..[123,4933+49])
+                [
+                  core_type (src/ast_builder_intf.ml[123,4933+16]..[123,4933+39])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[123,4933+16]..[123,4933+22])
+                      Ptyp_constr "string" (src/ast_builder_intf.ml[123,4933+16]..[123,4933+22])
+                      []
+                    core_type (src/ast_builder_intf.ml[123,4933+26]..[123,4933+39])
+                      Ptyp_constr "t" (src/ast_builder_intf.ml[123,4933+38]..[123,4933+39])
+                      [
+                        core_type (src/ast_builder_intf.ml[123,4933+26]..[123,4933+37])
+                          Ptyp_constr "Longident.t" (src/ast_builder_intf.ml[123,4933+26]..[123,4933+37])
+                          []
+                      ]
+                ]
+              []
+        ]
+  structure_item (src/ast_builder_intf.ml[126,4988+0]..[126,4988+29])
+    Pstr_type Rec
+    [
+      type_declaration "without_location" (src/ast_builder_intf.ml[126,4988+8]..[126,4988+24]) (src/ast_builder_intf.ml[126,4988+0]..[126,4988+29])
+        ptype_params =
+          [
+            core_type (src/ast_builder_intf.ml[126,4988+5]..[126,4988+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/ast_builder_intf.ml[126,4988+27]..[126,4988+29])
+              Ptyp_var a
+    ]
+  structure_item (src/ast_builder_intf.ml[127,5018+0]..[127,5018+44])
+    Pstr_type Rec
+    [
+      type_declaration "with_location" (src/ast_builder_intf.ml[127,5018+8]..[127,5018+21]) (src/ast_builder_intf.ml[127,5018+0]..[127,5018+44])
+        ptype_params =
+          [
+            core_type (src/ast_builder_intf.ml[127,5018+5]..[127,5018+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/ast_builder_intf.ml[127,5018+24]..[127,5018+44])
+              Ptyp_arrow
+              Labelled "loc"
+              core_type (src/ast_builder_intf.ml[127,5018+28]..[127,5018+38])
+                Ptyp_constr "Location.t" (src/ast_builder_intf.ml[127,5018+28]..[127,5018+38])
+                []
+              core_type (src/ast_builder_intf.ml[127,5018+42]..[127,5018+44])
+                Ptyp_var a
+    ]
+  structure_item (src/ast_builder_intf.ml[129,5064+0]..[137,5327+3])
+    Pstr_modtype "S" (src/ast_builder_intf.ml[129,5064+12]..[129,5064+13])
+      module_type (src/ast_builder_intf.ml[129,5064+16]..[137,5327+3])
+        Pmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[130,5084+2]..[130,5084+71])
+            Psig_module "Located" (src/ast_builder_intf.ml[130,5084+9]..[130,5084+16])
+            module_type (src/ast_builder_intf.ml[130,5084+19]..[130,5084+71])
+              Pmty_with
+              module_type (src/ast_builder_intf.ml[130,5084+19]..[130,5084+26])
+                Pmty_ident "Located" (src/ast_builder_intf.ml[130,5084+19]..[130,5084+26])
+              [
+                Pwith_typesubst "with_loc" (src/ast_builder_intf.ml[130,5084+40]..[130,5084+48])
+                  type_declaration "with_loc" (src/ast_builder_intf.ml[130,5084+40]..[130,5084+48]) (src/ast_builder_intf.ml[130,5084+32]..[130,5084+71])
+                    ptype_params =
+                      [
+                        core_type (src/ast_builder_intf.ml[130,5084+37]..[130,5084+39])
+                          Ptyp_var a
+                      ]
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (src/ast_builder_intf.ml[130,5084+52]..[130,5084+71])
+                          Ptyp_constr "without_location" (src/ast_builder_intf.ml[130,5084+55]..[130,5084+71])
+                          [
+                            core_type (src/ast_builder_intf.ml[130,5084+52]..[130,5084+54])
+                              Ptyp_var a
+                          ]
+              ]
+          signature_item (src/ast_builder_intf.ml[132,5157+2]..[134,5245+6])
+            Psig_include
+            module_type (src/ast_builder_intf.ml[132,5157+10]..[134,5245+6])
+              Pmty_typeof
+              module_expr (src/ast_builder_intf.ml[132,5157+25]..[134,5245+6])
+                Pmod_apply
+                module_expr (src/ast_builder_intf.ml[132,5157+25]..[132,5157+51])
+                  Pmod_ident "Ast_builder_generated.Make" (src/ast_builder_intf.ml[132,5157+25]..[132,5157+51])
+                module_expr (src/ast_builder_intf.ml[132,5157+53]..[134,5245+5])
+                  Pmod_structure
+                  [
+                    structure_item (src/ast_builder_intf.ml[133,5217+4]..[133,5217+27])
+                      Pstr_value Nonrec
+                      [
+                        <def>
+                          pattern (src/ast_builder_intf.ml[133,5217+8]..[133,5217+11])
+                            Ppat_var "loc" (src/ast_builder_intf.ml[133,5217+8]..[133,5217+11])
+                          expression (src/ast_builder_intf.ml[133,5217+14]..[133,5217+27])
+                            Pexp_ident "Location.none" (src/ast_builder_intf.ml[133,5217+14]..[133,5217+27])
+                      ]
+                  ]
+          signature_item (src/ast_builder_intf.ml[136,5253+2]..[136,5253+73])
+            Psig_include
+            module_type (src/ast_builder_intf.ml[136,5253+10]..[136,5253+73])
+              Pmty_with
+              module_type (src/ast_builder_intf.ml[136,5253+10]..[136,5253+28])
+                Pmty_ident "Additional_helpers" (src/ast_builder_intf.ml[136,5253+10]..[136,5253+28])
+              [
+                Pwith_typesubst "with_loc" (src/ast_builder_intf.ml[136,5253+42]..[136,5253+50])
+                  type_declaration "with_loc" (src/ast_builder_intf.ml[136,5253+42]..[136,5253+50]) (src/ast_builder_intf.ml[136,5253+34]..[136,5253+73])
+                    ptype_params =
+                      [
+                        core_type (src/ast_builder_intf.ml[136,5253+39]..[136,5253+41])
+                          Ptyp_var a
+                      ]
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (src/ast_builder_intf.ml[136,5253+54]..[136,5253+73])
+                          Ptyp_constr "without_location" (src/ast_builder_intf.ml[136,5253+57]..[136,5253+73])
+                          [
+                            core_type (src/ast_builder_intf.ml[136,5253+54]..[136,5253+56])
+                              Ptyp_var a
+                          ]
+              ]
+        ]
+]
+
+open! Import
+module type Loc  = sig val loc : Location.t end
+module type Additional_helpers  =
+  sig
+    type 'a with_loc
+    val eint : (int -> expression) with_loc
+    val echar : (char -> expression) with_loc
+    val estring : (string -> expression) with_loc
+    val efloat : (string -> expression) with_loc
+    val eint32 : (int32 -> expression) with_loc
+    val eint64 : (int64 -> expression) with_loc
+    val enativeint : (nativeint -> expression) with_loc
+    val ebool : (bool -> expression) with_loc
+    val pint : (int -> pattern) with_loc
+    val pchar : (char -> pattern) with_loc
+    val pstring : (string -> pattern) with_loc
+    val pfloat : (string -> pattern) with_loc
+    val pint32 : (int32 -> pattern) with_loc
+    val pint64 : (int64 -> pattern) with_loc
+    val pnativeint : (nativeint -> pattern) with_loc
+    val pbool : (bool -> pattern) with_loc
+    val eunit : expression with_loc
+    val punit : pattern with_loc
+    val evar : (string -> expression) with_loc[@@ocaml.doc
+                                                " [evar id] produces a [Pexp_ident _] expression, it parses its input so you\n      can pass any dot-separated identifier, for instance:\n      [evar ~loc \"Foo.bar\"]. "]
+    val pvar : (string -> pattern) with_loc
+    val eapply : (expression -> expression list -> expression) with_loc
+    [@@ocaml.doc " Same as pexp_apply but without labels "]
+    val eabstract : (pattern list -> expression -> expression) with_loc
+    val esequence : (expression list -> expression) with_loc
+    val ppat_tuple_opt : (pattern list -> pattern option) with_loc
+    val pexp_tuple_opt : (expression list -> expression option) with_loc
+    val pconstruct : constructor_declaration -> pattern option -> pattern
+    val econstruct :
+      constructor_declaration -> expression option -> expression
+    val elist : (expression list -> expression) with_loc
+    val plist : (pattern list -> pattern) with_loc
+    val pstr_value_list :
+      loc:Location.t ->
+        Asttypes.rec_flag -> value_binding list -> structure_item list
+    [@@ocaml.doc
+      " [pstr_value_list ~loc rf vbs] = [pstr_value ~loc rf vbs] if [vbs <> \\[\\]],\n      [\\[\\]] otherwise. "]
+    val nonrec_type_declaration :
+      (name:string Loc.t ->
+         params:(core_type * Asttypes.variance) list ->
+           cstrs:(core_type * core_type * Location.t) list ->
+             kind:type_kind ->
+               private_:Asttypes.private_flag ->
+                 manifest:core_type option -> type_declaration)
+        with_loc[@@deprecated
+                  "[since 2016-10] use Nonrecursive on the P(str|sig)_type instead"]
+    val unapplied_type_constr_conv :
+      (Longident.t Loc.t -> f:(string -> string) -> expression) with_loc
+    [@@ocaml.doc
+      " [unapplied_type_constr_conv] is the standard way to map identifiers to\n      conversion fonctions, for preprocessor that creates values that follow the\n      structure of types. More precisely,\n      [path_conv path (sprintf \"sexp_of_%s\")] is:\n\n      - sexp_of_t if path is \"t\"\n      - A.B.sexp_of_foo if path is \"A.B.foo\"\n      - A.B.sexp_of_f__foo (module A1) (module A2) if path is\n        \"A.B.F(A1)(A2).foo\" [type_constr_conv] also applies it to a list of\n        expression, which both prevents the compiler from allocating useless\n        closures, and almost always what is needed, since type constructors are\n        always applied. "]
+    val type_constr_conv :
+      (Longident.t Loc.t ->
+         f:(string -> string) -> expression list -> expression)
+        with_loc
+    val eta_reduce : expression -> expression option[@@ocaml.doc
+                                                      " Tries to simplify [fun v1 v2 .. -> f v1 v2 ..] into [f]. Only works when\n      [f] is a path, not an arbitrary expression as that would change the\n      meaning of the code. This can be used either for cleaning up the generated\n      code, or to reduce allocation if [f] is a local variable (the compiler\n      won't optimize the allocation of the closure).\n\n      Eta-reduction can change the types/behavior in some corner cases that are\n      unlikely to show up in generated code:\n\n      - if [f] has optional arguments, eta-expanding [f] can drop them\n      - because labels commute, it can change the type of an expression: $ let f\n        ~x y = x + y let f2 = fun x -> add x;; val f : x:int -> int -> int =\n        <fun> val f2 : int -> x:int -> int = <fun> In fact, if [f] does side\n        effects before receiving all its arguments, and if the eta-expansion is\n        partially applied, eta-reducing could change behavior.\n\n      [eta_reduce_if_possible_and_nonrec] is meant for the case where the\n      resulting expression is going to be bound in a potentially recursive\n      let-binding, where we have to keep the eta-expansion when [rec_flag] is\n      [Recursive] to avoid a compile error. "]
+    val eta_reduce_if_possible : expression -> expression
+    val eta_reduce_if_possible_and_nonrec :
+      expression -> rec_flag:rec_flag -> expression
+  end
+module type Located  =
+  sig
+    type 'a with_loc
+    type 'a t = 'a Loc.t
+    val loc : _ t -> Location.t
+    val mk : ('a -> 'a t) with_loc
+    val map : ('a -> 'b) -> 'a t -> 'b t
+    val map_lident : string t -> Longident.t t
+    val lident : (string -> Longident.t t) with_loc
+  end
+type 'a without_location = 'a
+type 'a with_location = loc:Location.t -> 'a
+module type S  =
+  sig
+    module Located : Located with type 'a with_loc :=  'a without_location
+    include
+      module type of
+        (Ast_builder_generated.Make)(struct let loc = Location.none end)
+    include Additional_helpers with type 'a with_loc :=  'a without_location
+  end
+[
+  structure_item (src/ast_builder_intf.ml[1,0+0]..src/ast_builder_intf.ml[1,0+12])
+    Tstr_open Override
+    module_expr (src/ast_builder_intf.ml[1,0+6]..src/ast_builder_intf.ml[1,0+12])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/ast_builder_intf.ml[3,14+0]..src/ast_builder_intf.ml[5,59+3])
+    Tstr_modtype "Loc/583"
+      module_type (src/ast_builder_intf.ml[3,14+18]..src/ast_builder_intf.ml[5,59+3])
+        Tmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[4,36+2]..src/ast_builder_intf.ml[4,36+22])
+            Tsig_value
+            value_description loc/582 (src/ast_builder_intf.ml[4,36+2]..src/ast_builder_intf.ml[4,36+22])
+              core_type (src/ast_builder_intf.ml[4,36+12]..src/ast_builder_intf.ml[4,36+22])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              []
+        ]
+  structure_item (src/ast_builder_intf.ml[7,64+0]..src/ast_builder_intf.ml[113,4712+3])
+    Tstr_modtype "Additional_helpers/1158"
+      module_type (src/ast_builder_intf.ml[7,64+33]..src/ast_builder_intf.ml[113,4712+3])
+        Tmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[8,101+2]..src/ast_builder_intf.ml[8,101+18])
+            Tsig_type Rec
+            [
+              type_declaration with_loc/584 (src/ast_builder_intf.ml[8,101+2]..src/ast_builder_intf.ml[8,101+18])
+                ptype_params =
+                  [
+                    core_type (src/ast_builder_intf.ml[8,101+7]..src/ast_builder_intf.ml[8,101+9])
+                      Ttyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/ast_builder_intf.ml[10,121+2]..src/ast_builder_intf.ml[10,121+41])
+            Tsig_value
+            value_description eint/585 (src/ast_builder_intf.ml[10,121+2]..src/ast_builder_intf.ml[10,121+41])
+              core_type (src/ast_builder_intf.ml[10,121+13]..src/ast_builder_intf.ml[10,121+41])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[10,121+14]..src/ast_builder_intf.ml[10,121+31])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[10,121+14]..src/ast_builder_intf.ml[10,121+17])
+                      Ttyp_constr "int/1!"
+                      []
+                    core_type (src/ast_builder_intf.ml[10,121+21]..src/ast_builder_intf.ml[10,121+31])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[11,163+2]..src/ast_builder_intf.ml[11,163+43])
+            Tsig_value
+            value_description echar/586 (src/ast_builder_intf.ml[11,163+2]..src/ast_builder_intf.ml[11,163+43])
+              core_type (src/ast_builder_intf.ml[11,163+14]..src/ast_builder_intf.ml[11,163+43])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[11,163+15]..src/ast_builder_intf.ml[11,163+33])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[11,163+15]..src/ast_builder_intf.ml[11,163+19])
+                      Ttyp_constr "char/2!"
+                      []
+                    core_type (src/ast_builder_intf.ml[11,163+23]..src/ast_builder_intf.ml[11,163+33])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[12,207+2]..src/ast_builder_intf.ml[12,207+47])
+            Tsig_value
+            value_description estring/587 (src/ast_builder_intf.ml[12,207+2]..src/ast_builder_intf.ml[12,207+47])
+              core_type (src/ast_builder_intf.ml[12,207+16]..src/ast_builder_intf.ml[12,207+47])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[12,207+17]..src/ast_builder_intf.ml[12,207+37])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[12,207+17]..src/ast_builder_intf.ml[12,207+23])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/ast_builder_intf.ml[12,207+27]..src/ast_builder_intf.ml[12,207+37])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[13,255+2]..src/ast_builder_intf.ml[13,255+46])
+            Tsig_value
+            value_description efloat/588 (src/ast_builder_intf.ml[13,255+2]..src/ast_builder_intf.ml[13,255+46])
+              core_type (src/ast_builder_intf.ml[13,255+15]..src/ast_builder_intf.ml[13,255+46])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[13,255+16]..src/ast_builder_intf.ml[13,255+36])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[13,255+16]..src/ast_builder_intf.ml[13,255+22])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/ast_builder_intf.ml[13,255+26]..src/ast_builder_intf.ml[13,255+36])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[14,302+2]..src/ast_builder_intf.ml[14,302+45])
+            Tsig_value
+            value_description eint32/589 (src/ast_builder_intf.ml[14,302+2]..src/ast_builder_intf.ml[14,302+45])
+              core_type (src/ast_builder_intf.ml[14,302+15]..src/ast_builder_intf.ml[14,302+45])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[14,302+16]..src/ast_builder_intf.ml[14,302+35])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[14,302+16]..src/ast_builder_intf.ml[14,302+21])
+                      Ttyp_constr "int32/14!"
+                      []
+                    core_type (src/ast_builder_intf.ml[14,302+25]..src/ast_builder_intf.ml[14,302+35])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[15,348+2]..src/ast_builder_intf.ml[15,348+45])
+            Tsig_value
+            value_description eint64/590 (src/ast_builder_intf.ml[15,348+2]..src/ast_builder_intf.ml[15,348+45])
+              core_type (src/ast_builder_intf.ml[15,348+15]..src/ast_builder_intf.ml[15,348+45])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[15,348+16]..src/ast_builder_intf.ml[15,348+35])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[15,348+16]..src/ast_builder_intf.ml[15,348+21])
+                      Ttyp_constr "int64/15!"
+                      []
+                    core_type (src/ast_builder_intf.ml[15,348+25]..src/ast_builder_intf.ml[15,348+35])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[16,394+2]..src/ast_builder_intf.ml[16,394+53])
+            Tsig_value
+            value_description enativeint/591 (src/ast_builder_intf.ml[16,394+2]..src/ast_builder_intf.ml[16,394+53])
+              core_type (src/ast_builder_intf.ml[16,394+19]..src/ast_builder_intf.ml[16,394+53])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[16,394+20]..src/ast_builder_intf.ml[16,394+43])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[16,394+20]..src/ast_builder_intf.ml[16,394+29])
+                      Ttyp_constr "nativeint/13!"
+                      []
+                    core_type (src/ast_builder_intf.ml[16,394+33]..src/ast_builder_intf.ml[16,394+43])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[17,448+2]..src/ast_builder_intf.ml[17,448+43])
+            Tsig_value
+            value_description ebool/592 (src/ast_builder_intf.ml[17,448+2]..src/ast_builder_intf.ml[17,448+43])
+              core_type (src/ast_builder_intf.ml[17,448+14]..src/ast_builder_intf.ml[17,448+43])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[17,448+15]..src/ast_builder_intf.ml[17,448+33])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[17,448+15]..src/ast_builder_intf.ml[17,448+19])
+                      Ttyp_constr "bool/5!"
+                      []
+                    core_type (src/ast_builder_intf.ml[17,448+23]..src/ast_builder_intf.ml[17,448+33])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[18,492+2]..src/ast_builder_intf.ml[18,492+38])
+            Tsig_value
+            value_description pint/593 (src/ast_builder_intf.ml[18,492+2]..src/ast_builder_intf.ml[18,492+38])
+              core_type (src/ast_builder_intf.ml[18,492+13]..src/ast_builder_intf.ml[18,492+38])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[18,492+14]..src/ast_builder_intf.ml[18,492+28])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[18,492+14]..src/ast_builder_intf.ml[18,492+17])
+                      Ttyp_constr "int/1!"
+                      []
+                    core_type (src/ast_builder_intf.ml[18,492+21]..src/ast_builder_intf.ml[18,492+28])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[19,531+2]..src/ast_builder_intf.ml[19,531+40])
+            Tsig_value
+            value_description pchar/594 (src/ast_builder_intf.ml[19,531+2]..src/ast_builder_intf.ml[19,531+40])
+              core_type (src/ast_builder_intf.ml[19,531+14]..src/ast_builder_intf.ml[19,531+40])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[19,531+15]..src/ast_builder_intf.ml[19,531+30])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[19,531+15]..src/ast_builder_intf.ml[19,531+19])
+                      Ttyp_constr "char/2!"
+                      []
+                    core_type (src/ast_builder_intf.ml[19,531+23]..src/ast_builder_intf.ml[19,531+30])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[20,572+2]..src/ast_builder_intf.ml[20,572+44])
+            Tsig_value
+            value_description pstring/595 (src/ast_builder_intf.ml[20,572+2]..src/ast_builder_intf.ml[20,572+44])
+              core_type (src/ast_builder_intf.ml[20,572+16]..src/ast_builder_intf.ml[20,572+44])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[20,572+17]..src/ast_builder_intf.ml[20,572+34])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[20,572+17]..src/ast_builder_intf.ml[20,572+23])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/ast_builder_intf.ml[20,572+27]..src/ast_builder_intf.ml[20,572+34])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[21,617+2]..src/ast_builder_intf.ml[21,617+43])
+            Tsig_value
+            value_description pfloat/596 (src/ast_builder_intf.ml[21,617+2]..src/ast_builder_intf.ml[21,617+43])
+              core_type (src/ast_builder_intf.ml[21,617+15]..src/ast_builder_intf.ml[21,617+43])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[21,617+16]..src/ast_builder_intf.ml[21,617+33])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[21,617+16]..src/ast_builder_intf.ml[21,617+22])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/ast_builder_intf.ml[21,617+26]..src/ast_builder_intf.ml[21,617+33])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[22,661+2]..src/ast_builder_intf.ml[22,661+42])
+            Tsig_value
+            value_description pint32/597 (src/ast_builder_intf.ml[22,661+2]..src/ast_builder_intf.ml[22,661+42])
+              core_type (src/ast_builder_intf.ml[22,661+15]..src/ast_builder_intf.ml[22,661+42])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[22,661+16]..src/ast_builder_intf.ml[22,661+32])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[22,661+16]..src/ast_builder_intf.ml[22,661+21])
+                      Ttyp_constr "int32/14!"
+                      []
+                    core_type (src/ast_builder_intf.ml[22,661+25]..src/ast_builder_intf.ml[22,661+32])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[23,704+2]..src/ast_builder_intf.ml[23,704+42])
+            Tsig_value
+            value_description pint64/598 (src/ast_builder_intf.ml[23,704+2]..src/ast_builder_intf.ml[23,704+42])
+              core_type (src/ast_builder_intf.ml[23,704+15]..src/ast_builder_intf.ml[23,704+42])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[23,704+16]..src/ast_builder_intf.ml[23,704+32])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[23,704+16]..src/ast_builder_intf.ml[23,704+21])
+                      Ttyp_constr "int64/15!"
+                      []
+                    core_type (src/ast_builder_intf.ml[23,704+25]..src/ast_builder_intf.ml[23,704+32])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[24,747+2]..src/ast_builder_intf.ml[24,747+50])
+            Tsig_value
+            value_description pnativeint/599 (src/ast_builder_intf.ml[24,747+2]..src/ast_builder_intf.ml[24,747+50])
+              core_type (src/ast_builder_intf.ml[24,747+19]..src/ast_builder_intf.ml[24,747+50])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[24,747+20]..src/ast_builder_intf.ml[24,747+40])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[24,747+20]..src/ast_builder_intf.ml[24,747+29])
+                      Ttyp_constr "nativeint/13!"
+                      []
+                    core_type (src/ast_builder_intf.ml[24,747+33]..src/ast_builder_intf.ml[24,747+40])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[25,798+2]..src/ast_builder_intf.ml[25,798+40])
+            Tsig_value
+            value_description pbool/600 (src/ast_builder_intf.ml[25,798+2]..src/ast_builder_intf.ml[25,798+40])
+              core_type (src/ast_builder_intf.ml[25,798+14]..src/ast_builder_intf.ml[25,798+40])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[25,798+15]..src/ast_builder_intf.ml[25,798+30])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[25,798+15]..src/ast_builder_intf.ml[25,798+19])
+                      Ttyp_constr "bool/5!"
+                      []
+                    core_type (src/ast_builder_intf.ml[25,798+23]..src/ast_builder_intf.ml[25,798+30])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[26,839+2]..src/ast_builder_intf.ml[26,839+33])
+            Tsig_value
+            value_description eunit/601 (src/ast_builder_intf.ml[26,839+2]..src/ast_builder_intf.ml[26,839+33])
+              core_type (src/ast_builder_intf.ml[26,839+14]..src/ast_builder_intf.ml[26,839+33])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[26,839+14]..src/ast_builder_intf.ml[26,839+24])
+                    Ttyp_constr "Ppxlib__!.Import.expression"
+                    []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[27,873+2]..src/ast_builder_intf.ml[27,873+30])
+            Tsig_value
+            value_description punit/602 (src/ast_builder_intf.ml[27,873+2]..src/ast_builder_intf.ml[27,873+30])
+              core_type (src/ast_builder_intf.ml[27,873+14]..src/ast_builder_intf.ml[27,873+30])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[27,873+14]..src/ast_builder_intf.ml[27,873+21])
+                    Ttyp_constr "Ppxlib__!.Import.pattern"
+                    []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[29,905+2]..src/ast_builder_intf.ml[29,905+44])
+            Tsig_value
+            value_description evar/603 (src/ast_builder_intf.ml[29,905+2]..src/ast_builder_intf.ml[29,905+44])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[30,950+2]..[32,1090+31])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[30,950+2]..[32,1090+31])
+                      Pexp_constant PConst_string(" [evar id] produces a [Pexp_ident _] expression, it parses its input so you\n      can pass any dot-separated identifier, for instance:\n      [evar ~loc \"Foo.bar\"]. ",(src/ast_builder_intf.ml[30,950+2]..[32,1090+31]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[29,905+13]..src/ast_builder_intf.ml[29,905+44])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[29,905+14]..src/ast_builder_intf.ml[29,905+34])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[29,905+14]..src/ast_builder_intf.ml[29,905+20])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/ast_builder_intf.ml[29,905+24]..src/ast_builder_intf.ml[29,905+34])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[34,1123+2]..src/ast_builder_intf.ml[34,1123+41])
+            Tsig_value
+            value_description pvar/604 (src/ast_builder_intf.ml[34,1123+2]..src/ast_builder_intf.ml[34,1123+41])
+              core_type (src/ast_builder_intf.ml[34,1123+13]..src/ast_builder_intf.ml[34,1123+41])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[34,1123+14]..src/ast_builder_intf.ml[34,1123+31])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[34,1123+14]..src/ast_builder_intf.ml[34,1123+20])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/ast_builder_intf.ml[34,1123+24]..src/ast_builder_intf.ml[34,1123+31])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[36,1166+2]..src/ast_builder_intf.ml[36,1166+69])
+            Tsig_value
+            value_description eapply/605 (src/ast_builder_intf.ml[36,1166+2]..src/ast_builder_intf.ml[36,1166+69])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[37,1236+2]..[37,1236+46])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[37,1236+2]..[37,1236+46])
+                      Pexp_constant PConst_string(" Same as pexp_apply but without labels ",(src/ast_builder_intf.ml[37,1236+2]..[37,1236+46]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[36,1166+15]..src/ast_builder_intf.ml[36,1166+69])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[36,1166+16]..src/ast_builder_intf.ml[36,1166+59])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[36,1166+16]..src/ast_builder_intf.ml[36,1166+26])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                    core_type (src/ast_builder_intf.ml[36,1166+30]..src/ast_builder_intf.ml[36,1166+59])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder_intf.ml[36,1166+30]..src/ast_builder_intf.ml[36,1166+45])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/ast_builder_intf.ml[36,1166+30]..src/ast_builder_intf.ml[36,1166+40])
+                            Ttyp_constr "Ppxlib__!.Import.expression"
+                            []
+                        ]
+                      core_type (src/ast_builder_intf.ml[36,1166+49]..src/ast_builder_intf.ml[36,1166+59])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[39,1284+2]..src/ast_builder_intf.ml[39,1284+69])
+            Tsig_value
+            value_description eabstract/606 (src/ast_builder_intf.ml[39,1284+2]..src/ast_builder_intf.ml[39,1284+69])
+              core_type (src/ast_builder_intf.ml[39,1284+18]..src/ast_builder_intf.ml[39,1284+69])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[39,1284+19]..src/ast_builder_intf.ml[39,1284+59])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[39,1284+19]..src/ast_builder_intf.ml[39,1284+31])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[39,1284+19]..src/ast_builder_intf.ml[39,1284+26])
+                          Ttyp_constr "Ppxlib__!.Import.pattern"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[39,1284+35]..src/ast_builder_intf.ml[39,1284+59])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/ast_builder_intf.ml[39,1284+35]..src/ast_builder_intf.ml[39,1284+45])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                      core_type (src/ast_builder_intf.ml[39,1284+49]..src/ast_builder_intf.ml[39,1284+59])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[40,1354+2]..src/ast_builder_intf.ml[40,1354+58])
+            Tsig_value
+            value_description esequence/607 (src/ast_builder_intf.ml[40,1354+2]..src/ast_builder_intf.ml[40,1354+58])
+              core_type (src/ast_builder_intf.ml[40,1354+18]..src/ast_builder_intf.ml[40,1354+58])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[40,1354+19]..src/ast_builder_intf.ml[40,1354+48])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[40,1354+19]..src/ast_builder_intf.ml[40,1354+34])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[40,1354+19]..src/ast_builder_intf.ml[40,1354+29])
+                          Ttyp_constr "Ppxlib__!.Import.expression"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[40,1354+38]..src/ast_builder_intf.ml[40,1354+48])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[41,1413+2]..src/ast_builder_intf.ml[41,1413+64])
+            Tsig_value
+            value_description ppat_tuple_opt/608 (src/ast_builder_intf.ml[41,1413+2]..src/ast_builder_intf.ml[41,1413+64])
+              core_type (src/ast_builder_intf.ml[41,1413+23]..src/ast_builder_intf.ml[41,1413+64])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[41,1413+24]..src/ast_builder_intf.ml[41,1413+54])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[41,1413+24]..src/ast_builder_intf.ml[41,1413+36])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[41,1413+24]..src/ast_builder_intf.ml[41,1413+31])
+                          Ttyp_constr "Ppxlib__!.Import.pattern"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[41,1413+40]..src/ast_builder_intf.ml[41,1413+54])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/ast_builder_intf.ml[41,1413+40]..src/ast_builder_intf.ml[41,1413+47])
+                          Ttyp_constr "Ppxlib__!.Import.pattern"
+                          []
+                      ]
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[42,1478+2]..src/ast_builder_intf.ml[42,1478+70])
+            Tsig_value
+            value_description pexp_tuple_opt/609 (src/ast_builder_intf.ml[42,1478+2]..src/ast_builder_intf.ml[42,1478+70])
+              core_type (src/ast_builder_intf.ml[42,1478+23]..src/ast_builder_intf.ml[42,1478+70])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[42,1478+24]..src/ast_builder_intf.ml[42,1478+60])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[42,1478+24]..src/ast_builder_intf.ml[42,1478+39])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[42,1478+24]..src/ast_builder_intf.ml[42,1478+34])
+                          Ttyp_constr "Ppxlib__!.Import.expression"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[42,1478+43]..src/ast_builder_intf.ml[42,1478+60])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/ast_builder_intf.ml[42,1478+43]..src/ast_builder_intf.ml[42,1478+53])
+                          Ttyp_constr "Ppxlib__!.Import.expression"
+                          []
+                      ]
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[43,1549+2]..src/ast_builder_intf.ml[43,1549+71])
+            Tsig_value
+            value_description pconstruct/610 (src/ast_builder_intf.ml[43,1549+2]..src/ast_builder_intf.ml[43,1549+71])
+              core_type (src/ast_builder_intf.ml[43,1549+19]..src/ast_builder_intf.ml[43,1549+71])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[43,1549+19]..src/ast_builder_intf.ml[43,1549+42])
+                  Ttyp_constr "Ppxlib__!.Import.constructor_declaration"
+                  []
+                core_type (src/ast_builder_intf.ml[43,1549+46]..src/ast_builder_intf.ml[43,1549+71])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[43,1549+46]..src/ast_builder_intf.ml[43,1549+60])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/ast_builder_intf.ml[43,1549+46]..src/ast_builder_intf.ml[43,1549+53])
+                        Ttyp_constr "Ppxlib__!.Import.pattern"
+                        []
+                    ]
+                  core_type (src/ast_builder_intf.ml[43,1549+64]..src/ast_builder_intf.ml[43,1549+71])
+                    Ttyp_constr "Ppxlib__!.Import.pattern"
+                    []
+              []
+          signature_item (src/ast_builder_intf.ml[44,1621+2]..src/ast_builder_intf.ml[44,1621+77])
+            Tsig_value
+            value_description econstruct/611 (src/ast_builder_intf.ml[44,1621+2]..src/ast_builder_intf.ml[44,1621+77])
+              core_type (src/ast_builder_intf.ml[44,1621+19]..src/ast_builder_intf.ml[44,1621+77])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[44,1621+19]..src/ast_builder_intf.ml[44,1621+42])
+                  Ttyp_constr "Ppxlib__!.Import.constructor_declaration"
+                  []
+                core_type (src/ast_builder_intf.ml[44,1621+46]..src/ast_builder_intf.ml[44,1621+77])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[44,1621+46]..src/ast_builder_intf.ml[44,1621+63])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/ast_builder_intf.ml[44,1621+46]..src/ast_builder_intf.ml[44,1621+56])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                    ]
+                  core_type (src/ast_builder_intf.ml[44,1621+67]..src/ast_builder_intf.ml[44,1621+77])
+                    Ttyp_constr "Ppxlib__!.Import.expression"
+                    []
+              []
+          signature_item (src/ast_builder_intf.ml[45,1699+2]..src/ast_builder_intf.ml[45,1699+54])
+            Tsig_value
+            value_description elist/612 (src/ast_builder_intf.ml[45,1699+2]..src/ast_builder_intf.ml[45,1699+54])
+              core_type (src/ast_builder_intf.ml[45,1699+14]..src/ast_builder_intf.ml[45,1699+54])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[45,1699+15]..src/ast_builder_intf.ml[45,1699+44])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[45,1699+15]..src/ast_builder_intf.ml[45,1699+30])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[45,1699+15]..src/ast_builder_intf.ml[45,1699+25])
+                          Ttyp_constr "Ppxlib__!.Import.expression"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[45,1699+34]..src/ast_builder_intf.ml[45,1699+44])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[46,1754+2]..src/ast_builder_intf.ml[46,1754+48])
+            Tsig_value
+            value_description plist/613 (src/ast_builder_intf.ml[46,1754+2]..src/ast_builder_intf.ml[46,1754+48])
+              core_type (src/ast_builder_intf.ml[46,1754+14]..src/ast_builder_intf.ml[46,1754+48])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[46,1754+15]..src/ast_builder_intf.ml[46,1754+38])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[46,1754+15]..src/ast_builder_intf.ml[46,1754+27])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[46,1754+15]..src/ast_builder_intf.ml[46,1754+22])
+                          Ttyp_constr "Ppxlib__!.Import.pattern"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[46,1754+31]..src/ast_builder_intf.ml[46,1754+38])
+                      Ttyp_constr "Ppxlib__!.Import.pattern"
+                      []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[48,1804+2]..src/ast_builder_intf.ml[52,1901+23])
+            Tsig_value
+            value_description pstr_value_list/1047 (src/ast_builder_intf.ml[48,1804+2]..src/ast_builder_intf.ml[52,1901+23])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[53,1925+2]..[54,2006+26])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[53,1925+2]..[54,2006+26])
+                      Pexp_constant PConst_string(" [pstr_value_list ~loc rf vbs] = [pstr_value ~loc rf vbs] if [vbs <> \\[\\]],\n      [\\[\\]] otherwise. ",(src/ast_builder_intf.ml[53,1925+2]..[54,2006+26]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[49,1828+4]..src/ast_builder_intf.ml[52,1901+23])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/ast_builder_intf.ml[49,1828+8]..src/ast_builder_intf.ml[49,1828+18])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/ast_builder_intf.ml[50,1850+4]..src/ast_builder_intf.ml[52,1901+23])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[50,1850+4]..src/ast_builder_intf.ml[50,1850+21])
+                    Ttyp_constr "Ppxlib__!.Import.Asttypes.rec_flag"
+                    []
+                  core_type (src/ast_builder_intf.ml[51,1875+4]..src/ast_builder_intf.ml[52,1901+23])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[51,1875+4]..src/ast_builder_intf.ml[51,1875+22])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[51,1875+4]..src/ast_builder_intf.ml[51,1875+17])
+                          Ttyp_constr "Ppxlib__!.Import.value_binding"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[52,1901+4]..src/ast_builder_intf.ml[52,1901+23])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/ast_builder_intf.ml[52,1901+4]..src/ast_builder_intf.ml[52,1901+18])
+                          Ttyp_constr "Ppxlib__!.Import.structure_item"
+                          []
+                      ]
+              []
+          signature_item (src/ast_builder_intf.ml[56,2034+2]..src/ast_builder_intf.ml[66,2344+72])
+            Tsig_value
+            value_description nonrec_type_declaration/1054 (src/ast_builder_intf.ml[56,2034+2]..src/ast_builder_intf.ml[66,2344+72])
+              attribute "deprecated"
+                [
+                  structure_item (src/ast_builder_intf.ml[66,2344+6]..[66,2344+71])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[66,2344+6]..[66,2344+71])
+                      Pexp_constant PConst_string("[since 2016-10] use Nonrecursive on the P(str|sig)_type instead",(src/ast_builder_intf.ml[66,2344+7]..[66,2344+70]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[57,2066+4]..src/ast_builder_intf.ml[64,2313+12])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[57,2066+5]..src/ast_builder_intf.ml[63,2291+20])
+                    Ttyp_arrow
+                    Labelled "name"
+                    core_type (src/ast_builder_intf.ml[57,2066+10]..src/ast_builder_intf.ml[57,2066+22])
+                      Ttyp_constr "Ppxlib__!.Loc.t"
+                      [
+                        core_type (src/ast_builder_intf.ml[57,2066+10]..src/ast_builder_intf.ml[57,2066+16])
+                          Ttyp_constr "string/17!"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[58,2092+4]..src/ast_builder_intf.ml[63,2291+20])
+                      Ttyp_arrow
+                      Labelled "params"
+                      core_type (src/ast_builder_intf.ml[58,2092+11]..src/ast_builder_intf.ml[58,2092+47])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/ast_builder_intf.ml[58,2092+12]..src/ast_builder_intf.ml[58,2092+41])
+                            Ttyp_tuple
+                            [
+                              core_type (src/ast_builder_intf.ml[58,2092+12]..src/ast_builder_intf.ml[58,2092+21])
+                                Ttyp_constr "Ppxlib__!.Import.core_type"
+                                []
+                              core_type (src/ast_builder_intf.ml[58,2092+24]..src/ast_builder_intf.ml[58,2092+41])
+                                Ttyp_constr "Ppxlib__!.Import.Asttypes.variance"
+                                []
+                            ]
+                        ]
+                      core_type (src/ast_builder_intf.ml[59,2143+4]..src/ast_builder_intf.ml[63,2291+20])
+                        Ttyp_arrow
+                        Labelled "cstrs"
+                        core_type (src/ast_builder_intf.ml[59,2143+10]..src/ast_builder_intf.ml[59,2143+51])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/ast_builder_intf.ml[59,2143+11]..src/ast_builder_intf.ml[59,2143+45])
+                              Ttyp_tuple
+                              [
+                                core_type (src/ast_builder_intf.ml[59,2143+11]..src/ast_builder_intf.ml[59,2143+20])
+                                  Ttyp_constr "Ppxlib__!.Import.core_type"
+                                  []
+                                core_type (src/ast_builder_intf.ml[59,2143+23]..src/ast_builder_intf.ml[59,2143+32])
+                                  Ttyp_constr "Ppxlib__!.Import.core_type"
+                                  []
+                                core_type (src/ast_builder_intf.ml[59,2143+35]..src/ast_builder_intf.ml[59,2143+45])
+                                  Ttyp_constr "Ppxlib__!.Location.t"
+                                  []
+                              ]
+                          ]
+                        core_type (src/ast_builder_intf.ml[60,2198+4]..src/ast_builder_intf.ml[63,2291+20])
+                          Ttyp_arrow
+                          Labelled "kind"
+                          core_type (src/ast_builder_intf.ml[60,2198+9]..src/ast_builder_intf.ml[60,2198+18])
+                            Ttyp_constr "Ppxlib__!.Import.type_kind"
+                            []
+                          core_type (src/ast_builder_intf.ml[61,2220+4]..src/ast_builder_intf.ml[63,2291+20])
+                            Ttyp_arrow
+                            Labelled "private_"
+                            core_type (src/ast_builder_intf.ml[61,2220+13]..src/ast_builder_intf.ml[61,2220+34])
+                              Ttyp_constr "Ppxlib__!.Import.Asttypes.private_flag"
+                              []
+                            core_type (src/ast_builder_intf.ml[62,2258+4]..src/ast_builder_intf.ml[63,2291+20])
+                              Ttyp_arrow
+                              Labelled "manifest"
+                              core_type (src/ast_builder_intf.ml[62,2258+13]..src/ast_builder_intf.ml[62,2258+29])
+                                Ttyp_constr "option/12!"
+                                [
+                                  core_type (src/ast_builder_intf.ml[62,2258+13]..src/ast_builder_intf.ml[62,2258+22])
+                                    Ttyp_constr "Ppxlib__!.Import.core_type"
+                                    []
+                                ]
+                              core_type (src/ast_builder_intf.ml[63,2291+4]..src/ast_builder_intf.ml[63,2291+20])
+                                Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                                []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[68,2418+2]..src/ast_builder_intf.ml[69,2453+70])
+            Tsig_value
+            value_description unapplied_type_constr_conv/1153 (src/ast_builder_intf.ml[68,2418+2]..src/ast_builder_intf.ml[69,2453+70])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[70,2524+2]..[81,3148+26])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[70,2524+2]..[81,3148+26])
+                      Pexp_constant PConst_string(" [unapplied_type_constr_conv] is the standard way to map identifiers to\n      conversion fonctions, for preprocessor that creates values that follow the\n      structure of types. More precisely,\n      [path_conv path (sprintf \"sexp_of_%s\")] is:\n\n      - sexp_of_t if path is \"t\"\n      - A.B.sexp_of_foo if path is \"A.B.foo\"\n      - A.B.sexp_of_f__foo (module A1) (module A2) if path is\n        \"A.B.F(A1)(A2).foo\" [type_constr_conv] also applies it to a list of\n        expression, which both prevents the compiler from allocating useless\n        closures, and almost always what is needed, since type constructors are\n        always applied. ",(src/ast_builder_intf.ml[70,2524+2]..[81,3148+26]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[69,2453+4]..src/ast_builder_intf.ml[69,2453+70])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[69,2453+5]..src/ast_builder_intf.ml[69,2453+60])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[69,2453+5]..src/ast_builder_intf.ml[69,2453+22])
+                      Ttyp_constr "Ppxlib__!.Loc.t"
+                      [
+                        core_type (src/ast_builder_intf.ml[69,2453+5]..src/ast_builder_intf.ml[69,2453+16])
+                          Ttyp_constr "Ppxlib__!.Longident.t"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[69,2453+26]..src/ast_builder_intf.ml[69,2453+60])
+                      Ttyp_arrow
+                      Labelled "f"
+                      core_type (src/ast_builder_intf.ml[69,2453+29]..src/ast_builder_intf.ml[69,2453+45])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder_intf.ml[69,2453+29]..src/ast_builder_intf.ml[69,2453+35])
+                          Ttyp_constr "string/17!"
+                          []
+                        core_type (src/ast_builder_intf.ml[69,2453+39]..src/ast_builder_intf.ml[69,2453+45])
+                          Ttyp_constr "string/17!"
+                          []
+                      core_type (src/ast_builder_intf.ml[69,2453+50]..src/ast_builder_intf.ml[69,2453+60])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[83,3176+2]..src/ast_builder_intf.ml[85,3282+12])
+            Tsig_value
+            value_description type_constr_conv/1154 (src/ast_builder_intf.ml[83,3176+2]..src/ast_builder_intf.ml[85,3282+12])
+              core_type (src/ast_builder_intf.ml[84,3201+4]..src/ast_builder_intf.ml[85,3282+12])
+                Ttyp_constr "with_loc/584"
+                [
+                  core_type (src/ast_builder_intf.ml[84,3201+5]..src/ast_builder_intf.ml[84,3201+79])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[84,3201+5]..src/ast_builder_intf.ml[84,3201+22])
+                      Ttyp_constr "Ppxlib__!.Loc.t"
+                      [
+                        core_type (src/ast_builder_intf.ml[84,3201+5]..src/ast_builder_intf.ml[84,3201+16])
+                          Ttyp_constr "Ppxlib__!.Longident.t"
+                          []
+                      ]
+                    core_type (src/ast_builder_intf.ml[84,3201+26]..src/ast_builder_intf.ml[84,3201+79])
+                      Ttyp_arrow
+                      Labelled "f"
+                      core_type (src/ast_builder_intf.ml[84,3201+29]..src/ast_builder_intf.ml[84,3201+45])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder_intf.ml[84,3201+29]..src/ast_builder_intf.ml[84,3201+35])
+                          Ttyp_constr "string/17!"
+                          []
+                        core_type (src/ast_builder_intf.ml[84,3201+39]..src/ast_builder_intf.ml[84,3201+45])
+                          Ttyp_constr "string/17!"
+                          []
+                      core_type (src/ast_builder_intf.ml[84,3201+50]..src/ast_builder_intf.ml[84,3201+79])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/ast_builder_intf.ml[84,3201+50]..src/ast_builder_intf.ml[84,3201+65])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/ast_builder_intf.ml[84,3201+50]..src/ast_builder_intf.ml[84,3201+60])
+                              Ttyp_constr "Ppxlib__!.Import.expression"
+                              []
+                          ]
+                        core_type (src/ast_builder_intf.ml[84,3201+69]..src/ast_builder_intf.ml[84,3201+79])
+                          Ttyp_constr "Ppxlib__!.Import.expression"
+                          []
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[87,3296+2]..src/ast_builder_intf.ml[87,3296+50])
+            Tsig_value
+            value_description eta_reduce/1155 (src/ast_builder_intf.ml[87,3296+2]..src/ast_builder_intf.ml[87,3296+50])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/ast_builder_intf.ml[88,3347+2]..[107,4515+46])
+                    Pstr_eval
+                    expression (src/ast_builder_intf.ml[88,3347+2]..[107,4515+46])
+                      Pexp_constant PConst_string(" Tries to simplify [fun v1 v2 .. -> f v1 v2 ..] into [f]. Only works when\n      [f] is a path, not an arbitrary expression as that would change the\n      meaning of the code. This can be used either for cleaning up the generated\n      code, or to reduce allocation if [f] is a local variable (the compiler\n      won't optimize the allocation of the closure).\n\n      Eta-reduction can change the types/behavior in some corner cases that are\n      unlikely to show up in generated code:\n\n      - if [f] has optional arguments, eta-expanding [f] can drop them\n      - because labels commute, it can change the type of an expression: $ let f\n        ~x y = x + y let f2 = fun x -> add x;; val f : x:int -> int -> int =\n        <fun> val f2 : int -> x:int -> int = <fun> In fact, if [f] does side\n        effects before receiving all its arguments, and if the eta-expansion is\n        partially applied, eta-reducing could change behavior.\n\n      [eta_reduce_if_possible_and_nonrec] is meant for the case where the\n      resulting expression is going to be bound in a potentially recursive\n      let-binding, where we have to keep the eta-expansion when [rec_flag] is\n      [Recursive] to avoid a compile error. ",(src/ast_builder_intf.ml[88,3347+2]..[107,4515+46]),None)
+                ]
+              core_type (src/ast_builder_intf.ml[87,3296+19]..src/ast_builder_intf.ml[87,3296+50])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[87,3296+19]..src/ast_builder_intf.ml[87,3296+29])
+                  Ttyp_constr "Ppxlib__!.Import.expression"
+                  []
+                core_type (src/ast_builder_intf.ml[87,3296+33]..src/ast_builder_intf.ml[87,3296+50])
+                  Ttyp_constr "option/12!"
+                  [
+                    core_type (src/ast_builder_intf.ml[87,3296+33]..src/ast_builder_intf.ml[87,3296+43])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                  ]
+              []
+          signature_item (src/ast_builder_intf.ml[109,4563+2]..src/ast_builder_intf.ml[109,4563+55])
+            Tsig_value
+            value_description eta_reduce_if_possible/1156 (src/ast_builder_intf.ml[109,4563+2]..src/ast_builder_intf.ml[109,4563+55])
+              core_type (src/ast_builder_intf.ml[109,4563+31]..src/ast_builder_intf.ml[109,4563+55])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[109,4563+31]..src/ast_builder_intf.ml[109,4563+41])
+                  Ttyp_constr "Ppxlib__!.Import.expression"
+                  []
+                core_type (src/ast_builder_intf.ml[109,4563+45]..src/ast_builder_intf.ml[109,4563+55])
+                  Ttyp_constr "Ppxlib__!.Import.expression"
+                  []
+              []
+          signature_item (src/ast_builder_intf.ml[111,4620+2]..src/ast_builder_intf.ml[112,4662+49])
+            Tsig_value
+            value_description eta_reduce_if_possible_and_nonrec/1157 (src/ast_builder_intf.ml[111,4620+2]..src/ast_builder_intf.ml[112,4662+49])
+              core_type (src/ast_builder_intf.ml[112,4662+4]..src/ast_builder_intf.ml[112,4662+49])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[112,4662+4]..src/ast_builder_intf.ml[112,4662+14])
+                  Ttyp_constr "Ppxlib__!.Import.expression"
+                  []
+                core_type (src/ast_builder_intf.ml[112,4662+18]..src/ast_builder_intf.ml[112,4662+49])
+                  Ttyp_arrow
+                  Labelled "rec_flag"
+                  core_type (src/ast_builder_intf.ml[112,4662+27]..src/ast_builder_intf.ml[112,4662+35])
+                    Ttyp_constr "Ppxlib__!.Import.rec_flag"
+                    []
+                  core_type (src/ast_builder_intf.ml[112,4662+39]..src/ast_builder_intf.ml[112,4662+49])
+                    Ttyp_constr "Ppxlib__!.Import.expression"
+                    []
+              []
+        ]
+  structure_item (src/ast_builder_intf.ml[115,4717+0]..src/ast_builder_intf.ml[124,4983+3])
+    Tstr_modtype "Located/1288"
+      module_type (src/ast_builder_intf.ml[115,4717+22]..src/ast_builder_intf.ml[124,4983+3])
+        Tmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[116,4743+2]..src/ast_builder_intf.ml[116,4743+18])
+            Tsig_type Rec
+            [
+              type_declaration with_loc/1159 (src/ast_builder_intf.ml[116,4743+2]..src/ast_builder_intf.ml[116,4743+18])
+                ptype_params =
+                  [
+                    core_type (src/ast_builder_intf.ml[116,4743+7]..src/ast_builder_intf.ml[116,4743+9])
+                      Ttyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/ast_builder_intf.ml[117,4762+2]..src/ast_builder_intf.ml[117,4762+22])
+            Tsig_type Rec
+            [
+              type_declaration t/1160 (src/ast_builder_intf.ml[117,4762+2]..src/ast_builder_intf.ml[117,4762+22])
+                ptype_params =
+                  [
+                    core_type (src/ast_builder_intf.ml[117,4762+7]..src/ast_builder_intf.ml[117,4762+9])
+                      Ttyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (src/ast_builder_intf.ml[117,4762+14]..src/ast_builder_intf.ml[117,4762+22])
+                      Ttyp_constr "Ppxlib__!.Loc.t"
+                      [
+                        core_type (src/ast_builder_intf.ml[117,4762+14]..src/ast_builder_intf.ml[117,4762+16])
+                          Ttyp_var a
+                      ]
+            ]
+          signature_item (src/ast_builder_intf.ml[119,4786+2]..src/ast_builder_intf.ml[119,4786+29])
+            Tsig_value
+            value_description loc/1283 (src/ast_builder_intf.ml[119,4786+2]..src/ast_builder_intf.ml[119,4786+29])
+              core_type (src/ast_builder_intf.ml[119,4786+12]..src/ast_builder_intf.ml[119,4786+29])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[119,4786+12]..src/ast_builder_intf.ml[119,4786+15])
+                  Ttyp_constr "t/1160"
+                  [
+                    core_type (src/ast_builder_intf.ml[119,4786+12]..src/ast_builder_intf.ml[119,4786+13])
+                      Ttyp_any
+                  ]
+                core_type (src/ast_builder_intf.ml[119,4786+19]..src/ast_builder_intf.ml[119,4786+29])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+              []
+          signature_item (src/ast_builder_intf.ml[120,4816+2]..src/ast_builder_intf.ml[120,4816+32])
+            Tsig_value
+            value_description mk/1284 (src/ast_builder_intf.ml[120,4816+2]..src/ast_builder_intf.ml[120,4816+32])
+              core_type (src/ast_builder_intf.ml[120,4816+11]..src/ast_builder_intf.ml[120,4816+32])
+                Ttyp_constr "with_loc/1159"
+                [
+                  core_type (src/ast_builder_intf.ml[120,4816+12]..src/ast_builder_intf.ml[120,4816+22])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[120,4816+12]..src/ast_builder_intf.ml[120,4816+14])
+                      Ttyp_var a
+                    core_type (src/ast_builder_intf.ml[120,4816+18]..src/ast_builder_intf.ml[120,4816+22])
+                      Ttyp_constr "t/1160"
+                      [
+                        core_type (src/ast_builder_intf.ml[120,4816+18]..src/ast_builder_intf.ml[120,4816+20])
+                          Ttyp_var a
+                      ]
+                ]
+              []
+          signature_item (src/ast_builder_intf.ml[121,4849+2]..src/ast_builder_intf.ml[121,4849+38])
+            Tsig_value
+            value_description map/1285 (src/ast_builder_intf.ml[121,4849+2]..src/ast_builder_intf.ml[121,4849+38])
+              core_type (src/ast_builder_intf.ml[121,4849+12]..src/ast_builder_intf.ml[121,4849+38])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[121,4849+13]..src/ast_builder_intf.ml[121,4849+21])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[121,4849+13]..src/ast_builder_intf.ml[121,4849+15])
+                    Ttyp_var a
+                  core_type (src/ast_builder_intf.ml[121,4849+19]..src/ast_builder_intf.ml[121,4849+21])
+                    Ttyp_var b
+                core_type (src/ast_builder_intf.ml[121,4849+26]..src/ast_builder_intf.ml[121,4849+38])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/ast_builder_intf.ml[121,4849+26]..src/ast_builder_intf.ml[121,4849+30])
+                    Ttyp_constr "t/1160"
+                    [
+                      core_type (src/ast_builder_intf.ml[121,4849+26]..src/ast_builder_intf.ml[121,4849+28])
+                        Ttyp_var a
+                    ]
+                  core_type (src/ast_builder_intf.ml[121,4849+34]..src/ast_builder_intf.ml[121,4849+38])
+                    Ttyp_constr "t/1160"
+                    [
+                      core_type (src/ast_builder_intf.ml[121,4849+34]..src/ast_builder_intf.ml[121,4849+36])
+                        Ttyp_var b
+                    ]
+              []
+          signature_item (src/ast_builder_intf.ml[122,4888+2]..src/ast_builder_intf.ml[122,4888+44])
+            Tsig_value
+            value_description map_lident/1286 (src/ast_builder_intf.ml[122,4888+2]..src/ast_builder_intf.ml[122,4888+44])
+              core_type (src/ast_builder_intf.ml[122,4888+19]..src/ast_builder_intf.ml[122,4888+44])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/ast_builder_intf.ml[122,4888+19]..src/ast_builder_intf.ml[122,4888+27])
+                  Ttyp_constr "t/1160"
+                  [
+                    core_type (src/ast_builder_intf.ml[122,4888+19]..src/ast_builder_intf.ml[122,4888+25])
+                      Ttyp_constr "string/17!"
+                      []
+                  ]
+                core_type (src/ast_builder_intf.ml[122,4888+31]..src/ast_builder_intf.ml[122,4888+44])
+                  Ttyp_constr "t/1160"
+                  [
+                    core_type (src/ast_builder_intf.ml[122,4888+31]..src/ast_builder_intf.ml[122,4888+42])
+                      Ttyp_constr "Ppxlib__!.Longident.t"
+                      []
+                  ]
+              []
+          signature_item (src/ast_builder_intf.ml[123,4933+2]..src/ast_builder_intf.ml[123,4933+49])
+            Tsig_value
+            value_description lident/1287 (src/ast_builder_intf.ml[123,4933+2]..src/ast_builder_intf.ml[123,4933+49])
+              core_type (src/ast_builder_intf.ml[123,4933+15]..src/ast_builder_intf.ml[123,4933+49])
+                Ttyp_constr "with_loc/1159"
+                [
+                  core_type (src/ast_builder_intf.ml[123,4933+16]..src/ast_builder_intf.ml[123,4933+39])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_builder_intf.ml[123,4933+16]..src/ast_builder_intf.ml[123,4933+22])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/ast_builder_intf.ml[123,4933+26]..src/ast_builder_intf.ml[123,4933+39])
+                      Ttyp_constr "t/1160"
+                      [
+                        core_type (src/ast_builder_intf.ml[123,4933+26]..src/ast_builder_intf.ml[123,4933+37])
+                          Ttyp_constr "Ppxlib__!.Longident.t"
+                          []
+                      ]
+                ]
+              []
+        ]
+  structure_item (src/ast_builder_intf.ml[126,4988+0]..src/ast_builder_intf.ml[126,4988+29])
+    Tstr_type Rec
+    [
+      type_declaration without_location/1289 (src/ast_builder_intf.ml[126,4988+0]..src/ast_builder_intf.ml[126,4988+29])
+        ptype_params =
+          [
+            core_type (src/ast_builder_intf.ml[126,4988+5]..src/ast_builder_intf.ml[126,4988+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/ast_builder_intf.ml[126,4988+27]..src/ast_builder_intf.ml[126,4988+29])
+              Ttyp_var a
+    ]
+  structure_item (src/ast_builder_intf.ml[127,5018+0]..src/ast_builder_intf.ml[127,5018+44])
+    Tstr_type Rec
+    [
+      type_declaration with_location/1290 (src/ast_builder_intf.ml[127,5018+0]..src/ast_builder_intf.ml[127,5018+44])
+        ptype_params =
+          [
+            core_type (src/ast_builder_intf.ml[127,5018+5]..src/ast_builder_intf.ml[127,5018+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/ast_builder_intf.ml[127,5018+24]..src/ast_builder_intf.ml[127,5018+44])
+              Ttyp_arrow
+              Labelled "loc"
+              core_type (src/ast_builder_intf.ml[127,5018+28]..src/ast_builder_intf.ml[127,5018+38])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/ast_builder_intf.ml[127,5018+42]..src/ast_builder_intf.ml[127,5018+44])
+                Ttyp_var a
+    ]
+  structure_item (src/ast_builder_intf.ml[129,5064+0]..src/ast_builder_intf.ml[137,5327+3])
+    Tstr_modtype "S/2577"
+      module_type (src/ast_builder_intf.ml[129,5064+16]..src/ast_builder_intf.ml[137,5327+3])
+        Tmty_signature
+        [
+          signature_item (src/ast_builder_intf.ml[130,5084+2]..src/ast_builder_intf.ml[130,5084+71])
+            Tsig_module "Located/1303"
+            module_type (src/ast_builder_intf.ml[130,5084+19]..src/ast_builder_intf.ml[130,5084+71])
+              Tmty_with
+              module_type (src/ast_builder_intf.ml[130,5084+19]..src/ast_builder_intf.ml[130,5084+26])
+                Tmty_ident "Located/1288"
+              [
+                "with_loc/1159"
+                  Twith_typesubst
+                    type_declaration with_loc/1159 (src/ast_builder_intf.ml[130,5084+32]..src/ast_builder_intf.ml[130,5084+71])
+                      ptype_params =
+                        [
+                          core_type (src/ast_builder_intf.ml[130,5084+37]..src/ast_builder_intf.ml[130,5084+39])
+                            Ttyp_var a
+                        ]
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        Some
+                          core_type (src/ast_builder_intf.ml[130,5084+52]..src/ast_builder_intf.ml[130,5084+71])
+                            Ttyp_constr "without_location/1289"
+                            [
+                              core_type (src/ast_builder_intf.ml[130,5084+52]..src/ast_builder_intf.ml[130,5084+54])
+                                Ttyp_var a
+                            ]
+              ]
+          signature_item (src/ast_builder_intf.ml[132,5157+2]..src/ast_builder_intf.ml[134,5245+6])
+            Tsig_include
+            module_type (src/ast_builder_intf.ml[132,5157+10]..src/ast_builder_intf.ml[134,5245+6])
+              Tmty_typeof
+              module_expr (src/ast_builder_intf.ml[132,5157+25]..src/ast_builder_intf.ml[134,5245+6])
+                Tmod_apply
+                module_expr (src/ast_builder_intf.ml[132,5157+25]..src/ast_builder_intf.ml[132,5157+51])
+                  module_expr (src/ast_builder_intf.ml[132,5157+25]..src/ast_builder_intf.ml[132,5157+51])
+                    Tmod_ident "Ppxlib__!.Ast_builder_generated.Make"
+                module_expr (src/ast_builder_intf.ml[132,5157+53]..src/ast_builder_intf.ml[134,5245+5])
+                  Tmod_structure
+                  [
+                    structure_item (src/ast_builder_intf.ml[133,5217+4]..src/ast_builder_intf.ml[133,5217+27])
+                      Tstr_value Nonrec
+                      [
+                        <def>
+                          pattern (src/ast_builder_intf.ml[133,5217+8]..src/ast_builder_intf.ml[133,5217+11])
+                            Tpat_var "loc/1304"
+                          expression (src/ast_builder_intf.ml[133,5217+14]..src/ast_builder_intf.ml[133,5217+27])
+                            Texp_ident "Ppxlib__!.Location.none"
+                      ]
+                  ]
+          signature_item (src/ast_builder_intf.ml[136,5253+2]..src/ast_builder_intf.ml[136,5253+73])
+            Tsig_include
+            module_type (src/ast_builder_intf.ml[136,5253+10]..src/ast_builder_intf.ml[136,5253+73])
+              Tmty_with
+              module_type (src/ast_builder_intf.ml[136,5253+10]..src/ast_builder_intf.ml[136,5253+28])
+                Tmty_ident "Additional_helpers/1158"
+              [
+                "with_loc/584"
+                  Twith_typesubst
+                    type_declaration with_loc/584 (src/ast_builder_intf.ml[136,5253+34]..src/ast_builder_intf.ml[136,5253+73])
+                      ptype_params =
+                        [
+                          core_type (src/ast_builder_intf.ml[136,5253+39]..src/ast_builder_intf.ml[136,5253+41])
+                            Ttyp_var a
+                        ]
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        Some
+                          core_type (src/ast_builder_intf.ml[136,5253+54]..src/ast_builder_intf.ml[136,5253+73])
+                            Ttyp_constr "without_location/1289"
+                            [
+                              core_type (src/ast_builder_intf.ml[136,5253+54]..src/ast_builder_intf.ml[136,5253+56])
+                                Ttyp_var a
+                            ]
+              ]
+        ]
+]
+
+(setglobal Ppxlib__Ast_builder_intf!
+  (pseudo <unknown location> (makeblock 0)))
+(setglobal Ppxlib__Ast_builder_intf!
+  (pseudo <unknown location> (makeblock 0)))

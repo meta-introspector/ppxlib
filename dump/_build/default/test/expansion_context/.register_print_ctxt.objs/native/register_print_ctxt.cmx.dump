@@ -1,0 +1,1832 @@
+[
+  structure_item (test/expansion_context/register_print_ctxt.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/expansion_context/register_print_ctxt.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Stdppx" (test/expansion_context/register_print_ctxt.ml[1,0+5]..[1,0+11])
+  structure_item (test/expansion_context/register_print_ctxt.ml[2,12+0]..[2,12+11])
+    Pstr_open Fresh
+    module_expr (test/expansion_context/register_print_ctxt.ml[2,12+5]..[2,12+11])
+      Pmod_ident "Ppxlib" (test/expansion_context/register_print_ctxt.ml[2,12+5]..[2,12+11])
+  structure_item (test/expansion_context/register_print_ctxt.ml[4,25+0]..[11,334+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/register_print_ctxt.ml[4,25+4]..[4,25+15])
+          Ppat_var "pprint_ctxt" (test/expansion_context/register_print_ctxt.ml[4,25+4]..[4,25+15])
+        expression (test/expansion_context/register_print_ctxt.ml[4,25+16]..[11,334+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (test/expansion_context/register_print_ctxt.ml[4,25+16]..[4,25+20])
+            Ppat_var "ctxt" (test/expansion_context/register_print_ctxt.ml[4,25+16]..[4,25+20])
+          expression (test/expansion_context/register_print_ctxt.ml[5,48+2]..[11,334+24])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (test/expansion_context/register_print_ctxt.ml[5,48+6]..[5,48+15])
+                  Ppat_var "tool_name" (test/expansion_context/register_print_ctxt.ml[5,48+6]..[5,48+15])
+                expression (test/expansion_context/register_print_ctxt.ml[5,48+18]..[5,48+55])
+                  Pexp_apply
+                  expression (test/expansion_context/register_print_ctxt.ml[5,48+18]..[5,48+50])
+                    Pexp_ident "Expansion_context.Base.tool_name" (test/expansion_context/register_print_ctxt.ml[5,48+18]..[5,48+50])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/expansion_context/register_print_ctxt.ml[5,48+51]..[5,48+55])
+                        Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[5,48+51]..[5,48+55])
+                  ]
+            ]
+            expression (test/expansion_context/register_print_ctxt.ml[6,107+2]..[11,334+24])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/expansion_context/register_print_ctxt.ml[6,107+6]..[6,107+16])
+                    Ppat_var "input_name" (test/expansion_context/register_print_ctxt.ml[6,107+6]..[6,107+16])
+                  expression (test/expansion_context/register_print_ctxt.ml[6,107+19]..[6,107+57])
+                    Pexp_apply
+                    expression (test/expansion_context/register_print_ctxt.ml[6,107+19]..[6,107+52])
+                      Pexp_ident "Expansion_context.Base.input_name" (test/expansion_context/register_print_ctxt.ml[6,107+19]..[6,107+52])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/expansion_context/register_print_ctxt.ml[6,107+53]..[6,107+57])
+                          Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[6,107+53]..[6,107+57])
+                    ]
+              ]
+              expression (test/expansion_context/register_print_ctxt.ml[7,168+2]..[11,334+24])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (test/expansion_context/register_print_ctxt.ml[7,168+6]..[7,168+15])
+                      Ppat_var "file_path" (test/expansion_context/register_print_ctxt.ml[7,168+6]..[7,168+15])
+                    expression (test/expansion_context/register_print_ctxt.ml[8,186+4]..[8,186+67])
+                      Pexp_apply
+                      expression (test/expansion_context/register_print_ctxt.ml[8,186+24]..[8,186+26])
+                        Pexp_ident "@@" (test/expansion_context/register_print_ctxt.ml[8,186+24]..[8,186+26])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/expansion_context/register_print_ctxt.ml[8,186+4]..[8,186+23])
+                            Pexp_ident "Code_path.file_path" (test/expansion_context/register_print_ctxt.ml[8,186+4]..[8,186+23])
+                        <arg>
+                        Nolabel
+                          expression (test/expansion_context/register_print_ctxt.ml[8,186+27]..[8,186+67])
+                            Pexp_apply
+                            expression (test/expansion_context/register_print_ctxt.ml[8,186+60]..[8,186+62])
+                              Pexp_ident "@@" (test/expansion_context/register_print_ctxt.ml[8,186+60]..[8,186+62])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[8,186+27]..[8,186+59])
+                                  Pexp_ident "Expansion_context.Base.code_path" (test/expansion_context/register_print_ctxt.ml[8,186+27]..[8,186+59])
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[8,186+63]..[8,186+67])
+                                  Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[8,186+63]..[8,186+67])
+                            ]
+                      ]
+                ]
+                expression (test/expansion_context/register_print_ctxt.ml[10,259+2]..[11,334+24])
+                  Pexp_apply
+                  expression (test/expansion_context/register_print_ctxt.ml[10,259+2]..[10,259+15])
+                    Pexp_ident "Printf.printf" (test/expansion_context/register_print_ctxt.ml[10,259+2]..[10,259+15])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..[10,259+64])
+                        Pexp_constant PConst_string("tool_name: %s\ninput_name: %s\nfile_path: %s\n",(test/expansion_context/register_print_ctxt.ml[10,259+17]..[10,259+63]),None)
+                    <arg>
+                    Nolabel
+                      expression (test/expansion_context/register_print_ctxt.ml[10,259+65]..[10,259+74])
+                        Pexp_ident "tool_name" (test/expansion_context/register_print_ctxt.ml[10,259+65]..[10,259+74])
+                    <arg>
+                    Nolabel
+                      expression (test/expansion_context/register_print_ctxt.ml[11,334+4]..[11,334+14])
+                        Pexp_ident "input_name" (test/expansion_context/register_print_ctxt.ml[11,334+4]..[11,334+14])
+                    <arg>
+                    Nolabel
+                      expression (test/expansion_context/register_print_ctxt.ml[11,334+15]..[11,334+24])
+                        Pexp_ident "file_path" (test/expansion_context/register_print_ctxt.ml[11,334+15]..[11,334+24])
+                  ]
+    ]
+  structure_item (test/expansion_context/register_print_ctxt.ml[13,360+0]..[24,637+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/register_print_ctxt.ml[13,360+4]..[13,360+19])
+          Ppat_var "side_print_ctxt" (test/expansion_context/register_print_ctxt.ml[13,360+4]..[13,360+19])
+        expression (test/expansion_context/register_print_ctxt.ml[14,382+2]..[24,637+5])
+          Pexp_object
+          class_structure
+            pattern (test/expansion_context/register_print_ctxt.ml[14,382+8]..[14,382+8]) ghost
+              Ppat_any
+            [
+              class_field (test/expansion_context/register_print_ctxt.ml[15,391+4]..[15,391+71])
+                Pcf_inherit Fresh
+                  class_expr (test/expansion_context/register_print_ctxt.ml[15,391+12]..[15,391+62])
+                    Pcl_constr "Ast_traverse.map_with_expansion_context_and_errors" (test/expansion_context/register_print_ctxt.ml[15,391+12]..[15,391+62])
+                    []
+                  Some
+                    "super" (test/expansion_context/register_print_ctxt.ml[15,391+66]..[15,391+71])
+              class_field (test/expansion_context/register_print_ctxt.ml[17,464+4]..[19,520+29])
+                Pcf_method Public
+                  "structure" (test/expansion_context/register_print_ctxt.ml[17,464+12]..[17,464+21])
+                  Concrete Override
+                  expression (test/expansion_context/register_print_ctxt.ml[17,464+22]..[19,520+29]) ghost
+                    Pexp_poly
+                    expression (test/expansion_context/register_print_ctxt.ml[17,464+22]..[19,520+29]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (test/expansion_context/register_print_ctxt.ml[17,464+22]..[17,464+26])
+                        Ppat_var "ctxt" (test/expansion_context/register_print_ctxt.ml[17,464+22]..[17,464+26])
+                      expression (test/expansion_context/register_print_ctxt.ml[17,464+27]..[19,520+29]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (test/expansion_context/register_print_ctxt.ml[17,464+27]..[17,464+29])
+                          Ppat_var "st" (test/expansion_context/register_print_ctxt.ml[17,464+27]..[17,464+29])
+                        expression (test/expansion_context/register_print_ctxt.ml[18,496+6]..[19,520+29])
+                          Pexp_sequence
+                          expression (test/expansion_context/register_print_ctxt.ml[18,496+6]..[18,496+22])
+                            Pexp_apply
+                            expression (test/expansion_context/register_print_ctxt.ml[18,496+6]..[18,496+17])
+                              Pexp_ident "pprint_ctxt" (test/expansion_context/register_print_ctxt.ml[18,496+6]..[18,496+17])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[18,496+18]..[18,496+22])
+                                  Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[18,496+18]..[18,496+22])
+                            ]
+                          expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..[19,520+29])
+                            Pexp_apply
+                            expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..[19,520+21])
+                              Pexp_send "structure"
+                              expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..[19,520+11])
+                                Pexp_ident "super" (test/expansion_context/register_print_ctxt.ml[19,520+6]..[19,520+11])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[19,520+22]..[19,520+26])
+                                  Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[19,520+22]..[19,520+26])
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[19,520+27]..[19,520+29])
+                                  Pexp_ident "st" (test/expansion_context/register_print_ctxt.ml[19,520+27]..[19,520+29])
+                            ]
+                    None
+              class_field (test/expansion_context/register_print_ctxt.ml[21,551+4]..[23,607+29])
+                Pcf_method Public
+                  "signature" (test/expansion_context/register_print_ctxt.ml[21,551+12]..[21,551+21])
+                  Concrete Override
+                  expression (test/expansion_context/register_print_ctxt.ml[21,551+22]..[23,607+29]) ghost
+                    Pexp_poly
+                    expression (test/expansion_context/register_print_ctxt.ml[21,551+22]..[23,607+29]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (test/expansion_context/register_print_ctxt.ml[21,551+22]..[21,551+26])
+                        Ppat_var "ctxt" (test/expansion_context/register_print_ctxt.ml[21,551+22]..[21,551+26])
+                      expression (test/expansion_context/register_print_ctxt.ml[21,551+27]..[23,607+29]) ghost
+                        Pexp_fun
+                        Nolabel
+                        None
+                        pattern (test/expansion_context/register_print_ctxt.ml[21,551+27]..[21,551+29])
+                          Ppat_var "sg" (test/expansion_context/register_print_ctxt.ml[21,551+27]..[21,551+29])
+                        expression (test/expansion_context/register_print_ctxt.ml[22,583+6]..[23,607+29])
+                          Pexp_sequence
+                          expression (test/expansion_context/register_print_ctxt.ml[22,583+6]..[22,583+22])
+                            Pexp_apply
+                            expression (test/expansion_context/register_print_ctxt.ml[22,583+6]..[22,583+17])
+                              Pexp_ident "pprint_ctxt" (test/expansion_context/register_print_ctxt.ml[22,583+6]..[22,583+17])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[22,583+18]..[22,583+22])
+                                  Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[22,583+18]..[22,583+22])
+                            ]
+                          expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..[23,607+29])
+                            Pexp_apply
+                            expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..[23,607+21])
+                              Pexp_send "signature"
+                              expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..[23,607+11])
+                                Pexp_ident "super" (test/expansion_context/register_print_ctxt.ml[23,607+6]..[23,607+11])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[23,607+22]..[23,607+26])
+                                  Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[23,607+22]..[23,607+26])
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[23,607+27]..[23,607+29])
+                                  Pexp_ident "sg" (test/expansion_context/register_print_ctxt.ml[23,607+27]..[23,607+29])
+                            ]
+                    None
+            ]
+    ]
+  structure_item (test/expansion_context/register_print_ctxt.ml[26,644+0]..[45,1381+19])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/register_print_ctxt.ml[26,644+4]..[26,644+6])
+          Ppat_construct "()" (test/expansion_context/register_print_ctxt.ml[26,644+4]..[26,644+6])
+          None
+        expression (test/expansion_context/register_print_ctxt.ml[27,653+2]..[45,1381+19])
+          Pexp_open Fresh
+          module_expr (test/expansion_context/register_print_ctxt.ml[27,653+2]..[27,653+11])
+            Pmod_ident "Driver.V2" (test/expansion_context/register_print_ctxt.ml[27,653+2]..[27,653+11])
+          expression (test/expansion_context/register_print_ctxt.ml[28,667+4]..[45,1381+18])
+            Pexp_apply
+            expression (test/expansion_context/register_print_ctxt.ml[28,667+4]..[28,667+27])
+              Pexp_ident "register_transformation" (test/expansion_context/register_print_ctxt.ml[28,667+4]..[28,667+27])
+            [
+              <arg>
+              Labelled "impl"
+                expression (test/expansion_context/register_print_ctxt.ml[29,695+12]..[36,1017+20])
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (test/expansion_context/register_print_ctxt.ml[29,695+17]..[29,695+21])
+                    Ppat_var "ctxt" (test/expansion_context/register_print_ctxt.ml[29,695+17]..[29,695+21])
+                  expression (test/expansion_context/register_print_ctxt.ml[29,695+22]..[36,1017+19]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (test/expansion_context/register_print_ctxt.ml[29,695+22]..[29,695+31])
+                      Ppat_var "structure" (test/expansion_context/register_print_ctxt.ml[29,695+22]..[29,695+31])
+                    expression (test/expansion_context/register_print_ctxt.ml[30,730+8]..[36,1017+19])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/expansion_context/register_print_ctxt.ml[30,730+12]..[30,730+29])
+                            Ppat_tuple
+                            [
+                              pattern (test/expansion_context/register_print_ctxt.ml[30,730+12]..[30,730+21])
+                                Ppat_var "structure" (test/expansion_context/register_print_ctxt.ml[30,730+12]..[30,730+21])
+                              pattern (test/expansion_context/register_print_ctxt.ml[30,730+23]..[30,730+29])
+                                Ppat_var "errors" (test/expansion_context/register_print_ctxt.ml[30,730+23]..[30,730+29])
+                            ]
+                          expression (test/expansion_context/register_print_ctxt.ml[30,730+32]..[30,730+72])
+                            Pexp_apply
+                            expression (test/expansion_context/register_print_ctxt.ml[30,730+32]..[30,730+57])
+                              Pexp_send "structure"
+                              expression (test/expansion_context/register_print_ctxt.ml[30,730+32]..[30,730+47])
+                                Pexp_ident "side_print_ctxt" (test/expansion_context/register_print_ctxt.ml[30,730+32]..[30,730+47])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[30,730+58]..[30,730+62])
+                                  Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[30,730+58]..[30,730+62])
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[30,730+63]..[30,730+72])
+                                  Pexp_ident "structure" (test/expansion_context/register_print_ctxt.ml[30,730+63]..[30,730+72])
+                            ]
+                      ]
+                      expression (test/expansion_context/register_print_ctxt.ml[31,806+8]..[36,1017+19])
+                        Pexp_apply
+                        expression (test/expansion_context/register_print_ctxt.ml[36,1017+8]..[36,1017+9])
+                          Pexp_ident "@" (test/expansion_context/register_print_ctxt.ml[36,1017+8]..[36,1017+9])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (test/expansion_context/register_print_ctxt.ml[31,806+8]..[35,999+17])
+                              Pexp_apply
+                              expression (test/expansion_context/register_print_ctxt.ml[31,806+8]..[31,806+16])
+                                Pexp_ident "List.map" (test/expansion_context/register_print_ctxt.ml[31,806+8]..[31,806+16])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/expansion_context/register_print_ctxt.ml[31,806+17]..[31,806+23])
+                                    Pexp_ident "errors" (test/expansion_context/register_print_ctxt.ml[31,806+17]..[31,806+23])
+                                <arg>
+                                Labelled "f"
+                                  expression (test/expansion_context/register_print_ctxt.ml[31,806+27]..[35,999+17])
+                                    Pexp_fun
+                                    Nolabel
+                                    None
+                                    pattern (test/expansion_context/register_print_ctxt.ml[31,806+32]..[31,806+37])
+                                      Ppat_var "error" (test/expansion_context/register_print_ctxt.ml[31,806+32]..[31,806+37])
+                                    expression (test/expansion_context/register_print_ctxt.ml[32,847+12]..[35,999+16])
+                                      Pexp_apply
+                                      expression (test/expansion_context/register_print_ctxt.ml[32,847+12]..[32,847+46])
+                                        Pexp_ident "Ast_builder.Default.pstr_extension" (test/expansion_context/register_print_ctxt.ml[32,847+12]..[32,847+46])
+                                      [
+                                        <arg>
+                                        Labelled "loc"
+                                          expression (test/expansion_context/register_print_ctxt.ml[33,894+19]..[33,894+54])
+                                            Pexp_apply
+                                            expression (test/expansion_context/register_print_ctxt.ml[33,894+20]..[33,894+47])
+                                              Pexp_ident "Location.Error.get_location" (test/expansion_context/register_print_ctxt.ml[33,894+20]..[33,894+47])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (test/expansion_context/register_print_ctxt.ml[33,894+48]..[33,894+53])
+                                                  Pexp_ident "error" (test/expansion_context/register_print_ctxt.ml[33,894+48]..[33,894+53])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (test/expansion_context/register_print_ctxt.ml[34,949+14]..[34,949+49])
+                                            Pexp_apply
+                                            expression (test/expansion_context/register_print_ctxt.ml[34,949+15]..[34,949+42])
+                                              Pexp_ident "Location.Error.to_extension" (test/expansion_context/register_print_ctxt.ml[34,949+15]..[34,949+42])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (test/expansion_context/register_print_ctxt.ml[34,949+43]..[34,949+48])
+                                                  Pexp_ident "error" (test/expansion_context/register_print_ctxt.ml[34,949+43]..[34,949+48])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (test/expansion_context/register_print_ctxt.ml[35,999+14]..[35,999+16])
+                                            Pexp_construct "[]" (test/expansion_context/register_print_ctxt.ml[35,999+14]..[35,999+16])
+                                            None
+                                      ]
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (test/expansion_context/register_print_ctxt.ml[36,1017+10]..[36,1017+19])
+                              Pexp_ident "structure" (test/expansion_context/register_print_ctxt.ml[36,1017+10]..[36,1017+19])
+                        ]
+              <arg>
+              Labelled "intf"
+                expression (test/expansion_context/register_print_ctxt.ml[37,1038+12]..[44,1360+20])
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (test/expansion_context/register_print_ctxt.ml[37,1038+17]..[37,1038+21])
+                    Ppat_var "ctxt" (test/expansion_context/register_print_ctxt.ml[37,1038+17]..[37,1038+21])
+                  expression (test/expansion_context/register_print_ctxt.ml[37,1038+22]..[44,1360+19]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (test/expansion_context/register_print_ctxt.ml[37,1038+22]..[37,1038+31])
+                      Ppat_var "signature" (test/expansion_context/register_print_ctxt.ml[37,1038+22]..[37,1038+31])
+                    expression (test/expansion_context/register_print_ctxt.ml[38,1073+8]..[44,1360+19])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/expansion_context/register_print_ctxt.ml[38,1073+12]..[38,1073+29])
+                            Ppat_tuple
+                            [
+                              pattern (test/expansion_context/register_print_ctxt.ml[38,1073+12]..[38,1073+21])
+                                Ppat_var "signature" (test/expansion_context/register_print_ctxt.ml[38,1073+12]..[38,1073+21])
+                              pattern (test/expansion_context/register_print_ctxt.ml[38,1073+23]..[38,1073+29])
+                                Ppat_var "errors" (test/expansion_context/register_print_ctxt.ml[38,1073+23]..[38,1073+29])
+                            ]
+                          expression (test/expansion_context/register_print_ctxt.ml[38,1073+32]..[38,1073+72])
+                            Pexp_apply
+                            expression (test/expansion_context/register_print_ctxt.ml[38,1073+32]..[38,1073+57])
+                              Pexp_send "signature"
+                              expression (test/expansion_context/register_print_ctxt.ml[38,1073+32]..[38,1073+47])
+                                Pexp_ident "side_print_ctxt" (test/expansion_context/register_print_ctxt.ml[38,1073+32]..[38,1073+47])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[38,1073+58]..[38,1073+62])
+                                  Pexp_ident "ctxt" (test/expansion_context/register_print_ctxt.ml[38,1073+58]..[38,1073+62])
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/register_print_ctxt.ml[38,1073+63]..[38,1073+72])
+                                  Pexp_ident "signature" (test/expansion_context/register_print_ctxt.ml[38,1073+63]..[38,1073+72])
+                            ]
+                      ]
+                      expression (test/expansion_context/register_print_ctxt.ml[39,1149+8]..[44,1360+19])
+                        Pexp_apply
+                        expression (test/expansion_context/register_print_ctxt.ml[44,1360+8]..[44,1360+9])
+                          Pexp_ident "@" (test/expansion_context/register_print_ctxt.ml[44,1360+8]..[44,1360+9])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (test/expansion_context/register_print_ctxt.ml[39,1149+8]..[43,1342+17])
+                              Pexp_apply
+                              expression (test/expansion_context/register_print_ctxt.ml[39,1149+8]..[39,1149+16])
+                                Pexp_ident "List.map" (test/expansion_context/register_print_ctxt.ml[39,1149+8]..[39,1149+16])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/expansion_context/register_print_ctxt.ml[39,1149+17]..[39,1149+23])
+                                    Pexp_ident "errors" (test/expansion_context/register_print_ctxt.ml[39,1149+17]..[39,1149+23])
+                                <arg>
+                                Labelled "f"
+                                  expression (test/expansion_context/register_print_ctxt.ml[39,1149+27]..[43,1342+17])
+                                    Pexp_fun
+                                    Nolabel
+                                    None
+                                    pattern (test/expansion_context/register_print_ctxt.ml[39,1149+32]..[39,1149+37])
+                                      Ppat_var "error" (test/expansion_context/register_print_ctxt.ml[39,1149+32]..[39,1149+37])
+                                    expression (test/expansion_context/register_print_ctxt.ml[40,1190+12]..[43,1342+16])
+                                      Pexp_apply
+                                      expression (test/expansion_context/register_print_ctxt.ml[40,1190+12]..[40,1190+46])
+                                        Pexp_ident "Ast_builder.Default.psig_extension" (test/expansion_context/register_print_ctxt.ml[40,1190+12]..[40,1190+46])
+                                      [
+                                        <arg>
+                                        Labelled "loc"
+                                          expression (test/expansion_context/register_print_ctxt.ml[41,1237+19]..[41,1237+54])
+                                            Pexp_apply
+                                            expression (test/expansion_context/register_print_ctxt.ml[41,1237+20]..[41,1237+47])
+                                              Pexp_ident "Location.Error.get_location" (test/expansion_context/register_print_ctxt.ml[41,1237+20]..[41,1237+47])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (test/expansion_context/register_print_ctxt.ml[41,1237+48]..[41,1237+53])
+                                                  Pexp_ident "error" (test/expansion_context/register_print_ctxt.ml[41,1237+48]..[41,1237+53])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (test/expansion_context/register_print_ctxt.ml[42,1292+14]..[42,1292+49])
+                                            Pexp_apply
+                                            expression (test/expansion_context/register_print_ctxt.ml[42,1292+15]..[42,1292+42])
+                                              Pexp_ident "Location.Error.to_extension" (test/expansion_context/register_print_ctxt.ml[42,1292+15]..[42,1292+42])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (test/expansion_context/register_print_ctxt.ml[42,1292+43]..[42,1292+48])
+                                                  Pexp_ident "error" (test/expansion_context/register_print_ctxt.ml[42,1292+43]..[42,1292+48])
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (test/expansion_context/register_print_ctxt.ml[43,1342+14]..[43,1342+16])
+                                            Pexp_construct "[]" (test/expansion_context/register_print_ctxt.ml[43,1342+14]..[43,1342+16])
+                                            None
+                                      ]
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (test/expansion_context/register_print_ctxt.ml[44,1360+10]..[44,1360+19])
+                              Pexp_ident "signature" (test/expansion_context/register_print_ctxt.ml[44,1360+10]..[44,1360+19])
+                        ]
+              <arg>
+              Nolabel
+                expression (test/expansion_context/register_print_ctxt.ml[45,1381+6]..[45,1381+18])
+                  Pexp_constant PConst_string("print_ctxt",(test/expansion_context/register_print_ctxt.ml[45,1381+7]..[45,1381+17]),None)
+            ]
+    ]
+]
+
+open Stdppx
+open Ppxlib
+let pprint_ctxt ctxt =
+  let tool_name = Expansion_context.Base.tool_name ctxt in
+  let input_name = Expansion_context.Base.input_name ctxt in
+  let file_path =
+    Code_path.file_path @@ (Expansion_context.Base.code_path @@ ctxt) in
+  Printf.printf "tool_name: %s\ninput_name: %s\nfile_path: %s\n" tool_name
+    input_name file_path
+let side_print_ctxt =
+  object
+    inherit  Ast_traverse.map_with_expansion_context_and_errors as super
+    method! structure ctxt st = pprint_ctxt ctxt; super#structure ctxt st
+    method! signature ctxt sg = pprint_ctxt ctxt; super#signature ctxt sg
+  end
+let () =
+  let open Driver.V2 in
+    register_transformation
+      ~impl:(fun ctxt ->
+               fun structure ->
+                 let (structure, errors) =
+                   side_print_ctxt#structure ctxt structure in
+                 (List.map errors
+                    ~f:(fun error ->
+                          Ast_builder.Default.pstr_extension
+                            ~loc:(Location.Error.get_location error)
+                            (Location.Error.to_extension error) []))
+                   @ structure)
+      ~intf:(fun ctxt ->
+               fun signature ->
+                 let (signature, errors) =
+                   side_print_ctxt#signature ctxt signature in
+                 (List.map errors
+                    ~f:(fun error ->
+                          Ast_builder.Default.psig_extension
+                            ~loc:(Location.Error.get_location error)
+                            (Location.Error.to_extension error) []))
+                   @ signature) "print_ctxt"
+[
+  structure_item (test/expansion_context/register_print_ctxt.ml[1,0+0]..test/expansion_context/register_print_ctxt.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/expansion_context/register_print_ctxt.ml[1,0+5]..test/expansion_context/register_print_ctxt.ml[1,0+11])
+      Tmod_ident "Stdppx!"
+  structure_item (test/expansion_context/register_print_ctxt.ml[2,12+0]..test/expansion_context/register_print_ctxt.ml[2,12+11])
+    Tstr_open Fresh
+    module_expr (test/expansion_context/register_print_ctxt.ml[2,12+5]..test/expansion_context/register_print_ctxt.ml[2,12+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/expansion_context/register_print_ctxt.ml[4,25+0]..test/expansion_context/register_print_ctxt.ml[11,334+24])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/register_print_ctxt.ml[4,25+4]..test/expansion_context/register_print_ctxt.ml[4,25+15])
+          Tpat_var "pprint_ctxt/537"
+        expression (test/expansion_context/register_print_ctxt.ml[4,25+16]..test/expansion_context/register_print_ctxt.ml[11,334+24]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/expansion_context/register_print_ctxt.ml[4,25+16]..test/expansion_context/register_print_ctxt.ml[4,25+20])
+                Tpat_var "ctxt/539"
+              expression (test/expansion_context/register_print_ctxt.ml[5,48+2]..test/expansion_context/register_print_ctxt.ml[11,334+24])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (test/expansion_context/register_print_ctxt.ml[5,48+6]..test/expansion_context/register_print_ctxt.ml[5,48+15])
+                      Tpat_var "tool_name/540"
+                    expression (test/expansion_context/register_print_ctxt.ml[5,48+18]..test/expansion_context/register_print_ctxt.ml[5,48+55])
+                      Texp_apply
+                      expression (test/expansion_context/register_print_ctxt.ml[5,48+18]..test/expansion_context/register_print_ctxt.ml[5,48+50])
+                        Texp_ident "Ppxlib!.Expansion_context.Base.tool_name"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (test/expansion_context/register_print_ctxt.ml[5,48+51]..test/expansion_context/register_print_ctxt.ml[5,48+55])
+                            Texp_ident "ctxt/539"
+                      ]
+                ]
+                expression (test/expansion_context/register_print_ctxt.ml[6,107+2]..test/expansion_context/register_print_ctxt.ml[11,334+24])
+                  Texp_let Nonrec
+                  [
+                    <def>
+                      pattern (test/expansion_context/register_print_ctxt.ml[6,107+6]..test/expansion_context/register_print_ctxt.ml[6,107+16])
+                        Tpat_var "input_name/617"
+                      expression (test/expansion_context/register_print_ctxt.ml[6,107+19]..test/expansion_context/register_print_ctxt.ml[6,107+57])
+                        Texp_apply
+                        expression (test/expansion_context/register_print_ctxt.ml[6,107+19]..test/expansion_context/register_print_ctxt.ml[6,107+52])
+                          Texp_ident "Ppxlib!.Expansion_context.Base.input_name"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (test/expansion_context/register_print_ctxt.ml[6,107+53]..test/expansion_context/register_print_ctxt.ml[6,107+57])
+                              Texp_ident "ctxt/539"
+                        ]
+                  ]
+                  expression (test/expansion_context/register_print_ctxt.ml[7,168+2]..test/expansion_context/register_print_ctxt.ml[11,334+24])
+                    Texp_let Nonrec
+                    [
+                      <def>
+                        pattern (test/expansion_context/register_print_ctxt.ml[7,168+6]..test/expansion_context/register_print_ctxt.ml[7,168+15])
+                          Tpat_var "file_path/618"
+                        expression (test/expansion_context/register_print_ctxt.ml[8,186+4]..test/expansion_context/register_print_ctxt.ml[8,186+67])
+                          Texp_apply
+                          expression (test/expansion_context/register_print_ctxt.ml[8,186+24]..test/expansion_context/register_print_ctxt.ml[8,186+26])
+                            Texp_ident "Stdlib!.@@"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/expansion_context/register_print_ctxt.ml[8,186+4]..test/expansion_context/register_print_ctxt.ml[8,186+23])
+                                Texp_ident "Ppxlib!.Code_path.file_path"
+                            <arg>
+                              Nolabel
+                              expression (test/expansion_context/register_print_ctxt.ml[8,186+27]..test/expansion_context/register_print_ctxt.ml[8,186+67])
+                                Texp_apply
+                                expression (test/expansion_context/register_print_ctxt.ml[8,186+60]..test/expansion_context/register_print_ctxt.ml[8,186+62])
+                                  Texp_ident "Stdlib!.@@"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (test/expansion_context/register_print_ctxt.ml[8,186+27]..test/expansion_context/register_print_ctxt.ml[8,186+59])
+                                      Texp_ident "Ppxlib!.Expansion_context.Base.code_path"
+                                  <arg>
+                                    Nolabel
+                                    expression (test/expansion_context/register_print_ctxt.ml[8,186+63]..test/expansion_context/register_print_ctxt.ml[8,186+67])
+                                      Texp_ident "ctxt/539"
+                                ]
+                          ]
+                    ]
+                    expression (test/expansion_context/register_print_ctxt.ml[10,259+2]..test/expansion_context/register_print_ctxt.ml[11,334+24])
+                      Texp_apply
+                      expression (test/expansion_context/register_print_ctxt.ml[10,259+2]..test/expansion_context/register_print_ctxt.ml[10,259+15])
+                        Texp_ident "Stdlib!.Printf.printf"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64])
+                            Texp_construct "CamlinternalFormatBasics.Format"
+                            [
+                              expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                Texp_construct "CamlinternalFormatBasics.String_literal"
+                                [
+                                  expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                    Texp_constant Const_string("tool_name: ",(test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost,None)
+                                  expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                    Texp_construct "CamlinternalFormatBasics.String"
+                                    [
+                                      expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.No_padding"
+                                        []
+                                      expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.String_literal"
+                                        [
+                                          expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                            Texp_constant Const_string("\ninput_name: ",(test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost,None)
+                                          expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                            Texp_construct "CamlinternalFormatBasics.String"
+                                            [
+                                              expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                []
+                                              expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                [
+                                                  expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                    Texp_constant Const_string("\nfile_path: ",(test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost,None)
+                                                  expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                    Texp_construct "CamlinternalFormatBasics.String"
+                                                    [
+                                                      expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                        Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                        []
+                                                      expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                        Texp_construct "CamlinternalFormatBasics.Char_literal"
+                                                        [
+                                                          expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                            Texp_constant Const_char 0a
+                                                          expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                                            Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                            []
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                              expression (test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost
+                                Texp_constant Const_string("tool_name: %s\ninput_name: %s\nfile_path: %s\n",(test/expansion_context/register_print_ctxt.ml[10,259+16]..test/expansion_context/register_print_ctxt.ml[10,259+64]) ghost,None)
+                            ]
+                        <arg>
+                          Nolabel
+                          expression (test/expansion_context/register_print_ctxt.ml[10,259+65]..test/expansion_context/register_print_ctxt.ml[10,259+74])
+                            Texp_ident "tool_name/540"
+                        <arg>
+                          Nolabel
+                          expression (test/expansion_context/register_print_ctxt.ml[11,334+4]..test/expansion_context/register_print_ctxt.ml[11,334+14])
+                            Texp_ident "input_name/617"
+                        <arg>
+                          Nolabel
+                          expression (test/expansion_context/register_print_ctxt.ml[11,334+15]..test/expansion_context/register_print_ctxt.ml[11,334+24])
+                            Texp_ident "file_path/618"
+                      ]
+          ]
+    ]
+  structure_item (test/expansion_context/register_print_ctxt.ml[13,360+0]..test/expansion_context/register_print_ctxt.ml[24,637+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/register_print_ctxt.ml[13,360+4]..test/expansion_context/register_print_ctxt.ml[13,360+19])
+          Tpat_var "side_print_ctxt/669"
+        expression (test/expansion_context/register_print_ctxt.ml[14,382+2]..test/expansion_context/register_print_ctxt.ml[24,637+5])
+          Texp_object          class_structure
+            pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+              Tpat_alias "selfpat-1/671"
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-*/670"
+                pattern (test/expansion_context/register_print_ctxt.ml[14,382+8]..test/expansion_context/register_print_ctxt.ml[14,382+8]) ghost
+                  Tpat_any
+            [
+              class_field (test/expansion_context/register_print_ctxt.ml[15,391+4]..test/expansion_context/register_print_ctxt.ml[15,391+71])
+                Tcf_inherit Fresh
+                  class_expr (test/expansion_context/register_print_ctxt.ml[15,391+12]..test/expansion_context/register_print_ctxt.ml[15,391+62])
+                    class_expr (test/expansion_context/register_print_ctxt.ml[15,391+12]..test/expansion_context/register_print_ctxt.ml[15,391+62])
+                      Tcl_ident "Ppxlib!.Ast_traverse.map_with_expansion_context_and_errors"
+                      []
+                  Some
+                    "super"
+              class_field (test/expansion_context/register_print_ctxt.ml[17,464+4]..test/expansion_context/register_print_ctxt.ml[19,520+29])
+                Tcf_method "structure" Public
+                  Concrete Override
+                  expression (test/expansion_context/register_print_ctxt.ml[17,464+22]..test/expansion_context/register_print_ctxt.ml[19,520+29]) ghost
+                    Texp_function
+                    Nolabel
+                    [
+                      <case>
+                        pattern (test/expansion_context/register_print_ctxt.ml[14,382+8]..test/expansion_context/register_print_ctxt.ml[14,382+8]) ghost
+                          Tpat_alias "self-1/1650"
+                          pattern (test/expansion_context/register_print_ctxt.ml[14,382+8]..test/expansion_context/register_print_ctxt.ml[14,382+8]) ghost
+                            Tpat_var "self-*/1649"
+                        expression (test/expansion_context/register_print_ctxt.ml[17,464+22]..test/expansion_context/register_print_ctxt.ml[19,520+29]) ghost
+                          Texp_poly
+                          None
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (test/expansion_context/register_print_ctxt.ml[17,464+22]..test/expansion_context/register_print_ctxt.ml[17,464+26])
+                                  Tpat_var "ctxt/1651"
+                                expression (test/expansion_context/register_print_ctxt.ml[17,464+27]..test/expansion_context/register_print_ctxt.ml[19,520+29]) ghost
+                                  Texp_function
+                                  Nolabel
+                                  [
+                                    <case>
+                                      pattern (test/expansion_context/register_print_ctxt.ml[17,464+27]..test/expansion_context/register_print_ctxt.ml[17,464+29])
+                                        Tpat_var "st/1652"
+                                      expression (test/expansion_context/register_print_ctxt.ml[18,496+6]..test/expansion_context/register_print_ctxt.ml[19,520+29])
+                                        Texp_sequence
+                                        expression (test/expansion_context/register_print_ctxt.ml[18,496+6]..test/expansion_context/register_print_ctxt.ml[18,496+22])
+                                          Texp_apply
+                                          expression (test/expansion_context/register_print_ctxt.ml[18,496+6]..test/expansion_context/register_print_ctxt.ml[18,496+17])
+                                            Texp_ident "pprint_ctxt/537"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[18,496+18]..test/expansion_context/register_print_ctxt.ml[18,496+22])
+                                                Texp_ident "ctxt/1651"
+                                          ]
+                                        expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..test/expansion_context/register_print_ctxt.ml[19,520+29])
+                                          Texp_apply
+                                          expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..test/expansion_context/register_print_ctxt.ml[19,520+21])
+                                            Texp_send "structure"
+                                            expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..test/expansion_context/register_print_ctxt.ml[19,520+11])
+                                              Texp_ident "super/1543"
+                                            Some
+                                              expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..test/expansion_context/register_print_ctxt.ml[19,520+21])
+                                                Texp_apply
+                                                expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..test/expansion_context/register_print_ctxt.ml[19,520+21])
+                                                  Texp_ident "structure/1525"
+                                                [
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (test/expansion_context/register_print_ctxt.ml[19,520+6]..test/expansion_context/register_print_ctxt.ml[19,520+11])
+                                                      Texp_ident "self-1/1650"
+                                                ]
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[19,520+22]..test/expansion_context/register_print_ctxt.ml[19,520+26])
+                                                Texp_ident "ctxt/1651"
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[19,520+27]..test/expansion_context/register_print_ctxt.ml[19,520+29])
+                                                Texp_ident "st/1652"
+                                          ]
+                                  ]
+                            ]
+                    ]
+              class_field (test/expansion_context/register_print_ctxt.ml[21,551+4]..test/expansion_context/register_print_ctxt.ml[23,607+29])
+                Tcf_method "signature" Public
+                  Concrete Override
+                  expression (test/expansion_context/register_print_ctxt.ml[21,551+22]..test/expansion_context/register_print_ctxt.ml[23,607+29]) ghost
+                    Texp_function
+                    Nolabel
+                    [
+                      <case>
+                        pattern (test/expansion_context/register_print_ctxt.ml[14,382+8]..test/expansion_context/register_print_ctxt.ml[14,382+8]) ghost
+                          Tpat_alias "self-1/1658"
+                          pattern (test/expansion_context/register_print_ctxt.ml[14,382+8]..test/expansion_context/register_print_ctxt.ml[14,382+8]) ghost
+                            Tpat_var "self-*/1657"
+                        expression (test/expansion_context/register_print_ctxt.ml[21,551+22]..test/expansion_context/register_print_ctxt.ml[23,607+29]) ghost
+                          Texp_poly
+                          None
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (test/expansion_context/register_print_ctxt.ml[21,551+22]..test/expansion_context/register_print_ctxt.ml[21,551+26])
+                                  Tpat_var "ctxt/1659"
+                                expression (test/expansion_context/register_print_ctxt.ml[21,551+27]..test/expansion_context/register_print_ctxt.ml[23,607+29]) ghost
+                                  Texp_function
+                                  Nolabel
+                                  [
+                                    <case>
+                                      pattern (test/expansion_context/register_print_ctxt.ml[21,551+27]..test/expansion_context/register_print_ctxt.ml[21,551+29])
+                                        Tpat_var "sg/1660"
+                                      expression (test/expansion_context/register_print_ctxt.ml[22,583+6]..test/expansion_context/register_print_ctxt.ml[23,607+29])
+                                        Texp_sequence
+                                        expression (test/expansion_context/register_print_ctxt.ml[22,583+6]..test/expansion_context/register_print_ctxt.ml[22,583+22])
+                                          Texp_apply
+                                          expression (test/expansion_context/register_print_ctxt.ml[22,583+6]..test/expansion_context/register_print_ctxt.ml[22,583+17])
+                                            Texp_ident "pprint_ctxt/537"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[22,583+18]..test/expansion_context/register_print_ctxt.ml[22,583+22])
+                                                Texp_ident "ctxt/1659"
+                                          ]
+                                        expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..test/expansion_context/register_print_ctxt.ml[23,607+29])
+                                          Texp_apply
+                                          expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..test/expansion_context/register_print_ctxt.ml[23,607+21])
+                                            Texp_send "signature"
+                                            expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..test/expansion_context/register_print_ctxt.ml[23,607+11])
+                                              Texp_ident "super/1543"
+                                            Some
+                                              expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..test/expansion_context/register_print_ctxt.ml[23,607+21])
+                                                Texp_apply
+                                                expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..test/expansion_context/register_print_ctxt.ml[23,607+21])
+                                                  Texp_ident "signature/1521"
+                                                [
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (test/expansion_context/register_print_ctxt.ml[23,607+6]..test/expansion_context/register_print_ctxt.ml[23,607+11])
+                                                      Texp_ident "self-1/1658"
+                                                ]
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[23,607+22]..test/expansion_context/register_print_ctxt.ml[23,607+26])
+                                                Texp_ident "ctxt/1659"
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[23,607+27]..test/expansion_context/register_print_ctxt.ml[23,607+29])
+                                                Texp_ident "sg/1660"
+                                          ]
+                                  ]
+                            ]
+                    ]
+            ]
+    ]
+  structure_item (test/expansion_context/register_print_ctxt.ml[26,644+0]..test/expansion_context/register_print_ctxt.ml[45,1381+19])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/register_print_ctxt.ml[26,644+4]..test/expansion_context/register_print_ctxt.ml[26,644+6])
+          Tpat_construct "()"
+          []
+        expression (test/expansion_context/register_print_ctxt.ml[27,653+2]..test/expansion_context/register_print_ctxt.ml[45,1381+19])
+          Texp_open Fresh
+          module_expr (test/expansion_context/register_print_ctxt.ml[27,653+2]..test/expansion_context/register_print_ctxt.ml[27,653+11])
+            Tmod_ident "Ppxlib!.Driver.V2"
+          expression (test/expansion_context/register_print_ctxt.ml[28,667+4]..test/expansion_context/register_print_ctxt.ml[45,1381+18])
+            Texp_apply
+            expression (test/expansion_context/register_print_ctxt.ml[28,667+4]..test/expansion_context/register_print_ctxt.ml[28,667+27])
+              Texp_ident "Ppxlib!.Driver.V2.register_transformation"
+            [
+              <arg>
+                Optional "extensions"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "rules"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "enclose_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "enclose_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "impl"
+                expression (test/expansion_context/register_print_ctxt.ml[29,695+12]..test/expansion_context/register_print_ctxt.ml[36,1017+20])
+                  Texp_construct "Some"
+                  [
+                    expression (test/expansion_context/register_print_ctxt.ml[29,695+12]..test/expansion_context/register_print_ctxt.ml[36,1017+20])
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (test/expansion_context/register_print_ctxt.ml[29,695+17]..test/expansion_context/register_print_ctxt.ml[29,695+21])
+                            Tpat_var "ctxt/2256"
+                          expression (test/expansion_context/register_print_ctxt.ml[29,695+22]..test/expansion_context/register_print_ctxt.ml[36,1017+19]) ghost
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (test/expansion_context/register_print_ctxt.ml[29,695+22]..test/expansion_context/register_print_ctxt.ml[29,695+31])
+                                  Tpat_var "structure/2257"
+                                expression (test/expansion_context/register_print_ctxt.ml[30,730+8]..test/expansion_context/register_print_ctxt.ml[36,1017+19])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (test/expansion_context/register_print_ctxt.ml[30,730+12]..test/expansion_context/register_print_ctxt.ml[30,730+29])
+                                        Tpat_tuple
+                                        [
+                                          pattern (test/expansion_context/register_print_ctxt.ml[30,730+12]..test/expansion_context/register_print_ctxt.ml[30,730+21])
+                                            Tpat_var "structure/2258"
+                                          pattern (test/expansion_context/register_print_ctxt.ml[30,730+23]..test/expansion_context/register_print_ctxt.ml[30,730+29])
+                                            Tpat_var "errors/2259"
+                                        ]
+                                      expression (test/expansion_context/register_print_ctxt.ml[30,730+32]..test/expansion_context/register_print_ctxt.ml[30,730+72])
+                                        Texp_apply
+                                        expression (test/expansion_context/register_print_ctxt.ml[30,730+32]..test/expansion_context/register_print_ctxt.ml[30,730+57])
+                                          Texp_send "structure"
+                                          expression (test/expansion_context/register_print_ctxt.ml[30,730+32]..test/expansion_context/register_print_ctxt.ml[30,730+47])
+                                            Texp_ident "side_print_ctxt/669"
+                                          None
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/expansion_context/register_print_ctxt.ml[30,730+58]..test/expansion_context/register_print_ctxt.ml[30,730+62])
+                                              Texp_ident "ctxt/2256"
+                                          <arg>
+                                            Nolabel
+                                            expression (test/expansion_context/register_print_ctxt.ml[30,730+63]..test/expansion_context/register_print_ctxt.ml[30,730+72])
+                                              Texp_ident "structure/2257"
+                                        ]
+                                  ]
+                                  expression (test/expansion_context/register_print_ctxt.ml[31,806+8]..test/expansion_context/register_print_ctxt.ml[36,1017+19])
+                                    Texp_apply
+                                    expression (test/expansion_context/register_print_ctxt.ml[36,1017+8]..test/expansion_context/register_print_ctxt.ml[36,1017+9])
+                                      Texp_ident "Stdppx!.@"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (test/expansion_context/register_print_ctxt.ml[31,806+8]..test/expansion_context/register_print_ctxt.ml[35,999+17])
+                                          Texp_apply
+                                          expression (test/expansion_context/register_print_ctxt.ml[31,806+8]..test/expansion_context/register_print_ctxt.ml[31,806+16])
+                                            Texp_ident "Stdppx!.List.map"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[31,806+17]..test/expansion_context/register_print_ctxt.ml[31,806+23])
+                                                Texp_ident "errors/2259"
+                                            <arg>
+                                              Labelled "f"
+                                              expression (test/expansion_context/register_print_ctxt.ml[31,806+27]..test/expansion_context/register_print_ctxt.ml[35,999+17])
+                                                Texp_function
+                                                Nolabel
+                                                [
+                                                  <case>
+                                                    pattern (test/expansion_context/register_print_ctxt.ml[31,806+32]..test/expansion_context/register_print_ctxt.ml[31,806+37])
+                                                      Tpat_var "error/2261"
+                                                    expression (test/expansion_context/register_print_ctxt.ml[32,847+12]..test/expansion_context/register_print_ctxt.ml[35,999+16])
+                                                      Texp_apply
+                                                      expression (test/expansion_context/register_print_ctxt.ml[32,847+12]..test/expansion_context/register_print_ctxt.ml[32,847+46])
+                                                        Texp_ident "Ppxlib!.Ast_builder.Default.pstr_extension"
+                                                      [
+                                                        <arg>
+                                                          Labelled "loc"
+                                                          expression (test/expansion_context/register_print_ctxt.ml[33,894+19]..test/expansion_context/register_print_ctxt.ml[33,894+54])
+                                                            Texp_apply
+                                                            expression (test/expansion_context/register_print_ctxt.ml[33,894+20]..test/expansion_context/register_print_ctxt.ml[33,894+47])
+                                                              Texp_ident "Ppxlib!.Location.Error.get_location"
+                                                            [
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (test/expansion_context/register_print_ctxt.ml[33,894+48]..test/expansion_context/register_print_ctxt.ml[33,894+53])
+                                                                  Texp_ident "error/2261"
+                                                            ]
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (test/expansion_context/register_print_ctxt.ml[34,949+14]..test/expansion_context/register_print_ctxt.ml[34,949+49])
+                                                            Texp_apply
+                                                            expression (test/expansion_context/register_print_ctxt.ml[34,949+15]..test/expansion_context/register_print_ctxt.ml[34,949+42])
+                                                              Texp_ident "Ppxlib!.Location.Error.to_extension"
+                                                            [
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (test/expansion_context/register_print_ctxt.ml[34,949+43]..test/expansion_context/register_print_ctxt.ml[34,949+48])
+                                                                  Texp_ident "error/2261"
+                                                            ]
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (test/expansion_context/register_print_ctxt.ml[35,999+14]..test/expansion_context/register_print_ctxt.ml[35,999+16])
+                                                            Texp_construct "[]"
+                                                            []
+                                                      ]
+                                                ]
+                                          ]
+                                      <arg>
+                                        Nolabel
+                                        expression (test/expansion_context/register_print_ctxt.ml[36,1017+10]..test/expansion_context/register_print_ctxt.ml[36,1017+19])
+                                          Texp_ident "structure/2258"
+                                    ]
+                            ]
+                      ]
+                  ]
+              <arg>
+                Optional "intf"
+                expression (test/expansion_context/register_print_ctxt.ml[37,1038+12]..test/expansion_context/register_print_ctxt.ml[44,1360+20])
+                  Texp_construct "Some"
+                  [
+                    expression (test/expansion_context/register_print_ctxt.ml[37,1038+12]..test/expansion_context/register_print_ctxt.ml[44,1360+20])
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (test/expansion_context/register_print_ctxt.ml[37,1038+17]..test/expansion_context/register_print_ctxt.ml[37,1038+21])
+                            Tpat_var "ctxt/3849"
+                          expression (test/expansion_context/register_print_ctxt.ml[37,1038+22]..test/expansion_context/register_print_ctxt.ml[44,1360+19]) ghost
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (test/expansion_context/register_print_ctxt.ml[37,1038+22]..test/expansion_context/register_print_ctxt.ml[37,1038+31])
+                                  Tpat_var "signature/3850"
+                                expression (test/expansion_context/register_print_ctxt.ml[38,1073+8]..test/expansion_context/register_print_ctxt.ml[44,1360+19])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (test/expansion_context/register_print_ctxt.ml[38,1073+12]..test/expansion_context/register_print_ctxt.ml[38,1073+29])
+                                        Tpat_tuple
+                                        [
+                                          pattern (test/expansion_context/register_print_ctxt.ml[38,1073+12]..test/expansion_context/register_print_ctxt.ml[38,1073+21])
+                                            Tpat_var "signature/3851"
+                                          pattern (test/expansion_context/register_print_ctxt.ml[38,1073+23]..test/expansion_context/register_print_ctxt.ml[38,1073+29])
+                                            Tpat_var "errors/3852"
+                                        ]
+                                      expression (test/expansion_context/register_print_ctxt.ml[38,1073+32]..test/expansion_context/register_print_ctxt.ml[38,1073+72])
+                                        Texp_apply
+                                        expression (test/expansion_context/register_print_ctxt.ml[38,1073+32]..test/expansion_context/register_print_ctxt.ml[38,1073+57])
+                                          Texp_send "signature"
+                                          expression (test/expansion_context/register_print_ctxt.ml[38,1073+32]..test/expansion_context/register_print_ctxt.ml[38,1073+47])
+                                            Texp_ident "side_print_ctxt/669"
+                                          None
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/expansion_context/register_print_ctxt.ml[38,1073+58]..test/expansion_context/register_print_ctxt.ml[38,1073+62])
+                                              Texp_ident "ctxt/3849"
+                                          <arg>
+                                            Nolabel
+                                            expression (test/expansion_context/register_print_ctxt.ml[38,1073+63]..test/expansion_context/register_print_ctxt.ml[38,1073+72])
+                                              Texp_ident "signature/3850"
+                                        ]
+                                  ]
+                                  expression (test/expansion_context/register_print_ctxt.ml[39,1149+8]..test/expansion_context/register_print_ctxt.ml[44,1360+19])
+                                    Texp_apply
+                                    expression (test/expansion_context/register_print_ctxt.ml[44,1360+8]..test/expansion_context/register_print_ctxt.ml[44,1360+9])
+                                      Texp_ident "Stdppx!.@"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (test/expansion_context/register_print_ctxt.ml[39,1149+8]..test/expansion_context/register_print_ctxt.ml[43,1342+17])
+                                          Texp_apply
+                                          expression (test/expansion_context/register_print_ctxt.ml[39,1149+8]..test/expansion_context/register_print_ctxt.ml[39,1149+16])
+                                            Texp_ident "Stdppx!.List.map"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/expansion_context/register_print_ctxt.ml[39,1149+17]..test/expansion_context/register_print_ctxt.ml[39,1149+23])
+                                                Texp_ident "errors/3852"
+                                            <arg>
+                                              Labelled "f"
+                                              expression (test/expansion_context/register_print_ctxt.ml[39,1149+27]..test/expansion_context/register_print_ctxt.ml[43,1342+17])
+                                                Texp_function
+                                                Nolabel
+                                                [
+                                                  <case>
+                                                    pattern (test/expansion_context/register_print_ctxt.ml[39,1149+32]..test/expansion_context/register_print_ctxt.ml[39,1149+37])
+                                                      Tpat_var "error/3853"
+                                                    expression (test/expansion_context/register_print_ctxt.ml[40,1190+12]..test/expansion_context/register_print_ctxt.ml[43,1342+16])
+                                                      Texp_apply
+                                                      expression (test/expansion_context/register_print_ctxt.ml[40,1190+12]..test/expansion_context/register_print_ctxt.ml[40,1190+46])
+                                                        Texp_ident "Ppxlib!.Ast_builder.Default.psig_extension"
+                                                      [
+                                                        <arg>
+                                                          Labelled "loc"
+                                                          expression (test/expansion_context/register_print_ctxt.ml[41,1237+19]..test/expansion_context/register_print_ctxt.ml[41,1237+54])
+                                                            Texp_apply
+                                                            expression (test/expansion_context/register_print_ctxt.ml[41,1237+20]..test/expansion_context/register_print_ctxt.ml[41,1237+47])
+                                                              Texp_ident "Ppxlib!.Location.Error.get_location"
+                                                            [
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (test/expansion_context/register_print_ctxt.ml[41,1237+48]..test/expansion_context/register_print_ctxt.ml[41,1237+53])
+                                                                  Texp_ident "error/3853"
+                                                            ]
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (test/expansion_context/register_print_ctxt.ml[42,1292+14]..test/expansion_context/register_print_ctxt.ml[42,1292+49])
+                                                            Texp_apply
+                                                            expression (test/expansion_context/register_print_ctxt.ml[42,1292+15]..test/expansion_context/register_print_ctxt.ml[42,1292+42])
+                                                              Texp_ident "Ppxlib!.Location.Error.to_extension"
+                                                            [
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (test/expansion_context/register_print_ctxt.ml[42,1292+43]..test/expansion_context/register_print_ctxt.ml[42,1292+48])
+                                                                  Texp_ident "error/3853"
+                                                            ]
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (test/expansion_context/register_print_ctxt.ml[43,1342+14]..test/expansion_context/register_print_ctxt.ml[43,1342+16])
+                                                            Texp_construct "[]"
+                                                            []
+                                                      ]
+                                                ]
+                                          ]
+                                      <arg>
+                                        Nolabel
+                                        expression (test/expansion_context/register_print_ctxt.ml[44,1360+10]..test/expansion_context/register_print_ctxt.ml[44,1360+19])
+                                          Texp_ident "signature/3851"
+                                    ]
+                            ]
+                      ]
+                  ]
+              <arg>
+                Optional "lint_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "lint_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "preprocess_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "preprocess_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "instrument"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "aliases"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Nolabel
+                expression (test/expansion_context/register_print_ctxt.ml[45,1381+6]..test/expansion_context/register_print_ctxt.ml[45,1381+18])
+                  Texp_constant Const_string("print_ctxt",(test/expansion_context/register_print_ctxt.ml[45,1381+7]..test/expansion_context/register_print_ctxt.ml[45,1381+17]),None)
+            ]
+    ]
+]
+
+(let
+  (shared/11772 =a
+     [0:
+      #"arg_label" #"array" #"attribute" #"attributes" #"binding_op" #"bool"
+      #"case" #"cases" #"char" #"class_declaration" #"class_description"
+      #"class_expr" #"class_expr_desc" #"class_field" #"class_field_desc"
+      #"class_field_kind" #"class_infos" #"class_signature"
+      #"class_structure" #"class_type" #"class_type_declaration"
+      #"class_type_desc" #"class_type_field" #"class_type_field_desc"
+      #"closed_flag" #"constant" #"constr" #"constructor_arguments"
+      #"constructor_declaration" #"core_type" #"core_type_desc"
+      #"direction_flag" #"directive_argument" #"directive_argument_desc"
+      #"expression" #"expression_desc" #"extension" #"extension_constructor"
+      #"extension_constructor_kind" #"float" #"functor_parameter"
+      #"include_declaration" #"include_description" #"include_infos"
+      #"injectivity" #"int" #"int32" #"int64" #"label" #"label_declaration"
+      #"letop" #"list" #"loc" #"location" #"location_stack" #"longident"
+      #"longident_loc" #"module_binding" #"module_declaration" #"module_expr"
+      #"module_expr_desc" #"module_substitution" #"module_type"
+      #"module_type_declaration" #"module_type_desc" #"mutable_flag"
+      #"nativeint" #"object_field" #"object_field_desc" #"open_declaration"
+      #"open_description" #"open_infos" #"option" #"other" #"override_flag"
+      #"package_type" #"pattern" #"pattern_desc" #"payload" #"position"
+      #"private_flag" #"rec_flag" #"record" #"row_field" #"row_field_desc"
+      #"signature" #"signature_item" #"signature_item_desc" #"string"
+      #"structure" #"structure_item" #"structure_item_desc"
+      #"toplevel_directive" #"toplevel_phrase" #"tuple" #"type_declaration"
+      #"type_exception" #"type_extension" #"type_kind" #"unit"
+      #"value_binding" #"value_description" #"variance" #"virtual_flag"
+      #"with_constraint"]
+   shared/11775 =a
+     [0:
+      #"with_constraint" #"virtual_flag" #"variance" #"value_description"
+      #"value_binding" #"unit" #"type_kind" #"type_extension"
+      #"type_exception" #"type_declaration" #"tuple" #"toplevel_phrase"
+      #"toplevel_directive" #"structure_item_desc" #"structure_item"
+      #"structure" #"string" #"signature_item_desc" #"signature_item"
+      #"signature" #"row_field_desc" #"row_field" #"record" #"rec_flag"
+      #"private_flag" #"position" #"payload" #"pattern_desc" #"pattern"
+      #"package_type" #"override_flag" #"other" #"option" #"open_infos"
+      #"open_description" #"open_declaration" #"object_field_desc"
+      #"object_field" #"nativeint" #"mutable_flag" #"module_type_desc"
+      #"module_type_declaration" #"module_type" #"module_substitution"
+      #"module_expr_desc" #"module_expr" #"module_declaration"
+      #"module_binding" #"longident_loc" #"longident" #"location_stack"
+      #"location" #"loc" #"list" #"letop" #"label_declaration" #"label"
+      #"int64" #"int32" #"int" #"injectivity" #"include_infos"
+      #"include_description" #"include_declaration" #"functor_parameter"
+      #"float" #"extension_constructor_kind" #"extension_constructor"
+      #"extension" #"expression_desc" #"expression"
+      #"directive_argument_desc" #"directive_argument" #"direction_flag"
+      #"core_type_desc" #"core_type" #"constructor_declaration"
+      #"constructor_arguments" #"constr" #"constant" #"closed_flag"
+      #"class_type_field_desc" #"class_type_field" #"class_type_desc"
+      #"class_type_declaration" #"class_type" #"class_structure"
+      #"class_signature" #"class_infos" #"class_field_kind"
+      #"class_field_desc" #"class_field" #"class_expr_desc" #"class_expr"
+      #"class_description" #"class_declaration" #"char" #"cases" #"case"
+      #"bool" #"binding_op" #"attributes" #"attribute" #"array" #"arg_label"]
+   shared/11780 =a
+     [0:
+      #"bool" #"cases" #"case" #"char" #"value_binding"
+      #"extension_constructor_kind" #"core_type" #"structure" #"list"
+      #"constr" #"label_declaration" #"module_binding" #"position"
+      #"toplevel_directive" #"directive_argument" #"object_field_desc"
+      #"unit" #"class_type_field_desc" #"open_infos" #"pattern_desc"
+      #"nativeint" #"signature_item" #"extension_constructor"
+      #"toplevel_phrase" #"extension" #"location" #"variance" #"package_type"
+      #"virtual_flag" #"module_type_desc" #"rec_flag" #"payload"
+      #"type_exception" #"label" #"letop" #"location_stack"
+      #"value_description" #"module_declaration" #"class_type_declaration"
+      #"longident_loc" #"closed_flag" #"directive_argument_desc" #"attribute"
+      #"class_infos" #"record" #"signature_item_desc" #"int" #"loc"
+      #"row_field_desc" #"override_flag" #"float" #"structure_item_desc"
+      #"class_field_desc" #"binding_op" #"module_expr_desc"
+      #"class_signature" #"type_extension" #"class_field_kind"
+      #"module_type_declaration" #"arg_label" #"row_field" #"longident"
+      #"string" #"pattern" #"include_description" #"signature"
+      #"class_type_field" #"attributes" #"tuple" #"open_description"
+      #"with_constraint" #"include_declaration" #"class_type_desc"
+      #"private_flag" #"injectivity" #"open_declaration" #"object_field"
+      #"array" #"constant" #"class_expr" #"functor_parameter"
+      #"direction_flag" #"core_type_desc" #"type_declaration"
+      #"constructor_declaration" #"option" #"type_kind" #"module_expr"
+      #"module_substitution" #"class_description" #"expression" #"class_type"
+      #"structure_item" #"include_infos" #"class_declaration" #"other"
+      #"module_type" #"class_expr_desc" #"class_structure" #"mutable_flag"
+      #"expression_desc" #"constructor_arguments" #"int32" #"int64"
+      #"class_field"])
+  (seq
+    (setfield_ptr(root-init) 2 (global Register_print_ctxt!)
+      (caml_make_vect 2 0))
+    (let
+      (pprint_ctxt/537 =
+         (function ctxt/539
+           (let
+             (tool_name/540 =
+                (apply
+                  (field_imm 2
+                    (field_imm 0 (global Ppxlib__Expansion_context!)))
+                  ctxt/539)
+              input_name/617 =
+                (apply
+                  (field_imm 1
+                    (field_imm 0 (global Ppxlib__Expansion_context!)))
+                  ctxt/539)
+              file_path/618 =
+                (dirapply (field_imm 0 (global Ppxlib__Code_path!))
+                  (dirapply
+                    (field_imm 0
+                      (field_imm 0 (global Ppxlib__Expansion_context!)))
+                    ctxt/539)))
+             (apply (field_imm 1 (global Stdlib__printf!))
+               [0:
+                [11:
+                 "tool_name: "
+                 [2:
+                  0
+                  [11:
+                   "\ninput_name: "
+                   [2: 0 [11: "\nfile_path: " [2: 0 [12: '\n' 0]]]]]]]
+                "tool_name: %s\ninput_name: %s\nfile_path: %s\n"]
+               tool_name/540 input_name/617 file_path/618))))
+      (setfield_ptr(root-init) 0 (global Register_print_ctxt!)
+        pprint_ctxt/537))
+    (let
+      (side_print_ctxt/669 =
+         (let
+           (object_tables/11747 =o (makemutable 0 0 0 0)
+            class/11751 =
+              (apply (field_imm 15 (global CamlinternalOO!)) shared/11780)
+            obj_init/11779 =
+              (let
+                (ids/11774 =
+                   (apply (field_imm 7 (global CamlinternalOO!)) class/11751
+                     shared/11775)
+                 with_constraint/1648 =o (field_mut 0 ids/11774)
+                 virtual_flag/1647 =o (field_mut 1 ids/11774)
+                 variance/1646 =o (field_mut 2 ids/11774)
+                 value_description/1645 =o (field_mut 3 ids/11774)
+                 value_binding/1644 =o (field_mut 4 ids/11774)
+                 unit/1643 =o (field_mut 5 ids/11774)
+                 type_kind/1642 =o (field_mut 6 ids/11774)
+                 type_extension/1641 =o (field_mut 7 ids/11774)
+                 type_exception/1640 =o (field_mut 8 ids/11774)
+                 type_declaration/1639 =o (field_mut 9 ids/11774)
+                 tuple/1638 =o (field_mut 10 ids/11774)
+                 toplevel_phrase/1637 =o (field_mut 11 ids/11774)
+                 toplevel_directive/1636 =o (field_mut 12 ids/11774)
+                 structure_item_desc/1635 =o (field_mut 13 ids/11774)
+                 structure_item/1634 =o (field_mut 14 ids/11774)
+                 structure/1544 =o (field_mut 15 ids/11774)
+                 string/1633 =o (field_mut 16 ids/11774)
+                 signature_item_desc/1632 =o (field_mut 17 ids/11774)
+                 signature_item/1631 =o (field_mut 18 ids/11774)
+                 signature/1545 =o (field_mut 19 ids/11774)
+                 row_field_desc/1630 =o (field_mut 20 ids/11774)
+                 row_field/1629 =o (field_mut 21 ids/11774)
+                 record/1628 =o (field_mut 22 ids/11774)
+                 rec_flag/1627 =o (field_mut 23 ids/11774)
+                 private_flag/1626 =o (field_mut 24 ids/11774)
+                 position/1625 =o (field_mut 25 ids/11774)
+                 payload/1624 =o (field_mut 26 ids/11774)
+                 pattern_desc/1623 =o (field_mut 27 ids/11774)
+                 pattern/1622 =o (field_mut 28 ids/11774)
+                 package_type/1621 =o (field_mut 29 ids/11774)
+                 override_flag/1620 =o (field_mut 30 ids/11774)
+                 other/1619 =o (field_mut 31 ids/11774)
+                 option/1618 =o (field_mut 32 ids/11774)
+                 open_infos/1617 =o (field_mut 33 ids/11774)
+                 open_description/1616 =o (field_mut 34 ids/11774)
+                 open_declaration/1615 =o (field_mut 35 ids/11774)
+                 object_field_desc/1614 =o (field_mut 36 ids/11774)
+                 object_field/1613 =o (field_mut 37 ids/11774)
+                 nativeint/1612 =o (field_mut 38 ids/11774)
+                 mutable_flag/1611 =o (field_mut 39 ids/11774)
+                 module_type_desc/1610 =o (field_mut 40 ids/11774)
+                 module_type_declaration/1609 =o (field_mut 41 ids/11774)
+                 module_type/1608 =o (field_mut 42 ids/11774)
+                 module_substitution/1607 =o (field_mut 43 ids/11774)
+                 module_expr_desc/1606 =o (field_mut 44 ids/11774)
+                 module_expr/1605 =o (field_mut 45 ids/11774)
+                 module_declaration/1604 =o (field_mut 46 ids/11774)
+                 module_binding/1603 =o (field_mut 47 ids/11774)
+                 longident_loc/1602 =o (field_mut 48 ids/11774)
+                 longident/1601 =o (field_mut 49 ids/11774)
+                 location_stack/1600 =o (field_mut 50 ids/11774)
+                 location/1599 =o (field_mut 51 ids/11774)
+                 loc/1598 =o (field_mut 52 ids/11774)
+                 list/1597 =o (field_mut 53 ids/11774)
+                 letop/1596 =o (field_mut 54 ids/11774)
+                 label_declaration/1595 =o (field_mut 55 ids/11774)
+                 label/1594 =o (field_mut 56 ids/11774)
+                 int64/1593 =o (field_mut 57 ids/11774)
+                 int32/1592 =o (field_mut 58 ids/11774)
+                 int/1591 =o (field_mut 59 ids/11774)
+                 injectivity/1590 =o (field_mut 60 ids/11774)
+                 include_infos/1589 =o (field_mut 61 ids/11774)
+                 include_description/1588 =o (field_mut 62 ids/11774)
+                 include_declaration/1587 =o (field_mut 63 ids/11774)
+                 functor_parameter/1586 =o (field_mut 64 ids/11774)
+                 float/1585 =o (field_mut 65 ids/11774)
+                 extension_constructor_kind/1584 =o (field_mut 66 ids/11774)
+                 extension_constructor/1583 =o (field_mut 67 ids/11774)
+                 extension/1582 =o (field_mut 68 ids/11774)
+                 expression_desc/1581 =o (field_mut 69 ids/11774)
+                 expression/1580 =o (field_mut 70 ids/11774)
+                 directive_argument_desc/1579 =o (field_mut 71 ids/11774)
+                 directive_argument/1578 =o (field_mut 72 ids/11774)
+                 direction_flag/1577 =o (field_mut 73 ids/11774)
+                 core_type_desc/1576 =o (field_mut 74 ids/11774)
+                 core_type/1575 =o (field_mut 75 ids/11774)
+                 constructor_declaration/1574 =o (field_mut 76 ids/11774)
+                 constructor_arguments/1573 =o (field_mut 77 ids/11774)
+                 constr/1572 =o (field_mut 78 ids/11774)
+                 constant/1571 =o (field_mut 79 ids/11774)
+                 closed_flag/1570 =o (field_mut 80 ids/11774)
+                 class_type_field_desc/1569 =o (field_mut 81 ids/11774)
+                 class_type_field/1568 =o (field_mut 82 ids/11774)
+                 class_type_desc/1567 =o (field_mut 83 ids/11774)
+                 class_type_declaration/1566 =o (field_mut 84 ids/11774)
+                 class_type/1565 =o (field_mut 85 ids/11774)
+                 class_structure/1564 =o (field_mut 86 ids/11774)
+                 class_signature/1563 =o (field_mut 87 ids/11774)
+                 class_infos/1562 =o (field_mut 88 ids/11774)
+                 class_field_kind/1561 =o (field_mut 89 ids/11774)
+                 class_field_desc/1560 =o (field_mut 90 ids/11774)
+                 class_field/1559 =o (field_mut 91 ids/11774)
+                 class_expr_desc/1558 =o (field_mut 92 ids/11774)
+                 class_expr/1557 =o (field_mut 93 ids/11774)
+                 class_description/1556 =o (field_mut 94 ids/11774)
+                 class_declaration/1555 =o (field_mut 95 ids/11774)
+                 char/1554 =o (field_mut 96 ids/11774)
+                 cases/1553 =o (field_mut 97 ids/11774)
+                 case/1552 =o (field_mut 98 ids/11774)
+                 bool/1551 =o (field_mut 99 ids/11774)
+                 binding_op/1550 =o (field_mut 100 ids/11774)
+                 attributes/1549 =o (field_mut 101 ids/11774)
+                 attribute/1548 =o (field_mut 102 ids/11774)
+                 array/1547 =o (field_mut 103 ids/11774)
+                 arg_label/1546 =o (field_mut 104 ids/11774)
+                 inh/11773 =
+                   (apply (field_imm 17 (global CamlinternalOO!)) class/11751
+                     0 0 shared/11772
+                     (field_imm 16 (global Ppxlib__Ast_traverse!)) 1)
+                 obj_init/11755 =o (field_mut 0 inh/11773)
+                 arg_label/1436 =o (field_mut 1 inh/11773)
+                 array/1437 =o (field_mut 2 inh/11773)
+                 attribute/1438 =o (field_mut 3 inh/11773)
+                 attributes/1439 =o (field_mut 4 inh/11773)
+                 binding_op/1440 =o (field_mut 5 inh/11773)
+                 bool/1441 =o (field_mut 6 inh/11773)
+                 case/1442 =o (field_mut 7 inh/11773)
+                 cases/1443 =o (field_mut 8 inh/11773)
+                 char/1444 =o (field_mut 9 inh/11773)
+                 class_declaration/1445 =o (field_mut 10 inh/11773)
+                 class_description/1446 =o (field_mut 11 inh/11773)
+                 class_expr/1447 =o (field_mut 12 inh/11773)
+                 class_expr_desc/1448 =o (field_mut 13 inh/11773)
+                 class_field/1449 =o (field_mut 14 inh/11773)
+                 class_field_desc/1450 =o (field_mut 15 inh/11773)
+                 class_field_kind/1451 =o (field_mut 16 inh/11773)
+                 class_infos/1452 =o (field_mut 17 inh/11773)
+                 class_signature/1453 =o (field_mut 18 inh/11773)
+                 class_structure/1454 =o (field_mut 19 inh/11773)
+                 class_type/1455 =o (field_mut 20 inh/11773)
+                 class_type_declaration/1456 =o (field_mut 21 inh/11773)
+                 class_type_desc/1457 =o (field_mut 22 inh/11773)
+                 class_type_field/1458 =o (field_mut 23 inh/11773)
+                 class_type_field_desc/1459 =o (field_mut 24 inh/11773)
+                 closed_flag/1460 =o (field_mut 25 inh/11773)
+                 constant/1461 =o (field_mut 26 inh/11773)
+                 constr/1462 =o (field_mut 27 inh/11773)
+                 constructor_arguments/1463 =o (field_mut 28 inh/11773)
+                 constructor_declaration/1464 =o (field_mut 29 inh/11773)
+                 core_type/1465 =o (field_mut 30 inh/11773)
+                 core_type_desc/1466 =o (field_mut 31 inh/11773)
+                 direction_flag/1467 =o (field_mut 32 inh/11773)
+                 directive_argument/1468 =o (field_mut 33 inh/11773)
+                 directive_argument_desc/1469 =o (field_mut 34 inh/11773)
+                 expression/1470 =o (field_mut 35 inh/11773)
+                 expression_desc/1471 =o (field_mut 36 inh/11773)
+                 extension/1472 =o (field_mut 37 inh/11773)
+                 extension_constructor/1473 =o (field_mut 38 inh/11773)
+                 extension_constructor_kind/1474 =o (field_mut 39 inh/11773)
+                 float/1475 =o (field_mut 40 inh/11773)
+                 functor_parameter/1476 =o (field_mut 41 inh/11773)
+                 include_declaration/1477 =o (field_mut 42 inh/11773)
+                 include_description/1478 =o (field_mut 43 inh/11773)
+                 include_infos/1479 =o (field_mut 44 inh/11773)
+                 injectivity/1480 =o (field_mut 45 inh/11773)
+                 int/1481 =o (field_mut 46 inh/11773)
+                 int32/1482 =o (field_mut 47 inh/11773)
+                 int64/1483 =o (field_mut 48 inh/11773)
+                 label/1484 =o (field_mut 49 inh/11773)
+                 label_declaration/1485 =o (field_mut 50 inh/11773)
+                 letop/1486 =o (field_mut 51 inh/11773)
+                 list/1487 =o (field_mut 52 inh/11773)
+                 loc/1488 =o (field_mut 53 inh/11773)
+                 location/1489 =o (field_mut 54 inh/11773)
+                 location_stack/1490 =o (field_mut 55 inh/11773)
+                 longident/1491 =o (field_mut 56 inh/11773)
+                 longident_loc/1492 =o (field_mut 57 inh/11773)
+                 module_binding/1493 =o (field_mut 58 inh/11773)
+                 module_declaration/1494 =o (field_mut 59 inh/11773)
+                 module_expr/1495 =o (field_mut 60 inh/11773)
+                 module_expr_desc/1496 =o (field_mut 61 inh/11773)
+                 module_substitution/1497 =o (field_mut 62 inh/11773)
+                 module_type/1498 =o (field_mut 63 inh/11773)
+                 module_type_declaration/1499 =o (field_mut 64 inh/11773)
+                 module_type_desc/1500 =o (field_mut 65 inh/11773)
+                 mutable_flag/1501 =o (field_mut 66 inh/11773)
+                 nativeint/1502 =o (field_mut 67 inh/11773)
+                 object_field/1503 =o (field_mut 68 inh/11773)
+                 object_field_desc/1504 =o (field_mut 69 inh/11773)
+                 open_declaration/1505 =o (field_mut 70 inh/11773)
+                 open_description/1506 =o (field_mut 71 inh/11773)
+                 open_infos/1507 =o (field_mut 72 inh/11773)
+                 option/1508 =o (field_mut 73 inh/11773)
+                 other/1509 =o (field_mut 74 inh/11773)
+                 override_flag/1510 =o (field_mut 75 inh/11773)
+                 package_type/1511 =o (field_mut 76 inh/11773)
+                 pattern/1512 =o (field_mut 77 inh/11773)
+                 pattern_desc/1513 =o (field_mut 78 inh/11773)
+                 payload/1514 =o (field_mut 79 inh/11773)
+                 position/1515 =o (field_mut 80 inh/11773)
+                 private_flag/1516 =o (field_mut 81 inh/11773)
+                 rec_flag/1517 =o (field_mut 82 inh/11773)
+                 record/1518 =o (field_mut 83 inh/11773)
+                 row_field/1519 =o (field_mut 84 inh/11773)
+                 row_field_desc/1520 =o (field_mut 85 inh/11773)
+                 signature/1521 =o (field_mut 86 inh/11773)
+                 signature_item/1522 =o (field_mut 87 inh/11773)
+                 signature_item_desc/1523 =o (field_mut 88 inh/11773)
+                 string/1524 =o (field_mut 89 inh/11773)
+                 structure/1525 =o (field_mut 90 inh/11773)
+                 structure_item/1526 =o (field_mut 91 inh/11773)
+                 structure_item_desc/1527 =o (field_mut 92 inh/11773)
+                 toplevel_directive/1528 =o (field_mut 93 inh/11773)
+                 toplevel_phrase/1529 =o (field_mut 94 inh/11773)
+                 tuple/1530 =o (field_mut 95 inh/11773)
+                 type_declaration/1531 =o (field_mut 96 inh/11773)
+                 type_exception/1532 =o (field_mut 97 inh/11773)
+                 type_extension/1533 =o (field_mut 98 inh/11773)
+                 type_kind/1534 =o (field_mut 99 inh/11773)
+                 unit/1535 =o (field_mut 100 inh/11773)
+                 value_binding/1536 =o (field_mut 101 inh/11773)
+                 value_description/1537 =o (field_mut 102 inh/11773)
+                 variance/1538 =o (field_mut 103 inh/11773)
+                 virtual_flag/1539 =o (field_mut 104 inh/11773)
+                 with_constraint/1540 =o (field_mut 105 inh/11773))
+                (seq
+                  (apply (field_imm 10 (global CamlinternalOO!)) class/11751
+                    (makeblock 0 structure/1544
+                      (let
+                        (method_structure/11771 =
+                           (function self-1/1650 ctxt/1651 st/1652
+                             (let (self-*/1649 =a self-1/1650)
+                               (seq
+                                 (apply
+                                   (field_imm 0
+                                     (global Register_print_ctxt!))
+                                   ctxt/1651)
+                                 (apply structure/1525 self-1/1650 ctxt/1651
+                                   st/1652)))))
+                        method_structure/11771)
+                      signature/1545
+                      (let
+                        (method_signature/11769 =
+                           (function self-1/1658 ctxt/1659 sg/1660
+                             (let (self-*/1657 =a self-1/1658)
+                               (seq
+                                 (apply
+                                   (field_imm 0
+                                     (global Register_print_ctxt!))
+                                   ctxt/1659)
+                                 (apply signature/1521 self-1/1658 ctxt/1659
+                                   sg/1660)))))
+                        method_signature/11769)))
+                  (function env/11753
+                    (let
+                      (self/11754 =
+                         (apply (field_imm 23 (global CamlinternalOO!)) 0
+                           class/11751))
+                      (seq (apply obj_init/11755 self/11754)
+                        (apply (field_imm 25 (global CamlinternalOO!)) 0
+                          self/11754 class/11751)))))))
+           (seq (apply (field_imm 16 (global CamlinternalOO!)) class/11751)
+             (apply obj_init/11779 0))))
+      (setfield_ptr(root-init) 1 (global Register_print_ctxt!)
+        side_print_ctxt/669))
+    (let
+      (*match*/11790 =
+         (apply (field_imm 0 (field_imm 9 (global Ppxlib__Driver!))) 0 0 0 0
+           (makeblock 0
+             (function ctxt/2256 structure/2257
+               (let
+                 (*match*/11784 =
+                    (sendcache (field_imm 1 (global Register_print_ctxt!))
+                      -951102413 (field_mut 2 (global Register_print_ctxt!))
+                      0 ctxt/2256 structure/2257)
+                  errors/2259 =a (field_imm 1 *match*/11784)
+                  structure/2258 =a (field_imm 0 *match*/11784))
+                 (apply (field_imm 97 (global Stdppx!))
+                   (apply (field_imm 48 (field_imm 91 (global Stdppx!)))
+                     errors/2259
+                     (function error/2261
+                       (apply
+                         (field_imm 162
+                           (field_imm 0 (global Ppxlib__Ast_builder!)))
+                         (apply
+                           (field_imm 9
+                             (field_imm 12 (global Ppxlib__Location!)))
+                           error/2261)
+                         (apply
+                           (field_imm 6
+                             (field_imm 12 (global Ppxlib__Location!)))
+                           error/2261)
+                         0)))
+                   structure/2258))))
+           (makeblock 0
+             (function ctxt/3849 signature/3850
+               (let
+                 (*match*/11788 =
+                    (sendcache (field_imm 1 (global Register_print_ctxt!))
+                      359375608 (field_mut 2 (global Register_print_ctxt!)) 1
+                      ctxt/3849 signature/3850)
+                  errors/3852 =a (field_imm 1 *match*/11788)
+                  signature/3851 =a (field_imm 0 *match*/11788))
+                 (apply (field_imm 97 (global Stdppx!))
+                   (apply (field_imm 48 (field_imm 91 (global Stdppx!)))
+                     errors/3852
+                     (function error/3853
+                       (apply
+                         (field_imm 147
+                           (field_imm 0 (global Ppxlib__Ast_builder!)))
+                         (apply
+                           (field_imm 9
+                             (field_imm 12 (global Ppxlib__Location!)))
+                           error/3853)
+                         (apply
+                           (field_imm 6
+                             (field_imm 12 (global Ppxlib__Location!)))
+                           error/3853)
+                         0)))
+                   signature/3851))))
+           0 0 0 0 0 0 "print_ctxt"))
+      0)
+    0))
+(seq
+  (setfield_ptr(root-init) 2 (global Register_print_ctxt!)
+    (caml_make_vect 2 0))
+  (let
+    (pprint_ctxt/537 =
+       (function ctxt/539
+         (let
+           (tool_name/540 =
+              (apply
+                (field_imm 2
+                  (field_imm 0 (global Ppxlib__Expansion_context!)))
+                ctxt/539)
+            input_name/617 =
+              (apply
+                (field_imm 1
+                  (field_imm 0 (global Ppxlib__Expansion_context!)))
+                ctxt/539)
+            file_path/618 =
+              (apply (field_imm 0 (global Ppxlib__Code_path!))
+                (apply
+                  (field_imm 0
+                    (field_imm 0 (global Ppxlib__Expansion_context!)))
+                  ctxt/539)))
+           (apply (field_imm 1 (global Stdlib__printf!))
+             [0:
+              [11:
+               "tool_name: "
+               [2:
+                0
+                [11:
+                 "\ninput_name: "
+                 [2: 0 [11: "\nfile_path: " [2: 0 [12: '\n' 0]]]]]]]
+              "tool_name: %s\ninput_name: %s\nfile_path: %s\n"]
+             tool_name/540 input_name/617 file_path/618))))
+    (setfield_ptr(root-init) 0 (global Register_print_ctxt!) pprint_ctxt/537))
+  (let
+    (side_print_ctxt/669 =
+       (let
+         (class/11751 =
+            (apply (field_imm 15 (global CamlinternalOO!))
+              [0:
+               #"bool" #"cases" #"case" #"char" #"value_binding"
+               #"extension_constructor_kind" #"core_type" #"structure"
+               #"list" #"constr" #"label_declaration" #"module_binding"
+               #"position" #"toplevel_directive" #"directive_argument"
+               #"object_field_desc" #"unit" #"class_type_field_desc"
+               #"open_infos" #"pattern_desc" #"nativeint" #"signature_item"
+               #"extension_constructor" #"toplevel_phrase" #"extension"
+               #"location" #"variance" #"package_type" #"virtual_flag"
+               #"module_type_desc" #"rec_flag" #"payload" #"type_exception"
+               #"label" #"letop" #"location_stack" #"value_description"
+               #"module_declaration" #"class_type_declaration"
+               #"longident_loc" #"closed_flag" #"directive_argument_desc"
+               #"attribute" #"class_infos" #"record" #"signature_item_desc"
+               #"int" #"loc" #"row_field_desc" #"override_flag" #"float"
+               #"structure_item_desc" #"class_field_desc" #"binding_op"
+               #"module_expr_desc" #"class_signature" #"type_extension"
+               #"class_field_kind" #"module_type_declaration" #"arg_label"
+               #"row_field" #"longident" #"string" #"pattern"
+               #"include_description" #"signature" #"class_type_field"
+               #"attributes" #"tuple" #"open_description" #"with_constraint"
+               #"include_declaration" #"class_type_desc" #"private_flag"
+               #"injectivity" #"open_declaration" #"object_field" #"array"
+               #"constant" #"class_expr" #"functor_parameter"
+               #"direction_flag" #"core_type_desc" #"type_declaration"
+               #"constructor_declaration" #"option" #"type_kind"
+               #"module_expr" #"module_substitution" #"class_description"
+               #"expression" #"class_type" #"structure_item" #"include_infos"
+               #"class_declaration" #"other" #"module_type"
+               #"class_expr_desc" #"class_structure" #"mutable_flag"
+               #"expression_desc" #"constructor_arguments" #"int32" #"int64"
+               #"class_field"])
+          obj_init/11779 =
+            (let
+              (ids/11774 =
+                 (apply (field_imm 7 (global CamlinternalOO!)) class/11751
+                   [0:
+                    #"with_constraint" #"virtual_flag" #"variance"
+                    #"value_description" #"value_binding" #"unit"
+                    #"type_kind" #"type_extension" #"type_exception"
+                    #"type_declaration" #"tuple" #"toplevel_phrase"
+                    #"toplevel_directive" #"structure_item_desc"
+                    #"structure_item" #"structure" #"string"
+                    #"signature_item_desc" #"signature_item" #"signature"
+                    #"row_field_desc" #"row_field" #"record" #"rec_flag"
+                    #"private_flag" #"position" #"payload" #"pattern_desc"
+                    #"pattern" #"package_type" #"override_flag" #"other"
+                    #"option" #"open_infos" #"open_description"
+                    #"open_declaration" #"object_field_desc" #"object_field"
+                    #"nativeint" #"mutable_flag" #"module_type_desc"
+                    #"module_type_declaration" #"module_type"
+                    #"module_substitution" #"module_expr_desc" #"module_expr"
+                    #"module_declaration" #"module_binding" #"longident_loc"
+                    #"longident" #"location_stack" #"location" #"loc" #"list"
+                    #"letop" #"label_declaration" #"label" #"int64" #"int32"
+                    #"int" #"injectivity" #"include_infos"
+                    #"include_description" #"include_declaration"
+                    #"functor_parameter" #"float"
+                    #"extension_constructor_kind" #"extension_constructor"
+                    #"extension" #"expression_desc" #"expression"
+                    #"directive_argument_desc" #"directive_argument"
+                    #"direction_flag" #"core_type_desc" #"core_type"
+                    #"constructor_declaration" #"constructor_arguments"
+                    #"constr" #"constant" #"closed_flag"
+                    #"class_type_field_desc" #"class_type_field"
+                    #"class_type_desc" #"class_type_declaration"
+                    #"class_type" #"class_structure" #"class_signature"
+                    #"class_infos" #"class_field_kind" #"class_field_desc"
+                    #"class_field" #"class_expr_desc" #"class_expr"
+                    #"class_description" #"class_declaration" #"char"
+                    #"cases" #"case" #"bool" #"binding_op" #"attributes"
+                    #"attribute" #"array" #"arg_label"])
+               structure/1544 =o (field_mut 15 ids/11774)
+               signature/1545 =o (field_mut 19 ids/11774)
+               inh/11773 =
+                 (apply (field_imm 17 (global CamlinternalOO!)) class/11751 0
+                   0
+                   [0:
+                    #"arg_label" #"array" #"attribute" #"attributes"
+                    #"binding_op" #"bool" #"case" #"cases" #"char"
+                    #"class_declaration" #"class_description" #"class_expr"
+                    #"class_expr_desc" #"class_field" #"class_field_desc"
+                    #"class_field_kind" #"class_infos" #"class_signature"
+                    #"class_structure" #"class_type"
+                    #"class_type_declaration" #"class_type_desc"
+                    #"class_type_field" #"class_type_field_desc"
+                    #"closed_flag" #"constant" #"constr"
+                    #"constructor_arguments" #"constructor_declaration"
+                    #"core_type" #"core_type_desc" #"direction_flag"
+                    #"directive_argument" #"directive_argument_desc"
+                    #"expression" #"expression_desc" #"extension"
+                    #"extension_constructor" #"extension_constructor_kind"
+                    #"float" #"functor_parameter" #"include_declaration"
+                    #"include_description" #"include_infos" #"injectivity"
+                    #"int" #"int32" #"int64" #"label" #"label_declaration"
+                    #"letop" #"list" #"loc" #"location" #"location_stack"
+                    #"longident" #"longident_loc" #"module_binding"
+                    #"module_declaration" #"module_expr" #"module_expr_desc"
+                    #"module_substitution" #"module_type"
+                    #"module_type_declaration" #"module_type_desc"
+                    #"mutable_flag" #"nativeint" #"object_field"
+                    #"object_field_desc" #"open_declaration"
+                    #"open_description" #"open_infos" #"option" #"other"
+                    #"override_flag" #"package_type" #"pattern"
+                    #"pattern_desc" #"payload" #"position" #"private_flag"
+                    #"rec_flag" #"record" #"row_field" #"row_field_desc"
+                    #"signature" #"signature_item" #"signature_item_desc"
+                    #"string" #"structure" #"structure_item"
+                    #"structure_item_desc" #"toplevel_directive"
+                    #"toplevel_phrase" #"tuple" #"type_declaration"
+                    #"type_exception" #"type_extension" #"type_kind" #"unit"
+                    #"value_binding" #"value_description" #"variance"
+                    #"virtual_flag" #"with_constraint"]
+                   (field_imm 16 (global Ppxlib__Ast_traverse!)) 1)
+               obj_init/11755 =o (field_mut 0 inh/11773)
+               signature/1521 =o (field_mut 86 inh/11773)
+               structure/1525 =o (field_mut 90 inh/11773))
+              (seq
+                (apply (field_imm 10 (global CamlinternalOO!)) class/11751
+                  (makeblock 0 structure/1544
+                    (function self-1/1650 ctxt/1651 st/1652
+                      (seq
+                        (apply (field_imm 0 (global Register_print_ctxt!))
+                          ctxt/1651)
+                        (apply structure/1525 self-1/1650 ctxt/1651 st/1652)))
+                    signature/1545
+                    (function self-1/1658 ctxt/1659 sg/1660
+                      (seq
+                        (apply (field_imm 0 (global Register_print_ctxt!))
+                          ctxt/1659)
+                        (apply signature/1521 self-1/1658 ctxt/1659 sg/1660)))))
+                (function env/11753
+                  (let
+                    (self/11754 =
+                       (apply (field_imm 23 (global CamlinternalOO!)) 0
+                         class/11751))
+                    (seq (apply obj_init/11755 self/11754)
+                      (apply (field_imm 25 (global CamlinternalOO!)) 0
+                        self/11754 class/11751)))))))
+         (seq (apply (field_imm 16 (global CamlinternalOO!)) class/11751)
+           (apply obj_init/11779 0))))
+    (setfield_ptr(root-init) 1 (global Register_print_ctxt!)
+      side_print_ctxt/669))
+  (let
+    (*match*/11790 =
+       (apply (field_imm 0 (field_imm 9 (global Ppxlib__Driver!))) 0 0 0 0
+         (makeblock 0
+           (function ctxt/2256 structure/2257
+             (let
+               (*match*/11784 =
+                  (sendcache (field_imm 1 (global Register_print_ctxt!))
+                    -951102413 (field_mut 2 (global Register_print_ctxt!)) 0
+                    ctxt/2256 structure/2257))
+               (apply (field_imm 97 (global Stdppx!))
+                 (apply (field_imm 48 (field_imm 91 (global Stdppx!)))
+                   (field_imm 1 *match*/11784)
+                   (function error/2261
+                     (apply
+                       (field_imm 162
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       (apply
+                         (field_imm 9
+                           (field_imm 12 (global Ppxlib__Location!)))
+                         error/2261)
+                       (apply
+                         (field_imm 6
+                           (field_imm 12 (global Ppxlib__Location!)))
+                         error/2261)
+                       0)))
+                 (field_imm 0 *match*/11784)))))
+         (makeblock 0
+           (function ctxt/3849 signature/3850
+             (let
+               (*match*/11788 =
+                  (sendcache (field_imm 1 (global Register_print_ctxt!))
+                    359375608 (field_mut 2 (global Register_print_ctxt!)) 1
+                    ctxt/3849 signature/3850))
+               (apply (field_imm 97 (global Stdppx!))
+                 (apply (field_imm 48 (field_imm 91 (global Stdppx!)))
+                   (field_imm 1 *match*/11788)
+                   (function error/3853
+                     (apply
+                       (field_imm 147
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       (apply
+                         (field_imm 9
+                           (field_imm 12 (global Ppxlib__Location!)))
+                         error/3853)
+                       (apply
+                         (field_imm 6
+                           (field_imm 12 (global Ppxlib__Location!)))
+                         error/3853)
+                       0)))
+                 (field_imm 0 *match*/11788)))))
+         0 0 0 0 0 0 "print_ctxt"))
+    0)
+  0)

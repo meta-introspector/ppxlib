@@ -1,0 +1,16 @@
+1.165s 72.7MB 8.19MB 8.19MB test/error_embedding/deriver.exe
+  0.005s 0.11MB ------ ------ selection
+  0.001s 2.00MB 0.18MB 0.18MB comballoc
+  0.004s 2.00MB 0.18MB 0.37MB cse
+  0.009s 5.41MB 0.21MB 0.59MB liveness
+  0.002s 2.00MB 0.15MB 0.75MB deadcode
+  0.008s 6.15MB 0.53MB 1.28MB spill
+  0.003s 4.00MB 0.28MB 1.56MB split
+  0.058s 31.9MB 2.09MB 3.65MB regalloc
+  0.002s 0.26MB ------ ------ linearize
+  0.001s ------ ------ ------ scheduling
+  0.003s 2.30MB 0.09MB 3.75MB emit
+  0.014s ------ ------ ------ assemble
+  1.016s ------ ------ ------ c-linker
+  0.038s 16.5MB 4.44MB 8.19MB other
+0.004s ------ ------ ------ other

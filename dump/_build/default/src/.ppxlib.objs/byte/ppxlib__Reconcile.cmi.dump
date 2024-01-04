@@ -1,0 +1,560 @@
+[
+  signature_item (src/reconcile.mli[1,0+0]..[1,0+12])
+    Psig_open Override "Import" (src/reconcile.mli[1,0+6]..[1,0+12])
+  signature_item (src/reconcile.mli[2,13+0]..[2,13+10])
+    Psig_open Fresh "Utils" (src/reconcile.mli[2,13+5]..[2,13+10])
+  signature_item (src/reconcile.mli[4,25+0]..[8,162+3])
+    Psig_module "Context" (src/reconcile.mli[4,25+7]..[4,25+14])
+    module_type (src/reconcile.mli[4,25+17]..[8,162+3])
+      Pmty_signature
+      [
+        signature_item (src/reconcile.mli[5,46+2]..[7,102+59])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/reconcile.mli[5,46+10]..[5,46+11]) (src/reconcile.mli[5,46+2]..[7,102+59])
+              ptype_params =
+                [
+                  core_type (src/reconcile.mli[5,46+7]..[5,46+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (src/reconcile.mli[6,60+4]..[6,60+41])
+                      "Extension" (src/reconcile.mli[6,60+6]..[6,60+15])
+                      [
+                        core_type (src/reconcile.mli[6,60+19]..[6,60+41])
+                          Ptyp_constr "Extension.Context.t" (src/reconcile.mli[6,60+22]..[6,60+41])
+                          [
+                            core_type (src/reconcile.mli[6,60+19]..[6,60+21])
+                              Ptyp_var a
+                          ]
+                      ]
+                      None
+                    (src/reconcile.mli[7,102+4]..[7,102+59])
+                      "Floating_attribute" (src/reconcile.mli[7,102+6]..[7,102+24])
+                      [
+                        core_type (src/reconcile.mli[7,102+28]..[7,102+59])
+                          Ptyp_constr "Attribute.Floating.Context.t" (src/reconcile.mli[7,102+31]..[7,102+59])
+                          [
+                            core_type (src/reconcile.mli[7,102+28]..[7,102+30])
+                              Ptyp_var a
+                          ]
+                      ]
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+      ]
+  signature_item (src/reconcile.mli[10,167+0]..[23,478+3])
+    Psig_module "Replacement" (src/reconcile.mli[10,167+7]..[10,167+18])
+    module_type (src/reconcile.mli[10,167+21]..[23,478+3])
+      Pmty_signature
+      [
+        signature_item (src/reconcile.mli[11,192+2]..[11,192+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/reconcile.mli[11,192+7]..[11,192+8]) (src/reconcile.mli[11,192+2]..[11,192+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/reconcile.mli[13,202+2]..[19,375+5])
+          Psig_value
+          value_description "make" (src/reconcile.mli[13,202+6]..[13,202+10]) (src/reconcile.mli[13,202+2]..[19,375+5])
+            core_type (src/reconcile.mli[14,215+4]..[19,375+5])
+              Ptyp_arrow
+              Labelled "context"
+              core_type (src/reconcile.mli[14,215+12]..[14,215+24])
+                Ptyp_constr "Context.t" (src/reconcile.mli[14,215+15]..[14,215+24])
+                [
+                  core_type (src/reconcile.mli[14,215+12]..[14,215+14])
+                    Ptyp_var a
+                ]
+              core_type (src/reconcile.mli[15,243+4]..[19,375+5])
+                Ptyp_arrow
+                Labelled "start"
+                core_type (src/reconcile.mli[15,243+10]..[15,243+25])
+                  Ptyp_constr "Lexing.position" (src/reconcile.mli[15,243+10]..[15,243+25])
+                  []
+                core_type (src/reconcile.mli[16,272+4]..[19,375+5])
+                  Ptyp_arrow
+                  Labelled "stop"
+                  core_type (src/reconcile.mli[16,272+9]..[16,272+24])
+                    Ptyp_constr "Lexing.position" (src/reconcile.mli[16,272+9]..[16,272+24])
+                    []
+                  core_type (src/reconcile.mli[17,300+4]..[19,375+5])
+                    Ptyp_arrow
+                    Labelled "repl"
+                    core_type (src/reconcile.mli[17,300+9]..[17,300+59])
+                      Ptyp_constr "Context_free.Generated_code_hook.single_or_many" (src/reconcile.mli[17,300+12]..[17,300+59])
+                      [
+                        core_type (src/reconcile.mli[17,300+9]..[17,300+11])
+                          Ptyp_var a
+                      ]
+                    core_type (src/reconcile.mli[18,363+4]..[19,375+5])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/reconcile.mli[18,363+4]..[18,363+8])
+                        Ptyp_constr "unit" (src/reconcile.mli[18,363+4]..[18,363+8])
+                        []
+                      core_type (src/reconcile.mli[19,375+4]..[19,375+5])
+                        Ptyp_constr "t" (src/reconcile.mli[19,375+4]..[19,375+5])
+                        []
+            []
+        signature_item (src/reconcile.mli[21,382+2]..[22,400+77])
+          Psig_value
+          value_description "make_text" (src/reconcile.mli[21,382+6]..[21,382+15]) (src/reconcile.mli[21,382+2]..[22,400+77])
+            core_type (src/reconcile.mli[22,400+4]..[22,400+77])
+              Ptyp_arrow
+              Labelled "start"
+              core_type (src/reconcile.mli[22,400+10]..[22,400+25])
+                Ptyp_constr "Lexing.position" (src/reconcile.mli[22,400+10]..[22,400+25])
+                []
+              core_type (src/reconcile.mli[22,400+29]..[22,400+77])
+                Ptyp_arrow
+                Labelled "stop"
+                core_type (src/reconcile.mli[22,400+34]..[22,400+49])
+                  Ptyp_constr "Lexing.position" (src/reconcile.mli[22,400+34]..[22,400+49])
+                  []
+                core_type (src/reconcile.mli[22,400+53]..[22,400+77])
+                  Ptyp_arrow
+                  Labelled "repl"
+                  core_type (src/reconcile.mli[22,400+58]..[22,400+64])
+                    Ptyp_constr "string" (src/reconcile.mli[22,400+58]..[22,400+64])
+                    []
+                  core_type (src/reconcile.mli[22,400+68]..[22,400+77])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/reconcile.mli[22,400+68]..[22,400+72])
+                      Ptyp_constr "unit" (src/reconcile.mli[22,400+68]..[22,400+72])
+                      []
+                    core_type (src/reconcile.mli[22,400+76]..[22,400+77])
+                      Ptyp_constr "t" (src/reconcile.mli[22,400+76]..[22,400+77])
+                      []
+            []
+      ]
+  signature_item (src/reconcile.mli[25,483+0]..[25,483+63])
+    Psig_type Rec
+    [
+      type_declaration "mode" (src/reconcile.mli[25,483+5]..[25,483+9]) (src/reconcile.mli[25,483+0]..[25,483+63])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (src/reconcile.mli[25,483+12]..[25,483+33])
+                "Using_line_directives" (src/reconcile.mli[25,483+12]..[25,483+33])
+                []
+                None
+              (src/reconcile.mli[25,483+34]..[25,483+63])
+                "Delimiting_generated_blocks" (src/reconcile.mli[25,483+36]..[25,483+63])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/reconcile.mli[26,547+0]..[26,547+40])
+    Psig_type Rec
+    [
+      type_declaration "target" (src/reconcile.mli[26,547+5]..[26,547+11]) (src/reconcile.mli[26,547+0]..[26,547+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (src/reconcile.mli[26,547+14]..[26,547+28])
+                "Output" (src/reconcile.mli[26,547+14]..[26,547+20])
+                [
+                  core_type (src/reconcile.mli[26,547+24]..[26,547+28])
+                    Ptyp_constr "mode" (src/reconcile.mli[26,547+24]..[26,547+28])
+                    []
+                ]
+                None
+              (src/reconcile.mli[26,547+29]..[26,547+40])
+                "Corrected" (src/reconcile.mli[26,547+31]..[26,547+40])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/reconcile.mli[28,589+0]..[37,782+6])
+    Psig_value
+    value_description "reconcile" (src/reconcile.mli[28,589+4]..[28,589+13]) (src/reconcile.mli[28,589+0]..[37,782+6])
+      core_type (src/reconcile.mli[29,605+2]..[37,782+6])
+        Ptyp_arrow
+        Optional "styler"
+        core_type (src/reconcile.mli[29,605+10]..[29,605+16])
+          Ptyp_constr "string" (src/reconcile.mli[29,605+10]..[29,605+16])
+          []
+        core_type (src/reconcile.mli[30,625+2]..[37,782+6])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/reconcile.mli[30,625+2]..[30,625+20])
+            Ptyp_constr "list" (src/reconcile.mli[30,625+16]..[30,625+20])
+            [
+              core_type (src/reconcile.mli[30,625+2]..[30,625+15])
+                Ptyp_constr "Replacement.t" (src/reconcile.mli[30,625+2]..[30,625+15])
+                []
+            ]
+          core_type (src/reconcile.mli[31,649+2]..[37,782+6])
+            Ptyp_arrow
+            Labelled "kind"
+            core_type (src/reconcile.mli[31,649+7]..[31,649+13])
+              Ptyp_constr "Kind.t" (src/reconcile.mli[31,649+7]..[31,649+13])
+              []
+            core_type (src/reconcile.mli[32,666+2]..[37,782+6])
+              Ptyp_arrow
+              Labelled "contents"
+              core_type (src/reconcile.mli[32,666+11]..[32,666+17])
+                Ptyp_constr "string" (src/reconcile.mli[32,666+11]..[32,666+17])
+                []
+              core_type (src/reconcile.mli[33,687+2]..[37,782+6])
+                Ptyp_arrow
+                Labelled "input_filename"
+                core_type (src/reconcile.mli[33,687+17]..[33,687+23])
+                  Ptyp_constr "string" (src/reconcile.mli[33,687+17]..[33,687+23])
+                  []
+                core_type (src/reconcile.mli[34,714+2]..[37,782+6])
+                  Ptyp_arrow
+                  Labelled "output"
+                  core_type (src/reconcile.mli[34,714+9]..[34,714+22])
+                    Ptyp_constr "option" (src/reconcile.mli[34,714+16]..[34,714+22])
+                    [
+                      core_type (src/reconcile.mli[34,714+9]..[34,714+15])
+                        Ptyp_constr "string" (src/reconcile.mli[34,714+9]..[34,714+15])
+                        []
+                    ]
+                  core_type (src/reconcile.mli[35,740+2]..[37,782+6])
+                    Ptyp_arrow
+                    Labelled "input_name"
+                    core_type (src/reconcile.mli[35,740+13]..[35,740+19])
+                      Ptyp_constr "string" (src/reconcile.mli[35,740+13]..[35,740+19])
+                      []
+                    core_type (src/reconcile.mli[36,763+2]..[37,782+6])
+                      Ptyp_arrow
+                      Labelled "target"
+                      core_type (src/reconcile.mli[36,763+9]..[36,763+15])
+                        Ptyp_constr "target" (src/reconcile.mli[36,763+9]..[36,763+15])
+                        []
+                      core_type (src/reconcile.mli[37,782+2]..[37,782+6])
+                        Ptyp_constr "unit" (src/reconcile.mli[37,782+2]..[37,782+6])
+                        []
+      []
+]
+
+open! Import
+open Utils
+module Context :
+sig
+  type 'a t =
+    | Extension of 'a Extension.Context.t 
+    | Floating_attribute of 'a Attribute.Floating.Context.t 
+end
+module Replacement :
+sig
+  type t
+  val make :
+    context:'a Context.t ->
+      start:Lexing.position ->
+        stop:Lexing.position ->
+          repl:'a Context_free.Generated_code_hook.single_or_many ->
+            unit -> t
+  val make_text :
+    start:Lexing.position -> stop:Lexing.position -> repl:string -> unit -> t
+end
+type mode =
+  | Using_line_directives 
+  | Delimiting_generated_blocks 
+type target =
+  | Output of mode 
+  | Corrected 
+val reconcile :
+  ?styler:string ->
+    Replacement.t list ->
+      kind:Kind.t ->
+        contents:string ->
+          input_filename:string ->
+            output:string option ->
+              input_name:string -> target:target -> unit
+[
+  signature_item (src/reconcile.mli[1,0+0]..src/reconcile.mli[1,0+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/reconcile.mli[2,13+0]..src/reconcile.mli[2,13+10])
+    Tsig_open Fresh "Ppxlib__!.Utils"
+  signature_item (src/reconcile.mli[4,25+0]..src/reconcile.mli[8,162+3])
+    Tsig_module "Context/769"
+    module_type (src/reconcile.mli[4,25+17]..src/reconcile.mli[8,162+3])
+      Tmty_signature
+      [
+        signature_item (src/reconcile.mli[5,46+2]..src/reconcile.mli[7,102+59])
+          Tsig_type Rec
+          [
+            type_declaration t/581 (src/reconcile.mli[5,46+2]..src/reconcile.mli[7,102+59])
+              ptype_params =
+                [
+                  core_type (src/reconcile.mli[5,46+7]..src/reconcile.mli[5,46+9])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_variant
+                  [
+                    (src/reconcile.mli[6,60+4]..src/reconcile.mli[6,60+41])
+                      Extension/582
+                      [
+                        core_type (src/reconcile.mli[6,60+19]..src/reconcile.mli[6,60+41])
+                          Ttyp_constr "Ppxlib__!.Extension.Context.t"
+                          [
+                            core_type (src/reconcile.mli[6,60+19]..src/reconcile.mli[6,60+21])
+                              Ttyp_var a
+                          ]
+                      ]
+                      None
+                    (src/reconcile.mli[7,102+4]..src/reconcile.mli[7,102+59])
+                      Floating_attribute/664
+                      [
+                        core_type (src/reconcile.mli[7,102+28]..src/reconcile.mli[7,102+59])
+                          Ttyp_constr "Ppxlib__!.Attribute.Floating.Context.t"
+                          [
+                            core_type (src/reconcile.mli[7,102+28]..src/reconcile.mli[7,102+30])
+                              Ttyp_var a
+                          ]
+                      ]
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+      ]
+  signature_item (src/reconcile.mli[10,167+0]..src/reconcile.mli[23,478+3])
+    Tsig_module "Replacement/855"
+    module_type (src/reconcile.mli[10,167+21]..src/reconcile.mli[23,478+3])
+      Tmty_signature
+      [
+        signature_item (src/reconcile.mli[11,192+2]..src/reconcile.mli[11,192+8])
+          Tsig_type Rec
+          [
+            type_declaration t/770 (src/reconcile.mli[11,192+2]..src/reconcile.mli[11,192+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/reconcile.mli[13,202+2]..src/reconcile.mli[19,375+5])
+          Tsig_value
+          value_description make/853 (src/reconcile.mli[13,202+2]..src/reconcile.mli[19,375+5])
+            core_type (src/reconcile.mli[14,215+4]..src/reconcile.mli[19,375+5])
+              Ttyp_arrow
+              Labelled "context"
+              core_type (src/reconcile.mli[14,215+12]..src/reconcile.mli[14,215+24])
+                Ttyp_constr "Context/769.t"
+                [
+                  core_type (src/reconcile.mli[14,215+12]..src/reconcile.mli[14,215+14])
+                    Ttyp_var a
+                ]
+              core_type (src/reconcile.mli[15,243+4]..src/reconcile.mli[19,375+5])
+                Ttyp_arrow
+                Labelled "start"
+                core_type (src/reconcile.mli[15,243+10]..src/reconcile.mli[15,243+25])
+                  Ttyp_constr "Stdlib!.Lexing.position"
+                  []
+                core_type (src/reconcile.mli[16,272+4]..src/reconcile.mli[19,375+5])
+                  Ttyp_arrow
+                  Labelled "stop"
+                  core_type (src/reconcile.mli[16,272+9]..src/reconcile.mli[16,272+24])
+                    Ttyp_constr "Stdlib!.Lexing.position"
+                    []
+                  core_type (src/reconcile.mli[17,300+4]..src/reconcile.mli[19,375+5])
+                    Ttyp_arrow
+                    Labelled "repl"
+                    core_type (src/reconcile.mli[17,300+9]..src/reconcile.mli[17,300+59])
+                      Ttyp_constr "Ppxlib__!.Context_free.Generated_code_hook.single_or_many"
+                      [
+                        core_type (src/reconcile.mli[17,300+9]..src/reconcile.mli[17,300+11])
+                          Ttyp_var a
+                      ]
+                    core_type (src/reconcile.mli[18,363+4]..src/reconcile.mli[19,375+5])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/reconcile.mli[18,363+4]..src/reconcile.mli[18,363+8])
+                        Ttyp_constr "unit/6!"
+                        []
+                      core_type (src/reconcile.mli[19,375+4]..src/reconcile.mli[19,375+5])
+                        Ttyp_constr "t/770"
+                        []
+            []
+        signature_item (src/reconcile.mli[21,382+2]..src/reconcile.mli[22,400+77])
+          Tsig_value
+          value_description make_text/854 (src/reconcile.mli[21,382+2]..src/reconcile.mli[22,400+77])
+            core_type (src/reconcile.mli[22,400+4]..src/reconcile.mli[22,400+77])
+              Ttyp_arrow
+              Labelled "start"
+              core_type (src/reconcile.mli[22,400+10]..src/reconcile.mli[22,400+25])
+                Ttyp_constr "Stdlib!.Lexing.position"
+                []
+              core_type (src/reconcile.mli[22,400+29]..src/reconcile.mli[22,400+77])
+                Ttyp_arrow
+                Labelled "stop"
+                core_type (src/reconcile.mli[22,400+34]..src/reconcile.mli[22,400+49])
+                  Ttyp_constr "Stdlib!.Lexing.position"
+                  []
+                core_type (src/reconcile.mli[22,400+53]..src/reconcile.mli[22,400+77])
+                  Ttyp_arrow
+                  Labelled "repl"
+                  core_type (src/reconcile.mli[22,400+58]..src/reconcile.mli[22,400+64])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/reconcile.mli[22,400+68]..src/reconcile.mli[22,400+77])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/reconcile.mli[22,400+68]..src/reconcile.mli[22,400+72])
+                      Ttyp_constr "unit/6!"
+                      []
+                    core_type (src/reconcile.mli[22,400+76]..src/reconcile.mli[22,400+77])
+                      Ttyp_constr "t/770"
+                      []
+            []
+      ]
+  signature_item (src/reconcile.mli[25,483+0]..src/reconcile.mli[25,483+63])
+    Tsig_type Rec
+    [
+      type_declaration mode/856 (src/reconcile.mli[25,483+0]..src/reconcile.mli[25,483+63])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (src/reconcile.mli[25,483+12]..src/reconcile.mli[25,483+33])
+                Using_line_directives/857
+                []
+                None
+              (src/reconcile.mli[25,483+34]..src/reconcile.mli[25,483+63])
+                Delimiting_generated_blocks/858
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/reconcile.mli[26,547+0]..src/reconcile.mli[26,547+40])
+    Tsig_type Rec
+    [
+      type_declaration target/859 (src/reconcile.mli[26,547+0]..src/reconcile.mli[26,547+40])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (src/reconcile.mli[26,547+14]..src/reconcile.mli[26,547+28])
+                Output/860
+                [
+                  core_type (src/reconcile.mli[26,547+24]..src/reconcile.mli[26,547+28])
+                    Ttyp_constr "mode/856"
+                    []
+                ]
+                None
+              (src/reconcile.mli[26,547+29]..src/reconcile.mli[26,547+40])
+                Corrected/861
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/reconcile.mli[28,589+0]..src/reconcile.mli[37,782+6])
+    Tsig_value
+    value_description reconcile/871 (src/reconcile.mli[28,589+0]..src/reconcile.mli[37,782+6])
+      core_type (src/reconcile.mli[29,605+2]..src/reconcile.mli[37,782+6])
+        Ttyp_arrow
+        Optional "styler"
+        core_type (src/reconcile.mli[29,605+10]..src/reconcile.mli[29,605+16])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/reconcile.mli[30,625+2]..src/reconcile.mli[37,782+6])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/reconcile.mli[30,625+2]..src/reconcile.mli[30,625+20])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/reconcile.mli[30,625+2]..src/reconcile.mli[30,625+15])
+                Ttyp_constr "Replacement/855.t"
+                []
+            ]
+          core_type (src/reconcile.mli[31,649+2]..src/reconcile.mli[37,782+6])
+            Ttyp_arrow
+            Labelled "kind"
+            core_type (src/reconcile.mli[31,649+7]..src/reconcile.mli[31,649+13])
+              Ttyp_constr "Ppxlib__!.Utils.Kind.t"
+              []
+            core_type (src/reconcile.mli[32,666+2]..src/reconcile.mli[37,782+6])
+              Ttyp_arrow
+              Labelled "contents"
+              core_type (src/reconcile.mli[32,666+11]..src/reconcile.mli[32,666+17])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/reconcile.mli[33,687+2]..src/reconcile.mli[37,782+6])
+                Ttyp_arrow
+                Labelled "input_filename"
+                core_type (src/reconcile.mli[33,687+17]..src/reconcile.mli[33,687+23])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/reconcile.mli[34,714+2]..src/reconcile.mli[37,782+6])
+                  Ttyp_arrow
+                  Labelled "output"
+                  core_type (src/reconcile.mli[34,714+9]..src/reconcile.mli[34,714+22])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/reconcile.mli[34,714+9]..src/reconcile.mli[34,714+15])
+                        Ttyp_constr "string/17!"
+                        []
+                    ]
+                  core_type (src/reconcile.mli[35,740+2]..src/reconcile.mli[37,782+6])
+                    Ttyp_arrow
+                    Labelled "input_name"
+                    core_type (src/reconcile.mli[35,740+13]..src/reconcile.mli[35,740+19])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/reconcile.mli[36,763+2]..src/reconcile.mli[37,782+6])
+                      Ttyp_arrow
+                      Labelled "target"
+                      core_type (src/reconcile.mli[36,763+9]..src/reconcile.mli[36,763+15])
+                        Ttyp_constr "target/859"
+                        []
+                      core_type (src/reconcile.mli[37,782+2]..src/reconcile.mli[37,782+6])
+                        Ttyp_constr "unit/6!"
+                        []
+      []
+]
+

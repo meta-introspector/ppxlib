@@ -1,0 +1,6 @@
+0.074s 31.5MB 11.4MB 11.4MB src/expansion_helpers.ml
+  0.064s 24.2MB 9.84MB 9.84MB typing
+  0.001s ------ ------ ------ transl
+  0.002s 2.00MB 0.03MB 9.87MB generate
+  0.007s 5.31MB 1.53MB 11.4MB other
+0.010s ------ ------ ------ other

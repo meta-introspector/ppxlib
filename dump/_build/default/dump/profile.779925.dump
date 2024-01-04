@@ -1,0 +1,6 @@
+0.115s  111MB 22.1MB 22.1MB src/ast_traverse0.ml
+  0.101s 85.1MB 19.6MB 19.6MB typing
+  0.001s 0.06MB ------ ------ transl
+  0.008s 20.9MB 0.99MB 20.6MB generate
+  0.006s 4.87MB 1.57MB 22.1MB other
+0.009s ------ ------ ------ other

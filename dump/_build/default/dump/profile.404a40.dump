@@ -1,0 +1,6 @@
+0.077s 47.0MB 16.7MB 16.7MB src/driver.mli
+  0.004s 2.90MB 1.53MB 1.53MB parsing
+    0.004s 2.90MB 1.53MB 1.53MB parser
+  0.066s 38.0MB 14.2MB 15.7MB typing
+  0.007s 6.08MB 0.94MB 16.7MB other
+0.009s ------ ------ ------ other

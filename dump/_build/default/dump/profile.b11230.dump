@@ -1,0 +1,8 @@
+0.349s  246MB 38.6MB 38.6MB src/extension.ml
+  0.006s 4.91MB 1.88MB 1.88MB parsing
+    0.006s 4.91MB 1.88MB 1.88MB parser
+  0.299s  160MB 35.4MB 37.3MB typing
+  0.007s 10.6MB 0.25MB 37.6MB transl
+  0.014s 32.6MB 0.91MB 38.5MB generate
+  0.023s 37.5MB 0.15MB 38.6MB other
+0.008s ------ ------ ------ other

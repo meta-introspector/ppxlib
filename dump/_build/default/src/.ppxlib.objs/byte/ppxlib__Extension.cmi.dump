@@ -1,0 +1,3562 @@
+[
+  signature_item (src/extension.mli[1,0+0]..[1,0+52])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/extension.mli[1,0+0]..[1,0+52])
+        Pstr_eval
+        expression (src/extension.mli[1,0+0]..[1,0+52])
+          Pexp_constant PConst_string(" Declare extenders to rewrite extension nodes. ",(src/extension.mli[1,0+0]..[1,0+52]),None)
+    ]
+  signature_item (src/extension.mli[3,54+0]..[3,54+12])
+    Psig_open Override "Import" (src/extension.mli[3,54+6]..[3,54+12])
+  signature_item (src/extension.mli[5,68+0]..[5,68+68])
+    Psig_type Rec
+    [
+      type_declaration "equality" (src/extension.mli[5,68+12]..[5,68+20]) (src/extension.mli[5,68+0]..[5,68+68])
+        ptype_params =
+          [
+            core_type (src/extension.mli[5,68+6]..[5,68+7])
+              Ptyp_any
+            core_type (src/extension.mli[5,68+9]..[5,68+10])
+              Ptyp_any
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (src/extension.mli[5,68+23]..[5,68+45])
+                "Eq" (src/extension.mli[5,68+23]..[5,68+25])
+                []
+                Some
+                  core_type (src/extension.mli[5,68+28]..[5,68+45])
+                    Ptyp_constr "equality" (src/extension.mli[5,68+37]..[5,68+45])
+                    [
+                      core_type (src/extension.mli[5,68+29]..[5,68+31])
+                        Ptyp_var a
+                      core_type (src/extension.mli[5,68+33]..[5,68+35])
+                        Ptyp_var a
+                    ]
+              (src/extension.mli[5,68+46]..[5,68+68])
+                "Ne" (src/extension.mli[5,68+48]..[5,68+50])
+                []
+                Some
+                  core_type (src/extension.mli[5,68+53]..[5,68+68])
+                    Ptyp_constr "equality" (src/extension.mli[5,68+60]..[5,68+68])
+                    [
+                      core_type (src/extension.mli[5,68+54]..[5,68+55])
+                        Ptyp_any
+                      core_type (src/extension.mli[5,68+57]..[5,68+58])
+                        Ptyp_any
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/extension.mli[7,138+0]..[40,1305+3])
+    Psig_module "Context" (src/extension.mli[7,138+7]..[7,138+14])
+    module_type (src/extension.mli[7,138+17]..[40,1305+3])
+      Pmty_signature
+      [
+        signature_item (src/extension.mli[8,159+2]..[20,551+37])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/extension.mli[8,159+10]..[8,159+11]) (src/extension.mli[8,159+2]..[20,551+37])
+              ptype_params =
+                [
+                  core_type (src/extension.mli[8,159+7]..[8,159+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (src/extension.mli[9,173+4]..[9,173+31])
+                      "Class_expr" (src/extension.mli[9,173+6]..[9,173+16])
+                      []
+                      Some
+                        core_type (src/extension.mli[9,173+19]..[9,173+31])
+                          Ptyp_constr "t" (src/extension.mli[9,173+30]..[9,173+31])
+                          [
+                            core_type (src/extension.mli[9,173+19]..[9,173+29])
+                              Ptyp_constr "class_expr" (src/extension.mli[9,173+19]..[9,173+29])
+                              []
+                          ]
+                    (src/extension.mli[10,205+4]..[10,205+33])
+                      "Class_field" (src/extension.mli[10,205+6]..[10,205+17])
+                      []
+                      Some
+                        core_type (src/extension.mli[10,205+20]..[10,205+33])
+                          Ptyp_constr "t" (src/extension.mli[10,205+32]..[10,205+33])
+                          [
+                            core_type (src/extension.mli[10,205+20]..[10,205+31])
+                              Ptyp_constr "class_field" (src/extension.mli[10,205+20]..[10,205+31])
+                              []
+                          ]
+                    (src/extension.mli[11,239+4]..[11,239+31])
+                      "Class_type" (src/extension.mli[11,239+6]..[11,239+16])
+                      []
+                      Some
+                        core_type (src/extension.mli[11,239+19]..[11,239+31])
+                          Ptyp_constr "t" (src/extension.mli[11,239+30]..[11,239+31])
+                          [
+                            core_type (src/extension.mli[11,239+19]..[11,239+29])
+                              Ptyp_constr "class_type" (src/extension.mli[11,239+19]..[11,239+29])
+                              []
+                          ]
+                    (src/extension.mli[12,271+4]..[12,271+43])
+                      "Class_type_field" (src/extension.mli[12,271+6]..[12,271+22])
+                      []
+                      Some
+                        core_type (src/extension.mli[12,271+25]..[12,271+43])
+                          Ptyp_constr "t" (src/extension.mli[12,271+42]..[12,271+43])
+                          [
+                            core_type (src/extension.mli[12,271+25]..[12,271+41])
+                              Ptyp_constr "class_type_field" (src/extension.mli[12,271+25]..[12,271+41])
+                              []
+                          ]
+                    (src/extension.mli[13,315+4]..[13,315+29])
+                      "Core_type" (src/extension.mli[13,315+6]..[13,315+15])
+                      []
+                      Some
+                        core_type (src/extension.mli[13,315+18]..[13,315+29])
+                          Ptyp_constr "t" (src/extension.mli[13,315+28]..[13,315+29])
+                          [
+                            core_type (src/extension.mli[13,315+18]..[13,315+27])
+                              Ptyp_constr "core_type" (src/extension.mli[13,315+18]..[13,315+27])
+                              []
+                          ]
+                    (src/extension.mli[14,345+4]..[14,345+31])
+                      "Expression" (src/extension.mli[14,345+6]..[14,345+16])
+                      []
+                      Some
+                        core_type (src/extension.mli[14,345+19]..[14,345+31])
+                          Ptyp_constr "t" (src/extension.mli[14,345+30]..[14,345+31])
+                          [
+                            core_type (src/extension.mli[14,345+19]..[14,345+29])
+                              Ptyp_constr "expression" (src/extension.mli[14,345+19]..[14,345+29])
+                              []
+                          ]
+                    (src/extension.mli[15,377+4]..[15,377+33])
+                      "Module_expr" (src/extension.mli[15,377+6]..[15,377+17])
+                      []
+                      Some
+                        core_type (src/extension.mli[15,377+20]..[15,377+33])
+                          Ptyp_constr "t" (src/extension.mli[15,377+32]..[15,377+33])
+                          [
+                            core_type (src/extension.mli[15,377+20]..[15,377+31])
+                              Ptyp_constr "module_expr" (src/extension.mli[15,377+20]..[15,377+31])
+                              []
+                          ]
+                    (src/extension.mli[16,411+4]..[16,411+33])
+                      "Module_type" (src/extension.mli[16,411+6]..[16,411+17])
+                      []
+                      Some
+                        core_type (src/extension.mli[16,411+20]..[16,411+33])
+                          Ptyp_constr "t" (src/extension.mli[16,411+32]..[16,411+33])
+                          [
+                            core_type (src/extension.mli[16,411+20]..[16,411+31])
+                              Ptyp_constr "module_type" (src/extension.mli[16,411+20]..[16,411+31])
+                              []
+                          ]
+                    (src/extension.mli[17,445+4]..[17,445+25])
+                      "Pattern" (src/extension.mli[17,445+6]..[17,445+13])
+                      []
+                      Some
+                        core_type (src/extension.mli[17,445+16]..[17,445+25])
+                          Ptyp_constr "t" (src/extension.mli[17,445+24]..[17,445+25])
+                          [
+                            core_type (src/extension.mli[17,445+16]..[17,445+23])
+                              Ptyp_constr "pattern" (src/extension.mli[17,445+16]..[17,445+23])
+                              []
+                          ]
+                    (src/extension.mli[18,471+4]..[18,471+39])
+                      "Signature_item" (src/extension.mli[18,471+6]..[18,471+20])
+                      []
+                      Some
+                        core_type (src/extension.mli[18,471+23]..[18,471+39])
+                          Ptyp_constr "t" (src/extension.mli[18,471+38]..[18,471+39])
+                          [
+                            core_type (src/extension.mli[18,471+23]..[18,471+37])
+                              Ptyp_constr "signature_item" (src/extension.mli[18,471+23]..[18,471+37])
+                              []
+                          ]
+                    (src/extension.mli[19,511+4]..[19,511+39])
+                      "Structure_item" (src/extension.mli[19,511+6]..[19,511+20])
+                      []
+                      Some
+                        core_type (src/extension.mli[19,511+23]..[19,511+39])
+                          Ptyp_constr "t" (src/extension.mli[19,511+38]..[19,511+39])
+                          [
+                            core_type (src/extension.mli[19,511+23]..[19,511+37])
+                              Ptyp_constr "structure_item" (src/extension.mli[19,511+23]..[19,511+37])
+                              []
+                          ]
+                    (src/extension.mli[20,551+4]..[20,551+37])
+                      "Ppx_import" (src/extension.mli[20,551+6]..[20,551+16])
+                      attribute "ocaml.doc"
+                        [
+                          structure_item (src/extension.mli[21,589+8]..[21,589+60])
+                            Pstr_eval
+                            expression (src/extension.mli[21,589+8]..[21,589+60])
+                              Pexp_constant PConst_string(" For ppx_import compat only, please do not use ",(src/extension.mli[21,589+8]..[21,589+60]),None)
+                        ]
+                      []
+                      Some
+                        core_type (src/extension.mli[20,551+19]..[20,551+37])
+                          Ptyp_constr "t" (src/extension.mli[20,551+36]..[20,551+37])
+                          [
+                            core_type (src/extension.mli[20,551+19]..[20,551+35])
+                              Ptyp_constr "type_declaration" (src/extension.mli[20,551+19]..[20,551+35])
+                              []
+                          ]
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/extension.mli[23,651+2]..[23,651+31])
+          Psig_value
+          value_description "class_expr" (src/extension.mli[23,651+6]..[23,651+16]) (src/extension.mli[23,651+2]..[23,651+31])
+            core_type (src/extension.mli[23,651+19]..[23,651+31])
+              Ptyp_constr "t" (src/extension.mli[23,651+30]..[23,651+31])
+              [
+                core_type (src/extension.mli[23,651+19]..[23,651+29])
+                  Ptyp_constr "class_expr" (src/extension.mli[23,651+19]..[23,651+29])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[24,683+2]..[24,683+33])
+          Psig_value
+          value_description "class_field" (src/extension.mli[24,683+6]..[24,683+17]) (src/extension.mli[24,683+2]..[24,683+33])
+            core_type (src/extension.mli[24,683+20]..[24,683+33])
+              Ptyp_constr "t" (src/extension.mli[24,683+32]..[24,683+33])
+              [
+                core_type (src/extension.mli[24,683+20]..[24,683+31])
+                  Ptyp_constr "class_field" (src/extension.mli[24,683+20]..[24,683+31])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[25,717+2]..[25,717+31])
+          Psig_value
+          value_description "class_type" (src/extension.mli[25,717+6]..[25,717+16]) (src/extension.mli[25,717+2]..[25,717+31])
+            core_type (src/extension.mli[25,717+19]..[25,717+31])
+              Ptyp_constr "t" (src/extension.mli[25,717+30]..[25,717+31])
+              [
+                core_type (src/extension.mli[25,717+19]..[25,717+29])
+                  Ptyp_constr "class_type" (src/extension.mli[25,717+19]..[25,717+29])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[26,749+2]..[26,749+43])
+          Psig_value
+          value_description "class_type_field" (src/extension.mli[26,749+6]..[26,749+22]) (src/extension.mli[26,749+2]..[26,749+43])
+            core_type (src/extension.mli[26,749+25]..[26,749+43])
+              Ptyp_constr "t" (src/extension.mli[26,749+42]..[26,749+43])
+              [
+                core_type (src/extension.mli[26,749+25]..[26,749+41])
+                  Ptyp_constr "class_type_field" (src/extension.mli[26,749+25]..[26,749+41])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[27,793+2]..[27,793+29])
+          Psig_value
+          value_description "core_type" (src/extension.mli[27,793+6]..[27,793+15]) (src/extension.mli[27,793+2]..[27,793+29])
+            core_type (src/extension.mli[27,793+18]..[27,793+29])
+              Ptyp_constr "t" (src/extension.mli[27,793+28]..[27,793+29])
+              [
+                core_type (src/extension.mli[27,793+18]..[27,793+27])
+                  Ptyp_constr "core_type" (src/extension.mli[27,793+18]..[27,793+27])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[28,823+2]..[28,823+31])
+          Psig_value
+          value_description "expression" (src/extension.mli[28,823+6]..[28,823+16]) (src/extension.mli[28,823+2]..[28,823+31])
+            core_type (src/extension.mli[28,823+19]..[28,823+31])
+              Ptyp_constr "t" (src/extension.mli[28,823+30]..[28,823+31])
+              [
+                core_type (src/extension.mli[28,823+19]..[28,823+29])
+                  Ptyp_constr "expression" (src/extension.mli[28,823+19]..[28,823+29])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[29,855+2]..[29,855+33])
+          Psig_value
+          value_description "module_expr" (src/extension.mli[29,855+6]..[29,855+17]) (src/extension.mli[29,855+2]..[29,855+33])
+            core_type (src/extension.mli[29,855+20]..[29,855+33])
+              Ptyp_constr "t" (src/extension.mli[29,855+32]..[29,855+33])
+              [
+                core_type (src/extension.mli[29,855+20]..[29,855+31])
+                  Ptyp_constr "module_expr" (src/extension.mli[29,855+20]..[29,855+31])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[30,889+2]..[30,889+33])
+          Psig_value
+          value_description "module_type" (src/extension.mli[30,889+6]..[30,889+17]) (src/extension.mli[30,889+2]..[30,889+33])
+            core_type (src/extension.mli[30,889+20]..[30,889+33])
+              Ptyp_constr "t" (src/extension.mli[30,889+32]..[30,889+33])
+              [
+                core_type (src/extension.mli[30,889+20]..[30,889+31])
+                  Ptyp_constr "module_type" (src/extension.mli[30,889+20]..[30,889+31])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[31,923+2]..[31,923+25])
+          Psig_value
+          value_description "pattern" (src/extension.mli[31,923+6]..[31,923+13]) (src/extension.mli[31,923+2]..[31,923+25])
+            core_type (src/extension.mli[31,923+16]..[31,923+25])
+              Ptyp_constr "t" (src/extension.mli[31,923+24]..[31,923+25])
+              [
+                core_type (src/extension.mli[31,923+16]..[31,923+23])
+                  Ptyp_constr "pattern" (src/extension.mli[31,923+16]..[31,923+23])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[32,949+2]..[32,949+39])
+          Psig_value
+          value_description "signature_item" (src/extension.mli[32,949+6]..[32,949+20]) (src/extension.mli[32,949+2]..[32,949+39])
+            core_type (src/extension.mli[32,949+23]..[32,949+39])
+              Ptyp_constr "t" (src/extension.mli[32,949+38]..[32,949+39])
+              [
+                core_type (src/extension.mli[32,949+23]..[32,949+37])
+                  Ptyp_constr "signature_item" (src/extension.mli[32,949+23]..[32,949+37])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[33,989+2]..[33,989+39])
+          Psig_value
+          value_description "structure_item" (src/extension.mli[33,989+6]..[33,989+20]) (src/extension.mli[33,989+2]..[33,989+39])
+            core_type (src/extension.mli[33,989+23]..[33,989+39])
+              Ptyp_constr "t" (src/extension.mli[33,989+38]..[33,989+39])
+              [
+                core_type (src/extension.mli[33,989+23]..[33,989+37])
+                  Ptyp_constr "structure_item" (src/extension.mli[33,989+23]..[33,989+37])
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[34,1029+2]..[34,1029+44])
+          Psig_value
+          value_description "eq" (src/extension.mli[34,1029+6]..[34,1029+8]) (src/extension.mli[34,1029+2]..[34,1029+44])
+            core_type (src/extension.mli[34,1029+11]..[34,1029+44])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[34,1029+11]..[34,1029+15])
+                Ptyp_constr "t" (src/extension.mli[34,1029+14]..[34,1029+15])
+                [
+                  core_type (src/extension.mli[34,1029+11]..[34,1029+13])
+                    Ptyp_var a
+                ]
+              core_type (src/extension.mli[34,1029+19]..[34,1029+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[34,1029+19]..[34,1029+23])
+                  Ptyp_constr "t" (src/extension.mli[34,1029+22]..[34,1029+23])
+                  [
+                    core_type (src/extension.mli[34,1029+19]..[34,1029+21])
+                      Ptyp_var b
+                  ]
+                core_type (src/extension.mli[34,1029+27]..[34,1029+44])
+                  Ptyp_constr "equality" (src/extension.mli[34,1029+36]..[34,1029+44])
+                  [
+                    core_type (src/extension.mli[34,1029+28]..[34,1029+30])
+                      Ptyp_var a
+                    core_type (src/extension.mli[34,1029+32]..[34,1029+34])
+                      Ptyp_var b
+                  ]
+            []
+        signature_item (src/extension.mli[35,1074+2]..[35,1074+67])
+          Psig_value
+          value_description "get_extension" (src/extension.mli[35,1074+6]..[35,1074+19]) (src/extension.mli[35,1074+2]..[35,1074+67])
+            core_type (src/extension.mli[35,1074+22]..[35,1074+67])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[35,1074+22]..[35,1074+26])
+                Ptyp_constr "t" (src/extension.mli[35,1074+25]..[35,1074+26])
+                [
+                  core_type (src/extension.mli[35,1074+22]..[35,1074+24])
+                    Ptyp_var a
+                ]
+              core_type (src/extension.mli[35,1074+30]..[35,1074+67])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[35,1074+30]..[35,1074+32])
+                  Ptyp_var a
+                core_type (src/extension.mli[35,1074+36]..[35,1074+67])
+                  Ptyp_constr "option" (src/extension.mli[35,1074+61]..[35,1074+67])
+                  [
+                    core_type (src/extension.mli[35,1074+37]..[35,1074+59])
+                      Ptyp_tuple
+                      [
+                        core_type (src/extension.mli[35,1074+37]..[35,1074+46])
+                          Ptyp_constr "extension" (src/extension.mli[35,1074+37]..[35,1074+46])
+                          []
+                        core_type (src/extension.mli[35,1074+49]..[35,1074+59])
+                          Ptyp_constr "attributes" (src/extension.mli[35,1074+49]..[35,1074+59])
+                          []
+                      ]
+                  ]
+            []
+        signature_item (src/extension.mli[36,1142+2]..[36,1142+55])
+          Psig_value
+          value_description "merge_attributes" (src/extension.mli[36,1142+6]..[36,1142+22]) (src/extension.mli[36,1142+2]..[36,1142+55])
+            core_type (src/extension.mli[36,1142+25]..[36,1142+55])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[36,1142+25]..[36,1142+29])
+                Ptyp_constr "t" (src/extension.mli[36,1142+28]..[36,1142+29])
+                [
+                  core_type (src/extension.mli[36,1142+25]..[36,1142+27])
+                    Ptyp_var a
+                ]
+              core_type (src/extension.mli[36,1142+33]..[36,1142+55])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[36,1142+33]..[36,1142+35])
+                  Ptyp_var a
+                core_type (src/extension.mli[36,1142+39]..[36,1142+55])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[36,1142+39]..[36,1142+49])
+                    Ptyp_constr "attributes" (src/extension.mli[36,1142+39]..[36,1142+49])
+                    []
+                  core_type (src/extension.mli[36,1142+53]..[36,1142+55])
+                    Ptyp_var a
+            []
+        signature_item (src/extension.mli[38,1199+2]..[39,1228+76])
+          Psig_value
+          value_description "merge_attributes_res" (src/extension.mli[38,1199+6]..[38,1199+26]) (src/extension.mli[38,1199+2]..[39,1228+76])
+            core_type (src/extension.mli[39,1228+4]..[39,1228+76])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[39,1228+4]..[39,1228+8])
+                Ptyp_constr "t" (src/extension.mli[39,1228+7]..[39,1228+8])
+                [
+                  core_type (src/extension.mli[39,1228+4]..[39,1228+6])
+                    Ptyp_var a
+                ]
+              core_type (src/extension.mli[39,1228+12]..[39,1228+76])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[39,1228+12]..[39,1228+14])
+                  Ptyp_var a
+                core_type (src/extension.mli[39,1228+18]..[39,1228+76])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[39,1228+18]..[39,1228+28])
+                    Ptyp_constr "attributes" (src/extension.mli[39,1228+18]..[39,1228+28])
+                    []
+                  core_type (src/extension.mli[39,1228+32]..[39,1228+76])
+                    Ptyp_constr "result" (src/extension.mli[39,1228+70]..[39,1228+76])
+                    [
+                      core_type (src/extension.mli[39,1228+33]..[39,1228+35])
+                        Ptyp_var a
+                      core_type (src/extension.mli[39,1228+37]..[39,1228+68])
+                        Ptyp_constr "NonEmptyList.t" (src/extension.mli[39,1228+54]..[39,1228+68])
+                        [
+                          core_type (src/extension.mli[39,1228+37]..[39,1228+53])
+                            Ptyp_constr "Location.Error.t" (src/extension.mli[39,1228+37]..[39,1228+53])
+                            []
+                        ]
+                    ]
+            []
+      ]
+  signature_item (src/extension.mli[42,1310+0]..[42,1310+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (src/extension.mli[42,1310+5]..[42,1310+6]) (src/extension.mli[42,1310+0]..[42,1310+6])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/extension.mli[43,1317+0]..[43,1317+35])
+              Pstr_eval
+              expression (src/extension.mli[43,1317+0]..[43,1317+35])
+                Pexp_constant PConst_string(" Type of declared extensions. ",(src/extension.mli[43,1317+0]..[43,1317+35]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/extension.mli[45,1354+0]..[50,1490+3])
+    Psig_value
+    value_description "declare" (src/extension.mli[45,1354+4]..[45,1354+11]) (src/extension.mli[45,1354+0]..[50,1490+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[51,1494+0]..[59,1824+40])
+            Pstr_eval
+            expression (src/extension.mli[51,1494+0]..[59,1824+40])
+              Pexp_constant PConst_string(" [declare name context pattern expander] declares the extension names [name]\n    for [context].\n\n    [expander] is responsible for producing the code to replace the extension in\n    the AST. It receives as argument:\n\n    - [loc]: the location of the enclosing node. For instance for expression it\n      is the [pexp_loc] field\n    - [path]: the current module path ",(src/extension.mli[51,1494+0]..[59,1824+40]),None)
+        ]
+      core_type (src/extension.mli[46,1368+2]..[50,1490+3])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/extension.mli[46,1368+2]..[46,1368+8])
+          Ptyp_constr "string" (src/extension.mli[46,1368+2]..[46,1368+8])
+          []
+        core_type (src/extension.mli[47,1380+2]..[50,1490+3])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/extension.mli[47,1380+2]..[47,1380+20])
+            Ptyp_constr "Context.t" (src/extension.mli[47,1380+11]..[47,1380+20])
+            [
+              core_type (src/extension.mli[47,1380+2]..[47,1380+10])
+                Ptyp_var context
+            ]
+          core_type (src/extension.mli[48,1404+2]..[50,1490+3])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/extension.mli[48,1404+2]..[48,1404+39])
+              Ptyp_constr "Ast_pattern.t" (src/extension.mli[48,1404+26]..[48,1404+39])
+              [
+                core_type (src/extension.mli[48,1404+3]..[48,1404+10])
+                  Ptyp_constr "payload" (src/extension.mli[48,1404+3]..[48,1404+10])
+                  []
+                core_type (src/extension.mli[48,1404+12]..[48,1404+14])
+                  Ptyp_var a
+                core_type (src/extension.mli[48,1404+16]..[48,1404+24])
+                  Ptyp_var context
+              ]
+            core_type (src/extension.mli[49,1447+2]..[50,1490+3])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[49,1447+3]..[49,1447+38])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[49,1447+7]..[49,1447+17])
+                  Ptyp_constr "Location.t" (src/extension.mli[49,1447+7]..[49,1447+17])
+                  []
+                core_type (src/extension.mli[49,1447+21]..[49,1447+38])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[49,1447+26]..[49,1447+32])
+                    Ptyp_constr "string" (src/extension.mli[49,1447+26]..[49,1447+32])
+                    []
+                  core_type (src/extension.mli[49,1447+36]..[49,1447+38])
+                    Ptyp_var a
+              core_type (src/extension.mli[50,1490+2]..[50,1490+3])
+                Ptyp_constr "t" (src/extension.mli[50,1490+2]..[50,1490+3])
+                []
+      []
+  signature_item (src/extension.mli[61,1866+0]..[66,2055+3])
+    Psig_value
+    value_description "declare_with_path_arg" (src/extension.mli[61,1866+4]..[61,1866+25]) (src/extension.mli[61,1866+0]..[66,2055+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[67,2059+0]..[75,2378+9])
+            Pstr_eval
+            expression (src/extension.mli[67,2059+0]..[75,2378+9])
+              Pexp_constant PConst_string(" Same as [declare] except that the extension name takes an additional path\n    argument. The path is the part of the name that start with a capitalized\n    component. For instance in the following, the extension [\"map\"] would\n    receive the path argument [Foo.Bar]:\n\n    {[\n      let%map.Foo.Bar x = 1 in\n      ...\n    ]} ",(src/extension.mli[67,2059+0]..[75,2378+9]),None)
+        ]
+      core_type (src/extension.mli[62,1894+2]..[66,2055+3])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/extension.mli[62,1894+2]..[62,1894+8])
+          Ptyp_constr "string" (src/extension.mli[62,1894+2]..[62,1894+8])
+          []
+        core_type (src/extension.mli[63,1906+2]..[66,2055+3])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/extension.mli[63,1906+2]..[63,1906+20])
+            Ptyp_constr "Context.t" (src/extension.mli[63,1906+11]..[63,1906+20])
+            [
+              core_type (src/extension.mli[63,1906+2]..[63,1906+10])
+                Ptyp_var context
+            ]
+          core_type (src/extension.mli[64,1930+2]..[66,2055+3])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/extension.mli[64,1930+2]..[64,1930+39])
+              Ptyp_constr "Ast_pattern.t" (src/extension.mli[64,1930+26]..[64,1930+39])
+              [
+                core_type (src/extension.mli[64,1930+3]..[64,1930+10])
+                  Ptyp_constr "payload" (src/extension.mli[64,1930+3]..[64,1930+10])
+                  []
+                core_type (src/extension.mli[64,1930+12]..[64,1930+14])
+                  Ptyp_var a
+                core_type (src/extension.mli[64,1930+16]..[64,1930+24])
+                  Ptyp_var context
+              ]
+            core_type (src/extension.mli[65,1973+2]..[66,2055+3])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[65,1973+3]..[65,1973+77])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[65,1973+7]..[65,1973+17])
+                  Ptyp_constr "Location.t" (src/extension.mli[65,1973+7]..[65,1973+17])
+                  []
+                core_type (src/extension.mli[65,1973+21]..[65,1973+77])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[65,1973+26]..[65,1973+32])
+                    Ptyp_constr "string" (src/extension.mli[65,1973+26]..[65,1973+32])
+                    []
+                  core_type (src/extension.mli[65,1973+36]..[65,1973+77])
+                    Ptyp_arrow
+                    Labelled "arg"
+                    core_type (src/extension.mli[65,1973+40]..[65,1973+71])
+                      Ptyp_constr "option" (src/extension.mli[65,1973+65]..[65,1973+71])
+                      [
+                        core_type (src/extension.mli[65,1973+40]..[65,1973+64])
+                          Ptyp_constr "Asttypes.loc" (src/extension.mli[65,1973+52]..[65,1973+64])
+                          [
+                            core_type (src/extension.mli[65,1973+40]..[65,1973+51])
+                              Ptyp_constr "Longident.t" (src/extension.mli[65,1973+40]..[65,1973+51])
+                              []
+                          ]
+                      ]
+                    core_type (src/extension.mli[65,1973+75]..[65,1973+77])
+                      Ptyp_var a
+              core_type (src/extension.mli[66,2055+2]..[66,2055+3])
+                Ptyp_constr "t" (src/extension.mli[66,2055+2]..[66,2055+3])
+                []
+      []
+  signature_item (src/extension.mli[77,2389+0]..[82,2537+3])
+    Psig_value
+    value_description "declare_inline" (src/extension.mli[77,2389+4]..[77,2389+18]) (src/extension.mli[77,2389+0]..[82,2537+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[83,2541+0]..[89,2701+25])
+            Pstr_eval
+            expression (src/extension.mli[83,2541+0]..[89,2701+25])
+              Pexp_constant PConst_string(" Inline the result of the expansion into its parent. Only works for these\n    contexts:\n\n    - [class_field]\n    - [class_type_field]\n    - [signature_item]\n    - [structure_item] ",(src/extension.mli[83,2541+0]..[89,2701+25]),None)
+        ]
+      core_type (src/extension.mli[78,2410+2]..[82,2537+3])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/extension.mli[78,2410+2]..[78,2410+8])
+          Ptyp_constr "string" (src/extension.mli[78,2410+2]..[78,2410+8])
+          []
+        core_type (src/extension.mli[79,2422+2]..[82,2537+3])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/extension.mli[79,2422+2]..[79,2422+20])
+            Ptyp_constr "Context.t" (src/extension.mli[79,2422+11]..[79,2422+20])
+            [
+              core_type (src/extension.mli[79,2422+2]..[79,2422+10])
+                Ptyp_var context
+            ]
+          core_type (src/extension.mli[80,2446+2]..[82,2537+3])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/extension.mli[80,2446+2]..[80,2446+44])
+              Ptyp_constr "Ast_pattern.t" (src/extension.mli[80,2446+31]..[80,2446+44])
+              [
+                core_type (src/extension.mli[80,2446+3]..[80,2446+10])
+                  Ptyp_constr "payload" (src/extension.mli[80,2446+3]..[80,2446+10])
+                  []
+                core_type (src/extension.mli[80,2446+12]..[80,2446+14])
+                  Ptyp_var a
+                core_type (src/extension.mli[80,2446+16]..[80,2446+29])
+                  Ptyp_constr "list" (src/extension.mli[80,2446+25]..[80,2446+29])
+                  [
+                    core_type (src/extension.mli[80,2446+16]..[80,2446+24])
+                      Ptyp_var context
+                  ]
+              ]
+            core_type (src/extension.mli[81,2494+2]..[82,2537+3])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[81,2494+3]..[81,2494+38])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[81,2494+7]..[81,2494+17])
+                  Ptyp_constr "Location.t" (src/extension.mli[81,2494+7]..[81,2494+17])
+                  []
+                core_type (src/extension.mli[81,2494+21]..[81,2494+38])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[81,2494+26]..[81,2494+32])
+                    Ptyp_constr "string" (src/extension.mli[81,2494+26]..[81,2494+32])
+                    []
+                  core_type (src/extension.mli[81,2494+36]..[81,2494+38])
+                    Ptyp_var a
+              core_type (src/extension.mli[82,2537+2]..[82,2537+3])
+                Ptyp_constr "t" (src/extension.mli[82,2537+2]..[82,2537+3])
+                []
+      []
+  signature_item (src/extension.mli[91,2728+0]..[96,2929+3])
+    Psig_value
+    value_description "declare_inline_with_path_arg" (src/extension.mli[91,2728+4]..[91,2728+32]) (src/extension.mli[91,2728+0]..[96,2929+3])
+      core_type (src/extension.mli[92,2763+2]..[96,2929+3])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/extension.mli[92,2763+2]..[92,2763+8])
+          Ptyp_constr "string" (src/extension.mli[92,2763+2]..[92,2763+8])
+          []
+        core_type (src/extension.mli[93,2775+2]..[96,2929+3])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/extension.mli[93,2775+2]..[93,2775+20])
+            Ptyp_constr "Context.t" (src/extension.mli[93,2775+11]..[93,2775+20])
+            [
+              core_type (src/extension.mli[93,2775+2]..[93,2775+10])
+                Ptyp_var context
+            ]
+          core_type (src/extension.mli[94,2799+2]..[96,2929+3])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/extension.mli[94,2799+2]..[94,2799+44])
+              Ptyp_constr "Ast_pattern.t" (src/extension.mli[94,2799+31]..[94,2799+44])
+              [
+                core_type (src/extension.mli[94,2799+3]..[94,2799+10])
+                  Ptyp_constr "payload" (src/extension.mli[94,2799+3]..[94,2799+10])
+                  []
+                core_type (src/extension.mli[94,2799+12]..[94,2799+14])
+                  Ptyp_var a
+                core_type (src/extension.mli[94,2799+16]..[94,2799+29])
+                  Ptyp_constr "list" (src/extension.mli[94,2799+25]..[94,2799+29])
+                  [
+                    core_type (src/extension.mli[94,2799+16]..[94,2799+24])
+                      Ptyp_var context
+                  ]
+              ]
+            core_type (src/extension.mli[95,2847+2]..[96,2929+3])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[95,2847+3]..[95,2847+77])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[95,2847+7]..[95,2847+17])
+                  Ptyp_constr "Location.t" (src/extension.mli[95,2847+7]..[95,2847+17])
+                  []
+                core_type (src/extension.mli[95,2847+21]..[95,2847+77])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[95,2847+26]..[95,2847+32])
+                    Ptyp_constr "string" (src/extension.mli[95,2847+26]..[95,2847+32])
+                    []
+                  core_type (src/extension.mli[95,2847+36]..[95,2847+77])
+                    Ptyp_arrow
+                    Labelled "arg"
+                    core_type (src/extension.mli[95,2847+40]..[95,2847+71])
+                      Ptyp_constr "option" (src/extension.mli[95,2847+65]..[95,2847+71])
+                      [
+                        core_type (src/extension.mli[95,2847+40]..[95,2847+64])
+                          Ptyp_constr "Asttypes.loc" (src/extension.mli[95,2847+52]..[95,2847+64])
+                          [
+                            core_type (src/extension.mli[95,2847+40]..[95,2847+51])
+                              Ptyp_constr "Longident.t" (src/extension.mli[95,2847+40]..[95,2847+51])
+                              []
+                          ]
+                      ]
+                    core_type (src/extension.mli[95,2847+75]..[95,2847+77])
+                      Ptyp_var a
+              core_type (src/extension.mli[96,2929+2]..[96,2929+3])
+                Ptyp_constr "t" (src/extension.mli[96,2929+2]..[96,2929+3])
+                []
+      []
+  signature_item (src/extension.mli[98,2934+0]..[123,3575+3])
+    Psig_module "For_context" (src/extension.mli[98,2934+7]..[98,2934+18])
+    module_type (src/extension.mli[98,2934+21]..[123,3575+3])
+      Pmty_signature
+      [
+        signature_item (src/extension.mli[99,2959+2]..[99,2959+70])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/extension.mli[99,2959+2]..[99,2959+70])
+              Pstr_eval
+              expression (src/extension.mli[99,2959+2]..[99,2959+70])
+                Pexp_constant PConst_string(" This module is used to implement {!Context_free.map_top_down} ",(src/extension.mli[99,2959+2]..[99,2959+70]),None)
+          ]
+        signature_item (src/extension.mli[101,3031+2]..[101,3031+11])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/extension.mli[101,3031+10]..[101,3031+11]) (src/extension.mli[101,3031+2]..[101,3031+11])
+              ptype_params =
+                [
+                  core_type (src/extension.mli[101,3031+7]..[101,3031+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/extension.mli[103,3044+2]..[107,3140+55])
+          Psig_value
+          value_description "convert_res" (src/extension.mli[103,3044+6]..[103,3044+17]) (src/extension.mli[103,3044+2]..[107,3140+55])
+            core_type (src/extension.mli[104,3064+4]..[107,3140+55])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[104,3064+4]..[104,3064+13])
+                Ptyp_constr "list" (src/extension.mli[104,3064+9]..[104,3064+13])
+                [
+                  core_type (src/extension.mli[104,3064+4]..[104,3064+8])
+                    Ptyp_constr "t" (src/extension.mli[104,3064+7]..[104,3064+8])
+                    [
+                      core_type (src/extension.mli[104,3064+4]..[104,3064+6])
+                        Ptyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[105,3081+4]..[107,3140+55])
+                Ptyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[105,3081+9]..[105,3081+38])
+                  Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[105,3081+9]..[105,3081+38])
+                  []
+                core_type (src/extension.mli[106,3123+4]..[107,3140+55])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[106,3123+4]..[106,3123+13])
+                    Ptyp_constr "extension" (src/extension.mli[106,3123+4]..[106,3123+13])
+                    []
+                  core_type (src/extension.mli[107,3140+4]..[107,3140+55])
+                    Ptyp_constr "result" (src/extension.mli[107,3140+49]..[107,3140+55])
+                    [
+                      core_type (src/extension.mli[107,3140+5]..[107,3140+14])
+                        Ptyp_constr "option" (src/extension.mli[107,3140+8]..[107,3140+14])
+                        [
+                          core_type (src/extension.mli[107,3140+5]..[107,3140+7])
+                            Ptyp_var a
+                        ]
+                      core_type (src/extension.mli[107,3140+16]..[107,3140+47])
+                        Ptyp_constr "NonEmptyList.t" (src/extension.mli[107,3140+33]..[107,3140+47])
+                        [
+                          core_type (src/extension.mli[107,3140+16]..[107,3140+32])
+                            Ptyp_constr "Location.Error.t" (src/extension.mli[107,3140+16]..[107,3140+32])
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/extension.mli[109,3197+2]..[110,3213+77])
+          Psig_value
+          value_description "convert" (src/extension.mli[109,3197+6]..[109,3197+13]) (src/extension.mli[109,3197+2]..[110,3213+77])
+            core_type (src/extension.mli[110,3213+4]..[110,3213+77])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[110,3213+4]..[110,3213+13])
+                Ptyp_constr "list" (src/extension.mli[110,3213+9]..[110,3213+13])
+                [
+                  core_type (src/extension.mli[110,3213+4]..[110,3213+8])
+                    Ptyp_constr "t" (src/extension.mli[110,3213+7]..[110,3213+8])
+                    [
+                      core_type (src/extension.mli[110,3213+4]..[110,3213+6])
+                        Ptyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[110,3213+17]..[110,3213+77])
+                Ptyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[110,3213+22]..[110,3213+51])
+                  Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[110,3213+22]..[110,3213+51])
+                  []
+                core_type (src/extension.mli[110,3213+55]..[110,3213+77])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[110,3213+55]..[110,3213+64])
+                    Ptyp_constr "extension" (src/extension.mli[110,3213+55]..[110,3213+64])
+                    []
+                  core_type (src/extension.mli[110,3213+68]..[110,3213+77])
+                    Ptyp_constr "option" (src/extension.mli[110,3213+71]..[110,3213+77])
+                    [
+                      core_type (src/extension.mli[110,3213+68]..[110,3213+70])
+                        Ptyp_var a
+                    ]
+            []
+        signature_item (src/extension.mli[112,3292+2]..[116,3395+60])
+          Psig_value
+          value_description "convert_inline_res" (src/extension.mli[112,3292+6]..[112,3292+24]) (src/extension.mli[112,3292+2]..[116,3395+60])
+            core_type (src/extension.mli[113,3319+4]..[116,3395+60])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[113,3319+4]..[113,3319+13])
+                Ptyp_constr "list" (src/extension.mli[113,3319+9]..[113,3319+13])
+                [
+                  core_type (src/extension.mli[113,3319+4]..[113,3319+8])
+                    Ptyp_constr "t" (src/extension.mli[113,3319+7]..[113,3319+8])
+                    [
+                      core_type (src/extension.mli[113,3319+4]..[113,3319+6])
+                        Ptyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[114,3336+4]..[116,3395+60])
+                Ptyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[114,3336+9]..[114,3336+38])
+                  Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[114,3336+9]..[114,3336+38])
+                  []
+                core_type (src/extension.mli[115,3378+4]..[116,3395+60])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[115,3378+4]..[115,3378+13])
+                    Ptyp_constr "extension" (src/extension.mli[115,3378+4]..[115,3378+13])
+                    []
+                  core_type (src/extension.mli[116,3395+4]..[116,3395+60])
+                    Ptyp_constr "result" (src/extension.mli[116,3395+54]..[116,3395+60])
+                    [
+                      core_type (src/extension.mli[116,3395+5]..[116,3395+19])
+                        Ptyp_constr "option" (src/extension.mli[116,3395+13]..[116,3395+19])
+                        [
+                          core_type (src/extension.mli[116,3395+5]..[116,3395+12])
+                            Ptyp_constr "list" (src/extension.mli[116,3395+8]..[116,3395+12])
+                            [
+                              core_type (src/extension.mli[116,3395+5]..[116,3395+7])
+                                Ptyp_var a
+                            ]
+                        ]
+                      core_type (src/extension.mli[116,3395+21]..[116,3395+52])
+                        Ptyp_constr "NonEmptyList.t" (src/extension.mli[116,3395+38]..[116,3395+52])
+                        [
+                          core_type (src/extension.mli[116,3395+21]..[116,3395+37])
+                            Ptyp_constr "Location.Error.t" (src/extension.mli[116,3395+21]..[116,3395+37])
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/extension.mli[118,3457+2]..[122,3556+18])
+          Psig_value
+          value_description "convert_inline" (src/extension.mli[118,3457+6]..[118,3457+20]) (src/extension.mli[118,3457+2]..[122,3556+18])
+            core_type (src/extension.mli[119,3480+4]..[122,3556+18])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[119,3480+4]..[119,3480+13])
+                Ptyp_constr "list" (src/extension.mli[119,3480+9]..[119,3480+13])
+                [
+                  core_type (src/extension.mli[119,3480+4]..[119,3480+8])
+                    Ptyp_constr "t" (src/extension.mli[119,3480+7]..[119,3480+8])
+                    [
+                      core_type (src/extension.mli[119,3480+4]..[119,3480+6])
+                        Ptyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[120,3497+4]..[122,3556+18])
+                Ptyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[120,3497+9]..[120,3497+38])
+                  Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[120,3497+9]..[120,3497+38])
+                  []
+                core_type (src/extension.mli[121,3539+4]..[122,3556+18])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[121,3539+4]..[121,3539+13])
+                    Ptyp_constr "extension" (src/extension.mli[121,3539+4]..[121,3539+13])
+                    []
+                  core_type (src/extension.mli[122,3556+4]..[122,3556+18])
+                    Ptyp_constr "option" (src/extension.mli[122,3556+12]..[122,3556+18])
+                    [
+                      core_type (src/extension.mli[122,3556+4]..[122,3556+11])
+                        Ptyp_constr "list" (src/extension.mli[122,3556+7]..[122,3556+11])
+                        [
+                          core_type (src/extension.mli[122,3556+4]..[122,3556+6])
+                            Ptyp_var a
+                        ]
+                    ]
+            []
+      ]
+  signature_item (src/extension.mli[125,3580+0]..[125,3580+71])
+    Psig_value
+    value_description "filter_by_context" (src/extension.mli[125,3580+4]..[125,3580+21]) (src/extension.mli[125,3580+0]..[125,3580+71])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[126,3652+0]..[127,3732+28])
+            Pstr_eval
+            expression (src/extension.mli[126,3652+0]..[127,3732+28])
+              Pexp_constant PConst_string(" Given a context and a list of extension expander, returns all the ones that\n    are for this context. ",(src/extension.mli[126,3652+0]..[127,3732+28]),None)
+        ]
+      core_type (src/extension.mli[125,3580+24]..[125,3580+71])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/extension.mli[125,3580+24]..[125,3580+36])
+          Ptyp_constr "Context.t" (src/extension.mli[125,3580+27]..[125,3580+36])
+          [
+            core_type (src/extension.mli[125,3580+24]..[125,3580+26])
+              Ptyp_var a
+          ]
+        core_type (src/extension.mli[125,3580+40]..[125,3580+71])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/extension.mli[125,3580+40]..[125,3580+46])
+            Ptyp_constr "list" (src/extension.mli[125,3580+42]..[125,3580+46])
+            [
+              core_type (src/extension.mli[125,3580+40]..[125,3580+41])
+                Ptyp_constr "t" (src/extension.mli[125,3580+40]..[125,3580+41])
+                []
+            ]
+          core_type (src/extension.mli[125,3580+50]..[125,3580+71])
+            Ptyp_constr "list" (src/extension.mli[125,3580+67]..[125,3580+71])
+            [
+              core_type (src/extension.mli[125,3580+50]..[125,3580+66])
+                Ptyp_constr "For_context.t" (src/extension.mli[125,3580+53]..[125,3580+66])
+                [
+                  core_type (src/extension.mli[125,3580+50]..[125,3580+52])
+                    Ptyp_var a
+                ]
+            ]
+      []
+  signature_item (src/extension.mli[129,3762+0]..[161,4745+3])
+    Psig_module "Expert" (src/extension.mli[129,3762+7]..[129,3762+13])
+    module_type (src/extension.mli[129,3762+16]..[161,4745+3])
+      Pmty_signature
+      [
+        signature_item (src/extension.mli[130,3782+2]..[132,3935+76])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/extension.mli[130,3782+2]..[132,3935+76])
+              Pstr_eval
+              expression (src/extension.mli[130,3782+2]..[132,3935+76])
+                Pexp_constant PConst_string(" This module allows to declare extensions that do not produce a value of\n      the context type. This is typically useful for extensions point that\n      depends on more things from the context than the path and location. ",(src/extension.mli[130,3782+2]..[132,3935+76]),None)
+          ]
+        signature_item (src/extension.mli[134,4013+2]..[134,4013+29])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/extension.mli[134,4013+28]..[134,4013+29]) (src/extension.mli[134,4013+2]..[134,4013+29])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/extension.mli[135,4043+2]..[138,4164+64])
+                    Pstr_eval
+                    expression (src/extension.mli[135,4043+2]..[138,4164+64])
+                      Pexp_constant PConst_string(" Type of declared expert extensions.\n\n      The ['context] type parameter describes where the extension is expected\n      and the ['payload] one what its payload should contain. ",(src/extension.mli[135,4043+2]..[138,4164+64]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/extension.mli[134,4013+8]..[134,4013+16])
+                    Ptyp_var context
+                  core_type (src/extension.mli[134,4013+18]..[134,4013+26])
+                    Ptyp_var payload
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/extension.mli[140,4230+2]..[145,4335+20])
+          Psig_value
+          value_description "declare" (src/extension.mli[140,4230+6]..[140,4230+13]) (src/extension.mli[140,4230+2]..[145,4335+20])
+            core_type (src/extension.mli[141,4246+4]..[145,4335+20])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[141,4246+4]..[141,4246+10])
+                Ptyp_constr "string" (src/extension.mli[141,4246+4]..[141,4246+10])
+                []
+              core_type (src/extension.mli[142,4260+4]..[145,4335+20])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[142,4260+4]..[142,4260+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[142,4260+13]..[142,4260+22])
+                  [
+                    core_type (src/extension.mli[142,4260+4]..[142,4260+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[143,4286+4]..[145,4335+20])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[143,4286+4]..[143,4286+35])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[143,4286+22]..[143,4286+35])
+                    [
+                      core_type (src/extension.mli[143,4286+5]..[143,4286+12])
+                        Ptyp_constr "payload" (src/extension.mli[143,4286+5]..[143,4286+12])
+                        []
+                      core_type (src/extension.mli[143,4286+14]..[143,4286+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[143,4286+18]..[143,4286+20])
+                        Ptyp_var b
+                    ]
+                  core_type (src/extension.mli[144,4325+4]..[145,4335+20])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[144,4325+4]..[144,4325+6])
+                      Ptyp_var a
+                    core_type (src/extension.mli[145,4335+4]..[145,4335+20])
+                      Ptyp_constr "t" (src/extension.mli[145,4335+19]..[145,4335+20])
+                      [
+                        core_type (src/extension.mli[145,4335+5]..[145,4335+13])
+                          Ptyp_var context
+                        core_type (src/extension.mli[145,4335+15]..[145,4335+17])
+                          Ptyp_var b
+                      ]
+            []
+        signature_item (src/extension.mli[147,4357+2]..[152,4510+20])
+          Psig_value
+          value_description "declare_with_path_arg" (src/extension.mli[147,4357+6]..[147,4357+27]) (src/extension.mli[147,4357+2]..[152,4510+20])
+            core_type (src/extension.mli[148,4387+4]..[152,4510+20])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[148,4387+4]..[148,4387+10])
+                Ptyp_constr "string" (src/extension.mli[148,4387+4]..[148,4387+10])
+                []
+              core_type (src/extension.mli[149,4401+4]..[152,4510+20])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[149,4401+4]..[149,4401+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[149,4401+13]..[149,4401+22])
+                  [
+                    core_type (src/extension.mli[149,4401+4]..[149,4401+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[150,4427+4]..[152,4510+20])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[150,4427+4]..[150,4427+35])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[150,4427+22]..[150,4427+35])
+                    [
+                      core_type (src/extension.mli[150,4427+5]..[150,4427+12])
+                        Ptyp_constr "payload" (src/extension.mli[150,4427+5]..[150,4427+12])
+                        []
+                      core_type (src/extension.mli[150,4427+14]..[150,4427+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[150,4427+18]..[150,4427+20])
+                        Ptyp_var b
+                    ]
+                  core_type (src/extension.mli[151,4466+4]..[152,4510+20])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[151,4466+5]..[151,4466+39])
+                      Ptyp_arrow
+                      Labelled "arg"
+                      core_type (src/extension.mli[151,4466+9]..[151,4466+33])
+                        Ptyp_constr "option" (src/extension.mli[151,4466+27]..[151,4466+33])
+                        [
+                          core_type (src/extension.mli[151,4466+9]..[151,4466+26])
+                            Ptyp_constr "Loc.t" (src/extension.mli[151,4466+21]..[151,4466+26])
+                            [
+                              core_type (src/extension.mli[151,4466+9]..[151,4466+20])
+                                Ptyp_constr "Longident.t" (src/extension.mli[151,4466+9]..[151,4466+20])
+                                []
+                            ]
+                        ]
+                      core_type (src/extension.mli[151,4466+37]..[151,4466+39])
+                        Ptyp_var a
+                    core_type (src/extension.mli[152,4510+4]..[152,4510+20])
+                      Ptyp_constr "t" (src/extension.mli[152,4510+19]..[152,4510+20])
+                      [
+                        core_type (src/extension.mli[152,4510+5]..[152,4510+13])
+                          Ptyp_var context
+                        core_type (src/extension.mli[152,4510+15]..[152,4510+17])
+                          Ptyp_var b
+                      ]
+            []
+        signature_item (src/extension.mli[154,4532+2]..[158,4613+55])
+          Psig_value
+          value_description "convert_res" (src/extension.mli[154,4532+6]..[154,4532+17]) (src/extension.mli[154,4532+2]..[158,4613+55])
+            core_type (src/extension.mli[155,4552+4]..[158,4613+55])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[155,4552+4]..[155,4552+18])
+                Ptyp_constr "list" (src/extension.mli[155,4552+14]..[155,4552+18])
+                [
+                  core_type (src/extension.mli[155,4552+4]..[155,4552+13])
+                    Ptyp_constr "t" (src/extension.mli[155,4552+12]..[155,4552+13])
+                    [
+                      core_type (src/extension.mli[155,4552+5]..[155,4552+6])
+                        Ptyp_any
+                      core_type (src/extension.mli[155,4552+8]..[155,4552+10])
+                        Ptyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[156,4574+4]..[158,4613+55])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[156,4574+8]..[156,4574+18])
+                  Ptyp_constr "Location.t" (src/extension.mli[156,4574+8]..[156,4574+18])
+                  []
+                core_type (src/extension.mli[157,4596+4]..[158,4613+55])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[157,4596+4]..[157,4596+13])
+                    Ptyp_constr "extension" (src/extension.mli[157,4596+4]..[157,4596+13])
+                    []
+                  core_type (src/extension.mli[158,4613+4]..[158,4613+55])
+                    Ptyp_constr "result" (src/extension.mli[158,4613+49]..[158,4613+55])
+                    [
+                      core_type (src/extension.mli[158,4613+5]..[158,4613+14])
+                        Ptyp_constr "option" (src/extension.mli[158,4613+8]..[158,4613+14])
+                        [
+                          core_type (src/extension.mli[158,4613+5]..[158,4613+7])
+                            Ptyp_var a
+                        ]
+                      core_type (src/extension.mli[158,4613+16]..[158,4613+47])
+                        Ptyp_constr "NonEmptyList.t" (src/extension.mli[158,4613+33]..[158,4613+47])
+                        [
+                          core_type (src/extension.mli[158,4613+16]..[158,4613+32])
+                            Ptyp_constr "Location.Error.t" (src/extension.mli[158,4613+16]..[158,4613+32])
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/extension.mli[160,4670+2]..[160,4670+74])
+          Psig_value
+          value_description "convert" (src/extension.mli[160,4670+6]..[160,4670+13]) (src/extension.mli[160,4670+2]..[160,4670+74])
+            core_type (src/extension.mli[160,4670+16]..[160,4670+74])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[160,4670+16]..[160,4670+30])
+                Ptyp_constr "list" (src/extension.mli[160,4670+26]..[160,4670+30])
+                [
+                  core_type (src/extension.mli[160,4670+16]..[160,4670+25])
+                    Ptyp_constr "t" (src/extension.mli[160,4670+24]..[160,4670+25])
+                    [
+                      core_type (src/extension.mli[160,4670+17]..[160,4670+18])
+                        Ptyp_any
+                      core_type (src/extension.mli[160,4670+20]..[160,4670+22])
+                        Ptyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[160,4670+34]..[160,4670+74])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[160,4670+38]..[160,4670+48])
+                  Ptyp_constr "Location.t" (src/extension.mli[160,4670+38]..[160,4670+48])
+                  []
+                core_type (src/extension.mli[160,4670+52]..[160,4670+74])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[160,4670+52]..[160,4670+61])
+                    Ptyp_constr "extension" (src/extension.mli[160,4670+52]..[160,4670+61])
+                    []
+                  core_type (src/extension.mli[160,4670+65]..[160,4670+74])
+                    Ptyp_constr "option" (src/extension.mli[160,4670+68]..[160,4670+74])
+                    [
+                      core_type (src/extension.mli[160,4670+65]..[160,4670+67])
+                        Ptyp_var a
+                    ]
+            []
+      ]
+  signature_item (src/extension.mli[163,4750+0]..[163,4750+36])
+    Psig_value
+    value_description "check_unused" (src/extension.mli[163,4750+4]..[163,4750+16]) (src/extension.mli[163,4750+0]..[163,4750+36])
+      core_type (src/extension.mli[163,4750+19]..[163,4750+36])
+        Ptyp_constr "Ast_traverse.iter" (src/extension.mli[163,4750+19]..[163,4750+36])
+        []
+      []
+  signature_item (src/extension.mli[164,4787+0]..[164,4787+80])
+    Psig_value
+    value_description "collect_unhandled_extension_errors" (src/extension.mli[164,4787+4]..[164,4787+38]) (src/extension.mli[164,4787+0]..[164,4787+80])
+      core_type (src/extension.mli[164,4787+41]..[164,4787+80])
+        Ptyp_constr "Ast_traverse.fold" (src/extension.mli[164,4787+63]..[164,4787+80])
+        [
+          core_type (src/extension.mli[164,4787+41]..[164,4787+62])
+            Ptyp_constr "list" (src/extension.mli[164,4787+58]..[164,4787+62])
+            [
+              core_type (src/extension.mli[164,4787+41]..[164,4787+57])
+                Ptyp_constr "Location.Error.t" (src/extension.mli[164,4787+41]..[164,4787+57])
+                []
+            ]
+        ]
+      []
+  signature_item (src/extension.mli[166,4869+0]..[182,5223+3])
+    Psig_module "V2" (src/extension.mli[166,4869+7]..[166,4869+9])
+    module_type (src/extension.mli[166,4869+12]..[182,5223+3])
+      Pmty_signature
+      [
+        signature_item (src/extension.mli[167,4885+2]..[167,4885+19])
+          Psig_type Nonrec
+          [
+            type_declaration "t" (src/extension.mli[167,4885+14]..[167,4885+15]) (src/extension.mli[167,4885+2]..[167,4885+19])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/extension.mli[167,4885+18]..[167,4885+19])
+                    Ptyp_constr "t" (src/extension.mli[167,4885+18]..[167,4885+19])
+                    []
+          ]
+        signature_item (src/extension.mli[169,4906+2]..[174,5052+5])
+          Psig_value
+          value_description "declare" (src/extension.mli[169,4906+6]..[169,4906+13]) (src/extension.mli[169,4906+2]..[174,5052+5])
+            core_type (src/extension.mli[170,4922+4]..[174,5052+5])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[170,4922+4]..[170,4922+10])
+                Ptyp_constr "string" (src/extension.mli[170,4922+4]..[170,4922+10])
+                []
+              core_type (src/extension.mli[171,4936+4]..[174,5052+5])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[171,4936+4]..[171,4936+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[171,4936+13]..[171,4936+22])
+                  [
+                    core_type (src/extension.mli[171,4936+4]..[171,4936+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[172,4962+4]..[174,5052+5])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[172,4962+4]..[172,4962+41])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[172,4962+28]..[172,4962+41])
+                    [
+                      core_type (src/extension.mli[172,4962+5]..[172,4962+12])
+                        Ptyp_constr "payload" (src/extension.mli[172,4962+5]..[172,4962+12])
+                        []
+                      core_type (src/extension.mli[172,4962+14]..[172,4962+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[172,4962+18]..[172,4962+26])
+                        Ptyp_var context
+                    ]
+                  core_type (src/extension.mli[173,5007+4]..[174,5052+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[173,5007+5]..[173,5007+40])
+                      Ptyp_arrow
+                      Labelled "loc"
+                      core_type (src/extension.mli[173,5007+9]..[173,5007+19])
+                        Ptyp_constr "Location.t" (src/extension.mli[173,5007+9]..[173,5007+19])
+                        []
+                      core_type (src/extension.mli[173,5007+23]..[173,5007+40])
+                        Ptyp_arrow
+                        Labelled "path"
+                        core_type (src/extension.mli[173,5007+28]..[173,5007+34])
+                          Ptyp_constr "string" (src/extension.mli[173,5007+28]..[173,5007+34])
+                          []
+                        core_type (src/extension.mli[173,5007+38]..[173,5007+40])
+                          Ptyp_var a
+                    core_type (src/extension.mli[174,5052+4]..[174,5052+5])
+                      Ptyp_constr "t" (src/extension.mli[174,5052+4]..[174,5052+5])
+                      []
+            []
+        signature_item (src/extension.mli[176,5059+2]..[181,5217+5])
+          Psig_value
+          value_description "declare_inline" (src/extension.mli[176,5059+6]..[176,5059+20]) (src/extension.mli[176,5059+2]..[181,5217+5])
+            core_type (src/extension.mli[177,5082+4]..[181,5217+5])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[177,5082+4]..[177,5082+10])
+                Ptyp_constr "string" (src/extension.mli[177,5082+4]..[177,5082+10])
+                []
+              core_type (src/extension.mli[178,5096+4]..[181,5217+5])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[178,5096+4]..[178,5096+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[178,5096+13]..[178,5096+22])
+                  [
+                    core_type (src/extension.mli[178,5096+4]..[178,5096+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[179,5122+4]..[181,5217+5])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[179,5122+4]..[179,5122+46])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[179,5122+33]..[179,5122+46])
+                    [
+                      core_type (src/extension.mli[179,5122+5]..[179,5122+12])
+                        Ptyp_constr "payload" (src/extension.mli[179,5122+5]..[179,5122+12])
+                        []
+                      core_type (src/extension.mli[179,5122+14]..[179,5122+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[179,5122+18]..[179,5122+31])
+                        Ptyp_constr "list" (src/extension.mli[179,5122+27]..[179,5122+31])
+                        [
+                          core_type (src/extension.mli[179,5122+18]..[179,5122+26])
+                            Ptyp_var context
+                        ]
+                    ]
+                  core_type (src/extension.mli[180,5172+4]..[181,5217+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[180,5172+5]..[180,5172+40])
+                      Ptyp_arrow
+                      Labelled "loc"
+                      core_type (src/extension.mli[180,5172+9]..[180,5172+19])
+                        Ptyp_constr "Location.t" (src/extension.mli[180,5172+9]..[180,5172+19])
+                        []
+                      core_type (src/extension.mli[180,5172+23]..[180,5172+40])
+                        Ptyp_arrow
+                        Labelled "path"
+                        core_type (src/extension.mli[180,5172+28]..[180,5172+34])
+                          Ptyp_constr "string" (src/extension.mli[180,5172+28]..[180,5172+34])
+                          []
+                        core_type (src/extension.mli[180,5172+38]..[180,5172+40])
+                          Ptyp_var a
+                    core_type (src/extension.mli[181,5217+4]..[181,5217+5])
+                      Ptyp_constr "t" (src/extension.mli[181,5217+4]..[181,5217+5])
+                      []
+            []
+      ]
+  signature_item (src/extension.mli[184,5228+0]..[227,6387+3])
+    Psig_module "V3" (src/extension.mli[184,5228+7]..[184,5228+9])
+    module_type (src/extension.mli[184,5228+12]..[227,6387+3])
+      Pmty_signature
+      [
+        signature_item (src/extension.mli[185,5244+2]..[185,5244+19])
+          Psig_type Nonrec
+          [
+            type_declaration "t" (src/extension.mli[185,5244+14]..[185,5244+15]) (src/extension.mli[185,5244+2]..[185,5244+19])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/extension.mli[185,5244+18]..[185,5244+19])
+                    Ptyp_constr "t" (src/extension.mli[185,5244+18]..[185,5244+19])
+                    []
+          ]
+        signature_item (src/extension.mli[187,5265+2]..[192,5416+5])
+          Psig_value
+          value_description "declare" (src/extension.mli[187,5265+6]..[187,5265+13]) (src/extension.mli[187,5265+2]..[192,5416+5])
+            core_type (src/extension.mli[188,5281+4]..[192,5416+5])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[188,5281+4]..[188,5281+10])
+                Ptyp_constr "string" (src/extension.mli[188,5281+4]..[188,5281+10])
+                []
+              core_type (src/extension.mli[189,5295+4]..[192,5416+5])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[189,5295+4]..[189,5295+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[189,5295+13]..[189,5295+22])
+                  [
+                    core_type (src/extension.mli[189,5295+4]..[189,5295+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[190,5321+4]..[192,5416+5])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[190,5321+4]..[190,5321+41])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[190,5321+28]..[190,5321+41])
+                    [
+                      core_type (src/extension.mli[190,5321+5]..[190,5321+12])
+                        Ptyp_constr "payload" (src/extension.mli[190,5321+5]..[190,5321+12])
+                        []
+                      core_type (src/extension.mli[190,5321+14]..[190,5321+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[190,5321+18]..[190,5321+26])
+                        Ptyp_var context
+                    ]
+                  core_type (src/extension.mli[191,5366+4]..[192,5416+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[191,5366+5]..[191,5366+45])
+                      Ptyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[191,5366+10]..[191,5366+39])
+                        Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[191,5366+10]..[191,5366+39])
+                        []
+                      core_type (src/extension.mli[191,5366+43]..[191,5366+45])
+                        Ptyp_var a
+                    core_type (src/extension.mli[192,5416+4]..[192,5416+5])
+                      Ptyp_constr "t" (src/extension.mli[192,5416+4]..[192,5416+5])
+                      []
+            []
+        signature_item (src/extension.mli[194,5423+2]..[199,5586+5])
+          Psig_value
+          value_description "declare_inline" (src/extension.mli[194,5423+6]..[194,5423+20]) (src/extension.mli[194,5423+2]..[199,5586+5])
+            core_type (src/extension.mli[195,5446+4]..[199,5586+5])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[195,5446+4]..[195,5446+10])
+                Ptyp_constr "string" (src/extension.mli[195,5446+4]..[195,5446+10])
+                []
+              core_type (src/extension.mli[196,5460+4]..[199,5586+5])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[196,5460+4]..[196,5460+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[196,5460+13]..[196,5460+22])
+                  [
+                    core_type (src/extension.mli[196,5460+4]..[196,5460+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[197,5486+4]..[199,5586+5])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[197,5486+4]..[197,5486+46])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[197,5486+33]..[197,5486+46])
+                    [
+                      core_type (src/extension.mli[197,5486+5]..[197,5486+12])
+                        Ptyp_constr "payload" (src/extension.mli[197,5486+5]..[197,5486+12])
+                        []
+                      core_type (src/extension.mli[197,5486+14]..[197,5486+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[197,5486+18]..[197,5486+31])
+                        Ptyp_constr "list" (src/extension.mli[197,5486+27]..[197,5486+31])
+                        [
+                          core_type (src/extension.mli[197,5486+18]..[197,5486+26])
+                            Ptyp_var context
+                        ]
+                    ]
+                  core_type (src/extension.mli[198,5536+4]..[199,5586+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[198,5536+5]..[198,5536+45])
+                      Ptyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[198,5536+10]..[198,5536+39])
+                        Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[198,5536+10]..[198,5536+39])
+                        []
+                      core_type (src/extension.mli[198,5536+43]..[198,5536+45])
+                        Ptyp_var a
+                    core_type (src/extension.mli[199,5586+4]..[199,5586+5])
+                      Ptyp_constr "t" (src/extension.mli[199,5586+4]..[199,5586+5])
+                      []
+            []
+        signature_item (src/extension.mli[201,5593+2]..[208,5805+5])
+          Psig_value
+          value_description "declare_with_path_arg" (src/extension.mli[201,5593+6]..[201,5593+27]) (src/extension.mli[201,5593+2]..[208,5805+5])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/extension.mli[209,5811+2]..[217,6144+11])
+                  Pstr_eval
+                  expression (src/extension.mli[209,5811+2]..[217,6144+11])
+                    Pexp_constant PConst_string(" Same as [declare] except that the extension name takes an additional path\n      argument. The path is the part of the name that start with a capitalized\n      component. For instance in the following, the extension [\"map\"] would\n      receive the path argument [Foo.Bar]:\n\n      {[\n        let%map.Foo.Bar x = 1 in\n        ...\n      ]} ",(src/extension.mli[209,5811+2]..[217,6144+11]),None)
+              ]
+            core_type (src/extension.mli[202,5623+4]..[208,5805+5])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[202,5623+4]..[202,5623+10])
+                Ptyp_constr "string" (src/extension.mli[202,5623+4]..[202,5623+10])
+                []
+              core_type (src/extension.mli[203,5637+4]..[208,5805+5])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[203,5637+4]..[203,5637+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[203,5637+13]..[203,5637+22])
+                  [
+                    core_type (src/extension.mli[203,5637+4]..[203,5637+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[204,5663+4]..[208,5805+5])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[204,5663+4]..[204,5663+41])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[204,5663+28]..[204,5663+41])
+                    [
+                      core_type (src/extension.mli[204,5663+5]..[204,5663+12])
+                        Ptyp_constr "payload" (src/extension.mli[204,5663+5]..[204,5663+12])
+                        []
+                      core_type (src/extension.mli[204,5663+14]..[204,5663+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[204,5663+18]..[204,5663+26])
+                        Ptyp_var context
+                    ]
+                  core_type (src/extension.mli[205,5708+4]..[208,5805+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[205,5708+5]..[207,5794+6])
+                      Ptyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[205,5708+10]..[205,5708+39])
+                        Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[205,5708+10]..[205,5708+39])
+                        []
+                      core_type (src/extension.mli[206,5751+4]..[207,5794+6])
+                        Ptyp_arrow
+                        Labelled "arg"
+                        core_type (src/extension.mli[206,5751+8]..[206,5751+39])
+                          Ptyp_constr "option" (src/extension.mli[206,5751+33]..[206,5751+39])
+                          [
+                            core_type (src/extension.mli[206,5751+8]..[206,5751+32])
+                              Ptyp_constr "Asttypes.loc" (src/extension.mli[206,5751+20]..[206,5751+32])
+                              [
+                                core_type (src/extension.mli[206,5751+8]..[206,5751+19])
+                                  Ptyp_constr "Longident.t" (src/extension.mli[206,5751+8]..[206,5751+19])
+                                  []
+                              ]
+                          ]
+                        core_type (src/extension.mli[207,5794+4]..[207,5794+6])
+                          Ptyp_var a
+                    core_type (src/extension.mli[208,5805+4]..[208,5805+5])
+                      Ptyp_constr "t" (src/extension.mli[208,5805+4]..[208,5805+5])
+                      []
+            []
+        signature_item (src/extension.mli[219,6157+2]..[226,6381+5])
+          Psig_value
+          value_description "declare_inline_with_path_arg" (src/extension.mli[219,6157+6]..[219,6157+34]) (src/extension.mli[219,6157+2]..[226,6381+5])
+            core_type (src/extension.mli[220,6194+4]..[226,6381+5])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[220,6194+4]..[220,6194+10])
+                Ptyp_constr "string" (src/extension.mli[220,6194+4]..[220,6194+10])
+                []
+              core_type (src/extension.mli[221,6208+4]..[226,6381+5])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/extension.mli[221,6208+4]..[221,6208+22])
+                  Ptyp_constr "Context.t" (src/extension.mli[221,6208+13]..[221,6208+22])
+                  [
+                    core_type (src/extension.mli[221,6208+4]..[221,6208+12])
+                      Ptyp_var context
+                  ]
+                core_type (src/extension.mli[222,6234+4]..[226,6381+5])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[222,6234+4]..[222,6234+46])
+                    Ptyp_constr "Ast_pattern.t" (src/extension.mli[222,6234+33]..[222,6234+46])
+                    [
+                      core_type (src/extension.mli[222,6234+5]..[222,6234+12])
+                        Ptyp_constr "payload" (src/extension.mli[222,6234+5]..[222,6234+12])
+                        []
+                      core_type (src/extension.mli[222,6234+14]..[222,6234+16])
+                        Ptyp_var a
+                      core_type (src/extension.mli[222,6234+18]..[222,6234+31])
+                        Ptyp_constr "list" (src/extension.mli[222,6234+27]..[222,6234+31])
+                        [
+                          core_type (src/extension.mli[222,6234+18]..[222,6234+26])
+                            Ptyp_var context
+                        ]
+                    ]
+                  core_type (src/extension.mli[223,6284+4]..[226,6381+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[223,6284+5]..[225,6370+6])
+                      Ptyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[223,6284+10]..[223,6284+39])
+                        Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[223,6284+10]..[223,6284+39])
+                        []
+                      core_type (src/extension.mli[224,6327+4]..[225,6370+6])
+                        Ptyp_arrow
+                        Labelled "arg"
+                        core_type (src/extension.mli[224,6327+8]..[224,6327+39])
+                          Ptyp_constr "option" (src/extension.mli[224,6327+33]..[224,6327+39])
+                          [
+                            core_type (src/extension.mli[224,6327+8]..[224,6327+32])
+                              Ptyp_constr "Asttypes.loc" (src/extension.mli[224,6327+20]..[224,6327+32])
+                              [
+                                core_type (src/extension.mli[224,6327+8]..[224,6327+19])
+                                  Ptyp_constr "Longident.t" (src/extension.mli[224,6327+8]..[224,6327+19])
+                                  []
+                              ]
+                          ]
+                        core_type (src/extension.mli[225,6370+4]..[225,6370+6])
+                          Ptyp_var a
+                    core_type (src/extension.mli[226,6381+4]..[226,6381+5])
+                      Ptyp_constr "t" (src/extension.mli[226,6381+4]..[226,6381+5])
+                      []
+            []
+      ]
+  signature_item (src/extension.mli[229,6392+0]..[229,6392+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/extension.mli[229,6392+0]..[229,6392+7])
+        Pstr_eval
+        expression (src/extension.mli[229,6392+0]..[229,6392+7])
+          Pexp_constant PConst_string("/*",(src/extension.mli[229,6392+0]..[229,6392+7]),None)
+    ]
+  signature_item (src/extension.mli[231,6401+0]..[231,6401+66])
+    Psig_value
+    value_description "check_context_for_inline" (src/extension.mli[231,6401+4]..[231,6401+28]) (src/extension.mli[231,6401+0]..[231,6401+66])
+      core_type (src/extension.mli[231,6401+31]..[231,6401+66])
+        Ptyp_arrow
+        Labelled "func"
+        core_type (src/extension.mli[231,6401+36]..[231,6401+42])
+          Ptyp_constr "string" (src/extension.mli[231,6401+36]..[231,6401+42])
+          []
+        core_type (src/extension.mli[231,6401+46]..[231,6401+66])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/extension.mli[231,6401+46]..[231,6401+58])
+            Ptyp_constr "Context.t" (src/extension.mli[231,6401+49]..[231,6401+58])
+            [
+              core_type (src/extension.mli[231,6401+46]..[231,6401+48])
+                Ptyp_var a
+            ]
+          core_type (src/extension.mli[231,6401+62]..[231,6401+66])
+            Ptyp_constr "unit" (src/extension.mli[231,6401+62]..[231,6401+66])
+            []
+      []
+  signature_item (src/extension.mli[233,6469+0]..[236,6590+3])
+    Psig_value
+    value_description "__declare_ppx_import" (src/extension.mli[233,6469+4]..[233,6469+24]) (src/extension.mli[233,6469+0]..[236,6590+3])
+      core_type (src/extension.mli[234,6496+2]..[236,6590+3])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/extension.mli[234,6496+2]..[234,6496+8])
+          Ptyp_constr "string" (src/extension.mli[234,6496+2]..[234,6496+8])
+          []
+        core_type (src/extension.mli[235,6508+2]..[236,6590+3])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/extension.mli[235,6508+3]..[235,6508+77])
+            Ptyp_arrow
+            Labelled "ctxt"
+            core_type (src/extension.mli[235,6508+8]..[235,6508+37])
+              Ptyp_constr "Expansion_context.Extension.t" (src/extension.mli[235,6508+8]..[235,6508+37])
+              []
+            core_type (src/extension.mli[235,6508+41]..[235,6508+77])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/extension.mli[235,6508+41]..[235,6508+57])
+                Ptyp_constr "type_declaration" (src/extension.mli[235,6508+41]..[235,6508+57])
+                []
+              core_type (src/extension.mli[235,6508+61]..[235,6508+77])
+                Ptyp_constr "type_declaration" (src/extension.mli[235,6508+61]..[235,6508+77])
+                []
+          core_type (src/extension.mli[236,6590+2]..[236,6590+3])
+            Ptyp_constr "t" (src/extension.mli[236,6590+2]..[236,6590+3])
+            []
+      []
+]
+
+[@@@ocaml.text " Declare extenders to rewrite extension nodes. "]
+open! Import
+type (_, _) equality =
+  | Eq: ('a, 'a) equality 
+  | Ne: (_, _) equality 
+module Context :
+sig
+  type 'a t =
+    | Class_expr: class_expr t 
+    | Class_field: class_field t 
+    | Class_type: class_type t 
+    | Class_type_field: class_type_field t 
+    | Core_type: core_type t 
+    | Expression: expression t 
+    | Module_expr: module_expr t 
+    | Module_type: module_type t 
+    | Pattern: pattern t 
+    | Signature_item: signature_item t 
+    | Structure_item: structure_item t 
+    | Ppx_import: type_declaration t
+    [@ocaml.doc " For ppx_import compat only, please do not use "]
+  val class_expr : class_expr t
+  val class_field : class_field t
+  val class_type : class_type t
+  val class_type_field : class_type_field t
+  val core_type : core_type t
+  val expression : expression t
+  val module_expr : module_expr t
+  val module_type : module_type t
+  val pattern : pattern t
+  val signature_item : signature_item t
+  val structure_item : structure_item t
+  val eq : 'a t -> 'b t -> ('a, 'b) equality
+  val get_extension : 'a t -> 'a -> (extension * attributes) option
+  val merge_attributes : 'a t -> 'a -> attributes -> 'a
+  val merge_attributes_res :
+    'a t -> 'a -> attributes -> ('a, Location.Error.t NonEmptyList.t) result
+end
+type t[@@ocaml.doc " Type of declared extensions. "]
+val declare :
+  string ->
+    'context Context.t ->
+      (payload, 'a, 'context) Ast_pattern.t ->
+        (loc:Location.t -> path:string -> 'a) -> t[@@ocaml.doc
+                                                    " [declare name context pattern expander] declares the extension names [name]\n    for [context].\n\n    [expander] is responsible for producing the code to replace the extension in\n    the AST. It receives as argument:\n\n    - [loc]: the location of the enclosing node. For instance for expression it\n      is the [pexp_loc] field\n    - [path]: the current module path "]
+val declare_with_path_arg :
+  string ->
+    'context Context.t ->
+      (payload, 'a, 'context) Ast_pattern.t ->
+        (loc:Location.t ->
+           path:string -> arg:Longident.t Asttypes.loc option -> 'a)
+          -> t[@@ocaml.doc
+                " Same as [declare] except that the extension name takes an additional path\n    argument. The path is the part of the name that start with a capitalized\n    component. For instance in the following, the extension [\"map\"] would\n    receive the path argument [Foo.Bar]:\n\n    {[\n      let%map.Foo.Bar x = 1 in\n      ...\n    ]} "]
+val declare_inline :
+  string ->
+    'context Context.t ->
+      (payload, 'a, 'context list) Ast_pattern.t ->
+        (loc:Location.t -> path:string -> 'a) -> t[@@ocaml.doc
+                                                    " Inline the result of the expansion into its parent. Only works for these\n    contexts:\n\n    - [class_field]\n    - [class_type_field]\n    - [signature_item]\n    - [structure_item] "]
+val declare_inline_with_path_arg :
+  string ->
+    'context Context.t ->
+      (payload, 'a, 'context list) Ast_pattern.t ->
+        (loc:Location.t ->
+           path:string -> arg:Longident.t Asttypes.loc option -> 'a)
+          -> t
+module For_context :
+sig
+  [@@@ocaml.text
+    " This module is used to implement {!Context_free.map_top_down} "]
+  type 'a t
+  val convert_res :
+    'a t list ->
+      ctxt:Expansion_context.Extension.t ->
+        extension -> ('a option, Location.Error.t NonEmptyList.t) result
+  val convert :
+    'a t list -> ctxt:Expansion_context.Extension.t -> extension -> 'a option
+  val convert_inline_res :
+    'a t list ->
+      ctxt:Expansion_context.Extension.t ->
+        extension -> ('a list option, Location.Error.t NonEmptyList.t) result
+  val convert_inline :
+    'a t list ->
+      ctxt:Expansion_context.Extension.t -> extension -> 'a list option
+end
+val filter_by_context : 'a Context.t -> t list -> 'a For_context.t list
+[@@ocaml.doc
+  " Given a context and a list of extension expander, returns all the ones that\n    are for this context. "]
+module Expert :
+sig
+  [@@@ocaml.text
+    " This module allows to declare extensions that do not produce a value of\n      the context type. This is typically useful for extensions point that\n      depends on more things from the context than the path and location. "]
+  type ('context, 'payload) t[@@ocaml.doc
+                               " Type of declared expert extensions.\n\n      The ['context] type parameter describes where the extension is expected\n      and the ['payload] one what its payload should contain. "]
+  val declare :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'b) Ast_pattern.t -> 'a -> ('context, 'b) t
+  val declare_with_path_arg :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'b) Ast_pattern.t ->
+          (arg:Longident.t Loc.t option -> 'a) -> ('context, 'b) t
+  val convert_res :
+    (_, 'a) t list ->
+      loc:Location.t ->
+        extension -> ('a option, Location.Error.t NonEmptyList.t) result
+  val convert : (_, 'a) t list -> loc:Location.t -> extension -> 'a option
+end
+val check_unused : Ast_traverse.iter
+val collect_unhandled_extension_errors :
+  Location.Error.t list Ast_traverse.fold
+module V2 :
+sig
+  type nonrec t = t
+  val declare :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'context) Ast_pattern.t ->
+          (loc:Location.t -> path:string -> 'a) -> t
+  val declare_inline :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'context list) Ast_pattern.t ->
+          (loc:Location.t -> path:string -> 'a) -> t
+end
+module V3 :
+sig
+  type nonrec t = t
+  val declare :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'context) Ast_pattern.t ->
+          (ctxt:Expansion_context.Extension.t -> 'a) -> t
+  val declare_inline :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'context list) Ast_pattern.t ->
+          (ctxt:Expansion_context.Extension.t -> 'a) -> t
+  val declare_with_path_arg :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'context) Ast_pattern.t ->
+          (ctxt:Expansion_context.Extension.t ->
+             arg:Longident.t Asttypes.loc option -> 'a)
+            -> t[@@ocaml.doc
+                  " Same as [declare] except that the extension name takes an additional path\n      argument. The path is the part of the name that start with a capitalized\n      component. For instance in the following, the extension [\"map\"] would\n      receive the path argument [Foo.Bar]:\n\n      {[\n        let%map.Foo.Bar x = 1 in\n        ...\n      ]} "]
+  val declare_inline_with_path_arg :
+    string ->
+      'context Context.t ->
+        (payload, 'a, 'context list) Ast_pattern.t ->
+          (ctxt:Expansion_context.Extension.t ->
+             arg:Longident.t Asttypes.loc option -> 'a)
+            -> t
+end
+[@@@ocaml.text "/*"]
+val check_context_for_inline : func:string -> 'a Context.t -> unit
+val __declare_ppx_import :
+  string ->
+    (ctxt:Expansion_context.Extension.t ->
+       type_declaration -> type_declaration)
+      -> t
+[
+  signature_item (src/extension.mli[1,0+0]..src/extension.mli[1,0+52])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/extension.mli[1,0+0]..[1,0+52])
+        Pstr_eval
+        expression (src/extension.mli[1,0+0]..[1,0+52])
+          Pexp_constant PConst_string(" Declare extenders to rewrite extension nodes. ",(src/extension.mli[1,0+0]..[1,0+52]),None)
+    ]
+  signature_item (src/extension.mli[3,54+0]..src/extension.mli[3,54+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/extension.mli[5,68+0]..src/extension.mli[5,68+68])
+    Tsig_type Rec
+    [
+      type_declaration equality/550 (src/extension.mli[5,68+0]..src/extension.mli[5,68+68])
+        ptype_params =
+          [
+            core_type (src/extension.mli[5,68+6]..src/extension.mli[5,68+7])
+              Ttyp_any
+            core_type (src/extension.mli[5,68+9]..src/extension.mli[5,68+10])
+              Ttyp_any
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (src/extension.mli[5,68+23]..src/extension.mli[5,68+45])
+                Eq/551
+                []
+                Some
+                  core_type (src/extension.mli[5,68+28]..src/extension.mli[5,68+45])
+                    Ttyp_constr "equality/550"
+                    [
+                      core_type (src/extension.mli[5,68+29]..src/extension.mli[5,68+31])
+                        Ttyp_var a
+                      core_type (src/extension.mli[5,68+33]..src/extension.mli[5,68+35])
+                        Ttyp_var a
+                    ]
+              (src/extension.mli[5,68+46]..src/extension.mli[5,68+68])
+                Ne/552
+                []
+                Some
+                  core_type (src/extension.mli[5,68+53]..src/extension.mli[5,68+68])
+                    Ttyp_constr "equality/550"
+                    [
+                      core_type (src/extension.mli[5,68+54]..src/extension.mli[5,68+55])
+                        Ttyp_any
+                      core_type (src/extension.mli[5,68+57]..src/extension.mli[5,68+58])
+                        Ttyp_any
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/extension.mli[7,138+0]..src/extension.mli[40,1305+3])
+    Tsig_module "Context/681"
+    module_type (src/extension.mli[7,138+17]..src/extension.mli[40,1305+3])
+      Tmty_signature
+      [
+        signature_item (src/extension.mli[8,159+2]..src/extension.mli[20,551+37])
+          Tsig_type Rec
+          [
+            type_declaration t/553 (src/extension.mli[8,159+2]..src/extension.mli[20,551+37])
+              ptype_params =
+                [
+                  core_type (src/extension.mli[8,159+7]..src/extension.mli[8,159+9])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_variant
+                  [
+                    (src/extension.mli[9,173+4]..src/extension.mli[9,173+31])
+                      Class_expr/554
+                      []
+                      Some
+                        core_type (src/extension.mli[9,173+19]..src/extension.mli[9,173+31])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[9,173+19]..src/extension.mli[9,173+29])
+                              Ttyp_constr "Ppxlib__!.Import.class_expr"
+                              []
+                          ]
+                    (src/extension.mli[10,205+4]..src/extension.mli[10,205+33])
+                      Class_field/555
+                      []
+                      Some
+                        core_type (src/extension.mli[10,205+20]..src/extension.mli[10,205+33])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[10,205+20]..src/extension.mli[10,205+31])
+                              Ttyp_constr "Ppxlib__!.Import.class_field"
+                              []
+                          ]
+                    (src/extension.mli[11,239+4]..src/extension.mli[11,239+31])
+                      Class_type/556
+                      []
+                      Some
+                        core_type (src/extension.mli[11,239+19]..src/extension.mli[11,239+31])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[11,239+19]..src/extension.mli[11,239+29])
+                              Ttyp_constr "Ppxlib__!.Import.class_type"
+                              []
+                          ]
+                    (src/extension.mli[12,271+4]..src/extension.mli[12,271+43])
+                      Class_type_field/557
+                      []
+                      Some
+                        core_type (src/extension.mli[12,271+25]..src/extension.mli[12,271+43])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[12,271+25]..src/extension.mli[12,271+41])
+                              Ttyp_constr "Ppxlib__!.Import.class_type_field"
+                              []
+                          ]
+                    (src/extension.mli[13,315+4]..src/extension.mli[13,315+29])
+                      Core_type/558
+                      []
+                      Some
+                        core_type (src/extension.mli[13,315+18]..src/extension.mli[13,315+29])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[13,315+18]..src/extension.mli[13,315+27])
+                              Ttyp_constr "Ppxlib__!.Import.core_type"
+                              []
+                          ]
+                    (src/extension.mli[14,345+4]..src/extension.mli[14,345+31])
+                      Expression/559
+                      []
+                      Some
+                        core_type (src/extension.mli[14,345+19]..src/extension.mli[14,345+31])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[14,345+19]..src/extension.mli[14,345+29])
+                              Ttyp_constr "Ppxlib__!.Import.expression"
+                              []
+                          ]
+                    (src/extension.mli[15,377+4]..src/extension.mli[15,377+33])
+                      Module_expr/560
+                      []
+                      Some
+                        core_type (src/extension.mli[15,377+20]..src/extension.mli[15,377+33])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[15,377+20]..src/extension.mli[15,377+31])
+                              Ttyp_constr "Ppxlib__!.Import.module_expr"
+                              []
+                          ]
+                    (src/extension.mli[16,411+4]..src/extension.mli[16,411+33])
+                      Module_type/561
+                      []
+                      Some
+                        core_type (src/extension.mli[16,411+20]..src/extension.mli[16,411+33])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[16,411+20]..src/extension.mli[16,411+31])
+                              Ttyp_constr "Ppxlib__!.Import.module_type"
+                              []
+                          ]
+                    (src/extension.mli[17,445+4]..src/extension.mli[17,445+25])
+                      Pattern/562
+                      []
+                      Some
+                        core_type (src/extension.mli[17,445+16]..src/extension.mli[17,445+25])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[17,445+16]..src/extension.mli[17,445+23])
+                              Ttyp_constr "Ppxlib__!.Import.pattern"
+                              []
+                          ]
+                    (src/extension.mli[18,471+4]..src/extension.mli[18,471+39])
+                      Signature_item/563
+                      []
+                      Some
+                        core_type (src/extension.mli[18,471+23]..src/extension.mli[18,471+39])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[18,471+23]..src/extension.mli[18,471+37])
+                              Ttyp_constr "Ppxlib__!.Import.signature_item"
+                              []
+                          ]
+                    (src/extension.mli[19,511+4]..src/extension.mli[19,511+39])
+                      Structure_item/564
+                      []
+                      Some
+                        core_type (src/extension.mli[19,511+23]..src/extension.mli[19,511+39])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[19,511+23]..src/extension.mli[19,511+37])
+                              Ttyp_constr "Ppxlib__!.Import.structure_item"
+                              []
+                          ]
+                    (src/extension.mli[20,551+4]..src/extension.mli[20,551+37])
+                      Ppx_import/565
+                      attribute "ocaml.doc"
+                        [
+                          structure_item (src/extension.mli[21,589+8]..[21,589+60])
+                            Pstr_eval
+                            expression (src/extension.mli[21,589+8]..[21,589+60])
+                              Pexp_constant PConst_string(" For ppx_import compat only, please do not use ",(src/extension.mli[21,589+8]..[21,589+60]),None)
+                        ]
+                      []
+                      Some
+                        core_type (src/extension.mli[20,551+19]..src/extension.mli[20,551+37])
+                          Ttyp_constr "t/553"
+                          [
+                            core_type (src/extension.mli[20,551+19]..src/extension.mli[20,551+35])
+                              Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                              []
+                          ]
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/extension.mli[23,651+2]..src/extension.mli[23,651+31])
+          Tsig_value
+          value_description class_expr/566 (src/extension.mli[23,651+2]..src/extension.mli[23,651+31])
+            core_type (src/extension.mli[23,651+19]..src/extension.mli[23,651+31])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[23,651+19]..src/extension.mli[23,651+29])
+                  Ttyp_constr "Ppxlib__!.Import.class_expr"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[24,683+2]..src/extension.mli[24,683+33])
+          Tsig_value
+          value_description class_field/567 (src/extension.mli[24,683+2]..src/extension.mli[24,683+33])
+            core_type (src/extension.mli[24,683+20]..src/extension.mli[24,683+33])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[24,683+20]..src/extension.mli[24,683+31])
+                  Ttyp_constr "Ppxlib__!.Import.class_field"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[25,717+2]..src/extension.mli[25,717+31])
+          Tsig_value
+          value_description class_type/568 (src/extension.mli[25,717+2]..src/extension.mli[25,717+31])
+            core_type (src/extension.mli[25,717+19]..src/extension.mli[25,717+31])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[25,717+19]..src/extension.mli[25,717+29])
+                  Ttyp_constr "Ppxlib__!.Import.class_type"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[26,749+2]..src/extension.mli[26,749+43])
+          Tsig_value
+          value_description class_type_field/569 (src/extension.mli[26,749+2]..src/extension.mli[26,749+43])
+            core_type (src/extension.mli[26,749+25]..src/extension.mli[26,749+43])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[26,749+25]..src/extension.mli[26,749+41])
+                  Ttyp_constr "Ppxlib__!.Import.class_type_field"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[27,793+2]..src/extension.mli[27,793+29])
+          Tsig_value
+          value_description core_type/570 (src/extension.mli[27,793+2]..src/extension.mli[27,793+29])
+            core_type (src/extension.mli[27,793+18]..src/extension.mli[27,793+29])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[27,793+18]..src/extension.mli[27,793+27])
+                  Ttyp_constr "Ppxlib__!.Import.core_type"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[28,823+2]..src/extension.mli[28,823+31])
+          Tsig_value
+          value_description expression/571 (src/extension.mli[28,823+2]..src/extension.mli[28,823+31])
+            core_type (src/extension.mli[28,823+19]..src/extension.mli[28,823+31])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[28,823+19]..src/extension.mli[28,823+29])
+                  Ttyp_constr "Ppxlib__!.Import.expression"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[29,855+2]..src/extension.mli[29,855+33])
+          Tsig_value
+          value_description module_expr/572 (src/extension.mli[29,855+2]..src/extension.mli[29,855+33])
+            core_type (src/extension.mli[29,855+20]..src/extension.mli[29,855+33])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[29,855+20]..src/extension.mli[29,855+31])
+                  Ttyp_constr "Ppxlib__!.Import.module_expr"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[30,889+2]..src/extension.mli[30,889+33])
+          Tsig_value
+          value_description module_type/573 (src/extension.mli[30,889+2]..src/extension.mli[30,889+33])
+            core_type (src/extension.mli[30,889+20]..src/extension.mli[30,889+33])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[30,889+20]..src/extension.mli[30,889+31])
+                  Ttyp_constr "Ppxlib__!.Import.module_type"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[31,923+2]..src/extension.mli[31,923+25])
+          Tsig_value
+          value_description pattern/574 (src/extension.mli[31,923+2]..src/extension.mli[31,923+25])
+            core_type (src/extension.mli[31,923+16]..src/extension.mli[31,923+25])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[31,923+16]..src/extension.mli[31,923+23])
+                  Ttyp_constr "Ppxlib__!.Import.pattern"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[32,949+2]..src/extension.mli[32,949+39])
+          Tsig_value
+          value_description signature_item/575 (src/extension.mli[32,949+2]..src/extension.mli[32,949+39])
+            core_type (src/extension.mli[32,949+23]..src/extension.mli[32,949+39])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[32,949+23]..src/extension.mli[32,949+37])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[33,989+2]..src/extension.mli[33,989+39])
+          Tsig_value
+          value_description structure_item/576 (src/extension.mli[33,989+2]..src/extension.mli[33,989+39])
+            core_type (src/extension.mli[33,989+23]..src/extension.mli[33,989+39])
+              Ttyp_constr "t/553"
+              [
+                core_type (src/extension.mli[33,989+23]..src/extension.mli[33,989+37])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+              ]
+            []
+        signature_item (src/extension.mli[34,1029+2]..src/extension.mli[34,1029+44])
+          Tsig_value
+          value_description eq/577 (src/extension.mli[34,1029+2]..src/extension.mli[34,1029+44])
+            core_type (src/extension.mli[34,1029+11]..src/extension.mli[34,1029+44])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[34,1029+11]..src/extension.mli[34,1029+15])
+                Ttyp_constr "t/553"
+                [
+                  core_type (src/extension.mli[34,1029+11]..src/extension.mli[34,1029+13])
+                    Ttyp_var a
+                ]
+              core_type (src/extension.mli[34,1029+19]..src/extension.mli[34,1029+44])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[34,1029+19]..src/extension.mli[34,1029+23])
+                  Ttyp_constr "t/553"
+                  [
+                    core_type (src/extension.mli[34,1029+19]..src/extension.mli[34,1029+21])
+                      Ttyp_var b
+                  ]
+                core_type (src/extension.mli[34,1029+27]..src/extension.mli[34,1029+44])
+                  Ttyp_constr "equality/550"
+                  [
+                    core_type (src/extension.mli[34,1029+28]..src/extension.mli[34,1029+30])
+                      Ttyp_var a
+                    core_type (src/extension.mli[34,1029+32]..src/extension.mli[34,1029+34])
+                      Ttyp_var b
+                  ]
+            []
+        signature_item (src/extension.mli[35,1074+2]..src/extension.mli[35,1074+67])
+          Tsig_value
+          value_description get_extension/578 (src/extension.mli[35,1074+2]..src/extension.mli[35,1074+67])
+            core_type (src/extension.mli[35,1074+22]..src/extension.mli[35,1074+67])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[35,1074+22]..src/extension.mli[35,1074+26])
+                Ttyp_constr "t/553"
+                [
+                  core_type (src/extension.mli[35,1074+22]..src/extension.mli[35,1074+24])
+                    Ttyp_var a
+                ]
+              core_type (src/extension.mli[35,1074+30]..src/extension.mli[35,1074+67])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[35,1074+30]..src/extension.mli[35,1074+32])
+                  Ttyp_var a
+                core_type (src/extension.mli[35,1074+36]..src/extension.mli[35,1074+67])
+                  Ttyp_constr "option/12!"
+                  [
+                    core_type (src/extension.mli[35,1074+37]..src/extension.mli[35,1074+59])
+                      Ttyp_tuple
+                      [
+                        core_type (src/extension.mli[35,1074+37]..src/extension.mli[35,1074+46])
+                          Ttyp_constr "Ppxlib__!.Import.extension"
+                          []
+                        core_type (src/extension.mli[35,1074+49]..src/extension.mli[35,1074+59])
+                          Ttyp_constr "Ppxlib__!.Import.attributes"
+                          []
+                      ]
+                  ]
+            []
+        signature_item (src/extension.mli[36,1142+2]..src/extension.mli[36,1142+55])
+          Tsig_value
+          value_description merge_attributes/579 (src/extension.mli[36,1142+2]..src/extension.mli[36,1142+55])
+            core_type (src/extension.mli[36,1142+25]..src/extension.mli[36,1142+55])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[36,1142+25]..src/extension.mli[36,1142+29])
+                Ttyp_constr "t/553"
+                [
+                  core_type (src/extension.mli[36,1142+25]..src/extension.mli[36,1142+27])
+                    Ttyp_var a
+                ]
+              core_type (src/extension.mli[36,1142+33]..src/extension.mli[36,1142+55])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[36,1142+33]..src/extension.mli[36,1142+35])
+                  Ttyp_var a
+                core_type (src/extension.mli[36,1142+39]..src/extension.mli[36,1142+55])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[36,1142+39]..src/extension.mli[36,1142+49])
+                    Ttyp_constr "Ppxlib__!.Import.attributes"
+                    []
+                  core_type (src/extension.mli[36,1142+53]..src/extension.mli[36,1142+55])
+                    Ttyp_var a
+            []
+        signature_item (src/extension.mli[38,1199+2]..src/extension.mli[39,1228+76])
+          Tsig_value
+          value_description merge_attributes_res/680 (src/extension.mli[38,1199+2]..src/extension.mli[39,1228+76])
+            core_type (src/extension.mli[39,1228+4]..src/extension.mli[39,1228+76])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[39,1228+4]..src/extension.mli[39,1228+8])
+                Ttyp_constr "t/553"
+                [
+                  core_type (src/extension.mli[39,1228+4]..src/extension.mli[39,1228+6])
+                    Ttyp_var a
+                ]
+              core_type (src/extension.mli[39,1228+12]..src/extension.mli[39,1228+76])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[39,1228+12]..src/extension.mli[39,1228+14])
+                  Ttyp_var a
+                core_type (src/extension.mli[39,1228+18]..src/extension.mli[39,1228+76])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[39,1228+18]..src/extension.mli[39,1228+28])
+                    Ttyp_constr "Ppxlib__!.Import.attributes"
+                    []
+                  core_type (src/extension.mli[39,1228+32]..src/extension.mli[39,1228+76])
+                    Ttyp_constr "Stdlib!.result"
+                    [
+                      core_type (src/extension.mli[39,1228+33]..src/extension.mli[39,1228+35])
+                        Ttyp_var a
+                      core_type (src/extension.mli[39,1228+37]..src/extension.mli[39,1228+68])
+                        Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                        [
+                          core_type (src/extension.mli[39,1228+37]..src/extension.mli[39,1228+53])
+                            Ttyp_constr "Ppxlib__!.Location.Error.t"
+                            []
+                        ]
+                    ]
+            []
+      ]
+  signature_item (src/extension.mli[42,1310+0]..src/extension.mli[42,1310+6])
+    Tsig_type Rec
+    [
+      type_declaration t/682 (src/extension.mli[42,1310+0]..src/extension.mli[42,1310+6])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/extension.mli[43,1317+0]..[43,1317+35])
+              Pstr_eval
+              expression (src/extension.mli[43,1317+0]..[43,1317+35])
+                Pexp_constant PConst_string(" Type of declared extensions. ",(src/extension.mli[43,1317+0]..[43,1317+35]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/extension.mli[45,1354+0]..src/extension.mli[50,1490+3])
+    Tsig_value
+    value_description declare/1023 (src/extension.mli[45,1354+0]..src/extension.mli[50,1490+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[51,1494+0]..[59,1824+40])
+            Pstr_eval
+            expression (src/extension.mli[51,1494+0]..[59,1824+40])
+              Pexp_constant PConst_string(" [declare name context pattern expander] declares the extension names [name]\n    for [context].\n\n    [expander] is responsible for producing the code to replace the extension in\n    the AST. It receives as argument:\n\n    - [loc]: the location of the enclosing node. For instance for expression it\n      is the [pexp_loc] field\n    - [path]: the current module path ",(src/extension.mli[51,1494+0]..[59,1824+40]),None)
+        ]
+      core_type (src/extension.mli[46,1368+2]..src/extension.mli[50,1490+3])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/extension.mli[46,1368+2]..src/extension.mli[46,1368+8])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/extension.mli[47,1380+2]..src/extension.mli[50,1490+3])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/extension.mli[47,1380+2]..src/extension.mli[47,1380+20])
+            Ttyp_constr "Context/681.t"
+            [
+              core_type (src/extension.mli[47,1380+2]..src/extension.mli[47,1380+10])
+                Ttyp_var context
+            ]
+          core_type (src/extension.mli[48,1404+2]..src/extension.mli[50,1490+3])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/extension.mli[48,1404+2]..src/extension.mli[48,1404+39])
+              Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+              [
+                core_type (src/extension.mli[48,1404+3]..src/extension.mli[48,1404+10])
+                  Ttyp_constr "Ppxlib__!.Import.payload"
+                  []
+                core_type (src/extension.mli[48,1404+12]..src/extension.mli[48,1404+14])
+                  Ttyp_var a
+                core_type (src/extension.mli[48,1404+16]..src/extension.mli[48,1404+24])
+                  Ttyp_var context
+              ]
+            core_type (src/extension.mli[49,1447+2]..src/extension.mli[50,1490+3])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[49,1447+3]..src/extension.mli[49,1447+38])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[49,1447+7]..src/extension.mli[49,1447+17])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/extension.mli[49,1447+21]..src/extension.mli[49,1447+38])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[49,1447+26]..src/extension.mli[49,1447+32])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/extension.mli[49,1447+36]..src/extension.mli[49,1447+38])
+                    Ttyp_var a
+              core_type (src/extension.mli[50,1490+2]..src/extension.mli[50,1490+3])
+                Ttyp_constr "t/682"
+                []
+      []
+  signature_item (src/extension.mli[61,1866+0]..src/extension.mli[66,2055+3])
+    Tsig_value
+    value_description declare_with_path_arg/1555 (src/extension.mli[61,1866+0]..src/extension.mli[66,2055+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[67,2059+0]..[75,2378+9])
+            Pstr_eval
+            expression (src/extension.mli[67,2059+0]..[75,2378+9])
+              Pexp_constant PConst_string(" Same as [declare] except that the extension name takes an additional path\n    argument. The path is the part of the name that start with a capitalized\n    component. For instance in the following, the extension [\"map\"] would\n    receive the path argument [Foo.Bar]:\n\n    {[\n      let%map.Foo.Bar x = 1 in\n      ...\n    ]} ",(src/extension.mli[67,2059+0]..[75,2378+9]),None)
+        ]
+      core_type (src/extension.mli[62,1894+2]..src/extension.mli[66,2055+3])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/extension.mli[62,1894+2]..src/extension.mli[62,1894+8])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/extension.mli[63,1906+2]..src/extension.mli[66,2055+3])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/extension.mli[63,1906+2]..src/extension.mli[63,1906+20])
+            Ttyp_constr "Context/681.t"
+            [
+              core_type (src/extension.mli[63,1906+2]..src/extension.mli[63,1906+10])
+                Ttyp_var context
+            ]
+          core_type (src/extension.mli[64,1930+2]..src/extension.mli[66,2055+3])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/extension.mli[64,1930+2]..src/extension.mli[64,1930+39])
+              Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+              [
+                core_type (src/extension.mli[64,1930+3]..src/extension.mli[64,1930+10])
+                  Ttyp_constr "Ppxlib__!.Import.payload"
+                  []
+                core_type (src/extension.mli[64,1930+12]..src/extension.mli[64,1930+14])
+                  Ttyp_var a
+                core_type (src/extension.mli[64,1930+16]..src/extension.mli[64,1930+24])
+                  Ttyp_var context
+              ]
+            core_type (src/extension.mli[65,1973+2]..src/extension.mli[66,2055+3])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[65,1973+3]..src/extension.mli[65,1973+77])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[65,1973+7]..src/extension.mli[65,1973+17])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/extension.mli[65,1973+21]..src/extension.mli[65,1973+77])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[65,1973+26]..src/extension.mli[65,1973+32])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/extension.mli[65,1973+36]..src/extension.mli[65,1973+77])
+                    Ttyp_arrow
+                    Labelled "arg"
+                    core_type (src/extension.mli[65,1973+40]..src/extension.mli[65,1973+71])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/extension.mli[65,1973+40]..src/extension.mli[65,1973+64])
+                          Ttyp_constr "Ppxlib__!.Import.Asttypes.loc"
+                          [
+                            core_type (src/extension.mli[65,1973+40]..src/extension.mli[65,1973+51])
+                              Ttyp_constr "Ppxlib__!.Longident.t"
+                              []
+                          ]
+                      ]
+                    core_type (src/extension.mli[65,1973+75]..src/extension.mli[65,1973+77])
+                      Ttyp_var a
+              core_type (src/extension.mli[66,2055+2]..src/extension.mli[66,2055+3])
+                Ttyp_constr "t/682"
+                []
+      []
+  signature_item (src/extension.mli[77,2389+0]..src/extension.mli[82,2537+3])
+    Tsig_value
+    value_description declare_inline/1556 (src/extension.mli[77,2389+0]..src/extension.mli[82,2537+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[83,2541+0]..[89,2701+25])
+            Pstr_eval
+            expression (src/extension.mli[83,2541+0]..[89,2701+25])
+              Pexp_constant PConst_string(" Inline the result of the expansion into its parent. Only works for these\n    contexts:\n\n    - [class_field]\n    - [class_type_field]\n    - [signature_item]\n    - [structure_item] ",(src/extension.mli[83,2541+0]..[89,2701+25]),None)
+        ]
+      core_type (src/extension.mli[78,2410+2]..src/extension.mli[82,2537+3])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/extension.mli[78,2410+2]..src/extension.mli[78,2410+8])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/extension.mli[79,2422+2]..src/extension.mli[82,2537+3])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/extension.mli[79,2422+2]..src/extension.mli[79,2422+20])
+            Ttyp_constr "Context/681.t"
+            [
+              core_type (src/extension.mli[79,2422+2]..src/extension.mli[79,2422+10])
+                Ttyp_var context
+            ]
+          core_type (src/extension.mli[80,2446+2]..src/extension.mli[82,2537+3])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/extension.mli[80,2446+2]..src/extension.mli[80,2446+44])
+              Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+              [
+                core_type (src/extension.mli[80,2446+3]..src/extension.mli[80,2446+10])
+                  Ttyp_constr "Ppxlib__!.Import.payload"
+                  []
+                core_type (src/extension.mli[80,2446+12]..src/extension.mli[80,2446+14])
+                  Ttyp_var a
+                core_type (src/extension.mli[80,2446+16]..src/extension.mli[80,2446+29])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/extension.mli[80,2446+16]..src/extension.mli[80,2446+24])
+                      Ttyp_var context
+                  ]
+              ]
+            core_type (src/extension.mli[81,2494+2]..src/extension.mli[82,2537+3])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[81,2494+3]..src/extension.mli[81,2494+38])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[81,2494+7]..src/extension.mli[81,2494+17])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/extension.mli[81,2494+21]..src/extension.mli[81,2494+38])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[81,2494+26]..src/extension.mli[81,2494+32])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/extension.mli[81,2494+36]..src/extension.mli[81,2494+38])
+                    Ttyp_var a
+              core_type (src/extension.mli[82,2537+2]..src/extension.mli[82,2537+3])
+                Ttyp_constr "t/682"
+                []
+      []
+  signature_item (src/extension.mli[91,2728+0]..src/extension.mli[96,2929+3])
+    Tsig_value
+    value_description declare_inline_with_path_arg/1557 (src/extension.mli[91,2728+0]..src/extension.mli[96,2929+3])
+      core_type (src/extension.mli[92,2763+2]..src/extension.mli[96,2929+3])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/extension.mli[92,2763+2]..src/extension.mli[92,2763+8])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/extension.mli[93,2775+2]..src/extension.mli[96,2929+3])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/extension.mli[93,2775+2]..src/extension.mli[93,2775+20])
+            Ttyp_constr "Context/681.t"
+            [
+              core_type (src/extension.mli[93,2775+2]..src/extension.mli[93,2775+10])
+                Ttyp_var context
+            ]
+          core_type (src/extension.mli[94,2799+2]..src/extension.mli[96,2929+3])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/extension.mli[94,2799+2]..src/extension.mli[94,2799+44])
+              Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+              [
+                core_type (src/extension.mli[94,2799+3]..src/extension.mli[94,2799+10])
+                  Ttyp_constr "Ppxlib__!.Import.payload"
+                  []
+                core_type (src/extension.mli[94,2799+12]..src/extension.mli[94,2799+14])
+                  Ttyp_var a
+                core_type (src/extension.mli[94,2799+16]..src/extension.mli[94,2799+29])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/extension.mli[94,2799+16]..src/extension.mli[94,2799+24])
+                      Ttyp_var context
+                  ]
+              ]
+            core_type (src/extension.mli[95,2847+2]..src/extension.mli[96,2929+3])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[95,2847+3]..src/extension.mli[95,2847+77])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[95,2847+7]..src/extension.mli[95,2847+17])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/extension.mli[95,2847+21]..src/extension.mli[95,2847+77])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (src/extension.mli[95,2847+26]..src/extension.mli[95,2847+32])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/extension.mli[95,2847+36]..src/extension.mli[95,2847+77])
+                    Ttyp_arrow
+                    Labelled "arg"
+                    core_type (src/extension.mli[95,2847+40]..src/extension.mli[95,2847+71])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/extension.mli[95,2847+40]..src/extension.mli[95,2847+64])
+                          Ttyp_constr "Ppxlib__!.Import.Asttypes.loc"
+                          [
+                            core_type (src/extension.mli[95,2847+40]..src/extension.mli[95,2847+51])
+                              Ttyp_constr "Ppxlib__!.Longident.t"
+                              []
+                          ]
+                      ]
+                    core_type (src/extension.mli[95,2847+75]..src/extension.mli[95,2847+77])
+                      Ttyp_var a
+              core_type (src/extension.mli[96,2929+2]..src/extension.mli[96,2929+3])
+                Ttyp_constr "t/682"
+                []
+      []
+  signature_item (src/extension.mli[98,2934+0]..src/extension.mli[123,3575+3])
+    Tsig_module "For_context/1603"
+    module_type (src/extension.mli[98,2934+21]..src/extension.mli[123,3575+3])
+      Tmty_signature
+      [
+        signature_item (src/extension.mli[99,2959+2]..src/extension.mli[99,2959+70])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/extension.mli[99,2959+2]..[99,2959+70])
+              Pstr_eval
+              expression (src/extension.mli[99,2959+2]..[99,2959+70])
+                Pexp_constant PConst_string(" This module is used to implement {!Context_free.map_top_down} ",(src/extension.mli[99,2959+2]..[99,2959+70]),None)
+          ]
+        signature_item (src/extension.mli[101,3031+2]..src/extension.mli[101,3031+11])
+          Tsig_type Rec
+          [
+            type_declaration t/1558 (src/extension.mli[101,3031+2]..src/extension.mli[101,3031+11])
+              ptype_params =
+                [
+                  core_type (src/extension.mli[101,3031+7]..src/extension.mli[101,3031+9])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/extension.mli[103,3044+2]..src/extension.mli[107,3140+55])
+          Tsig_value
+          value_description convert_res/1599 (src/extension.mli[103,3044+2]..src/extension.mli[107,3140+55])
+            core_type (src/extension.mli[104,3064+4]..src/extension.mli[107,3140+55])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[104,3064+4]..src/extension.mli[104,3064+13])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/extension.mli[104,3064+4]..src/extension.mli[104,3064+8])
+                    Ttyp_constr "t/1558"
+                    [
+                      core_type (src/extension.mli[104,3064+4]..src/extension.mli[104,3064+6])
+                        Ttyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[105,3081+4]..src/extension.mli[107,3140+55])
+                Ttyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[105,3081+9]..src/extension.mli[105,3081+38])
+                  Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                  []
+                core_type (src/extension.mli[106,3123+4]..src/extension.mli[107,3140+55])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[106,3123+4]..src/extension.mli[106,3123+13])
+                    Ttyp_constr "Ppxlib__!.Import.extension"
+                    []
+                  core_type (src/extension.mli[107,3140+4]..src/extension.mli[107,3140+55])
+                    Ttyp_constr "Stdlib!.result"
+                    [
+                      core_type (src/extension.mli[107,3140+5]..src/extension.mli[107,3140+14])
+                        Ttyp_constr "option/12!"
+                        [
+                          core_type (src/extension.mli[107,3140+5]..src/extension.mli[107,3140+7])
+                            Ttyp_var a
+                        ]
+                      core_type (src/extension.mli[107,3140+16]..src/extension.mli[107,3140+47])
+                        Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                        [
+                          core_type (src/extension.mli[107,3140+16]..src/extension.mli[107,3140+32])
+                            Ttyp_constr "Ppxlib__!.Location.Error.t"
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/extension.mli[109,3197+2]..src/extension.mli[110,3213+77])
+          Tsig_value
+          value_description convert/1600 (src/extension.mli[109,3197+2]..src/extension.mli[110,3213+77])
+            core_type (src/extension.mli[110,3213+4]..src/extension.mli[110,3213+77])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[110,3213+4]..src/extension.mli[110,3213+13])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/extension.mli[110,3213+4]..src/extension.mli[110,3213+8])
+                    Ttyp_constr "t/1558"
+                    [
+                      core_type (src/extension.mli[110,3213+4]..src/extension.mli[110,3213+6])
+                        Ttyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[110,3213+17]..src/extension.mli[110,3213+77])
+                Ttyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[110,3213+22]..src/extension.mli[110,3213+51])
+                  Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                  []
+                core_type (src/extension.mli[110,3213+55]..src/extension.mli[110,3213+77])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[110,3213+55]..src/extension.mli[110,3213+64])
+                    Ttyp_constr "Ppxlib__!.Import.extension"
+                    []
+                  core_type (src/extension.mli[110,3213+68]..src/extension.mli[110,3213+77])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/extension.mli[110,3213+68]..src/extension.mli[110,3213+70])
+                        Ttyp_var a
+                    ]
+            []
+        signature_item (src/extension.mli[112,3292+2]..src/extension.mli[116,3395+60])
+          Tsig_value
+          value_description convert_inline_res/1601 (src/extension.mli[112,3292+2]..src/extension.mli[116,3395+60])
+            core_type (src/extension.mli[113,3319+4]..src/extension.mli[116,3395+60])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[113,3319+4]..src/extension.mli[113,3319+13])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/extension.mli[113,3319+4]..src/extension.mli[113,3319+8])
+                    Ttyp_constr "t/1558"
+                    [
+                      core_type (src/extension.mli[113,3319+4]..src/extension.mli[113,3319+6])
+                        Ttyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[114,3336+4]..src/extension.mli[116,3395+60])
+                Ttyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[114,3336+9]..src/extension.mli[114,3336+38])
+                  Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                  []
+                core_type (src/extension.mli[115,3378+4]..src/extension.mli[116,3395+60])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[115,3378+4]..src/extension.mli[115,3378+13])
+                    Ttyp_constr "Ppxlib__!.Import.extension"
+                    []
+                  core_type (src/extension.mli[116,3395+4]..src/extension.mli[116,3395+60])
+                    Ttyp_constr "Stdlib!.result"
+                    [
+                      core_type (src/extension.mli[116,3395+5]..src/extension.mli[116,3395+19])
+                        Ttyp_constr "option/12!"
+                        [
+                          core_type (src/extension.mli[116,3395+5]..src/extension.mli[116,3395+12])
+                            Ttyp_constr "list/11!"
+                            [
+                              core_type (src/extension.mli[116,3395+5]..src/extension.mli[116,3395+7])
+                                Ttyp_var a
+                            ]
+                        ]
+                      core_type (src/extension.mli[116,3395+21]..src/extension.mli[116,3395+52])
+                        Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                        [
+                          core_type (src/extension.mli[116,3395+21]..src/extension.mli[116,3395+37])
+                            Ttyp_constr "Ppxlib__!.Location.Error.t"
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/extension.mli[118,3457+2]..src/extension.mli[122,3556+18])
+          Tsig_value
+          value_description convert_inline/1602 (src/extension.mli[118,3457+2]..src/extension.mli[122,3556+18])
+            core_type (src/extension.mli[119,3480+4]..src/extension.mli[122,3556+18])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[119,3480+4]..src/extension.mli[119,3480+13])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/extension.mli[119,3480+4]..src/extension.mli[119,3480+8])
+                    Ttyp_constr "t/1558"
+                    [
+                      core_type (src/extension.mli[119,3480+4]..src/extension.mli[119,3480+6])
+                        Ttyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[120,3497+4]..src/extension.mli[122,3556+18])
+                Ttyp_arrow
+                Labelled "ctxt"
+                core_type (src/extension.mli[120,3497+9]..src/extension.mli[120,3497+38])
+                  Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                  []
+                core_type (src/extension.mli[121,3539+4]..src/extension.mli[122,3556+18])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[121,3539+4]..src/extension.mli[121,3539+13])
+                    Ttyp_constr "Ppxlib__!.Import.extension"
+                    []
+                  core_type (src/extension.mli[122,3556+4]..src/extension.mli[122,3556+18])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/extension.mli[122,3556+4]..src/extension.mli[122,3556+11])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/extension.mli[122,3556+4]..src/extension.mli[122,3556+6])
+                            Ttyp_var a
+                        ]
+                    ]
+            []
+      ]
+  signature_item (src/extension.mli[125,3580+0]..src/extension.mli[125,3580+71])
+    Tsig_value
+    value_description filter_by_context/1604 (src/extension.mli[125,3580+0]..src/extension.mli[125,3580+71])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/extension.mli[126,3652+0]..[127,3732+28])
+            Pstr_eval
+            expression (src/extension.mli[126,3652+0]..[127,3732+28])
+              Pexp_constant PConst_string(" Given a context and a list of extension expander, returns all the ones that\n    are for this context. ",(src/extension.mli[126,3652+0]..[127,3732+28]),None)
+        ]
+      core_type (src/extension.mli[125,3580+24]..src/extension.mli[125,3580+71])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/extension.mli[125,3580+24]..src/extension.mli[125,3580+36])
+          Ttyp_constr "Context/681.t"
+          [
+            core_type (src/extension.mli[125,3580+24]..src/extension.mli[125,3580+26])
+              Ttyp_var a
+          ]
+        core_type (src/extension.mli[125,3580+40]..src/extension.mli[125,3580+71])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/extension.mli[125,3580+40]..src/extension.mli[125,3580+46])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/extension.mli[125,3580+40]..src/extension.mli[125,3580+41])
+                Ttyp_constr "t/682"
+                []
+            ]
+          core_type (src/extension.mli[125,3580+50]..src/extension.mli[125,3580+71])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/extension.mli[125,3580+50]..src/extension.mli[125,3580+66])
+                Ttyp_constr "For_context/1603.t"
+                [
+                  core_type (src/extension.mli[125,3580+50]..src/extension.mli[125,3580+52])
+                    Ttyp_var a
+                ]
+            ]
+      []
+  signature_item (src/extension.mli[129,3762+0]..src/extension.mli[161,4745+3])
+    Tsig_module "Expert/1616"
+    module_type (src/extension.mli[129,3762+16]..src/extension.mli[161,4745+3])
+      Tmty_signature
+      [
+        signature_item (src/extension.mli[130,3782+2]..src/extension.mli[132,3935+76])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/extension.mli[130,3782+2]..[132,3935+76])
+              Pstr_eval
+              expression (src/extension.mli[130,3782+2]..[132,3935+76])
+                Pexp_constant PConst_string(" This module allows to declare extensions that do not produce a value of\n      the context type. This is typically useful for extensions point that\n      depends on more things from the context than the path and location. ",(src/extension.mli[130,3782+2]..[132,3935+76]),None)
+          ]
+        signature_item (src/extension.mli[134,4013+2]..src/extension.mli[134,4013+29])
+          Tsig_type Rec
+          [
+            type_declaration t/1605 (src/extension.mli[134,4013+2]..src/extension.mli[134,4013+29])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/extension.mli[135,4043+2]..[138,4164+64])
+                    Pstr_eval
+                    expression (src/extension.mli[135,4043+2]..[138,4164+64])
+                      Pexp_constant PConst_string(" Type of declared expert extensions.\n\n      The ['context] type parameter describes where the extension is expected\n      and the ['payload] one what its payload should contain. ",(src/extension.mli[135,4043+2]..[138,4164+64]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/extension.mli[134,4013+8]..src/extension.mli[134,4013+16])
+                    Ttyp_var context
+                  core_type (src/extension.mli[134,4013+18]..src/extension.mli[134,4013+26])
+                    Ttyp_var payload
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/extension.mli[140,4230+2]..src/extension.mli[145,4335+20])
+          Tsig_value
+          value_description declare/1606 (src/extension.mli[140,4230+2]..src/extension.mli[145,4335+20])
+            core_type (src/extension.mli[141,4246+4]..src/extension.mli[145,4335+20])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[141,4246+4]..src/extension.mli[141,4246+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[142,4260+4]..src/extension.mli[145,4335+20])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[142,4260+4]..src/extension.mli[142,4260+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[142,4260+4]..src/extension.mli[142,4260+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[143,4286+4]..src/extension.mli[145,4335+20])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[143,4286+4]..src/extension.mli[143,4286+35])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[143,4286+5]..src/extension.mli[143,4286+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[143,4286+14]..src/extension.mli[143,4286+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[143,4286+18]..src/extension.mli[143,4286+20])
+                        Ttyp_var b
+                    ]
+                  core_type (src/extension.mli[144,4325+4]..src/extension.mli[145,4335+20])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[144,4325+4]..src/extension.mli[144,4325+6])
+                      Ttyp_var a
+                    core_type (src/extension.mli[145,4335+4]..src/extension.mli[145,4335+20])
+                      Ttyp_constr "t/1605"
+                      [
+                        core_type (src/extension.mli[145,4335+5]..src/extension.mli[145,4335+13])
+                          Ttyp_var context
+                        core_type (src/extension.mli[145,4335+15]..src/extension.mli[145,4335+17])
+                          Ttyp_var b
+                      ]
+            []
+        signature_item (src/extension.mli[147,4357+2]..src/extension.mli[152,4510+20])
+          Tsig_value
+          value_description declare_with_path_arg/1613 (src/extension.mli[147,4357+2]..src/extension.mli[152,4510+20])
+            core_type (src/extension.mli[148,4387+4]..src/extension.mli[152,4510+20])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[148,4387+4]..src/extension.mli[148,4387+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[149,4401+4]..src/extension.mli[152,4510+20])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[149,4401+4]..src/extension.mli[149,4401+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[149,4401+4]..src/extension.mli[149,4401+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[150,4427+4]..src/extension.mli[152,4510+20])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[150,4427+4]..src/extension.mli[150,4427+35])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[150,4427+5]..src/extension.mli[150,4427+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[150,4427+14]..src/extension.mli[150,4427+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[150,4427+18]..src/extension.mli[150,4427+20])
+                        Ttyp_var b
+                    ]
+                  core_type (src/extension.mli[151,4466+4]..src/extension.mli[152,4510+20])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[151,4466+5]..src/extension.mli[151,4466+39])
+                      Ttyp_arrow
+                      Labelled "arg"
+                      core_type (src/extension.mli[151,4466+9]..src/extension.mli[151,4466+33])
+                        Ttyp_constr "option/12!"
+                        [
+                          core_type (src/extension.mli[151,4466+9]..src/extension.mli[151,4466+26])
+                            Ttyp_constr "Ppxlib__!.Loc.t"
+                            [
+                              core_type (src/extension.mli[151,4466+9]..src/extension.mli[151,4466+20])
+                                Ttyp_constr "Ppxlib__!.Longident.t"
+                                []
+                            ]
+                        ]
+                      core_type (src/extension.mli[151,4466+37]..src/extension.mli[151,4466+39])
+                        Ttyp_var a
+                    core_type (src/extension.mli[152,4510+4]..src/extension.mli[152,4510+20])
+                      Ttyp_constr "t/1605"
+                      [
+                        core_type (src/extension.mli[152,4510+5]..src/extension.mli[152,4510+13])
+                          Ttyp_var context
+                        core_type (src/extension.mli[152,4510+15]..src/extension.mli[152,4510+17])
+                          Ttyp_var b
+                      ]
+            []
+        signature_item (src/extension.mli[154,4532+2]..src/extension.mli[158,4613+55])
+          Tsig_value
+          value_description convert_res/1614 (src/extension.mli[154,4532+2]..src/extension.mli[158,4613+55])
+            core_type (src/extension.mli[155,4552+4]..src/extension.mli[158,4613+55])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[155,4552+4]..src/extension.mli[155,4552+18])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/extension.mli[155,4552+4]..src/extension.mli[155,4552+13])
+                    Ttyp_constr "t/1605"
+                    [
+                      core_type (src/extension.mli[155,4552+5]..src/extension.mli[155,4552+6])
+                        Ttyp_any
+                      core_type (src/extension.mli[155,4552+8]..src/extension.mli[155,4552+10])
+                        Ttyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[156,4574+4]..src/extension.mli[158,4613+55])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[156,4574+8]..src/extension.mli[156,4574+18])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/extension.mli[157,4596+4]..src/extension.mli[158,4613+55])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[157,4596+4]..src/extension.mli[157,4596+13])
+                    Ttyp_constr "Ppxlib__!.Import.extension"
+                    []
+                  core_type (src/extension.mli[158,4613+4]..src/extension.mli[158,4613+55])
+                    Ttyp_constr "Stdlib!.result"
+                    [
+                      core_type (src/extension.mli[158,4613+5]..src/extension.mli[158,4613+14])
+                        Ttyp_constr "option/12!"
+                        [
+                          core_type (src/extension.mli[158,4613+5]..src/extension.mli[158,4613+7])
+                            Ttyp_var a
+                        ]
+                      core_type (src/extension.mli[158,4613+16]..src/extension.mli[158,4613+47])
+                        Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                        [
+                          core_type (src/extension.mli[158,4613+16]..src/extension.mli[158,4613+32])
+                            Ttyp_constr "Ppxlib__!.Location.Error.t"
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/extension.mli[160,4670+2]..src/extension.mli[160,4670+74])
+          Tsig_value
+          value_description convert/1615 (src/extension.mli[160,4670+2]..src/extension.mli[160,4670+74])
+            core_type (src/extension.mli[160,4670+16]..src/extension.mli[160,4670+74])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[160,4670+16]..src/extension.mli[160,4670+30])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/extension.mli[160,4670+16]..src/extension.mli[160,4670+25])
+                    Ttyp_constr "t/1605"
+                    [
+                      core_type (src/extension.mli[160,4670+17]..src/extension.mli[160,4670+18])
+                        Ttyp_any
+                      core_type (src/extension.mli[160,4670+20]..src/extension.mli[160,4670+22])
+                        Ttyp_var a
+                    ]
+                ]
+              core_type (src/extension.mli[160,4670+34]..src/extension.mli[160,4670+74])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/extension.mli[160,4670+38]..src/extension.mli[160,4670+48])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/extension.mli[160,4670+52]..src/extension.mli[160,4670+74])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[160,4670+52]..src/extension.mli[160,4670+61])
+                    Ttyp_constr "Ppxlib__!.Import.extension"
+                    []
+                  core_type (src/extension.mli[160,4670+65]..src/extension.mli[160,4670+74])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/extension.mli[160,4670+65]..src/extension.mli[160,4670+67])
+                        Ttyp_var a
+                    ]
+            []
+      ]
+  signature_item (src/extension.mli[163,4750+0]..src/extension.mli[163,4750+36])
+    Tsig_value
+    value_description check_unused/1706 (src/extension.mli[163,4750+0]..src/extension.mli[163,4750+36])
+      core_type (src/extension.mli[163,4750+19]..src/extension.mli[163,4750+36])
+        Ttyp_constr "Ppxlib__!.Ast_traverse.iter"
+        []
+      []
+  signature_item (src/extension.mli[164,4787+0]..src/extension.mli[164,4787+80])
+    Tsig_value
+    value_description collect_unhandled_extension_errors/1707 (src/extension.mli[164,4787+0]..src/extension.mli[164,4787+80])
+      core_type (src/extension.mli[164,4787+41]..src/extension.mli[164,4787+80])
+        Ttyp_constr "Ppxlib__!.Ast_traverse.fold"
+        [
+          core_type (src/extension.mli[164,4787+41]..src/extension.mli[164,4787+62])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/extension.mli[164,4787+41]..src/extension.mli[164,4787+57])
+                Ttyp_constr "Ppxlib__!.Location.Error.t"
+                []
+            ]
+        ]
+      []
+  signature_item (src/extension.mli[166,4869+0]..src/extension.mli[182,5223+3])
+    Tsig_module "V2/1711"
+    module_type (src/extension.mli[166,4869+12]..src/extension.mli[182,5223+3])
+      Tmty_signature
+      [
+        signature_item (src/extension.mli[167,4885+2]..src/extension.mli[167,4885+19])
+          Tsig_type Nonrec
+          [
+            type_declaration t/1708 (src/extension.mli[167,4885+2]..src/extension.mli[167,4885+19])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/extension.mli[167,4885+18]..src/extension.mli[167,4885+19])
+                    Ttyp_constr "t/682"
+                    []
+          ]
+        signature_item (src/extension.mli[169,4906+2]..src/extension.mli[174,5052+5])
+          Tsig_value
+          value_description declare/1709 (src/extension.mli[169,4906+2]..src/extension.mli[174,5052+5])
+            core_type (src/extension.mli[170,4922+4]..src/extension.mli[174,5052+5])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[170,4922+4]..src/extension.mli[170,4922+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[171,4936+4]..src/extension.mli[174,5052+5])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[171,4936+4]..src/extension.mli[171,4936+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[171,4936+4]..src/extension.mli[171,4936+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[172,4962+4]..src/extension.mli[174,5052+5])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[172,4962+4]..src/extension.mli[172,4962+41])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[172,4962+5]..src/extension.mli[172,4962+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[172,4962+14]..src/extension.mli[172,4962+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[172,4962+18]..src/extension.mli[172,4962+26])
+                        Ttyp_var context
+                    ]
+                  core_type (src/extension.mli[173,5007+4]..src/extension.mli[174,5052+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[173,5007+5]..src/extension.mli[173,5007+40])
+                      Ttyp_arrow
+                      Labelled "loc"
+                      core_type (src/extension.mli[173,5007+9]..src/extension.mli[173,5007+19])
+                        Ttyp_constr "Ppxlib__!.Location.t"
+                        []
+                      core_type (src/extension.mli[173,5007+23]..src/extension.mli[173,5007+40])
+                        Ttyp_arrow
+                        Labelled "path"
+                        core_type (src/extension.mli[173,5007+28]..src/extension.mli[173,5007+34])
+                          Ttyp_constr "string/17!"
+                          []
+                        core_type (src/extension.mli[173,5007+38]..src/extension.mli[173,5007+40])
+                          Ttyp_var a
+                    core_type (src/extension.mli[174,5052+4]..src/extension.mli[174,5052+5])
+                      Ttyp_constr "t/1708"
+                      []
+            []
+        signature_item (src/extension.mli[176,5059+2]..src/extension.mli[181,5217+5])
+          Tsig_value
+          value_description declare_inline/1710 (src/extension.mli[176,5059+2]..src/extension.mli[181,5217+5])
+            core_type (src/extension.mli[177,5082+4]..src/extension.mli[181,5217+5])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[177,5082+4]..src/extension.mli[177,5082+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[178,5096+4]..src/extension.mli[181,5217+5])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[178,5096+4]..src/extension.mli[178,5096+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[178,5096+4]..src/extension.mli[178,5096+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[179,5122+4]..src/extension.mli[181,5217+5])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[179,5122+4]..src/extension.mli[179,5122+46])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[179,5122+5]..src/extension.mli[179,5122+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[179,5122+14]..src/extension.mli[179,5122+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[179,5122+18]..src/extension.mli[179,5122+31])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/extension.mli[179,5122+18]..src/extension.mli[179,5122+26])
+                            Ttyp_var context
+                        ]
+                    ]
+                  core_type (src/extension.mli[180,5172+4]..src/extension.mli[181,5217+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[180,5172+5]..src/extension.mli[180,5172+40])
+                      Ttyp_arrow
+                      Labelled "loc"
+                      core_type (src/extension.mli[180,5172+9]..src/extension.mli[180,5172+19])
+                        Ttyp_constr "Ppxlib__!.Location.t"
+                        []
+                      core_type (src/extension.mli[180,5172+23]..src/extension.mli[180,5172+40])
+                        Ttyp_arrow
+                        Labelled "path"
+                        core_type (src/extension.mli[180,5172+28]..src/extension.mli[180,5172+34])
+                          Ttyp_constr "string/17!"
+                          []
+                        core_type (src/extension.mli[180,5172+38]..src/extension.mli[180,5172+40])
+                          Ttyp_var a
+                    core_type (src/extension.mli[181,5217+4]..src/extension.mli[181,5217+5])
+                      Ttyp_constr "t/1708"
+                      []
+            []
+      ]
+  signature_item (src/extension.mli[184,5228+0]..src/extension.mli[227,6387+3])
+    Tsig_module "V3/1717"
+    module_type (src/extension.mli[184,5228+12]..src/extension.mli[227,6387+3])
+      Tmty_signature
+      [
+        signature_item (src/extension.mli[185,5244+2]..src/extension.mli[185,5244+19])
+          Tsig_type Nonrec
+          [
+            type_declaration t/1712 (src/extension.mli[185,5244+2]..src/extension.mli[185,5244+19])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/extension.mli[185,5244+18]..src/extension.mli[185,5244+19])
+                    Ttyp_constr "t/682"
+                    []
+          ]
+        signature_item (src/extension.mli[187,5265+2]..src/extension.mli[192,5416+5])
+          Tsig_value
+          value_description declare/1713 (src/extension.mli[187,5265+2]..src/extension.mli[192,5416+5])
+            core_type (src/extension.mli[188,5281+4]..src/extension.mli[192,5416+5])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[188,5281+4]..src/extension.mli[188,5281+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[189,5295+4]..src/extension.mli[192,5416+5])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[189,5295+4]..src/extension.mli[189,5295+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[189,5295+4]..src/extension.mli[189,5295+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[190,5321+4]..src/extension.mli[192,5416+5])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[190,5321+4]..src/extension.mli[190,5321+41])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[190,5321+5]..src/extension.mli[190,5321+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[190,5321+14]..src/extension.mli[190,5321+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[190,5321+18]..src/extension.mli[190,5321+26])
+                        Ttyp_var context
+                    ]
+                  core_type (src/extension.mli[191,5366+4]..src/extension.mli[192,5416+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[191,5366+5]..src/extension.mli[191,5366+45])
+                      Ttyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[191,5366+10]..src/extension.mli[191,5366+39])
+                        Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                        []
+                      core_type (src/extension.mli[191,5366+43]..src/extension.mli[191,5366+45])
+                        Ttyp_var a
+                    core_type (src/extension.mli[192,5416+4]..src/extension.mli[192,5416+5])
+                      Ttyp_constr "t/1712"
+                      []
+            []
+        signature_item (src/extension.mli[194,5423+2]..src/extension.mli[199,5586+5])
+          Tsig_value
+          value_description declare_inline/1714 (src/extension.mli[194,5423+2]..src/extension.mli[199,5586+5])
+            core_type (src/extension.mli[195,5446+4]..src/extension.mli[199,5586+5])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[195,5446+4]..src/extension.mli[195,5446+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[196,5460+4]..src/extension.mli[199,5586+5])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[196,5460+4]..src/extension.mli[196,5460+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[196,5460+4]..src/extension.mli[196,5460+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[197,5486+4]..src/extension.mli[199,5586+5])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[197,5486+4]..src/extension.mli[197,5486+46])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[197,5486+5]..src/extension.mli[197,5486+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[197,5486+14]..src/extension.mli[197,5486+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[197,5486+18]..src/extension.mli[197,5486+31])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/extension.mli[197,5486+18]..src/extension.mli[197,5486+26])
+                            Ttyp_var context
+                        ]
+                    ]
+                  core_type (src/extension.mli[198,5536+4]..src/extension.mli[199,5586+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[198,5536+5]..src/extension.mli[198,5536+45])
+                      Ttyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[198,5536+10]..src/extension.mli[198,5536+39])
+                        Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                        []
+                      core_type (src/extension.mli[198,5536+43]..src/extension.mli[198,5536+45])
+                        Ttyp_var a
+                    core_type (src/extension.mli[199,5586+4]..src/extension.mli[199,5586+5])
+                      Ttyp_constr "t/1712"
+                      []
+            []
+        signature_item (src/extension.mli[201,5593+2]..src/extension.mli[208,5805+5])
+          Tsig_value
+          value_description declare_with_path_arg/1715 (src/extension.mli[201,5593+2]..src/extension.mli[208,5805+5])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/extension.mli[209,5811+2]..[217,6144+11])
+                  Pstr_eval
+                  expression (src/extension.mli[209,5811+2]..[217,6144+11])
+                    Pexp_constant PConst_string(" Same as [declare] except that the extension name takes an additional path\n      argument. The path is the part of the name that start with a capitalized\n      component. For instance in the following, the extension [\"map\"] would\n      receive the path argument [Foo.Bar]:\n\n      {[\n        let%map.Foo.Bar x = 1 in\n        ...\n      ]} ",(src/extension.mli[209,5811+2]..[217,6144+11]),None)
+              ]
+            core_type (src/extension.mli[202,5623+4]..src/extension.mli[208,5805+5])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[202,5623+4]..src/extension.mli[202,5623+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[203,5637+4]..src/extension.mli[208,5805+5])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[203,5637+4]..src/extension.mli[203,5637+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[203,5637+4]..src/extension.mli[203,5637+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[204,5663+4]..src/extension.mli[208,5805+5])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[204,5663+4]..src/extension.mli[204,5663+41])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[204,5663+5]..src/extension.mli[204,5663+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[204,5663+14]..src/extension.mli[204,5663+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[204,5663+18]..src/extension.mli[204,5663+26])
+                        Ttyp_var context
+                    ]
+                  core_type (src/extension.mli[205,5708+4]..src/extension.mli[208,5805+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[205,5708+5]..src/extension.mli[207,5794+6])
+                      Ttyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[205,5708+10]..src/extension.mli[205,5708+39])
+                        Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                        []
+                      core_type (src/extension.mli[206,5751+4]..src/extension.mli[207,5794+6])
+                        Ttyp_arrow
+                        Labelled "arg"
+                        core_type (src/extension.mli[206,5751+8]..src/extension.mli[206,5751+39])
+                          Ttyp_constr "option/12!"
+                          [
+                            core_type (src/extension.mli[206,5751+8]..src/extension.mli[206,5751+32])
+                              Ttyp_constr "Ppxlib__!.Import.Asttypes.loc"
+                              [
+                                core_type (src/extension.mli[206,5751+8]..src/extension.mli[206,5751+19])
+                                  Ttyp_constr "Ppxlib__!.Longident.t"
+                                  []
+                              ]
+                          ]
+                        core_type (src/extension.mli[207,5794+4]..src/extension.mli[207,5794+6])
+                          Ttyp_var a
+                    core_type (src/extension.mli[208,5805+4]..src/extension.mli[208,5805+5])
+                      Ttyp_constr "t/1712"
+                      []
+            []
+        signature_item (src/extension.mli[219,6157+2]..src/extension.mli[226,6381+5])
+          Tsig_value
+          value_description declare_inline_with_path_arg/1716 (src/extension.mli[219,6157+2]..src/extension.mli[226,6381+5])
+            core_type (src/extension.mli[220,6194+4]..src/extension.mli[226,6381+5])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[220,6194+4]..src/extension.mli[220,6194+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/extension.mli[221,6208+4]..src/extension.mli[226,6381+5])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/extension.mli[221,6208+4]..src/extension.mli[221,6208+22])
+                  Ttyp_constr "Context/681.t"
+                  [
+                    core_type (src/extension.mli[221,6208+4]..src/extension.mli[221,6208+12])
+                      Ttyp_var context
+                  ]
+                core_type (src/extension.mli[222,6234+4]..src/extension.mli[226,6381+5])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/extension.mli[222,6234+4]..src/extension.mli[222,6234+46])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/extension.mli[222,6234+5]..src/extension.mli[222,6234+12])
+                        Ttyp_constr "Ppxlib__!.Import.payload"
+                        []
+                      core_type (src/extension.mli[222,6234+14]..src/extension.mli[222,6234+16])
+                        Ttyp_var a
+                      core_type (src/extension.mli[222,6234+18]..src/extension.mli[222,6234+31])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/extension.mli[222,6234+18]..src/extension.mli[222,6234+26])
+                            Ttyp_var context
+                        ]
+                    ]
+                  core_type (src/extension.mli[223,6284+4]..src/extension.mli[226,6381+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/extension.mli[223,6284+5]..src/extension.mli[225,6370+6])
+                      Ttyp_arrow
+                      Labelled "ctxt"
+                      core_type (src/extension.mli[223,6284+10]..src/extension.mli[223,6284+39])
+                        Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+                        []
+                      core_type (src/extension.mli[224,6327+4]..src/extension.mli[225,6370+6])
+                        Ttyp_arrow
+                        Labelled "arg"
+                        core_type (src/extension.mli[224,6327+8]..src/extension.mli[224,6327+39])
+                          Ttyp_constr "option/12!"
+                          [
+                            core_type (src/extension.mli[224,6327+8]..src/extension.mli[224,6327+32])
+                              Ttyp_constr "Ppxlib__!.Import.Asttypes.loc"
+                              [
+                                core_type (src/extension.mli[224,6327+8]..src/extension.mli[224,6327+19])
+                                  Ttyp_constr "Ppxlib__!.Longident.t"
+                                  []
+                              ]
+                          ]
+                        core_type (src/extension.mli[225,6370+4]..src/extension.mli[225,6370+6])
+                          Ttyp_var a
+                    core_type (src/extension.mli[226,6381+4]..src/extension.mli[226,6381+5])
+                      Ttyp_constr "t/1712"
+                      []
+            []
+      ]
+  signature_item (src/extension.mli[229,6392+0]..src/extension.mli[229,6392+7])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/extension.mli[229,6392+0]..[229,6392+7])
+        Pstr_eval
+        expression (src/extension.mli[229,6392+0]..[229,6392+7])
+          Pexp_constant PConst_string("/*",(src/extension.mli[229,6392+0]..[229,6392+7]),None)
+    ]
+  signature_item (src/extension.mli[231,6401+0]..src/extension.mli[231,6401+66])
+    Tsig_value
+    value_description check_context_for_inline/1718 (src/extension.mli[231,6401+0]..src/extension.mli[231,6401+66])
+      core_type (src/extension.mli[231,6401+31]..src/extension.mli[231,6401+66])
+        Ttyp_arrow
+        Labelled "func"
+        core_type (src/extension.mli[231,6401+36]..src/extension.mli[231,6401+42])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/extension.mli[231,6401+46]..src/extension.mli[231,6401+66])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/extension.mli[231,6401+46]..src/extension.mli[231,6401+58])
+            Ttyp_constr "Context/681.t"
+            [
+              core_type (src/extension.mli[231,6401+46]..src/extension.mli[231,6401+48])
+                Ttyp_var a
+            ]
+          core_type (src/extension.mli[231,6401+62]..src/extension.mli[231,6401+66])
+            Ttyp_constr "unit/6!"
+            []
+      []
+  signature_item (src/extension.mli[233,6469+0]..src/extension.mli[236,6590+3])
+    Tsig_value
+    value_description __declare_ppx_import/1719 (src/extension.mli[233,6469+0]..src/extension.mli[236,6590+3])
+      core_type (src/extension.mli[234,6496+2]..src/extension.mli[236,6590+3])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/extension.mli[234,6496+2]..src/extension.mli[234,6496+8])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/extension.mli[235,6508+2]..src/extension.mli[236,6590+3])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/extension.mli[235,6508+3]..src/extension.mli[235,6508+77])
+            Ttyp_arrow
+            Labelled "ctxt"
+            core_type (src/extension.mli[235,6508+8]..src/extension.mli[235,6508+37])
+              Ttyp_constr "Ppxlib__!.Expansion_context.Extension.t"
+              []
+            core_type (src/extension.mli[235,6508+41]..src/extension.mli[235,6508+77])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/extension.mli[235,6508+41]..src/extension.mli[235,6508+57])
+                Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                []
+              core_type (src/extension.mli[235,6508+61]..src/extension.mli[235,6508+77])
+                Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                []
+          core_type (src/extension.mli[236,6590+2]..src/extension.mli[236,6590+3])
+            Ttyp_constr "t/682"
+            []
+      []
+]
+

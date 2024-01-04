@@ -1,0 +1,4 @@
+0.003s 2.88MB 1.40MB 1.40MB test/deriving/inline/example/ppx_deriving_example.pp.ml
+  0.001s 0.14MB ------ ------ typing
+  0.002s 2.73MB 1.40MB 1.40MB other
+0.004s ------ ------ ------ other

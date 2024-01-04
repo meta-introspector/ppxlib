@@ -1,0 +1,44 @@
+[
+  signature_item (src/ignore_unused_warning.mli[1,0+0]..[1,0+48])
+    Psig_value
+    value_description "add_dummy_user_for_values" (src/ignore_unused_warning.mli[1,0+4]..[1,0+29]) (src/ignore_unused_warning.mli[1,0+0]..[1,0+48])
+      core_type (src/ignore_unused_warning.mli[1,0+32]..[1,0+48])
+        Ptyp_constr "Ast_traverse.map" (src/ignore_unused_warning.mli[1,0+32]..[1,0+48])
+        []
+      []
+  signature_item (src/ignore_unused_warning.mli[2,49+0]..[2,49+47])
+    Psig_value
+    value_description "binds_module_names" (src/ignore_unused_warning.mli[2,49+4]..[2,49+22]) (src/ignore_unused_warning.mli[2,49+0]..[2,49+47])
+      core_type (src/ignore_unused_warning.mli[2,49+25]..[2,49+47])
+        Ptyp_constr "Ast_traverse.fold" (src/ignore_unused_warning.mli[2,49+30]..[2,49+47])
+        [
+          core_type (src/ignore_unused_warning.mli[2,49+25]..[2,49+29])
+            Ptyp_constr "bool" (src/ignore_unused_warning.mli[2,49+25]..[2,49+29])
+            []
+        ]
+      []
+]
+
+val add_dummy_user_for_values : Ast_traverse.map
+val binds_module_names : bool Ast_traverse.fold
+[
+  signature_item (src/ignore_unused_warning.mli[1,0+0]..src/ignore_unused_warning.mli[1,0+48])
+    Tsig_value
+    value_description add_dummy_user_for_values/209 (src/ignore_unused_warning.mli[1,0+0]..src/ignore_unused_warning.mli[1,0+48])
+      core_type (src/ignore_unused_warning.mli[1,0+32]..src/ignore_unused_warning.mli[1,0+48])
+        Ttyp_constr "Ppxlib__!.Ast_traverse.map"
+        []
+      []
+  signature_item (src/ignore_unused_warning.mli[2,49+0]..src/ignore_unused_warning.mli[2,49+47])
+    Tsig_value
+    value_description binds_module_names/210 (src/ignore_unused_warning.mli[2,49+0]..src/ignore_unused_warning.mli[2,49+47])
+      core_type (src/ignore_unused_warning.mli[2,49+25]..src/ignore_unused_warning.mli[2,49+47])
+        Ttyp_constr "Ppxlib__!.Ast_traverse.fold"
+        [
+          core_type (src/ignore_unused_warning.mli[2,49+25]..src/ignore_unused_warning.mli[2,49+29])
+            Ttyp_constr "bool/5!"
+            []
+        ]
+      []
+]
+

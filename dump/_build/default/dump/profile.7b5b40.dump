@@ -1,0 +1,8 @@
+0.099s  200MB 10.8MB 10.8MB ast/ast_helper_lite.ml
+  0.006s 6.40MB 2.10MB 2.10MB parsing
+    0.006s 6.40MB 2.10MB 2.10MB parser
+  0.057s 74.1MB 7.78MB 9.88MB typing
+  0.004s 8.23MB 0.09MB 9.97MB transl
+  0.013s 42.8MB 0.64MB 10.6MB generate
+  0.020s 68.3MB 0.21MB 10.8MB other
+0.007s ------ ------ ------ other

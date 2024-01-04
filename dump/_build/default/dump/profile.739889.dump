@@ -1,0 +1,17 @@
+0.185s  117MB 22.9MB 24.6MB src/gen/gen_ast_builder.ml
+  0.002s ------ ------ ------ parsing
+    0.002s ------ ------ ------ parser
+  0.150s 72.9MB 20.1MB 21.8MB typing
+  0.001s ------ ------ ------ transl
+  0.017s 22.2MB 2.31MB 24.1MB generate
+    0.009s 13.5MB 1.68MB 23.5MB compile_phrases
+      0.001s 2.35MB 0.21MB 22.1MB selection
+      0.001s 2.00MB 0.25MB 22.3MB cse
+      0.001s 0.21MB ------ ------ liveness
+      0.001s 2.20MB 0.53MB 22.8MB spill
+      0.004s 6.57MB 0.68MB 23.5MB regalloc
+      0.001s 0.15MB ------ ------ other
+    0.004s ------ ------ ------ assemble
+    0.004s 8.77MB 0.62MB 24.1MB other
+  0.015s 22.4MB 0.47MB 24.6MB other
+0.016s 3.02MB 1.69MB ------ other

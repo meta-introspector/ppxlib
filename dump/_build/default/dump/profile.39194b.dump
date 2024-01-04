@@ -1,0 +1,23 @@
+0.601s  610MB 64.9MB 66.7MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.pp.ml
+  0.011s 3.58MB 2.84MB 4.63MB parsing
+    0.011s 3.58MB 2.84MB 4.63MB other
+  0.303s  248MB 43.2MB 47.9MB typing
+  0.009s 10.6MB 0.53MB 48.4MB transl
+  0.087s  163MB 17.6MB 66.0MB generate
+    0.001s 2.50MB 0.65MB 49.1MB cmm
+    0.055s  110MB 12.8MB 61.9MB compile_phrases
+      0.006s 19.6MB 2.06MB 51.1MB selection
+      0.001s 2.00MB 0.21MB 51.3MB polling
+      0.002s 4.54MB 0.43MB 51.8MB cse
+      0.003s 4.27MB 0.37MB 52.2MB liveness
+      0.001s 2.20MB 0.28MB 52.4MB deadcode
+      0.005s 11.2MB 1.46MB 53.9MB spill
+      0.002s ------ ------ ------ split
+      0.030s 54.2MB 6.65MB 60.6MB regalloc
+      ------ 2.00MB 0.12MB 60.7MB linearize
+      0.003s 8.44MB 0.93MB 61.6MB emit
+      0.001s 2.00MB 0.25MB 61.9MB other
+    0.014s ------ ------ ------ assemble
+    0.017s 50.0MB 4.17MB 66.0MB other
+  0.191s  183MB 0.62MB 66.7MB other
+0.018s 3.10MB 1.79MB ------ other

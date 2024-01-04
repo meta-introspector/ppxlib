@@ -1,0 +1,6 @@
+0.027s 21.4MB 6.85MB 6.85MB src/location.mli
+  0.002s 2.89MB 1.53MB 1.53MB parsing
+    0.002s 2.89MB 1.53MB 1.53MB parser
+  0.022s 16.5MB 5.28MB 6.82MB typing
+  0.003s 2.00MB 0.03MB 6.85MB other
+0.005s ------ ------ ------ other

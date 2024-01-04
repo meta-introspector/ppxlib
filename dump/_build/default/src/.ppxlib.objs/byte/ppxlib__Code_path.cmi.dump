@@ -1,0 +1,770 @@
+[
+  signature_item (src/code_path.mli[1,0+0]..[2,78+25])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/code_path.mli[1,0+0]..[2,78+25])
+        Pstr_eval
+        expression (src/code_path.mli[1,0+0]..[2,78+25])
+          Pexp_constant PConst_string(" This module contains type and functions for representing and manipulating\n    path to AST nodes. ",(src/code_path.mli[1,0+0]..[2,78+25]),None)
+    ]
+  signature_item (src/code_path.mli[4,105+0]..[4,105+12])
+    Psig_open Override "Import" (src/code_path.mli[4,105+6]..[4,105+12])
+  signature_item (src/code_path.mli[6,119+0]..[6,119+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (src/code_path.mli[6,119+5]..[6,119+6]) (src/code_path.mli[6,119+0]..[6,119+6])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/code_path.mli[7,126+0]..[7,126+33])
+              Pstr_eval
+              expression (src/code_path.mli[7,126+0]..[7,126+33])
+                Pexp_constant PConst_string(" Type for path to AST nodes ",(src/code_path.mli[7,126+0]..[7,126+33]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/code_path.mli[9,161+0]..[9,161+27])
+    Psig_value
+    value_description "file_path" (src/code_path.mli[9,161+4]..[9,161+13]) (src/code_path.mli[9,161+0]..[9,161+27])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[10,189+0]..[10,189+66])
+            Pstr_eval
+            expression (src/code_path.mli[10,189+0]..[10,189+66])
+              Pexp_constant PConst_string(" Return the path to the .ml or .mli file for this code path. ",(src/code_path.mli[10,189+0]..[10,189+66]),None)
+        ]
+      core_type (src/code_path.mli[9,161+16]..[9,161+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[9,161+16]..[9,161+17])
+          Ptyp_constr "t" (src/code_path.mli[9,161+16]..[9,161+17])
+          []
+        core_type (src/code_path.mli[9,161+21]..[9,161+27])
+          Ptyp_constr "string" (src/code_path.mli[9,161+21]..[9,161+27])
+          []
+      []
+  signature_item (src/code_path.mli[12,257+0]..[12,257+34])
+    Psig_value
+    value_description "main_module_name" (src/code_path.mli[12,257+4]..[12,257+20]) (src/code_path.mli[12,257+0]..[12,257+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[13,292+0]..[14,369+16])
+            Pstr_eval
+            expression (src/code_path.mli[13,292+0]..[14,369+16])
+              Pexp_constant PConst_string(" Return the module name corresponding to the file to which this code path\n    leads to. ",(src/code_path.mli[13,292+0]..[14,369+16]),None)
+        ]
+      core_type (src/code_path.mli[12,257+23]..[12,257+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[12,257+23]..[12,257+24])
+          Ptyp_constr "t" (src/code_path.mli[12,257+23]..[12,257+24])
+          []
+        core_type (src/code_path.mli[12,257+28]..[12,257+34])
+          Ptyp_constr "string" (src/code_path.mli[12,257+28]..[12,257+34])
+          []
+      []
+  signature_item (src/code_path.mli[16,387+0]..[16,387+37])
+    Psig_value
+    value_description "submodule_path" (src/code_path.mli[16,387+4]..[16,387+18]) (src/code_path.mli[16,387+0]..[16,387+37])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[17,425+0]..[18,504+23])
+            Pstr_eval
+            expression (src/code_path.mli[17,425+0]..[18,504+23])
+              Pexp_constant PConst_string(" Return the path within the main module this code path represents as a list\n    of module names. ",(src/code_path.mli[17,425+0]..[18,504+23]),None)
+        ]
+      core_type (src/code_path.mli[16,387+21]..[16,387+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[16,387+21]..[16,387+22])
+          Ptyp_constr "t" (src/code_path.mli[16,387+21]..[16,387+22])
+          []
+        core_type (src/code_path.mli[16,387+26]..[16,387+37])
+          Ptyp_constr "list" (src/code_path.mli[16,387+33]..[16,387+37])
+          [
+            core_type (src/code_path.mli[16,387+26]..[16,387+32])
+              Ptyp_constr "string" (src/code_path.mli[16,387+26]..[16,387+32])
+              []
+          ]
+      []
+  signature_item (src/code_path.mli[20,529+0]..[20,529+34])
+    Psig_value
+    value_description "enclosing_module" (src/code_path.mli[20,529+4]..[20,529+20]) (src/code_path.mli[20,529+0]..[20,529+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[21,564+0]..[21,564+79])
+            Pstr_eval
+            expression (src/code_path.mli[21,564+0]..[21,564+79])
+              Pexp_constant PConst_string(" Return the nearest enclosing module name. Does descend into expressions. ",(src/code_path.mli[21,564+0]..[21,564+79]),None)
+        ]
+      core_type (src/code_path.mli[20,529+23]..[20,529+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[20,529+23]..[20,529+24])
+          Ptyp_constr "t" (src/code_path.mli[20,529+23]..[20,529+24])
+          []
+        core_type (src/code_path.mli[20,529+28]..[20,529+34])
+          Ptyp_constr "string" (src/code_path.mli[20,529+28]..[20,529+34])
+          []
+      []
+  signature_item (src/code_path.mli[23,645+0]..[23,645+30])
+    Psig_value
+    value_description "value" (src/code_path.mli[23,645+4]..[23,645+9]) (src/code_path.mli[23,645+0]..[23,645+30])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[24,676+0]..[25,755+54])
+            Pstr_eval
+            expression (src/code_path.mli[24,676+0]..[25,755+54])
+              Pexp_constant PConst_string(" Return the name of the value to which this code path leads or [None] if it\n    leads to the toplevel of a module or submodule. ",(src/code_path.mli[24,676+0]..[25,755+54]),None)
+        ]
+      core_type (src/code_path.mli[23,645+12]..[23,645+30])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[23,645+12]..[23,645+13])
+          Ptyp_constr "t" (src/code_path.mli[23,645+12]..[23,645+13])
+          []
+        core_type (src/code_path.mli[23,645+17]..[23,645+30])
+          Ptyp_constr "option" (src/code_path.mli[23,645+24]..[23,645+30])
+          [
+            core_type (src/code_path.mli[23,645+17]..[23,645+23])
+              Ptyp_constr "string" (src/code_path.mli[23,645+17]..[23,645+23])
+              []
+          ]
+      []
+  signature_item (src/code_path.mli[27,811+0]..[27,811+40])
+    Psig_value
+    value_description "enclosing_value" (src/code_path.mli[27,811+4]..[27,811+19]) (src/code_path.mli[27,811+0]..[27,811+40])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[28,852+0]..[30,1005+47])
+            Pstr_eval
+            expression (src/code_path.mli[28,852+0]..[30,1005+47])
+              Pexp_constant PConst_string(" Like [value], returns the name of an enclosing value definition. Unlike\n    [value], includes names inside expressions, not just names that the code\n    path can reach from the toplevel module. ",(src/code_path.mli[28,852+0]..[30,1005+47]),None)
+        ]
+      core_type (src/code_path.mli[27,811+22]..[27,811+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[27,811+22]..[27,811+23])
+          Ptyp_constr "t" (src/code_path.mli[27,811+22]..[27,811+23])
+          []
+        core_type (src/code_path.mli[27,811+27]..[27,811+40])
+          Ptyp_constr "option" (src/code_path.mli[27,811+34]..[27,811+40])
+          [
+            core_type (src/code_path.mli[27,811+27]..[27,811+33])
+              Ptyp_constr "string" (src/code_path.mli[27,811+27]..[27,811+33])
+              []
+          ]
+      []
+  signature_item (src/code_path.mli[32,1054+0]..[32,1054+38])
+    Psig_value
+    value_description "fully_qualified_path" (src/code_path.mli[32,1054+4]..[32,1054+24]) (src/code_path.mli[32,1054+0]..[32,1054+38])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[33,1093+0]..[36,1331+60])
+            Pstr_eval
+            expression (src/code_path.mli[33,1093+0]..[36,1331+60])
+              Pexp_constant PConst_string(" Return the fully qualified path to the module or value this code path leads\n    to, eg [\"Some_main_module.Some_submodule.some_value\"]. Note that the fully\n    qualified path doesn't descend into expressions which means it will always\n    stop at the first value description or value binding. ",(src/code_path.mli[33,1093+0]..[36,1331+60]),None)
+        ]
+      core_type (src/code_path.mli[32,1054+27]..[32,1054+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[32,1054+27]..[32,1054+28])
+          Ptyp_constr "t" (src/code_path.mli[32,1054+27]..[32,1054+28])
+          []
+        core_type (src/code_path.mli[32,1054+32]..[32,1054+38])
+          Ptyp_constr "string" (src/code_path.mli[32,1054+32]..[32,1054+38])
+          []
+      []
+  signature_item (src/code_path.mli[38,1393+0]..[38,1393+32])
+    Psig_value
+    value_description "to_string_path" (src/code_path.mli[38,1393+4]..[38,1393+18]) (src/code_path.mli[38,1393+0]..[38,1393+32])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[39,1426+0]..[41,1566+23])
+            Pstr_eval
+            expression (src/code_path.mli[39,1426+0]..[41,1566+23])
+              Pexp_constant PConst_string(" Return the string version of this code path as built by\n    [Ast_traverse.map_with_path]. Used for compatibility with path from version\n    0.5.0 and lower. ",(src/code_path.mli[39,1426+0]..[41,1566+23]),None)
+        ]
+      core_type (src/code_path.mli[38,1393+21]..[38,1393+32])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[38,1393+21]..[38,1393+22])
+          Ptyp_constr "t" (src/code_path.mli[38,1393+21]..[38,1393+22])
+          []
+        core_type (src/code_path.mli[38,1393+26]..[38,1393+32])
+          Ptyp_constr "string" (src/code_path.mli[38,1393+26]..[38,1393+32])
+          []
+      []
+  signature_item (src/code_path.mli[43,1591+0]..[43,1591+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/code_path.mli[43,1591+0]..[43,1591+7])
+        Pstr_eval
+        expression (src/code_path.mli[43,1591+0]..[43,1591+7])
+          Pexp_constant PConst_string("/*",(src/code_path.mli[43,1591+0]..[43,1591+7]),None)
+    ]
+  signature_item (src/code_path.mli[45,1600+0]..[45,1600+27])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/code_path.mli[45,1600+0]..[45,1600+27])
+        Pstr_eval
+        expression (src/code_path.mli[45,1600+0]..[45,1600+27])
+          Pexp_constant PConst_string(" Undocumented section ",(src/code_path.mli[45,1600+0]..[45,1600+27]),None)
+    ]
+  signature_item (src/code_path.mli[47,1629+0]..[47,1629+37])
+    Psig_value
+    value_description "top_level" (src/code_path.mli[47,1629+4]..[47,1629+13]) (src/code_path.mli[47,1629+0]..[47,1629+37])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[48,1667+0]..[49,1745+27])
+            Pstr_eval
+            expression (src/code_path.mli[48,1667+0]..[49,1745+27])
+              Pexp_constant PConst_string(" [top_level ~file_path] returns the code path for any toplevel item in the\n    file at [file_path]. ",(src/code_path.mli[48,1667+0]..[49,1745+27]),None)
+        ]
+      core_type (src/code_path.mli[47,1629+16]..[47,1629+37])
+        Ptyp_arrow
+        Labelled "file_path"
+        core_type (src/code_path.mli[47,1629+26]..[47,1629+32])
+          Ptyp_constr "string" (src/code_path.mli[47,1629+26]..[47,1629+32])
+          []
+        core_type (src/code_path.mli[47,1629+36]..[47,1629+37])
+          Ptyp_constr "t" (src/code_path.mli[47,1629+36]..[47,1629+37])
+          []
+      []
+  signature_item (src/code_path.mli[51,1774+0]..[51,1774+23])
+    Psig_value
+    value_description "enter_expr" (src/code_path.mli[51,1774+4]..[51,1774+14]) (src/code_path.mli[51,1774+0]..[51,1774+23])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[52,1798+0]..[54,1957+48])
+            Pstr_eval
+            expression (src/code_path.mli[52,1798+0]..[54,1957+48])
+              Pexp_constant PConst_string(" Return a new code path that now descends into an expression. This is used to\n    delimit the \"toplevel\" path. It's required because of first class modules\n    and toplevel expressions [Pstr_eval ...]. ",(src/code_path.mli[52,1798+0]..[54,1957+48]),None)
+        ]
+      core_type (src/code_path.mli[51,1774+17]..[51,1774+23])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[51,1774+17]..[51,1774+18])
+          Ptyp_constr "t" (src/code_path.mli[51,1774+17]..[51,1774+18])
+          []
+        core_type (src/code_path.mli[51,1774+22]..[51,1774+23])
+          Ptyp_constr "t" (src/code_path.mli[51,1774+22]..[51,1774+23])
+          []
+      []
+  signature_item (src/code_path.mli[56,2007+0]..[56,2007+53])
+    Psig_value
+    value_description "enter_module" (src/code_path.mli[56,2007+4]..[56,2007+16]) (src/code_path.mli[56,2007+0]..[56,2007+53])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[57,2061+0]..[57,2061+78])
+            Pstr_eval
+            expression (src/code_path.mli[57,2061+0]..[57,2061+78])
+              Pexp_constant PConst_string(" Return a new code path updated with the given module name and location. ",(src/code_path.mli[57,2061+0]..[57,2061+78]),None)
+        ]
+      core_type (src/code_path.mli[56,2007+19]..[56,2007+53])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (src/code_path.mli[56,2007+23]..[56,2007+33])
+          Ptyp_constr "Location.t" (src/code_path.mli[56,2007+23]..[56,2007+33])
+          []
+        core_type (src/code_path.mli[56,2007+37]..[56,2007+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/code_path.mli[56,2007+37]..[56,2007+43])
+            Ptyp_constr "string" (src/code_path.mli[56,2007+37]..[56,2007+43])
+            []
+          core_type (src/code_path.mli[56,2007+47]..[56,2007+53])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/code_path.mli[56,2007+47]..[56,2007+48])
+              Ptyp_constr "t" (src/code_path.mli[56,2007+47]..[56,2007+48])
+              []
+            core_type (src/code_path.mli[56,2007+52]..[56,2007+53])
+              Ptyp_constr "t" (src/code_path.mli[56,2007+52]..[56,2007+53])
+              []
+      []
+  signature_item (src/code_path.mli[59,2141+0]..[59,2141+52])
+    Psig_value
+    value_description "enter_value" (src/code_path.mli[59,2141+4]..[59,2141+15]) (src/code_path.mli[59,2141+0]..[59,2141+52])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[60,2194+0]..[60,2194+80])
+            Pstr_eval
+            expression (src/code_path.mli[60,2194+0]..[60,2194+80])
+              Pexp_constant PConst_string(" Return a new code path updated with the given variable name and location. ",(src/code_path.mli[60,2194+0]..[60,2194+80]),None)
+        ]
+      core_type (src/code_path.mli[59,2141+18]..[59,2141+52])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (src/code_path.mli[59,2141+22]..[59,2141+32])
+          Ptyp_constr "Location.t" (src/code_path.mli[59,2141+22]..[59,2141+32])
+          []
+        core_type (src/code_path.mli[59,2141+36]..[59,2141+52])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/code_path.mli[59,2141+36]..[59,2141+42])
+            Ptyp_constr "string" (src/code_path.mli[59,2141+36]..[59,2141+42])
+            []
+          core_type (src/code_path.mli[59,2141+46]..[59,2141+52])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/code_path.mli[59,2141+46]..[59,2141+47])
+              Ptyp_constr "t" (src/code_path.mli[59,2141+46]..[59,2141+47])
+              []
+            core_type (src/code_path.mli[59,2141+51]..[59,2141+52])
+              Ptyp_constr "t" (src/code_path.mli[59,2141+51]..[59,2141+52])
+              []
+      []
+  signature_item (src/code_path.mli[62,2276+0]..[63,2299+73])
+    Psig_value
+    value_description "with_string_path" (src/code_path.mli[62,2276+4]..[62,2276+20]) (src/code_path.mli[62,2276+0]..[63,2299+73])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[64,2373+0]..[64,2373+80])
+            Pstr_eval
+            expression (src/code_path.mli[64,2373+0]..[64,2373+80])
+              Pexp_constant PConst_string(" Wrap a [fun ~loc ~path] expecting a string path into one expecting a [t]. ",(src/code_path.mli[64,2373+0]..[64,2373+80]),None)
+        ]
+      core_type (src/code_path.mli[63,2299+2]..[63,2299+73])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[63,2299+3]..[63,2299+38])
+          Ptyp_arrow
+          Labelled "loc"
+          core_type (src/code_path.mli[63,2299+7]..[63,2299+17])
+            Ptyp_constr "Location.t" (src/code_path.mli[63,2299+7]..[63,2299+17])
+            []
+          core_type (src/code_path.mli[63,2299+21]..[63,2299+38])
+            Ptyp_arrow
+            Labelled "path"
+            core_type (src/code_path.mli[63,2299+26]..[63,2299+32])
+              Ptyp_constr "string" (src/code_path.mli[63,2299+26]..[63,2299+32])
+              []
+            core_type (src/code_path.mli[63,2299+36]..[63,2299+38])
+              Ptyp_var a
+        core_type (src/code_path.mli[63,2299+43]..[63,2299+73])
+          Ptyp_arrow
+          Labelled "loc"
+          core_type (src/code_path.mli[63,2299+47]..[63,2299+57])
+            Ptyp_constr "Location.t" (src/code_path.mli[63,2299+47]..[63,2299+57])
+            []
+          core_type (src/code_path.mli[63,2299+61]..[63,2299+73])
+            Ptyp_arrow
+            Labelled "path"
+            core_type (src/code_path.mli[63,2299+66]..[63,2299+67])
+              Ptyp_constr "t" (src/code_path.mli[63,2299+66]..[63,2299+67])
+              []
+            core_type (src/code_path.mli[63,2299+71]..[63,2299+73])
+              Ptyp_var a
+      []
+]
+
+[@@@ocaml.text
+  " This module contains type and functions for representing and manipulating\n    path to AST nodes. "]
+open! Import
+type t[@@ocaml.doc " Type for path to AST nodes "]
+val file_path : t -> string[@@ocaml.doc
+                             " Return the path to the .ml or .mli file for this code path. "]
+val main_module_name : t -> string[@@ocaml.doc
+                                    " Return the module name corresponding to the file to which this code path\n    leads to. "]
+val submodule_path : t -> string list[@@ocaml.doc
+                                       " Return the path within the main module this code path represents as a list\n    of module names. "]
+val enclosing_module : t -> string[@@ocaml.doc
+                                    " Return the nearest enclosing module name. Does descend into expressions. "]
+val value : t -> string option[@@ocaml.doc
+                                " Return the name of the value to which this code path leads or [None] if it\n    leads to the toplevel of a module or submodule. "]
+val enclosing_value : t -> string option[@@ocaml.doc
+                                          " Like [value], returns the name of an enclosing value definition. Unlike\n    [value], includes names inside expressions, not just names that the code\n    path can reach from the toplevel module. "]
+val fully_qualified_path : t -> string[@@ocaml.doc
+                                        " Return the fully qualified path to the module or value this code path leads\n    to, eg [\"Some_main_module.Some_submodule.some_value\"]. Note that the fully\n    qualified path doesn't descend into expressions which means it will always\n    stop at the first value description or value binding. "]
+val to_string_path : t -> string[@@ocaml.doc
+                                  " Return the string version of this code path as built by\n    [Ast_traverse.map_with_path]. Used for compatibility with path from version\n    0.5.0 and lower. "]
+[@@@ocaml.text "/*"]
+[@@@ocaml.text " Undocumented section "]
+val top_level : file_path:string -> t[@@ocaml.doc
+                                       " [top_level ~file_path] returns the code path for any toplevel item in the\n    file at [file_path]. "]
+val enter_expr : t -> t[@@ocaml.doc
+                         " Return a new code path that now descends into an expression. This is used to\n    delimit the \"toplevel\" path. It's required because of first class modules\n    and toplevel expressions [Pstr_eval ...]. "]
+val enter_module : loc:Location.t -> string -> t -> t[@@ocaml.doc
+                                                       " Return a new code path updated with the given module name and location. "]
+val enter_value : loc:Location.t -> string -> t -> t[@@ocaml.doc
+                                                      " Return a new code path updated with the given variable name and location. "]
+val with_string_path :
+  (loc:Location.t -> path:string -> 'a) -> loc:Location.t -> path:t -> 'a
+[@@ocaml.doc
+  " Wrap a [fun ~loc ~path] expecting a string path into one expecting a [t]. "]
+[
+  signature_item (src/code_path.mli[1,0+0]..src/code_path.mli[2,78+25])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/code_path.mli[1,0+0]..[2,78+25])
+        Pstr_eval
+        expression (src/code_path.mli[1,0+0]..[2,78+25])
+          Pexp_constant PConst_string(" This module contains type and functions for representing and manipulating\n    path to AST nodes. ",(src/code_path.mli[1,0+0]..[2,78+25]),None)
+    ]
+  signature_item (src/code_path.mli[4,105+0]..src/code_path.mli[4,105+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/code_path.mli[6,119+0]..src/code_path.mli[6,119+6])
+    Tsig_type Rec
+    [
+      type_declaration t/550 (src/code_path.mli[6,119+0]..src/code_path.mli[6,119+6])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/code_path.mli[7,126+0]..[7,126+33])
+              Pstr_eval
+              expression (src/code_path.mli[7,126+0]..[7,126+33])
+                Pexp_constant PConst_string(" Type for path to AST nodes ",(src/code_path.mli[7,126+0]..[7,126+33]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/code_path.mli[9,161+0]..src/code_path.mli[9,161+27])
+    Tsig_value
+    value_description file_path/551 (src/code_path.mli[9,161+0]..src/code_path.mli[9,161+27])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[10,189+0]..[10,189+66])
+            Pstr_eval
+            expression (src/code_path.mli[10,189+0]..[10,189+66])
+              Pexp_constant PConst_string(" Return the path to the .ml or .mli file for this code path. ",(src/code_path.mli[10,189+0]..[10,189+66]),None)
+        ]
+      core_type (src/code_path.mli[9,161+16]..src/code_path.mli[9,161+27])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[9,161+16]..src/code_path.mli[9,161+17])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[9,161+21]..src/code_path.mli[9,161+27])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/code_path.mli[12,257+0]..src/code_path.mli[12,257+34])
+    Tsig_value
+    value_description main_module_name/552 (src/code_path.mli[12,257+0]..src/code_path.mli[12,257+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[13,292+0]..[14,369+16])
+            Pstr_eval
+            expression (src/code_path.mli[13,292+0]..[14,369+16])
+              Pexp_constant PConst_string(" Return the module name corresponding to the file to which this code path\n    leads to. ",(src/code_path.mli[13,292+0]..[14,369+16]),None)
+        ]
+      core_type (src/code_path.mli[12,257+23]..src/code_path.mli[12,257+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[12,257+23]..src/code_path.mli[12,257+24])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[12,257+28]..src/code_path.mli[12,257+34])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/code_path.mli[16,387+0]..src/code_path.mli[16,387+37])
+    Tsig_value
+    value_description submodule_path/553 (src/code_path.mli[16,387+0]..src/code_path.mli[16,387+37])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[17,425+0]..[18,504+23])
+            Pstr_eval
+            expression (src/code_path.mli[17,425+0]..[18,504+23])
+              Pexp_constant PConst_string(" Return the path within the main module this code path represents as a list\n    of module names. ",(src/code_path.mli[17,425+0]..[18,504+23]),None)
+        ]
+      core_type (src/code_path.mli[16,387+21]..src/code_path.mli[16,387+37])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[16,387+21]..src/code_path.mli[16,387+22])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[16,387+26]..src/code_path.mli[16,387+37])
+          Ttyp_constr "list/11!"
+          [
+            core_type (src/code_path.mli[16,387+26]..src/code_path.mli[16,387+32])
+              Ttyp_constr "string/17!"
+              []
+          ]
+      []
+  signature_item (src/code_path.mli[20,529+0]..src/code_path.mli[20,529+34])
+    Tsig_value
+    value_description enclosing_module/554 (src/code_path.mli[20,529+0]..src/code_path.mli[20,529+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[21,564+0]..[21,564+79])
+            Pstr_eval
+            expression (src/code_path.mli[21,564+0]..[21,564+79])
+              Pexp_constant PConst_string(" Return the nearest enclosing module name. Does descend into expressions. ",(src/code_path.mli[21,564+0]..[21,564+79]),None)
+        ]
+      core_type (src/code_path.mli[20,529+23]..src/code_path.mli[20,529+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[20,529+23]..src/code_path.mli[20,529+24])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[20,529+28]..src/code_path.mli[20,529+34])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/code_path.mli[23,645+0]..src/code_path.mli[23,645+30])
+    Tsig_value
+    value_description value/555 (src/code_path.mli[23,645+0]..src/code_path.mli[23,645+30])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[24,676+0]..[25,755+54])
+            Pstr_eval
+            expression (src/code_path.mli[24,676+0]..[25,755+54])
+              Pexp_constant PConst_string(" Return the name of the value to which this code path leads or [None] if it\n    leads to the toplevel of a module or submodule. ",(src/code_path.mli[24,676+0]..[25,755+54]),None)
+        ]
+      core_type (src/code_path.mli[23,645+12]..src/code_path.mli[23,645+30])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[23,645+12]..src/code_path.mli[23,645+13])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[23,645+17]..src/code_path.mli[23,645+30])
+          Ttyp_constr "option/12!"
+          [
+            core_type (src/code_path.mli[23,645+17]..src/code_path.mli[23,645+23])
+              Ttyp_constr "string/17!"
+              []
+          ]
+      []
+  signature_item (src/code_path.mli[27,811+0]..src/code_path.mli[27,811+40])
+    Tsig_value
+    value_description enclosing_value/556 (src/code_path.mli[27,811+0]..src/code_path.mli[27,811+40])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[28,852+0]..[30,1005+47])
+            Pstr_eval
+            expression (src/code_path.mli[28,852+0]..[30,1005+47])
+              Pexp_constant PConst_string(" Like [value], returns the name of an enclosing value definition. Unlike\n    [value], includes names inside expressions, not just names that the code\n    path can reach from the toplevel module. ",(src/code_path.mli[28,852+0]..[30,1005+47]),None)
+        ]
+      core_type (src/code_path.mli[27,811+22]..src/code_path.mli[27,811+40])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[27,811+22]..src/code_path.mli[27,811+23])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[27,811+27]..src/code_path.mli[27,811+40])
+          Ttyp_constr "option/12!"
+          [
+            core_type (src/code_path.mli[27,811+27]..src/code_path.mli[27,811+33])
+              Ttyp_constr "string/17!"
+              []
+          ]
+      []
+  signature_item (src/code_path.mli[32,1054+0]..src/code_path.mli[32,1054+38])
+    Tsig_value
+    value_description fully_qualified_path/557 (src/code_path.mli[32,1054+0]..src/code_path.mli[32,1054+38])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[33,1093+0]..[36,1331+60])
+            Pstr_eval
+            expression (src/code_path.mli[33,1093+0]..[36,1331+60])
+              Pexp_constant PConst_string(" Return the fully qualified path to the module or value this code path leads\n    to, eg [\"Some_main_module.Some_submodule.some_value\"]. Note that the fully\n    qualified path doesn't descend into expressions which means it will always\n    stop at the first value description or value binding. ",(src/code_path.mli[33,1093+0]..[36,1331+60]),None)
+        ]
+      core_type (src/code_path.mli[32,1054+27]..src/code_path.mli[32,1054+38])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[32,1054+27]..src/code_path.mli[32,1054+28])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[32,1054+32]..src/code_path.mli[32,1054+38])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/code_path.mli[38,1393+0]..src/code_path.mli[38,1393+32])
+    Tsig_value
+    value_description to_string_path/558 (src/code_path.mli[38,1393+0]..src/code_path.mli[38,1393+32])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[39,1426+0]..[41,1566+23])
+            Pstr_eval
+            expression (src/code_path.mli[39,1426+0]..[41,1566+23])
+              Pexp_constant PConst_string(" Return the string version of this code path as built by\n    [Ast_traverse.map_with_path]. Used for compatibility with path from version\n    0.5.0 and lower. ",(src/code_path.mli[39,1426+0]..[41,1566+23]),None)
+        ]
+      core_type (src/code_path.mli[38,1393+21]..src/code_path.mli[38,1393+32])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[38,1393+21]..src/code_path.mli[38,1393+22])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[38,1393+26]..src/code_path.mli[38,1393+32])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/code_path.mli[43,1591+0]..src/code_path.mli[43,1591+7])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/code_path.mli[43,1591+0]..[43,1591+7])
+        Pstr_eval
+        expression (src/code_path.mli[43,1591+0]..[43,1591+7])
+          Pexp_constant PConst_string("/*",(src/code_path.mli[43,1591+0]..[43,1591+7]),None)
+    ]
+  signature_item (src/code_path.mli[45,1600+0]..src/code_path.mli[45,1600+27])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/code_path.mli[45,1600+0]..[45,1600+27])
+        Pstr_eval
+        expression (src/code_path.mli[45,1600+0]..[45,1600+27])
+          Pexp_constant PConst_string(" Undocumented section ",(src/code_path.mli[45,1600+0]..[45,1600+27]),None)
+    ]
+  signature_item (src/code_path.mli[47,1629+0]..src/code_path.mli[47,1629+37])
+    Tsig_value
+    value_description top_level/559 (src/code_path.mli[47,1629+0]..src/code_path.mli[47,1629+37])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[48,1667+0]..[49,1745+27])
+            Pstr_eval
+            expression (src/code_path.mli[48,1667+0]..[49,1745+27])
+              Pexp_constant PConst_string(" [top_level ~file_path] returns the code path for any toplevel item in the\n    file at [file_path]. ",(src/code_path.mli[48,1667+0]..[49,1745+27]),None)
+        ]
+      core_type (src/code_path.mli[47,1629+16]..src/code_path.mli[47,1629+37])
+        Ttyp_arrow
+        Labelled "file_path"
+        core_type (src/code_path.mli[47,1629+26]..src/code_path.mli[47,1629+32])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/code_path.mli[47,1629+36]..src/code_path.mli[47,1629+37])
+          Ttyp_constr "t/550"
+          []
+      []
+  signature_item (src/code_path.mli[51,1774+0]..src/code_path.mli[51,1774+23])
+    Tsig_value
+    value_description enter_expr/560 (src/code_path.mli[51,1774+0]..src/code_path.mli[51,1774+23])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[52,1798+0]..[54,1957+48])
+            Pstr_eval
+            expression (src/code_path.mli[52,1798+0]..[54,1957+48])
+              Pexp_constant PConst_string(" Return a new code path that now descends into an expression. This is used to\n    delimit the \"toplevel\" path. It's required because of first class modules\n    and toplevel expressions [Pstr_eval ...]. ",(src/code_path.mli[52,1798+0]..[54,1957+48]),None)
+        ]
+      core_type (src/code_path.mli[51,1774+17]..src/code_path.mli[51,1774+23])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[51,1774+17]..src/code_path.mli[51,1774+18])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/code_path.mli[51,1774+22]..src/code_path.mli[51,1774+23])
+          Ttyp_constr "t/550"
+          []
+      []
+  signature_item (src/code_path.mli[56,2007+0]..src/code_path.mli[56,2007+53])
+    Tsig_value
+    value_description enter_module/593 (src/code_path.mli[56,2007+0]..src/code_path.mli[56,2007+53])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[57,2061+0]..[57,2061+78])
+            Pstr_eval
+            expression (src/code_path.mli[57,2061+0]..[57,2061+78])
+              Pexp_constant PConst_string(" Return a new code path updated with the given module name and location. ",(src/code_path.mli[57,2061+0]..[57,2061+78]),None)
+        ]
+      core_type (src/code_path.mli[56,2007+19]..src/code_path.mli[56,2007+53])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (src/code_path.mli[56,2007+23]..src/code_path.mli[56,2007+33])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+        core_type (src/code_path.mli[56,2007+37]..src/code_path.mli[56,2007+53])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/code_path.mli[56,2007+37]..src/code_path.mli[56,2007+43])
+            Ttyp_constr "string/17!"
+            []
+          core_type (src/code_path.mli[56,2007+47]..src/code_path.mli[56,2007+53])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/code_path.mli[56,2007+47]..src/code_path.mli[56,2007+48])
+              Ttyp_constr "t/550"
+              []
+            core_type (src/code_path.mli[56,2007+52]..src/code_path.mli[56,2007+53])
+              Ttyp_constr "t/550"
+              []
+      []
+  signature_item (src/code_path.mli[59,2141+0]..src/code_path.mli[59,2141+52])
+    Tsig_value
+    value_description enter_value/594 (src/code_path.mli[59,2141+0]..src/code_path.mli[59,2141+52])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[60,2194+0]..[60,2194+80])
+            Pstr_eval
+            expression (src/code_path.mli[60,2194+0]..[60,2194+80])
+              Pexp_constant PConst_string(" Return a new code path updated with the given variable name and location. ",(src/code_path.mli[60,2194+0]..[60,2194+80]),None)
+        ]
+      core_type (src/code_path.mli[59,2141+18]..src/code_path.mli[59,2141+52])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (src/code_path.mli[59,2141+22]..src/code_path.mli[59,2141+32])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+        core_type (src/code_path.mli[59,2141+36]..src/code_path.mli[59,2141+52])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/code_path.mli[59,2141+36]..src/code_path.mli[59,2141+42])
+            Ttyp_constr "string/17!"
+            []
+          core_type (src/code_path.mli[59,2141+46]..src/code_path.mli[59,2141+52])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/code_path.mli[59,2141+46]..src/code_path.mli[59,2141+47])
+              Ttyp_constr "t/550"
+              []
+            core_type (src/code_path.mli[59,2141+51]..src/code_path.mli[59,2141+52])
+              Ttyp_constr "t/550"
+              []
+      []
+  signature_item (src/code_path.mli[62,2276+0]..src/code_path.mli[63,2299+73])
+    Tsig_value
+    value_description with_string_path/595 (src/code_path.mli[62,2276+0]..src/code_path.mli[63,2299+73])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_path.mli[64,2373+0]..[64,2373+80])
+            Pstr_eval
+            expression (src/code_path.mli[64,2373+0]..[64,2373+80])
+              Pexp_constant PConst_string(" Wrap a [fun ~loc ~path] expecting a string path into one expecting a [t]. ",(src/code_path.mli[64,2373+0]..[64,2373+80]),None)
+        ]
+      core_type (src/code_path.mli[63,2299+2]..src/code_path.mli[63,2299+73])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/code_path.mli[63,2299+3]..src/code_path.mli[63,2299+38])
+          Ttyp_arrow
+          Labelled "loc"
+          core_type (src/code_path.mli[63,2299+7]..src/code_path.mli[63,2299+17])
+            Ttyp_constr "Ppxlib__!.Location.t"
+            []
+          core_type (src/code_path.mli[63,2299+21]..src/code_path.mli[63,2299+38])
+            Ttyp_arrow
+            Labelled "path"
+            core_type (src/code_path.mli[63,2299+26]..src/code_path.mli[63,2299+32])
+              Ttyp_constr "string/17!"
+              []
+            core_type (src/code_path.mli[63,2299+36]..src/code_path.mli[63,2299+38])
+              Ttyp_var a
+        core_type (src/code_path.mli[63,2299+43]..src/code_path.mli[63,2299+73])
+          Ttyp_arrow
+          Labelled "loc"
+          core_type (src/code_path.mli[63,2299+47]..src/code_path.mli[63,2299+57])
+            Ttyp_constr "Ppxlib__!.Location.t"
+            []
+          core_type (src/code_path.mli[63,2299+61]..src/code_path.mli[63,2299+73])
+            Ttyp_arrow
+            Labelled "path"
+            core_type (src/code_path.mli[63,2299+66]..src/code_path.mli[63,2299+67])
+              Ttyp_constr "t/550"
+              []
+            core_type (src/code_path.mli[63,2299+71]..src/code_path.mli[63,2299+73])
+              Ttyp_var a
+      []
+]
+

@@ -1,0 +1,1529 @@
+[
+  structure_item (ast/location_error.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (ast/location_error.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Import" (ast/location_error.ml[1,0+5]..[1,0+11])
+  structure_item (ast/location_error.ml[3,13+0]..[3,13+32])
+    Pstr_type Rec
+    [
+      type_declaration "t" (ast/location_error.ml[3,13+5]..[3,13+6]) (ast/location_error.ml[3,13+0]..[3,13+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ast/location_error.ml[3,13+9]..[3,13+32])
+              Ptyp_constr "Astlib.Location.Error.t" (ast/location_error.ml[3,13+9]..[3,13+32])
+              []
+    ]
+  structure_item (ast/location_error.ml[5,47+0]..[21,788+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[5,47+4]..[5,47+16])
+          Ppat_var "to_extension" (ast/location_error.ml[5,47+4]..[5,47+16])
+        expression (ast/location_error.ml[5,47+17]..[21,788+3]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/location_error.ml[5,47+17]..[5,47+50])
+            Ppat_constraint
+            pattern (ast/location_error.ml[5,47+18]..[5,47+23])
+              Ppat_var "error" (ast/location_error.ml[5,47+18]..[5,47+23])
+            core_type (ast/location_error.ml[5,47+26]..[5,47+49])
+              Ptyp_constr "Astlib.Location.Error.t" (ast/location_error.ml[5,47+26]..[5,47+49])
+              []
+          expression (ast/location_error.ml[6,100+2]..[21,788+3])
+            Pexp_open Fresh
+            module_expr (ast/location_error.ml[6,100+11]..[6,100+32])
+              Pmod_ident "Astlib.Location.Error" (ast/location_error.ml[6,100+11]..[6,100+32])
+            expression (ast/location_error.ml[7,136+2]..[21,788+3])
+              Pexp_open Fresh
+              module_expr (ast/location_error.ml[7,136+11]..[7,136+21])
+                Pmod_ident "Ast_helper" (ast/location_error.ml[7,136+11]..[7,136+21])
+              expression (ast/location_error.ml[8,161+2]..[21,788+3])
+                Pexp_sequence
+                expression (ast/location_error.ml[8,161+2]..[9,198+71])
+                  Pexp_ifthenelse
+                  expression (ast/location_error.ml[8,161+5]..[8,161+31])
+                    Pexp_apply
+                    expression (ast/location_error.ml[8,161+5]..[8,161+8])
+                      Pexp_ident "not" (ast/location_error.ml[8,161+5]..[8,161+8])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ast/location_error.ml[8,161+9]..[8,161+31])
+                          Pexp_apply
+                          expression (ast/location_error.ml[8,161+10]..[8,161+24])
+                            Pexp_ident "is_well_formed" (ast/location_error.ml[8,161+10]..[8,161+24])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (ast/location_error.ml[8,161+25]..[8,161+30])
+                                Pexp_ident "error" (ast/location_error.ml[8,161+25]..[8,161+30])
+                          ]
+                    ]
+                  expression (ast/location_error.ml[9,198+4]..[9,198+71])
+                    Pexp_apply
+                    expression (ast/location_error.ml[9,198+4]..[9,198+9])
+                      Pexp_ident "raise" (ast/location_error.ml[9,198+4]..[9,198+9])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (ast/location_error.ml[9,198+10]..[9,198+71])
+                          Pexp_construct "Invalid_argument" (ast/location_error.ml[9,198+11]..[9,198+27])
+                          Some
+                            expression (ast/location_error.ml[9,198+28]..[9,198+70])
+                              Pexp_constant PConst_string("to_extension: expected kind Report_error",(ast/location_error.ml[9,198+29]..[9,198+69]),None)
+                    ]
+                  None
+                expression (ast/location_error.ml[10,271+2]..[21,788+3])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (ast/location_error.ml[10,271+6]..[10,271+14])
+                        Ppat_var "sub_msgs" (ast/location_error.ml[10,271+6]..[10,271+14])
+                      expression (ast/location_error.ml[10,271+17]..[10,271+31])
+                        Pexp_apply
+                        expression (ast/location_error.ml[10,271+17]..[10,271+25])
+                          Pexp_ident "sub_msgs" (ast/location_error.ml[10,271+17]..[10,271+25])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ast/location_error.ml[10,271+26]..[10,271+31])
+                              Pexp_ident "error" (ast/location_error.ml[10,271+26]..[10,271+31])
+                        ]
+                  ]
+                  expression (ast/location_error.ml[11,306+2]..[21,788+3])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (ast/location_error.ml[11,306+6]..[11,306+14])
+                          Ppat_var "main_msg" (ast/location_error.ml[11,306+6]..[11,306+14])
+                        expression (ast/location_error.ml[11,306+17]..[11,306+31])
+                          Pexp_apply
+                          expression (ast/location_error.ml[11,306+17]..[11,306+25])
+                            Pexp_ident "main_msg" (ast/location_error.ml[11,306+17]..[11,306+25])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (ast/location_error.ml[11,306+26]..[11,306+31])
+                                Pexp_ident "error" (ast/location_error.ml[11,306+26]..[11,306+31])
+                          ]
+                    ]
+                    expression (ast/location_error.ml[12,341+2]..[21,788+3])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (ast/location_error.ml[12,341+6]..[12,341+24])
+                            Ppat_var "err_extension_name" (ast/location_error.ml[12,341+6]..[12,341+24])
+                          expression (ast/location_error.ml[12,341+25]..[12,341+68]) ghost
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (ast/location_error.ml[12,341+25]..[12,341+28])
+                              Ppat_var "loc" (ast/location_error.ml[12,341+25]..[12,341+28])
+                            expression (ast/location_error.ml[12,341+31]..[12,341+68])
+                              Pexp_record
+                              [
+                                "Location.loc" (ast/location_error.ml[12,341+33]..[12,341+45])
+                                  expression (ast/location_error.ml[12,341+33]..[12,341+45]) ghost
+                                    Pexp_ident "loc" (ast/location_error.ml[12,341+33]..[12,341+45]) ghost
+                                "txt" (ast/location_error.ml[12,341+47]..[12,341+50])
+                                  expression (ast/location_error.ml[12,341+53]..[12,341+66])
+                                    Pexp_constant PConst_string("ocaml.error",(ast/location_error.ml[12,341+54]..[12,341+65]),None)
+                              ]
+                              None
+                      ]
+                      expression (ast/location_error.ml[13,413+2]..[21,788+3])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (ast/location_error.ml[13,413+6]..[13,413+24])
+                              Ppat_var "mk_string_constant" (ast/location_error.ml[13,413+6]..[13,413+24])
+                            expression (ast/location_error.ml[13,413+25]..[13,413+69]) ghost
+                              Pexp_fun
+                              Nolabel
+                              None
+                              pattern (ast/location_error.ml[13,413+25]..[13,413+26])
+                                Ppat_var "x" (ast/location_error.ml[13,413+25]..[13,413+26])
+                              expression (ast/location_error.ml[13,413+29]..[13,413+69])
+                                Pexp_apply
+                                expression (ast/location_error.ml[13,413+29]..[13,413+37])
+                                  Pexp_ident "Str.eval" (ast/location_error.ml[13,413+29]..[13,413+37])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (ast/location_error.ml[13,413+38]..[13,413+69])
+                                      Pexp_apply
+                                      expression (ast/location_error.ml[13,413+39]..[13,413+51])
+                                        Pexp_ident "Exp.constant" (ast/location_error.ml[13,413+39]..[13,413+51])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (ast/location_error.ml[13,413+52]..[13,413+68])
+                                            Pexp_apply
+                                            expression (ast/location_error.ml[13,413+53]..[13,413+65])
+                                              Pexp_ident "Const.string" (ast/location_error.ml[13,413+53]..[13,413+65])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/location_error.ml[13,413+66]..[13,413+67])
+                                                  Pexp_ident "x" (ast/location_error.ml[13,413+66]..[13,413+67])
+                                            ]
+                                      ]
+                                ]
+                        ]
+                        expression (ast/location_error.ml[14,486+2]..[21,788+3])
+                          Pexp_let Nonrec
+                          [
+                            <def>
+                              pattern (ast/location_error.ml[14,486+6]..[14,486+26])
+                                Ppat_var "extension_of_sub_msg" (ast/location_error.ml[14,486+6]..[14,486+26])
+                              expression (ast/location_error.ml[14,486+27]..[16,565+79]) ghost
+                                Pexp_fun
+                                Nolabel
+                                None
+                                pattern (ast/location_error.ml[14,486+27]..[14,486+58])
+                                  Ppat_constraint
+                                  pattern (ast/location_error.ml[14,486+28]..[14,486+35])
+                                    Ppat_var "sub_msg" (ast/location_error.ml[14,486+28]..[14,486+35])
+                                  core_type (ast/location_error.ml[14,486+38]..[14,486+57])
+                                    Ptyp_constr "Location.loc" (ast/location_error.ml[14,486+45]..[14,486+57])
+                                    [
+                                      core_type (ast/location_error.ml[14,486+38]..[14,486+44])
+                                        Ptyp_constr "string" (ast/location_error.ml[14,486+38]..[14,486+44])
+                                        []
+                                    ]
+                                expression (ast/location_error.ml[15,547+4]..[16,565+79])
+                                  Pexp_apply
+                                  expression (ast/location_error.ml[15,547+4]..[15,547+17])
+                                    Pexp_ident "Str.extension" (ast/location_error.ml[15,547+4]..[15,547+17])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/location_error.ml[16,565+6]..[16,565+79])
+                                        Pexp_tuple
+                                        [
+                                          expression (ast/location_error.ml[16,565+7]..[16,565+37])
+                                            Pexp_apply
+                                            expression (ast/location_error.ml[16,565+7]..[16,565+25])
+                                              Pexp_ident "err_extension_name" (ast/location_error.ml[16,565+7]..[16,565+25])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/location_error.ml[16,565+26]..[16,565+37])
+                                                  Pexp_field
+                                                  expression (ast/location_error.ml[16,565+26]..[16,565+33])
+                                                    Pexp_ident "sub_msg" (ast/location_error.ml[16,565+26]..[16,565+33])
+                                                  "loc" (ast/location_error.ml[16,565+34]..[16,565+37])
+                                            ]
+                                          expression (ast/location_error.ml[16,565+39]..[16,565+78])
+                                            Pexp_construct "PStr" (ast/location_error.ml[16,565+39]..[16,565+43])
+                                            Some
+                                              expression (ast/location_error.ml[16,565+44]..[16,565+78])
+                                                Pexp_construct "::" (ast/location_error.ml[16,565+46]..[16,565+78]) ghost
+                                                Some
+                                                  expression (ast/location_error.ml[16,565+46]..[16,565+78]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (ast/location_error.ml[16,565+46]..[16,565+76])
+                                                        Pexp_apply
+                                                        expression (ast/location_error.ml[16,565+46]..[16,565+64])
+                                                          Pexp_ident "mk_string_constant" (ast/location_error.ml[16,565+46]..[16,565+64])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (ast/location_error.ml[16,565+65]..[16,565+76])
+                                                              Pexp_field
+                                                              expression (ast/location_error.ml[16,565+65]..[16,565+72])
+                                                                Pexp_ident "sub_msg" (ast/location_error.ml[16,565+65]..[16,565+72])
+                                                              "txt" (ast/location_error.ml[16,565+73]..[16,565+76])
+                                                        ]
+                                                      expression (ast/location_error.ml[16,565+77]..[16,565+78]) ghost
+                                                        Pexp_construct "[]" (ast/location_error.ml[16,565+77]..[16,565+78]) ghost
+                                                        None
+                                                    ]
+                                        ]
+                                  ]
+                          ]
+                          expression (ast/location_error.ml[18,650+2]..[21,788+3])
+                            Pexp_tuple
+                            [
+                              expression (ast/location_error.ml[18,650+4]..[18,650+35])
+                                Pexp_apply
+                                expression (ast/location_error.ml[18,650+4]..[18,650+22])
+                                  Pexp_ident "err_extension_name" (ast/location_error.ml[18,650+4]..[18,650+22])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (ast/location_error.ml[18,650+23]..[18,650+35])
+                                      Pexp_field
+                                      expression (ast/location_error.ml[18,650+23]..[18,650+31])
+                                        Pexp_ident "main_msg" (ast/location_error.ml[18,650+23]..[18,650+31])
+                                      "loc" (ast/location_error.ml[18,650+32]..[18,650+35])
+                                ]
+                              expression (ast/location_error.ml[19,687+4]..[20,706+81])
+                                Pexp_construct "Parsetree.PStr" (ast/location_error.ml[19,687+4]..[19,687+18])
+                                Some
+                                  expression (ast/location_error.ml[20,706+6]..[20,706+81])
+                                    Pexp_construct "::" (ast/location_error.ml[20,706+39]..[20,706+41])
+                                    Some
+                                      expression (ast/location_error.ml[20,706+7]..[20,706+80]) ghost
+                                        Pexp_tuple
+                                        [
+                                          expression (ast/location_error.ml[20,706+7]..[20,706+38])
+                                            Pexp_apply
+                                            expression (ast/location_error.ml[20,706+7]..[20,706+25])
+                                              Pexp_ident "mk_string_constant" (ast/location_error.ml[20,706+7]..[20,706+25])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/location_error.ml[20,706+26]..[20,706+38])
+                                                  Pexp_field
+                                                  expression (ast/location_error.ml[20,706+26]..[20,706+34])
+                                                    Pexp_ident "main_msg" (ast/location_error.ml[20,706+26]..[20,706+34])
+                                                  "txt" (ast/location_error.ml[20,706+35]..[20,706+38])
+                                            ]
+                                          expression (ast/location_error.ml[20,706+42]..[20,706+80])
+                                            Pexp_apply
+                                            expression (ast/location_error.ml[20,706+42]..[20,706+50])
+                                              Pexp_ident "List.map" (ast/location_error.ml[20,706+42]..[20,706+50])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/location_error.ml[20,706+51]..[20,706+71])
+                                                  Pexp_ident "extension_of_sub_msg" (ast/location_error.ml[20,706+51]..[20,706+71])
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/location_error.ml[20,706+72]..[20,706+80])
+                                                  Pexp_ident "sub_msgs" (ast/location_error.ml[20,706+72]..[20,706+80])
+                                            ]
+                                        ]
+                            ]
+    ]
+  structure_item (ast/location_error.ml[23,793+0]..[23,793+65])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[23,793+4]..[23,793+25])
+          Ppat_var "register_error_of_exn" (ast/location_error.ml[23,793+4]..[23,793+25])
+        expression (ast/location_error.ml[23,793+28]..[23,793+65])
+          Pexp_ident "Astlib.Location.register_error_of_exn" (ast/location_error.ml[23,793+28]..[23,793+65])
+    ]
+  structure_item (ast/location_error.ml[25,860+0]..[27,955+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[25,860+4]..[25,860+11])
+          Ppat_var "message" (ast/location_error.ml[25,860+4]..[25,860+11])
+        expression (ast/location_error.ml[25,860+12]..[27,955+5]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/location_error.ml[25,860+12]..[25,860+17])
+            Ppat_var "error" (ast/location_error.ml[25,860+12]..[25,860+17])
+          expression (ast/location_error.ml[26,880+2]..[27,955+5])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (ast/location_error.ml[26,880+6]..[26,880+32])
+                  Ppat_record Open
+                  [
+                    "Astlib.Location.txt" (ast/location_error.ml[26,880+8]..[26,880+27]) ghost
+                      pattern (ast/location_error.ml[26,880+8]..[26,880+27])
+                        Ppat_var "txt" (ast/location_error.ml[26,880+8]..[26,880+27])
+                  ]
+                expression (ast/location_error.ml[26,880+35]..[26,880+71])
+                  Pexp_apply
+                  expression (ast/location_error.ml[26,880+35]..[26,880+65])
+                    Pexp_ident "Astlib.Location.Error.main_msg" (ast/location_error.ml[26,880+35]..[26,880+65])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ast/location_error.ml[26,880+66]..[26,880+71])
+                        Pexp_ident "error" (ast/location_error.ml[26,880+66]..[26,880+71])
+                  ]
+            ]
+            expression (ast/location_error.ml[27,955+2]..[27,955+5])
+              Pexp_ident "txt" (ast/location_error.ml[27,955+2]..[27,955+5])
+    ]
+  structure_item (ast/location_error.ml[29,962+0]..[29,962+52])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[29,962+4]..[29,962+15])
+          Ppat_var "set_message" (ast/location_error.ml[29,962+4]..[29,962+15])
+        expression (ast/location_error.ml[29,962+18]..[29,962+52])
+          Pexp_ident "Astlib.Location.Error.set_main_msg" (ast/location_error.ml[29,962+18]..[29,962+52])
+    ]
+  structure_item (ast/location_error.ml[31,1016+0]..[33,1118+46])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[31,1016+4]..[31,1016+8])
+          Ppat_var "make" (ast/location_error.ml[31,1016+4]..[31,1016+8])
+        expression (ast/location_error.ml[31,1016+9]..[33,1118+46]) ghost
+          Pexp_fun
+          Labelled "loc"
+          None
+          pattern (ast/location_error.ml[31,1016+10]..[31,1016+13])
+            Ppat_var "loc" (ast/location_error.ml[31,1016+10]..[31,1016+13])
+          expression (ast/location_error.ml[31,1016+14]..[33,1118+46]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ast/location_error.ml[31,1016+14]..[31,1016+17])
+              Ppat_var "txt" (ast/location_error.ml[31,1016+14]..[31,1016+17])
+            expression (ast/location_error.ml[31,1016+18]..[33,1118+46]) ghost
+              Pexp_fun
+              Labelled "sub"
+              None
+              pattern (ast/location_error.ml[31,1016+19]..[31,1016+22])
+                Ppat_var "sub" (ast/location_error.ml[31,1016+19]..[31,1016+22])
+              expression (ast/location_error.ml[32,1041+2]..[33,1118+46])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (ast/location_error.ml[32,1041+6]..[32,1041+9])
+                      Ppat_var "sub" (ast/location_error.ml[32,1041+6]..[32,1041+9])
+                    expression (ast/location_error.ml[32,1041+12]..[32,1041+73])
+                      Pexp_apply
+                      expression (ast/location_error.ml[32,1041+12]..[32,1041+20])
+                        Pexp_ident "List.map" (ast/location_error.ml[32,1041+12]..[32,1041+20])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (ast/location_error.ml[32,1041+21]..[32,1041+69])
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (ast/location_error.ml[32,1041+26]..[32,1041+36])
+                              Ppat_tuple
+                              [
+                                pattern (ast/location_error.ml[32,1041+27]..[32,1041+30])
+                                  Ppat_var "loc" (ast/location_error.ml[32,1041+27]..[32,1041+30])
+                                pattern (ast/location_error.ml[32,1041+32]..[32,1041+35])
+                                  Ppat_var "txt" (ast/location_error.ml[32,1041+32]..[32,1041+35])
+                              ]
+                            expression (ast/location_error.ml[32,1041+40]..[32,1041+68])
+                              Pexp_record
+                              [
+                                "Astlib.Location.loc" (ast/location_error.ml[32,1041+42]..[32,1041+61])
+                                  expression (ast/location_error.ml[32,1041+42]..[32,1041+61]) ghost
+                                    Pexp_ident "loc" (ast/location_error.ml[32,1041+42]..[32,1041+61]) ghost
+                                "txt" (ast/location_error.ml[32,1041+63]..[32,1041+66])
+                                  expression (ast/location_error.ml[32,1041+63]..[32,1041+66]) ghost
+                                    Pexp_ident "txt" (ast/location_error.ml[32,1041+63]..[32,1041+66]) ghost
+                              ]
+                              None
+                        <arg>
+                        Nolabel
+                          expression (ast/location_error.ml[32,1041+70]..[32,1041+73])
+                            Pexp_ident "sub" (ast/location_error.ml[32,1041+70]..[32,1041+73])
+                      ]
+                ]
+                expression (ast/location_error.ml[33,1118+2]..[33,1118+46])
+                  Pexp_apply
+                  expression (ast/location_error.ml[33,1118+2]..[33,1118+28])
+                    Pexp_ident "Astlib.Location.Error.make" (ast/location_error.ml[33,1118+2]..[33,1118+28])
+                  [
+                    <arg>
+                    Labelled "sub"
+                      expression (ast/location_error.ml[33,1118+30]..[33,1118+33])
+                        Pexp_ident "sub" (ast/location_error.ml[33,1118+30]..[33,1118+33])
+                    <arg>
+                    Nolabel
+                      expression (ast/location_error.ml[33,1118+34]..[33,1118+46])
+                        Pexp_record
+                        [
+                          "loc" (ast/location_error.ml[33,1118+36]..[33,1118+39])
+                            expression (ast/location_error.ml[33,1118+36]..[33,1118+39]) ghost
+                              Pexp_ident "loc" (ast/location_error.ml[33,1118+36]..[33,1118+39]) ghost
+                          "txt" (ast/location_error.ml[33,1118+41]..[33,1118+44])
+                            expression (ast/location_error.ml[33,1118+41]..[33,1118+44]) ghost
+                              Pexp_ident "txt" (ast/location_error.ml[33,1118+41]..[33,1118+44]) ghost
+                        ]
+                        None
+                  ]
+    ]
+  structure_item (ast/location_error.ml[35,1166+0]..[35,1166+51])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[35,1166+4]..[35,1166+14])
+          Ppat_var "update_loc" (ast/location_error.ml[35,1166+4]..[35,1166+14])
+        expression (ast/location_error.ml[35,1166+17]..[35,1166+51])
+          Pexp_ident "Astlib.Location.Error.set_main_loc" (ast/location_error.ml[35,1166+17]..[35,1166+51])
+    ]
+  structure_item (ast/location_error.ml[37,1219+0]..[39,1319+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[37,1219+4]..[37,1219+16])
+          Ppat_var "get_location" (ast/location_error.ml[37,1219+4]..[37,1219+16])
+        expression (ast/location_error.ml[37,1219+17]..[39,1319+5]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/location_error.ml[37,1219+17]..[37,1219+22])
+            Ppat_var "error" (ast/location_error.ml[37,1219+17]..[37,1219+22])
+          expression (ast/location_error.ml[38,1244+2]..[39,1319+5])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (ast/location_error.ml[38,1244+6]..[38,1244+32])
+                  Ppat_record Open
+                  [
+                    "Astlib.Location.loc" (ast/location_error.ml[38,1244+8]..[38,1244+27]) ghost
+                      pattern (ast/location_error.ml[38,1244+8]..[38,1244+27])
+                        Ppat_var "loc" (ast/location_error.ml[38,1244+8]..[38,1244+27])
+                  ]
+                expression (ast/location_error.ml[38,1244+35]..[38,1244+71])
+                  Pexp_apply
+                  expression (ast/location_error.ml[38,1244+35]..[38,1244+65])
+                    Pexp_ident "Astlib.Location.Error.main_msg" (ast/location_error.ml[38,1244+35]..[38,1244+65])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ast/location_error.ml[38,1244+66]..[38,1244+71])
+                        Pexp_ident "error" (ast/location_error.ml[38,1244+66]..[38,1244+71])
+                  ]
+            ]
+            expression (ast/location_error.ml[39,1319+2]..[39,1319+5])
+              Pexp_ident "loc" (ast/location_error.ml[39,1319+2]..[39,1319+5])
+    ]
+  structure_item (ast/location_error.ml[41,1326+0]..[41,1326+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[41,1326+4]..[41,1326+10])
+          Ppat_var "of_exn" (ast/location_error.ml[41,1326+4]..[41,1326+10])
+        expression (ast/location_error.ml[41,1326+13]..[41,1326+41])
+          Pexp_ident "Astlib.Location.Error.of_exn" (ast/location_error.ml[41,1326+13]..[41,1326+41])
+    ]
+  structure_item (ast/location_error.ml[42,1368+0]..[42,1368+53])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[42,1368+4]..[42,1368+9])
+          Ppat_var "raise" (ast/location_error.ml[42,1368+4]..[42,1368+9])
+        expression (ast/location_error.ml[42,1368+10]..[42,1368+53]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/location_error.ml[42,1368+10]..[42,1368+15])
+            Ppat_var "error" (ast/location_error.ml[42,1368+10]..[42,1368+15])
+          expression (ast/location_error.ml[42,1368+18]..[42,1368+53])
+            Pexp_apply
+            expression (ast/location_error.ml[42,1368+18]..[42,1368+23])
+              Pexp_ident "raise" (ast/location_error.ml[42,1368+18]..[42,1368+23])
+            [
+              <arg>
+              Nolabel
+                expression (ast/location_error.ml[42,1368+24]..[42,1368+53])
+                  Pexp_construct "Astlib.Location.Error" (ast/location_error.ml[42,1368+25]..[42,1368+46])
+                  Some
+                    expression (ast/location_error.ml[42,1368+47]..[42,1368+52])
+                      Pexp_ident "error" (ast/location_error.ml[42,1368+47]..[42,1368+52])
+            ]
+    ]
+]
+
+open Import
+type t = Astlib.Location.Error.t
+let to_extension (error : Astlib.Location.Error.t) =
+  let open Astlib.Location.Error in
+    let open Ast_helper in
+      if not (is_well_formed error)
+      then
+        raise (Invalid_argument "to_extension: expected kind Report_error");
+      (let sub_msgs = sub_msgs error in
+       let main_msg = main_msg error in
+       let err_extension_name loc =
+         { Location.loc = loc; txt = "ocaml.error" } in
+       let mk_string_constant x = Str.eval (Exp.constant (Const.string x)) in
+       let extension_of_sub_msg (sub_msg : string Location.loc) =
+         Str.extension
+           ((err_extension_name sub_msg.loc),
+             (PStr [mk_string_constant sub_msg.txt])) in
+       ((err_extension_name main_msg.loc),
+         (Parsetree.PStr ((mk_string_constant main_msg.txt) ::
+            (List.map extension_of_sub_msg sub_msgs)))))
+let register_error_of_exn = Astlib.Location.register_error_of_exn
+let message error =
+  let { Astlib.Location.txt = txt;_} = Astlib.Location.Error.main_msg error in
+  txt
+let set_message = Astlib.Location.Error.set_main_msg
+let make ~loc  txt ~sub  =
+  let sub =
+    List.map (fun (loc, txt) -> { Astlib.Location.loc = loc; txt }) sub in
+  Astlib.Location.Error.make ~sub { loc; txt }
+let update_loc = Astlib.Location.Error.set_main_loc
+let get_location error =
+  let { Astlib.Location.loc = loc;_} = Astlib.Location.Error.main_msg error in
+  loc
+let of_exn = Astlib.Location.Error.of_exn
+let raise error = raise (Astlib.Location.Error error)
+[
+  structure_item (ast/location_error.ml[1,0+0]..ast/location_error.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (ast/location_error.ml[1,0+5]..ast/location_error.ml[1,0+11])
+      Tmod_ident "Ppxlib_ast__!.Import"
+  structure_item (ast/location_error.ml[3,13+0]..ast/location_error.ml[3,13+32])
+    Tstr_type Rec
+    [
+      type_declaration t/245 (ast/location_error.ml[3,13+0]..ast/location_error.ml[3,13+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ast/location_error.ml[3,13+9]..ast/location_error.ml[3,13+32])
+              Ttyp_constr "Astlib!.Location.Error.t"
+              []
+    ]
+  structure_item (ast/location_error.ml[5,47+0]..ast/location_error.ml[21,788+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[5,47+4]..ast/location_error.ml[5,47+16])
+          Tpat_var "to_extension/382"
+        expression (ast/location_error.ml[5,47+17]..ast/location_error.ml[21,788+3]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/location_error.ml[5,47+18]..ast/location_error.ml[5,47+23])
+                Tpat_extra_constraint
+                core_type (ast/location_error.ml[5,47+26]..ast/location_error.ml[5,47+49])
+                  Ttyp_constr "Astlib!.Location.Error.t"
+                  []
+                pattern (ast/location_error.ml[5,47+18]..ast/location_error.ml[5,47+23])
+                  Tpat_alias "error/384"
+                  pattern (ast/location_error.ml[5,47+18]..ast/location_error.ml[5,47+23])
+                    Tpat_any
+              expression (ast/location_error.ml[6,100+2]..ast/location_error.ml[21,788+3])
+                Texp_open Fresh
+                module_expr (ast/location_error.ml[6,100+11]..ast/location_error.ml[6,100+32])
+                  Tmod_ident "Astlib!.Location.Error"
+                expression (ast/location_error.ml[7,136+2]..ast/location_error.ml[21,788+3])
+                  Texp_open Fresh
+                  module_expr (ast/location_error.ml[7,136+11]..ast/location_error.ml[7,136+21])
+                    Tmod_ident "Ppxlib_ast__!.Import.Ast_helper"
+                  expression (ast/location_error.ml[8,161+2]..ast/location_error.ml[21,788+3])
+                    Texp_sequence
+                    expression (ast/location_error.ml[8,161+2]..ast/location_error.ml[9,198+71])
+                      Texp_ifthenelse
+                      expression (ast/location_error.ml[8,161+5]..ast/location_error.ml[8,161+31])
+                        Texp_apply
+                        expression (ast/location_error.ml[8,161+5]..ast/location_error.ml[8,161+8])
+                          Texp_ident "Stdlib!.not"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (ast/location_error.ml[8,161+9]..ast/location_error.ml[8,161+31])
+                              Texp_apply
+                              expression (ast/location_error.ml[8,161+10]..ast/location_error.ml[8,161+24])
+                                Texp_ident "Astlib!.Location.Error.is_well_formed"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (ast/location_error.ml[8,161+25]..ast/location_error.ml[8,161+30])
+                                    Texp_ident "error/384"
+                              ]
+                        ]
+                      expression (ast/location_error.ml[9,198+4]..ast/location_error.ml[9,198+71])
+                        Texp_apply
+                        expression (ast/location_error.ml[9,198+4]..ast/location_error.ml[9,198+9])
+                          Texp_ident "Stdlib!.raise"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (ast/location_error.ml[9,198+10]..ast/location_error.ml[9,198+71])
+                              Texp_construct "Invalid_argument"
+                              [
+                                expression (ast/location_error.ml[9,198+28]..ast/location_error.ml[9,198+70])
+                                  Texp_constant Const_string("to_extension: expected kind Report_error",(ast/location_error.ml[9,198+29]..ast/location_error.ml[9,198+69]),None)
+                              ]
+                        ]
+                      None
+                    expression (ast/location_error.ml[10,271+2]..ast/location_error.ml[21,788+3])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (ast/location_error.ml[10,271+6]..ast/location_error.ml[10,271+14])
+                            Tpat_var "sub_msgs/652"
+                          expression (ast/location_error.ml[10,271+17]..ast/location_error.ml[10,271+31])
+                            Texp_apply
+                            expression (ast/location_error.ml[10,271+17]..ast/location_error.ml[10,271+25])
+                              Texp_ident "Astlib!.Location.Error.sub_msgs"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (ast/location_error.ml[10,271+26]..ast/location_error.ml[10,271+31])
+                                  Texp_ident "error/384"
+                            ]
+                      ]
+                      expression (ast/location_error.ml[11,306+2]..ast/location_error.ml[21,788+3])
+                        Texp_let Nonrec
+                        [
+                          <def>
+                            pattern (ast/location_error.ml[11,306+6]..ast/location_error.ml[11,306+14])
+                              Tpat_var "main_msg/653"
+                            expression (ast/location_error.ml[11,306+17]..ast/location_error.ml[11,306+31])
+                              Texp_apply
+                              expression (ast/location_error.ml[11,306+17]..ast/location_error.ml[11,306+25])
+                                Texp_ident "Astlib!.Location.Error.main_msg"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (ast/location_error.ml[11,306+26]..ast/location_error.ml[11,306+31])
+                                    Texp_ident "error/384"
+                              ]
+                        ]
+                        expression (ast/location_error.ml[12,341+2]..ast/location_error.ml[21,788+3])
+                          Texp_let Nonrec
+                          [
+                            <def>
+                              pattern (ast/location_error.ml[12,341+6]..ast/location_error.ml[12,341+24])
+                                Tpat_var "err_extension_name/654"
+                              expression (ast/location_error.ml[12,341+25]..ast/location_error.ml[12,341+68]) ghost
+                                Texp_function
+                                Nolabel
+                                [
+                                  <case>
+                                    pattern (ast/location_error.ml[12,341+25]..ast/location_error.ml[12,341+28])
+                                      Tpat_var "loc/656"
+                                    expression (ast/location_error.ml[12,341+31]..ast/location_error.ml[12,341+68])
+                                      Texp_record
+                                        fields =
+                                          [
+                                            "Location.txt"
+                                              expression (ast/location_error.ml[12,341+53]..ast/location_error.ml[12,341+66])
+                                                Texp_constant Const_string("ocaml.error",(ast/location_error.ml[12,341+54]..ast/location_error.ml[12,341+65]),None)
+                                            "Location.loc"
+                                              expression (ast/location_error.ml[12,341+33]..ast/location_error.ml[12,341+45]) ghost
+                                                Texp_ident "loc/656"
+                                          ]
+                                        representation =
+                                          Record_regular
+                                        extended_expression =
+                                          None
+                                ]
+                          ]
+                          expression (ast/location_error.ml[13,413+2]..ast/location_error.ml[21,788+3])
+                            Texp_let Nonrec
+                            [
+                              <def>
+                                pattern (ast/location_error.ml[13,413+6]..ast/location_error.ml[13,413+24])
+                                  Tpat_var "mk_string_constant/661"
+                                expression (ast/location_error.ml[13,413+25]..ast/location_error.ml[13,413+69]) ghost
+                                  Texp_function
+                                  Nolabel
+                                  [
+                                    <case>
+                                      pattern (ast/location_error.ml[13,413+25]..ast/location_error.ml[13,413+26])
+                                        Tpat_var "x/663"
+                                      expression (ast/location_error.ml[13,413+29]..ast/location_error.ml[13,413+69])
+                                        Texp_apply
+                                        expression (ast/location_error.ml[13,413+29]..ast/location_error.ml[13,413+37])
+                                          Texp_ident "Ppxlib_ast__!.Import.Ast_helper.Str.eval"
+                                        [
+                                          <arg>
+                                            Optional "loc"
+                                            expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                              Texp_construct "None"
+                                              []
+                                          <arg>
+                                            Optional "attrs"
+                                            expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                              Texp_construct "None"
+                                              []
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/location_error.ml[13,413+38]..ast/location_error.ml[13,413+69])
+                                              Texp_apply
+                                              expression (ast/location_error.ml[13,413+39]..ast/location_error.ml[13,413+51])
+                                                Texp_ident "Ppxlib_ast__!.Import.Ast_helper.Exp.constant"
+                                              [
+                                                <arg>
+                                                  Optional "loc"
+                                                  expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                                    Texp_construct "None"
+                                                    []
+                                                <arg>
+                                                  Optional "attrs"
+                                                  expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                                    Texp_construct "None"
+                                                    []
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/location_error.ml[13,413+52]..ast/location_error.ml[13,413+68])
+                                                    Texp_apply
+                                                    expression (ast/location_error.ml[13,413+53]..ast/location_error.ml[13,413+65])
+                                                      Texp_ident "Ppxlib_ast__!.Import.Ast_helper.Const.string"
+                                                    [
+                                                      <arg>
+                                                        Optional "quotation_delimiter"
+                                                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                                          Texp_construct "None"
+                                                          []
+                                                      <arg>
+                                                        Optional "loc"
+                                                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                                          Texp_construct "None"
+                                                          []
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (ast/location_error.ml[13,413+66]..ast/location_error.ml[13,413+67])
+                                                          Texp_ident "x/663"
+                                                    ]
+                                              ]
+                                        ]
+                                  ]
+                            ]
+                            expression (ast/location_error.ml[14,486+2]..ast/location_error.ml[21,788+3])
+                              Texp_let Nonrec
+                              [
+                                <def>
+                                  pattern (ast/location_error.ml[14,486+6]..ast/location_error.ml[14,486+26])
+                                    Tpat_var "extension_of_sub_msg/1150"
+                                  expression (ast/location_error.ml[14,486+27]..ast/location_error.ml[16,565+79]) ghost
+                                    Texp_function
+                                    Nolabel
+                                    [
+                                      <case>
+                                        pattern (ast/location_error.ml[14,486+28]..ast/location_error.ml[14,486+35])
+                                          Tpat_extra_constraint
+                                          core_type (ast/location_error.ml[14,486+38]..ast/location_error.ml[14,486+57])
+                                            Ttyp_constr "Ppxlib_ast__!.Import.Location.loc"
+                                            [
+                                              core_type (ast/location_error.ml[14,486+38]..ast/location_error.ml[14,486+44])
+                                                Ttyp_constr "string/17!"
+                                                []
+                                            ]
+                                          pattern (ast/location_error.ml[14,486+28]..ast/location_error.ml[14,486+35])
+                                            Tpat_alias "sub_msg/1152"
+                                            pattern (ast/location_error.ml[14,486+28]..ast/location_error.ml[14,486+35])
+                                              Tpat_any
+                                        expression (ast/location_error.ml[15,547+4]..ast/location_error.ml[16,565+79])
+                                          Texp_apply
+                                          expression (ast/location_error.ml[15,547+4]..ast/location_error.ml[15,547+17])
+                                            Texp_ident "Ppxlib_ast__!.Import.Ast_helper.Str.extension"
+                                          [
+                                            <arg>
+                                              Optional "loc"
+                                              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                                Texp_construct "None"
+                                                []
+                                            <arg>
+                                              Optional "attrs"
+                                              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                                Texp_construct "None"
+                                                []
+                                            <arg>
+                                              Nolabel
+                                              expression (ast/location_error.ml[16,565+6]..ast/location_error.ml[16,565+79])
+                                                Texp_tuple
+                                                [
+                                                  expression (ast/location_error.ml[16,565+7]..ast/location_error.ml[16,565+37])
+                                                    Texp_apply
+                                                    expression (ast/location_error.ml[16,565+7]..ast/location_error.ml[16,565+25])
+                                                      Texp_ident "err_extension_name/654"
+                                                    [
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (ast/location_error.ml[16,565+26]..ast/location_error.ml[16,565+37])
+                                                          Texp_field
+                                                          expression (ast/location_error.ml[16,565+26]..ast/location_error.ml[16,565+33])
+                                                            Texp_ident "sub_msg/1152"
+                                                          "loc"
+                                                    ]
+                                                  expression (ast/location_error.ml[16,565+39]..ast/location_error.ml[16,565+78])
+                                                    Texp_construct "PStr"
+                                                    [
+                                                      expression (ast/location_error.ml[16,565+44]..ast/location_error.ml[16,565+78])
+                                                        Texp_construct "::"
+                                                        [
+                                                          expression (ast/location_error.ml[16,565+46]..ast/location_error.ml[16,565+76])
+                                                            Texp_apply
+                                                            expression (ast/location_error.ml[16,565+46]..ast/location_error.ml[16,565+64])
+                                                              Texp_ident "mk_string_constant/661"
+                                                            [
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (ast/location_error.ml[16,565+65]..ast/location_error.ml[16,565+76])
+                                                                  Texp_field
+                                                                  expression (ast/location_error.ml[16,565+65]..ast/location_error.ml[16,565+72])
+                                                                    Texp_ident "sub_msg/1152"
+                                                                  "txt"
+                                                            ]
+                                                          expression (ast/location_error.ml[16,565+77]..ast/location_error.ml[16,565+78]) ghost
+                                                            Texp_construct "[]"
+                                                            []
+                                                        ]
+                                                    ]
+                                                ]
+                                          ]
+                                    ]
+                              ]
+                              expression (ast/location_error.ml[18,650+2]..ast/location_error.ml[21,788+3])
+                                Texp_tuple
+                                [
+                                  expression (ast/location_error.ml[18,650+4]..ast/location_error.ml[18,650+35])
+                                    Texp_apply
+                                    expression (ast/location_error.ml[18,650+4]..ast/location_error.ml[18,650+22])
+                                      Texp_ident "err_extension_name/654"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/location_error.ml[18,650+23]..ast/location_error.ml[18,650+35])
+                                          Texp_field
+                                          expression (ast/location_error.ml[18,650+23]..ast/location_error.ml[18,650+31])
+                                            Texp_ident "main_msg/653"
+                                          "loc"
+                                    ]
+                                  expression (ast/location_error.ml[19,687+4]..ast/location_error.ml[20,706+81])
+                                    Texp_construct "Parsetree.PStr"
+                                    [
+                                      expression (ast/location_error.ml[20,706+6]..ast/location_error.ml[20,706+81])
+                                        Texp_construct "::"
+                                        [
+                                          expression (ast/location_error.ml[20,706+7]..ast/location_error.ml[20,706+38])
+                                            Texp_apply
+                                            expression (ast/location_error.ml[20,706+7]..ast/location_error.ml[20,706+25])
+                                              Texp_ident "mk_string_constant/661"
+                                            [
+                                              <arg>
+                                                Nolabel
+                                                expression (ast/location_error.ml[20,706+26]..ast/location_error.ml[20,706+38])
+                                                  Texp_field
+                                                  expression (ast/location_error.ml[20,706+26]..ast/location_error.ml[20,706+34])
+                                                    Texp_ident "main_msg/653"
+                                                  "txt"
+                                            ]
+                                          expression (ast/location_error.ml[20,706+42]..ast/location_error.ml[20,706+80])
+                                            Texp_apply
+                                            expression (ast/location_error.ml[20,706+42]..ast/location_error.ml[20,706+50])
+                                              Texp_ident "Stdlib!.List.map"
+                                            [
+                                              <arg>
+                                                Nolabel
+                                                expression (ast/location_error.ml[20,706+51]..ast/location_error.ml[20,706+71])
+                                                  Texp_ident "extension_of_sub_msg/1150"
+                                              <arg>
+                                                Nolabel
+                                                expression (ast/location_error.ml[20,706+72]..ast/location_error.ml[20,706+80])
+                                                  Texp_ident "sub_msgs/652"
+                                            ]
+                                        ]
+                                    ]
+                                ]
+          ]
+    ]
+  structure_item (ast/location_error.ml[23,793+0]..ast/location_error.ml[23,793+65])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[23,793+4]..ast/location_error.ml[23,793+25])
+          Tpat_var "register_error_of_exn/1684"
+        expression (ast/location_error.ml[23,793+28]..ast/location_error.ml[23,793+65])
+          Texp_ident "Astlib!.Location.register_error_of_exn"
+    ]
+  structure_item (ast/location_error.ml[25,860+0]..ast/location_error.ml[27,955+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[25,860+4]..ast/location_error.ml[25,860+11])
+          Tpat_var "message/1685"
+        expression (ast/location_error.ml[25,860+12]..ast/location_error.ml[27,955+5]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/location_error.ml[25,860+12]..ast/location_error.ml[25,860+17])
+                Tpat_var "error/1687"
+              expression (ast/location_error.ml[26,880+2]..ast/location_error.ml[27,955+5])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (ast/location_error.ml[26,880+6]..ast/location_error.ml[26,880+32])
+                      Tpat_record
+                      [
+                        "Astlib.Location.txt"
+                          pattern (ast/location_error.ml[26,880+8]..ast/location_error.ml[26,880+27])
+                            Tpat_var "txt/1688"
+                      ]
+                    expression (ast/location_error.ml[26,880+35]..ast/location_error.ml[26,880+71])
+                      Texp_apply
+                      expression (ast/location_error.ml[26,880+35]..ast/location_error.ml[26,880+65])
+                        Texp_ident "Astlib!.Location.Error.main_msg"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (ast/location_error.ml[26,880+66]..ast/location_error.ml[26,880+71])
+                            Texp_ident "error/1687"
+                      ]
+                ]
+                expression (ast/location_error.ml[27,955+2]..ast/location_error.ml[27,955+5])
+                  Texp_ident "txt/1688"
+          ]
+    ]
+  structure_item (ast/location_error.ml[29,962+0]..ast/location_error.ml[29,962+52])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[29,962+4]..ast/location_error.ml[29,962+15])
+          Tpat_var "set_message/1689"
+        expression (ast/location_error.ml[29,962+18]..ast/location_error.ml[29,962+52])
+          Texp_ident "Astlib!.Location.Error.set_main_msg"
+    ]
+  structure_item (ast/location_error.ml[31,1016+0]..ast/location_error.ml[33,1118+46])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[31,1016+4]..ast/location_error.ml[31,1016+8])
+          Tpat_var "make/1690"
+        expression (ast/location_error.ml[31,1016+9]..ast/location_error.ml[33,1118+46]) ghost
+          Texp_function
+          Labelled "loc"
+          [
+            <case>
+              pattern (ast/location_error.ml[31,1016+10]..ast/location_error.ml[31,1016+13])
+                Tpat_var "loc/1692"
+              expression (ast/location_error.ml[31,1016+14]..ast/location_error.ml[33,1118+46]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (ast/location_error.ml[31,1016+14]..ast/location_error.ml[31,1016+17])
+                      Tpat_var "txt/1693"
+                    expression (ast/location_error.ml[31,1016+18]..ast/location_error.ml[33,1118+46]) ghost
+                      Texp_function
+                      Labelled "sub"
+                      [
+                        <case>
+                          pattern (ast/location_error.ml[31,1016+19]..ast/location_error.ml[31,1016+22])
+                            Tpat_var "sub/1694"
+                          expression (ast/location_error.ml[32,1041+2]..ast/location_error.ml[33,1118+46])
+                            Texp_let Nonrec
+                            [
+                              <def>
+                                pattern (ast/location_error.ml[32,1041+6]..ast/location_error.ml[32,1041+9])
+                                  Tpat_var "sub/1695"
+                                expression (ast/location_error.ml[32,1041+12]..ast/location_error.ml[32,1041+73])
+                                  Texp_apply
+                                  expression (ast/location_error.ml[32,1041+12]..ast/location_error.ml[32,1041+20])
+                                    Texp_ident "Stdlib!.List.map"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (ast/location_error.ml[32,1041+21]..ast/location_error.ml[32,1041+69])
+                                        Texp_function
+                                        Nolabel
+                                        [
+                                          <case>
+                                            pattern (ast/location_error.ml[32,1041+26]..ast/location_error.ml[32,1041+36])
+                                              Tpat_tuple
+                                              [
+                                                pattern (ast/location_error.ml[32,1041+27]..ast/location_error.ml[32,1041+30])
+                                                  Tpat_var "loc/1696"
+                                                pattern (ast/location_error.ml[32,1041+32]..ast/location_error.ml[32,1041+35])
+                                                  Tpat_var "txt/1697"
+                                              ]
+                                            expression (ast/location_error.ml[32,1041+40]..ast/location_error.ml[32,1041+68])
+                                              Texp_record
+                                                fields =
+                                                  [
+                                                    "Astlib.Location.txt"
+                                                      expression (ast/location_error.ml[32,1041+63]..ast/location_error.ml[32,1041+66]) ghost
+                                                        Texp_ident "txt/1697"
+                                                    "Astlib.Location.loc"
+                                                      expression (ast/location_error.ml[32,1041+42]..ast/location_error.ml[32,1041+61]) ghost
+                                                        Texp_ident "loc/1696"
+                                                  ]
+                                                representation =
+                                                  Record_regular
+                                                extended_expression =
+                                                  None
+                                        ]
+                                    <arg>
+                                      Nolabel
+                                      expression (ast/location_error.ml[32,1041+70]..ast/location_error.ml[32,1041+73])
+                                        Texp_ident "sub/1694"
+                                  ]
+                            ]
+                            expression (ast/location_error.ml[33,1118+2]..ast/location_error.ml[33,1118+46])
+                              Texp_apply
+                              expression (ast/location_error.ml[33,1118+2]..ast/location_error.ml[33,1118+28])
+                                Texp_ident "Astlib!.Location.Error.make"
+                              [
+                                <arg>
+                                  Labelled "sub"
+                                  expression (ast/location_error.ml[33,1118+30]..ast/location_error.ml[33,1118+33])
+                                    Texp_ident "sub/1695"
+                                <arg>
+                                  Nolabel
+                                  expression (ast/location_error.ml[33,1118+34]..ast/location_error.ml[33,1118+46])
+                                    Texp_record
+                                      fields =
+                                        [
+                                          "txt"
+                                            expression (ast/location_error.ml[33,1118+41]..ast/location_error.ml[33,1118+44]) ghost
+                                              Texp_ident "txt/1693"
+                                          "loc"
+                                            expression (ast/location_error.ml[33,1118+36]..ast/location_error.ml[33,1118+39]) ghost
+                                              Texp_ident "loc/1692"
+                                        ]
+                                      representation =
+                                        Record_regular
+                                      extended_expression =
+                                        None
+                              ]
+                      ]
+                ]
+          ]
+    ]
+  structure_item (ast/location_error.ml[35,1166+0]..ast/location_error.ml[35,1166+51])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[35,1166+4]..ast/location_error.ml[35,1166+14])
+          Tpat_var "update_loc/1699"
+        expression (ast/location_error.ml[35,1166+17]..ast/location_error.ml[35,1166+51])
+          Texp_ident "Astlib!.Location.Error.set_main_loc"
+    ]
+  structure_item (ast/location_error.ml[37,1219+0]..ast/location_error.ml[39,1319+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[37,1219+4]..ast/location_error.ml[37,1219+16])
+          Tpat_var "get_location/1700"
+        expression (ast/location_error.ml[37,1219+17]..ast/location_error.ml[39,1319+5]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/location_error.ml[37,1219+17]..ast/location_error.ml[37,1219+22])
+                Tpat_var "error/1702"
+              expression (ast/location_error.ml[38,1244+2]..ast/location_error.ml[39,1319+5])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (ast/location_error.ml[38,1244+6]..ast/location_error.ml[38,1244+32])
+                      Tpat_record
+                      [
+                        "Astlib.Location.loc"
+                          pattern (ast/location_error.ml[38,1244+8]..ast/location_error.ml[38,1244+27])
+                            Tpat_var "loc/1703"
+                      ]
+                    expression (ast/location_error.ml[38,1244+35]..ast/location_error.ml[38,1244+71])
+                      Texp_apply
+                      expression (ast/location_error.ml[38,1244+35]..ast/location_error.ml[38,1244+65])
+                        Texp_ident "Astlib!.Location.Error.main_msg"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (ast/location_error.ml[38,1244+66]..ast/location_error.ml[38,1244+71])
+                            Texp_ident "error/1702"
+                      ]
+                ]
+                expression (ast/location_error.ml[39,1319+2]..ast/location_error.ml[39,1319+5])
+                  Texp_ident "loc/1703"
+          ]
+    ]
+  structure_item (ast/location_error.ml[41,1326+0]..ast/location_error.ml[41,1326+41])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[41,1326+4]..ast/location_error.ml[41,1326+10])
+          Tpat_var "of_exn/1704"
+        expression (ast/location_error.ml[41,1326+13]..ast/location_error.ml[41,1326+41])
+          Texp_ident "Astlib!.Location.Error.of_exn"
+    ]
+  structure_item (ast/location_error.ml[42,1368+0]..ast/location_error.ml[42,1368+53])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/location_error.ml[42,1368+4]..ast/location_error.ml[42,1368+9])
+          Tpat_var "raise/1705"
+        expression (ast/location_error.ml[42,1368+10]..ast/location_error.ml[42,1368+53]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/location_error.ml[42,1368+10]..ast/location_error.ml[42,1368+15])
+                Tpat_var "error/1706"
+              expression (ast/location_error.ml[42,1368+18]..ast/location_error.ml[42,1368+53])
+                Texp_apply
+                expression (ast/location_error.ml[42,1368+18]..ast/location_error.ml[42,1368+23])
+                  Texp_ident "Stdlib!.raise"
+                [
+                  <arg>
+                    Nolabel
+                    expression (ast/location_error.ml[42,1368+24]..ast/location_error.ml[42,1368+53])
+                      Texp_construct "Astlib.Location.Error"
+                      [
+                        expression (ast/location_error.ml[42,1368+47]..ast/location_error.ml[42,1368+52])
+                          Texp_ident "error/1706"
+                      ]
+                ]
+          ]
+    ]
+]
+
+(setglobal Ppxlib_ast__Location_error!
+  (let
+    (to_extension/382 =
+       (function error/384
+         (funct-body Ppxlib_ast__Location_error.to_extension ast/location_error.ml(5)<ghost>:64-791
+           (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(6):102-791
+             (seq
+               (if
+                 (not
+                   (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(8):170-192
+                     (apply
+                       (field_imm 0 (field_imm 0 (global Astlib__Location!)))
+                       error/384)))
+                 (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(9):202-269
+                   (raise
+                     (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(9):202-269
+                       (makeblock 0 (field_imm 8 (global Stdlib!))
+                         "to_extension: expected kind Report_error"))))
+                 0)
+               (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(10):273-791
+                 (let
+                   (sub_msgs/652 =
+                      (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(10):288-302
+                        (apply
+                          (field_imm 2
+                            (field_imm 0 (global Astlib__Location!)))
+                          error/384)))
+                   (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(11):308-791
+                     (let
+                       (main_msg/653 =
+                          (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(11):323-337
+                            (apply
+                              (field_imm 1
+                                (field_imm 0 (global Astlib__Location!)))
+                              error/384)))
+                       (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(12):343-791
+                         (let
+                           (err_extension_name/654 =
+                              (function loc/656
+                                (funct-body Ppxlib_ast__Location_error.to_extension.err_extension_name ast/location_error.ml(12)<ghost>:366-409
+                                  (before Ppxlib_ast__Location_error.to_extension.err_extension_name ast/location_error.ml(12):372-409
+                                    (makeblock 0 "ocaml.error" loc/656)))))
+                           (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(13):415-791
+                             (let
+                               (mk_string_constant/661 =
+                                  (function x/663
+                                    (funct-body Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13)<ghost>:438-482
+                                      (before Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):442-482
+                                        (after Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):442-482
+                                          (apply
+                                            (field_imm 1
+                                              (field_imm 13
+                                                (global Ppxlib_ast__Ast_helper_lite!)))
+                                            0 0
+                                            (after Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):451-482
+                                              (apply
+                                                (field_imm 3
+                                                  (field_imm 6
+                                                    (global Ppxlib_ast__Ast_helper_lite!)))
+                                                0 0
+                                                (after Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):465-481
+                                                  (apply
+                                                    (field_imm 1
+                                                      (field_imm 2
+                                                        (global Ppxlib_ast__Ast_helper_lite!)))
+                                                    0 0 x/663))))))))))
+                               (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(14):488-791
+                                 (let
+                                   (extension_of_sub_msg/1150 =
+                                      (function sub_msg/1152
+                                        (funct-body Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(14)<ghost>:513-644
+                                          (before Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(15):551-644
+                                            (after Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(15):551-644
+                                              (apply
+                                                (field_imm 14
+                                                  (field_imm 13
+                                                    (global Ppxlib_ast__Ast_helper_lite!)))
+                                                0 0
+                                                (makeblock 0
+                                                  (after Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(16):572-602
+                                                    (apply
+                                                      err_extension_name/654
+                                                      (field_imm 1
+                                                        sub_msg/1152)))
+                                                  (makeblock 0
+                                                    (makeblock 0
+                                                      (after Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(16):611-641
+                                                        (apply
+                                                          mk_string_constant/661
+                                                          (field_imm 0
+                                                            sub_msg/1152)))
+                                                      0)))))))))
+                                   (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(18):652-791
+                                     (makeblock 0
+                                       (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(18):654-685
+                                         (apply err_extension_name/654
+                                           (field_imm 1 main_msg/653)))
+                                       (makeblock 0
+                                         (makeblock 0
+                                           (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(20):713-744
+                                             (apply mk_string_constant/661
+                                               (field_imm 0 main_msg/653)))
+                                           (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(20):748-786
+                                             (apply
+                                               (field_imm 18
+                                                 (global Stdlib__list!))
+                                               extension_of_sub_msg/1150
+                                               sub_msgs/652))))))))))))))))))))
+     register_error_of_exn/1684 = (field_imm 3 (global Astlib__Location!))
+     message/1685 =
+       (function error/1687
+         (funct-body Ppxlib_ast__Location_error.message ast/location_error.ml(25)<ghost>:872-960
+           (before Ppxlib_ast__Location_error.message ast/location_error.ml(26):882-960
+             (let
+               (*match*/11658 =
+                  (after Ppxlib_ast__Location_error.message ast/location_error.ml(26):915-951
+                    (apply
+                      (field_imm 1 (field_imm 0 (global Astlib__Location!)))
+                      error/1687))
+                *match*/11659 =a (field_imm 1 *match*/11658)
+                txt/1688 =a (field_imm 0 *match*/11658))
+               (before Ppxlib_ast__Location_error.message ast/location_error.ml(27):957-960
+                 txt/1688)))))
+     set_message/1689 =
+       (field_imm 3 (field_imm 0 (global Astlib__Location!)))
+     make/1690 =
+       (function loc/1692 txt/1693 sub/1694
+         (funct-body Ppxlib_ast__Location_error.make ast/location_error.ml(31)<ghost>:1025-1164
+           (before Ppxlib_ast__Location_error.make ast/location_error.ml(32):1043-1164
+             (let
+               (sub/1695 =
+                  (after Ppxlib_ast__Location_error.make ast/location_error.ml(32):1053-1114
+                    (apply (field_imm 18 (global Stdlib__list!))
+                      (function param/1698
+                        (funct-body Ppxlib_ast__Location_error.make.(fun) ast/location_error.ml(32):1062-1110
+                          (let
+                            (txt/1697 =a (field_imm 1 param/1698)
+                             loc/1696 =a (field_imm 0 param/1698))
+                            (before Ppxlib_ast__Location_error.make.(fun) ast/location_error.ml(32):1081-1109
+                              (makeblock 0 txt/1697 loc/1696)))))
+                      sub/1694)))
+               (before Ppxlib_ast__Location_error.make ast/location_error.ml(33):1120-1164
+                 (after Ppxlib_ast__Location_error.make ast/location_error.ml(33):1120-1164
+                   (apply
+                     (field_imm 5 (field_imm 0 (global Astlib__Location!)))
+                     sub/1695 (makeblock 0 txt/1693 loc/1692))))))))
+     update_loc/1699 = (field_imm 4 (field_imm 0 (global Astlib__Location!)))
+     get_location/1700 =
+       (function error/1702
+         (funct-body Ppxlib_ast__Location_error.get_location ast/location_error.ml(37)<ghost>:1236-1324
+           (before Ppxlib_ast__Location_error.get_location ast/location_error.ml(38):1246-1324
+             (let
+               (*match*/11665 =
+                  (after Ppxlib_ast__Location_error.get_location ast/location_error.ml(38):1279-1315
+                    (apply
+                      (field_imm 1 (field_imm 0 (global Astlib__Location!)))
+                      error/1702))
+                loc/1703 =a (field_imm 1 *match*/11665)
+                *match*/11666 =a (field_imm 0 *match*/11665))
+               (before Ppxlib_ast__Location_error.get_location ast/location_error.ml(39):1321-1324
+                 loc/1703)))))
+     of_exn/1704 = (field_imm 6 (field_imm 0 (global Astlib__Location!)))
+     raise/1705 =
+       (function error/1706
+         (funct-body Ppxlib_ast__Location_error.raise ast/location_error.ml(42)<ghost>:1378-1421
+           (before Ppxlib_ast__Location_error.raise ast/location_error.ml(42):1386-1421
+             (raise
+               (after Ppxlib_ast__Location_error.raise ast/location_error.ml(42):1386-1421
+                 (makeblock 0 (field_imm 4 (global Astlib__Location!))
+                   error/1706)))))))
+    (pseudo <unknown location>
+      (makeblock 0 of_exn/1704 register_error_of_exn/1684 message/1685
+        set_message/1689 make/1690 to_extension/382 raise/1705
+        update_loc/1699 get_location/1700))))
+(setglobal Ppxlib_ast__Location_error!
+  (let
+    (to_extension/382 =
+       (function error/384
+         (funct-body Ppxlib_ast__Location_error.to_extension ast/location_error.ml(5)<ghost>:64-791
+           (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(6):102-791
+             (seq
+               (if
+                 (not
+                   (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(8):170-192
+                     (apply
+                       (field_imm 0 (field_imm 0 (global Astlib__Location!)))
+                       error/384)))
+                 (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(9):202-269
+                   (raise
+                     (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(9):202-269
+                       (makeblock 0 (field_imm 8 (global Stdlib!))
+                         "to_extension: expected kind Report_error"))))
+                 0)
+               (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(10):273-791
+                 (let
+                   (sub_msgs/652 =
+                      (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(10):288-302
+                        (apply
+                          (field_imm 2
+                            (field_imm 0 (global Astlib__Location!)))
+                          error/384)))
+                   (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(11):308-791
+                     (let
+                       (main_msg/653 =
+                          (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(11):323-337
+                            (apply
+                              (field_imm 1
+                                (field_imm 0 (global Astlib__Location!)))
+                              error/384)))
+                       (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(12):343-791
+                         (let
+                           (err_extension_name/654 =
+                              (function loc/656
+                                (funct-body Ppxlib_ast__Location_error.to_extension.err_extension_name ast/location_error.ml(12)<ghost>:366-409
+                                  (before Ppxlib_ast__Location_error.to_extension.err_extension_name ast/location_error.ml(12):372-409
+                                    (makeblock 0 "ocaml.error" loc/656)))))
+                           (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(13):415-791
+                             (let
+                               (mk_string_constant/661 =
+                                  (function x/663
+                                    (funct-body Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13)<ghost>:438-482
+                                      (before Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):442-482
+                                        (after Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):442-482
+                                          (apply
+                                            (field_imm 1
+                                              (field_imm 13
+                                                (global Ppxlib_ast__Ast_helper_lite!)))
+                                            0 0
+                                            (after Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):451-482
+                                              (apply
+                                                (field_imm 3
+                                                  (field_imm 6
+                                                    (global Ppxlib_ast__Ast_helper_lite!)))
+                                                0 0
+                                                (after Ppxlib_ast__Location_error.to_extension.mk_string_constant ast/location_error.ml(13):465-481
+                                                  (apply
+                                                    (field_imm 1
+                                                      (field_imm 2
+                                                        (global Ppxlib_ast__Ast_helper_lite!)))
+                                                    0 0 x/663))))))))))
+                               (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(14):488-791
+                                 (let
+                                   (extension_of_sub_msg/1150 =
+                                      (function sub_msg/1152
+                                        (funct-body Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(14)<ghost>:513-644
+                                          (before Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(15):551-644
+                                            (after Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(15):551-644
+                                              (apply
+                                                (field_imm 14
+                                                  (field_imm 13
+                                                    (global Ppxlib_ast__Ast_helper_lite!)))
+                                                0 0
+                                                (makeblock 0
+                                                  (after Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(16):572-602
+                                                    (apply
+                                                      err_extension_name/654
+                                                      (field_imm 1
+                                                        sub_msg/1152)))
+                                                  (makeblock 0
+                                                    (makeblock 0
+                                                      (after Ppxlib_ast__Location_error.to_extension.extension_of_sub_msg ast/location_error.ml(16):611-641
+                                                        (apply
+                                                          mk_string_constant/661
+                                                          (field_imm 0
+                                                            sub_msg/1152)))
+                                                      0)))))))))
+                                   (before Ppxlib_ast__Location_error.to_extension ast/location_error.ml(18):652-791
+                                     (makeblock 0
+                                       (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(18):654-685
+                                         (apply err_extension_name/654
+                                           (field_imm 1 main_msg/653)))
+                                       (makeblock 0
+                                         (makeblock 0
+                                           (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(20):713-744
+                                             (apply mk_string_constant/661
+                                               (field_imm 0 main_msg/653)))
+                                           (after Ppxlib_ast__Location_error.to_extension ast/location_error.ml(20):748-786
+                                             (apply
+                                               (field_imm 18
+                                                 (global Stdlib__list!))
+                                               extension_of_sub_msg/1150
+                                               sub_msgs/652))))))))))))))))))))
+     register_error_of_exn/1684 = (field_imm 3 (global Astlib__Location!))
+     message/1685 =
+       (function error/1687
+         (funct-body Ppxlib_ast__Location_error.message ast/location_error.ml(25)<ghost>:872-960
+           (before Ppxlib_ast__Location_error.message ast/location_error.ml(26):882-960
+             (let
+               (*match*/11658 =
+                  (after Ppxlib_ast__Location_error.message ast/location_error.ml(26):915-951
+                    (apply
+                      (field_imm 1 (field_imm 0 (global Astlib__Location!)))
+                      error/1687))
+                txt/1688 =a (field_imm 0 *match*/11658))
+               (before Ppxlib_ast__Location_error.message ast/location_error.ml(27):957-960
+                 txt/1688)))))
+     set_message/1689 =
+       (field_imm 3 (field_imm 0 (global Astlib__Location!)))
+     make/1690 =
+       (function loc/1692 txt/1693 sub/1694
+         (funct-body Ppxlib_ast__Location_error.make ast/location_error.ml(31)<ghost>:1025-1164
+           (before Ppxlib_ast__Location_error.make ast/location_error.ml(32):1043-1164
+             (let
+               (sub/1695 =
+                  (after Ppxlib_ast__Location_error.make ast/location_error.ml(32):1053-1114
+                    (apply (field_imm 18 (global Stdlib__list!))
+                      (function param/1698
+                        (funct-body Ppxlib_ast__Location_error.make.(fun) ast/location_error.ml(32):1062-1110
+                          (let
+                            (txt/1697 =a (field_imm 1 param/1698)
+                             loc/1696 =a (field_imm 0 param/1698))
+                            (before Ppxlib_ast__Location_error.make.(fun) ast/location_error.ml(32):1081-1109
+                              (makeblock 0 txt/1697 loc/1696)))))
+                      sub/1694)))
+               (before Ppxlib_ast__Location_error.make ast/location_error.ml(33):1120-1164
+                 (after Ppxlib_ast__Location_error.make ast/location_error.ml(33):1120-1164
+                   (apply
+                     (field_imm 5 (field_imm 0 (global Astlib__Location!)))
+                     sub/1695 (makeblock 0 txt/1693 loc/1692))))))))
+     update_loc/1699 = (field_imm 4 (field_imm 0 (global Astlib__Location!)))
+     get_location/1700 =
+       (function error/1702
+         (funct-body Ppxlib_ast__Location_error.get_location ast/location_error.ml(37)<ghost>:1236-1324
+           (before Ppxlib_ast__Location_error.get_location ast/location_error.ml(38):1246-1324
+             (let
+               (*match*/11665 =
+                  (after Ppxlib_ast__Location_error.get_location ast/location_error.ml(38):1279-1315
+                    (apply
+                      (field_imm 1 (field_imm 0 (global Astlib__Location!)))
+                      error/1702))
+                loc/1703 =a (field_imm 1 *match*/11665))
+               (before Ppxlib_ast__Location_error.get_location ast/location_error.ml(39):1321-1324
+                 loc/1703)))))
+     of_exn/1704 = (field_imm 6 (field_imm 0 (global Astlib__Location!)))
+     raise/1705 =
+       (function error/1706
+         (funct-body Ppxlib_ast__Location_error.raise ast/location_error.ml(42)<ghost>:1378-1421
+           (before Ppxlib_ast__Location_error.raise ast/location_error.ml(42):1386-1421
+             (raise
+               (after Ppxlib_ast__Location_error.raise ast/location_error.ml(42):1386-1421
+                 (makeblock 0 (field_imm 4 (global Astlib__Location!))
+                   error/1706)))))))
+    (pseudo <unknown location>
+      (makeblock 0 of_exn/1704 register_error_of_exn/1684 message/1685
+        set_message/1689 make/1690 to_extension/382 raise/1705
+        update_loc/1699 get_location/1700))))

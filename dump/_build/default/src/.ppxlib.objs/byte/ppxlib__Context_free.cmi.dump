@@ -1,0 +1,1720 @@
+[
+  signature_item (src/context_free.mli[1,0+0]..[2,77+37])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/context_free.mli[1,0+0]..[2,77+37])
+        Pstr_eval
+        expression (src/context_free.mli[1,0+0]..[2,77+37])
+          Pexp_constant PConst_string(" Context free rewriting, to define local rewriting rules that will all be\n    applied at once by the driver. ",(src/context_free.mli[1,0+0]..[2,77+37]),None)
+    ]
+  signature_item (src/context_free.mli[4,116+0]..[4,116+12])
+    Psig_open Override "Import" (src/context_free.mli[4,116+6]..[4,116+12])
+  signature_item (src/context_free.mli[15,515+0]..[116,4449+3])
+    Psig_module "Rule" (src/context_free.mli[15,515+7]..[15,515+11])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/context_free.mli[6,130+0]..[14,491+23])
+            Pstr_eval
+            expression (src/context_free.mli[6,130+0]..[14,491+23])
+              Pexp_constant PConst_string(" Local rewriting rules.\n\n    This module lets you define local rewriting rules, such as extension point\n    expanders. It is not completely generic and you cannot define any kind of\n    rewriting, it currently focuses on what is commonly used. New scheme can be\n    added on demand.\n\n    We have some ideas to make this fully generic, but this hasn't been a\n    priority so far. ",(src/context_free.mli[6,130+0]..[14,491+23]),None)
+        ]
+    module_type (src/context_free.mli[15,515+14]..[116,4449+3])
+      Pmty_signature
+      [
+        signature_item (src/context_free.mli[16,533+2]..[16,533+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/context_free.mli[16,533+7]..[16,533+8]) (src/context_free.mli[16,533+2]..[16,533+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[18,543+2]..[18,543+34])
+          Psig_value
+          value_description "extension" (src/context_free.mli[18,543+6]..[18,543+15]) (src/context_free.mli[18,543+2]..[18,543+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[19,578+2]..[19,578+35])
+                  Pstr_eval
+                  expression (src/context_free.mli[19,578+2]..[19,578+35])
+                    Pexp_constant PConst_string(" Rewrite an extension point ",(src/context_free.mli[19,578+2]..[19,578+35]),None)
+              ]
+            core_type (src/context_free.mli[18,543+18]..[18,543+34])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/context_free.mli[18,543+18]..[18,543+29])
+                Ptyp_constr "Extension.t" (src/context_free.mli[18,543+18]..[18,543+29])
+                []
+              core_type (src/context_free.mli[18,543+33]..[18,543+34])
+                Ptyp_constr "t" (src/context_free.mli[18,543+33]..[18,543+34])
+                []
+            []
+        signature_item (src/context_free.mli[21,615+2]..[21,615+73])
+          Psig_value
+          value_description "special_function" (src/context_free.mli[21,615+6]..[21,615+22]) (src/context_free.mli[21,615+2]..[21,615+73])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[22,689+2]..[33,1346+35])
+                  Pstr_eval
+                  expression (src/context_free.mli[22,689+2]..[33,1346+35])
+                    Pexp_constant PConst_string(" [special_function id expand] is a rule to rewrite a function call at\n      parsing time. [id] is the identifier to match on and [expand] is used to\n      expand the full function application (it gets the Pexp_apply node). If the\n      function is found in the tree without being applied, [expand] gets only\n      the identifier (Pexp_ident node) so you should handle both cases.\n\n      If [id] is an operator identifier and contains dots, it should be\n      parenthesized (e.g. [\"(+.+)\"]).\n\n      [expand] must decide whether the expression it receive can be rewritten or\n      not. Especially ppxlib makes the assumption that [expand] is idempotent.\n      It will loop if it is not. ",(src/context_free.mli[22,689+2]..[33,1346+35]),None)
+              ]
+            core_type (src/context_free.mli[21,615+25]..[21,615+73])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/context_free.mli[21,615+25]..[21,615+31])
+                Ptyp_constr "string" (src/context_free.mli[21,615+25]..[21,615+31])
+                []
+              core_type (src/context_free.mli[21,615+35]..[21,615+73])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/context_free.mli[21,615+36]..[21,615+67])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/context_free.mli[21,615+36]..[21,615+46])
+                    Ptyp_constr "expression" (src/context_free.mli[21,615+36]..[21,615+46])
+                    []
+                  core_type (src/context_free.mli[21,615+50]..[21,615+67])
+                    Ptyp_constr "option" (src/context_free.mli[21,615+61]..[21,615+67])
+                    [
+                      core_type (src/context_free.mli[21,615+50]..[21,615+60])
+                        Ptyp_constr "expression" (src/context_free.mli[21,615+50]..[21,615+60])
+                        []
+                    ]
+                core_type (src/context_free.mli[21,615+72]..[21,615+73])
+                  Ptyp_constr "t" (src/context_free.mli[21,615+72]..[21,615+73])
+                  []
+            []
+        signature_item (src/context_free.mli[36,1426+2]..[38,1484+5])
+          Psig_module "Constant_kind" (src/context_free.mli[36,1426+9]..[36,1426+22])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[35,1383+2]..[35,1383+42])
+                  Pstr_eval
+                  expression (src/context_free.mli[35,1383+2]..[35,1383+42])
+                    Pexp_constant PConst_string(" Used for the [constant] function. ",(src/context_free.mli[35,1383+2]..[35,1383+42]),None)
+              ]
+          module_type (src/context_free.mli[36,1426+25]..[38,1484+5])
+            Pmty_signature
+            [
+              signature_item (src/context_free.mli[37,1455+4]..[37,1455+28])
+                Psig_type Rec
+                [
+                  type_declaration "t" (src/context_free.mli[37,1455+9]..[37,1455+10]) (src/context_free.mli[37,1455+4]..[37,1455+28])
+                    ptype_params =
+                      []
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ptype_variant
+                        [
+                          (src/context_free.mli[37,1455+13]..[37,1455+18])
+                            "Float" (src/context_free.mli[37,1455+13]..[37,1455+18])
+                            []
+                            None
+                          (src/context_free.mli[37,1455+19]..[37,1455+28])
+                            "Integer" (src/context_free.mli[37,1455+21]..[37,1455+28])
+                            []
+                            None
+                        ]
+                    ptype_private = Public
+                    ptype_manifest =
+                      None
+                ]
+            ]
+        signature_item (src/context_free.mli[40,1491+2]..[44,1597+5])
+          Psig_value
+          value_description "constant" (src/context_free.mli[40,1491+6]..[40,1491+14]) (src/context_free.mli[40,1491+2]..[44,1597+5])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[45,1603+2]..[46,1681+59])
+                  Pstr_eval
+                  expression (src/context_free.mli[45,1603+2]..[46,1681+59])
+                    Pexp_constant PConst_string(" [constant kind suffix expander] Registers an extension for transforming\n      constants literals, based on the suffix character. ",(src/context_free.mli[45,1603+2]..[46,1681+59]),None)
+              ]
+            core_type (src/context_free.mli[41,1508+4]..[44,1597+5])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/context_free.mli[41,1508+4]..[41,1508+19])
+                Ptyp_constr "Constant_kind.t" (src/context_free.mli[41,1508+4]..[41,1508+19])
+                []
+              core_type (src/context_free.mli[42,1531+4]..[44,1597+5])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/context_free.mli[42,1531+4]..[42,1531+8])
+                  Ptyp_constr "char" (src/context_free.mli[42,1531+4]..[42,1531+8])
+                  []
+                core_type (src/context_free.mli[43,1543+4]..[44,1597+5])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/context_free.mli[43,1543+5]..[43,1543+49])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/context_free.mli[43,1543+5]..[43,1543+15])
+                      Ptyp_constr "Location.t" (src/context_free.mli[43,1543+5]..[43,1543+15])
+                      []
+                    core_type (src/context_free.mli[43,1543+19]..[43,1543+49])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/context_free.mli[43,1543+19]..[43,1543+25])
+                        Ptyp_constr "string" (src/context_free.mli[43,1543+19]..[43,1543+25])
+                        []
+                      core_type (src/context_free.mli[43,1543+29]..[43,1543+49])
+                        Ptyp_constr "Parsetree.expression" (src/context_free.mli[43,1543+29]..[43,1543+49])
+                        []
+                  core_type (src/context_free.mli[44,1597+4]..[44,1597+5])
+                    Ptyp_constr "t" (src/context_free.mli[44,1597+4]..[44,1597+5])
+                    []
+            []
+        signature_item (src/context_free.mli[48,1742+2]..[50,1899+31])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/context_free.mli[48,1742+2]..[50,1899+31])
+              Pstr_eval
+              expression (src/context_free.mli[48,1742+2]..[50,1899+31])
+                Pexp_constant PConst_string(" The rest of this API is for rewriting rules that apply when a certain\n      attribute is present. The API is not complete and is currently only enough\n      to implement deriving. ",(src/context_free.mli[48,1742+2]..[50,1899+31]),None)
+          ]
+        signature_item (src/context_free.mli[52,1932+2]..[59,2119+5])
+          Psig_type Rec
+          [
+            type_declaration "attr_group_inline" (src/context_free.mli[52,1932+20]..[52,1932+37]) (src/context_free.mli[52,1932+2]..[59,2119+5])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/context_free.mli[60,2125+2]..[69,2646+21])
+                    Pstr_eval
+                    expression (src/context_free.mli[60,2125+2]..[69,2646+21])
+                      Pexp_constant PConst_string(" Match the attribute on a group of items, such as a group of recursive type\n      definitions (Pstr_type, Psig_type). The expander will be triggered if any\n      of the item has the attribute. The expander is called as follow:\n\n      [expand ~loc ~path rec_flag items values]\n\n      where [values] is the list of values associated to the attribute for each\n      item in [items]. [expand] must return a list of element to add after the\n      group. For instance a list of structure item to add after a group of type\n      definitions. ",(src/context_free.mli[60,2125+2]..[69,2646+21]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/context_free.mli[52,1932+8]..[52,1932+10])
+                    Ptyp_var a
+                  core_type (src/context_free.mli[52,1932+12]..[52,1932+14])
+                    Ptyp_var b
+                  core_type (src/context_free.mli[52,1932+16]..[52,1932+18])
+                    Ptyp_var c
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/context_free.mli[53,1972+4]..[59,2119+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/context_free.mli[53,1972+4]..[53,1972+24])
+                      Ptyp_constr "Attribute.t" (src/context_free.mli[53,1972+13]..[53,1972+24])
+                      [
+                        core_type (src/context_free.mli[53,1972+5]..[53,1972+7])
+                          Ptyp_var b
+                        core_type (src/context_free.mli[53,1972+9]..[53,1972+11])
+                          Ptyp_var c
+                      ]
+                    core_type (src/context_free.mli[54,2000+4]..[59,2119+5])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/context_free.mli[54,2000+5]..[58,2103+11])
+                        Ptyp_arrow
+                        Labelled "ctxt"
+                        core_type (src/context_free.mli[54,2000+10]..[54,2000+37])
+                          Ptyp_constr "Expansion_context.Deriver.t" (src/context_free.mli[54,2000+10]..[54,2000+37])
+                          []
+                        core_type (src/context_free.mli[55,2041+4]..[58,2103+11])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[55,2041+4]..[55,2041+21])
+                            Ptyp_constr "Asttypes.rec_flag" (src/context_free.mli[55,2041+4]..[55,2041+21])
+                            []
+                          core_type (src/context_free.mli[56,2066+4]..[58,2103+11])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[56,2066+4]..[56,2066+11])
+                              Ptyp_constr "list" (src/context_free.mli[56,2066+7]..[56,2066+11])
+                              [
+                                core_type (src/context_free.mli[56,2066+4]..[56,2066+6])
+                                  Ptyp_var b
+                              ]
+                            core_type (src/context_free.mli[57,2081+4]..[58,2103+11])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/context_free.mli[57,2081+4]..[57,2081+18])
+                                Ptyp_constr "list" (src/context_free.mli[57,2081+14]..[57,2081+18])
+                                [
+                                  core_type (src/context_free.mli[57,2081+4]..[57,2081+13])
+                                    Ptyp_constr "option" (src/context_free.mli[57,2081+7]..[57,2081+13])
+                                    [
+                                      core_type (src/context_free.mli[57,2081+4]..[57,2081+6])
+                                        Ptyp_var c
+                                    ]
+                                ]
+                              core_type (src/context_free.mli[58,2103+4]..[58,2103+11])
+                                Ptyp_constr "list" (src/context_free.mli[58,2103+7]..[58,2103+11])
+                                [
+                                  core_type (src/context_free.mli[58,2103+4]..[58,2103+6])
+                                    Ptyp_var a
+                                ]
+                      core_type (src/context_free.mli[59,2119+4]..[59,2119+5])
+                        Ptyp_constr "t" (src/context_free.mli[59,2119+4]..[59,2119+5])
+                        []
+          ]
+        signature_item (src/context_free.mli[71,2669+2]..[72,2696+59])
+          Psig_value
+          value_description "attr_str_type_decl" (src/context_free.mli[71,2669+6]..[71,2669+24]) (src/context_free.mli[71,2669+2]..[72,2696+59])
+            core_type (src/context_free.mli[72,2696+4]..[72,2696+59])
+              Ptyp_constr "attr_group_inline" (src/context_free.mli[72,2696+42]..[72,2696+59])
+              [
+                core_type (src/context_free.mli[72,2696+5]..[72,2696+19])
+                  Ptyp_constr "structure_item" (src/context_free.mli[72,2696+5]..[72,2696+19])
+                  []
+                core_type (src/context_free.mli[72,2696+21]..[72,2696+37])
+                  Ptyp_constr "type_declaration" (src/context_free.mli[72,2696+21]..[72,2696+37])
+                  []
+                core_type (src/context_free.mli[72,2696+39]..[72,2696+40])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[74,2757+2]..[75,2784+59])
+          Psig_value
+          value_description "attr_sig_type_decl" (src/context_free.mli[74,2757+6]..[74,2757+24]) (src/context_free.mli[74,2757+2]..[75,2784+59])
+            core_type (src/context_free.mli[75,2784+4]..[75,2784+59])
+              Ptyp_constr "attr_group_inline" (src/context_free.mli[75,2784+42]..[75,2784+59])
+              [
+                core_type (src/context_free.mli[75,2784+5]..[75,2784+19])
+                  Ptyp_constr "signature_item" (src/context_free.mli[75,2784+5]..[75,2784+19])
+                  []
+                core_type (src/context_free.mli[75,2784+21]..[75,2784+37])
+                  Ptyp_constr "type_declaration" (src/context_free.mli[75,2784+21]..[75,2784+37])
+                  []
+                core_type (src/context_free.mli[75,2784+39]..[75,2784+40])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[77,2845+2]..[78,2879+59])
+          Psig_value
+          value_description "attr_str_type_decl_expect" (src/context_free.mli[77,2845+6]..[77,2845+31]) (src/context_free.mli[77,2845+2]..[78,2879+59])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[79,2939+2]..[80,3018+39])
+                  Pstr_eval
+                  expression (src/context_free.mli[79,2939+2]..[80,3018+39])
+                    Pexp_constant PConst_string(" The _expect variants are for producing code that is compared to what the\n      user wrote in the source code. ",(src/context_free.mli[79,2939+2]..[80,3018+39]),None)
+              ]
+            core_type (src/context_free.mli[78,2879+4]..[78,2879+59])
+              Ptyp_constr "attr_group_inline" (src/context_free.mli[78,2879+42]..[78,2879+59])
+              [
+                core_type (src/context_free.mli[78,2879+5]..[78,2879+19])
+                  Ptyp_constr "structure_item" (src/context_free.mli[78,2879+5]..[78,2879+19])
+                  []
+                core_type (src/context_free.mli[78,2879+21]..[78,2879+37])
+                  Ptyp_constr "type_declaration" (src/context_free.mli[78,2879+21]..[78,2879+37])
+                  []
+                core_type (src/context_free.mli[78,2879+39]..[78,2879+40])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[82,3059+2]..[83,3093+59])
+          Psig_value
+          value_description "attr_sig_type_decl_expect" (src/context_free.mli[82,3059+6]..[82,3059+31]) (src/context_free.mli[82,3059+2]..[83,3093+59])
+            core_type (src/context_free.mli[83,3093+4]..[83,3093+59])
+              Ptyp_constr "attr_group_inline" (src/context_free.mli[83,3093+42]..[83,3093+59])
+              [
+                core_type (src/context_free.mli[83,3093+5]..[83,3093+19])
+                  Ptyp_constr "signature_item" (src/context_free.mli[83,3093+5]..[83,3093+19])
+                  []
+                core_type (src/context_free.mli[83,3093+21]..[83,3093+37])
+                  Ptyp_constr "type_declaration" (src/context_free.mli[83,3093+21]..[83,3093+37])
+                  []
+                core_type (src/context_free.mli[83,3093+39]..[83,3093+40])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[85,3154+2]..[88,3281+5])
+          Psig_type Rec
+          [
+            type_declaration "attr_inline" (src/context_free.mli[85,3154+20]..[85,3154+31]) (src/context_free.mli[85,3154+2]..[88,3281+5])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/context_free.mli[89,3287+2]..[90,3368+47])
+                    Pstr_eval
+                    expression (src/context_free.mli[89,3287+2]..[90,3368+47])
+                      Pexp_constant PConst_string(" Same as [attr_group_inline] but for elements that are not part of a group,\n      such as exceptions and type extensions ",(src/context_free.mli[89,3287+2]..[90,3368+47]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/context_free.mli[85,3154+8]..[85,3154+10])
+                    Ptyp_var a
+                  core_type (src/context_free.mli[85,3154+12]..[85,3154+14])
+                    Ptyp_var b
+                  core_type (src/context_free.mli[85,3154+16]..[85,3154+18])
+                    Ptyp_var c
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/context_free.mli[86,3188+4]..[88,3281+5])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/context_free.mli[86,3188+4]..[86,3188+24])
+                      Ptyp_constr "Attribute.t" (src/context_free.mli[86,3188+13]..[86,3188+24])
+                      [
+                        core_type (src/context_free.mli[86,3188+5]..[86,3188+7])
+                          Ptyp_var b
+                        core_type (src/context_free.mli[86,3188+9]..[86,3188+11])
+                          Ptyp_var c
+                      ]
+                    core_type (src/context_free.mli[87,3216+4]..[88,3281+5])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/context_free.mli[87,3216+5]..[87,3216+60])
+                        Ptyp_arrow
+                        Labelled "ctxt"
+                        core_type (src/context_free.mli[87,3216+10]..[87,3216+37])
+                          Ptyp_constr "Expansion_context.Deriver.t" (src/context_free.mli[87,3216+10]..[87,3216+37])
+                          []
+                        core_type (src/context_free.mli[87,3216+41]..[87,3216+60])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[87,3216+41]..[87,3216+43])
+                            Ptyp_var b
+                          core_type (src/context_free.mli[87,3216+47]..[87,3216+60])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[87,3216+47]..[87,3216+49])
+                              Ptyp_var c
+                            core_type (src/context_free.mli[87,3216+53]..[87,3216+60])
+                              Ptyp_constr "list" (src/context_free.mli[87,3216+56]..[87,3216+60])
+                              [
+                                core_type (src/context_free.mli[87,3216+53]..[87,3216+55])
+                                  Ptyp_var a
+                              ]
+                      core_type (src/context_free.mli[88,3281+4]..[88,3281+5])
+                        Ptyp_constr "t" (src/context_free.mli[88,3281+4]..[88,3281+5])
+                        []
+          ]
+        signature_item (src/context_free.mli[92,3417+2]..[93,3451+60])
+          Psig_value
+          value_description "attr_str_module_type_decl" (src/context_free.mli[92,3417+6]..[92,3417+31]) (src/context_free.mli[92,3417+2]..[93,3451+60])
+            core_type (src/context_free.mli[93,3451+4]..[93,3451+60])
+              Ptyp_constr "attr_inline" (src/context_free.mli[93,3451+49]..[93,3451+60])
+              [
+                core_type (src/context_free.mli[93,3451+5]..[93,3451+19])
+                  Ptyp_constr "structure_item" (src/context_free.mli[93,3451+5]..[93,3451+19])
+                  []
+                core_type (src/context_free.mli[93,3451+21]..[93,3451+44])
+                  Ptyp_constr "module_type_declaration" (src/context_free.mli[93,3451+21]..[93,3451+44])
+                  []
+                core_type (src/context_free.mli[93,3451+46]..[93,3451+47])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[95,3513+2]..[96,3547+60])
+          Psig_value
+          value_description "attr_sig_module_type_decl" (src/context_free.mli[95,3513+6]..[95,3513+31]) (src/context_free.mli[95,3513+2]..[96,3547+60])
+            core_type (src/context_free.mli[96,3547+4]..[96,3547+60])
+              Ptyp_constr "attr_inline" (src/context_free.mli[96,3547+49]..[96,3547+60])
+              [
+                core_type (src/context_free.mli[96,3547+5]..[96,3547+19])
+                  Ptyp_constr "signature_item" (src/context_free.mli[96,3547+5]..[96,3547+19])
+                  []
+                core_type (src/context_free.mli[96,3547+21]..[96,3547+44])
+                  Ptyp_constr "module_type_declaration" (src/context_free.mli[96,3547+21]..[96,3547+44])
+                  []
+                core_type (src/context_free.mli[96,3547+46]..[96,3547+47])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[98,3609+2]..[99,3650+60])
+          Psig_value
+          value_description "attr_str_module_type_decl_expect" (src/context_free.mli[98,3609+6]..[98,3609+38]) (src/context_free.mli[98,3609+2]..[99,3650+60])
+            core_type (src/context_free.mli[99,3650+4]..[99,3650+60])
+              Ptyp_constr "attr_inline" (src/context_free.mli[99,3650+49]..[99,3650+60])
+              [
+                core_type (src/context_free.mli[99,3650+5]..[99,3650+19])
+                  Ptyp_constr "structure_item" (src/context_free.mli[99,3650+5]..[99,3650+19])
+                  []
+                core_type (src/context_free.mli[99,3650+21]..[99,3650+44])
+                  Ptyp_constr "module_type_declaration" (src/context_free.mli[99,3650+21]..[99,3650+44])
+                  []
+                core_type (src/context_free.mli[99,3650+46]..[99,3650+47])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[101,3712+2]..[102,3753+60])
+          Psig_value
+          value_description "attr_sig_module_type_decl_expect" (src/context_free.mli[101,3712+6]..[101,3712+38]) (src/context_free.mli[101,3712+2]..[102,3753+60])
+            core_type (src/context_free.mli[102,3753+4]..[102,3753+60])
+              Ptyp_constr "attr_inline" (src/context_free.mli[102,3753+49]..[102,3753+60])
+              [
+                core_type (src/context_free.mli[102,3753+5]..[102,3753+19])
+                  Ptyp_constr "signature_item" (src/context_free.mli[102,3753+5]..[102,3753+19])
+                  []
+                core_type (src/context_free.mli[102,3753+21]..[102,3753+44])
+                  Ptyp_constr "module_type_declaration" (src/context_free.mli[102,3753+21]..[102,3753+44])
+                  []
+                core_type (src/context_free.mli[102,3753+46]..[102,3753+47])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[104,3815+2]..[104,3815+73])
+          Psig_value
+          value_description "attr_str_type_ext" (src/context_free.mli[104,3815+6]..[104,3815+23]) (src/context_free.mli[104,3815+2]..[104,3815+73])
+            core_type (src/context_free.mli[104,3815+26]..[104,3815+73])
+              Ptyp_constr "attr_inline" (src/context_free.mli[104,3815+62]..[104,3815+73])
+              [
+                core_type (src/context_free.mli[104,3815+27]..[104,3815+41])
+                  Ptyp_constr "structure_item" (src/context_free.mli[104,3815+27]..[104,3815+41])
+                  []
+                core_type (src/context_free.mli[104,3815+43]..[104,3815+57])
+                  Ptyp_constr "type_extension" (src/context_free.mli[104,3815+43]..[104,3815+57])
+                  []
+                core_type (src/context_free.mli[104,3815+59]..[104,3815+60])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[105,3889+2]..[105,3889+73])
+          Psig_value
+          value_description "attr_sig_type_ext" (src/context_free.mli[105,3889+6]..[105,3889+23]) (src/context_free.mli[105,3889+2]..[105,3889+73])
+            core_type (src/context_free.mli[105,3889+26]..[105,3889+73])
+              Ptyp_constr "attr_inline" (src/context_free.mli[105,3889+62]..[105,3889+73])
+              [
+                core_type (src/context_free.mli[105,3889+27]..[105,3889+41])
+                  Ptyp_constr "signature_item" (src/context_free.mli[105,3889+27]..[105,3889+41])
+                  []
+                core_type (src/context_free.mli[105,3889+43]..[105,3889+57])
+                  Ptyp_constr "type_extension" (src/context_free.mli[105,3889+43]..[105,3889+57])
+                  []
+                core_type (src/context_free.mli[105,3889+59]..[105,3889+60])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[106,3963+2]..[106,3963+80])
+          Psig_value
+          value_description "attr_str_type_ext_expect" (src/context_free.mli[106,3963+6]..[106,3963+30]) (src/context_free.mli[106,3963+2]..[106,3963+80])
+            core_type (src/context_free.mli[106,3963+33]..[106,3963+80])
+              Ptyp_constr "attr_inline" (src/context_free.mli[106,3963+69]..[106,3963+80])
+              [
+                core_type (src/context_free.mli[106,3963+34]..[106,3963+48])
+                  Ptyp_constr "structure_item" (src/context_free.mli[106,3963+34]..[106,3963+48])
+                  []
+                core_type (src/context_free.mli[106,3963+50]..[106,3963+64])
+                  Ptyp_constr "type_extension" (src/context_free.mli[106,3963+50]..[106,3963+64])
+                  []
+                core_type (src/context_free.mli[106,3963+66]..[106,3963+67])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[107,4044+2]..[107,4044+80])
+          Psig_value
+          value_description "attr_sig_type_ext_expect" (src/context_free.mli[107,4044+6]..[107,4044+30]) (src/context_free.mli[107,4044+2]..[107,4044+80])
+            core_type (src/context_free.mli[107,4044+33]..[107,4044+80])
+              Ptyp_constr "attr_inline" (src/context_free.mli[107,4044+69]..[107,4044+80])
+              [
+                core_type (src/context_free.mli[107,4044+34]..[107,4044+48])
+                  Ptyp_constr "signature_item" (src/context_free.mli[107,4044+34]..[107,4044+48])
+                  []
+                core_type (src/context_free.mli[107,4044+50]..[107,4044+64])
+                  Ptyp_constr "type_extension" (src/context_free.mli[107,4044+50]..[107,4044+64])
+                  []
+                core_type (src/context_free.mli[107,4044+66]..[107,4044+67])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[108,4125+2]..[108,4125+74])
+          Psig_value
+          value_description "attr_str_exception" (src/context_free.mli[108,4125+6]..[108,4125+24]) (src/context_free.mli[108,4125+2]..[108,4125+74])
+            core_type (src/context_free.mli[108,4125+27]..[108,4125+74])
+              Ptyp_constr "attr_inline" (src/context_free.mli[108,4125+63]..[108,4125+74])
+              [
+                core_type (src/context_free.mli[108,4125+28]..[108,4125+42])
+                  Ptyp_constr "structure_item" (src/context_free.mli[108,4125+28]..[108,4125+42])
+                  []
+                core_type (src/context_free.mli[108,4125+44]..[108,4125+58])
+                  Ptyp_constr "type_exception" (src/context_free.mli[108,4125+44]..[108,4125+58])
+                  []
+                core_type (src/context_free.mli[108,4125+60]..[108,4125+61])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[109,4200+2]..[109,4200+74])
+          Psig_value
+          value_description "attr_sig_exception" (src/context_free.mli[109,4200+6]..[109,4200+24]) (src/context_free.mli[109,4200+2]..[109,4200+74])
+            core_type (src/context_free.mli[109,4200+27]..[109,4200+74])
+              Ptyp_constr "attr_inline" (src/context_free.mli[109,4200+63]..[109,4200+74])
+              [
+                core_type (src/context_free.mli[109,4200+28]..[109,4200+42])
+                  Ptyp_constr "signature_item" (src/context_free.mli[109,4200+28]..[109,4200+42])
+                  []
+                core_type (src/context_free.mli[109,4200+44]..[109,4200+58])
+                  Ptyp_constr "type_exception" (src/context_free.mli[109,4200+44]..[109,4200+58])
+                  []
+                core_type (src/context_free.mli[109,4200+60]..[109,4200+61])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[111,4276+2]..[112,4310+51])
+          Psig_value
+          value_description "attr_str_exception_expect" (src/context_free.mli[111,4276+6]..[111,4276+31]) (src/context_free.mli[111,4276+2]..[112,4310+51])
+            core_type (src/context_free.mli[112,4310+4]..[112,4310+51])
+              Ptyp_constr "attr_inline" (src/context_free.mli[112,4310+40]..[112,4310+51])
+              [
+                core_type (src/context_free.mli[112,4310+5]..[112,4310+19])
+                  Ptyp_constr "structure_item" (src/context_free.mli[112,4310+5]..[112,4310+19])
+                  []
+                core_type (src/context_free.mli[112,4310+21]..[112,4310+35])
+                  Ptyp_constr "type_exception" (src/context_free.mli[112,4310+21]..[112,4310+35])
+                  []
+                core_type (src/context_free.mli[112,4310+37]..[112,4310+38])
+                  Ptyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[114,4363+2]..[115,4397+51])
+          Psig_value
+          value_description "attr_sig_exception_expect" (src/context_free.mli[114,4363+6]..[114,4363+31]) (src/context_free.mli[114,4363+2]..[115,4397+51])
+            core_type (src/context_free.mli[115,4397+4]..[115,4397+51])
+              Ptyp_constr "attr_inline" (src/context_free.mli[115,4397+40]..[115,4397+51])
+              [
+                core_type (src/context_free.mli[115,4397+5]..[115,4397+19])
+                  Ptyp_constr "signature_item" (src/context_free.mli[115,4397+5]..[115,4397+19])
+                  []
+                core_type (src/context_free.mli[115,4397+21]..[115,4397+35])
+                  Ptyp_constr "type_exception" (src/context_free.mli[115,4397+21]..[115,4397+35])
+                  []
+                core_type (src/context_free.mli[115,4397+37]..[115,4397+38])
+                  Ptyp_any
+              ]
+            []
+      ]
+  signature_item (src/context_free.mli[118,4454+0]..[118,4454+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/context_free.mli[118,4454+0]..[118,4454+7])
+        Pstr_eval
+        expression (src/context_free.mli[118,4454+0]..[118,4454+7])
+          Pexp_constant PConst_string("/*",(src/context_free.mli[118,4454+0]..[118,4454+7]),None)
+    ]
+  signature_item (src/context_free.mli[121,4493+0]..[130,4748+3])
+    Psig_module "Generated_code_hook" (src/context_free.mli[121,4493+7]..[121,4493+26])
+    module_type (src/context_free.mli[121,4493+29]..[130,4748+3])
+      Pmty_signature
+      [
+        signature_item (src/context_free.mli[122,4526+2]..[122,4526+57])
+          Psig_type Rec
+          [
+            type_declaration "single_or_many" (src/context_free.mli[122,4526+10]..[122,4526+24]) (src/context_free.mli[122,4526+2]..[122,4526+57])
+              ptype_params =
+                [
+                  core_type (src/context_free.mli[122,4526+7]..[122,4526+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (src/context_free.mli[122,4526+27]..[122,4526+39])
+                      "Single" (src/context_free.mli[122,4526+27]..[122,4526+33])
+                      [
+                        core_type (src/context_free.mli[122,4526+37]..[122,4526+39])
+                          Ptyp_var a
+                      ]
+                      None
+                    (src/context_free.mli[122,4526+40]..[122,4526+57])
+                      "Many" (src/context_free.mli[122,4526+42]..[122,4526+46])
+                      [
+                        core_type (src/context_free.mli[122,4526+50]..[122,4526+57])
+                          Ptyp_constr "list" (src/context_free.mli[122,4526+53]..[122,4526+57])
+                          [
+                            core_type (src/context_free.mli[122,4526+50]..[122,4526+52])
+                              Ptyp_var a
+                          ]
+                      ]
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[125,4637+2]..[127,4729+3])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/context_free.mli[125,4637+7]..[125,4637+8]) (src/context_free.mli[125,4637+2]..[127,4729+3])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_record
+                  [
+                    (src/context_free.mli[126,4650+4]..[126,4650+78])
+                      Immutable
+                      "f" (src/context_free.mli[126,4650+4]..[126,4650+5])                      core_type (src/context_free.mli[126,4650+8]..[126,4650+77])
+                        Ptyp_poly 'a
+                        core_type (src/context_free.mli[126,4650+12]..[126,4650+77])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[126,4650+12]..[126,4650+34])
+                            Ptyp_constr "Extension.Context.t" (src/context_free.mli[126,4650+15]..[126,4650+34])
+                            [
+                              core_type (src/context_free.mli[126,4650+12]..[126,4650+14])
+                                Ptyp_var a
+                            ]
+                          core_type (src/context_free.mli[126,4650+38]..[126,4650+77])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[126,4650+38]..[126,4650+48])
+                              Ptyp_constr "Location.t" (src/context_free.mli[126,4650+38]..[126,4650+48])
+                              []
+                            core_type (src/context_free.mli[126,4650+52]..[126,4650+77])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/context_free.mli[126,4650+52]..[126,4650+69])
+                                Ptyp_constr "single_or_many" (src/context_free.mli[126,4650+55]..[126,4650+69])
+                                [
+                                  core_type (src/context_free.mli[126,4650+52]..[126,4650+54])
+                                    Ptyp_var a
+                                ]
+                              core_type (src/context_free.mli[126,4650+73]..[126,4650+77])
+                                Ptyp_constr "unit" (src/context_free.mli[126,4650+73]..[126,4650+77])
+                                []
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[129,4734+2]..[129,4734+13])
+          Psig_value
+          value_description "nop" (src/context_free.mli[129,4734+6]..[129,4734+9]) (src/context_free.mli[129,4734+2]..[129,4734+13])
+            core_type (src/context_free.mli[129,4734+12]..[129,4734+13])
+              Ptyp_constr "t" (src/context_free.mli[129,4734+12]..[129,4734+13])
+              []
+            []
+      ]
+  signature_item (src/context_free.mli[132,4753+0]..[138,4900+3])
+    Psig_module "Expect_mismatch_handler" (src/context_free.mli[132,4753+7]..[132,4753+30])
+    module_type (src/context_free.mli[132,4753+33]..[138,4900+3])
+      Pmty_signature
+      [
+        signature_item (src/context_free.mli[133,4790+2]..[135,4881+3])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/context_free.mli[133,4790+7]..[133,4790+8]) (src/context_free.mli[133,4790+2]..[135,4881+3])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_record
+                  [
+                    (src/context_free.mli[134,4803+4]..[134,4803+77])
+                      Immutable
+                      "f" (src/context_free.mli[134,4803+4]..[134,4803+5])                      core_type (src/context_free.mli[134,4803+8]..[134,4803+76])
+                        Ptyp_poly 'a
+                        core_type (src/context_free.mli[134,4803+12]..[134,4803+76])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[134,4803+12]..[134,4803+43])
+                            Ptyp_constr "Attribute.Floating.Context.t" (src/context_free.mli[134,4803+15]..[134,4803+43])
+                            [
+                              core_type (src/context_free.mli[134,4803+12]..[134,4803+14])
+                                Ptyp_var a
+                            ]
+                          core_type (src/context_free.mli[134,4803+47]..[134,4803+76])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[134,4803+47]..[134,4803+57])
+                              Ptyp_constr "Location.t" (src/context_free.mli[134,4803+47]..[134,4803+57])
+                              []
+                            core_type (src/context_free.mli[134,4803+61]..[134,4803+76])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/context_free.mli[134,4803+61]..[134,4803+68])
+                                Ptyp_constr "list" (src/context_free.mli[134,4803+64]..[134,4803+68])
+                                [
+                                  core_type (src/context_free.mli[134,4803+61]..[134,4803+63])
+                                    Ptyp_var a
+                                ]
+                              core_type (src/context_free.mli[134,4803+72]..[134,4803+76])
+                                Ptyp_constr "unit" (src/context_free.mli[134,4803+72]..[134,4803+76])
+                                []
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[137,4886+2]..[137,4886+13])
+          Psig_value
+          value_description "nop" (src/context_free.mli[137,4886+6]..[137,4886+9]) (src/context_free.mli[137,4886+2]..[137,4886+13])
+            core_type (src/context_free.mli[137,4886+12]..[137,4886+13])
+              Ptyp_constr "t" (src/context_free.mli[137,4886+12]..[137,4886+13])
+              []
+            []
+      ]
+  signature_item (src/context_free.mli[140,4905+0]..[140,4905+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/context_free.mli[140,4905+0]..[140,4905+7])
+        Pstr_eval
+        expression (src/context_free.mli[140,4905+0]..[140,4905+7])
+          Pexp_constant PConst_string("/*",(src/context_free.mli[140,4905+0]..[140,4905+7]),None)
+    ]
+  signature_item (src/context_free.mli[147,5194+0]..[155,5506+8])
+    Psig_class
+    [
+      class_description (src/context_free.mli[147,5194+0]..[155,5506+8])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "map_top_down" (src/context_free.mli[147,5194+6]..[147,5194+18])
+        pci_expr =
+          class_type (src/context_free.mli[148,5215+2]..[155,5506+8])
+            Pcty_arrow
+            Optional "expect_mismatch_handler"
+            core_type (src/context_free.mli[149,5243+4]..[149,5243+29])
+              Ptyp_constr "Expect_mismatch_handler.t" (src/context_free.mli[149,5243+4]..[149,5243+29])
+              []
+            class_type (src/context_free.mli[150,5316+5]..[155,5506+8])
+              Pcty_arrow
+              Optional "generated_code_hook"
+              core_type (src/context_free.mli[151,5343+7]..[151,5343+28])
+                Ptyp_constr "Generated_code_hook.t" (src/context_free.mli[151,5343+7]..[151,5343+28])
+                []
+              class_type (src/context_free.mli[152,5411+5]..[155,5506+8])
+                Pcty_arrow
+                Nolabel
+                core_type (src/context_free.mli[152,5411+5]..[152,5411+16])
+                  Ptyp_constr "list" (src/context_free.mli[152,5411+12]..[152,5411+16])
+                  [
+                    core_type (src/context_free.mli[152,5411+5]..[152,5411+11])
+                      Ptyp_constr "Rule.t" (src/context_free.mli[152,5411+5]..[152,5411+11])
+                      []
+                  ]
+                class_type (src/context_free.mli[153,5428+5]..[155,5506+8])
+                  Pcty_signature
+                  class_signature
+                    core_type (src/context_free.mli[153,5428+11]..[153,5428+11])
+                      Ptyp_any
+                    [
+                      class_type_field (src/context_free.mli[154,5440+7]..[154,5440+65])
+                        Pctf_inherit
+                        class_type (src/context_free.mli[154,5440+15]..[154,5440+65])
+                          Pcty_constr "Ast_traverse.map_with_expansion_context_and_errors" (src/context_free.mli[154,5440+15]..[154,5440+65])
+                          []
+                    ]
+    ]
+]
+
+[@@@ocaml.text
+  " Context free rewriting, to define local rewriting rules that will all be\n    applied at once by the driver. "]
+open! Import
+module Rule :
+sig
+  type t
+  val extension : Extension.t -> t[@@ocaml.doc
+                                    " Rewrite an extension point "]
+  val special_function : string -> (expression -> expression option) -> t
+  [@@ocaml.doc
+    " [special_function id expand] is a rule to rewrite a function call at\n      parsing time. [id] is the identifier to match on and [expand] is used to\n      expand the full function application (it gets the Pexp_apply node). If the\n      function is found in the tree without being applied, [expand] gets only\n      the identifier (Pexp_ident node) so you should handle both cases.\n\n      If [id] is an operator identifier and contains dots, it should be\n      parenthesized (e.g. [\"(+.+)\"]).\n\n      [expand] must decide whether the expression it receive can be rewritten or\n      not. Especially ppxlib makes the assumption that [expand] is idempotent.\n      It will loop if it is not. "]
+  module Constant_kind : sig type t =
+                               | Float 
+                               | Integer  end[@@ocaml.doc
+                                               " Used for the [constant] function. "]
+  val constant :
+    Constant_kind.t ->
+      char -> (Location.t -> string -> Parsetree.expression) -> t[@@ocaml.doc
+                                                                   " [constant kind suffix expander] Registers an extension for transforming\n      constants literals, based on the suffix character. "]
+  [@@@ocaml.text
+    " The rest of this API is for rewriting rules that apply when a certain\n      attribute is present. The API is not complete and is currently only enough\n      to implement deriving. "]
+  type ('a, 'b, 'c) attr_group_inline =
+    ('b, 'c) Attribute.t ->
+      (ctxt:Expansion_context.Deriver.t ->
+         Asttypes.rec_flag -> 'b list -> 'c option list -> 'a list)
+        -> t[@@ocaml.doc
+              " Match the attribute on a group of items, such as a group of recursive type\n      definitions (Pstr_type, Psig_type). The expander will be triggered if any\n      of the item has the attribute. The expander is called as follow:\n\n      [expand ~loc ~path rec_flag items values]\n\n      where [values] is the list of values associated to the attribute for each\n      item in [items]. [expand] must return a list of element to add after the\n      group. For instance a list of structure item to add after a group of type\n      definitions. "]
+  val attr_str_type_decl :
+    (structure_item, type_declaration, _) attr_group_inline
+  val attr_sig_type_decl :
+    (signature_item, type_declaration, _) attr_group_inline
+  val attr_str_type_decl_expect :
+    (structure_item, type_declaration, _) attr_group_inline[@@ocaml.doc
+                                                             " The _expect variants are for producing code that is compared to what the\n      user wrote in the source code. "]
+  val attr_sig_type_decl_expect :
+    (signature_item, type_declaration, _) attr_group_inline
+  type ('a, 'b, 'c) attr_inline =
+    ('b, 'c) Attribute.t ->
+      (ctxt:Expansion_context.Deriver.t -> 'b -> 'c -> 'a list) -> t[@@ocaml.doc
+                                                                    " Same as [attr_group_inline] but for elements that are not part of a group,\n      such as exceptions and type extensions "]
+  val attr_str_module_type_decl :
+    (structure_item, module_type_declaration, _) attr_inline
+  val attr_sig_module_type_decl :
+    (signature_item, module_type_declaration, _) attr_inline
+  val attr_str_module_type_decl_expect :
+    (structure_item, module_type_declaration, _) attr_inline
+  val attr_sig_module_type_decl_expect :
+    (signature_item, module_type_declaration, _) attr_inline
+  val attr_str_type_ext : (structure_item, type_extension, _) attr_inline
+  val attr_sig_type_ext : (signature_item, type_extension, _) attr_inline
+  val attr_str_type_ext_expect :
+    (structure_item, type_extension, _) attr_inline
+  val attr_sig_type_ext_expect :
+    (signature_item, type_extension, _) attr_inline
+  val attr_str_exception : (structure_item, type_exception, _) attr_inline
+  val attr_sig_exception : (signature_item, type_exception, _) attr_inline
+  val attr_str_exception_expect :
+    (structure_item, type_exception, _) attr_inline
+  val attr_sig_exception_expect :
+    (signature_item, type_exception, _) attr_inline
+end[@@ocaml.doc
+     " Local rewriting rules.\n\n    This module lets you define local rewriting rules, such as extension point\n    expanders. It is not completely generic and you cannot define any kind of\n    rewriting, it currently focuses on what is commonly used. New scheme can be\n    added on demand.\n\n    We have some ideas to make this fully generic, but this hasn't been a\n    priority so far. "]
+[@@@ocaml.text "/*"]
+module Generated_code_hook :
+sig
+  type 'a single_or_many =
+    | Single of 'a 
+    | Many of 'a list 
+  type t =
+    {
+    f: 'a . 'a Extension.Context.t -> Location.t -> 'a single_or_many -> unit }
+  val nop : t
+end
+module Expect_mismatch_handler :
+sig
+  type t =
+    {
+    f: 'a . 'a Attribute.Floating.Context.t -> Location.t -> 'a list -> unit }
+  val nop : t
+end
+[@@@ocaml.text "/*"]
+class map_top_down :
+  ?expect_mismatch_handler:Expect_mismatch_handler.t ->
+    ?generated_code_hook:Generated_code_hook.t ->
+      Rule.t list ->
+        object inherit Ast_traverse.map_with_expansion_context_and_errors end
+[
+  signature_item (src/context_free.mli[1,0+0]..src/context_free.mli[2,77+37])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/context_free.mli[1,0+0]..[2,77+37])
+        Pstr_eval
+        expression (src/context_free.mli[1,0+0]..[2,77+37])
+          Pexp_constant PConst_string(" Context free rewriting, to define local rewriting rules that will all be\n    applied at once by the driver. ",(src/context_free.mli[1,0+0]..[2,77+37]),None)
+    ]
+  signature_item (src/context_free.mli[4,116+0]..src/context_free.mli[4,116+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/context_free.mli[15,515+0]..src/context_free.mli[116,4449+3])
+    Tsig_module "Rule/1364"
+      attribute "ocaml.doc"
+        [
+          structure_item (src/context_free.mli[6,130+0]..[14,491+23])
+            Pstr_eval
+            expression (src/context_free.mli[6,130+0]..[14,491+23])
+              Pexp_constant PConst_string(" Local rewriting rules.\n\n    This module lets you define local rewriting rules, such as extension point\n    expanders. It is not completely generic and you cannot define any kind of\n    rewriting, it currently focuses on what is commonly used. New scheme can be\n    added on demand.\n\n    We have some ideas to make this fully generic, but this hasn't been a\n    priority so far. ",(src/context_free.mli[6,130+0]..[14,491+23]),None)
+        ]
+    module_type (src/context_free.mli[15,515+14]..src/context_free.mli[116,4449+3])
+      Tmty_signature
+      [
+        signature_item (src/context_free.mli[16,533+2]..src/context_free.mli[16,533+8])
+          Tsig_type Rec
+          [
+            type_declaration t/550 (src/context_free.mli[16,533+2]..src/context_free.mli[16,533+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[18,543+2]..src/context_free.mli[18,543+34])
+          Tsig_value
+          value_description extension/608 (src/context_free.mli[18,543+2]..src/context_free.mli[18,543+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[19,578+2]..[19,578+35])
+                  Pstr_eval
+                  expression (src/context_free.mli[19,578+2]..[19,578+35])
+                    Pexp_constant PConst_string(" Rewrite an extension point ",(src/context_free.mli[19,578+2]..[19,578+35]),None)
+              ]
+            core_type (src/context_free.mli[18,543+18]..src/context_free.mli[18,543+34])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/context_free.mli[18,543+18]..src/context_free.mli[18,543+29])
+                Ttyp_constr "Ppxlib__!.Extension.t"
+                []
+              core_type (src/context_free.mli[18,543+33]..src/context_free.mli[18,543+34])
+                Ttyp_constr "t/550"
+                []
+            []
+        signature_item (src/context_free.mli[21,615+2]..src/context_free.mli[21,615+73])
+          Tsig_value
+          value_description special_function/609 (src/context_free.mli[21,615+2]..src/context_free.mli[21,615+73])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[22,689+2]..[33,1346+35])
+                  Pstr_eval
+                  expression (src/context_free.mli[22,689+2]..[33,1346+35])
+                    Pexp_constant PConst_string(" [special_function id expand] is a rule to rewrite a function call at\n      parsing time. [id] is the identifier to match on and [expand] is used to\n      expand the full function application (it gets the Pexp_apply node). If the\n      function is found in the tree without being applied, [expand] gets only\n      the identifier (Pexp_ident node) so you should handle both cases.\n\n      If [id] is an operator identifier and contains dots, it should be\n      parenthesized (e.g. [\"(+.+)\"]).\n\n      [expand] must decide whether the expression it receive can be rewritten or\n      not. Especially ppxlib makes the assumption that [expand] is idempotent.\n      It will loop if it is not. ",(src/context_free.mli[22,689+2]..[33,1346+35]),None)
+              ]
+            core_type (src/context_free.mli[21,615+25]..src/context_free.mli[21,615+73])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/context_free.mli[21,615+25]..src/context_free.mli[21,615+31])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/context_free.mli[21,615+35]..src/context_free.mli[21,615+73])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/context_free.mli[21,615+36]..src/context_free.mli[21,615+67])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/context_free.mli[21,615+36]..src/context_free.mli[21,615+46])
+                    Ttyp_constr "Ppxlib__!.Import.expression"
+                    []
+                  core_type (src/context_free.mli[21,615+50]..src/context_free.mli[21,615+67])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/context_free.mli[21,615+50]..src/context_free.mli[21,615+60])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                    ]
+                core_type (src/context_free.mli[21,615+72]..src/context_free.mli[21,615+73])
+                  Ttyp_constr "t/550"
+                  []
+            []
+        signature_item (src/context_free.mli[36,1426+2]..src/context_free.mli[38,1484+5])
+          Tsig_module "Constant_kind/613"
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[35,1383+2]..[35,1383+42])
+                  Pstr_eval
+                  expression (src/context_free.mli[35,1383+2]..[35,1383+42])
+                    Pexp_constant PConst_string(" Used for the [constant] function. ",(src/context_free.mli[35,1383+2]..[35,1383+42]),None)
+              ]
+          module_type (src/context_free.mli[36,1426+25]..src/context_free.mli[38,1484+5])
+            Tmty_signature
+            [
+              signature_item (src/context_free.mli[37,1455+4]..src/context_free.mli[37,1455+28])
+                Tsig_type Rec
+                [
+                  type_declaration t/610 (src/context_free.mli[37,1455+4]..src/context_free.mli[37,1455+28])
+                    ptype_params =
+                      []
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ttype_variant
+                        [
+                          (src/context_free.mli[37,1455+13]..src/context_free.mli[37,1455+18])
+                            Float/611
+                            []
+                            None
+                          (src/context_free.mli[37,1455+19]..src/context_free.mli[37,1455+28])
+                            Integer/612
+                            []
+                            None
+                        ]
+                    ptype_private = Public
+                    ptype_manifest =
+                      None
+                ]
+            ]
+        signature_item (src/context_free.mli[40,1491+2]..src/context_free.mli[44,1597+5])
+          Tsig_value
+          value_description constant/1197 (src/context_free.mli[40,1491+2]..src/context_free.mli[44,1597+5])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[45,1603+2]..[46,1681+59])
+                  Pstr_eval
+                  expression (src/context_free.mli[45,1603+2]..[46,1681+59])
+                    Pexp_constant PConst_string(" [constant kind suffix expander] Registers an extension for transforming\n      constants literals, based on the suffix character. ",(src/context_free.mli[45,1603+2]..[46,1681+59]),None)
+              ]
+            core_type (src/context_free.mli[41,1508+4]..src/context_free.mli[44,1597+5])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/context_free.mli[41,1508+4]..src/context_free.mli[41,1508+19])
+                Ttyp_constr "Constant_kind/613.t"
+                []
+              core_type (src/context_free.mli[42,1531+4]..src/context_free.mli[44,1597+5])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/context_free.mli[42,1531+4]..src/context_free.mli[42,1531+8])
+                  Ttyp_constr "char/2!"
+                  []
+                core_type (src/context_free.mli[43,1543+4]..src/context_free.mli[44,1597+5])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/context_free.mli[43,1543+5]..src/context_free.mli[43,1543+49])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/context_free.mli[43,1543+5]..src/context_free.mli[43,1543+15])
+                      Ttyp_constr "Ppxlib__!.Location.t"
+                      []
+                    core_type (src/context_free.mli[43,1543+19]..src/context_free.mli[43,1543+49])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/context_free.mli[43,1543+19]..src/context_free.mli[43,1543+25])
+                        Ttyp_constr "string/17!"
+                        []
+                      core_type (src/context_free.mli[43,1543+29]..src/context_free.mli[43,1543+49])
+                        Ttyp_constr "Ppxlib__!.Import.Parsetree.expression"
+                        []
+                  core_type (src/context_free.mli[44,1597+4]..src/context_free.mli[44,1597+5])
+                    Ttyp_constr "t/550"
+                    []
+            []
+        signature_item (src/context_free.mli[48,1742+2]..src/context_free.mli[50,1899+31])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/context_free.mli[48,1742+2]..[50,1899+31])
+              Pstr_eval
+              expression (src/context_free.mli[48,1742+2]..[50,1899+31])
+                Pexp_constant PConst_string(" The rest of this API is for rewriting rules that apply when a certain\n      attribute is present. The API is not complete and is currently only enough\n      to implement deriving. ",(src/context_free.mli[48,1742+2]..[50,1899+31]),None)
+          ]
+        signature_item (src/context_free.mli[52,1932+2]..src/context_free.mli[59,2119+5])
+          Tsig_type Rec
+          [
+            type_declaration attr_group_inline/1198 (src/context_free.mli[52,1932+2]..src/context_free.mli[59,2119+5])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/context_free.mli[60,2125+2]..[69,2646+21])
+                    Pstr_eval
+                    expression (src/context_free.mli[60,2125+2]..[69,2646+21])
+                      Pexp_constant PConst_string(" Match the attribute on a group of items, such as a group of recursive type\n      definitions (Pstr_type, Psig_type). The expander will be triggered if any\n      of the item has the attribute. The expander is called as follow:\n\n      [expand ~loc ~path rec_flag items values]\n\n      where [values] is the list of values associated to the attribute for each\n      item in [items]. [expand] must return a list of element to add after the\n      group. For instance a list of structure item to add after a group of type\n      definitions. ",(src/context_free.mli[60,2125+2]..[69,2646+21]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/context_free.mli[52,1932+8]..src/context_free.mli[52,1932+10])
+                    Ttyp_var a
+                  core_type (src/context_free.mli[52,1932+12]..src/context_free.mli[52,1932+14])
+                    Ttyp_var b
+                  core_type (src/context_free.mli[52,1932+16]..src/context_free.mli[52,1932+18])
+                    Ttyp_var c
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/context_free.mli[53,1972+4]..src/context_free.mli[59,2119+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/context_free.mli[53,1972+4]..src/context_free.mli[53,1972+24])
+                      Ttyp_constr "Ppxlib__!.Attribute.t"
+                      [
+                        core_type (src/context_free.mli[53,1972+5]..src/context_free.mli[53,1972+7])
+                          Ttyp_var b
+                        core_type (src/context_free.mli[53,1972+9]..src/context_free.mli[53,1972+11])
+                          Ttyp_var c
+                      ]
+                    core_type (src/context_free.mli[54,2000+4]..src/context_free.mli[59,2119+5])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/context_free.mli[54,2000+5]..src/context_free.mli[58,2103+11])
+                        Ttyp_arrow
+                        Labelled "ctxt"
+                        core_type (src/context_free.mli[54,2000+10]..src/context_free.mli[54,2000+37])
+                          Ttyp_constr "Ppxlib__!.Expansion_context.Deriver.t"
+                          []
+                        core_type (src/context_free.mli[55,2041+4]..src/context_free.mli[58,2103+11])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[55,2041+4]..src/context_free.mli[55,2041+21])
+                            Ttyp_constr "Ppxlib__!.Import.Asttypes.rec_flag"
+                            []
+                          core_type (src/context_free.mli[56,2066+4]..src/context_free.mli[58,2103+11])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[56,2066+4]..src/context_free.mli[56,2066+11])
+                              Ttyp_constr "list/11!"
+                              [
+                                core_type (src/context_free.mli[56,2066+4]..src/context_free.mli[56,2066+6])
+                                  Ttyp_var b
+                              ]
+                            core_type (src/context_free.mli[57,2081+4]..src/context_free.mli[58,2103+11])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/context_free.mli[57,2081+4]..src/context_free.mli[57,2081+18])
+                                Ttyp_constr "list/11!"
+                                [
+                                  core_type (src/context_free.mli[57,2081+4]..src/context_free.mli[57,2081+13])
+                                    Ttyp_constr "option/12!"
+                                    [
+                                      core_type (src/context_free.mli[57,2081+4]..src/context_free.mli[57,2081+6])
+                                        Ttyp_var c
+                                    ]
+                                ]
+                              core_type (src/context_free.mli[58,2103+4]..src/context_free.mli[58,2103+11])
+                                Ttyp_constr "list/11!"
+                                [
+                                  core_type (src/context_free.mli[58,2103+4]..src/context_free.mli[58,2103+6])
+                                    Ttyp_var a
+                                ]
+                      core_type (src/context_free.mli[59,2119+4]..src/context_free.mli[59,2119+5])
+                        Ttyp_constr "t/550"
+                        []
+          ]
+        signature_item (src/context_free.mli[71,2669+2]..src/context_free.mli[72,2696+59])
+          Tsig_value
+          value_description attr_str_type_decl/1347 (src/context_free.mli[71,2669+2]..src/context_free.mli[72,2696+59])
+            core_type (src/context_free.mli[72,2696+4]..src/context_free.mli[72,2696+59])
+              Ttyp_constr "attr_group_inline/1198"
+              [
+                core_type (src/context_free.mli[72,2696+5]..src/context_free.mli[72,2696+19])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[72,2696+21]..src/context_free.mli[72,2696+37])
+                  Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                  []
+                core_type (src/context_free.mli[72,2696+39]..src/context_free.mli[72,2696+40])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[74,2757+2]..src/context_free.mli[75,2784+59])
+          Tsig_value
+          value_description attr_sig_type_decl/1348 (src/context_free.mli[74,2757+2]..src/context_free.mli[75,2784+59])
+            core_type (src/context_free.mli[75,2784+4]..src/context_free.mli[75,2784+59])
+              Ttyp_constr "attr_group_inline/1198"
+              [
+                core_type (src/context_free.mli[75,2784+5]..src/context_free.mli[75,2784+19])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[75,2784+21]..src/context_free.mli[75,2784+37])
+                  Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                  []
+                core_type (src/context_free.mli[75,2784+39]..src/context_free.mli[75,2784+40])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[77,2845+2]..src/context_free.mli[78,2879+59])
+          Tsig_value
+          value_description attr_str_type_decl_expect/1349 (src/context_free.mli[77,2845+2]..src/context_free.mli[78,2879+59])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/context_free.mli[79,2939+2]..[80,3018+39])
+                  Pstr_eval
+                  expression (src/context_free.mli[79,2939+2]..[80,3018+39])
+                    Pexp_constant PConst_string(" The _expect variants are for producing code that is compared to what the\n      user wrote in the source code. ",(src/context_free.mli[79,2939+2]..[80,3018+39]),None)
+              ]
+            core_type (src/context_free.mli[78,2879+4]..src/context_free.mli[78,2879+59])
+              Ttyp_constr "attr_group_inline/1198"
+              [
+                core_type (src/context_free.mli[78,2879+5]..src/context_free.mli[78,2879+19])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[78,2879+21]..src/context_free.mli[78,2879+37])
+                  Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                  []
+                core_type (src/context_free.mli[78,2879+39]..src/context_free.mli[78,2879+40])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[82,3059+2]..src/context_free.mli[83,3093+59])
+          Tsig_value
+          value_description attr_sig_type_decl_expect/1350 (src/context_free.mli[82,3059+2]..src/context_free.mli[83,3093+59])
+            core_type (src/context_free.mli[83,3093+4]..src/context_free.mli[83,3093+59])
+              Ttyp_constr "attr_group_inline/1198"
+              [
+                core_type (src/context_free.mli[83,3093+5]..src/context_free.mli[83,3093+19])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[83,3093+21]..src/context_free.mli[83,3093+37])
+                  Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                  []
+                core_type (src/context_free.mli[83,3093+39]..src/context_free.mli[83,3093+40])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[85,3154+2]..src/context_free.mli[88,3281+5])
+          Tsig_type Rec
+          [
+            type_declaration attr_inline/1351 (src/context_free.mli[85,3154+2]..src/context_free.mli[88,3281+5])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/context_free.mli[89,3287+2]..[90,3368+47])
+                    Pstr_eval
+                    expression (src/context_free.mli[89,3287+2]..[90,3368+47])
+                      Pexp_constant PConst_string(" Same as [attr_group_inline] but for elements that are not part of a group,\n      such as exceptions and type extensions ",(src/context_free.mli[89,3287+2]..[90,3368+47]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/context_free.mli[85,3154+8]..src/context_free.mli[85,3154+10])
+                    Ttyp_var a
+                  core_type (src/context_free.mli[85,3154+12]..src/context_free.mli[85,3154+14])
+                    Ttyp_var b
+                  core_type (src/context_free.mli[85,3154+16]..src/context_free.mli[85,3154+18])
+                    Ttyp_var c
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/context_free.mli[86,3188+4]..src/context_free.mli[88,3281+5])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/context_free.mli[86,3188+4]..src/context_free.mli[86,3188+24])
+                      Ttyp_constr "Ppxlib__!.Attribute.t"
+                      [
+                        core_type (src/context_free.mli[86,3188+5]..src/context_free.mli[86,3188+7])
+                          Ttyp_var b
+                        core_type (src/context_free.mli[86,3188+9]..src/context_free.mli[86,3188+11])
+                          Ttyp_var c
+                      ]
+                    core_type (src/context_free.mli[87,3216+4]..src/context_free.mli[88,3281+5])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/context_free.mli[87,3216+5]..src/context_free.mli[87,3216+60])
+                        Ttyp_arrow
+                        Labelled "ctxt"
+                        core_type (src/context_free.mli[87,3216+10]..src/context_free.mli[87,3216+37])
+                          Ttyp_constr "Ppxlib__!.Expansion_context.Deriver.t"
+                          []
+                        core_type (src/context_free.mli[87,3216+41]..src/context_free.mli[87,3216+60])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[87,3216+41]..src/context_free.mli[87,3216+43])
+                            Ttyp_var b
+                          core_type (src/context_free.mli[87,3216+47]..src/context_free.mli[87,3216+60])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[87,3216+47]..src/context_free.mli[87,3216+49])
+                              Ttyp_var c
+                            core_type (src/context_free.mli[87,3216+53]..src/context_free.mli[87,3216+60])
+                              Ttyp_constr "list/11!"
+                              [
+                                core_type (src/context_free.mli[87,3216+53]..src/context_free.mli[87,3216+55])
+                                  Ttyp_var a
+                              ]
+                      core_type (src/context_free.mli[88,3281+4]..src/context_free.mli[88,3281+5])
+                        Ttyp_constr "t/550"
+                        []
+          ]
+        signature_item (src/context_free.mli[92,3417+2]..src/context_free.mli[93,3451+60])
+          Tsig_value
+          value_description attr_str_module_type_decl/1352 (src/context_free.mli[92,3417+2]..src/context_free.mli[93,3451+60])
+            core_type (src/context_free.mli[93,3451+4]..src/context_free.mli[93,3451+60])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[93,3451+5]..src/context_free.mli[93,3451+19])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[93,3451+21]..src/context_free.mli[93,3451+44])
+                  Ttyp_constr "Ppxlib__!.Import.module_type_declaration"
+                  []
+                core_type (src/context_free.mli[93,3451+46]..src/context_free.mli[93,3451+47])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[95,3513+2]..src/context_free.mli[96,3547+60])
+          Tsig_value
+          value_description attr_sig_module_type_decl/1353 (src/context_free.mli[95,3513+2]..src/context_free.mli[96,3547+60])
+            core_type (src/context_free.mli[96,3547+4]..src/context_free.mli[96,3547+60])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[96,3547+5]..src/context_free.mli[96,3547+19])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[96,3547+21]..src/context_free.mli[96,3547+44])
+                  Ttyp_constr "Ppxlib__!.Import.module_type_declaration"
+                  []
+                core_type (src/context_free.mli[96,3547+46]..src/context_free.mli[96,3547+47])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[98,3609+2]..src/context_free.mli[99,3650+60])
+          Tsig_value
+          value_description attr_str_module_type_decl_expect/1354 (src/context_free.mli[98,3609+2]..src/context_free.mli[99,3650+60])
+            core_type (src/context_free.mli[99,3650+4]..src/context_free.mli[99,3650+60])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[99,3650+5]..src/context_free.mli[99,3650+19])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[99,3650+21]..src/context_free.mli[99,3650+44])
+                  Ttyp_constr "Ppxlib__!.Import.module_type_declaration"
+                  []
+                core_type (src/context_free.mli[99,3650+46]..src/context_free.mli[99,3650+47])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[101,3712+2]..src/context_free.mli[102,3753+60])
+          Tsig_value
+          value_description attr_sig_module_type_decl_expect/1355 (src/context_free.mli[101,3712+2]..src/context_free.mli[102,3753+60])
+            core_type (src/context_free.mli[102,3753+4]..src/context_free.mli[102,3753+60])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[102,3753+5]..src/context_free.mli[102,3753+19])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[102,3753+21]..src/context_free.mli[102,3753+44])
+                  Ttyp_constr "Ppxlib__!.Import.module_type_declaration"
+                  []
+                core_type (src/context_free.mli[102,3753+46]..src/context_free.mli[102,3753+47])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[104,3815+2]..src/context_free.mli[104,3815+73])
+          Tsig_value
+          value_description attr_str_type_ext/1356 (src/context_free.mli[104,3815+2]..src/context_free.mli[104,3815+73])
+            core_type (src/context_free.mli[104,3815+26]..src/context_free.mli[104,3815+73])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[104,3815+27]..src/context_free.mli[104,3815+41])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[104,3815+43]..src/context_free.mli[104,3815+57])
+                  Ttyp_constr "Ppxlib__!.Import.type_extension"
+                  []
+                core_type (src/context_free.mli[104,3815+59]..src/context_free.mli[104,3815+60])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[105,3889+2]..src/context_free.mli[105,3889+73])
+          Tsig_value
+          value_description attr_sig_type_ext/1357 (src/context_free.mli[105,3889+2]..src/context_free.mli[105,3889+73])
+            core_type (src/context_free.mli[105,3889+26]..src/context_free.mli[105,3889+73])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[105,3889+27]..src/context_free.mli[105,3889+41])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[105,3889+43]..src/context_free.mli[105,3889+57])
+                  Ttyp_constr "Ppxlib__!.Import.type_extension"
+                  []
+                core_type (src/context_free.mli[105,3889+59]..src/context_free.mli[105,3889+60])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[106,3963+2]..src/context_free.mli[106,3963+80])
+          Tsig_value
+          value_description attr_str_type_ext_expect/1358 (src/context_free.mli[106,3963+2]..src/context_free.mli[106,3963+80])
+            core_type (src/context_free.mli[106,3963+33]..src/context_free.mli[106,3963+80])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[106,3963+34]..src/context_free.mli[106,3963+48])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[106,3963+50]..src/context_free.mli[106,3963+64])
+                  Ttyp_constr "Ppxlib__!.Import.type_extension"
+                  []
+                core_type (src/context_free.mli[106,3963+66]..src/context_free.mli[106,3963+67])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[107,4044+2]..src/context_free.mli[107,4044+80])
+          Tsig_value
+          value_description attr_sig_type_ext_expect/1359 (src/context_free.mli[107,4044+2]..src/context_free.mli[107,4044+80])
+            core_type (src/context_free.mli[107,4044+33]..src/context_free.mli[107,4044+80])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[107,4044+34]..src/context_free.mli[107,4044+48])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[107,4044+50]..src/context_free.mli[107,4044+64])
+                  Ttyp_constr "Ppxlib__!.Import.type_extension"
+                  []
+                core_type (src/context_free.mli[107,4044+66]..src/context_free.mli[107,4044+67])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[108,4125+2]..src/context_free.mli[108,4125+74])
+          Tsig_value
+          value_description attr_str_exception/1360 (src/context_free.mli[108,4125+2]..src/context_free.mli[108,4125+74])
+            core_type (src/context_free.mli[108,4125+27]..src/context_free.mli[108,4125+74])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[108,4125+28]..src/context_free.mli[108,4125+42])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[108,4125+44]..src/context_free.mli[108,4125+58])
+                  Ttyp_constr "Ppxlib__!.Import.type_exception"
+                  []
+                core_type (src/context_free.mli[108,4125+60]..src/context_free.mli[108,4125+61])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[109,4200+2]..src/context_free.mli[109,4200+74])
+          Tsig_value
+          value_description attr_sig_exception/1361 (src/context_free.mli[109,4200+2]..src/context_free.mli[109,4200+74])
+            core_type (src/context_free.mli[109,4200+27]..src/context_free.mli[109,4200+74])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[109,4200+28]..src/context_free.mli[109,4200+42])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[109,4200+44]..src/context_free.mli[109,4200+58])
+                  Ttyp_constr "Ppxlib__!.Import.type_exception"
+                  []
+                core_type (src/context_free.mli[109,4200+60]..src/context_free.mli[109,4200+61])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[111,4276+2]..src/context_free.mli[112,4310+51])
+          Tsig_value
+          value_description attr_str_exception_expect/1362 (src/context_free.mli[111,4276+2]..src/context_free.mli[112,4310+51])
+            core_type (src/context_free.mli[112,4310+4]..src/context_free.mli[112,4310+51])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[112,4310+5]..src/context_free.mli[112,4310+19])
+                  Ttyp_constr "Ppxlib__!.Import.structure_item"
+                  []
+                core_type (src/context_free.mli[112,4310+21]..src/context_free.mli[112,4310+35])
+                  Ttyp_constr "Ppxlib__!.Import.type_exception"
+                  []
+                core_type (src/context_free.mli[112,4310+37]..src/context_free.mli[112,4310+38])
+                  Ttyp_any
+              ]
+            []
+        signature_item (src/context_free.mli[114,4363+2]..src/context_free.mli[115,4397+51])
+          Tsig_value
+          value_description attr_sig_exception_expect/1363 (src/context_free.mli[114,4363+2]..src/context_free.mli[115,4397+51])
+            core_type (src/context_free.mli[115,4397+4]..src/context_free.mli[115,4397+51])
+              Ttyp_constr "attr_inline/1351"
+              [
+                core_type (src/context_free.mli[115,4397+5]..src/context_free.mli[115,4397+19])
+                  Ttyp_constr "Ppxlib__!.Import.signature_item"
+                  []
+                core_type (src/context_free.mli[115,4397+21]..src/context_free.mli[115,4397+35])
+                  Ttyp_constr "Ppxlib__!.Import.type_exception"
+                  []
+                core_type (src/context_free.mli[115,4397+37]..src/context_free.mli[115,4397+38])
+                  Ttyp_any
+              ]
+            []
+      ]
+  signature_item (src/context_free.mli[118,4454+0]..src/context_free.mli[118,4454+7])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/context_free.mli[118,4454+0]..[118,4454+7])
+        Pstr_eval
+        expression (src/context_free.mli[118,4454+0]..[118,4454+7])
+          Pexp_constant PConst_string("/*",(src/context_free.mli[118,4454+0]..[118,4454+7]),None)
+    ]
+  signature_item (src/context_free.mli[121,4493+0]..src/context_free.mli[130,4748+3])
+    Tsig_module "Generated_code_hook/1396"
+    module_type (src/context_free.mli[121,4493+29]..src/context_free.mli[130,4748+3])
+      Tmty_signature
+      [
+        signature_item (src/context_free.mli[122,4526+2]..src/context_free.mli[122,4526+57])
+          Tsig_type Rec
+          [
+            type_declaration single_or_many/1365 (src/context_free.mli[122,4526+2]..src/context_free.mli[122,4526+57])
+              ptype_params =
+                [
+                  core_type (src/context_free.mli[122,4526+7]..src/context_free.mli[122,4526+9])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_variant
+                  [
+                    (src/context_free.mli[122,4526+27]..src/context_free.mli[122,4526+39])
+                      Single/1366
+                      [
+                        core_type (src/context_free.mli[122,4526+37]..src/context_free.mli[122,4526+39])
+                          Ttyp_var a
+                      ]
+                      None
+                    (src/context_free.mli[122,4526+40]..src/context_free.mli[122,4526+57])
+                      Many/1367
+                      [
+                        core_type (src/context_free.mli[122,4526+50]..src/context_free.mli[122,4526+57])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/context_free.mli[122,4526+50]..src/context_free.mli[122,4526+52])
+                              Ttyp_var a
+                          ]
+                      ]
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[125,4637+2]..src/context_free.mli[127,4729+3])
+          Tsig_type Rec
+          [
+            type_declaration t/1368 (src/context_free.mli[125,4637+2]..src/context_free.mli[127,4729+3])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_record
+                  [
+                    (src/context_free.mli[126,4650+4]..src/context_free.mli[126,4650+78])
+                      Immutable
+                      f/1393                      core_type (src/context_free.mli[126,4650+8]..src/context_free.mli[126,4650+77])
+                        Ttyp_poly 'a
+                        core_type (src/context_free.mli[126,4650+12]..src/context_free.mli[126,4650+77])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[126,4650+12]..src/context_free.mli[126,4650+34])
+                            Ttyp_constr "Ppxlib__!.Extension.Context.t"
+                            [
+                              core_type (src/context_free.mli[126,4650+12]..src/context_free.mli[126,4650+14])
+                                Ttyp_var a
+                            ]
+                          core_type (src/context_free.mli[126,4650+38]..src/context_free.mli[126,4650+77])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[126,4650+38]..src/context_free.mli[126,4650+48])
+                              Ttyp_constr "Ppxlib__!.Location.t"
+                              []
+                            core_type (src/context_free.mli[126,4650+52]..src/context_free.mli[126,4650+77])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/context_free.mli[126,4650+52]..src/context_free.mli[126,4650+69])
+                                Ttyp_constr "single_or_many/1365"
+                                [
+                                  core_type (src/context_free.mli[126,4650+52]..src/context_free.mli[126,4650+54])
+                                    Ttyp_var a
+                                ]
+                              core_type (src/context_free.mli[126,4650+73]..src/context_free.mli[126,4650+77])
+                                Ttyp_constr "unit/6!"
+                                []
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[129,4734+2]..src/context_free.mli[129,4734+13])
+          Tsig_value
+          value_description nop/1395 (src/context_free.mli[129,4734+2]..src/context_free.mli[129,4734+13])
+            core_type (src/context_free.mli[129,4734+12]..src/context_free.mli[129,4734+13])
+              Ttyp_constr "t/1368"
+              []
+            []
+      ]
+  signature_item (src/context_free.mli[132,4753+0]..src/context_free.mli[138,4900+3])
+    Tsig_module "Expect_mismatch_handler/1422"
+    module_type (src/context_free.mli[132,4753+33]..src/context_free.mli[138,4900+3])
+      Tmty_signature
+      [
+        signature_item (src/context_free.mli[133,4790+2]..src/context_free.mli[135,4881+3])
+          Tsig_type Rec
+          [
+            type_declaration t/1397 (src/context_free.mli[133,4790+2]..src/context_free.mli[135,4881+3])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_record
+                  [
+                    (src/context_free.mli[134,4803+4]..src/context_free.mli[134,4803+77])
+                      Immutable
+                      f/1419                      core_type (src/context_free.mli[134,4803+8]..src/context_free.mli[134,4803+76])
+                        Ttyp_poly 'a
+                        core_type (src/context_free.mli[134,4803+12]..src/context_free.mli[134,4803+76])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/context_free.mli[134,4803+12]..src/context_free.mli[134,4803+43])
+                            Ttyp_constr "Ppxlib__!.Attribute.Floating.Context.t"
+                            [
+                              core_type (src/context_free.mli[134,4803+12]..src/context_free.mli[134,4803+14])
+                                Ttyp_var a
+                            ]
+                          core_type (src/context_free.mli[134,4803+47]..src/context_free.mli[134,4803+76])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/context_free.mli[134,4803+47]..src/context_free.mli[134,4803+57])
+                              Ttyp_constr "Ppxlib__!.Location.t"
+                              []
+                            core_type (src/context_free.mli[134,4803+61]..src/context_free.mli[134,4803+76])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/context_free.mli[134,4803+61]..src/context_free.mli[134,4803+68])
+                                Ttyp_constr "list/11!"
+                                [
+                                  core_type (src/context_free.mli[134,4803+61]..src/context_free.mli[134,4803+63])
+                                    Ttyp_var a
+                                ]
+                              core_type (src/context_free.mli[134,4803+72]..src/context_free.mli[134,4803+76])
+                                Ttyp_constr "unit/6!"
+                                []
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/context_free.mli[137,4886+2]..src/context_free.mli[137,4886+13])
+          Tsig_value
+          value_description nop/1421 (src/context_free.mli[137,4886+2]..src/context_free.mli[137,4886+13])
+            core_type (src/context_free.mli[137,4886+12]..src/context_free.mli[137,4886+13])
+              Ttyp_constr "t/1397"
+              []
+            []
+      ]
+  signature_item (src/context_free.mli[140,4905+0]..src/context_free.mli[140,4905+7])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/context_free.mli[140,4905+0]..[140,4905+7])
+        Pstr_eval
+        expression (src/context_free.mli[140,4905+0]..[140,4905+7])
+          Pexp_constant PConst_string("/*",(src/context_free.mli[140,4905+0]..[140,4905+7]),None)
+    ]
+  signature_item (src/context_free.mli[147,5194+0]..src/context_free.mli[155,5506+8])
+    Tsig_class
+    [
+      class_description (src/context_free.mli[147,5194+0]..src/context_free.mli[155,5506+8])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "map_top_down"
+        pci_expr =
+          class_type (src/context_free.mli[148,5215+2]..src/context_free.mli[155,5506+8])
+            Tcty_arrow
+            Optional "expect_mismatch_handler"
+            core_type (src/context_free.mli[149,5243+4]..src/context_free.mli[149,5243+29])
+              Ttyp_constr "Expect_mismatch_handler/1422.t"
+              []
+            class_type (src/context_free.mli[150,5316+5]..src/context_free.mli[155,5506+8])
+              Tcty_arrow
+              Optional "generated_code_hook"
+              core_type (src/context_free.mli[151,5343+7]..src/context_free.mli[151,5343+28])
+                Ttyp_constr "Generated_code_hook/1396.t"
+                []
+              class_type (src/context_free.mli[152,5411+5]..src/context_free.mli[155,5506+8])
+                Tcty_arrow
+                Nolabel
+                core_type (src/context_free.mli[152,5411+5]..src/context_free.mli[152,5411+16])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/context_free.mli[152,5411+5]..src/context_free.mli[152,5411+11])
+                      Ttyp_constr "Rule/1364.t"
+                      []
+                  ]
+                class_type (src/context_free.mli[153,5428+5]..src/context_free.mli[155,5506+8])
+                  Tcty_signature
+                  class_signature
+                    core_type (src/context_free.mli[153,5428+11]..src/context_free.mli[153,5428+11])
+                      Ttyp_any
+                    [
+                      class_type_field (src/context_free.mli[154,5440+7]..src/context_free.mli[154,5440+65])
+                        Tctf_inherit
+                        class_type (src/context_free.mli[154,5440+15]..src/context_free.mli[154,5440+65])
+                          Tcty_constr "Ppxlib__!.Ast_traverse.map_with_expansion_context_and_errors"
+                          []
+                    ]
+    ]
+]
+

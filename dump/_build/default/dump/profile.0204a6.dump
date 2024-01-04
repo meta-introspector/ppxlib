@@ -1,0 +1,8 @@
+0.527s  331MB 39.6MB 39.6MB src/context_free.ml
+  0.010s 6.40MB 2.03MB 2.03MB parsing
+    0.010s 6.40MB 2.03MB 2.03MB parser
+  0.343s  207MB 35.4MB 37.4MB typing
+  0.021s 6.38MB 0.34MB 37.7MB transl
+  0.085s 50.5MB 1.44MB 39.2MB generate
+  0.068s 60.3MB 0.37MB 39.6MB other
+0.008s ------ ------ ------ other

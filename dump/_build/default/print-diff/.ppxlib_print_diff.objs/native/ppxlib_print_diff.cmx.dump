@@ -1,0 +1,1515 @@
+[
+  structure_item (print-diff/ppxlib_print_diff.ml[1,0+0]..[1,0+14])
+    Pstr_open Fresh
+    module_expr (print-diff/ppxlib_print_diff.ml[1,0+5]..[1,0+14])
+      Pmod_ident "StdLabels" (print-diff/ppxlib_print_diff.ml[1,0+5]..[1,0+14])
+  structure_item (print-diff/ppxlib_print_diff.ml[3,16+0]..[13,262+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (print-diff/ppxlib_print_diff.ml[3,16+4]..[3,16+15])
+          Ppat_var "patdiff_cmd" (print-diff/ppxlib_print_diff.ml[3,16+4]..[3,16+15])
+        expression (print-diff/ppxlib_print_diff.ml[3,16+16]..[13,262+44]) ghost
+          Pexp_fun
+          Labelled "use_color"
+          None
+          pattern (print-diff/ppxlib_print_diff.ml[3,16+17]..[3,16+26])
+            Ppat_var "use_color" (print-diff/ppxlib_print_diff.ml[3,16+17]..[3,16+26])
+          expression (print-diff/ppxlib_print_diff.ml[3,16+27]..[13,262+44]) ghost
+            Pexp_fun
+            Labelled "extra_patdiff_args"
+            None
+            pattern (print-diff/ppxlib_print_diff.ml[3,16+28]..[3,16+46])
+              Ppat_var "extra_patdiff_args" (print-diff/ppxlib_print_diff.ml[3,16+28]..[3,16+46])
+            expression (print-diff/ppxlib_print_diff.ml[4,65+2]..[13,262+44])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (print-diff/ppxlib_print_diff.ml[4,65+6]..[4,65+10])
+                    Ppat_var "args" (print-diff/ppxlib_print_diff.ml[4,65+6]..[4,65+10])
+                  expression (print-diff/ppxlib_print_diff.ml[5,78+4]..[11,249+7])
+                    Pexp_apply
+                    expression (print-diff/ppxlib_print_diff.ml[5,78+4]..[5,78+15])
+                      Pexp_ident "List.concat" (print-diff/ppxlib_print_diff.ml[5,78+4]..[5,78+15])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (print-diff/ppxlib_print_diff.ml[6,94+6]..[11,249+7])
+                          Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[7,102+8]..[11,249+7]) ghost
+                          Some
+                            expression (print-diff/ppxlib_print_diff.ml[7,102+8]..[11,249+7]) ghost
+                              Pexp_tuple
+                              [
+                                expression (print-diff/ppxlib_print_diff.ml[7,102+8]..[7,102+30])
+                                  Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[7,102+10]..[7,102+30]) ghost
+                                  Some
+                                    expression (print-diff/ppxlib_print_diff.ml[7,102+10]..[7,102+30]) ghost
+                                      Pexp_tuple
+                                      [
+                                        expression (print-diff/ppxlib_print_diff.ml[7,102+10]..[7,102+28])
+                                          Pexp_constant PConst_string("-keep-whitespace",(print-diff/ppxlib_print_diff.ml[7,102+11]..[7,102+27]),None)
+                                        expression (print-diff/ppxlib_print_diff.ml[7,102+29]..[7,102+30]) ghost
+                                          Pexp_construct "[]" (print-diff/ppxlib_print_diff.ml[7,102+29]..[7,102+30]) ghost
+                                          None
+                                      ]
+                                expression (print-diff/ppxlib_print_diff.ml[8,134+8]..[11,249+7]) ghost
+                                  Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[8,134+8]..[11,249+7]) ghost
+                                  Some
+                                    expression (print-diff/ppxlib_print_diff.ml[8,134+8]..[11,249+7]) ghost
+                                      Pexp_tuple
+                                      [
+                                        expression (print-diff/ppxlib_print_diff.ml[8,134+8]..[8,134+35])
+                                          Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[8,134+10]..[8,134+35]) ghost
+                                          Some
+                                            expression (print-diff/ppxlib_print_diff.ml[8,134+10]..[8,134+35]) ghost
+                                              Pexp_tuple
+                                              [
+                                                expression (print-diff/ppxlib_print_diff.ml[8,134+10]..[8,134+33])
+                                                  Pexp_constant PConst_string("-location-style omake",(print-diff/ppxlib_print_diff.ml[8,134+11]..[8,134+32]),None)
+                                                expression (print-diff/ppxlib_print_diff.ml[8,134+34]..[8,134+35]) ghost
+                                                  Pexp_construct "[]" (print-diff/ppxlib_print_diff.ml[8,134+34]..[8,134+35]) ghost
+                                                  None
+                                              ]
+                                        expression (print-diff/ppxlib_print_diff.ml[9,171+8]..[11,249+7]) ghost
+                                          Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[9,171+8]..[11,249+7]) ghost
+                                          Some
+                                            expression (print-diff/ppxlib_print_diff.ml[9,171+8]..[11,249+7]) ghost
+                                              Pexp_tuple
+                                              [
+                                                expression (print-diff/ppxlib_print_diff.ml[9,171+8]..[9,171+48])
+                                                  Pexp_ifthenelse
+                                                  expression (print-diff/ppxlib_print_diff.ml[9,171+12]..[9,171+21])
+                                                    Pexp_ident "use_color" (print-diff/ppxlib_print_diff.ml[9,171+12]..[9,171+21])
+                                                  expression (print-diff/ppxlib_print_diff.ml[9,171+27]..[9,171+29])
+                                                    Pexp_construct "[]" (print-diff/ppxlib_print_diff.ml[9,171+27]..[9,171+29])
+                                                    None
+                                                  Some
+                                                    expression (print-diff/ppxlib_print_diff.ml[9,171+35]..[9,171+47])
+                                                      Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[9,171+37]..[9,171+47]) ghost
+                                                      Some
+                                                        expression (print-diff/ppxlib_print_diff.ml[9,171+37]..[9,171+47]) ghost
+                                                          Pexp_tuple
+                                                          [
+                                                            expression (print-diff/ppxlib_print_diff.ml[9,171+37]..[9,171+45])
+                                                              Pexp_constant PConst_string("-ascii",(print-diff/ppxlib_print_diff.ml[9,171+38]..[9,171+44]),None)
+                                                            expression (print-diff/ppxlib_print_diff.ml[9,171+46]..[9,171+47]) ghost
+                                                              Pexp_construct "[]" (print-diff/ppxlib_print_diff.ml[9,171+46]..[9,171+47]) ghost
+                                                              None
+                                                          ]
+                                                expression (print-diff/ppxlib_print_diff.ml[10,221+8]..[11,249+7]) ghost
+                                                  Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[10,221+8]..[11,249+7]) ghost
+                                                  Some
+                                                    expression (print-diff/ppxlib_print_diff.ml[10,221+8]..[11,249+7]) ghost
+                                                      Pexp_tuple
+                                                      [
+                                                        expression (print-diff/ppxlib_print_diff.ml[10,221+8]..[10,221+26])
+                                                          Pexp_ident "extra_patdiff_args" (print-diff/ppxlib_print_diff.ml[10,221+8]..[10,221+26])
+                                                        expression (print-diff/ppxlib_print_diff.ml[11,249+6]..[11,249+7]) ghost
+                                                          Pexp_construct "[]" (print-diff/ppxlib_print_diff.ml[11,249+6]..[11,249+7]) ghost
+                                                          None
+                                                      ]
+                                              ]
+                                      ]
+                              ]
+                    ]
+              ]
+              expression (print-diff/ppxlib_print_diff.ml[13,262+2]..[13,262+44])
+                Pexp_apply
+                expression (print-diff/ppxlib_print_diff.ml[13,262+2]..[13,262+15])
+                  Pexp_ident "String.concat" (print-diff/ppxlib_print_diff.ml[13,262+2]..[13,262+15])
+                [
+                  <arg>
+                  Labelled "sep"
+                    expression (print-diff/ppxlib_print_diff.ml[13,262+21]..[13,262+24])
+                      Pexp_constant PConst_string(" ",(print-diff/ppxlib_print_diff.ml[13,262+22]..[13,262+23]),None)
+                  <arg>
+                  Nolabel
+                    expression (print-diff/ppxlib_print_diff.ml[13,262+25]..[13,262+44])
+                      Pexp_construct "::" (print-diff/ppxlib_print_diff.ml[13,262+36]..[13,262+38])
+                      Some
+                        expression (print-diff/ppxlib_print_diff.ml[13,262+26]..[13,262+43]) ghost
+                          Pexp_tuple
+                          [
+                            expression (print-diff/ppxlib_print_diff.ml[13,262+26]..[13,262+35])
+                              Pexp_constant PConst_string("patdiff",(print-diff/ppxlib_print_diff.ml[13,262+27]..[13,262+34]),None)
+                            expression (print-diff/ppxlib_print_diff.ml[13,262+39]..[13,262+43])
+                              Pexp_ident "args" (print-diff/ppxlib_print_diff.ml[13,262+39]..[13,262+43])
+                          ]
+                ]
+    ]
+  structure_item (print-diff/ppxlib_print_diff.ml[15,308+0]..[49,1630+80])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (print-diff/ppxlib_print_diff.ml[15,308+4]..[15,308+9])
+          Ppat_var "print" (print-diff/ppxlib_print_diff.ml[15,308+4]..[15,308+9])
+        expression (print-diff/ppxlib_print_diff.ml[15,308+10]..[49,1630+80]) ghost
+          Pexp_fun
+          Optional "diff_command"
+          None
+          pattern (print-diff/ppxlib_print_diff.ml[15,308+11]..[15,308+23])
+            Ppat_var "diff_command" (print-diff/ppxlib_print_diff.ml[15,308+11]..[15,308+23])
+          expression (print-diff/ppxlib_print_diff.ml[15,308+24]..[49,1630+80]) ghost
+            Pexp_fun
+            Optional "extra_patdiff_args"
+            Some
+              expression (print-diff/ppxlib_print_diff.ml[15,308+47]..[15,308+49])
+                Pexp_construct "[]" (print-diff/ppxlib_print_diff.ml[15,308+47]..[15,308+49])
+                None
+            pattern (print-diff/ppxlib_print_diff.ml[15,308+26]..[15,308+44])
+              Ppat_var "extra_patdiff_args" (print-diff/ppxlib_print_diff.ml[15,308+26]..[15,308+44])
+            expression (print-diff/ppxlib_print_diff.ml[15,308+51]..[49,1630+80]) ghost
+              Pexp_fun
+              Optional "use_color"
+              Some
+                expression (print-diff/ppxlib_print_diff.ml[15,308+65]..[15,308+70])
+                  Pexp_construct "false" (print-diff/ppxlib_print_diff.ml[15,308+65]..[15,308+70])
+                  None
+              pattern (print-diff/ppxlib_print_diff.ml[15,308+53]..[15,308+62])
+                Ppat_var "use_color" (print-diff/ppxlib_print_diff.ml[15,308+53]..[15,308+62])
+              expression (print-diff/ppxlib_print_diff.ml[15,308+72]..[49,1630+80]) ghost
+                Pexp_fun
+                Labelled "file1"
+                None
+                pattern (print-diff/ppxlib_print_diff.ml[15,308+73]..[15,308+78])
+                  Ppat_var "file1" (print-diff/ppxlib_print_diff.ml[15,308+73]..[15,308+78])
+                expression (print-diff/ppxlib_print_diff.ml[16,387+4]..[49,1630+80]) ghost
+                  Pexp_fun
+                  Labelled "file2"
+                  None
+                  pattern (print-diff/ppxlib_print_diff.ml[16,387+5]..[16,387+10])
+                    Ppat_var "file2" (print-diff/ppxlib_print_diff.ml[16,387+5]..[16,387+10])
+                  expression (print-diff/ppxlib_print_diff.ml[16,387+11]..[49,1630+80]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (print-diff/ppxlib_print_diff.ml[16,387+11]..[16,387+13])
+                      Ppat_construct "()" (print-diff/ppxlib_print_diff.ml[16,387+11]..[16,387+13])
+                      None
+                    expression (print-diff/ppxlib_print_diff.ml[17,403+2]..[49,1630+80])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (print-diff/ppxlib_print_diff.ml[17,403+6]..[17,403+10])
+                            Ppat_var "exec" (print-diff/ppxlib_print_diff.ml[17,403+6]..[17,403+10])
+                          expression (print-diff/ppxlib_print_diff.ml[17,403+11]..[25,606+26]) ghost
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (print-diff/ppxlib_print_diff.ml[17,403+11]..[17,403+14])
+                              Ppat_var "cmd" (print-diff/ppxlib_print_diff.ml[17,403+11]..[17,403+14])
+                            expression (print-diff/ppxlib_print_diff.ml[18,420+4]..[25,606+26])
+                              Pexp_let Nonrec
+                              [
+                                <def>
+                                  pattern (print-diff/ppxlib_print_diff.ml[18,420+8]..[18,420+11])
+                                    Ppat_var "cmd" (print-diff/ppxlib_print_diff.ml[18,420+8]..[18,420+11])
+                                  expression (print-diff/ppxlib_print_diff.ml[19,434+6]..[20,498+30])
+                                    Pexp_apply
+                                    expression (print-diff/ppxlib_print_diff.ml[19,434+6]..[19,434+20])
+                                      Pexp_ident "Printf.sprintf" (print-diff/ppxlib_print_diff.ml[19,434+6]..[19,434+20])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (print-diff/ppxlib_print_diff.ml[19,434+21]..[19,434+36])
+                                          Pexp_constant PConst_string("%s %s %s 1>&2",(print-diff/ppxlib_print_diff.ml[19,434+22]..[19,434+35]),None)
+                                      <arg>
+                                      Nolabel
+                                        expression (print-diff/ppxlib_print_diff.ml[19,434+37]..[19,434+40])
+                                          Pexp_ident "cmd" (print-diff/ppxlib_print_diff.ml[19,434+37]..[19,434+40])
+                                      <arg>
+                                      Nolabel
+                                        expression (print-diff/ppxlib_print_diff.ml[19,434+41]..[19,434+63])
+                                          Pexp_apply
+                                          expression (print-diff/ppxlib_print_diff.ml[19,434+42]..[19,434+56])
+                                            Pexp_ident "Filename.quote" (print-diff/ppxlib_print_diff.ml[19,434+42]..[19,434+56])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (print-diff/ppxlib_print_diff.ml[19,434+57]..[19,434+62])
+                                                Pexp_ident "file1" (print-diff/ppxlib_print_diff.ml[19,434+57]..[19,434+62])
+                                          ]
+                                      <arg>
+                                      Nolabel
+                                        expression (print-diff/ppxlib_print_diff.ml[20,498+8]..[20,498+30])
+                                          Pexp_apply
+                                          expression (print-diff/ppxlib_print_diff.ml[20,498+9]..[20,498+23])
+                                            Pexp_ident "Filename.quote" (print-diff/ppxlib_print_diff.ml[20,498+9]..[20,498+23])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (print-diff/ppxlib_print_diff.ml[20,498+24]..[20,498+29])
+                                                Pexp_ident "file2" (print-diff/ppxlib_print_diff.ml[20,498+24]..[20,498+29])
+                                          ]
+                                    ]
+                              ]
+                              expression (print-diff/ppxlib_print_diff.ml[22,536+4]..[25,606+26])
+                                Pexp_match
+                                expression (print-diff/ppxlib_print_diff.ml[22,536+10]..[22,536+25])
+                                  Pexp_apply
+                                  expression (print-diff/ppxlib_print_diff.ml[22,536+10]..[22,536+21])
+                                    Pexp_ident "Sys.command" (print-diff/ppxlib_print_diff.ml[22,536+10]..[22,536+21])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (print-diff/ppxlib_print_diff.ml[22,536+22]..[22,536+25])
+                                        Pexp_ident "cmd" (print-diff/ppxlib_print_diff.ml[22,536+22]..[22,536+25])
+                                  ]
+                                [
+                                  <case>
+                                    pattern (print-diff/ppxlib_print_diff.ml[23,567+6]..[23,567+7])
+                                      Ppat_constant PConst_int (0,None)
+                                    expression (print-diff/ppxlib_print_diff.ml[23,567+11]..[23,567+16])
+                                      Pexp_variant "Same"
+                                      None
+                                  <case>
+                                    pattern (print-diff/ppxlib_print_diff.ml[24,584+6]..[24,584+7])
+                                      Ppat_constant PConst_int (1,None)
+                                    expression (print-diff/ppxlib_print_diff.ml[24,584+11]..[24,584+21])
+                                      Pexp_variant "Different"
+                                      None
+                                  <case>
+                                    pattern (print-diff/ppxlib_print_diff.ml[25,606+6]..[25,606+7])
+                                      Ppat_var "n" (print-diff/ppxlib_print_diff.ml[25,606+6]..[25,606+7])
+                                    expression (print-diff/ppxlib_print_diff.ml[25,606+11]..[25,606+26])
+                                      Pexp_variant "Error"
+                                      Some
+                                        expression (print-diff/ppxlib_print_diff.ml[25,606+18]..[25,606+26])
+                                          Pexp_tuple
+                                          [
+                                            expression (print-diff/ppxlib_print_diff.ml[25,606+19]..[25,606+20])
+                                              Pexp_ident "n" (print-diff/ppxlib_print_diff.ml[25,606+19]..[25,606+20])
+                                            expression (print-diff/ppxlib_print_diff.ml[25,606+22]..[25,606+25])
+                                              Pexp_ident "cmd" (print-diff/ppxlib_print_diff.ml[25,606+22]..[25,606+25])
+                                          ]
+                                ]
+                      ]
+                      expression (print-diff/ppxlib_print_diff.ml[27,638+2]..[49,1630+80])
+                        Pexp_match
+                        expression (print-diff/ppxlib_print_diff.ml[27,638+8]..[27,638+20])
+                          Pexp_ident "diff_command" (print-diff/ppxlib_print_diff.ml[27,638+8]..[27,638+20])
+                        [
+                          <case>
+                            pattern (print-diff/ppxlib_print_diff.ml[28,664+4]..[28,664+10])
+                              Ppat_construct "Some" (print-diff/ppxlib_print_diff.ml[28,664+4]..[28,664+8])
+                              Some
+                                pattern (print-diff/ppxlib_print_diff.ml[28,664+9]..[28,664+10])
+                                  Ppat_var "s" (print-diff/ppxlib_print_diff.ml[28,664+9]..[28,664+10])
+                            expression (print-diff/ppxlib_print_diff.ml[28,664+14]..[28,664+80])
+                              Pexp_apply
+                              expression (print-diff/ppxlib_print_diff.ml[28,664+14]..[28,664+20])
+                                Pexp_ident "ignore" (print-diff/ppxlib_print_diff.ml[28,664+14]..[28,664+20])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (print-diff/ppxlib_print_diff.ml[28,664+21]..[28,664+80]) ghost
+                                    Pexp_constraint
+                                    expression (print-diff/ppxlib_print_diff.ml[28,664+22]..[28,664+28])
+                                      Pexp_apply
+                                      expression (print-diff/ppxlib_print_diff.ml[28,664+22]..[28,664+26])
+                                        Pexp_ident "exec" (print-diff/ppxlib_print_diff.ml[28,664+22]..[28,664+26])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (print-diff/ppxlib_print_diff.ml[28,664+27]..[28,664+28])
+                                            Pexp_ident "s" (print-diff/ppxlib_print_diff.ml[28,664+27]..[28,664+28])
+                                      ]
+                                    core_type (print-diff/ppxlib_print_diff.ml[28,664+31]..[28,664+79])
+                                      Ptyp_variant closed=Open
+                                      [
+                                        Rtag "Same" true
+                                          []
+                                        Rtag "Different" true
+                                          []
+                                        Rtag "Error" false
+                                          [
+                                            core_type (print-diff/ppxlib_print_diff.ml[28,664+65]..[28,664+77])
+                                              Ptyp_tuple
+                                              [
+                                                core_type (print-diff/ppxlib_print_diff.ml[28,664+65]..[28,664+68])
+                                                  Ptyp_constr "int" (print-diff/ppxlib_print_diff.ml[28,664+65]..[28,664+68])
+                                                  []
+                                                core_type (print-diff/ppxlib_print_diff.ml[28,664+71]..[28,664+77])
+                                                  Ptyp_constr "string" (print-diff/ppxlib_print_diff.ml[28,664+71]..[28,664+77])
+                                                  []
+                                              ]
+                                          ]
+                                      ]
+                                      None
+                              ]
+                          <case>
+                            pattern (print-diff/ppxlib_print_diff.ml[29,745+4]..[29,745+8])
+                              Ppat_construct "None" (print-diff/ppxlib_print_diff.ml[29,745+4]..[29,745+8])
+                              None
+                            expression (print-diff/ppxlib_print_diff.ml[29,745+12]..[49,1630+80])
+                              Pexp_match
+                              expression (print-diff/ppxlib_print_diff.ml[30,759+12]..[30,759+61])
+                                Pexp_apply
+                                expression (print-diff/ppxlib_print_diff.ml[30,759+12]..[30,759+16])
+                                  Pexp_ident "exec" (print-diff/ppxlib_print_diff.ml[30,759+12]..[30,759+16])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (print-diff/ppxlib_print_diff.ml[30,759+17]..[30,759+61])
+                                      Pexp_apply
+                                      expression (print-diff/ppxlib_print_diff.ml[30,759+18]..[30,759+29])
+                                        Pexp_ident "patdiff_cmd" (print-diff/ppxlib_print_diff.ml[30,759+18]..[30,759+29])
+                                      [
+                                        <arg>
+                                        Labelled "use_color"
+                                          expression (print-diff/ppxlib_print_diff.ml[30,759+31]..[30,759+40])
+                                            Pexp_ident "use_color" (print-diff/ppxlib_print_diff.ml[30,759+31]..[30,759+40])
+                                        <arg>
+                                        Labelled "extra_patdiff_args"
+                                          expression (print-diff/ppxlib_print_diff.ml[30,759+42]..[30,759+60])
+                                            Pexp_ident "extra_patdiff_args" (print-diff/ppxlib_print_diff.ml[30,759+42]..[30,759+60])
+                                      ]
+                                ]
+                              [
+                                <case>
+                                  pattern (print-diff/ppxlib_print_diff.ml[31,826+8]..[31,826+13])
+                                    Ppat_variant "Same"
+                                    None
+                                  expression (print-diff/ppxlib_print_diff.ml[33,907+10]..[35,999+79])
+                                    Pexp_sequence
+                                    expression (print-diff/ppxlib_print_diff.ml[33,907+10]..[33,907+73])
+                                      Pexp_apply
+                                      expression (print-diff/ppxlib_print_diff.ml[33,907+10]..[33,907+24])
+                                        Pexp_ident "Printf.eprintf" (print-diff/ppxlib_print_diff.ml[33,907+10]..[33,907+24])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (print-diff/ppxlib_print_diff.ml[33,907+25]..[33,907+67])
+                                            Pexp_constant PConst_string("File \"%s\", line 1, characters 0-0:\n%!",(print-diff/ppxlib_print_diff.ml[33,907+26]..[33,907+66]),None)
+                                        <arg>
+                                        Nolabel
+                                          expression (print-diff/ppxlib_print_diff.ml[33,907+68]..[33,907+73])
+                                            Pexp_ident "file1" (print-diff/ppxlib_print_diff.ml[33,907+68]..[33,907+73])
+                                      ]
+                                    expression (print-diff/ppxlib_print_diff.ml[34,982+10]..[35,999+79])
+                                      Pexp_apply
+                                      expression (print-diff/ppxlib_print_diff.ml[34,982+10]..[34,982+16])
+                                        Pexp_ident "ignore" (print-diff/ppxlib_print_diff.ml[34,982+10]..[34,982+16])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (print-diff/ppxlib_print_diff.ml[35,999+12]..[35,999+79]) ghost
+                                            Pexp_constraint
+                                            expression (print-diff/ppxlib_print_diff.ml[35,999+13]..[35,999+27])
+                                              Pexp_apply
+                                              expression (print-diff/ppxlib_print_diff.ml[35,999+13]..[35,999+17])
+                                                Pexp_ident "exec" (print-diff/ppxlib_print_diff.ml[35,999+13]..[35,999+17])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (print-diff/ppxlib_print_diff.ml[35,999+18]..[35,999+27])
+                                                    Pexp_constant PConst_string("diff -u",(print-diff/ppxlib_print_diff.ml[35,999+19]..[35,999+26]),None)
+                                              ]
+                                            core_type (print-diff/ppxlib_print_diff.ml[35,999+30]..[35,999+78])
+                                              Ptyp_variant closed=Open
+                                              [
+                                                Rtag "Same" true
+                                                  []
+                                                Rtag "Different" true
+                                                  []
+                                                Rtag "Error" false
+                                                  [
+                                                    core_type (print-diff/ppxlib_print_diff.ml[35,999+64]..[35,999+76])
+                                                      Ptyp_tuple
+                                                      [
+                                                        core_type (print-diff/ppxlib_print_diff.ml[35,999+64]..[35,999+67])
+                                                          Ptyp_constr "int" (print-diff/ppxlib_print_diff.ml[35,999+64]..[35,999+67])
+                                                          []
+                                                        core_type (print-diff/ppxlib_print_diff.ml[35,999+70]..[35,999+76])
+                                                          Ptyp_constr "string" (print-diff/ppxlib_print_diff.ml[35,999+70]..[35,999+76])
+                                                          []
+                                                      ]
+                                                  ]
+                                              ]
+                                              None
+                                      ]
+                                <case>
+                                  pattern (print-diff/ppxlib_print_diff.ml[36,1079+8]..[36,1079+18])
+                                    Ppat_variant "Different"
+                                    None
+                                  expression (print-diff/ppxlib_print_diff.ml[38,1157+10]..[38,1157+12])
+                                    Pexp_construct "()" (print-diff/ppxlib_print_diff.ml[38,1157+10]..[38,1157+12])
+                                    None
+                                <case>
+                                  pattern (print-diff/ppxlib_print_diff.ml[39,1170+8]..[39,1170+30])
+                                    Ppat_variant "Error"
+                                    Some
+                                      pattern (print-diff/ppxlib_print_diff.ml[39,1170+15]..[39,1170+30])
+                                        Ppat_tuple
+                                        [
+                                          pattern (print-diff/ppxlib_print_diff.ml[39,1170+16]..[39,1170+24])
+                                            Ppat_var "err_code" (print-diff/ppxlib_print_diff.ml[39,1170+16]..[39,1170+24])
+                                          pattern (print-diff/ppxlib_print_diff.ml[39,1170+26]..[39,1170+29])
+                                            Ppat_var "cmd" (print-diff/ppxlib_print_diff.ml[39,1170+26]..[39,1170+29])
+                                        ]
+                                  expression (print-diff/ppxlib_print_diff.ml[41,1295+10]..[49,1630+79])
+                                    Pexp_sequence
+                                    expression (print-diff/ppxlib_print_diff.ml[41,1295+10]..[46,1512+24])
+                                      Pexp_apply
+                                      expression (print-diff/ppxlib_print_diff.ml[41,1295+10]..[41,1295+24])
+                                        Pexp_ident "Printf.eprintf" (print-diff/ppxlib_print_diff.ml[41,1295+10]..[41,1295+24])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..[45,1468+43])
+                                            Pexp_constant PConst_string("Error:\n> %S exited with code %d\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n",(print-diff/ppxlib_print_diff.ml[42,1320+13]..[45,1468+42]),None)
+                                        <arg>
+                                        Nolabel
+                                          expression (print-diff/ppxlib_print_diff.ml[46,1512+12]..[46,1512+15])
+                                            Pexp_ident "cmd" (print-diff/ppxlib_print_diff.ml[46,1512+12]..[46,1512+15])
+                                        <arg>
+                                        Nolabel
+                                          expression (print-diff/ppxlib_print_diff.ml[46,1512+16]..[46,1512+24])
+                                            Pexp_ident "err_code" (print-diff/ppxlib_print_diff.ml[46,1512+16]..[46,1512+24])
+                                      ]
+                                    expression (print-diff/ppxlib_print_diff.ml[47,1538+10]..[49,1630+79])
+                                      Pexp_sequence
+                                      expression (print-diff/ppxlib_print_diff.ml[47,1538+10]..[47,1538+73])
+                                        Pexp_apply
+                                        expression (print-diff/ppxlib_print_diff.ml[47,1538+10]..[47,1538+24])
+                                          Pexp_ident "Printf.eprintf" (print-diff/ppxlib_print_diff.ml[47,1538+10]..[47,1538+24])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..[47,1538+67])
+                                              Pexp_constant PConst_string("File \"%s\", line 1, characters 0-0:\n%!",(print-diff/ppxlib_print_diff.ml[47,1538+26]..[47,1538+66]),None)
+                                          <arg>
+                                          Nolabel
+                                            expression (print-diff/ppxlib_print_diff.ml[47,1538+68]..[47,1538+73])
+                                              Pexp_ident "file1" (print-diff/ppxlib_print_diff.ml[47,1538+68]..[47,1538+73])
+                                        ]
+                                      expression (print-diff/ppxlib_print_diff.ml[48,1613+10]..[49,1630+79])
+                                        Pexp_apply
+                                        expression (print-diff/ppxlib_print_diff.ml[48,1613+10]..[48,1613+16])
+                                          Pexp_ident "ignore" (print-diff/ppxlib_print_diff.ml[48,1613+10]..[48,1613+16])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (print-diff/ppxlib_print_diff.ml[49,1630+12]..[49,1630+79]) ghost
+                                              Pexp_constraint
+                                              expression (print-diff/ppxlib_print_diff.ml[49,1630+13]..[49,1630+27])
+                                                Pexp_apply
+                                                expression (print-diff/ppxlib_print_diff.ml[49,1630+13]..[49,1630+17])
+                                                  Pexp_ident "exec" (print-diff/ppxlib_print_diff.ml[49,1630+13]..[49,1630+17])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (print-diff/ppxlib_print_diff.ml[49,1630+18]..[49,1630+27])
+                                                      Pexp_constant PConst_string("diff -u",(print-diff/ppxlib_print_diff.ml[49,1630+19]..[49,1630+26]),None)
+                                                ]
+                                              core_type (print-diff/ppxlib_print_diff.ml[49,1630+30]..[49,1630+78])
+                                                Ptyp_variant closed=Open
+                                                [
+                                                  Rtag "Same" true
+                                                    []
+                                                  Rtag "Different" true
+                                                    []
+                                                  Rtag "Error" false
+                                                    [
+                                                      core_type (print-diff/ppxlib_print_diff.ml[49,1630+64]..[49,1630+76])
+                                                        Ptyp_tuple
+                                                        [
+                                                          core_type (print-diff/ppxlib_print_diff.ml[49,1630+64]..[49,1630+67])
+                                                            Ptyp_constr "int" (print-diff/ppxlib_print_diff.ml[49,1630+64]..[49,1630+67])
+                                                            []
+                                                          core_type (print-diff/ppxlib_print_diff.ml[49,1630+70]..[49,1630+76])
+                                                            Ptyp_constr "string" (print-diff/ppxlib_print_diff.ml[49,1630+70]..[49,1630+76])
+                                                            []
+                                                        ]
+                                                    ]
+                                                ]
+                                                None
+                                        ]
+                              ]
+                        ]
+    ]
+]
+
+open StdLabels
+let patdiff_cmd ~use_color  ~extra_patdiff_args  =
+  let args =
+    List.concat
+      [["-keep-whitespace"];
+      ["-location-style omake"];
+      if use_color then [] else ["-ascii"];
+      extra_patdiff_args] in
+  String.concat ~sep:" " ("patdiff" :: args)
+let print ?diff_command  ?(extra_patdiff_args= [])  ?(use_color= false) 
+  ~file1  ~file2  () =
+  let exec cmd =
+    let cmd =
+      Printf.sprintf "%s %s %s 1>&2" cmd (Filename.quote file1)
+        (Filename.quote file2) in
+    match Sys.command cmd with
+    | 0 -> `Same
+    | 1 -> `Different
+    | n -> `Error (n, cmd) in
+  match diff_command with
+  | Some s ->
+      ignore (exec s : [> `Same  | `Different  | `Error of (int * string) ])
+  | None ->
+      (match exec (patdiff_cmd ~use_color ~extra_patdiff_args) with
+       | `Same ->
+           (Printf.eprintf "File \"%s\", line 1, characters 0-0:\n%!" file1;
+            ignore
+              (exec "diff -u" : [> `Same  | `Different 
+                                | `Error of (int * string) ]))
+       | `Different -> ()
+       | `Error (err_code, cmd) ->
+           (Printf.eprintf
+              "Error:\n> %S exited with code %d\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n"
+              cmd err_code;
+            Printf.eprintf "File \"%s\", line 1, characters 0-0:\n%!" file1;
+            ignore
+              (exec "diff -u" : [> `Same  | `Different 
+                                | `Error of (int * string) ])))
+[
+  structure_item (print-diff/ppxlib_print_diff.ml[1,0+0]..print-diff/ppxlib_print_diff.ml[1,0+14])
+    Tstr_open Fresh
+    module_expr (print-diff/ppxlib_print_diff.ml[1,0+5]..print-diff/ppxlib_print_diff.ml[1,0+14])
+      Tmod_ident "Stdlib!.StdLabels"
+  structure_item (print-diff/ppxlib_print_diff.ml[3,16+0]..print-diff/ppxlib_print_diff.ml[13,262+44])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (print-diff/ppxlib_print_diff.ml[3,16+4]..print-diff/ppxlib_print_diff.ml[3,16+15])
+          Tpat_var "patdiff_cmd/94"
+        expression (print-diff/ppxlib_print_diff.ml[3,16+16]..print-diff/ppxlib_print_diff.ml[13,262+44]) ghost
+          Texp_function
+          Labelled "use_color"
+          [
+            <case>
+              pattern (print-diff/ppxlib_print_diff.ml[3,16+17]..print-diff/ppxlib_print_diff.ml[3,16+26])
+                Tpat_var "use_color/96"
+              expression (print-diff/ppxlib_print_diff.ml[3,16+27]..print-diff/ppxlib_print_diff.ml[13,262+44]) ghost
+                Texp_function
+                Labelled "extra_patdiff_args"
+                [
+                  <case>
+                    pattern (print-diff/ppxlib_print_diff.ml[3,16+28]..print-diff/ppxlib_print_diff.ml[3,16+46])
+                      Tpat_var "extra_patdiff_args/97"
+                    expression (print-diff/ppxlib_print_diff.ml[4,65+2]..print-diff/ppxlib_print_diff.ml[13,262+44])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (print-diff/ppxlib_print_diff.ml[4,65+6]..print-diff/ppxlib_print_diff.ml[4,65+10])
+                            Tpat_var "args/98"
+                          expression (print-diff/ppxlib_print_diff.ml[5,78+4]..print-diff/ppxlib_print_diff.ml[11,249+7])
+                            Texp_apply
+                            expression (print-diff/ppxlib_print_diff.ml[5,78+4]..print-diff/ppxlib_print_diff.ml[5,78+15])
+                              Texp_ident "Stdlib!.StdLabels.List.concat"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (print-diff/ppxlib_print_diff.ml[6,94+6]..print-diff/ppxlib_print_diff.ml[11,249+7])
+                                  Texp_construct "::"
+                                  [
+                                    expression (print-diff/ppxlib_print_diff.ml[7,102+8]..print-diff/ppxlib_print_diff.ml[7,102+30])
+                                      Texp_construct "::"
+                                      [
+                                        expression (print-diff/ppxlib_print_diff.ml[7,102+10]..print-diff/ppxlib_print_diff.ml[7,102+28])
+                                          Texp_constant Const_string("-keep-whitespace",(print-diff/ppxlib_print_diff.ml[7,102+11]..print-diff/ppxlib_print_diff.ml[7,102+27]),None)
+                                        expression (print-diff/ppxlib_print_diff.ml[7,102+29]..print-diff/ppxlib_print_diff.ml[7,102+30]) ghost
+                                          Texp_construct "[]"
+                                          []
+                                      ]
+                                    expression (print-diff/ppxlib_print_diff.ml[8,134+8]..print-diff/ppxlib_print_diff.ml[11,249+7]) ghost
+                                      Texp_construct "::"
+                                      [
+                                        expression (print-diff/ppxlib_print_diff.ml[8,134+8]..print-diff/ppxlib_print_diff.ml[8,134+35])
+                                          Texp_construct "::"
+                                          [
+                                            expression (print-diff/ppxlib_print_diff.ml[8,134+10]..print-diff/ppxlib_print_diff.ml[8,134+33])
+                                              Texp_constant Const_string("-location-style omake",(print-diff/ppxlib_print_diff.ml[8,134+11]..print-diff/ppxlib_print_diff.ml[8,134+32]),None)
+                                            expression (print-diff/ppxlib_print_diff.ml[8,134+34]..print-diff/ppxlib_print_diff.ml[8,134+35]) ghost
+                                              Texp_construct "[]"
+                                              []
+                                          ]
+                                        expression (print-diff/ppxlib_print_diff.ml[9,171+8]..print-diff/ppxlib_print_diff.ml[11,249+7]) ghost
+                                          Texp_construct "::"
+                                          [
+                                            expression (print-diff/ppxlib_print_diff.ml[9,171+8]..print-diff/ppxlib_print_diff.ml[9,171+48])
+                                              Texp_ifthenelse
+                                              expression (print-diff/ppxlib_print_diff.ml[9,171+12]..print-diff/ppxlib_print_diff.ml[9,171+21])
+                                                Texp_ident "use_color/96"
+                                              expression (print-diff/ppxlib_print_diff.ml[9,171+27]..print-diff/ppxlib_print_diff.ml[9,171+29])
+                                                Texp_construct "[]"
+                                                []
+                                              Some
+                                                expression (print-diff/ppxlib_print_diff.ml[9,171+35]..print-diff/ppxlib_print_diff.ml[9,171+47])
+                                                  Texp_construct "::"
+                                                  [
+                                                    expression (print-diff/ppxlib_print_diff.ml[9,171+37]..print-diff/ppxlib_print_diff.ml[9,171+45])
+                                                      Texp_constant Const_string("-ascii",(print-diff/ppxlib_print_diff.ml[9,171+38]..print-diff/ppxlib_print_diff.ml[9,171+44]),None)
+                                                    expression (print-diff/ppxlib_print_diff.ml[9,171+46]..print-diff/ppxlib_print_diff.ml[9,171+47]) ghost
+                                                      Texp_construct "[]"
+                                                      []
+                                                  ]
+                                            expression (print-diff/ppxlib_print_diff.ml[10,221+8]..print-diff/ppxlib_print_diff.ml[11,249+7]) ghost
+                                              Texp_construct "::"
+                                              [
+                                                expression (print-diff/ppxlib_print_diff.ml[10,221+8]..print-diff/ppxlib_print_diff.ml[10,221+26])
+                                                  Texp_ident "extra_patdiff_args/97"
+                                                expression (print-diff/ppxlib_print_diff.ml[11,249+6]..print-diff/ppxlib_print_diff.ml[11,249+7]) ghost
+                                                  Texp_construct "[]"
+                                                  []
+                                              ]
+                                          ]
+                                      ]
+                                  ]
+                            ]
+                      ]
+                      expression (print-diff/ppxlib_print_diff.ml[13,262+2]..print-diff/ppxlib_print_diff.ml[13,262+44])
+                        Texp_apply
+                        expression (print-diff/ppxlib_print_diff.ml[13,262+2]..print-diff/ppxlib_print_diff.ml[13,262+15])
+                          Texp_ident "Stdlib!.StdLabels.String.concat"
+                        [
+                          <arg>
+                            Labelled "sep"
+                            expression (print-diff/ppxlib_print_diff.ml[13,262+21]..print-diff/ppxlib_print_diff.ml[13,262+24])
+                              Texp_constant Const_string(" ",(print-diff/ppxlib_print_diff.ml[13,262+22]..print-diff/ppxlib_print_diff.ml[13,262+23]),None)
+                          <arg>
+                            Nolabel
+                            expression (print-diff/ppxlib_print_diff.ml[13,262+25]..print-diff/ppxlib_print_diff.ml[13,262+44])
+                              Texp_construct "::"
+                              [
+                                expression (print-diff/ppxlib_print_diff.ml[13,262+26]..print-diff/ppxlib_print_diff.ml[13,262+35])
+                                  Texp_constant Const_string("patdiff",(print-diff/ppxlib_print_diff.ml[13,262+27]..print-diff/ppxlib_print_diff.ml[13,262+34]),None)
+                                expression (print-diff/ppxlib_print_diff.ml[13,262+39]..print-diff/ppxlib_print_diff.ml[13,262+43])
+                                  Texp_ident "args/98"
+                              ]
+                        ]
+                ]
+          ]
+    ]
+  structure_item (print-diff/ppxlib_print_diff.ml[15,308+0]..print-diff/ppxlib_print_diff.ml[49,1630+80])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (print-diff/ppxlib_print_diff.ml[15,308+4]..print-diff/ppxlib_print_diff.ml[15,308+9])
+          Tpat_var "print/211"
+        expression (print-diff/ppxlib_print_diff.ml[15,308+10]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+          Texp_function
+          Optional "diff_command"
+          [
+            <case>
+              pattern (print-diff/ppxlib_print_diff.ml[15,308+11]..print-diff/ppxlib_print_diff.ml[15,308+23])
+                Tpat_var "diff_command/213"
+              expression (print-diff/ppxlib_print_diff.ml[15,308+24]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                Texp_function
+                Optional "extra_patdiff_args"
+                [
+                  <case>
+                    pattern (print-diff/ppxlib_print_diff.ml[15,308+26]..print-diff/ppxlib_print_diff.ml[15,308+49]) ghost
+                      Tpat_var "*opt*/214"
+                    expression (print-diff/ppxlib_print_diff.ml[15,308+24]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                      attribute "#default"
+                        []
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (print-diff/ppxlib_print_diff.ml[15,308+26]..print-diff/ppxlib_print_diff.ml[15,308+44])
+                            Tpat_var "extra_patdiff_args/215"
+                          expression (print-diff/ppxlib_print_diff.ml[15,308+26]..print-diff/ppxlib_print_diff.ml[15,308+49]) ghost
+                            Texp_match
+                            expression (print-diff/ppxlib_print_diff.ml[15,308+24]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                              Texp_ident "*opt*/214"
+                            [
+                              <case>
+                                pattern (print-diff/ppxlib_print_diff.ml[15,308+47]..print-diff/ppxlib_print_diff.ml[15,308+49])
+                                  Tpat_value
+                                  pattern (print-diff/ppxlib_print_diff.ml[15,308+47]..print-diff/ppxlib_print_diff.ml[15,308+49])
+                                    Tpat_construct "*predef*.Some"
+                                    [
+                                      pattern (print-diff/ppxlib_print_diff.ml[15,308+47]..print-diff/ppxlib_print_diff.ml[15,308+49])
+                                        Tpat_var "*sth*/216"
+                                    ]
+                                expression (print-diff/ppxlib_print_diff.ml[15,308+47]..print-diff/ppxlib_print_diff.ml[15,308+49])
+                                  Texp_ident "*sth*/216"
+                              <case>
+                                pattern (print-diff/ppxlib_print_diff.ml[15,308+47]..print-diff/ppxlib_print_diff.ml[15,308+49])
+                                  Tpat_value
+                                  pattern (print-diff/ppxlib_print_diff.ml[15,308+47]..print-diff/ppxlib_print_diff.ml[15,308+49])
+                                    Tpat_construct "*predef*.None"
+                                    []
+                                expression (print-diff/ppxlib_print_diff.ml[15,308+47]..print-diff/ppxlib_print_diff.ml[15,308+49])
+                                  Texp_construct "[]"
+                                  []
+                            ]
+                            []
+                      ]
+                      expression (print-diff/ppxlib_print_diff.ml[15,308+51]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                        Texp_function
+                        Optional "use_color"
+                        [
+                          <case>
+                            pattern (print-diff/ppxlib_print_diff.ml[15,308+53]..print-diff/ppxlib_print_diff.ml[15,308+70]) ghost
+                              Tpat_var "*opt*/217"
+                            expression (print-diff/ppxlib_print_diff.ml[15,308+51]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                              attribute "#default"
+                                []
+                              Texp_let Nonrec
+                              [
+                                <def>
+                                  pattern (print-diff/ppxlib_print_diff.ml[15,308+53]..print-diff/ppxlib_print_diff.ml[15,308+62])
+                                    Tpat_var "use_color/218"
+                                  expression (print-diff/ppxlib_print_diff.ml[15,308+53]..print-diff/ppxlib_print_diff.ml[15,308+70]) ghost
+                                    Texp_match
+                                    expression (print-diff/ppxlib_print_diff.ml[15,308+51]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                                      Texp_ident "*opt*/217"
+                                    [
+                                      <case>
+                                        pattern (print-diff/ppxlib_print_diff.ml[15,308+65]..print-diff/ppxlib_print_diff.ml[15,308+70])
+                                          Tpat_value
+                                          pattern (print-diff/ppxlib_print_diff.ml[15,308+65]..print-diff/ppxlib_print_diff.ml[15,308+70])
+                                            Tpat_construct "*predef*.Some"
+                                            [
+                                              pattern (print-diff/ppxlib_print_diff.ml[15,308+65]..print-diff/ppxlib_print_diff.ml[15,308+70])
+                                                Tpat_var "*sth*/219"
+                                            ]
+                                        expression (print-diff/ppxlib_print_diff.ml[15,308+65]..print-diff/ppxlib_print_diff.ml[15,308+70])
+                                          Texp_ident "*sth*/219"
+                                      <case>
+                                        pattern (print-diff/ppxlib_print_diff.ml[15,308+65]..print-diff/ppxlib_print_diff.ml[15,308+70])
+                                          Tpat_value
+                                          pattern (print-diff/ppxlib_print_diff.ml[15,308+65]..print-diff/ppxlib_print_diff.ml[15,308+70])
+                                            Tpat_construct "*predef*.None"
+                                            []
+                                        expression (print-diff/ppxlib_print_diff.ml[15,308+65]..print-diff/ppxlib_print_diff.ml[15,308+70])
+                                          Texp_construct "false"
+                                          []
+                                    ]
+                                    []
+                              ]
+                              expression (print-diff/ppxlib_print_diff.ml[15,308+72]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                                Texp_function
+                                Labelled "file1"
+                                [
+                                  <case>
+                                    pattern (print-diff/ppxlib_print_diff.ml[15,308+73]..print-diff/ppxlib_print_diff.ml[15,308+78])
+                                      Tpat_var "file1/220"
+                                    expression (print-diff/ppxlib_print_diff.ml[16,387+4]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                                      Texp_function
+                                      Labelled "file2"
+                                      [
+                                        <case>
+                                          pattern (print-diff/ppxlib_print_diff.ml[16,387+5]..print-diff/ppxlib_print_diff.ml[16,387+10])
+                                            Tpat_var "file2/221"
+                                          expression (print-diff/ppxlib_print_diff.ml[16,387+11]..print-diff/ppxlib_print_diff.ml[49,1630+80]) ghost
+                                            Texp_function
+                                            Nolabel
+                                            [
+                                              <case>
+                                                pattern (print-diff/ppxlib_print_diff.ml[16,387+11]..print-diff/ppxlib_print_diff.ml[16,387+13])
+                                                  Tpat_construct "()"
+                                                  []
+                                                expression (print-diff/ppxlib_print_diff.ml[17,403+2]..print-diff/ppxlib_print_diff.ml[49,1630+80])
+                                                  Texp_let Nonrec
+                                                  [
+                                                    <def>
+                                                      pattern (print-diff/ppxlib_print_diff.ml[17,403+6]..print-diff/ppxlib_print_diff.ml[17,403+10])
+                                                        Tpat_var "exec/222"
+                                                      expression (print-diff/ppxlib_print_diff.ml[17,403+11]..print-diff/ppxlib_print_diff.ml[25,606+26]) ghost
+                                                        Texp_function
+                                                        Nolabel
+                                                        [
+                                                          <case>
+                                                            pattern (print-diff/ppxlib_print_diff.ml[17,403+11]..print-diff/ppxlib_print_diff.ml[17,403+14])
+                                                              Tpat_var "cmd/224"
+                                                            expression (print-diff/ppxlib_print_diff.ml[18,420+4]..print-diff/ppxlib_print_diff.ml[25,606+26])
+                                                              Texp_let Nonrec
+                                                              [
+                                                                <def>
+                                                                  pattern (print-diff/ppxlib_print_diff.ml[18,420+8]..print-diff/ppxlib_print_diff.ml[18,420+11])
+                                                                    Tpat_var "cmd/225"
+                                                                  expression (print-diff/ppxlib_print_diff.ml[19,434+6]..print-diff/ppxlib_print_diff.ml[20,498+30])
+                                                                    Texp_apply
+                                                                    expression (print-diff/ppxlib_print_diff.ml[19,434+6]..print-diff/ppxlib_print_diff.ml[19,434+20])
+                                                                      Texp_ident "Stdlib!.Printf.sprintf"
+                                                                    [
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36])
+                                                                          Texp_construct "CamlinternalFormatBasics.Format"
+                                                                          [
+                                                                            expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                              Texp_construct "CamlinternalFormatBasics.String"
+                                                                              [
+                                                                                expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                  Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                                                  []
+                                                                                expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                  Texp_construct "CamlinternalFormatBasics.Char_literal"
+                                                                                  [
+                                                                                    expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                      Texp_constant Const_char 20
+                                                                                    expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                      Texp_construct "CamlinternalFormatBasics.String"
+                                                                                      [
+                                                                                        expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                          Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                                                          []
+                                                                                        expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                          Texp_construct "CamlinternalFormatBasics.Char_literal"
+                                                                                          [
+                                                                                            expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                              Texp_constant Const_char 20
+                                                                                            expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                              Texp_construct "CamlinternalFormatBasics.String"
+                                                                                              [
+                                                                                                expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                                  Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                                                                  []
+                                                                                                expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                                  Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                                                  [
+                                                                                                    expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                                      Texp_constant Const_string(" 1>&2",(print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost,None)
+                                                                                                    expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                                                      Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                                                                      []
+                                                                                                  ]
+                                                                                              ]
+                                                                                          ]
+                                                                                      ]
+                                                                                  ]
+                                                                              ]
+                                                                            expression (print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost
+                                                                              Texp_constant Const_string("%s %s %s 1>&2",(print-diff/ppxlib_print_diff.ml[19,434+21]..print-diff/ppxlib_print_diff.ml[19,434+36]) ghost,None)
+                                                                          ]
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (print-diff/ppxlib_print_diff.ml[19,434+37]..print-diff/ppxlib_print_diff.ml[19,434+40])
+                                                                          Texp_ident "cmd/224"
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (print-diff/ppxlib_print_diff.ml[19,434+41]..print-diff/ppxlib_print_diff.ml[19,434+63])
+                                                                          Texp_apply
+                                                                          expression (print-diff/ppxlib_print_diff.ml[19,434+42]..print-diff/ppxlib_print_diff.ml[19,434+56])
+                                                                            Texp_ident "Stdlib!.Filename.quote"
+                                                                          [
+                                                                            <arg>
+                                                                              Nolabel
+                                                                              expression (print-diff/ppxlib_print_diff.ml[19,434+57]..print-diff/ppxlib_print_diff.ml[19,434+62])
+                                                                                Texp_ident "file1/220"
+                                                                          ]
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (print-diff/ppxlib_print_diff.ml[20,498+8]..print-diff/ppxlib_print_diff.ml[20,498+30])
+                                                                          Texp_apply
+                                                                          expression (print-diff/ppxlib_print_diff.ml[20,498+9]..print-diff/ppxlib_print_diff.ml[20,498+23])
+                                                                            Texp_ident "Stdlib!.Filename.quote"
+                                                                          [
+                                                                            <arg>
+                                                                              Nolabel
+                                                                              expression (print-diff/ppxlib_print_diff.ml[20,498+24]..print-diff/ppxlib_print_diff.ml[20,498+29])
+                                                                                Texp_ident "file2/221"
+                                                                          ]
+                                                                    ]
+                                                              ]
+                                                              expression (print-diff/ppxlib_print_diff.ml[22,536+4]..print-diff/ppxlib_print_diff.ml[25,606+26])
+                                                                Texp_match
+                                                                expression (print-diff/ppxlib_print_diff.ml[22,536+10]..print-diff/ppxlib_print_diff.ml[22,536+25])
+                                                                  Texp_apply
+                                                                  expression (print-diff/ppxlib_print_diff.ml[22,536+10]..print-diff/ppxlib_print_diff.ml[22,536+21])
+                                                                    Texp_ident "Stdlib!.Sys.command"
+                                                                  [
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[22,536+22]..print-diff/ppxlib_print_diff.ml[22,536+25])
+                                                                        Texp_ident "cmd/225"
+                                                                  ]
+                                                                [
+                                                                  <case>
+                                                                    pattern (print-diff/ppxlib_print_diff.ml[23,567+6]..print-diff/ppxlib_print_diff.ml[23,567+7])
+                                                                      Tpat_value
+                                                                      pattern (print-diff/ppxlib_print_diff.ml[23,567+6]..print-diff/ppxlib_print_diff.ml[23,567+7])
+                                                                        Tpat_constant Const_int 0
+                                                                    expression (print-diff/ppxlib_print_diff.ml[23,567+11]..print-diff/ppxlib_print_diff.ml[23,567+16])
+                                                                      Texp_variant "Same"
+                                                                      None
+                                                                  <case>
+                                                                    pattern (print-diff/ppxlib_print_diff.ml[24,584+6]..print-diff/ppxlib_print_diff.ml[24,584+7])
+                                                                      Tpat_value
+                                                                      pattern (print-diff/ppxlib_print_diff.ml[24,584+6]..print-diff/ppxlib_print_diff.ml[24,584+7])
+                                                                        Tpat_constant Const_int 1
+                                                                    expression (print-diff/ppxlib_print_diff.ml[24,584+11]..print-diff/ppxlib_print_diff.ml[24,584+21])
+                                                                      Texp_variant "Different"
+                                                                      None
+                                                                  <case>
+                                                                    pattern (print-diff/ppxlib_print_diff.ml[25,606+6]..print-diff/ppxlib_print_diff.ml[25,606+7])
+                                                                      Tpat_value
+                                                                      pattern (print-diff/ppxlib_print_diff.ml[25,606+6]..print-diff/ppxlib_print_diff.ml[25,606+7])
+                                                                        Tpat_var "n/363"
+                                                                    expression (print-diff/ppxlib_print_diff.ml[25,606+11]..print-diff/ppxlib_print_diff.ml[25,606+26])
+                                                                      Texp_variant "Error"
+                                                                      Some
+                                                                        expression (print-diff/ppxlib_print_diff.ml[25,606+18]..print-diff/ppxlib_print_diff.ml[25,606+26])
+                                                                          Texp_tuple
+                                                                          [
+                                                                            expression (print-diff/ppxlib_print_diff.ml[25,606+19]..print-diff/ppxlib_print_diff.ml[25,606+20])
+                                                                              Texp_ident "n/363"
+                                                                            expression (print-diff/ppxlib_print_diff.ml[25,606+22]..print-diff/ppxlib_print_diff.ml[25,606+25])
+                                                                              Texp_ident "cmd/225"
+                                                                          ]
+                                                                ]
+                                                                []
+                                                        ]
+                                                  ]
+                                                  expression (print-diff/ppxlib_print_diff.ml[27,638+2]..print-diff/ppxlib_print_diff.ml[49,1630+80])
+                                                    Texp_match
+                                                    expression (print-diff/ppxlib_print_diff.ml[27,638+8]..print-diff/ppxlib_print_diff.ml[27,638+20])
+                                                      Texp_ident "diff_command/213"
+                                                    [
+                                                      <case>
+                                                        pattern (print-diff/ppxlib_print_diff.ml[28,664+4]..print-diff/ppxlib_print_diff.ml[28,664+10])
+                                                          Tpat_value
+                                                          pattern (print-diff/ppxlib_print_diff.ml[28,664+4]..print-diff/ppxlib_print_diff.ml[28,664+10])
+                                                            Tpat_construct "Some"
+                                                            [
+                                                              pattern (print-diff/ppxlib_print_diff.ml[28,664+9]..print-diff/ppxlib_print_diff.ml[28,664+10])
+                                                                Tpat_var "s/364"
+                                                            ]
+                                                        expression (print-diff/ppxlib_print_diff.ml[28,664+14]..print-diff/ppxlib_print_diff.ml[28,664+80])
+                                                          Texp_apply
+                                                          expression (print-diff/ppxlib_print_diff.ml[28,664+14]..print-diff/ppxlib_print_diff.ml[28,664+20])
+                                                            Texp_ident "Stdlib!.ignore"
+                                                          [
+                                                            <arg>
+                                                              Nolabel
+                                                              expression (print-diff/ppxlib_print_diff.ml[28,664+22]..print-diff/ppxlib_print_diff.ml[28,664+28])
+                                                                Texp_constraint
+                                                                core_type (print-diff/ppxlib_print_diff.ml[28,664+31]..print-diff/ppxlib_print_diff.ml[28,664+79])
+                                                                  Ttyp_variant closed=Open
+                                                                  [
+                                                                    Ttag "Same" true
+                                                                      []
+                                                                    Ttag "Different" true
+                                                                      []
+                                                                    Ttag "Error" false
+                                                                      [
+                                                                        core_type (print-diff/ppxlib_print_diff.ml[28,664+65]..print-diff/ppxlib_print_diff.ml[28,664+77])
+                                                                          Ttyp_tuple
+                                                                          [
+                                                                            core_type (print-diff/ppxlib_print_diff.ml[28,664+65]..print-diff/ppxlib_print_diff.ml[28,664+68])
+                                                                              Ttyp_constr "int/1!"
+                                                                              []
+                                                                            core_type (print-diff/ppxlib_print_diff.ml[28,664+71]..print-diff/ppxlib_print_diff.ml[28,664+77])
+                                                                              Ttyp_constr "string/17!"
+                                                                              []
+                                                                          ]
+                                                                      ]
+                                                                  ]
+                                                                  None
+                                                                  Texp_apply
+                                                                  expression (print-diff/ppxlib_print_diff.ml[28,664+22]..print-diff/ppxlib_print_diff.ml[28,664+26])
+                                                                    Texp_ident "exec/222"
+                                                                  [
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[28,664+27]..print-diff/ppxlib_print_diff.ml[28,664+28])
+                                                                        Texp_ident "s/364"
+                                                                  ]
+                                                          ]
+                                                      <case>
+                                                        pattern (print-diff/ppxlib_print_diff.ml[29,745+4]..print-diff/ppxlib_print_diff.ml[29,745+8])
+                                                          Tpat_value
+                                                          pattern (print-diff/ppxlib_print_diff.ml[29,745+4]..print-diff/ppxlib_print_diff.ml[29,745+8])
+                                                            Tpat_construct "None"
+                                                            []
+                                                        expression (print-diff/ppxlib_print_diff.ml[29,745+12]..print-diff/ppxlib_print_diff.ml[49,1630+80])
+                                                          Texp_match
+                                                          expression (print-diff/ppxlib_print_diff.ml[30,759+12]..print-diff/ppxlib_print_diff.ml[30,759+61])
+                                                            Texp_apply
+                                                            expression (print-diff/ppxlib_print_diff.ml[30,759+12]..print-diff/ppxlib_print_diff.ml[30,759+16])
+                                                              Texp_ident "exec/222"
+                                                            [
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (print-diff/ppxlib_print_diff.ml[30,759+17]..print-diff/ppxlib_print_diff.ml[30,759+61])
+                                                                  Texp_apply
+                                                                  expression (print-diff/ppxlib_print_diff.ml[30,759+18]..print-diff/ppxlib_print_diff.ml[30,759+29])
+                                                                    Texp_ident "patdiff_cmd/94"
+                                                                  [
+                                                                    <arg>
+                                                                      Labelled "use_color"
+                                                                      expression (print-diff/ppxlib_print_diff.ml[30,759+31]..print-diff/ppxlib_print_diff.ml[30,759+40])
+                                                                        Texp_ident "use_color/218"
+                                                                    <arg>
+                                                                      Labelled "extra_patdiff_args"
+                                                                      expression (print-diff/ppxlib_print_diff.ml[30,759+42]..print-diff/ppxlib_print_diff.ml[30,759+60])
+                                                                        Texp_ident "extra_patdiff_args/215"
+                                                                  ]
+                                                            ]
+                                                          [
+                                                            <case>
+                                                              pattern (print-diff/ppxlib_print_diff.ml[31,826+8]..print-diff/ppxlib_print_diff.ml[31,826+13])
+                                                                Tpat_value
+                                                                pattern (print-diff/ppxlib_print_diff.ml[31,826+8]..print-diff/ppxlib_print_diff.ml[31,826+13])
+                                                                  Tpat_variant "Same"
+                                                                  None
+                                                              expression (print-diff/ppxlib_print_diff.ml[33,907+10]..print-diff/ppxlib_print_diff.ml[35,999+79])
+                                                                Texp_sequence
+                                                                expression (print-diff/ppxlib_print_diff.ml[33,907+10]..print-diff/ppxlib_print_diff.ml[33,907+73])
+                                                                  Texp_apply
+                                                                  expression (print-diff/ppxlib_print_diff.ml[33,907+10]..print-diff/ppxlib_print_diff.ml[33,907+24])
+                                                                    Texp_ident "Stdlib!.Printf.eprintf"
+                                                                  [
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67])
+                                                                        Texp_construct "CamlinternalFormatBasics.Format"
+                                                                        [
+                                                                          expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                            Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                            [
+                                                                              expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                                Texp_constant Const_string("File \"",(print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost,None)
+                                                                              expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                                Texp_construct "CamlinternalFormatBasics.String"
+                                                                                [
+                                                                                  expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                                    Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                                                    []
+                                                                                  expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                                    Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                                    [
+                                                                                      expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                                        Texp_constant Const_string("\", line 1, characters 0-0:\n",(print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost,None)
+                                                                                      expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                                        Texp_construct "CamlinternalFormatBasics.Flush"
+                                                                                        [
+                                                                                          expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                                            Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                                                            []
+                                                                                        ]
+                                                                                    ]
+                                                                                ]
+                                                                            ]
+                                                                          expression (print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost
+                                                                            Texp_constant Const_string("File \"%s\", line 1, characters 0-0:\n%!",(print-diff/ppxlib_print_diff.ml[33,907+25]..print-diff/ppxlib_print_diff.ml[33,907+67]) ghost,None)
+                                                                        ]
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[33,907+68]..print-diff/ppxlib_print_diff.ml[33,907+73])
+                                                                        Texp_ident "file1/220"
+                                                                  ]
+                                                                expression (print-diff/ppxlib_print_diff.ml[34,982+10]..print-diff/ppxlib_print_diff.ml[35,999+79])
+                                                                  Texp_apply
+                                                                  expression (print-diff/ppxlib_print_diff.ml[34,982+10]..print-diff/ppxlib_print_diff.ml[34,982+16])
+                                                                    Texp_ident "Stdlib!.ignore"
+                                                                  [
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[35,999+13]..print-diff/ppxlib_print_diff.ml[35,999+27])
+                                                                        Texp_constraint
+                                                                        core_type (print-diff/ppxlib_print_diff.ml[35,999+30]..print-diff/ppxlib_print_diff.ml[35,999+78])
+                                                                          Ttyp_variant closed=Open
+                                                                          [
+                                                                            Ttag "Same" true
+                                                                              []
+                                                                            Ttag "Different" true
+                                                                              []
+                                                                            Ttag "Error" false
+                                                                              [
+                                                                                core_type (print-diff/ppxlib_print_diff.ml[35,999+64]..print-diff/ppxlib_print_diff.ml[35,999+76])
+                                                                                  Ttyp_tuple
+                                                                                  [
+                                                                                    core_type (print-diff/ppxlib_print_diff.ml[35,999+64]..print-diff/ppxlib_print_diff.ml[35,999+67])
+                                                                                      Ttyp_constr "int/1!"
+                                                                                      []
+                                                                                    core_type (print-diff/ppxlib_print_diff.ml[35,999+70]..print-diff/ppxlib_print_diff.ml[35,999+76])
+                                                                                      Ttyp_constr "string/17!"
+                                                                                      []
+                                                                                  ]
+                                                                              ]
+                                                                          ]
+                                                                          None
+                                                                          Texp_apply
+                                                                          expression (print-diff/ppxlib_print_diff.ml[35,999+13]..print-diff/ppxlib_print_diff.ml[35,999+17])
+                                                                            Texp_ident "exec/222"
+                                                                          [
+                                                                            <arg>
+                                                                              Nolabel
+                                                                              expression (print-diff/ppxlib_print_diff.ml[35,999+18]..print-diff/ppxlib_print_diff.ml[35,999+27])
+                                                                                Texp_constant Const_string("diff -u",(print-diff/ppxlib_print_diff.ml[35,999+19]..print-diff/ppxlib_print_diff.ml[35,999+26]),None)
+                                                                          ]
+                                                                  ]
+                                                            <case>
+                                                              pattern (print-diff/ppxlib_print_diff.ml[36,1079+8]..print-diff/ppxlib_print_diff.ml[36,1079+18])
+                                                                Tpat_value
+                                                                pattern (print-diff/ppxlib_print_diff.ml[36,1079+8]..print-diff/ppxlib_print_diff.ml[36,1079+18])
+                                                                  Tpat_variant "Different"
+                                                                  None
+                                                              expression (print-diff/ppxlib_print_diff.ml[38,1157+10]..print-diff/ppxlib_print_diff.ml[38,1157+12])
+                                                                Texp_construct "()"
+                                                                []
+                                                            <case>
+                                                              pattern (print-diff/ppxlib_print_diff.ml[39,1170+8]..print-diff/ppxlib_print_diff.ml[39,1170+30])
+                                                                Tpat_value
+                                                                pattern (print-diff/ppxlib_print_diff.ml[39,1170+8]..print-diff/ppxlib_print_diff.ml[39,1170+30])
+                                                                  Tpat_variant "Error"
+                                                                  Some
+                                                                    pattern (print-diff/ppxlib_print_diff.ml[39,1170+15]..print-diff/ppxlib_print_diff.ml[39,1170+30])
+                                                                      Tpat_tuple
+                                                                      [
+                                                                        pattern (print-diff/ppxlib_print_diff.ml[39,1170+16]..print-diff/ppxlib_print_diff.ml[39,1170+24])
+                                                                          Tpat_var "err_code/365"
+                                                                        pattern (print-diff/ppxlib_print_diff.ml[39,1170+26]..print-diff/ppxlib_print_diff.ml[39,1170+29])
+                                                                          Tpat_var "cmd/366"
+                                                                      ]
+                                                              expression (print-diff/ppxlib_print_diff.ml[41,1295+10]..print-diff/ppxlib_print_diff.ml[49,1630+79])
+                                                                Texp_sequence
+                                                                expression (print-diff/ppxlib_print_diff.ml[41,1295+10]..print-diff/ppxlib_print_diff.ml[46,1512+24])
+                                                                  Texp_apply
+                                                                  expression (print-diff/ppxlib_print_diff.ml[41,1295+10]..print-diff/ppxlib_print_diff.ml[41,1295+24])
+                                                                    Texp_ident "Stdlib!.Printf.eprintf"
+                                                                  [
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43])
+                                                                        Texp_construct "CamlinternalFormatBasics.Format"
+                                                                        [
+                                                                          expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                            Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                            [
+                                                                              expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                Texp_constant Const_string("Error:\n> ",(print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost,None)
+                                                                              expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                Texp_construct "CamlinternalFormatBasics.Caml_string"
+                                                                                [
+                                                                                  expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                    Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                                                    []
+                                                                                  expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                    Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                                    [
+                                                                                      expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                        Texp_constant Const_string(" exited with code ",(print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost,None)
+                                                                                      expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                        Texp_construct "CamlinternalFormatBasics.Int"
+                                                                                        [
+                                                                                          expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                            Texp_construct "CamlinternalFormatBasics.Int_d"
+                                                                                            []
+                                                                                          expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                            Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                                                            []
+                                                                                          expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                            Texp_construct "CamlinternalFormatBasics.No_precision"
+                                                                                            []
+                                                                                          expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                            Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                                            [
+                                                                                              expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                                Texp_constant Const_string("\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n",(print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost,None)
+                                                                                              expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                                                Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                                                                []
+                                                                                            ]
+                                                                                        ]
+                                                                                    ]
+                                                                                ]
+                                                                            ]
+                                                                          expression (print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost
+                                                                            Texp_constant Const_string("Error:\n> %S exited with code %d\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n",(print-diff/ppxlib_print_diff.ml[42,1320+12]..print-diff/ppxlib_print_diff.ml[45,1468+43]) ghost,None)
+                                                                        ]
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[46,1512+12]..print-diff/ppxlib_print_diff.ml[46,1512+15])
+                                                                        Texp_ident "cmd/366"
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (print-diff/ppxlib_print_diff.ml[46,1512+16]..print-diff/ppxlib_print_diff.ml[46,1512+24])
+                                                                        Texp_ident "err_code/365"
+                                                                  ]
+                                                                expression (print-diff/ppxlib_print_diff.ml[47,1538+10]..print-diff/ppxlib_print_diff.ml[49,1630+79])
+                                                                  Texp_sequence
+                                                                  expression (print-diff/ppxlib_print_diff.ml[47,1538+10]..print-diff/ppxlib_print_diff.ml[47,1538+73])
+                                                                    Texp_apply
+                                                                    expression (print-diff/ppxlib_print_diff.ml[47,1538+10]..print-diff/ppxlib_print_diff.ml[47,1538+24])
+                                                                      Texp_ident "Stdlib!.Printf.eprintf"
+                                                                    [
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67])
+                                                                          Texp_construct "CamlinternalFormatBasics.Format"
+                                                                          [
+                                                                            expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                              Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                              [
+                                                                                expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                                  Texp_constant Const_string("File \"",(print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost,None)
+                                                                                expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                                  Texp_construct "CamlinternalFormatBasics.String"
+                                                                                  [
+                                                                                    expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                                      Texp_construct "CamlinternalFormatBasics.No_padding"
+                                                                                      []
+                                                                                    expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                                      Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                                      [
+                                                                                        expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                                          Texp_constant Const_string("\", line 1, characters 0-0:\n",(print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost,None)
+                                                                                        expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                                          Texp_construct "CamlinternalFormatBasics.Flush"
+                                                                                          [
+                                                                                            expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                                              Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                                                              []
+                                                                                          ]
+                                                                                      ]
+                                                                                  ]
+                                                                              ]
+                                                                            expression (print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost
+                                                                              Texp_constant Const_string("File \"%s\", line 1, characters 0-0:\n%!",(print-diff/ppxlib_print_diff.ml[47,1538+25]..print-diff/ppxlib_print_diff.ml[47,1538+67]) ghost,None)
+                                                                          ]
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (print-diff/ppxlib_print_diff.ml[47,1538+68]..print-diff/ppxlib_print_diff.ml[47,1538+73])
+                                                                          Texp_ident "file1/220"
+                                                                    ]
+                                                                  expression (print-diff/ppxlib_print_diff.ml[48,1613+10]..print-diff/ppxlib_print_diff.ml[49,1630+79])
+                                                                    Texp_apply
+                                                                    expression (print-diff/ppxlib_print_diff.ml[48,1613+10]..print-diff/ppxlib_print_diff.ml[48,1613+16])
+                                                                      Texp_ident "Stdlib!.ignore"
+                                                                    [
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (print-diff/ppxlib_print_diff.ml[49,1630+13]..print-diff/ppxlib_print_diff.ml[49,1630+27])
+                                                                          Texp_constraint
+                                                                          core_type (print-diff/ppxlib_print_diff.ml[49,1630+30]..print-diff/ppxlib_print_diff.ml[49,1630+78])
+                                                                            Ttyp_variant closed=Open
+                                                                            [
+                                                                              Ttag "Same" true
+                                                                                []
+                                                                              Ttag "Different" true
+                                                                                []
+                                                                              Ttag "Error" false
+                                                                                [
+                                                                                  core_type (print-diff/ppxlib_print_diff.ml[49,1630+64]..print-diff/ppxlib_print_diff.ml[49,1630+76])
+                                                                                    Ttyp_tuple
+                                                                                    [
+                                                                                      core_type (print-diff/ppxlib_print_diff.ml[49,1630+64]..print-diff/ppxlib_print_diff.ml[49,1630+67])
+                                                                                        Ttyp_constr "int/1!"
+                                                                                        []
+                                                                                      core_type (print-diff/ppxlib_print_diff.ml[49,1630+70]..print-diff/ppxlib_print_diff.ml[49,1630+76])
+                                                                                        Ttyp_constr "string/17!"
+                                                                                        []
+                                                                                    ]
+                                                                                ]
+                                                                            ]
+                                                                            None
+                                                                            Texp_apply
+                                                                            expression (print-diff/ppxlib_print_diff.ml[49,1630+13]..print-diff/ppxlib_print_diff.ml[49,1630+17])
+                                                                              Texp_ident "exec/222"
+                                                                            [
+                                                                              <arg>
+                                                                                Nolabel
+                                                                                expression (print-diff/ppxlib_print_diff.ml[49,1630+18]..print-diff/ppxlib_print_diff.ml[49,1630+27])
+                                                                                  Texp_constant Const_string("diff -u",(print-diff/ppxlib_print_diff.ml[49,1630+19]..print-diff/ppxlib_print_diff.ml[49,1630+26]),None)
+                                                                            ]
+                                                                    ]
+                                                          ]
+                                                          []
+                                                    ]
+                                                    []
+                                            ]
+                                      ]
+                                ]
+                        ]
+                ]
+          ]
+    ]
+]
+
+(seq
+  (let
+    (patdiff_cmd/94 =
+       (function use_color/96 extra_patdiff_args/97
+         (let
+           (args/98 =
+              (apply (field_imm 12 (global Stdlib__listLabels!))
+                (makeblock 0 [0: "-keep-whitespace" 0]
+                  (makeblock 0 [0: "-location-style omake" 0]
+                    (makeblock 0 (if use_color/96 0 [0: "-ascii" 0])
+                      (makeblock 0 extra_patdiff_args/97 0))))))
+           (apply (field_imm 2 (global Stdlib__stringLabels!)) " "
+             (makeblock 0 "patdiff" args/98)))))
+    (setfield_ptr(root-init) 1 (global Ppxlib_print_diff!) patdiff_cmd/94))
+  (let
+    (print/211 =
+       (function diff_command/213 *opt*/214 *opt*/217 file1/220 file2/221
+         param/367
+         (let
+           (extra_patdiff_args/215 =
+              (if *opt*/214
+                (let (*sth*/216 =a (field_imm 0 *opt*/214)) *sth*/216) 0)
+            use_color/218 =
+              (if *opt*/217
+                (let (*sth*/219 =a (field_imm 0 *opt*/217)) *sth*/219) 0)
+            exec/222 =
+              (function cmd/224
+                (let
+                  (cmd/225 =
+                     (apply (field_imm 3 (global Stdlib__printf!))
+                       [0:
+                        [2:
+                         0 [12: ' ' [2: 0 [12: ' ' [2: 0 [11: " 1>&2" 0]]]]]]
+                        "%s %s %s 1>&2"]
+                       cmd/224
+                       (apply (field_imm 20 (global Stdlib__filename!))
+                         file1/220)
+                       (apply (field_imm 20 (global Stdlib__filename!))
+                         file2/221))
+                   n/363 = (caml_sys_system_command cmd/225))
+                  (catch
+                    (if (!= n/363 0) (if (!= n/363 1) (exit 1) -890978471)
+                      925282182)
+                   with (1)
+                    (makeblock 0 106380200
+                      (makeblock 0 (int,*) n/363 cmd/225))))))
+           (if diff_command/213
+             (let (s/364 =a (field_imm 0 diff_command/213))
+               (ignore (apply exec/222 s/364)))
+             (let
+               (*match*/443 =
+                  (apply exec/222
+                    (apply (field_imm 1 (global Ppxlib_print_diff!))
+                      use_color/218 extra_patdiff_args/215)))
+               (if (isint *match*/443)
+                 (if (>= *match*/443 925282182)
+                   (seq
+                     (apply (field_imm 2 (global Stdlib__printf!))
+                       [0:
+                        [11:
+                         "File \""
+                         [2: 0 [11: "\", line 1, characters 0-0:\n" [10: 0]]]]
+                        "File \"%s\", line 1, characters 0-0:\n%!"]
+                       file1/220)
+                     (ignore (apply exec/222 "diff -u")))
+                   0)
+                 (let
+                   (variant/445 =a (field_imm 0 *match*/443)
+                    *match*/444 =a (field_imm 1 *match*/443)
+                    cmd/366 =a (field_imm 1 *match*/444)
+                    err_code/365 =a (field_imm 0 *match*/444))
+                   (seq
+                     (apply (field_imm 2 (global Stdlib__printf!))
+                       [0:
+                        [11:
+                         "Error:\n> "
+                         [3:
+                          0
+                          [11:
+                           " exited with code "
+                           [4:
+                            0 0 0
+                            [11:
+                             "\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n"
+                             0]]]]]
+                        "Error:\n> %S exited with code %d\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n"]
+                       cmd/366 err_code/365)
+                     (apply (field_imm 2 (global Stdlib__printf!))
+                       [0:
+                        [11:
+                         "File \""
+                         [2: 0 [11: "\", line 1, characters 0-0:\n" [10: 0]]]]
+                        "File \"%s\", line 1, characters 0-0:\n%!"]
+                       file1/220)
+                     (ignore (apply exec/222 "diff -u"))))))))))
+    (setfield_ptr(root-init) 0 (global Ppxlib_print_diff!) print/211))
+  0)
+(seq
+  (let
+    (patdiff_cmd/94 =
+       (function use_color/96 extra_patdiff_args/97
+         (let
+           (args/98 =
+              (apply (field_imm 12 (global Stdlib__listLabels!))
+                (makeblock 0 [0: "-keep-whitespace" 0]
+                  (makeblock 0 [0: "-location-style omake" 0]
+                    (makeblock 0 (if use_color/96 0 [0: "-ascii" 0])
+                      (makeblock 0 extra_patdiff_args/97 0))))))
+           (apply (field_imm 2 (global Stdlib__stringLabels!)) " "
+             (makeblock 0 "patdiff" args/98)))))
+    (setfield_ptr(root-init) 1 (global Ppxlib_print_diff!) patdiff_cmd/94))
+  (let
+    (print/211 =
+       (function diff_command/213 *opt*/214 *opt*/217 file1/220 file2/221
+         param/367
+         (let
+           (extra_patdiff_args/215 = (if *opt*/214 (field_imm 0 *opt*/214) 0)
+            use_color/218 = (if *opt*/217 (field_imm 0 *opt*/217) 0)
+            exec/222 =
+              (function cmd/224
+                (let
+                  (cmd/225 =
+                     (apply (field_imm 3 (global Stdlib__printf!))
+                       [0:
+                        [2:
+                         0 [12: ' ' [2: 0 [12: ' ' [2: 0 [11: " 1>&2" 0]]]]]]
+                        "%s %s %s 1>&2"]
+                       cmd/224
+                       (apply (field_imm 20 (global Stdlib__filename!))
+                         file1/220)
+                       (apply (field_imm 20 (global Stdlib__filename!))
+                         file2/221))
+                   n/363 = (caml_sys_system_command cmd/225))
+                  (if (!= n/363 0)
+                    (if (!= n/363 1)
+                      (makeblock 0 106380200
+                        (makeblock 0 (int,*) n/363 cmd/225))
+                      -890978471)
+                    925282182))))
+           (if diff_command/213
+             (ignore (apply exec/222 (field_imm 0 diff_command/213)))
+             (let
+               (*match*/443 =
+                  (apply exec/222
+                    (apply (field_imm 1 (global Ppxlib_print_diff!))
+                      use_color/218 extra_patdiff_args/215)))
+               (if (isint *match*/443)
+                 (if (>= *match*/443 925282182)
+                   (seq
+                     (apply (field_imm 2 (global Stdlib__printf!))
+                       [0:
+                        [11:
+                         "File \""
+                         [2: 0 [11: "\", line 1, characters 0-0:\n" [10: 0]]]]
+                        "File \"%s\", line 1, characters 0-0:\n%!"]
+                       file1/220)
+                     (ignore (apply exec/222 "diff -u")))
+                   0)
+                 (let (*match*/444 =a (field_imm 1 *match*/443))
+                   (seq
+                     (apply (field_imm 2 (global Stdlib__printf!))
+                       [0:
+                        [11:
+                         "Error:\n> "
+                         [3:
+                          0
+                          [11:
+                           " exited with code "
+                           [4:
+                            0 0 0
+                            [11:
+                             "\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n"
+                             0]]]]]
+                        "Error:\n> %S exited with code %d\n> Perhaps patdiff is not installed? Hint, try: opam install patdiff\n> Falling back to diff -u\n\n"]
+                       (field_imm 1 *match*/444) (field_imm 0 *match*/444))
+                     (apply (field_imm 2 (global Stdlib__printf!))
+                       [0:
+                        [11:
+                         "File \""
+                         [2: 0 [11: "\", line 1, characters 0-0:\n" [10: 0]]]]
+                        "File \"%s\", line 1, characters 0-0:\n%!"]
+                       file1/220)
+                     (ignore (apply exec/222 "diff -u"))))))))))
+    (setfield_ptr(root-init) 0 (global Ppxlib_print_diff!) print/211))
+  0)

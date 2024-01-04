@@ -1,0 +1,43 @@
+[
+  structure_item (runner/ppx_driver_runner.ml[1,0+0]..[1,0+27])
+    Pstr_eval
+    expression (runner/ppx_driver_runner.ml[1,0+0]..[1,0+27])
+      Pexp_apply
+      expression (runner/ppx_driver_runner.ml[1,0+0]..[1,0+24])
+        Pexp_ident "Ppxlib.Driver.standalone" (runner/ppx_driver_runner.ml[1,0+0]..[1,0+24])
+      [
+        <arg>
+        Nolabel
+          expression (runner/ppx_driver_runner.ml[1,0+25]..[1,0+27])
+            Pexp_construct "()" (runner/ppx_driver_runner.ml[1,0+25]..[1,0+27])
+            None
+      ]
+]
+
+;;Ppxlib.Driver.standalone ()
+[
+  structure_item (runner/ppx_driver_runner.ml[1,0+0]..runner/ppx_driver_runner.ml[1,0+27])
+    Tstr_eval
+    expression (runner/ppx_driver_runner.ml[1,0+0]..runner/ppx_driver_runner.ml[1,0+27])
+      Texp_apply
+      expression (runner/ppx_driver_runner.ml[1,0+0]..runner/ppx_driver_runner.ml[1,0+24])
+        Texp_ident "Ppxlib!.Driver.standalone"
+      [
+        <arg>
+          Nolabel
+          expression (runner/ppx_driver_runner.ml[1,0+25]..runner/ppx_driver_runner.ml[1,0+27])
+            Texp_construct "()"
+            []
+      ]
+]
+
+(setglobal Ppxlib_runner__Ppx_driver_runner!
+  (seq
+    (after Ppxlib_runner__Ppx_driver_runner runner/ppx_driver_runner.ml(1):0-27
+      (apply (field_imm 11 (global Ppxlib__Driver!)) 0))
+    (pseudo <unknown location> (makeblock 0))))
+(setglobal Ppxlib_runner__Ppx_driver_runner!
+  (seq
+    (after Ppxlib_runner__Ppx_driver_runner runner/ppx_driver_runner.ml(1):0-27
+      (apply (field_imm 11 (global Ppxlib__Driver!)) 0))
+    (pseudo <unknown location> (makeblock 0))))

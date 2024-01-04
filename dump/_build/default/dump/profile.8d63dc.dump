@@ -1,0 +1,14 @@
+0.935s 72.6MB 8.35MB 8.35MB test/driver/standalone_run_as_ppx/print_stuff.exe
+  ------ 0.13MB ------ ------ cmm_invariants
+  0.003s 2.29MB 0.12MB 0.12MB selection
+  0.003s 4.47MB 0.25MB 0.37MB cse
+  0.005s 12.1MB 0.87MB 1.25MB liveness
+  0.001s ------ ------ ------ deadcode
+  0.004s 4.19MB 0.37MB 1.62MB spill
+  0.001s ------ ------ ------ split
+  0.035s 34.0MB 2.34MB 3.96MB regalloc
+  0.002s 0.20MB ------ ------ emit
+  0.016s ------ ------ ------ assemble
+  0.836s ------ ------ ------ c-linker
+  0.027s 15.1MB 4.38MB 8.35MB other
+0.007s ------ ------ ------ other

@@ -1,0 +1,4 @@
+0.027s 19.8MB 7.28MB 8.94MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_sexp_of.pp.mli
+  0.025s 17.8MB 6.59MB 8.26MB typing
+  0.003s 2.02MB 0.68MB 8.94MB other
+0.007s 2.98MB 1.66MB ------ other

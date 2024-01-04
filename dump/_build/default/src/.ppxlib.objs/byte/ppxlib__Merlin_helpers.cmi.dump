@@ -1,0 +1,232 @@
+[
+  signature_item (src/merlin_helpers.mli[1,0+0]..[5,188+48])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/merlin_helpers.mli[1,0+0]..[5,188+48])
+        Pstr_eval
+        expression (src/merlin_helpers.mli[1,0+0]..[5,188+48])
+          Pexp_constant PConst_string(" Some helpers to annotate the AST so merlin can decide which branches to look\n    at and which branches to ignore.\n\n    More information can be found in the section of the manual about\n    {{!\"good-practices\".resp_loc} locations}. ",(src/merlin_helpers.mli[1,0+0]..[5,188+48]),None)
+    ]
+  signature_item (src/merlin_helpers.mli[7,238+0]..[7,238+12])
+    Psig_open Override "Import" (src/merlin_helpers.mli[7,238+6]..[7,238+12])
+  signature_item (src/merlin_helpers.mli[9,252+0]..[9,252+40])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/merlin_helpers.mli[9,252+0]..[9,252+40])
+        Pstr_eval
+        expression (src/merlin_helpers.mli[9,252+0]..[9,252+40])
+          Pexp_constant PConst_string(" {2 Annotations merlin understand} ",(src/merlin_helpers.mli[9,252+0]..[9,252+40]),None)
+    ]
+  signature_item (src/merlin_helpers.mli[11,294+0]..[11,294+30])
+    Psig_value
+    value_description "hide_attribute" (src/merlin_helpers.mli[11,294+4]..[11,294+18]) (src/merlin_helpers.mli[11,294+0]..[11,294+30])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/merlin_helpers.mli[12,325+0]..[14,484+36])
+            Pstr_eval
+            expression (src/merlin_helpers.mli[12,325+0]..[14,484+36])
+              Pexp_constant PConst_string(" Adding this [\\[@merlin.hide\\]] attribute on a piece of AST \"hides\" it from\n    merlin: it tells merlin not to consider that branch if another piece of AST\n    with the same location exist. ",(src/merlin_helpers.mli[12,325+0]..[14,484+36]),None)
+        ]
+      core_type (src/merlin_helpers.mli[11,294+21]..[11,294+30])
+        Ptyp_constr "attribute" (src/merlin_helpers.mli[11,294+21]..[11,294+30])
+        []
+      []
+  signature_item (src/merlin_helpers.mli[16,522+0]..[16,522+31])
+    Psig_value
+    value_description "focus_attribute" (src/merlin_helpers.mli[16,522+4]..[16,522+19]) (src/merlin_helpers.mli[16,522+0]..[16,522+31])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/merlin_helpers.mli[17,554+0]..[18,634+79])
+            Pstr_eval
+            expression (src/merlin_helpers.mli[17,554+0]..[18,634+79])
+              Pexp_constant PConst_string(" Adding this [\\[@merlin.focus\\]] attribute on a piece of AST tells merlin to\n    prefer it to any other piece of AST when several have the same location. ",(src/merlin_helpers.mli[17,554+0]..[18,634+79]),None)
+        ]
+      core_type (src/merlin_helpers.mli[16,522+22]..[16,522+31])
+        Ptyp_constr "attribute" (src/merlin_helpers.mli[16,522+22]..[16,522+31])
+        []
+      []
+  signature_item (src/merlin_helpers.mli[20,715+0]..[23,811+30])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/merlin_helpers.mli[20,715+0]..[23,811+30])
+        Pstr_eval
+        expression (src/merlin_helpers.mli[20,715+0]..[23,811+30])
+          Pexp_constant PConst_string(" {2 Helpers}\n\n    The following functions add the corresponding attribute (defined above) to\n    specific pieces of AST. ",(src/merlin_helpers.mli[20,715+0]..[23,811+30]),None)
+    ]
+  signature_item (src/merlin_helpers.mli[25,843+0]..[25,843+37])
+    Psig_value
+    value_description "hide_pattern" (src/merlin_helpers.mli[25,843+4]..[25,843+16]) (src/merlin_helpers.mli[25,843+0]..[25,843+37])
+      core_type (src/merlin_helpers.mli[25,843+19]..[25,843+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[25,843+19]..[25,843+26])
+          Ptyp_constr "pattern" (src/merlin_helpers.mli[25,843+19]..[25,843+26])
+          []
+        core_type (src/merlin_helpers.mli[25,843+30]..[25,843+37])
+          Ptyp_constr "pattern" (src/merlin_helpers.mli[25,843+30]..[25,843+37])
+          []
+      []
+  signature_item (src/merlin_helpers.mli[26,881+0]..[26,881+38])
+    Psig_value
+    value_description "focus_pattern" (src/merlin_helpers.mli[26,881+4]..[26,881+17]) (src/merlin_helpers.mli[26,881+0]..[26,881+38])
+      core_type (src/merlin_helpers.mli[26,881+20]..[26,881+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[26,881+20]..[26,881+27])
+          Ptyp_constr "pattern" (src/merlin_helpers.mli[26,881+20]..[26,881+27])
+          []
+        core_type (src/merlin_helpers.mli[26,881+31]..[26,881+38])
+          Ptyp_constr "pattern" (src/merlin_helpers.mli[26,881+31]..[26,881+38])
+          []
+      []
+  signature_item (src/merlin_helpers.mli[27,920+0]..[27,920+46])
+    Psig_value
+    value_description "hide_expression" (src/merlin_helpers.mli[27,920+4]..[27,920+19]) (src/merlin_helpers.mli[27,920+0]..[27,920+46])
+      core_type (src/merlin_helpers.mli[27,920+22]..[27,920+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[27,920+22]..[27,920+32])
+          Ptyp_constr "expression" (src/merlin_helpers.mli[27,920+22]..[27,920+32])
+          []
+        core_type (src/merlin_helpers.mli[27,920+36]..[27,920+46])
+          Ptyp_constr "expression" (src/merlin_helpers.mli[27,920+36]..[27,920+46])
+          []
+      []
+  signature_item (src/merlin_helpers.mli[28,967+0]..[28,967+47])
+    Psig_value
+    value_description "focus_expression" (src/merlin_helpers.mli[28,967+4]..[28,967+20]) (src/merlin_helpers.mli[28,967+0]..[28,967+47])
+      core_type (src/merlin_helpers.mli[28,967+23]..[28,967+47])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[28,967+23]..[28,967+33])
+          Ptyp_constr "expression" (src/merlin_helpers.mli[28,967+23]..[28,967+33])
+          []
+        core_type (src/merlin_helpers.mli[28,967+37]..[28,967+47])
+          Ptyp_constr "expression" (src/merlin_helpers.mli[28,967+37]..[28,967+47])
+          []
+      []
+]
+
+[@@@ocaml.text
+  " Some helpers to annotate the AST so merlin can decide which branches to look\n    at and which branches to ignore.\n\n    More information can be found in the section of the manual about\n    {{!\"good-practices\".resp_loc} locations}. "]
+open! Import
+[@@@ocaml.text " {2 Annotations merlin understand} "]
+val hide_attribute : attribute[@@ocaml.doc
+                                " Adding this [\\[@merlin.hide\\]] attribute on a piece of AST \"hides\" it from\n    merlin: it tells merlin not to consider that branch if another piece of AST\n    with the same location exist. "]
+val focus_attribute : attribute[@@ocaml.doc
+                                 " Adding this [\\[@merlin.focus\\]] attribute on a piece of AST tells merlin to\n    prefer it to any other piece of AST when several have the same location. "]
+[@@@ocaml.text
+  " {2 Helpers}\n\n    The following functions add the corresponding attribute (defined above) to\n    specific pieces of AST. "]
+val hide_pattern : pattern -> pattern
+val focus_pattern : pattern -> pattern
+val hide_expression : expression -> expression
+val focus_expression : expression -> expression
+[
+  signature_item (src/merlin_helpers.mli[1,0+0]..src/merlin_helpers.mli[5,188+48])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/merlin_helpers.mli[1,0+0]..[5,188+48])
+        Pstr_eval
+        expression (src/merlin_helpers.mli[1,0+0]..[5,188+48])
+          Pexp_constant PConst_string(" Some helpers to annotate the AST so merlin can decide which branches to look\n    at and which branches to ignore.\n\n    More information can be found in the section of the manual about\n    {{!\"good-practices\".resp_loc} locations}. ",(src/merlin_helpers.mli[1,0+0]..[5,188+48]),None)
+    ]
+  signature_item (src/merlin_helpers.mli[7,238+0]..src/merlin_helpers.mli[7,238+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/merlin_helpers.mli[9,252+0]..src/merlin_helpers.mli[9,252+40])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/merlin_helpers.mli[9,252+0]..[9,252+40])
+        Pstr_eval
+        expression (src/merlin_helpers.mli[9,252+0]..[9,252+40])
+          Pexp_constant PConst_string(" {2 Annotations merlin understand} ",(src/merlin_helpers.mli[9,252+0]..[9,252+40]),None)
+    ]
+  signature_item (src/merlin_helpers.mli[11,294+0]..src/merlin_helpers.mli[11,294+30])
+    Tsig_value
+    value_description hide_attribute/550 (src/merlin_helpers.mli[11,294+0]..src/merlin_helpers.mli[11,294+30])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/merlin_helpers.mli[12,325+0]..[14,484+36])
+            Pstr_eval
+            expression (src/merlin_helpers.mli[12,325+0]..[14,484+36])
+              Pexp_constant PConst_string(" Adding this [\\[@merlin.hide\\]] attribute on a piece of AST \"hides\" it from\n    merlin: it tells merlin not to consider that branch if another piece of AST\n    with the same location exist. ",(src/merlin_helpers.mli[12,325+0]..[14,484+36]),None)
+        ]
+      core_type (src/merlin_helpers.mli[11,294+21]..src/merlin_helpers.mli[11,294+30])
+        Ttyp_constr "Ppxlib__!.Import.attribute"
+        []
+      []
+  signature_item (src/merlin_helpers.mli[16,522+0]..src/merlin_helpers.mli[16,522+31])
+    Tsig_value
+    value_description focus_attribute/551 (src/merlin_helpers.mli[16,522+0]..src/merlin_helpers.mli[16,522+31])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/merlin_helpers.mli[17,554+0]..[18,634+79])
+            Pstr_eval
+            expression (src/merlin_helpers.mli[17,554+0]..[18,634+79])
+              Pexp_constant PConst_string(" Adding this [\\[@merlin.focus\\]] attribute on a piece of AST tells merlin to\n    prefer it to any other piece of AST when several have the same location. ",(src/merlin_helpers.mli[17,554+0]..[18,634+79]),None)
+        ]
+      core_type (src/merlin_helpers.mli[16,522+22]..src/merlin_helpers.mli[16,522+31])
+        Ttyp_constr "Ppxlib__!.Import.attribute"
+        []
+      []
+  signature_item (src/merlin_helpers.mli[20,715+0]..src/merlin_helpers.mli[23,811+30])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/merlin_helpers.mli[20,715+0]..[23,811+30])
+        Pstr_eval
+        expression (src/merlin_helpers.mli[20,715+0]..[23,811+30])
+          Pexp_constant PConst_string(" {2 Helpers}\n\n    The following functions add the corresponding attribute (defined above) to\n    specific pieces of AST. ",(src/merlin_helpers.mli[20,715+0]..[23,811+30]),None)
+    ]
+  signature_item (src/merlin_helpers.mli[25,843+0]..src/merlin_helpers.mli[25,843+37])
+    Tsig_value
+    value_description hide_pattern/552 (src/merlin_helpers.mli[25,843+0]..src/merlin_helpers.mli[25,843+37])
+      core_type (src/merlin_helpers.mli[25,843+19]..src/merlin_helpers.mli[25,843+37])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[25,843+19]..src/merlin_helpers.mli[25,843+26])
+          Ttyp_constr "Ppxlib__!.Import.pattern"
+          []
+        core_type (src/merlin_helpers.mli[25,843+30]..src/merlin_helpers.mli[25,843+37])
+          Ttyp_constr "Ppxlib__!.Import.pattern"
+          []
+      []
+  signature_item (src/merlin_helpers.mli[26,881+0]..src/merlin_helpers.mli[26,881+38])
+    Tsig_value
+    value_description focus_pattern/553 (src/merlin_helpers.mli[26,881+0]..src/merlin_helpers.mli[26,881+38])
+      core_type (src/merlin_helpers.mli[26,881+20]..src/merlin_helpers.mli[26,881+38])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[26,881+20]..src/merlin_helpers.mli[26,881+27])
+          Ttyp_constr "Ppxlib__!.Import.pattern"
+          []
+        core_type (src/merlin_helpers.mli[26,881+31]..src/merlin_helpers.mli[26,881+38])
+          Ttyp_constr "Ppxlib__!.Import.pattern"
+          []
+      []
+  signature_item (src/merlin_helpers.mli[27,920+0]..src/merlin_helpers.mli[27,920+46])
+    Tsig_value
+    value_description hide_expression/554 (src/merlin_helpers.mli[27,920+0]..src/merlin_helpers.mli[27,920+46])
+      core_type (src/merlin_helpers.mli[27,920+22]..src/merlin_helpers.mli[27,920+46])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[27,920+22]..src/merlin_helpers.mli[27,920+32])
+          Ttyp_constr "Ppxlib__!.Import.expression"
+          []
+        core_type (src/merlin_helpers.mli[27,920+36]..src/merlin_helpers.mli[27,920+46])
+          Ttyp_constr "Ppxlib__!.Import.expression"
+          []
+      []
+  signature_item (src/merlin_helpers.mli[28,967+0]..src/merlin_helpers.mli[28,967+47])
+    Tsig_value
+    value_description focus_expression/555 (src/merlin_helpers.mli[28,967+0]..src/merlin_helpers.mli[28,967+47])
+      core_type (src/merlin_helpers.mli[28,967+23]..src/merlin_helpers.mli[28,967+47])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/merlin_helpers.mli[28,967+23]..src/merlin_helpers.mli[28,967+33])
+          Ttyp_constr "Ppxlib__!.Import.expression"
+          []
+        core_type (src/merlin_helpers.mli[28,967+37]..src/merlin_helpers.mli[28,967+47])
+          Ttyp_constr "Ppxlib__!.Import.expression"
+          []
+      []
+]
+

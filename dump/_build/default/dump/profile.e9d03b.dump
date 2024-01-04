@@ -1,0 +1,5 @@
+0.054s 22.2MB 10.1MB 10.1MB src/ast_pattern0.ml
+  0.048s 18.4MB 8.59MB 8.59MB typing
+  0.001s ------ ------ ------ generate
+  0.006s 3.83MB 1.53MB 10.1MB other
+0.007s ------ ------ ------ other

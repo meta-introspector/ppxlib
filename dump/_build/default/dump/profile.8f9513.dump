@@ -1,0 +1,15 @@
+1.164s 72.7MB 8.16MB 8.16MB test/driver/exception_handling/deriver.exe
+  0.005s 0.11MB ------ ------ selection
+  0.001s 2.00MB 0.18MB 0.18MB comballoc
+  0.003s 2.00MB 0.18MB 0.37MB cse
+  0.011s 7.41MB 0.37MB 0.75MB liveness
+  0.003s 4.00MB 0.37MB 1.12MB deadcode
+  0.008s 5.26MB 0.43MB 1.56MB spill
+  0.001s ------ ------ ------ split
+  0.059s 31.9MB 2.09MB 3.65MB regalloc
+  0.003s 0.36MB ------ ------ linearize
+  0.003s 2.30MB 0.09MB 3.75MB emit
+  0.018s ------ ------ ------ assemble
+  1.008s ------ ------ ------ c-linker
+  0.039s 17.3MB 4.41MB 8.16MB other
+0.004s ------ ------ ------ other

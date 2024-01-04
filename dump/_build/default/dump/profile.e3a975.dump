@@ -1,0 +1,9 @@
+0.186s 81.9MB 22.3MB 22.3MB metaquot_lifters/ppxlib_metaquot_lifters.ml
+  0.004s 2.85MB 1.53MB 1.53MB parsing
+    0.004s ------ ------ ------ parser
+    ------ 2.85MB 1.53MB 1.53MB other
+  0.165s 64.8MB 20.5MB 22.1MB typing
+  0.002s ------ ------ ------ transl
+  0.008s 8.21MB 0.21MB 22.3MB generate
+  0.007s 6.01MB 0.03MB ------ other
+0.007s ------ ------ ------ other

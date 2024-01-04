@@ -1,0 +1,57 @@
+[
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+0]..[1,0+45])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+4]..[1,0+6])
+          Ppat_construct "()" (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+4]..[1,0+6])
+          None
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+9]..[1,0+45])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+9]..[1,0+42])
+            Pexp_ident "Ppxlib.Driver.run_as_ppx_rewriter" (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+9]..[1,0+42])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+43]..[1,0+45])
+                Pexp_construct "()" (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+43]..[1,0+45])
+                None
+          ]
+    ]
+]
+
+let () = Ppxlib.Driver.run_as_ppx_rewriter ()
+[
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+0]..test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+45])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+4]..test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+9]..test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+45])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+9]..test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+42])
+            Texp_ident "Ppxlib!.Driver.run_as_ppx_rewriter"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+43]..test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml[1,0+45])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Identity_standalone!
+  (let
+    (*match*/730 =
+       (after Dune__exe__Identity_standalone test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml(1):9-45
+         (apply (field_imm 12 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0))))
+(setglobal Dune__exe__Identity_standalone!
+  (let
+    (*match*/730 =
+       (after Dune__exe__Identity_standalone test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.ml(1):9-45
+         (apply (field_imm 12 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0))))

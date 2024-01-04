@@ -1,0 +1,1145 @@
+[
+  signature_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Psig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[1,0+0]..[1,0+10])
+    Psig_open Override "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[1,0+6]..[1,0+10])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[2,11+0]..[2,11+12])
+    Psig_open Override "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[2,11+6]..[2,11+12])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[7,225+0]..[9,289+3])
+    Psig_module "To_lift" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[7,225+7]..[7,225+14])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[4,25+0]..[6,201+23])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[4,25+0]..[6,201+23])
+              Pexp_constant PConst_string(" [default], [drop_default], and [drop_if] attributes are annotated with expressions\n    that should be lifted out of the scope of ppx-generated temporary variables. See the\n    [Lifted] module. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[4,25+0]..[6,201+23]),None)
+        ]
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[7,225+17]..[9,289+3])
+      Pmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+2]..[8,246+42])
+          Psig_type Rec
+          [
+            type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+10]..[8,246+11]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+2]..[8,246+42])
+              attribute "unboxed"
+                []
+              ptype_params =
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+7]..[8,246+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_record
+                  [
+                    (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+16]..[8,246+28])
+                      Immutable
+                      "to_lift" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+16]..[8,246+23])                      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+26]..[8,246+28])
+                        Ptyp_var a
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+      ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+0]..[11,294+67])
+    Psig_value
+    value_description "default" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+4]..[11,294+11]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+0]..[11,294+67])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+14]..[11,294+67])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+56]..[11,294+67])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+15]..[11,294+32])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+15]..[11,294+32])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+34]..[11,294+54])
+            Ptyp_constr "To_lift.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+45]..[11,294+54])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+34]..[11,294+44])
+                Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+34]..[11,294+44])
+                []
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+0]..[12,362+79])
+    Psig_value
+    value_description "drop_default" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+4]..[12,362+16]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+0]..[12,362+79])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+19]..[12,362+79])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+68]..[12,362+79])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+20]..[12,362+37])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+20]..[12,362+37])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+39]..[12,362+66])
+            Ptyp_constr "option" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+60]..[12,362+66])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+39]..[12,362+59])
+                Ptyp_constr "To_lift.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+50]..[12,362+59])
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+39]..[12,362+49])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+39]..[12,362+49])
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+0]..[13,442+67])
+    Psig_value
+    value_description "drop_if" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+4]..[13,442+11]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+0]..[13,442+67])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+14]..[13,442+67])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+56]..[13,442+67])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+15]..[13,442+32])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+15]..[13,442+32])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+34]..[13,442+54])
+            Ptyp_constr "To_lift.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+45]..[13,442+54])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+34]..[13,442+44])
+                Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+34]..[13,442+44])
+                []
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+0]..[14,510+62])
+    Psig_value
+    value_description "drop_default_equal" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+4]..[14,510+22]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+0]..[14,510+62])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+25]..[14,510+62])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+51]..[14,510+62])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+26]..[14,510+43])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+26]..[14,510+43])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+45]..[14,510+49])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+45]..[14,510+49])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+0]..[15,573+64])
+    Psig_value
+    value_description "drop_default_compare" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+4]..[15,573+24]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+0]..[15,573+64])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+27]..[15,573+64])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+53]..[15,573+64])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+28]..[15,573+45])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+28]..[15,573+45])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+47]..[15,573+51])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+47]..[15,573+51])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+0]..[16,638+61])
+    Psig_value
+    value_description "drop_default_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+4]..[16,638+21]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+0]..[16,638+61])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+24]..[16,638+61])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+50]..[16,638+61])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+25]..[16,638+42])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+25]..[16,638+42])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+44]..[16,638+48])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+44]..[16,638+48])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+0]..[17,700+52])
+    Psig_value
+    value_description "omit_nil" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+4]..[17,700+12]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+0]..[17,700+52])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+15]..[17,700+52])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+41]..[17,700+52])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+16]..[17,700+33])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+16]..[17,700+33])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+35]..[17,700+39])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+35]..[17,700+39])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+0]..[18,753+50])
+    Psig_value
+    value_description "option" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+4]..[18,753+10]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+0]..[18,753+50])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+13]..[18,753+50])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+39]..[18,753+50])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+14]..[18,753+31])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+14]..[18,753+31])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+33]..[18,753+37])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+33]..[18,753+37])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+0]..[19,804+48])
+    Psig_value
+    value_description "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+4]..[19,804+8]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+0]..[19,804+48])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+11]..[19,804+48])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+37]..[19,804+48])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+12]..[19,804+29])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+12]..[19,804+29])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+31]..[19,804+35])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+31]..[19,804+35])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+0]..[20,853+49])
+    Psig_value
+    value_description "array" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+4]..[20,853+9]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+0]..[20,853+49])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+12]..[20,853+49])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+38]..[20,853+49])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+13]..[20,853+30])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+13]..[20,853+30])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+32]..[20,853+36])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+32]..[20,853+36])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+0]..[21,903+48])
+    Psig_value
+    value_description "bool" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+4]..[21,903+8]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+0]..[21,903+48])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+11]..[21,903+48])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+37]..[21,903+48])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+12]..[21,903+29])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+12]..[21,903+29])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+31]..[21,903+35])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+31]..[21,903+35])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+0]..[22,952+42])
+    Psig_value
+    value_description "opaque" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+4]..[22,952+10]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+0]..[22,952+42])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+13]..[22,952+42])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+31]..[22,952+42])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+14]..[22,952+23])
+            Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+14]..[22,952+23])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+25]..[22,952+29])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+25]..[22,952+29])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+0]..[23,995+62])
+    Psig_value
+    value_description "list_variant" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+4]..[23,995+16]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+0]..[23,995+62])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+19]..[23,995+62])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+51]..[23,995+62])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+20]..[23,995+43])
+            Ptyp_constr "constructor_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+20]..[23,995+43])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+45]..[23,995+49])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+45]..[23,995+49])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+0]..[24,1058+55])
+    Psig_value
+    value_description "list_exception" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+4]..[24,1058+18]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+0]..[24,1058+55])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+21]..[24,1058+55])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+44]..[24,1058+55])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+22]..[24,1058+36])
+            Ptyp_constr "type_exception" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+22]..[24,1058+36])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+38]..[24,1058+42])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+38]..[24,1058+42])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+0]..[25,1114+45])
+    Psig_value
+    value_description "list_poly" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+4]..[25,1114+13]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+0]..[25,1114+45])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+16]..[25,1114+45])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+34]..[25,1114+45])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+17]..[25,1114+26])
+            Ptyp_constr "row_field" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+17]..[25,1114+26])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+28]..[25,1114+32])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+28]..[25,1114+32])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+0]..[26,1160+64])
+    Psig_value
+    value_description "allow_extra_fields_td" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+4]..[26,1160+25]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+0]..[26,1160+64])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+28]..[26,1160+64])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+53]..[26,1160+64])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+29]..[26,1160+45])
+            Ptyp_constr "type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+29]..[26,1160+45])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+47]..[26,1160+51])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+47]..[26,1160+51])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+0]..[27,1225+71])
+    Psig_value
+    value_description "allow_extra_fields_cd" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+4]..[27,1225+25]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+0]..[27,1225+71])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+28]..[27,1225+71])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+60]..[27,1225+71])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+29]..[27,1225+52])
+            Ptyp_constr "constructor_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+29]..[27,1225+52])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+54]..[27,1225+58])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+54]..[27,1225+58])
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+0]..[28,1297+76])
+    Psig_value
+    value_description "invalid_attribute" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+4]..[28,1297+21]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+0]..[28,1297+76])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+24]..[28,1297+76])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+28]..[28,1297+38])
+          Ptyp_constr "Location.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+28]..[28,1297+38])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+42]..[28,1297+76])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+42]..[28,1297+60])
+            Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+49]..[28,1297+60])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+43]..[28,1297+44])
+                Ptyp_any
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+46]..[28,1297+47])
+                Ptyp_any
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+64]..[28,1297+76])
+            Ptyp_arrow
+            Nolabel
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+64]..[28,1297+70])
+              Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+64]..[28,1297+70])
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+74]..[28,1297+76])
+              Ptyp_var a
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+0]..[29,1374+84])
+    Psig_value
+    value_description "fail_if_allow_extra_field_cd" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+4]..[29,1374+32]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+0]..[29,1374+84])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+35]..[29,1374+84])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+39]..[29,1374+49])
+          Ptyp_constr "Location.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+39]..[29,1374+49])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+53]..[29,1374+84])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+53]..[29,1374+76])
+            Ptyp_constr "constructor_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+53]..[29,1374+76])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+80]..[29,1374+84])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+80]..[29,1374+84])
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+0]..[30,1459+77])
+    Psig_value
+    value_description "fail_if_allow_extra_field_td" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+4]..[30,1459+32]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+0]..[30,1459+77])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+35]..[30,1459+77])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+39]..[30,1459+49])
+          Ptyp_constr "Location.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+39]..[30,1459+49])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+53]..[30,1459+77])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+53]..[30,1459+69])
+            Ptyp_constr "type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+53]..[30,1459+69])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+73]..[30,1459+77])
+            Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+73]..[30,1459+77])
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+0]..[31,1537+70])
+    Psig_value
+    value_description "tag_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+4]..[31,1537+12]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+0]..[31,1537+70])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+15]..[31,1537+70])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+59]..[31,1537+70])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+16]..[31,1537+25])
+            Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+16]..[31,1537+25])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+27]..[31,1537+57])
+            Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+53]..[31,1537+57])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+28]..[31,1537+51])
+                Ptyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+28]..[31,1537+38])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+28]..[31,1537+38])
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+41]..[31,1537+51])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+41]..[31,1537+51])
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+0]..[32,1608+76])
+    Psig_value
+    value_description "tag_ld" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+4]..[32,1608+10]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+0]..[32,1608+76])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+13]..[32,1608+76])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+65]..[32,1608+76])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+14]..[32,1608+31])
+            Ptyp_constr "label_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+14]..[32,1608+31])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+33]..[32,1608+63])
+            Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+59]..[32,1608+63])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+34]..[32,1608+57])
+                Ptyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+34]..[32,1608+44])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+34]..[32,1608+44])
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+47]..[32,1608+57])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+47]..[32,1608+57])
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+0]..[33,1685+82])
+    Psig_value
+    value_description "tag_cd" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+4]..[33,1685+10]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+0]..[33,1685+82])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+13]..[33,1685+82])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+71]..[33,1685+82])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+14]..[33,1685+37])
+            Ptyp_constr "constructor_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+14]..[33,1685+37])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+39]..[33,1685+69])
+            Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+65]..[33,1685+69])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+40]..[33,1685+63])
+                Ptyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+40]..[33,1685+50])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+40]..[33,1685+50])
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+53]..[33,1685+63])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+53]..[33,1685+63])
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+0]..[34,1768+70])
+    Psig_value
+    value_description "tag_poly" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+4]..[34,1768+12]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+0]..[34,1768+70])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+15]..[34,1768+70])
+        Ptyp_constr "Attribute.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+59]..[34,1768+70])
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+16]..[34,1768+25])
+            Ptyp_constr "row_field" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+16]..[34,1768+25])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+27]..[34,1768+57])
+            Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+53]..[34,1768+57])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+28]..[34,1768+51])
+                Ptyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+28]..[34,1768+38])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+28]..[34,1768+38])
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+41]..[34,1768+51])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+41]..[34,1768+51])
+                    []
+                ]
+            ]
+        ]
+      []
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+open! Base
+open! Ppxlib
+module To_lift : sig type 'a t = {
+                       to_lift: 'a }[@@unboxed ] end[@@ocaml.doc
+                                                      " [default], [drop_default], and [drop_if] attributes are annotated with expressions\n    that should be lifted out of the scope of ppx-generated temporary variables. See the\n    [Lifted] module. "]
+val default : (label_declaration, expression To_lift.t) Attribute.t
+val drop_default :
+  (label_declaration, expression To_lift.t option) Attribute.t
+val drop_if : (label_declaration, expression To_lift.t) Attribute.t
+val drop_default_equal : (label_declaration, unit) Attribute.t
+val drop_default_compare : (label_declaration, unit) Attribute.t
+val drop_default_sexp : (label_declaration, unit) Attribute.t
+val omit_nil : (label_declaration, unit) Attribute.t
+val option : (label_declaration, unit) Attribute.t
+val list : (label_declaration, unit) Attribute.t
+val array : (label_declaration, unit) Attribute.t
+val bool : (label_declaration, unit) Attribute.t
+val opaque : (core_type, unit) Attribute.t
+val list_variant : (constructor_declaration, unit) Attribute.t
+val list_exception : (type_exception, unit) Attribute.t
+val list_poly : (row_field, unit) Attribute.t
+val allow_extra_fields_td : (type_declaration, unit) Attribute.t
+val allow_extra_fields_cd : (constructor_declaration, unit) Attribute.t
+val invalid_attribute : loc:Location.t -> (_, _) Attribute.t -> string -> 'a
+val fail_if_allow_extra_field_cd :
+  loc:Location.t -> constructor_declaration -> unit
+val fail_if_allow_extra_field_td : loc:Location.t -> type_declaration -> unit
+val tag_type : (core_type, (expression * expression) list) Attribute.t
+val tag_ld : (label_declaration, (expression * expression) list) Attribute.t
+val tag_cd :
+  (constructor_declaration, (expression * expression) list) Attribute.t
+val tag_poly : (row_field, (expression * expression) list) Attribute.t
+[
+  signature_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tsig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[1,0+10])
+    Tsig_open Override "Base!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[2,11+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[2,11+12])
+    Tsig_open Override "Ppxlib!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[7,225+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[9,289+3])
+    Tsig_module "To_lift/658"
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[4,25+0]..[6,201+23])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[4,25+0]..[6,201+23])
+              Pexp_constant PConst_string(" [default], [drop_default], and [drop_if] attributes are annotated with expressions\n    that should be lifted out of the scope of ppx-generated temporary variables. See the\n    [Lifted] module. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[4,25+0]..[6,201+23]),None)
+        ]
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[7,225+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[9,289+3])
+      Tmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+42])
+          Tsig_type Rec
+          [
+            type_declaration t/656 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+42])
+              attribute "unboxed"
+                []
+              ptype_params =
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+9])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_record
+                  [
+                    (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+28])
+                      Immutable
+                      to_lift/657                      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+28])
+                        Ttyp_poly
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[8,246+28])
+                          Ttyp_var a
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+      ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+67])
+    Tsig_value
+    value_description default/769 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+67])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+67])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+32])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+54])
+            Ttyp_constr "To_lift/658.t"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[11,294+44])
+                Ttyp_constr "Ppxlib!.expression"
+                []
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+79])
+    Tsig_value
+    value_description drop_default/770 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+79])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+79])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+37])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+66])
+            Ttyp_constr "Base!.option"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+59])
+                Ttyp_constr "To_lift/658.t"
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[12,362+49])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+67])
+    Tsig_value
+    value_description drop_if/771 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+67])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+67])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+32])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+54])
+            Ttyp_constr "To_lift/658.t"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[13,442+44])
+                Ttyp_constr "Ppxlib!.expression"
+                []
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+62])
+    Tsig_value
+    value_description drop_default_equal/772 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+62])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+62])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+43])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+45]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[14,510+49])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+64])
+    Tsig_value
+    value_description drop_default_compare/773 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+64])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+64])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+45])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+47]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[15,573+51])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+61])
+    Tsig_value
+    value_description drop_default_sexp/774 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+61])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+61])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+42])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+44]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[16,638+48])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+52])
+    Tsig_value
+    value_description omit_nil/775 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+52])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+52])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+33])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+35]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[17,700+39])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+50])
+    Tsig_value
+    value_description option/776 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+50])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+50])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+31])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+33]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[18,753+37])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+48])
+    Tsig_value
+    value_description list/777 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+48])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+48])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+29])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+31]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[19,804+35])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+49])
+    Tsig_value
+    value_description array/778 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+49])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+49])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+30])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[20,853+36])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+48])
+    Tsig_value
+    value_description bool/779 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+48])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+48])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+29])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+31]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[21,903+35])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+42])
+    Tsig_value
+    value_description opaque/780 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+42])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+42])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+23])
+            Ttyp_constr "Ppxlib!.core_type"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[22,952+29])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+62])
+    Tsig_value
+    value_description list_variant/781 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+62])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+62])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+43])
+            Ttyp_constr "Ppxlib!.constructor_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+45]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[23,995+49])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+55])
+    Tsig_value
+    value_description list_exception/782 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+55])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+55])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+36])
+            Ttyp_constr "Ppxlib!.type_exception"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+38]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[24,1058+42])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+45])
+    Tsig_value
+    value_description list_poly/783 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+45])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+45])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+26])
+            Ttyp_constr "Ppxlib!.row_field"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[25,1114+32])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+64])
+    Tsig_value
+    value_description allow_extra_fields_td/784 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+64])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+64])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+29]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+45])
+            Ttyp_constr "Ppxlib!.type_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+47]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[26,1160+51])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+71])
+    Tsig_value
+    value_description allow_extra_fields_cd/785 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+71])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+71])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+29]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+52])
+            Ttyp_constr "Ppxlib!.constructor_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+54]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[27,1225+58])
+            Ttyp_constr "Base!.unit"
+            []
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+76])
+    Tsig_value
+    value_description invalid_attribute/818 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+76])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+76])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+38])
+          Ttyp_constr "Ppxlib!.Location.t"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+42]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+76])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+42]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+60])
+            Ttyp_constr "Ppxlib!.Attribute.t"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+43]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+44])
+                Ttyp_any
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+46]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+47])
+                Ttyp_any
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+64]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+76])
+            Ttyp_arrow
+            Nolabel
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+64]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+70])
+              Ttyp_constr "Base!.string"
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+74]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[28,1297+76])
+              Ttyp_var a
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+84])
+    Tsig_value
+    value_description fail_if_allow_extra_field_cd/819 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+84])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+35]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+84])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+49])
+          Ttyp_constr "Ppxlib!.Location.t"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+53]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+84])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+53]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+76])
+            Ttyp_constr "Ppxlib!.constructor_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+80]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[29,1374+84])
+            Ttyp_constr "Base!.unit"
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+77])
+    Tsig_value
+    value_description fail_if_allow_extra_field_td/820 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+77])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+35]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+77])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+49])
+          Ttyp_constr "Ppxlib!.Location.t"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+53]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+77])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+53]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+69])
+            Ttyp_constr "Ppxlib!.type_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+73]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[30,1459+77])
+            Ttyp_constr "Base!.unit"
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+70])
+    Tsig_value
+    value_description tag_type/821 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+70])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+70])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+25])
+            Ttyp_constr "Ppxlib!.core_type"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+57])
+            Ttyp_constr "Base!.list"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+51])
+                Ttyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+38])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+41]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[31,1537+51])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+76])
+    Tsig_value
+    value_description tag_ld/822 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+76])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+76])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+31])
+            Ttyp_constr "Ppxlib!.label_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+33]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+63])
+            Ttyp_constr "Base!.list"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+57])
+                Ttyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+44])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+47]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[32,1608+57])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+82])
+    Tsig_value
+    value_description tag_cd/823 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+82])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+82])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+37])
+            Ttyp_constr "Ppxlib!.constructor_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+39]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+69])
+            Ttyp_constr "Base!.list"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+40]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+63])
+                Ttyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+40]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+50])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+53]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[33,1685+63])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                ]
+            ]
+        ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+70])
+    Tsig_value
+    value_description tag_poly/824 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+70])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+70])
+        Ttyp_constr "Ppxlib!.Attribute.t"
+        [
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+25])
+            Ttyp_constr "Ppxlib!.row_field"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+57])
+            Ttyp_constr "Base!.list"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+51])
+                Ttyp_tuple
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+38])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+41]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/attrs.mli[34,1768+51])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                ]
+            ]
+        ]
+      []
+]
+

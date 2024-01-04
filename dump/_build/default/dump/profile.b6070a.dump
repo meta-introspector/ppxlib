@@ -1,0 +1,12 @@
+0.340s  104MB 34.8MB 36.6MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.pp.ml
+  0.320s 94.3MB 33.8MB 35.6MB typing
+  0.001s ------ ------ ------ transl
+  0.009s 2.36MB 0.34MB 36.0MB generate
+    0.003s 2.33MB 0.34MB 36.0MB compile_phrases
+      0.001s 0.33MB ------ ------ selection
+      ------ 2.00MB 0.34MB 36.0MB cse
+      0.001s ------ ------ ------ regalloc
+    0.003s ------ ------ ------ assemble
+    0.003s 0.02MB ------ ------ other
+  0.010s 7.56MB 0.62MB 36.6MB other
+0.010s 3.10MB 1.79MB ------ other

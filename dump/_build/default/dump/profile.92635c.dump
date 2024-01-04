@@ -1,0 +1,24 @@
+0.749s  433MB 46.8MB 48.5MB src/context_free.ml
+  0.011s 3.59MB 0.59MB 2.35MB parsing
+    0.011s 3.59MB 0.59MB 2.35MB parser
+  0.342s  205MB 35.0MB 37.3MB typing
+  0.025s 8.37MB 0.59MB 37.9MB transl
+  0.281s  134MB 9.97MB 47.9MB generate
+    0.005s 2.30MB 0.28MB 38.2MB cmm
+    0.151s 84.8MB 6.96MB 45.2MB compile_phrases
+      0.022s 15.3MB 1.09MB 39.3MB selection
+      0.001s ------ ------ ------ polling
+      0.001s ------ ------ ------ comballoc
+      0.007s 2.36MB 0.15MB 39.4MB cse
+      0.014s 8.77MB 0.75MB 40.2MB liveness
+      0.003s 2.00MB 0.18MB 40.4MB deadcode
+      0.017s 10.9MB 0.93MB 41.3MB spill
+      0.004s 2.00MB 0.15MB 41.5MB split
+      0.065s 40.8MB 3.56MB 45.0MB regalloc
+      0.001s ------ ------ ------ linearize
+      0.007s 2.37MB 0.12MB 45.2MB emit
+      0.007s 0.18MB ------ ------ other
+    0.038s ------ ------ ------ assemble
+    0.087s 46.9MB 2.72MB 47.9MB other
+  0.091s 81.8MB 0.62MB 48.5MB other
+0.018s 3.07MB 1.75MB ------ other

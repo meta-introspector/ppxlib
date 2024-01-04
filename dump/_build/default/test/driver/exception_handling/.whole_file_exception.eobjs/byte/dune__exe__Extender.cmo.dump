@@ -1,0 +1,1087 @@
+[
+  structure_item (test/driver/exception_handling/extender.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/exception_handling/extender.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/exception_handling/extender.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/exception_handling/extender.ml[3,13+0]..[8,223+56])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[3,13+4]..[3,13+30])
+          Ppat_var "expand_into_extension_node" (test/driver/exception_handling/extender.ml[3,13+4]..[3,13+30])
+        expression (test/driver/exception_handling/extender.ml[3,13+31]..[8,223+56]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/driver/exception_handling/extender.ml[3,13+32]..[3,13+36])
+            Ppat_var "ctxt" (test/driver/exception_handling/extender.ml[3,13+32]..[3,13+36])
+          expression (test/driver/exception_handling/extender.ml[4,52+2]..[8,223+56])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (test/driver/exception_handling/extender.ml[4,52+6]..[4,52+9])
+                  Ppat_var "loc" (test/driver/exception_handling/extender.ml[4,52+6]..[4,52+9])
+                expression (test/driver/exception_handling/extender.ml[4,52+12]..[4,52+64])
+                  Pexp_apply
+                  expression (test/driver/exception_handling/extender.ml[4,52+12]..[4,52+59])
+                    Pexp_ident "Expansion_context.Extension.extension_point_loc" (test/driver/exception_handling/extender.ml[4,52+12]..[4,52+59])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/exception_handling/extender.ml[4,52+60]..[4,52+64])
+                        Pexp_ident "ctxt" (test/driver/exception_handling/extender.ml[4,52+60]..[4,52+64])
+                  ]
+            ]
+            expression (test/driver/exception_handling/extender.ml[5,120+2]..[8,223+56])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/driver/exception_handling/extender.ml[5,120+6]..[5,120+20])
+                    Ppat_var "extension_node" (test/driver/exception_handling/extender.ml[5,120+6]..[5,120+20])
+                  expression (test/driver/exception_handling/extender.ml[6,143+4]..[6,143+74])
+                    Pexp_apply
+                    expression (test/driver/exception_handling/extender.ml[6,143+4]..[6,143+29])
+                      Pexp_ident "Location.error_extensionf" (test/driver/exception_handling/extender.ml[6,143+4]..[6,143+29])
+                    [
+                      <arg>
+                      Labelled "loc"
+                        expression (test/driver/exception_handling/extender.ml[6,143+31]..[6,143+34])
+                          Pexp_ident "loc" (test/driver/exception_handling/extender.ml[6,143+31]..[6,143+34])
+                      <arg>
+                      Nolabel
+                        expression (test/driver/exception_handling/extender.ml[6,143+35]..[6,143+74])
+                          Pexp_constant PConst_string("An error message in an extension node",(test/driver/exception_handling/extender.ml[6,143+36]..[6,143+73]),None)
+                    ]
+              ]
+              expression (test/driver/exception_handling/extender.ml[8,223+2]..[8,223+56])
+                Pexp_apply
+                expression (test/driver/exception_handling/extender.ml[8,223+2]..[8,223+36])
+                  Pexp_ident "Ast_builder.Default.pexp_extension" (test/driver/exception_handling/extender.ml[8,223+2]..[8,223+36])
+                [
+                  <arg>
+                  Labelled "loc"
+                    expression (test/driver/exception_handling/extender.ml[8,223+38]..[8,223+41])
+                      Pexp_ident "loc" (test/driver/exception_handling/extender.ml[8,223+38]..[8,223+41])
+                  <arg>
+                  Nolabel
+                    expression (test/driver/exception_handling/extender.ml[8,223+42]..[8,223+56])
+                      Pexp_ident "extension_node" (test/driver/exception_handling/extender.ml[8,223+42]..[8,223+56])
+                ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[10,281+0]..[10,281+66])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[10,281+4]..[10,281+26])
+          Ppat_var "expand_raise_exception" (test/driver/exception_handling/extender.ml[10,281+4]..[10,281+26])
+        expression (test/driver/exception_handling/extender.ml[10,281+27]..[10,281+66]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/driver/exception_handling/extender.ml[10,281+33]..[10,281+34])
+            Ppat_any
+          expression (test/driver/exception_handling/extender.ml[10,281+37]..[10,281+66])
+            Pexp_apply
+            expression (test/driver/exception_handling/extender.ml[10,281+37]..[10,281+45])
+              Pexp_ident "failwith" (test/driver/exception_handling/extender.ml[10,281+37]..[10,281+45])
+            [
+              <arg>
+              Nolabel
+                expression (test/driver/exception_handling/extender.ml[10,281+46]..[10,281+66])
+                  Pexp_constant PConst_string("A raised exception",(test/driver/exception_handling/extender.ml[10,281+47]..[10,281+65]),None)
+            ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[12,349+0]..[14,456+53])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[12,349+4]..[12,349+30])
+          Ppat_var "expand_raise_located_error" (test/driver/exception_handling/extender.ml[12,349+4]..[12,349+30])
+        expression (test/driver/exception_handling/extender.ml[12,349+31]..[14,456+53]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/driver/exception_handling/extender.ml[12,349+32]..[12,349+36])
+            Ppat_var "ctxt" (test/driver/exception_handling/extender.ml[12,349+32]..[12,349+36])
+          expression (test/driver/exception_handling/extender.ml[13,388+2]..[14,456+53])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (test/driver/exception_handling/extender.ml[13,388+6]..[13,388+9])
+                  Ppat_var "loc" (test/driver/exception_handling/extender.ml[13,388+6]..[13,388+9])
+                expression (test/driver/exception_handling/extender.ml[13,388+12]..[13,388+64])
+                  Pexp_apply
+                  expression (test/driver/exception_handling/extender.ml[13,388+12]..[13,388+59])
+                    Pexp_ident "Expansion_context.Extension.extension_point_loc" (test/driver/exception_handling/extender.ml[13,388+12]..[13,388+59])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/exception_handling/extender.ml[13,388+60]..[13,388+64])
+                        Pexp_ident "ctxt" (test/driver/exception_handling/extender.ml[13,388+60]..[13,388+64])
+                  ]
+            ]
+            expression (test/driver/exception_handling/extender.ml[14,456+2]..[14,456+53])
+              Pexp_apply
+              expression (test/driver/exception_handling/extender.ml[14,456+2]..[14,456+23])
+                Pexp_ident "Location.raise_errorf" (test/driver/exception_handling/extender.ml[14,456+2]..[14,456+23])
+              [
+                <arg>
+                Labelled "loc"
+                  expression (test/driver/exception_handling/extender.ml[14,456+25]..[14,456+28])
+                    Pexp_ident "loc" (test/driver/exception_handling/extender.ml[14,456+25]..[14,456+28])
+                <arg>
+                Nolabel
+                  expression (test/driver/exception_handling/extender.ml[14,456+29]..[14,456+53])
+                    Pexp_constant PConst_string("A raised located error",(test/driver/exception_handling/extender.ml[14,456+30]..[14,456+52]),None)
+              ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[16,511+0]..[19,637+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[16,511+4]..[16,511+29])
+          Ppat_var "extension_point_extension" (test/driver/exception_handling/extender.ml[16,511+4]..[16,511+29])
+        expression (test/driver/exception_handling/extender.ml[17,543+2]..[19,637+30])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[17,543+2]..[17,543+22])
+            Pexp_ident "Extension.V3.declare" (test/driver/exception_handling/extender.ml[17,543+2]..[17,543+22])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[17,543+23]..[17,543+37])
+                Pexp_constant PConst_string("gen_ext_node",(test/driver/exception_handling/extender.ml[17,543+24]..[17,543+36]),None)
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[17,543+38]..[17,543+66])
+                Pexp_ident "Extension.Context.expression" (test/driver/exception_handling/extender.ml[17,543+38]..[17,543+66])
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[18,610+4]..[18,610+26])
+                Pexp_open Fresh
+                module_expr (test/driver/exception_handling/extender.ml[18,610+4]..[18,610+15])
+                  Pmod_ident "Ast_pattern" (test/driver/exception_handling/extender.ml[18,610+4]..[18,610+15])
+                expression (test/driver/exception_handling/extender.ml[18,610+17]..[18,610+25])
+                  Pexp_apply
+                  expression (test/driver/exception_handling/extender.ml[18,610+17]..[18,610+21])
+                    Pexp_ident "pstr" (test/driver/exception_handling/extender.ml[18,610+17]..[18,610+21])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/exception_handling/extender.ml[18,610+22]..[18,610+25])
+                        Pexp_ident "nil" (test/driver/exception_handling/extender.ml[18,610+22]..[18,610+25])
+                  ]
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[19,637+4]..[19,637+30])
+                Pexp_ident "expand_into_extension_node" (test/driver/exception_handling/extender.ml[19,637+4]..[19,637+30])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[21,669+0]..[24,796+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[21,669+4]..[21,669+29])
+          Ppat_var "raise_exception_extension" (test/driver/exception_handling/extender.ml[21,669+4]..[21,669+29])
+        expression (test/driver/exception_handling/extender.ml[22,701+2]..[24,796+26])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[22,701+2]..[22,701+22])
+            Pexp_ident "Extension.V3.declare" (test/driver/exception_handling/extender.ml[22,701+2]..[22,701+22])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[22,701+23]..[22,701+38])
+                Pexp_constant PConst_string("gen_raise_exc",(test/driver/exception_handling/extender.ml[22,701+24]..[22,701+37]),None)
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[22,701+39]..[22,701+67])
+                Pexp_ident "Extension.Context.expression" (test/driver/exception_handling/extender.ml[22,701+39]..[22,701+67])
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[23,769+4]..[23,769+26])
+                Pexp_open Fresh
+                module_expr (test/driver/exception_handling/extender.ml[23,769+4]..[23,769+15])
+                  Pmod_ident "Ast_pattern" (test/driver/exception_handling/extender.ml[23,769+4]..[23,769+15])
+                expression (test/driver/exception_handling/extender.ml[23,769+17]..[23,769+25])
+                  Pexp_apply
+                  expression (test/driver/exception_handling/extender.ml[23,769+17]..[23,769+21])
+                    Pexp_ident "pstr" (test/driver/exception_handling/extender.ml[23,769+17]..[23,769+21])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/exception_handling/extender.ml[23,769+22]..[23,769+25])
+                        Pexp_ident "nil" (test/driver/exception_handling/extender.ml[23,769+22]..[23,769+25])
+                  ]
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[24,796+4]..[24,796+26])
+                Pexp_ident "expand_raise_exception" (test/driver/exception_handling/extender.ml[24,796+4]..[24,796+26])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[26,824+0]..[29,965+30])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[26,824+4]..[26,824+33])
+          Ppat_var "raise_located_error_extension" (test/driver/exception_handling/extender.ml[26,824+4]..[26,824+33])
+        expression (test/driver/exception_handling/extender.ml[27,860+2]..[29,965+30])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[27,860+2]..[27,860+22])
+            Pexp_ident "Extension.V3.declare" (test/driver/exception_handling/extender.ml[27,860+2]..[27,860+22])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[27,860+23]..[27,860+48])
+                Pexp_constant PConst_string("gen_raise_located_error",(test/driver/exception_handling/extender.ml[27,860+24]..[27,860+47]),None)
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[27,860+49]..[27,860+77])
+                Pexp_ident "Extension.Context.expression" (test/driver/exception_handling/extender.ml[27,860+49]..[27,860+77])
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[28,938+4]..[28,938+26])
+                Pexp_open Fresh
+                module_expr (test/driver/exception_handling/extender.ml[28,938+4]..[28,938+15])
+                  Pmod_ident "Ast_pattern" (test/driver/exception_handling/extender.ml[28,938+4]..[28,938+15])
+                expression (test/driver/exception_handling/extender.ml[28,938+17]..[28,938+25])
+                  Pexp_apply
+                  expression (test/driver/exception_handling/extender.ml[28,938+17]..[28,938+21])
+                    Pexp_ident "pstr" (test/driver/exception_handling/extender.ml[28,938+17]..[28,938+21])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/exception_handling/extender.ml[28,938+22]..[28,938+25])
+                        Pexp_ident "nil" (test/driver/exception_handling/extender.ml[28,938+22]..[28,938+25])
+                  ]
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[29,965+4]..[29,965+30])
+                Pexp_ident "expand_raise_located_error" (test/driver/exception_handling/extender.ml[29,965+4]..[29,965+30])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[31,997+0]..[31,997+72])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[31,997+4]..[31,997+9])
+          Ppat_var "rule1" (test/driver/exception_handling/extender.ml[31,997+4]..[31,997+9])
+        expression (test/driver/exception_handling/extender.ml[31,997+12]..[31,997+72])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[31,997+12]..[31,997+46])
+            Pexp_ident "Ppxlib.Context_free.Rule.extension" (test/driver/exception_handling/extender.ml[31,997+12]..[31,997+46])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[31,997+47]..[31,997+72])
+                Pexp_ident "extension_point_extension" (test/driver/exception_handling/extender.ml[31,997+47]..[31,997+72])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[32,1070+0]..[32,1070+72])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[32,1070+4]..[32,1070+9])
+          Ppat_var "rule2" (test/driver/exception_handling/extender.ml[32,1070+4]..[32,1070+9])
+        expression (test/driver/exception_handling/extender.ml[32,1070+12]..[32,1070+72])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[32,1070+12]..[32,1070+46])
+            Pexp_ident "Ppxlib.Context_free.Rule.extension" (test/driver/exception_handling/extender.ml[32,1070+12]..[32,1070+46])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[32,1070+47]..[32,1070+72])
+                Pexp_ident "raise_exception_extension" (test/driver/exception_handling/extender.ml[32,1070+47]..[32,1070+72])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[33,1143+0]..[33,1143+76])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[33,1143+4]..[33,1143+9])
+          Ppat_var "rule3" (test/driver/exception_handling/extender.ml[33,1143+4]..[33,1143+9])
+        expression (test/driver/exception_handling/extender.ml[33,1143+12]..[33,1143+76])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[33,1143+12]..[33,1143+46])
+            Pexp_ident "Ppxlib.Context_free.Rule.extension" (test/driver/exception_handling/extender.ml[33,1143+12]..[33,1143+46])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[33,1143+47]..[33,1143+76])
+                Pexp_ident "raise_located_error_extension" (test/driver/exception_handling/extender.ml[33,1143+47]..[33,1143+76])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[35,1221+0]..[36,1230+76])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[35,1221+4]..[35,1221+6])
+          Ppat_construct "()" (test/driver/exception_handling/extender.ml[35,1221+4]..[35,1221+6])
+          None
+        expression (test/driver/exception_handling/extender.ml[36,1230+2]..[36,1230+76])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[36,1230+2]..[36,1230+32])
+            Pexp_ident "Driver.register_transformation" (test/driver/exception_handling/extender.ml[36,1230+2]..[36,1230+32])
+          [
+            <arg>
+            Labelled "rules"
+              expression (test/driver/exception_handling/extender.ml[36,1230+40]..[36,1230+63])
+                Pexp_construct "::" (test/driver/exception_handling/extender.ml[36,1230+42]..[36,1230+63]) ghost
+                Some
+                  expression (test/driver/exception_handling/extender.ml[36,1230+42]..[36,1230+63]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/driver/exception_handling/extender.ml[36,1230+42]..[36,1230+47])
+                        Pexp_ident "rule1" (test/driver/exception_handling/extender.ml[36,1230+42]..[36,1230+47])
+                      expression (test/driver/exception_handling/extender.ml[36,1230+49]..[36,1230+63]) ghost
+                        Pexp_construct "::" (test/driver/exception_handling/extender.ml[36,1230+49]..[36,1230+63]) ghost
+                        Some
+                          expression (test/driver/exception_handling/extender.ml[36,1230+49]..[36,1230+63]) ghost
+                            Pexp_tuple
+                            [
+                              expression (test/driver/exception_handling/extender.ml[36,1230+49]..[36,1230+54])
+                                Pexp_ident "rule2" (test/driver/exception_handling/extender.ml[36,1230+49]..[36,1230+54])
+                              expression (test/driver/exception_handling/extender.ml[36,1230+56]..[36,1230+63]) ghost
+                                Pexp_construct "::" (test/driver/exception_handling/extender.ml[36,1230+56]..[36,1230+63]) ghost
+                                Some
+                                  expression (test/driver/exception_handling/extender.ml[36,1230+56]..[36,1230+63]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (test/driver/exception_handling/extender.ml[36,1230+56]..[36,1230+61])
+                                        Pexp_ident "rule3" (test/driver/exception_handling/extender.ml[36,1230+56]..[36,1230+61])
+                                      expression (test/driver/exception_handling/extender.ml[36,1230+62]..[36,1230+63]) ghost
+                                        Pexp_construct "[]" (test/driver/exception_handling/extender.ml[36,1230+62]..[36,1230+63]) ghost
+                                        None
+                                    ]
+                            ]
+                    ]
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[36,1230+64]..[36,1230+76])
+                Pexp_constant PConst_string("gen_errors",(test/driver/exception_handling/extender.ml[36,1230+65]..[36,1230+75]),None)
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[38,1308+0]..[38,1308+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[38,1308+4]..[38,1308+6])
+          Ppat_construct "()" (test/driver/exception_handling/extender.ml[38,1308+4]..[38,1308+6])
+          None
+        expression (test/driver/exception_handling/extender.ml[38,1308+9]..[38,1308+29])
+          Pexp_apply
+          expression (test/driver/exception_handling/extender.ml[38,1308+9]..[38,1308+26])
+            Pexp_ident "Driver.standalone" (test/driver/exception_handling/extender.ml[38,1308+9]..[38,1308+26])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/extender.ml[38,1308+27]..[38,1308+29])
+                Pexp_construct "()" (test/driver/exception_handling/extender.ml[38,1308+27]..[38,1308+29])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let expand_into_extension_node ~ctxt  =
+  let loc = Expansion_context.Extension.extension_point_loc ctxt in
+  let extension_node =
+    Location.error_extensionf ~loc "An error message in an extension node" in
+  Ast_builder.Default.pexp_extension ~loc extension_node
+let expand_raise_exception ~ctxt:_  = failwith "A raised exception"
+let expand_raise_located_error ~ctxt  =
+  let loc = Expansion_context.Extension.extension_point_loc ctxt in
+  Location.raise_errorf ~loc "A raised located error"
+let extension_point_extension =
+  Extension.V3.declare "gen_ext_node" Extension.Context.expression
+    (let open Ast_pattern in pstr nil) expand_into_extension_node
+let raise_exception_extension =
+  Extension.V3.declare "gen_raise_exc" Extension.Context.expression
+    (let open Ast_pattern in pstr nil) expand_raise_exception
+let raise_located_error_extension =
+  Extension.V3.declare "gen_raise_located_error" Extension.Context.expression
+    (let open Ast_pattern in pstr nil) expand_raise_located_error
+let rule1 = Ppxlib.Context_free.Rule.extension extension_point_extension
+let rule2 = Ppxlib.Context_free.Rule.extension raise_exception_extension
+let rule3 = Ppxlib.Context_free.Rule.extension raise_located_error_extension
+let () =
+  Driver.register_transformation ~rules:[rule1; rule2; rule3] "gen_errors"
+let () = Driver.standalone ()
+[
+  structure_item (test/driver/exception_handling/extender.ml[1,0+0]..test/driver/exception_handling/extender.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/exception_handling/extender.ml[1,0+5]..test/driver/exception_handling/extender.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/exception_handling/extender.ml[3,13+0]..test/driver/exception_handling/extender.ml[8,223+56])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[3,13+4]..test/driver/exception_handling/extender.ml[3,13+30])
+          Tpat_var "expand_into_extension_node/496"
+        expression (test/driver/exception_handling/extender.ml[3,13+31]..test/driver/exception_handling/extender.ml[8,223+56]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/driver/exception_handling/extender.ml[3,13+32]..test/driver/exception_handling/extender.ml[3,13+36])
+                Tpat_var "ctxt/498"
+              expression (test/driver/exception_handling/extender.ml[4,52+2]..test/driver/exception_handling/extender.ml[8,223+56])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (test/driver/exception_handling/extender.ml[4,52+6]..test/driver/exception_handling/extender.ml[4,52+9])
+                      Tpat_var "loc/499"
+                    expression (test/driver/exception_handling/extender.ml[4,52+12]..test/driver/exception_handling/extender.ml[4,52+64])
+                      Texp_apply
+                      expression (test/driver/exception_handling/extender.ml[4,52+12]..test/driver/exception_handling/extender.ml[4,52+59])
+                        Texp_ident "Ppxlib!.Expansion_context.Extension.extension_point_loc"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (test/driver/exception_handling/extender.ml[4,52+60]..test/driver/exception_handling/extender.ml[4,52+64])
+                            Texp_ident "ctxt/498"
+                      ]
+                ]
+                expression (test/driver/exception_handling/extender.ml[5,120+2]..test/driver/exception_handling/extender.ml[8,223+56])
+                  Texp_let Nonrec
+                  [
+                    <def>
+                      pattern (test/driver/exception_handling/extender.ml[5,120+6]..test/driver/exception_handling/extender.ml[5,120+20])
+                        Tpat_var "extension_node/1206"
+                      expression (test/driver/exception_handling/extender.ml[6,143+4]..test/driver/exception_handling/extender.ml[6,143+74])
+                        Texp_apply
+                        expression (test/driver/exception_handling/extender.ml[6,143+4]..test/driver/exception_handling/extender.ml[6,143+29])
+                          Texp_ident "Ppxlib!.Location.error_extensionf"
+                        [
+                          <arg>
+                            Labelled "loc"
+                            expression (test/driver/exception_handling/extender.ml[6,143+31]..test/driver/exception_handling/extender.ml[6,143+34])
+                              Texp_ident "loc/499"
+                          <arg>
+                            Nolabel
+                            expression (test/driver/exception_handling/extender.ml[6,143+35]..test/driver/exception_handling/extender.ml[6,143+74])
+                              Texp_construct "CamlinternalFormatBasics.Format"
+                              [
+                                expression (test/driver/exception_handling/extender.ml[6,143+35]..test/driver/exception_handling/extender.ml[6,143+74]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.String_literal"
+                                  [
+                                    expression (test/driver/exception_handling/extender.ml[6,143+35]..test/driver/exception_handling/extender.ml[6,143+74]) ghost
+                                      Texp_constant Const_string("An error message in an extension node",(test/driver/exception_handling/extender.ml[6,143+35]..test/driver/exception_handling/extender.ml[6,143+74]) ghost,None)
+                                    expression (test/driver/exception_handling/extender.ml[6,143+35]..test/driver/exception_handling/extender.ml[6,143+74]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                      []
+                                  ]
+                                expression (test/driver/exception_handling/extender.ml[6,143+35]..test/driver/exception_handling/extender.ml[6,143+74]) ghost
+                                  Texp_constant Const_string("An error message in an extension node",(test/driver/exception_handling/extender.ml[6,143+35]..test/driver/exception_handling/extender.ml[6,143+74]) ghost,None)
+                              ]
+                        ]
+                  ]
+                  expression (test/driver/exception_handling/extender.ml[8,223+2]..test/driver/exception_handling/extender.ml[8,223+56])
+                    Texp_apply
+                    expression (test/driver/exception_handling/extender.ml[8,223+2]..test/driver/exception_handling/extender.ml[8,223+36])
+                      Texp_ident "Ppxlib!.Ast_builder.Default.pexp_extension"
+                    [
+                      <arg>
+                        Labelled "loc"
+                        expression (test/driver/exception_handling/extender.ml[8,223+38]..test/driver/exception_handling/extender.ml[8,223+41])
+                          Texp_ident "loc/499"
+                      <arg>
+                        Nolabel
+                        expression (test/driver/exception_handling/extender.ml[8,223+42]..test/driver/exception_handling/extender.ml[8,223+56])
+                          Texp_ident "extension_node/1206"
+                    ]
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[10,281+0]..test/driver/exception_handling/extender.ml[10,281+66])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[10,281+4]..test/driver/exception_handling/extender.ml[10,281+26])
+          Tpat_var "expand_raise_exception/3146"
+        expression (test/driver/exception_handling/extender.ml[10,281+27]..test/driver/exception_handling/extender.ml[10,281+66]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/driver/exception_handling/extender.ml[10,281+33]..test/driver/exception_handling/extender.ml[10,281+34])
+                Tpat_any
+              expression (test/driver/exception_handling/extender.ml[10,281+37]..test/driver/exception_handling/extender.ml[10,281+66])
+                Texp_apply
+                expression (test/driver/exception_handling/extender.ml[10,281+37]..test/driver/exception_handling/extender.ml[10,281+45])
+                  Texp_ident "Stdlib!.failwith"
+                [
+                  <arg>
+                    Nolabel
+                    expression (test/driver/exception_handling/extender.ml[10,281+46]..test/driver/exception_handling/extender.ml[10,281+66])
+                      Texp_constant Const_string("A raised exception",(test/driver/exception_handling/extender.ml[10,281+47]..test/driver/exception_handling/extender.ml[10,281+65]),None)
+                ]
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[12,349+0]..test/driver/exception_handling/extender.ml[14,456+53])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[12,349+4]..test/driver/exception_handling/extender.ml[12,349+30])
+          Tpat_var "expand_raise_located_error/3149"
+        expression (test/driver/exception_handling/extender.ml[12,349+31]..test/driver/exception_handling/extender.ml[14,456+53]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/driver/exception_handling/extender.ml[12,349+32]..test/driver/exception_handling/extender.ml[12,349+36])
+                Tpat_var "ctxt/3151"
+              expression (test/driver/exception_handling/extender.ml[13,388+2]..test/driver/exception_handling/extender.ml[14,456+53])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (test/driver/exception_handling/extender.ml[13,388+6]..test/driver/exception_handling/extender.ml[13,388+9])
+                      Tpat_var "loc/3152"
+                    expression (test/driver/exception_handling/extender.ml[13,388+12]..test/driver/exception_handling/extender.ml[13,388+64])
+                      Texp_apply
+                      expression (test/driver/exception_handling/extender.ml[13,388+12]..test/driver/exception_handling/extender.ml[13,388+59])
+                        Texp_ident "Ppxlib!.Expansion_context.Extension.extension_point_loc"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (test/driver/exception_handling/extender.ml[13,388+60]..test/driver/exception_handling/extender.ml[13,388+64])
+                            Texp_ident "ctxt/3151"
+                      ]
+                ]
+                expression (test/driver/exception_handling/extender.ml[14,456+2]..test/driver/exception_handling/extender.ml[14,456+53])
+                  Texp_apply
+                  expression (test/driver/exception_handling/extender.ml[14,456+2]..test/driver/exception_handling/extender.ml[14,456+23])
+                    Texp_ident "Ppxlib!.Location.raise_errorf"
+                  [
+                    <arg>
+                      Optional "loc"
+                      expression (test/driver/exception_handling/extender.ml[14,456+25]..test/driver/exception_handling/extender.ml[14,456+28])
+                        Texp_construct "Some"
+                        [
+                          expression (test/driver/exception_handling/extender.ml[14,456+25]..test/driver/exception_handling/extender.ml[14,456+28])
+                            Texp_ident "loc/3152"
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (test/driver/exception_handling/extender.ml[14,456+29]..test/driver/exception_handling/extender.ml[14,456+53])
+                        Texp_construct "CamlinternalFormatBasics.Format"
+                        [
+                          expression (test/driver/exception_handling/extender.ml[14,456+29]..test/driver/exception_handling/extender.ml[14,456+53]) ghost
+                            Texp_construct "CamlinternalFormatBasics.String_literal"
+                            [
+                              expression (test/driver/exception_handling/extender.ml[14,456+29]..test/driver/exception_handling/extender.ml[14,456+53]) ghost
+                                Texp_constant Const_string("A raised located error",(test/driver/exception_handling/extender.ml[14,456+29]..test/driver/exception_handling/extender.ml[14,456+53]) ghost,None)
+                              expression (test/driver/exception_handling/extender.ml[14,456+29]..test/driver/exception_handling/extender.ml[14,456+53]) ghost
+                                Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                []
+                            ]
+                          expression (test/driver/exception_handling/extender.ml[14,456+29]..test/driver/exception_handling/extender.ml[14,456+53]) ghost
+                            Texp_constant Const_string("A raised located error",(test/driver/exception_handling/extender.ml[14,456+29]..test/driver/exception_handling/extender.ml[14,456+53]) ghost,None)
+                        ]
+                  ]
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[16,511+0]..test/driver/exception_handling/extender.ml[19,637+30])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[16,511+4]..test/driver/exception_handling/extender.ml[16,511+29])
+          Tpat_var "extension_point_extension/3153"
+        expression (test/driver/exception_handling/extender.ml[17,543+2]..test/driver/exception_handling/extender.ml[19,637+30])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[17,543+2]..test/driver/exception_handling/extender.ml[17,543+22])
+            Texp_ident "Ppxlib!.Extension.V3.declare"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[17,543+23]..test/driver/exception_handling/extender.ml[17,543+37])
+                Texp_constant Const_string("gen_ext_node",(test/driver/exception_handling/extender.ml[17,543+24]..test/driver/exception_handling/extender.ml[17,543+36]),None)
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[17,543+38]..test/driver/exception_handling/extender.ml[17,543+66])
+                Texp_ident "Ppxlib!.Extension.Context.expression"
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[18,610+4]..test/driver/exception_handling/extender.ml[18,610+26])
+                Texp_open Fresh
+                module_expr (test/driver/exception_handling/extender.ml[18,610+4]..test/driver/exception_handling/extender.ml[18,610+15])
+                  Tmod_ident "Ppxlib!.Ast_pattern"
+                expression (test/driver/exception_handling/extender.ml[18,610+17]..test/driver/exception_handling/extender.ml[18,610+25])
+                  Texp_apply
+                  expression (test/driver/exception_handling/extender.ml[18,610+17]..test/driver/exception_handling/extender.ml[18,610+21])
+                    Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/exception_handling/extender.ml[18,610+22]..test/driver/exception_handling/extender.ml[18,610+25])
+                        Texp_ident "Ppxlib!.Ast_pattern.nil"
+                  ]
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[19,637+4]..test/driver/exception_handling/extender.ml[19,637+30])
+                Texp_ident "expand_into_extension_node/496"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[21,669+0]..test/driver/exception_handling/extender.ml[24,796+26])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[21,669+4]..test/driver/exception_handling/extender.ml[21,669+29])
+          Tpat_var "raise_exception_extension/3599"
+        expression (test/driver/exception_handling/extender.ml[22,701+2]..test/driver/exception_handling/extender.ml[24,796+26])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[22,701+2]..test/driver/exception_handling/extender.ml[22,701+22])
+            Texp_ident "Ppxlib!.Extension.V3.declare"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[22,701+23]..test/driver/exception_handling/extender.ml[22,701+38])
+                Texp_constant Const_string("gen_raise_exc",(test/driver/exception_handling/extender.ml[22,701+24]..test/driver/exception_handling/extender.ml[22,701+37]),None)
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[22,701+39]..test/driver/exception_handling/extender.ml[22,701+67])
+                Texp_ident "Ppxlib!.Extension.Context.expression"
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[23,769+4]..test/driver/exception_handling/extender.ml[23,769+26])
+                Texp_open Fresh
+                module_expr (test/driver/exception_handling/extender.ml[23,769+4]..test/driver/exception_handling/extender.ml[23,769+15])
+                  Tmod_ident "Ppxlib!.Ast_pattern"
+                expression (test/driver/exception_handling/extender.ml[23,769+17]..test/driver/exception_handling/extender.ml[23,769+25])
+                  Texp_apply
+                  expression (test/driver/exception_handling/extender.ml[23,769+17]..test/driver/exception_handling/extender.ml[23,769+21])
+                    Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/exception_handling/extender.ml[23,769+22]..test/driver/exception_handling/extender.ml[23,769+25])
+                        Texp_ident "Ppxlib!.Ast_pattern.nil"
+                  ]
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[24,796+4]..test/driver/exception_handling/extender.ml[24,796+26])
+                Texp_ident "expand_raise_exception/3146"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[26,824+0]..test/driver/exception_handling/extender.ml[29,965+30])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[26,824+4]..test/driver/exception_handling/extender.ml[26,824+33])
+          Tpat_var "raise_located_error_extension/3600"
+        expression (test/driver/exception_handling/extender.ml[27,860+2]..test/driver/exception_handling/extender.ml[29,965+30])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[27,860+2]..test/driver/exception_handling/extender.ml[27,860+22])
+            Texp_ident "Ppxlib!.Extension.V3.declare"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[27,860+23]..test/driver/exception_handling/extender.ml[27,860+48])
+                Texp_constant Const_string("gen_raise_located_error",(test/driver/exception_handling/extender.ml[27,860+24]..test/driver/exception_handling/extender.ml[27,860+47]),None)
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[27,860+49]..test/driver/exception_handling/extender.ml[27,860+77])
+                Texp_ident "Ppxlib!.Extension.Context.expression"
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[28,938+4]..test/driver/exception_handling/extender.ml[28,938+26])
+                Texp_open Fresh
+                module_expr (test/driver/exception_handling/extender.ml[28,938+4]..test/driver/exception_handling/extender.ml[28,938+15])
+                  Tmod_ident "Ppxlib!.Ast_pattern"
+                expression (test/driver/exception_handling/extender.ml[28,938+17]..test/driver/exception_handling/extender.ml[28,938+25])
+                  Texp_apply
+                  expression (test/driver/exception_handling/extender.ml[28,938+17]..test/driver/exception_handling/extender.ml[28,938+21])
+                    Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/exception_handling/extender.ml[28,938+22]..test/driver/exception_handling/extender.ml[28,938+25])
+                        Texp_ident "Ppxlib!.Ast_pattern.nil"
+                  ]
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[29,965+4]..test/driver/exception_handling/extender.ml[29,965+30])
+                Texp_ident "expand_raise_located_error/3149"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[31,997+0]..test/driver/exception_handling/extender.ml[31,997+72])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[31,997+4]..test/driver/exception_handling/extender.ml[31,997+9])
+          Tpat_var "rule1/3601"
+        expression (test/driver/exception_handling/extender.ml[31,997+12]..test/driver/exception_handling/extender.ml[31,997+72])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[31,997+12]..test/driver/exception_handling/extender.ml[31,997+46])
+            Texp_ident "Ppxlib!.Context_free.Rule.extension"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[31,997+47]..test/driver/exception_handling/extender.ml[31,997+72])
+                Texp_ident "extension_point_extension/3153"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[32,1070+0]..test/driver/exception_handling/extender.ml[32,1070+72])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[32,1070+4]..test/driver/exception_handling/extender.ml[32,1070+9])
+          Tpat_var "rule2/3691"
+        expression (test/driver/exception_handling/extender.ml[32,1070+12]..test/driver/exception_handling/extender.ml[32,1070+72])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[32,1070+12]..test/driver/exception_handling/extender.ml[32,1070+46])
+            Texp_ident "Ppxlib!.Context_free.Rule.extension"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[32,1070+47]..test/driver/exception_handling/extender.ml[32,1070+72])
+                Texp_ident "raise_exception_extension/3599"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[33,1143+0]..test/driver/exception_handling/extender.ml[33,1143+76])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[33,1143+4]..test/driver/exception_handling/extender.ml[33,1143+9])
+          Tpat_var "rule3/3692"
+        expression (test/driver/exception_handling/extender.ml[33,1143+12]..test/driver/exception_handling/extender.ml[33,1143+76])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[33,1143+12]..test/driver/exception_handling/extender.ml[33,1143+46])
+            Texp_ident "Ppxlib!.Context_free.Rule.extension"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[33,1143+47]..test/driver/exception_handling/extender.ml[33,1143+76])
+                Texp_ident "raise_located_error_extension/3600"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[35,1221+0]..test/driver/exception_handling/extender.ml[36,1230+76])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[35,1221+4]..test/driver/exception_handling/extender.ml[35,1221+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/exception_handling/extender.ml[36,1230+2]..test/driver/exception_handling/extender.ml[36,1230+76])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[36,1230+2]..test/driver/exception_handling/extender.ml[36,1230+32])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (test/driver/exception_handling/extender.ml[36,1230+40]..test/driver/exception_handling/extender.ml[36,1230+63])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/exception_handling/extender.ml[36,1230+40]..test/driver/exception_handling/extender.ml[36,1230+63])
+                    Texp_construct "::"
+                    [
+                      expression (test/driver/exception_handling/extender.ml[36,1230+42]..test/driver/exception_handling/extender.ml[36,1230+47])
+                        Texp_ident "rule1/3601"
+                      expression (test/driver/exception_handling/extender.ml[36,1230+49]..test/driver/exception_handling/extender.ml[36,1230+63]) ghost
+                        Texp_construct "::"
+                        [
+                          expression (test/driver/exception_handling/extender.ml[36,1230+49]..test/driver/exception_handling/extender.ml[36,1230+54])
+                            Texp_ident "rule2/3691"
+                          expression (test/driver/exception_handling/extender.ml[36,1230+56]..test/driver/exception_handling/extender.ml[36,1230+63]) ghost
+                            Texp_construct "::"
+                            [
+                              expression (test/driver/exception_handling/extender.ml[36,1230+56]..test/driver/exception_handling/extender.ml[36,1230+61])
+                                Texp_ident "rule3/3692"
+                              expression (test/driver/exception_handling/extender.ml[36,1230+62]..test/driver/exception_handling/extender.ml[36,1230+63]) ghost
+                                Texp_construct "[]"
+                                []
+                            ]
+                        ]
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[36,1230+64]..test/driver/exception_handling/extender.ml[36,1230+76])
+                Texp_constant Const_string("gen_errors",(test/driver/exception_handling/extender.ml[36,1230+65]..test/driver/exception_handling/extender.ml[36,1230+75]),None)
+          ]
+    ]
+  structure_item (test/driver/exception_handling/extender.ml[38,1308+0]..test/driver/exception_handling/extender.ml[38,1308+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/extender.ml[38,1308+4]..test/driver/exception_handling/extender.ml[38,1308+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/exception_handling/extender.ml[38,1308+9]..test/driver/exception_handling/extender.ml[38,1308+29])
+          Texp_apply
+          expression (test/driver/exception_handling/extender.ml[38,1308+9]..test/driver/exception_handling/extender.ml[38,1308+26])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/extender.ml[38,1308+27]..test/driver/exception_handling/extender.ml[38,1308+29])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Extender!
+  (let
+    (expand_into_extension_node/496 =
+       (function ctxt/498
+         (funct-body Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(3)<ghost>:44-279
+           (before Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(4):54-279
+             (let
+               (loc/499 =
+                  (after Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(4):64-116
+                    (apply
+                      (field_imm 0
+                        (field_imm 1 (global Ppxlib__Expansion_context!)))
+                      ctxt/498)))
+               (before Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(5):122-279
+                 (let
+                   (extension_node/1206 =
+                      (after Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(6):147-217
+                        (apply (field_imm 13 (global Ppxlib__Location!))
+                          loc/499
+                          [0:
+                           [11: "An error message in an extension node" 0]
+                           "An error message in an extension node"])))
+                   (before Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(8):225-279
+                     (after Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(8):225-279
+                       (apply
+                         (field_imm 84
+                           (field_imm 0 (global Ppxlib__Ast_builder!)))
+                         loc/499 extension_node/1206)))))))))
+     expand_raise_exception/3146 =
+       (function param/3148
+         (funct-body Dune__exe__Extender.expand_raise_exception test/driver/exception_handling/extender.ml(10)<ghost>:308-347
+           (before Dune__exe__Extender.expand_raise_exception test/driver/exception_handling/extender.ml(10):318-347
+             (after Dune__exe__Extender.expand_raise_exception test/driver/exception_handling/extender.ml(10):318-347
+               (apply (field_imm 1 (global Stdlib!)) "A raised exception")))))
+     expand_raise_located_error/3149 =
+       (function ctxt/3151
+         (funct-body Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(12)<ghost>:380-509
+           (before Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(13):390-509
+             (let
+               (loc/3152 =
+                  (after Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(13):400-452
+                    (apply
+                      (field_imm 0
+                        (field_imm 1 (global Ppxlib__Expansion_context!)))
+                      ctxt/3151)))
+               (before Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(14):458-509
+                 (after Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(14):458-509
+                   (apply (field_imm 4 (global Ppxlib__Location!))
+                     (makeblock 0 loc/3152)
+                     [0:
+                      [11: "A raised located error" 0]
+                      "A raised located error"])))))))
+     extension_point_extension/3153 =
+       (after Dune__exe__Extender.extension_point_extension test/driver/exception_handling/extender.ml(17):545-667
+         (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+           "gen_ext_node"
+           (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+           (after Dune__exe__Extender.extension_point_extension test/driver/exception_handling/extender.ml(18):627-635
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!))))
+           expand_into_extension_node/496))
+     raise_exception_extension/3599 =
+       (after Dune__exe__Extender.raise_exception_extension test/driver/exception_handling/extender.ml(22):703-822
+         (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+           "gen_raise_exc"
+           (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+           (after Dune__exe__Extender.raise_exception_extension test/driver/exception_handling/extender.ml(23):786-794
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!))))
+           expand_raise_exception/3146))
+     raise_located_error_extension/3600 =
+       (after Dune__exe__Extender.raise_located_error_extension test/driver/exception_handling/extender.ml(27):862-995
+         (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+           "gen_raise_located_error"
+           (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+           (after Dune__exe__Extender.raise_located_error_extension test/driver/exception_handling/extender.ml(28):955-963
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!))))
+           expand_raise_located_error/3149))
+     rule1/3601 =
+       (after Dune__exe__Extender.rule1 test/driver/exception_handling/extender.ml(31):1009-1069
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           extension_point_extension/3153))
+     rule2/3691 =
+       (after Dune__exe__Extender.rule2 test/driver/exception_handling/extender.ml(32):1082-1142
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           raise_exception_extension/3599))
+     rule3/3692 =
+       (after Dune__exe__Extender.rule3 test/driver/exception_handling/extender.ml(33):1155-1219
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           raise_located_error_extension/3600))
+     *match*/9929 =
+       (after Dune__exe__Extender test/driver/exception_handling/extender.ml(36):1232-1306
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0
+             (makeblock 0 rule1/3601
+               (makeblock 0 rule2/3691 (makeblock 0 rule3/3692 0))))
+           0 0 0 0 0 0 0 0 0 0 "gen_errors"))
+     *match*/9927 =
+       (after Dune__exe__Extender test/driver/exception_handling/extender.ml(38):1317-1337
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location>
+      (makeblock 0 expand_into_extension_node/496 expand_raise_exception/3146
+        expand_raise_located_error/3149 extension_point_extension/3153
+        raise_exception_extension/3599 raise_located_error_extension/3600
+        rule1/3601 rule2/3691 rule3/3692))))
+(setglobal Dune__exe__Extender!
+  (let
+    (expand_into_extension_node/496 =
+       (function ctxt/498
+         (funct-body Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(3)<ghost>:44-279
+           (before Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(4):54-279
+             (let
+               (loc/499 =
+                  (after Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(4):64-116
+                    (apply
+                      (field_imm 0
+                        (field_imm 1 (global Ppxlib__Expansion_context!)))
+                      ctxt/498)))
+               (before Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(5):122-279
+                 (let
+                   (extension_node/1206 =
+                      (after Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(6):147-217
+                        (apply (field_imm 13 (global Ppxlib__Location!))
+                          loc/499
+                          [0:
+                           [11: "An error message in an extension node" 0]
+                           "An error message in an extension node"])))
+                   (before Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(8):225-279
+                     (after Dune__exe__Extender.expand_into_extension_node test/driver/exception_handling/extender.ml(8):225-279
+                       (apply
+                         (field_imm 84
+                           (field_imm 0 (global Ppxlib__Ast_builder!)))
+                         loc/499 extension_node/1206)))))))))
+     expand_raise_exception/3146 =
+       (function param/3148
+         (funct-body Dune__exe__Extender.expand_raise_exception test/driver/exception_handling/extender.ml(10)<ghost>:308-347
+           (before Dune__exe__Extender.expand_raise_exception test/driver/exception_handling/extender.ml(10):318-347
+             (after Dune__exe__Extender.expand_raise_exception test/driver/exception_handling/extender.ml(10):318-347
+               (apply (field_imm 1 (global Stdlib!)) "A raised exception")))))
+     expand_raise_located_error/3149 =
+       (function ctxt/3151
+         (funct-body Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(12)<ghost>:380-509
+           (before Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(13):390-509
+             (let
+               (loc/3152 =
+                  (after Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(13):400-452
+                    (apply
+                      (field_imm 0
+                        (field_imm 1 (global Ppxlib__Expansion_context!)))
+                      ctxt/3151)))
+               (before Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(14):458-509
+                 (after Dune__exe__Extender.expand_raise_located_error test/driver/exception_handling/extender.ml(14):458-509
+                   (apply (field_imm 4 (global Ppxlib__Location!))
+                     (makeblock 0 loc/3152)
+                     [0:
+                      [11: "A raised located error" 0]
+                      "A raised located error"])))))))
+     extension_point_extension/3153 =
+       (after Dune__exe__Extender.extension_point_extension test/driver/exception_handling/extender.ml(17):545-667
+         (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+           "gen_ext_node"
+           (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+           (after Dune__exe__Extender.extension_point_extension test/driver/exception_handling/extender.ml(18):627-635
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!))))
+           expand_into_extension_node/496))
+     raise_exception_extension/3599 =
+       (after Dune__exe__Extender.raise_exception_extension test/driver/exception_handling/extender.ml(22):703-822
+         (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+           "gen_raise_exc"
+           (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+           (after Dune__exe__Extender.raise_exception_extension test/driver/exception_handling/extender.ml(23):786-794
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!))))
+           expand_raise_exception/3146))
+     raise_located_error_extension/3600 =
+       (after Dune__exe__Extender.raise_located_error_extension test/driver/exception_handling/extender.ml(27):862-995
+         (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+           "gen_raise_located_error"
+           (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+           (after Dune__exe__Extender.raise_located_error_extension test/driver/exception_handling/extender.ml(28):955-963
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!))))
+           expand_raise_located_error/3149))
+     rule1/3601 =
+       (after Dune__exe__Extender.rule1 test/driver/exception_handling/extender.ml(31):1009-1069
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           extension_point_extension/3153))
+     rule2/3691 =
+       (after Dune__exe__Extender.rule2 test/driver/exception_handling/extender.ml(32):1082-1142
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           raise_exception_extension/3599))
+     rule3/3692 =
+       (after Dune__exe__Extender.rule3 test/driver/exception_handling/extender.ml(33):1155-1219
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           raise_located_error_extension/3600))
+     *match*/9929 =
+       (after Dune__exe__Extender test/driver/exception_handling/extender.ml(36):1232-1306
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0
+             (makeblock 0 rule1/3601
+               (makeblock 0 rule2/3691 (makeblock 0 rule3/3692 0))))
+           0 0 0 0 0 0 0 0 0 0 "gen_errors"))
+     *match*/9927 =
+       (after Dune__exe__Extender test/driver/exception_handling/extender.ml(38):1317-1337
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location>
+      (makeblock 0 expand_into_extension_node/496 expand_raise_exception/3146
+        expand_raise_located_error/3149 extension_point_extension/3153
+        raise_exception_extension/3599 raise_located_error_extension/3600
+        rule1/3601 rule2/3691 rule3/3692))))

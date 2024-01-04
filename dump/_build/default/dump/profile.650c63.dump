@@ -1,0 +1,6 @@
+0.041s 15.1MB 5.43MB 7.16MB test/driver/parse_error_locations/identity_standalone.ml
+  0.034s 13.9MB 5.43MB 7.16MB typing
+  0.007s 1.13MB ------ ------ generate
+    0.004s ------ ------ ------ assemble
+    0.002s 1.13MB ------ ------ other
+0.016s 3.02MB 1.72MB ------ other

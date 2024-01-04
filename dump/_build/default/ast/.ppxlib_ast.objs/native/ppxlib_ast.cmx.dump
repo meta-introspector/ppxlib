@@ -1,0 +1,191 @@
+[
+  structure_item (ast/ppxlib_ast.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (ast/ppxlib_ast.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Import" (ast/ppxlib_ast.ml[1,0+5]..[1,0+11])
+  structure_item (ast/ppxlib_ast.ml[3,13+0]..[3,13+50])
+    Pstr_modtype "OCaml_version" (ast/ppxlib_ast.ml[3,13+12]..[3,13+25])
+      module_type (ast/ppxlib_ast.ml[3,13+28]..[3,13+50])
+        Pmty_ident "Versions.OCaml_version" (ast/ppxlib_ast.ml[3,13+28]..[3,13+50])
+  structure_item (ast/ppxlib_ast.ml[5,65+0]..[5,65+16])
+    Pstr_module
+    "Ast" (ast/ppxlib_ast.ml[5,65+7]..[5,65+10])
+      module_expr (ast/ppxlib_ast.ml[5,65+13]..[5,65+16])
+        Pmod_ident "Ast" (ast/ppxlib_ast.ml[5,65+13]..[5,65+16])
+  structure_item (ast/ppxlib_ast.ml[6,82+0]..[6,82+30])
+    Pstr_module
+    "Ast_helper" (ast/ppxlib_ast.ml[6,82+7]..[6,82+17])
+      module_expr (ast/ppxlib_ast.ml[6,82+20]..[6,82+30])
+        Pmod_ident "Ast_helper" (ast/ppxlib_ast.ml[6,82+20]..[6,82+30])
+  structure_item (ast/ppxlib_ast.ml[7,113+0]..[7,113+42])
+    Pstr_module
+    "Ast_magic" (ast/ppxlib_ast.ml[7,113+7]..[7,113+16])
+      module_expr (ast/ppxlib_ast.ml[7,113+19]..[7,113+42])
+        Pmod_ident "Selected_ast.Ast.Config" (ast/ppxlib_ast.ml[7,113+19]..[7,113+42])
+  structure_item (ast/ppxlib_ast.ml[8,156+0]..[8,156+26])
+    Pstr_module
+    "Asttypes" (ast/ppxlib_ast.ml[8,156+7]..[8,156+15])
+      module_expr (ast/ppxlib_ast.ml[8,156+18]..[8,156+26])
+        Pmod_ident "Asttypes" (ast/ppxlib_ast.ml[8,156+18]..[8,156+26])
+  structure_item (ast/ppxlib_ast.ml[9,183+0]..[9,183+48])
+    Pstr_module
+    "Compiler_version" (ast/ppxlib_ast.ml[9,183+7]..[9,183+23])
+      module_expr (ast/ppxlib_ast.ml[9,183+26]..[9,183+48])
+        Pmod_ident "Versions.OCaml_current" (ast/ppxlib_ast.ml[9,183+26]..[9,183+48])
+  structure_item (ast/ppxlib_ast.ml[10,232+0]..[10,232+14])
+    Pstr_module
+    "Js" (ast/ppxlib_ast.ml[10,232+7]..[10,232+9])
+      module_expr (ast/ppxlib_ast.ml[10,232+12]..[10,232+14])
+        Pmod_ident "Js" (ast/ppxlib_ast.ml[10,232+12]..[10,232+14])
+  structure_item (ast/ppxlib_ast.ml[11,247+0]..[11,247+43])
+    Pstr_module
+    "Find_version" (ast/ppxlib_ast.ml[11,247+7]..[11,247+19])
+      module_expr (ast/ppxlib_ast.ml[11,247+22]..[11,247+43])
+        Pmod_ident "Versions.Find_version" (ast/ppxlib_ast.ml[11,247+22]..[11,247+43])
+  structure_item (ast/ppxlib_ast.ml[12,291+0]..[12,291+33])
+    Pstr_module
+    "Convert" (ast/ppxlib_ast.ml[12,291+7]..[12,291+14])
+      module_expr (ast/ppxlib_ast.ml[12,291+17]..[12,291+33])
+        Pmod_ident "Versions.Convert" (ast/ppxlib_ast.ml[12,291+17]..[12,291+33])
+  structure_item (ast/ppxlib_ast.ml[13,325+0]..[13,325+28])
+    Pstr_module
+    "Extra_warnings" (ast/ppxlib_ast.ml[13,325+7]..[13,325+21])
+      module_expr (ast/ppxlib_ast.ml[13,325+24]..[13,325+28])
+        Pmod_ident "Warn" (ast/ppxlib_ast.ml[13,325+24]..[13,325+28])
+  structure_item (ast/ppxlib_ast.ml[14,354+0]..[14,354+38])
+    Pstr_module
+    "Location_error" (ast/ppxlib_ast.ml[14,354+7]..[14,354+21])
+      module_expr (ast/ppxlib_ast.ml[14,354+24]..[14,354+38])
+        Pmod_ident "Location_error" (ast/ppxlib_ast.ml[14,354+24]..[14,354+38])
+  structure_item (ast/ppxlib_ast.ml[15,393+0]..[15,393+20])
+    Pstr_module
+    "Parse" (ast/ppxlib_ast.ml[15,393+7]..[15,393+12])
+      module_expr (ast/ppxlib_ast.ml[15,393+15]..[15,393+20])
+        Pmod_ident "Parse" (ast/ppxlib_ast.ml[15,393+15]..[15,393+20])
+  structure_item (ast/ppxlib_ast.ml[16,414+0]..[16,414+28])
+    Pstr_module
+    "Parsetree" (ast/ppxlib_ast.ml[16,414+7]..[16,414+16])
+      module_expr (ast/ppxlib_ast.ml[16,414+19]..[16,414+28])
+        Pmod_ident "Parsetree" (ast/ppxlib_ast.ml[16,414+19]..[16,414+28])
+  structure_item (ast/ppxlib_ast.ml[17,443+0]..[17,443+35])
+    Pstr_module
+    "Pprintast" (ast/ppxlib_ast.ml[17,443+7]..[17,443+16])
+      module_expr (ast/ppxlib_ast.ml[17,443+19]..[17,443+35])
+        Pmod_ident "Astlib.Pprintast" (ast/ppxlib_ast.ml[17,443+19]..[17,443+35])
+  structure_item (ast/ppxlib_ast.ml[18,479+0]..[18,479+30])
+    Pstr_module
+    "Select_ast" (ast/ppxlib_ast.ml[18,479+7]..[18,479+17])
+      module_expr (ast/ppxlib_ast.ml[18,479+20]..[18,479+30])
+        Pmod_ident "Select_ast" (ast/ppxlib_ast.ml[18,479+20]..[18,479+30])
+  structure_item (ast/ppxlib_ast.ml[19,510+0]..[19,510+34])
+    Pstr_module
+    "Selected_ast" (ast/ppxlib_ast.ml[19,510+7]..[19,510+19])
+      module_expr (ast/ppxlib_ast.ml[19,510+22]..[19,510+34])
+        Pmod_ident "Selected_ast" (ast/ppxlib_ast.ml[19,510+22]..[19,510+34])
+]
+
+open Import
+module type OCaml_version  = Versions.OCaml_version
+module Ast = Ast
+module Ast_helper = Ast_helper
+module Ast_magic = Selected_ast.Ast.Config
+module Asttypes = Asttypes
+module Compiler_version = Versions.OCaml_current
+module Js = Js
+module Find_version = Versions.Find_version
+module Convert = Versions.Convert
+module Extra_warnings = Warn
+module Location_error = Location_error
+module Parse = Parse
+module Parsetree = Parsetree
+module Pprintast = Astlib.Pprintast
+module Select_ast = Select_ast
+module Selected_ast = Selected_ast
+[
+  structure_item (ast/ppxlib_ast.ml[1,0+0]..ast/ppxlib_ast.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (ast/ppxlib_ast.ml[1,0+5]..ast/ppxlib_ast.ml[1,0+11])
+      Tmod_ident "Ppxlib_ast__!.Import"
+  structure_item (ast/ppxlib_ast.ml[3,13+0]..ast/ppxlib_ast.ml[3,13+50])
+    Tstr_modtype "OCaml_version/1758"
+      module_type (ast/ppxlib_ast.ml[3,13+28]..ast/ppxlib_ast.ml[3,13+50])
+        Tmty_ident "Ppxlib_ast__!.Versions.OCaml_version"
+  structure_item (ast/ppxlib_ast.ml[5,65+0]..ast/ppxlib_ast.ml[5,65+16])
+    Tstr_module
+    Ast/1759
+      module_expr (ast/ppxlib_ast.ml[5,65+13]..ast/ppxlib_ast.ml[5,65+16])
+        Tmod_ident "Ppxlib_ast__!.Ast"
+  structure_item (ast/ppxlib_ast.ml[6,82+0]..ast/ppxlib_ast.ml[6,82+30])
+    Tstr_module
+    Ast_helper/1760
+      module_expr (ast/ppxlib_ast.ml[6,82+20]..ast/ppxlib_ast.ml[6,82+30])
+        Tmod_ident "Ppxlib_ast__!.Import.Ast_helper"
+  structure_item (ast/ppxlib_ast.ml[7,113+0]..ast/ppxlib_ast.ml[7,113+42])
+    Tstr_module
+    Ast_magic/2006
+      module_expr (ast/ppxlib_ast.ml[7,113+19]..ast/ppxlib_ast.ml[7,113+42])
+        Tmod_ident "Ppxlib_ast__!.Import.Selected_ast.Ast.Config"
+  structure_item (ast/ppxlib_ast.ml[8,156+0]..ast/ppxlib_ast.ml[8,156+26])
+    Tstr_module
+    Asttypes/2007
+      module_expr (ast/ppxlib_ast.ml[8,156+18]..ast/ppxlib_ast.ml[8,156+26])
+        Tmod_ident "Ppxlib_ast__!.Import.Asttypes"
+  structure_item (ast/ppxlib_ast.ml[9,183+0]..ast/ppxlib_ast.ml[9,183+48])
+    Tstr_module
+    Compiler_version/2008
+      module_expr (ast/ppxlib_ast.ml[9,183+26]..ast/ppxlib_ast.ml[9,183+48])
+        Tmod_ident "Ppxlib_ast__!.Versions.OCaml_current"
+  structure_item (ast/ppxlib_ast.ml[10,232+0]..ast/ppxlib_ast.ml[10,232+14])
+    Tstr_module
+    Js/2009
+      module_expr (ast/ppxlib_ast.ml[10,232+12]..ast/ppxlib_ast.ml[10,232+14])
+        Tmod_ident "Ppxlib_ast__!.Import.Js"
+  structure_item (ast/ppxlib_ast.ml[11,247+0]..ast/ppxlib_ast.ml[11,247+43])
+    Tstr_module
+    Find_version/2010
+      module_expr (ast/ppxlib_ast.ml[11,247+22]..ast/ppxlib_ast.ml[11,247+43])
+        Tmod_ident "Ppxlib_ast__!.Versions.Find_version"
+  structure_item (ast/ppxlib_ast.ml[12,291+0]..ast/ppxlib_ast.ml[12,291+33])
+    Tstr_module
+    Convert/2011
+      module_expr (ast/ppxlib_ast.ml[12,291+17]..ast/ppxlib_ast.ml[12,291+33])
+        Tmod_ident "Ppxlib_ast__!.Versions.Convert"
+  structure_item (ast/ppxlib_ast.ml[13,325+0]..ast/ppxlib_ast.ml[13,325+28])
+    Tstr_module
+    Extra_warnings/2012
+      module_expr (ast/ppxlib_ast.ml[13,325+24]..ast/ppxlib_ast.ml[13,325+28])
+        Tmod_ident "Ppxlib_ast__!.Warn"
+  structure_item (ast/ppxlib_ast.ml[14,354+0]..ast/ppxlib_ast.ml[14,354+38])
+    Tstr_module
+    Location_error/2013
+      module_expr (ast/ppxlib_ast.ml[14,354+24]..ast/ppxlib_ast.ml[14,354+38])
+        Tmod_ident "Ppxlib_ast__!.Location_error"
+  structure_item (ast/ppxlib_ast.ml[15,393+0]..ast/ppxlib_ast.ml[15,393+20])
+    Tstr_module
+    Parse/2014
+      module_expr (ast/ppxlib_ast.ml[15,393+15]..ast/ppxlib_ast.ml[15,393+20])
+        Tmod_ident "Ppxlib_ast__!.Import.Parse"
+  structure_item (ast/ppxlib_ast.ml[16,414+0]..ast/ppxlib_ast.ml[16,414+28])
+    Tstr_module
+    Parsetree/2015
+      module_expr (ast/ppxlib_ast.ml[16,414+19]..ast/ppxlib_ast.ml[16,414+28])
+        Tmod_ident "Ppxlib_ast__!.Import.Parsetree"
+  structure_item (ast/ppxlib_ast.ml[17,443+0]..ast/ppxlib_ast.ml[17,443+35])
+    Tstr_module
+    Pprintast/2066
+      module_expr (ast/ppxlib_ast.ml[17,443+19]..ast/ppxlib_ast.ml[17,443+35])
+        Tmod_ident "Astlib!.Pprintast"
+  structure_item (ast/ppxlib_ast.ml[18,479+0]..ast/ppxlib_ast.ml[18,479+30])
+    Tstr_module
+    Select_ast/2067
+      module_expr (ast/ppxlib_ast.ml[18,479+20]..ast/ppxlib_ast.ml[18,479+30])
+        Tmod_ident "Ppxlib_ast__!.Import.Select_ast"
+  structure_item (ast/ppxlib_ast.ml[19,510+0]..ast/ppxlib_ast.ml[19,510+34])
+    Tstr_module
+    Selected_ast/2068
+      module_expr (ast/ppxlib_ast.ml[19,510+22]..ast/ppxlib_ast.ml[19,510+34])
+        Tmod_ident "Ppxlib_ast__!.Import.Selected_ast"
+]
+
+0
+0

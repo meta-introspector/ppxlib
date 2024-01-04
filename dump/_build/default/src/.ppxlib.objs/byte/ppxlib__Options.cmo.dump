@@ -1,0 +1,156 @@
+[
+  structure_item (src/options.ml[1,0+0]..[1,0+46])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[1,0+4]..[1,0+38])
+          Ppat_var "default_allow_unused_code_warnings" (src/options.ml[1,0+4]..[1,0+38])
+        expression (src/options.ml[1,0+41]..[1,0+46])
+          Pexp_construct "false" (src/options.ml[1,0+41]..[1,0+46])
+          None
+    ]
+  structure_item (src/options.ml[2,47+0]..[2,47+26])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[2,47+4]..[2,47+18])
+          Ppat_var "perform_checks" (src/options.ml[2,47+4]..[2,47+18])
+        expression (src/options.ml[2,47+21]..[2,47+26])
+          Pexp_construct "false" (src/options.ml[2,47+21]..[2,47+26])
+          None
+    ]
+  structure_item (src/options.ml[8,297+0]..[8,297+40])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[8,297+4]..[8,297+32])
+          Ppat_var "perform_checks_on_extensions" (src/options.ml[8,297+4]..[8,297+32])
+        expression (src/options.ml[8,297+35]..[8,297+40])
+          Pexp_construct "false" (src/options.ml[8,297+35]..[8,297+40])
+          None
+    ]
+  structure_item (src/options.ml[9,338+0]..[9,338+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[9,338+4]..[9,338+27])
+          Ppat_var "perform_locations_check" (src/options.ml[9,338+4]..[9,338+27])
+        expression (src/options.ml[9,338+30]..[9,338+35])
+          Pexp_construct "false" (src/options.ml[9,338+30]..[9,338+35])
+          None
+    ]
+  structure_item (src/options.ml[10,374+0]..[10,374+38])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[10,374+4]..[10,374+30])
+          Ppat_var "fail_on_duplicate_derivers" (src/options.ml[10,374+4]..[10,374+30])
+        expression (src/options.ml[10,374+33]..[10,374+38])
+          Pexp_construct "false" (src/options.ml[10,374+33]..[10,374+38])
+          None
+    ]
+  structure_item (src/options.ml[11,413+0]..[11,413+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[11,413+4]..[11,413+16])
+          Ppat_var "diff_command" (src/options.ml[11,413+4]..[11,413+16])
+        expression (src/options.ml[11,413+19]..[11,413+23])
+          Pexp_construct "None" (src/options.ml[11,413+19]..[11,413+23])
+          None
+    ]
+]
+
+let default_allow_unused_code_warnings = false
+let perform_checks = false
+let perform_checks_on_extensions = false
+let perform_locations_check = false
+let fail_on_duplicate_derivers = false
+let diff_command = None
+[
+  structure_item (src/options.ml[1,0+0]..src/options.ml[1,0+46])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[1,0+4]..src/options.ml[1,0+38])
+          Tpat_var "default_allow_unused_code_warnings/120"
+        expression (src/options.ml[1,0+41]..src/options.ml[1,0+46])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (src/options.ml[2,47+0]..src/options.ml[2,47+26])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[2,47+4]..src/options.ml[2,47+18])
+          Tpat_var "perform_checks/121"
+        expression (src/options.ml[2,47+21]..src/options.ml[2,47+26])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (src/options.ml[8,297+0]..src/options.ml[8,297+40])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[8,297+4]..src/options.ml[8,297+32])
+          Tpat_var "perform_checks_on_extensions/122"
+        expression (src/options.ml[8,297+35]..src/options.ml[8,297+40])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (src/options.ml[9,338+0]..src/options.ml[9,338+35])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[9,338+4]..src/options.ml[9,338+27])
+          Tpat_var "perform_locations_check/123"
+        expression (src/options.ml[9,338+30]..src/options.ml[9,338+35])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (src/options.ml[10,374+0]..src/options.ml[10,374+38])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[10,374+4]..src/options.ml[10,374+30])
+          Tpat_var "fail_on_duplicate_derivers/124"
+        expression (src/options.ml[10,374+33]..src/options.ml[10,374+38])
+          Texp_construct "false"
+          []
+    ]
+  structure_item (src/options.ml[11,413+0]..src/options.ml[11,413+23])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/options.ml[11,413+4]..src/options.ml[11,413+16])
+          Tpat_var "diff_command/125"
+        expression (src/options.ml[11,413+19]..src/options.ml[11,413+23])
+          Texp_construct "None"
+          []
+    ]
+]
+
+(setglobal Ppxlib__Options!
+  (let
+    (default_allow_unused_code_warnings/120 = 0
+     perform_checks/121 = 0
+     perform_checks_on_extensions/122 = 0
+     perform_locations_check/123 = 0
+     fail_on_duplicate_derivers/124 = 0
+     diff_command/125 = 0)
+    (pseudo <unknown location>
+      (makeblock 0 default_allow_unused_code_warnings/120 perform_checks/121
+        perform_checks_on_extensions/122 perform_locations_check/123
+        fail_on_duplicate_derivers/124 diff_command/125))))
+(setglobal Ppxlib__Options!
+  (let
+    (default_allow_unused_code_warnings/120 = 0
+     perform_checks/121 = 0
+     perform_checks_on_extensions/122 = 0
+     perform_locations_check/123 = 0
+     fail_on_duplicate_derivers/124 = 0
+     diff_command/125 = 0)
+    (pseudo <unknown location>
+      (makeblock 0 default_allow_unused_code_warnings/120 perform_checks/121
+        perform_checks_on_extensions/122 perform_locations_check/123
+        fail_on_duplicate_derivers/124 diff_command/125))))

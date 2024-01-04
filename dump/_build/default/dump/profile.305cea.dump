@@ -1,0 +1,6 @@
+0.091s 59.3MB 21.1MB 21.1MB src/extension.mli
+  0.003s 2.90MB 1.57MB 1.57MB parsing
+    0.003s 2.90MB 1.57MB 1.57MB parser
+  0.082s 50.3MB 19.4MB 21.0MB typing
+  0.006s 6.09MB 0.09MB 21.1MB other
+0.006s ------ ------ ------ other

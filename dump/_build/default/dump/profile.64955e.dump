@@ -1,0 +1,6 @@
+0.079s 50.6MB 18.2MB 18.2MB src/common.mli
+  0.004s 2.90MB 1.53MB 1.53MB parsing
+    0.004s 2.90MB 1.53MB 1.53MB parser
+  0.071s 45.7MB 16.6MB 18.2MB typing
+  0.005s 2.00MB 0.03MB ------ other
+0.009s ------ ------ ------ other

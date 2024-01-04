@@ -1,0 +1,11 @@
+0.009s 14.6MB 2.56MB 2.56MB astlib/cinaps/astlib_cinaps_helpers.ml
+  0.001s 2.93MB 1.59MB 1.59MB parsing
+    0.001s 2.93MB 1.59MB 1.59MB parser
+  0.002s 3.62MB 0.65MB 2.24MB typing
+  0.004s 4.04MB 0.25MB 2.50MB generate
+    0.001s 0.04MB ------ ------ compile_phrases
+      ------ 0.04MB ------ ------ split
+    0.002s ------ ------ ------ assemble
+    0.001s 4.00MB 0.25MB 2.50MB other
+  0.002s 4.08MB 0.06MB 2.56MB other
+0.004s ------ ------ ------ other

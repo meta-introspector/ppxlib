@@ -1,0 +1,1304 @@
+[
+  structure_item (src/expansion_helpers.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (src/expansion_helpers.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Import" (src/expansion_helpers.ml[1,0+5]..[1,0+11])
+  structure_item (src/expansion_helpers.ml[3,13+0]..[6,68+35])
+    Pstr_type Rec
+    [
+      type_declaration "affix" (src/expansion_helpers.ml[3,13+5]..[3,13+10]) (src/expansion_helpers.ml[3,13+0]..[6,68+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (src/expansion_helpers.ml[4,26+2]..[4,26+20])
+                "Prefix" (src/expansion_helpers.ml[4,26+4]..[4,26+10])
+                [
+                  core_type (src/expansion_helpers.ml[4,26+14]..[4,26+20])
+                    Ptyp_constr "string" (src/expansion_helpers.ml[4,26+14]..[4,26+20])
+                    []
+                ]
+                None
+              (src/expansion_helpers.ml[5,47+2]..[5,47+20])
+                "Suffix" (src/expansion_helpers.ml[5,47+4]..[5,47+10])
+                [
+                  core_type (src/expansion_helpers.ml[5,47+14]..[5,47+20])
+                    Ptyp_constr "string" (src/expansion_helpers.ml[5,47+14]..[5,47+20])
+                    []
+                ]
+                None
+              (src/expansion_helpers.ml[6,68+2]..[6,68+35])
+                "PrefixSuffix" (src/expansion_helpers.ml[6,68+4]..[6,68+16])
+                [
+                  core_type (src/expansion_helpers.ml[6,68+20]..[6,68+26])
+                    Ptyp_constr "string" (src/expansion_helpers.ml[6,68+20]..[6,68+26])
+                    []
+                  core_type (src/expansion_helpers.ml[6,68+29]..[6,68+35])
+                    Ptyp_constr "string" (src/expansion_helpers.ml[6,68+29]..[6,68+35])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/expansion_helpers.ml[8,105+0]..[14,373+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/expansion_helpers.ml[8,105+4]..[8,105+10])
+          Ppat_var "mangle" (src/expansion_helpers.ml[8,105+4]..[8,105+10])
+        expression (src/expansion_helpers.ml[8,105+11]..[14,373+37]) ghost
+          Pexp_fun
+          Optional "fixpoint"
+          Some
+            expression (src/expansion_helpers.ml[8,105+24]..[8,105+27])
+              Pexp_constant PConst_string("t",(src/expansion_helpers.ml[8,105+25]..[8,105+26]),None)
+          pattern (src/expansion_helpers.ml[8,105+13]..[8,105+21])
+            Ppat_var "fixpoint" (src/expansion_helpers.ml[8,105+13]..[8,105+21])
+          expression (src/expansion_helpers.ml[8,105+29]..[14,373+37]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/expansion_helpers.ml[8,105+29]..[8,105+34])
+              Ppat_var "affix" (src/expansion_helpers.ml[8,105+29]..[8,105+34])
+            expression (src/expansion_helpers.ml[8,105+35]..[14,373+37]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (src/expansion_helpers.ml[8,105+35]..[8,105+39])
+                Ppat_var "name" (src/expansion_helpers.ml[8,105+35]..[8,105+39])
+              expression (src/expansion_helpers.ml[9,147+2]..[14,373+37])
+                Pexp_match
+                expression (src/expansion_helpers.ml[9,147+8]..[9,147+41])
+                  Pexp_tuple
+                  [
+                    expression (src/expansion_helpers.ml[9,147+9]..[9,147+33])
+                      Pexp_open Fresh
+                      module_expr (src/expansion_helpers.ml[9,147+9]..[9,147+15])
+                        Pmod_ident "String" (src/expansion_helpers.ml[9,147+9]..[9,147+15])
+                      expression (src/expansion_helpers.ml[9,147+17]..[9,147+32])
+                        Pexp_apply
+                        expression (src/expansion_helpers.ml[9,147+22]..[9,147+23])
+                          Pexp_ident "=" (src/expansion_helpers.ml[9,147+22]..[9,147+23])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (src/expansion_helpers.ml[9,147+17]..[9,147+21])
+                              Pexp_ident "name" (src/expansion_helpers.ml[9,147+17]..[9,147+21])
+                          <arg>
+                          Nolabel
+                            expression (src/expansion_helpers.ml[9,147+24]..[9,147+32])
+                              Pexp_ident "fixpoint" (src/expansion_helpers.ml[9,147+24]..[9,147+32])
+                        ]
+                    expression (src/expansion_helpers.ml[9,147+35]..[9,147+40])
+                      Pexp_ident "affix" (src/expansion_helpers.ml[9,147+35]..[9,147+40])
+                  ]
+                [
+                  <case>
+                    pattern (src/expansion_helpers.ml[10,194+4]..[10,194+31])
+                      Ppat_tuple
+                      [
+                        pattern (src/expansion_helpers.ml[10,194+4]..[10,194+8])
+                          Ppat_construct "true" (src/expansion_helpers.ml[10,194+4]..[10,194+8])
+                          None
+                        pattern (src/expansion_helpers.ml[10,194+10]..[10,194+31])
+                          Ppat_or
+                          pattern (src/expansion_helpers.ml[10,194+11]..[10,194+19])
+                            Ppat_construct "Prefix" (src/expansion_helpers.ml[10,194+11]..[10,194+17])
+                            Some
+                              pattern (src/expansion_helpers.ml[10,194+18]..[10,194+19])
+                                Ppat_var "x" (src/expansion_helpers.ml[10,194+18]..[10,194+19])
+                          pattern (src/expansion_helpers.ml[10,194+22]..[10,194+30])
+                            Ppat_construct "Suffix" (src/expansion_helpers.ml[10,194+22]..[10,194+28])
+                            Some
+                              pattern (src/expansion_helpers.ml[10,194+29]..[10,194+30])
+                                Ppat_var "x" (src/expansion_helpers.ml[10,194+29]..[10,194+30])
+                      ]
+                    expression (src/expansion_helpers.ml[10,194+35]..[10,194+36])
+                      Pexp_ident "x" (src/expansion_helpers.ml[10,194+35]..[10,194+36])
+                  <case>
+                    pattern (src/expansion_helpers.ml[11,231+4]..[11,231+29])
+                      Ppat_tuple
+                      [
+                        pattern (src/expansion_helpers.ml[11,231+4]..[11,231+8])
+                          Ppat_construct "true" (src/expansion_helpers.ml[11,231+4]..[11,231+8])
+                          None
+                        pattern (src/expansion_helpers.ml[11,231+10]..[11,231+29])
+                          Ppat_construct "PrefixSuffix" (src/expansion_helpers.ml[11,231+10]..[11,231+22])
+                          Some
+                            pattern (src/expansion_helpers.ml[11,231+23]..[11,231+29])
+                              Ppat_tuple
+                              [
+                                pattern (src/expansion_helpers.ml[11,231+24]..[11,231+25])
+                                  Ppat_var "p" (src/expansion_helpers.ml[11,231+24]..[11,231+25])
+                                pattern (src/expansion_helpers.ml[11,231+27]..[11,231+28])
+                                  Ppat_var "s" (src/expansion_helpers.ml[11,231+27]..[11,231+28])
+                              ]
+                      ]
+                    expression (src/expansion_helpers.ml[11,231+33]..[11,231+44])
+                      Pexp_apply
+                      expression (src/expansion_helpers.ml[11,231+35]..[11,231+36])
+                        Pexp_ident "^" (src/expansion_helpers.ml[11,231+35]..[11,231+36])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[11,231+33]..[11,231+34])
+                            Pexp_ident "p" (src/expansion_helpers.ml[11,231+33]..[11,231+34])
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[11,231+37]..[11,231+44])
+                            Pexp_apply
+                            expression (src/expansion_helpers.ml[11,231+41]..[11,231+42])
+                              Pexp_ident "^" (src/expansion_helpers.ml[11,231+41]..[11,231+42])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[11,231+37]..[11,231+40])
+                                  Pexp_constant PConst_string("_",(src/expansion_helpers.ml[11,231+38]..[11,231+39]),None)
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[11,231+43]..[11,231+44])
+                                  Pexp_ident "s" (src/expansion_helpers.ml[11,231+43]..[11,231+44])
+                            ]
+                      ]
+                  <case>
+                    pattern (src/expansion_helpers.ml[12,276+4]..[12,276+30])
+                      Ppat_tuple
+                      [
+                        pattern (src/expansion_helpers.ml[12,276+4]..[12,276+9])
+                          Ppat_construct "false" (src/expansion_helpers.ml[12,276+4]..[12,276+9])
+                          None
+                        pattern (src/expansion_helpers.ml[12,276+11]..[12,276+30])
+                          Ppat_construct "PrefixSuffix" (src/expansion_helpers.ml[12,276+11]..[12,276+23])
+                          Some
+                            pattern (src/expansion_helpers.ml[12,276+24]..[12,276+30])
+                              Ppat_tuple
+                              [
+                                pattern (src/expansion_helpers.ml[12,276+25]..[12,276+26])
+                                  Ppat_var "p" (src/expansion_helpers.ml[12,276+25]..[12,276+26])
+                                pattern (src/expansion_helpers.ml[12,276+28]..[12,276+29])
+                                  Ppat_var "s" (src/expansion_helpers.ml[12,276+28]..[12,276+29])
+                              ]
+                      ]
+                    expression (src/expansion_helpers.ml[12,276+34]..[12,276+58])
+                      Pexp_apply
+                      expression (src/expansion_helpers.ml[12,276+36]..[12,276+37])
+                        Pexp_ident "^" (src/expansion_helpers.ml[12,276+36]..[12,276+37])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[12,276+34]..[12,276+35])
+                            Pexp_ident "p" (src/expansion_helpers.ml[12,276+34]..[12,276+35])
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[12,276+38]..[12,276+58])
+                            Pexp_apply
+                            expression (src/expansion_helpers.ml[12,276+42]..[12,276+43])
+                              Pexp_ident "^" (src/expansion_helpers.ml[12,276+42]..[12,276+43])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[12,276+38]..[12,276+41])
+                                  Pexp_constant PConst_string("_",(src/expansion_helpers.ml[12,276+39]..[12,276+40]),None)
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[12,276+44]..[12,276+58])
+                                  Pexp_apply
+                                  expression (src/expansion_helpers.ml[12,276+49]..[12,276+50])
+                                    Pexp_ident "^" (src/expansion_helpers.ml[12,276+49]..[12,276+50])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (src/expansion_helpers.ml[12,276+44]..[12,276+48])
+                                        Pexp_ident "name" (src/expansion_helpers.ml[12,276+44]..[12,276+48])
+                                    <arg>
+                                    Nolabel
+                                      expression (src/expansion_helpers.ml[12,276+51]..[12,276+58])
+                                        Pexp_apply
+                                        expression (src/expansion_helpers.ml[12,276+55]..[12,276+56])
+                                          Pexp_ident "^" (src/expansion_helpers.ml[12,276+55]..[12,276+56])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (src/expansion_helpers.ml[12,276+51]..[12,276+54])
+                                              Pexp_constant PConst_string("_",(src/expansion_helpers.ml[12,276+52]..[12,276+53]),None)
+                                          <arg>
+                                          Nolabel
+                                            expression (src/expansion_helpers.ml[12,276+57]..[12,276+58])
+                                              Pexp_ident "s" (src/expansion_helpers.ml[12,276+57]..[12,276+58])
+                                        ]
+                                  ]
+                            ]
+                      ]
+                  <case>
+                    pattern (src/expansion_helpers.ml[13,335+4]..[13,335+19])
+                      Ppat_tuple
+                      [
+                        pattern (src/expansion_helpers.ml[13,335+4]..[13,335+9])
+                          Ppat_construct "false" (src/expansion_helpers.ml[13,335+4]..[13,335+9])
+                          None
+                        pattern (src/expansion_helpers.ml[13,335+11]..[13,335+19])
+                          Ppat_construct "Prefix" (src/expansion_helpers.ml[13,335+11]..[13,335+17])
+                          Some
+                            pattern (src/expansion_helpers.ml[13,335+18]..[13,335+19])
+                              Ppat_var "x" (src/expansion_helpers.ml[13,335+18]..[13,335+19])
+                      ]
+                    expression (src/expansion_helpers.ml[13,335+23]..[13,335+37])
+                      Pexp_apply
+                      expression (src/expansion_helpers.ml[13,335+25]..[13,335+26])
+                        Pexp_ident "^" (src/expansion_helpers.ml[13,335+25]..[13,335+26])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[13,335+23]..[13,335+24])
+                            Pexp_ident "x" (src/expansion_helpers.ml[13,335+23]..[13,335+24])
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[13,335+27]..[13,335+37])
+                            Pexp_apply
+                            expression (src/expansion_helpers.ml[13,335+31]..[13,335+32])
+                              Pexp_ident "^" (src/expansion_helpers.ml[13,335+31]..[13,335+32])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[13,335+27]..[13,335+30])
+                                  Pexp_constant PConst_string("_",(src/expansion_helpers.ml[13,335+28]..[13,335+29]),None)
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[13,335+33]..[13,335+37])
+                                  Pexp_ident "name" (src/expansion_helpers.ml[13,335+33]..[13,335+37])
+                            ]
+                      ]
+                  <case>
+                    pattern (src/expansion_helpers.ml[14,373+4]..[14,373+19])
+                      Ppat_tuple
+                      [
+                        pattern (src/expansion_helpers.ml[14,373+4]..[14,373+9])
+                          Ppat_construct "false" (src/expansion_helpers.ml[14,373+4]..[14,373+9])
+                          None
+                        pattern (src/expansion_helpers.ml[14,373+11]..[14,373+19])
+                          Ppat_construct "Suffix" (src/expansion_helpers.ml[14,373+11]..[14,373+17])
+                          Some
+                            pattern (src/expansion_helpers.ml[14,373+18]..[14,373+19])
+                              Ppat_var "x" (src/expansion_helpers.ml[14,373+18]..[14,373+19])
+                      ]
+                    expression (src/expansion_helpers.ml[14,373+23]..[14,373+37])
+                      Pexp_apply
+                      expression (src/expansion_helpers.ml[14,373+28]..[14,373+29])
+                        Pexp_ident "^" (src/expansion_helpers.ml[14,373+28]..[14,373+29])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[14,373+23]..[14,373+27])
+                            Pexp_ident "name" (src/expansion_helpers.ml[14,373+23]..[14,373+27])
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[14,373+30]..[14,373+37])
+                            Pexp_apply
+                            expression (src/expansion_helpers.ml[14,373+34]..[14,373+35])
+                              Pexp_ident "^" (src/expansion_helpers.ml[14,373+34]..[14,373+35])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[14,373+30]..[14,373+33])
+                                  Pexp_constant PConst_string("_",(src/expansion_helpers.ml[14,373+31]..[14,373+32]),None)
+                              <arg>
+                              Nolabel
+                                expression (src/expansion_helpers.ml[14,373+36]..[14,373+37])
+                                  Pexp_ident "x" (src/expansion_helpers.ml[14,373+36]..[14,373+37])
+                            ]
+                      ]
+                ]
+    ]
+  structure_item (src/expansion_helpers.ml[16,412+0]..[17,489+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/expansion_helpers.ml[16,412+4]..[16,412+20])
+          Ppat_var "mangle_type_decl" (src/expansion_helpers.ml[16,412+4]..[16,412+20])
+        expression (src/expansion_helpers.ml[16,412+21]..[17,489+29]) ghost
+          Pexp_fun
+          Optional "fixpoint"
+          None
+          pattern (src/expansion_helpers.ml[16,412+22]..[16,412+30])
+            Ppat_var "fixpoint" (src/expansion_helpers.ml[16,412+22]..[16,412+30])
+          expression (src/expansion_helpers.ml[16,412+31]..[17,489+29]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/expansion_helpers.ml[16,412+31]..[16,412+36])
+              Ppat_var "affix" (src/expansion_helpers.ml[16,412+31]..[16,412+36])
+            expression (src/expansion_helpers.ml[16,412+37]..[17,489+29]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (src/expansion_helpers.ml[16,412+37]..[16,412+74])
+                Ppat_record Open
+                [
+                  "ptype_name" (src/expansion_helpers.ml[16,412+39]..[16,412+49])
+                    pattern (src/expansion_helpers.ml[16,412+52]..[16,412+69])
+                      Ppat_record Open
+                      [
+                        "txt" (src/expansion_helpers.ml[16,412+54]..[16,412+57])
+                          pattern (src/expansion_helpers.ml[16,412+60]..[16,412+64])
+                            Ppat_var "name" (src/expansion_helpers.ml[16,412+60]..[16,412+64])
+                      ]
+                ]
+              expression (src/expansion_helpers.ml[17,489+2]..[17,489+29])
+                Pexp_apply
+                expression (src/expansion_helpers.ml[17,489+2]..[17,489+8])
+                  Pexp_ident "mangle" (src/expansion_helpers.ml[17,489+2]..[17,489+8])
+                [
+                  <arg>
+                  Optional "fixpoint"
+                    expression (src/expansion_helpers.ml[17,489+10]..[17,489+18])
+                      Pexp_ident "fixpoint" (src/expansion_helpers.ml[17,489+10]..[17,489+18])
+                  <arg>
+                  Nolabel
+                    expression (src/expansion_helpers.ml[17,489+19]..[17,489+24])
+                      Pexp_ident "affix" (src/expansion_helpers.ml[17,489+19]..[17,489+24])
+                  <arg>
+                  Nolabel
+                    expression (src/expansion_helpers.ml[17,489+25]..[17,489+29])
+                      Pexp_ident "name" (src/expansion_helpers.ml[17,489+25]..[17,489+29])
+                ]
+    ]
+  structure_item (src/expansion_helpers.ml[19,520+0]..[23,678+73])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/expansion_helpers.ml[19,520+4]..[19,520+14])
+          Ppat_var "mangle_lid" (src/expansion_helpers.ml[19,520+4]..[19,520+14])
+        expression (src/expansion_helpers.ml[19,520+15]..[23,678+73]) ghost
+          Pexp_fun
+          Optional "fixpoint"
+          None
+          pattern (src/expansion_helpers.ml[19,520+16]..[19,520+24])
+            Ppat_var "fixpoint" (src/expansion_helpers.ml[19,520+16]..[19,520+24])
+          expression (src/expansion_helpers.ml[19,520+25]..[23,678+73]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/expansion_helpers.ml[19,520+25]..[19,520+30])
+              Ppat_var "affix" (src/expansion_helpers.ml[19,520+25]..[19,520+30])
+            expression (src/expansion_helpers.ml[19,520+31]..[23,678+73]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (src/expansion_helpers.ml[19,520+31]..[19,520+34])
+                Ppat_var "lid" (src/expansion_helpers.ml[19,520+31]..[19,520+34])
+              expression (src/expansion_helpers.ml[20,557+2]..[23,678+73])
+                Pexp_match
+                expression (src/expansion_helpers.ml[20,557+8]..[20,557+11])
+                  Pexp_ident "lid" (src/expansion_helpers.ml[20,557+8]..[20,557+11])
+                [
+                  <case>
+                    pattern (src/expansion_helpers.ml[21,574+4]..[21,574+12])
+                      Ppat_construct "Lident" (src/expansion_helpers.ml[21,574+4]..[21,574+10])
+                      Some
+                        pattern (src/expansion_helpers.ml[21,574+11]..[21,574+12])
+                          Ppat_var "s" (src/expansion_helpers.ml[21,574+11]..[21,574+12])
+                    expression (src/expansion_helpers.ml[21,574+16]..[21,574+49])
+                      Pexp_construct "Lident" (src/expansion_helpers.ml[21,574+16]..[21,574+22])
+                      Some
+                        expression (src/expansion_helpers.ml[21,574+23]..[21,574+49])
+                          Pexp_apply
+                          expression (src/expansion_helpers.ml[21,574+24]..[21,574+30])
+                            Pexp_ident "mangle" (src/expansion_helpers.ml[21,574+24]..[21,574+30])
+                          [
+                            <arg>
+                            Optional "fixpoint"
+                              expression (src/expansion_helpers.ml[21,574+32]..[21,574+40])
+                                Pexp_ident "fixpoint" (src/expansion_helpers.ml[21,574+32]..[21,574+40])
+                            <arg>
+                            Nolabel
+                              expression (src/expansion_helpers.ml[21,574+41]..[21,574+46])
+                                Pexp_ident "affix" (src/expansion_helpers.ml[21,574+41]..[21,574+46])
+                            <arg>
+                            Nolabel
+                              expression (src/expansion_helpers.ml[21,574+47]..[21,574+48])
+                                Pexp_ident "s" (src/expansion_helpers.ml[21,574+47]..[21,574+48])
+                          ]
+                  <case>
+                    pattern (src/expansion_helpers.ml[22,624+4]..[22,624+15])
+                      Ppat_construct "Ldot" (src/expansion_helpers.ml[22,624+4]..[22,624+8])
+                      Some
+                        pattern (src/expansion_helpers.ml[22,624+9]..[22,624+15])
+                          Ppat_tuple
+                          [
+                            pattern (src/expansion_helpers.ml[22,624+10]..[22,624+11])
+                              Ppat_var "p" (src/expansion_helpers.ml[22,624+10]..[22,624+11])
+                            pattern (src/expansion_helpers.ml[22,624+13]..[22,624+14])
+                              Ppat_var "s" (src/expansion_helpers.ml[22,624+13]..[22,624+14])
+                          ]
+                    expression (src/expansion_helpers.ml[22,624+19]..[22,624+53])
+                      Pexp_construct "Ldot" (src/expansion_helpers.ml[22,624+19]..[22,624+23])
+                      Some
+                        expression (src/expansion_helpers.ml[22,624+24]..[22,624+53])
+                          Pexp_tuple
+                          [
+                            expression (src/expansion_helpers.ml[22,624+25]..[22,624+26])
+                              Pexp_ident "p" (src/expansion_helpers.ml[22,624+25]..[22,624+26])
+                            expression (src/expansion_helpers.ml[22,624+28]..[22,624+52])
+                              Pexp_apply
+                              expression (src/expansion_helpers.ml[22,624+28]..[22,624+34])
+                                Pexp_ident "mangle" (src/expansion_helpers.ml[22,624+28]..[22,624+34])
+                              [
+                                <arg>
+                                Optional "fixpoint"
+                                  expression (src/expansion_helpers.ml[22,624+36]..[22,624+44])
+                                    Pexp_ident "fixpoint" (src/expansion_helpers.ml[22,624+36]..[22,624+44])
+                                <arg>
+                                Nolabel
+                                  expression (src/expansion_helpers.ml[22,624+45]..[22,624+50])
+                                    Pexp_ident "affix" (src/expansion_helpers.ml[22,624+45]..[22,624+50])
+                                <arg>
+                                Nolabel
+                                  expression (src/expansion_helpers.ml[22,624+51]..[22,624+52])
+                                    Pexp_ident "s" (src/expansion_helpers.ml[22,624+51]..[22,624+52])
+                              ]
+                          ]
+                  <case>
+                    pattern (src/expansion_helpers.ml[23,678+4]..[23,678+12])
+                      Ppat_construct "Lapply" (src/expansion_helpers.ml[23,678+4]..[23,678+10])
+                      Some
+                        pattern (src/expansion_helpers.ml[23,678+11]..[23,678+12])
+                          Ppat_any
+                    expression (src/expansion_helpers.ml[23,678+16]..[23,678+73])
+                      Pexp_apply
+                      expression (src/expansion_helpers.ml[23,678+16]..[23,678+27])
+                        Pexp_ident "invalid_arg" (src/expansion_helpers.ml[23,678+16]..[23,678+27])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/expansion_helpers.ml[23,678+28]..[23,678+73])
+                            Pexp_constant PConst_string("Ppxlib.Expansion_helpers.mangle_lid: Lapply",(src/expansion_helpers.ml[23,678+29]..[23,678+72]),None)
+                      ]
+                ]
+    ]
+  structure_item (src/expansion_helpers.ml[25,753+0]..[25,753+22])
+    Pstr_module
+    "Quoter" (src/expansion_helpers.ml[25,753+7]..[25,753+13])
+      module_expr (src/expansion_helpers.ml[25,753+16]..[25,753+22])
+        Pmod_ident "Quoter" (src/expansion_helpers.ml[25,753+16]..[25,753+22])
+]
+
+open Import
+type affix =
+  | Prefix of string 
+  | Suffix of string 
+  | PrefixSuffix of string * string 
+let mangle ?(fixpoint= "t")  affix name =
+  match ((let open String in name = fixpoint), affix) with
+  | (true, (Prefix x | Suffix x)) -> x
+  | (true, PrefixSuffix (p, s)) -> p ^ ("_" ^ s)
+  | (false, PrefixSuffix (p, s)) -> p ^ ("_" ^ (name ^ ("_" ^ s)))
+  | (false, Prefix x) -> x ^ ("_" ^ name)
+  | (false, Suffix x) -> name ^ ("_" ^ x)
+let mangle_type_decl ?fixpoint  affix { ptype_name = { txt = name;_};_} =
+  mangle ?fixpoint affix name
+let mangle_lid ?fixpoint  affix lid =
+  match lid with
+  | Lident s -> Lident (mangle ?fixpoint affix s)
+  | Ldot (p, s) -> Ldot (p, (mangle ?fixpoint affix s))
+  | Lapply _ -> invalid_arg "Ppxlib.Expansion_helpers.mangle_lid: Lapply"
+module Quoter = Quoter
+[
+  structure_item (src/expansion_helpers.ml[1,0+0]..src/expansion_helpers.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (src/expansion_helpers.ml[1,0+5]..src/expansion_helpers.ml[1,0+11])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/expansion_helpers.ml[3,13+0]..src/expansion_helpers.ml[6,68+35])
+    Tstr_type Rec
+    [
+      type_declaration affix/550 (src/expansion_helpers.ml[3,13+0]..src/expansion_helpers.ml[6,68+35])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (src/expansion_helpers.ml[4,26+2]..src/expansion_helpers.ml[4,26+20])
+                Prefix/551
+                [
+                  core_type (src/expansion_helpers.ml[4,26+14]..src/expansion_helpers.ml[4,26+20])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+              (src/expansion_helpers.ml[5,47+2]..src/expansion_helpers.ml[5,47+20])
+                Suffix/552
+                [
+                  core_type (src/expansion_helpers.ml[5,47+14]..src/expansion_helpers.ml[5,47+20])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+              (src/expansion_helpers.ml[6,68+2]..src/expansion_helpers.ml[6,68+35])
+                PrefixSuffix/553
+                [
+                  core_type (src/expansion_helpers.ml[6,68+20]..src/expansion_helpers.ml[6,68+26])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/expansion_helpers.ml[6,68+29]..src/expansion_helpers.ml[6,68+35])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/expansion_helpers.ml[8,105+0]..src/expansion_helpers.ml[14,373+37])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/expansion_helpers.ml[8,105+4]..src/expansion_helpers.ml[8,105+10])
+          Tpat_var "mangle/554"
+        expression (src/expansion_helpers.ml[8,105+11]..src/expansion_helpers.ml[14,373+37]) ghost
+          Texp_function
+          Optional "fixpoint"
+          [
+            <case>
+              pattern (src/expansion_helpers.ml[8,105+13]..src/expansion_helpers.ml[8,105+27]) ghost
+                Tpat_var "*opt*/556"
+              expression (src/expansion_helpers.ml[8,105+11]..src/expansion_helpers.ml[14,373+37]) ghost
+                attribute "#default"
+                  []
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (src/expansion_helpers.ml[8,105+13]..src/expansion_helpers.ml[8,105+21])
+                      Tpat_var "fixpoint/557"
+                    expression (src/expansion_helpers.ml[8,105+13]..src/expansion_helpers.ml[8,105+27]) ghost
+                      Texp_match
+                      expression (src/expansion_helpers.ml[8,105+11]..src/expansion_helpers.ml[14,373+37]) ghost
+                        Texp_ident "*opt*/556"
+                      [
+                        <case>
+                          pattern (src/expansion_helpers.ml[8,105+24]..src/expansion_helpers.ml[8,105+27])
+                            Tpat_value
+                            pattern (src/expansion_helpers.ml[8,105+24]..src/expansion_helpers.ml[8,105+27])
+                              Tpat_construct "*predef*.Some"
+                              [
+                                pattern (src/expansion_helpers.ml[8,105+24]..src/expansion_helpers.ml[8,105+27])
+                                  Tpat_var "*sth*/558"
+                              ]
+                          expression (src/expansion_helpers.ml[8,105+24]..src/expansion_helpers.ml[8,105+27])
+                            Texp_ident "*sth*/558"
+                        <case>
+                          pattern (src/expansion_helpers.ml[8,105+24]..src/expansion_helpers.ml[8,105+27])
+                            Tpat_value
+                            pattern (src/expansion_helpers.ml[8,105+24]..src/expansion_helpers.ml[8,105+27])
+                              Tpat_construct "*predef*.None"
+                              []
+                          expression (src/expansion_helpers.ml[8,105+24]..src/expansion_helpers.ml[8,105+27])
+                            Texp_constant Const_string("t",(src/expansion_helpers.ml[8,105+25]..src/expansion_helpers.ml[8,105+26]),None)
+                      ]
+                      []
+                ]
+                expression (src/expansion_helpers.ml[8,105+29]..src/expansion_helpers.ml[14,373+37]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (src/expansion_helpers.ml[8,105+29]..src/expansion_helpers.ml[8,105+34])
+                        Tpat_var "affix/559"
+                      expression (src/expansion_helpers.ml[8,105+35]..src/expansion_helpers.ml[14,373+37]) ghost
+                        Texp_function
+                        Nolabel
+                        [
+                          <case>
+                            pattern (src/expansion_helpers.ml[8,105+35]..src/expansion_helpers.ml[8,105+39])
+                              Tpat_var "name/560"
+                            expression (src/expansion_helpers.ml[9,147+2]..src/expansion_helpers.ml[14,373+37])
+                              Texp_match
+                              expression (src/expansion_helpers.ml[9,147+8]..src/expansion_helpers.ml[9,147+41])
+                                Texp_tuple
+                                [
+                                  expression (src/expansion_helpers.ml[9,147+9]..src/expansion_helpers.ml[9,147+33])
+                                    Texp_open Fresh
+                                    module_expr (src/expansion_helpers.ml[9,147+9]..src/expansion_helpers.ml[9,147+15])
+                                      Tmod_ident "Ppxlib__!.Import.String"
+                                    expression (src/expansion_helpers.ml[9,147+17]..src/expansion_helpers.ml[9,147+32])
+                                      Texp_apply
+                                      expression (src/expansion_helpers.ml[9,147+22]..src/expansion_helpers.ml[9,147+23])
+                                        Texp_ident "Ppxlib__!.Import.String.="
+                                      [
+                                        <arg>
+                                          Nolabel
+                                          expression (src/expansion_helpers.ml[9,147+17]..src/expansion_helpers.ml[9,147+21])
+                                            Texp_ident "name/560"
+                                        <arg>
+                                          Nolabel
+                                          expression (src/expansion_helpers.ml[9,147+24]..src/expansion_helpers.ml[9,147+32])
+                                            Texp_ident "fixpoint/557"
+                                      ]
+                                  expression (src/expansion_helpers.ml[9,147+35]..src/expansion_helpers.ml[9,147+40])
+                                    Texp_ident "affix/559"
+                                ]
+                              [
+                                <case>
+                                  pattern (src/expansion_helpers.ml[10,194+4]..src/expansion_helpers.ml[10,194+31])
+                                    Tpat_value
+                                    pattern (src/expansion_helpers.ml[10,194+4]..src/expansion_helpers.ml[10,194+31])
+                                      Tpat_tuple
+                                      [
+                                        pattern (src/expansion_helpers.ml[10,194+4]..src/expansion_helpers.ml[10,194+8])
+                                          Tpat_construct "true"
+                                          []
+                                        pattern (src/expansion_helpers.ml[10,194+10]..src/expansion_helpers.ml[10,194+31])
+                                          Tpat_or
+                                          pattern (src/expansion_helpers.ml[10,194+11]..src/expansion_helpers.ml[10,194+19])
+                                            Tpat_construct "Prefix"
+                                            [
+                                              pattern (src/expansion_helpers.ml[10,194+18]..src/expansion_helpers.ml[10,194+19])
+                                                Tpat_var "x/763"
+                                            ]
+                                          pattern (src/expansion_helpers.ml[10,194+22]..src/expansion_helpers.ml[10,194+30])
+                                            Tpat_construct "Suffix"
+                                            [
+                                              pattern (src/expansion_helpers.ml[10,194+29]..src/expansion_helpers.ml[10,194+30])
+                                                Tpat_var "x/763"
+                                            ]
+                                      ]
+                                  expression (src/expansion_helpers.ml[10,194+35]..src/expansion_helpers.ml[10,194+36])
+                                    Texp_ident "x/763"
+                                <case>
+                                  pattern (src/expansion_helpers.ml[11,231+4]..src/expansion_helpers.ml[11,231+29])
+                                    Tpat_value
+                                    pattern (src/expansion_helpers.ml[11,231+4]..src/expansion_helpers.ml[11,231+29])
+                                      Tpat_tuple
+                                      [
+                                        pattern (src/expansion_helpers.ml[11,231+4]..src/expansion_helpers.ml[11,231+8])
+                                          Tpat_construct "true"
+                                          []
+                                        pattern (src/expansion_helpers.ml[11,231+10]..src/expansion_helpers.ml[11,231+29])
+                                          Tpat_construct "PrefixSuffix"
+                                          [
+                                            pattern (src/expansion_helpers.ml[11,231+24]..src/expansion_helpers.ml[11,231+25])
+                                              Tpat_var "p/765"
+                                            pattern (src/expansion_helpers.ml[11,231+27]..src/expansion_helpers.ml[11,231+28])
+                                              Tpat_var "s/766"
+                                          ]
+                                      ]
+                                  expression (src/expansion_helpers.ml[11,231+33]..src/expansion_helpers.ml[11,231+44])
+                                    Texp_apply
+                                    expression (src/expansion_helpers.ml[11,231+35]..src/expansion_helpers.ml[11,231+36])
+                                      Texp_ident "Stdlib!.^"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[11,231+33]..src/expansion_helpers.ml[11,231+34])
+                                          Texp_ident "p/765"
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[11,231+37]..src/expansion_helpers.ml[11,231+44])
+                                          Texp_apply
+                                          expression (src/expansion_helpers.ml[11,231+41]..src/expansion_helpers.ml[11,231+42])
+                                            Texp_ident "Stdlib!.^"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[11,231+37]..src/expansion_helpers.ml[11,231+40])
+                                                Texp_constant Const_string("_",(src/expansion_helpers.ml[11,231+38]..src/expansion_helpers.ml[11,231+39]),None)
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[11,231+43]..src/expansion_helpers.ml[11,231+44])
+                                                Texp_ident "s/766"
+                                          ]
+                                    ]
+                                <case>
+                                  pattern (src/expansion_helpers.ml[12,276+4]..src/expansion_helpers.ml[12,276+30])
+                                    Tpat_value
+                                    pattern (src/expansion_helpers.ml[12,276+4]..src/expansion_helpers.ml[12,276+30])
+                                      Tpat_tuple
+                                      [
+                                        pattern (src/expansion_helpers.ml[12,276+4]..src/expansion_helpers.ml[12,276+9])
+                                          Tpat_construct "false"
+                                          []
+                                        pattern (src/expansion_helpers.ml[12,276+11]..src/expansion_helpers.ml[12,276+30])
+                                          Tpat_construct "PrefixSuffix"
+                                          [
+                                            pattern (src/expansion_helpers.ml[12,276+25]..src/expansion_helpers.ml[12,276+26])
+                                              Tpat_var "p/767"
+                                            pattern (src/expansion_helpers.ml[12,276+28]..src/expansion_helpers.ml[12,276+29])
+                                              Tpat_var "s/768"
+                                          ]
+                                      ]
+                                  expression (src/expansion_helpers.ml[12,276+34]..src/expansion_helpers.ml[12,276+58])
+                                    Texp_apply
+                                    expression (src/expansion_helpers.ml[12,276+36]..src/expansion_helpers.ml[12,276+37])
+                                      Texp_ident "Stdlib!.^"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[12,276+34]..src/expansion_helpers.ml[12,276+35])
+                                          Texp_ident "p/767"
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[12,276+38]..src/expansion_helpers.ml[12,276+58])
+                                          Texp_apply
+                                          expression (src/expansion_helpers.ml[12,276+42]..src/expansion_helpers.ml[12,276+43])
+                                            Texp_ident "Stdlib!.^"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[12,276+38]..src/expansion_helpers.ml[12,276+41])
+                                                Texp_constant Const_string("_",(src/expansion_helpers.ml[12,276+39]..src/expansion_helpers.ml[12,276+40]),None)
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[12,276+44]..src/expansion_helpers.ml[12,276+58])
+                                                Texp_apply
+                                                expression (src/expansion_helpers.ml[12,276+49]..src/expansion_helpers.ml[12,276+50])
+                                                  Texp_ident "Stdlib!.^"
+                                                [
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (src/expansion_helpers.ml[12,276+44]..src/expansion_helpers.ml[12,276+48])
+                                                      Texp_ident "name/560"
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (src/expansion_helpers.ml[12,276+51]..src/expansion_helpers.ml[12,276+58])
+                                                      Texp_apply
+                                                      expression (src/expansion_helpers.ml[12,276+55]..src/expansion_helpers.ml[12,276+56])
+                                                        Texp_ident "Stdlib!.^"
+                                                      [
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (src/expansion_helpers.ml[12,276+51]..src/expansion_helpers.ml[12,276+54])
+                                                            Texp_constant Const_string("_",(src/expansion_helpers.ml[12,276+52]..src/expansion_helpers.ml[12,276+53]),None)
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (src/expansion_helpers.ml[12,276+57]..src/expansion_helpers.ml[12,276+58])
+                                                            Texp_ident "s/768"
+                                                      ]
+                                                ]
+                                          ]
+                                    ]
+                                <case>
+                                  pattern (src/expansion_helpers.ml[13,335+4]..src/expansion_helpers.ml[13,335+19])
+                                    Tpat_value
+                                    pattern (src/expansion_helpers.ml[13,335+4]..src/expansion_helpers.ml[13,335+19])
+                                      Tpat_tuple
+                                      [
+                                        pattern (src/expansion_helpers.ml[13,335+4]..src/expansion_helpers.ml[13,335+9])
+                                          Tpat_construct "false"
+                                          []
+                                        pattern (src/expansion_helpers.ml[13,335+11]..src/expansion_helpers.ml[13,335+19])
+                                          Tpat_construct "Prefix"
+                                          [
+                                            pattern (src/expansion_helpers.ml[13,335+18]..src/expansion_helpers.ml[13,335+19])
+                                              Tpat_var "x/769"
+                                          ]
+                                      ]
+                                  expression (src/expansion_helpers.ml[13,335+23]..src/expansion_helpers.ml[13,335+37])
+                                    Texp_apply
+                                    expression (src/expansion_helpers.ml[13,335+25]..src/expansion_helpers.ml[13,335+26])
+                                      Texp_ident "Stdlib!.^"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[13,335+23]..src/expansion_helpers.ml[13,335+24])
+                                          Texp_ident "x/769"
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[13,335+27]..src/expansion_helpers.ml[13,335+37])
+                                          Texp_apply
+                                          expression (src/expansion_helpers.ml[13,335+31]..src/expansion_helpers.ml[13,335+32])
+                                            Texp_ident "Stdlib!.^"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[13,335+27]..src/expansion_helpers.ml[13,335+30])
+                                                Texp_constant Const_string("_",(src/expansion_helpers.ml[13,335+28]..src/expansion_helpers.ml[13,335+29]),None)
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[13,335+33]..src/expansion_helpers.ml[13,335+37])
+                                                Texp_ident "name/560"
+                                          ]
+                                    ]
+                                <case>
+                                  pattern (src/expansion_helpers.ml[14,373+4]..src/expansion_helpers.ml[14,373+19])
+                                    Tpat_value
+                                    pattern (src/expansion_helpers.ml[14,373+4]..src/expansion_helpers.ml[14,373+19])
+                                      Tpat_tuple
+                                      [
+                                        pattern (src/expansion_helpers.ml[14,373+4]..src/expansion_helpers.ml[14,373+9])
+                                          Tpat_construct "false"
+                                          []
+                                        pattern (src/expansion_helpers.ml[14,373+11]..src/expansion_helpers.ml[14,373+19])
+                                          Tpat_construct "Suffix"
+                                          [
+                                            pattern (src/expansion_helpers.ml[14,373+18]..src/expansion_helpers.ml[14,373+19])
+                                              Tpat_var "x/770"
+                                          ]
+                                      ]
+                                  expression (src/expansion_helpers.ml[14,373+23]..src/expansion_helpers.ml[14,373+37])
+                                    Texp_apply
+                                    expression (src/expansion_helpers.ml[14,373+28]..src/expansion_helpers.ml[14,373+29])
+                                      Texp_ident "Stdlib!.^"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[14,373+23]..src/expansion_helpers.ml[14,373+27])
+                                          Texp_ident "name/560"
+                                      <arg>
+                                        Nolabel
+                                        expression (src/expansion_helpers.ml[14,373+30]..src/expansion_helpers.ml[14,373+37])
+                                          Texp_apply
+                                          expression (src/expansion_helpers.ml[14,373+34]..src/expansion_helpers.ml[14,373+35])
+                                            Texp_ident "Stdlib!.^"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[14,373+30]..src/expansion_helpers.ml[14,373+33])
+                                                Texp_constant Const_string("_",(src/expansion_helpers.ml[14,373+31]..src/expansion_helpers.ml[14,373+32]),None)
+                                            <arg>
+                                              Nolabel
+                                              expression (src/expansion_helpers.ml[14,373+36]..src/expansion_helpers.ml[14,373+37])
+                                                Texp_ident "x/770"
+                                          ]
+                                    ]
+                              ]
+                              []
+                        ]
+                  ]
+          ]
+    ]
+  structure_item (src/expansion_helpers.ml[16,412+0]..src/expansion_helpers.ml[17,489+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/expansion_helpers.ml[16,412+4]..src/expansion_helpers.ml[16,412+20])
+          Tpat_var "mangle_type_decl/771"
+        expression (src/expansion_helpers.ml[16,412+21]..src/expansion_helpers.ml[17,489+29]) ghost
+          Texp_function
+          Optional "fixpoint"
+          [
+            <case>
+              pattern (src/expansion_helpers.ml[16,412+22]..src/expansion_helpers.ml[16,412+30])
+                Tpat_var "fixpoint/773"
+              expression (src/expansion_helpers.ml[16,412+31]..src/expansion_helpers.ml[17,489+29]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/expansion_helpers.ml[16,412+31]..src/expansion_helpers.ml[16,412+36])
+                      Tpat_var "affix/774"
+                    expression (src/expansion_helpers.ml[16,412+37]..src/expansion_helpers.ml[17,489+29]) ghost
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (src/expansion_helpers.ml[16,412+37]..src/expansion_helpers.ml[16,412+74])
+                            Tpat_record
+                            [
+                              "ptype_name"
+                                pattern (src/expansion_helpers.ml[16,412+52]..src/expansion_helpers.ml[16,412+69])
+                                  Tpat_record
+                                  [
+                                    "txt"
+                                      pattern (src/expansion_helpers.ml[16,412+60]..src/expansion_helpers.ml[16,412+64])
+                                        Tpat_var "name/1056"
+                                  ]
+                            ]
+                          expression (src/expansion_helpers.ml[17,489+2]..src/expansion_helpers.ml[17,489+29])
+                            Texp_apply
+                            expression (src/expansion_helpers.ml[17,489+2]..src/expansion_helpers.ml[17,489+8])
+                              Texp_ident "mangle/554"
+                            [
+                              <arg>
+                                Optional "fixpoint"
+                                expression (src/expansion_helpers.ml[17,489+10]..src/expansion_helpers.ml[17,489+18])
+                                  Texp_ident "fixpoint/773"
+                              <arg>
+                                Nolabel
+                                expression (src/expansion_helpers.ml[17,489+19]..src/expansion_helpers.ml[17,489+24])
+                                  Texp_ident "affix/774"
+                              <arg>
+                                Nolabel
+                                expression (src/expansion_helpers.ml[17,489+25]..src/expansion_helpers.ml[17,489+29])
+                                  Texp_ident "name/1056"
+                            ]
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/expansion_helpers.ml[19,520+0]..src/expansion_helpers.ml[23,678+73])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/expansion_helpers.ml[19,520+4]..src/expansion_helpers.ml[19,520+14])
+          Tpat_var "mangle_lid/1058"
+        expression (src/expansion_helpers.ml[19,520+15]..src/expansion_helpers.ml[23,678+73]) ghost
+          Texp_function
+          Optional "fixpoint"
+          [
+            <case>
+              pattern (src/expansion_helpers.ml[19,520+16]..src/expansion_helpers.ml[19,520+24])
+                Tpat_var "fixpoint/1060"
+              expression (src/expansion_helpers.ml[19,520+25]..src/expansion_helpers.ml[23,678+73]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/expansion_helpers.ml[19,520+25]..src/expansion_helpers.ml[19,520+30])
+                      Tpat_var "affix/1061"
+                    expression (src/expansion_helpers.ml[19,520+31]..src/expansion_helpers.ml[23,678+73]) ghost
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (src/expansion_helpers.ml[19,520+31]..src/expansion_helpers.ml[19,520+34])
+                            Tpat_var "lid/1062"
+                          expression (src/expansion_helpers.ml[20,557+2]..src/expansion_helpers.ml[23,678+73])
+                            Texp_match
+                            expression (src/expansion_helpers.ml[20,557+8]..src/expansion_helpers.ml[20,557+11])
+                              Texp_ident "lid/1062"
+                            [
+                              <case>
+                                pattern (src/expansion_helpers.ml[21,574+4]..src/expansion_helpers.ml[21,574+12])
+                                  Tpat_value
+                                  pattern (src/expansion_helpers.ml[21,574+4]..src/expansion_helpers.ml[21,574+12])
+                                    Tpat_construct "Lident"
+                                    [
+                                      pattern (src/expansion_helpers.ml[21,574+11]..src/expansion_helpers.ml[21,574+12])
+                                        Tpat_var "s/1063"
+                                    ]
+                                expression (src/expansion_helpers.ml[21,574+16]..src/expansion_helpers.ml[21,574+49])
+                                  Texp_construct "Lident"
+                                  [
+                                    expression (src/expansion_helpers.ml[21,574+23]..src/expansion_helpers.ml[21,574+49])
+                                      Texp_apply
+                                      expression (src/expansion_helpers.ml[21,574+24]..src/expansion_helpers.ml[21,574+30])
+                                        Texp_ident "mangle/554"
+                                      [
+                                        <arg>
+                                          Optional "fixpoint"
+                                          expression (src/expansion_helpers.ml[21,574+32]..src/expansion_helpers.ml[21,574+40])
+                                            Texp_ident "fixpoint/1060"
+                                        <arg>
+                                          Nolabel
+                                          expression (src/expansion_helpers.ml[21,574+41]..src/expansion_helpers.ml[21,574+46])
+                                            Texp_ident "affix/1061"
+                                        <arg>
+                                          Nolabel
+                                          expression (src/expansion_helpers.ml[21,574+47]..src/expansion_helpers.ml[21,574+48])
+                                            Texp_ident "s/1063"
+                                      ]
+                                  ]
+                              <case>
+                                pattern (src/expansion_helpers.ml[22,624+4]..src/expansion_helpers.ml[22,624+15])
+                                  Tpat_value
+                                  pattern (src/expansion_helpers.ml[22,624+4]..src/expansion_helpers.ml[22,624+15])
+                                    Tpat_construct "Ldot"
+                                    [
+                                      pattern (src/expansion_helpers.ml[22,624+10]..src/expansion_helpers.ml[22,624+11])
+                                        Tpat_var "p/1068"
+                                      pattern (src/expansion_helpers.ml[22,624+13]..src/expansion_helpers.ml[22,624+14])
+                                        Tpat_var "s/1069"
+                                    ]
+                                expression (src/expansion_helpers.ml[22,624+19]..src/expansion_helpers.ml[22,624+53])
+                                  Texp_construct "Ldot"
+                                  [
+                                    expression (src/expansion_helpers.ml[22,624+25]..src/expansion_helpers.ml[22,624+26])
+                                      Texp_ident "p/1068"
+                                    expression (src/expansion_helpers.ml[22,624+28]..src/expansion_helpers.ml[22,624+52])
+                                      Texp_apply
+                                      expression (src/expansion_helpers.ml[22,624+28]..src/expansion_helpers.ml[22,624+34])
+                                        Texp_ident "mangle/554"
+                                      [
+                                        <arg>
+                                          Optional "fixpoint"
+                                          expression (src/expansion_helpers.ml[22,624+36]..src/expansion_helpers.ml[22,624+44])
+                                            Texp_ident "fixpoint/1060"
+                                        <arg>
+                                          Nolabel
+                                          expression (src/expansion_helpers.ml[22,624+45]..src/expansion_helpers.ml[22,624+50])
+                                            Texp_ident "affix/1061"
+                                        <arg>
+                                          Nolabel
+                                          expression (src/expansion_helpers.ml[22,624+51]..src/expansion_helpers.ml[22,624+52])
+                                            Texp_ident "s/1069"
+                                      ]
+                                  ]
+                              <case>
+                                pattern (src/expansion_helpers.ml[23,678+4]..src/expansion_helpers.ml[23,678+12])
+                                  Tpat_value
+                                  pattern (src/expansion_helpers.ml[23,678+4]..src/expansion_helpers.ml[23,678+12])
+                                    Tpat_construct "Lapply"
+                                    [
+                                      pattern (src/expansion_helpers.ml[23,678+11]..src/expansion_helpers.ml[23,678+12])
+                                        Tpat_any
+                                      pattern (src/expansion_helpers.ml[23,678+11]..src/expansion_helpers.ml[23,678+12])
+                                        Tpat_any
+                                    ]
+                                expression (src/expansion_helpers.ml[23,678+16]..src/expansion_helpers.ml[23,678+73])
+                                  Texp_apply
+                                  expression (src/expansion_helpers.ml[23,678+16]..src/expansion_helpers.ml[23,678+27])
+                                    Texp_ident "Stdlib!.invalid_arg"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (src/expansion_helpers.ml[23,678+28]..src/expansion_helpers.ml[23,678+73])
+                                        Texp_constant Const_string("Ppxlib.Expansion_helpers.mangle_lid: Lapply",(src/expansion_helpers.ml[23,678+29]..src/expansion_helpers.ml[23,678+72]),None)
+                                  ]
+                            ]
+                            []
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/expansion_helpers.ml[25,753+0]..src/expansion_helpers.ml[25,753+22])
+    Tstr_module
+    Quoter/1070
+      module_expr (src/expansion_helpers.ml[25,753+16]..src/expansion_helpers.ml[25,753+22])
+        Tmod_ident "Ppxlib__!.Quoter"
+]
+
+(setglobal Ppxlib__Expansion_helpers!
+  (let
+    (mangle/554 =
+       (function *opt*/556 affix/559 name/560
+         (funct-body Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(8)<ghost>:116-410
+           (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(9):149-410
+             (let
+               (fixpoint/557 =
+                  (if *opt*/556
+                    (let (*sth*/558 =a (field_imm 0 *opt*/556))
+                      (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(8):129-132
+                        *sth*/558))
+                    (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(8):129-132
+                      "t")))
+               (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(9):149-410
+                 (let
+                   (*match*/2794 =
+                      (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(9):164-179
+                        (apply
+                          (field_imm 48
+                            (field_imm 96 (global Ppxlib__Import!)))
+                          name/560 fixpoint/557))
+                    *match*/2795 = *match*/2794
+                    *match*/2796 = affix/559)
+                   (if *match*/2795
+                     (catch
+                       (catch
+                         (switch* *match*/2796
+                          case tag 0: (exit 2)
+                          case tag 1: (exit 2)
+                          case tag 2:
+                           (let
+                             (s/766 =a (field_imm 1 *match*/2796)
+                              p/765 =a (field_imm 0 *match*/2796))
+                             (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(11):264-275
+                               (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(11):264-275
+                                 (apply (field_imm 30 (global Stdlib!)) p/765
+                                   (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(11):268-275
+                                     (apply (field_imm 30 (global Stdlib!))
+                                       "_" s/766)))))))
+                        with (2)
+                         (let (x/2798 =a (field_imm 0 *match*/2796))
+                           (exit 1 x/2798)))
+                      with (1 x/763)
+                       (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(10):229-230
+                         x/763))
+                     (switch* *match*/2796
+                      case tag 0:
+                       (let (x/769 =a (field_imm 0 *match*/2796))
+                         (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(13):358-372
+                           (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(13):358-372
+                             (apply (field_imm 30 (global Stdlib!)) x/769
+                               (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(13):362-372
+                                 (apply (field_imm 30 (global Stdlib!)) "_"
+                                   name/560))))))
+                      case tag 1:
+                       (let (x/770 =a (field_imm 0 *match*/2796))
+                         (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(14):396-410
+                           (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(14):396-410
+                             (apply (field_imm 30 (global Stdlib!)) name/560
+                               (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(14):403-410
+                                 (apply (field_imm 30 (global Stdlib!)) "_"
+                                   x/770))))))
+                      case tag 2:
+                       (let
+                         (s/768 =a (field_imm 1 *match*/2796)
+                          p/767 =a (field_imm 0 *match*/2796))
+                         (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):310-334
+                           (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):310-334
+                             (apply (field_imm 30 (global Stdlib!)) p/767
+                               (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):314-334
+                                 (apply (field_imm 30 (global Stdlib!)) "_"
+                                   (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):320-334
+                                     (apply (field_imm 30 (global Stdlib!))
+                                       name/560
+                                       (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):327-334
+                                         (apply
+                                           (field_imm 30 (global Stdlib!))
+                                           "_" s/768))))))))))))))))))
+     mangle_type_decl/771 =
+       (function fixpoint/773 affix/774 param/1057
+         (funct-body Ppxlib__Expansion_helpers.mangle_type_decl src/expansion_helpers.ml(16)<ghost>:433-518
+           (let
+             (*match*/2807 =a (field_imm 7 param/1057)
+              *match*/2806 =a (field_imm 6 param/1057)
+              *match*/2805 =a (field_imm 5 param/1057)
+              *match*/2804 =a (field_int 4 param/1057)
+              *match*/2803 =a (field_imm 3 param/1057)
+              *match*/2802 =a (field_imm 2 param/1057)
+              *match*/2801 =a (field_imm 1 param/1057)
+              *match*/2799 =a (field_imm 0 param/1057)
+              *match*/2800 =a (field_imm 1 *match*/2799)
+              name/1056 =a (field_imm 0 *match*/2799))
+             (before Ppxlib__Expansion_helpers.mangle_type_decl src/expansion_helpers.ml(17):491-518
+               (after Ppxlib__Expansion_helpers.mangle_type_decl src/expansion_helpers.ml(17):491-518
+                 (apply mangle/554 fixpoint/773 affix/774 name/1056))))))
+     mangle_lid/1058 =
+       (function fixpoint/1060 affix/1061 lid/1062
+         (funct-body Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(19)<ghost>:535-751
+           (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(20):559-751
+             (switch* lid/1062
+              case tag 0:
+               (let (s/1063 =a (field_imm 0 lid/1062))
+                 (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(21):590-623
+                   (makeblock 0
+                     (after Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(21):597-623
+                       (apply mangle/554 fixpoint/1060 affix/1061 s/1063)))))
+              case tag 1:
+               (let
+                 (s/1069 =a (field_imm 1 lid/1062)
+                  p/1068 =a (field_imm 0 lid/1062))
+                 (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(22):643-677
+                   (makeblock 1 p/1068
+                     (after Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(22):652-676
+                       (apply mangle/554 fixpoint/1060 affix/1061 s/1069)))))
+              case tag 2:
+               (let
+                 (*match*/2809 =a (field_imm 1 lid/1062)
+                  *match*/2808 =a (field_imm 0 lid/1062))
+                 (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(23):694-751
+                   (after Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(23):694-751
+                     (apply (field_imm 0 (global Stdlib!))
+                       "Ppxlib.Expansion_helpers.mangle_lid: Lapply")))))))))
+    (pseudo <unknown location>
+      (makeblock 0 mangle/554 mangle_type_decl/771 mangle_lid/1058))))
+(setglobal Ppxlib__Expansion_helpers!
+  (let
+    (mangle/554 =
+       (function *opt*/556 affix/559 name/560
+         (funct-body Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(8)<ghost>:116-410
+           (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(9):149-410
+             (let
+               (fixpoint/557 =
+                  (if *opt*/556
+                    (let (*sth*/558 =a (field_imm 0 *opt*/556))
+                      (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(8):129-132
+                        *sth*/558))
+                    (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(8):129-132
+                      "t")))
+               (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(9):149-410
+                 (let
+                   (*match*/2794 =
+                      (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(9):164-179
+                        (apply
+                          (field_imm 48
+                            (field_imm 96 (global Ppxlib__Import!)))
+                          name/560 fixpoint/557))
+                    *match*/2795 = *match*/2794
+                    *match*/2796 = affix/559)
+                   (if *match*/2795
+                     (catch
+                       (switch* *match*/2796
+                        case tag 0: (exit 2)
+                        case tag 1: (exit 2)
+                        case tag 2:
+                         (let
+                           (s/766 =a (field_imm 1 *match*/2796)
+                            p/765 =a (field_imm 0 *match*/2796))
+                           (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(11):264-275
+                             (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(11):264-275
+                               (apply (field_imm 30 (global Stdlib!)) p/765
+                                 (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(11):268-275
+                                   (apply (field_imm 30 (global Stdlib!)) "_"
+                                     s/766)))))))
+                      with (2)
+                       (let
+                         (x/2798 =a (field_imm 0 *match*/2796)
+                          x/2810 = x/2798)
+                         (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(10):229-230
+                           x/2810)))
+                     (switch* *match*/2796
+                      case tag 0:
+                       (let (x/769 =a (field_imm 0 *match*/2796))
+                         (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(13):358-372
+                           (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(13):358-372
+                             (apply (field_imm 30 (global Stdlib!)) x/769
+                               (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(13):362-372
+                                 (apply (field_imm 30 (global Stdlib!)) "_"
+                                   name/560))))))
+                      case tag 1:
+                       (let (x/770 =a (field_imm 0 *match*/2796))
+                         (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(14):396-410
+                           (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(14):396-410
+                             (apply (field_imm 30 (global Stdlib!)) name/560
+                               (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(14):403-410
+                                 (apply (field_imm 30 (global Stdlib!)) "_"
+                                   x/770))))))
+                      case tag 2:
+                       (let
+                         (s/768 =a (field_imm 1 *match*/2796)
+                          p/767 =a (field_imm 0 *match*/2796))
+                         (before Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):310-334
+                           (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):310-334
+                             (apply (field_imm 30 (global Stdlib!)) p/767
+                               (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):314-334
+                                 (apply (field_imm 30 (global Stdlib!)) "_"
+                                   (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):320-334
+                                     (apply (field_imm 30 (global Stdlib!))
+                                       name/560
+                                       (after Ppxlib__Expansion_helpers.mangle src/expansion_helpers.ml(12):327-334
+                                         (apply
+                                           (field_imm 30 (global Stdlib!))
+                                           "_" s/768))))))))))))))))))
+     mangle_type_decl/771 =
+       (function fixpoint/773 affix/774 param/1057
+         (funct-body Ppxlib__Expansion_helpers.mangle_type_decl src/expansion_helpers.ml(16)<ghost>:433-518
+           (let
+             (*match*/2799 =a (field_imm 0 param/1057)
+              name/1056 =a (field_imm 0 *match*/2799))
+             (before Ppxlib__Expansion_helpers.mangle_type_decl src/expansion_helpers.ml(17):491-518
+               (after Ppxlib__Expansion_helpers.mangle_type_decl src/expansion_helpers.ml(17):491-518
+                 (apply mangle/554 fixpoint/773 affix/774 name/1056))))))
+     mangle_lid/1058 =
+       (function fixpoint/1060 affix/1061 lid/1062
+         (funct-body Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(19)<ghost>:535-751
+           (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(20):559-751
+             (switch* lid/1062
+              case tag 0:
+               (let (s/1063 =a (field_imm 0 lid/1062))
+                 (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(21):590-623
+                   (makeblock 0
+                     (after Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(21):597-623
+                       (apply mangle/554 fixpoint/1060 affix/1061 s/1063)))))
+              case tag 1:
+               (let
+                 (s/1069 =a (field_imm 1 lid/1062)
+                  p/1068 =a (field_imm 0 lid/1062))
+                 (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(22):643-677
+                   (makeblock 1 p/1068
+                     (after Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(22):652-676
+                       (apply mangle/554 fixpoint/1060 affix/1061 s/1069)))))
+              case tag 2:
+               (before Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(23):694-751
+                 (after Ppxlib__Expansion_helpers.mangle_lid src/expansion_helpers.ml(23):694-751
+                   (apply (field_imm 0 (global Stdlib!))
+                     "Ppxlib.Expansion_helpers.mangle_lid: Lapply"))))))))
+    (pseudo <unknown location>
+      (makeblock 0 mangle/554 mangle_type_decl/771 mangle_lid/1058))))

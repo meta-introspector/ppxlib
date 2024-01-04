@@ -1,0 +1,8 @@
+0.325s  224MB 43.4MB 43.4MB metaquot/ppxlib_metaquot.ml
+  0.005s 2.86MB 1.53MB 1.53MB parsing
+    0.005s 2.86MB 1.53MB 1.53MB parser
+  0.301s  181MB 40.6MB 42.1MB typing
+  0.001s 2.04MB 0.28MB 42.4MB transl
+  0.005s 18.4MB 0.48MB 42.9MB generate
+  0.011s 19.1MB 0.50MB 43.4MB other
+0.008s ------ ------ ------ other

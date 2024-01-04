@@ -1,0 +1,18 @@
+0.248s  140MB 32.7MB 34.5MB src/code_matcher.ml
+  0.001s 0.01MB ------ ------ parsing
+    0.001s 0.01MB ------ ------ parser
+  0.202s  101MB 30.9MB 32.6MB typing
+  0.003s 2.00MB 0.25MB 32.9MB transl
+  0.028s 17.3MB 1.09MB 34.0MB generate
+    0.011s 6.79MB 0.65MB 33.5MB compile_phrases
+      0.001s 0.17MB ------ ------ selection
+      0.001s 0.30MB ------ ------ comballoc
+      0.001s 2.00MB 0.18MB 33.1MB liveness
+      0.001s ------ ------ ------ spill
+      0.004s 2.32MB 0.28MB 33.3MB regalloc
+      0.001s 2.00MB 0.18MB 33.5MB emit
+      0.001s ------ ------ ------ other
+    0.009s ------ ------ ------ assemble
+    0.008s 10.5MB 0.43MB 34.0MB other
+  0.015s 19.7MB 0.50MB 34.5MB other
+0.009s 3.07MB 1.75MB ------ other

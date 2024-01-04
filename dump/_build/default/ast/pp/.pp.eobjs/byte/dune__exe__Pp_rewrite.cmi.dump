@@ -1,0 +1,45 @@
+[
+  signature_item (ast/pp/pp_rewrite.mli[1,0+0]..[1,0+45])
+    Psig_value
+    value_description "rewrite" (ast/pp/pp_rewrite.mli[1,0+4]..[1,0+11]) (ast/pp/pp_rewrite.mli[1,0+0]..[1,0+45])
+      core_type (ast/pp/pp_rewrite.mli[1,0+14]..[1,0+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/pp/pp_rewrite.mli[1,0+14]..[1,0+20])
+          Ptyp_constr "string" (ast/pp/pp_rewrite.mli[1,0+14]..[1,0+20])
+          []
+        core_type (ast/pp/pp_rewrite.mli[1,0+24]..[1,0+45])
+          Ptyp_arrow
+          Nolabel
+          core_type (ast/pp/pp_rewrite.mli[1,0+24]..[1,0+37])
+            Ptyp_constr "Lexing.lexbuf" (ast/pp/pp_rewrite.mli[1,0+24]..[1,0+37])
+            []
+          core_type (ast/pp/pp_rewrite.mli[1,0+41]..[1,0+45])
+            Ptyp_constr "unit" (ast/pp/pp_rewrite.mli[1,0+41]..[1,0+45])
+            []
+      []
+]
+
+val rewrite : string -> Lexing.lexbuf -> unit
+[
+  signature_item (ast/pp/pp_rewrite.mli[1,0+0]..ast/pp/pp_rewrite.mli[1,0+45])
+    Tsig_value
+    value_description rewrite/115 (ast/pp/pp_rewrite.mli[1,0+0]..ast/pp/pp_rewrite.mli[1,0+45])
+      core_type (ast/pp/pp_rewrite.mli[1,0+14]..ast/pp/pp_rewrite.mli[1,0+45])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/pp/pp_rewrite.mli[1,0+14]..ast/pp/pp_rewrite.mli[1,0+20])
+          Ttyp_constr "string/17!"
+          []
+        core_type (ast/pp/pp_rewrite.mli[1,0+24]..ast/pp/pp_rewrite.mli[1,0+45])
+          Ttyp_arrow
+          Nolabel
+          core_type (ast/pp/pp_rewrite.mli[1,0+24]..ast/pp/pp_rewrite.mli[1,0+37])
+            Ttyp_constr "Stdlib!.Lexing.lexbuf"
+            []
+          core_type (ast/pp/pp_rewrite.mli[1,0+41]..ast/pp/pp_rewrite.mli[1,0+45])
+            Ttyp_constr "unit/6!"
+            []
+      []
+]
+

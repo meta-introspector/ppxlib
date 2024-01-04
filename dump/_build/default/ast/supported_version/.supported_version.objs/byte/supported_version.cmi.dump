@@ -1,0 +1,207 @@
+[
+  signature_item (ast/supported_version/supported_version.mli[1,0+0]..[1,0+42])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (ast/supported_version/supported_version.mli[1,0+0]..[1,0+42])
+        Pstr_eval
+        expression (ast/supported_version/supported_version.mli[1,0+0]..[1,0+42])
+          Pexp_constant PConst_string(" Supported versions of the OCaml AST ",(ast/supported_version/supported_version.mli[1,0+0]..[1,0+42]),None)
+    ]
+  signature_item (ast/supported_version/supported_version.mli[3,44+0]..[3,44+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (ast/supported_version/supported_version.mli[3,44+5]..[3,44+6]) (ast/supported_version/supported_version.mli[3,44+0]..[3,44+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ast/supported_version/supported_version.mli[5,52+0]..[5,52+16])
+    Psig_value
+    value_description "all" (ast/supported_version/supported_version.mli[5,52+4]..[5,52+7]) (ast/supported_version/supported_version.mli[5,52+0]..[5,52+16])
+      core_type (ast/supported_version/supported_version.mli[5,52+10]..[5,52+16])
+        Ptyp_constr "list" (ast/supported_version/supported_version.mli[5,52+12]..[5,52+16])
+        [
+          core_type (ast/supported_version/supported_version.mli[5,52+10]..[5,52+11])
+            Ptyp_constr "t" (ast/supported_version/supported_version.mli[5,52+10]..[5,52+11])
+            []
+        ]
+      []
+  signature_item (ast/supported_version/supported_version.mli[7,70+0]..[7,70+27])
+    Psig_value
+    value_description "to_string" (ast/supported_version/supported_version.mli[7,70+4]..[7,70+13]) (ast/supported_version/supported_version.mli[7,70+0]..[7,70+27])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/supported_version/supported_version.mli[8,98+0]..[8,98+37])
+            Pstr_eval
+            expression (ast/supported_version/supported_version.mli[8,98+0]..[8,98+37])
+              Pexp_constant PConst_string(" Return a string such as \"4.02\" ",(ast/supported_version/supported_version.mli[8,98+0]..[8,98+37]),None)
+        ]
+      core_type (ast/supported_version/supported_version.mli[7,70+16]..[7,70+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/supported_version/supported_version.mli[7,70+16]..[7,70+17])
+          Ptyp_constr "t" (ast/supported_version/supported_version.mli[7,70+16]..[7,70+17])
+          []
+        core_type (ast/supported_version/supported_version.mli[7,70+21]..[7,70+27])
+          Ptyp_constr "string" (ast/supported_version/supported_version.mli[7,70+21]..[7,70+27])
+          []
+      []
+  signature_item (ast/supported_version/supported_version.mli[10,137+0]..[10,137+21])
+    Psig_value
+    value_description "to_int" (ast/supported_version/supported_version.mli[10,137+4]..[10,137+10]) (ast/supported_version/supported_version.mli[10,137+0]..[10,137+21])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/supported_version/supported_version.mli[11,159+0]..[11,159+38])
+            Pstr_eval
+            expression (ast/supported_version/supported_version.mli[11,159+0]..[11,159+38])
+              Pexp_constant PConst_string(" Return an integer such as [402] ",(ast/supported_version/supported_version.mli[11,159+0]..[11,159+38]),None)
+        ]
+      core_type (ast/supported_version/supported_version.mli[10,137+13]..[10,137+21])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/supported_version/supported_version.mli[10,137+13]..[10,137+14])
+          Ptyp_constr "t" (ast/supported_version/supported_version.mli[10,137+13]..[10,137+14])
+          []
+        core_type (ast/supported_version/supported_version.mli[10,137+18]..[10,137+21])
+          Ptyp_constr "int" (ast/supported_version/supported_version.mli[10,137+18]..[10,137+21])
+          []
+      []
+  signature_item (ast/supported_version/supported_version.mli[13,199+0]..[13,199+34])
+    Psig_value
+    value_description "of_string" (ast/supported_version/supported_version.mli[13,199+4]..[13,199+13]) (ast/supported_version/supported_version.mli[13,199+0]..[13,199+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/supported_version/supported_version.mli[14,234+0]..[14,234+54])
+            Pstr_eval
+            expression (ast/supported_version/supported_version.mli[14,234+0]..[14,234+54])
+              Pexp_constant PConst_string(" Parse a string as reported by [ocamlc -version] ",(ast/supported_version/supported_version.mli[14,234+0]..[14,234+54]),None)
+        ]
+      core_type (ast/supported_version/supported_version.mli[13,199+16]..[13,199+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/supported_version/supported_version.mli[13,199+16]..[13,199+22])
+          Ptyp_constr "string" (ast/supported_version/supported_version.mli[13,199+16]..[13,199+22])
+          []
+        core_type (ast/supported_version/supported_version.mli[13,199+26]..[13,199+34])
+          Ptyp_constr "option" (ast/supported_version/supported_version.mli[13,199+28]..[13,199+34])
+          [
+            core_type (ast/supported_version/supported_version.mli[13,199+26]..[13,199+27])
+              Ptyp_constr "t" (ast/supported_version/supported_version.mli[13,199+26]..[13,199+27])
+              []
+          ]
+      []
+]
+
+[@@@ocaml.text " Supported versions of the OCaml AST "]
+type t
+val all : t list
+val to_string : t -> string[@@ocaml.doc " Return a string such as \"4.02\" "]
+val to_int : t -> int[@@ocaml.doc " Return an integer such as [402] "]
+val of_string : string -> t option[@@ocaml.doc
+                                    " Parse a string as reported by [ocamlc -version] "]
+[
+  signature_item (ast/supported_version/supported_version.mli[1,0+0]..ast/supported_version/supported_version.mli[1,0+42])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (ast/supported_version/supported_version.mli[1,0+0]..[1,0+42])
+        Pstr_eval
+        expression (ast/supported_version/supported_version.mli[1,0+0]..[1,0+42])
+          Pexp_constant PConst_string(" Supported versions of the OCaml AST ",(ast/supported_version/supported_version.mli[1,0+0]..[1,0+42]),None)
+    ]
+  signature_item (ast/supported_version/supported_version.mli[3,44+0]..ast/supported_version/supported_version.mli[3,44+6])
+    Tsig_type Rec
+    [
+      type_declaration t/86 (ast/supported_version/supported_version.mli[3,44+0]..ast/supported_version/supported_version.mli[3,44+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ast/supported_version/supported_version.mli[5,52+0]..ast/supported_version/supported_version.mli[5,52+16])
+    Tsig_value
+    value_description all/87 (ast/supported_version/supported_version.mli[5,52+0]..ast/supported_version/supported_version.mli[5,52+16])
+      core_type (ast/supported_version/supported_version.mli[5,52+10]..ast/supported_version/supported_version.mli[5,52+16])
+        Ttyp_constr "list/11!"
+        [
+          core_type (ast/supported_version/supported_version.mli[5,52+10]..ast/supported_version/supported_version.mli[5,52+11])
+            Ttyp_constr "t/86"
+            []
+        ]
+      []
+  signature_item (ast/supported_version/supported_version.mli[7,70+0]..ast/supported_version/supported_version.mli[7,70+27])
+    Tsig_value
+    value_description to_string/88 (ast/supported_version/supported_version.mli[7,70+0]..ast/supported_version/supported_version.mli[7,70+27])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/supported_version/supported_version.mli[8,98+0]..[8,98+37])
+            Pstr_eval
+            expression (ast/supported_version/supported_version.mli[8,98+0]..[8,98+37])
+              Pexp_constant PConst_string(" Return a string such as \"4.02\" ",(ast/supported_version/supported_version.mli[8,98+0]..[8,98+37]),None)
+        ]
+      core_type (ast/supported_version/supported_version.mli[7,70+16]..ast/supported_version/supported_version.mli[7,70+27])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/supported_version/supported_version.mli[7,70+16]..ast/supported_version/supported_version.mli[7,70+17])
+          Ttyp_constr "t/86"
+          []
+        core_type (ast/supported_version/supported_version.mli[7,70+21]..ast/supported_version/supported_version.mli[7,70+27])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (ast/supported_version/supported_version.mli[10,137+0]..ast/supported_version/supported_version.mli[10,137+21])
+    Tsig_value
+    value_description to_int/89 (ast/supported_version/supported_version.mli[10,137+0]..ast/supported_version/supported_version.mli[10,137+21])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/supported_version/supported_version.mli[11,159+0]..[11,159+38])
+            Pstr_eval
+            expression (ast/supported_version/supported_version.mli[11,159+0]..[11,159+38])
+              Pexp_constant PConst_string(" Return an integer such as [402] ",(ast/supported_version/supported_version.mli[11,159+0]..[11,159+38]),None)
+        ]
+      core_type (ast/supported_version/supported_version.mli[10,137+13]..ast/supported_version/supported_version.mli[10,137+21])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/supported_version/supported_version.mli[10,137+13]..ast/supported_version/supported_version.mli[10,137+14])
+          Ttyp_constr "t/86"
+          []
+        core_type (ast/supported_version/supported_version.mli[10,137+18]..ast/supported_version/supported_version.mli[10,137+21])
+          Ttyp_constr "int/1!"
+          []
+      []
+  signature_item (ast/supported_version/supported_version.mli[13,199+0]..ast/supported_version/supported_version.mli[13,199+34])
+    Tsig_value
+    value_description of_string/90 (ast/supported_version/supported_version.mli[13,199+0]..ast/supported_version/supported_version.mli[13,199+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/supported_version/supported_version.mli[14,234+0]..[14,234+54])
+            Pstr_eval
+            expression (ast/supported_version/supported_version.mli[14,234+0]..[14,234+54])
+              Pexp_constant PConst_string(" Parse a string as reported by [ocamlc -version] ",(ast/supported_version/supported_version.mli[14,234+0]..[14,234+54]),None)
+        ]
+      core_type (ast/supported_version/supported_version.mli[13,199+16]..ast/supported_version/supported_version.mli[13,199+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/supported_version/supported_version.mli[13,199+16]..ast/supported_version/supported_version.mli[13,199+22])
+          Ttyp_constr "string/17!"
+          []
+        core_type (ast/supported_version/supported_version.mli[13,199+26]..ast/supported_version/supported_version.mli[13,199+34])
+          Ttyp_constr "option/12!"
+          [
+            core_type (ast/supported_version/supported_version.mli[13,199+26]..ast/supported_version/supported_version.mli[13,199+27])
+              Ttyp_constr "t/86"
+              []
+          ]
+      []
+]
+

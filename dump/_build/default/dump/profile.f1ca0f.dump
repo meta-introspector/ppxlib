@@ -1,0 +1,5 @@
+0.004s 6.21MB 1.90MB 1.90MB test/deriving_warning/disable/ppx_warning_flags_test.pp.ml
+  0.002s 2.00MB 0.40MB 0.40MB typing
+  ------ 0.03MB ------ ------ generate
+  0.002s 4.17MB 1.49MB 1.90MB other
+0.004s ------ ------ ------ other

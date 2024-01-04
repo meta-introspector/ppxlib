@@ -1,0 +1,11 @@
+0.009s 8.61MB 2.24MB 2.24MB test/501_migrations/compare_on.ml
+  0.002s 2.93MB 1.59MB 1.59MB parsing
+    0.002s 2.93MB 1.59MB 1.59MB parser
+  0.002s 3.44MB 0.62MB 2.21MB typing
+  0.004s 0.06MB ------ ------ generate
+    ------ 0.06MB ------ ------ compile_phrases
+      ------ 0.06MB ------ ------ spill
+    0.003s ------ ------ ------ assemble
+    0.001s ------ ------ ------ other
+  0.001s 2.17MB 0.03MB 2.24MB other
+0.004s ------ ------ ------ other

@@ -1,0 +1,9 @@
+0.007s 8.65MB 2.50MB 2.50MB ast/pp/pp.ml
+  0.001s 2.93MB 1.59MB 1.59MB parsing
+    0.001s 2.93MB 1.59MB 1.59MB parser
+  0.002s 2.21MB 0.59MB 2.18MB typing
+  0.003s 2.13MB 0.19MB 2.37MB generate
+    0.002s ------ ------ ------ assemble
+    0.001s 2.13MB 0.19MB 2.37MB other
+  0.001s 1.37MB 0.12MB 2.50MB other
+0.004s ------ ------ ------ other

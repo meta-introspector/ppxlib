@@ -1,0 +1,8 @@
+0.084s  144MB 9.50MB 9.50MB stdppx/stdppx.ml
+  0.003s 4.83MB 1.82MB 1.82MB parsing
+    0.003s 4.83MB 1.82MB 1.82MB parser
+  0.055s 59.0MB 6.40MB 8.22MB typing
+  0.001s 2.12MB 0.09MB 8.32MB transl
+  0.013s 36.8MB 1.06MB 9.38MB generate
+  0.012s 41.4MB 0.12MB 9.50MB other
+0.004s ------ ------ ------ other

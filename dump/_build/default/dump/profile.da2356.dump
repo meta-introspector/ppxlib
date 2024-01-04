@@ -1,0 +1,6 @@
+0.013s 2.64MB 1.30MB 1.30MB examples/simple-deriver/ppx_deriving_accessors.cmxs
+  0.002s 2.63MB 1.30MB 1.30MB regalloc
+  0.003s ------ ------ ------ assemble
+  0.007s ------ ------ ------ c-linker
+  0.001s 0.01MB ------ ------ other
+0.005s ------ ------ ------ other

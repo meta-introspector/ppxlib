@@ -1,0 +1,884 @@
+[
+  structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Pstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+34])
+                            Pexp_constant PConst_string("ppx_warning_flags_testing_enable",(<command-line>[1,0+1]..[1,0+33]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+0]..[1,0+71])
+    Pstr_type Rec
+    [
+      type_declaration "t" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+5]..[1,0+6]) (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+0]..[1,0+71])
+        attribute "deriving_inline"
+          [
+            structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+70])
+              Pstr_eval
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+70])
+                Pexp_tuple
+                [
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+44])
+                    Pexp_ident "zero_do_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+44])
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+46]..[1,0+57])
+                    Pexp_ident "one_no_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+46]..[1,0+57])
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+59]..[1,0+70])
+                    Pexp_ident "two_do_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+59]..[1,0+70])
+                ]
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+9]..[1,0+12])
+              Ptyp_constr "int" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+9]..[1,0+12])
+              []
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+0]..[3,73+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+4]..[3,73+5])
+          Ppat_any
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+8]..[3,73+25])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+12]..[3,73+19])
+            Ppat_constraint
+            pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+13]..[3,73+14])
+              Ppat_any
+            core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+17]..[3,73+18])
+              Ptyp_constr "t" (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+17]..[3,73+18])
+              []
+          expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+23]..[3,73+25])
+            Pexp_construct "()" (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+23]..[3,73+25])
+            None
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[5,100+0]..[7,135+3])
+    Pstr_module
+    "Zero" (test/deriving_warning/enable/ppx_warning_flags_test.ml[5,100+7]..[5,100+11])
+      module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[5,100+14]..[7,135+3])
+        Pmod_structure
+        [
+          structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+2]..[6,121+13])
+            Pstr_type Rec
+            [
+              type_declaration "t" (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+7]..[6,121+8]) (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+2]..[6,121+13])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_variant
+                    [
+                      (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+11]..[6,121+13])
+                        "T0" (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+11]..[6,121+13])
+                        []
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+0]..[9,140+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+4]..[9,140+8])
+          Ppat_var "zero" (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+4]..[9,140+8])
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+11]..[9,140+18])
+          Pexp_construct "Zero.T0" (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+11]..[9,140+18])
+          None
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[11,160+0]..[20,295+27])
+    Pstr_include      attribute "ocaml.doc"
+        [
+          structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+17]..[20,295+26])
+            Pstr_eval
+            expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+17]..[20,295+26])
+              Pexp_constant PConst_string("@inline",(test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+18]..[20,295+25]),None)
+        ]
+    module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[11,160+8]..[20,295+3])
+      Pmod_structure
+      [
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+2]..[12,175+26])
+          Pstr_attribute "ocaml.warning"
+          [
+            structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+20]..[12,175+25])
+              Pstr_eval
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+20]..[12,175+25])
+                Pexp_constant PConst_string("-60",(test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+21]..[12,175+24]),None)
+          ]
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[14,203+2]..[16,250+5])
+          Pstr_module
+          "One" (test/deriving_warning/enable/ppx_warning_flags_test.ml[14,203+9]..[14,203+12])
+            module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[14,203+15]..[16,250+5])
+              Pmod_structure
+              [
+                structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+4]..[15,225+24])
+                  Pstr_type Rec
+                  [
+                    type_declaration "t" (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+12]..[15,225+13]) (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+4]..[15,225+24])
+                      ptype_params =
+                        [
+                          core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+9]..[15,225+11])
+                            Ptyp_var a
+                        ]
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_variant
+                          [
+                            (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+16]..[15,225+24])
+                              "T1" (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+16]..[15,225+18])
+                              [
+                                core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+22]..[15,225+24])
+                                  Ptyp_var a
+                              ]
+                              None
+                          ]
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+              ]
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+2]..[18,257+23])
+          Pstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+6]..[18,257+9])
+                Ppat_var "one" (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+6]..[18,257+9])
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+12]..[18,257+23])
+                Pexp_construct "One.T1" (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+12]..[18,257+18])
+                Some
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+19]..[18,257+23])
+                    Pexp_ident "zero" (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+19]..[18,257+23])
+          ]
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+2]..[19,281+13])
+          Pstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+6]..[19,281+7])
+                Ppat_any
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+10]..[19,281+13])
+                Pexp_ident "one" (test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+10]..[19,281+13])
+          ]
+      ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[22,324+0]..[24,378+3])
+    Pstr_module
+    "Two" (test/deriving_warning/enable/ppx_warning_flags_test.ml[22,324+7]..[22,324+10])
+      module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[22,324+13]..[24,378+3])
+        Pmod_structure
+        [
+          structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+2]..[23,344+33])
+            Pstr_type Rec
+            [
+              type_declaration "t" (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+16]..[23,344+17]) (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+2]..[23,344+33])
+                ptype_params =
+                  [
+                    core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+8]..[23,344+10])
+                      Ptyp_var a
+                    core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+12]..[23,344+14])
+                      Ptyp_var b
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_variant
+                    [
+                      (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+20]..[23,344+33])
+                        "T2" (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+20]..[23,344+22])
+                        [
+                          core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+26]..[23,344+28])
+                            Ptyp_var a
+                          core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+31]..[23,344+33])
+                            Ptyp_var b
+                        ]
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+0]..[26,383+28])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+4]..[26,383+7])
+          Ppat_var "two" (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+4]..[26,383+7])
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+10]..[26,383+28])
+          Pexp_construct "Two.T2" (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+10]..[26,383+16])
+          Some
+            expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+17]..[26,383+28])
+              Pexp_tuple
+              [
+                expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+18]..[26,383+22])
+                  Pexp_ident "zero" (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+18]..[26,383+22])
+                expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+24]..[26,383+27])
+                  Pexp_ident "one" (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+24]..[26,383+27])
+              ]
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[28,413+0]..[28,413+8])
+    Pstr_attribute "end"
+    []
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+0]..[30,423+43])
+    Pstr_type Rec
+    [
+      type_declaration "s" (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+5]..[30,423+6]) (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+0]..[30,423+43])
+        attribute "deriving_inline"
+          [
+            structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+32]..[30,423+42])
+              Pstr_eval
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+32]..[30,423+42])
+                Pexp_ident "alias_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+32]..[30,423+42])
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+9]..[30,423+12])
+              Ptyp_constr "int" (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+9]..[30,423+12])
+              []
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+0]..[32,468+25])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+4]..[32,468+5])
+          Ppat_any
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+8]..[32,468+25])
+          Pexp_fun
+          Nolabel
+          None
+          pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+12]..[32,468+19])
+            Ppat_constraint
+            pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+13]..[32,468+14])
+              Ppat_any
+            core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+17]..[32,468+18])
+              Ptyp_constr "s" (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+17]..[32,468+18])
+              []
+          expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+23]..[32,468+25])
+            Pexp_construct "()" (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+23]..[32,468+25])
+            None
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+0]..[33,494+17])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+4]..[33,494+12])
+          Ppat_var "unit_one" (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+4]..[33,494+12])
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+15]..[33,494+17])
+          Pexp_construct "()" (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+15]..[33,494+17])
+          None
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+0]..[34,512+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+4]..[34,512+12])
+          Ppat_var "unit_two" (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+4]..[34,512+12])
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+15]..[34,512+23])
+          Pexp_ident "unit_one" (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+15]..[34,512+23])
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+0]..[35,536+16])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+4]..[35,536+5])
+          Ppat_any
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+8]..[35,536+16])
+          Pexp_ident "unit_two" (test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+8]..[35,536+16])
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[37,554+0]..[37,554+8])
+    Pstr_attribute "end"
+    []
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_warning_flags_testing_enable")]
+  }]
+type t = int[@@deriving_inline (zero_do_warn, one_no_warn, two_do_warn)]
+let _ = fun (_ : t) -> ()
+module Zero = struct type t =
+                       | T0  end
+let zero = Zero.T0
+include
+  struct
+    [@@@ocaml.warning "-60"]
+    module One = struct type 'a t =
+                          | T1 of 'a  end
+    let one = One.T1 zero
+    let _ = one
+  end[@@ocaml.doc "@inline"]
+module Two = struct type ('a, 'b) t =
+                      | T2 of 'a * 'b  end
+let two = Two.T2 (zero, one)
+[@@@end ]
+type s = int[@@deriving_inline alias_warn]
+let _ = fun (_ : s) -> ()
+let unit_one = ()
+let unit_two = unit_one
+let _ = unit_two
+[@@@end ]
+[
+  structure_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+34])
+                            Pexp_constant PConst_string("ppx_warning_flags_testing_enable",(<command-line>[1,0+1]..[1,0+33]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+71])
+    Tstr_type Rec
+    [
+      type_declaration t/87 (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+71])
+        attribute "deriving_inline"
+          [
+            structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+70])
+              Pstr_eval
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+70])
+                Pexp_tuple
+                [
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+44])
+                    Pexp_ident "zero_do_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+32]..[1,0+44])
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+46]..[1,0+57])
+                    Pexp_ident "one_no_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+46]..[1,0+57])
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+59]..[1,0+70])
+                    Pexp_ident "two_do_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+59]..[1,0+70])
+                ]
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+9]..test/deriving_warning/enable/ppx_warning_flags_test.ml[1,0+12])
+              Ttyp_constr "int/1!"
+              []
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+25])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+5])
+          Tpat_any
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+8]..test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+25])
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+13]..test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+14])
+                Tpat_extra_constraint
+                core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+17]..test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+18])
+                  Ttyp_constr "t/87"
+                  []
+                pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+13]..test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+14])
+                  Tpat_any
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+23]..test/deriving_warning/enable/ppx_warning_flags_test.ml[3,73+25])
+                Texp_construct "()"
+                []
+          ]
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[5,100+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[7,135+3])
+    Tstr_module
+    Zero/91
+      module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[5,100+14]..test/deriving_warning/enable/ppx_warning_flags_test.ml[7,135+3])
+        Tmod_structure
+        [
+          structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+13])
+            Tstr_type Rec
+            [
+              type_declaration t/89 (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+13])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_variant
+                    [
+                      (test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+11]..test/deriving_warning/enable/ppx_warning_flags_test.ml[6,121+13])
+                        T0/90
+                        []
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+18])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+8])
+          Tpat_var "zero/92"
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+11]..test/deriving_warning/enable/ppx_warning_flags_test.ml[9,140+18])
+          Texp_construct "Zero.T0"
+          []
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[11,160+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+27])
+    Tstr_include      attribute "ocaml.doc"
+        [
+          structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+17]..[20,295+26])
+            Pstr_eval
+            expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+17]..[20,295+26])
+              Pexp_constant PConst_string("@inline",(test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+18]..[20,295+25]),None)
+        ]
+    module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[11,160+8]..test/deriving_warning/enable/ppx_warning_flags_test.ml[20,295+3])
+      Tmod_structure
+      [
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+26])
+          Tstr_attribute "ocaml.warning"
+          [
+            structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+20]..[12,175+25])
+              Pstr_eval
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+20]..[12,175+25])
+                Pexp_constant PConst_string("-60",(test/deriving_warning/enable/ppx_warning_flags_test.ml[12,175+21]..[12,175+24]),None)
+          ]
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[14,203+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[16,250+5])
+          Tstr_module
+          One/95
+            module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[14,203+15]..test/deriving_warning/enable/ppx_warning_flags_test.ml[16,250+5])
+              Tmod_structure
+              [
+                structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+24])
+                  Tstr_type Rec
+                  [
+                    type_declaration t/93 (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+24])
+                      ptype_params =
+                        [
+                          core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+9]..test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+11])
+                            Ttyp_var a
+                        ]
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_variant
+                          [
+                            (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+16]..test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+24])
+                              T1/94
+                              [
+                                core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+22]..test/deriving_warning/enable/ppx_warning_flags_test.ml[15,225+24])
+                                  Ttyp_var a
+                              ]
+                              None
+                          ]
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+              ]
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+23])
+          Tstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+6]..test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+9])
+                Tpat_var "one/96"
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+12]..test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+23])
+                Texp_construct "One.T1"
+                [
+                  expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+19]..test/deriving_warning/enable/ppx_warning_flags_test.ml[18,257+23])
+                    Texp_ident "zero/92"
+                ]
+          ]
+        structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+13])
+          Tstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+6]..test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+7])
+                Tpat_any
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+10]..test/deriving_warning/enable/ppx_warning_flags_test.ml[19,281+13])
+                Texp_ident "one/96"
+          ]
+      ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[22,324+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[24,378+3])
+    Tstr_module
+    Two/102
+      module_expr (test/deriving_warning/enable/ppx_warning_flags_test.ml[22,324+13]..test/deriving_warning/enable/ppx_warning_flags_test.ml[24,378+3])
+        Tmod_structure
+        [
+          structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+33])
+            Tstr_type Rec
+            [
+              type_declaration t/100 (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+2]..test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+33])
+                ptype_params =
+                  [
+                    core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+8]..test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+10])
+                      Ttyp_var a
+                    core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+12]..test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+14])
+                      Ttyp_var b
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_variant
+                    [
+                      (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+20]..test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+33])
+                        T2/101
+                        [
+                          core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+26]..test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+28])
+                            Ttyp_var a
+                          core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+31]..test/deriving_warning/enable/ppx_warning_flags_test.ml[23,344+33])
+                            Ttyp_var b
+                        ]
+                        None
+                    ]
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+        ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+28])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+7])
+          Tpat_var "two/103"
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+10]..test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+28])
+          Texp_construct "Two.T2"
+          [
+            expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+18]..test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+22])
+              Texp_ident "zero/92"
+            expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+24]..test/deriving_warning/enable/ppx_warning_flags_test.ml[26,383+27])
+              Texp_ident "one/98"
+          ]
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[28,413+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[28,413+8])
+    Tstr_attribute "end"
+    []
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+43])
+    Tstr_type Rec
+    [
+      type_declaration s/104 (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+43])
+        attribute "deriving_inline"
+          [
+            structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+32]..[30,423+42])
+              Pstr_eval
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+32]..[30,423+42])
+                Pexp_ident "alias_warn" (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+32]..[30,423+42])
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+9]..test/deriving_warning/enable/ppx_warning_flags_test.ml[30,423+12])
+              Ttyp_constr "int/1!"
+              []
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+25])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+5])
+          Tpat_any
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+8]..test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+25])
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+13]..test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+14])
+                Tpat_extra_constraint
+                core_type (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+17]..test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+18])
+                  Ttyp_constr "s/104"
+                  []
+                pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+13]..test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+14])
+                  Tpat_any
+              expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+23]..test/deriving_warning/enable/ppx_warning_flags_test.ml[32,468+25])
+                Texp_construct "()"
+                []
+          ]
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+17])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+12])
+          Tpat_var "unit_one/106"
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+15]..test/deriving_warning/enable/ppx_warning_flags_test.ml[33,494+17])
+          Texp_construct "()"
+          []
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+23])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+12])
+          Tpat_var "unit_two/107"
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+15]..test/deriving_warning/enable/ppx_warning_flags_test.ml[34,512+23])
+          Texp_ident "unit_one/106"
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+16])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+4]..test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+5])
+          Tpat_any
+        expression (test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+8]..test/deriving_warning/enable/ppx_warning_flags_test.ml[35,536+16])
+          Texp_ident "unit_two/107"
+    ]
+  structure_item (test/deriving_warning/enable/ppx_warning_flags_test.ml[37,554+0]..test/deriving_warning/enable/ppx_warning_flags_test.ml[37,554+8])
+    Tstr_attribute "end"
+    []
+]
+
+(setglobal Ppx_warning_flags_testing_enable__Ppx_warning_flags_test!
+  (seq
+    (function param/88[int]
+      (funct-body Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(3):81-98
+        (before Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(3):96-98
+          0)))
+    (let
+      (Zero/91 =
+         (module-defn(Zero/91) Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(5):100-138
+           (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.Zero test/deriving_warning/enable/ppx_warning_flags_test.ml(5):114-138
+             (makeblock 0)))
+       zero/92 = 0
+       include/567 =
+         (let
+           (One/95 =
+              (module-defn(One/95) Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(14):205-255
+                (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.One test/deriving_warning/enable/ppx_warning_flags_test.ml(14):218-255
+                  (makeblock 0)))
+            one/96 = (makeblock 0 zero/92))
+           (seq one/96
+             (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(11):168-298
+               (makeblock 0 One/95 one/96))))
+       One/97 =a (field_mut 0 include/567)
+       one/98 =a (field_mut 1 include/567)
+       Two/102 =
+         (module-defn(Two/102) Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(22):324-381
+           (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.Two test/deriving_warning/enable/ppx_warning_flags_test.ml(22):337-381
+             (makeblock 0)))
+       two/103 = (makeblock 0 zero/92 one/98))
+      (seq
+        (function param/105[int]
+          (funct-body Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(32):476-493
+            (before Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(32):491-493
+              0)))
+        (let (unit_one/106 = 0 unit_two/107 = unit_one/106)
+          (seq unit_two/107
+            (pseudo <unknown location>
+              (makeblock 0 Zero/91 zero/92 One/97 one/98 Two/102 two/103
+                unit_one/106 unit_two/107))))))))
+(setglobal Ppx_warning_flags_testing_enable__Ppx_warning_flags_test!
+  (seq
+    (function param/88[int]
+      (funct-body Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(3):81-98
+        (before Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(3):96-98
+          0)))
+    (let
+      (Zero/91 =
+         (module-defn(Zero/91) Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(5):100-138
+           (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.Zero test/deriving_warning/enable/ppx_warning_flags_test.ml(5):114-138
+             (makeblock 0)))
+       zero/92 = 0
+       include/567 =
+         (let
+           (One/95 =
+              (module-defn(One/95) Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(14):205-255
+                (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.One test/deriving_warning/enable/ppx_warning_flags_test.ml(14):218-255
+                  (makeblock 0)))
+            one/96 = (makeblock 0 zero/92))
+           (seq one/96
+             (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(11):168-298
+               (makeblock 0 One/95 one/96))))
+       One/97 =a (field_mut 0 include/567)
+       one/98 =a (field_mut 1 include/567)
+       Two/102 =
+         (module-defn(Two/102) Ppx_warning_flags_testing_enable__Ppx_warning_flags_test test/deriving_warning/enable/ppx_warning_flags_test.ml(22):324-381
+           (pseudo Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.Two test/deriving_warning/enable/ppx_warning_flags_test.ml(22):337-381
+             (makeblock 0)))
+       two/103 = (makeblock 0 zero/92 one/98))
+      (seq
+        (function param/105[int]
+          (funct-body Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(32):476-493
+            (before Ppx_warning_flags_testing_enable__Ppx_warning_flags_test.(fun) test/deriving_warning/enable/ppx_warning_flags_test.ml(32):491-493
+              0)))
+        (let (unit_one/106 = 0 unit_two/107 = unit_one/106)
+          (seq unit_two/107
+            (pseudo <unknown location>
+              (makeblock 0 Zero/91 zero/92 One/97 one/98 Two/102 two/103
+                unit_one/106 unit_two/107))))))))

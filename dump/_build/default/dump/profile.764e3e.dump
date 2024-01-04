@@ -1,0 +1,15 @@
+1.061s 72.6MB 8.25MB 8.25MB test/error_embedding/extender.exe
+  0.005s 2.14MB 0.09MB 0.09MB selection
+  0.001s 2.16MB 0.09MB 0.18MB comballoc
+  0.005s 6.29MB 0.40MB 0.59MB cse
+  0.007s 6.15MB 0.46MB 1.06MB liveness
+  0.002s 2.19MB 0.18MB 1.25MB deadcode
+  0.006s 4.00MB 0.37MB 1.62MB spill
+  0.001s ------ ------ ------ split
+  0.060s 34.1MB 2.31MB 3.93MB regalloc
+  0.001s 0.16MB ------ ------ linearize
+  0.002s ------ ------ ------ emit
+  0.015s ------ ------ ------ assemble
+  0.916s ------ ------ ------ c-linker
+  0.037s 15.4MB 4.31MB 8.25MB other
+0.004s ------ ------ ------ other

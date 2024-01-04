@@ -1,0 +1,43 @@
+[
+  structure_item (bench/drivers/ppx_sexp_conv/driver.ml[1,0+0]..[1,0+27])
+    Pstr_eval
+    expression (bench/drivers/ppx_sexp_conv/driver.ml[1,0+0]..[1,0+27])
+      Pexp_apply
+      expression (bench/drivers/ppx_sexp_conv/driver.ml[1,0+0]..[1,0+24])
+        Pexp_ident "Ppxlib.Driver.standalone" (bench/drivers/ppx_sexp_conv/driver.ml[1,0+0]..[1,0+24])
+      [
+        <arg>
+        Nolabel
+          expression (bench/drivers/ppx_sexp_conv/driver.ml[1,0+25]..[1,0+27])
+            Pexp_construct "()" (bench/drivers/ppx_sexp_conv/driver.ml[1,0+25]..[1,0+27])
+            None
+      ]
+]
+
+;;Ppxlib.Driver.standalone ()
+[
+  structure_item (bench/drivers/ppx_sexp_conv/driver.ml[1,0+0]..bench/drivers/ppx_sexp_conv/driver.ml[1,0+27])
+    Tstr_eval
+    expression (bench/drivers/ppx_sexp_conv/driver.ml[1,0+0]..bench/drivers/ppx_sexp_conv/driver.ml[1,0+27])
+      Texp_apply
+      expression (bench/drivers/ppx_sexp_conv/driver.ml[1,0+0]..bench/drivers/ppx_sexp_conv/driver.ml[1,0+24])
+        Texp_ident "Ppxlib!.Driver.standalone"
+      [
+        <arg>
+          Nolabel
+          expression (bench/drivers/ppx_sexp_conv/driver.ml[1,0+25]..bench/drivers/ppx_sexp_conv/driver.ml[1,0+27])
+            Texp_construct "()"
+            []
+      ]
+]
+
+(setglobal Dune__exe__Driver!
+  (seq
+    (after Dune__exe__Driver bench/drivers/ppx_sexp_conv/driver.ml(1):0-27
+      (apply (field_imm 11 (global Ppxlib__Driver!)) 0))
+    (pseudo <unknown location> (makeblock 0))))
+(setglobal Dune__exe__Driver!
+  (seq
+    (after Dune__exe__Driver bench/drivers/ppx_sexp_conv/driver.ml(1):0-27
+      (apply (field_imm 11 (global Ppxlib__Driver!)) 0))
+    (pseudo <unknown location> (makeblock 0))))

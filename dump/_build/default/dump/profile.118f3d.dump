@@ -1,0 +1,12 @@
+0.061s 24.2MB 3.22MB 3.22MB astlib/pp/pp.exe
+  0.001s 0.17MB ------ ------ selection
+  ------ 2.00MB 0.21MB 0.21MB cse
+  0.003s 5.06MB 1.74MB 1.96MB liveness
+  ------ 0.11MB ------ ------ deadcode
+  0.001s 1.14MB 0.09MB 2.05MB spill
+  0.004s 13.5MB 0.87MB 2.93MB regalloc
+  ------ 0.11MB ------ ------ emit
+  0.004s ------ ------ ------ assemble
+  0.044s ------ ------ ------ c-linker
+  0.003s 2.10MB 0.29MB 3.22MB other
+0.004s ------ ------ ------ other

@@ -1,0 +1,239 @@
+[
+  structure_item (test/driver/exception_handling/whole_file_exception.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/exception_handling/whole_file_exception.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/exception_handling/whole_file_exception.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/exception_handling/whole_file_exception.ml[3,13+0]..[7,139+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_exception.ml[3,13+4]..[3,13+6])
+          Ppat_construct "()" (test/driver/exception_handling/whole_file_exception.ml[3,13+4]..[3,13+6])
+          None
+        expression (test/driver/exception_handling/whole_file_exception.ml[4,22+2]..[7,139+18])
+          Pexp_open Fresh
+          module_expr (test/driver/exception_handling/whole_file_exception.ml[4,22+2]..[4,22+11])
+            Pmod_ident "Driver.V2" (test/driver/exception_handling/whole_file_exception.ml[4,22+2]..[4,22+11])
+          expression (test/driver/exception_handling/whole_file_exception.ml[5,36+4]..[7,139+17])
+            Pexp_apply
+            expression (test/driver/exception_handling/whole_file_exception.ml[5,36+4]..[5,36+27])
+              Pexp_ident "register_transformation" (test/driver/exception_handling/whole_file_exception.ml[5,36+4]..[5,36+27])
+            [
+              <arg>
+              Labelled "impl"
+                expression (test/driver/exception_handling/whole_file_exception.ml[6,64+12]..[6,64+74])
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (test/driver/exception_handling/whole_file_exception.ml[6,64+17]..[6,64+18])
+                    Ppat_any
+                  expression (test/driver/exception_handling/whole_file_exception.ml[6,64+19]..[6,64+73]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (test/driver/exception_handling/whole_file_exception.ml[6,64+19]..[6,64+20])
+                      Ppat_any
+                    expression (test/driver/exception_handling/whole_file_exception.ml[6,64+24]..[6,64+73])
+                      Pexp_apply
+                      expression (test/driver/exception_handling/whole_file_exception.ml[6,64+24]..[6,64+32])
+                        Pexp_ident "failwith" (test/driver/exception_handling/whole_file_exception.ml[6,64+24]..[6,64+32])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/driver/exception_handling/whole_file_exception.ml[6,64+33]..[6,64+73])
+                            Pexp_constant PConst_string("An exception in a whole file transform",(test/driver/exception_handling/whole_file_exception.ml[6,64+34]..[6,64+72]),None)
+                      ]
+              <arg>
+              Nolabel
+                expression (test/driver/exception_handling/whole_file_exception.ml[7,139+6]..[7,139+17])
+                  Pexp_constant PConst_string("raise_exc",(test/driver/exception_handling/whole_file_exception.ml[7,139+7]..[7,139+16]),None)
+            ]
+    ]
+  structure_item (test/driver/exception_handling/whole_file_exception.ml[9,159+0]..[9,159+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_exception.ml[9,159+4]..[9,159+6])
+          Ppat_construct "()" (test/driver/exception_handling/whole_file_exception.ml[9,159+4]..[9,159+6])
+          None
+        expression (test/driver/exception_handling/whole_file_exception.ml[9,159+9]..[9,159+36])
+          Pexp_apply
+          expression (test/driver/exception_handling/whole_file_exception.ml[9,159+9]..[9,159+33])
+            Pexp_ident "Ppxlib.Driver.standalone" (test/driver/exception_handling/whole_file_exception.ml[9,159+9]..[9,159+33])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/whole_file_exception.ml[9,159+34]..[9,159+36])
+                Pexp_construct "()" (test/driver/exception_handling/whole_file_exception.ml[9,159+34]..[9,159+36])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let () =
+  let open Driver.V2 in
+    register_transformation
+      ~impl:(fun _ ->
+               fun _ -> failwith "An exception in a whole file transform")
+      "raise_exc"
+let () = Ppxlib.Driver.standalone ()
+[
+  structure_item (test/driver/exception_handling/whole_file_exception.ml[1,0+0]..test/driver/exception_handling/whole_file_exception.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/exception_handling/whole_file_exception.ml[1,0+5]..test/driver/exception_handling/whole_file_exception.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/exception_handling/whole_file_exception.ml[3,13+0]..test/driver/exception_handling/whole_file_exception.ml[7,139+18])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_exception.ml[3,13+4]..test/driver/exception_handling/whole_file_exception.ml[3,13+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/exception_handling/whole_file_exception.ml[4,22+2]..test/driver/exception_handling/whole_file_exception.ml[7,139+18])
+          Texp_open Fresh
+          module_expr (test/driver/exception_handling/whole_file_exception.ml[4,22+2]..test/driver/exception_handling/whole_file_exception.ml[4,22+11])
+            Tmod_ident "Ppxlib!.Driver.V2"
+          expression (test/driver/exception_handling/whole_file_exception.ml[5,36+4]..test/driver/exception_handling/whole_file_exception.ml[7,139+17])
+            Texp_apply
+            expression (test/driver/exception_handling/whole_file_exception.ml[5,36+4]..test/driver/exception_handling/whole_file_exception.ml[5,36+27])
+              Texp_ident "Ppxlib!.Driver.V2.register_transformation"
+            [
+              <arg>
+                Optional "extensions"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "rules"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "enclose_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "enclose_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "impl"
+                expression (test/driver/exception_handling/whole_file_exception.ml[6,64+12]..test/driver/exception_handling/whole_file_exception.ml[6,64+74])
+                  Texp_construct "Some"
+                  [
+                    expression (test/driver/exception_handling/whole_file_exception.ml[6,64+12]..test/driver/exception_handling/whole_file_exception.ml[6,64+74])
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (test/driver/exception_handling/whole_file_exception.ml[6,64+17]..test/driver/exception_handling/whole_file_exception.ml[6,64+18])
+                            Tpat_any
+                          expression (test/driver/exception_handling/whole_file_exception.ml[6,64+19]..test/driver/exception_handling/whole_file_exception.ml[6,64+73]) ghost
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (test/driver/exception_handling/whole_file_exception.ml[6,64+19]..test/driver/exception_handling/whole_file_exception.ml[6,64+20])
+                                  Tpat_any
+                                expression (test/driver/exception_handling/whole_file_exception.ml[6,64+24]..test/driver/exception_handling/whole_file_exception.ml[6,64+73])
+                                  Texp_apply
+                                  expression (test/driver/exception_handling/whole_file_exception.ml[6,64+24]..test/driver/exception_handling/whole_file_exception.ml[6,64+32])
+                                    Texp_ident "Stdlib!.failwith"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (test/driver/exception_handling/whole_file_exception.ml[6,64+33]..test/driver/exception_handling/whole_file_exception.ml[6,64+73])
+                                        Texp_constant Const_string("An exception in a whole file transform",(test/driver/exception_handling/whole_file_exception.ml[6,64+34]..test/driver/exception_handling/whole_file_exception.ml[6,64+72]),None)
+                                  ]
+                            ]
+                      ]
+                  ]
+              <arg>
+                Optional "intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "lint_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "lint_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "preprocess_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "preprocess_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "instrument"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "aliases"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Nolabel
+                expression (test/driver/exception_handling/whole_file_exception.ml[7,139+6]..test/driver/exception_handling/whole_file_exception.ml[7,139+17])
+                  Texp_constant Const_string("raise_exc",(test/driver/exception_handling/whole_file_exception.ml[7,139+7]..test/driver/exception_handling/whole_file_exception.ml[7,139+16]),None)
+            ]
+    ]
+  structure_item (test/driver/exception_handling/whole_file_exception.ml[9,159+0]..test/driver/exception_handling/whole_file_exception.ml[9,159+36])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_exception.ml[9,159+4]..test/driver/exception_handling/whole_file_exception.ml[9,159+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/exception_handling/whole_file_exception.ml[9,159+9]..test/driver/exception_handling/whole_file_exception.ml[9,159+36])
+          Texp_apply
+          expression (test/driver/exception_handling/whole_file_exception.ml[9,159+9]..test/driver/exception_handling/whole_file_exception.ml[9,159+33])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/whole_file_exception.ml[9,159+34]..test/driver/exception_handling/whole_file_exception.ml[9,159+36])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(seq
+  (let
+    (*match*/5220 =
+       (apply (field_imm 0 (field_imm 9 (global Ppxlib__Driver!))) 0 0 0 0
+         (makeblock 0
+           (function param/582 param/581
+             (apply (field_imm 1 (global Stdlib!))
+               "An exception in a whole file transform")))
+         0 0 0 0 0 0 0 "raise_exc"))
+    0)
+  (let (*match*/5222 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)
+(seq
+  (let
+    (*match*/5220 =
+       (apply (field_imm 0 (field_imm 9 (global Ppxlib__Driver!))) 0 0 0 0
+         (makeblock 0
+           (function param/582 param/581
+             (apply (field_imm 1 (global Stdlib!))
+               "An exception in a whole file transform")))
+         0 0 0 0 0 0 0 "raise_exc"))
+    0)
+  (let (*match*/5222 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)

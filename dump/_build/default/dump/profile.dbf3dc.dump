@@ -1,0 +1,26 @@
+2.185s 5.88GB  203MB  205MB ast/ast.ml
+  0.030s 0.07GB 11.3MB 13.0MB parsing
+    0.030s 0.07GB 11.3MB 13.0MB parser
+  1.048s 2.80GB 95.3MB  108MB typing
+  0.025s 0.07GB 0.37MB ------ transl
+  0.834s 1.89GB 94.7MB  203MB generate
+    0.009s 0.02GB ------ ------ cmm
+    0.655s 1.56GB 86.9MB  195MB compile_phrases
+      0.001s ------ ------ ------ cmm_invariants
+      0.023s 0.06GB 0.93MB  109MB selection
+      0.002s ------ ------ ------ polling
+      0.002s ------ 0.25MB ------ comballoc
+      0.015s 0.04GB 0.34MB  110MB cse
+      0.026s 0.05GB 0.84MB  111MB liveness
+      0.006s 0.02GB 0.12MB ------ deadcode
+      0.065s 0.08GB 1.40MB  112MB spill
+      0.014s ------ 0.40MB  113MB split
+      0.478s 1.22GB 82.3MB  195MB regalloc
+      0.002s ------ 0.03MB ------ linearize
+      0.001s ------ ------ ------ scheduling
+      0.011s 0.02GB 0.21MB ------ emit
+      0.008s 0.01GB ------ ------ other
+    0.083s ------ ------ ------ assemble
+    0.086s 0.30GB 7.82MB  203MB other
+  0.248s 1.04GB 1.71MB  205MB other
+0.006s ------ 1.69MB ------ other

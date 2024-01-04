@@ -1,0 +1,6 @@
+0.072s 46.0MB 18.7MB 18.7MB src/utils.mli
+  0.002s 2.90MB 1.57MB 1.57MB parsing
+    0.002s 2.90MB 1.57MB 1.57MB parser
+  0.068s 43.1MB 17.2MB 18.7MB typing
+  0.002s ------ ------ ------ other
+0.006s ------ ------ ------ other

@@ -1,0 +1,1477 @@
+[
+  signature_item (src/location.mli[1,0+0]..[1,0+47])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/location.mli[1,0+0]..[1,0+47])
+        Pstr_eval
+        expression (src/location.mli[1,0+0]..[1,0+47])
+          Pexp_constant PConst_string(" Overrides the [Location] module of OCaml ",(src/location.mli[1,0+0]..[1,0+47]),None)
+    ]
+  signature_item (src/location.mli[3,49+0]..[7,253+64])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/location.mli[3,49+0]..[7,253+64])
+        Pstr_eval
+        expression (src/location.mli[3,49+0]..[7,253+64])
+          Pexp_constant PConst_string(" There are less functions in this module. However the API should be more\n    stable than the Location module of OCaml.\n\n    For a detailled presentation of good practices regarding locations, refer to\n    the {{!\"good-practices\".resp_loc} section} in the manual. ",(src/location.mli[3,49+0]..[7,253+64]),None)
+    ]
+  signature_item (src/location.mli[9,319+0]..[9,319+12])
+    Psig_open Override "Import" (src/location.mli[9,319+6]..[9,319+12])
+  signature_item (src/location.mli[11,333+0]..[15,435+1])
+    Psig_type Rec
+    [
+      type_declaration "t" (src/location.mli[11,333+5]..[11,333+6]) (src/location.mli[11,333+0]..[15,435+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (src/location.mli[12,355+2]..[12,355+30])
+                Immutable
+                "loc_start" (src/location.mli[12,355+2]..[12,355+11])                core_type (src/location.mli[12,355+14]..[12,355+29])
+                  Ptyp_constr "Lexing.position" (src/location.mli[12,355+14]..[12,355+29])
+                  []
+              (src/location.mli[13,386+2]..[13,386+28])
+                Immutable
+                "loc_end" (src/location.mli[13,386+2]..[13,386+9])                core_type (src/location.mli[13,386+12]..[13,386+27])
+                  Ptyp_constr "Lexing.position" (src/location.mli[13,386+12]..[13,386+27])
+                  []
+              (src/location.mli[14,415+2]..[14,415+19])
+                Immutable
+                "loc_ghost" (src/location.mli[14,415+2]..[14,415+11])                core_type (src/location.mli[14,415+14]..[14,415+18])
+                  Ptyp_constr "bool" (src/location.mli[14,415+14]..[14,415+18])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/location.mli[11,333+9]..[11,333+17])
+              Ptyp_constr "location" (src/location.mli[11,333+9]..[11,333+17])
+              []
+    ]
+  signature_item (src/location.mli[17,438+0]..[17,438+25])
+    Psig_value
+    value_description "in_file" (src/location.mli[17,438+4]..[17,438+11]) (src/location.mli[17,438+0]..[17,438+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[18,464+0]..[18,464+59])
+            Pstr_eval
+            expression (src/location.mli[18,464+0]..[18,464+59])
+              Pexp_constant PConst_string(" Return an empty ghost range located in a given file. ",(src/location.mli[18,464+0]..[18,464+59]),None)
+        ]
+      core_type (src/location.mli[17,438+14]..[17,438+25])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[17,438+14]..[17,438+20])
+          Ptyp_constr "string" (src/location.mli[17,438+14]..[17,438+20])
+          []
+        core_type (src/location.mli[17,438+24]..[17,438+25])
+          Ptyp_constr "t" (src/location.mli[17,438+24]..[17,438+25])
+          []
+      []
+  signature_item (src/location.mli[20,525+0]..[20,525+35])
+    Psig_value
+    value_description "set_filename" (src/location.mli[20,525+4]..[20,525+16]) (src/location.mli[20,525+0]..[20,525+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[21,561+0]..[21,561+83])
+            Pstr_eval
+            expression (src/location.mli[21,561+0]..[21,561+83])
+              Pexp_constant PConst_string(" Set the [pos_fname] both in [loc_start] and [loc_end]. Leave the rest as is. ",(src/location.mli[21,561+0]..[21,561+83]),None)
+        ]
+      core_type (src/location.mli[20,525+19]..[20,525+35])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[20,525+19]..[20,525+20])
+          Ptyp_constr "t" (src/location.mli[20,525+19]..[20,525+20])
+          []
+        core_type (src/location.mli[20,525+24]..[20,525+35])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[20,525+24]..[20,525+30])
+            Ptyp_constr "string" (src/location.mli[20,525+24]..[20,525+30])
+            []
+          core_type (src/location.mli[20,525+34]..[20,525+35])
+            Ptyp_constr "t" (src/location.mli[20,525+34]..[20,525+35])
+            []
+      []
+  signature_item (src/location.mli[23,646+0]..[23,646+12])
+    Psig_value
+    value_description "none" (src/location.mli[23,646+4]..[23,646+8]) (src/location.mli[23,646+0]..[23,646+12])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[24,659+0]..[24,659+70])
+            Pstr_eval
+            expression (src/location.mli[24,659+0]..[24,659+70])
+              Pexp_constant PConst_string(" An arbitrary value of type [t]; describes an empty ghost range. ",(src/location.mli[24,659+0]..[24,659+70]),None)
+        ]
+      core_type (src/location.mli[23,646+11]..[23,646+12])
+        Ptyp_constr "t" (src/location.mli[23,646+11]..[23,646+12])
+        []
+      []
+  signature_item (src/location.mli[26,731+0]..[26,731+42])
+    Psig_value
+    value_description "init" (src/location.mli[26,731+4]..[26,731+8]) (src/location.mli[26,731+0]..[26,731+42])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[27,774+0]..[28,851+18])
+            Pstr_eval
+            expression (src/location.mli[27,774+0]..[28,851+18])
+              Pexp_constant PConst_string(" Set the file name and line number of the [lexbuf] to be the start of the\n    named file. ",(src/location.mli[27,774+0]..[28,851+18]),None)
+        ]
+      core_type (src/location.mli[26,731+11]..[26,731+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[26,731+11]..[26,731+24])
+          Ptyp_constr "Lexing.lexbuf" (src/location.mli[26,731+11]..[26,731+24])
+          []
+        core_type (src/location.mli[26,731+28]..[26,731+42])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[26,731+28]..[26,731+34])
+            Ptyp_constr "string" (src/location.mli[26,731+28]..[26,731+34])
+            []
+          core_type (src/location.mli[26,731+38]..[26,731+42])
+            Ptyp_constr "unit" (src/location.mli[26,731+38]..[26,731+42])
+            []
+      []
+  signature_item (src/location.mli[30,871+0]..[31,890+65])
+    Psig_value
+    value_description "raise_errorf" (src/location.mli[30,871+4]..[30,871+16]) (src/location.mli[30,871+0]..[31,890+65])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[32,956+0]..[34,1114+28])
+            Pstr_eval
+            expression (src/location.mli[32,956+0]..[34,1114+28])
+              Pexp_constant PConst_string(" Raise a located error. Should be avoided as much as possible, in favor of\n    {!error_extensionf}. See the {{!\"good-practices\".handling_errors} relevant}\n    part of the tutorial. ",(src/location.mli[32,956+0]..[34,1114+28]),None)
+        ]
+      core_type (src/location.mli[31,890+2]..[31,890+65])
+        Ptyp_arrow
+        Optional "loc"
+        core_type (src/location.mli[31,890+7]..[31,890+8])
+          Ptyp_constr "t" (src/location.mli[31,890+7]..[31,890+8])
+          []
+        core_type (src/location.mli[31,890+12]..[31,890+65])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[31,890+12]..[31,890+59])
+            Ptyp_constr "format4" (src/location.mli[31,890+52]..[31,890+59])
+            [
+              core_type (src/location.mli[31,890+13]..[31,890+15])
+                Ptyp_var a
+              core_type (src/location.mli[31,890+17]..[31,890+40])
+                Ptyp_constr "Stdlib.Format.formatter" (src/location.mli[31,890+17]..[31,890+40])
+                []
+              core_type (src/location.mli[31,890+42]..[31,890+46])
+                Ptyp_constr "unit" (src/location.mli[31,890+42]..[31,890+46])
+                []
+              core_type (src/location.mli[31,890+48]..[31,890+50])
+                Ptyp_var b
+            ]
+          core_type (src/location.mli[31,890+63]..[31,890+65])
+            Ptyp_var a
+      []
+  signature_item (src/location.mli[36,1144+0]..[36,1144+34])
+    Psig_value
+    value_description "of_lexbuf" (src/location.mli[36,1144+4]..[36,1144+13]) (src/location.mli[36,1144+0]..[36,1144+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[37,1179+0]..[37,1179+79])
+            Pstr_eval
+            expression (src/location.mli[37,1179+0]..[37,1179+79])
+              Pexp_constant PConst_string(" Return the location corresponding to the last matched regular expression ",(src/location.mli[37,1179+0]..[37,1179+79]),None)
+        ]
+      core_type (src/location.mli[36,1144+16]..[36,1144+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[36,1144+16]..[36,1144+29])
+          Ptyp_constr "Lexing.lexbuf" (src/location.mli[36,1144+16]..[36,1144+29])
+          []
+        core_type (src/location.mli[36,1144+33]..[36,1144+34])
+          Ptyp_constr "t" (src/location.mli[36,1144+33]..[36,1144+34])
+          []
+      []
+  signature_item (src/location.mli[39,1260+0]..[39,1260+61])
+    Psig_value
+    value_description "report_exception" (src/location.mli[39,1260+4]..[39,1260+20]) (src/location.mli[39,1260+0]..[39,1260+61])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[40,1322+0]..[40,1322+49])
+            Pstr_eval
+            expression (src/location.mli[40,1322+0]..[40,1322+49])
+              Pexp_constant PConst_string(" Report an exception on the given formatter ",(src/location.mli[40,1322+0]..[40,1322+49]),None)
+        ]
+      core_type (src/location.mli[39,1260+23]..[39,1260+61])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[39,1260+23]..[39,1260+46])
+          Ptyp_constr "Stdlib.Format.formatter" (src/location.mli[39,1260+23]..[39,1260+46])
+          []
+        core_type (src/location.mli[39,1260+50]..[39,1260+61])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[39,1260+50]..[39,1260+53])
+            Ptyp_constr "exn" (src/location.mli[39,1260+50]..[39,1260+53])
+            []
+          core_type (src/location.mli[39,1260+57]..[39,1260+61])
+            Ptyp_constr "unit" (src/location.mli[39,1260+57]..[39,1260+61])
+            []
+      []
+  signature_item (src/location.mli[42,1373+0]..[42,1373+48])
+    Psig_value
+    value_description "print" (src/location.mli[42,1373+4]..[42,1373+9]) (src/location.mli[42,1373+0]..[42,1373+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[43,1422+0]..[43,1422+57])
+            Pstr_eval
+            expression (src/location.mli[43,1422+0]..[43,1422+57])
+              Pexp_constant PConst_string(" Prints [File \"...\", line ..., characters ...-...:] ",(src/location.mli[43,1422+0]..[43,1422+57]),None)
+        ]
+      core_type (src/location.mli[42,1373+12]..[42,1373+48])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[42,1373+12]..[42,1373+35])
+          Ptyp_constr "Stdlib.Format.formatter" (src/location.mli[42,1373+12]..[42,1373+35])
+          []
+        core_type (src/location.mli[42,1373+39]..[42,1373+48])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[42,1373+39]..[42,1373+40])
+            Ptyp_constr "t" (src/location.mli[42,1373+39]..[42,1373+40])
+            []
+          core_type (src/location.mli[42,1373+44]..[42,1373+48])
+            Ptyp_constr "unit" (src/location.mli[42,1373+44]..[42,1373+48])
+            []
+      []
+  signature_item (src/location.mli[45,1481+0]..[45,1481+51])
+    Psig_type Nonrec
+    [
+      type_declaration "loc" (src/location.mli[45,1481+15]..[45,1481+18]) (src/location.mli[45,1481+0]..[45,1481+51])
+        ptype_params =
+          [
+            core_type (src/location.mli[45,1481+12]..[45,1481+14])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (src/location.mli[45,1481+32]..[45,1481+41])
+                Immutable
+                "txt" (src/location.mli[45,1481+32]..[45,1481+35])                core_type (src/location.mli[45,1481+38]..[45,1481+40])
+                  Ptyp_var a
+              (src/location.mli[45,1481+42]..[45,1481+49])
+                Immutable
+                "loc" (src/location.mli[45,1481+42]..[45,1481+45])                core_type (src/location.mli[45,1481+48]..[45,1481+49])
+                  Ptyp_constr "t" (src/location.mli[45,1481+48]..[45,1481+49])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/location.mli[45,1481+21]..[45,1481+27])
+              Ptyp_constr "loc" (src/location.mli[45,1481+24]..[45,1481+27])
+              [
+                core_type (src/location.mli[45,1481+21]..[45,1481+23])
+                  Ptyp_var a
+              ]
+    ]
+  signature_item (src/location.mli[47,1534+0]..[47,1534+59])
+    Psig_value
+    value_description "compare_pos" (src/location.mli[47,1534+4]..[47,1534+15]) (src/location.mli[47,1534+0]..[47,1534+59])
+      core_type (src/location.mli[47,1534+18]..[47,1534+59])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[47,1534+18]..[47,1534+33])
+          Ptyp_constr "Lexing.position" (src/location.mli[47,1534+18]..[47,1534+33])
+          []
+        core_type (src/location.mli[47,1534+37]..[47,1534+59])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[47,1534+37]..[47,1534+52])
+            Ptyp_constr "Lexing.position" (src/location.mli[47,1534+37]..[47,1534+52])
+            []
+          core_type (src/location.mli[47,1534+56]..[47,1534+59])
+            Ptyp_constr "int" (src/location.mli[47,1534+56]..[47,1534+59])
+            []
+      []
+  signature_item (src/location.mli[48,1594+0]..[48,1594+67])
+    Psig_value
+    value_description "min_pos" (src/location.mli[48,1594+4]..[48,1594+11]) (src/location.mli[48,1594+0]..[48,1594+67])
+      core_type (src/location.mli[48,1594+14]..[48,1594+67])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[48,1594+14]..[48,1594+29])
+          Ptyp_constr "Lexing.position" (src/location.mli[48,1594+14]..[48,1594+29])
+          []
+        core_type (src/location.mli[48,1594+33]..[48,1594+67])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[48,1594+33]..[48,1594+48])
+            Ptyp_constr "Lexing.position" (src/location.mli[48,1594+33]..[48,1594+48])
+            []
+          core_type (src/location.mli[48,1594+52]..[48,1594+67])
+            Ptyp_constr "Lexing.position" (src/location.mli[48,1594+52]..[48,1594+67])
+            []
+      []
+  signature_item (src/location.mli[49,1662+0]..[49,1662+67])
+    Psig_value
+    value_description "max_pos" (src/location.mli[49,1662+4]..[49,1662+11]) (src/location.mli[49,1662+0]..[49,1662+67])
+      core_type (src/location.mli[49,1662+14]..[49,1662+67])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[49,1662+14]..[49,1662+29])
+          Ptyp_constr "Lexing.position" (src/location.mli[49,1662+14]..[49,1662+29])
+          []
+        core_type (src/location.mli[49,1662+33]..[49,1662+67])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[49,1662+33]..[49,1662+48])
+            Ptyp_constr "Lexing.position" (src/location.mli[49,1662+33]..[49,1662+48])
+            []
+          core_type (src/location.mli[49,1662+52]..[49,1662+67])
+            Ptyp_constr "Lexing.position" (src/location.mli[49,1662+52]..[49,1662+67])
+            []
+      []
+  signature_item (src/location.mli[50,1730+0]..[50,1730+27])
+    Psig_value
+    value_description "compare" (src/location.mli[50,1730+4]..[50,1730+11]) (src/location.mli[50,1730+0]..[50,1730+27])
+      core_type (src/location.mli[50,1730+14]..[50,1730+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location.mli[50,1730+14]..[50,1730+15])
+          Ptyp_constr "t" (src/location.mli[50,1730+14]..[50,1730+15])
+          []
+        core_type (src/location.mli[50,1730+19]..[50,1730+27])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[50,1730+19]..[50,1730+20])
+            Ptyp_constr "t" (src/location.mli[50,1730+19]..[50,1730+20])
+            []
+          core_type (src/location.mli[50,1730+24]..[50,1730+27])
+            Ptyp_constr "int" (src/location.mli[50,1730+24]..[50,1730+27])
+            []
+      []
+  signature_item (src/location.mli[52,1759+0]..[89,2967+23])
+    Psig_module "Error" (src/location.mli[52,1759+7]..[52,1759+12])
+    module_type (src/location.mli[52,1759+15]..[89,2967+23])
+      Pmty_with
+      module_type (src/location.mli[52,1759+15]..[88,2963+3])
+        Pmty_signature
+        [
+          signature_item (src/location.mli[53,1778+2]..[53,1778+19])
+            Psig_type Rec
+            [
+              type_declaration "location" (src/location.mli[53,1778+7]..[53,1778+15]) (src/location.mli[53,1778+2]..[53,1778+19])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (src/location.mli[53,1778+18]..[53,1778+19])
+                      Ptyp_constr "t" (src/location.mli[53,1778+18]..[53,1778+19])
+                      []
+            ]
+          signature_item (src/location.mli[55,1799+2]..[56,1865+76])
+            Psig_attribute "ocaml.text"
+            [
+              structure_item (src/location.mli[55,1799+2]..[56,1865+76])
+                Pstr_eval
+                expression (src/location.mli[55,1799+2]..[56,1865+76])
+                  Pexp_constant PConst_string(" For a detailed explanation on error reporting, refer to the\n      {{!\"good-practices\".handling_errors} relevant} part of the tutorial.",(src/location.mli[55,1799+2]..[56,1865+76]),None)
+            ]
+          signature_item (src/location.mli[58,1943+2]..[58,1943+8])
+            Psig_type Rec
+            [
+              type_declaration "t" (src/location.mli[58,1943+7]..[58,1943+8]) (src/location.mli[58,1943+2]..[58,1943+8])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/location.mli[60,1953+2]..[60,1953+72])
+            Psig_value
+            value_description "make" (src/location.mli[60,1953+6]..[60,1953+10]) (src/location.mli[60,1953+2]..[60,1953+72])
+              core_type (src/location.mli[60,1953+13]..[60,1953+72])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/location.mli[60,1953+17]..[60,1953+25])
+                  Ptyp_constr "location" (src/location.mli[60,1953+17]..[60,1953+25])
+                  []
+                core_type (src/location.mli[60,1953+29]..[60,1953+72])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[60,1953+29]..[60,1953+35])
+                    Ptyp_constr "string" (src/location.mli[60,1953+29]..[60,1953+35])
+                    []
+                  core_type (src/location.mli[60,1953+39]..[60,1953+72])
+                    Ptyp_arrow
+                    Labelled "sub"
+                    core_type (src/location.mli[60,1953+43]..[60,1953+67])
+                      Ptyp_constr "list" (src/location.mli[60,1953+63]..[60,1953+67])
+                      [
+                        core_type (src/location.mli[60,1953+44]..[60,1953+61])
+                          Ptyp_tuple
+                          [
+                            core_type (src/location.mli[60,1953+44]..[60,1953+52])
+                              Ptyp_constr "location" (src/location.mli[60,1953+44]..[60,1953+52])
+                              []
+                            core_type (src/location.mli[60,1953+55]..[60,1953+61])
+                              Ptyp_constr "string" (src/location.mli[60,1953+55]..[60,1953+61])
+                              []
+                          ]
+                      ]
+                    core_type (src/location.mli[60,1953+71]..[60,1953+72])
+                      Ptyp_constr "t" (src/location.mli[60,1953+71]..[60,1953+72])
+                      []
+              []
+          signature_item (src/location.mli[62,2027+2]..[63,2043+72])
+            Psig_value
+            value_description "createf" (src/location.mli[62,2027+6]..[62,2027+13]) (src/location.mli[62,2027+2]..[63,2043+72])
+              core_type (src/location.mli[63,2043+4]..[63,2043+72])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/location.mli[63,2043+8]..[63,2043+16])
+                  Ptyp_constr "location" (src/location.mli[63,2043+8]..[63,2043+16])
+                  []
+                core_type (src/location.mli[63,2043+20]..[63,2043+72])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[63,2043+20]..[63,2043+66])
+                    Ptyp_constr "format4" (src/location.mli[63,2043+59]..[63,2043+66])
+                    [
+                      core_type (src/location.mli[63,2043+21]..[63,2043+23])
+                        Ptyp_var a
+                      core_type (src/location.mli[63,2043+25]..[63,2043+48])
+                        Ptyp_constr "Stdlib.Format.formatter" (src/location.mli[63,2043+25]..[63,2043+48])
+                        []
+                      core_type (src/location.mli[63,2043+50]..[63,2043+54])
+                        Ptyp_constr "unit" (src/location.mli[63,2043+50]..[63,2043+54])
+                        []
+                      core_type (src/location.mli[63,2043+56]..[63,2043+57])
+                        Ptyp_constr "t" (src/location.mli[63,2043+56]..[63,2043+57])
+                        []
+                    ]
+                  core_type (src/location.mli[63,2043+70]..[63,2043+72])
+                    Ptyp_var a
+              []
+          signature_item (src/location.mli[65,2117+2]..[65,2117+27])
+            Psig_value
+            value_description "message" (src/location.mli[65,2117+6]..[65,2117+13]) (src/location.mli[65,2117+2]..[65,2117+27])
+              core_type (src/location.mli[65,2117+16]..[65,2117+27])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[65,2117+16]..[65,2117+17])
+                  Ptyp_constr "t" (src/location.mli[65,2117+16]..[65,2117+17])
+                  []
+                core_type (src/location.mli[65,2117+21]..[65,2117+27])
+                  Ptyp_constr "string" (src/location.mli[65,2117+21]..[65,2117+27])
+                  []
+              []
+          signature_item (src/location.mli[66,2145+2]..[66,2145+36])
+            Psig_value
+            value_description "set_message" (src/location.mli[66,2145+6]..[66,2145+17]) (src/location.mli[66,2145+2]..[66,2145+36])
+              core_type (src/location.mli[66,2145+20]..[66,2145+36])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[66,2145+20]..[66,2145+21])
+                  Ptyp_constr "t" (src/location.mli[66,2145+20]..[66,2145+21])
+                  []
+                core_type (src/location.mli[66,2145+25]..[66,2145+36])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[66,2145+25]..[66,2145+31])
+                    Ptyp_constr "string" (src/location.mli[66,2145+25]..[66,2145+31])
+                    []
+                  core_type (src/location.mli[66,2145+35]..[66,2145+36])
+                    Ptyp_constr "t" (src/location.mli[66,2145+35]..[66,2145+36])
+                    []
+              []
+          signature_item (src/location.mli[68,2183+2]..[68,2183+55])
+            Psig_value
+            value_description "register_error_of_exn" (src/location.mli[68,2183+6]..[68,2183+27]) (src/location.mli[68,2183+2]..[68,2183+55])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[69,2239+2]..[70,2314+50])
+                    Pstr_eval
+                    expression (src/location.mli[69,2239+2]..[70,2314+50])
+                      Pexp_constant PConst_string(" Register an exception handler. Exception registered this way will be\n      properly displayed by [report_exception]. ",(src/location.mli[69,2239+2]..[70,2314+50]),None)
+                ]
+              core_type (src/location.mli[68,2183+30]..[68,2183+55])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[68,2183+31]..[68,2183+46])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[68,2183+31]..[68,2183+34])
+                    Ptyp_constr "exn" (src/location.mli[68,2183+31]..[68,2183+34])
+                    []
+                  core_type (src/location.mli[68,2183+38]..[68,2183+46])
+                    Ptyp_constr "option" (src/location.mli[68,2183+40]..[68,2183+46])
+                    [
+                      core_type (src/location.mli[68,2183+38]..[68,2183+39])
+                        Ptyp_constr "t" (src/location.mli[68,2183+38]..[68,2183+39])
+                        []
+                    ]
+                core_type (src/location.mli[68,2183+51]..[68,2183+55])
+                  Ptyp_constr "unit" (src/location.mli[68,2183+51]..[68,2183+55])
+                  []
+              []
+          signature_item (src/location.mli[72,2366+2]..[72,2366+30])
+            Psig_value
+            value_description "of_exn" (src/location.mli[72,2366+6]..[72,2366+12]) (src/location.mli[72,2366+2]..[72,2366+30])
+              core_type (src/location.mli[72,2366+15]..[72,2366+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[72,2366+15]..[72,2366+18])
+                  Ptyp_constr "exn" (src/location.mli[72,2366+15]..[72,2366+18])
+                  []
+                core_type (src/location.mli[72,2366+22]..[72,2366+30])
+                  Ptyp_constr "option" (src/location.mli[72,2366+24]..[72,2366+30])
+                  [
+                    core_type (src/location.mli[72,2366+22]..[72,2366+23])
+                      Ptyp_constr "t" (src/location.mli[72,2366+22]..[72,2366+23])
+                      []
+                  ]
+              []
+          signature_item (src/location.mli[74,2398+2]..[74,2398+35])
+            Psig_value
+            value_description "to_extension" (src/location.mli[74,2398+6]..[74,2398+18]) (src/location.mli[74,2398+2]..[74,2398+35])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[75,2434+2]..[76,2513+37])
+                    Pstr_eval
+                    expression (src/location.mli[75,2434+2]..[76,2513+37])
+                      Pexp_constant PConst_string(" Convert an error to an extension point. The compiler recognizes this and\n      displays the error properly. ",(src/location.mli[75,2434+2]..[76,2513+37]),None)
+                ]
+              core_type (src/location.mli[74,2398+21]..[74,2398+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[74,2398+21]..[74,2398+22])
+                  Ptyp_constr "t" (src/location.mli[74,2398+21]..[74,2398+22])
+                  []
+                core_type (src/location.mli[74,2398+26]..[74,2398+35])
+                  Ptyp_constr "extension" (src/location.mli[74,2398+26]..[74,2398+35])
+                  []
+              []
+          signature_item (src/location.mli[78,2552+2]..[78,2552+21])
+            Psig_value
+            value_description "raise" (src/location.mli[78,2552+6]..[78,2552+11]) (src/location.mli[78,2552+2]..[78,2552+21])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[79,2574+2]..[81,2726+33])
+                    Pstr_eval
+                    expression (src/location.mli[79,2574+2]..[81,2726+33])
+                      Pexp_constant PConst_string(" Raise a compiler [Parsing.Location.Error] exception. The composition of\n      [Location.Error.createf] with [Location.Error.raise] is the same as\n      [Location.raise_errorf]. ",(src/location.mli[79,2574+2]..[81,2726+33]),None)
+                ]
+              core_type (src/location.mli[78,2552+14]..[78,2552+21])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[78,2552+14]..[78,2552+15])
+                  Ptyp_constr "t" (src/location.mli[78,2552+14]..[78,2552+15])
+                  []
+                core_type (src/location.mli[78,2552+19]..[78,2552+21])
+                  Ptyp_var a
+              []
+          signature_item (src/location.mli[83,2761+2]..[83,2761+37])
+            Psig_value
+            value_description "update_loc" (src/location.mli[83,2761+6]..[83,2761+16]) (src/location.mli[83,2761+2]..[83,2761+37])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[84,2799+2]..[84,2799+81])
+                    Pstr_eval
+                    expression (src/location.mli[84,2799+2]..[84,2799+81])
+                      Pexp_constant PConst_string(" Update where the error is located. The old location will be overwritten. ",(src/location.mli[84,2799+2]..[84,2799+81]),None)
+                ]
+              core_type (src/location.mli[83,2761+19]..[83,2761+37])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[83,2761+19]..[83,2761+20])
+                  Ptyp_constr "t" (src/location.mli[83,2761+19]..[83,2761+20])
+                  []
+                core_type (src/location.mli[83,2761+24]..[83,2761+37])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[83,2761+24]..[83,2761+32])
+                    Ptyp_constr "location" (src/location.mli[83,2761+24]..[83,2761+32])
+                    []
+                  core_type (src/location.mli[83,2761+36]..[83,2761+37])
+                    Ptyp_constr "t" (src/location.mli[83,2761+36]..[83,2761+37])
+                    []
+              []
+          signature_item (src/location.mli[86,2882+2]..[86,2882+34])
+            Psig_value
+            value_description "get_location" (src/location.mli[86,2882+6]..[86,2882+18]) (src/location.mli[86,2882+2]..[86,2882+34])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[87,2917+2]..[87,2917+45])
+                    Pstr_eval
+                    expression (src/location.mli[87,2917+2]..[87,2917+45])
+                      Pexp_constant PConst_string(" Find out where the error is located. ",(src/location.mli[87,2917+2]..[87,2917+45]),None)
+                ]
+              core_type (src/location.mli[86,2882+21]..[86,2882+34])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/location.mli[86,2882+21]..[86,2882+22])
+                  Ptyp_constr "t" (src/location.mli[86,2882+21]..[86,2882+22])
+                  []
+                core_type (src/location.mli[86,2882+26]..[86,2882+34])
+                  Ptyp_constr "location" (src/location.mli[86,2882+26]..[86,2882+34])
+                  []
+              []
+        ]
+      [
+        Pwith_typesubst "location" (src/location.mli[89,2967+10]..[89,2967+18])
+          type_declaration "location" (src/location.mli[89,2967+10]..[89,2967+18]) (src/location.mli[89,2967+5]..[89,2967+23])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (src/location.mli[89,2967+22]..[89,2967+23])
+                  Ptyp_constr "t" (src/location.mli[89,2967+22]..[89,2967+23])
+                  []
+      ]
+  signature_item (src/location.mli[91,2992+0]..[92,3015+64])
+    Psig_value
+    value_description "error_extensionf" (src/location.mli[91,2992+4]..[91,2992+20]) (src/location.mli[91,2992+0]..[92,3015+64])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[93,3080+0]..[97,3275+75])
+            Pstr_eval
+            expression (src/location.mli[93,3080+0]..[97,3275+75])
+              Pexp_constant PConst_string(" Returns an error extension node. When encountered in the AST, the compiler\n    recognizes it and displays the error properly.\n\n    For a detailed explanation on error reporting, refer to the\n    {{!\"good-practices\".handling_errors} relevant} part of the tutorial. ",(src/location.mli[93,3080+0]..[97,3275+75]),None)
+        ]
+      core_type (src/location.mli[92,3015+2]..[92,3015+64])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (src/location.mli[92,3015+6]..[92,3015+7])
+          Ptyp_constr "t" (src/location.mli[92,3015+6]..[92,3015+7])
+          []
+        core_type (src/location.mli[92,3015+11]..[92,3015+64])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/location.mli[92,3015+11]..[92,3015+58])
+            Ptyp_constr "format4" (src/location.mli[92,3015+51]..[92,3015+58])
+            [
+              core_type (src/location.mli[92,3015+12]..[92,3015+14])
+                Ptyp_var a
+              core_type (src/location.mli[92,3015+16]..[92,3015+32])
+                Ptyp_constr "Format.formatter" (src/location.mli[92,3015+16]..[92,3015+32])
+                []
+              core_type (src/location.mli[92,3015+34]..[92,3015+38])
+                Ptyp_constr "unit" (src/location.mli[92,3015+34]..[92,3015+38])
+                []
+              core_type (src/location.mli[92,3015+40]..[92,3015+49])
+                Ptyp_constr "extension" (src/location.mli[92,3015+40]..[92,3015+49])
+                []
+            ]
+          core_type (src/location.mli[92,3015+62]..[92,3015+64])
+            Ptyp_var a
+      []
+  signature_item (src/location.mli[99,3352+0]..[99,3352+26])
+    Psig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (src/location.mli[99,3352+0]..[99,3352+26])
+          pext_name = "Error"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (src/location.mli[99,3352+19]..[99,3352+26])
+                  Ptyp_constr "Error.t" (src/location.mli[99,3352+19]..[99,3352+26])
+                  []
+              ]
+              None
+]
+
+[@@@ocaml.text " Overrides the [Location] module of OCaml "]
+[@@@ocaml.text
+  " There are less functions in this module. However the API should be more\n    stable than the Location module of OCaml.\n\n    For a detailled presentation of good practices regarding locations, refer to\n    the {{!\"good-practices\".resp_loc} section} in the manual. "]
+open! Import
+type t = location =
+  {
+  loc_start: Lexing.position ;
+  loc_end: Lexing.position ;
+  loc_ghost: bool }
+val in_file : string -> t[@@ocaml.doc
+                           " Return an empty ghost range located in a given file. "]
+val set_filename : t -> string -> t[@@ocaml.doc
+                                     " Set the [pos_fname] both in [loc_start] and [loc_end]. Leave the rest as is. "]
+val none : t[@@ocaml.doc
+              " An arbitrary value of type [t]; describes an empty ghost range. "]
+val init : Lexing.lexbuf -> string -> unit[@@ocaml.doc
+                                            " Set the file name and line number of the [lexbuf] to be the start of the\n    named file. "]
+val raise_errorf :
+  ?loc:t -> ('a, Stdlib.Format.formatter, unit, 'b) format4 -> 'a[@@ocaml.doc
+                                                                   " Raise a located error. Should be avoided as much as possible, in favor of\n    {!error_extensionf}. See the {{!\"good-practices\".handling_errors} relevant}\n    part of the tutorial. "]
+val of_lexbuf : Lexing.lexbuf -> t[@@ocaml.doc
+                                    " Return the location corresponding to the last matched regular expression "]
+val report_exception : Stdlib.Format.formatter -> exn -> unit[@@ocaml.doc
+                                                               " Report an exception on the given formatter "]
+val print : Stdlib.Format.formatter -> t -> unit[@@ocaml.doc
+                                                  " Prints [File \"...\", line ..., characters ...-...:] "]
+type nonrec 'a loc = 'a loc = {
+  txt: 'a ;
+  loc: t }
+val compare_pos : Lexing.position -> Lexing.position -> int
+val min_pos : Lexing.position -> Lexing.position -> Lexing.position
+val max_pos : Lexing.position -> Lexing.position -> Lexing.position
+val compare : t -> t -> int
+module Error :
+sig
+  type location = t
+  [@@@ocaml.text
+    " For a detailed explanation on error reporting, refer to the\n      {{!\"good-practices\".handling_errors} relevant} part of the tutorial."]
+  type t
+  val make : loc:location -> string -> sub:(location * string) list -> t
+  val createf :
+    loc:location -> ('a, Stdlib.Format.formatter, unit, t) format4 -> 'a
+  val message : t -> string
+  val set_message : t -> string -> t
+  val register_error_of_exn : (exn -> t option) -> unit[@@ocaml.doc
+                                                         " Register an exception handler. Exception registered this way will be\n      properly displayed by [report_exception]. "]
+  val of_exn : exn -> t option
+  val to_extension : t -> extension[@@ocaml.doc
+                                     " Convert an error to an extension point. The compiler recognizes this and\n      displays the error properly. "]
+  val raise : t -> 'a[@@ocaml.doc
+                       " Raise a compiler [Parsing.Location.Error] exception. The composition of\n      [Location.Error.createf] with [Location.Error.raise] is the same as\n      [Location.raise_errorf]. "]
+  val update_loc : t -> location -> t[@@ocaml.doc
+                                       " Update where the error is located. The old location will be overwritten. "]
+  val get_location : t -> location[@@ocaml.doc
+                                    " Find out where the error is located. "]
+end with type  location :=  t
+val error_extensionf :
+  loc:t -> ('a, Format.formatter, unit, extension) format4 -> 'a[@@ocaml.doc
+                                                                  " Returns an error extension node. When encountered in the AST, the compiler\n    recognizes it and displays the error properly.\n\n    For a detailed explanation on error reporting, refer to the\n    {{!\"good-practices\".handling_errors} relevant} part of the tutorial. "]
+exception Error of Error.t 
+[
+  signature_item (src/location.mli[1,0+0]..src/location.mli[1,0+47])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/location.mli[1,0+0]..[1,0+47])
+        Pstr_eval
+        expression (src/location.mli[1,0+0]..[1,0+47])
+          Pexp_constant PConst_string(" Overrides the [Location] module of OCaml ",(src/location.mli[1,0+0]..[1,0+47]),None)
+    ]
+  signature_item (src/location.mli[3,49+0]..src/location.mli[7,253+64])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/location.mli[3,49+0]..[7,253+64])
+        Pstr_eval
+        expression (src/location.mli[3,49+0]..[7,253+64])
+          Pexp_constant PConst_string(" There are less functions in this module. However the API should be more\n    stable than the Location module of OCaml.\n\n    For a detailled presentation of good practices regarding locations, refer to\n    the {{!\"good-practices\".resp_loc} section} in the manual. ",(src/location.mli[3,49+0]..[7,253+64]),None)
+    ]
+  signature_item (src/location.mli[9,319+0]..src/location.mli[9,319+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/location.mli[11,333+0]..src/location.mli[15,435+1])
+    Tsig_type Rec
+    [
+      type_declaration t/550 (src/location.mli[11,333+0]..src/location.mli[15,435+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (src/location.mli[12,355+2]..src/location.mli[12,355+30])
+                Immutable
+                loc_start/578                core_type (src/location.mli[12,355+14]..src/location.mli[12,355+29])
+                  Ttyp_poly
+                  core_type (src/location.mli[12,355+14]..src/location.mli[12,355+29])
+                    Ttyp_constr "Stdlib!.Lexing.position"
+                    []
+              (src/location.mli[13,386+2]..src/location.mli[13,386+28])
+                Immutable
+                loc_end/579                core_type (src/location.mli[13,386+12]..src/location.mli[13,386+27])
+                  Ttyp_poly
+                  core_type (src/location.mli[13,386+12]..src/location.mli[13,386+27])
+                    Ttyp_constr "Stdlib!.Lexing.position"
+                    []
+              (src/location.mli[14,415+2]..src/location.mli[14,415+19])
+                Immutable
+                loc_ghost/580                core_type (src/location.mli[14,415+14]..src/location.mli[14,415+18])
+                  Ttyp_poly
+                  core_type (src/location.mli[14,415+14]..src/location.mli[14,415+18])
+                    Ttyp_constr "bool/5!"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/location.mli[11,333+9]..src/location.mli[11,333+17])
+              Ttyp_constr "Ppxlib__!.Import.location"
+              []
+    ]
+  signature_item (src/location.mli[17,438+0]..src/location.mli[17,438+25])
+    Tsig_value
+    value_description in_file/865 (src/location.mli[17,438+0]..src/location.mli[17,438+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[18,464+0]..[18,464+59])
+            Pstr_eval
+            expression (src/location.mli[18,464+0]..[18,464+59])
+              Pexp_constant PConst_string(" Return an empty ghost range located in a given file. ",(src/location.mli[18,464+0]..[18,464+59]),None)
+        ]
+      core_type (src/location.mli[17,438+14]..src/location.mli[17,438+25])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[17,438+14]..src/location.mli[17,438+20])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/location.mli[17,438+24]..src/location.mli[17,438+25])
+          Ttyp_constr "t/550"
+          []
+      []
+  signature_item (src/location.mli[20,525+0]..src/location.mli[20,525+35])
+    Tsig_value
+    value_description set_filename/866 (src/location.mli[20,525+0]..src/location.mli[20,525+35])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[21,561+0]..[21,561+83])
+            Pstr_eval
+            expression (src/location.mli[21,561+0]..[21,561+83])
+              Pexp_constant PConst_string(" Set the [pos_fname] both in [loc_start] and [loc_end]. Leave the rest as is. ",(src/location.mli[21,561+0]..[21,561+83]),None)
+        ]
+      core_type (src/location.mli[20,525+19]..src/location.mli[20,525+35])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[20,525+19]..src/location.mli[20,525+20])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/location.mli[20,525+24]..src/location.mli[20,525+35])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[20,525+24]..src/location.mli[20,525+30])
+            Ttyp_constr "string/17!"
+            []
+          core_type (src/location.mli[20,525+34]..src/location.mli[20,525+35])
+            Ttyp_constr "t/550"
+            []
+      []
+  signature_item (src/location.mli[23,646+0]..src/location.mli[23,646+12])
+    Tsig_value
+    value_description none/867 (src/location.mli[23,646+0]..src/location.mli[23,646+12])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[24,659+0]..[24,659+70])
+            Pstr_eval
+            expression (src/location.mli[24,659+0]..[24,659+70])
+              Pexp_constant PConst_string(" An arbitrary value of type [t]; describes an empty ghost range. ",(src/location.mli[24,659+0]..[24,659+70]),None)
+        ]
+      core_type (src/location.mli[23,646+11]..src/location.mli[23,646+12])
+        Ttyp_constr "t/550"
+        []
+      []
+  signature_item (src/location.mli[26,731+0]..src/location.mli[26,731+42])
+    Tsig_value
+    value_description init/868 (src/location.mli[26,731+0]..src/location.mli[26,731+42])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[27,774+0]..[28,851+18])
+            Pstr_eval
+            expression (src/location.mli[27,774+0]..[28,851+18])
+              Pexp_constant PConst_string(" Set the file name and line number of the [lexbuf] to be the start of the\n    named file. ",(src/location.mli[27,774+0]..[28,851+18]),None)
+        ]
+      core_type (src/location.mli[26,731+11]..src/location.mli[26,731+42])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[26,731+11]..src/location.mli[26,731+24])
+          Ttyp_constr "Stdlib!.Lexing.lexbuf"
+          []
+        core_type (src/location.mli[26,731+28]..src/location.mli[26,731+42])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[26,731+28]..src/location.mli[26,731+34])
+            Ttyp_constr "string/17!"
+            []
+          core_type (src/location.mli[26,731+38]..src/location.mli[26,731+42])
+            Ttyp_constr "unit/6!"
+            []
+      []
+  signature_item (src/location.mli[30,871+0]..src/location.mli[31,890+65])
+    Tsig_value
+    value_description raise_errorf/1045 (src/location.mli[30,871+0]..src/location.mli[31,890+65])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[32,956+0]..[34,1114+28])
+            Pstr_eval
+            expression (src/location.mli[32,956+0]..[34,1114+28])
+              Pexp_constant PConst_string(" Raise a located error. Should be avoided as much as possible, in favor of\n    {!error_extensionf}. See the {{!\"good-practices\".handling_errors} relevant}\n    part of the tutorial. ",(src/location.mli[32,956+0]..[34,1114+28]),None)
+        ]
+      core_type (src/location.mli[31,890+2]..src/location.mli[31,890+65])
+        Ttyp_arrow
+        Optional "loc"
+        core_type (src/location.mli[31,890+7]..src/location.mli[31,890+8])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/location.mli[31,890+12]..src/location.mli[31,890+65])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[31,890+12]..src/location.mli[31,890+59])
+            Ttyp_constr "Stdlib!.format4"
+            [
+              core_type (src/location.mli[31,890+13]..src/location.mli[31,890+15])
+                Ttyp_var a
+              core_type (src/location.mli[31,890+17]..src/location.mli[31,890+40])
+                Ttyp_constr "Stdlib!.Format.formatter"
+                []
+              core_type (src/location.mli[31,890+42]..src/location.mli[31,890+46])
+                Ttyp_constr "unit/6!"
+                []
+              core_type (src/location.mli[31,890+48]..src/location.mli[31,890+50])
+                Ttyp_var b
+            ]
+          core_type (src/location.mli[31,890+63]..src/location.mli[31,890+65])
+            Ttyp_var a
+      []
+  signature_item (src/location.mli[36,1144+0]..src/location.mli[36,1144+34])
+    Tsig_value
+    value_description of_lexbuf/1046 (src/location.mli[36,1144+0]..src/location.mli[36,1144+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[37,1179+0]..[37,1179+79])
+            Pstr_eval
+            expression (src/location.mli[37,1179+0]..[37,1179+79])
+              Pexp_constant PConst_string(" Return the location corresponding to the last matched regular expression ",(src/location.mli[37,1179+0]..[37,1179+79]),None)
+        ]
+      core_type (src/location.mli[36,1144+16]..src/location.mli[36,1144+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[36,1144+16]..src/location.mli[36,1144+29])
+          Ttyp_constr "Stdlib!.Lexing.lexbuf"
+          []
+        core_type (src/location.mli[36,1144+33]..src/location.mli[36,1144+34])
+          Ttyp_constr "t/550"
+          []
+      []
+  signature_item (src/location.mli[39,1260+0]..src/location.mli[39,1260+61])
+    Tsig_value
+    value_description report_exception/1047 (src/location.mli[39,1260+0]..src/location.mli[39,1260+61])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[40,1322+0]..[40,1322+49])
+            Pstr_eval
+            expression (src/location.mli[40,1322+0]..[40,1322+49])
+              Pexp_constant PConst_string(" Report an exception on the given formatter ",(src/location.mli[40,1322+0]..[40,1322+49]),None)
+        ]
+      core_type (src/location.mli[39,1260+23]..src/location.mli[39,1260+61])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[39,1260+23]..src/location.mli[39,1260+46])
+          Ttyp_constr "Stdlib!.Format.formatter"
+          []
+        core_type (src/location.mli[39,1260+50]..src/location.mli[39,1260+61])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[39,1260+50]..src/location.mli[39,1260+53])
+            Ttyp_constr "exn/7!"
+            []
+          core_type (src/location.mli[39,1260+57]..src/location.mli[39,1260+61])
+            Ttyp_constr "unit/6!"
+            []
+      []
+  signature_item (src/location.mli[42,1373+0]..src/location.mli[42,1373+48])
+    Tsig_value
+    value_description print/1048 (src/location.mli[42,1373+0]..src/location.mli[42,1373+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[43,1422+0]..[43,1422+57])
+            Pstr_eval
+            expression (src/location.mli[43,1422+0]..[43,1422+57])
+              Pexp_constant PConst_string(" Prints [File \"...\", line ..., characters ...-...:] ",(src/location.mli[43,1422+0]..[43,1422+57]),None)
+        ]
+      core_type (src/location.mli[42,1373+12]..src/location.mli[42,1373+48])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[42,1373+12]..src/location.mli[42,1373+35])
+          Ttyp_constr "Stdlib!.Format.formatter"
+          []
+        core_type (src/location.mli[42,1373+39]..src/location.mli[42,1373+48])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[42,1373+39]..src/location.mli[42,1373+40])
+            Ttyp_constr "t/550"
+            []
+          core_type (src/location.mli[42,1373+44]..src/location.mli[42,1373+48])
+            Ttyp_constr "unit/6!"
+            []
+      []
+  signature_item (src/location.mli[45,1481+0]..src/location.mli[45,1481+51])
+    Tsig_type Nonrec
+    [
+      type_declaration loc/1049 (src/location.mli[45,1481+0]..src/location.mli[45,1481+51])
+        ptype_params =
+          [
+            core_type (src/location.mli[45,1481+12]..src/location.mli[45,1481+14])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (src/location.mli[45,1481+32]..src/location.mli[45,1481+41])
+                Immutable
+                txt/1050                core_type (src/location.mli[45,1481+38]..src/location.mli[45,1481+40])
+                  Ttyp_poly
+                  core_type (src/location.mli[45,1481+38]..src/location.mli[45,1481+40])
+                    Ttyp_var a
+              (src/location.mli[45,1481+42]..src/location.mli[45,1481+49])
+                Immutable
+                loc/1051                core_type (src/location.mli[45,1481+48]..src/location.mli[45,1481+49])
+                  Ttyp_poly
+                  core_type (src/location.mli[45,1481+48]..src/location.mli[45,1481+49])
+                    Ttyp_constr "t/550"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/location.mli[45,1481+21]..src/location.mli[45,1481+27])
+              Ttyp_constr "Ppxlib__!.Import.loc"
+              [
+                core_type (src/location.mli[45,1481+21]..src/location.mli[45,1481+23])
+                  Ttyp_var a
+              ]
+    ]
+  signature_item (src/location.mli[47,1534+0]..src/location.mli[47,1534+59])
+    Tsig_value
+    value_description compare_pos/1052 (src/location.mli[47,1534+0]..src/location.mli[47,1534+59])
+      core_type (src/location.mli[47,1534+18]..src/location.mli[47,1534+59])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[47,1534+18]..src/location.mli[47,1534+33])
+          Ttyp_constr "Stdlib!.Lexing.position"
+          []
+        core_type (src/location.mli[47,1534+37]..src/location.mli[47,1534+59])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[47,1534+37]..src/location.mli[47,1534+52])
+            Ttyp_constr "Stdlib!.Lexing.position"
+            []
+          core_type (src/location.mli[47,1534+56]..src/location.mli[47,1534+59])
+            Ttyp_constr "int/1!"
+            []
+      []
+  signature_item (src/location.mli[48,1594+0]..src/location.mli[48,1594+67])
+    Tsig_value
+    value_description min_pos/1053 (src/location.mli[48,1594+0]..src/location.mli[48,1594+67])
+      core_type (src/location.mli[48,1594+14]..src/location.mli[48,1594+67])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[48,1594+14]..src/location.mli[48,1594+29])
+          Ttyp_constr "Stdlib!.Lexing.position"
+          []
+        core_type (src/location.mli[48,1594+33]..src/location.mli[48,1594+67])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[48,1594+33]..src/location.mli[48,1594+48])
+            Ttyp_constr "Stdlib!.Lexing.position"
+            []
+          core_type (src/location.mli[48,1594+52]..src/location.mli[48,1594+67])
+            Ttyp_constr "Stdlib!.Lexing.position"
+            []
+      []
+  signature_item (src/location.mli[49,1662+0]..src/location.mli[49,1662+67])
+    Tsig_value
+    value_description max_pos/1054 (src/location.mli[49,1662+0]..src/location.mli[49,1662+67])
+      core_type (src/location.mli[49,1662+14]..src/location.mli[49,1662+67])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[49,1662+14]..src/location.mli[49,1662+29])
+          Ttyp_constr "Stdlib!.Lexing.position"
+          []
+        core_type (src/location.mli[49,1662+33]..src/location.mli[49,1662+67])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[49,1662+33]..src/location.mli[49,1662+48])
+            Ttyp_constr "Stdlib!.Lexing.position"
+            []
+          core_type (src/location.mli[49,1662+52]..src/location.mli[49,1662+67])
+            Ttyp_constr "Stdlib!.Lexing.position"
+            []
+      []
+  signature_item (src/location.mli[50,1730+0]..src/location.mli[50,1730+27])
+    Tsig_value
+    value_description compare/1055 (src/location.mli[50,1730+0]..src/location.mli[50,1730+27])
+      core_type (src/location.mli[50,1730+14]..src/location.mli[50,1730+27])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location.mli[50,1730+14]..src/location.mli[50,1730+15])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/location.mli[50,1730+19]..src/location.mli[50,1730+27])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[50,1730+19]..src/location.mli[50,1730+20])
+            Ttyp_constr "t/550"
+            []
+          core_type (src/location.mli[50,1730+24]..src/location.mli[50,1730+27])
+            Ttyp_constr "int/1!"
+            []
+      []
+  signature_item (src/location.mli[52,1759+0]..src/location.mli[89,2967+23])
+    Tsig_module "Error/1090"
+    module_type (src/location.mli[52,1759+15]..src/location.mli[89,2967+23])
+      Tmty_with
+      module_type (src/location.mli[52,1759+15]..src/location.mli[88,2963+3])
+        Tmty_signature
+        [
+          signature_item (src/location.mli[53,1778+2]..src/location.mli[53,1778+19])
+            Tsig_type Rec
+            [
+              type_declaration location/1056 (src/location.mli[53,1778+2]..src/location.mli[53,1778+19])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (src/location.mli[53,1778+18]..src/location.mli[53,1778+19])
+                      Ttyp_constr "t/550"
+                      []
+            ]
+          signature_item (src/location.mli[55,1799+2]..src/location.mli[56,1865+76])
+            Tsig_attribute "ocaml.text"
+            [
+              structure_item (src/location.mli[55,1799+2]..[56,1865+76])
+                Pstr_eval
+                expression (src/location.mli[55,1799+2]..[56,1865+76])
+                  Pexp_constant PConst_string(" For a detailed explanation on error reporting, refer to the\n      {{!\"good-practices\".handling_errors} relevant} part of the tutorial.",(src/location.mli[55,1799+2]..[56,1865+76]),None)
+            ]
+          signature_item (src/location.mli[58,1943+2]..src/location.mli[58,1943+8])
+            Tsig_type Rec
+            [
+              type_declaration t/1057 (src/location.mli[58,1943+2]..src/location.mli[58,1943+8])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/location.mli[60,1953+2]..src/location.mli[60,1953+72])
+            Tsig_value
+            value_description make/1058 (src/location.mli[60,1953+2]..src/location.mli[60,1953+72])
+              core_type (src/location.mli[60,1953+13]..src/location.mli[60,1953+72])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/location.mli[60,1953+17]..src/location.mli[60,1953+25])
+                  Ttyp_constr "location/1056"
+                  []
+                core_type (src/location.mli[60,1953+29]..src/location.mli[60,1953+72])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[60,1953+29]..src/location.mli[60,1953+35])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/location.mli[60,1953+39]..src/location.mli[60,1953+72])
+                    Ttyp_arrow
+                    Labelled "sub"
+                    core_type (src/location.mli[60,1953+43]..src/location.mli[60,1953+67])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/location.mli[60,1953+44]..src/location.mli[60,1953+61])
+                          Ttyp_tuple
+                          [
+                            core_type (src/location.mli[60,1953+44]..src/location.mli[60,1953+52])
+                              Ttyp_constr "location/1056"
+                              []
+                            core_type (src/location.mli[60,1953+55]..src/location.mli[60,1953+61])
+                              Ttyp_constr "string/17!"
+                              []
+                          ]
+                      ]
+                    core_type (src/location.mli[60,1953+71]..src/location.mli[60,1953+72])
+                      Ttyp_constr "t/1057"
+                      []
+              []
+          signature_item (src/location.mli[62,2027+2]..src/location.mli[63,2043+72])
+            Tsig_value
+            value_description createf/1059 (src/location.mli[62,2027+2]..src/location.mli[63,2043+72])
+              core_type (src/location.mli[63,2043+4]..src/location.mli[63,2043+72])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/location.mli[63,2043+8]..src/location.mli[63,2043+16])
+                  Ttyp_constr "location/1056"
+                  []
+                core_type (src/location.mli[63,2043+20]..src/location.mli[63,2043+72])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[63,2043+20]..src/location.mli[63,2043+66])
+                    Ttyp_constr "Stdlib!.format4"
+                    [
+                      core_type (src/location.mli[63,2043+21]..src/location.mli[63,2043+23])
+                        Ttyp_var a
+                      core_type (src/location.mli[63,2043+25]..src/location.mli[63,2043+48])
+                        Ttyp_constr "Stdlib!.Format.formatter"
+                        []
+                      core_type (src/location.mli[63,2043+50]..src/location.mli[63,2043+54])
+                        Ttyp_constr "unit/6!"
+                        []
+                      core_type (src/location.mli[63,2043+56]..src/location.mli[63,2043+57])
+                        Ttyp_constr "t/1057"
+                        []
+                    ]
+                  core_type (src/location.mli[63,2043+70]..src/location.mli[63,2043+72])
+                    Ttyp_var a
+              []
+          signature_item (src/location.mli[65,2117+2]..src/location.mli[65,2117+27])
+            Tsig_value
+            value_description message/1060 (src/location.mli[65,2117+2]..src/location.mli[65,2117+27])
+              core_type (src/location.mli[65,2117+16]..src/location.mli[65,2117+27])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[65,2117+16]..src/location.mli[65,2117+17])
+                  Ttyp_constr "t/1057"
+                  []
+                core_type (src/location.mli[65,2117+21]..src/location.mli[65,2117+27])
+                  Ttyp_constr "string/17!"
+                  []
+              []
+          signature_item (src/location.mli[66,2145+2]..src/location.mli[66,2145+36])
+            Tsig_value
+            value_description set_message/1061 (src/location.mli[66,2145+2]..src/location.mli[66,2145+36])
+              core_type (src/location.mli[66,2145+20]..src/location.mli[66,2145+36])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[66,2145+20]..src/location.mli[66,2145+21])
+                  Ttyp_constr "t/1057"
+                  []
+                core_type (src/location.mli[66,2145+25]..src/location.mli[66,2145+36])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[66,2145+25]..src/location.mli[66,2145+31])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/location.mli[66,2145+35]..src/location.mli[66,2145+36])
+                    Ttyp_constr "t/1057"
+                    []
+              []
+          signature_item (src/location.mli[68,2183+2]..src/location.mli[68,2183+55])
+            Tsig_value
+            value_description register_error_of_exn/1062 (src/location.mli[68,2183+2]..src/location.mli[68,2183+55])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[69,2239+2]..[70,2314+50])
+                    Pstr_eval
+                    expression (src/location.mli[69,2239+2]..[70,2314+50])
+                      Pexp_constant PConst_string(" Register an exception handler. Exception registered this way will be\n      properly displayed by [report_exception]. ",(src/location.mli[69,2239+2]..[70,2314+50]),None)
+                ]
+              core_type (src/location.mli[68,2183+30]..src/location.mli[68,2183+55])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[68,2183+31]..src/location.mli[68,2183+46])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[68,2183+31]..src/location.mli[68,2183+34])
+                    Ttyp_constr "exn/7!"
+                    []
+                  core_type (src/location.mli[68,2183+38]..src/location.mli[68,2183+46])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/location.mli[68,2183+38]..src/location.mli[68,2183+39])
+                        Ttyp_constr "t/1057"
+                        []
+                    ]
+                core_type (src/location.mli[68,2183+51]..src/location.mli[68,2183+55])
+                  Ttyp_constr "unit/6!"
+                  []
+              []
+          signature_item (src/location.mli[72,2366+2]..src/location.mli[72,2366+30])
+            Tsig_value
+            value_description of_exn/1063 (src/location.mli[72,2366+2]..src/location.mli[72,2366+30])
+              core_type (src/location.mli[72,2366+15]..src/location.mli[72,2366+30])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[72,2366+15]..src/location.mli[72,2366+18])
+                  Ttyp_constr "exn/7!"
+                  []
+                core_type (src/location.mli[72,2366+22]..src/location.mli[72,2366+30])
+                  Ttyp_constr "option/12!"
+                  [
+                    core_type (src/location.mli[72,2366+22]..src/location.mli[72,2366+23])
+                      Ttyp_constr "t/1057"
+                      []
+                  ]
+              []
+          signature_item (src/location.mli[74,2398+2]..src/location.mli[74,2398+35])
+            Tsig_value
+            value_description to_extension/1064 (src/location.mli[74,2398+2]..src/location.mli[74,2398+35])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[75,2434+2]..[76,2513+37])
+                    Pstr_eval
+                    expression (src/location.mli[75,2434+2]..[76,2513+37])
+                      Pexp_constant PConst_string(" Convert an error to an extension point. The compiler recognizes this and\n      displays the error properly. ",(src/location.mli[75,2434+2]..[76,2513+37]),None)
+                ]
+              core_type (src/location.mli[74,2398+21]..src/location.mli[74,2398+35])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[74,2398+21]..src/location.mli[74,2398+22])
+                  Ttyp_constr "t/1057"
+                  []
+                core_type (src/location.mli[74,2398+26]..src/location.mli[74,2398+35])
+                  Ttyp_constr "Ppxlib__!.Import.extension"
+                  []
+              []
+          signature_item (src/location.mli[78,2552+2]..src/location.mli[78,2552+21])
+            Tsig_value
+            value_description raise/1065 (src/location.mli[78,2552+2]..src/location.mli[78,2552+21])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[79,2574+2]..[81,2726+33])
+                    Pstr_eval
+                    expression (src/location.mli[79,2574+2]..[81,2726+33])
+                      Pexp_constant PConst_string(" Raise a compiler [Parsing.Location.Error] exception. The composition of\n      [Location.Error.createf] with [Location.Error.raise] is the same as\n      [Location.raise_errorf]. ",(src/location.mli[79,2574+2]..[81,2726+33]),None)
+                ]
+              core_type (src/location.mli[78,2552+14]..src/location.mli[78,2552+21])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[78,2552+14]..src/location.mli[78,2552+15])
+                  Ttyp_constr "t/1057"
+                  []
+                core_type (src/location.mli[78,2552+19]..src/location.mli[78,2552+21])
+                  Ttyp_var a
+              []
+          signature_item (src/location.mli[83,2761+2]..src/location.mli[83,2761+37])
+            Tsig_value
+            value_description update_loc/1066 (src/location.mli[83,2761+2]..src/location.mli[83,2761+37])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[84,2799+2]..[84,2799+81])
+                    Pstr_eval
+                    expression (src/location.mli[84,2799+2]..[84,2799+81])
+                      Pexp_constant PConst_string(" Update where the error is located. The old location will be overwritten. ",(src/location.mli[84,2799+2]..[84,2799+81]),None)
+                ]
+              core_type (src/location.mli[83,2761+19]..src/location.mli[83,2761+37])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[83,2761+19]..src/location.mli[83,2761+20])
+                  Ttyp_constr "t/1057"
+                  []
+                core_type (src/location.mli[83,2761+24]..src/location.mli[83,2761+37])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/location.mli[83,2761+24]..src/location.mli[83,2761+32])
+                    Ttyp_constr "location/1056"
+                    []
+                  core_type (src/location.mli[83,2761+36]..src/location.mli[83,2761+37])
+                    Ttyp_constr "t/1057"
+                    []
+              []
+          signature_item (src/location.mli[86,2882+2]..src/location.mli[86,2882+34])
+            Tsig_value
+            value_description get_location/1067 (src/location.mli[86,2882+2]..src/location.mli[86,2882+34])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/location.mli[87,2917+2]..[87,2917+45])
+                    Pstr_eval
+                    expression (src/location.mli[87,2917+2]..[87,2917+45])
+                      Pexp_constant PConst_string(" Find out where the error is located. ",(src/location.mli[87,2917+2]..[87,2917+45]),None)
+                ]
+              core_type (src/location.mli[86,2882+21]..src/location.mli[86,2882+34])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/location.mli[86,2882+21]..src/location.mli[86,2882+22])
+                  Ttyp_constr "t/1057"
+                  []
+                core_type (src/location.mli[86,2882+26]..src/location.mli[86,2882+34])
+                  Ttyp_constr "location/1056"
+                  []
+              []
+        ]
+      [
+        "location/1056"
+          Twith_typesubst
+            type_declaration location/1056 (src/location.mli[89,2967+5]..src/location.mli[89,2967+23])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/location.mli[89,2967+22]..src/location.mli[89,2967+23])
+                    Ttyp_constr "t/550"
+                    []
+      ]
+  signature_item (src/location.mli[91,2992+0]..src/location.mli[92,3015+64])
+    Tsig_value
+    value_description error_extensionf/1091 (src/location.mli[91,2992+0]..src/location.mli[92,3015+64])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/location.mli[93,3080+0]..[97,3275+75])
+            Pstr_eval
+            expression (src/location.mli[93,3080+0]..[97,3275+75])
+              Pexp_constant PConst_string(" Returns an error extension node. When encountered in the AST, the compiler\n    recognizes it and displays the error properly.\n\n    For a detailed explanation on error reporting, refer to the\n    {{!\"good-practices\".handling_errors} relevant} part of the tutorial. ",(src/location.mli[93,3080+0]..[97,3275+75]),None)
+        ]
+      core_type (src/location.mli[92,3015+2]..src/location.mli[92,3015+64])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (src/location.mli[92,3015+6]..src/location.mli[92,3015+7])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/location.mli[92,3015+11]..src/location.mli[92,3015+64])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/location.mli[92,3015+11]..src/location.mli[92,3015+58])
+            Ttyp_constr "Stdlib!.format4"
+            [
+              core_type (src/location.mli[92,3015+12]..src/location.mli[92,3015+14])
+                Ttyp_var a
+              core_type (src/location.mli[92,3015+16]..src/location.mli[92,3015+32])
+                Ttyp_constr "Stdlib!.Format.formatter"
+                []
+              core_type (src/location.mli[92,3015+34]..src/location.mli[92,3015+38])
+                Ttyp_constr "unit/6!"
+                []
+              core_type (src/location.mli[92,3015+40]..src/location.mli[92,3015+49])
+                Ttyp_constr "Ppxlib__!.Import.extension"
+                []
+            ]
+          core_type (src/location.mli[92,3015+62]..src/location.mli[92,3015+64])
+            Ttyp_var a
+      []
+  signature_item (src/location.mli[99,3352+0]..src/location.mli[99,3352+26])
+    Tsig_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (src/location.mli[99,3352+0]..src/location.mli[99,3352+26])
+          pext_name = "Error/1092"
+          pext_kind =
+            Text_decl
+              [
+                core_type (src/location.mli[99,3352+19]..src/location.mli[99,3352+26])
+                  Ttyp_constr "Error/1090.t"
+                  []
+              ]
+              None
+]
+

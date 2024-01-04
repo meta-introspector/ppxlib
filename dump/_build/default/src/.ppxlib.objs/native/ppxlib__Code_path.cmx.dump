@@ -1,0 +1,1877 @@
+[
+  structure_item (src/code_path.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (src/code_path.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (src/code_path.ml[1,0+6]..[1,0+12])
+  structure_item (src/code_path.ml[3,14+0]..[11,223+1])
+    Pstr_type Rec
+    [
+      type_declaration "t" (src/code_path.ml[3,14+5]..[3,14+6]) (src/code_path.ml[3,14+0]..[11,223+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (src/code_path.ml[4,25+2]..[4,25+21])
+                Immutable
+                "file_path" (src/code_path.ml[4,25+2]..[4,25+11])                core_type (src/code_path.ml[4,25+14]..[4,25+20])
+                  Ptyp_constr "string" (src/code_path.ml[4,25+14]..[4,25+20])
+                  []
+              (src/code_path.ml[5,47+2]..[5,47+28])
+                Immutable
+                "main_module_name" (src/code_path.ml[5,47+2]..[5,47+18])                core_type (src/code_path.ml[5,47+21]..[5,47+27])
+                  Ptyp_constr "string" (src/code_path.ml[5,47+21]..[5,47+27])
+                  []
+              (src/code_path.ml[6,76+2]..[6,76+35])
+                Immutable
+                "submodule_path" (src/code_path.ml[6,76+2]..[6,76+16])                core_type (src/code_path.ml[6,76+19]..[6,76+34])
+                  Ptyp_constr "list" (src/code_path.ml[6,76+30]..[6,76+34])
+                  [
+                    core_type (src/code_path.ml[6,76+19]..[6,76+29])
+                      Ptyp_constr "loc" (src/code_path.ml[6,76+26]..[6,76+29])
+                      [
+                        core_type (src/code_path.ml[6,76+19]..[6,76+25])
+                          Ptyp_constr "string" (src/code_path.ml[6,76+19]..[6,76+25])
+                          []
+                      ]
+                  ]
+              (src/code_path.ml[7,112+2]..[7,112+28])
+                Immutable
+                "enclosing_module" (src/code_path.ml[7,112+2]..[7,112+18])                core_type (src/code_path.ml[7,112+21]..[7,112+27])
+                  Ptyp_constr "string" (src/code_path.ml[7,112+21]..[7,112+27])
+                  []
+              (src/code_path.ml[8,141+2]..[8,141+34])
+                Immutable
+                "enclosing_value" (src/code_path.ml[8,141+2]..[8,141+17])                core_type (src/code_path.ml[8,141+20]..[8,141+33])
+                  Ptyp_constr "option" (src/code_path.ml[8,141+27]..[8,141+33])
+                  [
+                    core_type (src/code_path.ml[8,141+20]..[8,141+26])
+                      Ptyp_constr "string" (src/code_path.ml[8,141+20]..[8,141+26])
+                      []
+                  ]
+              (src/code_path.ml[9,176+2]..[9,176+28])
+                Immutable
+                "value" (src/code_path.ml[9,176+2]..[9,176+7])                core_type (src/code_path.ml[9,176+10]..[9,176+27])
+                  Ptyp_constr "option" (src/code_path.ml[9,176+21]..[9,176+27])
+                  [
+                    core_type (src/code_path.ml[9,176+10]..[9,176+20])
+                      Ptyp_constr "loc" (src/code_path.ml[9,176+17]..[9,176+20])
+                      [
+                        core_type (src/code_path.ml[9,176+10]..[9,176+16])
+                          Ptyp_constr "string" (src/code_path.ml[9,176+10]..[9,176+16])
+                          []
+                      ]
+                  ]
+              (src/code_path.ml[10,205+2]..[10,205+17])
+                Immutable
+                "in_expr" (src/code_path.ml[10,205+2]..[10,205+9])                core_type (src/code_path.ml[10,205+12]..[10,205+16])
+                  Ptyp_constr "bool" (src/code_path.ml[10,205+12]..[10,205+16])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/code_path.ml[13,226+0]..[26,566+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[13,226+4]..[13,226+13])
+          Ppat_var "top_level" (src/code_path.ml[13,226+4]..[13,226+13])
+        expression (src/code_path.ml[13,226+14]..[26,566+3]) ghost
+          Pexp_fun
+          Labelled "file_path"
+          None
+          pattern (src/code_path.ml[13,226+15]..[13,226+24])
+            Ppat_var "file_path" (src/code_path.ml[13,226+15]..[13,226+24])
+          expression (src/code_path.ml[14,253+2]..[26,566+3])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (src/code_path.ml[14,253+6]..[14,253+22])
+                  Ppat_var "main_module_name" (src/code_path.ml[14,253+6]..[14,253+22])
+                expression (src/code_path.ml[15,278+4]..[16,356+30])
+                  Pexp_apply
+                  expression (src/code_path.ml[16,356+4]..[16,356+6])
+                    Pexp_ident "|>" (src/code_path.ml[16,356+4]..[16,356+6])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (src/code_path.ml[15,278+4]..[15,278+77])
+                        Pexp_apply
+                        expression (src/code_path.ml[15,278+42]..[15,278+44])
+                          Pexp_ident "|>" (src/code_path.ml[15,278+42]..[15,278+44])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (src/code_path.ml[15,278+4]..[15,278+41])
+                              Pexp_apply
+                              expression (src/code_path.ml[15,278+14]..[15,278+16])
+                                Pexp_ident "|>" (src/code_path.ml[15,278+14]..[15,278+16])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (src/code_path.ml[15,278+4]..[15,278+13])
+                                    Pexp_ident "file_path" (src/code_path.ml[15,278+4]..[15,278+13])
+                                <arg>
+                                Nolabel
+                                  expression (src/code_path.ml[15,278+17]..[15,278+41])
+                                    Pexp_ident "Stdlib.Filename.basename" (src/code_path.ml[15,278+17]..[15,278+41])
+                              ]
+                          <arg>
+                          Nolabel
+                            expression (src/code_path.ml[15,278+45]..[15,278+77])
+                              Pexp_ident "Stdlib.Filename.remove_extension" (src/code_path.ml[15,278+45]..[15,278+77])
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (src/code_path.ml[16,356+7]..[16,356+30])
+                        Pexp_ident "String.capitalize_ascii" (src/code_path.ml[16,356+7]..[16,356+30])
+                  ]
+            ]
+            expression (src/code_path.ml[18,392+2]..[26,566+3])
+              Pexp_record
+              [
+                "file_path" (src/code_path.ml[19,396+4]..[19,396+13])
+                  expression (src/code_path.ml[19,396+4]..[19,396+13]) ghost
+                    Pexp_ident "file_path" (src/code_path.ml[19,396+4]..[19,396+13]) ghost
+                "main_module_name" (src/code_path.ml[20,411+4]..[20,411+20])
+                  expression (src/code_path.ml[20,411+4]..[20,411+20]) ghost
+                    Pexp_ident "main_module_name" (src/code_path.ml[20,411+4]..[20,411+20]) ghost
+                "submodule_path" (src/code_path.ml[21,433+4]..[21,433+18])
+                  expression (src/code_path.ml[21,433+21]..[21,433+23])
+                    Pexp_construct "[]" (src/code_path.ml[21,433+21]..[21,433+23])
+                    None
+                "enclosing_module" (src/code_path.ml[22,458+4]..[22,458+20])
+                  expression (src/code_path.ml[22,458+23]..[22,458+39])
+                    Pexp_ident "main_module_name" (src/code_path.ml[22,458+23]..[22,458+39])
+                "enclosing_value" (src/code_path.ml[23,499+4]..[23,499+19])
+                  expression (src/code_path.ml[23,499+22]..[23,499+26])
+                    Pexp_construct "None" (src/code_path.ml[23,499+22]..[23,499+26])
+                    None
+                "value" (src/code_path.ml[24,527+4]..[24,527+9])
+                  expression (src/code_path.ml[24,527+12]..[24,527+16])
+                    Pexp_construct "None" (src/code_path.ml[24,527+12]..[24,527+16])
+                    None
+                "in_expr" (src/code_path.ml[25,545+4]..[25,545+11])
+                  expression (src/code_path.ml[25,545+14]..[25,545+19])
+                    Pexp_construct "false" (src/code_path.ml[25,545+14]..[25,545+19])
+                    None
+              ]
+              None
+    ]
+  structure_item (src/code_path.ml[28,571+0]..[28,571+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[28,571+4]..[28,571+13])
+          Ppat_var "file_path" (src/code_path.ml[28,571+4]..[28,571+13])
+        expression (src/code_path.ml[28,571+14]..[28,571+29]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[28,571+14]..[28,571+15])
+            Ppat_var "t" (src/code_path.ml[28,571+14]..[28,571+15])
+          expression (src/code_path.ml[28,571+18]..[28,571+29])
+            Pexp_field
+            expression (src/code_path.ml[28,571+18]..[28,571+19])
+              Pexp_ident "t" (src/code_path.ml[28,571+18]..[28,571+19])
+            "file_path" (src/code_path.ml[28,571+20]..[28,571+29])
+    ]
+  structure_item (src/code_path.ml[29,601+0]..[29,601+43])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[29,601+4]..[29,601+20])
+          Ppat_var "main_module_name" (src/code_path.ml[29,601+4]..[29,601+20])
+        expression (src/code_path.ml[29,601+21]..[29,601+43]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[29,601+21]..[29,601+22])
+            Ppat_var "t" (src/code_path.ml[29,601+21]..[29,601+22])
+          expression (src/code_path.ml[29,601+25]..[29,601+43])
+            Pexp_field
+            expression (src/code_path.ml[29,601+25]..[29,601+26])
+              Pexp_ident "t" (src/code_path.ml[29,601+25]..[29,601+26])
+            "main_module_name" (src/code_path.ml[29,601+27]..[29,601+43])
+    ]
+  structure_item (src/code_path.ml[30,645+0]..[30,645+43])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[30,645+4]..[30,645+20])
+          Ppat_var "enclosing_module" (src/code_path.ml[30,645+4]..[30,645+20])
+        expression (src/code_path.ml[30,645+21]..[30,645+43]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[30,645+21]..[30,645+22])
+            Ppat_var "t" (src/code_path.ml[30,645+21]..[30,645+22])
+          expression (src/code_path.ml[30,645+25]..[30,645+43])
+            Pexp_field
+            expression (src/code_path.ml[30,645+25]..[30,645+26])
+              Pexp_ident "t" (src/code_path.ml[30,645+25]..[30,645+26])
+            "enclosing_module" (src/code_path.ml[30,645+27]..[30,645+43])
+    ]
+  structure_item (src/code_path.ml[31,689+0]..[31,689+41])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[31,689+4]..[31,689+19])
+          Ppat_var "enclosing_value" (src/code_path.ml[31,689+4]..[31,689+19])
+        expression (src/code_path.ml[31,689+20]..[31,689+41]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[31,689+20]..[31,689+21])
+            Ppat_var "t" (src/code_path.ml[31,689+20]..[31,689+21])
+          expression (src/code_path.ml[31,689+24]..[31,689+41])
+            Pexp_field
+            expression (src/code_path.ml[31,689+24]..[31,689+25])
+              Pexp_ident "t" (src/code_path.ml[31,689+24]..[31,689+25])
+            "enclosing_value" (src/code_path.ml[31,689+26]..[31,689+41])
+    ]
+  structure_item (src/code_path.ml[33,732+0]..[34,755+63])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[33,732+4]..[33,732+18])
+          Ppat_var "submodule_path" (src/code_path.ml[33,732+4]..[33,732+18])
+        expression (src/code_path.ml[33,732+19]..[34,755+63]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[33,732+19]..[33,732+20])
+            Ppat_var "t" (src/code_path.ml[33,732+19]..[33,732+20])
+          expression (src/code_path.ml[34,755+2]..[34,755+63])
+            Pexp_apply
+            expression (src/code_path.ml[34,755+2]..[34,755+14])
+              Pexp_ident "List.rev_map" (src/code_path.ml[34,755+2]..[34,755+14])
+            [
+              <arg>
+              Labelled "f"
+                expression (src/code_path.ml[34,755+18]..[34,755+46])
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/code_path.ml[34,755+23]..[34,755+30])
+                    Ppat_var "located" (src/code_path.ml[34,755+23]..[34,755+30])
+                  expression (src/code_path.ml[34,755+34]..[34,755+45])
+                    Pexp_field
+                    expression (src/code_path.ml[34,755+34]..[34,755+41])
+                      Pexp_ident "located" (src/code_path.ml[34,755+34]..[34,755+41])
+                    "txt" (src/code_path.ml[34,755+42]..[34,755+45])
+              <arg>
+              Nolabel
+                expression (src/code_path.ml[34,755+47]..[34,755+63])
+                  Pexp_field
+                  expression (src/code_path.ml[34,755+47]..[34,755+48])
+                    Pexp_ident "t" (src/code_path.ml[34,755+47]..[34,755+48])
+                  "submodule_path" (src/code_path.ml[34,755+49]..[34,755+63])
+            ]
+    ]
+  structure_item (src/code_path.ml[36,820+0]..[36,820+64])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[36,820+4]..[36,820+9])
+          Ppat_var "value" (src/code_path.ml[36,820+4]..[36,820+9])
+        expression (src/code_path.ml[36,820+10]..[36,820+64]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[36,820+10]..[36,820+11])
+            Ppat_var "t" (src/code_path.ml[36,820+10]..[36,820+11])
+          expression (src/code_path.ml[36,820+14]..[36,820+64])
+            Pexp_apply
+            expression (src/code_path.ml[36,820+14]..[36,820+24])
+              Pexp_ident "Option.map" (src/code_path.ml[36,820+14]..[36,820+24])
+            [
+              <arg>
+              Labelled "f"
+                expression (src/code_path.ml[36,820+28]..[36,820+56])
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (src/code_path.ml[36,820+33]..[36,820+40])
+                    Ppat_var "located" (src/code_path.ml[36,820+33]..[36,820+40])
+                  expression (src/code_path.ml[36,820+44]..[36,820+55])
+                    Pexp_field
+                    expression (src/code_path.ml[36,820+44]..[36,820+51])
+                      Pexp_ident "located" (src/code_path.ml[36,820+44]..[36,820+51])
+                    "txt" (src/code_path.ml[36,820+52]..[36,820+55])
+              <arg>
+              Nolabel
+                expression (src/code_path.ml[36,820+57]..[36,820+64])
+                  Pexp_field
+                  expression (src/code_path.ml[36,820+57]..[36,820+58])
+                    Pexp_ident "t" (src/code_path.ml[36,820+57]..[36,820+58])
+                  "value" (src/code_path.ml[36,820+59]..[36,820+64])
+            ]
+    ]
+  structure_item (src/code_path.ml[38,886+0]..[44,1112+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[38,886+4]..[38,886+24])
+          Ppat_var "fully_qualified_path" (src/code_path.ml[38,886+4]..[38,886+24])
+        expression (src/code_path.ml[38,886+25]..[44,1112+49]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[38,886+25]..[38,886+26])
+            Ppat_var "t" (src/code_path.ml[38,886+25]..[38,886+26])
+          expression (src/code_path.ml[39,915+2]..[44,1112+49])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (src/code_path.ml[39,915+6]..[39,915+11])
+                  Ppat_var "value" (src/code_path.ml[39,915+6]..[39,915+11])
+                expression (src/code_path.ml[39,915+14]..[39,915+21])
+                  Pexp_apply
+                  expression (src/code_path.ml[39,915+14]..[39,915+19])
+                    Pexp_ident "value" (src/code_path.ml[39,915+14]..[39,915+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (src/code_path.ml[39,915+20]..[39,915+21])
+                        Pexp_ident "t" (src/code_path.ml[39,915+20]..[39,915+21])
+                  ]
+            ]
+            expression (src/code_path.ml[40,940+2]..[44,1112+49])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (src/code_path.ml[40,940+6]..[40,940+20])
+                    Ppat_var "submodule_path" (src/code_path.ml[40,940+6]..[40,940+20])
+                  expression (src/code_path.ml[41,963+4]..[41,963+70])
+                    Pexp_apply
+                    expression (src/code_path.ml[41,963+4]..[41,963+16])
+                      Pexp_ident "List.rev_map" (src/code_path.ml[41,963+4]..[41,963+16])
+                    [
+                      <arg>
+                      Labelled "f"
+                        expression (src/code_path.ml[41,963+20]..[41,963+53])
+                          Pexp_fun
+                          Nolabel
+                          None
+                          pattern (src/code_path.ml[41,963+25]..[41,963+32])
+                            Ppat_var "located" (src/code_path.ml[41,963+25]..[41,963+32])
+                          expression (src/code_path.ml[41,963+36]..[41,963+52])
+                            Pexp_construct "Some" (src/code_path.ml[41,963+36]..[41,963+40])
+                            Some
+                              expression (src/code_path.ml[41,963+41]..[41,963+52])
+                                Pexp_field
+                                expression (src/code_path.ml[41,963+41]..[41,963+48])
+                                  Pexp_ident "located" (src/code_path.ml[41,963+41]..[41,963+48])
+                                "txt" (src/code_path.ml[41,963+49]..[41,963+52])
+                      <arg>
+                      Nolabel
+                        expression (src/code_path.ml[41,963+54]..[41,963+70])
+                          Pexp_field
+                          expression (src/code_path.ml[41,963+54]..[41,963+55])
+                            Pexp_ident "t" (src/code_path.ml[41,963+54]..[41,963+55])
+                          "submodule_path" (src/code_path.ml[41,963+56]..[41,963+70])
+                    ]
+              ]
+              expression (src/code_path.ml[43,1039+2]..[44,1112+49])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (src/code_path.ml[43,1039+6]..[43,1039+11])
+                      Ppat_var "names" (src/code_path.ml[43,1039+6]..[43,1039+11])
+                    expression (src/code_path.ml[43,1039+14]..[43,1039+69])
+                      Pexp_apply
+                      expression (src/code_path.ml[43,1039+58]..[43,1039+59])
+                        Pexp_ident "@" (src/code_path.ml[43,1039+58]..[43,1039+59])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/code_path.ml[43,1039+14]..[43,1039+57])
+                            Pexp_construct "::" (src/code_path.ml[43,1039+39]..[43,1039+41])
+                            Some
+                              expression (src/code_path.ml[43,1039+15]..[43,1039+56]) ghost
+                                Pexp_tuple
+                                [
+                                  expression (src/code_path.ml[43,1039+15]..[43,1039+38])
+                                    Pexp_construct "Some" (src/code_path.ml[43,1039+15]..[43,1039+19])
+                                    Some
+                                      expression (src/code_path.ml[43,1039+20]..[43,1039+38])
+                                        Pexp_field
+                                        expression (src/code_path.ml[43,1039+20]..[43,1039+21])
+                                          Pexp_ident "t" (src/code_path.ml[43,1039+20]..[43,1039+21])
+                                        "main_module_name" (src/code_path.ml[43,1039+22]..[43,1039+38])
+                                  expression (src/code_path.ml[43,1039+42]..[43,1039+56])
+                                    Pexp_ident "submodule_path" (src/code_path.ml[43,1039+42]..[43,1039+56])
+                                ]
+                        <arg>
+                        Nolabel
+                          expression (src/code_path.ml[43,1039+60]..[43,1039+69])
+                            Pexp_construct "::" (src/code_path.ml[43,1039+62]..[43,1039+69]) ghost
+                            Some
+                              expression (src/code_path.ml[43,1039+62]..[43,1039+69]) ghost
+                                Pexp_tuple
+                                [
+                                  expression (src/code_path.ml[43,1039+62]..[43,1039+67])
+                                    Pexp_ident "value" (src/code_path.ml[43,1039+62]..[43,1039+67])
+                                  expression (src/code_path.ml[43,1039+68]..[43,1039+69]) ghost
+                                    Pexp_construct "[]" (src/code_path.ml[43,1039+68]..[43,1039+69]) ghost
+                                    None
+                                ]
+                      ]
+                ]
+                expression (src/code_path.ml[44,1112+2]..[44,1112+49])
+                  Pexp_apply
+                  expression (src/code_path.ml[44,1112+25]..[44,1112+27])
+                    Pexp_ident "@@" (src/code_path.ml[44,1112+25]..[44,1112+27])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (src/code_path.ml[44,1112+2]..[44,1112+24])
+                        Pexp_apply
+                        expression (src/code_path.ml[44,1112+2]..[44,1112+15])
+                          Pexp_ident "String.concat" (src/code_path.ml[44,1112+2]..[44,1112+15])
+                        [
+                          <arg>
+                          Labelled "sep"
+                            expression (src/code_path.ml[44,1112+21]..[44,1112+24])
+                              Pexp_constant PConst_string(".",(src/code_path.ml[44,1112+22]..[44,1112+23]),None)
+                        ]
+                    <arg>
+                    Nolabel
+                      expression (src/code_path.ml[44,1112+28]..[44,1112+49])
+                        Pexp_apply
+                        expression (src/code_path.ml[44,1112+28]..[44,1112+43])
+                          Pexp_ident "List.filter_opt" (src/code_path.ml[44,1112+28]..[44,1112+43])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (src/code_path.ml[44,1112+44]..[44,1112+49])
+                              Pexp_ident "names" (src/code_path.ml[44,1112+44]..[44,1112+49])
+                        ]
+                  ]
+    ]
+  structure_item (src/code_path.ml[46,1163+0]..[46,1163+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[46,1163+4]..[46,1163+14])
+          Ppat_var "enter_expr" (src/code_path.ml[46,1163+4]..[46,1163+14])
+        expression (src/code_path.ml[46,1163+15]..[46,1163+44]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[46,1163+15]..[46,1163+16])
+            Ppat_var "t" (src/code_path.ml[46,1163+15]..[46,1163+16])
+          expression (src/code_path.ml[46,1163+19]..[46,1163+44])
+            Pexp_record
+            [
+              "in_expr" (src/code_path.ml[46,1163+28]..[46,1163+35])
+                expression (src/code_path.ml[46,1163+38]..[46,1163+42])
+                  Pexp_construct "true" (src/code_path.ml[46,1163+38]..[46,1163+42])
+                  None
+            ]
+            Some
+              expression (src/code_path.ml[46,1163+21]..[46,1163+22])
+                Pexp_ident "t" (src/code_path.ml[46,1163+21]..[46,1163+22])
+    ]
+  structure_item (src/code_path.ml[48,1209+0]..[55,1444+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[48,1209+4]..[48,1209+16])
+          Ppat_var "enter_module" (src/code_path.ml[48,1209+4]..[48,1209+16])
+        expression (src/code_path.ml[48,1209+17]..[55,1444+5]) ghost
+          Pexp_fun
+          Labelled "loc"
+          None
+          pattern (src/code_path.ml[48,1209+18]..[48,1209+21])
+            Ppat_var "loc" (src/code_path.ml[48,1209+18]..[48,1209+21])
+          expression (src/code_path.ml[48,1209+22]..[55,1444+5]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/code_path.ml[48,1209+22]..[48,1209+33])
+              Ppat_var "module_name" (src/code_path.ml[48,1209+22]..[48,1209+33])
+            expression (src/code_path.ml[48,1209+34]..[55,1444+5]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (src/code_path.ml[48,1209+34]..[48,1209+35])
+                Ppat_var "t" (src/code_path.ml[48,1209+34]..[48,1209+35])
+              expression (src/code_path.ml[49,1247+2]..[55,1444+5])
+                Pexp_ifthenelse
+                expression (src/code_path.ml[49,1247+5]..[49,1247+14])
+                  Pexp_field
+                  expression (src/code_path.ml[49,1247+5]..[49,1247+6])
+                    Pexp_ident "t" (src/code_path.ml[49,1247+5]..[49,1247+6])
+                  "in_expr" (src/code_path.ml[49,1247+7]..[49,1247+14])
+                expression (src/code_path.ml[49,1247+20]..[49,1247+61])
+                  Pexp_record
+                  [
+                    "enclosing_module" (src/code_path.ml[49,1247+29]..[49,1247+45])
+                      expression (src/code_path.ml[49,1247+48]..[49,1247+59])
+                        Pexp_ident "module_name" (src/code_path.ml[49,1247+48]..[49,1247+59])
+                  ]
+                  Some
+                    expression (src/code_path.ml[49,1247+22]..[49,1247+23])
+                      Pexp_ident "t" (src/code_path.ml[49,1247+22]..[49,1247+23])
+                Some
+                  expression (src/code_path.ml[51,1316+4]..[55,1444+5])
+                    Pexp_record
+                    [
+                      "submodule_path" (src/code_path.ml[53,1335+6]..[53,1335+20])
+                        expression (src/code_path.ml[53,1335+23]..[53,1335+69])
+                          Pexp_construct "::" (src/code_path.ml[53,1335+50]..[53,1335+52])
+                          Some
+                            expression (src/code_path.ml[53,1335+23]..[53,1335+69]) ghost
+                              Pexp_tuple
+                              [
+                                expression (src/code_path.ml[53,1335+23]..[53,1335+49])
+                                  Pexp_record
+                                  [
+                                    "txt" (src/code_path.ml[53,1335+25]..[53,1335+28])
+                                      expression (src/code_path.ml[53,1335+31]..[53,1335+42])
+                                        Pexp_ident "module_name" (src/code_path.ml[53,1335+31]..[53,1335+42])
+                                    "loc" (src/code_path.ml[53,1335+44]..[53,1335+47])
+                                      expression (src/code_path.ml[53,1335+44]..[53,1335+47]) ghost
+                                        Pexp_ident "loc" (src/code_path.ml[53,1335+44]..[53,1335+47]) ghost
+                                  ]
+                                  None
+                                expression (src/code_path.ml[53,1335+53]..[53,1335+69])
+                                  Pexp_field
+                                  expression (src/code_path.ml[53,1335+53]..[53,1335+54])
+                                    Pexp_ident "t" (src/code_path.ml[53,1335+53]..[53,1335+54])
+                                  "submodule_path" (src/code_path.ml[53,1335+55]..[53,1335+69])
+                              ]
+                      "enclosing_module" (src/code_path.ml[54,1406+6]..[54,1406+22])
+                        expression (src/code_path.ml[54,1406+25]..[54,1406+36])
+                          Pexp_ident "module_name" (src/code_path.ml[54,1406+25]..[54,1406+36])
+                    ]
+                    Some
+                      expression (src/code_path.ml[52,1322+6]..[52,1322+7])
+                        Pexp_ident "t" (src/code_path.ml[52,1322+6]..[52,1322+7])
+    ]
+  structure_item (src/code_path.ml[57,1451+0]..[64,1665+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[57,1451+4]..[57,1451+15])
+          Ppat_var "enter_value" (src/code_path.ml[57,1451+4]..[57,1451+15])
+        expression (src/code_path.ml[57,1451+16]..[64,1665+5]) ghost
+          Pexp_fun
+          Labelled "loc"
+          None
+          pattern (src/code_path.ml[57,1451+17]..[57,1451+20])
+            Ppat_var "loc" (src/code_path.ml[57,1451+17]..[57,1451+20])
+          expression (src/code_path.ml[57,1451+21]..[64,1665+5]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/code_path.ml[57,1451+21]..[57,1451+31])
+              Ppat_var "value_name" (src/code_path.ml[57,1451+21]..[57,1451+31])
+            expression (src/code_path.ml[57,1451+32]..[64,1665+5]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (src/code_path.ml[57,1451+32]..[57,1451+33])
+                Ppat_var "t" (src/code_path.ml[57,1451+32]..[57,1451+33])
+              expression (src/code_path.ml[58,1487+2]..[64,1665+5])
+                Pexp_ifthenelse
+                expression (src/code_path.ml[58,1487+5]..[58,1487+14])
+                  Pexp_field
+                  expression (src/code_path.ml[58,1487+5]..[58,1487+6])
+                    Pexp_ident "t" (src/code_path.ml[58,1487+5]..[58,1487+6])
+                  "in_expr" (src/code_path.ml[58,1487+7]..[58,1487+14])
+                expression (src/code_path.ml[58,1487+20]..[58,1487+64])
+                  Pexp_record
+                  [
+                    "enclosing_value" (src/code_path.ml[58,1487+29]..[58,1487+44])
+                      expression (src/code_path.ml[58,1487+47]..[58,1487+62])
+                        Pexp_construct "Some" (src/code_path.ml[58,1487+47]..[58,1487+51])
+                        Some
+                          expression (src/code_path.ml[58,1487+52]..[58,1487+62])
+                            Pexp_ident "value_name" (src/code_path.ml[58,1487+52]..[58,1487+62])
+                  ]
+                  Some
+                    expression (src/code_path.ml[58,1487+22]..[58,1487+23])
+                      Pexp_ident "t" (src/code_path.ml[58,1487+22]..[58,1487+23])
+                Some
+                  expression (src/code_path.ml[60,1559+4]..[64,1665+5])
+                    Pexp_record
+                    [
+                      "value" (src/code_path.ml[62,1578+6]..[62,1578+11])
+                        expression (src/code_path.ml[62,1578+14]..[62,1578+44])
+                          Pexp_construct "Some" (src/code_path.ml[62,1578+14]..[62,1578+18])
+                          Some
+                            expression (src/code_path.ml[62,1578+19]..[62,1578+44])
+                              Pexp_record
+                              [
+                                "txt" (src/code_path.ml[62,1578+21]..[62,1578+24])
+                                  expression (src/code_path.ml[62,1578+27]..[62,1578+37])
+                                    Pexp_ident "value_name" (src/code_path.ml[62,1578+27]..[62,1578+37])
+                                "loc" (src/code_path.ml[62,1578+39]..[62,1578+42])
+                                  expression (src/code_path.ml[62,1578+39]..[62,1578+42]) ghost
+                                    Pexp_ident "loc" (src/code_path.ml[62,1578+39]..[62,1578+42]) ghost
+                              ]
+                              None
+                      "enclosing_value" (src/code_path.ml[63,1624+6]..[63,1624+21])
+                        expression (src/code_path.ml[63,1624+24]..[63,1624+39])
+                          Pexp_construct "Some" (src/code_path.ml[63,1624+24]..[63,1624+28])
+                          Some
+                            expression (src/code_path.ml[63,1624+29]..[63,1624+39])
+                              Pexp_ident "value_name" (src/code_path.ml[63,1624+29]..[63,1624+39])
+                    ]
+                    Some
+                      expression (src/code_path.ml[61,1565+6]..[61,1565+7])
+                        Pexp_ident "t" (src/code_path.ml[61,1565+6]..[61,1565+7])
+    ]
+  structure_item (src/code_path.ml[66,1672+0]..[66,1672+79])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[66,1672+4]..[66,1672+18])
+          Ppat_var "to_string_path" (src/code_path.ml[66,1672+4]..[66,1672+18])
+        expression (src/code_path.ml[66,1672+19]..[66,1672+79]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[66,1672+19]..[66,1672+20])
+            Ppat_var "t" (src/code_path.ml[66,1672+19]..[66,1672+20])
+          expression (src/code_path.ml[66,1672+23]..[66,1672+79])
+            Pexp_apply
+            expression (src/code_path.ml[66,1672+23]..[66,1672+36])
+              Pexp_ident "String.concat" (src/code_path.ml[66,1672+23]..[66,1672+36])
+            [
+              <arg>
+              Labelled "sep"
+                expression (src/code_path.ml[66,1672+42]..[66,1672+45])
+                  Pexp_constant PConst_string(".",(src/code_path.ml[66,1672+43]..[66,1672+44]),None)
+              <arg>
+              Nolabel
+                expression (src/code_path.ml[66,1672+46]..[66,1672+79])
+                  Pexp_construct "::" (src/code_path.ml[66,1672+59]..[66,1672+61])
+                  Some
+                    expression (src/code_path.ml[66,1672+47]..[66,1672+78]) ghost
+                      Pexp_tuple
+                      [
+                        expression (src/code_path.ml[66,1672+47]..[66,1672+58])
+                          Pexp_field
+                          expression (src/code_path.ml[66,1672+47]..[66,1672+48])
+                            Pexp_ident "t" (src/code_path.ml[66,1672+47]..[66,1672+48])
+                          "file_path" (src/code_path.ml[66,1672+49]..[66,1672+58])
+                        expression (src/code_path.ml[66,1672+62]..[66,1672+78])
+                          Pexp_apply
+                          expression (src/code_path.ml[66,1672+62]..[66,1672+76])
+                            Pexp_ident "submodule_path" (src/code_path.ml[66,1672+62]..[66,1672+76])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (src/code_path.ml[66,1672+77]..[66,1672+78])
+                                Pexp_ident "t" (src/code_path.ml[66,1672+77]..[66,1672+78])
+                          ]
+                      ]
+            ]
+    ]
+  structure_item (src/code_path.ml[67,1752+0]..[67,1752+70])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[67,1752+4]..[67,1752+20])
+          Ppat_var "with_string_path" (src/code_path.ml[67,1752+4]..[67,1752+20])
+        expression (src/code_path.ml[67,1752+21]..[67,1752+70]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/code_path.ml[67,1752+21]..[67,1752+22])
+            Ppat_var "f" (src/code_path.ml[67,1752+21]..[67,1752+22])
+          expression (src/code_path.ml[67,1752+23]..[67,1752+70]) ghost
+            Pexp_fun
+            Labelled "loc"
+            None
+            pattern (src/code_path.ml[67,1752+24]..[67,1752+27])
+              Ppat_var "loc" (src/code_path.ml[67,1752+24]..[67,1752+27])
+            expression (src/code_path.ml[67,1752+28]..[67,1752+70]) ghost
+              Pexp_fun
+              Labelled "path"
+              None
+              pattern (src/code_path.ml[67,1752+29]..[67,1752+33])
+                Ppat_var "path" (src/code_path.ml[67,1752+29]..[67,1752+33])
+              expression (src/code_path.ml[67,1752+36]..[67,1752+70])
+                Pexp_apply
+                expression (src/code_path.ml[67,1752+36]..[67,1752+37])
+                  Pexp_ident "f" (src/code_path.ml[67,1752+36]..[67,1752+37])
+                [
+                  <arg>
+                  Labelled "loc"
+                    expression (src/code_path.ml[67,1752+39]..[67,1752+42])
+                      Pexp_ident "loc" (src/code_path.ml[67,1752+39]..[67,1752+42])
+                  <arg>
+                  Labelled "path"
+                    expression (src/code_path.ml[67,1752+49]..[67,1752+70])
+                      Pexp_apply
+                      expression (src/code_path.ml[67,1752+50]..[67,1752+64])
+                        Pexp_ident "to_string_path" (src/code_path.ml[67,1752+50]..[67,1752+64])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/code_path.ml[67,1752+65]..[67,1752+69])
+                            Pexp_ident "path" (src/code_path.ml[67,1752+65]..[67,1752+69])
+                      ]
+                ]
+    ]
+  structure_item (src/code_path.ml[69,1826+0]..[72,1871+3])
+    Pstr_eval
+    expression (src/code_path.ml[69,1826+0]..[72,1871+3])
+      Pexp_letmodule "M" (src/code_path.ml[69,1826+11]..[69,1826+12])
+      module_expr (src/code_path.ml[69,1826+15]..[71,1864+3])
+        Pmod_structure
+        [
+          structure_item (src/code_path.ml[70,1848+2]..[70,1848+15])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (src/code_path.ml[70,1848+6]..[70,1848+7])
+                  Ppat_var "a" (src/code_path.ml[70,1848+6]..[70,1848+7])
+                expression (src/code_path.ml[70,1848+10]..[70,1848+15])
+                  Pexp_constant PConst_string("lol",(src/code_path.ml[70,1848+11]..[70,1848+14]),None)
+            ]
+        ]
+      expression (src/code_path.ml[72,1871+0]..[72,1871+3])
+        Pexp_ident "M.a" (src/code_path.ml[72,1871+0]..[72,1871+3])
+]
+
+open! Import
+type t =
+  {
+  file_path: string ;
+  main_module_name: string ;
+  submodule_path: string loc list ;
+  enclosing_module: string ;
+  enclosing_value: string option ;
+  value: string loc option ;
+  in_expr: bool }
+let top_level ~file_path  =
+  let main_module_name =
+    ((file_path |> Stdlib.Filename.basename) |>
+       Stdlib.Filename.remove_extension)
+      |> String.capitalize_ascii in
+  {
+    file_path;
+    main_module_name;
+    submodule_path = [];
+    enclosing_module = main_module_name;
+    enclosing_value = None;
+    value = None;
+    in_expr = false
+  }
+let file_path t = t.file_path
+let main_module_name t = t.main_module_name
+let enclosing_module t = t.enclosing_module
+let enclosing_value t = t.enclosing_value
+let submodule_path t =
+  List.rev_map ~f:(fun located -> located.txt) t.submodule_path
+let value t = Option.map ~f:(fun located -> located.txt) t.value
+let fully_qualified_path t =
+  let value = value t in
+  let submodule_path =
+    List.rev_map ~f:(fun located -> Some (located.txt)) t.submodule_path in
+  let names = ((Some (t.main_module_name)) :: submodule_path) @ [value] in
+  (String.concat ~sep:".") @@ (List.filter_opt names)
+let enter_expr t = { t with in_expr = true }
+let enter_module ~loc  module_name t =
+  if t.in_expr
+  then { t with enclosing_module = module_name }
+  else
+    {
+      t with
+      submodule_path = ({ txt = module_name; loc } :: (t.submodule_path));
+      enclosing_module = module_name
+    }
+let enter_value ~loc  value_name t =
+  if t.in_expr
+  then { t with enclosing_value = (Some value_name) }
+  else
+    {
+      t with
+      value = (Some { txt = value_name; loc });
+      enclosing_value = (Some value_name)
+    }
+let to_string_path t =
+  String.concat ~sep:"." ((t.file_path) :: (submodule_path t))
+let with_string_path f ~loc  ~path  = f ~loc ~path:(to_string_path path)
+;;let module M = struct let a = "lol" end in M.a
+[
+  structure_item (src/code_path.ml[1,0+0]..src/code_path.ml[1,0+12])
+    Tstr_open Override
+    module_expr (src/code_path.ml[1,0+6]..src/code_path.ml[1,0+12])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/code_path.ml[3,14+0]..src/code_path.ml[11,223+1])
+    Tstr_type Rec
+    [
+      type_declaration t/550 (src/code_path.ml[3,14+0]..src/code_path.ml[11,223+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (src/code_path.ml[4,25+2]..src/code_path.ml[4,25+21])
+                Immutable
+                file_path/551                core_type (src/code_path.ml[4,25+14]..src/code_path.ml[4,25+20])
+                  Ttyp_poly
+                  core_type (src/code_path.ml[4,25+14]..src/code_path.ml[4,25+20])
+                    Ttyp_constr "string/17!"
+                    []
+              (src/code_path.ml[5,47+2]..src/code_path.ml[5,47+28])
+                Immutable
+                main_module_name/552                core_type (src/code_path.ml[5,47+21]..src/code_path.ml[5,47+27])
+                  Ttyp_poly
+                  core_type (src/code_path.ml[5,47+21]..src/code_path.ml[5,47+27])
+                    Ttyp_constr "string/17!"
+                    []
+              (src/code_path.ml[6,76+2]..src/code_path.ml[6,76+35])
+                Immutable
+                submodule_path/553                core_type (src/code_path.ml[6,76+19]..src/code_path.ml[6,76+34])
+                  Ttyp_poly
+                  core_type (src/code_path.ml[6,76+19]..src/code_path.ml[6,76+34])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/code_path.ml[6,76+19]..src/code_path.ml[6,76+29])
+                        Ttyp_constr "Ppxlib__!.Import.loc"
+                        [
+                          core_type (src/code_path.ml[6,76+19]..src/code_path.ml[6,76+25])
+                            Ttyp_constr "string/17!"
+                            []
+                        ]
+                    ]
+              (src/code_path.ml[7,112+2]..src/code_path.ml[7,112+28])
+                Immutable
+                enclosing_module/554                core_type (src/code_path.ml[7,112+21]..src/code_path.ml[7,112+27])
+                  Ttyp_poly
+                  core_type (src/code_path.ml[7,112+21]..src/code_path.ml[7,112+27])
+                    Ttyp_constr "string/17!"
+                    []
+              (src/code_path.ml[8,141+2]..src/code_path.ml[8,141+34])
+                Immutable
+                enclosing_value/555                core_type (src/code_path.ml[8,141+20]..src/code_path.ml[8,141+33])
+                  Ttyp_poly
+                  core_type (src/code_path.ml[8,141+20]..src/code_path.ml[8,141+33])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/code_path.ml[8,141+20]..src/code_path.ml[8,141+26])
+                        Ttyp_constr "string/17!"
+                        []
+                    ]
+              (src/code_path.ml[9,176+2]..src/code_path.ml[9,176+28])
+                Immutable
+                value/556                core_type (src/code_path.ml[9,176+10]..src/code_path.ml[9,176+27])
+                  Ttyp_poly
+                  core_type (src/code_path.ml[9,176+10]..src/code_path.ml[9,176+27])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/code_path.ml[9,176+10]..src/code_path.ml[9,176+20])
+                        Ttyp_constr "Ppxlib__!.Import.loc"
+                        [
+                          core_type (src/code_path.ml[9,176+10]..src/code_path.ml[9,176+16])
+                            Ttyp_constr "string/17!"
+                            []
+                        ]
+                    ]
+              (src/code_path.ml[10,205+2]..src/code_path.ml[10,205+17])
+                Immutable
+                in_expr/557                core_type (src/code_path.ml[10,205+12]..src/code_path.ml[10,205+16])
+                  Ttyp_poly
+                  core_type (src/code_path.ml[10,205+12]..src/code_path.ml[10,205+16])
+                    Ttyp_constr "bool/5!"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/code_path.ml[13,226+0]..src/code_path.ml[26,566+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[13,226+4]..src/code_path.ml[13,226+13])
+          Tpat_var "top_level/839"
+        expression (src/code_path.ml[13,226+14]..src/code_path.ml[26,566+3]) ghost
+          Texp_function
+          Labelled "file_path"
+          [
+            <case>
+              pattern (src/code_path.ml[13,226+15]..src/code_path.ml[13,226+24])
+                Tpat_var "file_path/841"
+              expression (src/code_path.ml[14,253+2]..src/code_path.ml[26,566+3])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (src/code_path.ml[14,253+6]..src/code_path.ml[14,253+22])
+                      Tpat_var "main_module_name/842"
+                    expression (src/code_path.ml[15,278+4]..src/code_path.ml[16,356+30])
+                      Texp_apply
+                      expression (src/code_path.ml[16,356+4]..src/code_path.ml[16,356+6])
+                        Texp_ident "Stdlib!.|>"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (src/code_path.ml[15,278+4]..src/code_path.ml[15,278+77])
+                            Texp_apply
+                            expression (src/code_path.ml[15,278+42]..src/code_path.ml[15,278+44])
+                              Texp_ident "Stdlib!.|>"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (src/code_path.ml[15,278+4]..src/code_path.ml[15,278+41])
+                                  Texp_apply
+                                  expression (src/code_path.ml[15,278+14]..src/code_path.ml[15,278+16])
+                                    Texp_ident "Stdlib!.|>"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (src/code_path.ml[15,278+4]..src/code_path.ml[15,278+13])
+                                        Texp_ident "file_path/841"
+                                    <arg>
+                                      Nolabel
+                                      expression (src/code_path.ml[15,278+17]..src/code_path.ml[15,278+41])
+                                        Texp_ident "Stdlib!.Filename.basename"
+                                  ]
+                              <arg>
+                                Nolabel
+                                expression (src/code_path.ml[15,278+45]..src/code_path.ml[15,278+77])
+                                  Texp_ident "Stdlib!.Filename.remove_extension"
+                            ]
+                        <arg>
+                          Nolabel
+                          expression (src/code_path.ml[16,356+7]..src/code_path.ml[16,356+30])
+                            Texp_ident "Ppxlib__!.Import.String.capitalize_ascii"
+                      ]
+                ]
+                expression (src/code_path.ml[18,392+2]..src/code_path.ml[26,566+3])
+                  Texp_record
+                    fields =
+                      [
+                        "file_path"
+                          expression (src/code_path.ml[19,396+4]..src/code_path.ml[19,396+13]) ghost
+                            Texp_ident "file_path/841"
+                        "main_module_name"
+                          expression (src/code_path.ml[20,411+4]..src/code_path.ml[20,411+20]) ghost
+                            Texp_ident "main_module_name/842"
+                        "submodule_path"
+                          expression (src/code_path.ml[21,433+21]..src/code_path.ml[21,433+23])
+                            Texp_construct "[]"
+                            []
+                        "enclosing_module"
+                          expression (src/code_path.ml[22,458+23]..src/code_path.ml[22,458+39])
+                            Texp_ident "main_module_name/842"
+                        "enclosing_value"
+                          expression (src/code_path.ml[23,499+22]..src/code_path.ml[23,499+26])
+                            Texp_construct "None"
+                            []
+                        "value"
+                          expression (src/code_path.ml[24,527+12]..src/code_path.ml[24,527+16])
+                            Texp_construct "None"
+                            []
+                        "in_expr"
+                          expression (src/code_path.ml[25,545+14]..src/code_path.ml[25,545+19])
+                            Texp_construct "false"
+                            []
+                      ]
+                    representation =
+                      Record_regular
+                    extended_expression =
+                      None
+          ]
+    ]
+  structure_item (src/code_path.ml[28,571+0]..src/code_path.ml[28,571+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[28,571+4]..src/code_path.ml[28,571+13])
+          Tpat_var "file_path/1067"
+        expression (src/code_path.ml[28,571+14]..src/code_path.ml[28,571+29]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[28,571+14]..src/code_path.ml[28,571+15])
+                Tpat_var "t/1069"
+              expression (src/code_path.ml[28,571+18]..src/code_path.ml[28,571+29])
+                Texp_field
+                expression (src/code_path.ml[28,571+18]..src/code_path.ml[28,571+19])
+                  Texp_ident "t/1069"
+                "file_path"
+          ]
+    ]
+  structure_item (src/code_path.ml[29,601+0]..src/code_path.ml[29,601+43])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[29,601+4]..src/code_path.ml[29,601+20])
+          Tpat_var "main_module_name/1070"
+        expression (src/code_path.ml[29,601+21]..src/code_path.ml[29,601+43]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[29,601+21]..src/code_path.ml[29,601+22])
+                Tpat_var "t/1072"
+              expression (src/code_path.ml[29,601+25]..src/code_path.ml[29,601+43])
+                Texp_field
+                expression (src/code_path.ml[29,601+25]..src/code_path.ml[29,601+26])
+                  Texp_ident "t/1072"
+                "main_module_name"
+          ]
+    ]
+  structure_item (src/code_path.ml[30,645+0]..src/code_path.ml[30,645+43])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[30,645+4]..src/code_path.ml[30,645+20])
+          Tpat_var "enclosing_module/1073"
+        expression (src/code_path.ml[30,645+21]..src/code_path.ml[30,645+43]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[30,645+21]..src/code_path.ml[30,645+22])
+                Tpat_var "t/1075"
+              expression (src/code_path.ml[30,645+25]..src/code_path.ml[30,645+43])
+                Texp_field
+                expression (src/code_path.ml[30,645+25]..src/code_path.ml[30,645+26])
+                  Texp_ident "t/1075"
+                "enclosing_module"
+          ]
+    ]
+  structure_item (src/code_path.ml[31,689+0]..src/code_path.ml[31,689+41])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[31,689+4]..src/code_path.ml[31,689+19])
+          Tpat_var "enclosing_value/1076"
+        expression (src/code_path.ml[31,689+20]..src/code_path.ml[31,689+41]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[31,689+20]..src/code_path.ml[31,689+21])
+                Tpat_var "t/1078"
+              expression (src/code_path.ml[31,689+24]..src/code_path.ml[31,689+41])
+                Texp_field
+                expression (src/code_path.ml[31,689+24]..src/code_path.ml[31,689+25])
+                  Texp_ident "t/1078"
+                "enclosing_value"
+          ]
+    ]
+  structure_item (src/code_path.ml[33,732+0]..src/code_path.ml[34,755+63])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[33,732+4]..src/code_path.ml[33,732+18])
+          Tpat_var "submodule_path/1079"
+        expression (src/code_path.ml[33,732+19]..src/code_path.ml[34,755+63]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[33,732+19]..src/code_path.ml[33,732+20])
+                Tpat_var "t/1081"
+              expression (src/code_path.ml[34,755+2]..src/code_path.ml[34,755+63])
+                Texp_apply
+                expression (src/code_path.ml[34,755+2]..src/code_path.ml[34,755+14])
+                  Texp_ident "Ppxlib__!.Import.List.rev_map"
+                [
+                  <arg>
+                    Labelled "f"
+                    expression (src/code_path.ml[34,755+18]..src/code_path.ml[34,755+46])
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (src/code_path.ml[34,755+23]..src/code_path.ml[34,755+30])
+                            Tpat_var "located/1155"
+                          expression (src/code_path.ml[34,755+34]..src/code_path.ml[34,755+45])
+                            Texp_field
+                            expression (src/code_path.ml[34,755+34]..src/code_path.ml[34,755+41])
+                              Texp_ident "located/1155"
+                            "txt"
+                      ]
+                  <arg>
+                    Nolabel
+                    expression (src/code_path.ml[34,755+47]..src/code_path.ml[34,755+63])
+                      Texp_field
+                      expression (src/code_path.ml[34,755+47]..src/code_path.ml[34,755+48])
+                        Texp_ident "t/1081"
+                      "submodule_path"
+                ]
+          ]
+    ]
+  structure_item (src/code_path.ml[36,820+0]..src/code_path.ml[36,820+64])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[36,820+4]..src/code_path.ml[36,820+9])
+          Tpat_var "value/1156"
+        expression (src/code_path.ml[36,820+10]..src/code_path.ml[36,820+64]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[36,820+10]..src/code_path.ml[36,820+11])
+                Tpat_var "t/1158"
+              expression (src/code_path.ml[36,820+14]..src/code_path.ml[36,820+64])
+                Texp_apply
+                expression (src/code_path.ml[36,820+14]..src/code_path.ml[36,820+24])
+                  Texp_ident "Ppxlib__!.Import.Option.map"
+                [
+                  <arg>
+                    Nolabel
+                    expression (src/code_path.ml[36,820+57]..src/code_path.ml[36,820+64])
+                      Texp_field
+                      expression (src/code_path.ml[36,820+57]..src/code_path.ml[36,820+58])
+                        Texp_ident "t/1158"
+                      "value"
+                  <arg>
+                    Labelled "f"
+                    expression (src/code_path.ml[36,820+28]..src/code_path.ml[36,820+56])
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (src/code_path.ml[36,820+33]..src/code_path.ml[36,820+40])
+                            Tpat_var "located/1164"
+                          expression (src/code_path.ml[36,820+44]..src/code_path.ml[36,820+55])
+                            Texp_field
+                            expression (src/code_path.ml[36,820+44]..src/code_path.ml[36,820+51])
+                              Texp_ident "located/1164"
+                            "txt"
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/code_path.ml[38,886+0]..src/code_path.ml[44,1112+49])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[38,886+4]..src/code_path.ml[38,886+24])
+          Tpat_var "fully_qualified_path/1165"
+        expression (src/code_path.ml[38,886+25]..src/code_path.ml[44,1112+49]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[38,886+25]..src/code_path.ml[38,886+26])
+                Tpat_var "t/1167"
+              expression (src/code_path.ml[39,915+2]..src/code_path.ml[44,1112+49])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (src/code_path.ml[39,915+6]..src/code_path.ml[39,915+11])
+                      Tpat_var "value/1168"
+                    expression (src/code_path.ml[39,915+14]..src/code_path.ml[39,915+21])
+                      Texp_apply
+                      expression (src/code_path.ml[39,915+14]..src/code_path.ml[39,915+19])
+                        Texp_ident "value/1156"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (src/code_path.ml[39,915+20]..src/code_path.ml[39,915+21])
+                            Texp_ident "t/1167"
+                      ]
+                ]
+                expression (src/code_path.ml[40,940+2]..src/code_path.ml[44,1112+49])
+                  Texp_let Nonrec
+                  [
+                    <def>
+                      pattern (src/code_path.ml[40,940+6]..src/code_path.ml[40,940+20])
+                        Tpat_var "submodule_path/1169"
+                      expression (src/code_path.ml[41,963+4]..src/code_path.ml[41,963+70])
+                        Texp_apply
+                        expression (src/code_path.ml[41,963+4]..src/code_path.ml[41,963+16])
+                          Texp_ident "Ppxlib__!.Import.List.rev_map"
+                        [
+                          <arg>
+                            Labelled "f"
+                            expression (src/code_path.ml[41,963+20]..src/code_path.ml[41,963+53])
+                              Texp_function
+                              Nolabel
+                              [
+                                <case>
+                                  pattern (src/code_path.ml[41,963+25]..src/code_path.ml[41,963+32])
+                                    Tpat_var "located/1170"
+                                  expression (src/code_path.ml[41,963+36]..src/code_path.ml[41,963+52])
+                                    Texp_construct "Some"
+                                    [
+                                      expression (src/code_path.ml[41,963+41]..src/code_path.ml[41,963+52])
+                                        Texp_field
+                                        expression (src/code_path.ml[41,963+41]..src/code_path.ml[41,963+48])
+                                          Texp_ident "located/1170"
+                                        "txt"
+                                    ]
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (src/code_path.ml[41,963+54]..src/code_path.ml[41,963+70])
+                              Texp_field
+                              expression (src/code_path.ml[41,963+54]..src/code_path.ml[41,963+55])
+                                Texp_ident "t/1167"
+                              "submodule_path"
+                        ]
+                  ]
+                  expression (src/code_path.ml[43,1039+2]..src/code_path.ml[44,1112+49])
+                    Texp_let Nonrec
+                    [
+                      <def>
+                        pattern (src/code_path.ml[43,1039+6]..src/code_path.ml[43,1039+11])
+                          Tpat_var "names/1171"
+                        expression (src/code_path.ml[43,1039+14]..src/code_path.ml[43,1039+69])
+                          Texp_apply
+                          expression (src/code_path.ml[43,1039+58]..src/code_path.ml[43,1039+59])
+                            Texp_ident "Ppxlib__!.Import.@"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (src/code_path.ml[43,1039+14]..src/code_path.ml[43,1039+57])
+                                Texp_construct "::"
+                                [
+                                  expression (src/code_path.ml[43,1039+15]..src/code_path.ml[43,1039+38])
+                                    Texp_construct "Some"
+                                    [
+                                      expression (src/code_path.ml[43,1039+20]..src/code_path.ml[43,1039+38])
+                                        Texp_field
+                                        expression (src/code_path.ml[43,1039+20]..src/code_path.ml[43,1039+21])
+                                          Texp_ident "t/1167"
+                                        "main_module_name"
+                                    ]
+                                  expression (src/code_path.ml[43,1039+42]..src/code_path.ml[43,1039+56])
+                                    Texp_ident "submodule_path/1169"
+                                ]
+                            <arg>
+                              Nolabel
+                              expression (src/code_path.ml[43,1039+60]..src/code_path.ml[43,1039+69])
+                                Texp_construct "::"
+                                [
+                                  expression (src/code_path.ml[43,1039+62]..src/code_path.ml[43,1039+67])
+                                    Texp_ident "value/1168"
+                                  expression (src/code_path.ml[43,1039+68]..src/code_path.ml[43,1039+69]) ghost
+                                    Texp_construct "[]"
+                                    []
+                                ]
+                          ]
+                    ]
+                    expression (src/code_path.ml[44,1112+2]..src/code_path.ml[44,1112+49])
+                      Texp_apply
+                      expression (src/code_path.ml[44,1112+25]..src/code_path.ml[44,1112+27])
+                        Texp_ident "Stdlib!.@@"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (src/code_path.ml[44,1112+2]..src/code_path.ml[44,1112+24])
+                            Texp_apply
+                            expression (src/code_path.ml[44,1112+2]..src/code_path.ml[44,1112+15])
+                              Texp_ident "Ppxlib__!.Import.String.concat"
+                            [
+                              <arg>
+                                Labelled "sep"
+                                expression (src/code_path.ml[44,1112+21]..src/code_path.ml[44,1112+24])
+                                  Texp_constant Const_string(".",(src/code_path.ml[44,1112+22]..src/code_path.ml[44,1112+23]),None)
+                            ]
+                        <arg>
+                          Nolabel
+                          expression (src/code_path.ml[44,1112+28]..src/code_path.ml[44,1112+49])
+                            Texp_apply
+                            expression (src/code_path.ml[44,1112+28]..src/code_path.ml[44,1112+43])
+                              Texp_ident "Ppxlib__!.Import.List.filter_opt"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (src/code_path.ml[44,1112+44]..src/code_path.ml[44,1112+49])
+                                  Texp_ident "names/1171"
+                            ]
+                      ]
+          ]
+    ]
+  structure_item (src/code_path.ml[46,1163+0]..src/code_path.ml[46,1163+44])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[46,1163+4]..src/code_path.ml[46,1163+14])
+          Tpat_var "enter_expr/1172"
+        expression (src/code_path.ml[46,1163+15]..src/code_path.ml[46,1163+44]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[46,1163+15]..src/code_path.ml[46,1163+16])
+                Tpat_var "t/1174"
+              expression (src/code_path.ml[46,1163+19]..src/code_path.ml[46,1163+44])
+                Texp_record
+                  fields =
+                    [
+                      <kept>                      <kept>                      <kept>                      <kept>                      <kept>                      <kept>                      "in_expr"
+                        expression (src/code_path.ml[46,1163+38]..src/code_path.ml[46,1163+42])
+                          Texp_construct "true"
+                          []
+                    ]
+                  representation =
+                    Record_regular
+                  extended_expression =
+                    Some
+                      expression (src/code_path.ml[46,1163+21]..src/code_path.ml[46,1163+22])
+                        Texp_ident "t/1174"
+          ]
+    ]
+  structure_item (src/code_path.ml[48,1209+0]..src/code_path.ml[55,1444+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[48,1209+4]..src/code_path.ml[48,1209+16])
+          Tpat_var "enter_module/1175"
+        expression (src/code_path.ml[48,1209+17]..src/code_path.ml[55,1444+5]) ghost
+          Texp_function
+          Labelled "loc"
+          [
+            <case>
+              pattern (src/code_path.ml[48,1209+18]..src/code_path.ml[48,1209+21])
+                Tpat_var "loc/1177"
+              expression (src/code_path.ml[48,1209+22]..src/code_path.ml[55,1444+5]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/code_path.ml[48,1209+22]..src/code_path.ml[48,1209+33])
+                      Tpat_var "module_name/1178"
+                    expression (src/code_path.ml[48,1209+34]..src/code_path.ml[55,1444+5]) ghost
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (src/code_path.ml[48,1209+34]..src/code_path.ml[48,1209+35])
+                            Tpat_var "t/1179"
+                          expression (src/code_path.ml[49,1247+2]..src/code_path.ml[55,1444+5])
+                            Texp_ifthenelse
+                            expression (src/code_path.ml[49,1247+5]..src/code_path.ml[49,1247+14])
+                              Texp_field
+                              expression (src/code_path.ml[49,1247+5]..src/code_path.ml[49,1247+6])
+                                Texp_ident "t/1179"
+                              "in_expr"
+                            expression (src/code_path.ml[49,1247+20]..src/code_path.ml[49,1247+61])
+                              Texp_record
+                                fields =
+                                  [
+                                    <kept>                                    <kept>                                    <kept>                                    "enclosing_module"
+                                      expression (src/code_path.ml[49,1247+48]..src/code_path.ml[49,1247+59])
+                                        Texp_ident "module_name/1178"
+                                    <kept>                                    <kept>                                    <kept>                                  ]
+                                representation =
+                                  Record_regular
+                                extended_expression =
+                                  Some
+                                    expression (src/code_path.ml[49,1247+22]..src/code_path.ml[49,1247+23])
+                                      Texp_ident "t/1179"
+                            Some
+                              expression (src/code_path.ml[51,1316+4]..src/code_path.ml[55,1444+5])
+                                Texp_record
+                                  fields =
+                                    [
+                                      <kept>                                      <kept>                                      "submodule_path"
+                                        expression (src/code_path.ml[53,1335+23]..src/code_path.ml[53,1335+69])
+                                          Texp_construct "::"
+                                          [
+                                            expression (src/code_path.ml[53,1335+23]..src/code_path.ml[53,1335+49])
+                                              Texp_record
+                                                fields =
+                                                  [
+                                                    "txt"
+                                                      expression (src/code_path.ml[53,1335+31]..src/code_path.ml[53,1335+42])
+                                                        Texp_ident "module_name/1178"
+                                                    "loc"
+                                                      expression (src/code_path.ml[53,1335+44]..src/code_path.ml[53,1335+47]) ghost
+                                                        Texp_ident "loc/1177"
+                                                  ]
+                                                representation =
+                                                  Record_regular
+                                                extended_expression =
+                                                  None
+                                            expression (src/code_path.ml[53,1335+53]..src/code_path.ml[53,1335+69])
+                                              Texp_field
+                                              expression (src/code_path.ml[53,1335+53]..src/code_path.ml[53,1335+54])
+                                                Texp_ident "t/1179"
+                                              "submodule_path"
+                                          ]
+                                      "enclosing_module"
+                                        expression (src/code_path.ml[54,1406+25]..src/code_path.ml[54,1406+36])
+                                          Texp_ident "module_name/1178"
+                                      <kept>                                      <kept>                                      <kept>                                    ]
+                                  representation =
+                                    Record_regular
+                                  extended_expression =
+                                    Some
+                                      expression (src/code_path.ml[52,1322+6]..src/code_path.ml[52,1322+7])
+                                        Texp_ident "t/1179"
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/code_path.ml[57,1451+0]..src/code_path.ml[64,1665+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[57,1451+4]..src/code_path.ml[57,1451+15])
+          Tpat_var "enter_value/1180"
+        expression (src/code_path.ml[57,1451+16]..src/code_path.ml[64,1665+5]) ghost
+          Texp_function
+          Labelled "loc"
+          [
+            <case>
+              pattern (src/code_path.ml[57,1451+17]..src/code_path.ml[57,1451+20])
+                Tpat_var "loc/1182"
+              expression (src/code_path.ml[57,1451+21]..src/code_path.ml[64,1665+5]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/code_path.ml[57,1451+21]..src/code_path.ml[57,1451+31])
+                      Tpat_var "value_name/1183"
+                    expression (src/code_path.ml[57,1451+32]..src/code_path.ml[64,1665+5]) ghost
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (src/code_path.ml[57,1451+32]..src/code_path.ml[57,1451+33])
+                            Tpat_var "t/1184"
+                          expression (src/code_path.ml[58,1487+2]..src/code_path.ml[64,1665+5])
+                            Texp_ifthenelse
+                            expression (src/code_path.ml[58,1487+5]..src/code_path.ml[58,1487+14])
+                              Texp_field
+                              expression (src/code_path.ml[58,1487+5]..src/code_path.ml[58,1487+6])
+                                Texp_ident "t/1184"
+                              "in_expr"
+                            expression (src/code_path.ml[58,1487+20]..src/code_path.ml[58,1487+64])
+                              Texp_record
+                                fields =
+                                  [
+                                    <kept>                                    <kept>                                    <kept>                                    <kept>                                    "enclosing_value"
+                                      expression (src/code_path.ml[58,1487+47]..src/code_path.ml[58,1487+62])
+                                        Texp_construct "Some"
+                                        [
+                                          expression (src/code_path.ml[58,1487+52]..src/code_path.ml[58,1487+62])
+                                            Texp_ident "value_name/1183"
+                                        ]
+                                    <kept>                                    <kept>                                  ]
+                                representation =
+                                  Record_regular
+                                extended_expression =
+                                  Some
+                                    expression (src/code_path.ml[58,1487+22]..src/code_path.ml[58,1487+23])
+                                      Texp_ident "t/1184"
+                            Some
+                              expression (src/code_path.ml[60,1559+4]..src/code_path.ml[64,1665+5])
+                                Texp_record
+                                  fields =
+                                    [
+                                      <kept>                                      <kept>                                      <kept>                                      <kept>                                      "enclosing_value"
+                                        expression (src/code_path.ml[63,1624+24]..src/code_path.ml[63,1624+39])
+                                          Texp_construct "Some"
+                                          [
+                                            expression (src/code_path.ml[63,1624+29]..src/code_path.ml[63,1624+39])
+                                              Texp_ident "value_name/1183"
+                                          ]
+                                      "value"
+                                        expression (src/code_path.ml[62,1578+14]..src/code_path.ml[62,1578+44])
+                                          Texp_construct "Some"
+                                          [
+                                            expression (src/code_path.ml[62,1578+19]..src/code_path.ml[62,1578+44])
+                                              Texp_record
+                                                fields =
+                                                  [
+                                                    "txt"
+                                                      expression (src/code_path.ml[62,1578+27]..src/code_path.ml[62,1578+37])
+                                                        Texp_ident "value_name/1183"
+                                                    "loc"
+                                                      expression (src/code_path.ml[62,1578+39]..src/code_path.ml[62,1578+42]) ghost
+                                                        Texp_ident "loc/1182"
+                                                  ]
+                                                representation =
+                                                  Record_regular
+                                                extended_expression =
+                                                  None
+                                          ]
+                                      <kept>                                    ]
+                                  representation =
+                                    Record_regular
+                                  extended_expression =
+                                    Some
+                                      expression (src/code_path.ml[61,1565+6]..src/code_path.ml[61,1565+7])
+                                        Texp_ident "t/1184"
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/code_path.ml[66,1672+0]..src/code_path.ml[66,1672+79])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[66,1672+4]..src/code_path.ml[66,1672+18])
+          Tpat_var "to_string_path/1185"
+        expression (src/code_path.ml[66,1672+19]..src/code_path.ml[66,1672+79]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[66,1672+19]..src/code_path.ml[66,1672+20])
+                Tpat_var "t/1187"
+              expression (src/code_path.ml[66,1672+23]..src/code_path.ml[66,1672+79])
+                Texp_apply
+                expression (src/code_path.ml[66,1672+23]..src/code_path.ml[66,1672+36])
+                  Texp_ident "Ppxlib__!.Import.String.concat"
+                [
+                  <arg>
+                    Labelled "sep"
+                    expression (src/code_path.ml[66,1672+42]..src/code_path.ml[66,1672+45])
+                      Texp_constant Const_string(".",(src/code_path.ml[66,1672+43]..src/code_path.ml[66,1672+44]),None)
+                  <arg>
+                    Nolabel
+                    expression (src/code_path.ml[66,1672+46]..src/code_path.ml[66,1672+79])
+                      Texp_construct "::"
+                      [
+                        expression (src/code_path.ml[66,1672+47]..src/code_path.ml[66,1672+58])
+                          Texp_field
+                          expression (src/code_path.ml[66,1672+47]..src/code_path.ml[66,1672+48])
+                            Texp_ident "t/1187"
+                          "file_path"
+                        expression (src/code_path.ml[66,1672+62]..src/code_path.ml[66,1672+78])
+                          Texp_apply
+                          expression (src/code_path.ml[66,1672+62]..src/code_path.ml[66,1672+76])
+                            Texp_ident "submodule_path/1079"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (src/code_path.ml[66,1672+77]..src/code_path.ml[66,1672+78])
+                                Texp_ident "t/1187"
+                          ]
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/code_path.ml[67,1752+0]..src/code_path.ml[67,1752+70])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/code_path.ml[67,1752+4]..src/code_path.ml[67,1752+20])
+          Tpat_var "with_string_path/1188"
+        expression (src/code_path.ml[67,1752+21]..src/code_path.ml[67,1752+70]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/code_path.ml[67,1752+21]..src/code_path.ml[67,1752+22])
+                Tpat_var "f/1190"
+              expression (src/code_path.ml[67,1752+23]..src/code_path.ml[67,1752+70]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (src/code_path.ml[67,1752+24]..src/code_path.ml[67,1752+27])
+                      Tpat_var "loc/1191"
+                    expression (src/code_path.ml[67,1752+28]..src/code_path.ml[67,1752+70]) ghost
+                      Texp_function
+                      Labelled "path"
+                      [
+                        <case>
+                          pattern (src/code_path.ml[67,1752+29]..src/code_path.ml[67,1752+33])
+                            Tpat_var "path/1192"
+                          expression (src/code_path.ml[67,1752+36]..src/code_path.ml[67,1752+70])
+                            Texp_apply
+                            expression (src/code_path.ml[67,1752+36]..src/code_path.ml[67,1752+37])
+                              Texp_ident "f/1190"
+                            [
+                              <arg>
+                                Labelled "loc"
+                                expression (src/code_path.ml[67,1752+39]..src/code_path.ml[67,1752+42])
+                                  Texp_ident "loc/1191"
+                              <arg>
+                                Labelled "path"
+                                expression (src/code_path.ml[67,1752+49]..src/code_path.ml[67,1752+70])
+                                  Texp_apply
+                                  expression (src/code_path.ml[67,1752+50]..src/code_path.ml[67,1752+64])
+                                    Texp_ident "to_string_path/1185"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (src/code_path.ml[67,1752+65]..src/code_path.ml[67,1752+69])
+                                        Texp_ident "path/1192"
+                                  ]
+                            ]
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/code_path.ml[69,1826+0]..src/code_path.ml[72,1871+3])
+    Tstr_eval
+    expression (src/code_path.ml[69,1826+0]..src/code_path.ml[72,1871+3])
+      Texp_letmodule "M/1194"
+      module_expr (src/code_path.ml[69,1826+15]..src/code_path.ml[71,1864+3])
+        Tmod_structure
+        [
+          structure_item (src/code_path.ml[70,1848+2]..src/code_path.ml[70,1848+15])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (src/code_path.ml[70,1848+6]..src/code_path.ml[70,1848+7])
+                  Tpat_var "a/1193"
+                expression (src/code_path.ml[70,1848+10]..src/code_path.ml[70,1848+15])
+                  Texp_constant Const_string("lol",(src/code_path.ml[70,1848+11]..src/code_path.ml[70,1848+14]),None)
+            ]
+        ]
+      expression (src/code_path.ml[72,1871+0]..src/code_path.ml[72,1871+3])
+        Texp_ident "M/1194.a"
+]
+
+(seq
+  (let
+    (top_level/839 =
+       (function file_path/841
+         (let
+           (main_module_name/842 =
+              (revapply
+                (revapply
+                  (revapply file_path/841
+                    (field_imm 12 (global Stdlib__filename!)))
+                  (field_imm 10 (global Stdlib__filename!)))
+                (field_imm 42 (field_imm 96 (global Ppxlib__Import!)))))
+           (makeblock 0 file_path/841 main_module_name/842 0
+             main_module_name/842 0 0 0))))
+    (setfield_ptr(root-init) 8 (global Ppxlib__Code_path!) top_level/839))
+  (let (file_path/1067 = (function t/1069 (field_imm 0 t/1069)))
+    (setfield_ptr(root-init) 0 (global Ppxlib__Code_path!) file_path/1067))
+  (let (main_module_name/1070 = (function t/1072 (field_imm 1 t/1072)))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Code_path!)
+      main_module_name/1070))
+  (let (enclosing_module/1073 = (function t/1075 (field_imm 3 t/1075)))
+    (setfield_ptr(root-init) 3 (global Ppxlib__Code_path!)
+      enclosing_module/1073))
+  (let (enclosing_value/1076 = (function t/1078 (field_imm 4 t/1078)))
+    (setfield_ptr(root-init) 5 (global Ppxlib__Code_path!)
+      enclosing_value/1076))
+  (let
+    (submodule_path/1079 =
+       (function t/1081
+         (apply (field_imm 14 (field_imm 91 (global Ppxlib__Import!)))
+           (function located/1155 (field_imm 0 located/1155))
+           (field_imm 2 t/1081))))
+    (setfield_ptr(root-init) 2 (global Ppxlib__Code_path!)
+      submodule_path/1079))
+  (let
+    (value/1156 =
+       (function t/1158
+         (apply (field_imm 2 (field_imm 92 (global Ppxlib__Import!)))
+           (field_imm 5 t/1158)
+           (function located/1164 (field_imm 0 located/1164)))))
+    (setfield_ptr(root-init) 4 (global Ppxlib__Code_path!) value/1156))
+  (let
+    (fully_qualified_path/1165 =
+       (function t/1167
+         (let
+           (value/1168 =
+              (apply (field_imm 4 (global Ppxlib__Code_path!)) t/1167)
+            submodule_path/1169 =
+              (apply (field_imm 14 (field_imm 91 (global Ppxlib__Import!)))
+                (function located/1170
+                  (makeblock 0 (field_imm 0 located/1170)))
+                (field_imm 2 t/1167))
+            names/1171 =
+              (apply (field_imm 97 (global Ppxlib__Import!))
+                (makeblock 0 (makeblock 0 (field_imm 1 t/1167))
+                  submodule_path/1169)
+                (makeblock 0 value/1168 0)))
+           (dirapply
+             (apply (field_imm 2 (field_imm 96 (global Ppxlib__Import!)))
+               ".")
+             (apply (field_imm 61 (field_imm 91 (global Ppxlib__Import!)))
+               names/1171)))))
+    (setfield_ptr(root-init) 6 (global Ppxlib__Code_path!)
+      fully_qualified_path/1165))
+  (let
+    (enter_expr/1172 =
+       (function t/1174
+         (let (init/2863 = t/1174)
+           (makeblock 0 (field_imm 0 init/2863) (field_imm 1 init/2863)
+             (field_imm 2 init/2863) (field_imm 3 init/2863)
+             (field_imm 4 init/2863) (field_imm 5 init/2863) 1))))
+    (setfield_ptr(root-init) 9 (global Ppxlib__Code_path!) enter_expr/1172))
+  (let
+    (enter_module/1175 =
+       (function loc/1177 module_name/1178 t/1179
+         (if (field_int 6 t/1179)
+           (let (init/2866 = t/1179)
+             (makeblock 0 (field_imm 0 init/2866) (field_imm 1 init/2866)
+               (field_imm 2 init/2866) module_name/1178
+               (field_imm 4 init/2866) (field_imm 5 init/2866)
+               (field_int 6 init/2866)))
+           (let (init/2864 = t/1179)
+             (makeblock 0 (field_imm 0 init/2864) (field_imm 1 init/2864)
+               (makeblock 0 (makeblock 0 module_name/1178 loc/1177)
+                 (field_imm 2 t/1179))
+               module_name/1178 (field_imm 4 init/2864)
+               (field_imm 5 init/2864) (field_int 6 init/2864))))))
+    (setfield_ptr(root-init) 10 (global Ppxlib__Code_path!)
+      enter_module/1175))
+  (let
+    (enter_value/1180 =
+       (function loc/1182 value_name/1183 t/1184
+         (if (field_int 6 t/1184)
+           (let (init/2869 = t/1184)
+             (makeblock 0 (field_imm 0 init/2869) (field_imm 1 init/2869)
+               (field_imm 2 init/2869) (field_imm 3 init/2869)
+               (makeblock 0 value_name/1183) (field_imm 5 init/2869)
+               (field_int 6 init/2869)))
+           (let (init/2867 = t/1184)
+             (makeblock 0 (field_imm 0 init/2867) (field_imm 1 init/2867)
+               (field_imm 2 init/2867) (field_imm 3 init/2867)
+               (makeblock 0 value_name/1183)
+               (makeblock 0 (makeblock 0 value_name/1183 loc/1182))
+               (field_int 6 init/2867))))))
+    (setfield_ptr(root-init) 11 (global Ppxlib__Code_path!) enter_value/1180))
+  (let
+    (to_string_path/1185 =
+       (function t/1187
+         (apply (field_imm 2 (field_imm 96 (global Ppxlib__Import!))) "."
+           (makeblock 0 (field_imm 0 t/1187)
+             (apply (field_imm 2 (global Ppxlib__Code_path!)) t/1187)))))
+    (setfield_ptr(root-init) 7 (global Ppxlib__Code_path!)
+      to_string_path/1185))
+  (let
+    (with_string_path/1188 =
+       (function f/1190 loc/1191 path/1192
+         (apply f/1190 loc/1191
+           (apply (field_imm 7 (global Ppxlib__Code_path!)) path/1192))))
+    (setfield_ptr(root-init) 12 (global Ppxlib__Code_path!)
+      with_string_path/1188))
+  (let
+    (M/1194 =
+       (module-defn(M/1194) Ppxlib__Code_path src/code_path.ml(69):1837-1838
+         (let (a/1193 = "lol") (makeblock 0 a/1193))))
+    (field_imm 0 M/1194))
+  0)
+(seq
+  (let
+    (top_level/839 =
+       (function file_path/841
+         (let
+           (main_module_name/842 =
+              (apply (field_imm 42 (field_imm 96 (global Ppxlib__Import!)))
+                (apply (field_imm 10 (global Stdlib__filename!))
+                  (apply (field_imm 12 (global Stdlib__filename!))
+                    file_path/841))))
+           (makeblock 0 file_path/841 main_module_name/842 0
+             main_module_name/842 0 0 0))))
+    (setfield_ptr(root-init) 8 (global Ppxlib__Code_path!) top_level/839))
+  (let (file_path/1067 = (function t/1069 (field_imm 0 t/1069)))
+    (setfield_ptr(root-init) 0 (global Ppxlib__Code_path!) file_path/1067))
+  (let (main_module_name/1070 = (function t/1072 (field_imm 1 t/1072)))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Code_path!)
+      main_module_name/1070))
+  (let (enclosing_module/1073 = (function t/1075 (field_imm 3 t/1075)))
+    (setfield_ptr(root-init) 3 (global Ppxlib__Code_path!)
+      enclosing_module/1073))
+  (let (enclosing_value/1076 = (function t/1078 (field_imm 4 t/1078)))
+    (setfield_ptr(root-init) 5 (global Ppxlib__Code_path!)
+      enclosing_value/1076))
+  (let
+    (submodule_path/1079 =
+       (function t/1081
+         (apply (field_imm 14 (field_imm 91 (global Ppxlib__Import!)))
+           (function located/1155 (field_imm 0 located/1155))
+           (field_imm 2 t/1081))))
+    (setfield_ptr(root-init) 2 (global Ppxlib__Code_path!)
+      submodule_path/1079))
+  (let
+    (value/1156 =
+       (function t/1158
+         (apply (field_imm 2 (field_imm 92 (global Ppxlib__Import!)))
+           (field_imm 5 t/1158)
+           (function located/1164 (field_imm 0 located/1164)))))
+    (setfield_ptr(root-init) 4 (global Ppxlib__Code_path!) value/1156))
+  (let
+    (fully_qualified_path/1165 =
+       (function t/1167
+         (let
+           (value/1168 =
+              (apply (field_imm 4 (global Ppxlib__Code_path!)) t/1167)
+            submodule_path/1169 =
+              (apply (field_imm 14 (field_imm 91 (global Ppxlib__Import!)))
+                (function located/1170
+                  (makeblock 0 (field_imm 0 located/1170)))
+                (field_imm 2 t/1167))
+            names/1171 =
+              (apply (field_imm 97 (global Ppxlib__Import!))
+                (makeblock 0 (makeblock 0 (field_imm 1 t/1167))
+                  submodule_path/1169)
+                (makeblock 0 value/1168 0)))
+           (apply (field_imm 2 (field_imm 96 (global Ppxlib__Import!))) "."
+             (apply (field_imm 61 (field_imm 91 (global Ppxlib__Import!)))
+               names/1171)))))
+    (setfield_ptr(root-init) 6 (global Ppxlib__Code_path!)
+      fully_qualified_path/1165))
+  (let
+    (enter_expr/1172 =
+       (function t/1174
+         (makeblock 0 (field_imm 0 t/1174) (field_imm 1 t/1174)
+           (field_imm 2 t/1174) (field_imm 3 t/1174) (field_imm 4 t/1174)
+           (field_imm 5 t/1174) 1)))
+    (setfield_ptr(root-init) 9 (global Ppxlib__Code_path!) enter_expr/1172))
+  (let
+    (enter_module/1175 =
+       (function loc/1177 module_name/1178 t/1179
+         (if (field_int 6 t/1179)
+           (makeblock 0 (field_imm 0 t/1179) (field_imm 1 t/1179)
+             (field_imm 2 t/1179) module_name/1178 (field_imm 4 t/1179)
+             (field_imm 5 t/1179) (field_int 6 t/1179))
+           (makeblock 0 (field_imm 0 t/1179) (field_imm 1 t/1179)
+             (makeblock 0 (makeblock 0 module_name/1178 loc/1177)
+               (field_imm 2 t/1179))
+             module_name/1178 (field_imm 4 t/1179) (field_imm 5 t/1179)
+             (field_int 6 t/1179)))))
+    (setfield_ptr(root-init) 10 (global Ppxlib__Code_path!)
+      enter_module/1175))
+  (let
+    (enter_value/1180 =
+       (function loc/1182 value_name/1183 t/1184
+         (if (field_int 6 t/1184)
+           (makeblock 0 (field_imm 0 t/1184) (field_imm 1 t/1184)
+             (field_imm 2 t/1184) (field_imm 3 t/1184)
+             (makeblock 0 value_name/1183) (field_imm 5 t/1184)
+             (field_int 6 t/1184))
+           (makeblock 0 (field_imm 0 t/1184) (field_imm 1 t/1184)
+             (field_imm 2 t/1184) (field_imm 3 t/1184)
+             (makeblock 0 value_name/1183)
+             (makeblock 0 (makeblock 0 value_name/1183 loc/1182))
+             (field_int 6 t/1184)))))
+    (setfield_ptr(root-init) 11 (global Ppxlib__Code_path!) enter_value/1180))
+  (let
+    (to_string_path/1185 =
+       (function t/1187
+         (apply (field_imm 2 (field_imm 96 (global Ppxlib__Import!))) "."
+           (makeblock 0 (field_imm 0 t/1187)
+             (apply (field_imm 2 (global Ppxlib__Code_path!)) t/1187)))))
+    (setfield_ptr(root-init) 7 (global Ppxlib__Code_path!)
+      to_string_path/1185))
+  (let
+    (with_string_path/1188 =
+       (function f/1190 loc/1191 path/1192
+         (apply f/1190 loc/1191
+           (apply (field_imm 7 (global Ppxlib__Code_path!)) path/1192))))
+    (setfield_ptr(root-init) 12 (global Ppxlib__Code_path!)
+      with_string_path/1188))
+  (let
+    (M/1194 =
+       (module-defn(M/1194) Ppxlib__Code_path src/code_path.ml(69):1837-1838
+         (let (a/1193 = "lol") (makeblock 0 a/1193))))
+    (field_imm 0 M/1194))
+  0)

@@ -1,0 +1,521 @@
+[
+  structure_item (test/driver/exception_handling/whole_file_extension_point.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/exception_handling/whole_file_extension_point.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/exception_handling/whole_file_extension_point.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/exception_handling/whole_file_extension_point.ml[3,13+0]..[16,450+18])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_extension_point.ml[3,13+4]..[3,13+6])
+          Ppat_construct "()" (test/driver/exception_handling/whole_file_extension_point.ml[3,13+4]..[3,13+6])
+          None
+        expression (test/driver/exception_handling/whole_file_extension_point.ml[4,22+2]..[16,450+18])
+          Pexp_open Fresh
+          module_expr (test/driver/exception_handling/whole_file_extension_point.ml[4,22+2]..[4,22+11])
+            Pmod_ident "Driver.V2" (test/driver/exception_handling/whole_file_extension_point.ml[4,22+2]..[4,22+11])
+          expression (test/driver/exception_handling/whole_file_extension_point.ml[5,36+4]..[16,450+17])
+            Pexp_apply
+            expression (test/driver/exception_handling/whole_file_extension_point.ml[5,36+4]..[5,36+27])
+              Pexp_ident "register_transformation" (test/driver/exception_handling/whole_file_extension_point.ml[5,36+4]..[5,36+27])
+            [
+              <arg>
+              Labelled "impl"
+                expression (test/driver/exception_handling/whole_file_extension_point.ml[6,64+12]..[15,379+70])
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (test/driver/exception_handling/whole_file_extension_point.ml[6,64+17]..[6,64+21])
+                    Ppat_var "ctxt" (test/driver/exception_handling/whole_file_extension_point.ml[6,64+17]..[6,64+21])
+                  expression (test/driver/exception_handling/whole_file_extension_point.ml[6,64+22]..[15,379+69]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (test/driver/exception_handling/whole_file_extension_point.ml[6,64+22]..[6,64+25])
+                      Ppat_var "str" (test/driver/exception_handling/whole_file_extension_point.ml[6,64+22]..[6,64+25])
+                    expression (test/driver/exception_handling/whole_file_extension_point.ml[7,93+8]..[15,379+69])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/driver/exception_handling/whole_file_extension_point.ml[7,93+12]..[7,93+15])
+                            Ppat_var "loc" (test/driver/exception_handling/whole_file_extension_point.ml[7,93+12]..[7,93+15])
+                          expression (test/driver/exception_handling/whole_file_extension_point.ml[8,111+10]..[10,212+34])
+                            Pexp_match
+                            expression (test/driver/exception_handling/whole_file_extension_point.ml[8,111+16]..[8,111+19])
+                              Pexp_ident "str" (test/driver/exception_handling/whole_file_extension_point.ml[8,111+16]..[8,111+19])
+                            [
+                              <case>
+                                pattern (test/driver/exception_handling/whole_file_extension_point.ml[9,136+12]..[9,136+14])
+                                  Ppat_construct "[]" (test/driver/exception_handling/whole_file_extension_point.ml[9,136+12]..[9,136+14])
+                                  None
+                                expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+18]..[9,136+75])
+                                  Pexp_apply
+                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+18]..[9,136+34])
+                                    Pexp_ident "Location.in_file" (test/driver/exception_handling/whole_file_extension_point.ml[9,136+18]..[9,136+34])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+35]..[9,136+75])
+                                        Pexp_apply
+                                        expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+36]..[9,136+69])
+                                          Pexp_ident "Expansion_context.Base.input_name" (test/driver/exception_handling/whole_file_extension_point.ml[9,136+36]..[9,136+69])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+70]..[9,136+74])
+                                              Pexp_ident "ctxt" (test/driver/exception_handling/whole_file_extension_point.ml[9,136+70]..[9,136+74])
+                                        ]
+                                  ]
+                              <case>
+                                pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+12]..[10,212+19])
+                                  Ppat_construct "::" (test/driver/exception_handling/whole_file_extension_point.ml[10,212+15]..[10,212+17])
+                                  Some
+                                    pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+12]..[10,212+19]) ghost
+                                      Ppat_tuple
+                                      [
+                                        pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+12]..[10,212+14])
+                                          Ppat_var "hd" (test/driver/exception_handling/whole_file_extension_point.ml[10,212+12]..[10,212+14])
+                                        pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+18]..[10,212+19])
+                                          Ppat_any
+                                      ]
+                                expression (test/driver/exception_handling/whole_file_extension_point.ml[10,212+23]..[10,212+34])
+                                  Pexp_field
+                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[10,212+23]..[10,212+25])
+                                    Pexp_ident "hd" (test/driver/exception_handling/whole_file_extension_point.ml[10,212+23]..[10,212+25])
+                                  "pstr_loc" (test/driver/exception_handling/whole_file_extension_point.ml[10,212+26]..[10,212+34])
+                            ]
+                      ]
+                      expression (test/driver/exception_handling/whole_file_extension_point.ml[12,258+8]..[15,379+69])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (test/driver/exception_handling/whole_file_extension_point.ml[12,258+12]..[12,258+26])
+                              Ppat_var "extension_node" (test/driver/exception_handling/whole_file_extension_point.ml[12,258+12]..[12,258+26])
+                            expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+10]..[13,287+80])
+                              Pexp_apply
+                              expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+10]..[13,287+35])
+                                Pexp_ident "Location.error_extensionf" (test/driver/exception_handling/whole_file_extension_point.ml[13,287+10]..[13,287+35])
+                              [
+                                <arg>
+                                Labelled "loc"
+                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+37]..[13,287+40])
+                                    Pexp_ident "loc" (test/driver/exception_handling/whole_file_extension_point.ml[13,287+37]..[13,287+40])
+                                <arg>
+                                Nolabel
+                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..[13,287+80])
+                                    Pexp_constant PConst_string("An error message in an extension node",(test/driver/exception_handling/whole_file_extension_point.ml[13,287+42]..[13,287+79]),None)
+                              ]
+                        ]
+                        expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+8]..[15,379+69])
+                          Pexp_construct "::" (test/driver/exception_handling/whole_file_extension_point.ml[15,379+10]..[15,379+69]) ghost
+                          Some
+                            expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+10]..[15,379+69]) ghost
+                              Pexp_tuple
+                              [
+                                expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+10]..[15,379+67])
+                                  Pexp_apply
+                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+10]..[15,379+44])
+                                    Pexp_ident "Ast_builder.Default.pstr_extension" (test/driver/exception_handling/whole_file_extension_point.ml[15,379+10]..[15,379+44])
+                                  [
+                                    <arg>
+                                    Labelled "loc"
+                                      expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+46]..[15,379+49])
+                                        Pexp_ident "loc" (test/driver/exception_handling/whole_file_extension_point.ml[15,379+46]..[15,379+49])
+                                    <arg>
+                                    Nolabel
+                                      expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+50]..[15,379+64])
+                                        Pexp_ident "extension_node" (test/driver/exception_handling/whole_file_extension_point.ml[15,379+50]..[15,379+64])
+                                    <arg>
+                                    Nolabel
+                                      expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+65]..[15,379+67])
+                                        Pexp_construct "[]" (test/driver/exception_handling/whole_file_extension_point.ml[15,379+65]..[15,379+67])
+                                        None
+                                  ]
+                                expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+68]..[15,379+69]) ghost
+                                  Pexp_construct "[]" (test/driver/exception_handling/whole_file_extension_point.ml[15,379+68]..[15,379+69]) ghost
+                                  None
+                              ]
+              <arg>
+              Nolabel
+                expression (test/driver/exception_handling/whole_file_extension_point.ml[16,450+6]..[16,450+17])
+                  Pexp_constant PConst_string("raise_exc",(test/driver/exception_handling/whole_file_extension_point.ml[16,450+7]..[16,450+16]),None)
+            ]
+    ]
+  structure_item (test/driver/exception_handling/whole_file_extension_point.ml[18,470+0]..[18,470+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_extension_point.ml[18,470+4]..[18,470+6])
+          Ppat_construct "()" (test/driver/exception_handling/whole_file_extension_point.ml[18,470+4]..[18,470+6])
+          None
+        expression (test/driver/exception_handling/whole_file_extension_point.ml[18,470+9]..[18,470+36])
+          Pexp_apply
+          expression (test/driver/exception_handling/whole_file_extension_point.ml[18,470+9]..[18,470+33])
+            Pexp_ident "Ppxlib.Driver.standalone" (test/driver/exception_handling/whole_file_extension_point.ml[18,470+9]..[18,470+33])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/whole_file_extension_point.ml[18,470+34]..[18,470+36])
+                Pexp_construct "()" (test/driver/exception_handling/whole_file_extension_point.ml[18,470+34]..[18,470+36])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let () =
+  let open Driver.V2 in
+    register_transformation
+      ~impl:(fun ctxt ->
+               fun str ->
+                 let loc =
+                   match str with
+                   | [] ->
+                       Location.in_file
+                         (Expansion_context.Base.input_name ctxt)
+                   | hd::_ -> hd.pstr_loc in
+                 let extension_node =
+                   Location.error_extensionf ~loc
+                     "An error message in an extension node" in
+                 [Ast_builder.Default.pstr_extension ~loc extension_node []])
+      "raise_exc"
+let () = Ppxlib.Driver.standalone ()
+[
+  structure_item (test/driver/exception_handling/whole_file_extension_point.ml[1,0+0]..test/driver/exception_handling/whole_file_extension_point.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/exception_handling/whole_file_extension_point.ml[1,0+5]..test/driver/exception_handling/whole_file_extension_point.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/exception_handling/whole_file_extension_point.ml[3,13+0]..test/driver/exception_handling/whole_file_extension_point.ml[16,450+18])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_extension_point.ml[3,13+4]..test/driver/exception_handling/whole_file_extension_point.ml[3,13+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/exception_handling/whole_file_extension_point.ml[4,22+2]..test/driver/exception_handling/whole_file_extension_point.ml[16,450+18])
+          Texp_open Fresh
+          module_expr (test/driver/exception_handling/whole_file_extension_point.ml[4,22+2]..test/driver/exception_handling/whole_file_extension_point.ml[4,22+11])
+            Tmod_ident "Ppxlib!.Driver.V2"
+          expression (test/driver/exception_handling/whole_file_extension_point.ml[5,36+4]..test/driver/exception_handling/whole_file_extension_point.ml[16,450+17])
+            Texp_apply
+            expression (test/driver/exception_handling/whole_file_extension_point.ml[5,36+4]..test/driver/exception_handling/whole_file_extension_point.ml[5,36+27])
+              Texp_ident "Ppxlib!.Driver.V2.register_transformation"
+            [
+              <arg>
+                Optional "extensions"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "rules"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "enclose_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "enclose_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "impl"
+                expression (test/driver/exception_handling/whole_file_extension_point.ml[6,64+12]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+70])
+                  Texp_construct "Some"
+                  [
+                    expression (test/driver/exception_handling/whole_file_extension_point.ml[6,64+12]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+70])
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (test/driver/exception_handling/whole_file_extension_point.ml[6,64+17]..test/driver/exception_handling/whole_file_extension_point.ml[6,64+21])
+                            Tpat_var "ctxt/581"
+                          expression (test/driver/exception_handling/whole_file_extension_point.ml[6,64+22]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+69]) ghost
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (test/driver/exception_handling/whole_file_extension_point.ml[6,64+22]..test/driver/exception_handling/whole_file_extension_point.ml[6,64+25])
+                                  Tpat_var "str/582"
+                                expression (test/driver/exception_handling/whole_file_extension_point.ml[7,93+8]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+69])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (test/driver/exception_handling/whole_file_extension_point.ml[7,93+12]..test/driver/exception_handling/whole_file_extension_point.ml[7,93+15])
+                                        Tpat_var "loc/583"
+                                      expression (test/driver/exception_handling/whole_file_extension_point.ml[8,111+10]..test/driver/exception_handling/whole_file_extension_point.ml[10,212+34])
+                                        Texp_match
+                                        expression (test/driver/exception_handling/whole_file_extension_point.ml[8,111+16]..test/driver/exception_handling/whole_file_extension_point.ml[8,111+19])
+                                          Texp_ident "str/582"
+                                        [
+                                          <case>
+                                            pattern (test/driver/exception_handling/whole_file_extension_point.ml[9,136+12]..test/driver/exception_handling/whole_file_extension_point.ml[9,136+14])
+                                              Tpat_value
+                                              pattern (test/driver/exception_handling/whole_file_extension_point.ml[9,136+12]..test/driver/exception_handling/whole_file_extension_point.ml[9,136+14])
+                                                Tpat_construct "[]"
+                                                []
+                                            expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+18]..test/driver/exception_handling/whole_file_extension_point.ml[9,136+75])
+                                              Texp_apply
+                                              expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+18]..test/driver/exception_handling/whole_file_extension_point.ml[9,136+34])
+                                                Texp_ident "Ppxlib!.Location.in_file"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+35]..test/driver/exception_handling/whole_file_extension_point.ml[9,136+75])
+                                                    Texp_apply
+                                                    expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+36]..test/driver/exception_handling/whole_file_extension_point.ml[9,136+69])
+                                                      Texp_ident "Ppxlib!.Expansion_context.Base.input_name"
+                                                    [
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (test/driver/exception_handling/whole_file_extension_point.ml[9,136+70]..test/driver/exception_handling/whole_file_extension_point.ml[9,136+74])
+                                                          Texp_ident "ctxt/581"
+                                                    ]
+                                              ]
+                                          <case>
+                                            pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+12]..test/driver/exception_handling/whole_file_extension_point.ml[10,212+19])
+                                              Tpat_value
+                                              pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+12]..test/driver/exception_handling/whole_file_extension_point.ml[10,212+19])
+                                                Tpat_construct "::"
+                                                [
+                                                  pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+12]..test/driver/exception_handling/whole_file_extension_point.ml[10,212+14])
+                                                    Tpat_var "hd/1014"
+                                                  pattern (test/driver/exception_handling/whole_file_extension_point.ml[10,212+18]..test/driver/exception_handling/whole_file_extension_point.ml[10,212+19])
+                                                    Tpat_any
+                                                ]
+                                            expression (test/driver/exception_handling/whole_file_extension_point.ml[10,212+23]..test/driver/exception_handling/whole_file_extension_point.ml[10,212+34])
+                                              Texp_field
+                                              expression (test/driver/exception_handling/whole_file_extension_point.ml[10,212+23]..test/driver/exception_handling/whole_file_extension_point.ml[10,212+25])
+                                                Texp_ident "hd/1014"
+                                              "pstr_loc"
+                                        ]
+                                        []
+                                  ]
+                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[12,258+8]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+69])
+                                    Texp_let Nonrec
+                                    [
+                                      <def>
+                                        pattern (test/driver/exception_handling/whole_file_extension_point.ml[12,258+12]..test/driver/exception_handling/whole_file_extension_point.ml[12,258+26])
+                                          Tpat_var "extension_node/1644"
+                                        expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+10]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80])
+                                          Texp_apply
+                                          expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+10]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+35])
+                                            Texp_ident "Ppxlib!.Location.error_extensionf"
+                                          [
+                                            <arg>
+                                              Labelled "loc"
+                                              expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+37]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+40])
+                                                Texp_ident "loc/583"
+                                            <arg>
+                                              Nolabel
+                                              expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80])
+                                                Texp_construct "CamlinternalFormatBasics.Format"
+                                                [
+                                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80]) ghost
+                                                    Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                    [
+                                                      expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80]) ghost
+                                                        Texp_constant Const_string("An error message in an extension node",(test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80]) ghost,None)
+                                                      expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80]) ghost
+                                                        Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                        []
+                                                    ]
+                                                  expression (test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80]) ghost
+                                                    Texp_constant Const_string("An error message in an extension node",(test/driver/exception_handling/whole_file_extension_point.ml[13,287+41]..test/driver/exception_handling/whole_file_extension_point.ml[13,287+80]) ghost,None)
+                                                ]
+                                          ]
+                                    ]
+                                    expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+8]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+69])
+                                      Texp_construct "::"
+                                      [
+                                        expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+10]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+67])
+                                          Texp_apply
+                                          expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+10]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+44])
+                                            Texp_ident "Ppxlib!.Ast_builder.Default.pstr_extension"
+                                          [
+                                            <arg>
+                                              Labelled "loc"
+                                              expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+46]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+49])
+                                                Texp_ident "loc/583"
+                                            <arg>
+                                              Nolabel
+                                              expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+50]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+64])
+                                                Texp_ident "extension_node/1644"
+                                            <arg>
+                                              Nolabel
+                                              expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+65]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+67])
+                                                Texp_construct "[]"
+                                                []
+                                          ]
+                                        expression (test/driver/exception_handling/whole_file_extension_point.ml[15,379+68]..test/driver/exception_handling/whole_file_extension_point.ml[15,379+69]) ghost
+                                          Texp_construct "[]"
+                                          []
+                                      ]
+                            ]
+                      ]
+                  ]
+              <arg>
+                Optional "intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "lint_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "lint_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "preprocess_impl"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "preprocess_intf"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "instrument"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Optional "aliases"
+                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Texp_construct "None"
+                  []
+              <arg>
+                Nolabel
+                expression (test/driver/exception_handling/whole_file_extension_point.ml[16,450+6]..test/driver/exception_handling/whole_file_extension_point.ml[16,450+17])
+                  Texp_constant Const_string("raise_exc",(test/driver/exception_handling/whole_file_extension_point.ml[16,450+7]..test/driver/exception_handling/whole_file_extension_point.ml[16,450+16]),None)
+            ]
+    ]
+  structure_item (test/driver/exception_handling/whole_file_extension_point.ml[18,470+0]..test/driver/exception_handling/whole_file_extension_point.ml[18,470+36])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/whole_file_extension_point.ml[18,470+4]..test/driver/exception_handling/whole_file_extension_point.ml[18,470+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/exception_handling/whole_file_extension_point.ml[18,470+9]..test/driver/exception_handling/whole_file_extension_point.ml[18,470+36])
+          Texp_apply
+          expression (test/driver/exception_handling/whole_file_extension_point.ml[18,470+9]..test/driver/exception_handling/whole_file_extension_point.ml[18,470+33])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/whole_file_extension_point.ml[18,470+34]..test/driver/exception_handling/whole_file_extension_point.ml[18,470+36])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Whole_file_extension_point!
+  (let
+    (*match*/7645 =
+       (after Dune__exe__Whole_file_extension_point test/driver/exception_handling/whole_file_extension_point.ml(5):40-467
+         (apply (field_imm 0 (field_imm 9 (global Ppxlib__Driver!))) 0 0 0 0
+           (makeblock 0
+             (function ctxt/581 str/582
+               (funct-body Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(6):76-449
+                 (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(7):101-448
+                   (let
+                     (loc/583 =
+                        (if str/582
+                          (let
+                            (*match*/7641 =a (field_imm 1 str/582)
+                             hd/1014 =a (field_imm 0 str/582))
+                            (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(10):235-246
+                              (field_imm 1 hd/1014)))
+                          (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(9):154-211
+                            (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(9):154-211
+                              (apply (field_imm 0 (global Ppxlib__Location!))
+                                (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(9):171-211
+                                  (apply
+                                    (field_imm 1
+                                      (field_imm 0
+                                        (global Ppxlib__Expansion_context!)))
+                                    ctxt/581)))))))
+                     (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(12):266-448
+                       (let
+                         (extension_node/1644 =
+                            (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(13):297-367
+                              (apply
+                                (field_imm 13 (global Ppxlib__Location!))
+                                loc/583
+                                [0:
+                                 [11:
+                                  "An error message in an extension node" 0]
+                                 "An error message in an extension node"])))
+                         (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(15):387-448
+                           (makeblock 0
+                             (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(15):389-446
+                               (apply
+                                 (field_imm 162
+                                   (field_imm 0
+                                     (global Ppxlib__Ast_builder!)))
+                                 loc/583 extension_node/1644 0))
+                             0)))))))))
+           0 0 0 0 0 0 0 "raise_exc"))
+     *match*/7643 =
+       (after Dune__exe__Whole_file_extension_point test/driver/exception_handling/whole_file_extension_point.ml(18):479-506
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0))))
+(setglobal Dune__exe__Whole_file_extension_point!
+  (let
+    (*match*/7645 =
+       (after Dune__exe__Whole_file_extension_point test/driver/exception_handling/whole_file_extension_point.ml(5):40-467
+         (apply (field_imm 0 (field_imm 9 (global Ppxlib__Driver!))) 0 0 0 0
+           (makeblock 0
+             (function ctxt/581 str/582
+               (funct-body Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(6):76-449
+                 (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(7):101-448
+                   (let
+                     (loc/583 =
+                        (if str/582
+                          (let (hd/1014 =a (field_imm 0 str/582))
+                            (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(10):235-246
+                              (field_imm 1 hd/1014)))
+                          (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(9):154-211
+                            (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(9):154-211
+                              (apply (field_imm 0 (global Ppxlib__Location!))
+                                (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(9):171-211
+                                  (apply
+                                    (field_imm 1
+                                      (field_imm 0
+                                        (global Ppxlib__Expansion_context!)))
+                                    ctxt/581)))))))
+                     (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(12):266-448
+                       (let
+                         (extension_node/1644 =
+                            (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(13):297-367
+                              (apply
+                                (field_imm 13 (global Ppxlib__Location!))
+                                loc/583
+                                [0:
+                                 [11:
+                                  "An error message in an extension node" 0]
+                                 "An error message in an extension node"])))
+                         (before Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(15):387-448
+                           (makeblock 0
+                             (after Dune__exe__Whole_file_extension_point.(fun) test/driver/exception_handling/whole_file_extension_point.ml(15):389-446
+                               (apply
+                                 (field_imm 162
+                                   (field_imm 0
+                                     (global Ppxlib__Ast_builder!)))
+                                 loc/583 extension_node/1644 0))
+                             0)))))))))
+           0 0 0 0 0 0 0 "raise_exc"))
+     *match*/7643 =
+       (after Dune__exe__Whole_file_extension_point test/driver/exception_handling/whole_file_extension_point.ml(18):479-506
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0))))

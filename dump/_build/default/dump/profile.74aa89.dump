@@ -1,0 +1,7 @@
+0.154s  103MB 25.9MB 25.9MB src/ppxlib.ml
+  0.003s 2.90MB 1.53MB 1.53MB parsing
+    0.003s 2.90MB 1.53MB 1.53MB parser
+  0.143s 93.7MB 23.5MB 25.0MB typing
+  0.003s ------ ------ ------ generate
+  0.005s 6.94MB 0.93MB 25.9MB other
+0.007s ------ ------ ------ other

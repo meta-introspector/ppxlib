@@ -1,0 +1,8 @@
+0.226s  131MB 32.8MB 32.8MB src/code_matcher.ml
+  0.003s 2.90MB 1.57MB 1.57MB parsing
+    0.003s 2.90MB 1.57MB 1.57MB parser
+  0.202s  103MB 30.6MB 32.2MB typing
+  0.003s 2.10MB 0.12MB 32.3MB transl
+  0.009s 12.3MB 0.34MB 32.7MB generate
+  0.010s 10.2MB 0.09MB 32.8MB other
+0.005s ------ ------ ------ other

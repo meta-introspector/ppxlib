@@ -1,0 +1,1356 @@
+[
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/standalone_run_as_ppx/print_stuff.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+0]..[4,48+74])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+4]..[3,13+17])
+          Ppat_var "mk_expression" (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+4]..[3,13+17])
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+18]..[4,48+74]) ghost
+          Pexp_fun
+          Labelled "loc"
+          None
+          pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+19]..[3,13+22])
+            Ppat_var "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+19]..[3,13+22])
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+23]..[4,48+74]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+23]..[3,13+32])
+              Ppat_var "pexp_desc" (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+23]..[3,13+32])
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+2]..[4,48+74])
+              Pexp_record
+              [
+                "pexp_desc" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+4]..[4,48+13])
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+4]..[4,48+13]) ghost
+                    Pexp_ident "pexp_desc" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+4]..[4,48+13]) ghost
+                "pexp_loc_stack" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+15]..[4,48+29])
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+32]..[4,48+34])
+                    Pexp_construct "[]" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+32]..[4,48+34])
+                    None
+                "pexp_loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+36]..[4,48+44])
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+47]..[4,48+50])
+                    Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+47]..[4,48+50])
+                "pexp_attributes" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+52]..[4,48+67])
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+70]..[4,48+72])
+                    Pexp_construct "[]" (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+70]..[4,48+72])
+                    None
+              ]
+              None
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+0]..[13,341+72])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+4]..[6,124+16])
+          Ppat_var "print_string" (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+4]..[6,124+16])
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+17]..[13,341+72]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+17]..[6,124+18])
+            Ppat_var "s" (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+17]..[6,124+18])
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+19]..[13,341+72]) ghost
+            Pexp_fun
+            Labelled "loc"
+            None
+            pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+20]..[6,124+23])
+              Ppat_var "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+20]..[6,124+23])
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[7,150+2]..[13,341+72])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[7,150+6]..[7,150+15])
+                    Ppat_var "print_exp" (test/driver/standalone_run_as_ppx/print_stuff.ml[7,150+6]..[7,150+15])
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+4]..[8,168+73])
+                    Pexp_apply
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+4]..[8,168+17])
+                      Pexp_ident "mk_expression" (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+4]..[8,168+17])
+                    [
+                      <arg>
+                      Labelled "loc"
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+19]..[8,168+22])
+                          Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+19]..[8,168+22])
+                      <arg>
+                      Nolabel
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+23]..[8,168+73])
+                          Pexp_construct "Pexp_ident" (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+24]..[8,168+34])
+                          Some
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+35]..[8,168+72])
+                              Pexp_record
+                              [
+                                "txt" (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+37]..[8,168+40])
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+43]..[8,168+65])
+                                    Pexp_construct "Lident" (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+43]..[8,168+49])
+                                    Some
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+50]..[8,168+65])
+                                        Pexp_constant PConst_string("print_endline",(test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+51]..[8,168+64]),None)
+                                "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+67]..[8,168+70])
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+67]..[8,168+70]) ghost
+                                    Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+67]..[8,168+70]) ghost
+                              ]
+                              None
+                    ]
+              ]
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[10,247+2]..[13,341+72])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[10,247+6]..[10,247+16])
+                      Ppat_var "string_exp" (test/driver/standalone_run_as_ppx/print_stuff.ml[10,247+6]..[10,247+16])
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+4]..[11,266+69])
+                      Pexp_apply
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+4]..[11,266+17])
+                        Pexp_ident "mk_expression" (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+4]..[11,266+17])
+                      [
+                        <arg>
+                        Labelled "loc"
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+19]..[11,266+22])
+                            Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+19]..[11,266+22])
+                        <arg>
+                        Nolabel
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+23]..[11,266+69])
+                            Pexp_construct "Pexp_constant" (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+24]..[11,266+37])
+                            Some
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+38]..[11,266+68])
+                                Pexp_construct "Pconst_string" (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+39]..[11,266+52])
+                                Some
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+53]..[11,266+67])
+                                    Pexp_tuple
+                                    [
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+54]..[11,266+55])
+                                        Pexp_ident "s" (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+54]..[11,266+55])
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+57]..[11,266+60])
+                                        Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+57]..[11,266+60])
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+62]..[11,266+66])
+                                        Pexp_construct "None" (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+62]..[11,266+66])
+                                        None
+                                    ]
+                      ]
+                ]
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+2]..[13,341+72])
+                  Pexp_apply
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+2]..[13,341+15])
+                    Pexp_ident "mk_expression" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+2]..[13,341+15])
+                  [
+                    <arg>
+                    Labelled "loc"
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+17]..[13,341+20])
+                        Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+17]..[13,341+20])
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+21]..[13,341+72])
+                        Pexp_construct "Pexp_apply" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+22]..[13,341+32])
+                        Some
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+33]..[13,341+71])
+                            Pexp_tuple
+                            [
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+34]..[13,341+43])
+                                Pexp_ident "print_exp" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+34]..[13,341+43])
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+45]..[13,341+70])
+                                Pexp_construct "::" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+47]..[13,341+70]) ghost
+                                Some
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+47]..[13,341+70]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+47]..[13,341+68])
+                                        Pexp_tuple
+                                        [
+                                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+48]..[13,341+55])
+                                            Pexp_construct "Nolabel" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+48]..[13,341+55])
+                                            None
+                                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+57]..[13,341+67])
+                                            Pexp_ident "string_exp" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+57]..[13,341+67])
+                                        ]
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+69]..[13,341+70]) ghost
+                                        Pexp_construct "[]" (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+69]..[13,341+70]) ghost
+                                        None
+                                    ]
+                            ]
+                  ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[15,415+0]..[20,581+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[15,415+4]..[15,415+11])
+          Ppat_var "hi_rule" (test/driver/standalone_run_as_ppx/print_stuff.ml[15,415+4]..[15,415+11])
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+2]..[20,581+32])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+6]..[16,429+12])
+                Ppat_var "expand" (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+6]..[16,429+12])
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+13]..[16,429+50]) ghost
+                Pexp_fun
+                Labelled "loc"
+                None
+                pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+14]..[16,429+17])
+                  Ppat_var "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+14]..[16,429+17])
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+18]..[16,429+50]) ghost
+                  Pexp_fun
+                  Labelled "path"
+                  None
+                  pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+24]..[16,429+25])
+                    Ppat_any
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+28]..[16,429+50])
+                    Pexp_apply
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+28]..[16,429+40])
+                      Pexp_ident "print_string" (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+28]..[16,429+40])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+41]..[16,429+45])
+                          Pexp_constant PConst_string("hi",(test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+42]..[16,429+44]),None)
+                      <arg>
+                      Labelled "loc"
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+47]..[16,429+50])
+                          Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+47]..[16,429+50])
+                    ]
+          ]
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+2]..[20,581+32])
+            Pexp_apply
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+2]..[20,581+4])
+              Pexp_ident "|>" (test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+2]..[20,581+4])
+            [
+              <arg>
+              Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+2]..[19,570+10])
+                  Pexp_apply
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+2]..[17,483+19])
+                    Pexp_ident "Extension.declare" (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+2]..[17,483+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+20]..[17,483+30])
+                        Pexp_constant PConst_string("print_hi",(test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+21]..[17,483+29]),None)
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+31]..[17,483+59])
+                        Pexp_ident "Extension.Context.expression" (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+31]..[17,483+59])
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+4]..[18,543+26])
+                        Pexp_open Fresh
+                        module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+4]..[18,543+15])
+                          Pmod_ident "Ast_pattern" (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+4]..[18,543+15])
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+17]..[18,543+25])
+                          Pexp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+17]..[18,543+21])
+                            Pexp_ident "pstr" (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+17]..[18,543+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+22]..[18,543+25])
+                                Pexp_ident "nil" (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+22]..[18,543+25])
+                          ]
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[19,570+4]..[19,570+10])
+                        Pexp_ident "expand" (test/driver/standalone_run_as_ppx/print_stuff.ml[19,570+4]..[19,570+10])
+                  ]
+              <arg>
+              Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+5]..[20,581+32])
+                  Pexp_ident "Context_free.Rule.extension" (test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+5]..[20,581+32])
+            ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[22,615+0]..[31,938+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[22,615+4]..[22,615+18])
+          Ppat_var "tool_name_rule" (test/driver/standalone_run_as_ppx/print_stuff.ml[22,615+4]..[22,615+18])
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+2]..[31,938+32])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+6]..[23,636+12])
+                Ppat_var "expand" (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+6]..[23,636+12])
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+13]..[26,793+31]) ghost
+                Pexp_fun
+                Labelled "ctxt"
+                None
+                pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+14]..[23,636+18])
+                  Ppat_var "ctxt" (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+14]..[23,636+18])
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+4]..[26,793+31])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+8]..[24,657+11])
+                        Ppat_var "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+8]..[24,657+11])
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+14]..[24,657+66])
+                        Pexp_apply
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+14]..[24,657+61])
+                          Pexp_ident "Expansion_context.Extension.extension_point_loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+14]..[24,657+61])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+62]..[24,657+66])
+                              Pexp_ident "ctxt" (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+62]..[24,657+66])
+                        ]
+                  ]
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+4]..[26,793+31])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+8]..[25,727+17])
+                          Ppat_var "tool_name" (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+8]..[25,727+17])
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+20]..[25,727+62])
+                          Pexp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+20]..[25,727+57])
+                            Pexp_ident "Expansion_context.Extension.tool_name" (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+20]..[25,727+57])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+58]..[25,727+62])
+                                Pexp_ident "ctxt" (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+58]..[25,727+62])
+                          ]
+                    ]
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+4]..[26,793+31])
+                      Pexp_apply
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+4]..[26,793+16])
+                        Pexp_ident "print_string" (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+4]..[26,793+16])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+17]..[26,793+26])
+                            Pexp_ident "tool_name" (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+17]..[26,793+26])
+                        <arg>
+                        Labelled "loc"
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+28]..[26,793+31])
+                            Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+28]..[26,793+31])
+                      ]
+          ]
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+2]..[31,938+32])
+            Pexp_apply
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+2]..[31,938+4])
+              Pexp_ident "|>" (test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+2]..[31,938+4])
+            [
+              <arg>
+              Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+2]..[30,927+10])
+                  Pexp_apply
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+2]..[28,830+22])
+                    Pexp_ident "Extension.V3.declare" (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+2]..[28,830+22])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+23]..[28,830+40])
+                        Pexp_constant PConst_string("print_tool_name",(test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+24]..[28,830+39]),None)
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+41]..[28,830+69])
+                        Pexp_ident "Extension.Context.expression" (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+41]..[28,830+69])
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+4]..[29,900+26])
+                        Pexp_open Fresh
+                        module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+4]..[29,900+15])
+                          Pmod_ident "Ast_pattern" (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+4]..[29,900+15])
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+17]..[29,900+25])
+                          Pexp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+17]..[29,900+21])
+                            Pexp_ident "pstr" (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+17]..[29,900+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+22]..[29,900+25])
+                                Pexp_ident "nil" (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+22]..[29,900+25])
+                          ]
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[30,927+4]..[30,927+10])
+                        Pexp_ident "expand" (test/driver/standalone_run_as_ppx/print_stuff.ml[30,927+4]..[30,927+10])
+                  ]
+              <arg>
+              Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+5]..[31,938+32])
+                  Pexp_ident "Context_free.Rule.extension" (test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+5]..[31,938+32])
+            ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[33,972+0]..[38,1163+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[33,972+4]..[33,972+14])
+          Ppat_var "fname_rule" (test/driver/standalone_run_as_ppx/print_stuff.ml[33,972+4]..[33,972+14])
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+2]..[38,1163+32])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+6]..[34,989+12])
+                Ppat_var "expand" (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+6]..[34,989+12])
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+13]..[34,989+69]) ghost
+                Pexp_fun
+                Labelled "loc"
+                None
+                pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+14]..[34,989+17])
+                  Ppat_var "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+14]..[34,989+17])
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+18]..[34,989+69]) ghost
+                  Pexp_fun
+                  Labelled "path"
+                  None
+                  pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+24]..[34,989+25])
+                    Ppat_any
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+28]..[34,989+69])
+                    Pexp_apply
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+28]..[34,989+40])
+                      Pexp_ident "print_string" (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+28]..[34,989+40])
+                    [
+                      <arg>
+                      Labelled "loc"
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+42]..[34,989+45])
+                          Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+42]..[34,989+45])
+                      <arg>
+                      Nolabel
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+46]..[34,989+69])
+                          Pexp_field
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+46]..[34,989+59])
+                            Pexp_field
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+46]..[34,989+49])
+                              Pexp_ident "loc" (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+46]..[34,989+49])
+                            "loc_start" (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+50]..[34,989+59])
+                          "pos_fname" (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+60]..[34,989+69])
+                    ]
+          ]
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+2]..[38,1163+32])
+            Pexp_apply
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+2]..[38,1163+4])
+              Pexp_ident "|>" (test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+2]..[38,1163+4])
+            [
+              <arg>
+              Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+2]..[37,1152+10])
+                  Pexp_apply
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+2]..[35,1062+19])
+                    Pexp_ident "Extension.declare" (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+2]..[35,1062+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+20]..[35,1062+33])
+                        Pexp_constant PConst_string("print_fname",(test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+21]..[35,1062+32]),None)
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+34]..[35,1062+62])
+                        Pexp_ident "Extension.Context.expression" (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+34]..[35,1062+62])
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+4]..[36,1125+26])
+                        Pexp_open Fresh
+                        module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+4]..[36,1125+15])
+                          Pmod_ident "Ast_pattern" (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+4]..[36,1125+15])
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+17]..[36,1125+25])
+                          Pexp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+17]..[36,1125+21])
+                            Pexp_ident "pstr" (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+17]..[36,1125+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+22]..[36,1125+25])
+                                Pexp_ident "nil" (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+22]..[36,1125+25])
+                          ]
+                    <arg>
+                    Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[37,1152+4]..[37,1152+10])
+                        Pexp_ident "expand" (test/driver/standalone_run_as_ppx/print_stuff.ml[37,1152+4]..[37,1152+10])
+                  ]
+              <arg>
+              Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+5]..[38,1163+32])
+                  Pexp_ident "Context_free.Rule.extension" (test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+5]..[38,1163+32])
+            ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[40,1197+0]..[43,1290+10])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[40,1197+4]..[40,1197+6])
+          Ppat_construct "()" (test/driver/standalone_run_as_ppx/print_stuff.ml[40,1197+4]..[40,1197+6])
+          None
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[41,1206+2]..[43,1290+10])
+          Pexp_apply
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[41,1206+2]..[41,1206+32])
+            Pexp_ident "Driver.register_transformation" (test/driver/standalone_run_as_ppx/print_stuff.ml[41,1206+2]..[41,1206+32])
+          [
+            <arg>
+            Labelled "rules"
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+11]..[42,1239+50])
+                Pexp_construct "::" (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+13]..[42,1239+50]) ghost
+                Some
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+13]..[42,1239+50]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+13]..[42,1239+20])
+                        Pexp_ident "hi_rule" (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+13]..[42,1239+20])
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+22]..[42,1239+50]) ghost
+                        Pexp_construct "::" (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+22]..[42,1239+50]) ghost
+                        Some
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+22]..[42,1239+50]) ghost
+                            Pexp_tuple
+                            [
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+22]..[42,1239+36])
+                                Pexp_ident "tool_name_rule" (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+22]..[42,1239+36])
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+38]..[42,1239+50]) ghost
+                                Pexp_construct "::" (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+38]..[42,1239+50]) ghost
+                                Some
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+38]..[42,1239+50]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+38]..[42,1239+48])
+                                        Pexp_ident "fname_rule" (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+38]..[42,1239+48])
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+49]..[42,1239+50]) ghost
+                                        Pexp_construct "[]" (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+49]..[42,1239+50]) ghost
+                                        None
+                                    ]
+                            ]
+                    ]
+            <arg>
+            Nolabel
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+4]..[43,1290+10])
+                Pexp_constant PConst_string("test",(test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+5]..[43,1290+9]),None)
+          ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+0]..[45,1302+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+4]..[45,1302+6])
+          Ppat_construct "()" (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+4]..[45,1302+6])
+          None
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+9]..[45,1302+36])
+          Pexp_apply
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+9]..[45,1302+33])
+            Pexp_ident "Ppxlib.Driver.standalone" (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+9]..[45,1302+33])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+34]..[45,1302+36])
+                Pexp_construct "()" (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+34]..[45,1302+36])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let mk_expression ~loc  pexp_desc =
+  { pexp_desc; pexp_loc_stack = []; pexp_loc = loc; pexp_attributes = [] }
+let print_string s ~loc  =
+  let print_exp =
+    mk_expression ~loc (Pexp_ident { txt = (Lident "print_endline"); loc }) in
+  let string_exp =
+    mk_expression ~loc (Pexp_constant (Pconst_string (s, loc, None))) in
+  mk_expression ~loc (Pexp_apply (print_exp, [(Nolabel, string_exp)]))
+let hi_rule =
+  let expand ~loc  ~path:_  = print_string "hi" ~loc in
+  (Extension.declare "print_hi" Extension.Context.expression
+     (let open Ast_pattern in pstr nil) expand)
+    |> Context_free.Rule.extension
+let tool_name_rule =
+  let expand ~ctxt  =
+    let loc = Expansion_context.Extension.extension_point_loc ctxt in
+    let tool_name = Expansion_context.Extension.tool_name ctxt in
+    print_string tool_name ~loc in
+  (Extension.V3.declare "print_tool_name" Extension.Context.expression
+     (let open Ast_pattern in pstr nil) expand)
+    |> Context_free.Rule.extension
+let fname_rule =
+  let expand ~loc  ~path:_  = print_string ~loc (loc.loc_start).pos_fname in
+  (Extension.declare "print_fname" Extension.Context.expression
+     (let open Ast_pattern in pstr nil) expand)
+    |> Context_free.Rule.extension
+let () =
+  Driver.register_transformation ~rules:[hi_rule; tool_name_rule; fname_rule]
+    "test"
+let () = Ppxlib.Driver.standalone ()
+[
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[1,0+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[1,0+5]..test/driver/standalone_run_as_ppx/print_stuff.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+74])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+17])
+          Tpat_var "mk_expression/491"
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+18]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+74]) ghost
+          Texp_function
+          Labelled "loc"
+          [
+            <case>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+19]..test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+22])
+                Tpat_var "loc/493"
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+23]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+74]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+23]..test/driver/standalone_run_as_ppx/print_stuff.ml[3,13+32])
+                      Tpat_var "pexp_desc/494"
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+74])
+                      Texp_record
+                        fields =
+                          [
+                            "pexp_desc"
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+13]) ghost
+                                Texp_ident "pexp_desc/494"
+                            "pexp_loc"
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+47]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+50])
+                                Texp_ident "loc/493"
+                            "pexp_loc_stack"
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+32]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+34])
+                                Texp_construct "[]"
+                                []
+                            "pexp_attributes"
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+70]..test/driver/standalone_run_as_ppx/print_stuff.ml[4,48+72])
+                                Texp_construct "[]"
+                                []
+                          ]
+                        representation =
+                          Record_regular
+                        extended_expression =
+                          None
+                ]
+          ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+72])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+16])
+          Tpat_var "print_string/1046"
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+72]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+18])
+                Tpat_var "s/1047"
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+19]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+72]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+20]..test/driver/standalone_run_as_ppx/print_stuff.ml[6,124+23])
+                      Tpat_var "loc/1048"
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[7,150+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+72])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[7,150+6]..test/driver/standalone_run_as_ppx/print_stuff.ml[7,150+15])
+                            Tpat_var "print_exp/1049"
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+73])
+                            Texp_apply
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+17])
+                              Texp_ident "mk_expression/491"
+                            [
+                              <arg>
+                                Labelled "loc"
+                                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+19]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+22])
+                                  Texp_ident "loc/1048"
+                              <arg>
+                                Nolabel
+                                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+23]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+73])
+                                  Texp_construct "Pexp_ident"
+                                  [
+                                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+35]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+72])
+                                      Texp_record
+                                        fields =
+                                          [
+                                            "txt"
+                                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+43]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+65])
+                                                Texp_construct "Lident"
+                                                [
+                                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+50]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+65])
+                                                    Texp_constant Const_string("print_endline",(test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+51]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+64]),None)
+                                                ]
+                                            "loc"
+                                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+67]..test/driver/standalone_run_as_ppx/print_stuff.ml[8,168+70]) ghost
+                                                Texp_ident "loc/1048"
+                                          ]
+                                        representation =
+                                          Record_regular
+                                        extended_expression =
+                                          None
+                                  ]
+                            ]
+                      ]
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[10,247+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+72])
+                        Texp_let Nonrec
+                        [
+                          <def>
+                            pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[10,247+6]..test/driver/standalone_run_as_ppx/print_stuff.ml[10,247+16])
+                              Tpat_var "string_exp/1050"
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+69])
+                              Texp_apply
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+17])
+                                Texp_ident "mk_expression/491"
+                              [
+                                <arg>
+                                  Labelled "loc"
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+19]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+22])
+                                    Texp_ident "loc/1048"
+                                <arg>
+                                  Nolabel
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+23]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+69])
+                                    Texp_construct "Pexp_constant"
+                                    [
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+38]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+68])
+                                        Texp_construct "Pconst_string"
+                                        [
+                                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+54]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+55])
+                                            Texp_ident "s/1047"
+                                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+57]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+60])
+                                            Texp_ident "loc/1048"
+                                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+62]..test/driver/standalone_run_as_ppx/print_stuff.ml[11,266+66])
+                                            Texp_construct "None"
+                                            []
+                                        ]
+                                    ]
+                              ]
+                        ]
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+72])
+                          Texp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+15])
+                            Texp_ident "mk_expression/491"
+                          [
+                            <arg>
+                              Labelled "loc"
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+20])
+                                Texp_ident "loc/1048"
+                            <arg>
+                              Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+21]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+72])
+                                Texp_construct "Pexp_apply"
+                                [
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+34]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+43])
+                                    Texp_ident "print_exp/1049"
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+45]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+70])
+                                    Texp_construct "::"
+                                    [
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+47]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+68])
+                                        Texp_tuple
+                                        [
+                                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+48]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+55])
+                                            Texp_construct "Nolabel"
+                                            []
+                                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+57]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+67])
+                                            Texp_ident "string_exp/1050"
+                                        ]
+                                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+69]..test/driver/standalone_run_as_ppx/print_stuff.ml[13,341+70]) ghost
+                                        Texp_construct "[]"
+                                        []
+                                    ]
+                                ]
+                          ]
+                ]
+          ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[15,415+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[15,415+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[15,415+11])
+          Tpat_var "hi_rule/1077"
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+32])
+          Texp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+6]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+12])
+                Tpat_var "expand/1078"
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+13]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+50]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+14]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+17])
+                      Tpat_var "loc/1080"
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+18]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+50]) ghost
+                      Texp_function
+                      Labelled "path"
+                      [
+                        <case>
+                          pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+24]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+25])
+                            Tpat_any
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+28]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+50])
+                            Texp_apply
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+28]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+40])
+                              Texp_ident "print_string/1046"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+41]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+45])
+                                  Texp_constant Const_string("hi",(test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+42]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+44]),None)
+                              <arg>
+                                Labelled "loc"
+                                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+47]..test/driver/standalone_run_as_ppx/print_stuff.ml[16,429+50])
+                                  Texp_ident "loc/1080"
+                            ]
+                      ]
+                ]
+          ]
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+32])
+            Texp_apply
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+4])
+              Texp_ident "Stdlib!.|>"
+            [
+              <arg>
+                Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[19,570+10])
+                  Texp_apply
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+19])
+                    Texp_ident "Ppxlib!.Extension.declare"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+20]..test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+30])
+                        Texp_constant Const_string("print_hi",(test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+21]..test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+29]),None)
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+31]..test/driver/standalone_run_as_ppx/print_stuff.ml[17,483+59])
+                        Texp_ident "Ppxlib!.Extension.Context.expression"
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+26])
+                        Texp_open Fresh
+                        module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+15])
+                          Tmod_ident "Ppxlib!.Ast_pattern"
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+25])
+                          Texp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+21])
+                            Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+22]..test/driver/standalone_run_as_ppx/print_stuff.ml[18,543+25])
+                                Texp_ident "Ppxlib!.Ast_pattern.nil"
+                          ]
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[19,570+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[19,570+10])
+                        Texp_ident "expand/1078"
+                  ]
+              <arg>
+                Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+5]..test/driver/standalone_run_as_ppx/print_stuff.ml[20,581+32])
+                  Texp_ident "Ppxlib!.Context_free.Rule.extension"
+            ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[22,615+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[22,615+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[22,615+18])
+          Tpat_var "tool_name_rule/2102"
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+32])
+          Texp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+6]..test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+12])
+                Tpat_var "expand/2103"
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+13]..test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+31]) ghost
+                Texp_function
+                Labelled "ctxt"
+                [
+                  <case>
+                    pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+14]..test/driver/standalone_run_as_ppx/print_stuff.ml[23,636+18])
+                      Tpat_var "ctxt/2105"
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+31])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+8]..test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+11])
+                            Tpat_var "loc/2106"
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+14]..test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+66])
+                            Texp_apply
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+14]..test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+61])
+                              Texp_ident "Ppxlib!.Expansion_context.Extension.extension_point_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+62]..test/driver/standalone_run_as_ppx/print_stuff.ml[24,657+66])
+                                  Texp_ident "ctxt/2105"
+                            ]
+                      ]
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+31])
+                        Texp_let Nonrec
+                        [
+                          <def>
+                            pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+8]..test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+17])
+                              Tpat_var "tool_name/2148"
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+20]..test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+62])
+                              Texp_apply
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+20]..test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+57])
+                                Texp_ident "Ppxlib!.Expansion_context.Extension.tool_name"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+58]..test/driver/standalone_run_as_ppx/print_stuff.ml[25,727+62])
+                                    Texp_ident "ctxt/2105"
+                              ]
+                        ]
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+31])
+                          Texp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+16])
+                            Texp_ident "print_string/1046"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+26])
+                                Texp_ident "tool_name/2148"
+                            <arg>
+                              Labelled "loc"
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+28]..test/driver/standalone_run_as_ppx/print_stuff.ml[26,793+31])
+                                Texp_ident "loc/2106"
+                          ]
+                ]
+          ]
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+32])
+            Texp_apply
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+4])
+              Texp_ident "Stdlib!.|>"
+            [
+              <arg>
+                Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[30,927+10])
+                  Texp_apply
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+22])
+                    Texp_ident "Ppxlib!.Extension.V3.declare"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+23]..test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+40])
+                        Texp_constant Const_string("print_tool_name",(test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+24]..test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+39]),None)
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+41]..test/driver/standalone_run_as_ppx/print_stuff.ml[28,830+69])
+                        Texp_ident "Ppxlib!.Extension.Context.expression"
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+26])
+                        Texp_open Fresh
+                        module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+15])
+                          Tmod_ident "Ppxlib!.Ast_pattern"
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+25])
+                          Texp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+21])
+                            Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+22]..test/driver/standalone_run_as_ppx/print_stuff.ml[29,900+25])
+                                Texp_ident "Ppxlib!.Ast_pattern.nil"
+                          ]
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[30,927+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[30,927+10])
+                        Texp_ident "expand/2103"
+                  ]
+              <arg>
+                Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+5]..test/driver/standalone_run_as_ppx/print_stuff.ml[31,938+32])
+                  Texp_ident "Ppxlib!.Context_free.Rule.extension"
+            ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[33,972+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[33,972+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[33,972+14])
+          Tpat_var "fname_rule/2159"
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+32])
+          Texp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+6]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+12])
+                Tpat_var "expand/2160"
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+13]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+69]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+14]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+17])
+                      Tpat_var "loc/2162"
+                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+18]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+69]) ghost
+                      Texp_function
+                      Labelled "path"
+                      [
+                        <case>
+                          pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+24]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+25])
+                            Tpat_any
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+28]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+69])
+                            Texp_apply
+                            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+28]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+40])
+                              Texp_ident "print_string/1046"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+46]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+69])
+                                  Texp_field
+                                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+46]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+59])
+                                    Texp_field
+                                    expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+46]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+49])
+                                      Texp_ident "loc/2162"
+                                    "loc_start"
+                                  "pos_fname"
+                              <arg>
+                                Labelled "loc"
+                                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+42]..test/driver/standalone_run_as_ppx/print_stuff.ml[34,989+45])
+                                  Texp_ident "loc/2162"
+                            ]
+                      ]
+                ]
+          ]
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+32])
+            Texp_apply
+            expression (test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+4])
+              Texp_ident "Stdlib!.|>"
+            [
+              <arg>
+                Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[37,1152+10])
+                  Texp_apply
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+19])
+                    Texp_ident "Ppxlib!.Extension.declare"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+20]..test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+33])
+                        Texp_constant Const_string("print_fname",(test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+21]..test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+32]),None)
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+34]..test/driver/standalone_run_as_ppx/print_stuff.ml[35,1062+62])
+                        Texp_ident "Ppxlib!.Extension.Context.expression"
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+26])
+                        Texp_open Fresh
+                        module_expr (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+15])
+                          Tmod_ident "Ppxlib!.Ast_pattern"
+                        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+25])
+                          Texp_apply
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+17]..test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+21])
+                            Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+22]..test/driver/standalone_run_as_ppx/print_stuff.ml[36,1125+25])
+                                Texp_ident "Ppxlib!.Ast_pattern.nil"
+                          ]
+                    <arg>
+                      Nolabel
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[37,1152+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[37,1152+10])
+                        Texp_ident "expand/2160"
+                  ]
+              <arg>
+                Nolabel
+                expression (test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+5]..test/driver/standalone_run_as_ppx/print_stuff.ml[38,1163+32])
+                  Texp_ident "Ppxlib!.Context_free.Rule.extension"
+            ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[40,1197+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+10])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[40,1197+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[40,1197+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[41,1206+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+10])
+          Texp_apply
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[41,1206+2]..test/driver/standalone_run_as_ppx/print_stuff.ml[41,1206+32])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+11]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+50])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+11]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+50])
+                    Texp_construct "::"
+                    [
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+13]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+20])
+                        Texp_ident "hi_rule/1077"
+                      expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+22]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+50]) ghost
+                        Texp_construct "::"
+                        [
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+22]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+36])
+                            Texp_ident "tool_name_rule/2102"
+                          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+38]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+50]) ghost
+                            Texp_construct "::"
+                            [
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+38]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+48])
+                                Texp_ident "fname_rule/2159"
+                              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+49]..test/driver/standalone_run_as_ppx/print_stuff.ml[42,1239+50]) ghost
+                                Texp_construct "[]"
+                                []
+                            ]
+                        ]
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+10])
+                Texp_constant Const_string("test",(test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+5]..test/driver/standalone_run_as_ppx/print_stuff.ml[43,1290+9]),None)
+          ]
+    ]
+  structure_item (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+0]..test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+36])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+4]..test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+9]..test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+36])
+          Texp_apply
+          expression (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+9]..test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+33])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+34]..test/driver/standalone_run_as_ppx/print_stuff.ml[45,1302+36])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(seq
+  (let
+    (mk_expression/491 =
+       (function loc/493 pexp_desc/494
+         (makeblock 0 pexp_desc/494 loc/493 0 0)))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Print_stuff!)
+      mk_expression/491))
+  (let
+    (print_string/1046 =
+       (function s/1047 loc/1048
+         (let
+           (print_exp/1049 =
+              (apply (field_imm 0 (global Dune__exe__Print_stuff!)) loc/1048
+                (makeblock 0 (makeblock 0 [0: "print_endline"] loc/1048)))
+            string_exp/1050 =
+              (apply (field_imm 0 (global Dune__exe__Print_stuff!)) loc/1048
+                (makeblock 1 (makeblock 2 s/1047 loc/1048 0))))
+           (apply (field_imm 0 (global Dune__exe__Print_stuff!)) loc/1048
+             (makeblock 5 print_exp/1049
+               (makeblock 0 (makeblock 0 0 string_exp/1050) 0))))))
+    (setfield_ptr(root-init) 1 (global Dune__exe__Print_stuff!)
+      print_string/1046))
+  (let
+    (hi_rule/1077 =
+       (let
+         (expand/1078 =
+            (function loc/1080 param/1081
+              (apply (field_imm 1 (global Dune__exe__Print_stuff!)) "hi"
+                loc/1080)))
+         (revapply
+           (apply (field_imm 1 (global Ppxlib__Extension!)) "print_hi"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/1078)
+           (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!))))))
+    (setfield_ptr(root-init) 2 (global Dune__exe__Print_stuff!) hi_rule/1077))
+  (let
+    (tool_name_rule/2102 =
+       (let
+         (expand/2103 =
+            (function ctxt/2105
+              (let
+                (loc/2106 =
+                   (apply
+                     (field_imm 0
+                       (field_imm 1 (global Ppxlib__Expansion_context!)))
+                     ctxt/2105)
+                 tool_name/2148 =
+                   (apply
+                     (field_imm 3
+                       (field_imm 1 (global Ppxlib__Expansion_context!)))
+                     ctxt/2105))
+                (apply (field_imm 1 (global Dune__exe__Print_stuff!))
+                  tool_name/2148 loc/2106))))
+         (revapply
+           (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+             "print_tool_name"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/2103)
+           (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!))))))
+    (setfield_ptr(root-init) 3 (global Dune__exe__Print_stuff!)
+      tool_name_rule/2102))
+  (let
+    (fname_rule/2159 =
+       (let
+         (expand/2160 =
+            (function loc/2162 param/2193
+              (apply (field_imm 1 (global Dune__exe__Print_stuff!))
+                (field_imm 0 (field_imm 0 loc/2162)) loc/2162)))
+         (revapply
+           (apply (field_imm 1 (global Ppxlib__Extension!)) "print_fname"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/2160)
+           (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!))))))
+    (setfield_ptr(root-init) 4 (global Dune__exe__Print_stuff!)
+      fname_rule/2159))
+  (let
+    (*match*/7463 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0
+           (makeblock 0 (field_imm 2 (global Dune__exe__Print_stuff!))
+             (makeblock 0 (field_imm 3 (global Dune__exe__Print_stuff!))
+               (makeblock 0 (field_imm 4 (global Dune__exe__Print_stuff!)) 0))))
+         0 0 0 0 0 0 0 0 0 0 "test"))
+    0)
+  (let (*match*/7465 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)
+(seq
+  (let
+    (mk_expression/491 =
+       (function loc/493 pexp_desc/494
+         (makeblock 0 pexp_desc/494 loc/493 0 0)))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Print_stuff!)
+      mk_expression/491))
+  (let
+    (print_string/1046 =
+       (function s/1047 loc/1048
+         (let
+           (print_exp/1049 =
+              (apply (field_imm 0 (global Dune__exe__Print_stuff!)) loc/1048
+                (makeblock 0 (makeblock 0 [0: "print_endline"] loc/1048)))
+            string_exp/1050 =
+              (apply (field_imm 0 (global Dune__exe__Print_stuff!)) loc/1048
+                (makeblock 1 (makeblock 2 s/1047 loc/1048 0))))
+           (apply (field_imm 0 (global Dune__exe__Print_stuff!)) loc/1048
+             (makeblock 5 print_exp/1049
+               (makeblock 0 (makeblock 0 0 string_exp/1050) 0))))))
+    (setfield_ptr(root-init) 1 (global Dune__exe__Print_stuff!)
+      print_string/1046))
+  (let
+    (hi_rule/1077 =
+       (let
+         (expand/1078 =
+            (function loc/1080 param/1081
+              (apply (field_imm 1 (global Dune__exe__Print_stuff!)) "hi"
+                loc/1080)))
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           (apply (field_imm 1 (global Ppxlib__Extension!)) "print_hi"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/1078))))
+    (setfield_ptr(root-init) 2 (global Dune__exe__Print_stuff!) hi_rule/1077))
+  (let
+    (tool_name_rule/2102 =
+       (let
+         (expand/2103 =
+            (function ctxt/2105
+              (let
+                (loc/2106 =
+                   (apply
+                     (field_imm 0
+                       (field_imm 1 (global Ppxlib__Expansion_context!)))
+                     ctxt/2105)
+                 tool_name/2148 =
+                   (apply
+                     (field_imm 3
+                       (field_imm 1 (global Ppxlib__Expansion_context!)))
+                     ctxt/2105))
+                (apply (field_imm 1 (global Dune__exe__Print_stuff!))
+                  tool_name/2148 loc/2106))))
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+             "print_tool_name"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/2103))))
+    (setfield_ptr(root-init) 3 (global Dune__exe__Print_stuff!)
+      tool_name_rule/2102))
+  (let
+    (fname_rule/2159 =
+       (let
+         (expand/2160 =
+            (function loc/2162 param/2193
+              (apply (field_imm 1 (global Dune__exe__Print_stuff!))
+                (field_imm 0 (field_imm 0 loc/2162)) loc/2162)))
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           (apply (field_imm 1 (global Ppxlib__Extension!)) "print_fname"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/2160))))
+    (setfield_ptr(root-init) 4 (global Dune__exe__Print_stuff!)
+      fname_rule/2159))
+  (let
+    (*match*/7463 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0
+           (makeblock 0 (field_imm 2 (global Dune__exe__Print_stuff!))
+             (makeblock 0 (field_imm 3 (global Dune__exe__Print_stuff!))
+               (makeblock 0 (field_imm 4 (global Dune__exe__Print_stuff!)) 0))))
+         0 0 0 0 0 0 0 0 0 0 "test"))
+    0)
+  (let (*match*/7465 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)

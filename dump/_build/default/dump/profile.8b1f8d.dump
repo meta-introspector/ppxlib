@@ -1,0 +1,6 @@
+0.063s 51.2MB 3.97MB 3.97MB ast/ast_helper_lite.mli
+  0.011s 4.84MB 1.88MB 1.88MB parsing
+    0.011s 4.84MB 1.88MB 1.88MB parser
+  0.020s 22.9MB 1.87MB 3.75MB typing
+  0.033s 23.4MB 0.21MB 3.97MB other
+0.008s ------ ------ ------ other

@@ -1,0 +1,23 @@
+0.356s  293MB 37.5MB 39.3MB src/location_check.ml
+  0.004s 3.60MB 0.59MB 2.35MB parsing
+    0.004s 3.60MB 0.59MB 2.35MB parser
+  0.220s  130MB 29.0MB 31.3MB typing
+  0.014s 14.7MB 0.81MB 32.1MB transl
+  0.085s 83.7MB 6.71MB 38.9MB generate
+    0.001s 2.00MB 0.28MB 32.4MB cmm
+    0.056s 62.3MB 5.43MB 37.9MB compile_phrases
+      0.004s 6.24MB 0.53MB 33.0MB selection
+      0.002s 0.29MB ------ ------ cse
+      0.003s 1.29MB 0.18MB 33.1MB liveness
+      0.001s 0.22MB ------ ------ deadcode
+      0.006s 10.1MB 1.18MB 34.3MB spill
+      0.001s ------ ------ ------ split
+      0.035s 37.9MB 2.93MB 37.3MB regalloc
+      0.001s 2.00MB 0.21MB 37.5MB linearize
+      ------ 2.00MB 0.15MB 37.6MB scheduling
+      0.002s 0.20MB ------ ------ emit
+      0.002s 2.00MB 0.21MB 37.9MB other
+    0.012s ------ ------ ------ assemble
+    0.015s 19.3MB 1.00MB 38.9MB other
+  0.034s 60.5MB 0.40MB 39.3MB other
+0.012s 3.07MB 1.75MB ------ other

@@ -1,0 +1,1580 @@
+[
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[1,0+5]..[1,0+11])
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[2,12+0]..[2,12+24])
+    Pstr_open Fresh
+    module_expr (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[2,12+5]..[2,12+24])
+      Pmod_ident "Ast_builder.Default" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[2,12+5]..[2,12+24])
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+0]..[81,2071+50])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+4]..[15,191+15])
+          Ppat_var "add_deriver" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+4]..[15,191+15])
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+16]..[81,2071+50]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+16]..[15,191+18])
+            Ppat_construct "()" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+16]..[15,191+18])
+            None
+          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[16,212+2]..[81,2071+50])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[16,212+6]..[16,212+19])
+                  Ppat_var "str_type_decl" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[16,212+6]..[16,212+19])
+                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[17,234+4]..[72,1886+20])
+                  Pexp_apply
+                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[17,234+4]..[17,234+33])
+                    Pexp_ident "Deriving.Generator.make_noarg" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[17,234+4]..[17,234+33])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+6]..[71,1875+10])
+                        Pexp_fun
+                        Labelled "loc"
+                        None
+                        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+12]..[18,268+15])
+                          Ppat_var "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+12]..[18,268+15])
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+16]..[71,1875+9]) ghost
+                          Pexp_fun
+                          Labelled "path"
+                          None
+                          pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+22]..[18,268+23])
+                            Ppat_any
+                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+24]..[71,1875+9]) ghost
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+24]..[18,268+25])
+                              Ppat_any
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+8]..[71,1875+9])
+                              Pexp_let Nonrec
+                              [
+                                <def>
+                                  pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+12]..[19,297+16])
+                                    Ppat_var "expr" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+12]..[19,297+16])
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+17]..[25,471+11]) ghost
+                                    Pexp_fun
+                                    Nolabel
+                                    None
+                                    pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+17]..[19,297+21])
+                                      Ppat_var "desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+17]..[19,297+21])
+                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+22]..[25,471+11]) ghost
+                                      Pexp_constraint
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[20,334+10]..[25,471+11])
+                                        Pexp_record
+                                        [
+                                          "pexp_desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[21,346+12]..[21,346+21])
+                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[21,346+24]..[21,346+28])
+                                              Pexp_ident "desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[21,346+24]..[21,346+28])
+                                          "pexp_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[22,376+12]..[22,376+20])
+                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[22,376+23]..[22,376+26])
+                                              Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[22,376+23]..[22,376+26])
+                                          "pexp_attributes" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[23,404+12]..[23,404+27])
+                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[23,404+30]..[23,404+32])
+                                              Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[23,404+30]..[23,404+32])
+                                              None
+                                          "pexp_loc_stack" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[24,438+12]..[24,438+26])
+                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[24,438+29]..[24,438+31])
+                                              Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[24,438+29]..[24,438+31])
+                                              None
+                                        ]
+                                        None
+                                      core_type (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+24]..[19,297+34])
+                                        Ptyp_constr "expression" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+24]..[19,297+34])
+                                        []
+                              ]
+                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[27,494+8]..[71,1875+9])
+                                Pexp_construct "::" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[28,504+10]..[71,1875+9]) ghost
+                                Some
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[28,504+10]..[71,1875+9]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[28,504+10]..[43,968+11])
+                                        Pexp_record
+                                        [
+                                          "pstr_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[29,516+12]..[29,516+20])
+                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[29,516+23]..[29,516+26])
+                                              Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[29,516+23]..[29,516+26])
+                                          "pstr_desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[30,544+12]..[30,544+21])
+                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[31,568+14]..[42,949+17])
+                                              Pexp_construct "Pstr_module" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[31,568+14]..[31,568+25])
+                                              Some
+                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[32,594+16]..[42,949+17])
+                                                  Pexp_record
+                                                  [
+                                                    "pmb_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[33,612+18]..[33,612+25])
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[33,612+28]..[33,612+31])
+                                                        Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[33,612+28]..[33,612+31])
+                                                    "pmb_name" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+18]..[34,645+26])
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+29]..[34,645+54])
+                                                        Pexp_record
+                                                        [
+                                                          "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+31]..[34,645+34])
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+31]..[34,645+34]) ghost
+                                                              Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+31]..[34,645+34]) ghost
+                                                          "txt" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+36]..[34,645+39])
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+42]..[34,645+52])
+                                                              Pexp_construct "Some" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+42]..[34,645+46])
+                                                              Some
+                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+47]..[34,645+52])
+                                                                  Pexp_constant PConst_string("Foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+48]..[34,645+51]),None)
+                                                        ]
+                                                        None
+                                                    "pmb_expr" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[35,701+18]..[35,701+26])
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[36,730+20]..[40,887+21])
+                                                        Pexp_record
+                                                        [
+                                                          "pmod_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[37,752+22]..[37,752+30])
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[37,752+33]..[37,752+36])
+                                                              Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[37,752+33]..[37,752+36])
+                                                          "pmod_desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+22]..[38,790+31])
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+34]..[38,790+51])
+                                                              Pexp_construct "Pmod_structure" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+34]..[38,790+48])
+                                                              Some
+                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+49]..[38,790+51])
+                                                                  Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+49]..[38,790+51])
+                                                                  None
+                                                          "pmod_attributes" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[39,843+22]..[39,843+37])
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[39,843+40]..[39,843+42])
+                                                              Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[39,843+40]..[39,843+42])
+                                                              None
+                                                        ]
+                                                        None
+                                                    "pmb_attributes" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[41,910+18]..[41,910+32])
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[41,910+35]..[41,910+37])
+                                                        Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[41,910+35]..[41,910+37])
+                                                        None
+                                                  ]
+                                                  None
+                                        ]
+                                        None
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[44,981+10]..[71,1875+9]) ghost
+                                        Pexp_construct "::" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[44,981+10]..[71,1875+9]) ghost
+                                        Some
+                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[44,981+10]..[71,1875+9]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[44,981+10]..[70,1862+11])
+                                                Pexp_record
+                                                [
+                                                  "pstr_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[45,993+12]..[45,993+20])
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[45,993+23]..[45,993+26])
+                                                      Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[45,993+23]..[45,993+26])
+                                                  "pstr_desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[46,1021+12]..[46,1021+21])
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[47,1045+14]..[69,1839+21])
+                                                      Pexp_construct "Pstr_value" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[47,1045+14]..[47,1045+24])
+                                                      Some
+                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[48,1070+16]..[69,1839+21])
+                                                          Pexp_tuple
+                                                          [
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[48,1070+18]..[48,1070+30])
+                                                              Pexp_construct "Nonrecursive" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[48,1070+18]..[48,1070+30])
+                                                              None
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[49,1102+18]..[69,1839+19])
+                                                              Pexp_construct "::" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[50,1122+20]..[69,1839+19]) ghost
+                                                              Some
+                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[50,1122+20]..[69,1839+19]) ghost
+                                                                  Pexp_tuple
+                                                                  [
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[50,1122+20]..[68,1816+21])
+                                                                      Pexp_record
+                                                                      [
+"pvb_pat" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[51,1144+22]..[51,1144+29])
+  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[52,1176+24]..[57,1387+25])
+    Pexp_record
+    [
+      "ppat_desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[53,1202+26]..[53,1202+35])
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[53,1202+38]..[53,1202+46])
+          Pexp_construct "Ppat_any" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[53,1202+38]..[53,1202+46])
+          None
+      "ppat_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[54,1250+26]..[54,1250+34])
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[54,1250+37]..[54,1250+40])
+          Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[54,1250+37]..[54,1250+40])
+      "ppat_attributes" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[55,1292+26]..[55,1292+41])
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[55,1292+44]..[55,1292+46])
+          Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[55,1292+44]..[55,1292+46])
+          None
+      "ppat_loc_stack" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[56,1340+26]..[56,1340+40])
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[56,1340+43]..[56,1340+45])
+          Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[56,1340+43]..[56,1340+45])
+          None
+    ]
+    None
+"pvb_expr" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[58,1414+22]..[58,1414+30])
+  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+24]..[65,1707+27])
+    Pexp_apply
+    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+24]..[59,1447+33])
+      Pexp_ident "esequence" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+24]..[59,1447+33])
+    [
+      <arg>
+      Labelled "loc"
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+35]..[59,1447+38])
+          Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+35]..[59,1447+38])
+      <arg>
+      Nolabel
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[60,1486+26]..[65,1707+27])
+          Pexp_construct "::" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+28]..[65,1707+27]) ghost
+          Some
+            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+28]..[65,1707+27]) ghost
+              Pexp_tuple
+              [
+                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+28]..[61,1514+38])
+                  Pexp_apply
+                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+28]..[61,1514+33])
+                    Pexp_ident "eunit" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+28]..[61,1514+33])
+                  [
+                    <arg>
+                    Labelled "loc"
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+35]..[61,1514+38])
+                        Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+35]..[61,1514+38])
+                  ]
+                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..[65,1707+27]) ghost
+                  Pexp_construct "::" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..[65,1707+27]) ghost
+                  Some
+                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..[65,1707+27]) ghost
+                      Pexp_tuple
+                      [
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..[62,1554+38])
+                          Pexp_apply
+                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..[62,1554+33])
+                            Pexp_ident "eunit" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..[62,1554+33])
+                          [
+                            <arg>
+                            Labelled "loc"
+                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+35]..[62,1554+38])
+                                Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+35]..[62,1554+38])
+                          ]
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..[65,1707+27]) ghost
+                          Pexp_construct "::" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..[65,1707+27]) ghost
+                          Some
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..[65,1707+27]) ghost
+                              Pexp_tuple
+                              [
+                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..[64,1627+78])
+                                  Pexp_apply
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..[63,1594+32])
+                                    Pexp_ident "expr" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..[63,1594+32])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+30]..[64,1627+78])
+                                        Pexp_construct "Pexp_extension" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+31]..[64,1627+45])
+                                        Some
+                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+46]..[64,1627+77])
+                                            Pexp_tuple
+                                            [
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+47]..[64,1627+67])
+                                                Pexp_record
+                                                [
+                                                  "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+49]..[64,1627+52])
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+49]..[64,1627+52]) ghost
+                                                      Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+49]..[64,1627+52]) ghost
+                                                  "txt" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+54]..[64,1627+57])
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+60]..[64,1627+65])
+                                                      Pexp_constant PConst_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+61]..[64,1627+64]),None)
+                                                ]
+                                                None
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+69]..[64,1627+76])
+                                                Pexp_construct "PStr" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+69]..[64,1627+73])
+                                                Some
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+74]..[64,1627+76])
+                                                    Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+74]..[64,1627+76])
+                                                    None
+                                            ]
+                                  ]
+                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+26]..[65,1707+27]) ghost
+                                  Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+26]..[65,1707+27]) ghost
+                                  None
+                              ]
+                      ]
+              ]
+    ]
+"pvb_attributes" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[66,1736+22]..[66,1736+36])
+  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[66,1736+39]..[66,1736+41])
+    Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[66,1736+39]..[66,1736+41])
+    None
+"pvb_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[67,1779+22]..[67,1779+29])
+  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[67,1779+32]..[67,1779+35])
+    Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[67,1779+32]..[67,1779+35])
+                                                                      ]
+                                                                      None
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[69,1839+18]..[69,1839+19]) ghost
+                                                                      Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[69,1839+18]..[69,1839+19]) ghost
+                                                                      None
+                                                                  ]
+                                                          ]
+                                                ]
+                                                None
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+8]..[71,1875+9]) ghost
+                                                Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+8]..[71,1875+9]) ghost
+                                                None
+                                            ]
+                                    ]
+                    <arg>
+                    Labelled "attributes"
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[72,1886+18]..[72,1886+20])
+                        Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[72,1886+18]..[72,1886+20])
+                        None
+                  ]
+            ]
+            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[74,1912+2]..[81,2071+50])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[74,1912+6]..[74,1912+19])
+                    Ppat_var "sig_type_decl" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[74,1912+6]..[74,1912+19])
+                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+4]..[79,2054+11])
+                    Pexp_apply
+                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+4]..[75,1934+33])
+                      Pexp_ident "Deriving.Generator.make_noarg" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+4]..[75,1934+33])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+34]..[79,2054+11])
+                          Pexp_fun
+                          Labelled "loc"
+                          None
+                          pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+40]..[75,1934+43])
+                            Ppat_var "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+40]..[75,1934+43])
+                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+44]..[79,2054+10]) ghost
+                            Pexp_fun
+                            Labelled "path"
+                            None
+                            pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+45]..[75,1934+49])
+                              Ppat_var "path" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+45]..[75,1934+49])
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+50]..[79,2054+10]) ghost
+                              Pexp_fun
+                              Nolabel
+                              None
+                              pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+50]..[75,1934+54])
+                                Ppat_var "decl" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+50]..[75,1934+54])
+                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+8]..[79,2054+10])
+                                Pexp_sequence
+                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+8]..[76,1992+18])
+                                  Pexp_apply
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+8]..[76,1992+14])
+                                    Pexp_ident "ignore" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+8]..[76,1992+14])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+15]..[76,1992+18])
+                                        Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+15]..[76,1992+18])
+                                  ]
+                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+8]..[79,2054+10])
+                                  Pexp_sequence
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+8]..[77,2012+19])
+                                    Pexp_apply
+                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+8]..[77,2012+14])
+                                      Pexp_ident "ignore" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+8]..[77,2012+14])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+15]..[77,2012+19])
+                                          Pexp_ident "path" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+15]..[77,2012+19])
+                                    ]
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+8]..[79,2054+10])
+                                    Pexp_sequence
+                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+8]..[78,2033+19])
+                                      Pexp_apply
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+8]..[78,2033+14])
+                                        Pexp_ident "ignore" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+8]..[78,2033+14])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+15]..[78,2033+19])
+                                            Pexp_ident "decl" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+15]..[78,2033+19])
+                                      ]
+                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+8]..[79,2054+10])
+                                      Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+8]..[79,2054+10])
+                                      None
+                    ]
+              ]
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+2]..[81,2071+50])
+                Pexp_apply
+                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+2]..[81,2071+14])
+                  Pexp_ident "Deriving.add" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+2]..[81,2071+14])
+                [
+                  <arg>
+                  Nolabel
+                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+15]..[81,2071+20])
+                      Pexp_constant PConst_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+16]..[81,2071+19]),None)
+                  <arg>
+                  Labelled "str_type_decl"
+                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+22]..[81,2071+35])
+                      Pexp_ident "str_type_decl" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+22]..[81,2071+35])
+                  <arg>
+                  Labelled "sig_type_decl"
+                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+37]..[81,2071+50])
+                      Pexp_ident "sig_type_decl" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+37]..[81,2071+50])
+                ]
+    ]
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[83,2123+0]..[96,2557+7])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[83,2123+4]..[83,2123+6])
+          Ppat_construct "()" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[83,2123+4]..[83,2123+6])
+          None
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+2]..[96,2557+7])
+          Pexp_apply
+          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+2]..[84,2132+32])
+            Pexp_ident "Driver.register_transformation" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+2]..[84,2132+32])
+          [
+            <arg>
+            Nolabel
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+33]..[84,2132+38])
+                Pexp_constant PConst_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+34]..[84,2132+37]),None)
+            <arg>
+            Labelled "rules"
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[86,2183+6]..[96,2557+7])
+                Pexp_construct "::" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+8]..[96,2557+7]) ghost
+                Some
+                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+8]..[96,2557+7]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+8]..[95,2537+18])
+                        Pexp_apply
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+8]..[87,2191+35])
+                          Pexp_ident "Context_free.Rule.extension" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+8]..[87,2191+35])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+10]..[95,2537+18])
+                              Pexp_apply
+                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+11]..[88,2227+28])
+                                Pexp_ident "Extension.declare" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+11]..[88,2227+28])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+29]..[88,2227+34])
+                                    Pexp_constant PConst_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+30]..[88,2227+33]),None)
+                                <arg>
+                                Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+35]..[88,2227+45])
+                                    Pexp_construct "Expression" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+35]..[88,2227+45])
+                                    None
+                                <arg>
+                                Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+46]..[88,2227+60])
+                                    Pexp_ident "Ast_pattern.__" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+46]..[88,2227+60])
+                                <arg>
+                                Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+13]..[95,2537+17])
+                                    Pexp_fun
+                                    Labelled "loc"
+                                    None
+                                    pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+19]..[89,2288+22])
+                                      Ppat_var "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+19]..[89,2288+22])
+                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+23]..[95,2537+16]) ghost
+                                      Pexp_fun
+                                      Labelled "path"
+                                      None
+                                      pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+29]..[89,2288+30])
+                                        Ppat_any
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+31]..[95,2537+16]) ghost
+                                        Pexp_fun
+                                        Nolabel
+                                        None
+                                        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+31]..[89,2288+39])
+                                          Ppat_var "_payload" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+31]..[89,2288+39])
+                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[90,2331+15]..[95,2537+16])
+                                          Pexp_record
+                                          [
+                                            "pexp_desc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+17]..[91,2348+26])
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+29]..[91,2348+77])
+                                                Pexp_construct "Pexp_constant" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+29]..[91,2348+42])
+                                                Some
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+43]..[91,2348+77])
+                                                    Pexp_construct "Pconst_string" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+44]..[91,2348+57])
+                                                    Some
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+58]..[91,2348+76])
+                                                        Pexp_tuple
+                                                        [
+                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+59]..[91,2348+64])
+                                                            Pexp_constant PConst_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+60]..[91,2348+63]),None)
+                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+66]..[91,2348+69])
+                                                            Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+66]..[91,2348+69])
+                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+71]..[91,2348+75])
+                                                            Pexp_construct "None" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+71]..[91,2348+75])
+                                                            None
+                                                        ]
+                                            "pexp_loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[92,2427+17]..[92,2427+25])
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[92,2427+28]..[92,2427+31])
+                                                Pexp_ident "loc" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[92,2427+28]..[92,2427+31])
+                                            "pexp_attributes" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[93,2460+17]..[93,2460+32])
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[93,2460+35]..[93,2460+37])
+                                                Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[93,2460+35]..[93,2460+37])
+                                                None
+                                            "pexp_loc_stack" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[94,2499+17]..[94,2499+31])
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[94,2499+34]..[94,2499+36])
+                                                Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[94,2499+34]..[94,2499+36])
+                                                None
+                                          ]
+                                          None
+                              ]
+                        ]
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+6]..[96,2557+7]) ghost
+                        Pexp_construct "[]" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+6]..[96,2557+7]) ghost
+                        None
+                    ]
+          ]
+    ]
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+0]..[98,2566+37])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+4]..[98,2566+20])
+          Ppat_constraint
+          pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+5]..[98,2566+6])
+            Ppat_any
+          core_type (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+9]..[98,2566+19])
+            Ptyp_constr "Deriving.t" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+9]..[98,2566+19])
+            []
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+23]..[98,2566+37])
+          Pexp_apply
+          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+23]..[98,2566+34])
+            Pexp_ident "add_deriver" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+23]..[98,2566+34])
+          [
+            <arg>
+            Nolabel
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+35]..[98,2566+37])
+                Pexp_construct "()" (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+35]..[98,2566+37])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+open Ast_builder.Default
+let add_deriver () =
+  let str_type_decl =
+    Deriving.Generator.make_noarg
+      (fun ~loc ->
+         fun ~path:_ ->
+           fun _ ->
+             let expr desc =
+               ({
+                  pexp_desc = desc;
+                  pexp_loc = loc;
+                  pexp_attributes = [];
+                  pexp_loc_stack = []
+                } : expression) in
+             [{
+                pstr_loc = loc;
+                pstr_desc =
+                  (Pstr_module
+                     {
+                       pmb_loc = loc;
+                       pmb_name = { loc; txt = (Some "Foo") };
+                       pmb_expr =
+                         {
+                           pmod_loc = loc;
+                           pmod_desc = (Pmod_structure []);
+                           pmod_attributes = []
+                         };
+                       pmb_attributes = []
+                     })
+              };
+             {
+               pstr_loc = loc;
+               pstr_desc =
+                 (Pstr_value
+                    (Nonrecursive,
+                      [{
+                         pvb_pat =
+                           {
+                             ppat_desc = Ppat_any;
+                             ppat_loc = loc;
+                             ppat_attributes = [];
+                             ppat_loc_stack = []
+                           };
+                         pvb_expr =
+                           (esequence ~loc
+                              [eunit ~loc;
+                              eunit ~loc;
+                              expr
+                                (Pexp_extension
+                                   ({ loc; txt = "foo" }, (PStr [])))]);
+                         pvb_attributes = [];
+                         pvb_loc = loc
+                       }]))
+             }]) ~attributes:[] in
+  let sig_type_decl =
+    Deriving.Generator.make_noarg
+      (fun ~loc ->
+         fun ~path -> fun decl -> ignore loc; ignore path; ignore decl; []) in
+  Deriving.add "foo" ~str_type_decl ~sig_type_decl
+let () =
+  Driver.register_transformation "foo"
+    ~rules:[Context_free.Rule.extension
+              (Extension.declare "foo" Expression Ast_pattern.__
+                 (fun ~loc ->
+                    fun ~path:_ ->
+                      fun _payload ->
+                        {
+                          pexp_desc =
+                            (Pexp_constant (Pconst_string ("foo", loc, None)));
+                          pexp_loc = loc;
+                          pexp_attributes = [];
+                          pexp_loc_stack = []
+                        }))]
+let (_ : Deriving.t) = add_deriver ()
+[
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[1,0+0]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[1,0+5]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[2,12+0]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[2,12+24])
+    Tstr_open Fresh
+    module_expr (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[2,12+5]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[2,12+24])
+      Tmod_ident "Ppxlib!.Ast_builder.Default"
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+0]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+50])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+4]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+15])
+          Tpat_var "add_deriver/2058"
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+16]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+50]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+16]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[15,191+18])
+                Tpat_construct "()"
+                []
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[16,212+2]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+50])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[16,212+6]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[16,212+19])
+                      Tpat_var "str_type_decl/2060"
+                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[17,234+4]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[72,1886+20])
+                      Texp_apply
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[17,234+4]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[17,234+33])
+                        Texp_ident "Ppxlib!.Deriving.Generator.make_noarg"
+                      [
+                        <arg>
+                          Optional "attributes"
+                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[72,1886+18]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[72,1886+20])
+                            Texp_construct "Some"
+                            [
+                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[72,1886+18]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[72,1886+20])
+                                Texp_construct "[]"
+                                []
+                            ]
+                        <arg>
+                          Optional "deps"
+                          expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                            Texp_construct "None"
+                            []
+                        <arg>
+                          Optional "unused_code_warnings"
+                          expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                            Texp_construct "None"
+                            []
+                        <arg>
+                          Nolabel
+                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+6]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+10])
+                            Texp_function
+                            Labelled "loc"
+                            [
+                              <case>
+                                pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+12]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+15])
+                                  Tpat_var "loc/2429"
+                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+16]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+9]) ghost
+                                  Texp_function
+                                  Labelled "path"
+                                  [
+                                    <case>
+                                      pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+22]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+23])
+                                        Tpat_any
+                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+24]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+9]) ghost
+                                        Texp_function
+                                        Nolabel
+                                        [
+                                          <case>
+                                            pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+24]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[18,268+25])
+                                              Tpat_any
+                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+9])
+                                              Texp_let Nonrec
+                                              [
+                                                <def>
+                                                  pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+12]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+16])
+                                                    Tpat_var "expr/2430"
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+17]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[25,471+11]) ghost
+                                                    Texp_function
+                                                    Nolabel
+                                                    [
+                                                      <case>
+                                                        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+17]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+21])
+                                                          Tpat_var "desc/2432"
+                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[20,334+10]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[25,471+11])
+                                                          Texp_constraint
+                                                          core_type (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+24]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[19,297+34])
+                                                            Ttyp_constr "Ppxlib!.expression"
+                                                            []
+                                                            Texp_record
+                                                              fields =
+                                                                [
+                                                                  "pexp_desc"
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[21,346+24]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[21,346+28])
+                                                                      Texp_ident "desc/2432"
+                                                                  "pexp_loc"
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[22,376+23]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[22,376+26])
+                                                                      Texp_ident "loc/2429"
+                                                                  "pexp_loc_stack"
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[24,438+29]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[24,438+31])
+                                                                      Texp_construct "[]"
+                                                                      []
+                                                                  "pexp_attributes"
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[23,404+30]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[23,404+32])
+                                                                      Texp_construct "[]"
+                                                                      []
+                                                                ]
+                                                              representation =
+                                                                Record_regular
+                                                              extended_expression =
+                                                                None
+                                                    ]
+                                              ]
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[27,494+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+9])
+                                                Texp_construct "::"
+                                                [
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[28,504+10]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[43,968+11])
+                                                    Texp_record
+                                                      fields =
+                                                        [
+                                                          "pstr_desc"
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[31,568+14]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[42,949+17])
+                                                              Texp_construct "Pstr_module"
+                                                              [
+                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[32,594+16]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[42,949+17])
+                                                                  Texp_record
+                                                                    fields =
+                                                                      [
+                                                                        "pmb_name"
+                                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+29]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+54])
+                                                                            Texp_record
+                                                                              fields =
+                                                                                [
+                                                                                  "txt"
+                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+42]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+52])
+                                                                                      Texp_construct "Some"
+                                                                                      [
+                                                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+47]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+52])
+                                                                                          Texp_constant Const_string("Foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+48]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+51]),None)
+                                                                                      ]
+                                                                                  "loc"
+                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+31]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[34,645+34]) ghost
+                                                                                      Texp_ident "loc/2429"
+                                                                                ]
+                                                                              representation =
+                                                                                Record_regular
+                                                                              extended_expression =
+                                                                                None
+                                                                        "pmb_expr"
+                                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[36,730+20]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[40,887+21])
+                                                                            Texp_record
+                                                                              fields =
+                                                                                [
+                                                                                  "pmod_desc"
+                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+34]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+51])
+                                                                                      Texp_construct "Pmod_structure"
+                                                                                      [
+                                                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+49]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[38,790+51])
+                                                                                          Texp_construct "[]"
+                                                                                          []
+                                                                                      ]
+                                                                                  "pmod_loc"
+                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[37,752+33]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[37,752+36])
+                                                                                      Texp_ident "loc/2429"
+                                                                                  "pmod_attributes"
+                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[39,843+40]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[39,843+42])
+                                                                                      Texp_construct "[]"
+                                                                                      []
+                                                                                ]
+                                                                              representation =
+                                                                                Record_regular
+                                                                              extended_expression =
+                                                                                None
+                                                                        "pmb_attributes"
+                                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[41,910+35]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[41,910+37])
+                                                                            Texp_construct "[]"
+                                                                            []
+                                                                        "pmb_loc"
+                                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[33,612+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[33,612+31])
+                                                                            Texp_ident "loc/2429"
+                                                                      ]
+                                                                    representation =
+                                                                      Record_regular
+                                                                    extended_expression =
+                                                                      None
+                                                              ]
+                                                          "pstr_loc"
+                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[29,516+23]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[29,516+26])
+                                                              Texp_ident "loc/2429"
+                                                        ]
+                                                      representation =
+                                                        Record_regular
+                                                      extended_expression =
+                                                        None
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[44,981+10]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+9]) ghost
+                                                    Texp_construct "::"
+                                                    [
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[44,981+10]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[70,1862+11])
+                                                        Texp_record
+                                                          fields =
+                                                            [
+                                                              "pstr_desc"
+                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[47,1045+14]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[69,1839+21])
+                                                                  Texp_construct "Pstr_value"
+                                                                  [
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[48,1070+18]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[48,1070+30])
+                                                                      Texp_construct "Nonrecursive"
+                                                                      []
+                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[49,1102+18]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[69,1839+19])
+                                                                      Texp_construct "::"
+                                                                      [
+                                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[50,1122+20]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[68,1816+21])
+                                                                          Texp_record
+                                                                            fields =
+                                                                              [
+                                                                                "pvb_pat"
+                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[52,1176+24]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[57,1387+25])
+                                                                                    Texp_record
+                                                                                      fields =
+                                                                                        [
+                                                                                          "ppat_desc"
+                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[53,1202+38]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[53,1202+46])
+                                                                                              Texp_construct "Ppat_any"
+                                                                                              []
+                                                                                          "ppat_loc"
+                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[54,1250+37]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[54,1250+40])
+                                                                                              Texp_ident "loc/2429"
+                                                                                          "ppat_loc_stack"
+                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[56,1340+43]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[56,1340+45])
+                                                                                              Texp_construct "[]"
+                                                                                              []
+                                                                                          "ppat_attributes"
+                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[55,1292+44]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[55,1292+46])
+                                                                                              Texp_construct "[]"
+                                                                                              []
+                                                                                        ]
+                                                                                      representation =
+                                                                                        Record_regular
+                                                                                      extended_expression =
+                                                                                        None
+                                                                                "pvb_expr"
+                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+24]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+27])
+                                                                                    Texp_apply
+                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+24]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+33])
+                                                                                      Texp_ident "Ppxlib!.Ast_builder.Default.esequence"
+                                                                                    [
+                                                                                      <arg>
+                                                                                        Labelled "loc"
+                                                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+35]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[59,1447+38])
+                                                                                          Texp_ident "loc/2429"
+                                                                                      <arg>
+                                                                                        Nolabel
+                                                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[60,1486+26]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+27])
+                                                                                          Texp_construct "::"
+                                                                                          [
+                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+38])
+                                                                                              Texp_apply
+                                                                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+33])
+                                                                                                Texp_ident "Ppxlib!.Ast_builder.Default.eunit"
+                                                                                              [
+                                                                                                <arg>
+                                                                                                  Labelled "loc"
+                                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+35]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[61,1514+38])
+                                                                                                    Texp_ident "loc/2429"
+                                                                                              ]
+                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+27]) ghost
+                                                                                              Texp_construct "::"
+                                                                                              [
+                                                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+38])
+                                                                                                  Texp_apply
+                                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+33])
+                                                                                                    Texp_ident "Ppxlib!.Ast_builder.Default.eunit"
+                                                                                                  [
+                                                                                                    <arg>
+                                                                                                      Labelled "loc"
+                                                                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+35]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[62,1554+38])
+                                                                                                        Texp_ident "loc/2429"
+                                                                                                  ]
+                                                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+27]) ghost
+                                                                                                  Texp_construct "::"
+                                                                                                  [
+                                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+78])
+                                                                                                      Texp_apply
+                                                                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[63,1594+32])
+                                                                                                        Texp_ident "expr/2430"
+                                                                                                      [
+                                                                                                        <arg>
+                                                                                                          Nolabel
+                                                                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+30]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+78])
+                                                                                                            Texp_construct "Pexp_extension"
+                                                                                                            [
+                                                                                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+46]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+77])
+                                                                                                                Texp_tuple
+                                                                                                                [
+                                                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+47]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+67])
+                                                                                                                    Texp_record
+                                                                                                                      fields =
+                                                                                                                        [
+                                                                                                                          "txt"
+                                                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+60]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+65])
+                                                                                                                              Texp_constant Const_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+61]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+64]),None)
+                                                                                                                          "loc"
+                                                                                                                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+49]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+52]) ghost
+                                                                                                                              Texp_ident "loc/2429"
+                                                                                                                        ]
+                                                                                                                      representation =
+                                                                                                                        Record_regular
+                                                                                                                      extended_expression =
+                                                                                                                        None
+                                                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+69]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+76])
+                                                                                                                    Texp_construct "PStr"
+                                                                                                                    [
+                                                                                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+74]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[64,1627+76])
+                                                                                                                        Texp_construct "[]"
+                                                                                                                        []
+                                                                                                                    ]
+                                                                                                                ]
+                                                                                                            ]
+                                                                                                      ]
+                                                                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+26]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[65,1707+27]) ghost
+                                                                                                      Texp_construct "[]"
+                                                                                                      []
+                                                                                                  ]
+                                                                                              ]
+                                                                                          ]
+                                                                                    ]
+                                                                                "pvb_attributes"
+                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[66,1736+39]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[66,1736+41])
+                                                                                    Texp_construct "[]"
+                                                                                    []
+                                                                                "pvb_loc"
+                                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[67,1779+32]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[67,1779+35])
+                                                                                    Texp_ident "loc/2429"
+                                                                              ]
+                                                                            representation =
+                                                                              Record_regular
+                                                                            extended_expression =
+                                                                              None
+                                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[69,1839+18]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[69,1839+19]) ghost
+                                                                          Texp_construct "[]"
+                                                                          []
+                                                                      ]
+                                                                  ]
+                                                              "pstr_loc"
+                                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[45,993+23]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[45,993+26])
+                                                                  Texp_ident "loc/2429"
+                                                            ]
+                                                          representation =
+                                                            Record_regular
+                                                          extended_expression =
+                                                            None
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[71,1875+9]) ghost
+                                                        Texp_construct "[]"
+                                                        []
+                                                    ]
+                                                ]
+                                        ]
+                                  ]
+                            ]
+                      ]
+                ]
+                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[74,1912+2]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+50])
+                  Texp_let Nonrec
+                  [
+                    <def>
+                      pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[74,1912+6]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[74,1912+19])
+                        Tpat_var "sig_type_decl/4263"
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+4]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+11])
+                        Texp_apply
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+4]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+33])
+                          Texp_ident "Ppxlib!.Deriving.Generator.make_noarg"
+                        [
+                          <arg>
+                            Optional "attributes"
+                            expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                              Texp_construct "None"
+                              []
+                          <arg>
+                            Optional "deps"
+                            expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                              Texp_construct "None"
+                              []
+                          <arg>
+                            Optional "unused_code_warnings"
+                            expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                              Texp_construct "None"
+                              []
+                          <arg>
+                            Nolabel
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+34]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+11])
+                              Texp_function
+                              Labelled "loc"
+                              [
+                                <case>
+                                  pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+40]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+43])
+                                    Tpat_var "loc/4264"
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+44]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+10]) ghost
+                                    Texp_function
+                                    Labelled "path"
+                                    [
+                                      <case>
+                                        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+45]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+49])
+                                          Tpat_var "path/4265"
+                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+50]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+10]) ghost
+                                          Texp_function
+                                          Nolabel
+                                          [
+                                            <case>
+                                              pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+50]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[75,1934+54])
+                                                Tpat_var "decl/4266"
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+10])
+                                                Texp_sequence
+                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+18])
+                                                  Texp_apply
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+14])
+                                                    Texp_ident "Stdlib!.ignore"
+                                                  [
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+15]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[76,1992+18])
+                                                        Texp_ident "loc/4264"
+                                                  ]
+                                                expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+10])
+                                                  Texp_sequence
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+19])
+                                                    Texp_apply
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+14])
+                                                      Texp_ident "Stdlib!.ignore"
+                                                    [
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+15]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[77,2012+19])
+                                                          Texp_ident "path/4265"
+                                                    ]
+                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+10])
+                                                    Texp_sequence
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+19])
+                                                      Texp_apply
+                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+14])
+                                                        Texp_ident "Stdlib!.ignore"
+                                                      [
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+15]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[78,2033+19])
+                                                            Texp_ident "decl/4266"
+                                                      ]
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[79,2054+10])
+                                                      Texp_construct "[]"
+                                                      []
+                                          ]
+                                    ]
+                              ]
+                        ]
+                  ]
+                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+2]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+50])
+                    Texp_apply
+                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+2]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+14])
+                      Texp_ident "Ppxlib!.Deriving.add"
+                    [
+                      <arg>
+                        Optional "str_type_decl"
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+22]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+35])
+                          Texp_construct "Some"
+                          [
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+22]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+35])
+                              Texp_ident "str_type_decl/2060"
+                          ]
+                      <arg>
+                        Optional "str_type_ext"
+                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                          Texp_construct "None"
+                          []
+                      <arg>
+                        Optional "str_exception"
+                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                          Texp_construct "None"
+                          []
+                      <arg>
+                        Optional "str_module_type_decl"
+                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                          Texp_construct "None"
+                          []
+                      <arg>
+                        Optional "sig_type_decl"
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+37]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+50])
+                          Texp_construct "Some"
+                          [
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+37]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+50])
+                              Texp_ident "sig_type_decl/4263"
+                          ]
+                      <arg>
+                        Optional "sig_type_ext"
+                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                          Texp_construct "None"
+                          []
+                      <arg>
+                        Optional "sig_exception"
+                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                          Texp_construct "None"
+                          []
+                      <arg>
+                        Optional "sig_module_type_decl"
+                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                          Texp_construct "None"
+                          []
+                      <arg>
+                        Optional "extension"
+                        expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                          Texp_construct "None"
+                          []
+                      <arg>
+                        Nolabel
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+15]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+20])
+                          Texp_constant Const_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+16]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[81,2071+19]),None)
+                    ]
+          ]
+    ]
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[83,2123+0]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+7])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[83,2123+4]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[83,2123+6])
+          Tpat_construct "()"
+          []
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+2]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+7])
+          Texp_apply
+          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+2]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+32])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[86,2183+6]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+7])
+                Texp_construct "Some"
+                [
+                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[86,2183+6]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+7])
+                    Texp_construct "::"
+                    [
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[95,2537+18])
+                        Texp_apply
+                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+8]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[87,2191+35])
+                          Texp_ident "Ppxlib!.Context_free.Rule.extension"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+10]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[95,2537+18])
+                              Texp_apply
+                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+11]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+28])
+                                Texp_ident "Ppxlib!.Extension.declare"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+29]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+34])
+                                    Texp_constant Const_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+30]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+33]),None)
+                                <arg>
+                                  Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+35]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+45])
+                                    Texp_construct "Expression"
+                                    []
+                                <arg>
+                                  Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+46]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[88,2227+60])
+                                    Texp_ident "Ppxlib!.Ast_pattern.__"
+                                <arg>
+                                  Nolabel
+                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+13]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[95,2537+17])
+                                    Texp_function
+                                    Labelled "loc"
+                                    [
+                                      <case>
+                                        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+19]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+22])
+                                          Tpat_var "loc/5275"
+                                        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+23]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[95,2537+16]) ghost
+                                          Texp_function
+                                          Labelled "path"
+                                          [
+                                            <case>
+                                              pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+29]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+30])
+                                                Tpat_any
+                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+31]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[95,2537+16]) ghost
+                                                Texp_function
+                                                Nolabel
+                                                [
+                                                  <case>
+                                                    pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+31]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[89,2288+39])
+                                                      Tpat_var "_payload/5276"
+                                                    expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[90,2331+15]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[95,2537+16])
+                                                      Texp_record
+                                                        fields =
+                                                          [
+                                                            "pexp_desc"
+                                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+29]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+77])
+                                                                Texp_construct "Pexp_constant"
+                                                                [
+                                                                  expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+43]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+77])
+                                                                    Texp_construct "Pconst_string"
+                                                                    [
+                                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+59]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+64])
+                                                                        Texp_constant Const_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+60]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+63]),None)
+                                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+66]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+69])
+                                                                        Texp_ident "loc/5275"
+                                                                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+71]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[91,2348+75])
+                                                                        Texp_construct "None"
+                                                                        []
+                                                                    ]
+                                                                ]
+                                                            "pexp_loc"
+                                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[92,2427+28]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[92,2427+31])
+                                                                Texp_ident "loc/5275"
+                                                            "pexp_loc_stack"
+                                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[94,2499+34]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[94,2499+36])
+                                                                Texp_construct "[]"
+                                                                []
+                                                            "pexp_attributes"
+                                                              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[93,2460+35]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[93,2460+37])
+                                                                Texp_construct "[]"
+                                                                []
+                                                          ]
+                                                        representation =
+                                                          Record_regular
+                                                        extended_expression =
+                                                          None
+                                                ]
+                                          ]
+                                    ]
+                              ]
+                        ]
+                      expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+6]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[96,2557+7]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+33]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+38])
+                Texp_constant Const_string("foo",(test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+34]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[84,2132+37]),None)
+          ]
+    ]
+  structure_item (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+0]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+37])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+5]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+6])
+          Tpat_extra_constraint
+          core_type (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+9]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+19])
+            Ttyp_constr "Ppxlib!.Deriving.t"
+            []
+          pattern (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+5]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+6])
+            Tpat_any
+        expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+23]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+37])
+          Texp_apply
+          expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+23]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+34])
+            Texp_ident "add_deriver/2058"
+          [
+            <arg>
+              Nolabel
+              expression (test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+35]..test/deriving/inline/foo-deriver/ppx_foo_deriver.ml[98,2566+37])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Ppx_foo_deriver!
+  (let
+    (add_deriver/2058 =
+       (function param/4267
+         (funct-body Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(15)<ghost>:207-2121
+           (before Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(16):214-2121
+             (let
+               (str_type_decl/2060 =
+                  (after Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(17):238-1906
+                    (apply
+                      (field_imm 1 (field_imm 1 (global Ppxlib__Deriving!)))
+                      [0: 0] 0 0
+                      (function loc/2429 param/4262 param/4261
+                        (funct-body Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(18):274-1885
+                          (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(19):305-1884
+                            (let
+                              (expr/2430 =
+                                 (function desc/2432
+                                   (funct-body Ppx_foo_deriver.add_deriver.(fun).expr test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(19)<ghost>:314-482
+                                     (before Ppx_foo_deriver.add_deriver.(fun).expr test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(20):344-482
+                                       (makeblock 0 desc/2432 loc/2429 0 0)))))
+                              (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(27):502-1884
+                                (makeblock 0
+                                  (makeblock 0
+                                    (makeblock 6
+                                      (makeblock 0
+                                        (makeblock 0 [0: "Foo"] loc/2429)
+                                        (makeblock 0 [1: 0] loc/2429 0) 0
+                                        loc/2429))
+                                    loc/2429)
+                                  (makeblock 0
+                                    (makeblock 0
+                                      (makeblock 1 0
+                                        (makeblock 0
+                                          (makeblock 0
+                                            (makeblock 0 0 loc/2429 0 0)
+                                            (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(59):1471-1734
+                                              (apply
+                                                (field_imm 194
+                                                  (field_imm 0
+                                                    (global Ppxlib__Ast_builder!)))
+                                                loc/2429
+                                                (makeblock 0
+                                                  (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(61):1542-1552
+                                                    (apply
+                                                      (field_imm 188
+                                                        (field_imm 0
+                                                          (global Ppxlib__Ast_builder!)))
+                                                      loc/2429))
+                                                  (makeblock 0
+                                                    (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(62):1582-1592
+                                                      (apply
+                                                        (field_imm 188
+                                                          (field_imm 0
+                                                            (global Ppxlib__Ast_builder!)))
+                                                        loc/2429))
+                                                    (makeblock 0
+                                                      (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(63):1622-1705
+                                                        (apply expr/2430
+                                                          (makeblock 35
+                                                            (makeblock 0
+                                                              (makeblock 0
+                                                                "foo"
+                                                                loc/2429)
+                                                              [0: 0]))))
+                                                      0)))))
+                                            0 loc/2429)
+                                          0))
+                                      loc/2429)
+                                    0))))))))))
+               (before Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(74):1914-2121
+                 (let
+                   (sig_type_decl/4263 =
+                      (after Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(75):1938-2065
+                        (apply
+                          (field_imm 1
+                            (field_imm 1 (global Ppxlib__Deriving!)))
+                          0 0 0
+                          (function loc/4264 path/4265 decl/4266
+                            (funct-body Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(75):1968-2065
+                              (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(76):2000-2064
+                                (seq (ignore loc/4264)
+                                  (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(77):2020-2064
+                                    (seq (ignore path/4265)
+                                      (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(78):2041-2064
+                                        (seq (ignore decl/4266)
+                                          (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(79):2062-2064
+                                            0))))))))))))
+                   (before Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(81):2073-2121
+                     (after Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(81):2073-2121
+                       (apply (field_imm 2 (global Ppxlib__Deriving!))
+                         (makeblock 0 str_type_decl/2060) 0 0 0
+                         (makeblock 0 sig_type_decl/4263) 0 0 0 0 "foo")))))))))
+     *match*/8479 =
+       (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(84):2134-2564
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0
+             (makeblock 0
+               (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(87):2199-2555
+                 (apply
+                   (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+                   (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(88):2237-2555
+                     (apply (field_imm 1 (global Ppxlib__Extension!)) "foo" 5
+                       (field_imm 3 (global Ppxlib__Ast_pattern!))
+                       (function loc/5275 param/5277 _payload/5276
+                         (funct-body Ppx_foo_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(89):2301-2554
+                           (before Ppx_foo_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(90):2346-2553
+                             (makeblock 0
+                               (makeblock 1 (makeblock 2 "foo" loc/5275 0))
+                               loc/5275 0 0))))))))
+               0))
+           0 0 0 0 0 0 0 0 0 0 "foo")))
+    (seq
+      (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(98):2589-2603
+        (apply add_deriver/2058 0))
+      (pseudo <unknown location> (makeblock 0 add_deriver/2058)))))
+(setglobal Ppx_foo_deriver!
+  (let
+    (add_deriver/2058 =
+       (function param/4267
+         (funct-body Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(15)<ghost>:207-2121
+           (before Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(16):214-2121
+             (let
+               (str_type_decl/2060 =
+                  (after Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(17):238-1906
+                    (apply
+                      (field_imm 1 (field_imm 1 (global Ppxlib__Deriving!)))
+                      [0: 0] 0 0
+                      (function loc/2429 param/4262 param/4261
+                        (funct-body Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(18):274-1885
+                          (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(19):305-1884
+                            (let
+                              (expr/2430 =
+                                 (function desc/2432
+                                   (funct-body Ppx_foo_deriver.add_deriver.(fun).expr test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(19)<ghost>:314-482
+                                     (before Ppx_foo_deriver.add_deriver.(fun).expr test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(20):344-482
+                                       (makeblock 0 desc/2432 loc/2429 0 0)))))
+                              (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(27):502-1884
+                                (makeblock 0
+                                  (makeblock 0
+                                    (makeblock 6
+                                      (makeblock 0
+                                        (makeblock 0 [0: "Foo"] loc/2429)
+                                        (makeblock 0 [1: 0] loc/2429 0) 0
+                                        loc/2429))
+                                    loc/2429)
+                                  (makeblock 0
+                                    (makeblock 0
+                                      (makeblock 1 0
+                                        (makeblock 0
+                                          (makeblock 0
+                                            (makeblock 0 0 loc/2429 0 0)
+                                            (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(59):1471-1734
+                                              (apply
+                                                (field_imm 194
+                                                  (field_imm 0
+                                                    (global Ppxlib__Ast_builder!)))
+                                                loc/2429
+                                                (makeblock 0
+                                                  (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(61):1542-1552
+                                                    (apply
+                                                      (field_imm 188
+                                                        (field_imm 0
+                                                          (global Ppxlib__Ast_builder!)))
+                                                      loc/2429))
+                                                  (makeblock 0
+                                                    (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(62):1582-1592
+                                                      (apply
+                                                        (field_imm 188
+                                                          (field_imm 0
+                                                            (global Ppxlib__Ast_builder!)))
+                                                        loc/2429))
+                                                    (makeblock 0
+                                                      (after Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(63):1622-1705
+                                                        (apply expr/2430
+                                                          (makeblock 35
+                                                            (makeblock 0
+                                                              (makeblock 0
+                                                                "foo"
+                                                                loc/2429)
+                                                              [0: 0]))))
+                                                      0)))))
+                                            0 loc/2429)
+                                          0))
+                                      loc/2429)
+                                    0))))))))))
+               (before Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(74):1914-2121
+                 (let
+                   (sig_type_decl/4263 =
+                      (after Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(75):1938-2065
+                        (apply
+                          (field_imm 1
+                            (field_imm 1 (global Ppxlib__Deriving!)))
+                          0 0 0
+                          (function loc/4264 path/4265 decl/4266
+                            (funct-body Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(75):1968-2065
+                              (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(76):2000-2064
+                                (seq (ignore loc/4264)
+                                  (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(77):2020-2064
+                                    (seq (ignore path/4265)
+                                      (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(78):2041-2064
+                                        (seq (ignore decl/4266)
+                                          (before Ppx_foo_deriver.add_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(79):2062-2064
+                                            0))))))))))))
+                   (before Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(81):2073-2121
+                     (after Ppx_foo_deriver.add_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(81):2073-2121
+                       (apply (field_imm 2 (global Ppxlib__Deriving!))
+                         (makeblock 0 str_type_decl/2060) 0 0 0
+                         (makeblock 0 sig_type_decl/4263) 0 0 0 0 "foo")))))))))
+     *match*/8479 =
+       (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(84):2134-2564
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0
+             (makeblock 0
+               (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(87):2199-2555
+                 (apply
+                   (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+                   (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(88):2237-2555
+                     (apply (field_imm 1 (global Ppxlib__Extension!)) "foo" 5
+                       (field_imm 3 (global Ppxlib__Ast_pattern!))
+                       (function loc/5275 param/5277 _payload/5276
+                         (funct-body Ppx_foo_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(89):2301-2554
+                           (before Ppx_foo_deriver.(fun) test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(90):2346-2553
+                             (makeblock 0
+                               (makeblock 1 (makeblock 2 "foo" loc/5275 0))
+                               loc/5275 0 0))))))))
+               0))
+           0 0 0 0 0 0 0 0 0 0 "foo")))
+    (seq
+      (after Ppx_foo_deriver test/deriving/inline/foo-deriver/ppx_foo_deriver.ml(98):2589-2603
+        (apply add_deriver/2058 0))
+      (pseudo <unknown location> (makeblock 0 add_deriver/2058)))))

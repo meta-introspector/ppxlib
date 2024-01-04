@@ -1,0 +1,7 @@
+0.094s 33.0MB 10.8MB 10.8MB src/expansion_context.ml
+  0.007s 2.90MB 1.57MB 1.57MB parsing
+    0.006s 2.90MB 1.57MB 1.57MB parser
+  0.080s 21.9MB 9.15MB 10.7MB typing
+  0.002s 4.03MB ------ ------ generate
+  0.006s 4.15MB 0.15MB 10.8MB other
+0.011s ------ ------ ------ other

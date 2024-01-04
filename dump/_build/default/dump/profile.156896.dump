@@ -1,0 +1,8 @@
+0.311s  731MB 38.7MB 38.7MB src/ast_pattern_generated.ml
+  0.010s 24.9MB 4.53MB 4.53MB parsing
+    0.010s 24.9MB 4.53MB 4.53MB parser
+  0.183s  276MB 28.8MB 33.3MB typing
+  0.010s 25.1MB 0.68MB 34.0MB transl
+  0.044s  158MB 4.12MB 38.1MB generate
+  0.065s  246MB 0.56MB 38.7MB other
+0.003s ------ ------ ------ other

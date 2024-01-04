@@ -1,0 +1,1233 @@
+[
+  structure_item (test/501_migrations/compare_on.ml[1,0+0]..[28,888+8])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/501_migrations/compare_on.ml[1,0+4]..[1,0+7])
+          Ppat_var "run" (test/501_migrations/compare_on.ml[1,0+4]..[1,0+7])
+        expression (test/501_migrations/compare_on.ml[1,0+8]..[28,888+8]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (test/501_migrations/compare_on.ml[1,0+8]..[1,0+10])
+            Ppat_construct "()" (test/501_migrations/compare_on.ml[1,0+8]..[1,0+10])
+            None
+          expression (test/501_migrations/compare_on.ml[2,13+2]..[28,888+8])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (test/501_migrations/compare_on.ml[2,13+6]..[2,13+21])
+                  Ppat_tuple
+                  [
+                    pattern (test/501_migrations/compare_on.ml[2,13+6]..[2,13+16])
+                      Ppat_var "example_fn" (test/501_migrations/compare_on.ml[2,13+6]..[2,13+16])
+                    pattern (test/501_migrations/compare_on.ml[2,13+18]..[2,13+21])
+                      Ppat_var "ppx" (test/501_migrations/compare_on.ml[2,13+18]..[2,13+21])
+                  ]
+                expression (test/501_migrations/compare_on.ml[3,37+4]..[5,141+45])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (test/501_migrations/compare_on.ml[3,37+8]..[3,37+12])
+                        Ppat_var "args" (test/501_migrations/compare_on.ml[3,37+8]..[3,37+12])
+                      expression (test/501_migrations/compare_on.ml[3,37+15]..[3,37+23])
+                        Pexp_ident "Sys.argv" (test/501_migrations/compare_on.ml[3,37+15]..[3,37+23])
+                  ]
+                  expression (test/501_migrations/compare_on.ml[4,64+4]..[5,141+45])
+                    Pexp_ifthenelse
+                    expression (test/501_migrations/compare_on.ml[4,64+7]..[4,64+34])
+                      Pexp_apply
+                      expression (test/501_migrations/compare_on.ml[4,64+7]..[4,64+10])
+                        Pexp_ident "not" (test/501_migrations/compare_on.ml[4,64+7]..[4,64+10])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/501_migrations/compare_on.ml[4,64+11]..[4,64+34])
+                            Pexp_apply
+                            expression (test/501_migrations/compare_on.ml[4,64+30]..[4,64+31])
+                              Pexp_ident "=" (test/501_migrations/compare_on.ml[4,64+30]..[4,64+31])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[4,64+12]..[4,64+29])
+                                  Pexp_apply
+                                  expression (test/501_migrations/compare_on.ml[4,64+12]..[4,64+24])
+                                    Pexp_ident "Array.length" (test/501_migrations/compare_on.ml[4,64+12]..[4,64+24])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (test/501_migrations/compare_on.ml[4,64+25]..[4,64+29])
+                                        Pexp_ident "args" (test/501_migrations/compare_on.ml[4,64+25]..[4,64+29])
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[4,64+32]..[4,64+33])
+                                  Pexp_constant PConst_int (3,None)
+                            ]
+                      ]
+                    expression (test/501_migrations/compare_on.ml[4,64+40]..[4,64+76])
+                      Pexp_apply
+                      expression (test/501_migrations/compare_on.ml[4,64+40]..[4,64+48])
+                        Pexp_ident "failwith" (test/501_migrations/compare_on.ml[4,64+40]..[4,64+48])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/501_migrations/compare_on.ml[4,64+49]..[4,64+76])
+                            Pexp_constant PConst_string("expected exactly two args",(test/501_migrations/compare_on.ml[4,64+50]..[4,64+75]),None)
+                      ]
+                    Some
+                      expression (test/501_migrations/compare_on.ml[5,141+9]..[5,141+45])
+                        Pexp_tuple
+                        [
+                          expression (test/501_migrations/compare_on.ml[5,141+10]..[5,141+26])
+                            Pexp_apply
+                            expression (test/501_migrations/compare_on.ml[5,141+10]..[5,141+19])
+                              Pexp_ident "Array.get" (test/501_migrations/compare_on.ml[5,141+10]..[5,141+19])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[5,141+20]..[5,141+24])
+                                  Pexp_ident "args" (test/501_migrations/compare_on.ml[5,141+20]..[5,141+24])
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[5,141+25]..[5,141+26])
+                                  Pexp_constant PConst_int (1,None)
+                            ]
+                          expression (test/501_migrations/compare_on.ml[5,141+28]..[5,141+44])
+                            Pexp_apply
+                            expression (test/501_migrations/compare_on.ml[5,141+28]..[5,141+37])
+                              Pexp_ident "Array.get" (test/501_migrations/compare_on.ml[5,141+28]..[5,141+37])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[5,141+38]..[5,141+42])
+                                  Pexp_ident "args" (test/501_migrations/compare_on.ml[5,141+38]..[5,141+42])
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[5,141+43]..[5,141+44])
+                                  Pexp_constant PConst_int (2,None)
+                            ]
+                        ]
+            ]
+            expression (test/501_migrations/compare_on.ml[7,192+2]..[28,888+8])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/501_migrations/compare_on.ml[7,192+6]..[7,192+12])
+                    Ppat_var "direct" (test/501_migrations/compare_on.ml[7,192+6]..[7,192+12])
+                  expression (test/501_migrations/compare_on.ml[7,192+15]..[7,192+35])
+                    Pexp_constant PConst_string("without_migrations",(test/501_migrations/compare_on.ml[7,192+16]..[7,192+34]),None)
+              ]
+              expression (test/501_migrations/compare_on.ml[8,231+2]..[28,888+8])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (test/501_migrations/compare_on.ml[8,231+6]..[8,231+16])
+                      Ppat_var "migrations" (test/501_migrations/compare_on.ml[8,231+6]..[8,231+16])
+                    expression (test/501_migrations/compare_on.ml[8,231+19]..[8,231+36])
+                      Pexp_constant PConst_string("with_migrations",(test/501_migrations/compare_on.ml[8,231+20]..[8,231+35]),None)
+                ]
+                expression (test/501_migrations/compare_on.ml[9,271+2]..[28,888+8])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (test/501_migrations/compare_on.ml[9,271+6]..[9,271+15])
+                        Ppat_var "direct_ec" (test/501_migrations/compare_on.ml[9,271+6]..[9,271+15])
+                      expression (test/501_migrations/compare_on.ml[10,289+4]..[10,289+70])
+                        Pexp_apply
+                        expression (test/501_migrations/compare_on.ml[10,289+4]..[10,289+15])
+                          Pexp_ident "Sys.command" (test/501_migrations/compare_on.ml[10,289+4]..[10,289+15])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (test/501_migrations/compare_on.ml[10,289+16]..[10,289+70])
+                              Pexp_apply
+                              expression (test/501_migrations/compare_on.ml[10,289+39]..[10,289+40])
+                                Pexp_ident "^" (test/501_migrations/compare_on.ml[10,289+39]..[10,289+40])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/501_migrations/compare_on.ml[10,289+17]..[10,289+38])
+                                    Pexp_constant PConst_string("ocamlc -dparsetree ",(test/501_migrations/compare_on.ml[10,289+18]..[10,289+37]),None)
+                                <arg>
+                                Nolabel
+                                  expression (test/501_migrations/compare_on.ml[10,289+41]..[10,289+69])
+                                    Pexp_apply
+                                    expression (test/501_migrations/compare_on.ml[10,289+52]..[10,289+53])
+                                      Pexp_ident "^" (test/501_migrations/compare_on.ml[10,289+52]..[10,289+53])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[10,289+41]..[10,289+51])
+                                          Pexp_ident "example_fn" (test/501_migrations/compare_on.ml[10,289+41]..[10,289+51])
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[10,289+54]..[10,289+69])
+                                          Pexp_apply
+                                          expression (test/501_migrations/compare_on.ml[10,289+61]..[10,289+62])
+                                            Pexp_ident "^" (test/501_migrations/compare_on.ml[10,289+61]..[10,289+62])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[10,289+54]..[10,289+60])
+                                                Pexp_constant PConst_string(" 2> ",(test/501_migrations/compare_on.ml[10,289+55]..[10,289+59]),None)
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[10,289+63]..[10,289+69])
+                                                Pexp_ident "direct" (test/501_migrations/compare_on.ml[10,289+63]..[10,289+69])
+                                          ]
+                                    ]
+                              ]
+                        ]
+                  ]
+                  expression (test/501_migrations/compare_on.ml[12,365+2]..[28,888+8])
+                    Pexp_ifthenelse
+                    expression (test/501_migrations/compare_on.ml[12,365+5]..[12,365+18])
+                      Pexp_apply
+                      expression (test/501_migrations/compare_on.ml[12,365+15]..[12,365+16])
+                        Pexp_ident ">" (test/501_migrations/compare_on.ml[12,365+15]..[12,365+16])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/501_migrations/compare_on.ml[12,365+5]..[12,365+14])
+                            Pexp_ident "direct_ec" (test/501_migrations/compare_on.ml[12,365+5]..[12,365+14])
+                        <arg>
+                        Nolabel
+                          expression (test/501_migrations/compare_on.ml[12,365+17]..[12,365+18])
+                            Pexp_constant PConst_int (0,None)
+                      ]
+                    expression (test/501_migrations/compare_on.ml[12,365+24]..[15,495+7])
+                      Pexp_sequence
+                      expression (test/501_migrations/compare_on.ml[13,391+4]..[13,391+57])
+                        Pexp_apply
+                        expression (test/501_migrations/compare_on.ml[13,391+4]..[13,391+17])
+                          Pexp_ident "print_endline" (test/501_migrations/compare_on.ml[13,391+4]..[13,391+17])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (test/501_migrations/compare_on.ml[13,391+18]..[13,391+57])
+                              Pexp_constant PConst_string("compile error even without migrations",(test/501_migrations/compare_on.ml[13,391+19]..[13,391+56]),None)
+                        ]
+                      expression (test/501_migrations/compare_on.ml[14,450+4]..[15,495+6])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (test/501_migrations/compare_on.ml[14,450+8]..[14,450+9])
+                              Ppat_any
+                            expression (test/501_migrations/compare_on.ml[14,450+12]..[14,450+41])
+                              Pexp_apply
+                              expression (test/501_migrations/compare_on.ml[14,450+12]..[14,450+23])
+                                Pexp_ident "Sys.command" (test/501_migrations/compare_on.ml[14,450+12]..[14,450+23])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/501_migrations/compare_on.ml[14,450+24]..[14,450+41])
+                                    Pexp_apply
+                                    expression (test/501_migrations/compare_on.ml[14,450+32]..[14,450+33])
+                                      Pexp_ident "^" (test/501_migrations/compare_on.ml[14,450+32]..[14,450+33])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[14,450+25]..[14,450+31])
+                                          Pexp_constant PConst_string("cat ",(test/501_migrations/compare_on.ml[14,450+26]..[14,450+30]),None)
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[14,450+34]..[14,450+40])
+                                          Pexp_ident "direct" (test/501_migrations/compare_on.ml[14,450+34]..[14,450+40])
+                                    ]
+                              ]
+                        ]
+                        expression (test/501_migrations/compare_on.ml[15,495+4]..[15,495+6])
+                          Pexp_construct "()" (test/501_migrations/compare_on.ml[15,495+4]..[15,495+6])
+                          None
+                    Some
+                      expression (test/501_migrations/compare_on.ml[17,510+4]..[28,888+8])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (test/501_migrations/compare_on.ml[17,510+8]..[17,510+21])
+                              Ppat_var "migrations_ec" (test/501_migrations/compare_on.ml[17,510+8]..[17,510+21])
+                            expression (test/501_migrations/compare_on.ml[18,534+6]..[20,632+20])
+                              Pexp_apply
+                              expression (test/501_migrations/compare_on.ml[18,534+6]..[18,534+17])
+                                Pexp_ident "Sys.command" (test/501_migrations/compare_on.ml[18,534+6]..[18,534+17])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/501_migrations/compare_on.ml[19,552+8]..[20,632+20])
+                                    Pexp_apply
+                                    expression (test/501_migrations/compare_on.ml[19,552+37]..[19,552+38])
+                                      Pexp_ident "^" (test/501_migrations/compare_on.ml[19,552+37]..[19,552+38])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[19,552+9]..[19,552+36])
+                                          Pexp_constant PConst_string("ocamlc -dparsetree -ppx '",(test/501_migrations/compare_on.ml[19,552+10]..[19,552+35]),None)
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[19,552+39]..[20,632+19])
+                                          Pexp_apply
+                                          expression (test/501_migrations/compare_on.ml[19,552+43]..[19,552+44])
+                                            Pexp_ident "^" (test/501_migrations/compare_on.ml[19,552+43]..[19,552+44])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[19,552+39]..[19,552+42])
+                                                Pexp_ident "ppx" (test/501_migrations/compare_on.ml[19,552+39]..[19,552+42])
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[19,552+45]..[20,632+19])
+                                                Pexp_apply
+                                                expression (test/501_migrations/compare_on.ml[19,552+58]..[19,552+59])
+                                                  Pexp_ident "^" (test/501_migrations/compare_on.ml[19,552+58]..[19,552+59])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (test/501_migrations/compare_on.ml[19,552+45]..[19,552+57])
+                                                      Pexp_constant PConst_string(" -as-ppx' ",(test/501_migrations/compare_on.ml[19,552+46]..[19,552+56]),None)
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (test/501_migrations/compare_on.ml[19,552+60]..[20,632+19])
+                                                      Pexp_apply
+                                                      expression (test/501_migrations/compare_on.ml[19,552+71]..[19,552+72])
+                                                        Pexp_ident "^" (test/501_migrations/compare_on.ml[19,552+71]..[19,552+72])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (test/501_migrations/compare_on.ml[19,552+60]..[19,552+70])
+                                                            Pexp_ident "example_fn" (test/501_migrations/compare_on.ml[19,552+60]..[19,552+70])
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (test/501_migrations/compare_on.ml[19,552+73]..[20,632+19])
+                                                            Pexp_apply
+                                                            expression (test/501_migrations/compare_on.ml[20,632+7]..[20,632+8])
+                                                              Pexp_ident "^" (test/501_migrations/compare_on.ml[20,632+7]..[20,632+8])
+                                                            [
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (test/501_migrations/compare_on.ml[19,552+73]..[19,552+79])
+                                                                  Pexp_constant PConst_string(" 2> ",(test/501_migrations/compare_on.ml[19,552+74]..[19,552+78]),None)
+                                                              <arg>
+                                                              Nolabel
+                                                                expression (test/501_migrations/compare_on.ml[20,632+9]..[20,632+19])
+                                                                  Pexp_ident "migrations" (test/501_migrations/compare_on.ml[20,632+9]..[20,632+19])
+                                                            ]
+                                                      ]
+                                                ]
+                                          ]
+                                    ]
+                              ]
+                        ]
+                        expression (test/501_migrations/compare_on.ml[22,660+4]..[28,888+8])
+                          Pexp_ifthenelse
+                          expression (test/501_migrations/compare_on.ml[22,660+7]..[22,660+24])
+                            Pexp_apply
+                            expression (test/501_migrations/compare_on.ml[22,660+21]..[22,660+22])
+                              Pexp_ident ">" (test/501_migrations/compare_on.ml[22,660+21]..[22,660+22])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[22,660+7]..[22,660+20])
+                                  Pexp_ident "migrations_ec" (test/501_migrations/compare_on.ml[22,660+7]..[22,660+20])
+                              <arg>
+                              Nolabel
+                                expression (test/501_migrations/compare_on.ml[22,660+23]..[22,660+24])
+                                  Pexp_constant PConst_int (0,None)
+                            ]
+                          expression (test/501_migrations/compare_on.ml[22,660+30]..[25,797+9])
+                            Pexp_sequence
+                            expression (test/501_migrations/compare_on.ml[23,692+6]..[23,692+52])
+                              Pexp_apply
+                              expression (test/501_migrations/compare_on.ml[23,692+6]..[23,692+19])
+                                Pexp_ident "print_endline" (test/501_migrations/compare_on.ml[23,692+6]..[23,692+19])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/501_migrations/compare_on.ml[23,692+20]..[23,692+52])
+                                    Pexp_constant PConst_string("compile error after migrations",(test/501_migrations/compare_on.ml[23,692+21]..[23,692+51]),None)
+                              ]
+                            expression (test/501_migrations/compare_on.ml[24,746+6]..[25,797+8])
+                              Pexp_let Nonrec
+                              [
+                                <def>
+                                  pattern (test/501_migrations/compare_on.ml[24,746+10]..[24,746+11])
+                                    Ppat_any
+                                  expression (test/501_migrations/compare_on.ml[24,746+14]..[24,746+47])
+                                    Pexp_apply
+                                    expression (test/501_migrations/compare_on.ml[24,746+14]..[24,746+25])
+                                      Pexp_ident "Sys.command" (test/501_migrations/compare_on.ml[24,746+14]..[24,746+25])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[24,746+26]..[24,746+47])
+                                          Pexp_apply
+                                          expression (test/501_migrations/compare_on.ml[24,746+34]..[24,746+35])
+                                            Pexp_ident "^" (test/501_migrations/compare_on.ml[24,746+34]..[24,746+35])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[24,746+27]..[24,746+33])
+                                                Pexp_constant PConst_string("cat ",(test/501_migrations/compare_on.ml[24,746+28]..[24,746+32]),None)
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[24,746+36]..[24,746+46])
+                                                Pexp_ident "migrations" (test/501_migrations/compare_on.ml[24,746+36]..[24,746+46])
+                                          ]
+                                    ]
+                              ]
+                              expression (test/501_migrations/compare_on.ml[25,797+6]..[25,797+8])
+                                Pexp_construct "()" (test/501_migrations/compare_on.ml[25,797+6]..[25,797+8])
+                                None
+                          Some
+                            expression (test/501_migrations/compare_on.ml[27,816+6]..[28,888+8])
+                              Pexp_let Nonrec
+                              [
+                                <def>
+                                  pattern (test/501_migrations/compare_on.ml[27,816+10]..[27,816+11])
+                                    Ppat_any
+                                  expression (test/501_migrations/compare_on.ml[27,816+14]..[27,816+68])
+                                    Pexp_apply
+                                    expression (test/501_migrations/compare_on.ml[27,816+14]..[27,816+25])
+                                      Pexp_ident "Sys.command" (test/501_migrations/compare_on.ml[27,816+14]..[27,816+25])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (test/501_migrations/compare_on.ml[27,816+26]..[27,816+68])
+                                          Pexp_apply
+                                          expression (test/501_migrations/compare_on.ml[27,816+40]..[27,816+41])
+                                            Pexp_ident "^" (test/501_migrations/compare_on.ml[27,816+40]..[27,816+41])
+                                          [
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[27,816+27]..[27,816+39])
+                                                Pexp_constant PConst_string("diff -U 0 ",(test/501_migrations/compare_on.ml[27,816+28]..[27,816+38]),None)
+                                            <arg>
+                                            Nolabel
+                                              expression (test/501_migrations/compare_on.ml[27,816+42]..[27,816+67])
+                                                Pexp_apply
+                                                expression (test/501_migrations/compare_on.ml[27,816+49]..[27,816+50])
+                                                  Pexp_ident "^" (test/501_migrations/compare_on.ml[27,816+49]..[27,816+50])
+                                                [
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (test/501_migrations/compare_on.ml[27,816+42]..[27,816+48])
+                                                      Pexp_ident "direct" (test/501_migrations/compare_on.ml[27,816+42]..[27,816+48])
+                                                  <arg>
+                                                  Nolabel
+                                                    expression (test/501_migrations/compare_on.ml[27,816+51]..[27,816+67])
+                                                      Pexp_apply
+                                                      expression (test/501_migrations/compare_on.ml[27,816+55]..[27,816+56])
+                                                        Pexp_ident "^" (test/501_migrations/compare_on.ml[27,816+55]..[27,816+56])
+                                                      [
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (test/501_migrations/compare_on.ml[27,816+51]..[27,816+54])
+                                                            Pexp_constant PConst_string(" ",(test/501_migrations/compare_on.ml[27,816+52]..[27,816+53]),None)
+                                                        <arg>
+                                                        Nolabel
+                                                          expression (test/501_migrations/compare_on.ml[27,816+57]..[27,816+67])
+                                                            Pexp_ident "migrations" (test/501_migrations/compare_on.ml[27,816+57]..[27,816+67])
+                                                      ]
+                                                ]
+                                          ]
+                                    ]
+                              ]
+                              expression (test/501_migrations/compare_on.ml[28,888+6]..[28,888+8])
+                                Pexp_construct "()" (test/501_migrations/compare_on.ml[28,888+6]..[28,888+8])
+                                None
+    ]
+  structure_item (test/501_migrations/compare_on.ml[30,898+0]..[30,898+15])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/501_migrations/compare_on.ml[30,898+4]..[30,898+6])
+          Ppat_construct "()" (test/501_migrations/compare_on.ml[30,898+4]..[30,898+6])
+          None
+        expression (test/501_migrations/compare_on.ml[30,898+9]..[30,898+15])
+          Pexp_apply
+          expression (test/501_migrations/compare_on.ml[30,898+9]..[30,898+12])
+            Pexp_ident "run" (test/501_migrations/compare_on.ml[30,898+9]..[30,898+12])
+          [
+            <arg>
+            Nolabel
+              expression (test/501_migrations/compare_on.ml[30,898+13]..[30,898+15])
+                Pexp_construct "()" (test/501_migrations/compare_on.ml[30,898+13]..[30,898+15])
+                None
+          ]
+    ]
+]
+
+let run () =
+  let (example_fn, ppx) =
+    let args = Sys.argv in
+    if not ((Array.length args) = 3)
+    then failwith "expected exactly two args"
+    else ((args.(1)), (args.(2))) in
+  let direct = "without_migrations" in
+  let migrations = "with_migrations" in
+  let direct_ec =
+    Sys.command ("ocamlc -dparsetree " ^ (example_fn ^ (" 2> " ^ direct))) in
+  if direct_ec > 0
+  then
+    (print_endline "compile error even without migrations";
+     (let _ = Sys.command ("cat " ^ direct) in ()))
+  else
+    (let migrations_ec =
+       Sys.command
+         ("ocamlc -dparsetree -ppx '" ^
+            (ppx ^ (" -as-ppx' " ^ (example_fn ^ (" 2> " ^ migrations))))) in
+     if migrations_ec > 0
+     then
+       (print_endline "compile error after migrations";
+        (let _ = Sys.command ("cat " ^ migrations) in ()))
+     else
+       (let _ = Sys.command ("diff -U 0 " ^ (direct ^ (" " ^ migrations))) in
+        ()))
+let () = run ()
+[
+  structure_item (test/501_migrations/compare_on.ml[1,0+0]..test/501_migrations/compare_on.ml[28,888+8])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/501_migrations/compare_on.ml[1,0+4]..test/501_migrations/compare_on.ml[1,0+7])
+          Tpat_var "run/86"
+        expression (test/501_migrations/compare_on.ml[1,0+8]..test/501_migrations/compare_on.ml[28,888+8]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/501_migrations/compare_on.ml[1,0+8]..test/501_migrations/compare_on.ml[1,0+10])
+                Tpat_construct "()"
+                []
+              expression (test/501_migrations/compare_on.ml[2,13+2]..test/501_migrations/compare_on.ml[28,888+8])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (test/501_migrations/compare_on.ml[2,13+6]..test/501_migrations/compare_on.ml[2,13+21])
+                      Tpat_tuple
+                      [
+                        pattern (test/501_migrations/compare_on.ml[2,13+6]..test/501_migrations/compare_on.ml[2,13+16])
+                          Tpat_var "example_fn/88"
+                        pattern (test/501_migrations/compare_on.ml[2,13+18]..test/501_migrations/compare_on.ml[2,13+21])
+                          Tpat_var "ppx/89"
+                      ]
+                    expression (test/501_migrations/compare_on.ml[3,37+4]..test/501_migrations/compare_on.ml[5,141+45])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/501_migrations/compare_on.ml[3,37+8]..test/501_migrations/compare_on.ml[3,37+12])
+                            Tpat_var "args/90"
+                          expression (test/501_migrations/compare_on.ml[3,37+15]..test/501_migrations/compare_on.ml[3,37+23])
+                            Texp_ident "Stdlib!.Sys.argv"
+                      ]
+                      expression (test/501_migrations/compare_on.ml[4,64+4]..test/501_migrations/compare_on.ml[5,141+45])
+                        Texp_ifthenelse
+                        expression (test/501_migrations/compare_on.ml[4,64+7]..test/501_migrations/compare_on.ml[4,64+34])
+                          Texp_apply
+                          expression (test/501_migrations/compare_on.ml[4,64+7]..test/501_migrations/compare_on.ml[4,64+10])
+                            Texp_ident "Stdlib!.not"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/501_migrations/compare_on.ml[4,64+11]..test/501_migrations/compare_on.ml[4,64+34])
+                                Texp_apply
+                                expression (test/501_migrations/compare_on.ml[4,64+30]..test/501_migrations/compare_on.ml[4,64+31])
+                                  Texp_ident "Stdlib!.="
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[4,64+12]..test/501_migrations/compare_on.ml[4,64+29])
+                                      Texp_apply
+                                      expression (test/501_migrations/compare_on.ml[4,64+12]..test/501_migrations/compare_on.ml[4,64+24])
+                                        Texp_ident "Stdlib!.Array.length"
+                                      [
+                                        <arg>
+                                          Nolabel
+                                          expression (test/501_migrations/compare_on.ml[4,64+25]..test/501_migrations/compare_on.ml[4,64+29])
+                                            Texp_ident "args/90"
+                                      ]
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[4,64+32]..test/501_migrations/compare_on.ml[4,64+33])
+                                      Texp_constant Const_int 3
+                                ]
+                          ]
+                        expression (test/501_migrations/compare_on.ml[4,64+40]..test/501_migrations/compare_on.ml[4,64+76])
+                          Texp_apply
+                          expression (test/501_migrations/compare_on.ml[4,64+40]..test/501_migrations/compare_on.ml[4,64+48])
+                            Texp_ident "Stdlib!.failwith"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/501_migrations/compare_on.ml[4,64+49]..test/501_migrations/compare_on.ml[4,64+76])
+                                Texp_constant Const_string("expected exactly two args",(test/501_migrations/compare_on.ml[4,64+50]..test/501_migrations/compare_on.ml[4,64+75]),None)
+                          ]
+                        Some
+                          expression (test/501_migrations/compare_on.ml[5,141+9]..test/501_migrations/compare_on.ml[5,141+45])
+                            Texp_tuple
+                            [
+                              expression (test/501_migrations/compare_on.ml[5,141+10]..test/501_migrations/compare_on.ml[5,141+26])
+                                Texp_apply
+                                expression (test/501_migrations/compare_on.ml[5,141+10]..test/501_migrations/compare_on.ml[5,141+19])
+                                  Texp_ident "Stdlib!.Array.get"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[5,141+20]..test/501_migrations/compare_on.ml[5,141+24])
+                                      Texp_ident "args/90"
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[5,141+25]..test/501_migrations/compare_on.ml[5,141+26])
+                                      Texp_constant Const_int 1
+                                ]
+                              expression (test/501_migrations/compare_on.ml[5,141+28]..test/501_migrations/compare_on.ml[5,141+44])
+                                Texp_apply
+                                expression (test/501_migrations/compare_on.ml[5,141+28]..test/501_migrations/compare_on.ml[5,141+37])
+                                  Texp_ident "Stdlib!.Array.get"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[5,141+38]..test/501_migrations/compare_on.ml[5,141+42])
+                                      Texp_ident "args/90"
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[5,141+43]..test/501_migrations/compare_on.ml[5,141+44])
+                                      Texp_constant Const_int 2
+                                ]
+                            ]
+                ]
+                expression (test/501_migrations/compare_on.ml[7,192+2]..test/501_migrations/compare_on.ml[28,888+8])
+                  Texp_let Nonrec
+                  [
+                    <def>
+                      pattern (test/501_migrations/compare_on.ml[7,192+6]..test/501_migrations/compare_on.ml[7,192+12])
+                        Tpat_var "direct/223"
+                      expression (test/501_migrations/compare_on.ml[7,192+15]..test/501_migrations/compare_on.ml[7,192+35])
+                        Texp_constant Const_string("without_migrations",(test/501_migrations/compare_on.ml[7,192+16]..test/501_migrations/compare_on.ml[7,192+34]),None)
+                  ]
+                  expression (test/501_migrations/compare_on.ml[8,231+2]..test/501_migrations/compare_on.ml[28,888+8])
+                    Texp_let Nonrec
+                    [
+                      <def>
+                        pattern (test/501_migrations/compare_on.ml[8,231+6]..test/501_migrations/compare_on.ml[8,231+16])
+                          Tpat_var "migrations/224"
+                        expression (test/501_migrations/compare_on.ml[8,231+19]..test/501_migrations/compare_on.ml[8,231+36])
+                          Texp_constant Const_string("with_migrations",(test/501_migrations/compare_on.ml[8,231+20]..test/501_migrations/compare_on.ml[8,231+35]),None)
+                    ]
+                    expression (test/501_migrations/compare_on.ml[9,271+2]..test/501_migrations/compare_on.ml[28,888+8])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/501_migrations/compare_on.ml[9,271+6]..test/501_migrations/compare_on.ml[9,271+15])
+                            Tpat_var "direct_ec/225"
+                          expression (test/501_migrations/compare_on.ml[10,289+4]..test/501_migrations/compare_on.ml[10,289+70])
+                            Texp_apply
+                            expression (test/501_migrations/compare_on.ml[10,289+4]..test/501_migrations/compare_on.ml[10,289+15])
+                              Texp_ident "Stdlib!.Sys.command"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/501_migrations/compare_on.ml[10,289+16]..test/501_migrations/compare_on.ml[10,289+70])
+                                  Texp_apply
+                                  expression (test/501_migrations/compare_on.ml[10,289+39]..test/501_migrations/compare_on.ml[10,289+40])
+                                    Texp_ident "Stdlib!.^"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (test/501_migrations/compare_on.ml[10,289+17]..test/501_migrations/compare_on.ml[10,289+38])
+                                        Texp_constant Const_string("ocamlc -dparsetree ",(test/501_migrations/compare_on.ml[10,289+18]..test/501_migrations/compare_on.ml[10,289+37]),None)
+                                    <arg>
+                                      Nolabel
+                                      expression (test/501_migrations/compare_on.ml[10,289+41]..test/501_migrations/compare_on.ml[10,289+69])
+                                        Texp_apply
+                                        expression (test/501_migrations/compare_on.ml[10,289+52]..test/501_migrations/compare_on.ml[10,289+53])
+                                          Texp_ident "Stdlib!.^"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[10,289+41]..test/501_migrations/compare_on.ml[10,289+51])
+                                              Texp_ident "example_fn/88"
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[10,289+54]..test/501_migrations/compare_on.ml[10,289+69])
+                                              Texp_apply
+                                              expression (test/501_migrations/compare_on.ml[10,289+61]..test/501_migrations/compare_on.ml[10,289+62])
+                                                Texp_ident "Stdlib!.^"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[10,289+54]..test/501_migrations/compare_on.ml[10,289+60])
+                                                    Texp_constant Const_string(" 2> ",(test/501_migrations/compare_on.ml[10,289+55]..test/501_migrations/compare_on.ml[10,289+59]),None)
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[10,289+63]..test/501_migrations/compare_on.ml[10,289+69])
+                                                    Texp_ident "direct/223"
+                                              ]
+                                        ]
+                                  ]
+                            ]
+                      ]
+                      expression (test/501_migrations/compare_on.ml[12,365+2]..test/501_migrations/compare_on.ml[28,888+8])
+                        Texp_ifthenelse
+                        expression (test/501_migrations/compare_on.ml[12,365+5]..test/501_migrations/compare_on.ml[12,365+18])
+                          Texp_apply
+                          expression (test/501_migrations/compare_on.ml[12,365+15]..test/501_migrations/compare_on.ml[12,365+16])
+                            Texp_ident "Stdlib!.>"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/501_migrations/compare_on.ml[12,365+5]..test/501_migrations/compare_on.ml[12,365+14])
+                                Texp_ident "direct_ec/225"
+                            <arg>
+                              Nolabel
+                              expression (test/501_migrations/compare_on.ml[12,365+17]..test/501_migrations/compare_on.ml[12,365+18])
+                                Texp_constant Const_int 0
+                          ]
+                        expression (test/501_migrations/compare_on.ml[12,365+24]..test/501_migrations/compare_on.ml[15,495+7])
+                          Texp_sequence
+                          expression (test/501_migrations/compare_on.ml[13,391+4]..test/501_migrations/compare_on.ml[13,391+57])
+                            Texp_apply
+                            expression (test/501_migrations/compare_on.ml[13,391+4]..test/501_migrations/compare_on.ml[13,391+17])
+                              Texp_ident "Stdlib!.print_endline"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/501_migrations/compare_on.ml[13,391+18]..test/501_migrations/compare_on.ml[13,391+57])
+                                  Texp_constant Const_string("compile error even without migrations",(test/501_migrations/compare_on.ml[13,391+19]..test/501_migrations/compare_on.ml[13,391+56]),None)
+                            ]
+                          expression (test/501_migrations/compare_on.ml[14,450+4]..test/501_migrations/compare_on.ml[15,495+6])
+                            Texp_let Nonrec
+                            [
+                              <def>
+                                pattern (test/501_migrations/compare_on.ml[14,450+8]..test/501_migrations/compare_on.ml[14,450+9])
+                                  Tpat_any
+                                expression (test/501_migrations/compare_on.ml[14,450+12]..test/501_migrations/compare_on.ml[14,450+41])
+                                  Texp_apply
+                                  expression (test/501_migrations/compare_on.ml[14,450+12]..test/501_migrations/compare_on.ml[14,450+23])
+                                    Texp_ident "Stdlib!.Sys.command"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (test/501_migrations/compare_on.ml[14,450+24]..test/501_migrations/compare_on.ml[14,450+41])
+                                        Texp_apply
+                                        expression (test/501_migrations/compare_on.ml[14,450+32]..test/501_migrations/compare_on.ml[14,450+33])
+                                          Texp_ident "Stdlib!.^"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[14,450+25]..test/501_migrations/compare_on.ml[14,450+31])
+                                              Texp_constant Const_string("cat ",(test/501_migrations/compare_on.ml[14,450+26]..test/501_migrations/compare_on.ml[14,450+30]),None)
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[14,450+34]..test/501_migrations/compare_on.ml[14,450+40])
+                                              Texp_ident "direct/223"
+                                        ]
+                                  ]
+                            ]
+                            expression (test/501_migrations/compare_on.ml[15,495+4]..test/501_migrations/compare_on.ml[15,495+6])
+                              Texp_construct "()"
+                              []
+                        Some
+                          expression (test/501_migrations/compare_on.ml[17,510+4]..test/501_migrations/compare_on.ml[28,888+8])
+                            Texp_let Nonrec
+                            [
+                              <def>
+                                pattern (test/501_migrations/compare_on.ml[17,510+8]..test/501_migrations/compare_on.ml[17,510+21])
+                                  Tpat_var "migrations_ec/226"
+                                expression (test/501_migrations/compare_on.ml[18,534+6]..test/501_migrations/compare_on.ml[20,632+20])
+                                  Texp_apply
+                                  expression (test/501_migrations/compare_on.ml[18,534+6]..test/501_migrations/compare_on.ml[18,534+17])
+                                    Texp_ident "Stdlib!.Sys.command"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (test/501_migrations/compare_on.ml[19,552+8]..test/501_migrations/compare_on.ml[20,632+20])
+                                        Texp_apply
+                                        expression (test/501_migrations/compare_on.ml[19,552+37]..test/501_migrations/compare_on.ml[19,552+38])
+                                          Texp_ident "Stdlib!.^"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[19,552+9]..test/501_migrations/compare_on.ml[19,552+36])
+                                              Texp_constant Const_string("ocamlc -dparsetree -ppx '",(test/501_migrations/compare_on.ml[19,552+10]..test/501_migrations/compare_on.ml[19,552+35]),None)
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[19,552+39]..test/501_migrations/compare_on.ml[20,632+19])
+                                              Texp_apply
+                                              expression (test/501_migrations/compare_on.ml[19,552+43]..test/501_migrations/compare_on.ml[19,552+44])
+                                                Texp_ident "Stdlib!.^"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[19,552+39]..test/501_migrations/compare_on.ml[19,552+42])
+                                                    Texp_ident "ppx/89"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[19,552+45]..test/501_migrations/compare_on.ml[20,632+19])
+                                                    Texp_apply
+                                                    expression (test/501_migrations/compare_on.ml[19,552+58]..test/501_migrations/compare_on.ml[19,552+59])
+                                                      Texp_ident "Stdlib!.^"
+                                                    [
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (test/501_migrations/compare_on.ml[19,552+45]..test/501_migrations/compare_on.ml[19,552+57])
+                                                          Texp_constant Const_string(" -as-ppx' ",(test/501_migrations/compare_on.ml[19,552+46]..test/501_migrations/compare_on.ml[19,552+56]),None)
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (test/501_migrations/compare_on.ml[19,552+60]..test/501_migrations/compare_on.ml[20,632+19])
+                                                          Texp_apply
+                                                          expression (test/501_migrations/compare_on.ml[19,552+71]..test/501_migrations/compare_on.ml[19,552+72])
+                                                            Texp_ident "Stdlib!.^"
+                                                          [
+                                                            <arg>
+                                                              Nolabel
+                                                              expression (test/501_migrations/compare_on.ml[19,552+60]..test/501_migrations/compare_on.ml[19,552+70])
+                                                                Texp_ident "example_fn/88"
+                                                            <arg>
+                                                              Nolabel
+                                                              expression (test/501_migrations/compare_on.ml[19,552+73]..test/501_migrations/compare_on.ml[20,632+19])
+                                                                Texp_apply
+                                                                expression (test/501_migrations/compare_on.ml[20,632+7]..test/501_migrations/compare_on.ml[20,632+8])
+                                                                  Texp_ident "Stdlib!.^"
+                                                                [
+                                                                  <arg>
+                                                                    Nolabel
+                                                                    expression (test/501_migrations/compare_on.ml[19,552+73]..test/501_migrations/compare_on.ml[19,552+79])
+                                                                      Texp_constant Const_string(" 2> ",(test/501_migrations/compare_on.ml[19,552+74]..test/501_migrations/compare_on.ml[19,552+78]),None)
+                                                                  <arg>
+                                                                    Nolabel
+                                                                    expression (test/501_migrations/compare_on.ml[20,632+9]..test/501_migrations/compare_on.ml[20,632+19])
+                                                                      Texp_ident "migrations/224"
+                                                                ]
+                                                          ]
+                                                    ]
+                                              ]
+                                        ]
+                                  ]
+                            ]
+                            expression (test/501_migrations/compare_on.ml[22,660+4]..test/501_migrations/compare_on.ml[28,888+8])
+                              Texp_ifthenelse
+                              expression (test/501_migrations/compare_on.ml[22,660+7]..test/501_migrations/compare_on.ml[22,660+24])
+                                Texp_apply
+                                expression (test/501_migrations/compare_on.ml[22,660+21]..test/501_migrations/compare_on.ml[22,660+22])
+                                  Texp_ident "Stdlib!.>"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[22,660+7]..test/501_migrations/compare_on.ml[22,660+20])
+                                      Texp_ident "migrations_ec/226"
+                                  <arg>
+                                    Nolabel
+                                    expression (test/501_migrations/compare_on.ml[22,660+23]..test/501_migrations/compare_on.ml[22,660+24])
+                                      Texp_constant Const_int 0
+                                ]
+                              expression (test/501_migrations/compare_on.ml[22,660+30]..test/501_migrations/compare_on.ml[25,797+9])
+                                Texp_sequence
+                                expression (test/501_migrations/compare_on.ml[23,692+6]..test/501_migrations/compare_on.ml[23,692+52])
+                                  Texp_apply
+                                  expression (test/501_migrations/compare_on.ml[23,692+6]..test/501_migrations/compare_on.ml[23,692+19])
+                                    Texp_ident "Stdlib!.print_endline"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (test/501_migrations/compare_on.ml[23,692+20]..test/501_migrations/compare_on.ml[23,692+52])
+                                        Texp_constant Const_string("compile error after migrations",(test/501_migrations/compare_on.ml[23,692+21]..test/501_migrations/compare_on.ml[23,692+51]),None)
+                                  ]
+                                expression (test/501_migrations/compare_on.ml[24,746+6]..test/501_migrations/compare_on.ml[25,797+8])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (test/501_migrations/compare_on.ml[24,746+10]..test/501_migrations/compare_on.ml[24,746+11])
+                                        Tpat_any
+                                      expression (test/501_migrations/compare_on.ml[24,746+14]..test/501_migrations/compare_on.ml[24,746+47])
+                                        Texp_apply
+                                        expression (test/501_migrations/compare_on.ml[24,746+14]..test/501_migrations/compare_on.ml[24,746+25])
+                                          Texp_ident "Stdlib!.Sys.command"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[24,746+26]..test/501_migrations/compare_on.ml[24,746+47])
+                                              Texp_apply
+                                              expression (test/501_migrations/compare_on.ml[24,746+34]..test/501_migrations/compare_on.ml[24,746+35])
+                                                Texp_ident "Stdlib!.^"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[24,746+27]..test/501_migrations/compare_on.ml[24,746+33])
+                                                    Texp_constant Const_string("cat ",(test/501_migrations/compare_on.ml[24,746+28]..test/501_migrations/compare_on.ml[24,746+32]),None)
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[24,746+36]..test/501_migrations/compare_on.ml[24,746+46])
+                                                    Texp_ident "migrations/224"
+                                              ]
+                                        ]
+                                  ]
+                                  expression (test/501_migrations/compare_on.ml[25,797+6]..test/501_migrations/compare_on.ml[25,797+8])
+                                    Texp_construct "()"
+                                    []
+                              Some
+                                expression (test/501_migrations/compare_on.ml[27,816+6]..test/501_migrations/compare_on.ml[28,888+8])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (test/501_migrations/compare_on.ml[27,816+10]..test/501_migrations/compare_on.ml[27,816+11])
+                                        Tpat_any
+                                      expression (test/501_migrations/compare_on.ml[27,816+14]..test/501_migrations/compare_on.ml[27,816+68])
+                                        Texp_apply
+                                        expression (test/501_migrations/compare_on.ml[27,816+14]..test/501_migrations/compare_on.ml[27,816+25])
+                                          Texp_ident "Stdlib!.Sys.command"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/501_migrations/compare_on.ml[27,816+26]..test/501_migrations/compare_on.ml[27,816+68])
+                                              Texp_apply
+                                              expression (test/501_migrations/compare_on.ml[27,816+40]..test/501_migrations/compare_on.ml[27,816+41])
+                                                Texp_ident "Stdlib!.^"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[27,816+27]..test/501_migrations/compare_on.ml[27,816+39])
+                                                    Texp_constant Const_string("diff -U 0 ",(test/501_migrations/compare_on.ml[27,816+28]..test/501_migrations/compare_on.ml[27,816+38]),None)
+                                                <arg>
+                                                  Nolabel
+                                                  expression (test/501_migrations/compare_on.ml[27,816+42]..test/501_migrations/compare_on.ml[27,816+67])
+                                                    Texp_apply
+                                                    expression (test/501_migrations/compare_on.ml[27,816+49]..test/501_migrations/compare_on.ml[27,816+50])
+                                                      Texp_ident "Stdlib!.^"
+                                                    [
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (test/501_migrations/compare_on.ml[27,816+42]..test/501_migrations/compare_on.ml[27,816+48])
+                                                          Texp_ident "direct/223"
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (test/501_migrations/compare_on.ml[27,816+51]..test/501_migrations/compare_on.ml[27,816+67])
+                                                          Texp_apply
+                                                          expression (test/501_migrations/compare_on.ml[27,816+55]..test/501_migrations/compare_on.ml[27,816+56])
+                                                            Texp_ident "Stdlib!.^"
+                                                          [
+                                                            <arg>
+                                                              Nolabel
+                                                              expression (test/501_migrations/compare_on.ml[27,816+51]..test/501_migrations/compare_on.ml[27,816+54])
+                                                                Texp_constant Const_string(" ",(test/501_migrations/compare_on.ml[27,816+52]..test/501_migrations/compare_on.ml[27,816+53]),None)
+                                                            <arg>
+                                                              Nolabel
+                                                              expression (test/501_migrations/compare_on.ml[27,816+57]..test/501_migrations/compare_on.ml[27,816+67])
+                                                                Texp_ident "migrations/224"
+                                                          ]
+                                                    ]
+                                              ]
+                                        ]
+                                  ]
+                                  expression (test/501_migrations/compare_on.ml[28,888+6]..test/501_migrations/compare_on.ml[28,888+8])
+                                    Texp_construct "()"
+                                    []
+          ]
+    ]
+  structure_item (test/501_migrations/compare_on.ml[30,898+0]..test/501_migrations/compare_on.ml[30,898+15])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/501_migrations/compare_on.ml[30,898+4]..test/501_migrations/compare_on.ml[30,898+6])
+          Tpat_construct "()"
+          []
+        expression (test/501_migrations/compare_on.ml[30,898+9]..test/501_migrations/compare_on.ml[30,898+15])
+          Texp_apply
+          expression (test/501_migrations/compare_on.ml[30,898+9]..test/501_migrations/compare_on.ml[30,898+12])
+            Texp_ident "run/86"
+          [
+            <arg>
+              Nolabel
+              expression (test/501_migrations/compare_on.ml[30,898+13]..test/501_migrations/compare_on.ml[30,898+15])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Compare_on!
+  (let
+    (run/86 =
+       (function param/227
+         (funct-body Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(1)<ghost>:8-896
+           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(2):15-896
+             (catch
+               (let (args/90 = (caml_sys_argv 0))
+                 (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(4):68-186
+                   (if (not (== (array.length[addr] args/90) 3))
+                     (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(4):104-140
+                       (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(4):104-140
+                         (let
+                           (*match*/667 =
+                              (apply (field_imm 1 (global Stdlib!))
+                                "expected exactly two args")
+                            ppx/666 =a (field_imm 1 *match*/667)
+                            example_fn/665 =a (field_imm 0 *match*/667))
+                           (exit 1 example_fn/665 ppx/666))))
+                     (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(5):150-186
+                       (let
+                         (ppx/664 =
+                            (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(5):169-185
+                              (array.get[addr] args/90 2))
+                          example_fn/663 =
+                            (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(5):151-167
+                              (array.get[addr] args/90 1)))
+                         (exit 1 example_fn/663 ppx/664))))))
+              with (1 example_fn/88 ppx/89)
+               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(7):194-896
+                 (let (direct/223 = "without_migrations")
+                   (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(8):233-896
+                     (let (migrations/224 = "with_migrations")
+                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(9):273-896
+                         (let
+                           (direct_ec/225 =[int]
+                              (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):293-359
+                                (caml_sys_system_command
+                                  (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):305-359
+                                    (apply (field_imm 30 (global Stdlib!))
+                                      "ocamlc -dparsetree "
+                                      (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):330-358
+                                        (apply
+                                          (field_imm 30 (global Stdlib!))
+                                          example_fn/88
+                                          (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):343-358
+                                            (apply
+                                              (field_imm 30 (global Stdlib!))
+                                              " 2> " direct/223)))))))))
+                           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(12):367-896
+                             (if (> direct_ec/225 0)
+                               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(12):389-502
+                                 (seq
+                                   (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(13):395-448
+                                     (apply (field_imm 48 (global Stdlib!))
+                                       "compile error even without migrations"))
+                                   (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(14):454-501
+                                     (seq
+                                       (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(14):462-491
+                                         (caml_sys_system_command
+                                           (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(14):474-491
+                                             (apply
+                                               (field_imm 30
+                                                 (global Stdlib!))
+                                               "cat " direct/223))))
+                                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(15):499-501
+                                         0)))))
+                               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(17):514-896
+                                 (let
+                                   (migrations_ec/226 =[int]
+                                      (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(18):540-652
+                                        (caml_sys_system_command
+                                          (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):560-652
+                                            (apply
+                                              (field_imm 30 (global Stdlib!))
+                                              "ocamlc -dparsetree -ppx '"
+                                              (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):591-651
+                                                (apply
+                                                  (field_imm 30
+                                                    (global Stdlib!))
+                                                  ppx/89
+                                                  (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):597-651
+                                                    (apply
+                                                      (field_imm 30
+                                                        (global Stdlib!))
+                                                      " -as-ppx' "
+                                                      (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):612-651
+                                                        (apply
+                                                          (field_imm 30
+                                                            (global Stdlib!))
+                                                          example_fn/88
+                                                          (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):625-651
+                                                            (apply
+                                                              (field_imm 30
+                                                                (global Stdlib!))
+                                                              " 2> "
+                                                              migrations/224)))))))))))))
+                                   (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(22):664-896
+                                     (if (> migrations_ec/226 0)
+                                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(22):690-806
+                                         (seq
+                                           (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(23):698-744
+                                             (apply
+                                               (field_imm 48
+                                                 (global Stdlib!))
+                                               "compile error after migrations"))
+                                           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(24):752-805
+                                             (seq
+                                               (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(24):760-793
+                                                 (caml_sys_system_command
+                                                   (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(24):772-793
+                                                     (apply
+                                                       (field_imm 30
+                                                         (global Stdlib!))
+                                                       "cat " migrations/224))))
+                                               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(25):803-805
+                                                 0)))))
+                                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):822-896
+                                         (seq
+                                           (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):830-884
+                                             (caml_sys_system_command
+                                               (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):842-884
+                                                 (apply
+                                                   (field_imm 30
+                                                     (global Stdlib!))
+                                                   "diff -U 0 "
+                                                   (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):858-883
+                                                     (apply
+                                                       (field_imm 30
+                                                         (global Stdlib!))
+                                                       direct/223
+                                                       (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):867-883
+                                                         (apply
+                                                           (field_imm 30
+                                                             (global Stdlib!))
+                                                           " "
+                                                           migrations/224))))))))
+                                           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(28):894-896
+                                             0)))))))))))))))))))
+     *match*/669 =
+       (after Dune__exe__Compare_on test/501_migrations/compare_on.ml(30):907-913
+         (apply run/86 0)))
+    (pseudo <unknown location> (makeblock 0 run/86))))
+(setglobal Dune__exe__Compare_on!
+  (let
+    (run/86 =
+       (function param/227
+         (funct-body Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(1)<ghost>:8-896
+           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(2):15-896
+             (catch
+               (let (args/90 = (caml_sys_argv 0))
+                 (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(4):68-186
+                   (if (not (== (array.length[addr] args/90) 3))
+                     (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(4):104-140
+                       (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(4):104-140
+                         (let
+                           (*match*/667 =
+                              (apply (field_imm 1 (global Stdlib!))
+                                "expected exactly two args")
+                            ppx/666 =a (field_imm 1 *match*/667)
+                            example_fn/665 =a (field_imm 0 *match*/667))
+                           (exit 1 example_fn/665 ppx/666))))
+                     (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(5):150-186
+                       (let
+                         (ppx/664 =
+                            (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(5):169-185
+                              (array.get[addr] args/90 2))
+                          example_fn/663 =
+                            (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(5):151-167
+                              (array.get[addr] args/90 1)))
+                         (exit 1 example_fn/663 ppx/664))))))
+              with (1 example_fn/88 ppx/89)
+               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(7):194-896
+                 (let (direct/223 = "without_migrations")
+                   (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(8):233-896
+                     (let (migrations/224 = "with_migrations")
+                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(9):273-896
+                         (let
+                           (direct_ec/225 =[int]
+                              (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):293-359
+                                (caml_sys_system_command
+                                  (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):305-359
+                                    (apply (field_imm 30 (global Stdlib!))
+                                      "ocamlc -dparsetree "
+                                      (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):330-358
+                                        (apply
+                                          (field_imm 30 (global Stdlib!))
+                                          example_fn/88
+                                          (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(10):343-358
+                                            (apply
+                                              (field_imm 30 (global Stdlib!))
+                                              " 2> " direct/223)))))))))
+                           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(12):367-896
+                             (if (> direct_ec/225 0)
+                               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(12):389-502
+                                 (seq
+                                   (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(13):395-448
+                                     (apply (field_imm 48 (global Stdlib!))
+                                       "compile error even without migrations"))
+                                   (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(14):454-501
+                                     (seq
+                                       (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(14):462-491
+                                         (caml_sys_system_command
+                                           (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(14):474-491
+                                             (apply
+                                               (field_imm 30
+                                                 (global Stdlib!))
+                                               "cat " direct/223))))
+                                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(15):499-501
+                                         0)))))
+                               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(17):514-896
+                                 (let
+                                   (migrations_ec/226 =[int]
+                                      (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(18):540-652
+                                        (caml_sys_system_command
+                                          (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):560-652
+                                            (apply
+                                              (field_imm 30 (global Stdlib!))
+                                              "ocamlc -dparsetree -ppx '"
+                                              (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):591-651
+                                                (apply
+                                                  (field_imm 30
+                                                    (global Stdlib!))
+                                                  ppx/89
+                                                  (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):597-651
+                                                    (apply
+                                                      (field_imm 30
+                                                        (global Stdlib!))
+                                                      " -as-ppx' "
+                                                      (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):612-651
+                                                        (apply
+                                                          (field_imm 30
+                                                            (global Stdlib!))
+                                                          example_fn/88
+                                                          (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(19):625-651
+                                                            (apply
+                                                              (field_imm 30
+                                                                (global Stdlib!))
+                                                              " 2> "
+                                                              migrations/224)))))))))))))
+                                   (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(22):664-896
+                                     (if (> migrations_ec/226 0)
+                                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(22):690-806
+                                         (seq
+                                           (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(23):698-744
+                                             (apply
+                                               (field_imm 48
+                                                 (global Stdlib!))
+                                               "compile error after migrations"))
+                                           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(24):752-805
+                                             (seq
+                                               (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(24):760-793
+                                                 (caml_sys_system_command
+                                                   (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(24):772-793
+                                                     (apply
+                                                       (field_imm 30
+                                                         (global Stdlib!))
+                                                       "cat " migrations/224))))
+                                               (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(25):803-805
+                                                 0)))))
+                                       (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):822-896
+                                         (seq
+                                           (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):830-884
+                                             (caml_sys_system_command
+                                               (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):842-884
+                                                 (apply
+                                                   (field_imm 30
+                                                     (global Stdlib!))
+                                                   "diff -U 0 "
+                                                   (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):858-883
+                                                     (apply
+                                                       (field_imm 30
+                                                         (global Stdlib!))
+                                                       direct/223
+                                                       (after Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(27):867-883
+                                                         (apply
+                                                           (field_imm 30
+                                                             (global Stdlib!))
+                                                           " "
+                                                           migrations/224))))))))
+                                           (before Dune__exe__Compare_on.run test/501_migrations/compare_on.ml(28):894-896
+                                             0)))))))))))))))))))
+     *match*/669 =
+       (after Dune__exe__Compare_on test/501_migrations/compare_on.ml(30):907-913
+         (apply run/86 0)))
+    (pseudo <unknown location> (makeblock 0 run/86))))

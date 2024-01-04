@@ -1,0 +1,2517 @@
+[
+  signature_item (ast/versions.mli[19,1216+0]..[19,1216+40])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (ast/versions.mli[19,1216+0]..[19,1216+40])
+        Pstr_eval
+        expression (ast/versions.mli[19,1216+0]..[19,1216+40])
+          Pexp_constant PConst_string(" {1 Abstracting an OCaml frontend} ",(ast/versions.mli[19,1216+0]..[19,1216+40]),None)
+    ]
+  signature_item (ast/versions.mli[22,1308+0]..[55,2049+3])
+    Psig_modtype "Ast" (ast/versions.mli[22,1308+12]..[22,1308+15])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[21,1258+0]..[21,1258+49])
+            Pstr_eval
+            expression (ast/versions.mli[21,1258+0]..[21,1258+49])
+              Pexp_constant PConst_string(" Abstract view of a version of an OCaml Ast ",(ast/versions.mli[21,1258+0]..[21,1258+49]),None)
+        ]
+      module_type (ast/versions.mli[22,1308+18]..[55,2049+3])
+        Pmty_signature
+        [
+          signature_item (ast/versions.mli[29,1490+2]..[49,1931+5])
+            Psig_module "Parsetree" (ast/versions.mli[29,1490+9]..[29,1490+18])
+            module_type (ast/versions.mli[29,1490+21]..[49,1931+5])
+              Pmty_signature
+              [
+                signature_item (ast/versions.mli[30,1515+4]..[30,1515+18])
+                  Psig_type Rec
+                  [
+                    type_declaration "structure" (ast/versions.mli[30,1515+9]..[30,1515+18]) (ast/versions.mli[30,1515+4]..[30,1515+18])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[31,1534+4]..[31,1534+18])
+                  Psig_type Rec
+                  [
+                    type_declaration "signature" (ast/versions.mli[31,1534+9]..[31,1534+18]) (ast/versions.mli[31,1534+4]..[31,1534+18])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[32,1553+4]..[32,1553+24])
+                  Psig_type Rec
+                  [
+                    type_declaration "toplevel_phrase" (ast/versions.mli[32,1553+9]..[32,1553+24]) (ast/versions.mli[32,1553+4]..[32,1553+24])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[33,1578+4]..[33,1578+18])
+                  Psig_type Rec
+                  [
+                    type_declaration "core_type" (ast/versions.mli[33,1578+9]..[33,1578+18]) (ast/versions.mli[33,1578+4]..[33,1578+18])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[34,1597+4]..[34,1597+19])
+                  Psig_type Rec
+                  [
+                    type_declaration "expression" (ast/versions.mli[34,1597+9]..[34,1597+19]) (ast/versions.mli[34,1597+4]..[34,1597+19])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[35,1617+4]..[35,1617+16])
+                  Psig_type Rec
+                  [
+                    type_declaration "pattern" (ast/versions.mli[35,1617+9]..[35,1617+16]) (ast/versions.mli[35,1617+4]..[35,1617+16])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[36,1634+4]..[36,1634+13])
+                  Psig_type Rec
+                  [
+                    type_declaration "case" (ast/versions.mli[36,1634+9]..[36,1634+13]) (ast/versions.mli[36,1634+4]..[36,1634+13])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[37,1648+4]..[37,1648+25])
+                  Psig_type Rec
+                  [
+                    type_declaration "type_declaration" (ast/versions.mli[37,1648+9]..[37,1648+25]) (ast/versions.mli[37,1648+4]..[37,1648+25])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[38,1674+4]..[38,1674+23])
+                  Psig_type Rec
+                  [
+                    type_declaration "type_extension" (ast/versions.mli[38,1674+9]..[38,1674+23]) (ast/versions.mli[38,1674+4]..[38,1674+23])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[39,1698+4]..[39,1698+30])
+                  Psig_type Rec
+                  [
+                    type_declaration "extension_constructor" (ast/versions.mli[39,1698+9]..[39,1698+30]) (ast/versions.mli[39,1698+4]..[39,1698+30])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[40,1729+4]..[40,1729+19])
+                  Psig_type Rec
+                  [
+                    type_declaration "class_expr" (ast/versions.mli[40,1729+9]..[40,1729+19]) (ast/versions.mli[40,1729+4]..[40,1729+19])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[41,1749+4]..[41,1749+20])
+                  Psig_type Rec
+                  [
+                    type_declaration "class_field" (ast/versions.mli[41,1749+9]..[41,1749+20]) (ast/versions.mli[41,1749+4]..[41,1749+20])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[42,1770+4]..[42,1770+19])
+                  Psig_type Rec
+                  [
+                    type_declaration "class_type" (ast/versions.mli[42,1770+9]..[42,1770+19]) (ast/versions.mli[42,1770+4]..[42,1770+19])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[43,1790+4]..[43,1790+24])
+                  Psig_type Rec
+                  [
+                    type_declaration "class_signature" (ast/versions.mli[43,1790+9]..[43,1790+24]) (ast/versions.mli[43,1790+4]..[43,1790+24])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[44,1815+4]..[44,1815+25])
+                  Psig_type Rec
+                  [
+                    type_declaration "class_type_field" (ast/versions.mli[44,1815+9]..[44,1815+25]) (ast/versions.mli[44,1815+4]..[44,1815+25])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[45,1841+4]..[45,1841+20])
+                  Psig_type Rec
+                  [
+                    type_declaration "module_expr" (ast/versions.mli[45,1841+9]..[45,1841+20]) (ast/versions.mli[45,1841+4]..[45,1841+20])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[46,1862+4]..[46,1862+20])
+                  Psig_type Rec
+                  [
+                    type_declaration "module_type" (ast/versions.mli[46,1862+9]..[46,1862+20]) (ast/versions.mli[46,1862+4]..[46,1862+20])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[47,1883+4]..[47,1883+23])
+                  Psig_type Rec
+                  [
+                    type_declaration "signature_item" (ast/versions.mli[47,1883+9]..[47,1883+23]) (ast/versions.mli[47,1883+4]..[47,1883+23])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[48,1907+4]..[48,1907+23])
+                  Psig_type Rec
+                  [
+                    type_declaration "structure_item" (ast/versions.mli[48,1907+9]..[48,1907+23]) (ast/versions.mli[48,1907+4]..[48,1907+23])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ptype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+              ]
+          signature_item (ast/versions.mli[51,1943+2]..[54,2043+5])
+            Psig_module "Config" (ast/versions.mli[51,1943+9]..[51,1943+15])
+            module_type (ast/versions.mli[51,1943+18]..[54,2043+5])
+              Pmty_signature
+              [
+                signature_item (ast/versions.mli[52,1965+4]..[52,1965+38])
+                  Psig_value
+                  value_description "ast_impl_magic_number" (ast/versions.mli[52,1965+8]..[52,1965+29]) (ast/versions.mli[52,1965+4]..[52,1965+38])
+                    core_type (ast/versions.mli[52,1965+32]..[52,1965+38])
+                      Ptyp_constr "string" (ast/versions.mli[52,1965+32]..[52,1965+38])
+                      []
+                    []
+                signature_item (ast/versions.mli[53,2004+4]..[53,2004+38])
+                  Psig_value
+                  value_description "ast_intf_magic_number" (ast/versions.mli[53,2004+8]..[53,2004+29]) (ast/versions.mli[53,2004+4]..[53,2004+38])
+                    core_type (ast/versions.mli[53,2004+32]..[53,2004+38])
+                      Ptyp_constr "string" (ast/versions.mli[53,2004+32]..[53,2004+38])
+                      []
+                    []
+              ]
+        ]
+  signature_item (ast/versions.mli[59,2130+0]..[82,2830+3])
+    Psig_type Rec
+    [
+      type_declaration "_types" (ast/versions.mli[59,2130+8]..[59,2130+14]) (ast/versions.mli[59,2130+0]..[82,2830+3])
+        ptype_params =
+          [
+            core_type (ast/versions.mli[59,2130+5]..[59,2130+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          [
+            <constraint> (ast/versions.mli[59,2130+31]..[82,2830+3])
+              core_type (ast/versions.mli[59,2130+31]..[59,2130+33])
+                Ptyp_var a
+              core_type (ast/versions.mli[60,2164+4]..[82,2830+3])
+                Ptyp_object Closed
+                  method structure
+                    core_type (ast/versions.mli[62,2235+28]..[62,2235+29])
+                      Ptyp_any
+                  method signature
+                    core_type (ast/versions.mli[63,2266+28]..[63,2266+29])
+                      Ptyp_any
+                  method toplevel_phrase
+                    core_type (ast/versions.mli[64,2297+28]..[64,2297+29])
+                      Ptyp_any
+                  method core_type
+                    core_type (ast/versions.mli[65,2328+28]..[65,2328+29])
+                      Ptyp_any
+                  method expression
+                    core_type (ast/versions.mli[66,2359+28]..[66,2359+29])
+                      Ptyp_any
+                  method pattern
+                    core_type (ast/versions.mli[67,2390+28]..[67,2390+29])
+                      Ptyp_any
+                  method case
+                    core_type (ast/versions.mli[68,2421+28]..[68,2421+29])
+                      Ptyp_any
+                  method type_declaration
+                    core_type (ast/versions.mli[69,2452+28]..[69,2452+29])
+                      Ptyp_any
+                  method type_extension
+                    core_type (ast/versions.mli[70,2483+28]..[70,2483+29])
+                      Ptyp_any
+                  method extension_constructor
+                    core_type (ast/versions.mli[71,2514+28]..[71,2514+29])
+                      Ptyp_any
+                  method class_expr
+                    core_type (ast/versions.mli[72,2545+28]..[72,2545+29])
+                      Ptyp_any
+                  method class_field
+                    core_type (ast/versions.mli[73,2576+28]..[73,2576+29])
+                      Ptyp_any
+                  method class_type
+                    core_type (ast/versions.mli[74,2607+28]..[74,2607+29])
+                      Ptyp_any
+                  method class_signature
+                    core_type (ast/versions.mli[75,2638+28]..[75,2638+29])
+                      Ptyp_any
+                  method class_type_field
+                    core_type (ast/versions.mli[76,2669+28]..[76,2669+29])
+                      Ptyp_any
+                  method module_expr
+                    core_type (ast/versions.mli[77,2700+28]..[77,2700+29])
+                      Ptyp_any
+                  method module_type
+                    core_type (ast/versions.mli[78,2731+28]..[78,2731+29])
+                      Ptyp_any
+                  method signature_item
+                    core_type (ast/versions.mli[79,2762+28]..[79,2762+29])
+                      Ptyp_any
+                  method structure_item
+                    core_type (ast/versions.mli[80,2793+28]..[80,2793+29])
+                      Ptyp_any
+          ]
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ast/versions.mli[59,2130+17]..[59,2130+19])
+              Ptyp_var a
+    ]
+  signature_item (ast/versions.mli[87,2964+0]..[87,2964+47])
+    Psig_type Rec
+    [
+      type_declaration "witnesses" (ast/versions.mli[87,2964+7]..[87,2964+16]) (ast/versions.mli[87,2964+0]..[87,2964+47])
+        attribute "ocaml.doc"
+          [
+            structure_item (ast/versions.mli[85,2838+0]..[86,2908+55])
+              Pstr_eval
+              expression (ast/versions.mli[85,2838+0]..[86,2908+55])
+                Pexp_constant PConst_string(" A version of the OCaml frontend packs the ast with type witnesses\n    so that equalities can be recovered dynamically. ",(ast/versions.mli[85,2838+0]..[86,2908+55]),None)
+          ]
+        ptype_params =
+          [
+            core_type (ast/versions.mli[87,2964+5]..[87,2964+6])
+              Ptyp_any
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_open
+        ptype_private = Private
+        ptype_manifest =
+          None
+    ]
+  signature_item (ast/versions.mli[91,3107+0]..[91,3107+21])
+    Psig_type Rec
+    [
+      type_declaration "migration_info" (ast/versions.mli[91,3107+7]..[91,3107+21]) (ast/versions.mli[91,3107+0]..[91,3107+21])
+        attribute "ocaml.doc"
+          [
+            structure_item (ast/versions.mli[89,3015+0]..[90,3089+17])
+              Pstr_eval
+              expression (ast/versions.mli[89,3015+0]..[90,3089+17])
+                Pexp_constant PConst_string(" [migration_info] is an opaque type that is used to generate migration\n    functions. ",(ast/versions.mli[89,3015+0]..[90,3089+17]),None)
+          ]
+        ptype_params =
+          [
+            core_type (ast/versions.mli[91,3107+5]..[91,3107+6])
+              Ptyp_any
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ast/versions.mli[95,3226+0]..[137,4977+3])
+    Psig_modtype "OCaml_version" (ast/versions.mli[95,3226+12]..[95,3226+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[93,3130+0]..[94,3207+18])
+            Pstr_eval
+            expression (ast/versions.mli[93,3130+0]..[94,3207+18])
+              Pexp_constant PConst_string(" An OCaml frontend versions an Ast, version number and some witnesses for\n    conversion. ",(ast/versions.mli[93,3130+0]..[94,3207+18]),None)
+        ]
+      module_type (ast/versions.mli[95,3226+28]..[137,4977+3])
+        Pmty_signature
+        [
+          signature_item (ast/versions.mli[98,3300+2]..[98,3300+18])
+            Psig_module "Ast" (ast/versions.mli[98,3300+9]..[98,3300+12])
+              attribute "ocaml.doc"
+                [
+                  structure_item (ast/versions.mli[97,3259+2]..[97,3259+40])
+                    Pstr_eval
+                    expression (ast/versions.mli[97,3259+2]..[97,3259+40])
+                      Pexp_constant PConst_string(" Ast definition for this version ",(ast/versions.mli[97,3259+2]..[97,3259+40]),None)
+                ]
+            module_type (ast/versions.mli[98,3300+15]..[98,3300+18])
+              Pmty_ident "Ast" (ast/versions.mli[98,3300+15]..[98,3300+18])
+          signature_item (ast/versions.mli[101,3377+2]..[101,3377+19])
+            Psig_value
+            value_description "version" (ast/versions.mli[101,3377+6]..[101,3377+13]) (ast/versions.mli[101,3377+2]..[101,3377+19])
+              core_type (ast/versions.mli[101,3377+16]..[101,3377+19])
+                Ptyp_constr "int" (ast/versions.mli[101,3377+16]..[101,3377+19])
+                []
+              []
+          signature_item (ast/versions.mli[104,3447+2]..[104,3447+29])
+            Psig_value
+            value_description "string_version" (ast/versions.mli[104,3447+6]..[104,3447+20]) (ast/versions.mli[104,3447+2]..[104,3447+29])
+              core_type (ast/versions.mli[104,3447+23]..[104,3447+29])
+                Ptyp_constr "string" (ast/versions.mli[104,3447+23]..[104,3447+29])
+                []
+              []
+          signature_item (ast/versions.mli[107,3552+2]..[129,4714+10])
+            Psig_type Rec
+            [
+              type_declaration "types" (ast/versions.mli[107,3552+7]..[107,3552+12]) (ast/versions.mli[107,3552+2]..[129,4714+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (ast/versions.mli[106,3506+2]..[106,3506+45])
+                      Pstr_eval
+                      expression (ast/versions.mli[106,3506+2]..[106,3506+45])
+                        Pexp_constant PConst_string(" Shortcut for talking about Ast types ",(ast/versions.mli[106,3506+2]..[106,3506+45]),None)
+                  ]
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (ast/versions.mli[107,3552+15]..[129,4714+10])
+                      Ptyp_constr "_types" (ast/versions.mli[129,4714+4]..[129,4714+10])
+                      [
+                        core_type (ast/versions.mli[107,3552+15]..[129,4714+3])
+                          Ptyp_object Closed
+                            method structure
+                              core_type (ast/versions.mli[109,3646+28]..[109,3646+51])
+                                Ptyp_constr "Ast.Parsetree.structure" (ast/versions.mli[109,3646+28]..[109,3646+51])
+                                []
+                            method signature
+                              core_type (ast/versions.mli[110,3699+28]..[110,3699+51])
+                                Ptyp_constr "Ast.Parsetree.signature" (ast/versions.mli[110,3699+28]..[110,3699+51])
+                                []
+                            method toplevel_phrase
+                              core_type (ast/versions.mli[111,3752+28]..[111,3752+57])
+                                Ptyp_constr "Ast.Parsetree.toplevel_phrase" (ast/versions.mli[111,3752+28]..[111,3752+57])
+                                []
+                            method core_type
+                              core_type (ast/versions.mli[112,3811+28]..[112,3811+51])
+                                Ptyp_constr "Ast.Parsetree.core_type" (ast/versions.mli[112,3811+28]..[112,3811+51])
+                                []
+                            method expression
+                              core_type (ast/versions.mli[113,3864+28]..[113,3864+52])
+                                Ptyp_constr "Ast.Parsetree.expression" (ast/versions.mli[113,3864+28]..[113,3864+52])
+                                []
+                            method pattern
+                              core_type (ast/versions.mli[114,3918+28]..[114,3918+49])
+                                Ptyp_constr "Ast.Parsetree.pattern" (ast/versions.mli[114,3918+28]..[114,3918+49])
+                                []
+                            method case
+                              core_type (ast/versions.mli[115,3969+28]..[115,3969+46])
+                                Ptyp_constr "Ast.Parsetree.case" (ast/versions.mli[115,3969+28]..[115,3969+46])
+                                []
+                            method type_declaration
+                              core_type (ast/versions.mli[116,4017+28]..[116,4017+58])
+                                Ptyp_constr "Ast.Parsetree.type_declaration" (ast/versions.mli[116,4017+28]..[116,4017+58])
+                                []
+                            method type_extension
+                              core_type (ast/versions.mli[117,4077+28]..[117,4077+56])
+                                Ptyp_constr "Ast.Parsetree.type_extension" (ast/versions.mli[117,4077+28]..[117,4077+56])
+                                []
+                            method extension_constructor
+                              core_type (ast/versions.mli[118,4135+28]..[118,4135+63])
+                                Ptyp_constr "Ast.Parsetree.extension_constructor" (ast/versions.mli[118,4135+28]..[118,4135+63])
+                                []
+                            method class_expr
+                              core_type (ast/versions.mli[119,4200+28]..[119,4200+52])
+                                Ptyp_constr "Ast.Parsetree.class_expr" (ast/versions.mli[119,4200+28]..[119,4200+52])
+                                []
+                            method class_field
+                              core_type (ast/versions.mli[120,4254+28]..[120,4254+53])
+                                Ptyp_constr "Ast.Parsetree.class_field" (ast/versions.mli[120,4254+28]..[120,4254+53])
+                                []
+                            method class_type
+                              core_type (ast/versions.mli[121,4309+28]..[121,4309+52])
+                                Ptyp_constr "Ast.Parsetree.class_type" (ast/versions.mli[121,4309+28]..[121,4309+52])
+                                []
+                            method class_signature
+                              core_type (ast/versions.mli[122,4363+28]..[122,4363+57])
+                                Ptyp_constr "Ast.Parsetree.class_signature" (ast/versions.mli[122,4363+28]..[122,4363+57])
+                                []
+                            method class_type_field
+                              core_type (ast/versions.mli[123,4422+28]..[123,4422+58])
+                                Ptyp_constr "Ast.Parsetree.class_type_field" (ast/versions.mli[123,4422+28]..[123,4422+58])
+                                []
+                            method module_expr
+                              core_type (ast/versions.mli[124,4482+28]..[124,4482+53])
+                                Ptyp_constr "Ast.Parsetree.module_expr" (ast/versions.mli[124,4482+28]..[124,4482+53])
+                                []
+                            method module_type
+                              core_type (ast/versions.mli[125,4537+28]..[125,4537+53])
+                                Ptyp_constr "Ast.Parsetree.module_type" (ast/versions.mli[125,4537+28]..[125,4537+53])
+                                []
+                            method signature_item
+                              core_type (ast/versions.mli[126,4592+28]..[126,4592+56])
+                                Ptyp_constr "Ast.Parsetree.signature_item" (ast/versions.mli[126,4592+28]..[126,4592+56])
+                                []
+                            method structure_item
+                              core_type (ast/versions.mli[127,4650+28]..[127,4650+56])
+                                Ptyp_constr "Ast.Parsetree.structure_item" (ast/versions.mli[127,4650+28]..[127,4650+56])
+                                []
+                      ]
+            ]
+          signature_item (ast/versions.mli[133,4817+2]..[133,4817+47])
+            Psig_typext
+            type_extension
+              attribute "ocaml.doc"
+                [
+                  structure_item (ast/versions.mli[131,4726+2]..[132,4798+18])
+                    Pstr_eval
+                    expression (ast/versions.mli[131,4726+2]..[132,4798+18])
+                      Pexp_constant PConst_string(" A construtor for recovering type equalities between two arbitrary\n      versions. ",(ast/versions.mli[131,4726+2]..[132,4798+18]),None)
+                ]
+              ptyext_path = "witnesses" (ast/versions.mli[133,4817+9]..[133,4817+18])
+              ptyext_params =
+                [
+                  core_type (ast/versions.mli[133,4817+7]..[133,4817+8])
+                    Ptyp_any
+                ]
+              ptyext_constructors =
+                [
+                  extension_constructor (ast/versions.mli[133,4817+22]..[133,4817+47])
+                    pext_name = "Version"
+                    pext_kind =
+                      Pext_decl
+                        []
+                        Some
+                          core_type (ast/versions.mli[133,4817+32]..[133,4817+47])
+                            Ptyp_constr "witnesses" (ast/versions.mli[133,4817+38]..[133,4817+47])
+                            [
+                              core_type (ast/versions.mli[133,4817+32]..[133,4817+37])
+                                Ptyp_constr "types" (ast/versions.mli[133,4817+32]..[133,4817+37])
+                                []
+                            ]
+                ]
+              ptyext_private = Public
+          signature_item (ast/versions.mli[136,4933+2]..[136,4933+43])
+            Psig_value
+            value_description "migration_info" (ast/versions.mli[136,4933+6]..[136,4933+20]) (ast/versions.mli[136,4933+2]..[136,4933+43])
+              attribute "ocaml.doc"
+                [
+                  structure_item (ast/versions.mli[135,4866+2]..[135,4866+66])
+                    Pstr_eval
+                    expression (ast/versions.mli[135,4866+2]..[135,4866+66])
+                      Pexp_constant PConst_string(" Information used to derive migration functions, see below ",(ast/versions.mli[135,4866+2]..[135,4866+66]),None)
+                ]
+              core_type (ast/versions.mli[136,4933+23]..[136,4933+43])
+                Ptyp_constr "migration_info" (ast/versions.mli[136,4933+29]..[136,4933+43])
+                [
+                  core_type (ast/versions.mli[136,4933+23]..[136,4933+28])
+                    Ptyp_constr "types" (ast/versions.mli[136,4933+23]..[136,4933+28])
+                    []
+                ]
+              []
+        ]
+  signature_item (ast/versions.mli[139,4982+0]..[139,4982+38])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (ast/versions.mli[139,4982+0]..[139,4982+38])
+        Pstr_eval
+        expression (ast/versions.mli[139,4982+0]..[139,4982+38])
+          Pexp_constant PConst_string(" {1 Concrete frontend instances} ",(ast/versions.mli[139,4982+0]..[139,4982+38]),None)
+    ]
+  signature_item (ast/versions.mli[145,5148+0]..[145,5148+65])
+    Psig_module "OCaml_402" (ast/versions.mli[145,5148+7]..[145,5148+16])
+    module_type (ast/versions.mli[145,5148+19]..[145,5148+65])
+      Pmty_with
+      module_type (ast/versions.mli[145,5148+19]..[145,5148+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[145,5148+19]..[145,5148+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[145,5148+45]..[145,5148+48]) = "Astlib.Ast_402" (ast/versions.mli[145,5148+51]..[145,5148+65])
+      ]
+  signature_item (ast/versions.mli[146,5214+0]..[146,5214+65])
+    Psig_module "OCaml_403" (ast/versions.mli[146,5214+7]..[146,5214+16])
+    module_type (ast/versions.mli[146,5214+19]..[146,5214+65])
+      Pmty_with
+      module_type (ast/versions.mli[146,5214+19]..[146,5214+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[146,5214+19]..[146,5214+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[146,5214+45]..[146,5214+48]) = "Astlib.Ast_403" (ast/versions.mli[146,5214+51]..[146,5214+65])
+      ]
+  signature_item (ast/versions.mli[147,5280+0]..[147,5280+65])
+    Psig_module "OCaml_404" (ast/versions.mli[147,5280+7]..[147,5280+16])
+    module_type (ast/versions.mli[147,5280+19]..[147,5280+65])
+      Pmty_with
+      module_type (ast/versions.mli[147,5280+19]..[147,5280+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[147,5280+19]..[147,5280+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[147,5280+45]..[147,5280+48]) = "Astlib.Ast_404" (ast/versions.mli[147,5280+51]..[147,5280+65])
+      ]
+  signature_item (ast/versions.mli[148,5346+0]..[148,5346+65])
+    Psig_module "OCaml_405" (ast/versions.mli[148,5346+7]..[148,5346+16])
+    module_type (ast/versions.mli[148,5346+19]..[148,5346+65])
+      Pmty_with
+      module_type (ast/versions.mli[148,5346+19]..[148,5346+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[148,5346+19]..[148,5346+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[148,5346+45]..[148,5346+48]) = "Astlib.Ast_405" (ast/versions.mli[148,5346+51]..[148,5346+65])
+      ]
+  signature_item (ast/versions.mli[149,5412+0]..[149,5412+65])
+    Psig_module "OCaml_406" (ast/versions.mli[149,5412+7]..[149,5412+16])
+    module_type (ast/versions.mli[149,5412+19]..[149,5412+65])
+      Pmty_with
+      module_type (ast/versions.mli[149,5412+19]..[149,5412+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[149,5412+19]..[149,5412+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[149,5412+45]..[149,5412+48]) = "Astlib.Ast_406" (ast/versions.mli[149,5412+51]..[149,5412+65])
+      ]
+  signature_item (ast/versions.mli[150,5478+0]..[150,5478+65])
+    Psig_module "OCaml_407" (ast/versions.mli[150,5478+7]..[150,5478+16])
+    module_type (ast/versions.mli[150,5478+19]..[150,5478+65])
+      Pmty_with
+      module_type (ast/versions.mli[150,5478+19]..[150,5478+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[150,5478+19]..[150,5478+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[150,5478+45]..[150,5478+48]) = "Astlib.Ast_407" (ast/versions.mli[150,5478+51]..[150,5478+65])
+      ]
+  signature_item (ast/versions.mli[151,5544+0]..[151,5544+65])
+    Psig_module "OCaml_408" (ast/versions.mli[151,5544+7]..[151,5544+16])
+    module_type (ast/versions.mli[151,5544+19]..[151,5544+65])
+      Pmty_with
+      module_type (ast/versions.mli[151,5544+19]..[151,5544+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[151,5544+19]..[151,5544+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[151,5544+45]..[151,5544+48]) = "Astlib.Ast_408" (ast/versions.mli[151,5544+51]..[151,5544+65])
+      ]
+  signature_item (ast/versions.mli[152,5610+0]..[152,5610+65])
+    Psig_module "OCaml_409" (ast/versions.mli[152,5610+7]..[152,5610+16])
+    module_type (ast/versions.mli[152,5610+19]..[152,5610+65])
+      Pmty_with
+      module_type (ast/versions.mli[152,5610+19]..[152,5610+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[152,5610+19]..[152,5610+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[152,5610+45]..[152,5610+48]) = "Astlib.Ast_409" (ast/versions.mli[152,5610+51]..[152,5610+65])
+      ]
+  signature_item (ast/versions.mli[153,5676+0]..[153,5676+65])
+    Psig_module "OCaml_410" (ast/versions.mli[153,5676+7]..[153,5676+16])
+    module_type (ast/versions.mli[153,5676+19]..[153,5676+65])
+      Pmty_with
+      module_type (ast/versions.mli[153,5676+19]..[153,5676+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[153,5676+19]..[153,5676+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[153,5676+45]..[153,5676+48]) = "Astlib.Ast_410" (ast/versions.mli[153,5676+51]..[153,5676+65])
+      ]
+  signature_item (ast/versions.mli[154,5742+0]..[154,5742+65])
+    Psig_module "OCaml_411" (ast/versions.mli[154,5742+7]..[154,5742+16])
+    module_type (ast/versions.mli[154,5742+19]..[154,5742+65])
+      Pmty_with
+      module_type (ast/versions.mli[154,5742+19]..[154,5742+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[154,5742+19]..[154,5742+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[154,5742+45]..[154,5742+48]) = "Astlib.Ast_411" (ast/versions.mli[154,5742+51]..[154,5742+65])
+      ]
+  signature_item (ast/versions.mli[155,5808+0]..[155,5808+65])
+    Psig_module "OCaml_412" (ast/versions.mli[155,5808+7]..[155,5808+16])
+    module_type (ast/versions.mli[155,5808+19]..[155,5808+65])
+      Pmty_with
+      module_type (ast/versions.mli[155,5808+19]..[155,5808+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[155,5808+19]..[155,5808+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[155,5808+45]..[155,5808+48]) = "Astlib.Ast_412" (ast/versions.mli[155,5808+51]..[155,5808+65])
+      ]
+  signature_item (ast/versions.mli[156,5874+0]..[156,5874+65])
+    Psig_module "OCaml_413" (ast/versions.mli[156,5874+7]..[156,5874+16])
+    module_type (ast/versions.mli[156,5874+19]..[156,5874+65])
+      Pmty_with
+      module_type (ast/versions.mli[156,5874+19]..[156,5874+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[156,5874+19]..[156,5874+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[156,5874+45]..[156,5874+48]) = "Astlib.Ast_413" (ast/versions.mli[156,5874+51]..[156,5874+65])
+      ]
+  signature_item (ast/versions.mli[157,5940+0]..[157,5940+65])
+    Psig_module "OCaml_414" (ast/versions.mli[157,5940+7]..[157,5940+16])
+    module_type (ast/versions.mli[157,5940+19]..[157,5940+65])
+      Pmty_with
+      module_type (ast/versions.mli[157,5940+19]..[157,5940+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[157,5940+19]..[157,5940+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[157,5940+45]..[157,5940+48]) = "Astlib.Ast_414" (ast/versions.mli[157,5940+51]..[157,5940+65])
+      ]
+  signature_item (ast/versions.mli[158,6006+0]..[158,6006+65])
+    Psig_module "OCaml_500" (ast/versions.mli[158,6006+7]..[158,6006+16])
+    module_type (ast/versions.mli[158,6006+19]..[158,6006+65])
+      Pmty_with
+      module_type (ast/versions.mli[158,6006+19]..[158,6006+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[158,6006+19]..[158,6006+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[158,6006+45]..[158,6006+48]) = "Astlib.Ast_500" (ast/versions.mli[158,6006+51]..[158,6006+65])
+      ]
+  signature_item (ast/versions.mli[159,6072+0]..[159,6072+65])
+    Psig_module "OCaml_501" (ast/versions.mli[159,6072+7]..[159,6072+16])
+    module_type (ast/versions.mli[159,6072+19]..[159,6072+65])
+      Pmty_with
+      module_type (ast/versions.mli[159,6072+19]..[159,6072+32])
+        Pmty_ident "OCaml_version" (ast/versions.mli[159,6072+19]..[159,6072+32])
+      [
+        Pwith_module "Ast" (ast/versions.mli[159,6072+45]..[159,6072+48]) = "Astlib.Ast_501" (ast/versions.mli[159,6072+51]..[159,6072+65])
+      ]
+  signature_item (ast/versions.mli[163,6192+0]..[163,6192+32])
+    Psig_module "OCaml_current" (ast/versions.mli[163,6192+7]..[163,6192+20])
+    module_type (ast/versions.mli[163,6192+23]..[163,6192+32])
+      Pmty_alias "OCaml_412" (ast/versions.mli[163,6192+23]..[163,6192+32])
+  signature_item (ast/versions.mli[166,6277+0]..[166,6277+46])
+    Psig_value
+    value_description "all_versions" (ast/versions.mli[166,6277+4]..[166,6277+16]) (ast/versions.mli[166,6277+0]..[166,6277+46])
+      core_type (ast/versions.mli[166,6277+19]..[166,6277+46])
+        Ptyp_constr "list" (ast/versions.mli[166,6277+42]..[166,6277+46])
+        [
+          core_type (ast/versions.mli[166,6277+19]..[166,6277+41])
+            Ptyp_package "OCaml_version" (ast/versions.mli[166,6277+27]..[166,6277+40])
+            []
+        ]
+      []
+  signature_item (ast/versions.mli[168,6325+0]..[168,6325+34])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (ast/versions.mli[168,6325+0]..[168,6325+34])
+        Pstr_eval
+        expression (ast/versions.mli[168,6325+0]..[168,6325+34])
+          Pexp_constant PConst_string(" {1 Convenience definitions} ",(ast/versions.mli[168,6325+0]..[168,6325+34]),None)
+    ]
+  signature_item (ast/versions.mli[171,6391+0]..[195,8592+3])
+    Psig_module "Convert" (ast/versions.mli[171,6391+7]..[171,6391+14])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[170,6361+0]..[170,6361+29])
+            Pstr_eval
+            expression (ast/versions.mli[170,6361+0]..[170,6361+29])
+              Pexp_constant PConst_string(" Module level migration ",(ast/versions.mli[170,6361+0]..[170,6361+29]),None)
+        ]
+    module_type (ast/versions.mli[171,6391+15]..[195,8592+3])
+      Pmty_functor "A" (ast/versions.mli[171,6391+16]..[171,6391+17])
+      module_type (ast/versions.mli[171,6391+20]..[171,6391+33])
+        Pmty_ident "OCaml_version" (ast/versions.mli[171,6391+20]..[171,6391+33])
+      module_type (ast/versions.mli[171,6391+35]..[195,8592+3])
+        Pmty_functor "B" (ast/versions.mli[171,6391+36]..[171,6391+37])
+        module_type (ast/versions.mli[171,6391+40]..[171,6391+53])
+          Pmty_ident "OCaml_version" (ast/versions.mli[171,6391+40]..[171,6391+53])
+        module_type (ast/versions.mli[171,6391+57]..[195,8592+3])
+          Pmty_signature
+          [
+            signature_item (ast/versions.mli[175,6593+2]..[175,6593+101])
+              Psig_value
+              value_description "copy_structure" (ast/versions.mli[175,6593+6]..[175,6593+20]) (ast/versions.mli[175,6593+2]..[175,6593+101])
+                core_type (ast/versions.mli[175,6593+35]..[175,6593+101])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[175,6593+35]..[175,6593+60])
+                    Ptyp_constr "A.Ast.Parsetree.structure" (ast/versions.mli[175,6593+35]..[175,6593+60])
+                    []
+                  core_type (ast/versions.mli[175,6593+76]..[175,6593+101])
+                    Ptyp_constr "B.Ast.Parsetree.structure" (ast/versions.mli[175,6593+76]..[175,6593+101])
+                    []
+                []
+            signature_item (ast/versions.mli[176,6695+2]..[176,6695+101])
+              Psig_value
+              value_description "copy_signature" (ast/versions.mli[176,6695+6]..[176,6695+20]) (ast/versions.mli[176,6695+2]..[176,6695+101])
+                core_type (ast/versions.mli[176,6695+35]..[176,6695+101])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[176,6695+35]..[176,6695+60])
+                    Ptyp_constr "A.Ast.Parsetree.signature" (ast/versions.mli[176,6695+35]..[176,6695+60])
+                    []
+                  core_type (ast/versions.mli[176,6695+76]..[176,6695+101])
+                    Ptyp_constr "B.Ast.Parsetree.signature" (ast/versions.mli[176,6695+76]..[176,6695+101])
+                    []
+                []
+            signature_item (ast/versions.mli[177,6797+2]..[177,6797+107])
+              Psig_value
+              value_description "copy_toplevel_phrase" (ast/versions.mli[177,6797+6]..[177,6797+26]) (ast/versions.mli[177,6797+2]..[177,6797+107])
+                core_type (ast/versions.mli[177,6797+35]..[177,6797+107])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[177,6797+35]..[177,6797+66])
+                    Ptyp_constr "A.Ast.Parsetree.toplevel_phrase" (ast/versions.mli[177,6797+35]..[177,6797+66])
+                    []
+                  core_type (ast/versions.mli[177,6797+76]..[177,6797+107])
+                    Ptyp_constr "B.Ast.Parsetree.toplevel_phrase" (ast/versions.mli[177,6797+76]..[177,6797+107])
+                    []
+                []
+            signature_item (ast/versions.mli[178,6905+2]..[178,6905+101])
+              Psig_value
+              value_description "copy_core_type" (ast/versions.mli[178,6905+6]..[178,6905+20]) (ast/versions.mli[178,6905+2]..[178,6905+101])
+                core_type (ast/versions.mli[178,6905+35]..[178,6905+101])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[178,6905+35]..[178,6905+60])
+                    Ptyp_constr "A.Ast.Parsetree.core_type" (ast/versions.mli[178,6905+35]..[178,6905+60])
+                    []
+                  core_type (ast/versions.mli[178,6905+76]..[178,6905+101])
+                    Ptyp_constr "B.Ast.Parsetree.core_type" (ast/versions.mli[178,6905+76]..[178,6905+101])
+                    []
+                []
+            signature_item (ast/versions.mli[179,7007+2]..[179,7007+102])
+              Psig_value
+              value_description "copy_expression" (ast/versions.mli[179,7007+6]..[179,7007+21]) (ast/versions.mli[179,7007+2]..[179,7007+102])
+                core_type (ast/versions.mli[179,7007+35]..[179,7007+102])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[179,7007+35]..[179,7007+61])
+                    Ptyp_constr "A.Ast.Parsetree.expression" (ast/versions.mli[179,7007+35]..[179,7007+61])
+                    []
+                  core_type (ast/versions.mli[179,7007+76]..[179,7007+102])
+                    Ptyp_constr "B.Ast.Parsetree.expression" (ast/versions.mli[179,7007+76]..[179,7007+102])
+                    []
+                []
+            signature_item (ast/versions.mli[180,7110+2]..[180,7110+99])
+              Psig_value
+              value_description "copy_pattern" (ast/versions.mli[180,7110+6]..[180,7110+18]) (ast/versions.mli[180,7110+2]..[180,7110+99])
+                core_type (ast/versions.mli[180,7110+35]..[180,7110+99])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[180,7110+35]..[180,7110+58])
+                    Ptyp_constr "A.Ast.Parsetree.pattern" (ast/versions.mli[180,7110+35]..[180,7110+58])
+                    []
+                  core_type (ast/versions.mli[180,7110+76]..[180,7110+99])
+                    Ptyp_constr "B.Ast.Parsetree.pattern" (ast/versions.mli[180,7110+76]..[180,7110+99])
+                    []
+                []
+            signature_item (ast/versions.mli[181,7210+2]..[181,7210+96])
+              Psig_value
+              value_description "copy_case" (ast/versions.mli[181,7210+6]..[181,7210+15]) (ast/versions.mli[181,7210+2]..[181,7210+96])
+                core_type (ast/versions.mli[181,7210+35]..[181,7210+96])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[181,7210+35]..[181,7210+55])
+                    Ptyp_constr "A.Ast.Parsetree.case" (ast/versions.mli[181,7210+35]..[181,7210+55])
+                    []
+                  core_type (ast/versions.mli[181,7210+76]..[181,7210+96])
+                    Ptyp_constr "B.Ast.Parsetree.case" (ast/versions.mli[181,7210+76]..[181,7210+96])
+                    []
+                []
+            signature_item (ast/versions.mli[182,7307+2]..[182,7307+108])
+              Psig_value
+              value_description "copy_type_declaration" (ast/versions.mli[182,7307+6]..[182,7307+27]) (ast/versions.mli[182,7307+2]..[182,7307+108])
+                core_type (ast/versions.mli[182,7307+35]..[182,7307+108])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[182,7307+35]..[182,7307+67])
+                    Ptyp_constr "A.Ast.Parsetree.type_declaration" (ast/versions.mli[182,7307+35]..[182,7307+67])
+                    []
+                  core_type (ast/versions.mli[182,7307+76]..[182,7307+108])
+                    Ptyp_constr "B.Ast.Parsetree.type_declaration" (ast/versions.mli[182,7307+76]..[182,7307+108])
+                    []
+                []
+            signature_item (ast/versions.mli[183,7416+2]..[183,7416+106])
+              Psig_value
+              value_description "copy_type_extension" (ast/versions.mli[183,7416+6]..[183,7416+25]) (ast/versions.mli[183,7416+2]..[183,7416+106])
+                core_type (ast/versions.mli[183,7416+35]..[183,7416+106])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[183,7416+35]..[183,7416+65])
+                    Ptyp_constr "A.Ast.Parsetree.type_extension" (ast/versions.mli[183,7416+35]..[183,7416+65])
+                    []
+                  core_type (ast/versions.mli[183,7416+76]..[183,7416+106])
+                    Ptyp_constr "B.Ast.Parsetree.type_extension" (ast/versions.mli[183,7416+76]..[183,7416+106])
+                    []
+                []
+            signature_item (ast/versions.mli[184,7523+2]..[184,7523+113])
+              Psig_value
+              value_description "copy_extension_constructor" (ast/versions.mli[184,7523+6]..[184,7523+32]) (ast/versions.mli[184,7523+2]..[184,7523+113])
+                core_type (ast/versions.mli[184,7523+35]..[184,7523+113])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[184,7523+35]..[184,7523+72])
+                    Ptyp_constr "A.Ast.Parsetree.extension_constructor" (ast/versions.mli[184,7523+35]..[184,7523+72])
+                    []
+                  core_type (ast/versions.mli[184,7523+76]..[184,7523+113])
+                    Ptyp_constr "B.Ast.Parsetree.extension_constructor" (ast/versions.mli[184,7523+76]..[184,7523+113])
+                    []
+                []
+            signature_item (ast/versions.mli[185,7637+2]..[185,7637+102])
+              Psig_value
+              value_description "copy_class_expr" (ast/versions.mli[185,7637+6]..[185,7637+21]) (ast/versions.mli[185,7637+2]..[185,7637+102])
+                core_type (ast/versions.mli[185,7637+35]..[185,7637+102])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[185,7637+35]..[185,7637+61])
+                    Ptyp_constr "A.Ast.Parsetree.class_expr" (ast/versions.mli[185,7637+35]..[185,7637+61])
+                    []
+                  core_type (ast/versions.mli[185,7637+76]..[185,7637+102])
+                    Ptyp_constr "B.Ast.Parsetree.class_expr" (ast/versions.mli[185,7637+76]..[185,7637+102])
+                    []
+                []
+            signature_item (ast/versions.mli[186,7740+2]..[186,7740+103])
+              Psig_value
+              value_description "copy_class_field" (ast/versions.mli[186,7740+6]..[186,7740+22]) (ast/versions.mli[186,7740+2]..[186,7740+103])
+                core_type (ast/versions.mli[186,7740+35]..[186,7740+103])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[186,7740+35]..[186,7740+62])
+                    Ptyp_constr "A.Ast.Parsetree.class_field" (ast/versions.mli[186,7740+35]..[186,7740+62])
+                    []
+                  core_type (ast/versions.mli[186,7740+76]..[186,7740+103])
+                    Ptyp_constr "B.Ast.Parsetree.class_field" (ast/versions.mli[186,7740+76]..[186,7740+103])
+                    []
+                []
+            signature_item (ast/versions.mli[187,7844+2]..[187,7844+102])
+              Psig_value
+              value_description "copy_class_type" (ast/versions.mli[187,7844+6]..[187,7844+21]) (ast/versions.mli[187,7844+2]..[187,7844+102])
+                core_type (ast/versions.mli[187,7844+35]..[187,7844+102])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[187,7844+35]..[187,7844+61])
+                    Ptyp_constr "A.Ast.Parsetree.class_type" (ast/versions.mli[187,7844+35]..[187,7844+61])
+                    []
+                  core_type (ast/versions.mli[187,7844+76]..[187,7844+102])
+                    Ptyp_constr "B.Ast.Parsetree.class_type" (ast/versions.mli[187,7844+76]..[187,7844+102])
+                    []
+                []
+            signature_item (ast/versions.mli[188,7947+2]..[188,7947+107])
+              Psig_value
+              value_description "copy_class_signature" (ast/versions.mli[188,7947+6]..[188,7947+26]) (ast/versions.mli[188,7947+2]..[188,7947+107])
+                core_type (ast/versions.mli[188,7947+35]..[188,7947+107])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[188,7947+35]..[188,7947+66])
+                    Ptyp_constr "A.Ast.Parsetree.class_signature" (ast/versions.mli[188,7947+35]..[188,7947+66])
+                    []
+                  core_type (ast/versions.mli[188,7947+76]..[188,7947+107])
+                    Ptyp_constr "B.Ast.Parsetree.class_signature" (ast/versions.mli[188,7947+76]..[188,7947+107])
+                    []
+                []
+            signature_item (ast/versions.mli[189,8055+2]..[189,8055+108])
+              Psig_value
+              value_description "copy_class_type_field" (ast/versions.mli[189,8055+6]..[189,8055+27]) (ast/versions.mli[189,8055+2]..[189,8055+108])
+                core_type (ast/versions.mli[189,8055+35]..[189,8055+108])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[189,8055+35]..[189,8055+67])
+                    Ptyp_constr "A.Ast.Parsetree.class_type_field" (ast/versions.mli[189,8055+35]..[189,8055+67])
+                    []
+                  core_type (ast/versions.mli[189,8055+76]..[189,8055+108])
+                    Ptyp_constr "B.Ast.Parsetree.class_type_field" (ast/versions.mli[189,8055+76]..[189,8055+108])
+                    []
+                []
+            signature_item (ast/versions.mli[190,8164+2]..[190,8164+103])
+              Psig_value
+              value_description "copy_module_expr" (ast/versions.mli[190,8164+6]..[190,8164+22]) (ast/versions.mli[190,8164+2]..[190,8164+103])
+                core_type (ast/versions.mli[190,8164+35]..[190,8164+103])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[190,8164+35]..[190,8164+62])
+                    Ptyp_constr "A.Ast.Parsetree.module_expr" (ast/versions.mli[190,8164+35]..[190,8164+62])
+                    []
+                  core_type (ast/versions.mli[190,8164+76]..[190,8164+103])
+                    Ptyp_constr "B.Ast.Parsetree.module_expr" (ast/versions.mli[190,8164+76]..[190,8164+103])
+                    []
+                []
+            signature_item (ast/versions.mli[191,8268+2]..[191,8268+103])
+              Psig_value
+              value_description "copy_module_type" (ast/versions.mli[191,8268+6]..[191,8268+22]) (ast/versions.mli[191,8268+2]..[191,8268+103])
+                core_type (ast/versions.mli[191,8268+35]..[191,8268+103])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[191,8268+35]..[191,8268+62])
+                    Ptyp_constr "A.Ast.Parsetree.module_type" (ast/versions.mli[191,8268+35]..[191,8268+62])
+                    []
+                  core_type (ast/versions.mli[191,8268+76]..[191,8268+103])
+                    Ptyp_constr "B.Ast.Parsetree.module_type" (ast/versions.mli[191,8268+76]..[191,8268+103])
+                    []
+                []
+            signature_item (ast/versions.mli[192,8372+2]..[192,8372+106])
+              Psig_value
+              value_description "copy_signature_item" (ast/versions.mli[192,8372+6]..[192,8372+25]) (ast/versions.mli[192,8372+2]..[192,8372+106])
+                core_type (ast/versions.mli[192,8372+35]..[192,8372+106])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[192,8372+35]..[192,8372+65])
+                    Ptyp_constr "A.Ast.Parsetree.signature_item" (ast/versions.mli[192,8372+35]..[192,8372+65])
+                    []
+                  core_type (ast/versions.mli[192,8372+76]..[192,8372+106])
+                    Ptyp_constr "B.Ast.Parsetree.signature_item" (ast/versions.mli[192,8372+76]..[192,8372+106])
+                    []
+                []
+            signature_item (ast/versions.mli[193,8479+2]..[193,8479+106])
+              Psig_value
+              value_description "copy_structure_item" (ast/versions.mli[193,8479+6]..[193,8479+25]) (ast/versions.mli[193,8479+2]..[193,8479+106])
+                core_type (ast/versions.mli[193,8479+35]..[193,8479+106])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[193,8479+35]..[193,8479+65])
+                    Ptyp_constr "A.Ast.Parsetree.structure_item" (ast/versions.mli[193,8479+35]..[193,8479+65])
+                    []
+                  core_type (ast/versions.mli[193,8479+76]..[193,8479+106])
+                    Ptyp_constr "B.Ast.Parsetree.structure_item" (ast/versions.mli[193,8479+76]..[193,8479+106])
+                    []
+                []
+          ]
+  signature_item (ast/versions.mli[198,8670+0]..[202,8813+3])
+    Psig_module "Find_version" (ast/versions.mli[198,8670+7]..[198,8670+19])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[197,8597+0]..[197,8597+72])
+            Pstr_eval
+            expression (ast/versions.mli[197,8597+0]..[197,8597+72])
+              Pexp_constant PConst_string(" Helper to find the frontend corresponding to a given magic number ",(ast/versions.mli[197,8597+0]..[197,8597+72]),None)
+        ]
+    module_type (ast/versions.mli[198,8670+22]..[202,8813+3])
+      Pmty_signature
+      [
+        signature_item (ast/versions.mli[199,8696+2]..[199,8696+84])
+          Psig_type Rec
+          [
+            type_declaration "t" (ast/versions.mli[199,8696+7]..[199,8696+8]) (ast/versions.mli[199,8696+2]..[199,8696+84])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (ast/versions.mli[199,8696+11]..[199,8696+41])
+                      "Impl" (ast/versions.mli[199,8696+11]..[199,8696+15])
+                      [
+                        core_type (ast/versions.mli[199,8696+19]..[199,8696+41])
+                          Ptyp_package "OCaml_version" (ast/versions.mli[199,8696+27]..[199,8696+40])
+                          []
+                      ]
+                      None
+                    (ast/versions.mli[199,8696+42]..[199,8696+74])
+                      "Intf" (ast/versions.mli[199,8696+44]..[199,8696+48])
+                      [
+                        core_type (ast/versions.mli[199,8696+52]..[199,8696+74])
+                          Ptyp_package "OCaml_version" (ast/versions.mli[199,8696+60]..[199,8696+73])
+                          []
+                      ]
+                      None
+                    (ast/versions.mli[199,8696+75]..[199,8696+84])
+                      "Unknown" (ast/versions.mli[199,8696+77]..[199,8696+84])
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (ast/versions.mli[201,8782+2]..[201,8782+30])
+          Psig_value
+          value_description "from_magic" (ast/versions.mli[201,8782+6]..[201,8782+16]) (ast/versions.mli[201,8782+2]..[201,8782+30])
+            core_type (ast/versions.mli[201,8782+19]..[201,8782+30])
+              Ptyp_arrow
+              Nolabel
+              core_type (ast/versions.mli[201,8782+19]..[201,8782+25])
+                Ptyp_constr "string" (ast/versions.mli[201,8782+19]..[201,8782+25])
+                []
+              core_type (ast/versions.mli[201,8782+29]..[201,8782+30])
+                Ptyp_constr "t" (ast/versions.mli[201,8782+29]..[201,8782+30])
+                []
+            []
+      ]
+]
+
+[@@@ocaml.text " {1 Abstracting an OCaml frontend} "]
+module type Ast  =
+  sig
+    module Parsetree :
+    sig
+      type structure
+      type signature
+      type toplevel_phrase
+      type core_type
+      type expression
+      type pattern
+      type case
+      type type_declaration
+      type type_extension
+      type extension_constructor
+      type class_expr
+      type class_field
+      type class_type
+      type class_signature
+      type class_type_field
+      type module_expr
+      type module_type
+      type signature_item
+      type structure_item
+    end
+    module Config :
+    sig val ast_impl_magic_number : string val ast_intf_magic_number : string
+    end
+  end[@@ocaml.doc " Abstract view of a version of an OCaml Ast "]
+type 'a _types =
+  'a constraint 'a =
+      <
+        structure: _  ;signature: _  ;toplevel_phrase: _  ;core_type: _  ;
+        expression: _  ;pattern: _  ;case: _  ;type_declaration: _  ;
+        type_extension: _  ;extension_constructor: _  ;class_expr: _  ;
+        class_field: _  ;class_type: _  ;class_signature: _  ;class_type_field: 
+                                                                _  ;module_expr: 
+                                                                    _  ;
+        module_type: _  ;signature_item: _  ;structure_item: _   > 
+type _ witnesses = private ..[@@ocaml.doc
+                               " A version of the OCaml frontend packs the ast with type witnesses\n    so that equalities can be recovered dynamically. "]
+type _ migration_info[@@ocaml.doc
+                       " [migration_info] is an opaque type that is used to generate migration\n    functions. "]
+module type OCaml_version  =
+  sig
+    module Ast : Ast[@@ocaml.doc " Ast definition for this version "]
+    val version : int
+    val string_version : string
+    type types =
+      <
+        structure: Ast.Parsetree.structure  ;signature: Ast.Parsetree.signature
+                                                ;toplevel_phrase: Ast.Parsetree.toplevel_phrase
+                                                    ;core_type: Ast.Parsetree.core_type
+                                                        ;expression: 
+                                                           Ast.Parsetree.expression
+                                                            ;pattern: 
+                                                               Ast.Parsetree.pattern
+                                                                ;case: 
+                                                                   Ast.Parsetree.case
+                                                                    ;
+        type_declaration: Ast.Parsetree.type_declaration  ;type_extension: 
+                                                             Ast.Parsetree.type_extension
+                                                              ;extension_constructor: 
+                                                                 Ast.Parsetree.extension_constructor
+                                                                  ;class_expr: 
+                                                                    Ast.Parsetree.class_expr
+                                                                     ;
+        class_field: Ast.Parsetree.class_field  ;class_type: Ast.Parsetree.class_type
+                                                    ;class_signature: 
+                                                       Ast.Parsetree.class_signature
+                                                        ;class_type_field: 
+                                                           Ast.Parsetree.class_type_field
+                                                            ;module_expr: 
+                                                               Ast.Parsetree.module_expr
+                                                                ;module_type: 
+                                                                   Ast.Parsetree.module_type
+                                                                    ;
+        signature_item: Ast.Parsetree.signature_item  ;structure_item: 
+                                                         Ast.Parsetree.structure_item
+                                                           > 
+        _types[@@ocaml.doc " Shortcut for talking about Ast types "]
+    type _ witnesses +=  
+      | Version: types witnesses [@@ocaml.doc
+                                   " A construtor for recovering type equalities between two arbitrary\n      versions. "]
+    val migration_info : types migration_info[@@ocaml.doc
+                                               " Information used to derive migration functions, see below "]
+  end[@@ocaml.doc
+       " An OCaml frontend versions an Ast, version number and some witnesses for\n    conversion. "]
+[@@@ocaml.text " {1 Concrete frontend instances} "]
+module OCaml_402 : OCaml_version with module Ast = Astlib.Ast_402
+module OCaml_403 : OCaml_version with module Ast = Astlib.Ast_403
+module OCaml_404 : OCaml_version with module Ast = Astlib.Ast_404
+module OCaml_405 : OCaml_version with module Ast = Astlib.Ast_405
+module OCaml_406 : OCaml_version with module Ast = Astlib.Ast_406
+module OCaml_407 : OCaml_version with module Ast = Astlib.Ast_407
+module OCaml_408 : OCaml_version with module Ast = Astlib.Ast_408
+module OCaml_409 : OCaml_version with module Ast = Astlib.Ast_409
+module OCaml_410 : OCaml_version with module Ast = Astlib.Ast_410
+module OCaml_411 : OCaml_version with module Ast = Astlib.Ast_411
+module OCaml_412 : OCaml_version with module Ast = Astlib.Ast_412
+module OCaml_413 : OCaml_version with module Ast = Astlib.Ast_413
+module OCaml_414 : OCaml_version with module Ast = Astlib.Ast_414
+module OCaml_500 : OCaml_version with module Ast = Astlib.Ast_500
+module OCaml_501 : OCaml_version with module Ast = Astlib.Ast_501
+module OCaml_current = OCaml_412
+val all_versions : (module OCaml_version) list
+[@@@ocaml.text " {1 Convenience definitions} "]
+module Convert :
+functor (A : OCaml_version) ->
+  functor (B : OCaml_version) ->
+    sig
+      val copy_structure :
+        A.Ast.Parsetree.structure -> B.Ast.Parsetree.structure
+      val copy_signature :
+        A.Ast.Parsetree.signature -> B.Ast.Parsetree.signature
+      val copy_toplevel_phrase :
+        A.Ast.Parsetree.toplevel_phrase -> B.Ast.Parsetree.toplevel_phrase
+      val copy_core_type :
+        A.Ast.Parsetree.core_type -> B.Ast.Parsetree.core_type
+      val copy_expression :
+        A.Ast.Parsetree.expression -> B.Ast.Parsetree.expression
+      val copy_pattern : A.Ast.Parsetree.pattern -> B.Ast.Parsetree.pattern
+      val copy_case : A.Ast.Parsetree.case -> B.Ast.Parsetree.case
+      val copy_type_declaration :
+        A.Ast.Parsetree.type_declaration -> B.Ast.Parsetree.type_declaration
+      val copy_type_extension :
+        A.Ast.Parsetree.type_extension -> B.Ast.Parsetree.type_extension
+      val copy_extension_constructor :
+        A.Ast.Parsetree.extension_constructor ->
+          B.Ast.Parsetree.extension_constructor
+      val copy_class_expr :
+        A.Ast.Parsetree.class_expr -> B.Ast.Parsetree.class_expr
+      val copy_class_field :
+        A.Ast.Parsetree.class_field -> B.Ast.Parsetree.class_field
+      val copy_class_type :
+        A.Ast.Parsetree.class_type -> B.Ast.Parsetree.class_type
+      val copy_class_signature :
+        A.Ast.Parsetree.class_signature -> B.Ast.Parsetree.class_signature
+      val copy_class_type_field :
+        A.Ast.Parsetree.class_type_field -> B.Ast.Parsetree.class_type_field
+      val copy_module_expr :
+        A.Ast.Parsetree.module_expr -> B.Ast.Parsetree.module_expr
+      val copy_module_type :
+        A.Ast.Parsetree.module_type -> B.Ast.Parsetree.module_type
+      val copy_signature_item :
+        A.Ast.Parsetree.signature_item -> B.Ast.Parsetree.signature_item
+      val copy_structure_item :
+        A.Ast.Parsetree.structure_item -> B.Ast.Parsetree.structure_item
+    end[@@ocaml.doc " Module level migration "]
+module Find_version :
+sig
+  type t =
+    | Impl of (module OCaml_version) 
+    | Intf of (module OCaml_version) 
+    | Unknown 
+  val from_magic : string -> t
+end[@@ocaml.doc
+     " Helper to find the frontend corresponding to a given magic number "]
+[
+  signature_item (ast/versions.mli[19,1216+0]..ast/versions.mli[19,1216+40])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (ast/versions.mli[19,1216+0]..[19,1216+40])
+        Pstr_eval
+        expression (ast/versions.mli[19,1216+0]..[19,1216+40])
+          Pexp_constant PConst_string(" {1 Abstracting an OCaml frontend} ",(ast/versions.mli[19,1216+0]..[19,1216+40]),None)
+    ]
+  signature_item (ast/versions.mli[22,1308+0]..ast/versions.mli[55,2049+3])
+    Tsig_modtype "Ast/116"
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[21,1258+0]..[21,1258+49])
+            Pstr_eval
+            expression (ast/versions.mli[21,1258+0]..[21,1258+49])
+              Pexp_constant PConst_string(" Abstract view of a version of an OCaml Ast ",(ast/versions.mli[21,1258+0]..[21,1258+49]),None)
+        ]
+      module_type (ast/versions.mli[22,1308+18]..ast/versions.mli[55,2049+3])
+        Tmty_signature
+        [
+          signature_item (ast/versions.mli[29,1490+2]..ast/versions.mli[49,1931+5])
+            Tsig_module "Parsetree/112"
+            module_type (ast/versions.mli[29,1490+21]..ast/versions.mli[49,1931+5])
+              Tmty_signature
+              [
+                signature_item (ast/versions.mli[30,1515+4]..ast/versions.mli[30,1515+18])
+                  Tsig_type Rec
+                  [
+                    type_declaration structure/93 (ast/versions.mli[30,1515+4]..ast/versions.mli[30,1515+18])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[31,1534+4]..ast/versions.mli[31,1534+18])
+                  Tsig_type Rec
+                  [
+                    type_declaration signature/94 (ast/versions.mli[31,1534+4]..ast/versions.mli[31,1534+18])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[32,1553+4]..ast/versions.mli[32,1553+24])
+                  Tsig_type Rec
+                  [
+                    type_declaration toplevel_phrase/95 (ast/versions.mli[32,1553+4]..ast/versions.mli[32,1553+24])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[33,1578+4]..ast/versions.mli[33,1578+18])
+                  Tsig_type Rec
+                  [
+                    type_declaration core_type/96 (ast/versions.mli[33,1578+4]..ast/versions.mli[33,1578+18])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[34,1597+4]..ast/versions.mli[34,1597+19])
+                  Tsig_type Rec
+                  [
+                    type_declaration expression/97 (ast/versions.mli[34,1597+4]..ast/versions.mli[34,1597+19])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[35,1617+4]..ast/versions.mli[35,1617+16])
+                  Tsig_type Rec
+                  [
+                    type_declaration pattern/98 (ast/versions.mli[35,1617+4]..ast/versions.mli[35,1617+16])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[36,1634+4]..ast/versions.mli[36,1634+13])
+                  Tsig_type Rec
+                  [
+                    type_declaration case/99 (ast/versions.mli[36,1634+4]..ast/versions.mli[36,1634+13])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[37,1648+4]..ast/versions.mli[37,1648+25])
+                  Tsig_type Rec
+                  [
+                    type_declaration type_declaration/100 (ast/versions.mli[37,1648+4]..ast/versions.mli[37,1648+25])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[38,1674+4]..ast/versions.mli[38,1674+23])
+                  Tsig_type Rec
+                  [
+                    type_declaration type_extension/101 (ast/versions.mli[38,1674+4]..ast/versions.mli[38,1674+23])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[39,1698+4]..ast/versions.mli[39,1698+30])
+                  Tsig_type Rec
+                  [
+                    type_declaration extension_constructor/102 (ast/versions.mli[39,1698+4]..ast/versions.mli[39,1698+30])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[40,1729+4]..ast/versions.mli[40,1729+19])
+                  Tsig_type Rec
+                  [
+                    type_declaration class_expr/103 (ast/versions.mli[40,1729+4]..ast/versions.mli[40,1729+19])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[41,1749+4]..ast/versions.mli[41,1749+20])
+                  Tsig_type Rec
+                  [
+                    type_declaration class_field/104 (ast/versions.mli[41,1749+4]..ast/versions.mli[41,1749+20])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[42,1770+4]..ast/versions.mli[42,1770+19])
+                  Tsig_type Rec
+                  [
+                    type_declaration class_type/105 (ast/versions.mli[42,1770+4]..ast/versions.mli[42,1770+19])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[43,1790+4]..ast/versions.mli[43,1790+24])
+                  Tsig_type Rec
+                  [
+                    type_declaration class_signature/106 (ast/versions.mli[43,1790+4]..ast/versions.mli[43,1790+24])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[44,1815+4]..ast/versions.mli[44,1815+25])
+                  Tsig_type Rec
+                  [
+                    type_declaration class_type_field/107 (ast/versions.mli[44,1815+4]..ast/versions.mli[44,1815+25])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[45,1841+4]..ast/versions.mli[45,1841+20])
+                  Tsig_type Rec
+                  [
+                    type_declaration module_expr/108 (ast/versions.mli[45,1841+4]..ast/versions.mli[45,1841+20])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[46,1862+4]..ast/versions.mli[46,1862+20])
+                  Tsig_type Rec
+                  [
+                    type_declaration module_type/109 (ast/versions.mli[46,1862+4]..ast/versions.mli[46,1862+20])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[47,1883+4]..ast/versions.mli[47,1883+23])
+                  Tsig_type Rec
+                  [
+                    type_declaration signature_item/110 (ast/versions.mli[47,1883+4]..ast/versions.mli[47,1883+23])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+                signature_item (ast/versions.mli[48,1907+4]..ast/versions.mli[48,1907+23])
+                  Tsig_type Rec
+                  [
+                    type_declaration structure_item/111 (ast/versions.mli[48,1907+4]..ast/versions.mli[48,1907+23])
+                      ptype_params =
+                        []
+                      ptype_cstrs =
+                        []
+                      ptype_kind =
+                        Ttype_abstract
+                      ptype_private = Public
+                      ptype_manifest =
+                        None
+                  ]
+              ]
+          signature_item (ast/versions.mli[51,1943+2]..ast/versions.mli[54,2043+5])
+            Tsig_module "Config/115"
+            module_type (ast/versions.mli[51,1943+18]..ast/versions.mli[54,2043+5])
+              Tmty_signature
+              [
+                signature_item (ast/versions.mli[52,1965+4]..ast/versions.mli[52,1965+38])
+                  Tsig_value
+                  value_description ast_impl_magic_number/113 (ast/versions.mli[52,1965+4]..ast/versions.mli[52,1965+38])
+                    core_type (ast/versions.mli[52,1965+32]..ast/versions.mli[52,1965+38])
+                      Ttyp_constr "string/17!"
+                      []
+                    []
+                signature_item (ast/versions.mli[53,2004+4]..ast/versions.mli[53,2004+38])
+                  Tsig_value
+                  value_description ast_intf_magic_number/114 (ast/versions.mli[53,2004+4]..ast/versions.mli[53,2004+38])
+                    core_type (ast/versions.mli[53,2004+32]..ast/versions.mli[53,2004+38])
+                      Ttyp_constr "string/17!"
+                      []
+                    []
+              ]
+        ]
+  signature_item (ast/versions.mli[59,2130+0]..ast/versions.mli[82,2830+3])
+    Tsig_type Rec
+    [
+      type_declaration _types/117 (ast/versions.mli[59,2130+0]..ast/versions.mli[82,2830+3])
+        ptype_params =
+          [
+            core_type (ast/versions.mli[59,2130+5]..ast/versions.mli[59,2130+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          [
+            <constraint> (ast/versions.mli[59,2130+31]..ast/versions.mli[82,2830+3])
+              core_type (ast/versions.mli[59,2130+31]..ast/versions.mli[59,2130+33])
+                Ttyp_var a
+              core_type (ast/versions.mli[60,2164+4]..ast/versions.mli[82,2830+3])
+                Ttyp_object Closed
+                  method structure
+                    core_type (ast/versions.mli[62,2235+28]..ast/versions.mli[62,2235+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[62,2235+28]..ast/versions.mli[62,2235+29])
+                        Ttyp_any
+                  method signature
+                    core_type (ast/versions.mli[63,2266+28]..ast/versions.mli[63,2266+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[63,2266+28]..ast/versions.mli[63,2266+29])
+                        Ttyp_any
+                  method toplevel_phrase
+                    core_type (ast/versions.mli[64,2297+28]..ast/versions.mli[64,2297+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[64,2297+28]..ast/versions.mli[64,2297+29])
+                        Ttyp_any
+                  method core_type
+                    core_type (ast/versions.mli[65,2328+28]..ast/versions.mli[65,2328+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[65,2328+28]..ast/versions.mli[65,2328+29])
+                        Ttyp_any
+                  method expression
+                    core_type (ast/versions.mli[66,2359+28]..ast/versions.mli[66,2359+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[66,2359+28]..ast/versions.mli[66,2359+29])
+                        Ttyp_any
+                  method pattern
+                    core_type (ast/versions.mli[67,2390+28]..ast/versions.mli[67,2390+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[67,2390+28]..ast/versions.mli[67,2390+29])
+                        Ttyp_any
+                  method case
+                    core_type (ast/versions.mli[68,2421+28]..ast/versions.mli[68,2421+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[68,2421+28]..ast/versions.mli[68,2421+29])
+                        Ttyp_any
+                  method type_declaration
+                    core_type (ast/versions.mli[69,2452+28]..ast/versions.mli[69,2452+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[69,2452+28]..ast/versions.mli[69,2452+29])
+                        Ttyp_any
+                  method type_extension
+                    core_type (ast/versions.mli[70,2483+28]..ast/versions.mli[70,2483+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[70,2483+28]..ast/versions.mli[70,2483+29])
+                        Ttyp_any
+                  method extension_constructor
+                    core_type (ast/versions.mli[71,2514+28]..ast/versions.mli[71,2514+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[71,2514+28]..ast/versions.mli[71,2514+29])
+                        Ttyp_any
+                  method class_expr
+                    core_type (ast/versions.mli[72,2545+28]..ast/versions.mli[72,2545+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[72,2545+28]..ast/versions.mli[72,2545+29])
+                        Ttyp_any
+                  method class_field
+                    core_type (ast/versions.mli[73,2576+28]..ast/versions.mli[73,2576+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[73,2576+28]..ast/versions.mli[73,2576+29])
+                        Ttyp_any
+                  method class_type
+                    core_type (ast/versions.mli[74,2607+28]..ast/versions.mli[74,2607+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[74,2607+28]..ast/versions.mli[74,2607+29])
+                        Ttyp_any
+                  method class_signature
+                    core_type (ast/versions.mli[75,2638+28]..ast/versions.mli[75,2638+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[75,2638+28]..ast/versions.mli[75,2638+29])
+                        Ttyp_any
+                  method class_type_field
+                    core_type (ast/versions.mli[76,2669+28]..ast/versions.mli[76,2669+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[76,2669+28]..ast/versions.mli[76,2669+29])
+                        Ttyp_any
+                  method module_expr
+                    core_type (ast/versions.mli[77,2700+28]..ast/versions.mli[77,2700+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[77,2700+28]..ast/versions.mli[77,2700+29])
+                        Ttyp_any
+                  method module_type
+                    core_type (ast/versions.mli[78,2731+28]..ast/versions.mli[78,2731+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[78,2731+28]..ast/versions.mli[78,2731+29])
+                        Ttyp_any
+                  method signature_item
+                    core_type (ast/versions.mli[79,2762+28]..ast/versions.mli[79,2762+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[79,2762+28]..ast/versions.mli[79,2762+29])
+                        Ttyp_any
+                  method structure_item
+                    core_type (ast/versions.mli[80,2793+28]..ast/versions.mli[80,2793+29])
+                      Ttyp_poly
+                      core_type (ast/versions.mli[80,2793+28]..ast/versions.mli[80,2793+29])
+                        Ttyp_any
+          ]
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ast/versions.mli[59,2130+17]..ast/versions.mli[59,2130+19])
+              Ttyp_var a
+    ]
+  signature_item (ast/versions.mli[87,2964+0]..ast/versions.mli[87,2964+47])
+    Tsig_type Rec
+    [
+      type_declaration witnesses/118 (ast/versions.mli[87,2964+0]..ast/versions.mli[87,2964+47])
+        attribute "ocaml.doc"
+          [
+            structure_item (ast/versions.mli[85,2838+0]..[86,2908+55])
+              Pstr_eval
+              expression (ast/versions.mli[85,2838+0]..[86,2908+55])
+                Pexp_constant PConst_string(" A version of the OCaml frontend packs the ast with type witnesses\n    so that equalities can be recovered dynamically. ",(ast/versions.mli[85,2838+0]..[86,2908+55]),None)
+          ]
+        ptype_params =
+          [
+            core_type (ast/versions.mli[87,2964+5]..ast/versions.mli[87,2964+6])
+              Ttyp_any
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_open
+        ptype_private = Private
+        ptype_manifest =
+          None
+    ]
+  signature_item (ast/versions.mli[91,3107+0]..ast/versions.mli[91,3107+21])
+    Tsig_type Rec
+    [
+      type_declaration migration_info/119 (ast/versions.mli[91,3107+0]..ast/versions.mli[91,3107+21])
+        attribute "ocaml.doc"
+          [
+            structure_item (ast/versions.mli[89,3015+0]..[90,3089+17])
+              Pstr_eval
+              expression (ast/versions.mli[89,3015+0]..[90,3089+17])
+                Pexp_constant PConst_string(" [migration_info] is an opaque type that is used to generate migration\n    functions. ",(ast/versions.mli[89,3015+0]..[90,3089+17]),None)
+          ]
+        ptype_params =
+          [
+            core_type (ast/versions.mli[91,3107+5]..ast/versions.mli[91,3107+6])
+              Ttyp_any
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (ast/versions.mli[95,3226+0]..ast/versions.mli[137,4977+3])
+    Tsig_modtype "OCaml_version/126"
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[93,3130+0]..[94,3207+18])
+            Pstr_eval
+            expression (ast/versions.mli[93,3130+0]..[94,3207+18])
+              Pexp_constant PConst_string(" An OCaml frontend versions an Ast, version number and some witnesses for\n    conversion. ",(ast/versions.mli[93,3130+0]..[94,3207+18]),None)
+        ]
+      module_type (ast/versions.mli[95,3226+28]..ast/versions.mli[137,4977+3])
+        Tmty_signature
+        [
+          signature_item (ast/versions.mli[98,3300+2]..ast/versions.mli[98,3300+18])
+            Tsig_module "Ast/120"
+              attribute "ocaml.doc"
+                [
+                  structure_item (ast/versions.mli[97,3259+2]..[97,3259+40])
+                    Pstr_eval
+                    expression (ast/versions.mli[97,3259+2]..[97,3259+40])
+                      Pexp_constant PConst_string(" Ast definition for this version ",(ast/versions.mli[97,3259+2]..[97,3259+40]),None)
+                ]
+            module_type (ast/versions.mli[98,3300+15]..ast/versions.mli[98,3300+18])
+              Tmty_ident "Ast/116"
+          signature_item (ast/versions.mli[101,3377+2]..ast/versions.mli[101,3377+19])
+            Tsig_value
+            value_description version/121 (ast/versions.mli[101,3377+2]..ast/versions.mli[101,3377+19])
+              core_type (ast/versions.mli[101,3377+16]..ast/versions.mli[101,3377+19])
+                Ttyp_constr "int/1!"
+                []
+              []
+          signature_item (ast/versions.mli[104,3447+2]..ast/versions.mli[104,3447+29])
+            Tsig_value
+            value_description string_version/122 (ast/versions.mli[104,3447+2]..ast/versions.mli[104,3447+29])
+              core_type (ast/versions.mli[104,3447+23]..ast/versions.mli[104,3447+29])
+                Ttyp_constr "string/17!"
+                []
+              []
+          signature_item (ast/versions.mli[107,3552+2]..ast/versions.mli[129,4714+10])
+            Tsig_type Rec
+            [
+              type_declaration types/123 (ast/versions.mli[107,3552+2]..ast/versions.mli[129,4714+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (ast/versions.mli[106,3506+2]..[106,3506+45])
+                      Pstr_eval
+                      expression (ast/versions.mli[106,3506+2]..[106,3506+45])
+                        Pexp_constant PConst_string(" Shortcut for talking about Ast types ",(ast/versions.mli[106,3506+2]..[106,3506+45]),None)
+                  ]
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (ast/versions.mli[107,3552+15]..ast/versions.mli[129,4714+10])
+                      Ttyp_constr "_types/117"
+                      [
+                        core_type (ast/versions.mli[107,3552+15]..ast/versions.mli[129,4714+3])
+                          Ttyp_object Closed
+                            method structure
+                              core_type (ast/versions.mli[109,3646+28]..ast/versions.mli[109,3646+51])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[109,3646+28]..ast/versions.mli[109,3646+51])
+                                  Ttyp_constr "Ast/120.Parsetree.structure"
+                                  []
+                            method signature
+                              core_type (ast/versions.mli[110,3699+28]..ast/versions.mli[110,3699+51])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[110,3699+28]..ast/versions.mli[110,3699+51])
+                                  Ttyp_constr "Ast/120.Parsetree.signature"
+                                  []
+                            method toplevel_phrase
+                              core_type (ast/versions.mli[111,3752+28]..ast/versions.mli[111,3752+57])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[111,3752+28]..ast/versions.mli[111,3752+57])
+                                  Ttyp_constr "Ast/120.Parsetree.toplevel_phrase"
+                                  []
+                            method core_type
+                              core_type (ast/versions.mli[112,3811+28]..ast/versions.mli[112,3811+51])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[112,3811+28]..ast/versions.mli[112,3811+51])
+                                  Ttyp_constr "Ast/120.Parsetree.core_type"
+                                  []
+                            method expression
+                              core_type (ast/versions.mli[113,3864+28]..ast/versions.mli[113,3864+52])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[113,3864+28]..ast/versions.mli[113,3864+52])
+                                  Ttyp_constr "Ast/120.Parsetree.expression"
+                                  []
+                            method pattern
+                              core_type (ast/versions.mli[114,3918+28]..ast/versions.mli[114,3918+49])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[114,3918+28]..ast/versions.mli[114,3918+49])
+                                  Ttyp_constr "Ast/120.Parsetree.pattern"
+                                  []
+                            method case
+                              core_type (ast/versions.mli[115,3969+28]..ast/versions.mli[115,3969+46])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[115,3969+28]..ast/versions.mli[115,3969+46])
+                                  Ttyp_constr "Ast/120.Parsetree.case"
+                                  []
+                            method type_declaration
+                              core_type (ast/versions.mli[116,4017+28]..ast/versions.mli[116,4017+58])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[116,4017+28]..ast/versions.mli[116,4017+58])
+                                  Ttyp_constr "Ast/120.Parsetree.type_declaration"
+                                  []
+                            method type_extension
+                              core_type (ast/versions.mli[117,4077+28]..ast/versions.mli[117,4077+56])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[117,4077+28]..ast/versions.mli[117,4077+56])
+                                  Ttyp_constr "Ast/120.Parsetree.type_extension"
+                                  []
+                            method extension_constructor
+                              core_type (ast/versions.mli[118,4135+28]..ast/versions.mli[118,4135+63])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[118,4135+28]..ast/versions.mli[118,4135+63])
+                                  Ttyp_constr "Ast/120.Parsetree.extension_constructor"
+                                  []
+                            method class_expr
+                              core_type (ast/versions.mli[119,4200+28]..ast/versions.mli[119,4200+52])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[119,4200+28]..ast/versions.mli[119,4200+52])
+                                  Ttyp_constr "Ast/120.Parsetree.class_expr"
+                                  []
+                            method class_field
+                              core_type (ast/versions.mli[120,4254+28]..ast/versions.mli[120,4254+53])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[120,4254+28]..ast/versions.mli[120,4254+53])
+                                  Ttyp_constr "Ast/120.Parsetree.class_field"
+                                  []
+                            method class_type
+                              core_type (ast/versions.mli[121,4309+28]..ast/versions.mli[121,4309+52])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[121,4309+28]..ast/versions.mli[121,4309+52])
+                                  Ttyp_constr "Ast/120.Parsetree.class_type"
+                                  []
+                            method class_signature
+                              core_type (ast/versions.mli[122,4363+28]..ast/versions.mli[122,4363+57])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[122,4363+28]..ast/versions.mli[122,4363+57])
+                                  Ttyp_constr "Ast/120.Parsetree.class_signature"
+                                  []
+                            method class_type_field
+                              core_type (ast/versions.mli[123,4422+28]..ast/versions.mli[123,4422+58])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[123,4422+28]..ast/versions.mli[123,4422+58])
+                                  Ttyp_constr "Ast/120.Parsetree.class_type_field"
+                                  []
+                            method module_expr
+                              core_type (ast/versions.mli[124,4482+28]..ast/versions.mli[124,4482+53])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[124,4482+28]..ast/versions.mli[124,4482+53])
+                                  Ttyp_constr "Ast/120.Parsetree.module_expr"
+                                  []
+                            method module_type
+                              core_type (ast/versions.mli[125,4537+28]..ast/versions.mli[125,4537+53])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[125,4537+28]..ast/versions.mli[125,4537+53])
+                                  Ttyp_constr "Ast/120.Parsetree.module_type"
+                                  []
+                            method signature_item
+                              core_type (ast/versions.mli[126,4592+28]..ast/versions.mli[126,4592+56])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[126,4592+28]..ast/versions.mli[126,4592+56])
+                                  Ttyp_constr "Ast/120.Parsetree.signature_item"
+                                  []
+                            method structure_item
+                              core_type (ast/versions.mli[127,4650+28]..ast/versions.mli[127,4650+56])
+                                Ttyp_poly
+                                core_type (ast/versions.mli[127,4650+28]..ast/versions.mli[127,4650+56])
+                                  Ttyp_constr "Ast/120.Parsetree.structure_item"
+                                  []
+                      ]
+            ]
+          signature_item (ast/versions.mli[133,4817+2]..ast/versions.mli[133,4817+47])
+            Tsig_typext
+            type_extension
+              attribute "ocaml.doc"
+                [
+                  structure_item (ast/versions.mli[131,4726+2]..[132,4798+18])
+                    Pstr_eval
+                    expression (ast/versions.mli[131,4726+2]..[132,4798+18])
+                      Pexp_constant PConst_string(" A construtor for recovering type equalities between two arbitrary\n      versions. ",(ast/versions.mli[131,4726+2]..[132,4798+18]),None)
+                ]
+              ptyext_path = "witnesses/118"
+              ptyext_params =
+                [
+                  core_type (ast/versions.mli[133,4817+7]..ast/versions.mli[133,4817+8])
+                    Ttyp_any
+                ]
+              ptyext_constructors =
+                [
+                  extension_constructor (ast/versions.mli[133,4817+22]..ast/versions.mli[133,4817+47])
+                    pext_name = "Version/124"
+                    pext_kind =
+                      Text_decl
+                        []
+                        Some
+                          core_type (ast/versions.mli[133,4817+32]..ast/versions.mli[133,4817+47])
+                            Ttyp_constr "witnesses/118"
+                            [
+                              core_type (ast/versions.mli[133,4817+32]..ast/versions.mli[133,4817+37])
+                                Ttyp_constr "types/123"
+                                []
+                            ]
+                ]
+              ptyext_private = Public
+          signature_item (ast/versions.mli[136,4933+2]..ast/versions.mli[136,4933+43])
+            Tsig_value
+            value_description migration_info/125 (ast/versions.mli[136,4933+2]..ast/versions.mli[136,4933+43])
+              attribute "ocaml.doc"
+                [
+                  structure_item (ast/versions.mli[135,4866+2]..[135,4866+66])
+                    Pstr_eval
+                    expression (ast/versions.mli[135,4866+2]..[135,4866+66])
+                      Pexp_constant PConst_string(" Information used to derive migration functions, see below ",(ast/versions.mli[135,4866+2]..[135,4866+66]),None)
+                ]
+              core_type (ast/versions.mli[136,4933+23]..ast/versions.mli[136,4933+43])
+                Ttyp_constr "migration_info/119"
+                [
+                  core_type (ast/versions.mli[136,4933+23]..ast/versions.mli[136,4933+28])
+                    Ttyp_constr "types/123"
+                    []
+                ]
+              []
+        ]
+  signature_item (ast/versions.mli[139,4982+0]..ast/versions.mli[139,4982+38])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (ast/versions.mli[139,4982+0]..[139,4982+38])
+        Pstr_eval
+        expression (ast/versions.mli[139,4982+0]..[139,4982+38])
+          Pexp_constant PConst_string(" {1 Concrete frontend instances} ",(ast/versions.mli[139,4982+0]..[139,4982+38]),None)
+    ]
+  signature_item (ast/versions.mli[145,5148+0]..ast/versions.mli[145,5148+65])
+    Tsig_module "OCaml_402/380"
+    module_type (ast/versions.mli[145,5148+19]..ast/versions.mli[145,5148+65])
+      Tmty_with
+      module_type (ast/versions.mli[145,5148+19]..ast/versions.mli[145,5148+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_402"
+      ]
+  signature_item (ast/versions.mli[146,5214+0]..ast/versions.mli[146,5214+65])
+    Tsig_module "OCaml_403/539"
+    module_type (ast/versions.mli[146,5214+19]..ast/versions.mli[146,5214+65])
+      Tmty_with
+      module_type (ast/versions.mli[146,5214+19]..ast/versions.mli[146,5214+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_403"
+      ]
+  signature_item (ast/versions.mli[147,5280+0]..ast/versions.mli[147,5280+65])
+    Tsig_module "OCaml_404/698"
+    module_type (ast/versions.mli[147,5280+19]..ast/versions.mli[147,5280+65])
+      Tmty_with
+      module_type (ast/versions.mli[147,5280+19]..ast/versions.mli[147,5280+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_404"
+      ]
+  signature_item (ast/versions.mli[148,5346+0]..ast/versions.mli[148,5346+65])
+    Tsig_module "OCaml_405/857"
+    module_type (ast/versions.mli[148,5346+19]..ast/versions.mli[148,5346+65])
+      Tmty_with
+      module_type (ast/versions.mli[148,5346+19]..ast/versions.mli[148,5346+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_405"
+      ]
+  signature_item (ast/versions.mli[149,5412+0]..ast/versions.mli[149,5412+65])
+    Tsig_module "OCaml_406/1018"
+    module_type (ast/versions.mli[149,5412+19]..ast/versions.mli[149,5412+65])
+      Tmty_with
+      module_type (ast/versions.mli[149,5412+19]..ast/versions.mli[149,5412+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_406"
+      ]
+  signature_item (ast/versions.mli[150,5478+0]..ast/versions.mli[150,5478+65])
+    Tsig_module "OCaml_407/1179"
+    module_type (ast/versions.mli[150,5478+19]..ast/versions.mli[150,5478+65])
+      Tmty_with
+      module_type (ast/versions.mli[150,5478+19]..ast/versions.mli[150,5478+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_407"
+      ]
+  signature_item (ast/versions.mli[151,5544+0]..ast/versions.mli[151,5544+65])
+    Tsig_module "OCaml_408/1368"
+    module_type (ast/versions.mli[151,5544+19]..ast/versions.mli[151,5544+65])
+      Tmty_with
+      module_type (ast/versions.mli[151,5544+19]..ast/versions.mli[151,5544+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_408"
+      ]
+  signature_item (ast/versions.mli[152,5610+0]..ast/versions.mli[152,5610+65])
+    Tsig_module "OCaml_409/1557"
+    module_type (ast/versions.mli[152,5610+19]..ast/versions.mli[152,5610+65])
+      Tmty_with
+      module_type (ast/versions.mli[152,5610+19]..ast/versions.mli[152,5610+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_409"
+      ]
+  signature_item (ast/versions.mli[153,5676+0]..ast/versions.mli[153,5676+65])
+    Tsig_module "OCaml_410/1742"
+    module_type (ast/versions.mli[153,5676+19]..ast/versions.mli[153,5676+65])
+      Tmty_with
+      module_type (ast/versions.mli[153,5676+19]..ast/versions.mli[153,5676+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_410"
+      ]
+  signature_item (ast/versions.mli[154,5742+0]..ast/versions.mli[154,5742+65])
+    Tsig_module "OCaml_411/1927"
+    module_type (ast/versions.mli[154,5742+19]..ast/versions.mli[154,5742+65])
+      Tmty_with
+      module_type (ast/versions.mli[154,5742+19]..ast/versions.mli[154,5742+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_411"
+      ]
+  signature_item (ast/versions.mli[155,5808+0]..ast/versions.mli[155,5808+65])
+    Tsig_module "OCaml_412/2114"
+    module_type (ast/versions.mli[155,5808+19]..ast/versions.mli[155,5808+65])
+      Tmty_with
+      module_type (ast/versions.mli[155,5808+19]..ast/versions.mli[155,5808+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_412"
+      ]
+  signature_item (ast/versions.mli[156,5874+0]..ast/versions.mli[156,5874+65])
+    Tsig_module "OCaml_413/2301"
+    module_type (ast/versions.mli[156,5874+19]..ast/versions.mli[156,5874+65])
+      Tmty_with
+      module_type (ast/versions.mli[156,5874+19]..ast/versions.mli[156,5874+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_413"
+      ]
+  signature_item (ast/versions.mli[157,5940+0]..ast/versions.mli[157,5940+65])
+    Tsig_module "OCaml_414/2488"
+    module_type (ast/versions.mli[157,5940+19]..ast/versions.mli[157,5940+65])
+      Tmty_with
+      module_type (ast/versions.mli[157,5940+19]..ast/versions.mli[157,5940+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_414"
+      ]
+  signature_item (ast/versions.mli[158,6006+0]..ast/versions.mli[158,6006+65])
+    Tsig_module "OCaml_500/2675"
+    module_type (ast/versions.mli[158,6006+19]..ast/versions.mli[158,6006+65])
+      Tmty_with
+      module_type (ast/versions.mli[158,6006+19]..ast/versions.mli[158,6006+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_500"
+      ]
+  signature_item (ast/versions.mli[159,6072+0]..ast/versions.mli[159,6072+65])
+    Tsig_module "OCaml_501/2864"
+    module_type (ast/versions.mli[159,6072+19]..ast/versions.mli[159,6072+65])
+      Tmty_with
+      module_type (ast/versions.mli[159,6072+19]..ast/versions.mli[159,6072+32])
+        Tmty_ident "OCaml_version/126"
+      [
+        "Ast/120"
+          Twith_module "Astlib!.Ast_501"
+      ]
+  signature_item (ast/versions.mli[163,6192+0]..ast/versions.mli[163,6192+32])
+    Tsig_module "OCaml_current/2865"
+    module_type (ast/versions.mli[163,6192+23]..ast/versions.mli[163,6192+32])
+      Tmty_alias "OCaml_412/2114"
+  signature_item (ast/versions.mli[166,6277+0]..ast/versions.mli[166,6277+46])
+    Tsig_value
+    value_description all_versions/2866 (ast/versions.mli[166,6277+0]..ast/versions.mli[166,6277+46])
+      core_type (ast/versions.mli[166,6277+19]..ast/versions.mli[166,6277+46])
+        Ttyp_constr "list/11!"
+        [
+          core_type (ast/versions.mli[166,6277+19]..ast/versions.mli[166,6277+41])
+            Ttyp_package "OCaml_version/126"
+            []
+        ]
+      []
+  signature_item (ast/versions.mli[168,6325+0]..ast/versions.mli[168,6325+34])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (ast/versions.mli[168,6325+0]..[168,6325+34])
+        Pstr_eval
+        expression (ast/versions.mli[168,6325+0]..[168,6325+34])
+          Pexp_constant PConst_string(" {1 Convenience definitions} ",(ast/versions.mli[168,6325+0]..[168,6325+34]),None)
+    ]
+  signature_item (ast/versions.mli[171,6391+0]..ast/versions.mli[195,8592+3])
+    Tsig_module "Convert/2888"
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[170,6361+0]..[170,6361+29])
+            Pstr_eval
+            expression (ast/versions.mli[170,6361+0]..[170,6361+29])
+              Pexp_constant PConst_string(" Module level migration ",(ast/versions.mli[170,6361+0]..[170,6361+29]),None)
+        ]
+    module_type (ast/versions.mli[171,6391+15]..ast/versions.mli[195,8592+3])
+      Tmty_functor "A/2867"
+      module_type (ast/versions.mli[171,6391+20]..ast/versions.mli[171,6391+33])
+        Tmty_ident "OCaml_version/126"
+      module_type (ast/versions.mli[171,6391+35]..ast/versions.mli[195,8592+3])
+        Tmty_functor "B/2868"
+        module_type (ast/versions.mli[171,6391+40]..ast/versions.mli[171,6391+53])
+          Tmty_ident "OCaml_version/126"
+        module_type (ast/versions.mli[171,6391+57]..ast/versions.mli[195,8592+3])
+          Tmty_signature
+          [
+            signature_item (ast/versions.mli[175,6593+2]..ast/versions.mli[175,6593+101])
+              Tsig_value
+              value_description copy_structure/2869 (ast/versions.mli[175,6593+2]..ast/versions.mli[175,6593+101])
+                core_type (ast/versions.mli[175,6593+35]..ast/versions.mli[175,6593+101])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[175,6593+35]..ast/versions.mli[175,6593+60])
+                    Ttyp_constr "A/2867.Ast.Parsetree.structure"
+                    []
+                  core_type (ast/versions.mli[175,6593+76]..ast/versions.mli[175,6593+101])
+                    Ttyp_constr "B/2868.Ast.Parsetree.structure"
+                    []
+                []
+            signature_item (ast/versions.mli[176,6695+2]..ast/versions.mli[176,6695+101])
+              Tsig_value
+              value_description copy_signature/2870 (ast/versions.mli[176,6695+2]..ast/versions.mli[176,6695+101])
+                core_type (ast/versions.mli[176,6695+35]..ast/versions.mli[176,6695+101])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[176,6695+35]..ast/versions.mli[176,6695+60])
+                    Ttyp_constr "A/2867.Ast.Parsetree.signature"
+                    []
+                  core_type (ast/versions.mli[176,6695+76]..ast/versions.mli[176,6695+101])
+                    Ttyp_constr "B/2868.Ast.Parsetree.signature"
+                    []
+                []
+            signature_item (ast/versions.mli[177,6797+2]..ast/versions.mli[177,6797+107])
+              Tsig_value
+              value_description copy_toplevel_phrase/2871 (ast/versions.mli[177,6797+2]..ast/versions.mli[177,6797+107])
+                core_type (ast/versions.mli[177,6797+35]..ast/versions.mli[177,6797+107])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[177,6797+35]..ast/versions.mli[177,6797+66])
+                    Ttyp_constr "A/2867.Ast.Parsetree.toplevel_phrase"
+                    []
+                  core_type (ast/versions.mli[177,6797+76]..ast/versions.mli[177,6797+107])
+                    Ttyp_constr "B/2868.Ast.Parsetree.toplevel_phrase"
+                    []
+                []
+            signature_item (ast/versions.mli[178,6905+2]..ast/versions.mli[178,6905+101])
+              Tsig_value
+              value_description copy_core_type/2872 (ast/versions.mli[178,6905+2]..ast/versions.mli[178,6905+101])
+                core_type (ast/versions.mli[178,6905+35]..ast/versions.mli[178,6905+101])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[178,6905+35]..ast/versions.mli[178,6905+60])
+                    Ttyp_constr "A/2867.Ast.Parsetree.core_type"
+                    []
+                  core_type (ast/versions.mli[178,6905+76]..ast/versions.mli[178,6905+101])
+                    Ttyp_constr "B/2868.Ast.Parsetree.core_type"
+                    []
+                []
+            signature_item (ast/versions.mli[179,7007+2]..ast/versions.mli[179,7007+102])
+              Tsig_value
+              value_description copy_expression/2873 (ast/versions.mli[179,7007+2]..ast/versions.mli[179,7007+102])
+                core_type (ast/versions.mli[179,7007+35]..ast/versions.mli[179,7007+102])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[179,7007+35]..ast/versions.mli[179,7007+61])
+                    Ttyp_constr "A/2867.Ast.Parsetree.expression"
+                    []
+                  core_type (ast/versions.mli[179,7007+76]..ast/versions.mli[179,7007+102])
+                    Ttyp_constr "B/2868.Ast.Parsetree.expression"
+                    []
+                []
+            signature_item (ast/versions.mli[180,7110+2]..ast/versions.mli[180,7110+99])
+              Tsig_value
+              value_description copy_pattern/2874 (ast/versions.mli[180,7110+2]..ast/versions.mli[180,7110+99])
+                core_type (ast/versions.mli[180,7110+35]..ast/versions.mli[180,7110+99])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[180,7110+35]..ast/versions.mli[180,7110+58])
+                    Ttyp_constr "A/2867.Ast.Parsetree.pattern"
+                    []
+                  core_type (ast/versions.mli[180,7110+76]..ast/versions.mli[180,7110+99])
+                    Ttyp_constr "B/2868.Ast.Parsetree.pattern"
+                    []
+                []
+            signature_item (ast/versions.mli[181,7210+2]..ast/versions.mli[181,7210+96])
+              Tsig_value
+              value_description copy_case/2875 (ast/versions.mli[181,7210+2]..ast/versions.mli[181,7210+96])
+                core_type (ast/versions.mli[181,7210+35]..ast/versions.mli[181,7210+96])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[181,7210+35]..ast/versions.mli[181,7210+55])
+                    Ttyp_constr "A/2867.Ast.Parsetree.case"
+                    []
+                  core_type (ast/versions.mli[181,7210+76]..ast/versions.mli[181,7210+96])
+                    Ttyp_constr "B/2868.Ast.Parsetree.case"
+                    []
+                []
+            signature_item (ast/versions.mli[182,7307+2]..ast/versions.mli[182,7307+108])
+              Tsig_value
+              value_description copy_type_declaration/2876 (ast/versions.mli[182,7307+2]..ast/versions.mli[182,7307+108])
+                core_type (ast/versions.mli[182,7307+35]..ast/versions.mli[182,7307+108])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[182,7307+35]..ast/versions.mli[182,7307+67])
+                    Ttyp_constr "A/2867.Ast.Parsetree.type_declaration"
+                    []
+                  core_type (ast/versions.mli[182,7307+76]..ast/versions.mli[182,7307+108])
+                    Ttyp_constr "B/2868.Ast.Parsetree.type_declaration"
+                    []
+                []
+            signature_item (ast/versions.mli[183,7416+2]..ast/versions.mli[183,7416+106])
+              Tsig_value
+              value_description copy_type_extension/2877 (ast/versions.mli[183,7416+2]..ast/versions.mli[183,7416+106])
+                core_type (ast/versions.mli[183,7416+35]..ast/versions.mli[183,7416+106])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[183,7416+35]..ast/versions.mli[183,7416+65])
+                    Ttyp_constr "A/2867.Ast.Parsetree.type_extension"
+                    []
+                  core_type (ast/versions.mli[183,7416+76]..ast/versions.mli[183,7416+106])
+                    Ttyp_constr "B/2868.Ast.Parsetree.type_extension"
+                    []
+                []
+            signature_item (ast/versions.mli[184,7523+2]..ast/versions.mli[184,7523+113])
+              Tsig_value
+              value_description copy_extension_constructor/2878 (ast/versions.mli[184,7523+2]..ast/versions.mli[184,7523+113])
+                core_type (ast/versions.mli[184,7523+35]..ast/versions.mli[184,7523+113])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[184,7523+35]..ast/versions.mli[184,7523+72])
+                    Ttyp_constr "A/2867.Ast.Parsetree.extension_constructor"
+                    []
+                  core_type (ast/versions.mli[184,7523+76]..ast/versions.mli[184,7523+113])
+                    Ttyp_constr "B/2868.Ast.Parsetree.extension_constructor"
+                    []
+                []
+            signature_item (ast/versions.mli[185,7637+2]..ast/versions.mli[185,7637+102])
+              Tsig_value
+              value_description copy_class_expr/2879 (ast/versions.mli[185,7637+2]..ast/versions.mli[185,7637+102])
+                core_type (ast/versions.mli[185,7637+35]..ast/versions.mli[185,7637+102])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[185,7637+35]..ast/versions.mli[185,7637+61])
+                    Ttyp_constr "A/2867.Ast.Parsetree.class_expr"
+                    []
+                  core_type (ast/versions.mli[185,7637+76]..ast/versions.mli[185,7637+102])
+                    Ttyp_constr "B/2868.Ast.Parsetree.class_expr"
+                    []
+                []
+            signature_item (ast/versions.mli[186,7740+2]..ast/versions.mli[186,7740+103])
+              Tsig_value
+              value_description copy_class_field/2880 (ast/versions.mli[186,7740+2]..ast/versions.mli[186,7740+103])
+                core_type (ast/versions.mli[186,7740+35]..ast/versions.mli[186,7740+103])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[186,7740+35]..ast/versions.mli[186,7740+62])
+                    Ttyp_constr "A/2867.Ast.Parsetree.class_field"
+                    []
+                  core_type (ast/versions.mli[186,7740+76]..ast/versions.mli[186,7740+103])
+                    Ttyp_constr "B/2868.Ast.Parsetree.class_field"
+                    []
+                []
+            signature_item (ast/versions.mli[187,7844+2]..ast/versions.mli[187,7844+102])
+              Tsig_value
+              value_description copy_class_type/2881 (ast/versions.mli[187,7844+2]..ast/versions.mli[187,7844+102])
+                core_type (ast/versions.mli[187,7844+35]..ast/versions.mli[187,7844+102])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[187,7844+35]..ast/versions.mli[187,7844+61])
+                    Ttyp_constr "A/2867.Ast.Parsetree.class_type"
+                    []
+                  core_type (ast/versions.mli[187,7844+76]..ast/versions.mli[187,7844+102])
+                    Ttyp_constr "B/2868.Ast.Parsetree.class_type"
+                    []
+                []
+            signature_item (ast/versions.mli[188,7947+2]..ast/versions.mli[188,7947+107])
+              Tsig_value
+              value_description copy_class_signature/2882 (ast/versions.mli[188,7947+2]..ast/versions.mli[188,7947+107])
+                core_type (ast/versions.mli[188,7947+35]..ast/versions.mli[188,7947+107])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[188,7947+35]..ast/versions.mli[188,7947+66])
+                    Ttyp_constr "A/2867.Ast.Parsetree.class_signature"
+                    []
+                  core_type (ast/versions.mli[188,7947+76]..ast/versions.mli[188,7947+107])
+                    Ttyp_constr "B/2868.Ast.Parsetree.class_signature"
+                    []
+                []
+            signature_item (ast/versions.mli[189,8055+2]..ast/versions.mli[189,8055+108])
+              Tsig_value
+              value_description copy_class_type_field/2883 (ast/versions.mli[189,8055+2]..ast/versions.mli[189,8055+108])
+                core_type (ast/versions.mli[189,8055+35]..ast/versions.mli[189,8055+108])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[189,8055+35]..ast/versions.mli[189,8055+67])
+                    Ttyp_constr "A/2867.Ast.Parsetree.class_type_field"
+                    []
+                  core_type (ast/versions.mli[189,8055+76]..ast/versions.mli[189,8055+108])
+                    Ttyp_constr "B/2868.Ast.Parsetree.class_type_field"
+                    []
+                []
+            signature_item (ast/versions.mli[190,8164+2]..ast/versions.mli[190,8164+103])
+              Tsig_value
+              value_description copy_module_expr/2884 (ast/versions.mli[190,8164+2]..ast/versions.mli[190,8164+103])
+                core_type (ast/versions.mli[190,8164+35]..ast/versions.mli[190,8164+103])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[190,8164+35]..ast/versions.mli[190,8164+62])
+                    Ttyp_constr "A/2867.Ast.Parsetree.module_expr"
+                    []
+                  core_type (ast/versions.mli[190,8164+76]..ast/versions.mli[190,8164+103])
+                    Ttyp_constr "B/2868.Ast.Parsetree.module_expr"
+                    []
+                []
+            signature_item (ast/versions.mli[191,8268+2]..ast/versions.mli[191,8268+103])
+              Tsig_value
+              value_description copy_module_type/2885 (ast/versions.mli[191,8268+2]..ast/versions.mli[191,8268+103])
+                core_type (ast/versions.mli[191,8268+35]..ast/versions.mli[191,8268+103])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[191,8268+35]..ast/versions.mli[191,8268+62])
+                    Ttyp_constr "A/2867.Ast.Parsetree.module_type"
+                    []
+                  core_type (ast/versions.mli[191,8268+76]..ast/versions.mli[191,8268+103])
+                    Ttyp_constr "B/2868.Ast.Parsetree.module_type"
+                    []
+                []
+            signature_item (ast/versions.mli[192,8372+2]..ast/versions.mli[192,8372+106])
+              Tsig_value
+              value_description copy_signature_item/2886 (ast/versions.mli[192,8372+2]..ast/versions.mli[192,8372+106])
+                core_type (ast/versions.mli[192,8372+35]..ast/versions.mli[192,8372+106])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[192,8372+35]..ast/versions.mli[192,8372+65])
+                    Ttyp_constr "A/2867.Ast.Parsetree.signature_item"
+                    []
+                  core_type (ast/versions.mli[192,8372+76]..ast/versions.mli[192,8372+106])
+                    Ttyp_constr "B/2868.Ast.Parsetree.signature_item"
+                    []
+                []
+            signature_item (ast/versions.mli[193,8479+2]..ast/versions.mli[193,8479+106])
+              Tsig_value
+              value_description copy_structure_item/2887 (ast/versions.mli[193,8479+2]..ast/versions.mli[193,8479+106])
+                core_type (ast/versions.mli[193,8479+35]..ast/versions.mli[193,8479+106])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (ast/versions.mli[193,8479+35]..ast/versions.mli[193,8479+65])
+                    Ttyp_constr "A/2867.Ast.Parsetree.structure_item"
+                    []
+                  core_type (ast/versions.mli[193,8479+76]..ast/versions.mli[193,8479+106])
+                    Ttyp_constr "B/2868.Ast.Parsetree.structure_item"
+                    []
+                []
+          ]
+  signature_item (ast/versions.mli[198,8670+0]..ast/versions.mli[202,8813+3])
+    Tsig_module "Find_version/2894"
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/versions.mli[197,8597+0]..[197,8597+72])
+            Pstr_eval
+            expression (ast/versions.mli[197,8597+0]..[197,8597+72])
+              Pexp_constant PConst_string(" Helper to find the frontend corresponding to a given magic number ",(ast/versions.mli[197,8597+0]..[197,8597+72]),None)
+        ]
+    module_type (ast/versions.mli[198,8670+22]..ast/versions.mli[202,8813+3])
+      Tmty_signature
+      [
+        signature_item (ast/versions.mli[199,8696+2]..ast/versions.mli[199,8696+84])
+          Tsig_type Rec
+          [
+            type_declaration t/2889 (ast/versions.mli[199,8696+2]..ast/versions.mli[199,8696+84])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_variant
+                  [
+                    (ast/versions.mli[199,8696+11]..ast/versions.mli[199,8696+41])
+                      Impl/2890
+                      [
+                        core_type (ast/versions.mli[199,8696+19]..ast/versions.mli[199,8696+41])
+                          Ttyp_package "OCaml_version/126"
+                          []
+                      ]
+                      None
+                    (ast/versions.mli[199,8696+42]..ast/versions.mli[199,8696+74])
+                      Intf/2891
+                      [
+                        core_type (ast/versions.mli[199,8696+52]..ast/versions.mli[199,8696+74])
+                          Ttyp_package "OCaml_version/126"
+                          []
+                      ]
+                      None
+                    (ast/versions.mli[199,8696+75]..ast/versions.mli[199,8696+84])
+                      Unknown/2892
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (ast/versions.mli[201,8782+2]..ast/versions.mli[201,8782+30])
+          Tsig_value
+          value_description from_magic/2893 (ast/versions.mli[201,8782+2]..ast/versions.mli[201,8782+30])
+            core_type (ast/versions.mli[201,8782+19]..ast/versions.mli[201,8782+30])
+              Ttyp_arrow
+              Nolabel
+              core_type (ast/versions.mli[201,8782+19]..ast/versions.mli[201,8782+25])
+                Ttyp_constr "string/17!"
+                []
+              core_type (ast/versions.mli[201,8782+29]..ast/versions.mli[201,8782+30])
+                Ttyp_constr "t/2889"
+                []
+            []
+      ]
+]
+

@@ -1,0 +1,6 @@
+0.032s 40.6MB 12.8MB 12.8MB src/ast_builder.mli
+  0.001s 2.90MB 1.53MB 1.53MB parsing
+    0.001s 2.90MB 1.53MB 1.53MB parser
+  0.027s 35.7MB 11.0MB 12.5MB typing
+  0.004s 2.00MB 0.34MB 12.8MB other
+0.004s ------ ------ ------ other

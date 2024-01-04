@@ -1,0 +1,1421 @@
+[
+  structure_item (ast/pp/pp_rewrite.mll[2,30+0]..[2,30+11])
+    Pstr_open Fresh
+    module_expr (ast/pp/pp_rewrite.mll[2,30+5]..[2,30+11])
+      Pmod_ident "Printf" (ast/pp/pp_rewrite.mll[2,30+5]..[2,30+11])
+  structure_item (ast/pp/pp_rewrite.mll[4,43+0]..[7,198+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/pp/pp_rewrite.mll[4,43+4]..[4,43+23])
+          Ppat_var "print_ocaml_version" (ast/pp/pp_rewrite.mll[4,43+4]..[4,43+23])
+        expression (ast/pp/pp_rewrite.mll[4,43+24]..[7,198+32]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/pp/pp_rewrite.mll[4,43+24]..[4,43+31])
+            Ppat_var "version" (ast/pp/pp_rewrite.mll[4,43+24]..[4,43+31])
+          expression (ast/pp/pp_rewrite.mll[5,77+2]..[7,198+32])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (ast/pp/pp_rewrite.mll[5,77+6]..[5,77+14])
+                  Ppat_var "patt_len" (ast/pp/pp_rewrite.mll[5,77+6]..[5,77+14])
+                expression (ast/pp/pp_rewrite.mll[5,77+17]..[5,77+46])
+                  Pexp_apply
+                  expression (ast/pp/pp_rewrite.mll[5,77+17]..[5,77+30])
+                    Pexp_ident "String.length" (ast/pp/pp_rewrite.mll[5,77+17]..[5,77+30])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp_rewrite.mll[5,77+31]..[5,77+46])
+                        Pexp_constant PConst_string("OCAML_VERSION",(ast/pp/pp_rewrite.mll[5,77+32]..[5,77+45]),None)
+                  ]
+            ]
+            expression (ast/pp/pp_rewrite.mll[7,198+2]..[7,198+32])
+              Pexp_apply
+              expression (ast/pp/pp_rewrite.mll[7,198+2]..[7,198+8])
+                Pexp_ident "printf" (ast/pp/pp_rewrite.mll[7,198+2]..[7,198+8])
+              [
+                <arg>
+                Nolabel
+                  expression (ast/pp/pp_rewrite.mll[7,198+9]..[7,198+15])
+                    Pexp_constant PConst_string("%-*s",(ast/pp/pp_rewrite.mll[7,198+10]..[7,198+14]),None)
+                <arg>
+                Nolabel
+                  expression (ast/pp/pp_rewrite.mll[7,198+16]..[7,198+24])
+                    Pexp_ident "patt_len" (ast/pp/pp_rewrite.mll[7,198+16]..[7,198+24])
+                <arg>
+                Nolabel
+                  expression (ast/pp/pp_rewrite.mll[7,198+25]..[7,198+32])
+                    Pexp_ident "version" (ast/pp/pp_rewrite.mll[7,198+25]..[7,198+32])
+              ]
+    ]
+  structure_item (ast/pp/pp_rewrite.ml[11,260+0]..[186,11469+1])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (ast/pp/pp_rewrite.ml[11,260+4]..[11,260+22])
+          Ppat_var "__ocaml_lex_tables" (ast/pp/pp_rewrite.ml[11,260+4]..[11,260+22])
+        expression (ast/pp/pp_rewrite.ml[11,260+25]..[186,11469+1])
+          Pexp_record
+          [
+            "Lexing.lex_base" (ast/pp/pp_rewrite.ml[12,287+2]..[12,287+17])
+              expression (ast/pp/pp_rewrite.ml[13,307+3]..[17,587+13])
+                Pexp_constant PConst_string("\000\000\252\255\253\255\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\255\255\001\000\000\000\001\000\001\000\000\000\002\000\005\000\002\000\003\000\002\000\003\000\000\000\001\000\002\000\000\000\254\255",(ast/pp/pp_rewrite.ml[13,307+4]..[17,587+12]),None)
+            "Lexing.lex_backtrk" (ast/pp/pp_rewrite.ml[18,602+2]..[18,602+20])
+              expression (ast/pp/pp_rewrite.ml[19,625+3]..[23,905+13])
+                Pexp_constant PConst_string("\255\255\255\255\255\255\002\000\002\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255",(ast/pp/pp_rewrite.ml[19,625+4]..[23,905+12]),None)
+            "Lexing.lex_default" (ast/pp/pp_rewrite.ml[24,920+2]..[24,920+20])
+              expression (ast/pp/pp_rewrite.ml[25,943+3]..[29,1223+13])
+                Pexp_constant PConst_string("\002\000\000\000\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\030\000\255\255\000\000",(ast/pp/pp_rewrite.ml[25,943+4]..[29,1223+12]),None)
+            "Lexing.lex_trans" (ast/pp/pp_rewrite.ml[30,1238+2]..[30,1238+18])
+              expression (ast/pp/pp_rewrite.ml[31,1259+3]..[63,3499+53])
+                Pexp_constant PConst_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\029\000\030\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000 \000\017\000\255\255\031\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\006\000\021\000\005\000\026\000\011\000\019\000\025\000\000\000\014\000\018\000\000\000\b\000\007\000\016\000\004\000\015\000\024\000\012\000\r\000\022\000\027\000\n\000\028\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\t\000\020\000\023\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\255\255\255\255\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[31,1259+4]..[63,3499+52]),None)
+            "Lexing.lex_check" (ast/pp/pp_rewrite.ml[64,3554+2]..[64,3554+18])
+              expression (ast/pp/pp_rewrite.ml[65,3575+3]..[97,5815+53])
+                Pexp_constant PConst_string("\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\000\000\031\000\003\000\029\000\030\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\005\000\020\000\004\000\025\000\n\000\018\000\024\000\255\255\r\000\017\000\255\255\007\000\006\000\015\000\000\000\014\000\023\000\011\000\012\000\021\000\026\000\t\000\027\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\b\000\019\000\022\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\029\000\030\000\255\255\255\255\255\255",(ast/pp/pp_rewrite.ml[65,3575+4]..[97,5815+52]),None)
+            "Lexing.lex_base_code" (ast/pp/pp_rewrite.ml[98,5870+2]..[98,5870+22])
+              expression (ast/pp/pp_rewrite.ml[99,5895+3]..[103,6175+13])
+                Pexp_constant PConst_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\004\000",(ast/pp/pp_rewrite.ml[99,5895+4]..[103,6175+12]),None)
+            "Lexing.lex_backtrk_code" (ast/pp/pp_rewrite.ml[104,6190+2]..[104,6190+25])
+              expression (ast/pp/pp_rewrite.ml[105,6218+3]..[109,6498+13])
+                Pexp_constant PConst_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[105,6218+4]..[109,6498+12]),None)
+            "Lexing.lex_default_code" (ast/pp/pp_rewrite.ml[110,6513+2]..[110,6513+25])
+              expression (ast/pp/pp_rewrite.ml[111,6541+3]..[115,6821+13])
+                Pexp_constant PConst_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[111,6541+4]..[115,6821+12]),None)
+            "Lexing.lex_trans_code" (ast/pp/pp_rewrite.ml[116,6836+2]..[116,6836+23])
+              expression (ast/pp/pp_rewrite.ml[117,6862+3]..[149,9102+21])
+                Pexp_constant PConst_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[117,6862+4]..[149,9102+20]),None)
+            "Lexing.lex_check_code" (ast/pp/pp_rewrite.ml[150,9125+2]..[150,9125+23])
+              expression (ast/pp/pp_rewrite.ml[151,9151+3]..[183,11391+21])
+                Pexp_constant PConst_string("\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000",(ast/pp/pp_rewrite.ml[151,9151+4]..[183,11391+20]),None)
+            "Lexing.lex_code" (ast/pp/pp_rewrite.ml[184,11414+2]..[184,11414+17])
+              expression (ast/pp/pp_rewrite.ml[185,11434+3]..[185,11434+33])
+                Pexp_constant PConst_string("\255\001\255\255\000\001\255",(ast/pp/pp_rewrite.ml[185,11434+4]..[185,11434+32]),None)
+          ]
+          None
+    ]
+  structure_item (ast/pp/pp_rewrite.ml[188,11472+0]..[238,13042+68])
+    Pstr_value Rec
+    [
+      <def>
+        pattern (ast/pp/pp_rewrite.ml[188,11472+8]..[188,11472+15])
+          Ppat_var "rewrite" (ast/pp/pp_rewrite.ml[188,11472+8]..[188,11472+15])
+        expression (ast/pp/pp_rewrite.ml[188,11472+16]..[189,11511+92]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/pp/pp_rewrite.ml[188,11472+16]..[188,11472+29])
+            Ppat_var "ocaml_version" (ast/pp/pp_rewrite.ml[188,11472+16]..[188,11472+29])
+          expression (ast/pp/pp_rewrite.ml[188,11472+30]..[189,11511+92]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ast/pp/pp_rewrite.ml[188,11472+30]..[188,11472+36])
+              Ppat_var "lexbuf" (ast/pp/pp_rewrite.ml[188,11472+30]..[188,11472+36])
+            expression (ast/pp/pp_rewrite.ml[189,11511+2]..[189,11511+92])
+              Pexp_sequence
+              expression (ast/pp/pp_rewrite.ml[189,11511+2]..[189,11511+44])
+                Pexp_setfield
+                expression (ast/pp/pp_rewrite.ml[189,11511+2]..[189,11511+8])
+                  Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[189,11511+2]..[189,11511+8])
+                "Lexing.lex_mem" (ast/pp/pp_rewrite.ml[189,11511+9]..[189,11511+23])
+                expression (ast/pp/pp_rewrite.ml[189,11511+27]..[189,11511+44])
+                  Pexp_apply
+                  expression (ast/pp/pp_rewrite.ml[189,11511+27]..[189,11511+37])
+                    Pexp_ident "Array.make" (ast/pp/pp_rewrite.ml[189,11511+27]..[189,11511+37])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp_rewrite.ml[189,11511+38]..[189,11511+39])
+                        Pexp_constant PConst_int (2,None)
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp_rewrite.ml[189,11511+40]..[189,11511+44])
+                        Pexp_constant PConst_int (-1,None)
+                  ]
+              expression (ast/pp/pp_rewrite.ml[189,11511+46]..[189,11511+92])
+                Pexp_apply
+                expression (ast/pp/pp_rewrite.ml[189,11511+46]..[189,11511+69])
+                  Pexp_ident "__ocaml_lex_rewrite_rec" (ast/pp/pp_rewrite.ml[189,11511+46]..[189,11511+69])
+                [
+                  <arg>
+                  Nolabel
+                    expression (ast/pp/pp_rewrite.ml[189,11511+70]..[189,11511+83])
+                      Pexp_ident "ocaml_version" (ast/pp/pp_rewrite.ml[189,11511+70]..[189,11511+83])
+                  <arg>
+                  Nolabel
+                    expression (ast/pp/pp_rewrite.ml[189,11511+84]..[189,11511+90])
+                      Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[189,11511+84]..[189,11511+90])
+                  <arg>
+                  Nolabel
+                    expression (ast/pp/pp_rewrite.ml[189,11511+91]..[189,11511+92])
+                      Pexp_constant PConst_int (0,None)
+                ]
+      <def>
+        pattern (ast/pp/pp_rewrite.ml[190,11604+4]..[190,11604+27])
+          Ppat_var "__ocaml_lex_rewrite_rec" (ast/pp/pp_rewrite.ml[190,11604+4]..[190,11604+27])
+        expression (ast/pp/pp_rewrite.ml[190,11604+28]..[238,13042+68]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (ast/pp/pp_rewrite.ml[190,11604+28]..[190,11604+41])
+            Ppat_var "ocaml_version" (ast/pp/pp_rewrite.ml[190,11604+28]..[190,11604+41])
+          expression (ast/pp/pp_rewrite.ml[190,11604+42]..[238,13042+68]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (ast/pp/pp_rewrite.ml[190,11604+42]..[190,11604+48])
+              Ppat_var "lexbuf" (ast/pp/pp_rewrite.ml[190,11604+42]..[190,11604+48])
+            expression (ast/pp/pp_rewrite.ml[190,11604+49]..[238,13042+68]) ghost
+              Pexp_fun
+              Nolabel
+              None
+              pattern (ast/pp/pp_rewrite.ml[190,11604+49]..[190,11604+66])
+                Ppat_var "__ocaml_lex_state" (ast/pp/pp_rewrite.ml[190,11604+49]..[190,11604+66])
+              expression (ast/pp/pp_rewrite.ml[191,11673+2]..[238,13042+68])
+                Pexp_match
+                expression (ast/pp/pp_rewrite.ml[191,11673+8]..[191,11673+69])
+                  Pexp_apply
+                  expression (ast/pp/pp_rewrite.ml[191,11673+8]..[191,11673+25])
+                    Pexp_ident "Lexing.new_engine" (ast/pp/pp_rewrite.ml[191,11673+8]..[191,11673+25])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp_rewrite.ml[191,11673+26]..[191,11673+44])
+                        Pexp_ident "__ocaml_lex_tables" (ast/pp/pp_rewrite.ml[191,11673+26]..[191,11673+44])
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp_rewrite.ml[191,11673+45]..[191,11673+62])
+                        Pexp_ident "__ocaml_lex_state" (ast/pp/pp_rewrite.ml[191,11673+45]..[191,11673+62])
+                    <arg>
+                    Nolabel
+                      expression (ast/pp/pp_rewrite.ml[191,11673+63]..[191,11673+69])
+                        Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[191,11673+63]..[191,11673+69])
+                  ]
+                [
+                  <case>
+                    pattern (ast/pp/pp_rewrite.ml[192,11748+8]..[192,11748+9])
+                      Ppat_constant PConst_int (0,None)
+                    expression (ast/pp/pp_rewrite.mll[12,11790+4]..[14,11866+5])
+                      Pexp_sequence
+                      expression (ast/pp/pp_rewrite.mll[12,11790+6]..[12,11790+39])
+                        Pexp_apply
+                        expression (ast/pp/pp_rewrite.mll[12,11790+6]..[12,11790+25])
+                          Pexp_ident "print_ocaml_version" (ast/pp/pp_rewrite.mll[12,11790+6]..[12,11790+25])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp_rewrite.mll[12,11790+26]..[12,11790+39])
+                              Pexp_ident "ocaml_version" (ast/pp/pp_rewrite.mll[12,11790+26]..[12,11790+39])
+                        ]
+                      expression (ast/pp/pp_rewrite.mll[13,11831+6]..[13,11831+34])
+                        Pexp_apply
+                        expression (ast/pp/pp_rewrite.mll[13,11831+6]..[13,11831+13])
+                          Pexp_ident "rewrite" (ast/pp/pp_rewrite.mll[13,11831+6]..[13,11831+13])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp_rewrite.mll[13,11831+14]..[13,11831+27])
+                              Pexp_ident "ocaml_version" (ast/pp/pp_rewrite.mll[13,11831+14]..[13,11831+27])
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp_rewrite.mll[13,11831+28]..[13,11831+34])
+                              Pexp_ident "lexbuf" (ast/pp/pp_rewrite.mll[13,11831+28]..[13,11831+34])
+                        ]
+                  <case>
+                    pattern (ast/pp/pp_rewrite.ml[199,11902+4]..[199,11902+5])
+                      Ppat_constant PConst_int (1,None)
+                    expression (ast/pp/pp_rewrite.ml[200,11911+0]..ast/pp/pp_rewrite.mll[22,12599+5])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (ast/pp/pp_rewrite.mll[15,11944+46]..[15,11944+47])
+                            Ppat_var "v" (ast/pp/pp_rewrite.mll[15,11944+46]..[15,11944+47])
+                          expression (ast/pp/pp_rewrite.ml[204,12021+2]..[204,12021+87])
+                            Pexp_apply
+                            expression (ast/pp/pp_rewrite.ml[204,12021+2]..[204,12021+19])
+                              Pexp_ident "Lexing.sub_lexeme" (ast/pp/pp_rewrite.ml[204,12021+2]..[204,12021+19])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[204,12021+20]..[204,12021+26])
+                                  Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[204,12021+20]..[204,12021+26])
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[204,12021+27]..[204,12021+61])
+                                  Pexp_apply
+                                  expression (ast/pp/pp_rewrite.ml[204,12021+56]..[204,12021+57])
+                                    Pexp_ident "+" (ast/pp/pp_rewrite.ml[204,12021+56]..[204,12021+57])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[204,12021+28]..[204,12021+55])
+                                        Pexp_field
+                                        expression (ast/pp/pp_rewrite.ml[204,12021+28]..[204,12021+34])
+                                          Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[204,12021+28]..[204,12021+34])
+                                        "Lexing.lex_start_pos" (ast/pp/pp_rewrite.ml[204,12021+35]..[204,12021+55])
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[204,12021+58]..[204,12021+60])
+                                        Pexp_constant PConst_int (14,None)
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[204,12021+62]..[204,12021+87])
+                                  Pexp_apply
+                                  expression (ast/pp/pp_rewrite.ml[204,12021+62]..[204,12021+87]) ghost
+                                    Pexp_ident "Array.get" (ast/pp/pp_rewrite.ml[204,12021+62]..[204,12021+87]) ghost
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[204,12021+62]..[204,12021+83])
+                                        Pexp_field
+                                        expression (ast/pp/pp_rewrite.ml[204,12021+62]..[204,12021+68])
+                                          Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[204,12021+62]..[204,12021+68])
+                                        "Lexing.lex_mem" (ast/pp/pp_rewrite.ml[204,12021+69]..[204,12021+83])
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[204,12021+85]..[204,12021+86])
+                                        Pexp_constant PConst_int (0,None)
+                                  ]
+                            ]
+                        <def>
+                          pattern (ast/pp/pp_rewrite.mll[15,12142+65]..[15,12142+66])
+                            Ppat_var "s" (ast/pp/pp_rewrite.mll[15,12142+65]..[15,12142+66])
+                          expression (ast/pp/pp_rewrite.ml[209,12238+2]..[209,12238+92])
+                            Pexp_apply
+                            expression (ast/pp/pp_rewrite.ml[209,12238+2]..[209,12238+19])
+                              Pexp_ident "Lexing.sub_lexeme" (ast/pp/pp_rewrite.ml[209,12238+2]..[209,12238+19])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[209,12238+20]..[209,12238+26])
+                                  Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[209,12238+20]..[209,12238+26])
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[209,12238+27]..[209,12238+58])
+                                  Pexp_apply
+                                  expression (ast/pp/pp_rewrite.ml[209,12238+54]..[209,12238+55])
+                                    Pexp_ident "+" (ast/pp/pp_rewrite.ml[209,12238+54]..[209,12238+55])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[209,12238+28]..[209,12238+53])
+                                        Pexp_apply
+                                        expression (ast/pp/pp_rewrite.ml[209,12238+28]..[209,12238+53]) ghost
+                                          Pexp_ident "Array.get" (ast/pp/pp_rewrite.ml[209,12238+28]..[209,12238+53]) ghost
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[209,12238+28]..[209,12238+49])
+                                              Pexp_field
+                                              expression (ast/pp/pp_rewrite.ml[209,12238+28]..[209,12238+34])
+                                                Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[209,12238+28]..[209,12238+34])
+                                              "Lexing.lex_mem" (ast/pp/pp_rewrite.ml[209,12238+35]..[209,12238+49])
+                                          <arg>
+                                          Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[209,12238+51]..[209,12238+52])
+                                              Pexp_constant PConst_int (0,None)
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[209,12238+56]..[209,12238+57])
+                                        Pexp_constant PConst_int (1,None)
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[209,12238+59]..[209,12238+92])
+                                  Pexp_apply
+                                  expression (ast/pp/pp_rewrite.ml[209,12238+87]..[209,12238+88])
+                                    Pexp_ident "+" (ast/pp/pp_rewrite.ml[209,12238+87]..[209,12238+88])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[209,12238+60]..[209,12238+86])
+                                        Pexp_field
+                                        expression (ast/pp/pp_rewrite.ml[209,12238+60]..[209,12238+66])
+                                          Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[209,12238+60]..[209,12238+66])
+                                        "Lexing.lex_curr_pos" (ast/pp/pp_rewrite.ml[209,12238+67]..[209,12238+86])
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.ml[209,12238+89]..[209,12238+91])
+                                        Pexp_constant PConst_int (-2,None)
+                                  ]
+                            ]
+                      ]
+                      expression (ast/pp/pp_rewrite.mll[16,12363+4]..[22,12599+5])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (ast/pp/pp_rewrite.mll[16,12363+10]..[16,12363+15])
+                              Ppat_var "chunk" (ast/pp/pp_rewrite.mll[16,12363+10]..[16,12363+15])
+                            expression (ast/pp/pp_rewrite.mll[16,12363+18]..[18,12495+33])
+                              Pexp_ifthenelse
+                              expression (ast/pp/pp_rewrite.mll[16,12363+21]..[16,12363+41])
+                                Pexp_apply
+                                expression (ast/pp/pp_rewrite.mll[16,12363+24]..[16,12363+26])
+                                  Pexp_ident "<=" (ast/pp/pp_rewrite.mll[16,12363+24]..[16,12363+26])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (ast/pp/pp_rewrite.mll[16,12363+22]..[16,12363+23])
+                                      Pexp_ident "v" (ast/pp/pp_rewrite.mll[16,12363+22]..[16,12363+23])
+                                  <arg>
+                                  Nolabel
+                                    expression (ast/pp/pp_rewrite.mll[16,12363+27]..[16,12363+40])
+                                      Pexp_ident "ocaml_version" (ast/pp/pp_rewrite.mll[16,12363+27]..[16,12363+40])
+                                ]
+                              expression (ast/pp/pp_rewrite.mll[17,12405+13]..[17,12405+89])
+                                Pexp_apply
+                                expression (ast/pp/pp_rewrite.mll[17,12405+30]..[17,12405+31])
+                                  Pexp_ident "^" (ast/pp/pp_rewrite.mll[17,12405+30]..[17,12405+31])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (ast/pp/pp_rewrite.mll[17,12405+13]..[17,12405+29])
+                                      Pexp_constant PConst_string("              ",(ast/pp/pp_rewrite.mll[17,12405+14]..[17,12405+28]),None)
+                                  <arg>
+                                  Nolabel
+                                    expression (ast/pp/pp_rewrite.mll[17,12405+32]..[17,12405+89])
+                                      Pexp_apply
+                                      expression (ast/pp/pp_rewrite.mll[17,12405+70]..[17,12405+71])
+                                        Pexp_ident "^" (ast/pp/pp_rewrite.mll[17,12405+70]..[17,12405+71])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (ast/pp/pp_rewrite.mll[17,12405+32]..[17,12405+69])
+                                            Pexp_apply
+                                            expression (ast/pp/pp_rewrite.mll[17,12405+32]..[17,12405+43])
+                                              Pexp_ident "String.make" (ast/pp/pp_rewrite.mll[17,12405+32]..[17,12405+43])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[17,12405+44]..[17,12405+65])
+                                                  Pexp_apply
+                                                  expression (ast/pp/pp_rewrite.mll[17,12405+61]..[17,12405+62])
+                                                    Pexp_ident "+" (ast/pp/pp_rewrite.mll[17,12405+61]..[17,12405+62])
+                                                  [
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (ast/pp/pp_rewrite.mll[17,12405+45]..[17,12405+60])
+                                                        Pexp_apply
+                                                        expression (ast/pp/pp_rewrite.mll[17,12405+45]..[17,12405+58])
+                                                          Pexp_ident "String.length" (ast/pp/pp_rewrite.mll[17,12405+45]..[17,12405+58])
+                                                        [
+                                                          <arg>
+                                                          Nolabel
+                                                            expression (ast/pp/pp_rewrite.mll[17,12405+59]..[17,12405+60])
+                                                              Pexp_ident "v" (ast/pp/pp_rewrite.mll[17,12405+59]..[17,12405+60])
+                                                        ]
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (ast/pp/pp_rewrite.mll[17,12405+63]..[17,12405+64])
+                                                        Pexp_constant PConst_int (1,None)
+                                                  ]
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[17,12405+66]..[17,12405+69])
+                                                  Pexp_constant PConst_char 20
+                                            ]
+                                        <arg>
+                                        Nolabel
+                                          expression (ast/pp/pp_rewrite.mll[17,12405+72]..[17,12405+89])
+                                            Pexp_apply
+                                            expression (ast/pp/pp_rewrite.mll[17,12405+74]..[17,12405+75])
+                                              Pexp_ident "^" (ast/pp/pp_rewrite.mll[17,12405+74]..[17,12405+75])
+                                            [
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[17,12405+72]..[17,12405+73])
+                                                  Pexp_ident "s" (ast/pp/pp_rewrite.mll[17,12405+72]..[17,12405+73])
+                                              <arg>
+                                              Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[17,12405+85]..[17,12405+89])
+                                                  Pexp_constant PConst_string("  ",(ast/pp/pp_rewrite.mll[17,12405+86]..[17,12405+88]),None)
+                                            ]
+                                      ]
+                                ]
+                              Some
+                                expression (ast/pp/pp_rewrite.mll[18,12495+13]..[18,12495+33])
+                                  Pexp_apply
+                                  expression (ast/pp/pp_rewrite.mll[18,12495+13]..[18,12495+26])
+                                    Pexp_ident "Lexing.lexeme" (ast/pp/pp_rewrite.mll[18,12495+13]..[18,12495+26])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (ast/pp/pp_rewrite.mll[18,12495+27]..[18,12495+33])
+                                        Pexp_ident "lexbuf" (ast/pp/pp_rewrite.mll[18,12495+27]..[18,12495+33])
+                                  ]
+                        ]
+                        expression (ast/pp/pp_rewrite.mll[20,12538+6]..[21,12564+34])
+                          Pexp_sequence
+                          expression (ast/pp/pp_rewrite.mll[20,12538+6]..[20,12538+24])
+                            Pexp_apply
+                            expression (ast/pp/pp_rewrite.mll[20,12538+6]..[20,12538+18])
+                              Pexp_ident "print_string" (ast/pp/pp_rewrite.mll[20,12538+6]..[20,12538+18])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.mll[20,12538+19]..[20,12538+24])
+                                  Pexp_ident "chunk" (ast/pp/pp_rewrite.mll[20,12538+19]..[20,12538+24])
+                            ]
+                          expression (ast/pp/pp_rewrite.mll[21,12564+6]..[21,12564+34])
+                            Pexp_apply
+                            expression (ast/pp/pp_rewrite.mll[21,12564+6]..[21,12564+13])
+                              Pexp_ident "rewrite" (ast/pp/pp_rewrite.mll[21,12564+6]..[21,12564+13])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.mll[21,12564+14]..[21,12564+27])
+                                  Pexp_ident "ocaml_version" (ast/pp/pp_rewrite.mll[21,12564+14]..[21,12564+27])
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.mll[21,12564+28]..[21,12564+34])
+                                  Pexp_ident "lexbuf" (ast/pp/pp_rewrite.mll[21,12564+28]..[21,12564+34])
+                            ]
+                  <case>
+                    pattern (ast/pp/pp_rewrite.ml[220,12635+4]..[220,12635+5])
+                      Ppat_constant PConst_int (2,None)
+                    expression (ast/pp/pp_rewrite.ml[221,12644+0]..ast/pp/pp_rewrite.mll[26,12864+5])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (ast/pp/pp_rewrite.mll[23,12677+9]..[23,12677+10])
+                            Ppat_var "c" (ast/pp/pp_rewrite.mll[23,12677+9]..[23,12677+10])
+                          expression (ast/pp/pp_rewrite.ml[225,12717+2]..[225,12717+59])
+                            Pexp_apply
+                            expression (ast/pp/pp_rewrite.ml[225,12717+2]..[225,12717+24])
+                              Pexp_ident "Lexing.sub_lexeme_char" (ast/pp/pp_rewrite.ml[225,12717+2]..[225,12717+24])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[225,12717+25]..[225,12717+31])
+                                  Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[225,12717+25]..[225,12717+31])
+                              <arg>
+                              Nolabel
+                                expression (ast/pp/pp_rewrite.ml[225,12717+32]..[225,12717+59])
+                                  Pexp_field
+                                  expression (ast/pp/pp_rewrite.ml[225,12717+32]..[225,12717+38])
+                                    Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[225,12717+32]..[225,12717+38])
+                                  "Lexing.lex_start_pos" (ast/pp/pp_rewrite.ml[225,12717+39]..[225,12717+59])
+                            ]
+                      ]
+                      expression (ast/pp/pp_rewrite.mll[24,12809+4]..[26,12864+5])
+                        Pexp_sequence
+                        expression (ast/pp/pp_rewrite.mll[24,12809+6]..[24,12809+18])
+                          Pexp_apply
+                          expression (ast/pp/pp_rewrite.mll[24,12809+6]..[24,12809+16])
+                            Pexp_ident "print_char" (ast/pp/pp_rewrite.mll[24,12809+6]..[24,12809+16])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (ast/pp/pp_rewrite.mll[24,12809+17]..[24,12809+18])
+                                Pexp_ident "c" (ast/pp/pp_rewrite.mll[24,12809+17]..[24,12809+18])
+                          ]
+                        expression (ast/pp/pp_rewrite.mll[25,12829+6]..[25,12829+34])
+                          Pexp_apply
+                          expression (ast/pp/pp_rewrite.mll[25,12829+6]..[25,12829+13])
+                            Pexp_ident "rewrite" (ast/pp/pp_rewrite.mll[25,12829+6]..[25,12829+13])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (ast/pp/pp_rewrite.mll[25,12829+14]..[25,12829+27])
+                                Pexp_ident "ocaml_version" (ast/pp/pp_rewrite.mll[25,12829+14]..[25,12829+27])
+                            <arg>
+                            Nolabel
+                              expression (ast/pp/pp_rewrite.mll[25,12829+28]..[25,12829+34])
+                                Pexp_ident "lexbuf" (ast/pp/pp_rewrite.mll[25,12829+28]..[25,12829+34])
+                          ]
+                  <case>
+                    pattern (ast/pp/pp_rewrite.ml[232,12900+4]..[232,12900+5])
+                      Ppat_constant PConst_int (3,None)
+                    expression (ast/pp/pp_rewrite.mll[27,12938+8]..[27,12938+14])
+                      Pexp_construct "()" (ast/pp/pp_rewrite.mll[27,12938+10]..[27,12938+12])
+                      None
+                  <case>
+                    pattern (ast/pp/pp_rewrite.ml[237,12983+4]..[237,12983+21])
+                      Ppat_var "__ocaml_lex_state" (ast/pp/pp_rewrite.ml[237,12983+4]..[237,12983+21])
+                    expression (ast/pp/pp_rewrite.ml[237,12983+25]..[238,13042+68])
+                      Pexp_sequence
+                      expression (ast/pp/pp_rewrite.ml[237,12983+25]..[237,12983+57])
+                        Pexp_apply
+                        expression (ast/pp/pp_rewrite.ml[237,12983+25]..[237,12983+50])
+                          Pexp_field
+                          expression (ast/pp/pp_rewrite.ml[237,12983+25]..[237,12983+31])
+                            Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[237,12983+25]..[237,12983+31])
+                          "Lexing.refill_buff" (ast/pp/pp_rewrite.ml[237,12983+32]..[237,12983+50])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp_rewrite.ml[237,12983+51]..[237,12983+57])
+                              Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[237,12983+51]..[237,12983+57])
+                        ]
+                      expression (ast/pp/pp_rewrite.ml[238,13042+6]..[238,13042+68])
+                        Pexp_apply
+                        expression (ast/pp/pp_rewrite.ml[238,13042+6]..[238,13042+29])
+                          Pexp_ident "__ocaml_lex_rewrite_rec" (ast/pp/pp_rewrite.ml[238,13042+6]..[238,13042+29])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp_rewrite.ml[238,13042+30]..[238,13042+43])
+                              Pexp_ident "ocaml_version" (ast/pp/pp_rewrite.ml[238,13042+30]..[238,13042+43])
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp_rewrite.ml[238,13042+44]..[238,13042+50])
+                              Pexp_ident "lexbuf" (ast/pp/pp_rewrite.ml[238,13042+44]..[238,13042+50])
+                          <arg>
+                          Nolabel
+                            expression (ast/pp/pp_rewrite.ml[238,13042+51]..[238,13042+68])
+                              Pexp_ident "__ocaml_lex_state" (ast/pp/pp_rewrite.ml[238,13042+51]..[238,13042+68])
+                        ]
+                ]
+    ]
+]
+
+open Printf
+let print_ocaml_version version =
+  let patt_len = String.length "OCAML_VERSION" in
+  printf "%-*s" patt_len version
+let __ocaml_lex_tables =
+  {
+    Lexing.lex_base =
+      "\000\000\252\255\253\255\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\255\255\001\000\000\000\001\000\001\000\000\000\002\000\005\000\002\000\003\000\002\000\003\000\000\000\001\000\002\000\000\000\254\255";
+    Lexing.lex_backtrk =
+      "\255\255\255\255\255\255\002\000\002\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255";
+    Lexing.lex_default =
+      "\002\000\000\000\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\030\000\255\255\000\000";
+    Lexing.lex_trans =
+      "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\029\000\030\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000 \000\017\000\255\255\031\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\006\000\021\000\005\000\026\000\011\000\019\000\025\000\000\000\014\000\018\000\000\000\b\000\007\000\016\000\004\000\015\000\024\000\012\000\r\000\022\000\027\000\n\000\028\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\t\000\020\000\023\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\255\255\255\255\000\000\000\000\000\000";
+    Lexing.lex_check =
+      "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\000\000\031\000\003\000\029\000\030\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\005\000\020\000\004\000\025\000\n\000\018\000\024\000\255\255\r\000\017\000\255\255\007\000\006\000\015\000\000\000\014\000\023\000\011\000\012\000\021\000\026\000\t\000\027\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\b\000\019\000\022\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\029\000\030\000\255\255\255\255\255\255";
+    Lexing.lex_base_code =
+      "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\004\000";
+    Lexing.lex_backtrk_code =
+      "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000";
+    Lexing.lex_default_code =
+      "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000";
+    Lexing.lex_trans_code =
+      "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000";
+    Lexing.lex_check_code =
+      "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000";
+    Lexing.lex_code = "\255\001\255\255\000\001\255"
+  }
+let rec rewrite ocaml_version lexbuf =
+  lexbuf.Lexing.lex_mem <- (Array.make 2 (-1));
+  __ocaml_lex_rewrite_rec ocaml_version lexbuf 0
+and __ocaml_lex_rewrite_rec ocaml_version lexbuf __ocaml_lex_state =
+  match Lexing.new_engine __ocaml_lex_tables __ocaml_lex_state lexbuf with
+  | 0 -> (print_ocaml_version ocaml_version; rewrite ocaml_version lexbuf)
+  | 1 ->
+      let v =
+        Lexing.sub_lexeme lexbuf (lexbuf.Lexing.lex_start_pos + 14)
+          ((lexbuf.Lexing.lex_mem).(0))
+      and s =
+        Lexing.sub_lexeme lexbuf (((lexbuf.Lexing.lex_mem).(0)) + 1)
+          (lexbuf.Lexing.lex_curr_pos + (-2)) in
+      let chunk =
+        if v <= ocaml_version
+        then
+          "              " ^
+            ((String.make ((String.length v) + 1) ' ') ^ (s ^ "  "))
+        else Lexing.lexeme lexbuf in
+      (print_string chunk; rewrite ocaml_version lexbuf)
+  | 2 ->
+      let c = Lexing.sub_lexeme_char lexbuf lexbuf.Lexing.lex_start_pos in
+      (print_char c; rewrite ocaml_version lexbuf)
+  | 3 -> ()
+  | __ocaml_lex_state ->
+      (lexbuf.Lexing.refill_buff lexbuf;
+       __ocaml_lex_rewrite_rec ocaml_version lexbuf __ocaml_lex_state)
+[
+  structure_item (ast/pp/pp_rewrite.mll[2,30+0]..ast/pp/pp_rewrite.mll[2,30+11])
+    Tstr_open Fresh
+    module_expr (ast/pp/pp_rewrite.mll[2,30+5]..ast/pp/pp_rewrite.mll[2,30+11])
+      Tmod_ident "Stdlib!.Printf"
+  structure_item (ast/pp/pp_rewrite.mll[4,43+0]..ast/pp/pp_rewrite.mll[7,198+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/pp/pp_rewrite.mll[4,43+4]..ast/pp/pp_rewrite.mll[4,43+23])
+          Tpat_var "print_ocaml_version/101"
+        expression (ast/pp/pp_rewrite.mll[4,43+24]..ast/pp/pp_rewrite.mll[7,198+32]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/pp/pp_rewrite.mll[4,43+24]..ast/pp/pp_rewrite.mll[4,43+31])
+                Tpat_var "version/103"
+              expression (ast/pp/pp_rewrite.mll[5,77+2]..ast/pp/pp_rewrite.mll[7,198+32])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (ast/pp/pp_rewrite.mll[5,77+6]..ast/pp/pp_rewrite.mll[5,77+14])
+                      Tpat_var "patt_len/104"
+                    expression (ast/pp/pp_rewrite.mll[5,77+17]..ast/pp/pp_rewrite.mll[5,77+46])
+                      Texp_apply
+                      expression (ast/pp/pp_rewrite.mll[5,77+17]..ast/pp/pp_rewrite.mll[5,77+30])
+                        Texp_ident "Stdlib!.String.length"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (ast/pp/pp_rewrite.mll[5,77+31]..ast/pp/pp_rewrite.mll[5,77+46])
+                            Texp_constant Const_string("OCAML_VERSION",(ast/pp/pp_rewrite.mll[5,77+32]..ast/pp/pp_rewrite.mll[5,77+45]),None)
+                      ]
+                ]
+                expression (ast/pp/pp_rewrite.mll[7,198+2]..ast/pp/pp_rewrite.mll[7,198+32])
+                  Texp_apply
+                  expression (ast/pp/pp_rewrite.mll[7,198+2]..ast/pp/pp_rewrite.mll[7,198+8])
+                    Texp_ident "Stdlib!.Printf.printf"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (ast/pp/pp_rewrite.mll[7,198+9]..ast/pp/pp_rewrite.mll[7,198+15])
+                        Texp_construct "CamlinternalFormatBasics.Format"
+                        [
+                          expression (ast/pp/pp_rewrite.mll[7,198+9]..ast/pp/pp_rewrite.mll[7,198+15]) ghost
+                            Texp_construct "CamlinternalFormatBasics.String"
+                            [
+                              expression (ast/pp/pp_rewrite.mll[7,198+9]..ast/pp/pp_rewrite.mll[7,198+15]) ghost
+                                Texp_construct "CamlinternalFormatBasics.Arg_padding"
+                                [
+                                  expression (ast/pp/pp_rewrite.mll[7,198+9]..ast/pp/pp_rewrite.mll[7,198+15]) ghost
+                                    Texp_construct "CamlinternalFormatBasics.Left"
+                                    []
+                                ]
+                              expression (ast/pp/pp_rewrite.mll[7,198+9]..ast/pp/pp_rewrite.mll[7,198+15]) ghost
+                                Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                []
+                            ]
+                          expression (ast/pp/pp_rewrite.mll[7,198+9]..ast/pp/pp_rewrite.mll[7,198+15]) ghost
+                            Texp_constant Const_string("%-*s",(ast/pp/pp_rewrite.mll[7,198+9]..ast/pp/pp_rewrite.mll[7,198+15]) ghost,None)
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (ast/pp/pp_rewrite.mll[7,198+16]..ast/pp/pp_rewrite.mll[7,198+24])
+                        Texp_ident "patt_len/104"
+                    <arg>
+                      Nolabel
+                      expression (ast/pp/pp_rewrite.mll[7,198+25]..ast/pp/pp_rewrite.mll[7,198+32])
+                        Texp_ident "version/103"
+                  ]
+          ]
+    ]
+  structure_item (ast/pp/pp_rewrite.ml[11,260+0]..ast/pp/pp_rewrite.ml[186,11469+1])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (ast/pp/pp_rewrite.ml[11,260+4]..ast/pp/pp_rewrite.ml[11,260+22])
+          Tpat_var "__ocaml_lex_tables/173"
+        expression (ast/pp/pp_rewrite.ml[11,260+25]..ast/pp/pp_rewrite.ml[186,11469+1])
+          Texp_record
+            fields =
+              [
+                "Lexing.lex_base"
+                  expression (ast/pp/pp_rewrite.ml[13,307+3]..ast/pp/pp_rewrite.ml[17,587+13])
+                    Texp_constant Const_string("\000\000\252\255\253\255\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\255\255\001\000\000\000\001\000\001\000\000\000\002\000\005\000\002\000\003\000\002\000\003\000\000\000\001\000\002\000\000\000\254\255",(ast/pp/pp_rewrite.ml[13,307+4]..ast/pp/pp_rewrite.ml[17,587+12]),None)
+                "Lexing.lex_backtrk"
+                  expression (ast/pp/pp_rewrite.ml[19,625+3]..ast/pp/pp_rewrite.ml[23,905+13])
+                    Texp_constant Const_string("\255\255\255\255\255\255\002\000\002\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255",(ast/pp/pp_rewrite.ml[19,625+4]..ast/pp/pp_rewrite.ml[23,905+12]),None)
+                "Lexing.lex_default"
+                  expression (ast/pp/pp_rewrite.ml[25,943+3]..ast/pp/pp_rewrite.ml[29,1223+13])
+                    Texp_constant Const_string("\002\000\000\000\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\030\000\255\255\000\000",(ast/pp/pp_rewrite.ml[25,943+4]..ast/pp/pp_rewrite.ml[29,1223+12]),None)
+                "Lexing.lex_trans"
+                  expression (ast/pp/pp_rewrite.ml[31,1259+3]..ast/pp/pp_rewrite.ml[63,3499+53])
+                    Texp_constant Const_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\029\000\030\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000 \000\017\000\255\255\031\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\006\000\021\000\005\000\026\000\011\000\019\000\025\000\000\000\014\000\018\000\000\000\b\000\007\000\016\000\004\000\015\000\024\000\012\000\r\000\022\000\027\000\n\000\028\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\t\000\020\000\023\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\255\255\255\255\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[31,1259+4]..ast/pp/pp_rewrite.ml[63,3499+52]),None)
+                "Lexing.lex_check"
+                  expression (ast/pp/pp_rewrite.ml[65,3575+3]..ast/pp/pp_rewrite.ml[97,5815+53])
+                    Texp_constant Const_string("\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\000\000\031\000\003\000\029\000\030\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\005\000\020\000\004\000\025\000\n\000\018\000\024\000\255\255\r\000\017\000\255\255\007\000\006\000\015\000\000\000\014\000\023\000\011\000\012\000\021\000\026\000\t\000\027\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\b\000\019\000\022\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\029\000\030\000\255\255\255\255\255\255",(ast/pp/pp_rewrite.ml[65,3575+4]..ast/pp/pp_rewrite.ml[97,5815+52]),None)
+                "Lexing.lex_base_code"
+                  expression (ast/pp/pp_rewrite.ml[99,5895+3]..ast/pp/pp_rewrite.ml[103,6175+13])
+                    Texp_constant Const_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\004\000",(ast/pp/pp_rewrite.ml[99,5895+4]..ast/pp/pp_rewrite.ml[103,6175+12]),None)
+                "Lexing.lex_backtrk_code"
+                  expression (ast/pp/pp_rewrite.ml[105,6218+3]..ast/pp/pp_rewrite.ml[109,6498+13])
+                    Texp_constant Const_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[105,6218+4]..ast/pp/pp_rewrite.ml[109,6498+12]),None)
+                "Lexing.lex_default_code"
+                  expression (ast/pp/pp_rewrite.ml[111,6541+3]..ast/pp/pp_rewrite.ml[115,6821+13])
+                    Texp_constant Const_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[111,6541+4]..ast/pp/pp_rewrite.ml[115,6821+12]),None)
+                "Lexing.lex_trans_code"
+                  expression (ast/pp/pp_rewrite.ml[117,6862+3]..ast/pp/pp_rewrite.ml[149,9102+21])
+                    Texp_constant Const_string("\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000",(ast/pp/pp_rewrite.ml[117,6862+4]..ast/pp/pp_rewrite.ml[149,9102+20]),None)
+                "Lexing.lex_check_code"
+                  expression (ast/pp/pp_rewrite.ml[151,9151+3]..ast/pp/pp_rewrite.ml[183,11391+21])
+                    Texp_constant Const_string("\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000",(ast/pp/pp_rewrite.ml[151,9151+4]..ast/pp/pp_rewrite.ml[183,11391+20]),None)
+                "Lexing.lex_code"
+                  expression (ast/pp/pp_rewrite.ml[185,11434+3]..ast/pp/pp_rewrite.ml[185,11434+33])
+                    Texp_constant Const_string("\255\001\255\255\000\001\255",(ast/pp/pp_rewrite.ml[185,11434+4]..ast/pp/pp_rewrite.ml[185,11434+32]),None)
+              ]
+            representation =
+              Record_regular
+            extended_expression =
+              None
+    ]
+  structure_item (ast/pp/pp_rewrite.ml[188,11472+0]..ast/pp/pp_rewrite.ml[238,13042+68])
+    Tstr_value Rec
+    [
+      <def>
+        pattern (ast/pp/pp_rewrite.ml[188,11472+8]..ast/pp/pp_rewrite.ml[188,11472+15])
+          Tpat_var "rewrite/201"
+        expression (ast/pp/pp_rewrite.ml[188,11472+16]..ast/pp/pp_rewrite.ml[189,11511+92]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/pp/pp_rewrite.ml[188,11472+16]..ast/pp/pp_rewrite.ml[188,11472+29])
+                Tpat_var "ocaml_version/203"
+              expression (ast/pp/pp_rewrite.ml[188,11472+30]..ast/pp/pp_rewrite.ml[189,11511+92]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (ast/pp/pp_rewrite.ml[188,11472+30]..ast/pp/pp_rewrite.ml[188,11472+36])
+                      Tpat_var "lexbuf/204"
+                    expression (ast/pp/pp_rewrite.ml[189,11511+2]..ast/pp/pp_rewrite.ml[189,11511+92])
+                      Texp_sequence
+                      expression (ast/pp/pp_rewrite.ml[189,11511+2]..ast/pp/pp_rewrite.ml[189,11511+44])
+                        Texp_setfield
+                        expression (ast/pp/pp_rewrite.ml[189,11511+2]..ast/pp/pp_rewrite.ml[189,11511+8])
+                          Texp_ident "lexbuf/204"
+                        "Lexing.lex_mem"
+                        expression (ast/pp/pp_rewrite.ml[189,11511+27]..ast/pp/pp_rewrite.ml[189,11511+44])
+                          Texp_apply
+                          expression (ast/pp/pp_rewrite.ml[189,11511+27]..ast/pp/pp_rewrite.ml[189,11511+37])
+                            Texp_ident "Stdlib!.Array.make"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (ast/pp/pp_rewrite.ml[189,11511+38]..ast/pp/pp_rewrite.ml[189,11511+39])
+                                Texp_constant Const_int 2
+                            <arg>
+                              Nolabel
+                              expression (ast/pp/pp_rewrite.ml[189,11511+40]..ast/pp/pp_rewrite.ml[189,11511+44])
+                                Texp_constant Const_int -1
+                          ]
+                      expression (ast/pp/pp_rewrite.ml[189,11511+46]..ast/pp/pp_rewrite.ml[189,11511+92])
+                        Texp_apply
+                        expression (ast/pp/pp_rewrite.ml[189,11511+46]..ast/pp/pp_rewrite.ml[189,11511+69])
+                          Texp_ident "__ocaml_lex_rewrite_rec/202"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (ast/pp/pp_rewrite.ml[189,11511+70]..ast/pp/pp_rewrite.ml[189,11511+83])
+                              Texp_ident "ocaml_version/203"
+                          <arg>
+                            Nolabel
+                            expression (ast/pp/pp_rewrite.ml[189,11511+84]..ast/pp/pp_rewrite.ml[189,11511+90])
+                              Texp_ident "lexbuf/204"
+                          <arg>
+                            Nolabel
+                            expression (ast/pp/pp_rewrite.ml[189,11511+91]..ast/pp/pp_rewrite.ml[189,11511+92])
+                              Texp_constant Const_int 0
+                        ]
+                ]
+          ]
+      <def>
+        pattern (ast/pp/pp_rewrite.ml[190,11604+4]..ast/pp/pp_rewrite.ml[190,11604+27])
+          Tpat_var "__ocaml_lex_rewrite_rec/202"
+        expression (ast/pp/pp_rewrite.ml[190,11604+28]..ast/pp/pp_rewrite.ml[238,13042+68]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (ast/pp/pp_rewrite.ml[190,11604+28]..ast/pp/pp_rewrite.ml[190,11604+41])
+                Tpat_var "ocaml_version/255"
+              expression (ast/pp/pp_rewrite.ml[190,11604+42]..ast/pp/pp_rewrite.ml[238,13042+68]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (ast/pp/pp_rewrite.ml[190,11604+42]..ast/pp/pp_rewrite.ml[190,11604+48])
+                      Tpat_var "lexbuf/256"
+                    expression (ast/pp/pp_rewrite.ml[190,11604+49]..ast/pp/pp_rewrite.ml[238,13042+68]) ghost
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (ast/pp/pp_rewrite.ml[190,11604+49]..ast/pp/pp_rewrite.ml[190,11604+66])
+                            Tpat_var "__ocaml_lex_state/257"
+                          expression (ast/pp/pp_rewrite.ml[191,11673+2]..ast/pp/pp_rewrite.ml[238,13042+68])
+                            Texp_match
+                            expression (ast/pp/pp_rewrite.ml[191,11673+8]..ast/pp/pp_rewrite.ml[191,11673+69])
+                              Texp_apply
+                              expression (ast/pp/pp_rewrite.ml[191,11673+8]..ast/pp/pp_rewrite.ml[191,11673+25])
+                                Texp_ident "Stdlib!.Lexing.new_engine"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (ast/pp/pp_rewrite.ml[191,11673+26]..ast/pp/pp_rewrite.ml[191,11673+44])
+                                    Texp_ident "__ocaml_lex_tables/173"
+                                <arg>
+                                  Nolabel
+                                  expression (ast/pp/pp_rewrite.ml[191,11673+45]..ast/pp/pp_rewrite.ml[191,11673+62])
+                                    Texp_ident "__ocaml_lex_state/257"
+                                <arg>
+                                  Nolabel
+                                  expression (ast/pp/pp_rewrite.ml[191,11673+63]..ast/pp/pp_rewrite.ml[191,11673+69])
+                                    Texp_ident "lexbuf/256"
+                              ]
+                            [
+                              <case>
+                                pattern (ast/pp/pp_rewrite.ml[192,11748+8]..ast/pp/pp_rewrite.ml[192,11748+9])
+                                  Tpat_value
+                                  pattern (ast/pp/pp_rewrite.ml[192,11748+8]..ast/pp/pp_rewrite.ml[192,11748+9])
+                                    Tpat_constant Const_int 0
+                                expression (ast/pp/pp_rewrite.mll[12,11790+4]..ast/pp/pp_rewrite.mll[14,11866+5])
+                                  Texp_sequence
+                                  expression (ast/pp/pp_rewrite.mll[12,11790+6]..ast/pp/pp_rewrite.mll[12,11790+39])
+                                    Texp_apply
+                                    expression (ast/pp/pp_rewrite.mll[12,11790+6]..ast/pp/pp_rewrite.mll[12,11790+25])
+                                      Texp_ident "print_ocaml_version/101"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/pp/pp_rewrite.mll[12,11790+26]..ast/pp/pp_rewrite.mll[12,11790+39])
+                                          Texp_ident "ocaml_version/255"
+                                    ]
+                                  expression (ast/pp/pp_rewrite.mll[13,11831+6]..ast/pp/pp_rewrite.mll[13,11831+34])
+                                    Texp_apply
+                                    expression (ast/pp/pp_rewrite.mll[13,11831+6]..ast/pp/pp_rewrite.mll[13,11831+13])
+                                      Texp_ident "rewrite/201"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/pp/pp_rewrite.mll[13,11831+14]..ast/pp/pp_rewrite.mll[13,11831+27])
+                                          Texp_ident "ocaml_version/255"
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/pp/pp_rewrite.mll[13,11831+28]..ast/pp/pp_rewrite.mll[13,11831+34])
+                                          Texp_ident "lexbuf/256"
+                                    ]
+                              <case>
+                                pattern (ast/pp/pp_rewrite.ml[199,11902+4]..ast/pp/pp_rewrite.ml[199,11902+5])
+                                  Tpat_value
+                                  pattern (ast/pp/pp_rewrite.ml[199,11902+4]..ast/pp/pp_rewrite.ml[199,11902+5])
+                                    Tpat_constant Const_int 1
+                                expression (ast/pp/pp_rewrite.ml[200,11911+0]..ast/pp/pp_rewrite.mll[22,12599+5])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (ast/pp/pp_rewrite.mll[15,11944+46]..ast/pp/pp_rewrite.mll[15,11944+47])
+                                        Tpat_var "v/262"
+                                      expression (ast/pp/pp_rewrite.ml[204,12021+2]..ast/pp/pp_rewrite.ml[204,12021+87])
+                                        Texp_apply
+                                        expression (ast/pp/pp_rewrite.ml[204,12021+2]..ast/pp/pp_rewrite.ml[204,12021+19])
+                                          Texp_ident "Stdlib!.Lexing.sub_lexeme"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[204,12021+20]..ast/pp/pp_rewrite.ml[204,12021+26])
+                                              Texp_ident "lexbuf/256"
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[204,12021+27]..ast/pp/pp_rewrite.ml[204,12021+61])
+                                              Texp_apply
+                                              expression (ast/pp/pp_rewrite.ml[204,12021+56]..ast/pp/pp_rewrite.ml[204,12021+57])
+                                                Texp_ident "Stdlib!.+"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[204,12021+28]..ast/pp/pp_rewrite.ml[204,12021+55])
+                                                    Texp_field
+                                                    expression (ast/pp/pp_rewrite.ml[204,12021+28]..ast/pp/pp_rewrite.ml[204,12021+34])
+                                                      Texp_ident "lexbuf/256"
+                                                    "Lexing.lex_start_pos"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[204,12021+58]..ast/pp/pp_rewrite.ml[204,12021+60])
+                                                    Texp_constant Const_int 14
+                                              ]
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[204,12021+62]..ast/pp/pp_rewrite.ml[204,12021+87])
+                                              Texp_apply
+                                              expression (ast/pp/pp_rewrite.ml[204,12021+62]..ast/pp/pp_rewrite.ml[204,12021+87]) ghost
+                                                Texp_ident "Stdlib!.Array.get"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[204,12021+62]..ast/pp/pp_rewrite.ml[204,12021+83])
+                                                    Texp_field
+                                                    expression (ast/pp/pp_rewrite.ml[204,12021+62]..ast/pp/pp_rewrite.ml[204,12021+68])
+                                                      Texp_ident "lexbuf/256"
+                                                    "Lexing.lex_mem"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[204,12021+85]..ast/pp/pp_rewrite.ml[204,12021+86])
+                                                    Texp_constant Const_int 0
+                                              ]
+                                        ]
+                                    <def>
+                                      pattern (ast/pp/pp_rewrite.mll[15,12142+65]..ast/pp/pp_rewrite.mll[15,12142+66])
+                                        Tpat_var "s/263"
+                                      expression (ast/pp/pp_rewrite.ml[209,12238+2]..ast/pp/pp_rewrite.ml[209,12238+92])
+                                        Texp_apply
+                                        expression (ast/pp/pp_rewrite.ml[209,12238+2]..ast/pp/pp_rewrite.ml[209,12238+19])
+                                          Texp_ident "Stdlib!.Lexing.sub_lexeme"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[209,12238+20]..ast/pp/pp_rewrite.ml[209,12238+26])
+                                              Texp_ident "lexbuf/256"
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[209,12238+27]..ast/pp/pp_rewrite.ml[209,12238+58])
+                                              Texp_apply
+                                              expression (ast/pp/pp_rewrite.ml[209,12238+54]..ast/pp/pp_rewrite.ml[209,12238+55])
+                                                Texp_ident "Stdlib!.+"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[209,12238+28]..ast/pp/pp_rewrite.ml[209,12238+53])
+                                                    Texp_apply
+                                                    expression (ast/pp/pp_rewrite.ml[209,12238+28]..ast/pp/pp_rewrite.ml[209,12238+53]) ghost
+                                                      Texp_ident "Stdlib!.Array.get"
+                                                    [
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (ast/pp/pp_rewrite.ml[209,12238+28]..ast/pp/pp_rewrite.ml[209,12238+49])
+                                                          Texp_field
+                                                          expression (ast/pp/pp_rewrite.ml[209,12238+28]..ast/pp/pp_rewrite.ml[209,12238+34])
+                                                            Texp_ident "lexbuf/256"
+                                                          "Lexing.lex_mem"
+                                                      <arg>
+                                                        Nolabel
+                                                        expression (ast/pp/pp_rewrite.ml[209,12238+51]..ast/pp/pp_rewrite.ml[209,12238+52])
+                                                          Texp_constant Const_int 0
+                                                    ]
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[209,12238+56]..ast/pp/pp_rewrite.ml[209,12238+57])
+                                                    Texp_constant Const_int 1
+                                              ]
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[209,12238+59]..ast/pp/pp_rewrite.ml[209,12238+92])
+                                              Texp_apply
+                                              expression (ast/pp/pp_rewrite.ml[209,12238+87]..ast/pp/pp_rewrite.ml[209,12238+88])
+                                                Texp_ident "Stdlib!.+"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[209,12238+60]..ast/pp/pp_rewrite.ml[209,12238+86])
+                                                    Texp_field
+                                                    expression (ast/pp/pp_rewrite.ml[209,12238+60]..ast/pp/pp_rewrite.ml[209,12238+66])
+                                                      Texp_ident "lexbuf/256"
+                                                    "Lexing.lex_curr_pos"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.ml[209,12238+89]..ast/pp/pp_rewrite.ml[209,12238+91])
+                                                    Texp_constant Const_int -2
+                                              ]
+                                        ]
+                                  ]
+                                  expression (ast/pp/pp_rewrite.mll[16,12363+4]..ast/pp/pp_rewrite.mll[22,12599+5])
+                                    Texp_let Nonrec
+                                    [
+                                      <def>
+                                        pattern (ast/pp/pp_rewrite.mll[16,12363+10]..ast/pp/pp_rewrite.mll[16,12363+15])
+                                          Tpat_var "chunk/264"
+                                        expression (ast/pp/pp_rewrite.mll[16,12363+18]..ast/pp/pp_rewrite.mll[18,12495+33])
+                                          Texp_ifthenelse
+                                          expression (ast/pp/pp_rewrite.mll[16,12363+21]..ast/pp/pp_rewrite.mll[16,12363+41])
+                                            Texp_apply
+                                            expression (ast/pp/pp_rewrite.mll[16,12363+24]..ast/pp/pp_rewrite.mll[16,12363+26])
+                                              Texp_ident "Stdlib!.<="
+                                            [
+                                              <arg>
+                                                Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[16,12363+22]..ast/pp/pp_rewrite.mll[16,12363+23])
+                                                  Texp_ident "v/262"
+                                              <arg>
+                                                Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[16,12363+27]..ast/pp/pp_rewrite.mll[16,12363+40])
+                                                  Texp_ident "ocaml_version/255"
+                                            ]
+                                          expression (ast/pp/pp_rewrite.mll[17,12405+13]..ast/pp/pp_rewrite.mll[17,12405+89])
+                                            Texp_apply
+                                            expression (ast/pp/pp_rewrite.mll[17,12405+30]..ast/pp/pp_rewrite.mll[17,12405+31])
+                                              Texp_ident "Stdlib!.^"
+                                            [
+                                              <arg>
+                                                Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[17,12405+13]..ast/pp/pp_rewrite.mll[17,12405+29])
+                                                  Texp_constant Const_string("              ",(ast/pp/pp_rewrite.mll[17,12405+14]..ast/pp/pp_rewrite.mll[17,12405+28]),None)
+                                              <arg>
+                                                Nolabel
+                                                expression (ast/pp/pp_rewrite.mll[17,12405+32]..ast/pp/pp_rewrite.mll[17,12405+89])
+                                                  Texp_apply
+                                                  expression (ast/pp/pp_rewrite.mll[17,12405+70]..ast/pp/pp_rewrite.mll[17,12405+71])
+                                                    Texp_ident "Stdlib!.^"
+                                                  [
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (ast/pp/pp_rewrite.mll[17,12405+32]..ast/pp/pp_rewrite.mll[17,12405+69])
+                                                        Texp_apply
+                                                        expression (ast/pp/pp_rewrite.mll[17,12405+32]..ast/pp/pp_rewrite.mll[17,12405+43])
+                                                          Texp_ident "Stdlib!.String.make"
+                                                        [
+                                                          <arg>
+                                                            Nolabel
+                                                            expression (ast/pp/pp_rewrite.mll[17,12405+44]..ast/pp/pp_rewrite.mll[17,12405+65])
+                                                              Texp_apply
+                                                              expression (ast/pp/pp_rewrite.mll[17,12405+61]..ast/pp/pp_rewrite.mll[17,12405+62])
+                                                                Texp_ident "Stdlib!.+"
+                                                              [
+                                                                <arg>
+                                                                  Nolabel
+                                                                  expression (ast/pp/pp_rewrite.mll[17,12405+45]..ast/pp/pp_rewrite.mll[17,12405+60])
+                                                                    Texp_apply
+                                                                    expression (ast/pp/pp_rewrite.mll[17,12405+45]..ast/pp/pp_rewrite.mll[17,12405+58])
+                                                                      Texp_ident "Stdlib!.String.length"
+                                                                    [
+                                                                      <arg>
+                                                                        Nolabel
+                                                                        expression (ast/pp/pp_rewrite.mll[17,12405+59]..ast/pp/pp_rewrite.mll[17,12405+60])
+                                                                          Texp_ident "v/262"
+                                                                    ]
+                                                                <arg>
+                                                                  Nolabel
+                                                                  expression (ast/pp/pp_rewrite.mll[17,12405+63]..ast/pp/pp_rewrite.mll[17,12405+64])
+                                                                    Texp_constant Const_int 1
+                                                              ]
+                                                          <arg>
+                                                            Nolabel
+                                                            expression (ast/pp/pp_rewrite.mll[17,12405+66]..ast/pp/pp_rewrite.mll[17,12405+69])
+                                                              Texp_constant Const_char 20
+                                                        ]
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (ast/pp/pp_rewrite.mll[17,12405+72]..ast/pp/pp_rewrite.mll[17,12405+89])
+                                                        Texp_apply
+                                                        expression (ast/pp/pp_rewrite.mll[17,12405+74]..ast/pp/pp_rewrite.mll[17,12405+75])
+                                                          Texp_ident "Stdlib!.^"
+                                                        [
+                                                          <arg>
+                                                            Nolabel
+                                                            expression (ast/pp/pp_rewrite.mll[17,12405+72]..ast/pp/pp_rewrite.mll[17,12405+73])
+                                                              Texp_ident "s/263"
+                                                          <arg>
+                                                            Nolabel
+                                                            expression (ast/pp/pp_rewrite.mll[17,12405+85]..ast/pp/pp_rewrite.mll[17,12405+89])
+                                                              Texp_constant Const_string("  ",(ast/pp/pp_rewrite.mll[17,12405+86]..ast/pp/pp_rewrite.mll[17,12405+88]),None)
+                                                        ]
+                                                  ]
+                                            ]
+                                          Some
+                                            expression (ast/pp/pp_rewrite.mll[18,12495+13]..ast/pp/pp_rewrite.mll[18,12495+33])
+                                              Texp_apply
+                                              expression (ast/pp/pp_rewrite.mll[18,12495+13]..ast/pp/pp_rewrite.mll[18,12495+26])
+                                                Texp_ident "Stdlib!.Lexing.lexeme"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (ast/pp/pp_rewrite.mll[18,12495+27]..ast/pp/pp_rewrite.mll[18,12495+33])
+                                                    Texp_ident "lexbuf/256"
+                                              ]
+                                    ]
+                                    expression (ast/pp/pp_rewrite.mll[20,12538+6]..ast/pp/pp_rewrite.mll[21,12564+34])
+                                      Texp_sequence
+                                      expression (ast/pp/pp_rewrite.mll[20,12538+6]..ast/pp/pp_rewrite.mll[20,12538+24])
+                                        Texp_apply
+                                        expression (ast/pp/pp_rewrite.mll[20,12538+6]..ast/pp/pp_rewrite.mll[20,12538+18])
+                                          Texp_ident "Stdlib!.print_string"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.mll[20,12538+19]..ast/pp/pp_rewrite.mll[20,12538+24])
+                                              Texp_ident "chunk/264"
+                                        ]
+                                      expression (ast/pp/pp_rewrite.mll[21,12564+6]..ast/pp/pp_rewrite.mll[21,12564+34])
+                                        Texp_apply
+                                        expression (ast/pp/pp_rewrite.mll[21,12564+6]..ast/pp/pp_rewrite.mll[21,12564+13])
+                                          Texp_ident "rewrite/201"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.mll[21,12564+14]..ast/pp/pp_rewrite.mll[21,12564+27])
+                                              Texp_ident "ocaml_version/255"
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.mll[21,12564+28]..ast/pp/pp_rewrite.mll[21,12564+34])
+                                              Texp_ident "lexbuf/256"
+                                        ]
+                              <case>
+                                pattern (ast/pp/pp_rewrite.ml[220,12635+4]..ast/pp/pp_rewrite.ml[220,12635+5])
+                                  Tpat_value
+                                  pattern (ast/pp/pp_rewrite.ml[220,12635+4]..ast/pp/pp_rewrite.ml[220,12635+5])
+                                    Tpat_constant Const_int 2
+                                expression (ast/pp/pp_rewrite.ml[221,12644+0]..ast/pp/pp_rewrite.mll[26,12864+5])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (ast/pp/pp_rewrite.mll[23,12677+9]..ast/pp/pp_rewrite.mll[23,12677+10])
+                                        Tpat_var "c/265"
+                                      expression (ast/pp/pp_rewrite.ml[225,12717+2]..ast/pp/pp_rewrite.ml[225,12717+59])
+                                        Texp_apply
+                                        expression (ast/pp/pp_rewrite.ml[225,12717+2]..ast/pp/pp_rewrite.ml[225,12717+24])
+                                          Texp_ident "Stdlib!.Lexing.sub_lexeme_char"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[225,12717+25]..ast/pp/pp_rewrite.ml[225,12717+31])
+                                              Texp_ident "lexbuf/256"
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/pp/pp_rewrite.ml[225,12717+32]..ast/pp/pp_rewrite.ml[225,12717+59])
+                                              Texp_field
+                                              expression (ast/pp/pp_rewrite.ml[225,12717+32]..ast/pp/pp_rewrite.ml[225,12717+38])
+                                                Texp_ident "lexbuf/256"
+                                              "Lexing.lex_start_pos"
+                                        ]
+                                  ]
+                                  expression (ast/pp/pp_rewrite.mll[24,12809+4]..ast/pp/pp_rewrite.mll[26,12864+5])
+                                    Texp_sequence
+                                    expression (ast/pp/pp_rewrite.mll[24,12809+6]..ast/pp/pp_rewrite.mll[24,12809+18])
+                                      Texp_apply
+                                      expression (ast/pp/pp_rewrite.mll[24,12809+6]..ast/pp/pp_rewrite.mll[24,12809+16])
+                                        Texp_ident "Stdlib!.print_char"
+                                      [
+                                        <arg>
+                                          Nolabel
+                                          expression (ast/pp/pp_rewrite.mll[24,12809+17]..ast/pp/pp_rewrite.mll[24,12809+18])
+                                            Texp_ident "c/265"
+                                      ]
+                                    expression (ast/pp/pp_rewrite.mll[25,12829+6]..ast/pp/pp_rewrite.mll[25,12829+34])
+                                      Texp_apply
+                                      expression (ast/pp/pp_rewrite.mll[25,12829+6]..ast/pp/pp_rewrite.mll[25,12829+13])
+                                        Texp_ident "rewrite/201"
+                                      [
+                                        <arg>
+                                          Nolabel
+                                          expression (ast/pp/pp_rewrite.mll[25,12829+14]..ast/pp/pp_rewrite.mll[25,12829+27])
+                                            Texp_ident "ocaml_version/255"
+                                        <arg>
+                                          Nolabel
+                                          expression (ast/pp/pp_rewrite.mll[25,12829+28]..ast/pp/pp_rewrite.mll[25,12829+34])
+                                            Texp_ident "lexbuf/256"
+                                      ]
+                              <case>
+                                pattern (ast/pp/pp_rewrite.ml[232,12900+4]..ast/pp/pp_rewrite.ml[232,12900+5])
+                                  Tpat_value
+                                  pattern (ast/pp/pp_rewrite.ml[232,12900+4]..ast/pp/pp_rewrite.ml[232,12900+5])
+                                    Tpat_constant Const_int 3
+                                expression (ast/pp/pp_rewrite.mll[27,12938+8]..ast/pp/pp_rewrite.mll[27,12938+14])
+                                  Texp_construct "()"
+                                  []
+                              <case>
+                                pattern (ast/pp/pp_rewrite.ml[237,12983+4]..ast/pp/pp_rewrite.ml[237,12983+21])
+                                  Tpat_value
+                                  pattern (ast/pp/pp_rewrite.ml[237,12983+4]..ast/pp/pp_rewrite.ml[237,12983+21])
+                                    Tpat_var "__ocaml_lex_state/261"
+                                expression (ast/pp/pp_rewrite.ml[237,12983+25]..ast/pp/pp_rewrite.ml[238,13042+68])
+                                  Texp_sequence
+                                  expression (ast/pp/pp_rewrite.ml[237,12983+25]..ast/pp/pp_rewrite.ml[237,12983+57])
+                                    Texp_apply
+                                    expression (ast/pp/pp_rewrite.ml[237,12983+25]..ast/pp/pp_rewrite.ml[237,12983+50])
+                                      Texp_field
+                                      expression (ast/pp/pp_rewrite.ml[237,12983+25]..ast/pp/pp_rewrite.ml[237,12983+31])
+                                        Texp_ident "lexbuf/256"
+                                      "Lexing.refill_buff"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/pp/pp_rewrite.ml[237,12983+51]..ast/pp/pp_rewrite.ml[237,12983+57])
+                                          Texp_ident "lexbuf/256"
+                                    ]
+                                  expression (ast/pp/pp_rewrite.ml[238,13042+6]..ast/pp/pp_rewrite.ml[238,13042+68])
+                                    Texp_apply
+                                    expression (ast/pp/pp_rewrite.ml[238,13042+6]..ast/pp/pp_rewrite.ml[238,13042+29])
+                                      Texp_ident "__ocaml_lex_rewrite_rec/202"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/pp/pp_rewrite.ml[238,13042+30]..ast/pp/pp_rewrite.ml[238,13042+43])
+                                          Texp_ident "ocaml_version/255"
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/pp/pp_rewrite.ml[238,13042+44]..ast/pp/pp_rewrite.ml[238,13042+50])
+                                          Texp_ident "lexbuf/256"
+                                      <arg>
+                                        Nolabel
+                                        expression (ast/pp/pp_rewrite.ml[238,13042+51]..ast/pp/pp_rewrite.ml[238,13042+68])
+                                          Texp_ident "__ocaml_lex_state/261"
+                                    ]
+                            ]
+                            []
+                      ]
+                ]
+          ]
+    ]
+]
+
+(seq
+  (let
+    (print_ocaml_version/101 =
+       (function version/103
+         (let (patt_len/104 =[int] (string.length "OCAML_VERSION"))
+           (apply (field_imm 1 (global Stdlib__printf!))
+             [0: [2: [1: 0] 0] "%-*s"] patt_len/104 version/103))))
+    (setfield_ptr(root-init) 1 (global Dune__exe__Pp_rewrite!)
+      print_ocaml_version/101))
+  (let
+    (__ocaml_lex_tables/173 =
+       [0:
+        "\000\000\252\255\253\255\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\255\255\001\000\000\000\001\000\001\000\000\000\002\000\005\000\002\000\003\000\002\000\003\000\000\000\001\000\002\000\000\000\254\255"
+        "\255\255\255\255\255\255\002\000\002\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255"
+        "\002\000\000\000\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\030\000\255\255\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\029\000\030\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000 \000\017\000\255\255\031\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\006\000\021\000\005\000\026\000\011\000\019\000\025\000\000\000\014\000\018\000\000\000\b\000\007\000\016\000\004\000\015\000\024\000\012\000\r\000\022\000\027\000\n\000\028\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\t\000\020\000\023\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\255\255\255\255\000\000\000\000\000\000"
+        "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\000\000\031\000\003\000\029\000\030\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\005\000\020\000\004\000\025\000\n\000\018\000\024\000\255\255\r\000\017\000\255\255\007\000\006\000\015\000\000\000\014\000\023\000\011\000\012\000\021\000\026\000\t\000\027\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\b\000\019\000\022\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\029\000\030\000\255\255\255\255\255\255"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\004\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+        "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000"
+        "\255\001\255\255\000\001\255"])
+    (setfield_ptr(root-init) 2 (global Dune__exe__Pp_rewrite!)
+      __ocaml_lex_tables/173))
+  (letrec
+    (rewrite/201
+       (function ocaml_version/203 lexbuf/204
+         (seq (setfield_ptr 9 lexbuf/204 (caml_make_vect 2 -1))
+           (apply __ocaml_lex_rewrite_rec/202 ocaml_version/203 lexbuf/204 0)))
+      __ocaml_lex_rewrite_rec/202
+        (function ocaml_version/255 lexbuf/256 __ocaml_lex_state/257[int]
+          (let
+            (__ocaml_lex_state/261 =
+               (apply (field_imm 20 (global Stdlib__lexing!))
+                 (field_imm 2 (global Dune__exe__Pp_rewrite!))
+                 __ocaml_lex_state/257 lexbuf/256))
+            (catch
+              (if (isout 3 __ocaml_lex_state/261) (exit 1)
+                (switch* __ocaml_lex_state/261
+                 case int 0:
+                  (seq
+                    (apply (field_imm 1 (global Dune__exe__Pp_rewrite!))
+                      ocaml_version/255)
+                    (apply rewrite/201 ocaml_version/255 lexbuf/256))
+                 case int 1:
+                  (let
+                    (v/262 =
+                       (apply (field_imm 15 (global Stdlib__lexing!))
+                         lexbuf/256 (+ (field_int 4 lexbuf/256) 14)
+                         (array.get[int] (field_mut 9 lexbuf/256) 0))
+                     s/263 =
+                       (apply (field_imm 15 (global Stdlib__lexing!))
+                         lexbuf/256
+                         (+ (array.get[int] (field_mut 9 lexbuf/256) 0) 1)
+                         (+ (field_int 5 lexbuf/256) -2))
+                     chunk/264 =
+                       (if (caml_string_lessequal v/262 ocaml_version/255)
+                         (apply (field_imm 30 (global Stdlib!))
+                           "              "
+                           (apply (field_imm 30 (global Stdlib!))
+                             (apply (field_imm 0 (global Stdlib__string!))
+                               (+ (string.length v/262) 1) ' ')
+                             (apply (field_imm 30 (global Stdlib!)) s/263
+                               "  ")))
+                         (apply (field_imm 7 (global Stdlib__lexing!))
+                           lexbuf/256)))
+                    (seq (apply (field_imm 44 (global Stdlib!)) chunk/264)
+                      (apply rewrite/201 ocaml_version/255 lexbuf/256)))
+                 case int 2:
+                  (let
+                    (c/265 =[int]
+                       (apply (field_imm 17 (global Stdlib__lexing!))
+                         lexbuf/256 (field_int 4 lexbuf/256)))
+                    (seq (apply (field_imm 43 (global Stdlib!)) c/265)
+                      (apply rewrite/201 ocaml_version/255 lexbuf/256)))
+                 case int 3: 0))
+             with (1)
+              (seq (apply (field_imm 0 lexbuf/256) lexbuf/256)
+                (apply __ocaml_lex_rewrite_rec/202 ocaml_version/255
+                  lexbuf/256 __ocaml_lex_state/261))))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Dune__exe__Pp_rewrite!) rewrite/201)
+      (setfield_ptr(root-init) 3 (global Dune__exe__Pp_rewrite!)
+        __ocaml_lex_rewrite_rec/202)))
+  0)
+(seq
+  (let
+    (print_ocaml_version/101 =
+       (function version/103
+         (let (patt_len/104 =[int] (string.length "OCAML_VERSION"))
+           (apply (field_imm 1 (global Stdlib__printf!))
+             [0: [2: [1: 0] 0] "%-*s"] patt_len/104 version/103))))
+    (setfield_ptr(root-init) 1 (global Dune__exe__Pp_rewrite!)
+      print_ocaml_version/101))
+  (let
+    (__ocaml_lex_tables/173 =
+       [0:
+        "\000\000\252\255\253\255\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\255\255\001\000\000\000\001\000\001\000\000\000\002\000\005\000\002\000\003\000\002\000\003\000\000\000\001\000\002\000\000\000\254\255"
+        "\255\255\255\255\255\255\002\000\002\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255"
+        "\002\000\000\000\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\030\000\255\255\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\029\000\030\000\000\000\000\000\000\000\000\000\000\000\000\000\003\000 \000\017\000\255\255\031\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\006\000\021\000\005\000\026\000\011\000\019\000\025\000\000\000\014\000\018\000\000\000\b\000\007\000\016\000\004\000\015\000\024\000\012\000\r\000\022\000\027\000\n\000\028\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\t\000\020\000\023\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\255\255\255\255\000\000\000\000\000\000"
+        "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\000\000\031\000\003\000\029\000\030\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\005\000\020\000\004\000\025\000\n\000\018\000\024\000\255\255\r\000\017\000\255\255\007\000\006\000\015\000\000\000\014\000\023\000\011\000\012\000\021\000\026\000\t\000\027\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\b\000\019\000\022\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\000\000\029\000\030\000\255\255\255\255\255\255"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\004\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000"
+        "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+        "\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\028\000\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\255\029\000"
+        "\255\001\255\255\000\001\255"])
+    (setfield_ptr(root-init) 2 (global Dune__exe__Pp_rewrite!)
+      __ocaml_lex_tables/173))
+  (letrec
+    (rewrite/201
+       (function ocaml_version/203 lexbuf/204
+         (seq (setfield_ptr 9 lexbuf/204 (caml_make_vect 2 -1))
+           (apply __ocaml_lex_rewrite_rec/202 ocaml_version/203 lexbuf/204 0)))
+      __ocaml_lex_rewrite_rec/202
+        (function ocaml_version/255 lexbuf/256 __ocaml_lex_state/257[int]
+          (let
+            (__ocaml_lex_state/261 =
+               (apply (field_imm 20 (global Stdlib__lexing!))
+                 (field_imm 2 (global Dune__exe__Pp_rewrite!))
+                 __ocaml_lex_state/257 lexbuf/256))
+            (if (isout 3 __ocaml_lex_state/261)
+              (seq (apply (field_imm 0 lexbuf/256) lexbuf/256)
+                (apply __ocaml_lex_rewrite_rec/202 ocaml_version/255
+                  lexbuf/256 __ocaml_lex_state/261))
+              (switch* __ocaml_lex_state/261
+               case int 0:
+                (seq
+                  (apply (field_imm 1 (global Dune__exe__Pp_rewrite!))
+                    ocaml_version/255)
+                  (apply rewrite/201 ocaml_version/255 lexbuf/256))
+               case int 1:
+                (let
+                  (v/262 =
+                     (apply (field_imm 15 (global Stdlib__lexing!))
+                       lexbuf/256 (+ (field_int 4 lexbuf/256) 14)
+                       (array.get[int] (field_mut 9 lexbuf/256) 0))
+                   s/263 =
+                     (apply (field_imm 15 (global Stdlib__lexing!))
+                       lexbuf/256
+                       (+ (array.get[int] (field_mut 9 lexbuf/256) 0) 1)
+                       (+ (field_int 5 lexbuf/256) -2))
+                   chunk/264 =
+                     (if (caml_string_lessequal v/262 ocaml_version/255)
+                       (apply (field_imm 30 (global Stdlib!))
+                         "              "
+                         (apply (field_imm 30 (global Stdlib!))
+                           (apply (field_imm 0 (global Stdlib__string!))
+                             (+ (string.length v/262) 1) ' ')
+                           (apply (field_imm 30 (global Stdlib!)) s/263 "  ")))
+                       (apply (field_imm 7 (global Stdlib__lexing!))
+                         lexbuf/256)))
+                  (seq (apply (field_imm 44 (global Stdlib!)) chunk/264)
+                    (apply rewrite/201 ocaml_version/255 lexbuf/256)))
+               case int 2:
+                (let
+                  (c/265 =[int]
+                     (apply (field_imm 17 (global Stdlib__lexing!))
+                       lexbuf/256 (field_int 4 lexbuf/256)))
+                  (seq (apply (field_imm 43 (global Stdlib!)) c/265)
+                    (apply rewrite/201 ocaml_version/255 lexbuf/256)))
+               case int 3: 0)))))
+    (seq
+      (setfield_ptr(root-init) 0 (global Dune__exe__Pp_rewrite!) rewrite/201)
+      (setfield_ptr(root-init) 3 (global Dune__exe__Pp_rewrite!)
+        __ocaml_lex_rewrite_rec/202)))
+  0)

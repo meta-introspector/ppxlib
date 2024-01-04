@@ -1,0 +1,6 @@
+0.012s 2.66MB 1.37MB 1.37MB test/deriving_warning/ppx/ppx_warning_flags_testing.cmxs
+  0.002s 2.66MB 1.37MB 1.37MB regalloc
+  0.002s ------ ------ ------ assemble
+  0.007s ------ ------ ------ c-linker
+  0.001s ------ ------ ------ other
+0.004s ------ ------ ------ other

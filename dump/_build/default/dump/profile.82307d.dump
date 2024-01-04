@@ -1,0 +1,8 @@
+0.062s 39.9MB 11.8MB 11.8MB src/spellcheck.ml
+  0.002s 2.90MB 1.57MB 1.57MB parsing
+    0.002s 2.90MB 1.57MB 1.57MB parser
+  0.051s 28.9MB 10.1MB 11.7MB typing
+  0.001s ------ ------ ------ transl
+  0.004s 4.07MB 0.12MB 11.8MB generate
+  0.005s 4.03MB ------ ------ other
+0.005s ------ ------ ------ other

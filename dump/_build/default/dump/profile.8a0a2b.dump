@@ -1,0 +1,6 @@
+0.031s 41.5MB 12.5MB 12.5MB src/ast_builder_intf.ml
+  0.002s 2.90MB 1.57MB 1.57MB parsing
+    0.002s 2.90MB 1.57MB 1.57MB parser
+  0.026s 32.1MB 10.8MB 12.3MB typing
+  0.002s 6.58MB 0.16MB 12.5MB other
+0.004s ------ ------ ------ other

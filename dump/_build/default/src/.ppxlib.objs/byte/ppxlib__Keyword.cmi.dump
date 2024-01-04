@@ -1,0 +1,65 @@
+[
+  signature_item (src/keyword.mli[1,0+0]..[1,0+61])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/keyword.mli[1,0+0]..[1,0+61])
+        Pstr_eval
+        expression (src/keyword.mli[1,0+0]..[1,0+61])
+          Pexp_constant PConst_string(" Small module to check if a string is an OCaml keyword. ",(src/keyword.mli[1,0+0]..[1,0+61]),None)
+    ]
+  signature_item (src/keyword.mli[3,63+0]..[3,63+31])
+    Psig_value
+    value_description "is_keyword" (src/keyword.mli[3,63+4]..[3,63+14]) (src/keyword.mli[3,63+0]..[3,63+31])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/keyword.mli[4,95+0]..[4,95+45])
+            Pstr_eval
+            expression (src/keyword.mli[4,95+0]..[4,95+45])
+              Pexp_constant PConst_string(" Check if a string is an OCaml keyword. ",(src/keyword.mli[4,95+0]..[4,95+45]),None)
+        ]
+      core_type (src/keyword.mli[3,63+17]..[3,63+31])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/keyword.mli[3,63+17]..[3,63+23])
+          Ptyp_constr "string" (src/keyword.mli[3,63+17]..[3,63+23])
+          []
+        core_type (src/keyword.mli[3,63+27]..[3,63+31])
+          Ptyp_constr "bool" (src/keyword.mli[3,63+27]..[3,63+31])
+          []
+      []
+]
+
+[@@@ocaml.text " Small module to check if a string is an OCaml keyword. "]
+val is_keyword : string -> bool[@@ocaml.doc
+                                 " Check if a string is an OCaml keyword. "]
+[
+  signature_item (src/keyword.mli[1,0+0]..src/keyword.mli[1,0+61])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/keyword.mli[1,0+0]..[1,0+61])
+        Pstr_eval
+        expression (src/keyword.mli[1,0+0]..[1,0+61])
+          Pexp_constant PConst_string(" Small module to check if a string is an OCaml keyword. ",(src/keyword.mli[1,0+0]..[1,0+61]),None)
+    ]
+  signature_item (src/keyword.mli[3,63+0]..src/keyword.mli[3,63+31])
+    Tsig_value
+    value_description is_keyword/120 (src/keyword.mli[3,63+0]..src/keyword.mli[3,63+31])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/keyword.mli[4,95+0]..[4,95+45])
+            Pstr_eval
+            expression (src/keyword.mli[4,95+0]..[4,95+45])
+              Pexp_constant PConst_string(" Check if a string is an OCaml keyword. ",(src/keyword.mli[4,95+0]..[4,95+45]),None)
+        ]
+      core_type (src/keyword.mli[3,63+17]..src/keyword.mli[3,63+31])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/keyword.mli[3,63+17]..src/keyword.mli[3,63+23])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/keyword.mli[3,63+27]..src/keyword.mli[3,63+31])
+          Ttyp_constr "bool/5!"
+          []
+      []
+]
+

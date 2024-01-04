@@ -1,0 +1,429 @@
+[
+  structure_item (test/driver/error_embedding/raiser.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/error_embedding/raiser.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/error_embedding/raiser.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/error_embedding/raiser.ml[3,13+0]..[10,213+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/raiser.ml[3,13+4]..[3,13+8])
+          Ppat_var "rule" (test/driver/error_embedding/raiser.ml[3,13+4]..[3,13+8])
+        expression (test/driver/error_embedding/raiser.ml[4,24+2]..[10,213+32])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/error_embedding/raiser.ml[4,24+6]..[4,24+12])
+                Ppat_var "expand" (test/driver/error_embedding/raiser.ml[4,24+6]..[4,24+12])
+              expression (test/driver/error_embedding/raiser.ml[4,24+13]..[5,52+60]) ghost
+                Pexp_fun
+                Labelled "loc"
+                None
+                pattern (test/driver/error_embedding/raiser.ml[4,24+14]..[4,24+17])
+                  Ppat_var "loc" (test/driver/error_embedding/raiser.ml[4,24+14]..[4,24+17])
+                expression (test/driver/error_embedding/raiser.ml[4,24+18]..[5,52+60]) ghost
+                  Pexp_fun
+                  Labelled "path"
+                  None
+                  pattern (test/driver/error_embedding/raiser.ml[4,24+24]..[4,24+25])
+                    Ppat_any
+                  expression (test/driver/error_embedding/raiser.ml[5,52+4]..[5,52+60])
+                    Pexp_apply
+                    expression (test/driver/error_embedding/raiser.ml[5,52+4]..[5,52+25])
+                      Pexp_ident "Location.raise_errorf" (test/driver/error_embedding/raiser.ml[5,52+4]..[5,52+25])
+                    [
+                      <arg>
+                      Labelled "loc"
+                        expression (test/driver/error_embedding/raiser.ml[5,52+27]..[5,52+30])
+                          Pexp_ident "loc" (test/driver/error_embedding/raiser.ml[5,52+27]..[5,52+30])
+                      <arg>
+                      Nolabel
+                        expression (test/driver/error_embedding/raiser.ml[5,52+31]..[5,52+60])
+                          Pexp_constant PConst_string("Raising inside the rewriter",(test/driver/error_embedding/raiser.ml[5,52+32]..[5,52+59]),None)
+                    ]
+          ]
+          expression (test/driver/error_embedding/raiser.ml[7,118+2]..[10,213+32])
+            Pexp_apply
+            expression (test/driver/error_embedding/raiser.ml[10,213+2]..[10,213+4])
+              Pexp_ident "|>" (test/driver/error_embedding/raiser.ml[10,213+2]..[10,213+4])
+            [
+              <arg>
+              Nolabel
+                expression (test/driver/error_embedding/raiser.ml[7,118+2]..[9,202+10])
+                  Pexp_apply
+                  expression (test/driver/error_embedding/raiser.ml[7,118+2]..[7,118+19])
+                    Pexp_ident "Extension.declare" (test/driver/error_embedding/raiser.ml[7,118+2]..[7,118+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[7,118+20]..[7,118+27])
+                        Pexp_constant PConst_string("raise",(test/driver/error_embedding/raiser.ml[7,118+21]..[7,118+26]),None)
+                    <arg>
+                    Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[7,118+28]..[7,118+56])
+                        Pexp_ident "Extension.Context.expression" (test/driver/error_embedding/raiser.ml[7,118+28]..[7,118+56])
+                    <arg>
+                    Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[8,175+4]..[8,175+26])
+                        Pexp_open Fresh
+                        module_expr (test/driver/error_embedding/raiser.ml[8,175+4]..[8,175+15])
+                          Pmod_ident "Ast_pattern" (test/driver/error_embedding/raiser.ml[8,175+4]..[8,175+15])
+                        expression (test/driver/error_embedding/raiser.ml[8,175+17]..[8,175+25])
+                          Pexp_apply
+                          expression (test/driver/error_embedding/raiser.ml[8,175+17]..[8,175+21])
+                            Pexp_ident "pstr" (test/driver/error_embedding/raiser.ml[8,175+17]..[8,175+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/error_embedding/raiser.ml[8,175+22]..[8,175+25])
+                                Pexp_ident "nil" (test/driver/error_embedding/raiser.ml[8,175+22]..[8,175+25])
+                          ]
+                    <arg>
+                    Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[9,202+4]..[9,202+10])
+                        Pexp_ident "expand" (test/driver/error_embedding/raiser.ml[9,202+4]..[9,202+10])
+                  ]
+              <arg>
+              Nolabel
+                expression (test/driver/error_embedding/raiser.ml[10,213+5]..[10,213+32])
+                  Pexp_ident "Context_free.Rule.extension" (test/driver/error_embedding/raiser.ml[10,213+5]..[10,213+32])
+            ]
+    ]
+  structure_item (test/driver/error_embedding/raiser.ml[12,247+0]..[12,247+62])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/raiser.ml[12,247+4]..[12,247+6])
+          Ppat_construct "()" (test/driver/error_embedding/raiser.ml[12,247+4]..[12,247+6])
+          None
+        expression (test/driver/error_embedding/raiser.ml[12,247+9]..[12,247+62])
+          Pexp_apply
+          expression (test/driver/error_embedding/raiser.ml[12,247+9]..[12,247+39])
+            Pexp_ident "Driver.register_transformation" (test/driver/error_embedding/raiser.ml[12,247+9]..[12,247+39])
+          [
+            <arg>
+            Labelled "rules"
+              expression (test/driver/error_embedding/raiser.ml[12,247+47]..[12,247+55])
+                Pexp_construct "::" (test/driver/error_embedding/raiser.ml[12,247+49]..[12,247+55]) ghost
+                Some
+                  expression (test/driver/error_embedding/raiser.ml[12,247+49]..[12,247+55]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/driver/error_embedding/raiser.ml[12,247+49]..[12,247+53])
+                        Pexp_ident "rule" (test/driver/error_embedding/raiser.ml[12,247+49]..[12,247+53])
+                      expression (test/driver/error_embedding/raiser.ml[12,247+54]..[12,247+55]) ghost
+                        Pexp_construct "[]" (test/driver/error_embedding/raiser.ml[12,247+54]..[12,247+55]) ghost
+                        None
+                    ]
+            <arg>
+            Nolabel
+              expression (test/driver/error_embedding/raiser.ml[12,247+56]..[12,247+62])
+                Pexp_constant PConst_string("test",(test/driver/error_embedding/raiser.ml[12,247+57]..[12,247+61]),None)
+          ]
+    ]
+  structure_item (test/driver/error_embedding/raiser.ml[13,310+0]..[13,310+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/raiser.ml[13,310+4]..[13,310+6])
+          Ppat_construct "()" (test/driver/error_embedding/raiser.ml[13,310+4]..[13,310+6])
+          None
+        expression (test/driver/error_embedding/raiser.ml[13,310+9]..[13,310+29])
+          Pexp_apply
+          expression (test/driver/error_embedding/raiser.ml[13,310+9]..[13,310+26])
+            Pexp_ident "Driver.standalone" (test/driver/error_embedding/raiser.ml[13,310+9]..[13,310+26])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/error_embedding/raiser.ml[13,310+27]..[13,310+29])
+                Pexp_construct "()" (test/driver/error_embedding/raiser.ml[13,310+27]..[13,310+29])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let rule =
+  let expand ~loc  ~path:_  =
+    Location.raise_errorf ~loc "Raising inside the rewriter" in
+  (Extension.declare "raise" Extension.Context.expression
+     (let open Ast_pattern in pstr nil) expand)
+    |> Context_free.Rule.extension
+let () = Driver.register_transformation ~rules:[rule] "test"
+let () = Driver.standalone ()
+[
+  structure_item (test/driver/error_embedding/raiser.ml[1,0+0]..test/driver/error_embedding/raiser.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/error_embedding/raiser.ml[1,0+5]..test/driver/error_embedding/raiser.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/error_embedding/raiser.ml[3,13+0]..test/driver/error_embedding/raiser.ml[10,213+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/raiser.ml[3,13+4]..test/driver/error_embedding/raiser.ml[3,13+8])
+          Tpat_var "rule/493"
+        expression (test/driver/error_embedding/raiser.ml[4,24+2]..test/driver/error_embedding/raiser.ml[10,213+32])
+          Texp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/error_embedding/raiser.ml[4,24+6]..test/driver/error_embedding/raiser.ml[4,24+12])
+                Tpat_var "expand/494"
+              expression (test/driver/error_embedding/raiser.ml[4,24+13]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (test/driver/error_embedding/raiser.ml[4,24+14]..test/driver/error_embedding/raiser.ml[4,24+17])
+                      Tpat_var "loc/496"
+                    expression (test/driver/error_embedding/raiser.ml[4,24+18]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost
+                      Texp_function
+                      Labelled "path"
+                      [
+                        <case>
+                          pattern (test/driver/error_embedding/raiser.ml[4,24+24]..test/driver/error_embedding/raiser.ml[4,24+25])
+                            Tpat_any
+                          expression (test/driver/error_embedding/raiser.ml[5,52+4]..test/driver/error_embedding/raiser.ml[5,52+60])
+                            Texp_apply
+                            expression (test/driver/error_embedding/raiser.ml[5,52+4]..test/driver/error_embedding/raiser.ml[5,52+25])
+                              Texp_ident "Ppxlib!.Location.raise_errorf"
+                            [
+                              <arg>
+                                Optional "loc"
+                                expression (test/driver/error_embedding/raiser.ml[5,52+27]..test/driver/error_embedding/raiser.ml[5,52+30])
+                                  Texp_construct "Some"
+                                  [
+                                    expression (test/driver/error_embedding/raiser.ml[5,52+27]..test/driver/error_embedding/raiser.ml[5,52+30])
+                                      Texp_ident "loc/496"
+                                  ]
+                              <arg>
+                                Nolabel
+                                expression (test/driver/error_embedding/raiser.ml[5,52+31]..test/driver/error_embedding/raiser.ml[5,52+60])
+                                  Texp_construct "CamlinternalFormatBasics.Format"
+                                  [
+                                    expression (test/driver/error_embedding/raiser.ml[5,52+31]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.String_literal"
+                                      [
+                                        expression (test/driver/error_embedding/raiser.ml[5,52+31]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost
+                                          Texp_constant Const_string("Raising inside the rewriter",(test/driver/error_embedding/raiser.ml[5,52+31]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost,None)
+                                        expression (test/driver/error_embedding/raiser.ml[5,52+31]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost
+                                          Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                          []
+                                      ]
+                                    expression (test/driver/error_embedding/raiser.ml[5,52+31]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost
+                                      Texp_constant Const_string("Raising inside the rewriter",(test/driver/error_embedding/raiser.ml[5,52+31]..test/driver/error_embedding/raiser.ml[5,52+60]) ghost,None)
+                                  ]
+                            ]
+                      ]
+                ]
+          ]
+          expression (test/driver/error_embedding/raiser.ml[7,118+2]..test/driver/error_embedding/raiser.ml[10,213+32])
+            Texp_apply
+            expression (test/driver/error_embedding/raiser.ml[10,213+2]..test/driver/error_embedding/raiser.ml[10,213+4])
+              Texp_ident "Stdlib!.|>"
+            [
+              <arg>
+                Nolabel
+                expression (test/driver/error_embedding/raiser.ml[7,118+2]..test/driver/error_embedding/raiser.ml[9,202+10])
+                  Texp_apply
+                  expression (test/driver/error_embedding/raiser.ml[7,118+2]..test/driver/error_embedding/raiser.ml[7,118+19])
+                    Texp_ident "Ppxlib!.Extension.declare"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[7,118+20]..test/driver/error_embedding/raiser.ml[7,118+27])
+                        Texp_constant Const_string("raise",(test/driver/error_embedding/raiser.ml[7,118+21]..test/driver/error_embedding/raiser.ml[7,118+26]),None)
+                    <arg>
+                      Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[7,118+28]..test/driver/error_embedding/raiser.ml[7,118+56])
+                        Texp_ident "Ppxlib!.Extension.Context.expression"
+                    <arg>
+                      Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[8,175+4]..test/driver/error_embedding/raiser.ml[8,175+26])
+                        Texp_open Fresh
+                        module_expr (test/driver/error_embedding/raiser.ml[8,175+4]..test/driver/error_embedding/raiser.ml[8,175+15])
+                          Tmod_ident "Ppxlib!.Ast_pattern"
+                        expression (test/driver/error_embedding/raiser.ml[8,175+17]..test/driver/error_embedding/raiser.ml[8,175+25])
+                          Texp_apply
+                          expression (test/driver/error_embedding/raiser.ml[8,175+17]..test/driver/error_embedding/raiser.ml[8,175+21])
+                            Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/driver/error_embedding/raiser.ml[8,175+22]..test/driver/error_embedding/raiser.ml[8,175+25])
+                                Texp_ident "Ppxlib!.Ast_pattern.nil"
+                          ]
+                    <arg>
+                      Nolabel
+                      expression (test/driver/error_embedding/raiser.ml[9,202+4]..test/driver/error_embedding/raiser.ml[9,202+10])
+                        Texp_ident "expand/494"
+                  ]
+              <arg>
+                Nolabel
+                expression (test/driver/error_embedding/raiser.ml[10,213+5]..test/driver/error_embedding/raiser.ml[10,213+32])
+                  Texp_ident "Ppxlib!.Context_free.Rule.extension"
+            ]
+    ]
+  structure_item (test/driver/error_embedding/raiser.ml[12,247+0]..test/driver/error_embedding/raiser.ml[12,247+62])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/raiser.ml[12,247+4]..test/driver/error_embedding/raiser.ml[12,247+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/error_embedding/raiser.ml[12,247+9]..test/driver/error_embedding/raiser.ml[12,247+62])
+          Texp_apply
+          expression (test/driver/error_embedding/raiser.ml[12,247+9]..test/driver/error_embedding/raiser.ml[12,247+39])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (test/driver/error_embedding/raiser.ml[12,247+47]..test/driver/error_embedding/raiser.ml[12,247+55])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/error_embedding/raiser.ml[12,247+47]..test/driver/error_embedding/raiser.ml[12,247+55])
+                    Texp_construct "::"
+                    [
+                      expression (test/driver/error_embedding/raiser.ml[12,247+49]..test/driver/error_embedding/raiser.ml[12,247+53])
+                        Texp_ident "rule/493"
+                      expression (test/driver/error_embedding/raiser.ml[12,247+54]..test/driver/error_embedding/raiser.ml[12,247+55]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/error_embedding/raiser.ml[12,247+56]..test/driver/error_embedding/raiser.ml[12,247+62])
+                Texp_constant Const_string("test",(test/driver/error_embedding/raiser.ml[12,247+57]..test/driver/error_embedding/raiser.ml[12,247+61]),None)
+          ]
+    ]
+  structure_item (test/driver/error_embedding/raiser.ml[13,310+0]..test/driver/error_embedding/raiser.ml[13,310+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/raiser.ml[13,310+4]..test/driver/error_embedding/raiser.ml[13,310+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/error_embedding/raiser.ml[13,310+9]..test/driver/error_embedding/raiser.ml[13,310+29])
+          Texp_apply
+          expression (test/driver/error_embedding/raiser.ml[13,310+9]..test/driver/error_embedding/raiser.ml[13,310+26])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/error_embedding/raiser.ml[13,310+27]..test/driver/error_embedding/raiser.ml[13,310+29])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(seq
+  (let
+    (rule/493 =
+       (let
+         (expand/494 =
+            (function loc/496 param/1182
+              (apply (field_imm 4 (global Ppxlib__Location!))
+                (makeblock 0 loc/496)
+                [0:
+                 [11: "Raising inside the rewriter" 0]
+                 "Raising inside the rewriter"])))
+         (revapply
+           (apply (field_imm 1 (global Ppxlib__Extension!)) "raise"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/494)
+           (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!))))))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Raiser!) rule/493))
+  (let
+    (*match*/5728 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0
+           (makeblock 0 (field_imm 0 (global Dune__exe__Raiser!)) 0))
+         0 0 0 0 0 0 0 0 0 0 "test"))
+    0)
+  (let (*match*/5730 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)
+(seq
+  (let
+    (rule/493 =
+       (let
+         (expand/494 =
+            (function loc/496 param/1182
+              (apply (field_imm 4 (global Ppxlib__Location!))
+                (makeblock 0 loc/496)
+                [0:
+                 [11: "Raising inside the rewriter" 0]
+                 "Raising inside the rewriter"])))
+         (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+           (apply (field_imm 1 (global Ppxlib__Extension!)) "raise"
+             (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+             (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+               (field_imm 22 (global Ppxlib__Ast_pattern!)))
+             expand/494))))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Raiser!) rule/493))
+  (let
+    (*match*/5728 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0
+           (makeblock 0 (field_imm 0 (global Dune__exe__Raiser!)) 0))
+         0 0 0 0 0 0 0 0 0 0 "test"))
+    0)
+  (let (*match*/5730 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)

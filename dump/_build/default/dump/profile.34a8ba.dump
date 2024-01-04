@@ -1,0 +1,9 @@
+0.190s 48.2MB 17.4MB 19.1MB test/driver/exception_handling/whole_file_located_error.ml
+  0.183s 45.4MB 17.4MB 19.1MB typing
+  0.005s 2.00MB ------ ------ generate
+    0.001s 2.00MB ------ ------ compile_phrases
+      ------ 2.00MB ------ ------ regalloc
+    0.004s ------ ------ ------ assemble
+    0.001s ------ ------ ------ other
+  0.002s 0.83MB ------ ------ other
+0.018s 3.02MB 1.72MB ------ other

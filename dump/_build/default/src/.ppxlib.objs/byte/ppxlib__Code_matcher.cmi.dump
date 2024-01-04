@@ -1,0 +1,495 @@
+[
+  signature_item (src/code_matcher.mli[1,0+0]..[1,0+47])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/code_matcher.mli[1,0+0]..[1,0+47])
+        Pstr_eval
+        expression (src/code_matcher.mli[1,0+0]..[1,0+47])
+          Pexp_constant PConst_string(" Match source code against generated code ",(src/code_matcher.mli[1,0+0]..[1,0+47]),None)
+    ]
+  signature_item (src/code_matcher.mli[3,49+0]..[3,49+12])
+    Psig_open Override "Import" (src/code_matcher.mli[3,49+6]..[3,49+12])
+  signature_item (src/code_matcher.mli[5,63+0]..[10,209+48])
+    Psig_value
+    value_description "match_structure_res" (src/code_matcher.mli[5,63+4]..[5,63+23]) (src/code_matcher.mli[5,63+0]..[10,209+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[11,258+0]..[17,496+46])
+            Pstr_eval
+            expression (src/code_matcher.mli[11,258+0]..[17,496+46])
+              Pexp_constant PConst_string(" Checks that the given code starts with [expected] followed by\n    [@@@deriving.end] or [@@@end].\n\n    Returns an error if there is no [@@@deriving.end].\n\n    If some items don't match, it calls [mismatch_handler] with the location of\n    the source items and the expected code. ",(src/code_matcher.mli[11,258+0]..[17,496+46]),None)
+        ]
+      core_type (src/code_matcher.mli[6,89+2]..[10,209+48])
+        Ptyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[6,89+6]..[6,89+21])
+          Ptyp_constr "Lexing.position" (src/code_matcher.mli[6,89+6]..[6,89+21])
+          []
+        core_type (src/code_matcher.mli[7,114+2]..[10,209+48])
+          Ptyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[7,114+11]..[7,114+20])
+            Ptyp_constr "structure" (src/code_matcher.mli[7,114+11]..[7,114+20])
+            []
+          core_type (src/code_matcher.mli[8,138+2]..[10,209+48])
+            Ptyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[8,138+20]..[8,138+51])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[8,138+20]..[8,138+30])
+                Ptyp_constr "Location.t" (src/code_matcher.mli[8,138+20]..[8,138+30])
+                []
+              core_type (src/code_matcher.mli[8,138+34]..[8,138+51])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[8,138+34]..[8,138+43])
+                  Ptyp_constr "structure" (src/code_matcher.mli[8,138+34]..[8,138+43])
+                  []
+                core_type (src/code_matcher.mli[8,138+47]..[8,138+51])
+                  Ptyp_constr "unit" (src/code_matcher.mli[8,138+47]..[8,138+51])
+                  []
+            core_type (src/code_matcher.mli[9,194+2]..[10,209+48])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[9,194+2]..[9,194+11])
+                Ptyp_constr "structure" (src/code_matcher.mli[9,194+2]..[9,194+11])
+                []
+              core_type (src/code_matcher.mli[10,209+2]..[10,209+48])
+                Ptyp_constr "result" (src/code_matcher.mli[10,209+42]..[10,209+48])
+                [
+                  core_type (src/code_matcher.mli[10,209+3]..[10,209+7])
+                    Ptyp_constr "unit" (src/code_matcher.mli[10,209+3]..[10,209+7])
+                    []
+                  core_type (src/code_matcher.mli[10,209+9]..[10,209+40])
+                    Ptyp_constr "NonEmptyList.t" (src/code_matcher.mli[10,209+26]..[10,209+40])
+                    [
+                      core_type (src/code_matcher.mli[10,209+9]..[10,209+25])
+                        Ptyp_constr "Location.Error.t" (src/code_matcher.mli[10,209+9]..[10,209+25])
+                        []
+                    ]
+                ]
+      []
+  signature_item (src/code_matcher.mli[19,544+0]..[24,686+6])
+    Psig_value
+    value_description "match_structure" (src/code_matcher.mli[19,544+4]..[19,544+19]) (src/code_matcher.mli[19,544+0]..[24,686+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[25,693+0]..[25,693+75])
+            Pstr_eval
+            expression (src/code_matcher.mli[25,693+0]..[25,693+75])
+              Pexp_constant PConst_string(" See {!match_structure_res}. Raises a located error in case of error. ",(src/code_matcher.mli[25,693+0]..[25,693+75]),None)
+        ]
+      core_type (src/code_matcher.mli[20,566+2]..[24,686+6])
+        Ptyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[20,566+6]..[20,566+21])
+          Ptyp_constr "Lexing.position" (src/code_matcher.mli[20,566+6]..[20,566+21])
+          []
+        core_type (src/code_matcher.mli[21,591+2]..[24,686+6])
+          Ptyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[21,591+11]..[21,591+20])
+            Ptyp_constr "structure" (src/code_matcher.mli[21,591+11]..[21,591+20])
+            []
+          core_type (src/code_matcher.mli[22,615+2]..[24,686+6])
+            Ptyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[22,615+20]..[22,615+51])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[22,615+20]..[22,615+30])
+                Ptyp_constr "Location.t" (src/code_matcher.mli[22,615+20]..[22,615+30])
+                []
+              core_type (src/code_matcher.mli[22,615+34]..[22,615+51])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[22,615+34]..[22,615+43])
+                  Ptyp_constr "structure" (src/code_matcher.mli[22,615+34]..[22,615+43])
+                  []
+                core_type (src/code_matcher.mli[22,615+47]..[22,615+51])
+                  Ptyp_constr "unit" (src/code_matcher.mli[22,615+47]..[22,615+51])
+                  []
+            core_type (src/code_matcher.mli[23,671+2]..[24,686+6])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[23,671+2]..[23,671+11])
+                Ptyp_constr "structure" (src/code_matcher.mli[23,671+2]..[23,671+11])
+                []
+              core_type (src/code_matcher.mli[24,686+2]..[24,686+6])
+                Ptyp_constr "unit" (src/code_matcher.mli[24,686+2]..[24,686+6])
+                []
+      []
+  signature_item (src/code_matcher.mli[27,770+0]..[32,916+48])
+    Psig_value
+    value_description "match_signature_res" (src/code_matcher.mli[27,770+4]..[27,770+23]) (src/code_matcher.mli[27,770+0]..[32,916+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[33,965+0]..[33,965+26])
+            Pstr_eval
+            expression (src/code_matcher.mli[33,965+0]..[33,965+26])
+              Pexp_constant PConst_string(" Same for signatures ",(src/code_matcher.mli[33,965+0]..[33,965+26]),None)
+        ]
+      core_type (src/code_matcher.mli[28,796+2]..[32,916+48])
+        Ptyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[28,796+6]..[28,796+21])
+          Ptyp_constr "Lexing.position" (src/code_matcher.mli[28,796+6]..[28,796+21])
+          []
+        core_type (src/code_matcher.mli[29,821+2]..[32,916+48])
+          Ptyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[29,821+11]..[29,821+20])
+            Ptyp_constr "signature" (src/code_matcher.mli[29,821+11]..[29,821+20])
+            []
+          core_type (src/code_matcher.mli[30,845+2]..[32,916+48])
+            Ptyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[30,845+20]..[30,845+51])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[30,845+20]..[30,845+30])
+                Ptyp_constr "Location.t" (src/code_matcher.mli[30,845+20]..[30,845+30])
+                []
+              core_type (src/code_matcher.mli[30,845+34]..[30,845+51])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[30,845+34]..[30,845+43])
+                  Ptyp_constr "signature" (src/code_matcher.mli[30,845+34]..[30,845+43])
+                  []
+                core_type (src/code_matcher.mli[30,845+47]..[30,845+51])
+                  Ptyp_constr "unit" (src/code_matcher.mli[30,845+47]..[30,845+51])
+                  []
+            core_type (src/code_matcher.mli[31,901+2]..[32,916+48])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[31,901+2]..[31,901+11])
+                Ptyp_constr "signature" (src/code_matcher.mli[31,901+2]..[31,901+11])
+                []
+              core_type (src/code_matcher.mli[32,916+2]..[32,916+48])
+                Ptyp_constr "result" (src/code_matcher.mli[32,916+42]..[32,916+48])
+                [
+                  core_type (src/code_matcher.mli[32,916+3]..[32,916+7])
+                    Ptyp_constr "unit" (src/code_matcher.mli[32,916+3]..[32,916+7])
+                    []
+                  core_type (src/code_matcher.mli[32,916+9]..[32,916+40])
+                    Ptyp_constr "NonEmptyList.t" (src/code_matcher.mli[32,916+26]..[32,916+40])
+                    [
+                      core_type (src/code_matcher.mli[32,916+9]..[32,916+25])
+                        Ptyp_constr "Location.Error.t" (src/code_matcher.mli[32,916+9]..[32,916+25])
+                        []
+                    ]
+                ]
+      []
+  signature_item (src/code_matcher.mli[35,993+0]..[40,1135+6])
+    Psig_value
+    value_description "match_signature" (src/code_matcher.mli[35,993+4]..[35,993+19]) (src/code_matcher.mli[35,993+0]..[40,1135+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[41,1142+0]..[41,1142+26])
+            Pstr_eval
+            expression (src/code_matcher.mli[41,1142+0]..[41,1142+26])
+              Pexp_constant PConst_string(" Same for signatures ",(src/code_matcher.mli[41,1142+0]..[41,1142+26]),None)
+        ]
+      core_type (src/code_matcher.mli[36,1015+2]..[40,1135+6])
+        Ptyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[36,1015+6]..[36,1015+21])
+          Ptyp_constr "Lexing.position" (src/code_matcher.mli[36,1015+6]..[36,1015+21])
+          []
+        core_type (src/code_matcher.mli[37,1040+2]..[40,1135+6])
+          Ptyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[37,1040+11]..[37,1040+20])
+            Ptyp_constr "signature" (src/code_matcher.mli[37,1040+11]..[37,1040+20])
+            []
+          core_type (src/code_matcher.mli[38,1064+2]..[40,1135+6])
+            Ptyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[38,1064+20]..[38,1064+51])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[38,1064+20]..[38,1064+30])
+                Ptyp_constr "Location.t" (src/code_matcher.mli[38,1064+20]..[38,1064+30])
+                []
+              core_type (src/code_matcher.mli[38,1064+34]..[38,1064+51])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[38,1064+34]..[38,1064+43])
+                  Ptyp_constr "signature" (src/code_matcher.mli[38,1064+34]..[38,1064+43])
+                  []
+                core_type (src/code_matcher.mli[38,1064+47]..[38,1064+51])
+                  Ptyp_constr "unit" (src/code_matcher.mli[38,1064+47]..[38,1064+51])
+                  []
+            core_type (src/code_matcher.mli[39,1120+2]..[40,1135+6])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[39,1120+2]..[39,1120+11])
+                Ptyp_constr "signature" (src/code_matcher.mli[39,1120+2]..[39,1120+11])
+                []
+              core_type (src/code_matcher.mli[40,1135+2]..[40,1135+6])
+                Ptyp_constr "unit" (src/code_matcher.mli[40,1135+2]..[40,1135+6])
+                []
+      []
+]
+
+[@@@ocaml.text " Match source code against generated code "]
+open! Import
+val match_structure_res :
+  pos:Lexing.position ->
+    expected:structure ->
+      mismatch_handler:(Location.t -> structure -> unit) ->
+        structure -> (unit, Location.Error.t NonEmptyList.t) result[@@ocaml.doc
+                                                                    " Checks that the given code starts with [expected] followed by\n    [@@@deriving.end] or [@@@end].\n\n    Returns an error if there is no [@@@deriving.end].\n\n    If some items don't match, it calls [mismatch_handler] with the location of\n    the source items and the expected code. "]
+val match_structure :
+  pos:Lexing.position ->
+    expected:structure ->
+      mismatch_handler:(Location.t -> structure -> unit) -> structure -> unit
+[@@ocaml.doc
+  " See {!match_structure_res}. Raises a located error in case of error. "]
+val match_signature_res :
+  pos:Lexing.position ->
+    expected:signature ->
+      mismatch_handler:(Location.t -> signature -> unit) ->
+        signature -> (unit, Location.Error.t NonEmptyList.t) result[@@ocaml.doc
+                                                                    " Same for signatures "]
+val match_signature :
+  pos:Lexing.position ->
+    expected:signature ->
+      mismatch_handler:(Location.t -> signature -> unit) -> signature -> unit
+[@@ocaml.doc " Same for signatures "]
+[
+  signature_item (src/code_matcher.mli[1,0+0]..src/code_matcher.mli[1,0+47])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/code_matcher.mli[1,0+0]..[1,0+47])
+        Pstr_eval
+        expression (src/code_matcher.mli[1,0+0]..[1,0+47])
+          Pexp_constant PConst_string(" Match source code against generated code ",(src/code_matcher.mli[1,0+0]..[1,0+47]),None)
+    ]
+  signature_item (src/code_matcher.mli[3,49+0]..src/code_matcher.mli[3,49+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/code_matcher.mli[5,63+0]..src/code_matcher.mli[10,209+48])
+    Tsig_value
+    value_description match_structure_res/677 (src/code_matcher.mli[5,63+0]..src/code_matcher.mli[10,209+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[11,258+0]..[17,496+46])
+            Pstr_eval
+            expression (src/code_matcher.mli[11,258+0]..[17,496+46])
+              Pexp_constant PConst_string(" Checks that the given code starts with [expected] followed by\n    [@@@deriving.end] or [@@@end].\n\n    Returns an error if there is no [@@@deriving.end].\n\n    If some items don't match, it calls [mismatch_handler] with the location of\n    the source items and the expected code. ",(src/code_matcher.mli[11,258+0]..[17,496+46]),None)
+        ]
+      core_type (src/code_matcher.mli[6,89+2]..src/code_matcher.mli[10,209+48])
+        Ttyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[6,89+6]..src/code_matcher.mli[6,89+21])
+          Ttyp_constr "Stdlib!.Lexing.position"
+          []
+        core_type (src/code_matcher.mli[7,114+2]..src/code_matcher.mli[10,209+48])
+          Ttyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[7,114+11]..src/code_matcher.mli[7,114+20])
+            Ttyp_constr "Ppxlib__!.Import.structure"
+            []
+          core_type (src/code_matcher.mli[8,138+2]..src/code_matcher.mli[10,209+48])
+            Ttyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[8,138+20]..src/code_matcher.mli[8,138+51])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[8,138+20]..src/code_matcher.mli[8,138+30])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/code_matcher.mli[8,138+34]..src/code_matcher.mli[8,138+51])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[8,138+34]..src/code_matcher.mli[8,138+43])
+                  Ttyp_constr "Ppxlib__!.Import.structure"
+                  []
+                core_type (src/code_matcher.mli[8,138+47]..src/code_matcher.mli[8,138+51])
+                  Ttyp_constr "unit/6!"
+                  []
+            core_type (src/code_matcher.mli[9,194+2]..src/code_matcher.mli[10,209+48])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[9,194+2]..src/code_matcher.mli[9,194+11])
+                Ttyp_constr "Ppxlib__!.Import.structure"
+                []
+              core_type (src/code_matcher.mli[10,209+2]..src/code_matcher.mli[10,209+48])
+                Ttyp_constr "Stdlib!.result"
+                [
+                  core_type (src/code_matcher.mli[10,209+3]..src/code_matcher.mli[10,209+7])
+                    Ttyp_constr "unit/6!"
+                    []
+                  core_type (src/code_matcher.mli[10,209+9]..src/code_matcher.mli[10,209+40])
+                    Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                    [
+                      core_type (src/code_matcher.mli[10,209+9]..src/code_matcher.mli[10,209+25])
+                        Ttyp_constr "Ppxlib__!.Location.Error.t"
+                        []
+                    ]
+                ]
+      []
+  signature_item (src/code_matcher.mli[19,544+0]..src/code_matcher.mli[24,686+6])
+    Tsig_value
+    value_description match_structure/678 (src/code_matcher.mli[19,544+0]..src/code_matcher.mli[24,686+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[25,693+0]..[25,693+75])
+            Pstr_eval
+            expression (src/code_matcher.mli[25,693+0]..[25,693+75])
+              Pexp_constant PConst_string(" See {!match_structure_res}. Raises a located error in case of error. ",(src/code_matcher.mli[25,693+0]..[25,693+75]),None)
+        ]
+      core_type (src/code_matcher.mli[20,566+2]..src/code_matcher.mli[24,686+6])
+        Ttyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[20,566+6]..src/code_matcher.mli[20,566+21])
+          Ttyp_constr "Stdlib!.Lexing.position"
+          []
+        core_type (src/code_matcher.mli[21,591+2]..src/code_matcher.mli[24,686+6])
+          Ttyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[21,591+11]..src/code_matcher.mli[21,591+20])
+            Ttyp_constr "Ppxlib__!.Import.structure"
+            []
+          core_type (src/code_matcher.mli[22,615+2]..src/code_matcher.mli[24,686+6])
+            Ttyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[22,615+20]..src/code_matcher.mli[22,615+51])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[22,615+20]..src/code_matcher.mli[22,615+30])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/code_matcher.mli[22,615+34]..src/code_matcher.mli[22,615+51])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[22,615+34]..src/code_matcher.mli[22,615+43])
+                  Ttyp_constr "Ppxlib__!.Import.structure"
+                  []
+                core_type (src/code_matcher.mli[22,615+47]..src/code_matcher.mli[22,615+51])
+                  Ttyp_constr "unit/6!"
+                  []
+            core_type (src/code_matcher.mli[23,671+2]..src/code_matcher.mli[24,686+6])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[23,671+2]..src/code_matcher.mli[23,671+11])
+                Ttyp_constr "Ppxlib__!.Import.structure"
+                []
+              core_type (src/code_matcher.mli[24,686+2]..src/code_matcher.mli[24,686+6])
+                Ttyp_constr "unit/6!"
+                []
+      []
+  signature_item (src/code_matcher.mli[27,770+0]..src/code_matcher.mli[32,916+48])
+    Tsig_value
+    value_description match_signature_res/679 (src/code_matcher.mli[27,770+0]..src/code_matcher.mli[32,916+48])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[33,965+0]..[33,965+26])
+            Pstr_eval
+            expression (src/code_matcher.mli[33,965+0]..[33,965+26])
+              Pexp_constant PConst_string(" Same for signatures ",(src/code_matcher.mli[33,965+0]..[33,965+26]),None)
+        ]
+      core_type (src/code_matcher.mli[28,796+2]..src/code_matcher.mli[32,916+48])
+        Ttyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[28,796+6]..src/code_matcher.mli[28,796+21])
+          Ttyp_constr "Stdlib!.Lexing.position"
+          []
+        core_type (src/code_matcher.mli[29,821+2]..src/code_matcher.mli[32,916+48])
+          Ttyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[29,821+11]..src/code_matcher.mli[29,821+20])
+            Ttyp_constr "Ppxlib__!.Import.signature"
+            []
+          core_type (src/code_matcher.mli[30,845+2]..src/code_matcher.mli[32,916+48])
+            Ttyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[30,845+20]..src/code_matcher.mli[30,845+51])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[30,845+20]..src/code_matcher.mli[30,845+30])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/code_matcher.mli[30,845+34]..src/code_matcher.mli[30,845+51])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[30,845+34]..src/code_matcher.mli[30,845+43])
+                  Ttyp_constr "Ppxlib__!.Import.signature"
+                  []
+                core_type (src/code_matcher.mli[30,845+47]..src/code_matcher.mli[30,845+51])
+                  Ttyp_constr "unit/6!"
+                  []
+            core_type (src/code_matcher.mli[31,901+2]..src/code_matcher.mli[32,916+48])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[31,901+2]..src/code_matcher.mli[31,901+11])
+                Ttyp_constr "Ppxlib__!.Import.signature"
+                []
+              core_type (src/code_matcher.mli[32,916+2]..src/code_matcher.mli[32,916+48])
+                Ttyp_constr "Stdlib!.result"
+                [
+                  core_type (src/code_matcher.mli[32,916+3]..src/code_matcher.mli[32,916+7])
+                    Ttyp_constr "unit/6!"
+                    []
+                  core_type (src/code_matcher.mli[32,916+9]..src/code_matcher.mli[32,916+40])
+                    Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                    [
+                      core_type (src/code_matcher.mli[32,916+9]..src/code_matcher.mli[32,916+25])
+                        Ttyp_constr "Ppxlib__!.Location.Error.t"
+                        []
+                    ]
+                ]
+      []
+  signature_item (src/code_matcher.mli[35,993+0]..src/code_matcher.mli[40,1135+6])
+    Tsig_value
+    value_description match_signature/680 (src/code_matcher.mli[35,993+0]..src/code_matcher.mli[40,1135+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/code_matcher.mli[41,1142+0]..[41,1142+26])
+            Pstr_eval
+            expression (src/code_matcher.mli[41,1142+0]..[41,1142+26])
+              Pexp_constant PConst_string(" Same for signatures ",(src/code_matcher.mli[41,1142+0]..[41,1142+26]),None)
+        ]
+      core_type (src/code_matcher.mli[36,1015+2]..src/code_matcher.mli[40,1135+6])
+        Ttyp_arrow
+        Labelled "pos"
+        core_type (src/code_matcher.mli[36,1015+6]..src/code_matcher.mli[36,1015+21])
+          Ttyp_constr "Stdlib!.Lexing.position"
+          []
+        core_type (src/code_matcher.mli[37,1040+2]..src/code_matcher.mli[40,1135+6])
+          Ttyp_arrow
+          Labelled "expected"
+          core_type (src/code_matcher.mli[37,1040+11]..src/code_matcher.mli[37,1040+20])
+            Ttyp_constr "Ppxlib__!.Import.signature"
+            []
+          core_type (src/code_matcher.mli[38,1064+2]..src/code_matcher.mli[40,1135+6])
+            Ttyp_arrow
+            Labelled "mismatch_handler"
+            core_type (src/code_matcher.mli[38,1064+20]..src/code_matcher.mli[38,1064+51])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[38,1064+20]..src/code_matcher.mli[38,1064+30])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/code_matcher.mli[38,1064+34]..src/code_matcher.mli[38,1064+51])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/code_matcher.mli[38,1064+34]..src/code_matcher.mli[38,1064+43])
+                  Ttyp_constr "Ppxlib__!.Import.signature"
+                  []
+                core_type (src/code_matcher.mli[38,1064+47]..src/code_matcher.mli[38,1064+51])
+                  Ttyp_constr "unit/6!"
+                  []
+            core_type (src/code_matcher.mli[39,1120+2]..src/code_matcher.mli[40,1135+6])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/code_matcher.mli[39,1120+2]..src/code_matcher.mli[39,1120+11])
+                Ttyp_constr "Ppxlib__!.Import.signature"
+                []
+              core_type (src/code_matcher.mli[40,1135+2]..src/code_matcher.mli[40,1135+6])
+                Ttyp_constr "unit/6!"
+                []
+      []
+]
+

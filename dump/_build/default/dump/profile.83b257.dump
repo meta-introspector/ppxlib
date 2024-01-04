@@ -1,0 +1,22 @@
+0.216s  383MB 51.8MB 53.6MB traverse/ppxlib_traverse.pp.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ other
+  0.133s  175MB 41.6MB 43.3MB typing
+  0.006s 12.7MB 0.84MB 44.1MB transl
+  0.046s 83.5MB 7.37MB 51.5MB generate
+    0.001s 2.00MB 0.68MB 44.8MB cmm
+    0.024s 49.3MB 4.84MB 49.7MB compile_phrases
+      0.003s 6.91MB 0.62MB 45.4MB selection
+      ------ 0.28MB ------ ------ polling
+      0.001s 10.2MB 1.00MB 46.4MB cse
+      0.002s 8.00MB 0.90MB 47.4MB liveness
+      0.001s 4.00MB 0.40MB 47.8MB deadcode
+      0.003s 6.76MB 0.81MB 48.6MB spill
+      0.001s 0.18MB ------ ------ split
+      0.008s 10.6MB 0.87MB 49.4MB regalloc
+      0.002s 2.42MB 0.21MB 49.7MB emit
+      0.002s ------ ------ ------ other
+    0.010s ------ ------ ------ assemble
+    0.011s 32.1MB 1.84MB 51.5MB other
+  0.029s  111MB 2.06MB 53.6MB other
+0.007s 3.02MB 1.72MB ------ other

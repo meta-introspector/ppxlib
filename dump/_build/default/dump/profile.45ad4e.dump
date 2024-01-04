@@ -1,0 +1,8 @@
+0.357s  354MB 41.0MB 41.0MB src/attribute.ml
+  0.004s 7.21MB 2.19MB 2.19MB parsing
+    0.004s 7.21MB 2.19MB 2.19MB parser
+  0.262s  203MB 35.7MB 37.9MB typing
+  0.021s 20.9MB 1.18MB 39.1MB transl
+  0.039s 59.0MB 1.68MB 40.8MB generate
+  0.030s 63.5MB 0.18MB 41.0MB other
+0.005s ------ ------ ------ other

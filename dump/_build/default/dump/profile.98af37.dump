@@ -1,0 +1,15 @@
+0.432s  187MB 47.2MB 49.0MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/helpers.pp.ml
+  0.400s  140MB 44.1MB 45.9MB typing
+  0.004s 4.37MB 0.25MB 46.2MB transl
+  0.017s 15.8MB 1.75MB 47.9MB generate
+    0.001s 2.20MB 0.81MB 47.0MB cmm
+    0.006s 6.52MB 0.53MB 47.5MB compile_phrases
+      0.001s 2.00MB 0.18MB 47.2MB selection
+      0.001s 0.18MB ------ ------ cse
+      0.002s 2.21MB 0.15MB 47.3MB regalloc
+      0.001s 2.12MB 0.18MB 47.5MB emit
+      0.001s ------ ------ ------ other
+    0.004s ------ ------ ------ assemble
+    0.006s 7.10MB 0.40MB 47.9MB other
+  0.011s 26.0MB 1.09MB 49.0MB other
+0.010s 3.10MB 1.79MB ------ other

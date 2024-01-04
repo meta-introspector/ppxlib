@@ -1,0 +1,8 @@
+0.131s 63.9MB 17.5MB 17.5MB src/longident.ml
+  0.004s 2.90MB 1.57MB 1.57MB parsing
+    0.004s 2.90MB 1.57MB 1.57MB parser
+  0.115s 48.7MB 15.8MB 17.3MB typing
+  0.002s 2.00MB 0.06MB 17.4MB transl
+  0.005s 4.12MB 0.03MB ------ generate
+  0.006s 6.08MB 0.09MB 17.5MB other
+0.008s ------ ------ ------ other

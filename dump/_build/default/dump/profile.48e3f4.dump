@@ -1,0 +1,8 @@
+0.502s 1.06GB 69.7MB 69.7MB ast/versions.pp.ml
+  0.003s ------ 1.78MB 1.78MB parsing
+    0.003s ------ 1.78MB 1.78MB parser
+  0.478s 0.98GB 66.6MB 68.4MB typing
+  0.003s ------ 0.43MB 68.9MB transl
+  0.009s 0.03GB 0.66MB 69.5MB generate
+  0.010s 0.03GB 0.15MB 69.7MB other
+0.004s ------ ------ ------ other

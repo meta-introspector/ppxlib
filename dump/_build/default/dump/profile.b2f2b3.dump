@@ -1,0 +1,10 @@
+0.089s 99.6MB 31.4MB 33.1MB test/driver/flag_cookie/print_cookie_driver.pp.ml
+  0.082s 88.2MB 30.1MB 31.8MB typing
+  0.001s 2.62MB 0.15MB 32.0MB transl
+  0.005s 4.41MB 0.31MB 32.3MB generate
+    0.001s 2.21MB 0.25MB 32.2MB compile_phrases
+      ------ 2.21MB 0.25MB 32.2MB liveness
+    0.003s ------ ------ ------ assemble
+    0.001s 2.20MB 0.06MB 32.3MB other
+  0.002s 4.31MB 0.81MB 33.1MB other
+0.007s 3.02MB 1.72MB ------ other

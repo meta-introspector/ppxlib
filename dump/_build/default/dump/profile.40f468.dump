@@ -1,0 +1,11 @@
+0.137s 60.5MB 16.5MB 18.2MB src/location.ml
+  0.112s 45.8MB 15.5MB 17.2MB typing
+  0.001s ------ ------ ------ transl
+  0.016s 6.35MB 0.53MB 17.7MB generate
+    0.005s 2.31MB 0.34MB 17.5MB compile_phrases
+      0.001s 0.12MB ------ ------ spill
+      0.002s 2.19MB 0.34MB 17.5MB regalloc
+    0.007s ------ ------ ------ assemble
+    0.003s 4.03MB 0.18MB 17.7MB other
+  0.008s 8.37MB 0.47MB 18.2MB other
+0.014s 3.03MB 1.69MB ------ other
