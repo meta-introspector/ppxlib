@@ -1,0 +1,11 @@
+
+* install
+
+Here are the install
+
+#+begin_src shell
+opam install yojson re sexplib0 stdlib-shims ocaml-compiler-libs.common batteries alcotest  ppx_derivers
+#+end_src
+
+# findlib findlib.dynload
+dune build > log.txt  2>&1
