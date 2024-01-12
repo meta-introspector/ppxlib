@@ -11,12 +11,14 @@
   -w
   -9-27-32)
  (preprocess
-  (per_module
-   ((action
-     (run %{exe:pp/pp.exe} %{ocaml_version} %{input-file}))
-    versions)))
+  ; (per_module
+  ;  ((action
+  ;    (run %{exe:pp/pp.exe} %{ocaml_version} %{input-file}))
+  ;   versions)
+  (pps ppx-introspector)
+ )
  (lint
-  (pps ppxlib_traverse -deriving-keep-w32=impl)))
+  (pps  ppxlib_traverse -deriving-keep-w32=impl)))
 
 (cinaps
  (files *.ml *.mli)

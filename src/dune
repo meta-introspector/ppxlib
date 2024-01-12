@@ -13,6 +13,9 @@
   sexplib0)
  (flags
   (:standard -safe-string))
+ (preprocess
+  (pps ppx-introspector)
+ )
  (ppx.driver
   (main Ppxlib.Driver.standalone)
   (flags
