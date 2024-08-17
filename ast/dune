@@ -10,11 +10,8 @@
   (:standard -safe-string)
   -w
   -9-27-32)
- (preprocess
-  (per_module
-   ((action
-     (run %{exe:pp/pp.exe} %{ocaml_version} %{input-file}))
-    versions)))
+   (preprocess (staged_pps ppx_import ppx_yojson_conv ppx_mina_introspector ))
+
  (lint
   (pps ppxlib_traverse -deriving-keep-w32=impl)))
 

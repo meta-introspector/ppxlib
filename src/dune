@@ -1,5 +1,6 @@
 (library
  (name ppxlib)
+ (preprocess (staged_pps ppx_import ppx_yojson_conv ppx_mina_introspector ))
  (public_name ppxlib)
  (libraries
   (re_export ppxlib_ast)
@@ -13,6 +14,8 @@
   sexplib0)
  (flags
   (:standard -safe-string))
+
+
  (ppx.driver
   (main Ppxlib.Driver.standalone)
   (flags
