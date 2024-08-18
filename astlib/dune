@@ -1,3 +1,8 @@
+
+(env
+  (_
+    (flags (-dsource))))
+
 (library
  (name astlib)
  (public_name ppxlib.astlib)
