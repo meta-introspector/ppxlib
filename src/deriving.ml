@@ -63,10 +63,29 @@ let allow_unused_code_warnings = ref Options.default_allow_unused_code_warnings
 
 let () =
   Driver.add_arg "-unused-code-warnings"
-    (Bool (( := ) allow_unused_code_warnings))
-    ~doc:"_ Allow ppx derivers to enable unused code warnings"
+    (Options.Forcable_bool.arg allow_unused_code_warnings)
+    ~doc:" Allow ppx derivers to enable unused code warnings (default: false)"
 
-let allow_unused_code_warnings () = !allow_unused_code_warnings
+let allow_unused_code_warnings ~ppx_allows_unused_code_warnings =
+  match !allow_unused_code_warnings with
+  | Force -> true
+  | False -> false
+  | True -> ppx_allows_unused_code_warnings
+
+let allow_unused_type_warnings = ref Options.default_allow_unused_type_warnings
+
+let () =
+  Driver.add_arg "-unused-type-warnings"
+    (Options.Forcable_bool.arg allow_unused_type_warnings)
+    ~doc:
+      " Allow unused type warnings for types with [@@deriving ...] (default: \
+       false)"
+
+let allow_unused_type_warnings ~ppx_allows_unused_code_warnings =
+  match !allow_unused_type_warnings with
+  | Force -> true
+  | False -> false
+  | True -> ppx_allows_unused_code_warnings
 
 module Args = struct
   include (
@@ -631,7 +650,8 @@ let wrap_str ~loc ~hide st =
 let wrap_str ~loc ~hide ~unused_code_warnings st =
   let loc = { loc with loc_ghost = true } in
   let unused_code_warnings =
-    unused_code_warnings && allow_unused_code_warnings ()
+    allow_unused_code_warnings
+      ~ppx_allows_unused_code_warnings:unused_code_warnings
   in
   let warnings, st =
     if keep_w32_impl () || unused_code_warnings then ([], st)
@@ -671,7 +691,8 @@ let wrap_sig ~loc ~hide st =
 let wrap_sig ~loc ~hide ~unused_code_warnings sg =
   let loc = { loc with loc_ghost = true } in
   let unused_code_warnings =
-    unused_code_warnings && allow_unused_code_warnings ()
+    allow_unused_code_warnings
+      ~ppx_allows_unused_code_warnings:unused_code_warnings
   in
   let warnings =
     if keep_w32_intf () || unused_code_warnings then [] else [ 32 ]
@@ -700,8 +721,16 @@ let wrap_sig ~loc ~hide list =
    | Main expansion                                                  |
    +-----------------------------------------------------------------+ *)
 
-let types_used_by_deriving (tds : type_declaration list) : structure_item list =
-  if keep_w32_impl () then []
+let types_used_by_deriving (tds : type_declaration list)
+    ~unused_code_warnings:ppx_allows_unused_code_warnings : structure_item list
+    =
+  let unused_code_warnings =
+    allow_unused_code_warnings ~ppx_allows_unused_code_warnings
+  in
+  let unused_type_warnings =
+    allow_unused_type_warnings ~ppx_allows_unused_code_warnings
+  in
+  if keep_w32_impl () || unused_code_warnings || unused_type_warnings then []
   else
     List.map tds ~f:(fun td ->
         let typ = Common.core_type_of_type_declaration td in
@@ -737,10 +766,18 @@ let expand_str_type_decls ~ctxt rec_flag tds values =
         Ast_builder.Default.pstr_extension ~loc:Location.none err [])
       l_err
   in
+  let unused_code_warnings =
+    List.for_all generators ~f:(fun (_, generators, _) ->
+        List.for_all generators ~f:(fun (Generator.T t) ->
+            t.unused_code_warnings))
+  in
   (* TODO: instead of disabling the unused warning for types themselves, we
      should add a tag [@@unused]. *)
   let generated =
-    { items = types_used_by_deriving tds @ l_err; unused_code_warnings = false }
+    {
+      items = types_used_by_deriving tds ~unused_code_warnings @ l_err;
+      unused_code_warnings = false;
+    }
     :: Generator.apply_all ~ctxt (rec_flag, tds) generators
          Ast_builder.Default.pstr_extension
     |> merge_derived

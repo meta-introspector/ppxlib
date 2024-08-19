@@ -1,0 +1,3 @@
+[submodule "ocaml-opam-ppxlib-json-ast"]
+	path = ocaml-opam-ppxlib-json-ast
+	url = https://huggingface.co/datasets/introspector/ocaml-opam-ppxlib-json-ast/

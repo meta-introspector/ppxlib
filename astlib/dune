@@ -1,11 +1,15 @@
+
+(env
+  (_
+    (flags (-dsource))))
+
 (library
  (name astlib)
  (public_name ppxlib.astlib)
  (libraries ocaml-compiler-libs.common compiler-libs.common)
  (flags -w -9)
- (preprocess
-  (action
-   (run %{exe:pp/pp.exe} %{read:ast-version} %{input-file}))))
+ (preprocess (staged_pps ppx_import ppx_yojson_conv ppx_mina_introspector ))
+)
 
 (rule
  (targets ast-version)

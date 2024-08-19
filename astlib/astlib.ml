@@ -37,6 +37,8 @@ module Ast_413 = Ast_413
 module Ast_414 = Ast_414
 module Ast_500 = Ast_500
 module Ast_501 = Ast_501
+module Ast_502 = Ast_502
+module Ast_503 = Ast_503
 (*$*)
 
 (* Manual migration between versions *)
@@ -73,6 +75,10 @@ module Migrate_414_500 = Migrate_414_500
 module Migrate_500_414 = Migrate_500_414
 module Migrate_500_501 = Migrate_500_501
 module Migrate_501_500 = Migrate_501_500
+module Migrate_501_502 = Migrate_501_502
+module Migrate_502_501 = Migrate_502_501
+module Migrate_502_503 = Migrate_502_503
+module Migrate_503_502 = Migrate_503_502
 (*$*)
 
 (* Compiler modules *)
@@ -84,7 +90,5 @@ module Longident = Longident
 module Parse = Parse
 module Pprintast = Pprintast
 
-let init_error_reporting_style_using_env_vars () =
-  (*IF_AT_LEAST 408 Ocaml_common.Compmisc.read_clflags_from_env () *)
-  (*IF_NOT_AT_LEAST 408 () *)
-(** Adjust the reporting style of error messages to the environment variables OCAML_COLOR and OCAML_ERROR_STYLE. *)
+let init_error_reporting_style_using_env_vars () = Ocaml_common.Compmisc.read_clflags_from_env ()
+

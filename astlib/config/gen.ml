@@ -27,6 +27,8 @@ let () =
         "414"
         (* Ast_500 aliases Ast_414, since the AST hasn't changed between those two *)
     | 5, 1 -> "501"
+    | 5, 2 -> "502"
+    | 5, 3 -> "503"
     | _ ->
         Printf.eprintf "Unknown OCaml version %s\n" ocaml_version_str;
         exit 1)
