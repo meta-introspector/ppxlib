@@ -1,0 +1,442 @@
+[
+  signature_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Psig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[1,0+0]..[1,0+10])
+    Psig_open Override "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[1,0+6]..[1,0+10])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[2,11+0]..[2,11+12])
+    Psig_open Override "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[2,11+6]..[2,11+12])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+0]..[4,25+81])
+    Psig_value
+    value_description "type_extension" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+4]..[4,25+18]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+0]..[4,25+81])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+21]..[4,25+81])
+        Ptyp_arrow
+        Labelled "ctxt"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+26]..[4,25+55])
+          Ptyp_constr "Expansion_context.Extension.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+26]..[4,25+55])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+59]..[4,25+81])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+59]..[4,25+68])
+            Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+59]..[4,25+68])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+72]..[4,25+81])
+            Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+72]..[4,25+81])
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[6,108+0]..[10,208+15])
+    Psig_value
+    value_description "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[6,108+4]..[6,108+13]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[6,108+0]..[10,208+15])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[7,122+5]..[10,208+15])
+        Ptyp_arrow
+        Labelled "tags_of_doc_comments"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[7,122+26]..[7,122+30])
+          Ptyp_constr "bool" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[7,122+26]..[7,122+30])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[8,153+5]..[10,208+15])
+          Ptyp_arrow
+          Labelled "ctxt"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[8,153+10]..[8,153+39])
+            Ptyp_constr "Expansion_context.Extension.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[8,153+10]..[8,153+39])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[9,193+5]..[10,208+15])
+            Ptyp_arrow
+            Nolabel
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[9,193+5]..[9,193+14])
+              Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[9,193+5]..[9,193+14])
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+5]..[10,208+15])
+              Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+5]..[10,208+15])
+              []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[12,225+0]..[15,319+14])
+    Psig_value
+    value_description "sig_type_decl" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[12,225+4]..[12,225+17]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[12,225+0]..[15,319+14])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[13,243+5]..[15,319+14])
+        Ptyp_arrow
+        Labelled "ctxt"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[13,243+10]..[13,243+37])
+          Ptyp_constr "Expansion_context.Deriver.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[13,243+10]..[13,243+37])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+5]..[15,319+14])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+5]..[14,281+37])
+            Ptyp_tuple
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+5]..[14,281+13])
+                Ptyp_constr "rec_flag" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+5]..[14,281+13])
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+16]..[14,281+37])
+                Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+33]..[14,281+37])
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+16]..[14,281+32])
+                    Ptyp_constr "type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+16]..[14,281+32])
+                    []
+                ]
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+5]..[15,319+14])
+            Ptyp_constr "signature" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+5]..[15,319+14])
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[17,335+0]..[21,488+14])
+    Psig_value
+    value_description "str_type_decl" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[17,335+4]..[17,335+17]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[17,335+0]..[21,488+14])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[18,353+5]..[21,488+14])
+        Ptyp_arrow
+        Labelled "ctxt"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[18,353+10]..[18,353+37])
+          Ptyp_constr "Expansion_context.Deriver.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[18,353+10]..[18,353+37])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+5]..[21,488+14])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+5]..[19,391+37])
+            Ptyp_tuple
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+5]..[19,391+13])
+                Ptyp_constr "rec_flag" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+5]..[19,391+13])
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+16]..[19,391+37])
+                Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+33]..[19,391+37])
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+16]..[19,391+32])
+                    Ptyp_constr "type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+16]..[19,391+32])
+                    []
+                ]
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+5]..[21,488+14])
+            Ptyp_arrow
+            Nolabel
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+5]..[20,429+9])
+              attribute "ocaml.doc"
+                [
+                  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+10]..[20,429+58])
+                    Pstr_eval
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+10]..[20,429+58])
+                      Pexp_constant PConst_string(" [true] means capture doc comments as tags ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+10]..[20,429+58]),None)
+                ]
+              Ptyp_constr "bool" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+5]..[20,429+9])
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+5]..[21,488+14])
+              Ptyp_constr "structure" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+5]..[21,488+14])
+              []
+      []
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+open! Base
+open! Ppxlib
+val type_extension :
+  ctxt:Expansion_context.Extension.t -> core_type -> core_type
+val core_type :
+  tags_of_doc_comments:bool ->
+    ctxt:Expansion_context.Extension.t -> core_type -> expression
+val sig_type_decl :
+  ctxt:Expansion_context.Deriver.t ->
+    (rec_flag * type_declaration list) -> signature
+val str_type_decl :
+  ctxt:Expansion_context.Deriver.t ->
+    (rec_flag * type_declaration list) ->
+      ((bool)[@ocaml.doc " [true] means capture doc comments as tags "]) ->
+        structure
+[
+  signature_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tsig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[1,0+10])
+    Tsig_open Override "Base!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[2,11+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[2,11+12])
+    Tsig_open Override "Ppxlib!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+81])
+    Tsig_value
+    value_description type_extension/730 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+81])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+81])
+        Ttyp_arrow
+        Labelled "ctxt"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+55])
+          Ttyp_constr "Ppxlib!.Expansion_context.Extension.t"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+59]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+81])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+59]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+68])
+            Ttyp_constr "Ppxlib!.core_type"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+72]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[4,25+81])
+            Ttyp_constr "Ppxlib!.core_type"
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[6,108+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+15])
+    Tsig_value
+    value_description core_type/731 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[6,108+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+15])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[7,122+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+15])
+        Ttyp_arrow
+        Labelled "tags_of_doc_comments"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[7,122+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[7,122+30])
+          Ttyp_constr "Base!.bool"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[8,153+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+15])
+          Ttyp_arrow
+          Labelled "ctxt"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[8,153+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[8,153+39])
+            Ttyp_constr "Ppxlib!.Expansion_context.Extension.t"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[9,193+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+15])
+            Ttyp_arrow
+            Nolabel
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[9,193+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[9,193+14])
+              Ttyp_constr "Ppxlib!.core_type"
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[10,208+15])
+              Ttyp_constr "Ppxlib!.expression"
+              []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[12,225+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+14])
+    Tsig_value
+    value_description sig_type_decl/741 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[12,225+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+14])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[13,243+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+14])
+        Ttyp_arrow
+        Labelled "ctxt"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[13,243+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[13,243+37])
+          Ttyp_constr "Ppxlib!.Expansion_context.Deriver.t"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+14])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+37])
+            Ttyp_tuple
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+13])
+                Ttyp_constr "Ppxlib!.rec_flag"
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+37])
+                Ttyp_constr "Base!.list"
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[14,281+32])
+                    Ttyp_constr "Ppxlib!.type_declaration"
+                    []
+                ]
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[15,319+14])
+            Ttyp_constr "Ppxlib!.signature"
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[17,335+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+14])
+    Tsig_value
+    value_description str_type_decl/742 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[17,335+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+14])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[18,353+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+14])
+        Ttyp_arrow
+        Labelled "ctxt"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[18,353+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[18,353+37])
+          Ttyp_constr "Ppxlib!.Expansion_context.Deriver.t"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+14])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+37])
+            Ttyp_tuple
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+13])
+                Ttyp_constr "Ppxlib!.rec_flag"
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+37])
+                Ttyp_constr "Base!.list"
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[19,391+32])
+                    Ttyp_constr "Ppxlib!.type_declaration"
+                    []
+                ]
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+14])
+            Ttyp_arrow
+            Nolabel
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+9])
+              attribute "ocaml.doc"
+                [
+                  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+10]..[20,429+58])
+                    Pstr_eval
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+10]..[20,429+58])
+                      Pexp_constant PConst_string(" [true] means capture doc comments as tags ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[20,429+10]..[20,429+58]),None)
+                ]
+              Ttyp_constr "Base!.bool"
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_grammar.mli[21,488+14])
+              Ttyp_constr "Ppxlib!.structure"
+              []
+      []
+]
+

@@ -1,0 +1,16 @@
+1.104s 72.6MB 8.25MB 8.25MB test/driver/error_embedding/raiser.exe
+  0.004s 2.14MB 0.09MB 0.09MB selection
+  0.001s 0.16MB ------ ------ comballoc
+  0.003s 8.29MB 0.53MB 0.62MB cse
+  0.004s 4.00MB 0.31MB 0.93MB liveness
+  0.001s 0.19MB ------ ------ deadcode
+  0.003s 4.00MB 0.37MB 1.31MB spill
+  0.001s ------ ------ ------ split
+  0.036s 34.1MB 2.31MB 3.62MB regalloc
+  0.001s 0.16MB ------ ------ linearize
+  ------ 0.13MB ------ ------ scheduling
+  0.001s ------ ------ ------ emit
+  0.015s ------ ------ ------ assemble
+  1.007s ------ ------ ------ c-linker
+  0.027s 19.4MB 4.62MB 8.25MB other
+0.006s ------ ------ ------ other

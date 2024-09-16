@@ -1,0 +1,5 @@
+0.007s 8.42MB 2.12MB 2.12MB test/501_migrations/compare_on.ml
+  0.003s 3.55MB 0.65MB 0.65MB typing
+  0.001s 2.00MB 0.03MB 0.68MB generate
+  0.003s 2.87MB 1.43MB 2.12MB other
+0.004s ------ ------ ------ other

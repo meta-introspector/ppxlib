@@ -1,0 +1,57 @@
+[
+  structure_item (test/expansion_context/standalone_print_ctxt.ml[1,0+0]..[1,0+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/standalone_print_ctxt.ml[1,0+4]..[1,0+6])
+          Ppat_construct "()" (test/expansion_context/standalone_print_ctxt.ml[1,0+4]..[1,0+6])
+          None
+        expression (test/expansion_context/standalone_print_ctxt.ml[1,0+9]..[1,0+36])
+          Pexp_apply
+          expression (test/expansion_context/standalone_print_ctxt.ml[1,0+9]..[1,0+33])
+            Pexp_ident "Ppxlib.Driver.standalone" (test/expansion_context/standalone_print_ctxt.ml[1,0+9]..[1,0+33])
+          [
+            <arg>
+            Nolabel
+              expression (test/expansion_context/standalone_print_ctxt.ml[1,0+34]..[1,0+36])
+                Pexp_construct "()" (test/expansion_context/standalone_print_ctxt.ml[1,0+34]..[1,0+36])
+                None
+          ]
+    ]
+]
+
+let () = Ppxlib.Driver.standalone ()
+[
+  structure_item (test/expansion_context/standalone_print_ctxt.ml[1,0+0]..test/expansion_context/standalone_print_ctxt.ml[1,0+36])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/standalone_print_ctxt.ml[1,0+4]..test/expansion_context/standalone_print_ctxt.ml[1,0+6])
+          Tpat_construct "()"
+          []
+        expression (test/expansion_context/standalone_print_ctxt.ml[1,0+9]..test/expansion_context/standalone_print_ctxt.ml[1,0+36])
+          Texp_apply
+          expression (test/expansion_context/standalone_print_ctxt.ml[1,0+9]..test/expansion_context/standalone_print_ctxt.ml[1,0+33])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/expansion_context/standalone_print_ctxt.ml[1,0+34]..test/expansion_context/standalone_print_ctxt.ml[1,0+36])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Standalone_print_ctxt!
+  (let
+    (*match*/730 =
+       (after Dune__exe__Standalone_print_ctxt test/expansion_context/standalone_print_ctxt.ml(1):9-36
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0))))
+(setglobal Dune__exe__Standalone_print_ctxt!
+  (let
+    (*match*/730 =
+       (after Dune__exe__Standalone_print_ctxt test/expansion_context/standalone_print_ctxt.ml(1):9-36
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0))))

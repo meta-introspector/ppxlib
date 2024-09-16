@@ -1,0 +1,18 @@
+0.047s 54.7MB 6.16MB 6.16MB bench/bench.ml
+  0.002s 2.94MB 1.60MB 1.60MB parsing
+    0.002s 2.94MB 1.60MB 1.60MB parser
+  0.016s 18.2MB 3.06MB 4.66MB typing
+  0.001s ------ ------ ------ transl
+  0.022s 15.2MB 1.15MB 5.82MB generate
+    0.007s 6.89MB 0.71MB 5.38MB compile_phrases
+      0.001s ------ ------ ------ selection
+      ------ 2.00MB 0.40MB 5.07MB comballoc
+      0.001s 2.00MB 0.15MB 5.22MB liveness
+      0.001s 0.22MB ------ ------ spill
+      0.001s 0.20MB ------ ------ regalloc
+      0.001s 0.46MB ------ ------ emit
+      0.001s 2.00MB 0.15MB 5.38MB other
+    0.009s ------ ------ ------ assemble
+    0.006s 8.35MB 0.43MB 5.82MB other
+  0.006s 18.3MB 0.34MB 6.16MB other
+0.004s ------ ------ ------ other

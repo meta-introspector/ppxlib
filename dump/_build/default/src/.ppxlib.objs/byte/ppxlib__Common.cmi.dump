@@ -1,0 +1,1506 @@
+[
+  signature_item (src/common.mli[1,0+0]..[1,0+23])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/common.mli[1,0+0]..[1,0+23])
+        Pstr_eval
+        expression (src/common.mli[1,0+0]..[1,0+23])
+          Pexp_constant PConst_string(" Common functions ",(src/common.mli[1,0+0]..[1,0+23]),None)
+    ]
+  signature_item (src/common.mli[3,25+0]..[3,25+12])
+    Psig_open Override "Import" (src/common.mli[3,25+6]..[3,25+12])
+  signature_item (src/common.mli[5,39+0]..[5,39+34])
+    Psig_value
+    value_description "lident" (src/common.mli[5,39+4]..[5,39+10]) (src/common.mli[5,39+0]..[5,39+34])
+      core_type (src/common.mli[5,39+13]..[5,39+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[5,39+13]..[5,39+19])
+          Ptyp_constr "string" (src/common.mli[5,39+13]..[5,39+19])
+          []
+        core_type (src/common.mli[5,39+23]..[5,39+34])
+          Ptyp_constr "Longident.t" (src/common.mli[5,39+23]..[5,39+34])
+          []
+      []
+  signature_item (src/common.mli[6,74+0]..[6,74+65])
+    Psig_value
+    value_description "core_type_of_type_declaration" (src/common.mli[6,74+4]..[6,74+33]) (src/common.mli[6,74+0]..[6,74+65])
+      core_type (src/common.mli[6,74+36]..[6,74+65])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[6,74+36]..[6,74+52])
+          Ptyp_constr "type_declaration" (src/common.mli[6,74+36]..[6,74+52])
+          []
+        core_type (src/common.mli[6,74+56]..[6,74+65])
+          Ptyp_constr "core_type" (src/common.mli[6,74+56]..[6,74+65])
+          []
+      []
+  signature_item (src/common.mli[8,141+0]..[9,174+80])
+    Psig_value
+    value_description "name_type_params_in_td_res" (src/common.mli[8,141+4]..[8,141+30]) (src/common.mli[8,141+0]..[9,174+80])
+      core_type (src/common.mli[9,174+2]..[9,174+80])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[9,174+2]..[9,174+18])
+          Ptyp_constr "type_declaration" (src/common.mli[9,174+2]..[9,174+18])
+          []
+        core_type (src/common.mli[9,174+22]..[9,174+80])
+          Ptyp_constr "result" (src/common.mli[9,174+74]..[9,174+80])
+          [
+            core_type (src/common.mli[9,174+23]..[9,174+39])
+              Ptyp_constr "type_declaration" (src/common.mli[9,174+23]..[9,174+39])
+              []
+            core_type (src/common.mli[9,174+41]..[9,174+72])
+              Ptyp_constr "NonEmptyList.t" (src/common.mli[9,174+58]..[9,174+72])
+              [
+                core_type (src/common.mli[9,174+41]..[9,174+57])
+                  Ptyp_constr "Location.Error.t" (src/common.mli[9,174+41]..[9,174+57])
+                  []
+              ]
+          ]
+      []
+  signature_item (src/common.mli[11,256+0]..[11,256+65])
+    Psig_value
+    value_description "name_type_params_in_td" (src/common.mli[11,256+4]..[11,256+26]) (src/common.mli[11,256+0]..[11,256+65])
+      core_type (src/common.mli[11,256+29]..[11,256+65])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[11,256+29]..[11,256+45])
+          Ptyp_constr "type_declaration" (src/common.mli[11,256+29]..[11,256+45])
+          []
+        core_type (src/common.mli[11,256+49]..[11,256+65])
+          Ptyp_constr "type_declaration" (src/common.mli[11,256+49]..[11,256+65])
+          []
+      []
+  signature_item (src/common.mli[13,323+0]..[14,365+79])
+    Psig_value
+    value_description "combinator_type_of_type_declaration" (src/common.mli[13,323+4]..[13,323+39]) (src/common.mli[13,323+0]..[14,365+79])
+      core_type (src/common.mli[14,365+2]..[14,365+79])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[14,365+2]..[14,365+18])
+          Ptyp_constr "type_declaration" (src/common.mli[14,365+2]..[14,365+18])
+          []
+        core_type (src/common.mli[14,365+22]..[14,365+79])
+          Ptyp_arrow
+          Labelled "f"
+          core_type (src/common.mli[14,365+25]..[14,365+65])
+            Ptyp_arrow
+            Labelled "loc"
+            core_type (src/common.mli[14,365+29]..[14,365+39])
+              Ptyp_constr "Location.t" (src/common.mli[14,365+29]..[14,365+39])
+              []
+            core_type (src/common.mli[14,365+43]..[14,365+65])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/common.mli[14,365+43]..[14,365+52])
+                Ptyp_constr "core_type" (src/common.mli[14,365+43]..[14,365+52])
+                []
+              core_type (src/common.mli[14,365+56]..[14,365+65])
+                Ptyp_constr "core_type" (src/common.mli[14,365+56]..[14,365+65])
+                []
+          core_type (src/common.mli[14,365+70]..[14,365+79])
+            Ptyp_constr "core_type" (src/common.mli[14,365+70]..[14,365+79])
+            []
+      []
+  signature_item (src/common.mli[16,446+0]..[16,446+49])
+    Psig_value
+    value_description "gen_symbol" (src/common.mli[16,446+4]..[16,446+14]) (src/common.mli[16,446+0]..[16,446+49])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[17,496+0]..[19,572+35])
+            Pstr_eval
+            expression (src/common.mli[17,496+0]..[19,572+35])
+              Pexp_constant PConst_string(" [gen_symbol ?prefix ()] generates a fresh variable name with [prefix].\n\n    @param prefix default = \"_x\" ",(src/common.mli[17,496+0]..[19,572+35]),None)
+        ]
+      core_type (src/common.mli[16,446+17]..[16,446+49])
+        Ptyp_arrow
+        Optional "prefix"
+        core_type (src/common.mli[16,446+25]..[16,446+31])
+          Ptyp_constr "string" (src/common.mli[16,446+25]..[16,446+31])
+          []
+        core_type (src/common.mli[16,446+35]..[16,446+49])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/common.mli[16,446+35]..[16,446+39])
+            Ptyp_constr "unit" (src/common.mli[16,446+35]..[16,446+39])
+            []
+          core_type (src/common.mli[16,446+43]..[16,446+49])
+            Ptyp_constr "string" (src/common.mli[16,446+43]..[16,446+49])
+            []
+      []
+  signature_item (src/common.mli[21,609+0]..[21,609+45])
+    Psig_value
+    value_description "string_of_core_type" (src/common.mli[21,609+4]..[21,609+23]) (src/common.mli[21,609+0]..[21,609+45])
+      core_type (src/common.mli[21,609+26]..[21,609+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[21,609+26]..[21,609+35])
+          Ptyp_constr "core_type" (src/common.mli[21,609+26]..[21,609+35])
+          []
+        core_type (src/common.mli[21,609+39]..[21,609+45])
+          Ptyp_constr "string" (src/common.mli[21,609+39]..[21,609+45])
+          []
+      []
+  signature_item (src/common.mli[22,655+0]..[22,655+45])
+    Psig_value
+    value_description "assert_no_attributes" (src/common.mli[22,655+4]..[22,655+24]) (src/common.mli[22,655+0]..[22,655+45])
+      core_type (src/common.mli[22,655+27]..[22,655+45])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[22,655+27]..[22,655+37])
+          Ptyp_constr "attributes" (src/common.mli[22,655+27]..[22,655+37])
+          []
+        core_type (src/common.mli[22,655+41]..[22,655+45])
+          Ptyp_constr "unit" (src/common.mli[22,655+41]..[22,655+45])
+          []
+      []
+  signature_item (src/common.mli[23,701+0]..[23,701+48])
+    Psig_value
+    value_description "assert_no_attributes_in" (src/common.mli[23,701+4]..[23,701+27]) (src/common.mli[23,701+0]..[23,701+48])
+      core_type (src/common.mli[23,701+30]..[23,701+48])
+        Ptyp_constr "Ast_traverse0.iter" (src/common.mli[23,701+30]..[23,701+48])
+        []
+      []
+  signature_item (src/common.mli[24,750+0]..[24,750+59])
+    Psig_value
+    value_description "attributes_errors" (src/common.mli[24,750+4]..[24,750+21]) (src/common.mli[24,750+0]..[24,750+59])
+      core_type (src/common.mli[24,750+24]..[24,750+59])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[24,750+24]..[24,750+34])
+          Ptyp_constr "attributes" (src/common.mli[24,750+24]..[24,750+34])
+          []
+        core_type (src/common.mli[24,750+38]..[24,750+59])
+          Ptyp_constr "list" (src/common.mli[24,750+55]..[24,750+59])
+          [
+            core_type (src/common.mli[24,750+38]..[24,750+54])
+              Ptyp_constr "Location.Error.t" (src/common.mli[24,750+38]..[24,750+54])
+              []
+          ]
+      []
+  signature_item (src/common.mli[25,810+0]..[25,810+72])
+    Psig_value
+    value_description "collect_attributes_errors" (src/common.mli[25,810+4]..[25,810+29]) (src/common.mli[25,810+0]..[25,810+72])
+      core_type (src/common.mli[25,810+32]..[25,810+72])
+        Ptyp_constr "Ast_traverse0.fold" (src/common.mli[25,810+54]..[25,810+72])
+        [
+          core_type (src/common.mli[25,810+32]..[25,810+53])
+            Ptyp_constr "list" (src/common.mli[25,810+49]..[25,810+53])
+            [
+              core_type (src/common.mli[25,810+32]..[25,810+48])
+                Ptyp_constr "Location.Error.t" (src/common.mli[25,810+32]..[25,810+48])
+                []
+            ]
+        ]
+      []
+  signature_item (src/common.mli[27,884+0]..[29,956+56])
+    Psig_value
+    value_description "get_type_param_name_res" (src/common.mli[27,884+4]..[27,884+27]) (src/common.mli[27,884+0]..[29,956+56])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[30,1013+0]..[31,1092+51])
+            Pstr_eval
+            expression (src/common.mli[30,1013+0]..[31,1092+51])
+              Pexp_constant PConst_string(" [get_type_param_name_res tp] returns the string identifier associated with\n    [tp] if it is a type parameter, as a result. ",(src/common.mli[30,1013+0]..[31,1092+51]),None)
+        ]
+      core_type (src/common.mli[28,914+2]..[29,956+56])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[28,914+2]..[28,914+38])
+          Ptyp_tuple
+          [
+            core_type (src/common.mli[28,914+2]..[28,914+11])
+              Ptyp_constr "core_type" (src/common.mli[28,914+2]..[28,914+11])
+              []
+            core_type (src/common.mli[28,914+15]..[28,914+37])
+              Ptyp_tuple
+              [
+                core_type (src/common.mli[28,914+15]..[28,914+23])
+                  Ptyp_constr "variance" (src/common.mli[28,914+15]..[28,914+23])
+                  []
+                core_type (src/common.mli[28,914+26]..[28,914+37])
+                  Ptyp_constr "injectivity" (src/common.mli[28,914+26]..[28,914+37])
+                  []
+              ]
+          ]
+        core_type (src/common.mli[29,956+2]..[29,956+56])
+          Ptyp_constr "result" (src/common.mli[29,956+50]..[29,956+56])
+          [
+            core_type (src/common.mli[29,956+3]..[29,956+15])
+              Ptyp_constr "Loc.t" (src/common.mli[29,956+10]..[29,956+15])
+              [
+                core_type (src/common.mli[29,956+3]..[29,956+9])
+                  Ptyp_constr "string" (src/common.mli[29,956+3]..[29,956+9])
+                  []
+              ]
+            core_type (src/common.mli[29,956+17]..[29,956+48])
+              Ptyp_constr "NonEmptyList.t" (src/common.mli[29,956+34]..[29,956+48])
+              [
+                core_type (src/common.mli[29,956+17]..[29,956+33])
+                  Ptyp_constr "Location.Error.t" (src/common.mli[29,956+17]..[29,956+33])
+                  []
+              ]
+          ]
+      []
+  signature_item (src/common.mli[33,1145+0]..[33,1145+78])
+    Psig_value
+    value_description "get_type_param_name" (src/common.mli[33,1145+4]..[33,1145+23]) (src/common.mli[33,1145+0]..[33,1145+78])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[34,1224+0]..[34,1224+81])
+            Pstr_eval
+            expression (src/common.mli[34,1224+0]..[34,1224+81])
+              Pexp_constant PConst_string(" See {!get_type_param_name_res}. Raises a located error in case of failure. ",(src/common.mli[34,1224+0]..[34,1224+81]),None)
+        ]
+      core_type (src/common.mli[33,1145+26]..[33,1145+78])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[33,1145+26]..[33,1145+62])
+          Ptyp_tuple
+          [
+            core_type (src/common.mli[33,1145+26]..[33,1145+35])
+              Ptyp_constr "core_type" (src/common.mli[33,1145+26]..[33,1145+35])
+              []
+            core_type (src/common.mli[33,1145+39]..[33,1145+61])
+              Ptyp_tuple
+              [
+                core_type (src/common.mli[33,1145+39]..[33,1145+47])
+                  Ptyp_constr "variance" (src/common.mli[33,1145+39]..[33,1145+47])
+                  []
+                core_type (src/common.mli[33,1145+50]..[33,1145+61])
+                  Ptyp_constr "injectivity" (src/common.mli[33,1145+50]..[33,1145+61])
+                  []
+              ]
+          ]
+        core_type (src/common.mli[33,1145+66]..[33,1145+78])
+          Ptyp_constr "Loc.t" (src/common.mli[33,1145+73]..[33,1145+78])
+          [
+            core_type (src/common.mli[33,1145+66]..[33,1145+72])
+              Ptyp_constr "string" (src/common.mli[33,1145+66]..[33,1145+72])
+              []
+          ]
+      []
+  signature_item (src/common.mli[40,1580+0]..[48,1803+8])
+    Psig_class
+    [
+      class_description (src/common.mli[40,1580+0]..[48,1803+8])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/common.mli[36,1307+0]..[39,1545+34])
+              Pstr_eval
+              expression (src/common.mli[36,1307+0]..[39,1545+34])
+                Pexp_constant PConst_string(" [(new type_is_recursive rec_flag tds)#go ()] returns whether [rec_flag, tds]\n    is really a recursive type. We disregard recursive occurrences appearing in\n    arrow types. You can override the search for certain type expressions by\n    inheriting from this class. ",(src/common.mli[36,1307+0]..[39,1545+34]),None)
+          ]
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "type_is_recursive" (src/common.mli[40,1580+6]..[40,1580+23])
+        pci_expr =
+          class_type (src/common.mli[41,1606+2]..[48,1803+8])
+            Pcty_arrow
+            Nolabel
+            core_type (src/common.mli[41,1606+2]..[41,1606+10])
+              Ptyp_constr "rec_flag" (src/common.mli[41,1606+2]..[41,1606+10])
+              []
+            class_type (src/common.mli[42,1617+5]..[48,1803+8])
+              Pcty_arrow
+              Nolabel
+              core_type (src/common.mli[42,1617+5]..[42,1617+26])
+                Ptyp_constr "list" (src/common.mli[42,1617+22]..[42,1617+26])
+                [
+                  core_type (src/common.mli[42,1617+5]..[42,1617+21])
+                    Ptyp_constr "type_declaration" (src/common.mli[42,1617+5]..[42,1617+21])
+                    []
+                ]
+              class_type (src/common.mli[43,1644+5]..[48,1803+8])
+                Pcty_signature
+                class_signature
+                  core_type (src/common.mli[43,1644+11]..[43,1644+11])
+                    Ptyp_any
+                  [
+                    class_type_field (src/common.mli[44,1656+7]..[44,1656+33])
+                      Pctf_inherit
+                      class_type (src/common.mli[44,1656+15]..[44,1656+33])
+                        Pcty_constr "Ast_traverse0.iter" (src/common.mli[44,1656+15]..[44,1656+33])
+                        []
+                    class_type_field (src/common.mli[45,1690+7]..[45,1690+35])
+                      Pctf_val "type_names" Immutable Concrete
+                        core_type (src/common.mli[45,1690+24]..[45,1690+35])
+                          Ptyp_constr "list" (src/common.mli[45,1690+31]..[45,1690+35])
+                          [
+                            core_type (src/common.mli[45,1690+24]..[45,1690+30])
+                              Ptyp_constr "string" (src/common.mli[45,1690+24]..[45,1690+30])
+                              []
+                          ]
+                    class_type_field (src/common.mli[46,1726+7]..[46,1726+40])
+                      Pctf_method "return_true" Public Concrete
+                        core_type (src/common.mli[46,1726+28]..[46,1726+40])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/common.mli[46,1726+28]..[46,1726+32])
+                            Ptyp_constr "unit" (src/common.mli[46,1726+28]..[46,1726+32])
+                            []
+                          core_type (src/common.mli[46,1726+36]..[46,1726+40])
+                            Ptyp_constr "unit" (src/common.mli[46,1726+36]..[46,1726+40])
+                            []
+                    class_type_field (src/common.mli[47,1767+7]..[47,1767+35])
+                      Pctf_method "go" Public Concrete
+                        core_type (src/common.mli[47,1767+19]..[47,1767+35])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/common.mli[47,1767+19]..[47,1767+23])
+                            Ptyp_constr "unit" (src/common.mli[47,1767+19]..[47,1767+23])
+                            []
+                          core_type (src/common.mli[47,1767+27]..[47,1767+35])
+                            Ptyp_constr "rec_flag" (src/common.mli[47,1767+27]..[47,1767+35])
+                            []
+                  ]
+    ]
+  signature_item (src/common.mli[50,1813+0]..[50,1813+68])
+    Psig_value
+    value_description "really_recursive" (src/common.mli[50,1813+4]..[50,1813+20]) (src/common.mli[50,1813+0]..[50,1813+68])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[51,1882+0]..[51,1882+83])
+            Pstr_eval
+            expression (src/common.mli[51,1882+0]..[51,1882+83])
+              Pexp_constant PConst_string(" [really_recursive rec_flag tds = (new type_is_recursive rec_flag tds)#go ()] ",(src/common.mli[51,1882+0]..[51,1882+83]),None)
+        ]
+      core_type (src/common.mli[50,1813+23]..[50,1813+68])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[50,1813+23]..[50,1813+31])
+          Ptyp_constr "rec_flag" (src/common.mli[50,1813+23]..[50,1813+31])
+          []
+        core_type (src/common.mli[50,1813+35]..[50,1813+68])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/common.mli[50,1813+35]..[50,1813+56])
+            Ptyp_constr "list" (src/common.mli[50,1813+52]..[50,1813+56])
+            [
+              core_type (src/common.mli[50,1813+35]..[50,1813+51])
+                Ptyp_constr "type_declaration" (src/common.mli[50,1813+35]..[50,1813+51])
+                []
+            ]
+          core_type (src/common.mli[50,1813+60]..[50,1813+68])
+            Ptyp_constr "rec_flag" (src/common.mli[50,1813+60]..[50,1813+68])
+            []
+      []
+  signature_item (src/common.mli[53,1967+0]..[53,1967+44])
+    Psig_value
+    value_description "loc_of_payload" (src/common.mli[53,1967+4]..[53,1967+18]) (src/common.mli[53,1967+0]..[53,1967+44])
+      core_type (src/common.mli[53,1967+21]..[53,1967+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[53,1967+21]..[53,1967+30])
+          Ptyp_constr "attribute" (src/common.mli[53,1967+21]..[53,1967+30])
+          []
+        core_type (src/common.mli[53,1967+34]..[53,1967+44])
+          Ptyp_constr "Location.t" (src/common.mli[53,1967+34]..[53,1967+44])
+          []
+      []
+  signature_item (src/common.mli[54,2012+0]..[54,2012+46])
+    Psig_value
+    value_description "loc_of_attribute" (src/common.mli[54,2012+4]..[54,2012+20]) (src/common.mli[54,2012+0]..[54,2012+46])
+      core_type (src/common.mli[54,2012+23]..[54,2012+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[54,2012+23]..[54,2012+32])
+          Ptyp_constr "attribute" (src/common.mli[54,2012+23]..[54,2012+32])
+          []
+        core_type (src/common.mli[54,2012+36]..[54,2012+46])
+          Ptyp_constr "Location.t" (src/common.mli[54,2012+36]..[54,2012+46])
+          []
+      []
+  signature_item (src/common.mli[55,2059+0]..[55,2059+46])
+    Psig_value
+    value_description "loc_of_extension" (src/common.mli[55,2059+4]..[55,2059+20]) (src/common.mli[55,2059+0]..[55,2059+46])
+      core_type (src/common.mli[55,2059+23]..[55,2059+46])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[55,2059+23]..[55,2059+32])
+          Ptyp_constr "extension" (src/common.mli[55,2059+23]..[55,2059+32])
+          []
+        core_type (src/common.mli[55,2059+36]..[55,2059+46])
+          Ptyp_constr "Location.t" (src/common.mli[55,2059+36]..[55,2059+46])
+          []
+      []
+  signature_item (src/common.mli[57,2107+0]..[57,2107+49])
+    Psig_value
+    value_description "curry_applications" (src/common.mli[57,2107+4]..[57,2107+22]) (src/common.mli[57,2107+0]..[57,2107+49])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[58,2157+0]..[58,2157+83])
+            Pstr_eval
+            expression (src/common.mli[58,2157+0]..[58,2157+83])
+              Pexp_constant PConst_string(" convert multi-arg function applications into a cascade of 1-arg applications ",(src/common.mli[58,2157+0]..[58,2157+83]),None)
+        ]
+      core_type (src/common.mli[57,2107+25]..[57,2107+49])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[57,2107+25]..[57,2107+35])
+          Ptyp_constr "expression" (src/common.mli[57,2107+25]..[57,2107+35])
+          []
+        core_type (src/common.mli[57,2107+39]..[57,2107+49])
+          Ptyp_constr "expression" (src/common.mli[57,2107+39]..[57,2107+49])
+          []
+      []
+  signature_item (src/common.mli[60,2242+0]..[60,2242+60])
+    Psig_value
+    value_description "attribute_of_warning" (src/common.mli[60,2242+4]..[60,2242+24]) (src/common.mli[60,2242+0]..[60,2242+60])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[61,2303+0]..[63,2457+29])
+            Pstr_eval
+            expression (src/common.mli[61,2303+0]..[63,2457+29])
+              Pexp_constant PConst_string(" Encode a warning message into an 'ocaml.ppwarning' attribute which can be\n    inserted in a generated Parsetree. The compiler will be responsible for\n    reporting the warning. ",(src/common.mli[61,2303+0]..[63,2457+29]),None)
+        ]
+      core_type (src/common.mli[60,2242+27]..[60,2242+60])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[60,2242+27]..[60,2242+37])
+          Ptyp_constr "Location.t" (src/common.mli[60,2242+27]..[60,2242+37])
+          []
+        core_type (src/common.mli[60,2242+41]..[60,2242+60])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/common.mli[60,2242+41]..[60,2242+47])
+            Ptyp_constr "string" (src/common.mli[60,2242+41]..[60,2242+47])
+            []
+          core_type (src/common.mli[60,2242+51]..[60,2242+60])
+            Ptyp_constr "attribute" (src/common.mli[60,2242+51]..[60,2242+60])
+            []
+      []
+  signature_item (src/common.mli[65,2488+0]..[66,2517+74])
+    Psig_value
+    value_description "is_polymorphic_variant" (src/common.mli[65,2488+4]..[65,2488+26]) (src/common.mli[65,2488+0]..[66,2517+74])
+      core_type (src/common.mli[66,2517+2]..[66,2517+74])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/common.mli[66,2517+2]..[66,2517+18])
+          Ptyp_constr "type_declaration" (src/common.mli[66,2517+2]..[66,2517+18])
+          []
+        core_type (src/common.mli[66,2517+22]..[66,2517+74])
+          Ptyp_arrow
+          Labelled "sig_"
+          core_type (src/common.mli[66,2517+27]..[66,2517+31])
+            Ptyp_constr "bool" (src/common.mli[66,2517+27]..[66,2517+31])
+            []
+          core_type (src/common.mli[66,2517+35]..[66,2517+74])
+            Ptyp_variant closed=Open
+            [
+              Rtag "Definitely" true
+                []
+              Rtag "Maybe" true
+                []
+              Rtag "Surely_not" true
+                []
+            ]
+            None
+      []
+  signature_item (src/common.mli[68,2593+0]..[73,2716+28])
+    Psig_value
+    value_description "mk_named_sig" (src/common.mli[68,2593+4]..[68,2593+16]) (src/common.mli[68,2593+0]..[73,2716+28])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[74,2745+0]..[89,3134+74])
+            Pstr_eval
+            expression (src/common.mli[74,2745+0]..[89,3134+74])
+              Pexp_constant PConst_string(" [mk_named_sig ~loc ~sg_name:\"Foo\" ~handle_polymorphic_variant tds] will\n    generate\n\n    {[\n      include Foo (* or Foo1, Foo2, Foo3 *)\n        with type (* ('a, 'b, 'c) *) t := (* ('a, 'b, 'c) *) t\n    ]}\n\n    when:\n\n    - there is only one type declaration\n    - the type is named t\n    - there are less than 4 type parameters\n    - there are no constraints on the type parameters\n\n    It will take care of giving fresh names to unnamed type parameters. ",(src/common.mli[74,2745+0]..[89,3134+74]),None)
+        ]
+      core_type (src/common.mli[69,2612+2]..[73,2716+28])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (src/common.mli[69,2612+6]..[69,2612+16])
+          Ptyp_constr "Location.t" (src/common.mli[69,2612+6]..[69,2612+16])
+          []
+        core_type (src/common.mli[70,2632+2]..[73,2716+28])
+          Ptyp_arrow
+          Labelled "sg_name"
+          core_type (src/common.mli[70,2632+10]..[70,2632+16])
+            Ptyp_constr "string" (src/common.mli[70,2632+10]..[70,2632+16])
+            []
+          core_type (src/common.mli[71,2652+2]..[73,2716+28])
+            Ptyp_arrow
+            Labelled "handle_polymorphic_variant"
+            core_type (src/common.mli[71,2652+29]..[71,2652+33])
+              Ptyp_constr "bool" (src/common.mli[71,2652+29]..[71,2652+33])
+              []
+            core_type (src/common.mli[72,2689+2]..[73,2716+28])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/common.mli[72,2689+2]..[72,2689+23])
+                Ptyp_constr "list" (src/common.mli[72,2689+19]..[72,2689+23])
+                [
+                  core_type (src/common.mli[72,2689+2]..[72,2689+18])
+                    Ptyp_constr "type_declaration" (src/common.mli[72,2689+2]..[72,2689+18])
+                    []
+                ]
+              core_type (src/common.mli[73,2716+2]..[73,2716+28])
+                Ptyp_constr "option" (src/common.mli[73,2716+22]..[73,2716+28])
+                [
+                  core_type (src/common.mli[73,2716+2]..[73,2716+21])
+                    Ptyp_constr "include_description" (src/common.mli[73,2716+2]..[73,2716+21])
+                    []
+                ]
+      []
+  signature_item (src/common.mli[91,3210+0]..[102,3528+3])
+    Psig_module "With_errors" (src/common.mli[91,3210+7]..[91,3210+18])
+    module_type (src/common.mli[91,3210+21]..[102,3528+3])
+      Pmty_signature
+      [
+        signature_item (src/common.mli[92,3235+2]..[92,3235+40])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/common.mli[92,3235+10]..[92,3235+11]) (src/common.mli[92,3235+2]..[92,3235+40])
+              ptype_params =
+                [
+                  core_type (src/common.mli[92,3235+7]..[92,3235+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/common.mli[92,3235+14]..[92,3235+40])
+                    Ptyp_tuple
+                    [
+                      core_type (src/common.mli[92,3235+14]..[92,3235+16])
+                        Ptyp_var a
+                      core_type (src/common.mli[92,3235+19]..[92,3235+40])
+                        Ptyp_constr "list" (src/common.mli[92,3235+36]..[92,3235+40])
+                        [
+                          core_type (src/common.mli[92,3235+19]..[92,3235+35])
+                            Ptyp_constr "Location.Error.t" (src/common.mli[92,3235+19]..[92,3235+35])
+                            []
+                        ]
+                    ]
+          ]
+        signature_item (src/common.mli[94,3277+2]..[94,3277+25])
+          Psig_value
+          value_description "return" (src/common.mli[94,3277+6]..[94,3277+12]) (src/common.mli[94,3277+2]..[94,3277+25])
+            core_type (src/common.mli[94,3277+15]..[94,3277+25])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/common.mli[94,3277+15]..[94,3277+17])
+                Ptyp_var a
+              core_type (src/common.mli[94,3277+21]..[94,3277+25])
+                Ptyp_constr "t" (src/common.mli[94,3277+24]..[94,3277+25])
+                [
+                  core_type (src/common.mli[94,3277+21]..[94,3277+23])
+                    Ptyp_var a
+                ]
+            []
+        signature_item (src/common.mli[95,3303+2]..[95,3303+44])
+          Psig_value
+          value_description ">>=" (src/common.mli[95,3303+6]..[95,3303+13]) (src/common.mli[95,3303+2]..[95,3303+44])
+            core_type (src/common.mli[95,3303+16]..[95,3303+44])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/common.mli[95,3303+16]..[95,3303+20])
+                Ptyp_constr "t" (src/common.mli[95,3303+19]..[95,3303+20])
+                [
+                  core_type (src/common.mli[95,3303+16]..[95,3303+18])
+                    Ptyp_var a
+                ]
+              core_type (src/common.mli[95,3303+24]..[95,3303+44])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/common.mli[95,3303+25]..[95,3303+35])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/common.mli[95,3303+25]..[95,3303+27])
+                    Ptyp_var a
+                  core_type (src/common.mli[95,3303+31]..[95,3303+35])
+                    Ptyp_constr "t" (src/common.mli[95,3303+34]..[95,3303+35])
+                    [
+                      core_type (src/common.mli[95,3303+31]..[95,3303+33])
+                        Ptyp_var b
+                    ]
+                core_type (src/common.mli[95,3303+40]..[95,3303+44])
+                  Ptyp_constr "t" (src/common.mli[95,3303+43]..[95,3303+44])
+                  [
+                    core_type (src/common.mli[95,3303+40]..[95,3303+42])
+                      Ptyp_var b
+                  ]
+            []
+        signature_item (src/common.mli[96,3348+2]..[96,3348+42])
+          Psig_value
+          value_description ">>|" (src/common.mli[96,3348+6]..[96,3348+13]) (src/common.mli[96,3348+2]..[96,3348+42])
+            core_type (src/common.mli[96,3348+16]..[96,3348+42])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/common.mli[96,3348+16]..[96,3348+20])
+                Ptyp_constr "t" (src/common.mli[96,3348+19]..[96,3348+20])
+                [
+                  core_type (src/common.mli[96,3348+16]..[96,3348+18])
+                    Ptyp_var a
+                ]
+              core_type (src/common.mli[96,3348+24]..[96,3348+42])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/common.mli[96,3348+25]..[96,3348+33])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/common.mli[96,3348+25]..[96,3348+27])
+                    Ptyp_var a
+                  core_type (src/common.mli[96,3348+31]..[96,3348+33])
+                    Ptyp_var b
+                core_type (src/common.mli[96,3348+38]..[96,3348+42])
+                  Ptyp_constr "t" (src/common.mli[96,3348+41]..[96,3348+42])
+                  [
+                    core_type (src/common.mli[96,3348+38]..[96,3348+40])
+                      Ptyp_var b
+                  ]
+            []
+        signature_item (src/common.mli[98,3392+2]..[99,3410+70])
+          Psig_value
+          value_description "of_result" (src/common.mli[98,3392+6]..[98,3392+15]) (src/common.mli[98,3392+2]..[99,3410+70])
+            core_type (src/common.mli[99,3410+4]..[99,3410+70])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/common.mli[99,3410+4]..[99,3410+48])
+                Ptyp_constr "result" (src/common.mli[99,3410+42]..[99,3410+48])
+                [
+                  core_type (src/common.mli[99,3410+5]..[99,3410+7])
+                    Ptyp_var a
+                  core_type (src/common.mli[99,3410+9]..[99,3410+40])
+                    Ptyp_constr "NonEmptyList.t" (src/common.mli[99,3410+26]..[99,3410+40])
+                    [
+                      core_type (src/common.mli[99,3410+9]..[99,3410+25])
+                        Ptyp_constr "Location.Error.t" (src/common.mli[99,3410+9]..[99,3410+25])
+                        []
+                    ]
+                ]
+              core_type (src/common.mli[99,3410+52]..[99,3410+70])
+                Ptyp_arrow
+                Labelled "default"
+                core_type (src/common.mli[99,3410+60]..[99,3410+62])
+                  Ptyp_var a
+                core_type (src/common.mli[99,3410+66]..[99,3410+70])
+                  Ptyp_constr "t" (src/common.mli[99,3410+69]..[99,3410+70])
+                  [
+                    core_type (src/common.mli[99,3410+66]..[99,3410+68])
+                      Ptyp_var a
+                  ]
+            []
+        signature_item (src/common.mli[101,3482+2]..[101,3482+45])
+          Psig_value
+          value_description "combine_errors" (src/common.mli[101,3482+6]..[101,3482+20]) (src/common.mli[101,3482+2]..[101,3482+45])
+            core_type (src/common.mli[101,3482+23]..[101,3482+45])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/common.mli[101,3482+23]..[101,3482+32])
+                Ptyp_constr "list" (src/common.mli[101,3482+28]..[101,3482+32])
+                [
+                  core_type (src/common.mli[101,3482+23]..[101,3482+27])
+                    Ptyp_constr "t" (src/common.mli[101,3482+26]..[101,3482+27])
+                    [
+                      core_type (src/common.mli[101,3482+23]..[101,3482+25])
+                        Ptyp_var a
+                    ]
+                ]
+              core_type (src/common.mli[101,3482+36]..[101,3482+45])
+                Ptyp_constr "t" (src/common.mli[101,3482+44]..[101,3482+45])
+                [
+                  core_type (src/common.mli[101,3482+36]..[101,3482+43])
+                    Ptyp_constr "list" (src/common.mli[101,3482+39]..[101,3482+43])
+                    [
+                      core_type (src/common.mli[101,3482+36]..[101,3482+38])
+                        Ptyp_var a
+                    ]
+                ]
+            []
+      ]
+]
+
+[@@@ocaml.text " Common functions "]
+open! Import
+val lident : string -> Longident.t
+val core_type_of_type_declaration : type_declaration -> core_type
+val name_type_params_in_td_res :
+  type_declaration ->
+    (type_declaration, Location.Error.t NonEmptyList.t) result
+val name_type_params_in_td : type_declaration -> type_declaration
+val combinator_type_of_type_declaration :
+  type_declaration ->
+    f:(loc:Location.t -> core_type -> core_type) -> core_type
+val gen_symbol : ?prefix:string -> unit -> string[@@ocaml.doc
+                                                   " [gen_symbol ?prefix ()] generates a fresh variable name with [prefix].\n\n    @param prefix default = \"_x\" "]
+val string_of_core_type : core_type -> string
+val assert_no_attributes : attributes -> unit
+val assert_no_attributes_in : Ast_traverse0.iter
+val attributes_errors : attributes -> Location.Error.t list
+val collect_attributes_errors : Location.Error.t list Ast_traverse0.fold
+val get_type_param_name_res :
+  (core_type * (variance * injectivity)) ->
+    (string Loc.t, Location.Error.t NonEmptyList.t) result[@@ocaml.doc
+                                                            " [get_type_param_name_res tp] returns the string identifier associated with\n    [tp] if it is a type parameter, as a result. "]
+val get_type_param_name :
+  (core_type * (variance * injectivity)) -> string Loc.t[@@ocaml.doc
+                                                          " See {!get_type_param_name_res}. Raises a located error in case of failure. "]
+class type_is_recursive :
+  rec_flag ->
+    type_declaration list ->
+      object
+        inherit Ast_traverse0.iter
+        val  type_names : string list
+        method  return_true : unit -> unit
+        method  go : unit -> rec_flag
+      end[@@ocaml.doc
+           " [(new type_is_recursive rec_flag tds)#go ()] returns whether [rec_flag, tds]\n    is really a recursive type. We disregard recursive occurrences appearing in\n    arrow types. You can override the search for certain type expressions by\n    inheriting from this class. "]
+val really_recursive : rec_flag -> type_declaration list -> rec_flag[@@ocaml.doc
+                                                                    " [really_recursive rec_flag tds = (new type_is_recursive rec_flag tds)#go ()] "]
+val loc_of_payload : attribute -> Location.t
+val loc_of_attribute : attribute -> Location.t
+val loc_of_extension : extension -> Location.t
+val curry_applications : expression -> expression[@@ocaml.doc
+                                                   " convert multi-arg function applications into a cascade of 1-arg applications "]
+val attribute_of_warning : Location.t -> string -> attribute[@@ocaml.doc
+                                                              " Encode a warning message into an 'ocaml.ppwarning' attribute which can be\n    inserted in a generated Parsetree. The compiler will be responsible for\n    reporting the warning. "]
+val is_polymorphic_variant :
+  type_declaration -> sig_:bool -> [> `Definitely  | `Maybe  | `Surely_not ]
+val mk_named_sig :
+  loc:Location.t ->
+    sg_name:string ->
+      handle_polymorphic_variant:bool ->
+        type_declaration list -> include_description option[@@ocaml.doc
+                                                             " [mk_named_sig ~loc ~sg_name:\"Foo\" ~handle_polymorphic_variant tds] will\n    generate\n\n    {[\n      include Foo (* or Foo1, Foo2, Foo3 *)\n        with type (* ('a, 'b, 'c) *) t := (* ('a, 'b, 'c) *) t\n    ]}\n\n    when:\n\n    - there is only one type declaration\n    - the type is named t\n    - there are less than 4 type parameters\n    - there are no constraints on the type parameters\n\n    It will take care of giving fresh names to unnamed type parameters. "]
+module With_errors :
+sig
+  type 'a t = ('a * Location.Error.t list)
+  val return : 'a -> 'a t
+  val (>>=) : 'a t -> ('a -> 'b t) -> 'b t
+  val (>>|) : 'a t -> ('a -> 'b) -> 'b t
+  val of_result :
+    ('a, Location.Error.t NonEmptyList.t) result -> default:'a -> 'a t
+  val combine_errors : 'a t list -> 'a list t
+end
+[
+  signature_item (src/common.mli[1,0+0]..src/common.mli[1,0+23])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/common.mli[1,0+0]..[1,0+23])
+        Pstr_eval
+        expression (src/common.mli[1,0+0]..[1,0+23])
+          Pexp_constant PConst_string(" Common functions ",(src/common.mli[1,0+0]..[1,0+23]),None)
+    ]
+  signature_item (src/common.mli[3,25+0]..src/common.mli[3,25+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/common.mli[5,39+0]..src/common.mli[5,39+34])
+    Tsig_value
+    value_description lident/648 (src/common.mli[5,39+0]..src/common.mli[5,39+34])
+      core_type (src/common.mli[5,39+13]..src/common.mli[5,39+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[5,39+13]..src/common.mli[5,39+19])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/common.mli[5,39+23]..src/common.mli[5,39+34])
+          Ttyp_constr "Ppxlib__!.Longident.t"
+          []
+      []
+  signature_item (src/common.mli[6,74+0]..src/common.mli[6,74+65])
+    Tsig_value
+    value_description core_type_of_type_declaration/649 (src/common.mli[6,74+0]..src/common.mli[6,74+65])
+      core_type (src/common.mli[6,74+36]..src/common.mli[6,74+65])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[6,74+36]..src/common.mli[6,74+52])
+          Ttyp_constr "Ppxlib__!.Import.type_declaration"
+          []
+        core_type (src/common.mli[6,74+56]..src/common.mli[6,74+65])
+          Ttyp_constr "Ppxlib__!.Import.core_type"
+          []
+      []
+  signature_item (src/common.mli[8,141+0]..src/common.mli[9,174+80])
+    Tsig_value
+    value_description name_type_params_in_td_res/750 (src/common.mli[8,141+0]..src/common.mli[9,174+80])
+      core_type (src/common.mli[9,174+2]..src/common.mli[9,174+80])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[9,174+2]..src/common.mli[9,174+18])
+          Ttyp_constr "Ppxlib__!.Import.type_declaration"
+          []
+        core_type (src/common.mli[9,174+22]..src/common.mli[9,174+80])
+          Ttyp_constr "Stdlib!.result"
+          [
+            core_type (src/common.mli[9,174+23]..src/common.mli[9,174+39])
+              Ttyp_constr "Ppxlib__!.Import.type_declaration"
+              []
+            core_type (src/common.mli[9,174+41]..src/common.mli[9,174+72])
+              Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+              [
+                core_type (src/common.mli[9,174+41]..src/common.mli[9,174+57])
+                  Ttyp_constr "Ppxlib__!.Location.Error.t"
+                  []
+              ]
+          ]
+      []
+  signature_item (src/common.mli[11,256+0]..src/common.mli[11,256+65])
+    Tsig_value
+    value_description name_type_params_in_td/751 (src/common.mli[11,256+0]..src/common.mli[11,256+65])
+      core_type (src/common.mli[11,256+29]..src/common.mli[11,256+65])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[11,256+29]..src/common.mli[11,256+45])
+          Ttyp_constr "Ppxlib__!.Import.type_declaration"
+          []
+        core_type (src/common.mli[11,256+49]..src/common.mli[11,256+65])
+          Ttyp_constr "Ppxlib__!.Import.type_declaration"
+          []
+      []
+  signature_item (src/common.mli[13,323+0]..src/common.mli[14,365+79])
+    Tsig_value
+    value_description combinator_type_of_type_declaration/752 (src/common.mli[13,323+0]..src/common.mli[14,365+79])
+      core_type (src/common.mli[14,365+2]..src/common.mli[14,365+79])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[14,365+2]..src/common.mli[14,365+18])
+          Ttyp_constr "Ppxlib__!.Import.type_declaration"
+          []
+        core_type (src/common.mli[14,365+22]..src/common.mli[14,365+79])
+          Ttyp_arrow
+          Labelled "f"
+          core_type (src/common.mli[14,365+25]..src/common.mli[14,365+65])
+            Ttyp_arrow
+            Labelled "loc"
+            core_type (src/common.mli[14,365+29]..src/common.mli[14,365+39])
+              Ttyp_constr "Ppxlib__!.Location.t"
+              []
+            core_type (src/common.mli[14,365+43]..src/common.mli[14,365+65])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/common.mli[14,365+43]..src/common.mli[14,365+52])
+                Ttyp_constr "Ppxlib__!.Import.core_type"
+                []
+              core_type (src/common.mli[14,365+56]..src/common.mli[14,365+65])
+                Ttyp_constr "Ppxlib__!.Import.core_type"
+                []
+          core_type (src/common.mli[14,365+70]..src/common.mli[14,365+79])
+            Ttyp_constr "Ppxlib__!.Import.core_type"
+            []
+      []
+  signature_item (src/common.mli[16,446+0]..src/common.mli[16,446+49])
+    Tsig_value
+    value_description gen_symbol/753 (src/common.mli[16,446+0]..src/common.mli[16,446+49])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[17,496+0]..[19,572+35])
+            Pstr_eval
+            expression (src/common.mli[17,496+0]..[19,572+35])
+              Pexp_constant PConst_string(" [gen_symbol ?prefix ()] generates a fresh variable name with [prefix].\n\n    @param prefix default = \"_x\" ",(src/common.mli[17,496+0]..[19,572+35]),None)
+        ]
+      core_type (src/common.mli[16,446+17]..src/common.mli[16,446+49])
+        Ttyp_arrow
+        Optional "prefix"
+        core_type (src/common.mli[16,446+25]..src/common.mli[16,446+31])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/common.mli[16,446+35]..src/common.mli[16,446+49])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/common.mli[16,446+35]..src/common.mli[16,446+39])
+            Ttyp_constr "unit/6!"
+            []
+          core_type (src/common.mli[16,446+43]..src/common.mli[16,446+49])
+            Ttyp_constr "string/17!"
+            []
+      []
+  signature_item (src/common.mli[21,609+0]..src/common.mli[21,609+45])
+    Tsig_value
+    value_description string_of_core_type/754 (src/common.mli[21,609+0]..src/common.mli[21,609+45])
+      core_type (src/common.mli[21,609+26]..src/common.mli[21,609+45])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[21,609+26]..src/common.mli[21,609+35])
+          Ttyp_constr "Ppxlib__!.Import.core_type"
+          []
+        core_type (src/common.mli[21,609+39]..src/common.mli[21,609+45])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (src/common.mli[22,655+0]..src/common.mli[22,655+45])
+    Tsig_value
+    value_description assert_no_attributes/755 (src/common.mli[22,655+0]..src/common.mli[22,655+45])
+      core_type (src/common.mli[22,655+27]..src/common.mli[22,655+45])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[22,655+27]..src/common.mli[22,655+37])
+          Ttyp_constr "Ppxlib__!.Import.attributes"
+          []
+        core_type (src/common.mli[22,655+41]..src/common.mli[22,655+45])
+          Ttyp_constr "unit/6!"
+          []
+      []
+  signature_item (src/common.mli[23,701+0]..src/common.mli[23,701+48])
+    Tsig_value
+    value_description assert_no_attributes_in/804 (src/common.mli[23,701+0]..src/common.mli[23,701+48])
+      core_type (src/common.mli[23,701+30]..src/common.mli[23,701+48])
+        Ttyp_constr "Ppxlib__!.Ast_traverse0.iter"
+        []
+      []
+  signature_item (src/common.mli[24,750+0]..src/common.mli[24,750+59])
+    Tsig_value
+    value_description attributes_errors/805 (src/common.mli[24,750+0]..src/common.mli[24,750+59])
+      core_type (src/common.mli[24,750+24]..src/common.mli[24,750+59])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[24,750+24]..src/common.mli[24,750+34])
+          Ttyp_constr "Ppxlib__!.Import.attributes"
+          []
+        core_type (src/common.mli[24,750+38]..src/common.mli[24,750+59])
+          Ttyp_constr "list/11!"
+          [
+            core_type (src/common.mli[24,750+38]..src/common.mli[24,750+54])
+              Ttyp_constr "Ppxlib__!.Location.Error.t"
+              []
+          ]
+      []
+  signature_item (src/common.mli[25,810+0]..src/common.mli[25,810+72])
+    Tsig_value
+    value_description collect_attributes_errors/806 (src/common.mli[25,810+0]..src/common.mli[25,810+72])
+      core_type (src/common.mli[25,810+32]..src/common.mli[25,810+72])
+        Ttyp_constr "Ppxlib__!.Ast_traverse0.fold"
+        [
+          core_type (src/common.mli[25,810+32]..src/common.mli[25,810+53])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/common.mli[25,810+32]..src/common.mli[25,810+48])
+                Ttyp_constr "Ppxlib__!.Location.Error.t"
+                []
+            ]
+        ]
+      []
+  signature_item (src/common.mli[27,884+0]..src/common.mli[29,956+56])
+    Tsig_value
+    value_description get_type_param_name_res/813 (src/common.mli[27,884+0]..src/common.mli[29,956+56])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[30,1013+0]..[31,1092+51])
+            Pstr_eval
+            expression (src/common.mli[30,1013+0]..[31,1092+51])
+              Pexp_constant PConst_string(" [get_type_param_name_res tp] returns the string identifier associated with\n    [tp] if it is a type parameter, as a result. ",(src/common.mli[30,1013+0]..[31,1092+51]),None)
+        ]
+      core_type (src/common.mli[28,914+2]..src/common.mli[29,956+56])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[28,914+2]..src/common.mli[28,914+38])
+          Ttyp_tuple
+          [
+            core_type (src/common.mli[28,914+2]..src/common.mli[28,914+11])
+              Ttyp_constr "Ppxlib__!.Import.core_type"
+              []
+            core_type (src/common.mli[28,914+15]..src/common.mli[28,914+37])
+              Ttyp_tuple
+              [
+                core_type (src/common.mli[28,914+15]..src/common.mli[28,914+23])
+                  Ttyp_constr "Ppxlib__!.Import.variance"
+                  []
+                core_type (src/common.mli[28,914+26]..src/common.mli[28,914+37])
+                  Ttyp_constr "Ppxlib__!.Import.injectivity"
+                  []
+              ]
+          ]
+        core_type (src/common.mli[29,956+2]..src/common.mli[29,956+56])
+          Ttyp_constr "Stdlib!.result"
+          [
+            core_type (src/common.mli[29,956+3]..src/common.mli[29,956+15])
+              Ttyp_constr "Ppxlib__!.Loc.t"
+              [
+                core_type (src/common.mli[29,956+3]..src/common.mli[29,956+9])
+                  Ttyp_constr "string/17!"
+                  []
+              ]
+            core_type (src/common.mli[29,956+17]..src/common.mli[29,956+48])
+              Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+              [
+                core_type (src/common.mli[29,956+17]..src/common.mli[29,956+33])
+                  Ttyp_constr "Ppxlib__!.Location.Error.t"
+                  []
+              ]
+          ]
+      []
+  signature_item (src/common.mli[33,1145+0]..src/common.mli[33,1145+78])
+    Tsig_value
+    value_description get_type_param_name/814 (src/common.mli[33,1145+0]..src/common.mli[33,1145+78])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[34,1224+0]..[34,1224+81])
+            Pstr_eval
+            expression (src/common.mli[34,1224+0]..[34,1224+81])
+              Pexp_constant PConst_string(" See {!get_type_param_name_res}. Raises a located error in case of failure. ",(src/common.mli[34,1224+0]..[34,1224+81]),None)
+        ]
+      core_type (src/common.mli[33,1145+26]..src/common.mli[33,1145+78])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[33,1145+26]..src/common.mli[33,1145+62])
+          Ttyp_tuple
+          [
+            core_type (src/common.mli[33,1145+26]..src/common.mli[33,1145+35])
+              Ttyp_constr "Ppxlib__!.Import.core_type"
+              []
+            core_type (src/common.mli[33,1145+39]..src/common.mli[33,1145+61])
+              Ttyp_tuple
+              [
+                core_type (src/common.mli[33,1145+39]..src/common.mli[33,1145+47])
+                  Ttyp_constr "Ppxlib__!.Import.variance"
+                  []
+                core_type (src/common.mli[33,1145+50]..src/common.mli[33,1145+61])
+                  Ttyp_constr "Ppxlib__!.Import.injectivity"
+                  []
+              ]
+          ]
+        core_type (src/common.mli[33,1145+66]..src/common.mli[33,1145+78])
+          Ttyp_constr "Ppxlib__!.Loc.t"
+          [
+            core_type (src/common.mli[33,1145+66]..src/common.mli[33,1145+72])
+              Ttyp_constr "string/17!"
+              []
+          ]
+      []
+  signature_item (src/common.mli[40,1580+0]..src/common.mli[48,1803+8])
+    Tsig_class
+    [
+      class_description (src/common.mli[40,1580+0]..src/common.mli[48,1803+8])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/common.mli[36,1307+0]..[39,1545+34])
+              Pstr_eval
+              expression (src/common.mli[36,1307+0]..[39,1545+34])
+                Pexp_constant PConst_string(" [(new type_is_recursive rec_flag tds)#go ()] returns whether [rec_flag, tds]\n    is really a recursive type. We disregard recursive occurrences appearing in\n    arrow types. You can override the search for certain type expressions by\n    inheriting from this class. ",(src/common.mli[36,1307+0]..[39,1545+34]),None)
+          ]
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "type_is_recursive"
+        pci_expr =
+          class_type (src/common.mli[41,1606+2]..src/common.mli[48,1803+8])
+            Tcty_arrow
+            Nolabel
+            core_type (src/common.mli[41,1606+2]..src/common.mli[41,1606+10])
+              Ttyp_constr "Ppxlib__!.Import.rec_flag"
+              []
+            class_type (src/common.mli[42,1617+5]..src/common.mli[48,1803+8])
+              Tcty_arrow
+              Nolabel
+              core_type (src/common.mli[42,1617+5]..src/common.mli[42,1617+26])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/common.mli[42,1617+5]..src/common.mli[42,1617+21])
+                    Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                    []
+                ]
+              class_type (src/common.mli[43,1644+5]..src/common.mli[48,1803+8])
+                Tcty_signature
+                class_signature
+                  core_type (src/common.mli[43,1644+11]..src/common.mli[43,1644+11])
+                    Ttyp_any
+                  [
+                    class_type_field (src/common.mli[44,1656+7]..src/common.mli[44,1656+33])
+                      Tctf_inherit
+                      class_type (src/common.mli[44,1656+15]..src/common.mli[44,1656+33])
+                        Tcty_constr "Ppxlib__!.Ast_traverse0.iter"
+                        []
+                    class_type_field (src/common.mli[45,1690+7]..src/common.mli[45,1690+35])
+                      Tctf_val "type_names" Immutable Concrete
+                        core_type (src/common.mli[45,1690+24]..src/common.mli[45,1690+35])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/common.mli[45,1690+24]..src/common.mli[45,1690+30])
+                              Ttyp_constr "string/17!"
+                              []
+                          ]
+                    class_type_field (src/common.mli[46,1726+7]..src/common.mli[46,1726+40])
+                      Tctf_method "return_true" Public Concrete
+                        core_type (src/common.mli[46,1726+7]..src/common.mli[46,1726+40])
+                          Ttyp_poly
+                          core_type (src/common.mli[46,1726+28]..src/common.mli[46,1726+40])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/common.mli[46,1726+28]..src/common.mli[46,1726+32])
+                              Ttyp_constr "unit/6!"
+                              []
+                            core_type (src/common.mli[46,1726+36]..src/common.mli[46,1726+40])
+                              Ttyp_constr "unit/6!"
+                              []
+                    class_type_field (src/common.mli[47,1767+7]..src/common.mli[47,1767+35])
+                      Tctf_method "go" Public Concrete
+                        core_type (src/common.mli[47,1767+7]..src/common.mli[47,1767+35])
+                          Ttyp_poly
+                          core_type (src/common.mli[47,1767+19]..src/common.mli[47,1767+35])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/common.mli[47,1767+19]..src/common.mli[47,1767+23])
+                              Ttyp_constr "unit/6!"
+                              []
+                            core_type (src/common.mli[47,1767+27]..src/common.mli[47,1767+35])
+                              Ttyp_constr "Ppxlib__!.Import.rec_flag"
+                              []
+                  ]
+    ]
+  signature_item (src/common.mli[50,1813+0]..src/common.mli[50,1813+68])
+    Tsig_value
+    value_description really_recursive/1104 (src/common.mli[50,1813+0]..src/common.mli[50,1813+68])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[51,1882+0]..[51,1882+83])
+            Pstr_eval
+            expression (src/common.mli[51,1882+0]..[51,1882+83])
+              Pexp_constant PConst_string(" [really_recursive rec_flag tds = (new type_is_recursive rec_flag tds)#go ()] ",(src/common.mli[51,1882+0]..[51,1882+83]),None)
+        ]
+      core_type (src/common.mli[50,1813+23]..src/common.mli[50,1813+68])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[50,1813+23]..src/common.mli[50,1813+31])
+          Ttyp_constr "Ppxlib__!.Import.rec_flag"
+          []
+        core_type (src/common.mli[50,1813+35]..src/common.mli[50,1813+68])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/common.mli[50,1813+35]..src/common.mli[50,1813+56])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/common.mli[50,1813+35]..src/common.mli[50,1813+51])
+                Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                []
+            ]
+          core_type (src/common.mli[50,1813+60]..src/common.mli[50,1813+68])
+            Ttyp_constr "Ppxlib__!.Import.rec_flag"
+            []
+      []
+  signature_item (src/common.mli[53,1967+0]..src/common.mli[53,1967+44])
+    Tsig_value
+    value_description loc_of_payload/1105 (src/common.mli[53,1967+0]..src/common.mli[53,1967+44])
+      core_type (src/common.mli[53,1967+21]..src/common.mli[53,1967+44])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[53,1967+21]..src/common.mli[53,1967+30])
+          Ttyp_constr "Ppxlib__!.Import.attribute"
+          []
+        core_type (src/common.mli[53,1967+34]..src/common.mli[53,1967+44])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+      []
+  signature_item (src/common.mli[54,2012+0]..src/common.mli[54,2012+46])
+    Tsig_value
+    value_description loc_of_attribute/1106 (src/common.mli[54,2012+0]..src/common.mli[54,2012+46])
+      core_type (src/common.mli[54,2012+23]..src/common.mli[54,2012+46])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[54,2012+23]..src/common.mli[54,2012+32])
+          Ttyp_constr "Ppxlib__!.Import.attribute"
+          []
+        core_type (src/common.mli[54,2012+36]..src/common.mli[54,2012+46])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+      []
+  signature_item (src/common.mli[55,2059+0]..src/common.mli[55,2059+46])
+    Tsig_value
+    value_description loc_of_extension/1107 (src/common.mli[55,2059+0]..src/common.mli[55,2059+46])
+      core_type (src/common.mli[55,2059+23]..src/common.mli[55,2059+46])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[55,2059+23]..src/common.mli[55,2059+32])
+          Ttyp_constr "Ppxlib__!.Import.extension"
+          []
+        core_type (src/common.mli[55,2059+36]..src/common.mli[55,2059+46])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+      []
+  signature_item (src/common.mli[57,2107+0]..src/common.mli[57,2107+49])
+    Tsig_value
+    value_description curry_applications/1108 (src/common.mli[57,2107+0]..src/common.mli[57,2107+49])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[58,2157+0]..[58,2157+83])
+            Pstr_eval
+            expression (src/common.mli[58,2157+0]..[58,2157+83])
+              Pexp_constant PConst_string(" convert multi-arg function applications into a cascade of 1-arg applications ",(src/common.mli[58,2157+0]..[58,2157+83]),None)
+        ]
+      core_type (src/common.mli[57,2107+25]..src/common.mli[57,2107+49])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[57,2107+25]..src/common.mli[57,2107+35])
+          Ttyp_constr "Ppxlib__!.Import.expression"
+          []
+        core_type (src/common.mli[57,2107+39]..src/common.mli[57,2107+49])
+          Ttyp_constr "Ppxlib__!.Import.expression"
+          []
+      []
+  signature_item (src/common.mli[60,2242+0]..src/common.mli[60,2242+60])
+    Tsig_value
+    value_description attribute_of_warning/1109 (src/common.mli[60,2242+0]..src/common.mli[60,2242+60])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[61,2303+0]..[63,2457+29])
+            Pstr_eval
+            expression (src/common.mli[61,2303+0]..[63,2457+29])
+              Pexp_constant PConst_string(" Encode a warning message into an 'ocaml.ppwarning' attribute which can be\n    inserted in a generated Parsetree. The compiler will be responsible for\n    reporting the warning. ",(src/common.mli[61,2303+0]..[63,2457+29]),None)
+        ]
+      core_type (src/common.mli[60,2242+27]..src/common.mli[60,2242+60])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[60,2242+27]..src/common.mli[60,2242+37])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+        core_type (src/common.mli[60,2242+41]..src/common.mli[60,2242+60])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/common.mli[60,2242+41]..src/common.mli[60,2242+47])
+            Ttyp_constr "string/17!"
+            []
+          core_type (src/common.mli[60,2242+51]..src/common.mli[60,2242+60])
+            Ttyp_constr "Ppxlib__!.Import.attribute"
+            []
+      []
+  signature_item (src/common.mli[65,2488+0]..src/common.mli[66,2517+74])
+    Tsig_value
+    value_description is_polymorphic_variant/1110 (src/common.mli[65,2488+0]..src/common.mli[66,2517+74])
+      core_type (src/common.mli[66,2517+2]..src/common.mli[66,2517+74])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/common.mli[66,2517+2]..src/common.mli[66,2517+18])
+          Ttyp_constr "Ppxlib__!.Import.type_declaration"
+          []
+        core_type (src/common.mli[66,2517+22]..src/common.mli[66,2517+74])
+          Ttyp_arrow
+          Labelled "sig_"
+          core_type (src/common.mli[66,2517+27]..src/common.mli[66,2517+31])
+            Ttyp_constr "bool/5!"
+            []
+          core_type (src/common.mli[66,2517+35]..src/common.mli[66,2517+74])
+            Ttyp_variant closed=Open
+            [
+              Ttag "Definitely" true
+                []
+              Ttag "Maybe" true
+                []
+              Ttag "Surely_not" true
+                []
+            ]
+            None
+      []
+  signature_item (src/common.mli[68,2593+0]..src/common.mli[73,2716+28])
+    Tsig_value
+    value_description mk_named_sig/1111 (src/common.mli[68,2593+0]..src/common.mli[73,2716+28])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/common.mli[74,2745+0]..[89,3134+74])
+            Pstr_eval
+            expression (src/common.mli[74,2745+0]..[89,3134+74])
+              Pexp_constant PConst_string(" [mk_named_sig ~loc ~sg_name:\"Foo\" ~handle_polymorphic_variant tds] will\n    generate\n\n    {[\n      include Foo (* or Foo1, Foo2, Foo3 *)\n        with type (* ('a, 'b, 'c) *) t := (* ('a, 'b, 'c) *) t\n    ]}\n\n    when:\n\n    - there is only one type declaration\n    - the type is named t\n    - there are less than 4 type parameters\n    - there are no constraints on the type parameters\n\n    It will take care of giving fresh names to unnamed type parameters. ",(src/common.mli[74,2745+0]..[89,3134+74]),None)
+        ]
+      core_type (src/common.mli[69,2612+2]..src/common.mli[73,2716+28])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (src/common.mli[69,2612+6]..src/common.mli[69,2612+16])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+        core_type (src/common.mli[70,2632+2]..src/common.mli[73,2716+28])
+          Ttyp_arrow
+          Labelled "sg_name"
+          core_type (src/common.mli[70,2632+10]..src/common.mli[70,2632+16])
+            Ttyp_constr "string/17!"
+            []
+          core_type (src/common.mli[71,2652+2]..src/common.mli[73,2716+28])
+            Ttyp_arrow
+            Labelled "handle_polymorphic_variant"
+            core_type (src/common.mli[71,2652+29]..src/common.mli[71,2652+33])
+              Ttyp_constr "bool/5!"
+              []
+            core_type (src/common.mli[72,2689+2]..src/common.mli[73,2716+28])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/common.mli[72,2689+2]..src/common.mli[72,2689+23])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/common.mli[72,2689+2]..src/common.mli[72,2689+18])
+                    Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                    []
+                ]
+              core_type (src/common.mli[73,2716+2]..src/common.mli[73,2716+28])
+                Ttyp_constr "option/12!"
+                [
+                  core_type (src/common.mli[73,2716+2]..src/common.mli[73,2716+21])
+                    Ttyp_constr "Ppxlib__!.Import.include_description"
+                    []
+                ]
+      []
+  signature_item (src/common.mli[91,3210+0]..src/common.mli[102,3528+3])
+    Tsig_module "With_errors/1118"
+    module_type (src/common.mli[91,3210+21]..src/common.mli[102,3528+3])
+      Tmty_signature
+      [
+        signature_item (src/common.mli[92,3235+2]..src/common.mli[92,3235+40])
+          Tsig_type Rec
+          [
+            type_declaration t/1112 (src/common.mli[92,3235+2]..src/common.mli[92,3235+40])
+              ptype_params =
+                [
+                  core_type (src/common.mli[92,3235+7]..src/common.mli[92,3235+9])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/common.mli[92,3235+14]..src/common.mli[92,3235+40])
+                    Ttyp_tuple
+                    [
+                      core_type (src/common.mli[92,3235+14]..src/common.mli[92,3235+16])
+                        Ttyp_var a
+                      core_type (src/common.mli[92,3235+19]..src/common.mli[92,3235+40])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/common.mli[92,3235+19]..src/common.mli[92,3235+35])
+                            Ttyp_constr "Ppxlib__!.Location.Error.t"
+                            []
+                        ]
+                    ]
+          ]
+        signature_item (src/common.mli[94,3277+2]..src/common.mli[94,3277+25])
+          Tsig_value
+          value_description return/1113 (src/common.mli[94,3277+2]..src/common.mli[94,3277+25])
+            core_type (src/common.mli[94,3277+15]..src/common.mli[94,3277+25])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/common.mli[94,3277+15]..src/common.mli[94,3277+17])
+                Ttyp_var a
+              core_type (src/common.mli[94,3277+21]..src/common.mli[94,3277+25])
+                Ttyp_constr "t/1112"
+                [
+                  core_type (src/common.mli[94,3277+21]..src/common.mli[94,3277+23])
+                    Ttyp_var a
+                ]
+            []
+        signature_item (src/common.mli[95,3303+2]..src/common.mli[95,3303+44])
+          Tsig_value
+          value_description >>=/1114 (src/common.mli[95,3303+2]..src/common.mli[95,3303+44])
+            core_type (src/common.mli[95,3303+16]..src/common.mli[95,3303+44])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/common.mli[95,3303+16]..src/common.mli[95,3303+20])
+                Ttyp_constr "t/1112"
+                [
+                  core_type (src/common.mli[95,3303+16]..src/common.mli[95,3303+18])
+                    Ttyp_var a
+                ]
+              core_type (src/common.mli[95,3303+24]..src/common.mli[95,3303+44])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/common.mli[95,3303+25]..src/common.mli[95,3303+35])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/common.mli[95,3303+25]..src/common.mli[95,3303+27])
+                    Ttyp_var a
+                  core_type (src/common.mli[95,3303+31]..src/common.mli[95,3303+35])
+                    Ttyp_constr "t/1112"
+                    [
+                      core_type (src/common.mli[95,3303+31]..src/common.mli[95,3303+33])
+                        Ttyp_var b
+                    ]
+                core_type (src/common.mli[95,3303+40]..src/common.mli[95,3303+44])
+                  Ttyp_constr "t/1112"
+                  [
+                    core_type (src/common.mli[95,3303+40]..src/common.mli[95,3303+42])
+                      Ttyp_var b
+                  ]
+            []
+        signature_item (src/common.mli[96,3348+2]..src/common.mli[96,3348+42])
+          Tsig_value
+          value_description >>|/1115 (src/common.mli[96,3348+2]..src/common.mli[96,3348+42])
+            core_type (src/common.mli[96,3348+16]..src/common.mli[96,3348+42])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/common.mli[96,3348+16]..src/common.mli[96,3348+20])
+                Ttyp_constr "t/1112"
+                [
+                  core_type (src/common.mli[96,3348+16]..src/common.mli[96,3348+18])
+                    Ttyp_var a
+                ]
+              core_type (src/common.mli[96,3348+24]..src/common.mli[96,3348+42])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/common.mli[96,3348+25]..src/common.mli[96,3348+33])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/common.mli[96,3348+25]..src/common.mli[96,3348+27])
+                    Ttyp_var a
+                  core_type (src/common.mli[96,3348+31]..src/common.mli[96,3348+33])
+                    Ttyp_var b
+                core_type (src/common.mli[96,3348+38]..src/common.mli[96,3348+42])
+                  Ttyp_constr "t/1112"
+                  [
+                    core_type (src/common.mli[96,3348+38]..src/common.mli[96,3348+40])
+                      Ttyp_var b
+                  ]
+            []
+        signature_item (src/common.mli[98,3392+2]..src/common.mli[99,3410+70])
+          Tsig_value
+          value_description of_result/1116 (src/common.mli[98,3392+2]..src/common.mli[99,3410+70])
+            core_type (src/common.mli[99,3410+4]..src/common.mli[99,3410+70])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/common.mli[99,3410+4]..src/common.mli[99,3410+48])
+                Ttyp_constr "Stdlib!.result"
+                [
+                  core_type (src/common.mli[99,3410+5]..src/common.mli[99,3410+7])
+                    Ttyp_var a
+                  core_type (src/common.mli[99,3410+9]..src/common.mli[99,3410+40])
+                    Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                    [
+                      core_type (src/common.mli[99,3410+9]..src/common.mli[99,3410+25])
+                        Ttyp_constr "Ppxlib__!.Location.Error.t"
+                        []
+                    ]
+                ]
+              core_type (src/common.mli[99,3410+52]..src/common.mli[99,3410+70])
+                Ttyp_arrow
+                Labelled "default"
+                core_type (src/common.mli[99,3410+60]..src/common.mli[99,3410+62])
+                  Ttyp_var a
+                core_type (src/common.mli[99,3410+66]..src/common.mli[99,3410+70])
+                  Ttyp_constr "t/1112"
+                  [
+                    core_type (src/common.mli[99,3410+66]..src/common.mli[99,3410+68])
+                      Ttyp_var a
+                  ]
+            []
+        signature_item (src/common.mli[101,3482+2]..src/common.mli[101,3482+45])
+          Tsig_value
+          value_description combine_errors/1117 (src/common.mli[101,3482+2]..src/common.mli[101,3482+45])
+            core_type (src/common.mli[101,3482+23]..src/common.mli[101,3482+45])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/common.mli[101,3482+23]..src/common.mli[101,3482+32])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/common.mli[101,3482+23]..src/common.mli[101,3482+27])
+                    Ttyp_constr "t/1112"
+                    [
+                      core_type (src/common.mli[101,3482+23]..src/common.mli[101,3482+25])
+                        Ttyp_var a
+                    ]
+                ]
+              core_type (src/common.mli[101,3482+36]..src/common.mli[101,3482+45])
+                Ttyp_constr "t/1112"
+                [
+                  core_type (src/common.mli[101,3482+36]..src/common.mli[101,3482+43])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/common.mli[101,3482+36]..src/common.mli[101,3482+38])
+                        Ttyp_var a
+                    ]
+                ]
+            []
+      ]
+]
+

@@ -1,0 +1,11 @@
+0.229s 46.2MB 5.85MB 5.85MB test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.exe
+  0.001s 5.26MB 0.43MB 0.43MB selection
+  0.001s 2.17MB 0.06MB 0.50MB liveness
+  ------ 0.12MB ------ ------ deadcode
+  0.001s 2.00MB 0.18MB 0.68MB spill
+  0.001s 2.00MB 0.18MB 0.87MB split
+  0.008s 22.9MB 1.68MB 2.56MB regalloc
+  0.006s ------ ------ ------ assemble
+  0.201s ------ ------ ------ c-linker
+  0.008s 11.6MB 3.29MB 5.85MB other
+0.004s ------ ------ ------ other

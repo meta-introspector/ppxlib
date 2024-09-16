@@ -1,0 +1,145 @@
+[
+  signature_item (src/location_check.mli[1,0+0]..[1,0+54])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/location_check.mli[1,0+0]..[1,0+54])
+        Pstr_eval
+        expression (src/location_check.mli[1,0+0]..[1,0+54])
+          Pexp_constant PConst_string(" Enforces some invariants on AST nodes locations ",(src/location_check.mli[1,0+0]..[1,0+54]),None)
+    ]
+  signature_item (src/location_check.mli[3,56+0]..[49,1867+73])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/location_check.mli[3,56+0]..[49,1867+73])
+        Pstr_eval
+        expression (src/location_check.mli[3,56+0]..[49,1867+73])
+          Pexp_constant PConst_string(" {2 What?}\n\n    The invariants are as follow:\n\n    - AST nodes are requested to be well nested wrt. locations\n    - the locations of \"sibling\" AST nodes should not overlap\n\n    {2 Why?}\n\n    This is required for merlin to behave properly.\n\n    Indeed, for almost any query directed at merlin, it will need to inspect the\n    context around the user's cursor to give an answer that makes sense. And the\n    only input it has to do that is the position of the cursor in the buffer.\n    The handling of most queries starts by traversing the AST, using the\n    locations of nodes to select the right branch. (1) is necessary to avoid\n    discarding subtrees too early, (2) is used to avoid merlin making arbitrary\n    choices (if you ask for the type under the cursor, and there seem to be two\n    things under the cursor, merlin will need to pick one).\n\n    {2 Guidelines for writing well-behaved ppxes}\n\n    It's obviously not always (indeed rarely) possible to mint new locations\n    when manipulating the AST.\n\n    The intended way to deal with locations is this:\n\n    - AST nodes that exist in the source should keep their original location\n    - new nodes should be given a \"ghost\" location (i.e.\n      [{ some_loc with loc_ghost = true }]) to indicate that the node doesn't\n      exist in the sources.\n\n    Both the new check and merlin will happily traverse these ghost nodes as if\n    they didn't exist. Note: this comes into play when deciding which nodes are\n    \"siblings\", for instance if your AST is:\n\n    {v\n      A (B1(C, D),\n         B2(X, Y))\n    v}\n\n    but [B2] has a ghost location, then [B1], [X] and [Y] are considered\n    siblings.\n\n    Additionally, there is an attribute [\\[@merlin.hide\\]] that you can add on\n    nodes to tell merlin (and the check) to ignore this node and all of its\n    children. Some helpers for this are provided in {!Merlin_helpers}. ",(src/location_check.mli[3,56+0]..[49,1867+73]),None)
+    ]
+  signature_item (src/location_check.mli[51,1942+0]..[51,1942+12])
+    Psig_open Override "Import" (src/location_check.mli[51,1942+6]..[51,1942+12])
+  signature_item (src/location_check.mli[53,1956+0]..[57,2019+3])
+    Psig_module "Non_intersecting_ranges" (src/location_check.mli[53,1956+7]..[53,1956+30])
+    module_type (src/location_check.mli[53,1956+33]..[57,2019+3])
+      Pmty_signature
+      [
+        signature_item (src/location_check.mli[54,1993+2]..[54,1993+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/location_check.mli[54,1993+7]..[54,1993+8]) (src/location_check.mli[54,1993+2]..[54,1993+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/location_check.mli[56,2003+2]..[56,2003+15])
+          Psig_value
+          value_description "empty" (src/location_check.mli[56,2003+6]..[56,2003+11]) (src/location_check.mli[56,2003+2]..[56,2003+15])
+            core_type (src/location_check.mli[56,2003+14]..[56,2003+15])
+              Ptyp_constr "t" (src/location_check.mli[56,2003+14]..[56,2003+15])
+              []
+            []
+      ]
+  signature_item (src/location_check.mli[59,2024+0]..[60,2049+62])
+    Psig_value
+    value_description "enforce_invariants" (src/location_check.mli[59,2024+4]..[59,2024+22]) (src/location_check.mli[59,2024+0]..[60,2049+62])
+      core_type (src/location_check.mli[60,2049+2]..[60,2049+62])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/location_check.mli[60,2049+2]..[60,2049+15])
+          Ptyp_constr "option" (src/location_check.mli[60,2049+9]..[60,2049+15])
+          [
+            core_type (src/location_check.mli[60,2049+2]..[60,2049+8])
+              Ptyp_constr "string" (src/location_check.mli[60,2049+2]..[60,2049+8])
+              []
+          ]
+        core_type (src/location_check.mli[60,2049+19]..[60,2049+62])
+          Ptyp_constr "Ast_traverse.fold" (src/location_check.mli[60,2049+45]..[60,2049+62])
+          [
+            core_type (src/location_check.mli[60,2049+19]..[60,2049+44])
+              Ptyp_constr "Non_intersecting_ranges.t" (src/location_check.mli[60,2049+19]..[60,2049+44])
+              []
+          ]
+      []
+]
+
+[@@@ocaml.text " Enforces some invariants on AST nodes locations "]
+[@@@ocaml.text
+  " {2 What?}\n\n    The invariants are as follow:\n\n    - AST nodes are requested to be well nested wrt. locations\n    - the locations of \"sibling\" AST nodes should not overlap\n\n    {2 Why?}\n\n    This is required for merlin to behave properly.\n\n    Indeed, for almost any query directed at merlin, it will need to inspect the\n    context around the user's cursor to give an answer that makes sense. And the\n    only input it has to do that is the position of the cursor in the buffer.\n    The handling of most queries starts by traversing the AST, using the\n    locations of nodes to select the right branch. (1) is necessary to avoid\n    discarding subtrees too early, (2) is used to avoid merlin making arbitrary\n    choices (if you ask for the type under the cursor, and there seem to be two\n    things under the cursor, merlin will need to pick one).\n\n    {2 Guidelines for writing well-behaved ppxes}\n\n    It's obviously not always (indeed rarely) possible to mint new locations\n    when manipulating the AST.\n\n    The intended way to deal with locations is this:\n\n    - AST nodes that exist in the source should keep their original location\n    - new nodes should be given a \"ghost\" location (i.e.\n      [{ some_loc with loc_ghost = true }]) to indicate that the node doesn't\n      exist in the sources.\n\n    Both the new check and merlin will happily traverse these ghost nodes as if\n    they didn't exist. Note: this comes into play when deciding which nodes are\n    \"siblings\", for instance if your AST is:\n\n    {v\n      A (B1(C, D),\n         B2(X, Y))\n    v}\n\n    but [B2] has a ghost location, then [B1], [X] and [Y] are considered\n    siblings.\n\n    Additionally, there is an attribute [\\[@merlin.hide\\]] that you can add on\n    nodes to tell merlin (and the check) to ignore this node and all of its\n    children. Some helpers for this are provided in {!Merlin_helpers}. "]
+open! Import
+module Non_intersecting_ranges : sig type t val empty : t end
+val enforce_invariants :
+  string option -> Non_intersecting_ranges.t Ast_traverse.fold
+[
+  signature_item (src/location_check.mli[1,0+0]..src/location_check.mli[1,0+54])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/location_check.mli[1,0+0]..[1,0+54])
+        Pstr_eval
+        expression (src/location_check.mli[1,0+0]..[1,0+54])
+          Pexp_constant PConst_string(" Enforces some invariants on AST nodes locations ",(src/location_check.mli[1,0+0]..[1,0+54]),None)
+    ]
+  signature_item (src/location_check.mli[3,56+0]..src/location_check.mli[49,1867+73])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/location_check.mli[3,56+0]..[49,1867+73])
+        Pstr_eval
+        expression (src/location_check.mli[3,56+0]..[49,1867+73])
+          Pexp_constant PConst_string(" {2 What?}\n\n    The invariants are as follow:\n\n    - AST nodes are requested to be well nested wrt. locations\n    - the locations of \"sibling\" AST nodes should not overlap\n\n    {2 Why?}\n\n    This is required for merlin to behave properly.\n\n    Indeed, for almost any query directed at merlin, it will need to inspect the\n    context around the user's cursor to give an answer that makes sense. And the\n    only input it has to do that is the position of the cursor in the buffer.\n    The handling of most queries starts by traversing the AST, using the\n    locations of nodes to select the right branch. (1) is necessary to avoid\n    discarding subtrees too early, (2) is used to avoid merlin making arbitrary\n    choices (if you ask for the type under the cursor, and there seem to be two\n    things under the cursor, merlin will need to pick one).\n\n    {2 Guidelines for writing well-behaved ppxes}\n\n    It's obviously not always (indeed rarely) possible to mint new locations\n    when manipulating the AST.\n\n    The intended way to deal with locations is this:\n\n    - AST nodes that exist in the source should keep their original location\n    - new nodes should be given a \"ghost\" location (i.e.\n      [{ some_loc with loc_ghost = true }]) to indicate that the node doesn't\n      exist in the sources.\n\n    Both the new check and merlin will happily traverse these ghost nodes as if\n    they didn't exist. Note: this comes into play when deciding which nodes are\n    \"siblings\", for instance if your AST is:\n\n    {v\n      A (B1(C, D),\n         B2(X, Y))\n    v}\n\n    but [B2] has a ghost location, then [B1], [X] and [Y] are considered\n    siblings.\n\n    Additionally, there is an attribute [\\[@merlin.hide\\]] that you can add on\n    nodes to tell merlin (and the check) to ignore this node and all of its\n    children. Some helpers for this are provided in {!Merlin_helpers}. ",(src/location_check.mli[3,56+0]..[49,1867+73]),None)
+    ]
+  signature_item (src/location_check.mli[51,1942+0]..src/location_check.mli[51,1942+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/location_check.mli[53,1956+0]..src/location_check.mli[57,2019+3])
+    Tsig_module "Non_intersecting_ranges/552"
+    module_type (src/location_check.mli[53,1956+33]..src/location_check.mli[57,2019+3])
+      Tmty_signature
+      [
+        signature_item (src/location_check.mli[54,1993+2]..src/location_check.mli[54,1993+8])
+          Tsig_type Rec
+          [
+            type_declaration t/550 (src/location_check.mli[54,1993+2]..src/location_check.mli[54,1993+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/location_check.mli[56,2003+2]..src/location_check.mli[56,2003+15])
+          Tsig_value
+          value_description empty/551 (src/location_check.mli[56,2003+2]..src/location_check.mli[56,2003+15])
+            core_type (src/location_check.mli[56,2003+14]..src/location_check.mli[56,2003+15])
+              Ttyp_constr "t/550"
+              []
+            []
+      ]
+  signature_item (src/location_check.mli[59,2024+0]..src/location_check.mli[60,2049+62])
+    Tsig_value
+    value_description enforce_invariants/642 (src/location_check.mli[59,2024+0]..src/location_check.mli[60,2049+62])
+      core_type (src/location_check.mli[60,2049+2]..src/location_check.mli[60,2049+62])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/location_check.mli[60,2049+2]..src/location_check.mli[60,2049+15])
+          Ttyp_constr "option/12!"
+          [
+            core_type (src/location_check.mli[60,2049+2]..src/location_check.mli[60,2049+8])
+              Ttyp_constr "string/17!"
+              []
+          ]
+        core_type (src/location_check.mli[60,2049+19]..src/location_check.mli[60,2049+62])
+          Ttyp_constr "Ppxlib__!.Ast_traverse.fold"
+          [
+            core_type (src/location_check.mli[60,2049+19]..src/location_check.mli[60,2049+44])
+              Ttyp_constr "Non_intersecting_ranges/552.t"
+              []
+          ]
+      []
+]
+

@@ -1,0 +1,1421 @@
+[
+  structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Pstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+          ]
+          None
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/run_as_ppx_rewriter/print_greetings.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/run_as_ppx_rewriter/print_greetings.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[3,13+0]..[8,183+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[3,13+4]..[3,13+11])
+          Ppat_var "hi_rule" (test/driver/run_as_ppx_rewriter/print_greetings.ml[3,13+4]..[3,13+11])
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+2]..[8,183+32])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+6]..[4,27+12])
+                Ppat_var "expand" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+6]..[4,27+12])
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+13]..[4,27+54]) ghost
+                Pexp_fun
+                Labelled "loc"
+                None
+                pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+14]..[4,27+17])
+                  Ppat_var "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+14]..[4,27+17])
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+18]..[4,27+54]) ghost
+                  Pexp_fun
+                  Labelled "path"
+                  None
+                  pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+24]..[4,27+25])
+                    Ppat_any
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                    Pexp_constraint
+                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                      Pexp_record
+                      [
+                        "pexp_desc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                            Pexp_construct "Pexp_apply" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                            Some
+                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                Pexp_tuple
+                                [
+                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                    Pexp_record
+                                    [
+                                      "pexp_desc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                          Pexp_construct "Pexp_ident" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                          Some
+                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                              Pexp_record
+                                              [
+                                                "txt" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                    Pexp_construct "Lident" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                    Some
+                                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                        Pexp_constant PConst_string("print_endline",(test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost,None)
+                                                "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                    Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                              ]
+                                              None
+                                      "pexp_loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                          Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                      "pexp_loc_stack" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                          Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                          None
+                                      "pexp_attributes" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                          Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                          None
+                                    ]
+                                    None
+                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                    Pexp_construct "::" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                    Some
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                        Pexp_tuple
+                                        [
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                Pexp_construct "Nolabel" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                None
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                Pexp_record
+                                                [
+                                                  "pexp_desc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                      Pexp_construct "Pexp_constant" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                      Some
+                                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                          Pexp_construct "Pconst_string" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                          Some
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                              Pexp_tuple
+                                                              [
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                                  Pexp_constant PConst_string("hi",(test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost,None)
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                                  Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                                  Pexp_construct "None" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                                  None
+                                                              ]
+                                                  "pexp_loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                      Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                  "pexp_loc_stack" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                      Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                      None
+                                                  "pexp_attributes" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                      Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                                      None
+                                                ]
+                                                None
+                                            ]
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                            Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                                            None
+                                        ]
+                                ]
+                        "pexp_loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                            Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                        "pexp_loc_stack" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                            Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                            None
+                        "pexp_attributes" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                            Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                            None
+                      ]
+                      None
+                    core_type (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                      Ptyp_constr "Ppxlib_ast.Ast.expression" (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..[4,27+54]) ghost
+                      []
+          ]
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+2]..[8,183+32])
+            Pexp_apply
+            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+2]..[8,183+4])
+              Pexp_ident "|>" (test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+2]..[8,183+4])
+            [
+              <arg>
+              Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+2]..[7,172+10])
+                  Pexp_apply
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+2]..[5,85+19])
+                    Pexp_ident "Extension.declare" (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+2]..[5,85+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+20]..[5,85+30])
+                        Pexp_constant PConst_string("print_hi",(test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+21]..[5,85+29]),None)
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+31]..[5,85+59])
+                        Pexp_ident "Extension.Context.expression" (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+31]..[5,85+59])
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+4]..[6,145+26])
+                        Pexp_open Fresh
+                        module_expr (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+4]..[6,145+15])
+                          Pmod_ident "Ast_pattern" (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+4]..[6,145+15])
+                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+17]..[6,145+25])
+                          Pexp_apply
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+17]..[6,145+21])
+                            Pexp_ident "pstr" (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+17]..[6,145+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+22]..[6,145+25])
+                                Pexp_ident "nil" (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+22]..[6,145+25])
+                          ]
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[7,172+4]..[7,172+10])
+                        Pexp_ident "expand" (test/driver/run_as_ppx_rewriter/print_greetings.ml[7,172+4]..[7,172+10])
+                  ]
+              <arg>
+              Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+5]..[8,183+32])
+                  Pexp_ident "Context_free.Rule.extension" (test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+5]..[8,183+32])
+            ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[10,217+0]..[15,390+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[10,217+4]..[10,217+12])
+          Ppat_var "bye_rule" (test/driver/run_as_ppx_rewriter/print_greetings.ml[10,217+4]..[10,217+12])
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+2]..[15,390+32])
+          Pexp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+6]..[11,232+12])
+                Ppat_var "expand" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+6]..[11,232+12])
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+13]..[11,232+55]) ghost
+                Pexp_fun
+                Labelled "loc"
+                None
+                pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+14]..[11,232+17])
+                  Ppat_var "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+14]..[11,232+17])
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+18]..[11,232+55]) ghost
+                  Pexp_fun
+                  Labelled "path"
+                  None
+                  pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+24]..[11,232+25])
+                    Ppat_any
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                    Pexp_constraint
+                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                      Pexp_record
+                      [
+                        "pexp_desc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                            Pexp_construct "Pexp_apply" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                            Some
+                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                Pexp_tuple
+                                [
+                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                    Pexp_record
+                                    [
+                                      "pexp_desc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                          Pexp_construct "Pexp_ident" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                          Some
+                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                              Pexp_record
+                                              [
+                                                "txt" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                    Pexp_construct "Lident" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                    Some
+                                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                        Pexp_constant PConst_string("print_endline",(test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost,None)
+                                                "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                    Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                              ]
+                                              None
+                                      "pexp_loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                          Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                      "pexp_loc_stack" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                          Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                          None
+                                      "pexp_attributes" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                          Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                          None
+                                    ]
+                                    None
+                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                    Pexp_construct "::" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                    Some
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                        Pexp_tuple
+                                        [
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                            Pexp_tuple
+                                            [
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                Pexp_construct "Nolabel" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                None
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                Pexp_record
+                                                [
+                                                  "pexp_desc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                      Pexp_construct "Pexp_constant" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                      Some
+                                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                          Pexp_construct "Pconst_string" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                          Some
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                              Pexp_tuple
+                                                              [
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                                  Pexp_constant PConst_string("bye",(test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost,None)
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                                  Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                                  Pexp_construct "None" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                                  None
+                                                              ]
+                                                  "pexp_loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                      Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                  "pexp_loc_stack" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                      Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                      None
+                                                  "pexp_attributes" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                      Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                                      None
+                                                ]
+                                                None
+                                            ]
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                            Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                                            None
+                                        ]
+                                ]
+                        "pexp_loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                            Pexp_ident "loc" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                        "pexp_loc_stack" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                            Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                            None
+                        "pexp_attributes" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                            Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                            None
+                      ]
+                      None
+                    core_type (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                      Ptyp_constr "Ppxlib_ast.Ast.expression" (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..[11,232+55]) ghost
+                      []
+          ]
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+2]..[15,390+32])
+            Pexp_apply
+            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+2]..[15,390+4])
+              Pexp_ident "|>" (test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+2]..[15,390+4])
+            [
+              <arg>
+              Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+2]..[14,379+10])
+                  Pexp_apply
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+2]..[12,291+19])
+                    Pexp_ident "Extension.declare" (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+2]..[12,291+19])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+20]..[12,291+31])
+                        Pexp_constant PConst_string("print_bye",(test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+21]..[12,291+30]),None)
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+32]..[12,291+60])
+                        Pexp_ident "Extension.Context.expression" (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+32]..[12,291+60])
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+4]..[13,352+26])
+                        Pexp_open Fresh
+                        module_expr (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+4]..[13,352+15])
+                          Pmod_ident "Ast_pattern" (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+4]..[13,352+15])
+                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+17]..[13,352+25])
+                          Pexp_apply
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+17]..[13,352+21])
+                            Pexp_ident "pstr" (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+17]..[13,352+21])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+22]..[13,352+25])
+                                Pexp_ident "nil" (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+22]..[13,352+25])
+                          ]
+                    <arg>
+                    Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[14,379+4]..[14,379+10])
+                        Pexp_ident "expand" (test/driver/run_as_ppx_rewriter/print_greetings.ml[14,379+4]..[14,379+10])
+                  ]
+              <arg>
+              Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+5]..[15,390+32])
+                  Pexp_ident "Context_free.Rule.extension" (test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+5]..[15,390+32])
+            ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+0]..[18,521+69])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+4]..[18,521+6])
+          Ppat_construct "()" (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+4]..[18,521+6])
+          None
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+9]..[18,521+69])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+9]..[18,521+39])
+            Pexp_ident "Driver.register_transformation" (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+9]..[18,521+39])
+          [
+            <arg>
+            Labelled "rules"
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+47]..[18,521+58])
+                Pexp_construct "::" (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+49]..[18,521+58]) ghost
+                Some
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+49]..[18,521+58]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+49]..[18,521+56])
+                        Pexp_ident "hi_rule" (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+49]..[18,521+56])
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+57]..[18,521+58]) ghost
+                        Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+57]..[18,521+58]) ghost
+                        None
+                    ]
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+59]..[18,521+69])
+                Pexp_constant PConst_string("print_hi",(test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+60]..[18,521+68]),None)
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+0]..[19,591+71])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+4]..[19,591+6])
+          Ppat_construct "()" (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+4]..[19,591+6])
+          None
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+9]..[19,591+71])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+9]..[19,591+39])
+            Pexp_ident "Driver.register_transformation" (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+9]..[19,591+39])
+          [
+            <arg>
+            Labelled "rules"
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+47]..[19,591+59])
+                Pexp_construct "::" (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+49]..[19,591+59]) ghost
+                Some
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+49]..[19,591+59]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+49]..[19,591+57])
+                        Pexp_ident "bye_rule" (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+49]..[19,591+57])
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+58]..[19,591+59]) ghost
+                        Pexp_construct "[]" (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+58]..[19,591+59]) ghost
+                        None
+                    ]
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+60]..[19,591+71])
+                Pexp_constant PConst_string("print_bye",(test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+61]..[19,591+70]),None)
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+0]..[20,663+45])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+4]..[20,663+6])
+          Ppat_construct "()" (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+4]..[20,663+6])
+          None
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+9]..[20,663+45])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+9]..[20,663+42])
+            Pexp_ident "Ppxlib.Driver.run_as_ppx_rewriter" (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+9]..[20,663+42])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+43]..[20,663+45])
+                Pexp_construct "()" (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+43]..[20,663+45])
+                None
+          ]
+    ]
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = []
+  }]
+open Ppxlib
+let hi_rule =
+  let expand ~loc  ~path:_  =
+    ({
+       pexp_desc =
+         (Pexp_apply
+            ({
+               pexp_desc =
+                 (Pexp_ident { txt = (Lident "print_endline"); loc });
+               pexp_loc = loc;
+               pexp_loc_stack = [];
+               pexp_attributes = []
+             },
+              [(Nolabel,
+                 {
+                   pexp_desc =
+                     (Pexp_constant (Pconst_string ("hi", loc, None)));
+                   pexp_loc = loc;
+                   pexp_loc_stack = [];
+                   pexp_attributes = []
+                 })]));
+       pexp_loc = loc;
+       pexp_loc_stack = [];
+       pexp_attributes = []
+     } : Ppxlib_ast.Ast.expression) in
+  (Extension.declare "print_hi" Extension.Context.expression
+     (let open Ast_pattern in pstr nil) expand)
+    |> Context_free.Rule.extension
+let bye_rule =
+  let expand ~loc  ~path:_  =
+    ({
+       pexp_desc =
+         (Pexp_apply
+            ({
+               pexp_desc =
+                 (Pexp_ident { txt = (Lident "print_endline"); loc });
+               pexp_loc = loc;
+               pexp_loc_stack = [];
+               pexp_attributes = []
+             },
+              [(Nolabel,
+                 {
+                   pexp_desc =
+                     (Pexp_constant (Pconst_string ("bye", loc, None)));
+                   pexp_loc = loc;
+                   pexp_loc_stack = [];
+                   pexp_attributes = []
+                 })]));
+       pexp_loc = loc;
+       pexp_loc_stack = [];
+       pexp_attributes = []
+     } : Ppxlib_ast.Ast.expression) in
+  (Extension.declare "print_bye" Extension.Context.expression
+     (let open Ast_pattern in pstr nil) expand)
+    |> Context_free.Rule.extension
+let () = Driver.register_transformation ~rules:[hi_rule] "print_hi"
+let () = Driver.register_transformation ~rules:[bye_rule] "print_bye"
+let () = Ppxlib.Driver.run_as_ppx_rewriter ()
+[
+  structure_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+          ]
+          None
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[1,0+0]..test/driver/run_as_ppx_rewriter/print_greetings.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/run_as_ppx_rewriter/print_greetings.ml[1,0+5]..test/driver/run_as_ppx_rewriter/print_greetings.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[3,13+0]..test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[3,13+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[3,13+11])
+          Tpat_var "hi_rule/491"
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+32])
+          Texp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+6]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+12])
+                Tpat_var "expand/492"
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+13]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+14]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+17])
+                      Tpat_var "loc/494"
+                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+18]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                      Texp_function
+                      Labelled "path"
+                      [
+                        <case>
+                          pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+24]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+25])
+                            Tpat_any
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                            Texp_constraint
+                            core_type (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                              Ttyp_constr "Ppxlib_ast!.Ast.expression"
+                              []
+                              Texp_record
+                                fields =
+                                  [
+                                    "pexp_desc"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                        Texp_construct "Pexp_apply"
+                                        [
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                            Texp_record
+                                              fields =
+                                                [
+                                                  "pexp_desc"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                      Texp_construct "Pexp_ident"
+                                                      [
+                                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                          Texp_record
+                                                            fields =
+                                                              [
+                                                                "txt"
+                                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                                    Texp_construct "Lident"
+                                                                    [
+                                                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                                        Texp_constant Const_string("print_endline",(test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost,None)
+                                                                    ]
+                                                                "loc"
+                                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                                    Texp_ident "loc/494"
+                                                              ]
+                                                            representation =
+                                                              Record_regular
+                                                            extended_expression =
+                                                              None
+                                                      ]
+                                                  "pexp_loc"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                      Texp_ident "loc/494"
+                                                  "pexp_loc_stack"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                      Texp_construct "[]"
+                                                      []
+                                                  "pexp_attributes"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                      Texp_construct "[]"
+                                                      []
+                                                ]
+                                              representation =
+                                                Record_regular
+                                              extended_expression =
+                                                None
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                            Texp_construct "::"
+                                            [
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                Texp_tuple
+                                                [
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                    Texp_construct "Nolabel"
+                                                    []
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                    Texp_record
+                                                      fields =
+                                                        [
+                                                          "pexp_desc"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                              Texp_construct "Pexp_constant"
+                                                              [
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                                  Texp_construct "Pconst_string"
+                                                                  [
+                                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                                      Texp_constant Const_string("hi",(test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost,None)
+                                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                                      Texp_ident "loc/494"
+                                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                                      Texp_construct "None"
+                                                                      []
+                                                                  ]
+                                                              ]
+                                                          "pexp_loc"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                              Texp_ident "loc/494"
+                                                          "pexp_loc_stack"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                              Texp_construct "[]"
+                                                              []
+                                                          "pexp_attributes"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                              Texp_construct "[]"
+                                                              []
+                                                        ]
+                                                      representation =
+                                                        Record_regular
+                                                      extended_expression =
+                                                        None
+                                                ]
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                                Texp_construct "[]"
+                                                []
+                                            ]
+                                        ]
+                                    "pexp_loc"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                        Texp_ident "loc/494"
+                                    "pexp_loc_stack"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                        Texp_construct "[]"
+                                        []
+                                    "pexp_attributes"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[4,27+54]) ghost
+                                        Texp_construct "[]"
+                                        []
+                                  ]
+                                representation =
+                                  Record_regular
+                                extended_expression =
+                                  None
+                      ]
+                ]
+          ]
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+32])
+            Texp_apply
+            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+4])
+              Texp_ident "Stdlib!.|>"
+            [
+              <arg>
+                Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[7,172+10])
+                  Texp_apply
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+19])
+                    Texp_ident "Ppxlib!.Extension.declare"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+20]..test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+30])
+                        Texp_constant Const_string("print_hi",(test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+21]..test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+29]),None)
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+31]..test/driver/run_as_ppx_rewriter/print_greetings.ml[5,85+59])
+                        Texp_ident "Ppxlib!.Extension.Context.expression"
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+26])
+                        Texp_open Fresh
+                        module_expr (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+15])
+                          Tmod_ident "Ppxlib!.Ast_pattern"
+                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+17]..test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+25])
+                          Texp_apply
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+17]..test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+21])
+                            Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+22]..test/driver/run_as_ppx_rewriter/print_greetings.ml[6,145+25])
+                                Texp_ident "Ppxlib!.Ast_pattern.nil"
+                          ]
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[7,172+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[7,172+10])
+                        Texp_ident "expand/492"
+                  ]
+              <arg>
+                Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+5]..test/driver/run_as_ppx_rewriter/print_greetings.ml[8,183+32])
+                  Texp_ident "Ppxlib!.Context_free.Rule.extension"
+            ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[10,217+0]..test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[10,217+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[10,217+12])
+          Tpat_var "bye_rule/2343"
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+32])
+          Texp_let Nonrec
+          [
+            <def>
+              pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+6]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+12])
+                Tpat_var "expand/2344"
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+13]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+14]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+17])
+                      Tpat_var "loc/2346"
+                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+18]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                      Texp_function
+                      Labelled "path"
+                      [
+                        <case>
+                          pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+24]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+25])
+                            Tpat_any
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                            Texp_constraint
+                            core_type (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                              Ttyp_constr "Ppxlib_ast!.Ast.expression"
+                              []
+                              Texp_record
+                                fields =
+                                  [
+                                    "pexp_desc"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                        Texp_construct "Pexp_apply"
+                                        [
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                            Texp_record
+                                              fields =
+                                                [
+                                                  "pexp_desc"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                      Texp_construct "Pexp_ident"
+                                                      [
+                                                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                          Texp_record
+                                                            fields =
+                                                              [
+                                                                "txt"
+                                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                                    Texp_construct "Lident"
+                                                                    [
+                                                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                                        Texp_constant Const_string("print_endline",(test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost,None)
+                                                                    ]
+                                                                "loc"
+                                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                                    Texp_ident "loc/2346"
+                                                              ]
+                                                            representation =
+                                                              Record_regular
+                                                            extended_expression =
+                                                              None
+                                                      ]
+                                                  "pexp_loc"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                      Texp_ident "loc/2346"
+                                                  "pexp_loc_stack"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                      Texp_construct "[]"
+                                                      []
+                                                  "pexp_attributes"
+                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                      Texp_construct "[]"
+                                                      []
+                                                ]
+                                              representation =
+                                                Record_regular
+                                              extended_expression =
+                                                None
+                                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                            Texp_construct "::"
+                                            [
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                Texp_tuple
+                                                [
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                    Texp_construct "Nolabel"
+                                                    []
+                                                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                    Texp_record
+                                                      fields =
+                                                        [
+                                                          "pexp_desc"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                              Texp_construct "Pexp_constant"
+                                                              [
+                                                                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                                  Texp_construct "Pconst_string"
+                                                                  [
+                                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                                      Texp_constant Const_string("bye",(test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost,None)
+                                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                                      Texp_ident "loc/2346"
+                                                                    expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                                      Texp_construct "None"
+                                                                      []
+                                                                  ]
+                                                              ]
+                                                          "pexp_loc"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                              Texp_ident "loc/2346"
+                                                          "pexp_loc_stack"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                              Texp_construct "[]"
+                                                              []
+                                                          "pexp_attributes"
+                                                            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                              Texp_construct "[]"
+                                                              []
+                                                        ]
+                                                      representation =
+                                                        Record_regular
+                                                      extended_expression =
+                                                        None
+                                                ]
+                                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                                Texp_construct "[]"
+                                                []
+                                            ]
+                                        ]
+                                    "pexp_loc"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                        Texp_ident "loc/2346"
+                                    "pexp_loc_stack"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                        Texp_construct "[]"
+                                        []
+                                    "pexp_attributes"
+                                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+28]..test/driver/run_as_ppx_rewriter/print_greetings.ml[11,232+55]) ghost
+                                        Texp_construct "[]"
+                                        []
+                                  ]
+                                representation =
+                                  Record_regular
+                                extended_expression =
+                                  None
+                      ]
+                ]
+          ]
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+32])
+            Texp_apply
+            expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+4])
+              Texp_ident "Stdlib!.|>"
+            [
+              <arg>
+                Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[14,379+10])
+                  Texp_apply
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+2]..test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+19])
+                    Texp_ident "Ppxlib!.Extension.declare"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+20]..test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+31])
+                        Texp_constant Const_string("print_bye",(test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+21]..test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+30]),None)
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+32]..test/driver/run_as_ppx_rewriter/print_greetings.ml[12,291+60])
+                        Texp_ident "Ppxlib!.Extension.Context.expression"
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+26])
+                        Texp_open Fresh
+                        module_expr (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+15])
+                          Tmod_ident "Ppxlib!.Ast_pattern"
+                        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+17]..test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+25])
+                          Texp_apply
+                          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+17]..test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+21])
+                            Texp_ident "Ppxlib!.Ast_pattern.pstr"
+                          [
+                            <arg>
+                              Nolabel
+                              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+22]..test/driver/run_as_ppx_rewriter/print_greetings.ml[13,352+25])
+                                Texp_ident "Ppxlib!.Ast_pattern.nil"
+                          ]
+                    <arg>
+                      Nolabel
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[14,379+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[14,379+10])
+                        Texp_ident "expand/2344"
+                  ]
+              <arg>
+                Nolabel
+                expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+5]..test/driver/run_as_ppx_rewriter/print_greetings.ml[15,390+32])
+                  Texp_ident "Ppxlib!.Context_free.Rule.extension"
+            ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+0]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+69])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+9]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+69])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+9]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+39])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+47]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+58])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+47]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+58])
+                    Texp_construct "::"
+                    [
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+49]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+56])
+                        Texp_ident "hi_rule/491"
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+57]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+58]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+59]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+69])
+                Texp_constant Const_string("print_hi",(test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+60]..test/driver/run_as_ppx_rewriter/print_greetings.ml[18,521+68]),None)
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+0]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+71])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+9]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+71])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+9]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+39])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+47]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+59])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+47]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+59])
+                    Texp_construct "::"
+                    [
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+49]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+57])
+                        Texp_ident "bye_rule/2343"
+                      expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+58]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+59]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+60]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+71])
+                Texp_constant Const_string("print_bye",(test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+61]..test/driver/run_as_ppx_rewriter/print_greetings.ml[19,591+70]),None)
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+0]..test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+45])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+4]..test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+9]..test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+45])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+9]..test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+42])
+            Texp_ident "Ppxlib!.Driver.run_as_ppx_rewriter"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+43]..test/driver/run_as_ppx_rewriter/print_greetings.ml[20,663+45])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Print_greetings!
+  (let
+    (hi_rule/491 =
+       (let
+         (expand/492 =
+            (function loc/494 param/1322
+              (funct-body Dune__exe__Print_greetings.hi_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(4)<ghost>:40-81
+                (before Dune__exe__Print_greetings.hi_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(4)<ghost>:55-81
+                  (makeblock 0
+                    (makeblock 5
+                      (makeblock 0
+                        (makeblock 0
+                          (makeblock 0 [0: "print_endline"] loc/494))
+                        loc/494 0 0)
+                      (makeblock 0
+                        (makeblock 0 0
+                          (makeblock 0
+                            (makeblock 1 (makeblock 2 "hi" loc/494 0))
+                            loc/494 0 0))
+                        0))
+                    loc/494 0 0)))))
+         (before Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(5):87-215
+           (after Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(5):87-215
+             (revapply
+               (after Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(5):87-182
+                 (apply (field_imm 1 (global Ppxlib__Extension!)) "print_hi"
+                   (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+                   (after Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(6):162-170
+                     (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+                       (field_imm 22 (global Ppxlib__Ast_pattern!))))
+                   expand/492))
+               (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))))))
+     bye_rule/2343 =
+       (let
+         (expand/2344 =
+            (function loc/2346 param/2347
+              (funct-body Dune__exe__Print_greetings.bye_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(11)<ghost>:245-287
+                (before Dune__exe__Print_greetings.bye_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(11)<ghost>:260-287
+                  (makeblock 0
+                    (makeblock 5
+                      (makeblock 0
+                        (makeblock 0
+                          (makeblock 0 [0: "print_endline"] loc/2346))
+                        loc/2346 0 0)
+                      (makeblock 0
+                        (makeblock 0 0
+                          (makeblock 0
+                            (makeblock 1 (makeblock 2 "bye" loc/2346 0))
+                            loc/2346 0 0))
+                        0))
+                    loc/2346 0 0)))))
+         (before Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(12):293-422
+           (after Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(12):293-422
+             (revapply
+               (after Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(12):293-389
+                 (apply (field_imm 1 (global Ppxlib__Extension!)) "print_bye"
+                   (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+                   (after Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(13):369-377
+                     (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+                       (field_imm 22 (global Ppxlib__Ast_pattern!))))
+                   expand/2344))
+               (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))))))
+     *match*/6361 =
+       (after Dune__exe__Print_greetings test/driver/run_as_ppx_rewriter/print_greetings.ml(18):530-590
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0 (makeblock 0 hi_rule/491 0)) 0 0 0 0 0 0 0 0 0 0
+           "print_hi"))
+     *match*/6359 =
+       (after Dune__exe__Print_greetings test/driver/run_as_ppx_rewriter/print_greetings.ml(19):600-662
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0 (makeblock 0 bye_rule/2343 0)) 0 0 0 0 0 0 0 0 0 0
+           "print_bye"))
+     *match*/6357 =
+       (after Dune__exe__Print_greetings test/driver/run_as_ppx_rewriter/print_greetings.ml(20):672-708
+         (apply (field_imm 12 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0 hi_rule/491 bye_rule/2343))))
+(setglobal Dune__exe__Print_greetings!
+  (let
+    (hi_rule/491 =
+       (let
+         (expand/492 =
+            (function loc/494 param/1322
+              (funct-body Dune__exe__Print_greetings.hi_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(4)<ghost>:40-81
+                (before Dune__exe__Print_greetings.hi_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(4)<ghost>:55-81
+                  (makeblock 0
+                    (makeblock 5
+                      (makeblock 0
+                        (makeblock 0
+                          (makeblock 0 [0: "print_endline"] loc/494))
+                        loc/494 0 0)
+                      (makeblock 0
+                        (makeblock 0 0
+                          (makeblock 0
+                            (makeblock 1 (makeblock 2 "hi" loc/494 0))
+                            loc/494 0 0))
+                        0))
+                    loc/494 0 0)))))
+         (before Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(5):87-215
+           (after Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(5):87-215
+             (apply
+               (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+               (after Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(5):87-182
+                 (apply (field_imm 1 (global Ppxlib__Extension!)) "print_hi"
+                   (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+                   (after Dune__exe__Print_greetings.hi_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(6):162-170
+                     (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+                       (field_imm 22 (global Ppxlib__Ast_pattern!))))
+                   expand/492))))))
+     bye_rule/2343 =
+       (let
+         (expand/2344 =
+            (function loc/2346 param/2347
+              (funct-body Dune__exe__Print_greetings.bye_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(11)<ghost>:245-287
+                (before Dune__exe__Print_greetings.bye_rule.expand test/driver/run_as_ppx_rewriter/print_greetings.ml(11)<ghost>:260-287
+                  (makeblock 0
+                    (makeblock 5
+                      (makeblock 0
+                        (makeblock 0
+                          (makeblock 0 [0: "print_endline"] loc/2346))
+                        loc/2346 0 0)
+                      (makeblock 0
+                        (makeblock 0 0
+                          (makeblock 0
+                            (makeblock 1 (makeblock 2 "bye" loc/2346 0))
+                            loc/2346 0 0))
+                        0))
+                    loc/2346 0 0)))))
+         (before Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(12):293-422
+           (after Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(12):293-422
+             (apply
+               (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+               (after Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(12):293-389
+                 (apply (field_imm 1 (global Ppxlib__Extension!)) "print_bye"
+                   (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+                   (after Dune__exe__Print_greetings.bye_rule test/driver/run_as_ppx_rewriter/print_greetings.ml(13):369-377
+                     (apply (field_imm 233 (global Ppxlib__Ast_pattern!))
+                       (field_imm 22 (global Ppxlib__Ast_pattern!))))
+                   expand/2344))))))
+     *match*/6361 =
+       (after Dune__exe__Print_greetings test/driver/run_as_ppx_rewriter/print_greetings.ml(18):530-590
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0 (makeblock 0 hi_rule/491 0)) 0 0 0 0 0 0 0 0 0 0
+           "print_hi"))
+     *match*/6359 =
+       (after Dune__exe__Print_greetings test/driver/run_as_ppx_rewriter/print_greetings.ml(19):600-662
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+           (makeblock 0 (makeblock 0 bye_rule/2343 0)) 0 0 0 0 0 0 0 0 0 0
+           "print_bye"))
+     *match*/6357 =
+       (after Dune__exe__Print_greetings test/driver/run_as_ppx_rewriter/print_greetings.ml(20):672-708
+         (apply (field_imm 12 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location> (makeblock 0 hi_rule/491 bye_rule/2343))))

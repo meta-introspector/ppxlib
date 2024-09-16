@@ -1,0 +1,6 @@
+0.040s 15.1MB 5.40MB 7.13MB test/driver/stdin_input/identity_driver.ml
+  0.034s 13.9MB 5.40MB 7.13MB typing
+  0.006s 1.14MB ------ ------ generate
+    0.004s ------ ------ ------ assemble
+    0.002s 1.14MB ------ ------ other
+0.015s 3.02MB 1.72MB ------ other

@@ -1,0 +1,5 @@
+0.219s 62.1MB 22.8MB 22.8MB examples/simple-extension-rewriter/ppx_get_env.ml
+  0.209s 57.3MB 21.2MB 21.2MB typing
+  0.002s 0.05MB ------ ------ generate
+  0.008s 4.78MB 1.60MB 22.8MB other
+0.011s ------ ------ ------ other

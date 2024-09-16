@@ -1,0 +1,746 @@
+[
+  structure_item (test/error_embedding/deriver.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/error_embedding/deriver.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/error_embedding/deriver.ml[1,0+5]..[1,0+11])
+  structure_item (test/error_embedding/deriver.ml[3,13+0]..[16,388+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[3,13+4]..[3,13+19])
+          Ppat_var "derive_a_string" (test/error_embedding/deriver.ml[3,13+4]..[3,13+19])
+        expression (test/error_embedding/deriver.ml[3,13+20]..[16,388+3]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/error_embedding/deriver.ml[3,13+21]..[3,13+25])
+            Ppat_var "ctxt" (test/error_embedding/deriver.ml[3,13+21]..[3,13+25])
+          expression (test/error_embedding/deriver.ml[3,13+26]..[16,388+3]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (test/error_embedding/deriver.ml[3,13+26]..[3,13+57])
+              Ppat_tuple
+              [
+                pattern (test/error_embedding/deriver.ml[3,13+27]..[3,13+36])
+                  Ppat_var "_rec_flag" (test/error_embedding/deriver.ml[3,13+27]..[3,13+36])
+                pattern (test/error_embedding/deriver.ml[3,13+38]..[3,13+56])
+                  Ppat_var "_type_declarations" (test/error_embedding/deriver.ml[3,13+38]..[3,13+56])
+              ]
+            expression (test/error_embedding/deriver.ml[4,73+2]..[16,388+3])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/error_embedding/deriver.ml[4,73+6]..[4,73+9])
+                    Ppat_var "loc" (test/error_embedding/deriver.ml[4,73+6]..[4,73+9])
+                  expression (test/error_embedding/deriver.ml[4,73+12]..[4,73+59])
+                    Pexp_apply
+                    expression (test/error_embedding/deriver.ml[4,73+12]..[4,73+54])
+                      Pexp_ident "Expansion_context.Deriver.derived_item_loc" (test/error_embedding/deriver.ml[4,73+12]..[4,73+54])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/error_embedding/deriver.ml[4,73+55]..[4,73+59])
+                          Pexp_ident "ctxt" (test/error_embedding/deriver.ml[4,73+55]..[4,73+59])
+                    ]
+              ]
+              expression (test/error_embedding/deriver.ml[5,136+2]..[16,388+3])
+                Pexp_open Fresh
+                module_expr (test/error_embedding/deriver.ml[5,136+11]..[5,136+30])
+                  Pmod_ident "Ast_builder.Default" (test/error_embedding/deriver.ml[5,136+11]..[5,136+30])
+                expression (test/error_embedding/deriver.ml[6,170+2]..[16,388+3])
+                  Pexp_construct "::" (test/error_embedding/deriver.ml[7,174+4]..[16,388+3]) ghost
+                  Some
+                    expression (test/error_embedding/deriver.ml[7,174+4]..[16,388+3]) ghost
+                      Pexp_tuple
+                      [
+                        expression (test/error_embedding/deriver.ml[7,174+4]..[15,379+7])
+                          Pexp_apply
+                          expression (test/error_embedding/deriver.ml[7,174+4]..[7,174+14])
+                            Pexp_ident "pstr_value" (test/error_embedding/deriver.ml[7,174+4]..[7,174+14])
+                          [
+                            <arg>
+                            Labelled "loc"
+                              expression (test/error_embedding/deriver.ml[7,174+16]..[7,174+19])
+                                Pexp_ident "loc" (test/error_embedding/deriver.ml[7,174+16]..[7,174+19])
+                            <arg>
+                            Nolabel
+                              expression (test/error_embedding/deriver.ml[7,174+20]..[7,174+32])
+                                Pexp_construct "Nonrecursive" (test/error_embedding/deriver.ml[7,174+20]..[7,174+32])
+                                None
+                            <arg>
+                            Nolabel
+                              expression (test/error_embedding/deriver.ml[8,207+6]..[15,379+7])
+                                Pexp_construct "::" (test/error_embedding/deriver.ml[9,215+8]..[15,379+7]) ghost
+                                Some
+                                  expression (test/error_embedding/deriver.ml[9,215+8]..[15,379+7]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (test/error_embedding/deriver.ml[9,215+8]..[14,368+9])
+                                        Pexp_record
+                                        [
+                                          "pvb_pat" (test/error_embedding/deriver.ml[10,225+10]..[10,225+17])
+                                            expression (test/error_embedding/deriver.ml[10,225+20]..[10,225+33])
+                                              Pexp_apply
+                                              expression (test/error_embedding/deriver.ml[10,225+20]..[10,225+28])
+                                                Pexp_ident "ppat_any" (test/error_embedding/deriver.ml[10,225+20]..[10,225+28])
+                                              [
+                                                <arg>
+                                                Labelled "loc"
+                                                  expression (test/error_embedding/deriver.ml[10,225+30]..[10,225+33])
+                                                    Pexp_ident "loc" (test/error_embedding/deriver.ml[10,225+30]..[10,225+33])
+                                              ]
+                                          "pvb_expr" (test/error_embedding/deriver.ml[11,260+10]..[11,260+18])
+                                            expression (test/error_embedding/deriver.ml[11,260+21]..[11,260+50])
+                                              Pexp_apply
+                                              expression (test/error_embedding/deriver.ml[11,260+21]..[11,260+28])
+                                                Pexp_ident "estring" (test/error_embedding/deriver.ml[11,260+21]..[11,260+28])
+                                              [
+                                                <arg>
+                                                Labelled "loc"
+                                                  expression (test/error_embedding/deriver.ml[11,260+30]..[11,260+33])
+                                                    Pexp_ident "loc" (test/error_embedding/deriver.ml[11,260+30]..[11,260+33])
+                                                <arg>
+                                                Nolabel
+                                                  expression (test/error_embedding/deriver.ml[11,260+34]..[11,260+50])
+                                                    Pexp_constant PConst_string("derived_string",(test/error_embedding/deriver.ml[11,260+35]..[11,260+49]),None)
+                                              ]
+                                          "pvb_attributes" (test/error_embedding/deriver.ml[12,312+10]..[12,312+24])
+                                            expression (test/error_embedding/deriver.ml[12,312+27]..[12,312+29])
+                                              Pexp_construct "[]" (test/error_embedding/deriver.ml[12,312+27]..[12,312+29])
+                                              None
+                                          "pvb_loc" (test/error_embedding/deriver.ml[13,343+10]..[13,343+17])
+                                            expression (test/error_embedding/deriver.ml[13,343+20]..[13,343+23])
+                                              Pexp_ident "loc" (test/error_embedding/deriver.ml[13,343+20]..[13,343+23])
+                                        ]
+                                        None
+                                      expression (test/error_embedding/deriver.ml[15,379+6]..[15,379+7]) ghost
+                                        Pexp_construct "[]" (test/error_embedding/deriver.ml[15,379+6]..[15,379+7]) ghost
+                                        None
+                                    ]
+                          ]
+                        expression (test/error_embedding/deriver.ml[16,388+2]..[16,388+3]) ghost
+                          Pexp_construct "[]" (test/error_embedding/deriver.ml[16,388+2]..[16,388+3]) ghost
+                          None
+                      ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[18,393+0]..[19,430+50])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[18,393+4]..[18,393+34])
+          Ppat_var "impl_generator_derive_a_string" (test/error_embedding/deriver.ml[18,393+4]..[18,393+34])
+        expression (test/error_embedding/deriver.ml[19,430+2]..[19,430+50])
+          Pexp_apply
+          expression (test/error_embedding/deriver.ml[19,430+2]..[19,430+34])
+            Pexp_ident "Deriving.Generator.V2.make_noarg" (test/error_embedding/deriver.ml[19,430+2]..[19,430+34])
+          [
+            <arg>
+            Nolabel
+              expression (test/error_embedding/deriver.ml[19,430+35]..[19,430+50])
+                Pexp_ident "derive_a_string" (test/error_embedding/deriver.ml[19,430+35]..[19,430+50])
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[21,482+0]..[22,509+71])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[21,482+4]..[21,482+24])
+          Ppat_var "deriver_for_a_string" (test/error_embedding/deriver.ml[21,482+4]..[21,482+24])
+        expression (test/error_embedding/deriver.ml[22,509+2]..[22,509+71])
+          Pexp_apply
+          expression (test/error_embedding/deriver.ml[22,509+2]..[22,509+14])
+            Pexp_ident "Deriving.add" (test/error_embedding/deriver.ml[22,509+2]..[22,509+14])
+          [
+            <arg>
+            Nolabel
+              expression (test/error_embedding/deriver.ml[22,509+15]..[22,509+25])
+                Pexp_constant PConst_string("a_string",(test/error_embedding/deriver.ml[22,509+16]..[22,509+24]),None)
+            <arg>
+            Labelled "str_type_decl"
+              expression (test/error_embedding/deriver.ml[22,509+41]..[22,509+71])
+                Pexp_ident "impl_generator_derive_a_string" (test/error_embedding/deriver.ml[22,509+41]..[22,509+71])
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[24,582+0]..[26,679+19])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[24,582+4]..[24,582+28])
+          Ppat_var "impl_generator_dependent" (test/error_embedding/deriver.ml[24,582+4]..[24,582+28])
+        expression (test/error_embedding/deriver.ml[25,613+2]..[26,679+19])
+          Pexp_apply
+          expression (test/error_embedding/deriver.ml[25,613+2]..[25,613+34])
+            Pexp_ident "Deriving.Generator.V2.make_noarg" (test/error_embedding/deriver.ml[25,613+2]..[25,613+34])
+          [
+            <arg>
+            Labelled "deps"
+              expression (test/error_embedding/deriver.ml[25,613+41]..[25,613+65])
+                Pexp_construct "::" (test/error_embedding/deriver.ml[25,613+43]..[25,613+65]) ghost
+                Some
+                  expression (test/error_embedding/deriver.ml[25,613+43]..[25,613+65]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/error_embedding/deriver.ml[25,613+43]..[25,613+63])
+                        Pexp_ident "deriver_for_a_string" (test/error_embedding/deriver.ml[25,613+43]..[25,613+63])
+                      expression (test/error_embedding/deriver.ml[25,613+64]..[25,613+65]) ghost
+                        Pexp_construct "[]" (test/error_embedding/deriver.ml[25,613+64]..[25,613+65]) ghost
+                        None
+                    ]
+            <arg>
+            Nolabel
+              expression (test/error_embedding/deriver.ml[26,679+4]..[26,679+19])
+                Pexp_ident "derive_a_string" (test/error_embedding/deriver.ml[26,679+4]..[26,679+19])
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[28,700+0]..[29,724+75])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[28,700+4]..[28,700+21])
+          Ppat_var "dependent_deriver" (test/error_embedding/deriver.ml[28,700+4]..[28,700+21])
+        expression (test/error_embedding/deriver.ml[29,724+2]..[29,724+75])
+          Pexp_apply
+          expression (test/error_embedding/deriver.ml[29,724+2]..[29,724+14])
+            Pexp_ident "Deriving.add" (test/error_embedding/deriver.ml[29,724+2]..[29,724+14])
+          [
+            <arg>
+            Nolabel
+              expression (test/error_embedding/deriver.ml[29,724+15]..[29,724+35])
+                Pexp_constant PConst_string("a_dependent_string",(test/error_embedding/deriver.ml[29,724+16]..[29,724+34]),None)
+            <arg>
+            Labelled "str_type_decl"
+              expression (test/error_embedding/deriver.ml[29,724+51]..[29,724+75])
+                Pexp_ident "impl_generator_dependent" (test/error_embedding/deriver.ml[29,724+51]..[29,724+75])
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[31,801+0]..[31,801+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[31,801+4]..[31,801+6])
+          Ppat_construct "()" (test/error_embedding/deriver.ml[31,801+4]..[31,801+6])
+          None
+        expression (test/error_embedding/deriver.ml[31,801+9]..[31,801+29])
+          Pexp_apply
+          expression (test/error_embedding/deriver.ml[31,801+9]..[31,801+26])
+            Pexp_ident "Driver.standalone" (test/error_embedding/deriver.ml[31,801+9]..[31,801+26])
+          [
+            <arg>
+            Nolabel
+              expression (test/error_embedding/deriver.ml[31,801+27]..[31,801+29])
+                Pexp_construct "()" (test/error_embedding/deriver.ml[31,801+27]..[31,801+29])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let derive_a_string ~ctxt  (_rec_flag, _type_declarations) =
+  let loc = Expansion_context.Deriver.derived_item_loc ctxt in
+  let open Ast_builder.Default in
+    [pstr_value ~loc Nonrecursive
+       [{
+          pvb_pat = (ppat_any ~loc);
+          pvb_expr = (estring ~loc "derived_string");
+          pvb_attributes = [];
+          pvb_loc = loc
+        }]]
+let impl_generator_derive_a_string =
+  Deriving.Generator.V2.make_noarg derive_a_string
+let deriver_for_a_string =
+  Deriving.add "a_string" ~str_type_decl:impl_generator_derive_a_string
+let impl_generator_dependent =
+  Deriving.Generator.V2.make_noarg ~deps:[deriver_for_a_string]
+    derive_a_string
+let dependent_deriver =
+  Deriving.add "a_dependent_string" ~str_type_decl:impl_generator_dependent
+let () = Driver.standalone ()
+[
+  structure_item (test/error_embedding/deriver.ml[1,0+0]..test/error_embedding/deriver.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/error_embedding/deriver.ml[1,0+5]..test/error_embedding/deriver.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/error_embedding/deriver.ml[3,13+0]..test/error_embedding/deriver.ml[16,388+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[3,13+4]..test/error_embedding/deriver.ml[3,13+19])
+          Tpat_var "derive_a_string/493"
+        expression (test/error_embedding/deriver.ml[3,13+20]..test/error_embedding/deriver.ml[16,388+3]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/error_embedding/deriver.ml[3,13+21]..test/error_embedding/deriver.ml[3,13+25])
+                Tpat_var "ctxt/495"
+              expression (test/error_embedding/deriver.ml[3,13+26]..test/error_embedding/deriver.ml[16,388+3]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (test/error_embedding/deriver.ml[3,13+26]..test/error_embedding/deriver.ml[3,13+57])
+                      Tpat_tuple
+                      [
+                        pattern (test/error_embedding/deriver.ml[3,13+27]..test/error_embedding/deriver.ml[3,13+36])
+                          Tpat_var "_rec_flag/496"
+                        pattern (test/error_embedding/deriver.ml[3,13+38]..test/error_embedding/deriver.ml[3,13+56])
+                          Tpat_var "_type_declarations/497"
+                      ]
+                    expression (test/error_embedding/deriver.ml[4,73+2]..test/error_embedding/deriver.ml[16,388+3])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/error_embedding/deriver.ml[4,73+6]..test/error_embedding/deriver.ml[4,73+9])
+                            Tpat_var "loc/498"
+                          expression (test/error_embedding/deriver.ml[4,73+12]..test/error_embedding/deriver.ml[4,73+59])
+                            Texp_apply
+                            expression (test/error_embedding/deriver.ml[4,73+12]..test/error_embedding/deriver.ml[4,73+54])
+                              Texp_ident "Ppxlib!.Expansion_context.Deriver.derived_item_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/error_embedding/deriver.ml[4,73+55]..test/error_embedding/deriver.ml[4,73+59])
+                                  Texp_ident "ctxt/495"
+                            ]
+                      ]
+                      expression (test/error_embedding/deriver.ml[5,136+2]..test/error_embedding/deriver.ml[16,388+3])
+                        Texp_open Fresh
+                        module_expr (test/error_embedding/deriver.ml[5,136+11]..test/error_embedding/deriver.ml[5,136+30])
+                          Tmod_ident "Ppxlib!.Ast_builder.Default"
+                        expression (test/error_embedding/deriver.ml[6,170+2]..test/error_embedding/deriver.ml[16,388+3])
+                          Texp_construct "::"
+                          [
+                            expression (test/error_embedding/deriver.ml[7,174+4]..test/error_embedding/deriver.ml[15,379+7])
+                              Texp_apply
+                              expression (test/error_embedding/deriver.ml[7,174+4]..test/error_embedding/deriver.ml[7,174+14])
+                                Texp_ident "Ppxlib!.Ast_builder.Default.pstr_value"
+                              [
+                                <arg>
+                                  Labelled "loc"
+                                  expression (test/error_embedding/deriver.ml[7,174+16]..test/error_embedding/deriver.ml[7,174+19])
+                                    Texp_ident "loc/498"
+                                <arg>
+                                  Nolabel
+                                  expression (test/error_embedding/deriver.ml[7,174+20]..test/error_embedding/deriver.ml[7,174+32])
+                                    Texp_construct "Nonrecursive"
+                                    []
+                                <arg>
+                                  Nolabel
+                                  expression (test/error_embedding/deriver.ml[8,207+6]..test/error_embedding/deriver.ml[15,379+7])
+                                    Texp_construct "::"
+                                    [
+                                      expression (test/error_embedding/deriver.ml[9,215+8]..test/error_embedding/deriver.ml[14,368+9])
+                                        Texp_record
+                                          fields =
+                                            [
+                                              "pvb_pat"
+                                                expression (test/error_embedding/deriver.ml[10,225+20]..test/error_embedding/deriver.ml[10,225+33])
+                                                  Texp_apply
+                                                  expression (test/error_embedding/deriver.ml[10,225+20]..test/error_embedding/deriver.ml[10,225+28])
+                                                    Texp_ident "Ppxlib!.Ast_builder.Default.ppat_any"
+                                                  [
+                                                    <arg>
+                                                      Labelled "loc"
+                                                      expression (test/error_embedding/deriver.ml[10,225+30]..test/error_embedding/deriver.ml[10,225+33])
+                                                        Texp_ident "loc/498"
+                                                  ]
+                                              "pvb_expr"
+                                                expression (test/error_embedding/deriver.ml[11,260+21]..test/error_embedding/deriver.ml[11,260+50])
+                                                  Texp_apply
+                                                  expression (test/error_embedding/deriver.ml[11,260+21]..test/error_embedding/deriver.ml[11,260+28])
+                                                    Texp_ident "Ppxlib!.Ast_builder.Default.estring"
+                                                  [
+                                                    <arg>
+                                                      Labelled "loc"
+                                                      expression (test/error_embedding/deriver.ml[11,260+30]..test/error_embedding/deriver.ml[11,260+33])
+                                                        Texp_ident "loc/498"
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (test/error_embedding/deriver.ml[11,260+34]..test/error_embedding/deriver.ml[11,260+50])
+                                                        Texp_constant Const_string("derived_string",(test/error_embedding/deriver.ml[11,260+35]..test/error_embedding/deriver.ml[11,260+49]),None)
+                                                  ]
+                                              "pvb_attributes"
+                                                expression (test/error_embedding/deriver.ml[12,312+27]..test/error_embedding/deriver.ml[12,312+29])
+                                                  Texp_construct "[]"
+                                                  []
+                                              "pvb_loc"
+                                                expression (test/error_embedding/deriver.ml[13,343+20]..test/error_embedding/deriver.ml[13,343+23])
+                                                  Texp_ident "loc/498"
+                                            ]
+                                          representation =
+                                            Record_regular
+                                          extended_expression =
+                                            None
+                                      expression (test/error_embedding/deriver.ml[15,379+6]..test/error_embedding/deriver.ml[15,379+7]) ghost
+                                        Texp_construct "[]"
+                                        []
+                                    ]
+                              ]
+                            expression (test/error_embedding/deriver.ml[16,388+2]..test/error_embedding/deriver.ml[16,388+3]) ghost
+                              Texp_construct "[]"
+                              []
+                          ]
+                ]
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[18,393+0]..test/error_embedding/deriver.ml[19,430+50])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[18,393+4]..test/error_embedding/deriver.ml[18,393+34])
+          Tpat_var "impl_generator_derive_a_string/3937"
+        expression (test/error_embedding/deriver.ml[19,430+2]..test/error_embedding/deriver.ml[19,430+50])
+          Texp_apply
+          expression (test/error_embedding/deriver.ml[19,430+2]..test/error_embedding/deriver.ml[19,430+34])
+            Texp_ident "Ppxlib!.Deriving.Generator.V2.make_noarg"
+          [
+            <arg>
+              Optional "attributes"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "deps"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "unused_code_warnings"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/error_embedding/deriver.ml[19,430+35]..test/error_embedding/deriver.ml[19,430+50])
+                Texp_ident "derive_a_string/493"
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[21,482+0]..test/error_embedding/deriver.ml[22,509+71])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[21,482+4]..test/error_embedding/deriver.ml[21,482+24])
+          Tpat_var "deriver_for_a_string/4312"
+        expression (test/error_embedding/deriver.ml[22,509+2]..test/error_embedding/deriver.ml[22,509+71])
+          Texp_apply
+          expression (test/error_embedding/deriver.ml[22,509+2]..test/error_embedding/deriver.ml[22,509+14])
+            Texp_ident "Ppxlib!.Deriving.add"
+          [
+            <arg>
+              Optional "str_type_decl"
+              expression (test/error_embedding/deriver.ml[22,509+41]..test/error_embedding/deriver.ml[22,509+71])
+                Texp_construct "Some"
+                [
+                  expression (test/error_embedding/deriver.ml[22,509+41]..test/error_embedding/deriver.ml[22,509+71])
+                    Texp_ident "impl_generator_derive_a_string/3937"
+                ]
+            <arg>
+              Optional "str_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "extension"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/error_embedding/deriver.ml[22,509+15]..test/error_embedding/deriver.ml[22,509+25])
+                Texp_constant Const_string("a_string",(test/error_embedding/deriver.ml[22,509+16]..test/error_embedding/deriver.ml[22,509+24]),None)
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[24,582+0]..test/error_embedding/deriver.ml[26,679+19])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[24,582+4]..test/error_embedding/deriver.ml[24,582+28])
+          Tpat_var "impl_generator_dependent/4313"
+        expression (test/error_embedding/deriver.ml[25,613+2]..test/error_embedding/deriver.ml[26,679+19])
+          Texp_apply
+          expression (test/error_embedding/deriver.ml[25,613+2]..test/error_embedding/deriver.ml[25,613+34])
+            Texp_ident "Ppxlib!.Deriving.Generator.V2.make_noarg"
+          [
+            <arg>
+              Optional "attributes"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "deps"
+              expression (test/error_embedding/deriver.ml[25,613+41]..test/error_embedding/deriver.ml[25,613+65])
+                Texp_construct "Some"
+                [
+                  expression (test/error_embedding/deriver.ml[25,613+41]..test/error_embedding/deriver.ml[25,613+65])
+                    Texp_construct "::"
+                    [
+                      expression (test/error_embedding/deriver.ml[25,613+43]..test/error_embedding/deriver.ml[25,613+63])
+                        Texp_ident "deriver_for_a_string/4312"
+                      expression (test/error_embedding/deriver.ml[25,613+64]..test/error_embedding/deriver.ml[25,613+65]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+                ]
+            <arg>
+              Optional "unused_code_warnings"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/error_embedding/deriver.ml[26,679+4]..test/error_embedding/deriver.ml[26,679+19])
+                Texp_ident "derive_a_string/493"
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[28,700+0]..test/error_embedding/deriver.ml[29,724+75])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[28,700+4]..test/error_embedding/deriver.ml[28,700+21])
+          Tpat_var "dependent_deriver/4314"
+        expression (test/error_embedding/deriver.ml[29,724+2]..test/error_embedding/deriver.ml[29,724+75])
+          Texp_apply
+          expression (test/error_embedding/deriver.ml[29,724+2]..test/error_embedding/deriver.ml[29,724+14])
+            Texp_ident "Ppxlib!.Deriving.add"
+          [
+            <arg>
+              Optional "str_type_decl"
+              expression (test/error_embedding/deriver.ml[29,724+51]..test/error_embedding/deriver.ml[29,724+75])
+                Texp_construct "Some"
+                [
+                  expression (test/error_embedding/deriver.ml[29,724+51]..test/error_embedding/deriver.ml[29,724+75])
+                    Texp_ident "impl_generator_dependent/4313"
+                ]
+            <arg>
+              Optional "str_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "extension"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/error_embedding/deriver.ml[29,724+15]..test/error_embedding/deriver.ml[29,724+35])
+                Texp_constant Const_string("a_dependent_string",(test/error_embedding/deriver.ml[29,724+16]..test/error_embedding/deriver.ml[29,724+34]),None)
+          ]
+    ]
+  structure_item (test/error_embedding/deriver.ml[31,801+0]..test/error_embedding/deriver.ml[31,801+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/deriver.ml[31,801+4]..test/error_embedding/deriver.ml[31,801+6])
+          Tpat_construct "()"
+          []
+        expression (test/error_embedding/deriver.ml[31,801+9]..test/error_embedding/deriver.ml[31,801+29])
+          Texp_apply
+          expression (test/error_embedding/deriver.ml[31,801+9]..test/error_embedding/deriver.ml[31,801+26])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/error_embedding/deriver.ml[31,801+27]..test/error_embedding/deriver.ml[31,801+29])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Deriver!
+  (let
+    (derive_a_string/493 =
+       (function ctxt/495 param/3936
+         (funct-body Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(3)<ghost>:33-391
+           (let
+             (_type_declarations/497 =a (field_imm 1 param/3936)
+              _rec_flag/496 =a (field_imm 0 param/3936))
+             (before Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(4):75-391
+               (let
+                 (loc/498 =
+                    (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(4):85-132
+                      (apply
+                        (field_imm 0
+                          (field_imm 2 (global Ppxlib__Expansion_context!)))
+                        ctxt/495)))
+                 (before Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(5):138-391
+                   (makeblock 0
+                     (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(7):178-386
+                       (apply
+                         (field_imm 149
+                           (field_imm 0 (global Ppxlib__Ast_builder!)))
+                         loc/498 0
+                         (makeblock 0
+                           (makeblock 0
+                             (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(10):245-258
+                               (apply
+                                 (field_imm 112
+                                   (field_imm 0
+                                     (global Ppxlib__Ast_builder!)))
+                                 loc/498))
+                             (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(11):281-310
+                               (apply
+                                 (field_imm 174
+                                   (field_imm 0
+                                     (global Ppxlib__Ast_builder!)))
+                                 loc/498 "derived_string"))
+                             0 loc/498)
+                           0)))
+                     0)))))))
+     impl_generator_derive_a_string/3937 =
+       (after Dune__exe__Deriver.impl_generator_derive_a_string test/error_embedding/deriver.ml(19):432-480
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 derive_a_string/493))
+     deriver_for_a_string/4312 =
+       (after Dune__exe__Deriver.deriver_for_a_string test/error_embedding/deriver.ml(22):511-580
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_derive_a_string/3937) 0 0 0 0 0 0 0 0
+           "a_string"))
+     impl_generator_dependent/4313 =
+       (after Dune__exe__Deriver.impl_generator_dependent test/error_embedding/deriver.ml(25):615-698
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 (makeblock 0 (makeblock 0 deriver_for_a_string/4312 0)) 0
+           derive_a_string/493))
+     dependent_deriver/4314 =
+       (after Dune__exe__Deriver.dependent_deriver test/error_embedding/deriver.ml(29):726-799
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_dependent/4313) 0 0 0 0 0 0 0 0
+           "a_dependent_string"))
+     *match*/10160 =
+       (after Dune__exe__Deriver test/error_embedding/deriver.ml(31):810-830
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location>
+      (makeblock 0 derive_a_string/493 impl_generator_derive_a_string/3937
+        deriver_for_a_string/4312 impl_generator_dependent/4313
+        dependent_deriver/4314))))
+(setglobal Dune__exe__Deriver!
+  (let
+    (derive_a_string/493 =
+       (function ctxt/495 param/3936
+         (funct-body Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(3)<ghost>:33-391
+           (before Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(4):75-391
+             (let
+               (loc/498 =
+                  (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(4):85-132
+                    (apply
+                      (field_imm 0
+                        (field_imm 2 (global Ppxlib__Expansion_context!)))
+                      ctxt/495)))
+               (before Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(5):138-391
+                 (makeblock 0
+                   (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(7):178-386
+                     (apply
+                       (field_imm 149
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       loc/498 0
+                       (makeblock 0
+                         (makeblock 0
+                           (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(10):245-258
+                             (apply
+                               (field_imm 112
+                                 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                               loc/498))
+                           (after Dune__exe__Deriver.derive_a_string test/error_embedding/deriver.ml(11):281-310
+                             (apply
+                               (field_imm 174
+                                 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                               loc/498 "derived_string"))
+                           0 loc/498)
+                         0)))
+                   0))))))
+     impl_generator_derive_a_string/3937 =
+       (after Dune__exe__Deriver.impl_generator_derive_a_string test/error_embedding/deriver.ml(19):432-480
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 derive_a_string/493))
+     deriver_for_a_string/4312 =
+       (after Dune__exe__Deriver.deriver_for_a_string test/error_embedding/deriver.ml(22):511-580
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_derive_a_string/3937) 0 0 0 0 0 0 0 0
+           "a_string"))
+     impl_generator_dependent/4313 =
+       (after Dune__exe__Deriver.impl_generator_dependent test/error_embedding/deriver.ml(25):615-698
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 (makeblock 0 (makeblock 0 deriver_for_a_string/4312 0)) 0
+           derive_a_string/493))
+     dependent_deriver/4314 =
+       (after Dune__exe__Deriver.dependent_deriver test/error_embedding/deriver.ml(29):726-799
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_dependent/4313) 0 0 0 0 0 0 0 0
+           "a_dependent_string"))
+     *match*/10160 =
+       (after Dune__exe__Deriver test/error_embedding/deriver.ml(31):810-830
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location>
+      (makeblock 0 derive_a_string/493 impl_generator_derive_a_string/3937
+        deriver_for_a_string/4312 impl_generator_dependent/4313
+        dependent_deriver/4314))))

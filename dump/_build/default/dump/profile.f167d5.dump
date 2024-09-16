@@ -1,0 +1,8 @@
+0.126s  177MB 35.3MB 35.3MB src/common.ml
+  0.002s 2.91MB 1.57MB 1.57MB parsing
+    0.002s 2.91MB 1.57MB 1.57MB parser
+  0.108s  123MB 32.6MB 34.2MB typing
+  0.002s 2.22MB 0.18MB 34.4MB transl
+  0.007s 26.5MB 0.70MB 35.1MB generate
+  0.006s 22.2MB 0.25MB 35.3MB other
+0.004s ------ ------ ------ other

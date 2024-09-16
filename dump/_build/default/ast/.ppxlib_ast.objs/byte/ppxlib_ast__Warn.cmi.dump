@@ -1,0 +1,141 @@
+[
+  signature_item (ast/warn.mli[1,0+0]..[1,0+11])
+    Psig_open Fresh "Import" (ast/warn.mli[1,0+5]..[1,0+11])
+  signature_item (ast/warn.mli[3,13+0]..[3,13+36])
+    Psig_value
+    value_description "care_about_ite_branch" (ast/warn.mli[3,13+4]..[3,13+25]) (ast/warn.mli[3,13+0]..[3,13+36])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/warn.mli[4,50+0]..[4,50+41])
+            Pstr_eval
+            expression (ast/warn.mli[4,50+0]..[4,50+41])
+              Pexp_constant PConst_string(" Ignored -- kept for compatibility. ",(ast/warn.mli[4,50+0]..[4,50+41]),None)
+        ]
+      core_type (ast/warn.mli[3,13+28]..[3,13+36])
+        Ptyp_constr "ref" (ast/warn.mli[3,13+33]..[3,13+36])
+        [
+          core_type (ast/warn.mli[3,13+28]..[3,13+32])
+            Ptyp_constr "bool" (ast/warn.mli[3,13+28]..[3,13+32])
+            []
+        ]
+      []
+  signature_item (ast/warn.mli[6,93+0]..[6,93+51])
+    Psig_value
+    value_description "about_ite_branch_ref" (ast/warn.mli[6,93+4]..[6,93+24]) (ast/warn.mli[6,93+0]..[6,93+51])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/warn.mli[7,145+0]..[7,145+41])
+            Pstr_eval
+            expression (ast/warn.mli[7,145+0]..[7,145+41])
+              Pexp_constant PConst_string(" Ignored -- kept for compatibility. ",(ast/warn.mli[7,145+0]..[7,145+41]),None)
+        ]
+      core_type (ast/warn.mli[6,93+27]..[6,93+51])
+        Ptyp_constr "ref" (ast/warn.mli[6,93+48]..[6,93+51])
+        [
+          core_type (ast/warn.mli[6,93+28]..[6,93+46])
+            Ptyp_arrow
+            Nolabel
+            core_type (ast/warn.mli[6,93+28]..[6,93+38])
+              Ptyp_constr "Location.t" (ast/warn.mli[6,93+28]..[6,93+38])
+              []
+            core_type (ast/warn.mli[6,93+42]..[6,93+46])
+              Ptyp_constr "unit" (ast/warn.mli[6,93+42]..[6,93+46])
+              []
+        ]
+      []
+  signature_item (ast/warn.mli[9,188+0]..[9,188+41])
+    Psig_value
+    value_description "about_ite_branch" (ast/warn.mli[9,188+4]..[9,188+20]) (ast/warn.mli[9,188+0]..[9,188+41])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/warn.mli[10,230+0]..[10,230+41])
+            Pstr_eval
+            expression (ast/warn.mli[10,230+0]..[10,230+41])
+              Pexp_constant PConst_string(" Ignored -- kept for compatibility. ",(ast/warn.mli[10,230+0]..[10,230+41]),None)
+        ]
+      core_type (ast/warn.mli[9,188+23]..[9,188+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/warn.mli[9,188+23]..[9,188+33])
+          Ptyp_constr "Location.t" (ast/warn.mli[9,188+23]..[9,188+33])
+          []
+        core_type (ast/warn.mli[9,188+37]..[9,188+41])
+          Ptyp_constr "unit" (ast/warn.mli[9,188+37]..[9,188+41])
+          []
+      []
+]
+
+open Import
+val care_about_ite_branch : bool ref[@@ocaml.doc
+                                      " Ignored -- kept for compatibility. "]
+val about_ite_branch_ref : (Location.t -> unit) ref[@@ocaml.doc
+                                                     " Ignored -- kept for compatibility. "]
+val about_ite_branch : Location.t -> unit[@@ocaml.doc
+                                           " Ignored -- kept for compatibility. "]
+[
+  signature_item (ast/warn.mli[1,0+0]..ast/warn.mli[1,0+11])
+    Tsig_open Fresh "Ppxlib_ast__!.Import"
+  signature_item (ast/warn.mli[3,13+0]..ast/warn.mli[3,13+36])
+    Tsig_value
+    value_description care_about_ite_branch/245 (ast/warn.mli[3,13+0]..ast/warn.mli[3,13+36])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/warn.mli[4,50+0]..[4,50+41])
+            Pstr_eval
+            expression (ast/warn.mli[4,50+0]..[4,50+41])
+              Pexp_constant PConst_string(" Ignored -- kept for compatibility. ",(ast/warn.mli[4,50+0]..[4,50+41]),None)
+        ]
+      core_type (ast/warn.mli[3,13+28]..ast/warn.mli[3,13+36])
+        Ttyp_constr "Stdlib!.ref"
+        [
+          core_type (ast/warn.mli[3,13+28]..ast/warn.mli[3,13+32])
+            Ttyp_constr "bool/5!"
+            []
+        ]
+      []
+  signature_item (ast/warn.mli[6,93+0]..ast/warn.mli[6,93+51])
+    Tsig_value
+    value_description about_ite_branch_ref/368 (ast/warn.mli[6,93+0]..ast/warn.mli[6,93+51])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/warn.mli[7,145+0]..[7,145+41])
+            Pstr_eval
+            expression (ast/warn.mli[7,145+0]..[7,145+41])
+              Pexp_constant PConst_string(" Ignored -- kept for compatibility. ",(ast/warn.mli[7,145+0]..[7,145+41]),None)
+        ]
+      core_type (ast/warn.mli[6,93+27]..ast/warn.mli[6,93+51])
+        Ttyp_constr "Stdlib!.ref"
+        [
+          core_type (ast/warn.mli[6,93+28]..ast/warn.mli[6,93+46])
+            Ttyp_arrow
+            Nolabel
+            core_type (ast/warn.mli[6,93+28]..ast/warn.mli[6,93+38])
+              Ttyp_constr "Ppxlib_ast__!.Import.Location.t"
+              []
+            core_type (ast/warn.mli[6,93+42]..ast/warn.mli[6,93+46])
+              Ttyp_constr "unit/6!"
+              []
+        ]
+      []
+  signature_item (ast/warn.mli[9,188+0]..ast/warn.mli[9,188+41])
+    Tsig_value
+    value_description about_ite_branch/369 (ast/warn.mli[9,188+0]..ast/warn.mli[9,188+41])
+      attribute "ocaml.doc"
+        [
+          structure_item (ast/warn.mli[10,230+0]..[10,230+41])
+            Pstr_eval
+            expression (ast/warn.mli[10,230+0]..[10,230+41])
+              Pexp_constant PConst_string(" Ignored -- kept for compatibility. ",(ast/warn.mli[10,230+0]..[10,230+41]),None)
+        ]
+      core_type (ast/warn.mli[9,188+23]..ast/warn.mli[9,188+41])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/warn.mli[9,188+23]..ast/warn.mli[9,188+33])
+          Ttyp_constr "Ppxlib_ast__!.Import.Location.t"
+          []
+        core_type (ast/warn.mli[9,188+37]..ast/warn.mli[9,188+41])
+          Ttyp_constr "unit/6!"
+          []
+      []
+]
+

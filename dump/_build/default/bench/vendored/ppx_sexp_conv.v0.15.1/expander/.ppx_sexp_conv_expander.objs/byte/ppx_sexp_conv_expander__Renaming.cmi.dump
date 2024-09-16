@@ -1,0 +1,607 @@
+[
+  signature_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Psig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[23,1056+0]..[23,1056+10])
+    Psig_open Override "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[23,1056+6]..[23,1056+10])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[24,1067+0]..[24,1067+12])
+    Psig_open Override "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[24,1067+6]..[24,1067+12])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[26,1081+0]..[26,1081+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[26,1081+5]..[26,1081+6]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[26,1081+0]..[26,1081+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+0]..[29,1177+28])
+    Psig_value
+    value_description "without_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+4]..[29,1177+16]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+0]..[29,1177+28])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[28,1089+0]..[28,1089+87])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[28,1089+0]..[28,1089+87])
+              Pexp_constant PConst_string(" Renaming for contexts outside a type declaration, such as expression extensions. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[28,1089+0]..[28,1089+87]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+19]..[29,1177+28])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+19]..[29,1177+23])
+          Ptyp_constr "unit" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+19]..[29,1177+23])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+27]..[29,1177+28])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+27]..[29,1177+28])
+          []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+0]..[32,1294+64])
+    Psig_value
+    value_description "of_type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+4]..[32,1294+23]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+0]..[32,1294+64])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[31,1207+0]..[31,1207+86])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[31,1207+0]..[31,1207+86])
+              Pexp_constant PConst_string(" Renaming for a type declaration. Adds [prefix] to bindings for type parameters. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[31,1207+0]..[31,1207+86]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+26]..[32,1294+64])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+26]..[32,1294+42])
+          Ptyp_constr "type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+26]..[32,1294+42])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+46]..[32,1294+64])
+          Ptyp_arrow
+          Labelled "prefix"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+53]..[32,1294+59])
+            Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+53]..[32,1294+59])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+63]..[32,1294+64])
+            Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+63]..[32,1294+64])
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+0]..[35,1446+65])
+    Psig_value
+    value_description "add_universally_bound" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+4]..[35,1446+25]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+0]..[35,1446+65])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[34,1360+0]..[34,1360+85])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[34,1360+0]..[34,1360+85])
+              Pexp_constant PConst_string(" Adds a new name with the given [prefix] for a universally bound type variable. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[34,1360+0]..[34,1360+85]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+28]..[35,1446+65])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+28]..[35,1446+29])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+28]..[35,1446+29])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+33]..[35,1446+65])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+33]..[35,1446+43])
+            Ptyp_constr "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+40]..[35,1446+43])
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+33]..[35,1446+39])
+                Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+33]..[35,1446+39])
+                []
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+47]..[35,1446+65])
+            Ptyp_arrow
+            Labelled "prefix"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+54]..[35,1446+60])
+              Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+54]..[35,1446+60])
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+64]..[35,1446+65])
+              Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+64]..[35,1446+65])
+              []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[37,1513+0]..[41,1616+3])
+    Psig_module "Binding_kind" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[37,1513+7]..[37,1513+19])
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[37,1513+22]..[41,1616+3])
+      Pmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[38,1539+2]..[40,1590+25])
+          Psig_type Rec
+          [
+            type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[38,1539+7]..[38,1539+8]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[38,1539+2]..[40,1590+25])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+4]..[39,1550+39])
+                      "Universally_bound" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+6]..[39,1550+23])
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+27]..[39,1550+39])
+                          Ptyp_constr "Fresh_name.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+27]..[39,1550+39])
+                          []
+                      ]
+                      None
+                    (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[40,1590+4]..[40,1590+25])
+                      "Existentially_bound" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[40,1590+6]..[40,1590+25])
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+      ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+0]..[44,1670+64])
+    Psig_value
+    value_description "binding_kind" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+4]..[44,1670+16]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+0]..[44,1670+64])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[43,1621+0]..[43,1621+48])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[43,1621+0]..[43,1621+48])
+              Pexp_constant PConst_string(" Looks up the binding for a type variable. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[43,1621+0]..[43,1621+48]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+19]..[44,1670+64])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+19]..[44,1670+20])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+19]..[44,1670+20])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+24]..[44,1670+64])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+24]..[44,1670+30])
+            Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+24]..[44,1670+30])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+34]..[44,1670+64])
+            Ptyp_arrow
+            Labelled "loc"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+38]..[44,1670+46])
+              Ptyp_constr "location" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+38]..[44,1670+46])
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+50]..[44,1670+64])
+              Ptyp_constr "Binding_kind.t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+50]..[44,1670+64])
+              []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[48,1847+0]..[52,1949+6])
+    Psig_value
+    value_description "with_constructor_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[48,1847+4]..[48,1847+32]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[48,1847+0]..[52,1949+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[46,1736+0]..[47,1819+27])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[46,1736+0]..[47,1819+27])
+              Pexp_constant PConst_string(" Extends the renaming of a type declaration with GADT context for a constructor\n    declaration, if any. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[46,1736+0]..[47,1819+27]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[49,1880+5]..[52,1949+6])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[49,1880+5]..[49,1880+6])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[49,1880+5]..[49,1880+6])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[50,1887+5]..[52,1949+6])
+          Ptyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[50,1887+5]..[50,1887+28])
+            Ptyp_constr "constructor_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[50,1887+5]..[50,1887+28])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+5]..[52,1949+6])
+            Ptyp_arrow
+            Labelled "type_parameters"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+21]..[51,1916+32])
+              Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+28]..[51,1916+32])
+              [
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+21]..[51,1916+27])
+                  Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+21]..[51,1916+27])
+                  []
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+5]..[52,1949+6])
+              Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+5]..[52,1949+6])
+              []
+      []
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+open! Base
+open! Ppxlib
+type t
+val without_type : unit -> t[@@ocaml.doc
+                              " Renaming for contexts outside a type declaration, such as expression extensions. "]
+val of_type_declaration : type_declaration -> prefix:string -> t[@@ocaml.doc
+                                                                  " Renaming for a type declaration. Adds [prefix] to bindings for type parameters. "]
+val add_universally_bound : t -> string loc -> prefix:string -> t[@@ocaml.doc
+                                                                   " Adds a new name with the given [prefix] for a universally bound type variable. "]
+module Binding_kind :
+sig type t =
+      | Universally_bound of Fresh_name.t 
+      | Existentially_bound  end
+val binding_kind : t -> string -> loc:location -> Binding_kind.t[@@ocaml.doc
+                                                                  " Looks up the binding for a type variable. "]
+val with_constructor_declaration :
+  t -> constructor_declaration -> type_parameters:string list -> t[@@ocaml.doc
+                                                                    " Extends the renaming of a type declaration with GADT context for a constructor\n    declaration, if any. "]
+[
+  signature_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tsig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[23,1056+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[23,1056+10])
+    Tsig_open Override "Base!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[24,1067+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[24,1067+12])
+    Tsig_open Override "Ppxlib!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[26,1081+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[26,1081+6])
+    Tsig_type Rec
+    [
+      type_declaration t/656 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[26,1081+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[26,1081+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+28])
+    Tsig_value
+    value_description without_type/657 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+28])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[28,1089+0]..[28,1089+87])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[28,1089+0]..[28,1089+87])
+              Pexp_constant PConst_string(" Renaming for contexts outside a type declaration, such as expression extensions. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[28,1089+0]..[28,1089+87]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+28])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+23])
+          Ttyp_constr "Base!.unit"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[29,1177+28])
+          Ttyp_constr "t/656"
+          []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+64])
+    Tsig_value
+    value_description of_type_declaration/658 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+64])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[31,1207+0]..[31,1207+86])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[31,1207+0]..[31,1207+86])
+              Pexp_constant PConst_string(" Renaming for a type declaration. Adds [prefix] to bindings for type parameters. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[31,1207+0]..[31,1207+86]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+64])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+42])
+          Ttyp_constr "Ppxlib!.type_declaration"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+46]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+64])
+          Ttyp_arrow
+          Labelled "prefix"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+53]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+59])
+            Ttyp_constr "Base!.string"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+63]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[32,1294+64])
+            Ttyp_constr "t/656"
+            []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+65])
+    Tsig_value
+    value_description add_universally_bound/659 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+65])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[34,1360+0]..[34,1360+85])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[34,1360+0]..[34,1360+85])
+              Pexp_constant PConst_string(" Adds a new name with the given [prefix] for a universally bound type variable. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[34,1360+0]..[34,1360+85]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+65])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+29])
+          Ttyp_constr "t/656"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+33]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+65])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+33]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+43])
+            Ttyp_constr "Ppxlib!.loc"
+            [
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+33]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+39])
+                Ttyp_constr "Base!.string"
+                []
+            ]
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+47]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+65])
+            Ttyp_arrow
+            Labelled "prefix"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+54]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+60])
+              Ttyp_constr "Base!.string"
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+64]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[35,1446+65])
+              Ttyp_constr "t/656"
+              []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[37,1513+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[41,1616+3])
+    Tsig_module "Binding_kind/670"
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[37,1513+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[41,1616+3])
+      Tmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[38,1539+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[40,1590+25])
+          Tsig_type Rec
+          [
+            type_declaration t/660 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[38,1539+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[40,1590+25])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_variant
+                  [
+                    (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+39])
+                      Universally_bound/661
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+27]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[39,1550+39])
+                          Ttyp_constr "Ppx_sexp_conv_expander__!.Fresh_name.t"
+                          []
+                      ]
+                      None
+                    (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[40,1590+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[40,1590+25])
+                      Existentially_bound/669
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+      ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+64])
+    Tsig_value
+    value_description binding_kind/671 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+64])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[43,1621+0]..[43,1621+48])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[43,1621+0]..[43,1621+48])
+              Pexp_constant PConst_string(" Looks up the binding for a type variable. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[43,1621+0]..[43,1621+48]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+64])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+20])
+          Ttyp_constr "t/656"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+64])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+30])
+            Ttyp_constr "Base!.string"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+64])
+            Ttyp_arrow
+            Labelled "loc"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+38]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+46])
+              Ttyp_constr "Ppxlib!.location"
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+50]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[44,1670+64])
+              Ttyp_constr "Binding_kind/670.t"
+              []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[48,1847+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+6])
+    Tsig_value
+    value_description with_constructor_declaration/672 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[48,1847+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[46,1736+0]..[47,1819+27])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[46,1736+0]..[47,1819+27])
+              Pexp_constant PConst_string(" Extends the renaming of a type declaration with GADT context for a constructor\n    declaration, if any. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[46,1736+0]..[47,1819+27]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[49,1880+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+6])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[49,1880+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[49,1880+6])
+          Ttyp_constr "t/656"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[50,1887+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+6])
+          Ttyp_arrow
+          Nolabel
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[50,1887+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[50,1887+28])
+            Ttyp_constr "Ppxlib!.constructor_declaration"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+6])
+            Ttyp_arrow
+            Labelled "type_parameters"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+32])
+              Ttyp_constr "Base!.list"
+              [
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[51,1916+27])
+                  Ttyp_constr "Base!.string"
+                  []
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.mli[52,1949+6])
+              Ttyp_constr "t/656"
+              []
+      []
+]
+

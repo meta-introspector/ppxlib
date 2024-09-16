@@ -1,0 +1,11 @@
+0.034s 25.1MB 3.35MB 3.35MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.cmxs
+  0.001s ------ ------ ------ selection
+  0.001s 3.16MB 0.28MB 0.28MB liveness
+  0.001s 0.08MB ------ ------ spill
+  0.003s 3.27MB 1.75MB 2.03MB split
+  0.003s 8.47MB 0.65MB 2.69MB regalloc
+  ------ 2.00MB 0.15MB 2.85MB emit
+  0.005s ------ ------ ------ assemble
+  0.014s ------ ------ ------ c-linker
+  0.007s 8.15MB 0.50MB 3.35MB other
+0.006s ------ ------ ------ other

@@ -1,0 +1,5 @@
+0.095s 24.2MB 10.6MB 10.6MB src/loc.ml
+  0.086s 19.3MB 8.65MB 8.65MB typing
+  0.002s 2.00MB 0.40MB 9.06MB generate
+  0.006s 2.86MB 1.53MB 10.6MB other
+0.009s ------ ------ ------ other

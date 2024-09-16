@@ -1,0 +1,11 @@
+0.178s 74.3MB 22.5MB 24.2MB examples/simple-deriver/ppx_deriving_accessors.ml
+  0.159s 63.7MB 22.0MB 23.7MB typing
+  0.001s ------ ------ ------ transl
+  0.011s 4.17MB 0.37MB 24.1MB generate
+    0.003s 2.14MB 0.12MB 23.9MB compile_phrases
+      ------ 0.14MB ------ ------ deadcode
+      0.001s 2.00MB 0.12MB 23.9MB regalloc
+    0.006s ------ ------ ------ assemble
+    0.003s 2.03MB 0.25MB 24.1MB other
+  0.006s 6.41MB 0.12MB 24.2MB other
+0.013s 3.02MB 1.72MB ------ other

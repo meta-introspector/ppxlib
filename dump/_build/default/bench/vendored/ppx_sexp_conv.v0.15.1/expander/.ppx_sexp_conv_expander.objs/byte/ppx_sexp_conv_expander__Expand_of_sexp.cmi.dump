@@ -1,0 +1,557 @@
+[
+  signature_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Psig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[1,0+0]..[1,0+10])
+    Psig_open Override "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[1,0+6]..[1,0+10])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[2,11+0]..[2,11+12])
+    Psig_open Override "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[2,11+6]..[2,11+12])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[4,25+0]..[15,400+3])
+    Psig_module "Sig_generate_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[4,25+7]..[4,25+27])
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[4,25+30]..[15,400+3])
+      Pmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+2]..[6,128+62])
+          Psig_value
+          value_description "type_of_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+6]..[6,128+21]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+2]..[6,128+62])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[5,59+2]..[5,59+68])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[5,59+2]..[5,59+68])
+                    Pexp_constant PConst_string(" Given a type, produce the type of its [of_sexp] conversion. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[5,59+2]..[5,59+68]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+24]..[6,128+62])
+              Ptyp_arrow
+              Labelled "loc"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+28]..[6,128+36])
+                Ptyp_constr "location" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+28]..[6,128+36])
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+40]..[6,128+62])
+                Ptyp_arrow
+                Nolabel
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+40]..[6,128+49])
+                  Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+40]..[6,128+49])
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+53]..[6,128+62])
+                  Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+53]..[6,128+62])
+                  []
+            []
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[9,264+2]..[14,373+26])
+          Psig_value
+          value_description "mk_sig" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[9,264+6]..[9,264+12]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[9,264+2]..[14,373+26])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[8,192+2]..[8,192+71])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[8,192+2]..[8,192+71])
+                    Pexp_constant PConst_string(" Derive an [of_sexp] interface for a list of type declarations. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[8,192+2]..[8,192+71]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[10,277+7]..[14,373+26])
+              Ptyp_arrow
+              Labelled "poly"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[10,277+12]..[10,277+16])
+                Ptyp_constr "bool" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[10,277+12]..[10,277+16])
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[11,294+7]..[14,373+26])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[11,294+11]..[11,294+19])
+                  Ptyp_constr "location" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[11,294+11]..[11,294+19])
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[12,314+7]..[14,373+26])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[12,314+12]..[12,314+18])
+                    Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[12,314+12]..[12,314+18])
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+7]..[14,373+26])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+7]..[13,333+39])
+                      Ptyp_tuple
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+7]..[13,333+15])
+                          Ptyp_constr "rec_flag" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+7]..[13,333+15])
+                          []
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+18]..[13,333+39])
+                          Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+35]..[13,333+39])
+                          [
+                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+18]..[13,333+34])
+                              Ptyp_constr "type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+18]..[13,333+34])
+                              []
+                          ]
+                      ]
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+7]..[14,373+26])
+                      Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+22]..[14,373+26])
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+7]..[14,373+21])
+                          Ptyp_constr "signature_item" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+7]..[14,373+21])
+                          []
+                      ]
+            []
+      ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[17,405+0]..[28,780+3])
+    Psig_module "Str_generate_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[17,405+7]..[17,405+27])
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[17,405+30]..[28,780+3])
+      Pmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+2]..[19,496+64])
+          Psig_value
+          value_description "core_type_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+6]..[19,496+23]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+2]..[19,496+64])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[18,439+2]..[18,439+56])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[18,439+2]..[18,439+56])
+                    Pexp_constant PConst_string(" Given a type, produce its [of_sexp] conversion. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[18,439+2]..[18,439+56]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+26]..[19,496+64])
+              Ptyp_arrow
+              Labelled "path"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+31]..[19,496+37])
+                Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+31]..[19,496+37])
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+41]..[19,496+64])
+                Ptyp_arrow
+                Nolabel
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+41]..[19,496+50])
+                  Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+41]..[19,496+50])
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+54]..[19,496+64])
+                  Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+54]..[19,496+64])
+                  []
+            []
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[22,639+2]..[27,753+26])
+          Psig_value
+          value_description "tds_of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[22,639+6]..[22,639+17]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[22,639+2]..[27,753+26])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[21,562+2]..[21,562+76])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[21,562+2]..[21,562+76])
+                    Pexp_constant PConst_string(" Derive an [of_sexp] implementation for a list of type declarations. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[21,562+2]..[21,562+76]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[23,657+7]..[27,753+26])
+              Ptyp_arrow
+              Labelled "loc"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[23,657+11]..[23,657+19])
+                Ptyp_constr "location" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[23,657+11]..[23,657+19])
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[24,677+7]..[27,753+26])
+                Ptyp_arrow
+                Labelled "poly"
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[24,677+12]..[24,677+16])
+                  Ptyp_constr "bool" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[24,677+12]..[24,677+16])
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[25,694+7]..[27,753+26])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[25,694+12]..[25,694+18])
+                    Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[25,694+12]..[25,694+18])
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+7]..[27,753+26])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+7]..[26,713+39])
+                      Ptyp_tuple
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+7]..[26,713+15])
+                          Ptyp_constr "rec_flag" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+7]..[26,713+15])
+                          []
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+18]..[26,713+39])
+                          Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+35]..[26,713+39])
+                          [
+                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+18]..[26,713+34])
+                              Ptyp_constr "type_declaration" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+18]..[26,713+34])
+                              []
+                          ]
+                      ]
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+7]..[27,753+26])
+                      Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+22]..[27,753+26])
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+7]..[27,753+21])
+                          Ptyp_constr "structure_item" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+7]..[27,753+21])
+                          []
+                      ]
+            []
+      ]
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+open! Base
+open! Ppxlib
+module Sig_generate_of_sexp :
+sig
+  val type_of_of_sexp : loc:location -> core_type -> core_type[@@ocaml.doc
+                                                                " Given a type, produce the type of its [of_sexp] conversion. "]
+  val mk_sig :
+    poly:bool ->
+      loc:location ->
+        path:string ->
+          (rec_flag * type_declaration list) -> signature_item list[@@ocaml.doc
+                                                                    " Derive an [of_sexp] interface for a list of type declarations. "]
+end
+module Str_generate_of_sexp :
+sig
+  val core_type_of_sexp : path:string -> core_type -> expression[@@ocaml.doc
+                                                                  " Given a type, produce its [of_sexp] conversion. "]
+  val tds_of_sexp :
+    loc:location ->
+      poly:bool ->
+        path:string ->
+          (rec_flag * type_declaration list) -> structure_item list[@@ocaml.doc
+                                                                    " Derive an [of_sexp] implementation for a list of type declarations. "]
+end
+[
+  signature_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tsig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[1,0+10])
+    Tsig_open Override "Base!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[2,11+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[2,11+12])
+    Tsig_open Override "Ppxlib!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[4,25+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[15,400+3])
+    Tsig_module "Sig_generate_of_sexp/658"
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[4,25+30]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[15,400+3])
+      Tmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+62])
+          Tsig_value
+          value_description type_of_of_sexp/656 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+62])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[5,59+2]..[5,59+68])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[5,59+2]..[5,59+68])
+                    Pexp_constant PConst_string(" Given a type, produce the type of its [of_sexp] conversion. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[5,59+2]..[5,59+68]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+62])
+              Ttyp_arrow
+              Labelled "loc"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+36])
+                Ttyp_constr "Ppxlib!.location"
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+40]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+62])
+                Ttyp_arrow
+                Nolabel
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+40]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+49])
+                  Ttyp_constr "Ppxlib!.core_type"
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+53]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[6,128+62])
+                  Ttyp_constr "Ppxlib!.core_type"
+                  []
+            []
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[9,264+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+26])
+          Tsig_value
+          value_description mk_sig/657 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[9,264+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+26])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[8,192+2]..[8,192+71])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[8,192+2]..[8,192+71])
+                    Pexp_constant PConst_string(" Derive an [of_sexp] interface for a list of type declarations. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[8,192+2]..[8,192+71]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[10,277+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+26])
+              Ttyp_arrow
+              Labelled "poly"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[10,277+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[10,277+16])
+                Ttyp_constr "Base!.bool"
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[11,294+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+26])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[11,294+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[11,294+19])
+                  Ttyp_constr "Ppxlib!.location"
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[12,314+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+26])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[12,314+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[12,314+18])
+                    Ttyp_constr "Base!.string"
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+26])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+39])
+                      Ttyp_tuple
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+15])
+                          Ttyp_constr "Ppxlib!.rec_flag"
+                          []
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+39])
+                          Ttyp_constr "Base!.list"
+                          [
+                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[13,333+34])
+                              Ttyp_constr "Ppxlib!.type_declaration"
+                              []
+                          ]
+                      ]
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+26])
+                      Ttyp_constr "Base!.list"
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[14,373+21])
+                          Ttyp_constr "Ppxlib!.signature_item"
+                          []
+                      ]
+            []
+      ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[17,405+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[28,780+3])
+    Tsig_module "Str_generate_of_sexp/661"
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[17,405+30]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[28,780+3])
+      Tmty_signature
+      [
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+64])
+          Tsig_value
+          value_description core_type_of_sexp/659 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+64])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[18,439+2]..[18,439+56])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[18,439+2]..[18,439+56])
+                    Pexp_constant PConst_string(" Given a type, produce its [of_sexp] conversion. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[18,439+2]..[18,439+56]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+64])
+              Ttyp_arrow
+              Labelled "path"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+31]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+37])
+                Ttyp_constr "Base!.string"
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+41]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+64])
+                Ttyp_arrow
+                Nolabel
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+41]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+50])
+                  Ttyp_constr "Ppxlib!.core_type"
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+54]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[19,496+64])
+                  Ttyp_constr "Ppxlib!.expression"
+                  []
+            []
+        signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[22,639+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+26])
+          Tsig_value
+          value_description tds_of_sexp/660 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[22,639+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+26])
+            attribute "ocaml.doc"
+              [
+                structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[21,562+2]..[21,562+76])
+                  Pstr_eval
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[21,562+2]..[21,562+76])
+                    Pexp_constant PConst_string(" Derive an [of_sexp] implementation for a list of type declarations. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[21,562+2]..[21,562+76]),None)
+              ]
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[23,657+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+26])
+              Ttyp_arrow
+              Labelled "loc"
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[23,657+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[23,657+19])
+                Ttyp_constr "Ppxlib!.location"
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[24,677+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+26])
+                Ttyp_arrow
+                Labelled "poly"
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[24,677+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[24,677+16])
+                  Ttyp_constr "Base!.bool"
+                  []
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[25,694+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+26])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[25,694+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[25,694+18])
+                    Ttyp_constr "Base!.string"
+                    []
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+26])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+39])
+                      Ttyp_tuple
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+15])
+                          Ttyp_constr "Ppxlib!.rec_flag"
+                          []
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+39])
+                          Ttyp_constr "Base!.list"
+                          [
+                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[26,713+34])
+                              Ttyp_constr "Ppxlib!.type_declaration"
+                              []
+                          ]
+                      ]
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+26])
+                      Ttyp_constr "Base!.list"
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/expand_of_sexp.mli[27,753+21])
+                          Ttyp_constr "Ppxlib!.structure_item"
+                          []
+                      ]
+            []
+      ]
+]
+

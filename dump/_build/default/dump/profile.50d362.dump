@@ -1,0 +1,12 @@
+0.102s  114MB 27.7MB 29.5MB test/deriving_warning/ppx/ppx_warning_flags.pp.ml
+  0.083s 76.2MB 26.1MB 27.8MB typing
+  0.001s 2.01MB 0.03MB ------ transl
+  0.009s 13.0MB 1.06MB 28.9MB generate
+    0.003s 6.80MB 0.81MB 28.6MB compile_phrases
+      0.001s 2.52MB 0.25MB 28.1MB selection
+      0.001s 2.00MB 0.31MB 28.4MB spill
+      0.001s 2.27MB 0.25MB 28.6MB regalloc
+    0.003s ------ ------ ------ assemble
+    0.002s 6.26MB 0.25MB 28.9MB other
+  0.009s 23.5MB 0.56MB 29.5MB other
+0.007s 3.02MB 1.72MB ------ other

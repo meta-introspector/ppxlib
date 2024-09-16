@@ -1,0 +1,313 @@
+[
+  structure_item (test/expansion_context/map_structure_print_ctxt.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/expansion_context/map_structure_print_ctxt.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/expansion_context/map_structure_print_ctxt.ml[1,0+5]..[1,0+11])
+  structure_item (test/expansion_context/map_structure_print_ctxt.ml[3,13+0]..[4,67+78])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+4]..[3,13+16])
+          Ppat_var "set_filename" (test/expansion_context/map_structure_print_ctxt.ml[3,13+4]..[3,13+16])
+        expression (test/expansion_context/map_structure_print_ctxt.ml[3,13+17]..[4,67+78]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+17]..[3,13+41])
+            Ppat_constraint
+            pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+18]..[3,13+24])
+              Ppat_var "lexbuf" (test/expansion_context/map_structure_print_ctxt.ml[3,13+18]..[3,13+24])
+            core_type (test/expansion_context/map_structure_print_ctxt.ml[3,13+27]..[3,13+40])
+              Ptyp_constr "Lexing.lexbuf" (test/expansion_context/map_structure_print_ctxt.ml[3,13+27]..[3,13+40])
+              []
+          expression (test/expansion_context/map_structure_print_ctxt.ml[3,13+42]..[4,67+78]) ghost
+            Pexp_fun
+            Labelled "filename"
+            None
+            pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+43]..[3,13+51])
+              Ppat_var "filename" (test/expansion_context/map_structure_print_ctxt.ml[3,13+43]..[3,13+51])
+            expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+2]..[4,67+78])
+              Pexp_record
+              [
+                "lex_curr_p" (test/expansion_context/map_structure_print_ctxt.ml[4,67+16]..[4,67+26])
+                  expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+29]..[4,67+76])
+                    Pexp_record
+                    [
+                      "pos_fname" (test/expansion_context/map_structure_print_ctxt.ml[4,67+54]..[4,67+63])
+                        expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+66]..[4,67+74])
+                          Pexp_ident "filename" (test/expansion_context/map_structure_print_ctxt.ml[4,67+66]..[4,67+74])
+                    ]
+                    Some
+                      expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+31]..[4,67+48])
+                        Pexp_field
+                        expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+31]..[4,67+37])
+                          Pexp_ident "lexbuf" (test/expansion_context/map_structure_print_ctxt.ml[4,67+31]..[4,67+37])
+                        "lex_curr_p" (test/expansion_context/map_structure_print_ctxt.ml[4,67+38]..[4,67+48])
+              ]
+              Some
+                expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+4]..[4,67+10])
+                  Pexp_ident "lexbuf" (test/expansion_context/map_structure_print_ctxt.ml[4,67+4]..[4,67+10])
+    ]
+  structure_item (test/expansion_context/map_structure_print_ctxt.ml[6,147+0]..[9,230+49])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/map_structure_print_ctxt.ml[6,147+4]..[6,147+5])
+          Ppat_any
+        expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..[9,230+49])
+          Pexp_apply
+          expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+26]..[9,230+28])
+            Pexp_ident "|>" (test/expansion_context/map_structure_print_ctxt.ml[9,230+26]..[9,230+28])
+          [
+            <arg>
+            Nolabel
+              expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..[9,230+25])
+                Pexp_apply
+                expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+2]..[9,230+4])
+                  Pexp_ident "|>" (test/expansion_context/map_structure_print_ctxt.ml[9,230+2]..[9,230+4])
+                [
+                  <arg>
+                  Nolabel
+                    expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..[8,183+46])
+                      Pexp_apply
+                      expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+2]..[8,183+4])
+                        Pexp_ident "|>" (test/expansion_context/map_structure_print_ctxt.ml[8,183+2]..[8,183+4])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..[7,155+27])
+                            Pexp_apply
+                            expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..[7,155+21])
+                              Pexp_ident "Lexing.from_channel" (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..[7,155+21])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+22]..[7,155+27])
+                                  Pexp_ident "stdin" (test/expansion_context/map_structure_print_ctxt.ml[7,155+22]..[7,155+27])
+                            ]
+                        <arg>
+                        Nolabel
+                          expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+5]..[8,183+46])
+                            Pexp_apply
+                            expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+5]..[8,183+17])
+                              Pexp_ident "set_filename" (test/expansion_context/map_structure_print_ctxt.ml[8,183+5]..[8,183+17])
+                            [
+                              <arg>
+                              Labelled "filename"
+                                expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+28]..[8,183+46])
+                                  Pexp_constant PConst_string("lexbuf_pos_fname",(test/expansion_context/map_structure_print_ctxt.ml[8,183+29]..[8,183+45]),None)
+                            ]
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+5]..[9,230+25])
+                      Pexp_ident "Parse.implementation" (test/expansion_context/map_structure_print_ctxt.ml[9,230+5]..[9,230+25])
+                ]
+            <arg>
+            Nolabel
+              expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+29]..[9,230+49])
+                Pexp_ident "Driver.map_structure" (test/expansion_context/map_structure_print_ctxt.ml[9,230+29]..[9,230+49])
+          ]
+    ]
+]
+
+open Ppxlib
+let set_filename (lexbuf : Lexing.lexbuf) ~filename  =
+  {
+    lexbuf with
+    lex_curr_p = { (lexbuf.lex_curr_p) with pos_fname = filename }
+  }
+let _ =
+  (((Lexing.from_channel stdin) |>
+      (set_filename ~filename:"lexbuf_pos_fname"))
+     |> Parse.implementation)
+    |> Driver.map_structure
+[
+  structure_item (test/expansion_context/map_structure_print_ctxt.ml[1,0+0]..test/expansion_context/map_structure_print_ctxt.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/expansion_context/map_structure_print_ctxt.ml[1,0+5]..test/expansion_context/map_structure_print_ctxt.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/expansion_context/map_structure_print_ctxt.ml[3,13+0]..test/expansion_context/map_structure_print_ctxt.ml[4,67+78])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+4]..test/expansion_context/map_structure_print_ctxt.ml[3,13+16])
+          Tpat_var "set_filename/491"
+        expression (test/expansion_context/map_structure_print_ctxt.ml[3,13+17]..test/expansion_context/map_structure_print_ctxt.ml[4,67+78]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+18]..test/expansion_context/map_structure_print_ctxt.ml[3,13+24])
+                Tpat_extra_constraint
+                core_type (test/expansion_context/map_structure_print_ctxt.ml[3,13+27]..test/expansion_context/map_structure_print_ctxt.ml[3,13+40])
+                  Ttyp_constr "Stdlib!.Lexing.lexbuf"
+                  []
+                pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+18]..test/expansion_context/map_structure_print_ctxt.ml[3,13+24])
+                  Tpat_alias "lexbuf/520"
+                  pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+18]..test/expansion_context/map_structure_print_ctxt.ml[3,13+24])
+                    Tpat_any
+              expression (test/expansion_context/map_structure_print_ctxt.ml[3,13+42]..test/expansion_context/map_structure_print_ctxt.ml[4,67+78]) ghost
+                Texp_function
+                Labelled "filename"
+                [
+                  <case>
+                    pattern (test/expansion_context/map_structure_print_ctxt.ml[3,13+43]..test/expansion_context/map_structure_print_ctxt.ml[3,13+51])
+                      Tpat_var "filename/521"
+                    expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+2]..test/expansion_context/map_structure_print_ctxt.ml[4,67+78])
+                      Texp_record
+                        fields =
+                          [
+                            <kept>                            <kept>                            <kept>                            <kept>                            <kept>                            <kept>                            <kept>                            <kept>                            <kept>                            <kept>                            <kept>                            "lex_curr_p"
+                              expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+29]..test/expansion_context/map_structure_print_ctxt.ml[4,67+76])
+                                Texp_record
+                                  fields =
+                                    [
+                                      "pos_fname"
+                                        expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+66]..test/expansion_context/map_structure_print_ctxt.ml[4,67+74])
+                                          Texp_ident "filename/521"
+                                      <kept>                                      <kept>                                      <kept>                                    ]
+                                  representation =
+                                    Record_regular
+                                  extended_expression =
+                                    Some
+                                      expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+31]..test/expansion_context/map_structure_print_ctxt.ml[4,67+48])
+                                        Texp_field
+                                        expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+31]..test/expansion_context/map_structure_print_ctxt.ml[4,67+37])
+                                          Texp_ident "lexbuf/520"
+                                        "lex_curr_p"
+                          ]
+                        representation =
+                          Record_regular
+                        extended_expression =
+                          Some
+                            expression (test/expansion_context/map_structure_print_ctxt.ml[4,67+4]..test/expansion_context/map_structure_print_ctxt.ml[4,67+10])
+                              Texp_ident "lexbuf/520"
+                ]
+          ]
+    ]
+  structure_item (test/expansion_context/map_structure_print_ctxt.ml[6,147+0]..test/expansion_context/map_structure_print_ctxt.ml[9,230+49])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/expansion_context/map_structure_print_ctxt.ml[6,147+4]..test/expansion_context/map_structure_print_ctxt.ml[6,147+5])
+          Tpat_any
+        expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..test/expansion_context/map_structure_print_ctxt.ml[9,230+49])
+          Texp_apply
+          expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+26]..test/expansion_context/map_structure_print_ctxt.ml[9,230+28])
+            Texp_ident "Stdlib!.|>"
+          [
+            <arg>
+              Nolabel
+              expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..test/expansion_context/map_structure_print_ctxt.ml[9,230+25])
+                Texp_apply
+                expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+2]..test/expansion_context/map_structure_print_ctxt.ml[9,230+4])
+                  Texp_ident "Stdlib!.|>"
+                [
+                  <arg>
+                    Nolabel
+                    expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..test/expansion_context/map_structure_print_ctxt.ml[8,183+46])
+                      Texp_apply
+                      expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+2]..test/expansion_context/map_structure_print_ctxt.ml[8,183+4])
+                        Texp_ident "Stdlib!.|>"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..test/expansion_context/map_structure_print_ctxt.ml[7,155+27])
+                            Texp_apply
+                            expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+2]..test/expansion_context/map_structure_print_ctxt.ml[7,155+21])
+                              Texp_ident "Stdlib!.Lexing.from_channel"
+                            [
+                              <arg>
+                                Optional "with_positions"
+                                expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                                  Texp_construct "None"
+                                  []
+                              <arg>
+                                Nolabel
+                                expression (test/expansion_context/map_structure_print_ctxt.ml[7,155+22]..test/expansion_context/map_structure_print_ctxt.ml[7,155+27])
+                                  Texp_ident "Stdlib!.stdin"
+                            ]
+                        <arg>
+                          Nolabel
+                          expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+5]..test/expansion_context/map_structure_print_ctxt.ml[8,183+46])
+                            Texp_apply
+                            expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+5]..test/expansion_context/map_structure_print_ctxt.ml[8,183+17])
+                              Texp_ident "set_filename/491"
+                            [
+                              <arg>
+                                Nolabel
+                              <arg>
+                                Labelled "filename"
+                                expression (test/expansion_context/map_structure_print_ctxt.ml[8,183+28]..test/expansion_context/map_structure_print_ctxt.ml[8,183+46])
+                                  Texp_constant Const_string("lexbuf_pos_fname",(test/expansion_context/map_structure_print_ctxt.ml[8,183+29]..test/expansion_context/map_structure_print_ctxt.ml[8,183+45]),None)
+                            ]
+                      ]
+                  <arg>
+                    Nolabel
+                    expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+5]..test/expansion_context/map_structure_print_ctxt.ml[9,230+25])
+                      Texp_ident "Ppxlib!.Parse.implementation"
+                ]
+            <arg>
+              Nolabel
+              expression (test/expansion_context/map_structure_print_ctxt.ml[9,230+29]..test/expansion_context/map_structure_print_ctxt.ml[9,230+49])
+                Texp_ident "Ppxlib!.Driver.map_structure"
+          ]
+    ]
+]
+
+(seq
+  (let
+    (set_filename/491 =
+       (function lexbuf/520 filename/521
+         (let (init/5104 = lexbuf/520)
+           (makemutable 0 (*,*,int,int,int,int,int,int,*,*,*,*)
+             (field_imm 0 init/5104) (field_mut 1 init/5104)
+             (field_int 2 init/5104) (field_int 3 init/5104)
+             (field_int 4 init/5104) (field_int 5 init/5104)
+             (field_int 6 init/5104) (field_int 7 init/5104)
+             (field_int 8 init/5104) (field_mut 9 init/5104)
+             (field_mut 10 init/5104)
+             (let (init/5105 = (field_mut 11 lexbuf/520))
+               (makeblock 0 (*,int,int,int) filename/521
+                 (field_int 1 init/5105) (field_int 2 init/5105)
+                 (field_int 3 init/5105)))))))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Map_structure_print_ctxt!)
+      set_filename/491))
+  (revapply
+    (revapply
+      (revapply
+        (apply (field_imm 1 (global Stdlib__lexing!)) 0
+          (field_imm 40 (global Stdlib!)))
+        (function param/5106 stub
+          (apply (field_imm 0 (global Dune__exe__Map_structure_print_ctxt!))
+            param/5106 "lexbuf_pos_fname")))
+      (field_imm 1 (field_imm 2 (global Ppxlib_ast__Import!))))
+    (field_imm 14 (global Ppxlib__Driver!)))
+  0 0)
+(seq
+  (let
+    (set_filename/491 =
+       (function lexbuf/520 filename/521
+         (makemutable 0 (*,*,int,int,int,int,int,int,*,*,*,*)
+           (field_imm 0 lexbuf/520) (field_mut 1 lexbuf/520)
+           (field_int 2 lexbuf/520) (field_int 3 lexbuf/520)
+           (field_int 4 lexbuf/520) (field_int 5 lexbuf/520)
+           (field_int 6 lexbuf/520) (field_int 7 lexbuf/520)
+           (field_int 8 lexbuf/520) (field_mut 9 lexbuf/520)
+           (field_mut 10 lexbuf/520)
+           (let (init/5105 = (field_mut 11 lexbuf/520))
+             (makeblock 0 (*,int,int,int) filename/521
+               (field_int 1 init/5105) (field_int 2 init/5105)
+               (field_int 3 init/5105))))))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Map_structure_print_ctxt!)
+      set_filename/491))
+  (apply (field_imm 14 (global Ppxlib__Driver!))
+    (apply (field_imm 1 (field_imm 2 (global Ppxlib_ast__Import!)))
+      (let
+        (param/5106 =
+           (apply (field_imm 1 (global Stdlib__lexing!)) 0
+             (field_imm 40 (global Stdlib!))))
+        (apply (field_imm 0 (global Dune__exe__Map_structure_print_ctxt!))
+          param/5106 "lexbuf_pos_fname"))))
+  0 0)

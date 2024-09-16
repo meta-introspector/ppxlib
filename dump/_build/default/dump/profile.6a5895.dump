@@ -1,0 +1,11 @@
+0.011s 13.1MB 2.71MB 2.71MB print-diff/ppxlib_print_diff.ml
+  0.001s 2.93MB 1.59MB 1.59MB parsing
+    0.001s 2.93MB 1.59MB 1.59MB parser
+  0.003s 5.81MB 1.12MB 2.71MB typing
+  0.004s 2.12MB ------ ------ generate
+    0.001s 0.12MB ------ ------ compile_phrases
+      ------ 0.12MB ------ ------ regalloc
+    0.003s ------ ------ ------ assemble
+    0.001s 2.00MB ------ ------ other
+  0.002s 2.31MB ------ ------ other
+0.004s ------ ------ ------ other

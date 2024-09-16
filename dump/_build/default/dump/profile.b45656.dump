@@ -1,0 +1,7 @@
+0.187s 73.3MB 24.6MB 24.6MB examples/simple-deriver/ppx_deriving_accessors.ml
+  0.001s ------ ------ ------ parsing
+  0.171s 62.2MB 22.6MB 22.6MB typing
+  0.001s 2.00MB 0.03MB 22.7MB transl
+  0.004s 2.06MB 0.03MB ------ generate
+  0.010s 7.08MB 1.85MB 24.6MB other
+0.006s ------ ------ ------ other

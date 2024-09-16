@@ -1,0 +1,33 @@
+[
+  signature_item (src/skip_hash_bang.mli[1,0+0]..[1,0+42])
+    Psig_value
+    value_description "skip_hash_bang" (src/skip_hash_bang.mli[1,0+4]..[1,0+18]) (src/skip_hash_bang.mli[1,0+0]..[1,0+42])
+      core_type (src/skip_hash_bang.mli[1,0+21]..[1,0+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/skip_hash_bang.mli[1,0+21]..[1,0+34])
+          Ptyp_constr "Lexing.lexbuf" (src/skip_hash_bang.mli[1,0+21]..[1,0+34])
+          []
+        core_type (src/skip_hash_bang.mli[1,0+38]..[1,0+42])
+          Ptyp_constr "unit" (src/skip_hash_bang.mli[1,0+38]..[1,0+42])
+          []
+      []
+]
+
+val skip_hash_bang : Lexing.lexbuf -> unit
+[
+  signature_item (src/skip_hash_bang.mli[1,0+0]..src/skip_hash_bang.mli[1,0+42])
+    Tsig_value
+    value_description skip_hash_bang/147 (src/skip_hash_bang.mli[1,0+0]..src/skip_hash_bang.mli[1,0+42])
+      core_type (src/skip_hash_bang.mli[1,0+21]..src/skip_hash_bang.mli[1,0+42])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/skip_hash_bang.mli[1,0+21]..src/skip_hash_bang.mli[1,0+34])
+          Ttyp_constr "Stdlib!.Lexing.lexbuf"
+          []
+        core_type (src/skip_hash_bang.mli[1,0+38]..src/skip_hash_bang.mli[1,0+42])
+          Ttyp_constr "unit/6!"
+          []
+      []
+]
+

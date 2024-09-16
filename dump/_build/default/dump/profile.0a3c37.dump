@@ -1,0 +1,5 @@
+0.228s 53.3MB 19.9MB 19.9MB test/driver/exception_handling/whole_file_extension_point.ml
+  0.221s 50.0MB 18.4MB 18.4MB typing
+  0.002s 0.44MB ------ ------ generate
+  0.004s 2.79MB 1.47MB 19.9MB other
+0.009s ------ ------ ------ other

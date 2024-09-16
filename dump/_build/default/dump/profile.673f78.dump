@@ -1,0 +1,8 @@
+0.027s 65.1MB 4.46MB 4.46MB traverse_builtins/ppxlib_traverse_builtins.ml
+  0.002s 2.80MB 1.46MB 1.46MB parsing
+    0.002s 2.80MB 1.46MB 1.46MB parser
+  0.014s 25.7MB 2.59MB 4.05MB typing
+  0.001s 2.05MB 0.03MB 4.08MB transl
+  0.004s 12.2MB 0.15MB 4.24MB generate
+  0.007s 22.2MB 0.21MB 4.46MB other
+0.004s ------ ------ ------ other

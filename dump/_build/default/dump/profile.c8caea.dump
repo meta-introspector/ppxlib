@@ -1,0 +1,6 @@
+0.042s 15.1MB 6.06MB 7.78MB bench/drivers/identity/driver.ml
+  0.034s 14.0MB 6.06MB 7.78MB typing
+  0.008s 1.12MB ------ ------ generate
+    0.005s ------ ------ ------ assemble
+    0.003s 1.12MB ------ ------ other
+0.016s 3.02MB 1.72MB ------ other

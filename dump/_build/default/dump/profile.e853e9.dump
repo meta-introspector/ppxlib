@@ -1,0 +1,10 @@
+0.007s 7.00MB 2.57MB 2.57MB src/cinaps/ppxlib_cinaps_helpers.ml
+  0.001s 2.95MB 1.63MB 1.63MB parsing
+    0.001s 2.95MB 1.63MB 1.63MB parser
+  0.002s 2.11MB 0.81MB 2.44MB typing
+  0.003s 0.22MB ------ ------ generate
+    ------ 0.22MB ------ ------ compile_phrases
+      ------ 0.22MB ------ ------ selection
+    0.002s ------ ------ ------ assemble
+  0.001s 1.70MB 0.12MB 2.57MB other
+0.004s ------ ------ ------ other

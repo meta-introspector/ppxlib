@@ -1,0 +1,2153 @@
+[
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (examples/simple-deriver/ppx_deriving_accessors.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (examples/simple-deriver/ppx_deriving_accessors.ml[1,0+5]..[1,0+11])
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[2,12+0]..[2,12+24])
+    Pstr_module
+    "List" (examples/simple-deriver/ppx_deriving_accessors.ml[2,12+7]..[2,12+11])
+      module_expr (examples/simple-deriver/ppx_deriving_accessors.ml[2,12+14]..[2,12+24])
+        Pmod_ident "ListLabels" (examples/simple-deriver/ppx_deriving_accessors.ml[2,12+14]..[2,12+24])
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[3,37+0]..[3,37+24])
+    Pstr_open Fresh
+    module_expr (examples/simple-deriver/ppx_deriving_accessors.ml[3,37+5]..[3,37+24])
+      Pmod_ident "Ast_builder.Default" (examples/simple-deriver/ppx_deriving_accessors.ml[3,37+5]..[3,37+24])
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+0]..[20,531+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+4]..[5,63+17])
+          Ppat_var "accessor_impl" (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+4]..[5,63+17])
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+18]..[20,531+5]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+18]..[5,63+42])
+            Ppat_constraint
+            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+19]..[5,63+21])
+              Ppat_var "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+19]..[5,63+21])
+            core_type (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+24]..[5,63+41])
+              Ptyp_constr "label_declaration" (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+24]..[5,63+41])
+              []
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+2]..[20,531+5])
+            Pexp_let Nonrec
+            [
+              <def>
+                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+6]..[6,108+9])
+                  Ppat_var "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+6]..[6,108+9])
+                expression (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+12]..[6,108+22])
+                  Pexp_field
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+12]..[6,108+14])
+                    Pexp_ident "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+12]..[6,108+14])
+                  "pld_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+15]..[6,108+22])
+            ]
+            expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+2]..[20,531+5])
+              Pexp_apply
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+2]..[7,134+12])
+                Pexp_ident "pstr_value" (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+2]..[7,134+12])
+              [
+                <arg>
+                Labelled "loc"
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+14]..[7,134+17])
+                    Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+14]..[7,134+17])
+                <arg>
+                Nolabel
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+18]..[7,134+30])
+                    Pexp_construct "Nonrecursive" (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+18]..[7,134+30])
+                    None
+                <arg>
+                Nolabel
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[8,165+4]..[20,531+5])
+                    Pexp_construct "::" (examples/simple-deriver/ppx_deriving_accessors.ml[9,171+6]..[20,531+5]) ghost
+                    Some
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[9,171+6]..[20,531+5]) ghost
+                        Pexp_tuple
+                        [
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[9,171+6]..[19,522+7])
+                            Pexp_record
+                            [
+                              "pvb_pat" (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+8]..[10,179+15])
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+18]..[10,179+43])
+                                  Pexp_apply
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+18]..[10,179+26])
+                                    Pexp_ident "ppat_var" (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+18]..[10,179+26])
+                                  [
+                                    <arg>
+                                    Labelled "loc"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+28]..[10,179+31])
+                                        Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+28]..[10,179+31])
+                                    <arg>
+                                    Nolabel
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+32]..[10,179+43])
+                                        Pexp_field
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+32]..[10,179+34])
+                                          Pexp_ident "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+32]..[10,179+34])
+                                        "pld_name" (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+35]..[10,179+43])
+                                  ]
+                              "pvb_expr" (examples/simple-deriver/ppx_deriving_accessors.ml[11,224+8]..[11,224+16])
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+10]..[16,415+53])
+                                  Pexp_apply
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+10]..[12,243+18])
+                                    Pexp_ident "pexp_fun" (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+10]..[12,243+18])
+                                  [
+                                    <arg>
+                                    Labelled "loc"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+20]..[12,243+23])
+                                        Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+20]..[12,243+23])
+                                    <arg>
+                                    Nolabel
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+24]..[12,243+31])
+                                        Pexp_construct "Nolabel" (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+24]..[12,243+31])
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+32]..[12,243+36])
+                                        Pexp_construct "None" (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+32]..[12,243+36])
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+12]..[13,280+46])
+                                        Pexp_apply
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+13]..[13,280+21])
+                                          Pexp_ident "ppat_var" (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+13]..[13,280+21])
+                                        [
+                                          <arg>
+                                          Labelled "loc"
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+23]..[13,280+26])
+                                              Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+23]..[13,280+26])
+                                          <arg>
+                                          Nolabel
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+27]..[13,280+45])
+                                              Pexp_record
+                                              [
+                                                "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+29]..[13,280+32])
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+29]..[13,280+32]) ghost
+                                                    Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+29]..[13,280+32]) ghost
+                                                "txt" (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+34]..[13,280+37])
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+40]..[13,280+43])
+                                                    Pexp_constant PConst_string("x",(examples/simple-deriver/ppx_deriving_accessors.ml[13,280+41]..[13,280+42]),None)
+                                              ]
+                                              None
+                                        ]
+                                    <arg>
+                                    Nolabel
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+12]..[16,415+53])
+                                        Pexp_apply
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+13]..[14,327+23])
+                                          Pexp_ident "pexp_field" (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+13]..[14,327+23])
+                                        [
+                                          <arg>
+                                          Labelled "loc"
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+25]..[14,327+28])
+                                              Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+25]..[14,327+28])
+                                          <arg>
+                                          Nolabel
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+15]..[15,356+58])
+                                              Pexp_apply
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+16]..[15,356+26])
+                                                Pexp_ident "pexp_ident" (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+16]..[15,356+26])
+                                              [
+                                                <arg>
+                                                Labelled "loc"
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+28]..[15,356+31])
+                                                    Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+28]..[15,356+31])
+                                                <arg>
+                                                Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+32]..[15,356+57])
+                                                    Pexp_record
+                                                    [
+                                                      "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+34]..[15,356+37])
+                                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+34]..[15,356+37]) ghost
+                                                          Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+34]..[15,356+37]) ghost
+                                                      "txt" (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+39]..[15,356+42])
+                                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+45]..[15,356+55])
+                                                          Pexp_apply
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+45]..[15,356+51])
+                                                            Pexp_ident "lident" (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+45]..[15,356+51])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+52]..[15,356+55])
+                                                                Pexp_constant PConst_string("x",(examples/simple-deriver/ppx_deriving_accessors.ml[15,356+53]..[15,356+54]),None)
+                                                          ]
+                                                    ]
+                                                    None
+                                              ]
+                                          <arg>
+                                          Nolabel
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+15]..[16,415+52])
+                                              Pexp_record
+                                              [
+                                                "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+17]..[16,415+20])
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+17]..[16,415+20]) ghost
+                                                    Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+17]..[16,415+20]) ghost
+                                                "txt" (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+22]..[16,415+25])
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+28]..[16,415+50])
+                                                    Pexp_apply
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+28]..[16,415+34])
+                                                      Pexp_ident "lident" (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+28]..[16,415+34])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+35]..[16,415+50])
+                                                          Pexp_field
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+35]..[16,415+46])
+                                                            Pexp_field
+                                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+35]..[16,415+37])
+                                                              Pexp_ident "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+35]..[16,415+37])
+                                                            "pld_name" (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+38]..[16,415+46])
+                                                          "txt" (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+47]..[16,415+50])
+                                                    ]
+                                              ]
+                                              None
+                                        ]
+                                  ]
+                              "pvb_attributes" (examples/simple-deriver/ppx_deriving_accessors.ml[17,470+8]..[17,470+22])
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[17,470+25]..[17,470+27])
+                                  Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[17,470+25]..[17,470+27])
+                                  None
+                              "pvb_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[18,499+8]..[18,499+15])
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[18,499+18]..[18,499+21])
+                                  Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[18,499+18]..[18,499+21])
+                            ]
+                            None
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[20,531+4]..[20,531+5]) ghost
+                            Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[20,531+4]..[20,531+5]) ghost
+                            None
+                        ]
+              ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+0]..[34,890+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+4]..[22,538+17])
+          Ppat_var "accessor_intf" (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+4]..[22,538+17])
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+18]..[34,890+5]) ghost
+          Pexp_fun
+          Labelled "ptype_name"
+          None
+          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+19]..[22,538+29])
+            Ppat_var "ptype_name" (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+19]..[22,538+29])
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+30]..[34,890+5]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+30]..[22,538+54])
+              Ppat_constraint
+              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+31]..[22,538+33])
+                Ppat_var "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+31]..[22,538+33])
+              core_type (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+36]..[22,538+53])
+                Ptyp_constr "label_declaration" (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+36]..[22,538+53])
+                []
+            expression (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+2]..[34,890+5])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+6]..[23,595+9])
+                    Ppat_var "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+6]..[23,595+9])
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+12]..[23,595+22])
+                    Pexp_field
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+12]..[23,595+14])
+                      Pexp_ident "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+12]..[23,595+14])
+                    "pld_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+15]..[23,595+22])
+              ]
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+2]..[34,890+5])
+                Pexp_apply
+                expression (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+2]..[24,621+12])
+                  Pexp_ident "psig_value" (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+2]..[24,621+12])
+                [
+                  <arg>
+                  Labelled "loc"
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+14]..[24,621+17])
+                      Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+14]..[24,621+17])
+                  <arg>
+                  Nolabel
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[25,639+4]..[34,890+5])
+                      Pexp_record
+                      [
+                        "pval_name" (examples/simple-deriver/ppx_deriving_accessors.ml[26,645+6]..[26,645+15])
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[26,645+18]..[26,645+29])
+                            Pexp_field
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[26,645+18]..[26,645+20])
+                              Pexp_ident "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[26,645+18]..[26,645+20])
+                            "pld_name" (examples/simple-deriver/ppx_deriving_accessors.ml[26,645+21]..[26,645+29])
+                        "pval_type" (examples/simple-deriver/ppx_deriving_accessors.ml[27,676+6]..[27,676+15])
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+8]..[30,795+21])
+                            Pexp_apply
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+8]..[28,694+18])
+                              Pexp_ident "ptyp_arrow" (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+8]..[28,694+18])
+                            [
+                              <arg>
+                              Labelled "loc"
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+20]..[28,694+23])
+                                  Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+20]..[28,694+23])
+                              <arg>
+                              Nolabel
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+24]..[28,694+31])
+                                  Pexp_construct "Nolabel" (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+24]..[28,694+31])
+                                  None
+                              <arg>
+                              Nolabel
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+10]..[29,726+68])
+                                  Pexp_apply
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+11]..[29,726+22])
+                                    Pexp_ident "ptyp_constr" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+11]..[29,726+22])
+                                  [
+                                    <arg>
+                                    Labelled "loc"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+24]..[29,726+27])
+                                        Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+24]..[29,726+27])
+                                    <arg>
+                                    Nolabel
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+28]..[29,726+64])
+                                        Pexp_record
+                                        [
+                                          "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+30]..[29,726+33])
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+30]..[29,726+33]) ghost
+                                              Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+30]..[29,726+33]) ghost
+                                          "txt" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+35]..[29,726+38])
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+41]..[29,726+62])
+                                              Pexp_apply
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+41]..[29,726+47])
+                                                Pexp_ident "lident" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+41]..[29,726+47])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+48]..[29,726+62])
+                                                    Pexp_field
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+48]..[29,726+58])
+                                                      Pexp_ident "ptype_name" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+48]..[29,726+58])
+                                                    "txt" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+59]..[29,726+62])
+                                              ]
+                                        ]
+                                        None
+                                    <arg>
+                                    Nolabel
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+65]..[29,726+67])
+                                        Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+65]..[29,726+67])
+                                        None
+                                  ]
+                              <arg>
+                              Nolabel
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[30,795+10]..[30,795+21])
+                                  Pexp_field
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[30,795+10]..[30,795+12])
+                                    Pexp_ident "ld" (examples/simple-deriver/ppx_deriving_accessors.ml[30,795+10]..[30,795+12])
+                                  "pld_type" (examples/simple-deriver/ppx_deriving_accessors.ml[30,795+13]..[30,795+21])
+                            ]
+                        "pval_attributes" (examples/simple-deriver/ppx_deriving_accessors.ml[31,818+6]..[31,818+21])
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[31,818+24]..[31,818+26])
+                            Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[31,818+24]..[31,818+26])
+                            None
+                        "pval_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[32,846+6]..[32,846+14])
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[32,846+17]..[32,846+20])
+                            Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[32,846+17]..[32,846+20])
+                        "pval_prim" (examples/simple-deriver/ppx_deriving_accessors.ml[33,868+6]..[33,868+15])
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[33,868+18]..[33,868+20])
+                            Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[33,868+18]..[33,868+20])
+                            None
+                      ]
+                      None
+                ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+0]..[52,1520+16])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+4]..[36,897+17])
+          Ppat_var "generate_impl" (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+4]..[36,897+17])
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+18]..[52,1520+16]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+19]..[36,897+23])
+            Ppat_var "ctxt" (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+19]..[36,897+23])
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+24]..[52,1520+16]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+24]..[36,897+54])
+              Ppat_tuple
+              [
+                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+25]..[36,897+34])
+                  Ppat_var "_rec_flag" (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+25]..[36,897+34])
+                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+36]..[36,897+53])
+                  Ppat_var "type_declarations" (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+36]..[36,897+53])
+              ]
+            expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+2]..[52,1520+16])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+6]..[37,954+9])
+                    Ppat_var "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+6]..[37,954+9])
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+12]..[37,954+59])
+                    Pexp_apply
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+12]..[37,954+54])
+                      Pexp_ident "Expansion_context.Deriver.derived_item_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+12]..[37,954+54])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+55]..[37,954+59])
+                          Pexp_ident "ctxt" (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+55]..[37,954+59])
+                    ]
+              ]
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+2]..[52,1520+16])
+                Pexp_apply
+                expression (examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+2]..[52,1520+4])
+                  Pexp_ident "|>" (examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+2]..[52,1520+4])
+                [
+                  <arg>
+                  Nolabel
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+2]..[51,1476+43])
+                      Pexp_apply
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+2]..[38,1017+10])
+                        Pexp_ident "List.map" (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+2]..[38,1017+10])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+11]..[38,1017+28])
+                            Pexp_ident "type_declarations" (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+11]..[38,1017+28])
+                        <arg>
+                        Labelled "f"
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+32]..[51,1476+43])
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+37]..[38,1017+60])
+                              Ppat_constraint
+                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+38]..[38,1017+40])
+                                Ppat_var "td" (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+38]..[38,1017+40])
+                              core_type (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+43]..[38,1017+59])
+                                Ptyp_constr "type_declaration" (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+43]..[38,1017+59])
+                                []
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[39,1081+6]..[51,1476+42])
+                              Pexp_match
+                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[39,1081+12]..[39,1081+14])
+                                Pexp_ident "td" (examples/simple-deriver/ppx_deriving_accessors.ml[39,1081+12]..[39,1081+14])
+                              [
+                                <case>
+                                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[40,1101+8]..[44,1206+7])
+                                    Ppat_record Open
+                                    [
+                                      "ptype_kind" (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+7]..[41,1111+17])
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+20]..[41,1111+65])
+                                          Ppat_or
+                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+20]..[41,1111+52])
+                                            Ppat_or
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+20]..[41,1111+34])
+                                              Ppat_construct "Ptype_abstract" (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+20]..[41,1111+34])
+                                              None
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+37]..[41,1111+52])
+                                              Ppat_construct "Ptype_variant" (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+37]..[41,1111+50])
+                                              Some
+                                                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+51]..[41,1111+52])
+                                                  Ppat_any
+                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+55]..[41,1111+65])
+                                            Ppat_construct "Ptype_open" (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+55]..[41,1111+65])
+                                            None
+                                      "ptype_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[42,1178+7]..[42,1178+16]) ghost
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[42,1178+7]..[42,1178+16])
+                                          Ppat_var "ptype_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[42,1178+7]..[42,1178+16])
+                                    ]
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[45,1217+10]..[49,1364+60])
+                                    Pexp_let Nonrec
+                                    [
+                                      <def>
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[45,1217+14]..[45,1217+17])
+                                          Ppat_var "ext" (examples/simple-deriver/ppx_deriving_accessors.ml[45,1217+14]..[45,1217+17])
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+12]..[47,1290+60])
+                                          Pexp_apply
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+12]..[46,1237+37])
+                                            Pexp_ident "Location.error_extensionf" (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+12]..[46,1237+37])
+                                          [
+                                            <arg>
+                                            Labelled "loc"
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+43]..[46,1237+52])
+                                                Pexp_ident "ptype_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+43]..[46,1237+52])
+                                            <arg>
+                                            Nolabel
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..[47,1290+60])
+                                                Pexp_constant PConst_string("Cannot derive accessors for non record types",(examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+15]..[47,1290+59]),None)
+                                          ]
+                                    ]
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+10]..[49,1364+60])
+                                      Pexp_construct "::" (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+12]..[49,1364+60]) ghost
+                                      Some
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+12]..[49,1364+60]) ghost
+                                          Pexp_tuple
+                                          [
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+12]..[49,1364+58])
+                                              Pexp_apply
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+12]..[49,1364+46])
+                                                Pexp_ident "Ast_builder.Default.pstr_extension" (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+12]..[49,1364+46])
+                                              [
+                                                <arg>
+                                                Labelled "loc"
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+48]..[49,1364+51])
+                                                    Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+48]..[49,1364+51])
+                                                <arg>
+                                                Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+52]..[49,1364+55])
+                                                    Pexp_ident "ext" (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+52]..[49,1364+55])
+                                                <arg>
+                                                Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+56]..[49,1364+58])
+                                                    Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+56]..[49,1364+58])
+                                                    None
+                                              ]
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+59]..[49,1364+60]) ghost
+                                              Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+59]..[49,1364+60]) ghost
+                                              None
+                                          ]
+                                <case>
+                                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+8]..[50,1425+47])
+                                    Ppat_record Open
+                                    [
+                                      "ptype_kind" (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+10]..[50,1425+20])
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+23]..[50,1425+42])
+                                          Ppat_construct "Ptype_record" (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+23]..[50,1425+35])
+                                          Some
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+36]..[50,1425+42])
+                                              Ppat_var "fields" (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+36]..[50,1425+42])
+                                    ]
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+10]..[51,1476+42])
+                                    Pexp_apply
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+10]..[51,1476+18])
+                                      Pexp_ident "List.map" (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+10]..[51,1476+18])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+19]..[51,1476+25])
+                                          Pexp_ident "fields" (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+19]..[51,1476+25])
+                                      <arg>
+                                      Labelled "f"
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+29]..[51,1476+42])
+                                          Pexp_ident "accessor_impl" (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+29]..[51,1476+42])
+                                    ]
+                              ]
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+5]..[52,1520+16])
+                      Pexp_ident "List.concat" (examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+5]..[52,1520+16])
+                ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+0]..[70,2187+16])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+4]..[54,1538+17])
+          Ppat_var "generate_intf" (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+4]..[54,1538+17])
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+18]..[70,2187+16]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+19]..[54,1538+23])
+            Ppat_var "ctxt" (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+19]..[54,1538+23])
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+24]..[70,2187+16]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+24]..[54,1538+54])
+              Ppat_tuple
+              [
+                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+25]..[54,1538+34])
+                  Ppat_var "_rec_flag" (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+25]..[54,1538+34])
+                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+36]..[54,1538+53])
+                  Ppat_var "type_declarations" (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+36]..[54,1538+53])
+              ]
+            expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+2]..[70,2187+16])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+6]..[55,1595+9])
+                    Ppat_var "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+6]..[55,1595+9])
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+12]..[55,1595+59])
+                    Pexp_apply
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+12]..[55,1595+54])
+                      Pexp_ident "Expansion_context.Deriver.derived_item_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+12]..[55,1595+54])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+55]..[55,1595+59])
+                          Pexp_ident "ctxt" (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+55]..[55,1595+59])
+                    ]
+              ]
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+2]..[70,2187+16])
+                Pexp_apply
+                expression (examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+2]..[70,2187+4])
+                  Pexp_ident "|>" (examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+2]..[70,2187+4])
+                [
+                  <arg>
+                  Nolabel
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+2]..[69,2129+57])
+                      Pexp_apply
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+2]..[56,1658+10])
+                        Pexp_ident "List.map" (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+2]..[56,1658+10])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+11]..[56,1658+28])
+                            Pexp_ident "type_declarations" (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+11]..[56,1658+28])
+                        <arg>
+                        Labelled "f"
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+32]..[69,2129+57])
+                            Pexp_fun
+                            Nolabel
+                            None
+                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+37]..[56,1658+60])
+                              Ppat_constraint
+                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+38]..[56,1658+40])
+                                Ppat_var "td" (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+38]..[56,1658+40])
+                              core_type (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+43]..[56,1658+59])
+                                Ptyp_constr "type_declaration" (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+43]..[56,1658+59])
+                                []
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[57,1722+6]..[69,2129+56])
+                              Pexp_match
+                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[57,1722+12]..[57,1722+14])
+                                Pexp_ident "td" (examples/simple-deriver/ppx_deriving_accessors.ml[57,1722+12]..[57,1722+14])
+                              [
+                                <case>
+                                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[58,1742+8]..[62,1847+7])
+                                    Ppat_record Open
+                                    [
+                                      "ptype_kind" (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+7]..[59,1752+17])
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+20]..[59,1752+65])
+                                          Ppat_or
+                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+20]..[59,1752+52])
+                                            Ppat_or
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+20]..[59,1752+34])
+                                              Ppat_construct "Ptype_abstract" (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+20]..[59,1752+34])
+                                              None
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+37]..[59,1752+52])
+                                              Ppat_construct "Ptype_variant" (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+37]..[59,1752+50])
+                                              Some
+                                                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+51]..[59,1752+52])
+                                                  Ppat_any
+                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+55]..[59,1752+65])
+                                            Ppat_construct "Ptype_open" (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+55]..[59,1752+65])
+                                            None
+                                      "ptype_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[60,1819+7]..[60,1819+16]) ghost
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[60,1819+7]..[60,1819+16])
+                                          Ppat_var "ptype_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[60,1819+7]..[60,1819+16])
+                                    ]
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[63,1858+10]..[67,2005+60])
+                                    Pexp_let Nonrec
+                                    [
+                                      <def>
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[63,1858+14]..[63,1858+17])
+                                          Ppat_var "ext" (examples/simple-deriver/ppx_deriving_accessors.ml[63,1858+14]..[63,1858+17])
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+12]..[65,1931+60])
+                                          Pexp_apply
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+12]..[64,1878+37])
+                                            Pexp_ident "Location.error_extensionf" (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+12]..[64,1878+37])
+                                          [
+                                            <arg>
+                                            Labelled "loc"
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+43]..[64,1878+52])
+                                                Pexp_ident "ptype_loc" (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+43]..[64,1878+52])
+                                            <arg>
+                                            Nolabel
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..[65,1931+60])
+                                                Pexp_constant PConst_string("Cannot derive accessors for non record types",(examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+15]..[65,1931+59]),None)
+                                          ]
+                                    ]
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+10]..[67,2005+60])
+                                      Pexp_construct "::" (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+12]..[67,2005+60]) ghost
+                                      Some
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+12]..[67,2005+60]) ghost
+                                          Pexp_tuple
+                                          [
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+12]..[67,2005+58])
+                                              Pexp_apply
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+12]..[67,2005+46])
+                                                Pexp_ident "Ast_builder.Default.psig_extension" (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+12]..[67,2005+46])
+                                              [
+                                                <arg>
+                                                Labelled "loc"
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+48]..[67,2005+51])
+                                                    Pexp_ident "loc" (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+48]..[67,2005+51])
+                                                <arg>
+                                                Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+52]..[67,2005+55])
+                                                    Pexp_ident "ext" (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+52]..[67,2005+55])
+                                                <arg>
+                                                Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+56]..[67,2005+58])
+                                                    Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+56]..[67,2005+58])
+                                                    None
+                                              ]
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+59]..[67,2005+60]) ghost
+                                              Pexp_construct "[]" (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+59]..[67,2005+60]) ghost
+                                              None
+                                          ]
+                                <case>
+                                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+8]..[68,2066+59])
+                                    Ppat_record Open
+                                    [
+                                      "ptype_kind" (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+10]..[68,2066+20])
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+23]..[68,2066+42])
+                                          Ppat_construct "Ptype_record" (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+23]..[68,2066+35])
+                                          Some
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+36]..[68,2066+42])
+                                              Ppat_var "fields" (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+36]..[68,2066+42])
+                                      "ptype_name" (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+44]..[68,2066+54]) ghost
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+44]..[68,2066+54])
+                                          Ppat_var "ptype_name" (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+44]..[68,2066+54])
+                                    ]
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+10]..[69,2129+56])
+                                    Pexp_apply
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+10]..[69,2129+18])
+                                      Pexp_ident "List.map" (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+10]..[69,2129+18])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+19]..[69,2129+25])
+                                          Pexp_ident "fields" (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+19]..[69,2129+25])
+                                      <arg>
+                                      Labelled "f"
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+29]..[69,2129+56])
+                                          Pexp_apply
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+30]..[69,2129+43])
+                                            Pexp_ident "accessor_intf" (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+30]..[69,2129+43])
+                                          [
+                                            <arg>
+                                            Labelled "ptype_name"
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+45]..[69,2129+55])
+                                                Pexp_ident "ptype_name" (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+45]..[69,2129+55])
+                                          ]
+                                    ]
+                              ]
+                      ]
+                  <arg>
+                  Nolabel
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+5]..[70,2187+16])
+                      Pexp_ident "List.concat" (examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+5]..[70,2187+16])
+                ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+0]..[72,2205+67])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+4]..[72,2205+18])
+          Ppat_var "impl_generator" (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+4]..[72,2205+18])
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+21]..[72,2205+67])
+          Pexp_apply
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+21]..[72,2205+53])
+            Pexp_ident "Deriving.Generator.V2.make_noarg" (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+21]..[72,2205+53])
+          [
+            <arg>
+            Nolabel
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+54]..[72,2205+67])
+                Pexp_ident "generate_impl" (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+54]..[72,2205+67])
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+0]..[73,2273+67])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+4]..[73,2273+18])
+          Ppat_var "intf_generator" (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+4]..[73,2273+18])
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+21]..[73,2273+67])
+          Pexp_apply
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+21]..[73,2273+53])
+            Pexp_ident "Deriving.Generator.V2.make_noarg" (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+21]..[73,2273+53])
+          [
+            <arg>
+            Nolabel
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+54]..[73,2273+67])
+                Pexp_ident "generate_intf" (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+54]..[73,2273+67])
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[75,2342+0]..[77,2416+33])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[75,2342+4]..[75,2342+14])
+          Ppat_var "my_deriver" (examples/simple-deriver/ppx_deriving_accessors.ml[75,2342+4]..[75,2342+14])
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+2]..[77,2416+33])
+          Pexp_apply
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+2]..[76,2359+14])
+            Pexp_ident "Deriving.add" (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+2]..[76,2359+14])
+          [
+            <arg>
+            Nolabel
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+15]..[76,2359+26])
+                Pexp_constant PConst_string("accessors",(examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+16]..[76,2359+25]),None)
+            <arg>
+            Labelled "str_type_decl"
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+42]..[76,2359+56])
+                Pexp_ident "impl_generator" (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+42]..[76,2359+56])
+            <arg>
+            Labelled "sig_type_decl"
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+19]..[77,2416+33])
+                Pexp_ident "intf_generator" (examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+19]..[77,2416+33])
+          ]
+    ]
+]
+
+open Ppxlib
+module List = ListLabels
+open Ast_builder.Default
+let accessor_impl (ld : label_declaration) =
+  let loc = ld.pld_loc in
+  pstr_value ~loc Nonrecursive
+    [{
+       pvb_pat = (ppat_var ~loc ld.pld_name);
+       pvb_expr =
+         (pexp_fun ~loc Nolabel None (ppat_var ~loc { loc; txt = "x" })
+            (pexp_field ~loc (pexp_ident ~loc { loc; txt = (lident "x") })
+               { loc; txt = (lident (ld.pld_name).txt) }));
+       pvb_attributes = [];
+       pvb_loc = loc
+     }]
+let accessor_intf ~ptype_name  (ld : label_declaration) =
+  let loc = ld.pld_loc in
+  psig_value ~loc
+    {
+      pval_name = (ld.pld_name);
+      pval_type =
+        (ptyp_arrow ~loc Nolabel
+           (ptyp_constr ~loc { loc; txt = (lident ptype_name.txt) } [])
+           ld.pld_type);
+      pval_attributes = [];
+      pval_loc = loc;
+      pval_prim = []
+    }
+let generate_impl ~ctxt  (_rec_flag, type_declarations) =
+  let loc = Expansion_context.Deriver.derived_item_loc ctxt in
+  (List.map type_declarations
+     ~f:(fun (td : type_declaration) ->
+           match td with
+           | { ptype_kind = (Ptype_abstract | Ptype_variant _ | Ptype_open);
+               ptype_loc;_} ->
+               let ext =
+                 Location.error_extensionf ~loc:ptype_loc
+                   "Cannot derive accessors for non record types" in
+               [Ast_builder.Default.pstr_extension ~loc ext []]
+           | { ptype_kind = Ptype_record fields;_} ->
+               List.map fields ~f:accessor_impl))
+    |> List.concat
+let generate_intf ~ctxt  (_rec_flag, type_declarations) =
+  let loc = Expansion_context.Deriver.derived_item_loc ctxt in
+  (List.map type_declarations
+     ~f:(fun (td : type_declaration) ->
+           match td with
+           | { ptype_kind = (Ptype_abstract | Ptype_variant _ | Ptype_open);
+               ptype_loc;_} ->
+               let ext =
+                 Location.error_extensionf ~loc:ptype_loc
+                   "Cannot derive accessors for non record types" in
+               [Ast_builder.Default.psig_extension ~loc ext []]
+           | { ptype_kind = Ptype_record fields; ptype_name;_} ->
+               List.map fields ~f:(accessor_intf ~ptype_name)))
+    |> List.concat
+let impl_generator = Deriving.Generator.V2.make_noarg generate_impl
+let intf_generator = Deriving.Generator.V2.make_noarg generate_intf
+let my_deriver =
+  Deriving.add "accessors" ~str_type_decl:impl_generator
+    ~sig_type_decl:intf_generator
+[
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[1,0+0]..examples/simple-deriver/ppx_deriving_accessors.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (examples/simple-deriver/ppx_deriving_accessors.ml[1,0+5]..examples/simple-deriver/ppx_deriving_accessors.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[2,12+0]..examples/simple-deriver/ppx_deriving_accessors.ml[2,12+24])
+    Tstr_module
+    List/491
+      module_expr (examples/simple-deriver/ppx_deriving_accessors.ml[2,12+14]..examples/simple-deriver/ppx_deriving_accessors.ml[2,12+24])
+        Tmod_ident "Stdlib!.ListLabels"
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[3,37+0]..examples/simple-deriver/ppx_deriving_accessors.ml[3,37+24])
+    Tstr_open Fresh
+    module_expr (examples/simple-deriver/ppx_deriving_accessors.ml[3,37+5]..examples/simple-deriver/ppx_deriving_accessors.ml[3,37+24])
+      Tmod_ident "Ppxlib!.Ast_builder.Default"
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+0]..examples/simple-deriver/ppx_deriving_accessors.ml[20,531+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+4]..examples/simple-deriver/ppx_deriving_accessors.ml[5,63+17])
+          Tpat_var "accessor_impl/2059"
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+18]..examples/simple-deriver/ppx_deriving_accessors.ml[20,531+5]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+19]..examples/simple-deriver/ppx_deriving_accessors.ml[5,63+21])
+                Tpat_extra_constraint
+                core_type (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+24]..examples/simple-deriver/ppx_deriving_accessors.ml[5,63+41])
+                  Ttyp_constr "Ppxlib!.label_declaration"
+                  []
+                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+19]..examples/simple-deriver/ppx_deriving_accessors.ml[5,63+21])
+                  Tpat_alias "ld/2061"
+                  pattern (examples/simple-deriver/ppx_deriving_accessors.ml[5,63+19]..examples/simple-deriver/ppx_deriving_accessors.ml[5,63+21])
+                    Tpat_any
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+2]..examples/simple-deriver/ppx_deriving_accessors.ml[20,531+5])
+                Texp_let Nonrec
+                [
+                  <def>
+                    pattern (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+6]..examples/simple-deriver/ppx_deriving_accessors.ml[6,108+9])
+                      Tpat_var "loc/2062"
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+12]..examples/simple-deriver/ppx_deriving_accessors.ml[6,108+22])
+                      Texp_field
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[6,108+12]..examples/simple-deriver/ppx_deriving_accessors.ml[6,108+14])
+                        Texp_ident "ld/2061"
+                      "pld_loc"
+                ]
+                expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+2]..examples/simple-deriver/ppx_deriving_accessors.ml[20,531+5])
+                  Texp_apply
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+2]..examples/simple-deriver/ppx_deriving_accessors.ml[7,134+12])
+                    Texp_ident "Ppxlib!.Ast_builder.Default.pstr_value"
+                  [
+                    <arg>
+                      Labelled "loc"
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+14]..examples/simple-deriver/ppx_deriving_accessors.ml[7,134+17])
+                        Texp_ident "loc/2062"
+                    <arg>
+                      Nolabel
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[7,134+18]..examples/simple-deriver/ppx_deriving_accessors.ml[7,134+30])
+                        Texp_construct "Nonrecursive"
+                        []
+                    <arg>
+                      Nolabel
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[8,165+4]..examples/simple-deriver/ppx_deriving_accessors.ml[20,531+5])
+                        Texp_construct "::"
+                        [
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[9,171+6]..examples/simple-deriver/ppx_deriving_accessors.ml[19,522+7])
+                            Texp_record
+                              fields =
+                                [
+                                  "pvb_pat"
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+18]..examples/simple-deriver/ppx_deriving_accessors.ml[10,179+43])
+                                      Texp_apply
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+18]..examples/simple-deriver/ppx_deriving_accessors.ml[10,179+26])
+                                        Texp_ident "Ppxlib!.Ast_builder.Default.ppat_var"
+                                      [
+                                        <arg>
+                                          Labelled "loc"
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+28]..examples/simple-deriver/ppx_deriving_accessors.ml[10,179+31])
+                                            Texp_ident "loc/2062"
+                                        <arg>
+                                          Nolabel
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+32]..examples/simple-deriver/ppx_deriving_accessors.ml[10,179+43])
+                                            Texp_field
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[10,179+32]..examples/simple-deriver/ppx_deriving_accessors.ml[10,179+34])
+                                              Texp_ident "ld/2061"
+                                            "pld_name"
+                                      ]
+                                  "pvb_expr"
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+10]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+53])
+                                      Texp_apply
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+10]..examples/simple-deriver/ppx_deriving_accessors.ml[12,243+18])
+                                        Texp_ident "Ppxlib!.Ast_builder.Default.pexp_fun"
+                                      [
+                                        <arg>
+                                          Labelled "loc"
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+20]..examples/simple-deriver/ppx_deriving_accessors.ml[12,243+23])
+                                            Texp_ident "loc/2062"
+                                        <arg>
+                                          Nolabel
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+24]..examples/simple-deriver/ppx_deriving_accessors.ml[12,243+31])
+                                            Texp_construct "Nolabel"
+                                            []
+                                        <arg>
+                                          Nolabel
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[12,243+32]..examples/simple-deriver/ppx_deriving_accessors.ml[12,243+36])
+                                            Texp_construct "None"
+                                            []
+                                        <arg>
+                                          Nolabel
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+12]..examples/simple-deriver/ppx_deriving_accessors.ml[13,280+46])
+                                            Texp_apply
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+13]..examples/simple-deriver/ppx_deriving_accessors.ml[13,280+21])
+                                              Texp_ident "Ppxlib!.Ast_builder.Default.ppat_var"
+                                            [
+                                              <arg>
+                                                Labelled "loc"
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+23]..examples/simple-deriver/ppx_deriving_accessors.ml[13,280+26])
+                                                  Texp_ident "loc/2062"
+                                              <arg>
+                                                Nolabel
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+27]..examples/simple-deriver/ppx_deriving_accessors.ml[13,280+45])
+                                                  Texp_record
+                                                    fields =
+                                                      [
+                                                        "txt"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+40]..examples/simple-deriver/ppx_deriving_accessors.ml[13,280+43])
+                                                            Texp_constant Const_string("x",(examples/simple-deriver/ppx_deriving_accessors.ml[13,280+41]..examples/simple-deriver/ppx_deriving_accessors.ml[13,280+42]),None)
+                                                        "loc"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[13,280+29]..examples/simple-deriver/ppx_deriving_accessors.ml[13,280+32]) ghost
+                                                            Texp_ident "loc/2062"
+                                                      ]
+                                                    representation =
+                                                      Record_regular
+                                                    extended_expression =
+                                                      None
+                                            ]
+                                        <arg>
+                                          Nolabel
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+12]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+53])
+                                            Texp_apply
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+13]..examples/simple-deriver/ppx_deriving_accessors.ml[14,327+23])
+                                              Texp_ident "Ppxlib!.Ast_builder.Default.pexp_field"
+                                            [
+                                              <arg>
+                                                Labelled "loc"
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[14,327+25]..examples/simple-deriver/ppx_deriving_accessors.ml[14,327+28])
+                                                  Texp_ident "loc/2062"
+                                              <arg>
+                                                Nolabel
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+15]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+58])
+                                                  Texp_apply
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+16]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+26])
+                                                    Texp_ident "Ppxlib!.Ast_builder.Default.pexp_ident"
+                                                  [
+                                                    <arg>
+                                                      Labelled "loc"
+                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+28]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+31])
+                                                        Texp_ident "loc/2062"
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+32]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+57])
+                                                        Texp_record
+                                                          fields =
+                                                            [
+                                                              "txt"
+                                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+45]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+55])
+                                                                  Texp_apply
+                                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+45]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+51])
+                                                                    Texp_ident "Ppxlib!.lident"
+                                                                  [
+                                                                    <arg>
+                                                                      Nolabel
+                                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+52]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+55])
+                                                                        Texp_constant Const_string("x",(examples/simple-deriver/ppx_deriving_accessors.ml[15,356+53]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+54]),None)
+                                                                  ]
+                                                              "loc"
+                                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[15,356+34]..examples/simple-deriver/ppx_deriving_accessors.ml[15,356+37]) ghost
+                                                                  Texp_ident "loc/2062"
+                                                            ]
+                                                          representation =
+                                                            Record_regular
+                                                          extended_expression =
+                                                            None
+                                                  ]
+                                              <arg>
+                                                Nolabel
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+15]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+52])
+                                                  Texp_record
+                                                    fields =
+                                                      [
+                                                        "txt"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+28]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+50])
+                                                            Texp_apply
+                                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+28]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+34])
+                                                              Texp_ident "Ppxlib!.lident"
+                                                            [
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+35]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+50])
+                                                                  Texp_field
+                                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+35]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+46])
+                                                                    Texp_field
+                                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+35]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+37])
+                                                                      Texp_ident "ld/2061"
+                                                                    "pld_name"
+                                                                  "txt"
+                                                            ]
+                                                        "loc"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[16,415+17]..examples/simple-deriver/ppx_deriving_accessors.ml[16,415+20]) ghost
+                                                            Texp_ident "loc/2062"
+                                                      ]
+                                                    representation =
+                                                      Record_regular
+                                                    extended_expression =
+                                                      None
+                                            ]
+                                      ]
+                                  "pvb_attributes"
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[17,470+25]..examples/simple-deriver/ppx_deriving_accessors.ml[17,470+27])
+                                      Texp_construct "[]"
+                                      []
+                                  "pvb_loc"
+                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[18,499+18]..examples/simple-deriver/ppx_deriving_accessors.ml[18,499+21])
+                                      Texp_ident "loc/2062"
+                                ]
+                              representation =
+                                Record_regular
+                              extended_expression =
+                                None
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[20,531+4]..examples/simple-deriver/ppx_deriving_accessors.ml[20,531+5]) ghost
+                            Texp_construct "[]"
+                            []
+                        ]
+                  ]
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+0]..examples/simple-deriver/ppx_deriving_accessors.ml[34,890+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+4]..examples/simple-deriver/ppx_deriving_accessors.ml[22,538+17])
+          Tpat_var "accessor_intf/3168"
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+18]..examples/simple-deriver/ppx_deriving_accessors.ml[34,890+5]) ghost
+          Texp_function
+          Labelled "ptype_name"
+          [
+            <case>
+              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+19]..examples/simple-deriver/ppx_deriving_accessors.ml[22,538+29])
+                Tpat_var "ptype_name/3170"
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+30]..examples/simple-deriver/ppx_deriving_accessors.ml[34,890+5]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+31]..examples/simple-deriver/ppx_deriving_accessors.ml[22,538+33])
+                      Tpat_extra_constraint
+                      core_type (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+36]..examples/simple-deriver/ppx_deriving_accessors.ml[22,538+53])
+                        Ttyp_constr "Ppxlib!.label_declaration"
+                        []
+                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+31]..examples/simple-deriver/ppx_deriving_accessors.ml[22,538+33])
+                        Tpat_alias "ld/3171"
+                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[22,538+31]..examples/simple-deriver/ppx_deriving_accessors.ml[22,538+33])
+                          Tpat_any
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+2]..examples/simple-deriver/ppx_deriving_accessors.ml[34,890+5])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+6]..examples/simple-deriver/ppx_deriving_accessors.ml[23,595+9])
+                            Tpat_var "loc/3172"
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+12]..examples/simple-deriver/ppx_deriving_accessors.ml[23,595+22])
+                            Texp_field
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[23,595+12]..examples/simple-deriver/ppx_deriving_accessors.ml[23,595+14])
+                              Texp_ident "ld/3171"
+                            "pld_loc"
+                      ]
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+2]..examples/simple-deriver/ppx_deriving_accessors.ml[34,890+5])
+                        Texp_apply
+                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+2]..examples/simple-deriver/ppx_deriving_accessors.ml[24,621+12])
+                          Texp_ident "Ppxlib!.Ast_builder.Default.psig_value"
+                        [
+                          <arg>
+                            Labelled "loc"
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[24,621+14]..examples/simple-deriver/ppx_deriving_accessors.ml[24,621+17])
+                              Texp_ident "loc/3172"
+                          <arg>
+                            Nolabel
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[25,639+4]..examples/simple-deriver/ppx_deriving_accessors.ml[34,890+5])
+                              Texp_record
+                                fields =
+                                  [
+                                    "pval_name"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[26,645+18]..examples/simple-deriver/ppx_deriving_accessors.ml[26,645+29])
+                                        Texp_field
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[26,645+18]..examples/simple-deriver/ppx_deriving_accessors.ml[26,645+20])
+                                          Texp_ident "ld/3171"
+                                        "pld_name"
+                                    "pval_type"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+8]..examples/simple-deriver/ppx_deriving_accessors.ml[30,795+21])
+                                        Texp_apply
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+8]..examples/simple-deriver/ppx_deriving_accessors.ml[28,694+18])
+                                          Texp_ident "Ppxlib!.Ast_builder.Default.ptyp_arrow"
+                                        [
+                                          <arg>
+                                            Labelled "loc"
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+20]..examples/simple-deriver/ppx_deriving_accessors.ml[28,694+23])
+                                              Texp_ident "loc/3172"
+                                          <arg>
+                                            Nolabel
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[28,694+24]..examples/simple-deriver/ppx_deriving_accessors.ml[28,694+31])
+                                              Texp_construct "Nolabel"
+                                              []
+                                          <arg>
+                                            Nolabel
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+10]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+68])
+                                              Texp_apply
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+11]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+22])
+                                                Texp_ident "Ppxlib!.Ast_builder.Default.ptyp_constr"
+                                              [
+                                                <arg>
+                                                  Labelled "loc"
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+24]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+27])
+                                                    Texp_ident "loc/3172"
+                                                <arg>
+                                                  Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+28]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+64])
+                                                    Texp_record
+                                                      fields =
+                                                        [
+                                                          "txt"
+                                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+41]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+62])
+                                                              Texp_apply
+                                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+41]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+47])
+                                                                Texp_ident "Ppxlib!.lident"
+                                                              [
+                                                                <arg>
+                                                                  Nolabel
+                                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+48]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+62])
+                                                                    Texp_field
+                                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+48]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+58])
+                                                                      Texp_ident "ptype_name/3170"
+                                                                    "txt"
+                                                              ]
+                                                          "loc"
+                                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+30]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+33]) ghost
+                                                              Texp_ident "loc/3172"
+                                                        ]
+                                                      representation =
+                                                        Record_regular
+                                                      extended_expression =
+                                                        None
+                                                <arg>
+                                                  Nolabel
+                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[29,726+65]..examples/simple-deriver/ppx_deriving_accessors.ml[29,726+67])
+                                                    Texp_construct "[]"
+                                                    []
+                                              ]
+                                          <arg>
+                                            Nolabel
+                                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[30,795+10]..examples/simple-deriver/ppx_deriving_accessors.ml[30,795+21])
+                                              Texp_field
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[30,795+10]..examples/simple-deriver/ppx_deriving_accessors.ml[30,795+12])
+                                                Texp_ident "ld/3171"
+                                              "pld_type"
+                                        ]
+                                    "pval_prim"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[33,868+18]..examples/simple-deriver/ppx_deriving_accessors.ml[33,868+20])
+                                        Texp_construct "[]"
+                                        []
+                                    "pval_attributes"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[31,818+24]..examples/simple-deriver/ppx_deriving_accessors.ml[31,818+26])
+                                        Texp_construct "[]"
+                                        []
+                                    "pval_loc"
+                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[32,846+17]..examples/simple-deriver/ppx_deriving_accessors.ml[32,846+20])
+                                        Texp_ident "loc/3172"
+                                  ]
+                                representation =
+                                  Record_regular
+                                extended_expression =
+                                  None
+                        ]
+                ]
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+0]..examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+16])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+4]..examples/simple-deriver/ppx_deriving_accessors.ml[36,897+17])
+          Tpat_var "generate_impl/3173"
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+18]..examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+16]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+19]..examples/simple-deriver/ppx_deriving_accessors.ml[36,897+23])
+                Tpat_var "ctxt/3175"
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+24]..examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+16]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+24]..examples/simple-deriver/ppx_deriving_accessors.ml[36,897+54])
+                      Tpat_tuple
+                      [
+                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+25]..examples/simple-deriver/ppx_deriving_accessors.ml[36,897+34])
+                          Tpat_var "_rec_flag/3176"
+                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[36,897+36]..examples/simple-deriver/ppx_deriving_accessors.ml[36,897+53])
+                          Tpat_var "type_declarations/3177"
+                      ]
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+2]..examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+16])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+6]..examples/simple-deriver/ppx_deriving_accessors.ml[37,954+9])
+                            Tpat_var "loc/3178"
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+12]..examples/simple-deriver/ppx_deriving_accessors.ml[37,954+59])
+                            Texp_apply
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+12]..examples/simple-deriver/ppx_deriving_accessors.ml[37,954+54])
+                              Texp_ident "Ppxlib!.Expansion_context.Deriver.derived_item_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[37,954+55]..examples/simple-deriver/ppx_deriving_accessors.ml[37,954+59])
+                                  Texp_ident "ctxt/3175"
+                            ]
+                      ]
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+2]..examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+16])
+                        Texp_apply
+                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+2]..examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+4])
+                          Texp_ident "Stdlib!.|>"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+2]..examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+43])
+                              Texp_apply
+                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+2]..examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+10])
+                                Texp_ident "List/491.map"
+                              [
+                                <arg>
+                                  Labelled "f"
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+32]..examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+43])
+                                    Texp_function
+                                    Nolabel
+                                    [
+                                      <case>
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+38]..examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+40])
+                                          Tpat_extra_constraint
+                                          core_type (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+43]..examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+59])
+                                            Ttyp_constr "Ppxlib!.type_declaration"
+                                            []
+                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+38]..examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+40])
+                                            Tpat_alias "td/3316"
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+38]..examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+40])
+                                              Tpat_any
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[39,1081+6]..examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+42])
+                                          Texp_match
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[39,1081+12]..examples/simple-deriver/ppx_deriving_accessors.ml[39,1081+14])
+                                            Texp_ident "td/3316"
+                                          [
+                                            <case>
+                                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[40,1101+8]..examples/simple-deriver/ppx_deriving_accessors.ml[44,1206+7])
+                                                Tpat_value
+                                                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[40,1101+8]..examples/simple-deriver/ppx_deriving_accessors.ml[44,1206+7])
+                                                  Tpat_record
+                                                  [
+                                                    "ptype_kind"
+                                                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+20]..examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+65])
+                                                        Tpat_or
+                                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+20]..examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+52])
+                                                          Tpat_or
+                                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+20]..examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+34])
+                                                            Tpat_construct "Ptype_abstract"
+                                                            []
+                                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+37]..examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+52])
+                                                            Tpat_construct "Ptype_variant"
+                                                            [
+                                                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+51]..examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+52])
+                                                                Tpat_any
+                                                            ]
+                                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+55]..examples/simple-deriver/ppx_deriving_accessors.ml[41,1111+65])
+                                                          Tpat_construct "Ptype_open"
+                                                          []
+                                                    "ptype_loc"
+                                                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[42,1178+7]..examples/simple-deriver/ppx_deriving_accessors.ml[42,1178+16])
+                                                        Tpat_var "ptype_loc/3317"
+                                                  ]
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[45,1217+10]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+60])
+                                                Texp_let Nonrec
+                                                [
+                                                  <def>
+                                                    pattern (examples/simple-deriver/ppx_deriving_accessors.ml[45,1217+14]..examples/simple-deriver/ppx_deriving_accessors.ml[45,1217+17])
+                                                      Tpat_var "ext/3319"
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+12]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60])
+                                                      Texp_apply
+                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+12]..examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+37])
+                                                        Texp_ident "Ppxlib!.Location.error_extensionf"
+                                                      [
+                                                        <arg>
+                                                          Labelled "loc"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+43]..examples/simple-deriver/ppx_deriving_accessors.ml[46,1237+52])
+                                                            Texp_ident "ptype_loc/3317"
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60])
+                                                            Texp_construct "CamlinternalFormatBasics.Format"
+                                                            [
+                                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60]) ghost
+                                                                Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                [
+                                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60]) ghost
+                                                                    Texp_constant Const_string("Cannot derive accessors for non record types",(examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60]) ghost,None)
+                                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60]) ghost
+                                                                    Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                                    []
+                                                                ]
+                                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60]) ghost
+                                                                Texp_constant Const_string("Cannot derive accessors for non record types",(examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+14]..examples/simple-deriver/ppx_deriving_accessors.ml[47,1290+60]) ghost,None)
+                                                            ]
+                                                      ]
+                                                ]
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+10]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+60])
+                                                  Texp_construct "::"
+                                                  [
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+12]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+58])
+                                                      Texp_apply
+                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+12]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+46])
+                                                        Texp_ident "Ppxlib!.Ast_builder.Default.pstr_extension"
+                                                      [
+                                                        <arg>
+                                                          Labelled "loc"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+48]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+51])
+                                                            Texp_ident "loc/3178"
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+52]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+55])
+                                                            Texp_ident "ext/3319"
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+56]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+58])
+                                                            Texp_construct "[]"
+                                                            []
+                                                      ]
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+59]..examples/simple-deriver/ppx_deriving_accessors.ml[49,1364+60]) ghost
+                                                      Texp_construct "[]"
+                                                      []
+                                                  ]
+                                            <case>
+                                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+8]..examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+47])
+                                                Tpat_value
+                                                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+8]..examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+47])
+                                                  Tpat_record
+                                                  [
+                                                    "ptype_kind"
+                                                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+23]..examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+42])
+                                                        Tpat_construct "Ptype_record"
+                                                        [
+                                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+36]..examples/simple-deriver/ppx_deriving_accessors.ml[50,1425+42])
+                                                            Tpat_var "fields/3318"
+                                                        ]
+                                                  ]
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+10]..examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+42])
+                                                Texp_apply
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+10]..examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+18])
+                                                  Texp_ident "List/491.map"
+                                                [
+                                                  <arg>
+                                                    Labelled "f"
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+29]..examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+42])
+                                                      Texp_ident "accessor_impl/2059"
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+19]..examples/simple-deriver/ppx_deriving_accessors.ml[51,1476+25])
+                                                      Texp_ident "fields/3318"
+                                                ]
+                                          ]
+                                          []
+                                    ]
+                                <arg>
+                                  Nolabel
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+11]..examples/simple-deriver/ppx_deriving_accessors.ml[38,1017+28])
+                                    Texp_ident "type_declarations/3177"
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+5]..examples/simple-deriver/ppx_deriving_accessors.ml[52,1520+16])
+                              Texp_ident "List/491.concat"
+                        ]
+                ]
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+0]..examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+16])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+4]..examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+17])
+          Tpat_var "generate_intf/3345"
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+18]..examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+16]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+19]..examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+23])
+                Tpat_var "ctxt/3347"
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+24]..examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+16]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+24]..examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+54])
+                      Tpat_tuple
+                      [
+                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+25]..examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+34])
+                          Tpat_var "_rec_flag/3348"
+                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+36]..examples/simple-deriver/ppx_deriving_accessors.ml[54,1538+53])
+                          Tpat_var "type_declarations/3349"
+                      ]
+                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+2]..examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+16])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+6]..examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+9])
+                            Tpat_var "loc/3350"
+                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+12]..examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+59])
+                            Texp_apply
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+12]..examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+54])
+                              Texp_ident "Ppxlib!.Expansion_context.Deriver.derived_item_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+55]..examples/simple-deriver/ppx_deriving_accessors.ml[55,1595+59])
+                                  Texp_ident "ctxt/3347"
+                            ]
+                      ]
+                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+2]..examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+16])
+                        Texp_apply
+                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+2]..examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+4])
+                          Texp_ident "Stdlib!.|>"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+2]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+57])
+                              Texp_apply
+                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+2]..examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+10])
+                                Texp_ident "List/491.map"
+                              [
+                                <arg>
+                                  Labelled "f"
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+32]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+57])
+                                    Texp_function
+                                    Nolabel
+                                    [
+                                      <case>
+                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+38]..examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+40])
+                                          Tpat_extra_constraint
+                                          core_type (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+43]..examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+59])
+                                            Ttyp_constr "Ppxlib!.type_declaration"
+                                            []
+                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+38]..examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+40])
+                                            Tpat_alias "td/3351"
+                                            pattern (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+38]..examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+40])
+                                              Tpat_any
+                                        expression (examples/simple-deriver/ppx_deriving_accessors.ml[57,1722+6]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+56])
+                                          Texp_match
+                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[57,1722+12]..examples/simple-deriver/ppx_deriving_accessors.ml[57,1722+14])
+                                            Texp_ident "td/3351"
+                                          [
+                                            <case>
+                                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[58,1742+8]..examples/simple-deriver/ppx_deriving_accessors.ml[62,1847+7])
+                                                Tpat_value
+                                                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[58,1742+8]..examples/simple-deriver/ppx_deriving_accessors.ml[62,1847+7])
+                                                  Tpat_record
+                                                  [
+                                                    "ptype_kind"
+                                                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+20]..examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+65])
+                                                        Tpat_or
+                                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+20]..examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+52])
+                                                          Tpat_or
+                                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+20]..examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+34])
+                                                            Tpat_construct "Ptype_abstract"
+                                                            []
+                                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+37]..examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+52])
+                                                            Tpat_construct "Ptype_variant"
+                                                            [
+                                                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+51]..examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+52])
+                                                                Tpat_any
+                                                            ]
+                                                        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+55]..examples/simple-deriver/ppx_deriving_accessors.ml[59,1752+65])
+                                                          Tpat_construct "Ptype_open"
+                                                          []
+                                                    "ptype_loc"
+                                                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[60,1819+7]..examples/simple-deriver/ppx_deriving_accessors.ml[60,1819+16])
+                                                        Tpat_var "ptype_loc/3352"
+                                                  ]
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[63,1858+10]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+60])
+                                                Texp_let Nonrec
+                                                [
+                                                  <def>
+                                                    pattern (examples/simple-deriver/ppx_deriving_accessors.ml[63,1858+14]..examples/simple-deriver/ppx_deriving_accessors.ml[63,1858+17])
+                                                      Tpat_var "ext/3355"
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+12]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60])
+                                                      Texp_apply
+                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+12]..examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+37])
+                                                        Texp_ident "Ppxlib!.Location.error_extensionf"
+                                                      [
+                                                        <arg>
+                                                          Labelled "loc"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+43]..examples/simple-deriver/ppx_deriving_accessors.ml[64,1878+52])
+                                                            Texp_ident "ptype_loc/3352"
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60])
+                                                            Texp_construct "CamlinternalFormatBasics.Format"
+                                                            [
+                                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60]) ghost
+                                                                Texp_construct "CamlinternalFormatBasics.String_literal"
+                                                                [
+                                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60]) ghost
+                                                                    Texp_constant Const_string("Cannot derive accessors for non record types",(examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60]) ghost,None)
+                                                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60]) ghost
+                                                                    Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                                                    []
+                                                                ]
+                                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60]) ghost
+                                                                Texp_constant Const_string("Cannot derive accessors for non record types",(examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+14]..examples/simple-deriver/ppx_deriving_accessors.ml[65,1931+60]) ghost,None)
+                                                            ]
+                                                      ]
+                                                ]
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+10]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+60])
+                                                  Texp_construct "::"
+                                                  [
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+12]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+58])
+                                                      Texp_apply
+                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+12]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+46])
+                                                        Texp_ident "Ppxlib!.Ast_builder.Default.psig_extension"
+                                                      [
+                                                        <arg>
+                                                          Labelled "loc"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+48]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+51])
+                                                            Texp_ident "loc/3350"
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+52]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+55])
+                                                            Texp_ident "ext/3355"
+                                                        <arg>
+                                                          Nolabel
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+56]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+58])
+                                                            Texp_construct "[]"
+                                                            []
+                                                      ]
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+59]..examples/simple-deriver/ppx_deriving_accessors.ml[67,2005+60]) ghost
+                                                      Texp_construct "[]"
+                                                      []
+                                                  ]
+                                            <case>
+                                              pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+8]..examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+59])
+                                                Tpat_value
+                                                pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+8]..examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+59])
+                                                  Tpat_record
+                                                  [
+                                                    "ptype_name"
+                                                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+44]..examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+54])
+                                                        Tpat_var "ptype_name/3353"
+                                                    "ptype_kind"
+                                                      pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+23]..examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+42])
+                                                        Tpat_construct "Ptype_record"
+                                                        [
+                                                          pattern (examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+36]..examples/simple-deriver/ppx_deriving_accessors.ml[68,2066+42])
+                                                            Tpat_var "fields/3354"
+                                                        ]
+                                                  ]
+                                              expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+10]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+56])
+                                                Texp_apply
+                                                expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+10]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+18])
+                                                  Texp_ident "List/491.map"
+                                                [
+                                                  <arg>
+                                                    Labelled "f"
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+29]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+56])
+                                                      Texp_apply
+                                                      expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+30]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+43])
+                                                        Texp_ident "accessor_intf/3168"
+                                                      [
+                                                        <arg>
+                                                          Labelled "ptype_name"
+                                                          expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+45]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+55])
+                                                            Texp_ident "ptype_name/3353"
+                                                      ]
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+19]..examples/simple-deriver/ppx_deriving_accessors.ml[69,2129+25])
+                                                      Texp_ident "fields/3354"
+                                                ]
+                                          ]
+                                          []
+                                    ]
+                                <arg>
+                                  Nolabel
+                                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+11]..examples/simple-deriver/ppx_deriving_accessors.ml[56,1658+28])
+                                    Texp_ident "type_declarations/3349"
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+5]..examples/simple-deriver/ppx_deriving_accessors.ml[70,2187+16])
+                              Texp_ident "List/491.concat"
+                        ]
+                ]
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+0]..examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+67])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+4]..examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+18])
+          Tpat_var "impl_generator/3357"
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+21]..examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+67])
+          Texp_apply
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+21]..examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+53])
+            Texp_ident "Ppxlib!.Deriving.Generator.V2.make_noarg"
+          [
+            <arg>
+              Optional "attributes"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "deps"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "unused_code_warnings"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+54]..examples/simple-deriver/ppx_deriving_accessors.ml[72,2205+67])
+                Texp_ident "generate_impl/3173"
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+0]..examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+67])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+4]..examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+18])
+          Tpat_var "intf_generator/3732"
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+21]..examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+67])
+          Texp_apply
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+21]..examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+53])
+            Texp_ident "Ppxlib!.Deriving.Generator.V2.make_noarg"
+          [
+            <arg>
+              Optional "attributes"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "deps"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "unused_code_warnings"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+54]..examples/simple-deriver/ppx_deriving_accessors.ml[73,2273+67])
+                Texp_ident "generate_intf/3345"
+          ]
+    ]
+  structure_item (examples/simple-deriver/ppx_deriving_accessors.ml[75,2342+0]..examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+33])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (examples/simple-deriver/ppx_deriving_accessors.ml[75,2342+4]..examples/simple-deriver/ppx_deriving_accessors.ml[75,2342+14])
+          Tpat_var "my_deriver/3733"
+        expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+2]..examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+33])
+          Texp_apply
+          expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+2]..examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+14])
+            Texp_ident "Ppxlib!.Deriving.add"
+          [
+            <arg>
+              Optional "str_type_decl"
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+42]..examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+56])
+                Texp_construct "Some"
+                [
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+42]..examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+56])
+                    Texp_ident "impl_generator/3357"
+                ]
+            <arg>
+              Optional "str_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_decl"
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+19]..examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+33])
+                Texp_construct "Some"
+                [
+                  expression (examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+19]..examples/simple-deriver/ppx_deriving_accessors.ml[77,2416+33])
+                    Texp_ident "intf_generator/3732"
+                ]
+            <arg>
+              Optional "sig_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "extension"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+15]..examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+26])
+                Texp_constant Const_string("accessors",(examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+16]..examples/simple-deriver/ppx_deriving_accessors.ml[76,2359+25]),None)
+          ]
+    ]
+]
+
+(seq
+  (let
+    (accessor_impl/2059 =
+       (function ld/2061
+         (let (loc/2062 = (field_imm 3 ld/2061))
+           (apply (field_imm 149 (field_imm 0 (global Ppxlib__Ast_builder!)))
+             loc/2062 0
+             (makeblock 0
+               (makeblock 0
+                 (apply
+                   (field_imm 113
+                     (field_imm 0 (global Ppxlib__Ast_builder!)))
+                   loc/2062 (field_imm 0 ld/2061))
+                 (apply
+                   (field_imm 53 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                   loc/2062 0 0
+                   (apply
+                     (field_imm 113
+                       (field_imm 0 (global Ppxlib__Ast_builder!)))
+                     loc/2062 (makeblock 0 "x" loc/2062))
+                   (apply
+                     (field_imm 61
+                       (field_imm 0 (global Ppxlib__Ast_builder!)))
+                     loc/2062
+                     (apply
+                       (field_imm 49
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       loc/2062
+                       (makeblock 0
+                         (apply (field_imm 0 (global Ppxlib!)) "x") loc/2062))
+                     (makeblock 0
+                       (apply (field_imm 0 (global Ppxlib!))
+                         (field_imm 0 (field_imm 0 ld/2061)))
+                       loc/2062)))
+                 0 loc/2062)
+               0)))))
+    (setfield_ptr(root-init) 0 (global Ppx_deriving_accessors!)
+      accessor_impl/2059))
+  (let
+    (accessor_intf/3168 =
+       (function ptype_name/3170 ld/3171
+         (let (loc/3172 = (field_imm 3 ld/3171))
+           (apply (field_imm 132 (field_imm 0 (global Ppxlib__Ast_builder!)))
+             loc/3172
+             (makeblock 0 (field_imm 0 ld/3171)
+               (apply
+                 (field_imm 35 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                 loc/3172 0
+                 (apply
+                   (field_imm 37 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                   loc/3172
+                   (makeblock 0
+                     (apply (field_imm 0 (global Ppxlib!))
+                       (field_imm 0 ptype_name/3170))
+                     loc/3172)
+                   0)
+                 (field_imm 2 ld/3171))
+               0 0 loc/3172)))))
+    (setfield_ptr(root-init) 1 (global Ppx_deriving_accessors!)
+      accessor_intf/3168))
+  (let
+    (generate_impl/3173 =
+       (function ctxt/3175 param/3344
+         (let
+           (type_declarations/3177 =a (field_imm 1 param/3344)
+            _rec_flag/3176 =a (field_imm 0 param/3344)
+            loc/3178 =
+              (apply
+                (field_imm 0
+                  (field_imm 2 (global Ppxlib__Expansion_context!)))
+                ctxt/3175))
+           (revapply
+             (apply (field_imm 18 (global Stdlib__listLabels!))
+               (function td/3316
+                 (let
+                   (*match*/9829 =a (field_imm 3 td/3316)
+                    *match*/9828 =a (field_imm 2 td/3316)
+                    *match*/9827 =a (field_imm 1 td/3316)
+                    *match*/9826 =a (field_imm 0 td/3316))
+                   (catch
+                     (switch *match*/9829
+                      case tag 1:
+                       (let
+                         (*match*/9833 =a (field_imm 7 td/3316)
+                          *match*/9832 =a (field_imm 6 td/3316)
+                          *match*/9831 =a (field_imm 5 td/3316)
+                          *match*/9830 =a (field_imm 4 td/3316)
+                          fields/3318 =a (field_imm 0 *match*/9829))
+                         (apply (field_imm 18 (global Stdlib__listLabels!))
+                           (field_imm 0 (global Ppx_deriving_accessors!))
+                           fields/3318))
+                      default: (exit 1))
+                    with (1)
+                     (let
+                       (ptype_loc/3317 =a (field_imm 7 td/3316)
+                        *match*/9849 =a (field_imm 6 td/3316)
+                        *match*/9848 =a (field_imm 5 td/3316)
+                        *match*/9847 =a (field_imm 4 td/3316)
+                        ext/3319 =
+                          (apply (field_imm 13 (global Ppxlib__Location!))
+                            ptype_loc/3317
+                            [0:
+                             [11:
+                              "Cannot derive accessors for non record types"
+                              0]
+                             "Cannot derive accessors for non record types"]))
+                       (makeblock 0
+                         (apply
+                           (field_imm 162
+                             (field_imm 0 (global Ppxlib__Ast_builder!)))
+                           loc/3178 ext/3319 0)
+                         0)))))
+               type_declarations/3177)
+             (field_imm 12 (global Stdlib__listLabels!))))))
+    (setfield_ptr(root-init) 2 (global Ppx_deriving_accessors!)
+      generate_impl/3173))
+  (let
+    (generate_intf/3345 =
+       (function ctxt/3347 param/3356
+         (let
+           (type_declarations/3349 =a (field_imm 1 param/3356)
+            _rec_flag/3348 =a (field_imm 0 param/3356)
+            loc/3350 =
+              (apply
+                (field_imm 0
+                  (field_imm 2 (global Ppxlib__Expansion_context!)))
+                ctxt/3347))
+           (revapply
+             (apply (field_imm 18 (global Stdlib__listLabels!))
+               (function td/3351
+                 (let
+                   (*match*/9852 =a (field_imm 3 td/3351)
+                    *match*/9851 =a (field_imm 2 td/3351)
+                    *match*/9850 =a (field_imm 1 td/3351)
+                    ptype_name/3353 =a (field_imm 0 td/3351))
+                   (catch
+                     (switch *match*/9852
+                      case tag 1:
+                       (let
+                         (*match*/9856 =a (field_imm 7 td/3351)
+                          *match*/9855 =a (field_imm 6 td/3351)
+                          *match*/9854 =a (field_imm 5 td/3351)
+                          *match*/9853 =a (field_imm 4 td/3351)
+                          fields/3354 =a (field_imm 0 *match*/9852))
+                         (apply (field_imm 18 (global Stdlib__listLabels!))
+                           (apply
+                             (field_imm 1 (global Ppx_deriving_accessors!))
+                             ptype_name/3353)
+                           fields/3354))
+                      default: (exit 2))
+                    with (2)
+                     (let
+                       (ptype_loc/3352 =a (field_imm 7 td/3351)
+                        *match*/9872 =a (field_imm 6 td/3351)
+                        *match*/9871 =a (field_imm 5 td/3351)
+                        *match*/9870 =a (field_imm 4 td/3351)
+                        ext/3355 =
+                          (apply (field_imm 13 (global Ppxlib__Location!))
+                            ptype_loc/3352
+                            [0:
+                             [11:
+                              "Cannot derive accessors for non record types"
+                              0]
+                             "Cannot derive accessors for non record types"]))
+                       (makeblock 0
+                         (apply
+                           (field_imm 147
+                             (field_imm 0 (global Ppxlib__Ast_builder!)))
+                           loc/3350 ext/3355 0)
+                         0)))))
+               type_declarations/3349)
+             (field_imm 12 (global Stdlib__listLabels!))))))
+    (setfield_ptr(root-init) 3 (global Ppx_deriving_accessors!)
+      generate_intf/3345))
+  (let
+    (impl_generator/3357 =
+       (apply
+         (field_imm 1 (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+         0 0 0 (field_imm 2 (global Ppx_deriving_accessors!))))
+    (setfield_ptr(root-init) 4 (global Ppx_deriving_accessors!)
+      impl_generator/3357))
+  (let
+    (intf_generator/3732 =
+       (apply
+         (field_imm 1 (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+         0 0 0 (field_imm 3 (global Ppx_deriving_accessors!))))
+    (setfield_ptr(root-init) 5 (global Ppx_deriving_accessors!)
+      intf_generator/3732))
+  (let
+    (my_deriver/3733 =
+       (apply (field_imm 2 (global Ppxlib__Deriving!))
+         (makeblock 0 (field_imm 4 (global Ppx_deriving_accessors!))) 0 0 0
+         (makeblock 0 (field_imm 5 (global Ppx_deriving_accessors!))) 0 0 0 0
+         "accessors"))
+    (setfield_ptr(root-init) 6 (global Ppx_deriving_accessors!)
+      my_deriver/3733))
+  0)
+(seq
+  (let
+    (accessor_impl/2059 =
+       (function ld/2061
+         (let (loc/2062 = (field_imm 3 ld/2061))
+           (apply (field_imm 149 (field_imm 0 (global Ppxlib__Ast_builder!)))
+             loc/2062 0
+             (makeblock 0
+               (makeblock 0
+                 (apply
+                   (field_imm 113
+                     (field_imm 0 (global Ppxlib__Ast_builder!)))
+                   loc/2062 (field_imm 0 ld/2061))
+                 (apply
+                   (field_imm 53 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                   loc/2062 0 0
+                   (apply
+                     (field_imm 113
+                       (field_imm 0 (global Ppxlib__Ast_builder!)))
+                     loc/2062 (makeblock 0 "x" loc/2062))
+                   (apply
+                     (field_imm 61
+                       (field_imm 0 (global Ppxlib__Ast_builder!)))
+                     loc/2062
+                     (apply
+                       (field_imm 49
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       loc/2062
+                       (makeblock 0
+                         (apply (field_imm 0 (global Ppxlib!)) "x") loc/2062))
+                     (makeblock 0
+                       (apply (field_imm 0 (global Ppxlib!))
+                         (field_imm 0 (field_imm 0 ld/2061)))
+                       loc/2062)))
+                 0 loc/2062)
+               0)))))
+    (setfield_ptr(root-init) 0 (global Ppx_deriving_accessors!)
+      accessor_impl/2059))
+  (let
+    (accessor_intf/3168 =
+       (function ptype_name/3170 ld/3171
+         (let (loc/3172 = (field_imm 3 ld/3171))
+           (apply (field_imm 132 (field_imm 0 (global Ppxlib__Ast_builder!)))
+             loc/3172
+             (makeblock 0 (field_imm 0 ld/3171)
+               (apply
+                 (field_imm 35 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                 loc/3172 0
+                 (apply
+                   (field_imm 37 (field_imm 0 (global Ppxlib__Ast_builder!)))
+                   loc/3172
+                   (makeblock 0
+                     (apply (field_imm 0 (global Ppxlib!))
+                       (field_imm 0 ptype_name/3170))
+                     loc/3172)
+                   0)
+                 (field_imm 2 ld/3171))
+               0 0 loc/3172)))))
+    (setfield_ptr(root-init) 1 (global Ppx_deriving_accessors!)
+      accessor_intf/3168))
+  (let
+    (generate_impl/3173 =
+       (function ctxt/3175 param/3344
+         (let
+           (loc/3178 =
+              (apply
+                (field_imm 0
+                  (field_imm 2 (global Ppxlib__Expansion_context!)))
+                ctxt/3175))
+           (apply (field_imm 12 (global Stdlib__listLabels!))
+             (apply (field_imm 18 (global Stdlib__listLabels!))
+               (function td/3316
+                 (let (*match*/9829 =a (field_imm 3 td/3316))
+                   (catch
+                     (switch *match*/9829
+                      case tag 1:
+                       (apply (field_imm 18 (global Stdlib__listLabels!))
+                         (field_imm 0 (global Ppx_deriving_accessors!))
+                         (field_imm 0 *match*/9829))
+                      default: (exit 1))
+                    with (1)
+                     (let
+                       (ext/3319 =
+                          (apply (field_imm 13 (global Ppxlib__Location!))
+                            (field_imm 7 td/3316)
+                            [0:
+                             [11:
+                              "Cannot derive accessors for non record types"
+                              0]
+                             "Cannot derive accessors for non record types"]))
+                       (makeblock 0
+                         (apply
+                           (field_imm 162
+                             (field_imm 0 (global Ppxlib__Ast_builder!)))
+                           loc/3178 ext/3319 0)
+                         0)))))
+               (field_imm 1 param/3344))))))
+    (setfield_ptr(root-init) 2 (global Ppx_deriving_accessors!)
+      generate_impl/3173))
+  (let
+    (generate_intf/3345 =
+       (function ctxt/3347 param/3356
+         (let
+           (loc/3350 =
+              (apply
+                (field_imm 0
+                  (field_imm 2 (global Ppxlib__Expansion_context!)))
+                ctxt/3347))
+           (apply (field_imm 12 (global Stdlib__listLabels!))
+             (apply (field_imm 18 (global Stdlib__listLabels!))
+               (function td/3351
+                 (let (*match*/9852 =a (field_imm 3 td/3351))
+                   (catch
+                     (switch *match*/9852
+                      case tag 1:
+                       (apply (field_imm 18 (global Stdlib__listLabels!))
+                         (apply
+                           (field_imm 1 (global Ppx_deriving_accessors!))
+                           (field_imm 0 td/3351))
+                         (field_imm 0 *match*/9852))
+                      default: (exit 2))
+                    with (2)
+                     (let
+                       (ext/3355 =
+                          (apply (field_imm 13 (global Ppxlib__Location!))
+                            (field_imm 7 td/3351)
+                            [0:
+                             [11:
+                              "Cannot derive accessors for non record types"
+                              0]
+                             "Cannot derive accessors for non record types"]))
+                       (makeblock 0
+                         (apply
+                           (field_imm 147
+                             (field_imm 0 (global Ppxlib__Ast_builder!)))
+                           loc/3350 ext/3355 0)
+                         0)))))
+               (field_imm 1 param/3356))))))
+    (setfield_ptr(root-init) 3 (global Ppx_deriving_accessors!)
+      generate_intf/3345))
+  (let
+    (impl_generator/3357 =
+       (apply
+         (field_imm 1 (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+         0 0 0 (field_imm 2 (global Ppx_deriving_accessors!))))
+    (setfield_ptr(root-init) 4 (global Ppx_deriving_accessors!)
+      impl_generator/3357))
+  (let
+    (intf_generator/3732 =
+       (apply
+         (field_imm 1 (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+         0 0 0 (field_imm 3 (global Ppx_deriving_accessors!))))
+    (setfield_ptr(root-init) 5 (global Ppx_deriving_accessors!)
+      intf_generator/3732))
+  (let
+    (my_deriver/3733 =
+       (apply (field_imm 2 (global Ppxlib__Deriving!))
+         (makeblock 0 (field_imm 4 (global Ppx_deriving_accessors!))) 0 0 0
+         (makeblock 0 (field_imm 5 (global Ppx_deriving_accessors!))) 0 0 0 0
+         "accessors"))
+    (setfield_ptr(root-init) 6 (global Ppx_deriving_accessors!)
+      my_deriver/3733))
+  0)

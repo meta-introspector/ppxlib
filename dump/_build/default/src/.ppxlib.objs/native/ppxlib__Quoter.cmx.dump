@@ -1,0 +1,1169 @@
+[
+  structure_item (src/quoter.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (src/quoter.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Import" (src/quoter.ml[1,0+5]..[1,0+11])
+  structure_item (src/quoter.ml[3,13+0]..[6,100+1])
+    Pstr_type Rec
+    [
+      type_declaration "t" (src/quoter.ml[3,13+5]..[3,13+6]) (src/quoter.ml[3,13+0]..[6,100+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (src/quoter.ml[4,24+2]..[4,24+24])
+                Mutable
+                "next_id" (src/quoter.ml[4,24+10]..[4,24+17])                core_type (src/quoter.ml[4,24+20]..[4,24+23])
+                  Ptyp_constr "int" (src/quoter.ml[4,24+20]..[4,24+23])
+                  []
+              (src/quoter.ml[5,49+2]..[5,49+50])
+                Mutable
+                "bindings" (src/quoter.ml[5,49+10]..[5,49+18])                core_type (src/quoter.ml[5,49+21]..[5,49+49])
+                  Ptyp_constr "list" (src/quoter.ml[5,49+45]..[5,49+49])
+                  [
+                    core_type (src/quoter.ml[5,49+21]..[5,49+44])
+                      Ptyp_constr "Parsetree.value_binding" (src/quoter.ml[5,49+21]..[5,49+44])
+                      []
+                  ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/quoter.ml[8,103+0]..[8,103+46])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/quoter.ml[8,103+4]..[8,103+10])
+          Ppat_var "create" (src/quoter.ml[8,103+4]..[8,103+10])
+        expression (src/quoter.ml[8,103+11]..[8,103+46]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/quoter.ml[8,103+11]..[8,103+13])
+            Ppat_construct "()" (src/quoter.ml[8,103+11]..[8,103+13])
+            None
+          expression (src/quoter.ml[8,103+16]..[8,103+46])
+            Pexp_record
+            [
+              "next_id" (src/quoter.ml[8,103+18]..[8,103+25])
+                expression (src/quoter.ml[8,103+28]..[8,103+29])
+                  Pexp_constant PConst_int (0,None)
+              "bindings" (src/quoter.ml[8,103+31]..[8,103+39])
+                expression (src/quoter.ml[8,103+42]..[8,103+44])
+                  Pexp_construct "[]" (src/quoter.ml[8,103+42]..[8,103+44])
+                  None
+            ]
+            None
+    ]
+  structure_item (src/quoter.ml[10,151+0]..[15,278+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/quoter.ml[10,151+4]..[10,151+12])
+          Ppat_var "sanitize" (src/quoter.ml[10,151+4]..[10,151+12])
+        expression (src/quoter.ml[10,151+13]..[15,278+42]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/quoter.ml[10,151+13]..[10,151+14])
+            Ppat_var "t" (src/quoter.ml[10,151+13]..[10,151+14])
+          expression (src/quoter.ml[10,151+15]..[15,278+42]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/quoter.ml[10,151+15]..[10,151+16])
+              Ppat_var "e" (src/quoter.ml[10,151+15]..[10,151+16])
+            expression (src/quoter.ml[11,170+2]..[15,278+42])
+              Pexp_match
+              expression (src/quoter.ml[11,170+8]..[11,170+18])
+                Pexp_field
+                expression (src/quoter.ml[11,170+8]..[11,170+9])
+                  Pexp_ident "t" (src/quoter.ml[11,170+8]..[11,170+9])
+                "bindings" (src/quoter.ml[11,170+10]..[11,170+18])
+              [
+                <case>
+                  pattern (src/quoter.ml[12,194+4]..[12,194+6])
+                    Ppat_construct "[]" (src/quoter.ml[12,194+4]..[12,194+6])
+                    None
+                  expression (src/quoter.ml[12,194+10]..[12,194+11])
+                    Pexp_ident "e" (src/quoter.ml[12,194+10]..[12,194+11])
+                <case>
+                  pattern (src/quoter.ml[13,206+4]..[13,206+12])
+                    Ppat_var "bindings" (src/quoter.ml[13,206+4]..[13,206+12])
+                  expression (src/quoter.ml[14,222+6]..[15,278+42])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (src/quoter.ml[14,222+10]..[14,222+22])
+                          Ppat_unpack "Ast" (src/quoter.ml[14,222+18]..[14,222+21])
+                        expression (src/quoter.ml[14,222+25]..[14,222+52])
+                          Pexp_apply
+                          expression (src/quoter.ml[14,222+25]..[14,222+41])
+                            Pexp_ident "Ast_builder.make" (src/quoter.ml[14,222+25]..[14,222+41])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (src/quoter.ml[14,222+42]..[14,222+52])
+                                Pexp_field
+                                expression (src/quoter.ml[14,222+42]..[14,222+43])
+                                  Pexp_ident "e" (src/quoter.ml[14,222+42]..[14,222+43])
+                                "pexp_loc" (src/quoter.ml[14,222+44]..[14,222+52])
+                          ]
+                    ]
+                    expression (src/quoter.ml[15,278+6]..[15,278+42])
+                      Pexp_apply
+                      expression (src/quoter.ml[15,278+6]..[15,278+18])
+                        Pexp_ident "Ast.pexp_let" (src/quoter.ml[15,278+6]..[15,278+18])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/quoter.ml[15,278+19]..[15,278+31])
+                            Pexp_construct "Nonrecursive" (src/quoter.ml[15,278+19]..[15,278+31])
+                            None
+                        <arg>
+                        Nolabel
+                          expression (src/quoter.ml[15,278+32]..[15,278+40])
+                            Pexp_ident "bindings" (src/quoter.ml[15,278+32]..[15,278+40])
+                        <arg>
+                        Nolabel
+                          expression (src/quoter.ml[15,278+41]..[15,278+42])
+                            Pexp_ident "e" (src/quoter.ml[15,278+41]..[15,278+42])
+                      ]
+              ]
+    ]
+  structure_item (src/quoter.ml[17,322+0]..[42,1196+13])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/quoter.ml[17,322+4]..[17,322+9])
+          Ppat_var "quote" (src/quoter.ml[17,322+4]..[17,322+9])
+        expression (src/quoter.ml[17,322+10]..[42,1196+13]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/quoter.ml[17,322+10]..[17,322+11])
+            Ppat_var "t" (src/quoter.ml[17,322+10]..[17,322+11])
+          expression (src/quoter.ml[17,322+12]..[42,1196+13]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/quoter.ml[17,322+12]..[17,322+28])
+              Ppat_constraint
+              pattern (src/quoter.ml[17,322+13]..[17,322+14])
+                Ppat_var "e" (src/quoter.ml[17,322+13]..[17,322+14])
+              core_type (src/quoter.ml[17,322+17]..[17,322+27])
+                Ptyp_constr "expression" (src/quoter.ml[17,322+17]..[17,322+27])
+                []
+            expression (src/quoter.ml[18,353+2]..[42,1196+13])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (src/quoter.ml[18,353+6]..[18,353+9])
+                    Ppat_var "loc" (src/quoter.ml[18,353+6]..[18,353+9])
+                  expression (src/quoter.ml[18,353+12]..[18,353+22])
+                    Pexp_field
+                    expression (src/quoter.ml[18,353+12]..[18,353+13])
+                      Pexp_ident "e" (src/quoter.ml[18,353+12]..[18,353+13])
+                    "pexp_loc" (src/quoter.ml[18,353+14]..[18,353+22])
+              ]
+              expression (src/quoter.ml[19,379+2]..[42,1196+13])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (src/quoter.ml[19,379+6]..[19,379+18])
+                      Ppat_unpack "Ast" (src/quoter.ml[19,379+14]..[19,379+17])
+                    expression (src/quoter.ml[19,379+21]..[19,379+41])
+                      Pexp_apply
+                      expression (src/quoter.ml[19,379+21]..[19,379+37])
+                        Pexp_ident "Ast_builder.make" (src/quoter.ml[19,379+21]..[19,379+37])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (src/quoter.ml[19,379+38]..[19,379+41])
+                            Pexp_ident "loc" (src/quoter.ml[19,379+38]..[19,379+41])
+                      ]
+                ]
+                expression (src/quoter.ml[20,424+2]..[42,1196+13])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (src/quoter.ml[20,424+6]..[20,424+10])
+                        Ppat_var "name" (src/quoter.ml[20,424+6]..[20,424+10])
+                      expression (src/quoter.ml[20,424+13]..[20,424+43])
+                        Pexp_apply
+                        expression (src/quoter.ml[20,424+18]..[20,424+19])
+                          Pexp_ident "^" (src/quoter.ml[20,424+18]..[20,424+19])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (src/quoter.ml[20,424+13]..[20,424+17])
+                              Pexp_constant PConst_string("__",(src/quoter.ml[20,424+14]..[20,424+16]),None)
+                          <arg>
+                          Nolabel
+                            expression (src/quoter.ml[20,424+20]..[20,424+43])
+                              Pexp_apply
+                              expression (src/quoter.ml[20,424+20]..[20,424+33])
+                                Pexp_ident "Int.to_string" (src/quoter.ml[20,424+20]..[20,424+33])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (src/quoter.ml[20,424+34]..[20,424+43])
+                                    Pexp_field
+                                    expression (src/quoter.ml[20,424+34]..[20,424+35])
+                                      Pexp_ident "t" (src/quoter.ml[20,424+34]..[20,424+35])
+                                    "next_id" (src/quoter.ml[20,424+36]..[20,424+43])
+                              ]
+                        ]
+                  ]
+                  expression (src/quoter.ml[21,471+2]..[42,1196+13])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (src/quoter.ml[21,471+6]..[21,471+31])
+                          Ppat_tuple
+                          [
+                            pattern (src/quoter.ml[21,471+6]..[21,471+18])
+                              Ppat_var "binding_expr" (src/quoter.ml[21,471+6]..[21,471+18])
+                            pattern (src/quoter.ml[21,471+20]..[21,471+31])
+                              Ppat_var "quoted_expr" (src/quoter.ml[21,471+20]..[21,471+31])
+                          ]
+                        expression (src/quoter.ml[22,505+4]..[34,988+35])
+                          Pexp_match
+                          expression (src/quoter.ml[22,505+10]..[22,505+11])
+                            Pexp_ident "e" (src/quoter.ml[22,505+10]..[22,505+11])
+                          [
+                            <case>
+                              pattern (src/quoter.ml[25,644+6]..[25,644+37])
+                                Ppat_record Open
+                                [
+                                  "pexp_desc" (src/quoter.ml[25,644+8]..[25,644+17])
+                                    pattern (src/quoter.ml[25,644+20]..[25,644+32])
+                                      Ppat_construct "Pexp_ident" (src/quoter.ml[25,644+20]..[25,644+30])
+                                      Some
+                                        pattern (src/quoter.ml[25,644+31]..[25,644+32])
+                                          Ppat_any
+                                ]
+                              expression (src/quoter.ml[25,644+41]..[25,644+59])
+                                Pexp_tuple
+                                [
+                                  expression (src/quoter.ml[25,644+42]..[25,644+43])
+                                    Pexp_ident "e" (src/quoter.ml[25,644+42]..[25,644+43])
+                                  expression (src/quoter.ml[25,644+45]..[25,644+58])
+                                    Pexp_apply
+                                    expression (src/quoter.ml[25,644+45]..[25,644+53])
+                                      Pexp_ident "Ast.evar" (src/quoter.ml[25,644+45]..[25,644+53])
+                                    [
+                                      <arg>
+                                      Nolabel
+                                        expression (src/quoter.ml[25,644+54]..[25,644+58])
+                                          Pexp_ident "name" (src/quoter.ml[25,644+54]..[25,644+58])
+                                    ]
+                                ]
+                            <case>
+                              pattern (src/quoter.ml[26,704+6]..[26,704+7])
+                                Ppat_any
+                              expression (src/quoter.ml[27,715+8]..[34,988+35])
+                                Pexp_let Nonrec
+                                [
+                                  <def>
+                                    pattern (src/quoter.ml[27,715+12]..[27,715+24])
+                                      Ppat_var "binding_expr" (src/quoter.ml[27,715+12]..[27,715+24])
+                                    expression (src/quoter.ml[28,742+10]..[31,893+13])
+                                      Pexp_apply
+                                      expression (src/quoter.ml[28,742+10]..[28,742+22])
+                                        Pexp_ident "Ast.pexp_fun" (src/quoter.ml[28,742+10]..[28,742+22])
+                                      [
+                                        <arg>
+                                        Nolabel
+                                          expression (src/quoter.ml[28,742+23]..[28,742+30])
+                                            Pexp_construct "Nolabel" (src/quoter.ml[28,742+23]..[28,742+30])
+                                            None
+                                        <arg>
+                                        Nolabel
+                                          expression (src/quoter.ml[28,742+31]..[28,742+35])
+                                            Pexp_construct "None" (src/quoter.ml[28,742+31]..[28,742+35])
+                                            None
+                                        <arg>
+                                        Nolabel
+                                          expression (src/quoter.ml[29,778+12]..[30,850+42])
+                                            Pexp_let Nonrec
+                                            [
+                                              <def>
+                                                pattern (src/quoter.ml[29,778+17]..[29,778+21])
+                                                  Ppat_var "unit" (src/quoter.ml[29,778+17]..[29,778+21])
+                                                expression (src/quoter.ml[29,778+24]..[29,778+68])
+                                                  Pexp_apply
+                                                  expression (src/quoter.ml[29,778+24]..[29,778+58])
+                                                    Pexp_ident "Ast_builder.Default.Located.lident" (src/quoter.ml[29,778+24]..[29,778+58])
+                                                  [
+                                                    <arg>
+                                                    Labelled "loc"
+                                                      expression (src/quoter.ml[29,778+60]..[29,778+63])
+                                                        Pexp_ident "loc" (src/quoter.ml[29,778+60]..[29,778+63])
+                                                    <arg>
+                                                    Nolabel
+                                                      expression (src/quoter.ml[29,778+64]..[29,778+68])
+                                                        Pexp_constant PConst_string("()",(src/quoter.ml[29,778+65]..[29,778+67]),None)
+                                                  ]
+                                            ]
+                                            expression (src/quoter.ml[30,850+13]..[30,850+41])
+                                              Pexp_apply
+                                              expression (src/quoter.ml[30,850+13]..[30,850+31])
+                                                Pexp_ident "Ast.ppat_construct" (src/quoter.ml[30,850+13]..[30,850+31])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (src/quoter.ml[30,850+32]..[30,850+36])
+                                                    Pexp_ident "unit" (src/quoter.ml[30,850+32]..[30,850+36])
+                                                <arg>
+                                                Nolabel
+                                                  expression (src/quoter.ml[30,850+37]..[30,850+41])
+                                                    Pexp_construct "None" (src/quoter.ml[30,850+37]..[30,850+41])
+                                                    None
+                                              ]
+                                        <arg>
+                                        Nolabel
+                                          expression (src/quoter.ml[31,893+12]..[31,893+13])
+                                            Pexp_ident "e" (src/quoter.ml[31,893+12]..[31,893+13])
+                                      ]
+                                ]
+                                expression (src/quoter.ml[33,918+8]..[34,988+35])
+                                  Pexp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (src/quoter.ml[33,918+12]..[33,918+23])
+                                        Ppat_var "quoted_expr" (src/quoter.ml[33,918+12]..[33,918+23])
+                                      expression (src/quoter.ml[33,918+26]..[33,918+66])
+                                        Pexp_apply
+                                        expression (src/quoter.ml[33,918+26]..[33,918+36])
+                                          Pexp_ident "Ast.eapply" (src/quoter.ml[33,918+26]..[33,918+36])
+                                        [
+                                          <arg>
+                                          Nolabel
+                                            expression (src/quoter.ml[33,918+37]..[33,918+52])
+                                              Pexp_apply
+                                              expression (src/quoter.ml[33,918+38]..[33,918+46])
+                                                Pexp_ident "Ast.evar" (src/quoter.ml[33,918+38]..[33,918+46])
+                                              [
+                                                <arg>
+                                                Nolabel
+                                                  expression (src/quoter.ml[33,918+47]..[33,918+51])
+                                                    Pexp_ident "name" (src/quoter.ml[33,918+47]..[33,918+51])
+                                              ]
+                                          <arg>
+                                          Nolabel
+                                            expression (src/quoter.ml[33,918+53]..[33,918+66])
+                                              Pexp_construct "::" (src/quoter.ml[33,918+55]..[33,918+66]) ghost
+                                              Some
+                                                expression (src/quoter.ml[33,918+55]..[33,918+66]) ghost
+                                                  Pexp_tuple
+                                                  [
+                                                    expression (src/quoter.ml[33,918+55]..[33,918+64])
+                                                      Pexp_ident "Ast.eunit" (src/quoter.ml[33,918+55]..[33,918+64])
+                                                    expression (src/quoter.ml[33,918+65]..[33,918+66]) ghost
+                                                      Pexp_construct "[]" (src/quoter.ml[33,918+65]..[33,918+66]) ghost
+                                                      None
+                                                  ]
+                                        ]
+                                  ]
+                                  expression (src/quoter.ml[34,988+8]..[34,988+35])
+                                    Pexp_tuple
+                                    [
+                                      expression (src/quoter.ml[34,988+9]..[34,988+21])
+                                        Pexp_ident "binding_expr" (src/quoter.ml[34,988+9]..[34,988+21])
+                                      expression (src/quoter.ml[34,988+23]..[34,988+34])
+                                        Pexp_ident "quoted_expr" (src/quoter.ml[34,988+23]..[34,988+34])
+                                    ]
+                          ]
+                    ]
+                    expression (src/quoter.ml[36,1029+2]..[42,1196+13])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (src/quoter.ml[36,1029+6]..[36,1029+13])
+                            Ppat_var "binding" (src/quoter.ml[36,1029+6]..[36,1029+13])
+                          expression (src/quoter.ml[37,1045+4]..[38,1076+45])
+                            Pexp_let Nonrec
+                            [
+                              <def>
+                                pattern (src/quoter.ml[37,1045+8]..[37,1045+11])
+                                  Ppat_var "pat" (src/quoter.ml[37,1045+8]..[37,1045+11])
+                                expression (src/quoter.ml[37,1045+14]..[37,1045+27])
+                                  Pexp_apply
+                                  expression (src/quoter.ml[37,1045+14]..[37,1045+22])
+                                    Pexp_ident "Ast.pvar" (src/quoter.ml[37,1045+14]..[37,1045+22])
+                                  [
+                                    <arg>
+                                    Nolabel
+                                      expression (src/quoter.ml[37,1045+23]..[37,1045+27])
+                                        Pexp_ident "name" (src/quoter.ml[37,1045+23]..[37,1045+27])
+                                  ]
+                            ]
+                            expression (src/quoter.ml[38,1076+4]..[38,1076+45])
+                              Pexp_apply
+                              expression (src/quoter.ml[38,1076+4]..[38,1076+21])
+                                Pexp_ident "Ast.value_binding" (src/quoter.ml[38,1076+4]..[38,1076+21])
+                              [
+                                <arg>
+                                Labelled "pat"
+                                  expression (src/quoter.ml[38,1076+23]..[38,1076+26])
+                                    Pexp_ident "pat" (src/quoter.ml[38,1076+23]..[38,1076+26])
+                                <arg>
+                                Labelled "expr"
+                                  expression (src/quoter.ml[38,1076+33]..[38,1076+45])
+                                    Pexp_ident "binding_expr" (src/quoter.ml[38,1076+33]..[38,1076+45])
+                              ]
+                      ]
+                      expression (src/quoter.ml[40,1127+2]..[42,1196+13])
+                        Pexp_sequence
+                        expression (src/quoter.ml[40,1127+2]..[40,1127+37])
+                          Pexp_setfield
+                          expression (src/quoter.ml[40,1127+2]..[40,1127+3])
+                            Pexp_ident "t" (src/quoter.ml[40,1127+2]..[40,1127+3])
+                          "bindings" (src/quoter.ml[40,1127+4]..[40,1127+12])
+                          expression (src/quoter.ml[40,1127+16]..[40,1127+37])
+                            Pexp_construct "::" (src/quoter.ml[40,1127+24]..[40,1127+26])
+                            Some
+                              expression (src/quoter.ml[40,1127+16]..[40,1127+37]) ghost
+                                Pexp_tuple
+                                [
+                                  expression (src/quoter.ml[40,1127+16]..[40,1127+23])
+                                    Pexp_ident "binding" (src/quoter.ml[40,1127+16]..[40,1127+23])
+                                  expression (src/quoter.ml[40,1127+27]..[40,1127+37])
+                                    Pexp_field
+                                    expression (src/quoter.ml[40,1127+27]..[40,1127+28])
+                                      Pexp_ident "t" (src/quoter.ml[40,1127+27]..[40,1127+28])
+                                    "bindings" (src/quoter.ml[40,1127+29]..[40,1127+37])
+                                ]
+                        expression (src/quoter.ml[41,1166+2]..[42,1196+13])
+                          Pexp_sequence
+                          expression (src/quoter.ml[41,1166+2]..[41,1166+28])
+                            Pexp_setfield
+                            expression (src/quoter.ml[41,1166+2]..[41,1166+3])
+                              Pexp_ident "t" (src/quoter.ml[41,1166+2]..[41,1166+3])
+                            "next_id" (src/quoter.ml[41,1166+4]..[41,1166+11])
+                            expression (src/quoter.ml[41,1166+15]..[41,1166+28])
+                              Pexp_apply
+                              expression (src/quoter.ml[41,1166+25]..[41,1166+26])
+                                Pexp_ident "+" (src/quoter.ml[41,1166+25]..[41,1166+26])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (src/quoter.ml[41,1166+15]..[41,1166+24])
+                                    Pexp_field
+                                    expression (src/quoter.ml[41,1166+15]..[41,1166+16])
+                                      Pexp_ident "t" (src/quoter.ml[41,1166+15]..[41,1166+16])
+                                    "next_id" (src/quoter.ml[41,1166+17]..[41,1166+24])
+                                <arg>
+                                Nolabel
+                                  expression (src/quoter.ml[41,1166+27]..[41,1166+28])
+                                    Pexp_constant PConst_int (1,None)
+                              ]
+                          expression (src/quoter.ml[42,1196+2]..[42,1196+13])
+                            Pexp_ident "quoted_expr" (src/quoter.ml[42,1196+2]..[42,1196+13])
+    ]
+]
+
+open Import
+type t =
+  {
+  mutable next_id: int ;
+  mutable bindings: Parsetree.value_binding list }
+let create () = { next_id = 0; bindings = [] }
+let sanitize t e =
+  match t.bindings with
+  | [] -> e
+  | bindings ->
+      let (module Ast)  = Ast_builder.make e.pexp_loc in
+      Ast.pexp_let Nonrecursive bindings e
+let quote t (e : expression) =
+  let loc = e.pexp_loc in
+  let (module Ast)  = Ast_builder.make loc in
+  let name = "__" ^ (Int.to_string t.next_id) in
+  let (binding_expr, quoted_expr) =
+    match e with
+    | { pexp_desc = Pexp_ident _;_} -> (e, (Ast.evar name))
+    | _ ->
+        let binding_expr =
+          Ast.pexp_fun Nolabel None
+            (let unit = Ast_builder.Default.Located.lident ~loc "()" in
+             Ast.ppat_construct unit None) e in
+        let quoted_expr = Ast.eapply (Ast.evar name) [Ast.eunit] in
+        (binding_expr, quoted_expr) in
+  let binding =
+    let pat = Ast.pvar name in Ast.value_binding ~pat ~expr:binding_expr in
+  t.bindings <- (binding :: (t.bindings));
+  t.next_id <- (t.next_id + 1);
+  quoted_expr
+[
+  structure_item (src/quoter.ml[1,0+0]..src/quoter.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (src/quoter.ml[1,0+5]..src/quoter.ml[1,0+11])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/quoter.ml[3,13+0]..src/quoter.ml[6,100+1])
+    Tstr_type Rec
+    [
+      type_declaration t/550 (src/quoter.ml[3,13+0]..src/quoter.ml[6,100+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (src/quoter.ml[4,24+2]..src/quoter.ml[4,24+24])
+                Mutable
+                next_id/551                core_type (src/quoter.ml[4,24+20]..src/quoter.ml[4,24+23])
+                  Ttyp_poly
+                  core_type (src/quoter.ml[4,24+20]..src/quoter.ml[4,24+23])
+                    Ttyp_constr "int/1!"
+                    []
+              (src/quoter.ml[5,49+2]..src/quoter.ml[5,49+50])
+                Mutable
+                bindings/1103                core_type (src/quoter.ml[5,49+21]..src/quoter.ml[5,49+49])
+                  Ttyp_poly
+                  core_type (src/quoter.ml[5,49+21]..src/quoter.ml[5,49+49])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/quoter.ml[5,49+21]..src/quoter.ml[5,49+44])
+                        Ttyp_constr "Ppxlib__!.Import.Parsetree.value_binding"
+                        []
+                    ]
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/quoter.ml[8,103+0]..src/quoter.ml[8,103+46])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/quoter.ml[8,103+4]..src/quoter.ml[8,103+10])
+          Tpat_var "create/1104"
+        expression (src/quoter.ml[8,103+11]..src/quoter.ml[8,103+46]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/quoter.ml[8,103+11]..src/quoter.ml[8,103+13])
+                Tpat_construct "()"
+                []
+              expression (src/quoter.ml[8,103+16]..src/quoter.ml[8,103+46])
+                Texp_record
+                  fields =
+                    [
+                      "next_id"
+                        expression (src/quoter.ml[8,103+28]..src/quoter.ml[8,103+29])
+                          Texp_constant Const_int 0
+                      "bindings"
+                        expression (src/quoter.ml[8,103+42]..src/quoter.ml[8,103+44])
+                          Texp_construct "[]"
+                          []
+                    ]
+                  representation =
+                    Record_regular
+                  extended_expression =
+                    None
+          ]
+    ]
+  structure_item (src/quoter.ml[10,151+0]..src/quoter.ml[15,278+42])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/quoter.ml[10,151+4]..src/quoter.ml[10,151+12])
+          Tpat_var "sanitize/1107"
+        expression (src/quoter.ml[10,151+13]..src/quoter.ml[15,278+42]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/quoter.ml[10,151+13]..src/quoter.ml[10,151+14])
+                Tpat_var "t/1109"
+              expression (src/quoter.ml[10,151+15]..src/quoter.ml[15,278+42]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/quoter.ml[10,151+15]..src/quoter.ml[10,151+16])
+                      Tpat_var "e/1110"
+                    expression (src/quoter.ml[11,170+2]..src/quoter.ml[15,278+42])
+                      Texp_match
+                      expression (src/quoter.ml[11,170+8]..src/quoter.ml[11,170+18])
+                        Texp_field
+                        expression (src/quoter.ml[11,170+8]..src/quoter.ml[11,170+9])
+                          Texp_ident "t/1109"
+                        "bindings"
+                      [
+                        <case>
+                          pattern (src/quoter.ml[12,194+4]..src/quoter.ml[12,194+6])
+                            Tpat_value
+                            pattern (src/quoter.ml[12,194+4]..src/quoter.ml[12,194+6])
+                              Tpat_construct "[]"
+                              []
+                          expression (src/quoter.ml[12,194+10]..src/quoter.ml[12,194+11])
+                            Texp_ident "e/1110"
+                        <case>
+                          pattern (src/quoter.ml[13,206+4]..src/quoter.ml[13,206+12])
+                            Tpat_value
+                            pattern (src/quoter.ml[13,206+4]..src/quoter.ml[13,206+12])
+                              Tpat_var "bindings/1111"
+                          expression (src/quoter.ml[14,222+6]..src/quoter.ml[15,278+42])
+                            Texp_let Nonrec
+                            [
+                              <def>
+                                pattern (src/quoter.ml[14,222+10]..src/quoter.ml[14,222+22])
+                                  Tpat_extra_unpack
+                                  pattern (src/quoter.ml[14,222+10]..src/quoter.ml[14,222+22])
+                                    Tpat_var "Ast/1112"
+                                expression (src/quoter.ml[14,222+25]..src/quoter.ml[14,222+52])
+                                  Texp_apply
+                                  expression (src/quoter.ml[14,222+25]..src/quoter.ml[14,222+41])
+                                    Texp_ident "Ppxlib__!.Ast_builder.make"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (src/quoter.ml[14,222+42]..src/quoter.ml[14,222+52])
+                                        Texp_field
+                                        expression (src/quoter.ml[14,222+42]..src/quoter.ml[14,222+43])
+                                          Texp_ident "e/1110"
+                                        "pexp_loc"
+                                  ]
+                            ]
+                            expression (src/quoter.ml[15,278+6]..src/quoter.ml[15,278+42]) ghost
+                              attribute "#modulepat"
+                                []
+                              Texp_letmodule "Ast/2144"
+                              module_expr (src/quoter.ml[14,222+10]..src/quoter.ml[14,222+22])
+                                Tmod_unpack
+                                expression (src/quoter.ml[14,222+18]..src/quoter.ml[14,222+21])
+                                  Texp_ident "Ast/1112"
+                              expression (src/quoter.ml[15,278+6]..src/quoter.ml[15,278+42])
+                                Texp_apply
+                                expression (src/quoter.ml[15,278+6]..src/quoter.ml[15,278+18])
+                                  Texp_ident "Ast/2144.pexp_let"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (src/quoter.ml[15,278+19]..src/quoter.ml[15,278+31])
+                                      Texp_construct "Nonrecursive"
+                                      []
+                                  <arg>
+                                    Nolabel
+                                    expression (src/quoter.ml[15,278+32]..src/quoter.ml[15,278+40])
+                                      Texp_ident "bindings/1111"
+                                  <arg>
+                                    Nolabel
+                                    expression (src/quoter.ml[15,278+41]..src/quoter.ml[15,278+42])
+                                      Texp_ident "e/1110"
+                                ]
+                      ]
+                      []
+                ]
+          ]
+    ]
+  structure_item (src/quoter.ml[17,322+0]..src/quoter.ml[42,1196+13])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/quoter.ml[17,322+4]..src/quoter.ml[17,322+9])
+          Tpat_var "quote/2429"
+        expression (src/quoter.ml[17,322+10]..src/quoter.ml[42,1196+13]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/quoter.ml[17,322+10]..src/quoter.ml[17,322+11])
+                Tpat_var "t/2431"
+              expression (src/quoter.ml[17,322+12]..src/quoter.ml[42,1196+13]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/quoter.ml[17,322+13]..src/quoter.ml[17,322+14])
+                      Tpat_extra_constraint
+                      core_type (src/quoter.ml[17,322+17]..src/quoter.ml[17,322+27])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                      pattern (src/quoter.ml[17,322+13]..src/quoter.ml[17,322+14])
+                        Tpat_alias "e/2432"
+                        pattern (src/quoter.ml[17,322+13]..src/quoter.ml[17,322+14])
+                          Tpat_any
+                    expression (src/quoter.ml[18,353+2]..src/quoter.ml[42,1196+13])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (src/quoter.ml[18,353+6]..src/quoter.ml[18,353+9])
+                            Tpat_var "loc/2433"
+                          expression (src/quoter.ml[18,353+12]..src/quoter.ml[18,353+22])
+                            Texp_field
+                            expression (src/quoter.ml[18,353+12]..src/quoter.ml[18,353+13])
+                              Texp_ident "e/2432"
+                            "pexp_loc"
+                      ]
+                      expression (src/quoter.ml[19,379+2]..src/quoter.ml[42,1196+13])
+                        Texp_let Nonrec
+                        [
+                          <def>
+                            pattern (src/quoter.ml[19,379+6]..src/quoter.ml[19,379+18])
+                              Tpat_extra_unpack
+                              pattern (src/quoter.ml[19,379+6]..src/quoter.ml[19,379+18])
+                                Tpat_var "Ast/2434"
+                            expression (src/quoter.ml[19,379+21]..src/quoter.ml[19,379+41])
+                              Texp_apply
+                              expression (src/quoter.ml[19,379+21]..src/quoter.ml[19,379+37])
+                                Texp_ident "Ppxlib__!.Ast_builder.make"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (src/quoter.ml[19,379+38]..src/quoter.ml[19,379+41])
+                                    Texp_ident "loc/2433"
+                              ]
+                        ]
+                        expression (src/quoter.ml[20,424+2]..src/quoter.ml[42,1196+13]) ghost
+                          attribute "#modulepat"
+                            []
+                          Texp_letmodule "Ast/2435"
+                          module_expr (src/quoter.ml[19,379+6]..src/quoter.ml[19,379+18])
+                            Tmod_unpack
+                            expression (src/quoter.ml[19,379+14]..src/quoter.ml[19,379+17])
+                              Texp_ident "Ast/2434"
+                          expression (src/quoter.ml[20,424+2]..src/quoter.ml[42,1196+13])
+                            Texp_let Nonrec
+                            [
+                              <def>
+                                pattern (src/quoter.ml[20,424+6]..src/quoter.ml[20,424+10])
+                                  Tpat_var "name/2436"
+                                expression (src/quoter.ml[20,424+13]..src/quoter.ml[20,424+43])
+                                  Texp_apply
+                                  expression (src/quoter.ml[20,424+18]..src/quoter.ml[20,424+19])
+                                    Texp_ident "Stdlib!.^"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (src/quoter.ml[20,424+13]..src/quoter.ml[20,424+17])
+                                        Texp_constant Const_string("__",(src/quoter.ml[20,424+14]..src/quoter.ml[20,424+16]),None)
+                                    <arg>
+                                      Nolabel
+                                      expression (src/quoter.ml[20,424+20]..src/quoter.ml[20,424+43])
+                                        Texp_apply
+                                        expression (src/quoter.ml[20,424+20]..src/quoter.ml[20,424+33])
+                                          Texp_ident "Ppxlib__!.Import.Int.to_string"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (src/quoter.ml[20,424+34]..src/quoter.ml[20,424+43])
+                                              Texp_field
+                                              expression (src/quoter.ml[20,424+34]..src/quoter.ml[20,424+35])
+                                                Texp_ident "t/2431"
+                                              "next_id"
+                                        ]
+                                  ]
+                            ]
+                            expression (src/quoter.ml[21,471+2]..src/quoter.ml[42,1196+13])
+                              Texp_let Nonrec
+                              [
+                                <def>
+                                  pattern (src/quoter.ml[21,471+6]..src/quoter.ml[21,471+31])
+                                    Tpat_tuple
+                                    [
+                                      pattern (src/quoter.ml[21,471+6]..src/quoter.ml[21,471+18])
+                                        Tpat_var "binding_expr/2495"
+                                      pattern (src/quoter.ml[21,471+20]..src/quoter.ml[21,471+31])
+                                        Tpat_var "quoted_expr/2496"
+                                    ]
+                                  expression (src/quoter.ml[22,505+4]..src/quoter.ml[34,988+35])
+                                    Texp_match
+                                    expression (src/quoter.ml[22,505+10]..src/quoter.ml[22,505+11])
+                                      Texp_ident "e/2432"
+                                    [
+                                      <case>
+                                        pattern (src/quoter.ml[25,644+6]..src/quoter.ml[25,644+37])
+                                          Tpat_value
+                                          pattern (src/quoter.ml[25,644+6]..src/quoter.ml[25,644+37])
+                                            Tpat_record
+                                            [
+                                              "pexp_desc"
+                                                pattern (src/quoter.ml[25,644+20]..src/quoter.ml[25,644+32])
+                                                  Tpat_construct "Pexp_ident"
+                                                  [
+                                                    pattern (src/quoter.ml[25,644+31]..src/quoter.ml[25,644+32])
+                                                      Tpat_any
+                                                  ]
+                                            ]
+                                        expression (src/quoter.ml[25,644+41]..src/quoter.ml[25,644+59])
+                                          Texp_tuple
+                                          [
+                                            expression (src/quoter.ml[25,644+42]..src/quoter.ml[25,644+43])
+                                              Texp_ident "e/2432"
+                                            expression (src/quoter.ml[25,644+45]..src/quoter.ml[25,644+58])
+                                              Texp_apply
+                                              expression (src/quoter.ml[25,644+45]..src/quoter.ml[25,644+53])
+                                                Texp_ident "Ast/2435.evar"
+                                              [
+                                                <arg>
+                                                  Nolabel
+                                                  expression (src/quoter.ml[25,644+54]..src/quoter.ml[25,644+58])
+                                                    Texp_ident "name/2436"
+                                              ]
+                                          ]
+                                      <case>
+                                        pattern (src/quoter.ml[26,704+6]..src/quoter.ml[26,704+7])
+                                          Tpat_value
+                                          pattern (src/quoter.ml[26,704+6]..src/quoter.ml[26,704+7])
+                                            Tpat_any
+                                        expression (src/quoter.ml[27,715+8]..src/quoter.ml[34,988+35])
+                                          Texp_let Nonrec
+                                          [
+                                            <def>
+                                              pattern (src/quoter.ml[27,715+12]..src/quoter.ml[27,715+24])
+                                                Tpat_var "binding_expr/3286"
+                                              expression (src/quoter.ml[28,742+10]..src/quoter.ml[31,893+13])
+                                                Texp_apply
+                                                expression (src/quoter.ml[28,742+10]..src/quoter.ml[28,742+22])
+                                                  Texp_ident "Ast/2435.pexp_fun"
+                                                [
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (src/quoter.ml[28,742+23]..src/quoter.ml[28,742+30])
+                                                      Texp_construct "Nolabel"
+                                                      []
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (src/quoter.ml[28,742+31]..src/quoter.ml[28,742+35])
+                                                      Texp_construct "None"
+                                                      []
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (src/quoter.ml[29,778+12]..src/quoter.ml[30,850+42])
+                                                      Texp_let Nonrec
+                                                      [
+                                                        <def>
+                                                          pattern (src/quoter.ml[29,778+17]..src/quoter.ml[29,778+21])
+                                                            Tpat_var "unit/3287"
+                                                          expression (src/quoter.ml[29,778+24]..src/quoter.ml[29,778+68])
+                                                            Texp_apply
+                                                            expression (src/quoter.ml[29,778+24]..src/quoter.ml[29,778+58])
+                                                              Texp_ident "Ppxlib__!.Ast_builder.Default.Located.lident"
+                                                            [
+                                                              <arg>
+                                                                Labelled "loc"
+                                                                expression (src/quoter.ml[29,778+60]..src/quoter.ml[29,778+63])
+                                                                  Texp_ident "loc/2433"
+                                                              <arg>
+                                                                Nolabel
+                                                                expression (src/quoter.ml[29,778+64]..src/quoter.ml[29,778+68])
+                                                                  Texp_constant Const_string("()",(src/quoter.ml[29,778+65]..src/quoter.ml[29,778+67]),None)
+                                                            ]
+                                                      ]
+                                                      expression (src/quoter.ml[30,850+13]..src/quoter.ml[30,850+41])
+                                                        Texp_apply
+                                                        expression (src/quoter.ml[30,850+13]..src/quoter.ml[30,850+31])
+                                                          Texp_ident "Ast/2435.ppat_construct"
+                                                        [
+                                                          <arg>
+                                                            Nolabel
+                                                            expression (src/quoter.ml[30,850+32]..src/quoter.ml[30,850+36])
+                                                              Texp_ident "unit/3287"
+                                                          <arg>
+                                                            Nolabel
+                                                            expression (src/quoter.ml[30,850+37]..src/quoter.ml[30,850+41])
+                                                              Texp_construct "None"
+                                                              []
+                                                        ]
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (src/quoter.ml[31,893+12]..src/quoter.ml[31,893+13])
+                                                      Texp_ident "e/2432"
+                                                ]
+                                          ]
+                                          expression (src/quoter.ml[33,918+8]..src/quoter.ml[34,988+35])
+                                            Texp_let Nonrec
+                                            [
+                                              <def>
+                                                pattern (src/quoter.ml[33,918+12]..src/quoter.ml[33,918+23])
+                                                  Tpat_var "quoted_expr/4061"
+                                                expression (src/quoter.ml[33,918+26]..src/quoter.ml[33,918+66])
+                                                  Texp_apply
+                                                  expression (src/quoter.ml[33,918+26]..src/quoter.ml[33,918+36])
+                                                    Texp_ident "Ast/2435.eapply"
+                                                  [
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (src/quoter.ml[33,918+37]..src/quoter.ml[33,918+52])
+                                                        Texp_apply
+                                                        expression (src/quoter.ml[33,918+38]..src/quoter.ml[33,918+46])
+                                                          Texp_ident "Ast/2435.evar"
+                                                        [
+                                                          <arg>
+                                                            Nolabel
+                                                            expression (src/quoter.ml[33,918+47]..src/quoter.ml[33,918+51])
+                                                              Texp_ident "name/2436"
+                                                        ]
+                                                    <arg>
+                                                      Nolabel
+                                                      expression (src/quoter.ml[33,918+53]..src/quoter.ml[33,918+66])
+                                                        Texp_construct "::"
+                                                        [
+                                                          expression (src/quoter.ml[33,918+55]..src/quoter.ml[33,918+64])
+                                                            Texp_ident "Ast/2435.eunit"
+                                                          expression (src/quoter.ml[33,918+65]..src/quoter.ml[33,918+66]) ghost
+                                                            Texp_construct "[]"
+                                                            []
+                                                        ]
+                                                  ]
+                                            ]
+                                            expression (src/quoter.ml[34,988+8]..src/quoter.ml[34,988+35])
+                                              Texp_tuple
+                                              [
+                                                expression (src/quoter.ml[34,988+9]..src/quoter.ml[34,988+21])
+                                                  Texp_ident "binding_expr/3286"
+                                                expression (src/quoter.ml[34,988+23]..src/quoter.ml[34,988+34])
+                                                  Texp_ident "quoted_expr/4061"
+                                              ]
+                                    ]
+                                    []
+                              ]
+                              expression (src/quoter.ml[36,1029+2]..src/quoter.ml[42,1196+13])
+                                Texp_let Nonrec
+                                [
+                                  <def>
+                                    pattern (src/quoter.ml[36,1029+6]..src/quoter.ml[36,1029+13])
+                                      Tpat_var "binding/4062"
+                                    expression (src/quoter.ml[37,1045+4]..src/quoter.ml[38,1076+45])
+                                      Texp_let Nonrec
+                                      [
+                                        <def>
+                                          pattern (src/quoter.ml[37,1045+8]..src/quoter.ml[37,1045+11])
+                                            Tpat_var "pat/4063"
+                                          expression (src/quoter.ml[37,1045+14]..src/quoter.ml[37,1045+27])
+                                            Texp_apply
+                                            expression (src/quoter.ml[37,1045+14]..src/quoter.ml[37,1045+22])
+                                              Texp_ident "Ast/2435.pvar"
+                                            [
+                                              <arg>
+                                                Nolabel
+                                                expression (src/quoter.ml[37,1045+23]..src/quoter.ml[37,1045+27])
+                                                  Texp_ident "name/2436"
+                                            ]
+                                      ]
+                                      expression (src/quoter.ml[38,1076+4]..src/quoter.ml[38,1076+45])
+                                        Texp_apply
+                                        expression (src/quoter.ml[38,1076+4]..src/quoter.ml[38,1076+21])
+                                          Texp_ident "Ast/2435.value_binding"
+                                        [
+                                          <arg>
+                                            Labelled "pat"
+                                            expression (src/quoter.ml[38,1076+23]..src/quoter.ml[38,1076+26])
+                                              Texp_ident "pat/4063"
+                                          <arg>
+                                            Labelled "expr"
+                                            expression (src/quoter.ml[38,1076+33]..src/quoter.ml[38,1076+45])
+                                              Texp_ident "binding_expr/2495"
+                                        ]
+                                ]
+                                expression (src/quoter.ml[40,1127+2]..src/quoter.ml[42,1196+13])
+                                  Texp_sequence
+                                  expression (src/quoter.ml[40,1127+2]..src/quoter.ml[40,1127+37])
+                                    Texp_setfield
+                                    expression (src/quoter.ml[40,1127+2]..src/quoter.ml[40,1127+3])
+                                      Texp_ident "t/2431"
+                                    "bindings"
+                                    expression (src/quoter.ml[40,1127+16]..src/quoter.ml[40,1127+37])
+                                      Texp_construct "::"
+                                      [
+                                        expression (src/quoter.ml[40,1127+16]..src/quoter.ml[40,1127+23])
+                                          Texp_ident "binding/4062"
+                                        expression (src/quoter.ml[40,1127+27]..src/quoter.ml[40,1127+37])
+                                          Texp_field
+                                          expression (src/quoter.ml[40,1127+27]..src/quoter.ml[40,1127+28])
+                                            Texp_ident "t/2431"
+                                          "bindings"
+                                      ]
+                                  expression (src/quoter.ml[41,1166+2]..src/quoter.ml[42,1196+13])
+                                    Texp_sequence
+                                    expression (src/quoter.ml[41,1166+2]..src/quoter.ml[41,1166+28])
+                                      Texp_setfield
+                                      expression (src/quoter.ml[41,1166+2]..src/quoter.ml[41,1166+3])
+                                        Texp_ident "t/2431"
+                                      "next_id"
+                                      expression (src/quoter.ml[41,1166+15]..src/quoter.ml[41,1166+28])
+                                        Texp_apply
+                                        expression (src/quoter.ml[41,1166+25]..src/quoter.ml[41,1166+26])
+                                          Texp_ident "Stdlib!.+"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (src/quoter.ml[41,1166+15]..src/quoter.ml[41,1166+24])
+                                              Texp_field
+                                              expression (src/quoter.ml[41,1166+15]..src/quoter.ml[41,1166+16])
+                                                Texp_ident "t/2431"
+                                              "next_id"
+                                          <arg>
+                                            Nolabel
+                                            expression (src/quoter.ml[41,1166+27]..src/quoter.ml[41,1166+28])
+                                              Texp_constant Const_int 1
+                                        ]
+                                    expression (src/quoter.ml[42,1196+2]..src/quoter.ml[42,1196+13])
+                                      Texp_ident "quoted_expr/2496"
+                ]
+          ]
+    ]
+]
+
+(seq
+  (let (create/1104 = (function param/1106 (makemutable 0 (int,*) 0 0)))
+    (setfield_ptr(root-init) 0 (global Ppxlib__Quoter!) create/1104))
+  (let
+    (sanitize/1107 =
+       (function t/1109 e/1110
+         (let (bindings/1111 = (field_mut 1 t/1109))
+           (catch (if bindings/1111 (exit 1) e/1110) with (1)
+             (let
+               (Ast/1112 =
+                  (apply (field_imm 2 (global Ppxlib__Ast_builder!))
+                    (field_imm 1 e/1110))
+                Ast/2144 =
+                  (module-defn(Ast/2144) Ppxlib__Quoter.sanitize src/quoter.ml(14):240-243
+                    Ast/1112))
+               (apply (field_imm 52 Ast/2144) 0 bindings/1111 e/1110))))))
+    (setfield_ptr(root-init) 2 (global Ppxlib__Quoter!) sanitize/1107))
+  (let
+    (quote/2429 =
+       (function t/2431 e/2432
+         (let
+           (loc/2433 = (field_imm 1 e/2432)
+            Ast/2434 =
+              (apply (field_imm 2 (global Ppxlib__Ast_builder!)) loc/2433)
+            Ast/2435 =
+              (module-defn(Ast/2435) Ppxlib__Quoter.quote src/quoter.ml(19):393-396
+                Ast/2434)
+            name/2436 =
+              (apply (field_imm 30 (global Stdlib!)) "__"
+                (apply (field_imm 1 (field_imm 89 (global Ppxlib__Import!)))
+                  (field_int 0 t/2431))))
+           (catch
+             (catch
+               (let (*match*/12273 =a (field_imm 0 e/2432))
+                 (switch *match*/12273
+                  case tag 0:
+                   (let
+                     (*match*/12277 =a (field_imm 3 e/2432)
+                      *match*/12276 =a (field_imm 2 e/2432)
+                      *match*/12275 =a (field_imm 1 e/2432)
+                      *match*/12274 =a (field_imm 0 *match*/12273)
+                      quoted_expr/12281 =
+                        (apply (field_imm 188 Ast/2435) name/2436)
+                      binding_expr/12280 =a e/2432)
+                     (exit 3 binding_expr/12280 quoted_expr/12281))
+                  default: (exit 2)))
+              with (2)
+               (let
+                 (binding_expr/3286 =
+                    (apply (field_imm 54 Ast/2435) 0 0
+                      (let
+                        (unit/3287 =
+                           (apply
+                             (field_imm 4
+                               (field_imm 0
+                                 (field_imm 0 (global Ppxlib__Ast_builder!))))
+                             loc/2433 "()"))
+                        (apply (field_imm 207 Ast/2435) unit/3287 0))
+                      e/2432)
+                  quoted_expr/4061 =
+                    (apply (field_imm 190 Ast/2435)
+                      (apply (field_imm 188 Ast/2435) name/2436)
+                      (makeblock 0 (field_imm 186 Ast/2435) 0))
+                  quoted_expr/12279 =a quoted_expr/4061
+                  binding_expr/12278 =a binding_expr/3286)
+                 (exit 3 binding_expr/12278 quoted_expr/12279)))
+            with (3 binding_expr/2495 quoted_expr/2496)
+             (let
+               (binding/4062 =
+                  (let
+                    (pat/4063 = (apply (field_imm 189 Ast/2435) name/2436))
+                    (apply (field_imm 168 Ast/2435) pat/4063
+                      binding_expr/2495)))
+               (seq
+                 (setfield_ptr 1 t/2431
+                   (makeblock 0 binding/4062 (field_mut 1 t/2431)))
+                 (setfield_imm 0 t/2431 (+ (field_int 0 t/2431) 1))
+                 quoted_expr/2496))))))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Quoter!) quote/2429))
+  0)
+(seq
+  (let (create/1104 = (function param/1106 (makemutable 0 (int,*) 0 0)))
+    (setfield_ptr(root-init) 0 (global Ppxlib__Quoter!) create/1104))
+  (let
+    (sanitize/1107 =
+       (function t/1109 e/1110
+         (let (bindings/1111 = (field_mut 1 t/1109))
+           (if bindings/1111
+             (let
+               (Ast/1112 =
+                  (apply (field_imm 2 (global Ppxlib__Ast_builder!))
+                    (field_imm 1 e/1110))
+                Ast/2144 =
+                  (module-defn(Ast/2144) Ppxlib__Quoter.sanitize src/quoter.ml(14):240-243
+                    Ast/1112))
+               (apply (field_imm 52 Ast/2144) 0 bindings/1111 e/1110))
+             e/1110))))
+    (setfield_ptr(root-init) 2 (global Ppxlib__Quoter!) sanitize/1107))
+  (let
+    (quote/2429 =
+       (function t/2431 e/2432
+         (let
+           (loc/2433 = (field_imm 1 e/2432)
+            Ast/2434 =
+              (apply (field_imm 2 (global Ppxlib__Ast_builder!)) loc/2433)
+            Ast/2435 =
+              (module-defn(Ast/2435) Ppxlib__Quoter.quote src/quoter.ml(19):393-396
+                Ast/2434)
+            name/2436 =
+              (apply (field_imm 30 (global Stdlib!)) "__"
+                (apply (field_imm 1 (field_imm 89 (global Ppxlib__Import!)))
+                  (field_int 0 t/2431))))
+           (catch
+             (catch
+               (switch (field_imm 0 e/2432)
+                case tag 0:
+                 (let
+                   (quoted_expr/12281 =
+                      (apply (field_imm 188 Ast/2435) name/2436))
+                   (exit 3 e/2432 quoted_expr/12281))
+                default: (exit 2))
+              with (2)
+               (let
+                 (binding_expr/3286 =
+                    (apply (field_imm 54 Ast/2435) 0 0
+                      (let
+                        (unit/3287 =
+                           (apply
+                             (field_imm 4
+                               (field_imm 0
+                                 (field_imm 0 (global Ppxlib__Ast_builder!))))
+                             loc/2433 "()"))
+                        (apply (field_imm 207 Ast/2435) unit/3287 0))
+                      e/2432)
+                  quoted_expr/4061 =
+                    (apply (field_imm 190 Ast/2435)
+                      (apply (field_imm 188 Ast/2435) name/2436)
+                      (makeblock 0 (field_imm 186 Ast/2435) 0)))
+                 (exit 3 binding_expr/3286 quoted_expr/4061)))
+            with (3 binding_expr/2495 quoted_expr/2496)
+             (let
+               (binding/4062 =
+                  (let
+                    (pat/4063 = (apply (field_imm 189 Ast/2435) name/2436))
+                    (apply (field_imm 168 Ast/2435) pat/4063
+                      binding_expr/2495)))
+               (seq
+                 (setfield_ptr 1 t/2431
+                   (makeblock 0 binding/4062 (field_mut 1 t/2431)))
+                 (setfield_imm 0 t/2431 (+ (field_int 0 t/2431) 1))
+                 quoted_expr/2496))))))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Quoter!) quote/2429))
+  0)

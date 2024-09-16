@@ -1,0 +1,14 @@
+0.258s 48.8MB 6.18MB 6.18MB src/gen/gen_ast_pattern.exe
+  0.001s 1.53MB 0.06MB 0.06MB selection
+  ------ 0.15MB ------ ------ comballoc
+  0.001s 2.00MB 0.12MB 0.18MB cse
+  0.001s 2.00MB 0.18MB 0.37MB liveness
+  ------ 2.00MB 0.12MB 0.50MB deadcode
+  0.001s 3.29MB 0.18MB 0.68MB spill
+  0.001s ------ ------ ------ split
+  0.008s 25.8MB 2.25MB 2.93MB regalloc
+  0.001s 2.08MB 0.12MB 3.06MB emit
+  0.006s ------ ------ ------ assemble
+  0.230s ------ ------ ------ c-linker
+  0.008s 9.93MB 3.11MB 6.18MB other
+0.006s ------ ------ ------ other

@@ -1,0 +1,15 @@
+1.040s 70.5MB 8.19MB 8.19MB bench/drivers/identity/driver.exe
+  0.006s 2.49MB 0.06MB 0.06MB selection
+  ------ 0.14MB ------ ------ polling
+  0.003s 4.17MB 0.28MB 0.34MB cse
+  0.005s 6.28MB 0.31MB 0.65MB liveness
+  0.001s 2.14MB 0.12MB 0.78MB deadcode
+  0.004s 2.14MB 0.15MB 0.93MB spill
+  0.001s ------ ------ ------ split
+  0.044s 37.9MB 2.87MB 3.81MB regalloc
+  0.001s 0.15MB ------ ------ linearize
+  0.002s ------ ------ ------ emit
+  0.015s ------ ------ ------ assemble
+  0.923s ------ ------ ------ c-linker
+  0.033s 15.1MB 4.38MB 8.19MB other
+0.006s ------ ------ ------ other

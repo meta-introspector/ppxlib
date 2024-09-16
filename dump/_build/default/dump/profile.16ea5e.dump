@@ -1,0 +1,6 @@
+0.320s  143MB 39.4MB 41.1MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/record_field_attrs.pp.ml
+  0.299s  118MB 38.7MB 40.4MB typing
+  0.003s 2.07MB ------ ------ transl
+  0.007s 12.3MB 0.56MB 40.9MB generate
+  0.011s 10.2MB 0.18MB 41.1MB other
+0.015s 2.99MB 1.69MB ------ other

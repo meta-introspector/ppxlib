@@ -1,0 +1,8 @@
+0.168s 56.0MB 19.2MB 20.9MB src/merlin_helpers.ml
+  0.158s 52.7MB 19.1MB 20.8MB typing
+  0.006s 2.02MB 0.09MB 20.9MB generate
+    0.001s ------ ------ ------ compile_phrases
+    0.003s ------ ------ ------ assemble
+    0.002s 2.02MB 0.09MB 20.9MB other
+  0.003s 1.29MB 0.03MB ------ other
+0.013s 3.03MB 1.69MB ------ other

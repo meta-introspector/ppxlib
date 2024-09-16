@@ -1,0 +1,1513 @@
+[
+  signature_item (src/name.mli[1,0+0]..[1,0+12])
+    Psig_open Override "Import" (src/name.mli[1,0+6]..[1,0+12])
+  signature_item (src/name.mli[3,14+0]..[20,428+3])
+    Psig_module "Pattern" (src/name.mli[3,14+7]..[3,14+14])
+    module_type (src/name.mli[3,14+17]..[20,428+3])
+      Pmty_signature
+      [
+        signature_item (src/name.mli[4,35+2]..[4,35+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/name.mli[4,35+7]..[4,35+8]) (src/name.mli[4,35+2]..[4,35+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/name.mli[6,45+2]..[6,45+24])
+          Psig_value
+          value_description "make" (src/name.mli[6,45+6]..[6,45+10]) (src/name.mli[6,45+2]..[6,45+24])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[7,70+2]..[7,70+48])
+                  Pstr_eval
+                  expression (src/name.mli[7,70+2]..[7,70+48])
+                    Pexp_constant PConst_string(" Uses the rules described in [Attribute] ",(src/name.mli[7,70+2]..[7,70+48]),None)
+              ]
+            core_type (src/name.mli[6,45+13]..[6,45+24])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[6,45+13]..[6,45+19])
+                Ptyp_constr "string" (src/name.mli[6,45+13]..[6,45+19])
+                []
+              core_type (src/name.mli[6,45+23]..[6,45+24])
+                Ptyp_constr "t" (src/name.mli[6,45+23]..[6,45+24])
+                []
+            []
+        signature_item (src/name.mli[9,120+2]..[9,120+24])
+          Psig_value
+          value_description "name" (src/name.mli[9,120+6]..[9,120+10]) (src/name.mli[9,120+2]..[9,120+24])
+            core_type (src/name.mli[9,120+13]..[9,120+24])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[9,120+13]..[9,120+14])
+                Ptyp_constr "t" (src/name.mli[9,120+13]..[9,120+14])
+                []
+              core_type (src/name.mli[9,120+18]..[9,120+24])
+                Ptyp_constr "string" (src/name.mli[9,120+18]..[9,120+24])
+                []
+            []
+        signature_item (src/name.mli[11,146+2]..[11,146+35])
+          Psig_value
+          value_description "matches" (src/name.mli[11,146+6]..[11,146+13]) (src/name.mli[11,146+2]..[11,146+35])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[12,182+2]..[19,408+19])
+                  Pstr_eval
+                  expression (src/name.mli[12,182+2]..[19,408+19])
+                    Pexp_constant PConst_string(" [matches ~pattern name] returns [true] iff [name] matches [pattern].\n\n      For instance, the exact set of names such that\n      [matches (make \"foo.bar.@blah.x\") name] is:\n\n      - \"foo.bar.blah.x\"\n      - \"bar.blah.x\"\n      - \"blah.x\" ",(src/name.mli[12,182+2]..[19,408+19]),None)
+              ]
+            core_type (src/name.mli[11,146+16]..[11,146+35])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[11,146+16]..[11,146+17])
+                Ptyp_constr "t" (src/name.mli[11,146+16]..[11,146+17])
+                []
+              core_type (src/name.mli[11,146+21]..[11,146+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/name.mli[11,146+21]..[11,146+27])
+                  Ptyp_constr "string" (src/name.mli[11,146+21]..[11,146+27])
+                  []
+                core_type (src/name.mli[11,146+31]..[11,146+35])
+                  Ptyp_constr "bool" (src/name.mli[11,146+31]..[11,146+35])
+                  []
+            []
+      ]
+  signature_item (src/name.mli[22,433+0]..[22,433+49])
+    Psig_value
+    value_description "split_path" (src/name.mli[22,433+4]..[22,433+14]) (src/name.mli[22,433+0]..[22,433+49])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/name.mli[23,483+0]..[25,519+49])
+            Pstr_eval
+            expression (src/name.mli[23,483+0]..[25,519+49])
+              Pexp_constant PConst_string(" Split the path part of a name:\n\n    [split_path \"a.b.C.D\" = \"a.b\", Some \"C.D\"] ",(src/name.mli[23,483+0]..[25,519+49]),None)
+        ]
+      core_type (src/name.mli[22,433+17]..[22,433+49])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/name.mli[22,433+17]..[22,433+23])
+          Ptyp_constr "string" (src/name.mli[22,433+17]..[22,433+23])
+          []
+        core_type (src/name.mli[22,433+27]..[22,433+49])
+          Ptyp_tuple
+          [
+            core_type (src/name.mli[22,433+27]..[22,433+33])
+              Ptyp_constr "string" (src/name.mli[22,433+27]..[22,433+33])
+              []
+            core_type (src/name.mli[22,433+36]..[22,433+49])
+              Ptyp_constr "option" (src/name.mli[22,433+43]..[22,433+49])
+              [
+                core_type (src/name.mli[22,433+36]..[22,433+42])
+                  Ptyp_constr "string" (src/name.mli[22,433+36]..[22,433+42])
+                  []
+              ]
+          ]
+      []
+  signature_item (src/name.mli[27,570+0]..[27,570+40])
+    Psig_value
+    value_description "dot_suffixes" (src/name.mli[27,570+4]..[27,570+16]) (src/name.mli[27,570+0]..[27,570+40])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/name.mli[28,611+0]..[32,708+9])
+            Pstr_eval
+            expression (src/name.mli[28,611+0]..[32,708+9])
+              Pexp_constant PConst_string(" [fold_dot_suffixes \"foo.@bar.blah\" ~init ~f] is\n\n    {[\n      [ \"bar.blah\"; \"foo.bar.blah\" ]\n    ]} ",(src/name.mli[28,611+0]..[32,708+9]),None)
+        ]
+      core_type (src/name.mli[27,570+19]..[27,570+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/name.mli[27,570+19]..[27,570+25])
+          Ptyp_constr "string" (src/name.mli[27,570+19]..[27,570+25])
+          []
+        core_type (src/name.mli[27,570+29]..[27,570+40])
+          Ptyp_constr "list" (src/name.mli[27,570+36]..[27,570+40])
+          [
+            core_type (src/name.mli[27,570+29]..[27,570+35])
+              Ptyp_constr "string" (src/name.mli[27,570+29]..[27,570+35])
+              []
+          ]
+      []
+  signature_item (src/name.mli[34,719+0]..[92,2398+3])
+    Psig_module "Registrar" (src/name.mli[34,719+7]..[34,719+16])
+    module_type (src/name.mli[34,719+19]..[92,2398+3])
+      Pmty_signature
+      [
+        signature_item (src/name.mli[35,742+2]..[35,742+17])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/name.mli[35,742+16]..[35,742+17]) (src/name.mli[35,742+2]..[35,742+17])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/name.mli[36,760+2]..[37,841+29])
+                    Pstr_eval
+                    expression (src/name.mli[36,760+2]..[37,841+29])
+                      Pexp_constant PConst_string(" Names are organized by context. For instance contexts can be: expressions,\n      patterns, types, ... ",(src/name.mli[36,760+2]..[37,841+29]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/name.mli[35,742+7]..[35,742+15])
+                    Ptyp_var context
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/name.mli[39,872+2]..[43,1011+14])
+          Psig_value
+          value_description "create" (src/name.mli[39,872+6]..[39,872+12]) (src/name.mli[39,872+2]..[43,1011+14])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[44,1026+2]..[49,1215+71])
+                  Pstr_eval
+                  expression (src/name.mli[44,1026+2]..[49,1215+71])
+                    Pexp_constant PConst_string(" - [kind] is a description of the things registered. For instance:\n        \"extension\", \"attribute\", ...\n\n      - [current_file] is where this function is called. Must be [__FILE__].\n\n      - [string_of_context]: human readable description of a context ",(src/name.mli[44,1026+2]..[49,1215+71]),None)
+              ]
+            core_type (src/name.mli[40,887+4]..[43,1011+14])
+              Ptyp_arrow
+              Labelled "kind"
+              core_type (src/name.mli[40,887+9]..[40,887+15])
+                Ptyp_constr "string" (src/name.mli[40,887+9]..[40,887+15])
+                []
+              core_type (src/name.mli[41,906+4]..[43,1011+14])
+                Ptyp_arrow
+                Labelled "current_file"
+                core_type (src/name.mli[41,906+17]..[41,906+23])
+                  Ptyp_constr "string" (src/name.mli[41,906+17]..[41,906+23])
+                  []
+                core_type (src/name.mli[42,958+4]..[43,1011+14])
+                  Ptyp_arrow
+                  Labelled "string_of_context"
+                  core_type (src/name.mli[42,958+23]..[42,958+48])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[42,958+23]..[42,958+31])
+                      Ptyp_var context
+                    core_type (src/name.mli[42,958+35]..[42,958+48])
+                      Ptyp_constr "option" (src/name.mli[42,958+42]..[42,958+48])
+                      [
+                        core_type (src/name.mli[42,958+35]..[42,958+41])
+                          Ptyp_constr "string" (src/name.mli[42,958+35]..[42,958+41])
+                          []
+                      ]
+                  core_type (src/name.mli[43,1011+4]..[43,1011+14])
+                    Ptyp_constr "t" (src/name.mli[43,1011+13]..[43,1011+14])
+                    [
+                      core_type (src/name.mli[43,1011+4]..[43,1011+12])
+                        Ptyp_var context
+                    ]
+            []
+        signature_item (src/name.mli[51,1288+2]..[52,1305+80])
+          Psig_value
+          value_description "register" (src/name.mli[51,1288+6]..[51,1288+14]) (src/name.mli[51,1288+2]..[52,1305+80])
+            core_type (src/name.mli[52,1305+4]..[52,1305+80])
+              Ptyp_arrow
+              Labelled "kind"
+              core_type (src/name.mli[52,1305+9]..[52,1305+36])
+                Ptyp_variant closed=Closed
+                [
+                  Rtag "Attribute" true
+                    []
+                  Rtag "Extension" true
+                    []
+                ]
+                None
+              core_type (src/name.mli[52,1305+40]..[52,1305+80])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/name.mli[52,1305+40]..[52,1305+50])
+                  Ptyp_constr "t" (src/name.mli[52,1305+49]..[52,1305+50])
+                  [
+                    core_type (src/name.mli[52,1305+40]..[52,1305+48])
+                      Ptyp_var context
+                  ]
+                core_type (src/name.mli[52,1305+54]..[52,1305+80])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/name.mli[52,1305+54]..[52,1305+62])
+                    Ptyp_var context
+                  core_type (src/name.mli[52,1305+66]..[52,1305+80])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[52,1305+66]..[52,1305+72])
+                      Ptyp_constr "string" (src/name.mli[52,1305+66]..[52,1305+72])
+                      []
+                    core_type (src/name.mli[52,1305+76]..[52,1305+80])
+                      Ptyp_constr "unit" (src/name.mli[52,1305+76]..[52,1305+80])
+                      []
+            []
+        signature_item (src/name.mli[54,1387+2]..[54,1387+65])
+          Psig_value
+          value_description "check_collisions" (src/name.mli[54,1387+6]..[54,1387+22]) (src/name.mli[54,1387+2]..[54,1387+65])
+            core_type (src/name.mli[54,1387+25]..[54,1387+65])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[54,1387+25]..[54,1387+35])
+                Ptyp_constr "t" (src/name.mli[54,1387+34]..[54,1387+35])
+                [
+                  core_type (src/name.mli[54,1387+25]..[54,1387+33])
+                    Ptyp_var context
+                ]
+              core_type (src/name.mli[54,1387+39]..[54,1387+65])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/name.mli[54,1387+39]..[54,1387+47])
+                  Ptyp_var context
+                core_type (src/name.mli[54,1387+51]..[54,1387+65])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/name.mli[54,1387+51]..[54,1387+57])
+                    Ptyp_constr "string" (src/name.mli[54,1387+51]..[54,1387+57])
+                    []
+                  core_type (src/name.mli[54,1387+61]..[54,1387+65])
+                    Ptyp_constr "unit" (src/name.mli[54,1387+61]..[54,1387+65])
+                    []
+            []
+        signature_item (src/name.mli[56,1454+2]..[57,1473+79])
+          Psig_value
+          value_description "spellcheck" (src/name.mli[56,1454+6]..[56,1454+16]) (src/name.mli[56,1454+2]..[57,1473+79])
+            core_type (src/name.mli[57,1473+4]..[57,1473+79])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[57,1473+4]..[57,1473+14])
+                Ptyp_constr "t" (src/name.mli[57,1473+13]..[57,1473+14])
+                [
+                  core_type (src/name.mli[57,1473+4]..[57,1473+12])
+                    Ptyp_var context
+                ]
+              core_type (src/name.mli[57,1473+18]..[57,1473+79])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/name.mli[57,1473+18]..[57,1473+26])
+                  Ptyp_var context
+                core_type (src/name.mli[57,1473+30]..[57,1473+79])
+                  Ptyp_arrow
+                  Optional "allowlist"
+                  core_type (src/name.mli[57,1473+41]..[57,1473+52])
+                    Ptyp_constr "list" (src/name.mli[57,1473+48]..[57,1473+52])
+                    [
+                      core_type (src/name.mli[57,1473+41]..[57,1473+47])
+                        Ptyp_constr "string" (src/name.mli[57,1473+41]..[57,1473+47])
+                        []
+                    ]
+                  core_type (src/name.mli[57,1473+56]..[57,1473+79])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[57,1473+56]..[57,1473+62])
+                      Ptyp_constr "string" (src/name.mli[57,1473+56]..[57,1473+62])
+                      []
+                    core_type (src/name.mli[57,1473+66]..[57,1473+79])
+                      Ptyp_constr "option" (src/name.mli[57,1473+73]..[57,1473+79])
+                      [
+                        core_type (src/name.mli[57,1473+66]..[57,1473+72])
+                          Ptyp_constr "string" (src/name.mli[57,1473+66]..[57,1473+72])
+                          []
+                      ]
+            []
+        signature_item (src/name.mli[59,1554+2]..[83,2203+5])
+          Psig_module "Error" (src/name.mli[59,1554+9]..[59,1554+14])
+          module_type (src/name.mli[59,1554+17]..[83,2203+5])
+            Pmty_signature
+            [
+              signature_item (src/name.mli[60,1575+4]..[66,1763+22])
+                Psig_value
+                value_description "createf" (src/name.mli[60,1575+8]..[60,1575+15]) (src/name.mli[60,1575+4]..[66,1763+22])
+                  core_type (src/name.mli[61,1593+6]..[66,1763+22])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[61,1593+6]..[61,1593+16])
+                      Ptyp_constr "t" (src/name.mli[61,1593+15]..[61,1593+16])
+                      [
+                        core_type (src/name.mli[61,1593+6]..[61,1593+14])
+                          Ptyp_var context
+                      ]
+                    core_type (src/name.mli[62,1613+6]..[66,1763+22])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[62,1613+6]..[62,1613+14])
+                        Ptyp_var context
+                      core_type (src/name.mli[63,1631+6]..[66,1763+22])
+                        Ptyp_arrow
+                        Optional "allowlist"
+                        core_type (src/name.mli[63,1631+17]..[63,1631+28])
+                          Ptyp_constr "list" (src/name.mli[63,1631+24]..[63,1631+28])
+                          [
+                            core_type (src/name.mli[63,1631+17]..[63,1631+23])
+                              Ptyp_constr "string" (src/name.mli[63,1631+17]..[63,1631+23])
+                              []
+                          ]
+                        core_type (src/name.mli[64,1663+6]..[66,1763+22])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[64,1663+6]..[64,1663+74])
+                            Ptyp_constr "format4" (src/name.mli[64,1663+67]..[64,1663+74])
+                            [
+                              core_type (src/name.mli[64,1663+7]..[64,1663+33])
+                                Ptyp_arrow
+                                Nolabel
+                                core_type (src/name.mli[64,1663+7]..[64,1663+13])
+                                  Ptyp_constr "string" (src/name.mli[64,1663+7]..[64,1663+13])
+                                  []
+                                core_type (src/name.mli[64,1663+17]..[64,1663+33])
+                                  Ptyp_constr "Location.Error.t" (src/name.mli[64,1663+17]..[64,1663+33])
+                                  []
+                              core_type (src/name.mli[64,1663+35]..[64,1663+39])
+                                Ptyp_constr "unit" (src/name.mli[64,1663+35]..[64,1663+39])
+                                []
+                              core_type (src/name.mli[64,1663+41]..[64,1663+47])
+                                Ptyp_constr "string" (src/name.mli[64,1663+41]..[64,1663+47])
+                                []
+                              core_type (src/name.mli[64,1663+49]..[64,1663+65])
+                                Ptyp_constr "Location.Error.t" (src/name.mli[64,1663+49]..[64,1663+65])
+                                []
+                            ]
+                          core_type (src/name.mli[65,1741+6]..[66,1763+22])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/name.mli[65,1741+6]..[65,1741+18])
+                              Ptyp_constr "Loc.t" (src/name.mli[65,1741+13]..[65,1741+18])
+                              [
+                                core_type (src/name.mli[65,1741+6]..[65,1741+12])
+                                  Ptyp_constr "string" (src/name.mli[65,1741+6]..[65,1741+12])
+                                  []
+                              ]
+                            core_type (src/name.mli[66,1763+6]..[66,1763+22])
+                              Ptyp_constr "Location.Error.t" (src/name.mli[66,1763+6]..[66,1763+22])
+                              []
+                  []
+              signature_item (src/name.mli[68,1787+4]..[74,1980+8])
+                Psig_value
+                value_description "raise_errorf" (src/name.mli[68,1787+8]..[68,1787+20]) (src/name.mli[68,1787+4]..[74,1980+8])
+                  core_type (src/name.mli[69,1810+6]..[74,1980+8])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[69,1810+6]..[69,1810+16])
+                      Ptyp_constr "t" (src/name.mli[69,1810+15]..[69,1810+16])
+                      [
+                        core_type (src/name.mli[69,1810+6]..[69,1810+14])
+                          Ptyp_var context
+                      ]
+                    core_type (src/name.mli[70,1830+6]..[74,1980+8])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[70,1830+6]..[70,1830+14])
+                        Ptyp_var context
+                      core_type (src/name.mli[71,1848+6]..[74,1980+8])
+                        Ptyp_arrow
+                        Optional "allowlist"
+                        core_type (src/name.mli[71,1848+17]..[71,1848+28])
+                          Ptyp_constr "list" (src/name.mli[71,1848+24]..[71,1848+28])
+                          [
+                            core_type (src/name.mli[71,1848+17]..[71,1848+23])
+                              Ptyp_constr "string" (src/name.mli[71,1848+17]..[71,1848+23])
+                              []
+                          ]
+                        core_type (src/name.mli[72,1880+6]..[74,1980+8])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[72,1880+6]..[72,1880+74])
+                            Ptyp_constr "format4" (src/name.mli[72,1880+67]..[72,1880+74])
+                            [
+                              core_type (src/name.mli[72,1880+7]..[72,1880+33])
+                                Ptyp_arrow
+                                Nolabel
+                                core_type (src/name.mli[72,1880+7]..[72,1880+13])
+                                  Ptyp_constr "string" (src/name.mli[72,1880+7]..[72,1880+13])
+                                  []
+                                core_type (src/name.mli[72,1880+17]..[72,1880+33])
+                                  Ptyp_constr "Location.Error.t" (src/name.mli[72,1880+17]..[72,1880+33])
+                                  []
+                              core_type (src/name.mli[72,1880+35]..[72,1880+39])
+                                Ptyp_constr "unit" (src/name.mli[72,1880+35]..[72,1880+39])
+                                []
+                              core_type (src/name.mli[72,1880+41]..[72,1880+47])
+                                Ptyp_constr "string" (src/name.mli[72,1880+41]..[72,1880+47])
+                                []
+                              core_type (src/name.mli[72,1880+49]..[72,1880+65])
+                                Ptyp_constr "Location.Error.t" (src/name.mli[72,1880+49]..[72,1880+65])
+                                []
+                            ]
+                          core_type (src/name.mli[73,1958+6]..[74,1980+8])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/name.mli[73,1958+6]..[73,1958+18])
+                              Ptyp_constr "Loc.t" (src/name.mli[73,1958+13]..[73,1958+18])
+                              [
+                                core_type (src/name.mli[73,1958+6]..[73,1958+12])
+                                  Ptyp_constr "string" (src/name.mli[73,1958+6]..[73,1958+12])
+                                  []
+                              ]
+                            core_type (src/name.mli[74,1980+6]..[74,1980+8])
+                              Ptyp_var a
+                  []
+              signature_item (src/name.mli[76,1990+4]..[82,2187+15])
+                Psig_value
+                value_description "error_extensionf" (src/name.mli[76,1990+8]..[76,1990+24]) (src/name.mli[76,1990+4]..[82,2187+15])
+                  core_type (src/name.mli[77,2017+6]..[82,2187+15])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[77,2017+6]..[77,2017+16])
+                      Ptyp_constr "t" (src/name.mli[77,2017+15]..[77,2017+16])
+                      [
+                        core_type (src/name.mli[77,2017+6]..[77,2017+14])
+                          Ptyp_var context
+                      ]
+                    core_type (src/name.mli[78,2037+6]..[82,2187+15])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[78,2037+6]..[78,2037+14])
+                        Ptyp_var context
+                      core_type (src/name.mli[79,2055+6]..[82,2187+15])
+                        Ptyp_arrow
+                        Optional "allowlist"
+                        core_type (src/name.mli[79,2055+17]..[79,2055+28])
+                          Ptyp_constr "list" (src/name.mli[79,2055+24]..[79,2055+28])
+                          [
+                            core_type (src/name.mli[79,2055+17]..[79,2055+23])
+                              Ptyp_constr "string" (src/name.mli[79,2055+17]..[79,2055+23])
+                              []
+                          ]
+                        core_type (src/name.mli[80,2087+6]..[82,2187+15])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[80,2087+6]..[80,2087+74])
+                            Ptyp_constr "format4" (src/name.mli[80,2087+67]..[80,2087+74])
+                            [
+                              core_type (src/name.mli[80,2087+7]..[80,2087+33])
+                                Ptyp_arrow
+                                Nolabel
+                                core_type (src/name.mli[80,2087+7]..[80,2087+13])
+                                  Ptyp_constr "string" (src/name.mli[80,2087+7]..[80,2087+13])
+                                  []
+                                core_type (src/name.mli[80,2087+17]..[80,2087+33])
+                                  Ptyp_constr "Location.Error.t" (src/name.mli[80,2087+17]..[80,2087+33])
+                                  []
+                              core_type (src/name.mli[80,2087+35]..[80,2087+39])
+                                Ptyp_constr "unit" (src/name.mli[80,2087+35]..[80,2087+39])
+                                []
+                              core_type (src/name.mli[80,2087+41]..[80,2087+47])
+                                Ptyp_constr "string" (src/name.mli[80,2087+41]..[80,2087+47])
+                                []
+                              core_type (src/name.mli[80,2087+49]..[80,2087+65])
+                                Ptyp_constr "Location.Error.t" (src/name.mli[80,2087+49]..[80,2087+65])
+                                []
+                            ]
+                          core_type (src/name.mli[81,2165+6]..[82,2187+15])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/name.mli[81,2165+6]..[81,2165+18])
+                              Ptyp_constr "Loc.t" (src/name.mli[81,2165+13]..[81,2165+18])
+                              [
+                                core_type (src/name.mli[81,2165+6]..[81,2165+12])
+                                  Ptyp_constr "string" (src/name.mli[81,2165+6]..[81,2165+12])
+                                  []
+                              ]
+                            core_type (src/name.mli[82,2187+6]..[82,2187+15])
+                              Ptyp_constr "extension" (src/name.mli[82,2187+6]..[82,2187+15])
+                              []
+                  []
+            ]
+        signature_item (src/name.mli[85,2210+2]..[91,2391+6])
+          Psig_value
+          value_description "raise_errorf" (src/name.mli[85,2210+6]..[85,2210+18]) (src/name.mli[85,2210+2]..[91,2391+6])
+            core_type (src/name.mli[86,2231+4]..[91,2391+6])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[86,2231+4]..[86,2231+14])
+                Ptyp_constr "t" (src/name.mli[86,2231+13]..[86,2231+14])
+                [
+                  core_type (src/name.mli[86,2231+4]..[86,2231+12])
+                    Ptyp_var context
+                ]
+              core_type (src/name.mli[87,2249+4]..[91,2391+6])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/name.mli[87,2249+4]..[87,2249+12])
+                  Ptyp_var context
+                core_type (src/name.mli[88,2265+4]..[91,2391+6])
+                  Ptyp_arrow
+                  Optional "allowlist"
+                  core_type (src/name.mli[88,2265+15]..[88,2265+26])
+                    Ptyp_constr "list" (src/name.mli[88,2265+22]..[88,2265+26])
+                    [
+                      core_type (src/name.mli[88,2265+15]..[88,2265+21])
+                        Ptyp_constr "string" (src/name.mli[88,2265+15]..[88,2265+21])
+                        []
+                    ]
+                  core_type (src/name.mli[89,2295+4]..[91,2391+6])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[89,2295+4]..[89,2295+72])
+                      Ptyp_constr "format4" (src/name.mli[89,2295+65]..[89,2295+72])
+                      [
+                        core_type (src/name.mli[89,2295+5]..[89,2295+31])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[89,2295+5]..[89,2295+11])
+                            Ptyp_constr "string" (src/name.mli[89,2295+5]..[89,2295+11])
+                            []
+                          core_type (src/name.mli[89,2295+15]..[89,2295+31])
+                            Ptyp_constr "Location.Error.t" (src/name.mli[89,2295+15]..[89,2295+31])
+                            []
+                        core_type (src/name.mli[89,2295+33]..[89,2295+37])
+                          Ptyp_constr "unit" (src/name.mli[89,2295+33]..[89,2295+37])
+                          []
+                        core_type (src/name.mli[89,2295+39]..[89,2295+45])
+                          Ptyp_constr "string" (src/name.mli[89,2295+39]..[89,2295+45])
+                          []
+                        core_type (src/name.mli[89,2295+47]..[89,2295+63])
+                          Ptyp_constr "Location.Error.t" (src/name.mli[89,2295+47]..[89,2295+63])
+                          []
+                      ]
+                    core_type (src/name.mli[90,2371+4]..[91,2391+6])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[90,2371+4]..[90,2371+16])
+                        Ptyp_constr "Loc.t" (src/name.mli[90,2371+11]..[90,2371+16])
+                        [
+                          core_type (src/name.mli[90,2371+4]..[90,2371+10])
+                            Ptyp_constr "string" (src/name.mli[90,2371+4]..[90,2371+10])
+                            []
+                        ]
+                      core_type (src/name.mli[91,2391+4]..[91,2391+6])
+                        Ptyp_var a
+            []
+      ]
+  signature_item (src/name.mli[94,2403+0]..[98,2596+3])
+    Psig_module "Allowlisted" (src/name.mli[94,2403+7]..[94,2403+18])
+    module_type (src/name.mli[94,2403+21]..[98,2596+3])
+      Pmty_signature
+      [
+        signature_item (src/name.mli[95,2428+2]..[95,2428+46])
+          Psig_value
+          value_description "get_attribute_list" (src/name.mli[95,2428+6]..[95,2428+24]) (src/name.mli[95,2428+2]..[95,2428+46])
+            core_type (src/name.mli[95,2428+27]..[95,2428+46])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[95,2428+27]..[95,2428+31])
+                Ptyp_constr "unit" (src/name.mli[95,2428+27]..[95,2428+31])
+                []
+              core_type (src/name.mli[95,2428+35]..[95,2428+46])
+                Ptyp_constr "list" (src/name.mli[95,2428+42]..[95,2428+46])
+                [
+                  core_type (src/name.mli[95,2428+35]..[95,2428+41])
+                    Ptyp_constr "string" (src/name.mli[95,2428+35]..[95,2428+41])
+                    []
+                ]
+            []
+        signature_item (src/name.mli[96,2475+2]..[96,2475+46])
+          Psig_value
+          value_description "get_extension_list" (src/name.mli[96,2475+6]..[96,2475+24]) (src/name.mli[96,2475+2]..[96,2475+46])
+            core_type (src/name.mli[96,2475+27]..[96,2475+46])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[96,2475+27]..[96,2475+31])
+                Ptyp_constr "unit" (src/name.mli[96,2475+27]..[96,2475+31])
+                []
+              core_type (src/name.mli[96,2475+35]..[96,2475+46])
+                Ptyp_constr "list" (src/name.mli[96,2475+42]..[96,2475+46])
+                [
+                  core_type (src/name.mli[96,2475+35]..[96,2475+41])
+                    Ptyp_constr "string" (src/name.mli[96,2475+35]..[96,2475+41])
+                    []
+                ]
+            []
+        signature_item (src/name.mli[97,2522+2]..[97,2522+73])
+          Psig_value
+          value_description "is_allowlisted" (src/name.mli[97,2522+6]..[97,2522+20]) (src/name.mli[97,2522+2]..[97,2522+73])
+            core_type (src/name.mli[97,2522+23]..[97,2522+73])
+              Ptyp_arrow
+              Labelled "kind"
+              core_type (src/name.mli[97,2522+28]..[97,2522+55])
+                Ptyp_variant closed=Closed
+                [
+                  Rtag "Attribute" true
+                    []
+                  Rtag "Extension" true
+                    []
+                ]
+                None
+              core_type (src/name.mli[97,2522+59]..[97,2522+73])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/name.mli[97,2522+59]..[97,2522+65])
+                  Ptyp_constr "string" (src/name.mli[97,2522+59]..[97,2522+65])
+                  []
+                core_type (src/name.mli[97,2522+69]..[97,2522+73])
+                  Ptyp_constr "bool" (src/name.mli[97,2522+69]..[97,2522+73])
+                  []
+            []
+      ]
+  signature_item (src/name.mli[100,2601+0]..[116,3272+3])
+    Psig_module "Reserved_namespaces" (src/name.mli[100,2601+7]..[100,2601+26])
+    module_type (src/name.mli[100,2601+29]..[116,3272+3])
+      Pmty_signature
+      [
+        signature_item (src/name.mli[101,2634+2]..[101,2634+63])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/name.mli[101,2634+2]..[101,2634+63])
+              Pstr_eval
+              expression (src/name.mli[101,2634+2]..[101,2634+63])
+                Pexp_constant PConst_string(" Small module to reserve namespaces in attribute names. ",(src/name.mli[101,2634+2]..[101,2634+63]),None)
+          ]
+        signature_item (src/name.mli[103,2699+2]..[103,2699+30])
+          Psig_value
+          value_description "reserve" (src/name.mli[103,2699+6]..[103,2699+13]) (src/name.mli[103,2699+2]..[103,2699+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[104,2730+2]..[113,3151+70])
+                  Pstr_eval
+                  expression (src/name.mli[104,2730+2]..[113,3151+70])
+                    Pexp_constant PConst_string(" [reserve \"foo\"] has two implications:\n\n      - one can't then declare an attribute inside this namespace\n      - attributes within this namespace won't be reported by [check_unused]\n\n      This is here to insure that the rewriter cohabits well with other rewriter\n      or tools (e.g. merlin) which might leave attribute on the AST.\n\n      N.B. the following namespaces are reserved by default: [merlin], [reason],\n      [refmt] [ns], [res], [metaocaml], [ocamlformat] and [ppxlib]. ",(src/name.mli[104,2730+2]..[113,3151+70]),None)
+              ]
+            core_type (src/name.mli[103,2699+16]..[103,2699+30])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[103,2699+16]..[103,2699+22])
+                Ptyp_constr "string" (src/name.mli[103,2699+16]..[103,2699+22])
+                []
+              core_type (src/name.mli[103,2699+26]..[103,2699+30])
+                Ptyp_constr "unit" (src/name.mli[103,2699+26]..[103,2699+30])
+                []
+            []
+        signature_item (src/name.mli[115,3223+2]..[115,3223+48])
+          Psig_value
+          value_description "is_in_reserved_namespaces" (src/name.mli[115,3223+6]..[115,3223+31]) (src/name.mli[115,3223+2]..[115,3223+48])
+            core_type (src/name.mli[115,3223+34]..[115,3223+48])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/name.mli[115,3223+34]..[115,3223+40])
+                Ptyp_constr "string" (src/name.mli[115,3223+34]..[115,3223+40])
+                []
+              core_type (src/name.mli[115,3223+44]..[115,3223+48])
+                Ptyp_constr "bool" (src/name.mli[115,3223+44]..[115,3223+48])
+                []
+            []
+      ]
+  signature_item (src/name.mli[118,3277+0]..[118,3277+34])
+    Psig_value
+    value_description "ignore_checks" (src/name.mli[118,3277+4]..[118,3277+17]) (src/name.mli[118,3277+0]..[118,3277+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/name.mli[119,3312+0]..[120,3387+63])
+            Pstr_eval
+            expression (src/name.mli[119,3312+0]..[120,3387+63])
+              Pexp_constant PConst_string(" Returns [true] if checks should be ignored for the following name, for\n    instance if it is reserved or starts with an underscore. ",(src/name.mli[119,3312+0]..[120,3387+63]),None)
+        ]
+      core_type (src/name.mli[118,3277+20]..[118,3277+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/name.mli[118,3277+20]..[118,3277+26])
+          Ptyp_constr "string" (src/name.mli[118,3277+20]..[118,3277+26])
+          []
+        core_type (src/name.mli[118,3277+30]..[118,3277+34])
+          Ptyp_constr "bool" (src/name.mli[118,3277+30]..[118,3277+34])
+          []
+      []
+]
+
+open! Import
+module Pattern :
+sig
+  type t
+  val make : string -> t[@@ocaml.doc
+                          " Uses the rules described in [Attribute] "]
+  val name : t -> string
+  val matches : t -> string -> bool[@@ocaml.doc
+                                     " [matches ~pattern name] returns [true] iff [name] matches [pattern].\n\n      For instance, the exact set of names such that\n      [matches (make \"foo.bar.@blah.x\") name] is:\n\n      - \"foo.bar.blah.x\"\n      - \"bar.blah.x\"\n      - \"blah.x\" "]
+end
+val split_path : string -> (string * string option)[@@ocaml.doc
+                                                     " Split the path part of a name:\n\n    [split_path \"a.b.C.D\" = \"a.b\", Some \"C.D\"] "]
+val dot_suffixes : string -> string list[@@ocaml.doc
+                                          " [fold_dot_suffixes \"foo.@bar.blah\" ~init ~f] is\n\n    {[\n      [ \"bar.blah\"; \"foo.bar.blah\" ]\n    ]} "]
+module Registrar :
+sig
+  type 'context t[@@ocaml.doc
+                   " Names are organized by context. For instance contexts can be: expressions,\n      patterns, types, ... "]
+  val create :
+    kind:string ->
+      current_file:string ->
+        string_of_context:('context -> string option) -> 'context t[@@ocaml.doc
+                                                                    " - [kind] is a description of the things registered. For instance:\n        \"extension\", \"attribute\", ...\n\n      - [current_file] is where this function is called. Must be [__FILE__].\n\n      - [string_of_context]: human readable description of a context "]
+  val register :
+    kind:[ `Attribute  | `Extension ] ->
+      'context t -> 'context -> string -> unit
+  val check_collisions : 'context t -> 'context -> string -> unit
+  val spellcheck :
+    'context t ->
+      'context -> ?allowlist:string list -> string -> string option
+  module Error :
+  sig
+    val createf :
+      'context t ->
+        'context ->
+          ?allowlist:string list ->
+            (string -> Location.Error.t, unit, string, Location.Error.t)
+              format4 -> string Loc.t -> Location.Error.t
+    val raise_errorf :
+      'context t ->
+        'context ->
+          ?allowlist:string list ->
+            (string -> Location.Error.t, unit, string, Location.Error.t)
+              format4 -> string Loc.t -> 'a
+    val error_extensionf :
+      'context t ->
+        'context ->
+          ?allowlist:string list ->
+            (string -> Location.Error.t, unit, string, Location.Error.t)
+              format4 -> string Loc.t -> extension
+  end
+  val raise_errorf :
+    'context t ->
+      'context ->
+        ?allowlist:string list ->
+          (string -> Location.Error.t, unit, string, Location.Error.t)
+            format4 -> string Loc.t -> 'a
+end
+module Allowlisted :
+sig
+  val get_attribute_list : unit -> string list
+  val get_extension_list : unit -> string list
+  val is_allowlisted : kind:[ `Attribute  | `Extension ] -> string -> bool
+end
+module Reserved_namespaces :
+sig
+  [@@@ocaml.text " Small module to reserve namespaces in attribute names. "]
+  val reserve : string -> unit[@@ocaml.doc
+                                " [reserve \"foo\"] has two implications:\n\n      - one can't then declare an attribute inside this namespace\n      - attributes within this namespace won't be reported by [check_unused]\n\n      This is here to insure that the rewriter cohabits well with other rewriter\n      or tools (e.g. merlin) which might leave attribute on the AST.\n\n      N.B. the following namespaces are reserved by default: [merlin], [reason],\n      [refmt] [ns], [res], [metaocaml], [ocamlformat] and [ppxlib]. "]
+  val is_in_reserved_namespaces : string -> bool
+end
+val ignore_checks : string -> bool[@@ocaml.doc
+                                    " Returns [true] if checks should be ignored for the following name, for\n    instance if it is reserved or starts with an underscore. "]
+[
+  signature_item (src/name.mli[1,0+0]..src/name.mli[1,0+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/name.mli[3,14+0]..src/name.mli[20,428+3])
+    Tsig_module "Pattern/554"
+    module_type (src/name.mli[3,14+17]..src/name.mli[20,428+3])
+      Tmty_signature
+      [
+        signature_item (src/name.mli[4,35+2]..src/name.mli[4,35+8])
+          Tsig_type Rec
+          [
+            type_declaration t/550 (src/name.mli[4,35+2]..src/name.mli[4,35+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/name.mli[6,45+2]..src/name.mli[6,45+24])
+          Tsig_value
+          value_description make/551 (src/name.mli[6,45+2]..src/name.mli[6,45+24])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[7,70+2]..[7,70+48])
+                  Pstr_eval
+                  expression (src/name.mli[7,70+2]..[7,70+48])
+                    Pexp_constant PConst_string(" Uses the rules described in [Attribute] ",(src/name.mli[7,70+2]..[7,70+48]),None)
+              ]
+            core_type (src/name.mli[6,45+13]..src/name.mli[6,45+24])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[6,45+13]..src/name.mli[6,45+19])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/name.mli[6,45+23]..src/name.mli[6,45+24])
+                Ttyp_constr "t/550"
+                []
+            []
+        signature_item (src/name.mli[9,120+2]..src/name.mli[9,120+24])
+          Tsig_value
+          value_description name/552 (src/name.mli[9,120+2]..src/name.mli[9,120+24])
+            core_type (src/name.mli[9,120+13]..src/name.mli[9,120+24])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[9,120+13]..src/name.mli[9,120+14])
+                Ttyp_constr "t/550"
+                []
+              core_type (src/name.mli[9,120+18]..src/name.mli[9,120+24])
+                Ttyp_constr "string/17!"
+                []
+            []
+        signature_item (src/name.mli[11,146+2]..src/name.mli[11,146+35])
+          Tsig_value
+          value_description matches/553 (src/name.mli[11,146+2]..src/name.mli[11,146+35])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[12,182+2]..[19,408+19])
+                  Pstr_eval
+                  expression (src/name.mli[12,182+2]..[19,408+19])
+                    Pexp_constant PConst_string(" [matches ~pattern name] returns [true] iff [name] matches [pattern].\n\n      For instance, the exact set of names such that\n      [matches (make \"foo.bar.@blah.x\") name] is:\n\n      - \"foo.bar.blah.x\"\n      - \"bar.blah.x\"\n      - \"blah.x\" ",(src/name.mli[12,182+2]..[19,408+19]),None)
+              ]
+            core_type (src/name.mli[11,146+16]..src/name.mli[11,146+35])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[11,146+16]..src/name.mli[11,146+17])
+                Ttyp_constr "t/550"
+                []
+              core_type (src/name.mli[11,146+21]..src/name.mli[11,146+35])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/name.mli[11,146+21]..src/name.mli[11,146+27])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/name.mli[11,146+31]..src/name.mli[11,146+35])
+                  Ttyp_constr "bool/5!"
+                  []
+            []
+      ]
+  signature_item (src/name.mli[22,433+0]..src/name.mli[22,433+49])
+    Tsig_value
+    value_description split_path/555 (src/name.mli[22,433+0]..src/name.mli[22,433+49])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/name.mli[23,483+0]..[25,519+49])
+            Pstr_eval
+            expression (src/name.mli[23,483+0]..[25,519+49])
+              Pexp_constant PConst_string(" Split the path part of a name:\n\n    [split_path \"a.b.C.D\" = \"a.b\", Some \"C.D\"] ",(src/name.mli[23,483+0]..[25,519+49]),None)
+        ]
+      core_type (src/name.mli[22,433+17]..src/name.mli[22,433+49])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/name.mli[22,433+17]..src/name.mli[22,433+23])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/name.mli[22,433+27]..src/name.mli[22,433+49])
+          Ttyp_tuple
+          [
+            core_type (src/name.mli[22,433+27]..src/name.mli[22,433+33])
+              Ttyp_constr "string/17!"
+              []
+            core_type (src/name.mli[22,433+36]..src/name.mli[22,433+49])
+              Ttyp_constr "option/12!"
+              [
+                core_type (src/name.mli[22,433+36]..src/name.mli[22,433+42])
+                  Ttyp_constr "string/17!"
+                  []
+              ]
+          ]
+      []
+  signature_item (src/name.mli[27,570+0]..src/name.mli[27,570+40])
+    Tsig_value
+    value_description dot_suffixes/556 (src/name.mli[27,570+0]..src/name.mli[27,570+40])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/name.mli[28,611+0]..[32,708+9])
+            Pstr_eval
+            expression (src/name.mli[28,611+0]..[32,708+9])
+              Pexp_constant PConst_string(" [fold_dot_suffixes \"foo.@bar.blah\" ~init ~f] is\n\n    {[\n      [ \"bar.blah\"; \"foo.bar.blah\" ]\n    ]} ",(src/name.mli[28,611+0]..[32,708+9]),None)
+        ]
+      core_type (src/name.mli[27,570+19]..src/name.mli[27,570+40])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/name.mli[27,570+19]..src/name.mli[27,570+25])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/name.mli[27,570+29]..src/name.mli[27,570+40])
+          Ttyp_constr "list/11!"
+          [
+            core_type (src/name.mli[27,570+29]..src/name.mli[27,570+35])
+              Ttyp_constr "string/17!"
+              []
+          ]
+      []
+  signature_item (src/name.mli[34,719+0]..src/name.mli[92,2398+3])
+    Tsig_module "Registrar/621"
+    module_type (src/name.mli[34,719+19]..src/name.mli[92,2398+3])
+      Tmty_signature
+      [
+        signature_item (src/name.mli[35,742+2]..src/name.mli[35,742+17])
+          Tsig_type Rec
+          [
+            type_declaration t/557 (src/name.mli[35,742+2]..src/name.mli[35,742+17])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/name.mli[36,760+2]..[37,841+29])
+                    Pstr_eval
+                    expression (src/name.mli[36,760+2]..[37,841+29])
+                      Pexp_constant PConst_string(" Names are organized by context. For instance contexts can be: expressions,\n      patterns, types, ... ",(src/name.mli[36,760+2]..[37,841+29]),None)
+                ]
+              ptype_params =
+                [
+                  core_type (src/name.mli[35,742+7]..src/name.mli[35,742+15])
+                    Ttyp_var context
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/name.mli[39,872+2]..src/name.mli[43,1011+14])
+          Tsig_value
+          value_description create/558 (src/name.mli[39,872+2]..src/name.mli[43,1011+14])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[44,1026+2]..[49,1215+71])
+                  Pstr_eval
+                  expression (src/name.mli[44,1026+2]..[49,1215+71])
+                    Pexp_constant PConst_string(" - [kind] is a description of the things registered. For instance:\n        \"extension\", \"attribute\", ...\n\n      - [current_file] is where this function is called. Must be [__FILE__].\n\n      - [string_of_context]: human readable description of a context ",(src/name.mli[44,1026+2]..[49,1215+71]),None)
+              ]
+            core_type (src/name.mli[40,887+4]..src/name.mli[43,1011+14])
+              Ttyp_arrow
+              Labelled "kind"
+              core_type (src/name.mli[40,887+9]..src/name.mli[40,887+15])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/name.mli[41,906+4]..src/name.mli[43,1011+14])
+                Ttyp_arrow
+                Labelled "current_file"
+                core_type (src/name.mli[41,906+17]..src/name.mli[41,906+23])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/name.mli[42,958+4]..src/name.mli[43,1011+14])
+                  Ttyp_arrow
+                  Labelled "string_of_context"
+                  core_type (src/name.mli[42,958+23]..src/name.mli[42,958+48])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[42,958+23]..src/name.mli[42,958+31])
+                      Ttyp_var context
+                    core_type (src/name.mli[42,958+35]..src/name.mli[42,958+48])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/name.mli[42,958+35]..src/name.mli[42,958+41])
+                          Ttyp_constr "string/17!"
+                          []
+                      ]
+                  core_type (src/name.mli[43,1011+4]..src/name.mli[43,1011+14])
+                    Ttyp_constr "t/557"
+                    [
+                      core_type (src/name.mli[43,1011+4]..src/name.mli[43,1011+12])
+                        Ttyp_var context
+                    ]
+            []
+        signature_item (src/name.mli[51,1288+2]..src/name.mli[52,1305+80])
+          Tsig_value
+          value_description register/559 (src/name.mli[51,1288+2]..src/name.mli[52,1305+80])
+            core_type (src/name.mli[52,1305+4]..src/name.mli[52,1305+80])
+              Ttyp_arrow
+              Labelled "kind"
+              core_type (src/name.mli[52,1305+9]..src/name.mli[52,1305+36])
+                Ttyp_variant closed=Closed
+                [
+                  Ttag "Attribute" true
+                    []
+                  Ttag "Extension" true
+                    []
+                ]
+                None
+              core_type (src/name.mli[52,1305+40]..src/name.mli[52,1305+80])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/name.mli[52,1305+40]..src/name.mli[52,1305+50])
+                  Ttyp_constr "t/557"
+                  [
+                    core_type (src/name.mli[52,1305+40]..src/name.mli[52,1305+48])
+                      Ttyp_var context
+                  ]
+                core_type (src/name.mli[52,1305+54]..src/name.mli[52,1305+80])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/name.mli[52,1305+54]..src/name.mli[52,1305+62])
+                    Ttyp_var context
+                  core_type (src/name.mli[52,1305+66]..src/name.mli[52,1305+80])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[52,1305+66]..src/name.mli[52,1305+72])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/name.mli[52,1305+76]..src/name.mli[52,1305+80])
+                      Ttyp_constr "unit/6!"
+                      []
+            []
+        signature_item (src/name.mli[54,1387+2]..src/name.mli[54,1387+65])
+          Tsig_value
+          value_description check_collisions/560 (src/name.mli[54,1387+2]..src/name.mli[54,1387+65])
+            core_type (src/name.mli[54,1387+25]..src/name.mli[54,1387+65])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[54,1387+25]..src/name.mli[54,1387+35])
+                Ttyp_constr "t/557"
+                [
+                  core_type (src/name.mli[54,1387+25]..src/name.mli[54,1387+33])
+                    Ttyp_var context
+                ]
+              core_type (src/name.mli[54,1387+39]..src/name.mli[54,1387+65])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/name.mli[54,1387+39]..src/name.mli[54,1387+47])
+                  Ttyp_var context
+                core_type (src/name.mli[54,1387+51]..src/name.mli[54,1387+65])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/name.mli[54,1387+51]..src/name.mli[54,1387+57])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/name.mli[54,1387+61]..src/name.mli[54,1387+65])
+                    Ttyp_constr "unit/6!"
+                    []
+            []
+        signature_item (src/name.mli[56,1454+2]..src/name.mli[57,1473+79])
+          Tsig_value
+          value_description spellcheck/561 (src/name.mli[56,1454+2]..src/name.mli[57,1473+79])
+            core_type (src/name.mli[57,1473+4]..src/name.mli[57,1473+79])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[57,1473+4]..src/name.mli[57,1473+14])
+                Ttyp_constr "t/557"
+                [
+                  core_type (src/name.mli[57,1473+4]..src/name.mli[57,1473+12])
+                    Ttyp_var context
+                ]
+              core_type (src/name.mli[57,1473+18]..src/name.mli[57,1473+79])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/name.mli[57,1473+18]..src/name.mli[57,1473+26])
+                  Ttyp_var context
+                core_type (src/name.mli[57,1473+30]..src/name.mli[57,1473+79])
+                  Ttyp_arrow
+                  Optional "allowlist"
+                  core_type (src/name.mli[57,1473+41]..src/name.mli[57,1473+52])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/name.mli[57,1473+41]..src/name.mli[57,1473+47])
+                        Ttyp_constr "string/17!"
+                        []
+                    ]
+                  core_type (src/name.mli[57,1473+56]..src/name.mli[57,1473+79])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[57,1473+56]..src/name.mli[57,1473+62])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/name.mli[57,1473+66]..src/name.mli[57,1473+79])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/name.mli[57,1473+66]..src/name.mli[57,1473+72])
+                          Ttyp_constr "string/17!"
+                          []
+                      ]
+            []
+        signature_item (src/name.mli[59,1554+2]..src/name.mli[83,2203+5])
+          Tsig_module "Error/619"
+          module_type (src/name.mli[59,1554+17]..src/name.mli[83,2203+5])
+            Tmty_signature
+            [
+              signature_item (src/name.mli[60,1575+4]..src/name.mli[66,1763+22])
+                Tsig_value
+                value_description createf/616 (src/name.mli[60,1575+4]..src/name.mli[66,1763+22])
+                  core_type (src/name.mli[61,1593+6]..src/name.mli[66,1763+22])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[61,1593+6]..src/name.mli[61,1593+16])
+                      Ttyp_constr "t/557"
+                      [
+                        core_type (src/name.mli[61,1593+6]..src/name.mli[61,1593+14])
+                          Ttyp_var context
+                      ]
+                    core_type (src/name.mli[62,1613+6]..src/name.mli[66,1763+22])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[62,1613+6]..src/name.mli[62,1613+14])
+                        Ttyp_var context
+                      core_type (src/name.mli[63,1631+6]..src/name.mli[66,1763+22])
+                        Ttyp_arrow
+                        Optional "allowlist"
+                        core_type (src/name.mli[63,1631+17]..src/name.mli[63,1631+28])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/name.mli[63,1631+17]..src/name.mli[63,1631+23])
+                              Ttyp_constr "string/17!"
+                              []
+                          ]
+                        core_type (src/name.mli[64,1663+6]..src/name.mli[66,1763+22])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[64,1663+6]..src/name.mli[64,1663+74])
+                            Ttyp_constr "Stdlib!.format4"
+                            [
+                              core_type (src/name.mli[64,1663+7]..src/name.mli[64,1663+33])
+                                Ttyp_arrow
+                                Nolabel
+                                core_type (src/name.mli[64,1663+7]..src/name.mli[64,1663+13])
+                                  Ttyp_constr "string/17!"
+                                  []
+                                core_type (src/name.mli[64,1663+17]..src/name.mli[64,1663+33])
+                                  Ttyp_constr "Ppxlib__!.Location.Error.t"
+                                  []
+                              core_type (src/name.mli[64,1663+35]..src/name.mli[64,1663+39])
+                                Ttyp_constr "unit/6!"
+                                []
+                              core_type (src/name.mli[64,1663+41]..src/name.mli[64,1663+47])
+                                Ttyp_constr "string/17!"
+                                []
+                              core_type (src/name.mli[64,1663+49]..src/name.mli[64,1663+65])
+                                Ttyp_constr "Ppxlib__!.Location.Error.t"
+                                []
+                            ]
+                          core_type (src/name.mli[65,1741+6]..src/name.mli[66,1763+22])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/name.mli[65,1741+6]..src/name.mli[65,1741+18])
+                              Ttyp_constr "Ppxlib__!.Loc.t"
+                              [
+                                core_type (src/name.mli[65,1741+6]..src/name.mli[65,1741+12])
+                                  Ttyp_constr "string/17!"
+                                  []
+                              ]
+                            core_type (src/name.mli[66,1763+6]..src/name.mli[66,1763+22])
+                              Ttyp_constr "Ppxlib__!.Location.Error.t"
+                              []
+                  []
+              signature_item (src/name.mli[68,1787+4]..src/name.mli[74,1980+8])
+                Tsig_value
+                value_description raise_errorf/617 (src/name.mli[68,1787+4]..src/name.mli[74,1980+8])
+                  core_type (src/name.mli[69,1810+6]..src/name.mli[74,1980+8])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[69,1810+6]..src/name.mli[69,1810+16])
+                      Ttyp_constr "t/557"
+                      [
+                        core_type (src/name.mli[69,1810+6]..src/name.mli[69,1810+14])
+                          Ttyp_var context
+                      ]
+                    core_type (src/name.mli[70,1830+6]..src/name.mli[74,1980+8])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[70,1830+6]..src/name.mli[70,1830+14])
+                        Ttyp_var context
+                      core_type (src/name.mli[71,1848+6]..src/name.mli[74,1980+8])
+                        Ttyp_arrow
+                        Optional "allowlist"
+                        core_type (src/name.mli[71,1848+17]..src/name.mli[71,1848+28])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/name.mli[71,1848+17]..src/name.mli[71,1848+23])
+                              Ttyp_constr "string/17!"
+                              []
+                          ]
+                        core_type (src/name.mli[72,1880+6]..src/name.mli[74,1980+8])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[72,1880+6]..src/name.mli[72,1880+74])
+                            Ttyp_constr "Stdlib!.format4"
+                            [
+                              core_type (src/name.mli[72,1880+7]..src/name.mli[72,1880+33])
+                                Ttyp_arrow
+                                Nolabel
+                                core_type (src/name.mli[72,1880+7]..src/name.mli[72,1880+13])
+                                  Ttyp_constr "string/17!"
+                                  []
+                                core_type (src/name.mli[72,1880+17]..src/name.mli[72,1880+33])
+                                  Ttyp_constr "Ppxlib__!.Location.Error.t"
+                                  []
+                              core_type (src/name.mli[72,1880+35]..src/name.mli[72,1880+39])
+                                Ttyp_constr "unit/6!"
+                                []
+                              core_type (src/name.mli[72,1880+41]..src/name.mli[72,1880+47])
+                                Ttyp_constr "string/17!"
+                                []
+                              core_type (src/name.mli[72,1880+49]..src/name.mli[72,1880+65])
+                                Ttyp_constr "Ppxlib__!.Location.Error.t"
+                                []
+                            ]
+                          core_type (src/name.mli[73,1958+6]..src/name.mli[74,1980+8])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/name.mli[73,1958+6]..src/name.mli[73,1958+18])
+                              Ttyp_constr "Ppxlib__!.Loc.t"
+                              [
+                                core_type (src/name.mli[73,1958+6]..src/name.mli[73,1958+12])
+                                  Ttyp_constr "string/17!"
+                                  []
+                              ]
+                            core_type (src/name.mli[74,1980+6]..src/name.mli[74,1980+8])
+                              Ttyp_var a
+                  []
+              signature_item (src/name.mli[76,1990+4]..src/name.mli[82,2187+15])
+                Tsig_value
+                value_description error_extensionf/618 (src/name.mli[76,1990+4]..src/name.mli[82,2187+15])
+                  core_type (src/name.mli[77,2017+6]..src/name.mli[82,2187+15])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[77,2017+6]..src/name.mli[77,2017+16])
+                      Ttyp_constr "t/557"
+                      [
+                        core_type (src/name.mli[77,2017+6]..src/name.mli[77,2017+14])
+                          Ttyp_var context
+                      ]
+                    core_type (src/name.mli[78,2037+6]..src/name.mli[82,2187+15])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[78,2037+6]..src/name.mli[78,2037+14])
+                        Ttyp_var context
+                      core_type (src/name.mli[79,2055+6]..src/name.mli[82,2187+15])
+                        Ttyp_arrow
+                        Optional "allowlist"
+                        core_type (src/name.mli[79,2055+17]..src/name.mli[79,2055+28])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/name.mli[79,2055+17]..src/name.mli[79,2055+23])
+                              Ttyp_constr "string/17!"
+                              []
+                          ]
+                        core_type (src/name.mli[80,2087+6]..src/name.mli[82,2187+15])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[80,2087+6]..src/name.mli[80,2087+74])
+                            Ttyp_constr "Stdlib!.format4"
+                            [
+                              core_type (src/name.mli[80,2087+7]..src/name.mli[80,2087+33])
+                                Ttyp_arrow
+                                Nolabel
+                                core_type (src/name.mli[80,2087+7]..src/name.mli[80,2087+13])
+                                  Ttyp_constr "string/17!"
+                                  []
+                                core_type (src/name.mli[80,2087+17]..src/name.mli[80,2087+33])
+                                  Ttyp_constr "Ppxlib__!.Location.Error.t"
+                                  []
+                              core_type (src/name.mli[80,2087+35]..src/name.mli[80,2087+39])
+                                Ttyp_constr "unit/6!"
+                                []
+                              core_type (src/name.mli[80,2087+41]..src/name.mli[80,2087+47])
+                                Ttyp_constr "string/17!"
+                                []
+                              core_type (src/name.mli[80,2087+49]..src/name.mli[80,2087+65])
+                                Ttyp_constr "Ppxlib__!.Location.Error.t"
+                                []
+                            ]
+                          core_type (src/name.mli[81,2165+6]..src/name.mli[82,2187+15])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/name.mli[81,2165+6]..src/name.mli[81,2165+18])
+                              Ttyp_constr "Ppxlib__!.Loc.t"
+                              [
+                                core_type (src/name.mli[81,2165+6]..src/name.mli[81,2165+12])
+                                  Ttyp_constr "string/17!"
+                                  []
+                              ]
+                            core_type (src/name.mli[82,2187+6]..src/name.mli[82,2187+15])
+                              Ttyp_constr "Ppxlib__!.Import.extension"
+                              []
+                  []
+            ]
+        signature_item (src/name.mli[85,2210+2]..src/name.mli[91,2391+6])
+          Tsig_value
+          value_description raise_errorf/620 (src/name.mli[85,2210+2]..src/name.mli[91,2391+6])
+            core_type (src/name.mli[86,2231+4]..src/name.mli[91,2391+6])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[86,2231+4]..src/name.mli[86,2231+14])
+                Ttyp_constr "t/557"
+                [
+                  core_type (src/name.mli[86,2231+4]..src/name.mli[86,2231+12])
+                    Ttyp_var context
+                ]
+              core_type (src/name.mli[87,2249+4]..src/name.mli[91,2391+6])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/name.mli[87,2249+4]..src/name.mli[87,2249+12])
+                  Ttyp_var context
+                core_type (src/name.mli[88,2265+4]..src/name.mli[91,2391+6])
+                  Ttyp_arrow
+                  Optional "allowlist"
+                  core_type (src/name.mli[88,2265+15]..src/name.mli[88,2265+26])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/name.mli[88,2265+15]..src/name.mli[88,2265+21])
+                        Ttyp_constr "string/17!"
+                        []
+                    ]
+                  core_type (src/name.mli[89,2295+4]..src/name.mli[91,2391+6])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/name.mli[89,2295+4]..src/name.mli[89,2295+72])
+                      Ttyp_constr "Stdlib!.format4"
+                      [
+                        core_type (src/name.mli[89,2295+5]..src/name.mli[89,2295+31])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/name.mli[89,2295+5]..src/name.mli[89,2295+11])
+                            Ttyp_constr "string/17!"
+                            []
+                          core_type (src/name.mli[89,2295+15]..src/name.mli[89,2295+31])
+                            Ttyp_constr "Ppxlib__!.Location.Error.t"
+                            []
+                        core_type (src/name.mli[89,2295+33]..src/name.mli[89,2295+37])
+                          Ttyp_constr "unit/6!"
+                          []
+                        core_type (src/name.mli[89,2295+39]..src/name.mli[89,2295+45])
+                          Ttyp_constr "string/17!"
+                          []
+                        core_type (src/name.mli[89,2295+47]..src/name.mli[89,2295+63])
+                          Ttyp_constr "Ppxlib__!.Location.Error.t"
+                          []
+                      ]
+                    core_type (src/name.mli[90,2371+4]..src/name.mli[91,2391+6])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/name.mli[90,2371+4]..src/name.mli[90,2371+16])
+                        Ttyp_constr "Ppxlib__!.Loc.t"
+                        [
+                          core_type (src/name.mli[90,2371+4]..src/name.mli[90,2371+10])
+                            Ttyp_constr "string/17!"
+                            []
+                        ]
+                      core_type (src/name.mli[91,2391+4]..src/name.mli[91,2391+6])
+                        Ttyp_var a
+            []
+      ]
+  signature_item (src/name.mli[94,2403+0]..src/name.mli[98,2596+3])
+    Tsig_module "Allowlisted/625"
+    module_type (src/name.mli[94,2403+21]..src/name.mli[98,2596+3])
+      Tmty_signature
+      [
+        signature_item (src/name.mli[95,2428+2]..src/name.mli[95,2428+46])
+          Tsig_value
+          value_description get_attribute_list/622 (src/name.mli[95,2428+2]..src/name.mli[95,2428+46])
+            core_type (src/name.mli[95,2428+27]..src/name.mli[95,2428+46])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[95,2428+27]..src/name.mli[95,2428+31])
+                Ttyp_constr "unit/6!"
+                []
+              core_type (src/name.mli[95,2428+35]..src/name.mli[95,2428+46])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/name.mli[95,2428+35]..src/name.mli[95,2428+41])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+            []
+        signature_item (src/name.mli[96,2475+2]..src/name.mli[96,2475+46])
+          Tsig_value
+          value_description get_extension_list/623 (src/name.mli[96,2475+2]..src/name.mli[96,2475+46])
+            core_type (src/name.mli[96,2475+27]..src/name.mli[96,2475+46])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[96,2475+27]..src/name.mli[96,2475+31])
+                Ttyp_constr "unit/6!"
+                []
+              core_type (src/name.mli[96,2475+35]..src/name.mli[96,2475+46])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/name.mli[96,2475+35]..src/name.mli[96,2475+41])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+            []
+        signature_item (src/name.mli[97,2522+2]..src/name.mli[97,2522+73])
+          Tsig_value
+          value_description is_allowlisted/624 (src/name.mli[97,2522+2]..src/name.mli[97,2522+73])
+            core_type (src/name.mli[97,2522+23]..src/name.mli[97,2522+73])
+              Ttyp_arrow
+              Labelled "kind"
+              core_type (src/name.mli[97,2522+28]..src/name.mli[97,2522+55])
+                Ttyp_variant closed=Closed
+                [
+                  Ttag "Attribute" true
+                    []
+                  Ttag "Extension" true
+                    []
+                ]
+                None
+              core_type (src/name.mli[97,2522+59]..src/name.mli[97,2522+73])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/name.mli[97,2522+59]..src/name.mli[97,2522+65])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/name.mli[97,2522+69]..src/name.mli[97,2522+73])
+                  Ttyp_constr "bool/5!"
+                  []
+            []
+      ]
+  signature_item (src/name.mli[100,2601+0]..src/name.mli[116,3272+3])
+    Tsig_module "Reserved_namespaces/628"
+    module_type (src/name.mli[100,2601+29]..src/name.mli[116,3272+3])
+      Tmty_signature
+      [
+        signature_item (src/name.mli[101,2634+2]..src/name.mli[101,2634+63])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/name.mli[101,2634+2]..[101,2634+63])
+              Pstr_eval
+              expression (src/name.mli[101,2634+2]..[101,2634+63])
+                Pexp_constant PConst_string(" Small module to reserve namespaces in attribute names. ",(src/name.mli[101,2634+2]..[101,2634+63]),None)
+          ]
+        signature_item (src/name.mli[103,2699+2]..src/name.mli[103,2699+30])
+          Tsig_value
+          value_description reserve/626 (src/name.mli[103,2699+2]..src/name.mli[103,2699+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/name.mli[104,2730+2]..[113,3151+70])
+                  Pstr_eval
+                  expression (src/name.mli[104,2730+2]..[113,3151+70])
+                    Pexp_constant PConst_string(" [reserve \"foo\"] has two implications:\n\n      - one can't then declare an attribute inside this namespace\n      - attributes within this namespace won't be reported by [check_unused]\n\n      This is here to insure that the rewriter cohabits well with other rewriter\n      or tools (e.g. merlin) which might leave attribute on the AST.\n\n      N.B. the following namespaces are reserved by default: [merlin], [reason],\n      [refmt] [ns], [res], [metaocaml], [ocamlformat] and [ppxlib]. ",(src/name.mli[104,2730+2]..[113,3151+70]),None)
+              ]
+            core_type (src/name.mli[103,2699+16]..src/name.mli[103,2699+30])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[103,2699+16]..src/name.mli[103,2699+22])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/name.mli[103,2699+26]..src/name.mli[103,2699+30])
+                Ttyp_constr "unit/6!"
+                []
+            []
+        signature_item (src/name.mli[115,3223+2]..src/name.mli[115,3223+48])
+          Tsig_value
+          value_description is_in_reserved_namespaces/627 (src/name.mli[115,3223+2]..src/name.mli[115,3223+48])
+            core_type (src/name.mli[115,3223+34]..src/name.mli[115,3223+48])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/name.mli[115,3223+34]..src/name.mli[115,3223+40])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/name.mli[115,3223+44]..src/name.mli[115,3223+48])
+                Ttyp_constr "bool/5!"
+                []
+            []
+      ]
+  signature_item (src/name.mli[118,3277+0]..src/name.mli[118,3277+34])
+    Tsig_value
+    value_description ignore_checks/629 (src/name.mli[118,3277+0]..src/name.mli[118,3277+34])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/name.mli[119,3312+0]..[120,3387+63])
+            Pstr_eval
+            expression (src/name.mli[119,3312+0]..[120,3387+63])
+              Pexp_constant PConst_string(" Returns [true] if checks should be ignored for the following name, for\n    instance if it is reserved or starts with an underscore. ",(src/name.mli[119,3312+0]..[120,3387+63]),None)
+        ]
+      core_type (src/name.mli[118,3277+20]..src/name.mli[118,3277+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/name.mli[118,3277+20]..src/name.mli[118,3277+26])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/name.mli[118,3277+30]..src/name.mli[118,3277+34])
+          Ttyp_constr "bool/5!"
+          []
+      []
+]
+

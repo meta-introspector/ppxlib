@@ -1,0 +1,426 @@
+[
+  signature_item (src/ast_traverse0.mli[1,0+0]..[1,0+12])
+    Psig_open Override "Import" (src/ast_traverse0.mli[1,0+6]..[1,0+12])
+  signature_item (src/ast_traverse0.mli[3,14+0]..[7,96+5])
+    Psig_class
+    [
+      class_description (src/ast_traverse0.mli[3,14+0]..[7,96+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "map" (src/ast_traverse0.mli[3,14+6]..[3,14+9])
+        pci_expr =
+          class_type (src/ast_traverse0.mli[4,26+2]..[7,96+5])
+            Pcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[4,26+8]..[4,26+8])
+                Ptyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[5,35+4]..[5,35+40])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[5,35+12]..[5,35+40])
+                    Pcty_constr "Ppxlib_traverse_builtins.map" (src/ast_traverse0.mli[5,35+12]..[5,35+40])
+                    []
+                class_type_field (src/ast_traverse0.mli[6,76+4]..[6,76+19])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[6,76+12]..[6,76+19])
+                    Pcty_constr "Ast.map" (src/ast_traverse0.mli[6,76+12]..[6,76+19])
+                    []
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[9,103+0]..[13,188+5])
+    Psig_class
+    [
+      class_description (src/ast_traverse0.mli[9,103+0]..[13,188+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "iter" (src/ast_traverse0.mli[9,103+6]..[9,103+10])
+        pci_expr =
+          class_type (src/ast_traverse0.mli[10,116+2]..[13,188+5])
+            Pcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[10,116+8]..[10,116+8])
+                Ptyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[11,125+4]..[11,125+41])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[11,125+12]..[11,125+41])
+                    Pcty_constr "Ppxlib_traverse_builtins.iter" (src/ast_traverse0.mli[11,125+12]..[11,125+41])
+                    []
+                class_type_field (src/ast_traverse0.mli[12,167+4]..[12,167+20])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[12,167+12]..[12,167+20])
+                    Pcty_constr "Ast.iter" (src/ast_traverse0.mli[12,167+12]..[12,167+20])
+                    []
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[15,195+0]..[19,301+5])
+    Psig_class
+    [
+      class_description (src/ast_traverse0.mli[15,195+0]..[19,301+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[15,195+7]..[15,195+11])
+              Ptyp_var acc
+          ]
+        pci_name = "fold" (src/ast_traverse0.mli[15,195+13]..[15,195+17])
+        pci_expr =
+          class_type (src/ast_traverse0.mli[16,215+2]..[19,301+5])
+            Pcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[16,215+8]..[16,215+8])
+                Ptyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[17,224+4]..[17,224+48])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[17,224+12]..[17,224+48])
+                    Pcty_constr "Ppxlib_traverse_builtins.fold" (src/ast_traverse0.mli[17,224+19]..[17,224+48])
+                    [
+                      core_type (src/ast_traverse0.mli[17,224+13]..[17,224+17])
+                        Ptyp_var acc
+                    ]
+                class_type_field (src/ast_traverse0.mli[18,273+4]..[18,273+27])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[18,273+12]..[18,273+27])
+                    Pcty_constr "Ast.fold" (src/ast_traverse0.mli[18,273+19]..[18,273+27])
+                    [
+                      core_type (src/ast_traverse0.mli[18,273+13]..[18,273+17])
+                        Ptyp_var acc
+                    ]
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[21,308+0]..[25,426+5])
+    Psig_class
+    [
+      class_description (src/ast_traverse0.mli[21,308+0]..[25,426+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[21,308+7]..[21,308+11])
+              Ptyp_var acc
+          ]
+        pci_name = "fold_map" (src/ast_traverse0.mli[21,308+13]..[21,308+21])
+        pci_expr =
+          class_type (src/ast_traverse0.mli[22,332+2]..[25,426+5])
+            Pcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[22,332+8]..[22,332+8])
+                Ptyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[23,341+4]..[23,341+52])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[23,341+12]..[23,341+52])
+                    Pcty_constr "Ppxlib_traverse_builtins.fold_map" (src/ast_traverse0.mli[23,341+19]..[23,341+52])
+                    [
+                      core_type (src/ast_traverse0.mli[23,341+13]..[23,341+17])
+                        Ptyp_var acc
+                    ]
+                class_type_field (src/ast_traverse0.mli[24,394+4]..[24,394+31])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[24,394+12]..[24,394+31])
+                    Pcty_constr "Ast.fold_map" (src/ast_traverse0.mli[24,394+19]..[24,394+31])
+                    [
+                      core_type (src/ast_traverse0.mli[24,394+13]..[24,394+17])
+                        Ptyp_var acc
+                    ]
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[27,433+0]..[31,575+5])
+    Psig_class
+    [
+      class_description (src/ast_traverse0.mli[27,433+0]..[31,575+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[27,433+7]..[27,433+11])
+              Ptyp_var ctx
+          ]
+        pci_name = "map_with_context" (src/ast_traverse0.mli[27,433+13]..[27,433+29])
+        pci_expr =
+          class_type (src/ast_traverse0.mli[28,465+2]..[31,575+5])
+            Pcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[28,465+8]..[28,465+8])
+                Ptyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[29,474+4]..[29,474+60])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[29,474+12]..[29,474+60])
+                    Pcty_constr "Ppxlib_traverse_builtins.map_with_context" (src/ast_traverse0.mli[29,474+19]..[29,474+60])
+                    [
+                      core_type (src/ast_traverse0.mli[29,474+13]..[29,474+17])
+                        Ptyp_var ctx
+                    ]
+                class_type_field (src/ast_traverse0.mli[30,535+4]..[30,535+39])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[30,535+12]..[30,535+39])
+                    Pcty_constr "Ast.map_with_context" (src/ast_traverse0.mli[30,535+19]..[30,535+39])
+                    [
+                      core_type (src/ast_traverse0.mli[30,535+13]..[30,535+17])
+                        Ptyp_var ctx
+                    ]
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[33,582+0]..[37,696+5])
+    Psig_class
+    [
+      class_description (src/ast_traverse0.mli[33,582+0]..[37,696+5])
+        pci_virt = Virtual
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[33,582+15]..[33,582+19])
+              Ptyp_var res
+          ]
+        pci_name = "lift" (src/ast_traverse0.mli[33,582+21]..[33,582+25])
+        pci_expr =
+          class_type (src/ast_traverse0.mli[34,610+2]..[37,696+5])
+            Pcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[34,610+8]..[34,610+8])
+                Ptyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[35,619+4]..[35,619+48])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[35,619+12]..[35,619+48])
+                    Pcty_constr "Ppxlib_traverse_builtins.lift" (src/ast_traverse0.mli[35,619+19]..[35,619+48])
+                    [
+                      core_type (src/ast_traverse0.mli[35,619+13]..[35,619+17])
+                        Ptyp_var res
+                    ]
+                class_type_field (src/ast_traverse0.mli[36,668+4]..[36,668+27])
+                  Pctf_inherit
+                  class_type (src/ast_traverse0.mli[36,668+12]..[36,668+27])
+                    Pcty_constr "Ast.lift" (src/ast_traverse0.mli[36,668+19]..[36,668+27])
+                    [
+                      core_type (src/ast_traverse0.mli[36,668+13]..[36,668+17])
+                        Ptyp_var res
+                    ]
+              ]
+    ]
+]
+
+open! Import
+class map : object inherit Ppxlib_traverse_builtins.map inherit Ast.map end
+class iter :
+  object inherit Ppxlib_traverse_builtins.iter inherit Ast.iter end
+class ['acc] fold :
+  object inherit ['acc] Ppxlib_traverse_builtins.fold inherit ['acc] Ast.fold
+  end
+class ['acc] fold_map :
+  object
+    inherit ['acc] Ppxlib_traverse_builtins.fold_map
+    inherit ['acc] Ast.fold_map
+  end
+class ['ctx] map_with_context :
+  object
+    inherit ['ctx] Ppxlib_traverse_builtins.map_with_context
+    inherit ['ctx] Ast.map_with_context
+  end
+class virtual ['res] lift :
+  object inherit ['res] Ppxlib_traverse_builtins.lift inherit ['res] Ast.lift
+  end
+[
+  signature_item (src/ast_traverse0.mli[1,0+0]..src/ast_traverse0.mli[1,0+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/ast_traverse0.mli[3,14+0]..src/ast_traverse0.mli[7,96+5])
+    Tsig_class
+    [
+      class_description (src/ast_traverse0.mli[3,14+0]..src/ast_traverse0.mli[7,96+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "map"
+        pci_expr =
+          class_type (src/ast_traverse0.mli[4,26+2]..src/ast_traverse0.mli[7,96+5])
+            Tcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[4,26+8]..src/ast_traverse0.mli[4,26+8])
+                Ttyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[5,35+4]..src/ast_traverse0.mli[5,35+40])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[5,35+12]..src/ast_traverse0.mli[5,35+40])
+                    Tcty_constr "Ppxlib_traverse_builtins!.map"
+                    []
+                class_type_field (src/ast_traverse0.mli[6,76+4]..src/ast_traverse0.mli[6,76+19])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[6,76+12]..src/ast_traverse0.mli[6,76+19])
+                    Tcty_constr "Ppxlib__!.Import.Ast.map"
+                    []
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[9,103+0]..src/ast_traverse0.mli[13,188+5])
+    Tsig_class
+    [
+      class_description (src/ast_traverse0.mli[9,103+0]..src/ast_traverse0.mli[13,188+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "iter"
+        pci_expr =
+          class_type (src/ast_traverse0.mli[10,116+2]..src/ast_traverse0.mli[13,188+5])
+            Tcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[10,116+8]..src/ast_traverse0.mli[10,116+8])
+                Ttyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[11,125+4]..src/ast_traverse0.mli[11,125+41])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[11,125+12]..src/ast_traverse0.mli[11,125+41])
+                    Tcty_constr "Ppxlib_traverse_builtins!.iter"
+                    []
+                class_type_field (src/ast_traverse0.mli[12,167+4]..src/ast_traverse0.mli[12,167+20])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[12,167+12]..src/ast_traverse0.mli[12,167+20])
+                    Tcty_constr "Ppxlib__!.Import.Ast.iter"
+                    []
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[15,195+0]..src/ast_traverse0.mli[19,301+5])
+    Tsig_class
+    [
+      class_description (src/ast_traverse0.mli[15,195+0]..src/ast_traverse0.mli[19,301+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[15,195+7]..src/ast_traverse0.mli[15,195+11])
+              Ttyp_var acc
+          ]
+        pci_name = "fold"
+        pci_expr =
+          class_type (src/ast_traverse0.mli[16,215+2]..src/ast_traverse0.mli[19,301+5])
+            Tcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[16,215+8]..src/ast_traverse0.mli[16,215+8])
+                Ttyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[17,224+4]..src/ast_traverse0.mli[17,224+48])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[17,224+12]..src/ast_traverse0.mli[17,224+48])
+                    Tcty_constr "Ppxlib_traverse_builtins!.fold"
+                    [
+                      core_type (src/ast_traverse0.mli[17,224+13]..src/ast_traverse0.mli[17,224+17])
+                        Ttyp_var acc
+                    ]
+                class_type_field (src/ast_traverse0.mli[18,273+4]..src/ast_traverse0.mli[18,273+27])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[18,273+12]..src/ast_traverse0.mli[18,273+27])
+                    Tcty_constr "Ppxlib__!.Import.Ast.fold"
+                    [
+                      core_type (src/ast_traverse0.mli[18,273+13]..src/ast_traverse0.mli[18,273+17])
+                        Ttyp_var acc
+                    ]
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[21,308+0]..src/ast_traverse0.mli[25,426+5])
+    Tsig_class
+    [
+      class_description (src/ast_traverse0.mli[21,308+0]..src/ast_traverse0.mli[25,426+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[21,308+7]..src/ast_traverse0.mli[21,308+11])
+              Ttyp_var acc
+          ]
+        pci_name = "fold_map"
+        pci_expr =
+          class_type (src/ast_traverse0.mli[22,332+2]..src/ast_traverse0.mli[25,426+5])
+            Tcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[22,332+8]..src/ast_traverse0.mli[22,332+8])
+                Ttyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[23,341+4]..src/ast_traverse0.mli[23,341+52])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[23,341+12]..src/ast_traverse0.mli[23,341+52])
+                    Tcty_constr "Ppxlib_traverse_builtins!.fold_map"
+                    [
+                      core_type (src/ast_traverse0.mli[23,341+13]..src/ast_traverse0.mli[23,341+17])
+                        Ttyp_var acc
+                    ]
+                class_type_field (src/ast_traverse0.mli[24,394+4]..src/ast_traverse0.mli[24,394+31])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[24,394+12]..src/ast_traverse0.mli[24,394+31])
+                    Tcty_constr "Ppxlib__!.Import.Ast.fold_map"
+                    [
+                      core_type (src/ast_traverse0.mli[24,394+13]..src/ast_traverse0.mli[24,394+17])
+                        Ttyp_var acc
+                    ]
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[27,433+0]..src/ast_traverse0.mli[31,575+5])
+    Tsig_class
+    [
+      class_description (src/ast_traverse0.mli[27,433+0]..src/ast_traverse0.mli[31,575+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[27,433+7]..src/ast_traverse0.mli[27,433+11])
+              Ttyp_var ctx
+          ]
+        pci_name = "map_with_context"
+        pci_expr =
+          class_type (src/ast_traverse0.mli[28,465+2]..src/ast_traverse0.mli[31,575+5])
+            Tcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[28,465+8]..src/ast_traverse0.mli[28,465+8])
+                Ttyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[29,474+4]..src/ast_traverse0.mli[29,474+60])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[29,474+12]..src/ast_traverse0.mli[29,474+60])
+                    Tcty_constr "Ppxlib_traverse_builtins!.map_with_context"
+                    [
+                      core_type (src/ast_traverse0.mli[29,474+13]..src/ast_traverse0.mli[29,474+17])
+                        Ttyp_var ctx
+                    ]
+                class_type_field (src/ast_traverse0.mli[30,535+4]..src/ast_traverse0.mli[30,535+39])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[30,535+12]..src/ast_traverse0.mli[30,535+39])
+                    Tcty_constr "Ppxlib__!.Import.Ast.map_with_context"
+                    [
+                      core_type (src/ast_traverse0.mli[30,535+13]..src/ast_traverse0.mli[30,535+17])
+                        Ttyp_var ctx
+                    ]
+              ]
+    ]
+  signature_item (src/ast_traverse0.mli[33,582+0]..src/ast_traverse0.mli[37,696+5])
+    Tsig_class
+    [
+      class_description (src/ast_traverse0.mli[33,582+0]..src/ast_traverse0.mli[37,696+5])
+        pci_virt = Virtual
+        pci_params =
+          [
+            core_type (src/ast_traverse0.mli[33,582+15]..src/ast_traverse0.mli[33,582+19])
+              Ttyp_var res
+          ]
+        pci_name = "lift"
+        pci_expr =
+          class_type (src/ast_traverse0.mli[34,610+2]..src/ast_traverse0.mli[37,696+5])
+            Tcty_signature
+            class_signature
+              core_type (src/ast_traverse0.mli[34,610+8]..src/ast_traverse0.mli[34,610+8])
+                Ttyp_any
+              [
+                class_type_field (src/ast_traverse0.mli[35,619+4]..src/ast_traverse0.mli[35,619+48])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[35,619+12]..src/ast_traverse0.mli[35,619+48])
+                    Tcty_constr "Ppxlib_traverse_builtins!.lift"
+                    [
+                      core_type (src/ast_traverse0.mli[35,619+13]..src/ast_traverse0.mli[35,619+17])
+                        Ttyp_var res
+                    ]
+                class_type_field (src/ast_traverse0.mli[36,668+4]..src/ast_traverse0.mli[36,668+27])
+                  Tctf_inherit
+                  class_type (src/ast_traverse0.mli[36,668+12]..src/ast_traverse0.mli[36,668+27])
+                    Tcty_constr "Ppxlib__!.Import.Ast.lift"
+                    [
+                      core_type (src/ast_traverse0.mli[36,668+13]..src/ast_traverse0.mli[36,668+17])
+                        Ttyp_var res
+                    ]
+              ]
+    ]
+]
+

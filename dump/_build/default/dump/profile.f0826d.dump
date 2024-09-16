@@ -1,0 +1,10 @@
+0.254s 81.8MB 28.0MB 29.8MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/ppx_sexp_conv_expander.pp.ml
+  0.239s 73.5MB 27.3MB 29.1MB typing
+  0.001s ------ ------ ------ transl
+  0.006s 4.11MB 0.15MB 29.3MB generate
+    0.002s 2.11MB 0.15MB 29.3MB compile_phrases
+      0.001s 2.11MB 0.15MB 29.3MB liveness
+    0.003s ------ ------ ------ assemble
+    0.002s 2.00MB ------ ------ other
+  0.008s 4.20MB 0.56MB 29.8MB other
+0.021s 3.10MB 1.79MB ------ other

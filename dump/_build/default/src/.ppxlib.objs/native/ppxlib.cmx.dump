@@ -1,0 +1,1059 @@
+[
+  structure_item (src/ppxlib.ml[1,0+0]..[1,0+41])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[1,0+0]..[1,0+41])
+        Pstr_eval
+        expression (src/ppxlib.ml[1,0+0]..[1,0+41])
+          Pexp_constant PConst_string(" Standard library for ppx rewriters ",(src/ppxlib.ml[1,0+0]..[1,0+41]),None)
+    ]
+  structure_item (src/ppxlib.ml[3,43+0]..[17,817+36])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[3,43+0]..[17,817+36])
+        Pstr_eval
+        expression (src/ppxlib.ml[3,43+0]..[17,817+36])
+          Pexp_constant PConst_string(" [ppxlib] is meant to be opened globally in your PPX source files.\n\n    Opening it comes with two advantages. First, it will shadow the\n    [compiler-libs] modules. The [compiler-libs] modules are unstable and aren't\n    meant to be used, so shadowing them is a good protection mechanism. In case\n    you don't want to open [Ppxlib], you can open [Ocaml_shadow] to get the same\n    protection. Second, it will bring several modules in scope, that are useful\n    to have when writing a rewriter:\n\n    - The main [ppxlib] modules, such as modules to help manipulate the AST\n      ({!Ast_builder}, {!Ast_pattern}), and a few functions.\n    - Modules from other libraries, such as {!Ast_helper} or {!Pprintast},\n    - The whole AST types (by [including] the {!Ast} module).\n\n    {1 The core [ppxlib] entries} ",(src/ppxlib.ml[3,43+0]..[17,817+36]),None)
+    ]
+  structure_item (src/ppxlib.ml[19,855+0]..[19,855+31])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[19,855+0]..[19,855+31])
+        Pstr_eval
+        expression (src/ppxlib.ml[19,855+0]..[19,855+31])
+          Pexp_constant PConst_string(" {2 Manipulating the AST} ",(src/ppxlib.ml[19,855+0]..[19,855+31]),None)
+    ]
+  structure_item (src/ppxlib.ml[21,888+0]..[21,888+32])
+    Pstr_module
+    "Ast_builder" (src/ppxlib.ml[21,888+7]..[21,888+18])
+      module_expr (src/ppxlib.ml[21,888+21]..[21,888+32])
+        Pmod_ident "Ast_builder" (src/ppxlib.ml[21,888+21]..[21,888+32])
+  structure_item (src/ppxlib.ml[22,921+0]..[22,921+32])
+    Pstr_module
+    "Ast_pattern" (src/ppxlib.ml[22,921+7]..[22,921+18])
+      module_expr (src/ppxlib.ml[22,921+21]..[22,921+32])
+        Pmod_ident "Ast_pattern" (src/ppxlib.ml[22,921+21]..[22,921+32])
+  structure_item (src/ppxlib.ml[23,954+0]..[23,954+34])
+    Pstr_module
+    "Ast_traverse" (src/ppxlib.ml[23,954+7]..[23,954+19])
+      module_expr (src/ppxlib.ml[23,954+22]..[23,954+34])
+        Pmod_ident "Ast_traverse" (src/ppxlib.ml[23,954+22]..[23,954+34])
+  structure_item (src/ppxlib.ml[25,990+0]..[25,990+33])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[25,990+0]..[25,990+33])
+        Pstr_eval
+        expression (src/ppxlib.ml[25,990+0]..[25,990+33])
+          Pexp_constant PConst_string(" {2 Context-free rewriting} ",(src/ppxlib.ml[25,990+0]..[25,990+33]),None)
+    ]
+  structure_item (src/ppxlib.ml[27,1025+0]..[27,1025+34])
+    Pstr_module
+    "Context_free" (src/ppxlib.ml[27,1025+7]..[27,1025+19])
+      module_expr (src/ppxlib.ml[27,1025+22]..[27,1025+34])
+        Pmod_ident "Context_free" (src/ppxlib.ml[27,1025+22]..[27,1025+34])
+  structure_item (src/ppxlib.ml[28,1060+0]..[28,1060+26])
+    Pstr_module
+    "Deriving" (src/ppxlib.ml[28,1060+7]..[28,1060+15])
+      module_expr (src/ppxlib.ml[28,1060+18]..[28,1060+26])
+        Pmod_ident "Deriving" (src/ppxlib.ml[28,1060+18]..[28,1060+26])
+  structure_item (src/ppxlib.ml[29,1087+0]..[29,1087+28])
+    Pstr_module
+    "Extension" (src/ppxlib.ml[29,1087+7]..[29,1087+16])
+      module_expr (src/ppxlib.ml[29,1087+19]..[29,1087+28])
+        Pmod_ident "Extension" (src/ppxlib.ml[29,1087+19]..[29,1087+28])
+  structure_item (src/ppxlib.ml[30,1116+0]..[30,1116+44])
+    Pstr_module
+    "Expansion_context" (src/ppxlib.ml[30,1116+7]..[30,1116+24])
+      module_expr (src/ppxlib.ml[30,1116+27]..[30,1116+44])
+        Pmod_ident "Expansion_context" (src/ppxlib.ml[30,1116+27]..[30,1116+44])
+  structure_item (src/ppxlib.ml[31,1161+0]..[31,1161+28])
+    Pstr_module
+    "Code_path" (src/ppxlib.ml[31,1161+7]..[31,1161+16])
+      module_expr (src/ppxlib.ml[31,1161+19]..[31,1161+28])
+        Pmod_ident "Code_path" (src/ppxlib.ml[31,1161+19]..[31,1161+28])
+  structure_item (src/ppxlib.ml[33,1191+0]..[33,1191+24])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[33,1191+0]..[33,1191+24])
+        Pstr_eval
+        expression (src/ppxlib.ml[33,1191+0]..[33,1191+24])
+          Pexp_constant PConst_string(" {2 Other helpers} ",(src/ppxlib.ml[33,1191+0]..[33,1191+24]),None)
+    ]
+  structure_item (src/ppxlib.ml[35,1217+0]..[35,1217+44])
+    Pstr_module
+    "Expansion_helpers" (src/ppxlib.ml[35,1217+7]..[35,1217+24])
+      module_expr (src/ppxlib.ml[35,1217+27]..[35,1217+44])
+        Pmod_ident "Expansion_helpers" (src/ppxlib.ml[35,1217+27]..[35,1217+44])
+  structure_item (src/ppxlib.ml[36,1262+0]..[36,1262+38])
+    Pstr_module
+    "Merlin_helpers" (src/ppxlib.ml[36,1262+7]..[36,1262+21])
+      module_expr (src/ppxlib.ml[36,1262+24]..[36,1262+38])
+        Pmod_ident "Merlin_helpers" (src/ppxlib.ml[36,1262+24]..[36,1262+38])
+  structure_item (src/ppxlib.ml[37,1301+0]..[37,1301+30])
+    Pstr_module
+    "Spellcheck" (src/ppxlib.ml[37,1301+7]..[37,1301+17])
+      module_expr (src/ppxlib.ml[37,1301+20]..[37,1301+30])
+        Pmod_ident "Spellcheck" (src/ppxlib.ml[37,1301+20]..[37,1301+30])
+  structure_item (src/ppxlib.ml[38,1332+0]..[38,1332+24])
+    Pstr_module
+    "Keyword" (src/ppxlib.ml[38,1332+7]..[38,1332+14])
+      module_expr (src/ppxlib.ml[38,1332+17]..[38,1332+24])
+        Pmod_ident "Keyword" (src/ppxlib.ml[38,1332+17]..[38,1332+24])
+  structure_item (src/ppxlib.ml[40,1358+0]..[40,1358+33])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[40,1358+0]..[40,1358+33])
+        Pstr_eval
+        expression (src/ppxlib.ml[40,1358+0]..[40,1358+33])
+          Pexp_constant PConst_string(" {2 Driver-related modules} ",(src/ppxlib.ml[40,1358+0]..[40,1358+33]),None)
+    ]
+  structure_item (src/ppxlib.ml[42,1393+0]..[42,1393+22])
+    Pstr_module
+    "Driver" (src/ppxlib.ml[42,1393+7]..[42,1393+13])
+      module_expr (src/ppxlib.ml[42,1393+16]..[42,1393+22])
+        Pmod_ident "Driver" (src/ppxlib.ml[42,1393+16]..[42,1393+22])
+  structure_item (src/ppxlib.ml[43,1416+0]..[43,1416+28])
+    Pstr_module
+    "Caller_id" (src/ppxlib.ml[43,1416+7]..[43,1416+16])
+      module_expr (src/ppxlib.ml[43,1416+19]..[43,1416+28])
+        Pmod_ident "Caller_id" (src/ppxlib.ml[43,1416+19]..[43,1416+28])
+  structure_item (src/ppxlib.ml[44,1445+0]..[44,1445+37])
+    Pstr_module
+    "Ast_io" (src/ppxlib.ml[44,1445+7]..[44,1445+13])
+      module_expr (src/ppxlib.ml[44,1445+16]..[44,1445+37])
+        Pmod_ident "Utils.Ast_io.Read_bin" (src/ppxlib.ml[44,1445+16]..[44,1445+37])
+  structure_item (src/ppxlib.ml[46,1484+0]..[46,1484+17])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[46,1484+0]..[46,1484+17])
+        Pstr_eval
+        expression (src/ppxlib.ml[46,1484+0]..[46,1484+17])
+          Pexp_constant PConst_string(" {2 Checks} ",(src/ppxlib.ml[46,1484+0]..[46,1484+17]),None)
+    ]
+  structure_item (src/ppxlib.ml[48,1503+0]..[48,1503+28])
+    Pstr_module
+    "Attribute" (src/ppxlib.ml[48,1503+7]..[48,1503+16])
+      module_expr (src/ppxlib.ml[48,1503+19]..[48,1503+28])
+        Pmod_ident "Attribute" (src/ppxlib.ml[48,1503+19]..[48,1503+28])
+  structure_item (src/ppxlib.ml[49,1532+0]..[49,1532+53])
+    Pstr_module
+    "Reserved_namespaces" (src/ppxlib.ml[49,1532+7]..[49,1532+26])
+      module_expr (src/ppxlib.ml[49,1532+29]..[49,1532+53])
+        Pmod_ident "Name.Reserved_namespaces" (src/ppxlib.ml[49,1532+29]..[49,1532+53])
+  structure_item (src/ppxlib.ml[51,1587+0]..[51,1587+34])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[51,1587+0]..[51,1587+34])
+        Pstr_eval
+        expression (src/ppxlib.ml[51,1587+0]..[51,1587+34])
+          Pexp_constant PConst_string(" {2 Common helper functions} ",(src/ppxlib.ml[51,1587+0]..[51,1587+34]),None)
+    ]
+  structure_item (src/ppxlib.ml[53,1623+0]..[53,1623+14])
+    Pstr_include    module_expr (src/ppxlib.ml[53,1623+8]..[53,1623+14])
+      Pmod_ident "Common" (src/ppxlib.ml[53,1623+8]..[53,1623+14])
+  structure_item (src/ppxlib.ml[55,1639+0]..[57,1677+46])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[55,1639+0]..[57,1677+46])
+        Pstr_eval
+        expression (src/ppxlib.ml[55,1639+0]..[57,1677+46])
+          Pexp_constant PConst_string(" {1 Modules from other libraries}\n\n    Expose some modules from {!Ppxlib_ast}. ",(src/ppxlib.ml[55,1639+0]..[57,1677+46]),None)
+    ]
+  structure_item (src/ppxlib.ml[59,1725+0]..[59,1725+27])
+    Pstr_module
+    "Ast" (src/ppxlib.ml[59,1725+7]..[59,1725+10])
+      module_expr (src/ppxlib.ml[59,1725+13]..[59,1725+27])
+        Pmod_ident "Ppxlib_ast.Ast" (src/ppxlib.ml[59,1725+13]..[59,1725+27])
+  structure_item (src/ppxlib.ml[60,1753+0]..[60,1753+41])
+    Pstr_module
+    "Ast_helper" (src/ppxlib.ml[60,1753+7]..[60,1753+17])
+      module_expr (src/ppxlib.ml[60,1753+20]..[60,1753+41])
+        Pmod_ident "Ppxlib_ast.Ast_helper" (src/ppxlib.ml[60,1753+20]..[60,1753+41])
+  structure_item (src/ppxlib.ml[61,1795+0]..[61,1795+37])
+    Pstr_module
+    "Asttypes" (src/ppxlib.ml[61,1795+7]..[61,1795+15])
+      module_expr (src/ppxlib.ml[61,1795+18]..[61,1795+37])
+        Pmod_ident "Ppxlib_ast.Asttypes" (src/ppxlib.ml[61,1795+18]..[61,1795+37])
+  structure_item (src/ppxlib.ml[62,1833+0]..[62,1833+31])
+    Pstr_module
+    "Parse" (src/ppxlib.ml[62,1833+7]..[62,1833+12])
+      module_expr (src/ppxlib.ml[62,1833+15]..[62,1833+31])
+        Pmod_ident "Ppxlib_ast.Parse" (src/ppxlib.ml[62,1833+15]..[62,1833+31])
+  structure_item (src/ppxlib.ml[63,1865+0]..[63,1865+39])
+    Pstr_module
+    "Parsetree" (src/ppxlib.ml[63,1865+7]..[63,1865+16])
+      module_expr (src/ppxlib.ml[63,1865+19]..[63,1865+39])
+        Pmod_ident "Ppxlib_ast.Parsetree" (src/ppxlib.ml[63,1865+19]..[63,1865+39])
+  structure_item (src/ppxlib.ml[64,1905+0]..[64,1905+39])
+    Pstr_module
+    "Pprintast" (src/ppxlib.ml[64,1905+7]..[64,1905+16])
+      module_expr (src/ppxlib.ml[64,1905+19]..[64,1905+39])
+        Pmod_ident "Ppxlib_ast.Pprintast" (src/ppxlib.ml[64,1905+19]..[64,1905+39])
+  structure_item (src/ppxlib.ml[65,1945+0]..[65,1945+45])
+    Pstr_module
+    "Selected_ast" (src/ppxlib.ml[65,1945+7]..[65,1945+19])
+      module_expr (src/ppxlib.ml[65,1945+22]..[65,1945+45])
+        Pmod_ident "Ppxlib_ast.Selected_ast" (src/ppxlib.ml[65,1945+22]..[65,1945+45])
+  structure_item (src/ppxlib.ml[66,1991+0]..[66,1991+26])
+    Pstr_module
+    "Location" (src/ppxlib.ml[66,1991+7]..[66,1991+15])
+      module_expr (src/ppxlib.ml[66,1991+18]..[66,1991+26])
+        Pmod_ident "Location" (src/ppxlib.ml[66,1991+18]..[66,1991+26])
+  structure_item (src/ppxlib.ml[67,2018+0]..[67,2018+28])
+    Pstr_module
+    "Longident" (src/ppxlib.ml[67,2018+7]..[67,2018+16])
+      module_expr (src/ppxlib.ml[67,2018+19]..[67,2018+28])
+        Pmod_ident "Longident" (src/ppxlib.ml[67,2018+19]..[67,2018+28])
+  structure_item (src/ppxlib.ml[68,2047+0]..[68,2047+16])
+    Pstr_module
+    "Loc" (src/ppxlib.ml[68,2047+7]..[68,2047+10])
+      module_expr (src/ppxlib.ml[68,2047+13]..[68,2047+16])
+        Pmod_ident "Loc" (src/ppxlib.ml[68,2047+13]..[68,2047+16])
+  structure_item (src/ppxlib.ml[70,2065+0]..[70,2065+30])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[70,2065+0]..[70,2065+30])
+        Pstr_eval
+        expression (src/ppxlib.ml[70,2065+0]..[70,2065+30])
+          Pexp_constant PConst_string(" {1 The whole AST types} ",(src/ppxlib.ml[70,2065+0]..[70,2065+30]),None)
+    ]
+  structure_item (src/ppxlib.ml[72,2097+0]..[72,2097+11])
+    Pstr_include      attribute "ocaml.doc"
+        [
+          structure_item (src/ppxlib.ml[73,2109+0]..[75,2185+14])
+            Pstr_eval
+            expression (src/ppxlib.ml[73,2109+0]..[75,2185+14])
+              Pexp_constant PConst_string(" Include all the Ast definitions since we need them in every single ppx\n\n    @closed ",(src/ppxlib.ml[73,2109+0]..[75,2185+14]),None)
+        ]
+    module_expr (src/ppxlib.ml[72,2097+8]..[72,2097+11])
+      Pmod_ident "Ast" (src/ppxlib.ml[72,2097+8]..[72,2097+11])
+  structure_item (src/ppxlib.ml[81,2317+0]..[102,2914+3])
+    Pstr_include      attribute "ocaml.doc"
+        [
+          structure_item (src/ppxlib.ml[77,2201+0]..[80,2302+14])
+            Pstr_eval
+            expression (src/ppxlib.ml[77,2201+0]..[80,2302+14])
+              Pexp_constant PConst_string(" Make sure code using Ppxlib doesn't refer to compiler-libs without being\n    explicit about it:\n\n    @closed ",(src/ppxlib.ml[77,2201+0]..[80,2302+14]),None)
+        ]
+    module_expr (src/ppxlib.ml[81,2317+8]..[102,2914+3])
+      Pmod_structure
+      [
+        structure_item (src/ppxlib.ml[82,2332+2]..[82,2332+19])
+          Pstr_attribute "warning"
+          [
+            structure_item (src/ppxlib.ml[82,2332+14]..[82,2332+18])
+              Pstr_eval
+              expression (src/ppxlib.ml[82,2332+14]..[82,2332+18])
+                Pexp_constant PConst_string("-3",(src/ppxlib.ml[82,2332+15]..[82,2332+17]),None)
+          ]
+        structure_item (src/ppxlib.ml[84,2353+2]..[84,2353+19])
+          Pstr_open Fresh
+          module_expr (src/ppxlib.ml[84,2353+7]..[84,2353+19])
+            Pmod_ident "Ocaml_shadow" (src/ppxlib.ml[84,2353+7]..[84,2353+19])
+        structure_item (src/ppxlib.ml[86,2374+2]..[101,2872+41])
+          Pstr_include          module_expr (src/ppxlib.ml[86,2374+10]..[101,2872+41])
+            Pmod_constraint
+            module_expr (src/ppxlib.ml[87,2386+4]..[87,2386+16])
+              Pmod_ident "Ocaml_shadow" (src/ppxlib.ml[87,2386+4]..[87,2386+16])
+            module_type (src/ppxlib.ml[88,2405+6]..[101,2872+40])
+              Pmty_with
+              module_type (src/ppxlib.ml[88,2405+6]..[100,2831+40])
+                Pmty_with
+                module_type (src/ppxlib.ml[88,2405+6]..[99,2790+40])
+                  Pmty_with
+                  module_type (src/ppxlib.ml[88,2405+6]..[98,2757+32])
+                    Pmty_with
+                    module_type (src/ppxlib.ml[88,2405+6]..[97,2716+40])
+                      Pmty_with
+                      module_type (src/ppxlib.ml[88,2405+6]..[96,2677+38])
+                        Pmty_with
+                        module_type (src/ppxlib.ml[88,2405+6]..[95,2644+32])
+                          Pmty_with
+                          module_type (src/ppxlib.ml[88,2405+6]..[94,2597+46])
+                            Pmty_with
+                            module_type (src/ppxlib.ml[88,2405+6]..[93,2554+42])
+                              Pmty_with
+                              module_type (src/ppxlib.ml[88,2405+6]..[92,2515+38])
+                                Pmty_with
+                                module_type (src/ppxlib.ml[88,2405+6]..[91,2472+42])
+                                  Pmty_with
+                                  module_type (src/ppxlib.ml[88,2405+6]..[90,2462+9])
+                                    Pmty_typeof
+                                    module_expr (src/ppxlib.ml[88,2405+21]..[90,2462+9])
+                                      Pmod_structure
+                                      [
+                                        structure_item (src/ppxlib.ml[89,2433+8]..[89,2433+28])
+                                          Pstr_include                                          module_expr (src/ppxlib.ml[89,2433+16]..[89,2433+28])
+                                            Pmod_ident "Ocaml_shadow" (src/ppxlib.ml[89,2433+16]..[89,2433+28])
+                                      ]
+                                  [
+                                    Pwith_modsubst "Ast_helper" (src/ppxlib.ml[91,2472+18]..[91,2472+28]) = "Ast_helper" (src/ppxlib.ml[91,2472+32]..[91,2472+42])
+                                  ]
+                                [
+                                  Pwith_modsubst "Asttypes" (src/ppxlib.ml[92,2515+18]..[92,2515+26]) = "Asttypes" (src/ppxlib.ml[92,2515+30]..[92,2515+38])
+                                ]
+                              [
+                                Pwith_modsubst "Docstrings" (src/ppxlib.ml[93,2554+18]..[93,2554+28]) = "Docstrings" (src/ppxlib.ml[93,2554+32]..[93,2554+42])
+                              ]
+                            [
+                              Pwith_modsubst "Identifiable" (src/ppxlib.ml[94,2597+18]..[94,2597+30]) = "Identifiable" (src/ppxlib.ml[94,2597+34]..[94,2597+46])
+                            ]
+                          [
+                            Pwith_modsubst "Lexer" (src/ppxlib.ml[95,2644+18]..[95,2644+23]) = "Lexer" (src/ppxlib.ml[95,2644+27]..[95,2644+32])
+                          ]
+                        [
+                          Pwith_modsubst "Location" (src/ppxlib.ml[96,2677+18]..[96,2677+26]) = "Location" (src/ppxlib.ml[96,2677+30]..[96,2677+38])
+                        ]
+                      [
+                        Pwith_modsubst "Longident" (src/ppxlib.ml[97,2716+18]..[97,2716+27]) = "Longident" (src/ppxlib.ml[97,2716+31]..[97,2716+40])
+                      ]
+                    [
+                      Pwith_modsubst "Parse" (src/ppxlib.ml[98,2757+18]..[98,2757+23]) = "Parse" (src/ppxlib.ml[98,2757+27]..[98,2757+32])
+                    ]
+                  [
+                    Pwith_modsubst "Parsetree" (src/ppxlib.ml[99,2790+18]..[99,2790+27]) = "Parsetree" (src/ppxlib.ml[99,2790+31]..[99,2790+40])
+                  ]
+                [
+                  Pwith_modsubst "Pprintast" (src/ppxlib.ml[100,2831+18]..[100,2831+27]) = "Pprintast" (src/ppxlib.ml[100,2831+31]..[100,2831+40])
+                ]
+              [
+                Pwith_modsubst "Syntaxerr" (src/ppxlib.ml[101,2872+18]..[101,2872+27]) = "Syntaxerr" (src/ppxlib.ml[101,2872+31]..[101,2872+40])
+              ]
+      ]
+  structure_item (src/ppxlib.ml[104,2919+0]..[104,2919+7])
+    Pstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[104,2919+0]..[104,2919+7])
+        Pstr_eval
+        expression (src/ppxlib.ml[104,2919+0]..[104,2919+7])
+          Pexp_constant PConst_string("/*",(src/ppxlib.ml[104,2919+0]..[104,2919+7]),None)
+    ]
+  structure_item (src/ppxlib.ml[107,2977+0]..[110,3054+3])
+    Pstr_module
+    "Ppxlib_private" (src/ppxlib.ml[107,2977+7]..[107,2977+21])
+      module_expr (src/ppxlib.ml[107,2977+24]..[110,3054+3])
+        Pmod_structure
+        [
+          structure_item (src/ppxlib.ml[108,3008+2]..[108,3008+24])
+            Pstr_module
+            "Common" (src/ppxlib.ml[108,3008+9]..[108,3008+15])
+              module_expr (src/ppxlib.ml[108,3008+18]..[108,3008+24])
+                Pmod_ident "Common" (src/ppxlib.ml[108,3008+18]..[108,3008+24])
+          structure_item (src/ppxlib.ml[109,3033+2]..[109,3033+20])
+            Pstr_module
+            "Name" (src/ppxlib.ml[109,3033+9]..[109,3033+13])
+              module_expr (src/ppxlib.ml[109,3033+16]..[109,3033+20])
+                Pmod_ident "Name" (src/ppxlib.ml[109,3033+16]..[109,3033+20])
+        ]
+]
+
+[@@@ocaml.text " Standard library for ppx rewriters "]
+[@@@ocaml.text
+  " [ppxlib] is meant to be opened globally in your PPX source files.\n\n    Opening it comes with two advantages. First, it will shadow the\n    [compiler-libs] modules. The [compiler-libs] modules are unstable and aren't\n    meant to be used, so shadowing them is a good protection mechanism. In case\n    you don't want to open [Ppxlib], you can open [Ocaml_shadow] to get the same\n    protection. Second, it will bring several modules in scope, that are useful\n    to have when writing a rewriter:\n\n    - The main [ppxlib] modules, such as modules to help manipulate the AST\n      ({!Ast_builder}, {!Ast_pattern}), and a few functions.\n    - Modules from other libraries, such as {!Ast_helper} or {!Pprintast},\n    - The whole AST types (by [including] the {!Ast} module).\n\n    {1 The core [ppxlib] entries} "]
+[@@@ocaml.text " {2 Manipulating the AST} "]
+module Ast_builder = Ast_builder
+module Ast_pattern = Ast_pattern
+module Ast_traverse = Ast_traverse
+[@@@ocaml.text " {2 Context-free rewriting} "]
+module Context_free = Context_free
+module Deriving = Deriving
+module Extension = Extension
+module Expansion_context = Expansion_context
+module Code_path = Code_path
+[@@@ocaml.text " {2 Other helpers} "]
+module Expansion_helpers = Expansion_helpers
+module Merlin_helpers = Merlin_helpers
+module Spellcheck = Spellcheck
+module Keyword = Keyword
+[@@@ocaml.text " {2 Driver-related modules} "]
+module Driver = Driver
+module Caller_id = Caller_id
+module Ast_io = Utils.Ast_io.Read_bin
+[@@@ocaml.text " {2 Checks} "]
+module Attribute = Attribute
+module Reserved_namespaces = Name.Reserved_namespaces
+[@@@ocaml.text " {2 Common helper functions} "]
+include Common
+[@@@ocaml.text
+  " {1 Modules from other libraries}\n\n    Expose some modules from {!Ppxlib_ast}. "]
+module Ast = Ppxlib_ast.Ast
+module Ast_helper = Ppxlib_ast.Ast_helper
+module Asttypes = Ppxlib_ast.Asttypes
+module Parse = Ppxlib_ast.Parse
+module Parsetree = Ppxlib_ast.Parsetree
+module Pprintast = Ppxlib_ast.Pprintast
+module Selected_ast = Ppxlib_ast.Selected_ast
+module Location = Location
+module Longident = Longident
+module Loc = Loc
+[@@@ocaml.text " {1 The whole AST types} "]
+include Ast[@@ocaml.doc
+             " Include all the Ast definitions since we need them in every single ppx\n\n    @closed "]
+include
+  struct
+    [@@@warning "-3"]
+    open Ocaml_shadow
+    include
+      (Ocaml_shadow :
+        ((((((((((module type of struct include Ocaml_shadow end with
+                    module Ast_helper := Ast_helper) with module Asttypes :=
+                   Asttypes) with module Docstrings := Docstrings) with
+                 module Identifiable := Identifiable) with module Lexer :=
+                Lexer) with module Location := Location) with
+              module Longident := Longident) with module Parse := Parse) with
+            module Parsetree := Parsetree) with module Pprintast := Pprintast)
+          with module Syntaxerr := Syntaxerr)
+  end[@@ocaml.doc
+       " Make sure code using Ppxlib doesn't refer to compiler-libs without being\n    explicit about it:\n\n    @closed "]
+[@@@ocaml.text "/*"]
+module Ppxlib_private = struct module Common = Common
+                               module Name = Name end
+[
+  structure_item (src/ppxlib.ml[1,0+0]..src/ppxlib.ml[1,0+41])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[1,0+0]..[1,0+41])
+        Pstr_eval
+        expression (src/ppxlib.ml[1,0+0]..[1,0+41])
+          Pexp_constant PConst_string(" Standard library for ppx rewriters ",(src/ppxlib.ml[1,0+0]..[1,0+41]),None)
+    ]
+  structure_item (src/ppxlib.ml[3,43+0]..src/ppxlib.ml[17,817+36])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[3,43+0]..[17,817+36])
+        Pstr_eval
+        expression (src/ppxlib.ml[3,43+0]..[17,817+36])
+          Pexp_constant PConst_string(" [ppxlib] is meant to be opened globally in your PPX source files.\n\n    Opening it comes with two advantages. First, it will shadow the\n    [compiler-libs] modules. The [compiler-libs] modules are unstable and aren't\n    meant to be used, so shadowing them is a good protection mechanism. In case\n    you don't want to open [Ppxlib], you can open [Ocaml_shadow] to get the same\n    protection. Second, it will bring several modules in scope, that are useful\n    to have when writing a rewriter:\n\n    - The main [ppxlib] modules, such as modules to help manipulate the AST\n      ({!Ast_builder}, {!Ast_pattern}), and a few functions.\n    - Modules from other libraries, such as {!Ast_helper} or {!Pprintast},\n    - The whole AST types (by [including] the {!Ast} module).\n\n    {1 The core [ppxlib] entries} ",(src/ppxlib.ml[3,43+0]..[17,817+36]),None)
+    ]
+  structure_item (src/ppxlib.ml[19,855+0]..src/ppxlib.ml[19,855+31])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[19,855+0]..[19,855+31])
+        Pstr_eval
+        expression (src/ppxlib.ml[19,855+0]..[19,855+31])
+          Pexp_constant PConst_string(" {2 Manipulating the AST} ",(src/ppxlib.ml[19,855+0]..[19,855+31]),None)
+    ]
+  structure_item (src/ppxlib.ml[21,888+0]..src/ppxlib.ml[21,888+32])
+    Tstr_module
+    Ast_builder/120
+      module_expr (src/ppxlib.ml[21,888+21]..src/ppxlib.ml[21,888+32])
+        Tmod_ident "Ppxlib__!.Ast_builder"
+  structure_item (src/ppxlib.ml[22,921+0]..src/ppxlib.ml[22,921+32])
+    Tstr_module
+    Ast_pattern/121
+      module_expr (src/ppxlib.ml[22,921+21]..src/ppxlib.ml[22,921+32])
+        Tmod_ident "Ppxlib__!.Ast_pattern"
+  structure_item (src/ppxlib.ml[23,954+0]..src/ppxlib.ml[23,954+34])
+    Tstr_module
+    Ast_traverse/122
+      module_expr (src/ppxlib.ml[23,954+22]..src/ppxlib.ml[23,954+34])
+        Tmod_ident "Ppxlib__!.Ast_traverse"
+  structure_item (src/ppxlib.ml[25,990+0]..src/ppxlib.ml[25,990+33])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[25,990+0]..[25,990+33])
+        Pstr_eval
+        expression (src/ppxlib.ml[25,990+0]..[25,990+33])
+          Pexp_constant PConst_string(" {2 Context-free rewriting} ",(src/ppxlib.ml[25,990+0]..[25,990+33]),None)
+    ]
+  structure_item (src/ppxlib.ml[27,1025+0]..src/ppxlib.ml[27,1025+34])
+    Tstr_module
+    Context_free/123
+      module_expr (src/ppxlib.ml[27,1025+22]..src/ppxlib.ml[27,1025+34])
+        Tmod_ident "Ppxlib__!.Context_free"
+  structure_item (src/ppxlib.ml[28,1060+0]..src/ppxlib.ml[28,1060+26])
+    Tstr_module
+    Deriving/124
+      module_expr (src/ppxlib.ml[28,1060+18]..src/ppxlib.ml[28,1060+26])
+        Tmod_ident "Ppxlib__!.Deriving"
+  structure_item (src/ppxlib.ml[29,1087+0]..src/ppxlib.ml[29,1087+28])
+    Tstr_module
+    Extension/125
+      module_expr (src/ppxlib.ml[29,1087+19]..src/ppxlib.ml[29,1087+28])
+        Tmod_ident "Ppxlib__!.Extension"
+  structure_item (src/ppxlib.ml[30,1116+0]..src/ppxlib.ml[30,1116+44])
+    Tstr_module
+    Expansion_context/126
+      module_expr (src/ppxlib.ml[30,1116+27]..src/ppxlib.ml[30,1116+44])
+        Tmod_ident "Ppxlib__!.Expansion_context"
+  structure_item (src/ppxlib.ml[31,1161+0]..src/ppxlib.ml[31,1161+28])
+    Tstr_module
+    Code_path/127
+      module_expr (src/ppxlib.ml[31,1161+19]..src/ppxlib.ml[31,1161+28])
+        Tmod_ident "Ppxlib__!.Code_path"
+  structure_item (src/ppxlib.ml[33,1191+0]..src/ppxlib.ml[33,1191+24])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[33,1191+0]..[33,1191+24])
+        Pstr_eval
+        expression (src/ppxlib.ml[33,1191+0]..[33,1191+24])
+          Pexp_constant PConst_string(" {2 Other helpers} ",(src/ppxlib.ml[33,1191+0]..[33,1191+24]),None)
+    ]
+  structure_item (src/ppxlib.ml[35,1217+0]..src/ppxlib.ml[35,1217+44])
+    Tstr_module
+    Expansion_helpers/128
+      module_expr (src/ppxlib.ml[35,1217+27]..src/ppxlib.ml[35,1217+44])
+        Tmod_ident "Ppxlib__!.Expansion_helpers"
+  structure_item (src/ppxlib.ml[36,1262+0]..src/ppxlib.ml[36,1262+38])
+    Tstr_module
+    Merlin_helpers/129
+      module_expr (src/ppxlib.ml[36,1262+24]..src/ppxlib.ml[36,1262+38])
+        Tmod_ident "Ppxlib__!.Merlin_helpers"
+  structure_item (src/ppxlib.ml[37,1301+0]..src/ppxlib.ml[37,1301+30])
+    Tstr_module
+    Spellcheck/130
+      module_expr (src/ppxlib.ml[37,1301+20]..src/ppxlib.ml[37,1301+30])
+        Tmod_ident "Ppxlib__!.Spellcheck"
+  structure_item (src/ppxlib.ml[38,1332+0]..src/ppxlib.ml[38,1332+24])
+    Tstr_module
+    Keyword/131
+      module_expr (src/ppxlib.ml[38,1332+17]..src/ppxlib.ml[38,1332+24])
+        Tmod_ident "Ppxlib__!.Keyword"
+  structure_item (src/ppxlib.ml[40,1358+0]..src/ppxlib.ml[40,1358+33])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[40,1358+0]..[40,1358+33])
+        Pstr_eval
+        expression (src/ppxlib.ml[40,1358+0]..[40,1358+33])
+          Pexp_constant PConst_string(" {2 Driver-related modules} ",(src/ppxlib.ml[40,1358+0]..[40,1358+33]),None)
+    ]
+  structure_item (src/ppxlib.ml[42,1393+0]..src/ppxlib.ml[42,1393+22])
+    Tstr_module
+    Driver/132
+      module_expr (src/ppxlib.ml[42,1393+16]..src/ppxlib.ml[42,1393+22])
+        Tmod_ident "Ppxlib__!.Driver"
+  structure_item (src/ppxlib.ml[43,1416+0]..src/ppxlib.ml[43,1416+28])
+    Tstr_module
+    Caller_id/133
+      module_expr (src/ppxlib.ml[43,1416+19]..src/ppxlib.ml[43,1416+28])
+        Tmod_ident "Ppxlib__!.Caller_id"
+  structure_item (src/ppxlib.ml[44,1445+0]..src/ppxlib.ml[44,1445+37])
+    Tstr_module
+    Ast_io/188
+      module_expr (src/ppxlib.ml[44,1445+16]..src/ppxlib.ml[44,1445+37])
+        Tmod_ident "Ppxlib__!.Utils.Ast_io.Read_bin"
+  structure_item (src/ppxlib.ml[46,1484+0]..src/ppxlib.ml[46,1484+17])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[46,1484+0]..[46,1484+17])
+        Pstr_eval
+        expression (src/ppxlib.ml[46,1484+0]..[46,1484+17])
+          Pexp_constant PConst_string(" {2 Checks} ",(src/ppxlib.ml[46,1484+0]..[46,1484+17]),None)
+    ]
+  structure_item (src/ppxlib.ml[48,1503+0]..src/ppxlib.ml[48,1503+28])
+    Tstr_module
+    Attribute/189
+      module_expr (src/ppxlib.ml[48,1503+19]..src/ppxlib.ml[48,1503+28])
+        Tmod_ident "Ppxlib__!.Attribute"
+  structure_item (src/ppxlib.ml[49,1532+0]..src/ppxlib.ml[49,1532+53])
+    Tstr_module
+    Reserved_namespaces/220
+      module_expr (src/ppxlib.ml[49,1532+29]..src/ppxlib.ml[49,1532+53])
+        Tmod_ident "Ppxlib__!.Name.Reserved_namespaces"
+  structure_item (src/ppxlib.ml[51,1587+0]..src/ppxlib.ml[51,1587+34])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[51,1587+0]..[51,1587+34])
+        Pstr_eval
+        expression (src/ppxlib.ml[51,1587+0]..[51,1587+34])
+          Pexp_constant PConst_string(" {2 Common helper functions} ",(src/ppxlib.ml[51,1587+0]..[51,1587+34]),None)
+    ]
+  structure_item (src/ppxlib.ml[53,1623+0]..src/ppxlib.ml[53,1623+14])
+    Tstr_include    module_expr (src/ppxlib.ml[53,1623+8]..src/ppxlib.ml[53,1623+14])
+      module_expr (src/ppxlib.ml[53,1623+8]..src/ppxlib.ml[53,1623+14])
+        Tmod_ident "Ppxlib__!.Common"
+  structure_item (src/ppxlib.ml[55,1639+0]..src/ppxlib.ml[57,1677+46])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[55,1639+0]..[57,1677+46])
+        Pstr_eval
+        expression (src/ppxlib.ml[55,1639+0]..[57,1677+46])
+          Pexp_constant PConst_string(" {1 Modules from other libraries}\n\n    Expose some modules from {!Ppxlib_ast}. ",(src/ppxlib.ml[55,1639+0]..[57,1677+46]),None)
+    ]
+  structure_item (src/ppxlib.ml[59,1725+0]..src/ppxlib.ml[59,1725+27])
+    Tstr_module
+    Ast/295
+      module_expr (src/ppxlib.ml[59,1725+13]..src/ppxlib.ml[59,1725+27])
+        Tmod_ident "Ppxlib_ast!.Ast"
+  structure_item (src/ppxlib.ml[60,1753+0]..src/ppxlib.ml[60,1753+41])
+    Tstr_module
+    Ast_helper/296
+      module_expr (src/ppxlib.ml[60,1753+20]..src/ppxlib.ml[60,1753+41])
+        Tmod_ident "Ppxlib_ast!.Ast_helper"
+  structure_item (src/ppxlib.ml[61,1795+0]..src/ppxlib.ml[61,1795+37])
+    Tstr_module
+    Asttypes/297
+      module_expr (src/ppxlib.ml[61,1795+18]..src/ppxlib.ml[61,1795+37])
+        Tmod_ident "Ppxlib_ast!.Asttypes"
+  structure_item (src/ppxlib.ml[62,1833+0]..src/ppxlib.ml[62,1833+31])
+    Tstr_module
+    Parse/298
+      module_expr (src/ppxlib.ml[62,1833+15]..src/ppxlib.ml[62,1833+31])
+        Tmod_ident "Ppxlib_ast!.Parse"
+  structure_item (src/ppxlib.ml[63,1865+0]..src/ppxlib.ml[63,1865+39])
+    Tstr_module
+    Parsetree/299
+      module_expr (src/ppxlib.ml[63,1865+19]..src/ppxlib.ml[63,1865+39])
+        Tmod_ident "Ppxlib_ast!.Parsetree"
+  structure_item (src/ppxlib.ml[64,1905+0]..src/ppxlib.ml[64,1905+39])
+    Tstr_module
+    Pprintast/300
+      module_expr (src/ppxlib.ml[64,1905+19]..src/ppxlib.ml[64,1905+39])
+        Tmod_ident "Ppxlib_ast!.Pprintast"
+  structure_item (src/ppxlib.ml[65,1945+0]..src/ppxlib.ml[65,1945+45])
+    Tstr_module
+    Selected_ast/301
+      module_expr (src/ppxlib.ml[65,1945+22]..src/ppxlib.ml[65,1945+45])
+        Tmod_ident "Ppxlib_ast!.Selected_ast"
+  structure_item (src/ppxlib.ml[66,1991+0]..src/ppxlib.ml[66,1991+26])
+    Tstr_module
+    Location/302
+      module_expr (src/ppxlib.ml[66,1991+18]..src/ppxlib.ml[66,1991+26])
+        Tmod_ident "Ppxlib__!.Location"
+  structure_item (src/ppxlib.ml[67,2018+0]..src/ppxlib.ml[67,2018+28])
+    Tstr_module
+    Longident/303
+      module_expr (src/ppxlib.ml[67,2018+19]..src/ppxlib.ml[67,2018+28])
+        Tmod_ident "Ppxlib__!.Longident"
+  structure_item (src/ppxlib.ml[68,2047+0]..src/ppxlib.ml[68,2047+16])
+    Tstr_module
+    Loc/304
+      module_expr (src/ppxlib.ml[68,2047+13]..src/ppxlib.ml[68,2047+16])
+        Tmod_ident "Ppxlib__!.Loc"
+  structure_item (src/ppxlib.ml[70,2065+0]..src/ppxlib.ml[70,2065+30])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[70,2065+0]..[70,2065+30])
+        Pstr_eval
+        expression (src/ppxlib.ml[70,2065+0]..[70,2065+30])
+          Pexp_constant PConst_string(" {1 The whole AST types} ",(src/ppxlib.ml[70,2065+0]..[70,2065+30]),None)
+    ]
+  structure_item (src/ppxlib.ml[72,2097+0]..src/ppxlib.ml[72,2097+11])
+    Tstr_include      attribute "ocaml.doc"
+        [
+          structure_item (src/ppxlib.ml[73,2109+0]..[75,2185+14])
+            Pstr_eval
+            expression (src/ppxlib.ml[73,2109+0]..[75,2185+14])
+              Pexp_constant PConst_string(" Include all the Ast definitions since we need them in every single ppx\n\n    @closed ",(src/ppxlib.ml[73,2109+0]..[75,2185+14]),None)
+        ]
+    module_expr (src/ppxlib.ml[72,2097+8]..src/ppxlib.ml[72,2097+11])
+      module_expr (src/ppxlib.ml[72,2097+8]..src/ppxlib.ml[72,2097+11])
+        Tmod_ident "Ast/295"
+  structure_item (src/ppxlib.ml[81,2317+0]..src/ppxlib.ml[102,2914+3])
+    Tstr_include      attribute "ocaml.doc"
+        [
+          structure_item (src/ppxlib.ml[77,2201+0]..[80,2302+14])
+            Pstr_eval
+            expression (src/ppxlib.ml[77,2201+0]..[80,2302+14])
+              Pexp_constant PConst_string(" Make sure code using Ppxlib doesn't refer to compiler-libs without being\n    explicit about it:\n\n    @closed ",(src/ppxlib.ml[77,2201+0]..[80,2302+14]),None)
+        ]
+    module_expr (src/ppxlib.ml[81,2317+8]..src/ppxlib.ml[102,2914+3])
+      Tmod_structure
+      [
+        structure_item (src/ppxlib.ml[82,2332+2]..src/ppxlib.ml[82,2332+19])
+          Tstr_attribute "warning"
+          [
+            structure_item (src/ppxlib.ml[82,2332+14]..[82,2332+18])
+              Pstr_eval
+              expression (src/ppxlib.ml[82,2332+14]..[82,2332+18])
+                Pexp_constant PConst_string("-3",(src/ppxlib.ml[82,2332+15]..[82,2332+17]),None)
+          ]
+        structure_item (src/ppxlib.ml[84,2353+2]..src/ppxlib.ml[84,2353+19])
+          Tstr_open Fresh
+          module_expr (src/ppxlib.ml[84,2353+7]..src/ppxlib.ml[84,2353+19])
+            Tmod_ident "Ocaml_shadow!"
+        structure_item (src/ppxlib.ml[86,2374+2]..src/ppxlib.ml[101,2872+41])
+          Tstr_include          module_expr (src/ppxlib.ml[86,2374+10]..src/ppxlib.ml[101,2872+41])
+            Tmod_constraint
+            module_expr (src/ppxlib.ml[87,2386+4]..src/ppxlib.ml[87,2386+16])
+              Tmod_ident "Ocaml_shadow!"
+            module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[101,2872+40])
+              Tmty_with
+              module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[100,2831+40])
+                Tmty_with
+                module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[99,2790+40])
+                  Tmty_with
+                  module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[98,2757+32])
+                    Tmty_with
+                    module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[97,2716+40])
+                      Tmty_with
+                      module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[96,2677+38])
+                        Tmty_with
+                        module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[95,2644+32])
+                          Tmty_with
+                          module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[94,2597+46])
+                            Tmty_with
+                            module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[93,2554+42])
+                              Tmty_with
+                              module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[92,2515+38])
+                                Tmty_with
+                                module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[91,2472+42])
+                                  Tmty_with
+                                  module_type (src/ppxlib.ml[88,2405+6]..src/ppxlib.ml[90,2462+9])
+                                    Tmty_typeof
+                                    module_expr (src/ppxlib.ml[88,2405+21]..src/ppxlib.ml[90,2462+9])
+                                      Tmod_structure
+                                      [
+                                        structure_item (src/ppxlib.ml[89,2433+8]..src/ppxlib.ml[89,2433+28])
+                                          Tstr_include                                          module_expr (src/ppxlib.ml[89,2433+16]..src/ppxlib.ml[89,2433+28])
+                                            Tmod_ident "Ocaml_shadow!"
+                                      ]
+                                  [
+                                    "Ast_helper/1112"
+                                      Twith_modsubst "Ocaml_shadow!.Ast_helper"
+                                  ]
+                                [
+                                  "Asttypes/1646"
+                                    Twith_modsubst "Ocaml_shadow!.Asttypes"
+                                ]
+                              [
+                                "Docstrings/2237"
+                                  Twith_modsubst "Ocaml_shadow!.Docstrings"
+                              ]
+                            [
+                              "Identifiable/2788"
+                                Twith_modsubst "Ocaml_shadow!.Identifiable"
+                            ]
+                          [
+                            "Lexer/3334"
+                              Twith_modsubst "Ocaml_shadow!.Lexer"
+                          ]
+                        [
+                          "Location/3868"
+                            Twith_modsubst "Ocaml_shadow!.Location"
+                        ]
+                      [
+                        "Longident/4389"
+                          Twith_modsubst "Ocaml_shadow!.Longident"
+                      ]
+                    [
+                      "Parse/4928"
+                        Twith_modsubst "Ocaml_shadow!.Parse"
+                    ]
+                  [
+                    "Parsetree/5446"
+                      Twith_modsubst "Ocaml_shadow!.Parsetree"
+                  ]
+                [
+                  "Pprintast/5967"
+                    Twith_modsubst "Ocaml_shadow!.Pprintast"
+                ]
+              [
+                "Syntaxerr/6532"
+                  Twith_modsubst "Ocaml_shadow!.Syntaxerr"
+              ]
+      ]
+  structure_item (src/ppxlib.ml[104,2919+0]..src/ppxlib.ml[104,2919+7])
+    Tstr_attribute "ocaml.text"
+    [
+      structure_item (src/ppxlib.ml[104,2919+0]..[104,2919+7])
+        Pstr_eval
+        expression (src/ppxlib.ml[104,2919+0]..[104,2919+7])
+          Pexp_constant PConst_string("/*",(src/ppxlib.ml[104,2919+0]..[104,2919+7]),None)
+    ]
+  structure_item (src/ppxlib.ml[107,2977+0]..src/ppxlib.ml[110,3054+3])
+    Tstr_module
+    Ppxlib_private/7599
+      module_expr (src/ppxlib.ml[107,2977+24]..src/ppxlib.ml[110,3054+3])
+        Tmod_structure
+        [
+          structure_item (src/ppxlib.ml[108,3008+2]..src/ppxlib.ml[108,3008+24])
+            Tstr_module
+            Common/7597
+              module_expr (src/ppxlib.ml[108,3008+18]..src/ppxlib.ml[108,3008+24])
+                Tmod_ident "Ppxlib__!.Common"
+          structure_item (src/ppxlib.ml[109,3033+2]..src/ppxlib.ml[109,3033+20])
+            Tstr_module
+            Name/7598
+              module_expr (src/ppxlib.ml[109,3033+16]..src/ppxlib.ml[109,3033+20])
+                Tmod_ident "Ppxlib__!.Name"
+        ]
+]
+
+(let
+  (include/9622 =
+     (let (let/9628 = (global Ppxlib__Common!)) (global Ppxlib__Common!))
+   lident/253 =a (field_mut 0 include/9622))
+  (seq (setfield_ptr(root-init) 0 (global Ppxlib!) lident/253)
+    (let (core_type_of_type_declaration/254 =a (field_mut 1 include/9622))
+      (seq
+        (setfield_ptr(root-init) 1 (global Ppxlib!)
+          core_type_of_type_declaration/254)
+        (let (name_type_params_in_td_res/255 =a (field_mut 2 include/9622))
+          (seq
+            (setfield_ptr(root-init) 2 (global Ppxlib!)
+              name_type_params_in_td_res/255)
+            (let (name_type_params_in_td/256 =a (field_mut 3 include/9622))
+              (seq
+                (setfield_ptr(root-init) 3 (global Ppxlib!)
+                  name_type_params_in_td/256)
+                (let
+                  (combinator_type_of_type_declaration/257 =a
+                     (field_mut 4 include/9622))
+                  (seq
+                    (setfield_ptr(root-init) 4 (global Ppxlib!)
+                      combinator_type_of_type_declaration/257)
+                    (let (gen_symbol/258 =a (field_mut 5 include/9622))
+                      (seq
+                        (setfield_ptr(root-init) 5 (global Ppxlib!)
+                          gen_symbol/258)
+                        (let
+                          (string_of_core_type/259 =a
+                             (field_mut 6 include/9622))
+                          (seq
+                            (setfield_ptr(root-init) 6 (global Ppxlib!)
+                              string_of_core_type/259)
+                            (let
+                              (assert_no_attributes/260 =a
+                                 (field_mut 7 include/9622))
+                              (seq
+                                (setfield_ptr(root-init) 7 (global Ppxlib!)
+                                  assert_no_attributes/260)
+                                (let
+                                  (assert_no_attributes_in/261 =a
+                                     (field_mut 8 include/9622))
+                                  (seq
+                                    (setfield_ptr(root-init) 8
+                                      (global Ppxlib!)
+                                      assert_no_attributes_in/261)
+                                    (let
+                                      (attributes_errors/262 =a
+                                         (field_mut 9 include/9622))
+                                      (seq
+                                        (setfield_ptr(root-init) 9
+                                          (global Ppxlib!)
+                                          attributes_errors/262)
+                                        (let
+                                          (collect_attributes_errors/263 =a
+                                             (field_mut 10 include/9622))
+                                          (seq
+                                            (setfield_ptr(root-init) 10
+                                              (global Ppxlib!)
+                                              collect_attributes_errors/263)
+                                            (let
+                                              (get_type_param_name_res/264 =a
+                                                 (field_mut 11 include/9622))
+                                              (seq
+                                                (setfield_ptr(root-init) 11
+                                                  (global Ppxlib!)
+                                                  get_type_param_name_res/264)
+                                                (let
+                                                  (get_type_param_name/265 =a
+                                                     (field_mut 12
+                                                       include/9622))
+                                                  (seq
+                                                    (setfield_ptr(root-init) 12
+                                                      (global Ppxlib!)
+                                                      get_type_param_name/265)
+                                                    (let
+                                                      (type_is_recursive/266 =a
+                                                         (field_mut 13
+                                                           include/9622))
+                                                      (seq
+                                                        (setfield_ptr(root-init) 13
+                                                          (global Ppxlib!)
+                                                          type_is_recursive/266)
+                                                        (let
+                                                          (really_recursive/270 =a
+                                                             (field_mut 14
+                                                               include/9622))
+                                                          (seq
+                                                            (setfield_ptr(root-init) 14
+                                                              (global Ppxlib!)
+                                                              really_recursive/270)
+                                                            (let
+                                                              (loc_of_payload/271 =a
+                                                                 (field_mut 15
+                                                                   include/9622))
+                                                              (seq
+                                                                (setfield_ptr(root-init) 15
+                                                                  (global Ppxlib!)
+                                                                  loc_of_payload/271)
+                                                                (let
+                                                                  (loc_of_attribute/272 =a
+                                                                    (field_mut 16
+                                                                    include/9622))
+                                                                  (seq
+                                                                    (setfield_ptr(root-init) 16
+                                                                    (global Ppxlib!)
+                                                                    loc_of_attribute/272)
+                                                                    (let
+                                                                    (loc_of_extension/273 =a
+                                                                    (field_mut 17
+                                                                    include/9622))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 17
+                                                                    (global Ppxlib!)
+                                                                    loc_of_extension/273)
+                                                                    (let
+                                                                    (curry_applications/274 =a
+                                                                    (field_mut 18
+                                                                    include/9622))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 18
+                                                                    (global Ppxlib!)
+                                                                    curry_applications/274)
+                                                                    (let
+                                                                    (attribute_of_warning/275 =a
+                                                                    (field_mut 19
+                                                                    include/9622))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 19
+                                                                    (global Ppxlib!)
+                                                                    attribute_of_warning/275)
+                                                                    (let
+                                                                    (is_polymorphic_variant/276 =a
+                                                                    (field_mut 20
+                                                                    include/9622))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 20
+                                                                    (global Ppxlib!)
+                                                                    is_polymorphic_variant/276)
+                                                                    (let
+                                                                    (mk_named_sig/277 =a
+                                                                    (field_mut 21
+                                                                    include/9622))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 21
+                                                                    (global Ppxlib!)
+                                                                    mk_named_sig/277)
+                                                                    (let
+                                                                    (With_errors/278 =a
+                                                                    (field_mut 22
+                                                                    include/9622))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 22
+                                                                    (global Ppxlib!)
+                                                                    With_errors/278)
+                                                                    (let
+                                                                    (include/9623 =
+                                                                    (let
+                                                                    (let/9627 =
+                                                                    (global Ppxlib_ast__Ast!))
+                                                                    (global Ppxlib_ast__Ast!))
+                                                                    map/541 =a
+                                                                    (field_mut 0
+                                                                    include/9623))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 23
+                                                                    (global Ppxlib!)
+                                                                    map/541)
+                                                                    (let
+                                                                    (iter/545 =a
+                                                                    (field_mut 1
+                                                                    include/9623))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 24
+                                                                    (global Ppxlib!)
+                                                                    iter/545)
+                                                                    (let
+                                                                    (fold/549 =a
+                                                                    (field_mut 2
+                                                                    include/9623))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 25
+                                                                    (global Ppxlib!)
+                                                                    fold/549)
+                                                                    (let
+                                                                    (fold_map/553 =a
+                                                                    (field_mut 3
+                                                                    include/9623))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 26
+                                                                    (global Ppxlib!)
+                                                                    fold_map/553)
+                                                                    (let
+                                                                    (map_with_context/557 =a
+                                                                    (field_mut 4
+                                                                    include/9623))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 27
+                                                                    (global Ppxlib!)
+                                                                    map_with_context/557)
+                                                                    (let
+                                                                    (lift/561 =a
+                                                                    (field_mut 5
+                                                                    include/9623))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 28
+                                                                    (global Ppxlib!)
+                                                                    lift/561)
+                                                                    (let
+                                                                    (lift_map_with_context/565 =a
+                                                                    (field_mut 6
+                                                                    include/9623))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 29
+                                                                    (global Ppxlib!)
+                                                                    lift_map_with_context/565)
+                                                                    (let
+                                                                    (include/9624 =
+                                                                    (let
+                                                                    (include/9625 =a
+                                                                    (let
+                                                                    (let/9626 =
+                                                                    (global Ocaml_shadow!))
+                                                                    (makeblock 0)))
+                                                                    (makeblock 0)))
+                                                                    (seq 0
+                                                                    (let
+                                                                    (Ppxlib_private/7599 =
+                                                                    (makeblock 0))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 30
+                                                                    (global Ppxlib!)
+                                                                    Ppxlib_private/7599)
+                                                                    0))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+(let
+  (include/9622 =
+     (let (let/9628 = (global Ppxlib__Common!)) (global Ppxlib__Common!)))
+  (seq
+    (setfield_ptr(root-init) 0 (global Ppxlib!) (field_mut 0 include/9622))
+    (setfield_ptr(root-init) 1 (global Ppxlib!) (field_mut 1 include/9622))
+    (setfield_ptr(root-init) 2 (global Ppxlib!) (field_mut 2 include/9622))
+    (setfield_ptr(root-init) 3 (global Ppxlib!) (field_mut 3 include/9622))
+    (setfield_ptr(root-init) 4 (global Ppxlib!) (field_mut 4 include/9622))
+    (setfield_ptr(root-init) 5 (global Ppxlib!) (field_mut 5 include/9622))
+    (setfield_ptr(root-init) 6 (global Ppxlib!) (field_mut 6 include/9622))
+    (setfield_ptr(root-init) 7 (global Ppxlib!) (field_mut 7 include/9622))
+    (setfield_ptr(root-init) 8 (global Ppxlib!) (field_mut 8 include/9622))
+    (setfield_ptr(root-init) 9 (global Ppxlib!) (field_mut 9 include/9622))
+    (setfield_ptr(root-init) 10 (global Ppxlib!) (field_mut 10 include/9622))
+    (setfield_ptr(root-init) 11 (global Ppxlib!) (field_mut 11 include/9622))
+    (setfield_ptr(root-init) 12 (global Ppxlib!) (field_mut 12 include/9622))
+    (setfield_ptr(root-init) 13 (global Ppxlib!) (field_mut 13 include/9622))
+    (setfield_ptr(root-init) 14 (global Ppxlib!) (field_mut 14 include/9622))
+    (setfield_ptr(root-init) 15 (global Ppxlib!) (field_mut 15 include/9622))
+    (setfield_ptr(root-init) 16 (global Ppxlib!) (field_mut 16 include/9622))
+    (setfield_ptr(root-init) 17 (global Ppxlib!) (field_mut 17 include/9622))
+    (setfield_ptr(root-init) 18 (global Ppxlib!) (field_mut 18 include/9622))
+    (setfield_ptr(root-init) 19 (global Ppxlib!) (field_mut 19 include/9622))
+    (setfield_ptr(root-init) 20 (global Ppxlib!) (field_mut 20 include/9622))
+    (setfield_ptr(root-init) 21 (global Ppxlib!) (field_mut 21 include/9622))
+    (setfield_ptr(root-init) 22 (global Ppxlib!) (field_mut 22 include/9622))
+    (let
+      (include/9623 =
+         (let (let/9627 = (global Ppxlib_ast__Ast!))
+           (global Ppxlib_ast__Ast!)))
+      (seq
+        (setfield_ptr(root-init) 23 (global Ppxlib!)
+          (field_mut 0 include/9623))
+        (setfield_ptr(root-init) 24 (global Ppxlib!)
+          (field_mut 1 include/9623))
+        (setfield_ptr(root-init) 25 (global Ppxlib!)
+          (field_mut 2 include/9623))
+        (setfield_ptr(root-init) 26 (global Ppxlib!)
+          (field_mut 3 include/9623))
+        (setfield_ptr(root-init) 27 (global Ppxlib!)
+          (field_mut 4 include/9623))
+        (setfield_ptr(root-init) 28 (global Ppxlib!)
+          (field_mut 5 include/9623))
+        (setfield_ptr(root-init) 29 (global Ppxlib!)
+          (field_mut 6 include/9623))
+        (let (include/9624 = (makeblock 0))
+          (seq 0
+            (let (Ppxlib_private/7599 = (makeblock 0))
+              (seq
+                (setfield_ptr(root-init) 30 (global Ppxlib!)
+                  Ppxlib_private/7599)
+                0))))))))

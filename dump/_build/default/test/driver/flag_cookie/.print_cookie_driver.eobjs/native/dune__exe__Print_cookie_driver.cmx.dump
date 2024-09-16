@@ -1,0 +1,1615 @@
+[
+  structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Pstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+          ]
+          None
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/flag_cookie/print_cookie_driver.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/flag_cookie/print_cookie_driver.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[3,13+0]..[3,13+20])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[3,13+4]..[3,13+11])
+          Ppat_var "value_x" (test/driver/flag_cookie/print_cookie_driver.ml[3,13+4]..[3,13+11])
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[3,13+14]..[3,13+20])
+          Pexp_apply
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[3,13+14]..[3,13+17])
+            Pexp_ident "ref" (test/driver/flag_cookie/print_cookie_driver.ml[3,13+14]..[3,13+17])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[3,13+18]..[3,13+20])
+                Pexp_constant PConst_string("",(test/driver/flag_cookie/print_cookie_driver.ml[3,13+19]..[3,13+19]),None)
+          ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[5,35+0]..[8,142+44])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[5,35+4]..[5,35+5])
+          Ppat_var "f" (test/driver/flag_cookie/print_cookie_driver.ml[5,35+4]..[5,35+5])
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[5,35+8]..[8,142+44])
+          Pexp_function
+          [
+            <case>
+              pattern (test/driver/flag_cookie/print_cookie_driver.ml[6,52+4]..[6,52+19])
+                Ppat_construct "Some" (test/driver/flag_cookie/print_cookie_driver.ml[6,52+4]..[6,52+8])
+                Some
+                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[6,52+9]..[6,52+19])
+                    Ppat_var "value_of_x" (test/driver/flag_cookie/print_cookie_driver.ml[6,52+9]..[6,52+19])
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+6]..[7,75+66])
+                Pexp_apply
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+14]..[7,75+16])
+                  Pexp_ident ":=" (test/driver/flag_cookie/print_cookie_driver.ml[7,75+14]..[7,75+16])
+                [
+                  <arg>
+                  Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+6]..[7,75+13])
+                      Pexp_ident "value_x" (test/driver/flag_cookie/print_cookie_driver.ml[7,75+6]..[7,75+13])
+                  <arg>
+                  Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+17]..[7,75+66])
+                      Pexp_apply
+                      expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+17]..[7,75+31])
+                        Pexp_ident "Printf.sprintf" (test/driver/flag_cookie/print_cookie_driver.ml[7,75+17]..[7,75+31])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..[7,75+55])
+                            Pexp_constant PConst_string("Value of cookie x: %i",(test/driver/flag_cookie/print_cookie_driver.ml[7,75+33]..[7,75+54]),None)
+                        <arg>
+                        Nolabel
+                          expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+56]..[7,75+66])
+                            Pexp_ident "value_of_x" (test/driver/flag_cookie/print_cookie_driver.ml[7,75+56]..[7,75+66])
+                      ]
+                ]
+            <case>
+              pattern (test/driver/flag_cookie/print_cookie_driver.ml[8,142+4]..[8,142+8])
+                Ppat_construct "None" (test/driver/flag_cookie/print_cookie_driver.ml[8,142+4]..[8,142+8])
+                None
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+12]..[8,142+44])
+                Pexp_apply
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+20]..[8,142+22])
+                  Pexp_ident ":=" (test/driver/flag_cookie/print_cookie_driver.ml[8,142+20]..[8,142+22])
+                [
+                  <arg>
+                  Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+12]..[8,142+19])
+                      Pexp_ident "value_x" (test/driver/flag_cookie/print_cookie_driver.ml[8,142+12]..[8,142+19])
+                  <arg>
+                  Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+23]..[8,142+44])
+                      Pexp_constant PConst_string("Cookie x isn't set.",(test/driver/flag_cookie/print_cookie_driver.ml[8,142+24]..[8,142+43]),None)
+                ]
+          ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[10,188+0]..[10,188+80])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[10,188+4]..[10,188+6])
+          Ppat_construct "()" (test/driver/flag_cookie/print_cookie_driver.ml[10,188+4]..[10,188+6])
+          None
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+9]..[10,188+80])
+          Pexp_open Fresh
+          module_expr (test/driver/flag_cookie/print_cookie_driver.ml[10,188+9]..[10,188+30])
+            Pmod_ident "Ppxlib.Driver.Cookies" (test/driver/flag_cookie/print_cookie_driver.ml[10,188+9]..[10,188+30])
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+32]..[10,188+79])
+            Pexp_apply
+            expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+32]..[10,188+50])
+              Pexp_ident "add_simple_handler" (test/driver/flag_cookie/print_cookie_driver.ml[10,188+32]..[10,188+50])
+            [
+              <arg>
+              Labelled "f"
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+52]..[10,188+53])
+                  Pexp_ident "f" (test/driver/flag_cookie/print_cookie_driver.ml[10,188+52]..[10,188+53])
+              <arg>
+              Nolabel
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+54]..[10,188+57])
+                  Pexp_constant PConst_string("x",(test/driver/flag_cookie/print_cookie_driver.ml[10,188+55]..[10,188+56]),None)
+              <arg>
+              Nolabel
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+58]..[10,188+79])
+                  Pexp_open Fresh
+                  module_expr (test/driver/flag_cookie/print_cookie_driver.ml[10,188+58]..[10,188+69])
+                    Pmod_ident "Ast_pattern" (test/driver/flag_cookie/print_cookie_driver.ml[10,188+58]..[10,188+69])
+                  expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+71]..[10,188+78])
+                    Pexp_apply
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+71]..[10,188+75])
+                      Pexp_ident "eint" (test/driver/flag_cookie/print_cookie_driver.ml[10,188+71]..[10,188+75])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+76]..[10,188+78])
+                          Pexp_ident "__" (test/driver/flag_cookie/print_cookie_driver.ml[10,188+76]..[10,188+78])
+                    ]
+            ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[12,270+0]..[28,691+5])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[12,270+4]..[12,270+18])
+          Ppat_var "print_cookie_x" (test/driver/flag_cookie/print_cookie_driver.ml[12,270+4]..[12,270+18])
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[13,291+2]..[28,691+5])
+          Pexp_object
+          class_structure
+            pattern (test/driver/flag_cookie/print_cookie_driver.ml[13,291+8]..[13,291+8]) ghost
+              Ppat_any
+            [
+              class_field (test/driver/flag_cookie/print_cookie_driver.ml[14,300+4]..[14,300+37])
+                Pcf_inherit Fresh
+                  class_expr (test/driver/flag_cookie/print_cookie_driver.ml[14,300+12]..[14,300+28])
+                    Pcl_constr "Ast_traverse.map" (test/driver/flag_cookie/print_cookie_driver.ml[14,300+12]..[14,300+28])
+                    []
+                  Some
+                    "super" (test/driver/flag_cookie/print_cookie_driver.ml[14,300+32]..[14,300+37])
+              class_field (test/driver/flag_cookie/print_cookie_driver.ml[16,339+4]..[27,650+40])
+                Pcf_method Public
+                  "structure" (test/driver/flag_cookie/print_cookie_driver.ml[16,339+12]..[16,339+21])
+                  Concrete Override
+                  expression (test/driver/flag_cookie/print_cookie_driver.ml[16,339+22]..[27,650+40]) ghost
+                    Pexp_poly
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[16,339+22]..[27,650+40]) ghost
+                      Pexp_fun
+                      Nolabel
+                      None
+                      pattern (test/driver/flag_cookie/print_cookie_driver.ml[16,339+22]..[16,339+25])
+                        Ppat_var "str" (test/driver/flag_cookie/print_cookie_driver.ml[16,339+22]..[16,339+25])
+                      expression (test/driver/flag_cookie/print_cookie_driver.ml[17,367+6]..[27,650+40])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (test/driver/flag_cookie/print_cookie_driver.ml[17,367+10]..[17,367+17])
+                              Ppat_var "new_str" (test/driver/flag_cookie/print_cookie_driver.ml[17,367+10]..[17,367+17])
+                            expression (test/driver/flag_cookie/print_cookie_driver.ml[18,387+8]..[25,624+16])
+                              Pexp_apply
+                              expression (test/driver/flag_cookie/print_cookie_driver.ml[18,387+8]..[18,387+22])
+                                Pexp_ident "List.fold_left" (test/driver/flag_cookie/print_cookie_driver.ml[18,387+8]..[18,387+22])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[19,410+10]..[24,588+35])
+                                    Pexp_fun
+                                    Nolabel
+                                    None
+                                    pattern (test/driver/flag_cookie/print_cookie_driver.ml[19,410+15]..[19,410+18])
+                                      Ppat_var "acc" (test/driver/flag_cookie/print_cookie_driver.ml[19,410+15]..[19,410+18])
+                                    expression (test/driver/flag_cookie/print_cookie_driver.ml[19,410+19]..[24,588+34]) ghost
+                                      Pexp_fun
+                                      Nolabel
+                                      None
+                                      pattern (test/driver/flag_cookie/print_cookie_driver.ml[19,410+19]..[19,410+27])
+                                        Ppat_var "str_item" (test/driver/flag_cookie/print_cookie_driver.ml[19,410+19]..[19,410+27])
+                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[20,441+12]..[24,588+34])
+                                        Pexp_match
+                                        expression (test/driver/flag_cookie/print_cookie_driver.ml[20,441+18]..[20,441+26])
+                                          Pexp_ident "str_item" (test/driver/flag_cookie/print_cookie_driver.ml[20,441+18]..[20,441+26])
+                                        [
+                                          <case>
+                                            pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                              Ppat_constraint
+                                              pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                Ppat_record Closed
+                                                [
+                                                  "pstr_desc" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                    pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                      Ppat_construct "Pstr_attribute" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                      Some
+                                                        pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                          Ppat_record Closed
+                                                          [
+                                                            "attr_name" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                              pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                Ppat_record Closed
+                                                                [
+                                                                  "txt" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                    pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                      Ppat_constant PConst_string("print_cookie_x",(test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost,None)
+                                                                  "loc" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                    pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                      Ppat_any
+                                                                ]
+                                                            "attr_payload" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                              pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                Ppat_construct "PStr" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                Some
+                                                                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                    Ppat_construct "[]" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                    None
+                                                            "attr_loc" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                              pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                                Ppat_any
+                                                          ]
+                                                  "pstr_loc" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                    pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                      Ppat_any
+                                                ]
+                                              core_type (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                Ptyp_constr "Ppxlib_ast.Ast.structure_item" (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..[21,473+41]) ghost
+                                                []
+                                            expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+16]..[23,568+19])
+                                              Pexp_let Nonrec
+                                              [
+                                                <def>
+                                                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[22,518+20]..[22,518+21])
+                                                    Ppat_any
+                                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+24]..[22,518+46])
+                                                    Pexp_apply
+                                                    expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+24]..[22,518+37])
+                                                      Pexp_ident "print_endline" (test/driver/flag_cookie/print_cookie_driver.ml[22,518+24]..[22,518+37])
+                                                    [
+                                                      <arg>
+                                                      Nolabel
+                                                        expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+38]..[22,518+46])
+                                                          Pexp_apply
+                                                          expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+38]..[22,518+39])
+                                                            Pexp_ident "!" (test/driver/flag_cookie/print_cookie_driver.ml[22,518+38]..[22,518+39])
+                                                          [
+                                                            <arg>
+                                                            Nolabel
+                                                              expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+39]..[22,518+46])
+                                                                Pexp_ident "value_x" (test/driver/flag_cookie/print_cookie_driver.ml[22,518+39]..[22,518+46])
+                                                          ]
+                                                    ]
+                                              ]
+                                              expression (test/driver/flag_cookie/print_cookie_driver.ml[23,568+16]..[23,568+19])
+                                                Pexp_ident "acc" (test/driver/flag_cookie/print_cookie_driver.ml[23,568+16]..[23,568+19])
+                                          <case>
+                                            pattern (test/driver/flag_cookie/print_cookie_driver.ml[24,588+14]..[24,588+15])
+                                              Ppat_any
+                                            expression (test/driver/flag_cookie/print_cookie_driver.ml[24,588+19]..[24,588+34])
+                                              Pexp_construct "::" (test/driver/flag_cookie/print_cookie_driver.ml[24,588+28]..[24,588+30])
+                                              Some
+                                                expression (test/driver/flag_cookie/print_cookie_driver.ml[24,588+19]..[24,588+34]) ghost
+                                                  Pexp_tuple
+                                                  [
+                                                    expression (test/driver/flag_cookie/print_cookie_driver.ml[24,588+19]..[24,588+27])
+                                                      Pexp_ident "str_item" (test/driver/flag_cookie/print_cookie_driver.ml[24,588+19]..[24,588+27])
+                                                    expression (test/driver/flag_cookie/print_cookie_driver.ml[24,588+31]..[24,588+34])
+                                                      Pexp_ident "acc" (test/driver/flag_cookie/print_cookie_driver.ml[24,588+31]..[24,588+34])
+                                                  ]
+                                        ]
+                                <arg>
+                                Nolabel
+                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[25,624+10]..[25,624+12])
+                                    Pexp_construct "[]" (test/driver/flag_cookie/print_cookie_driver.ml[25,624+10]..[25,624+12])
+                                    None
+                                <arg>
+                                Nolabel
+                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[25,624+13]..[25,624+16])
+                                    Pexp_ident "str" (test/driver/flag_cookie/print_cookie_driver.ml[25,624+13]..[25,624+16])
+                              ]
+                        ]
+                        expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..[27,650+40])
+                          Pexp_apply
+                          expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..[27,650+21])
+                            Pexp_send "structure"
+                            expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..[27,650+11])
+                              Pexp_ident "super" (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..[27,650+11])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+22]..[27,650+40])
+                                Pexp_apply
+                                expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+23]..[27,650+31])
+                                  Pexp_ident "List.rev" (test/driver/flag_cookie/print_cookie_driver.ml[27,650+23]..[27,650+31])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+32]..[27,650+39])
+                                      Pexp_ident "new_str" (test/driver/flag_cookie/print_cookie_driver.ml[27,650+32]..[27,650+39])
+                                ]
+                          ]
+                    None
+            ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[30,698+0]..[31,707+78])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[30,698+4]..[30,698+6])
+          Ppat_construct "()" (test/driver/flag_cookie/print_cookie_driver.ml[30,698+4]..[30,698+6])
+          None
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+2]..[31,707+78])
+          Pexp_apply
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+2]..[31,707+32])
+            Pexp_ident "Driver.register_transformation" (test/driver/flag_cookie/print_cookie_driver.ml[31,707+2]..[31,707+32])
+          [
+            <arg>
+            Labelled "impl"
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+39]..[31,707+63])
+                Pexp_send "structure"
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+39]..[31,707+53])
+                  Pexp_ident "print_cookie_x" (test/driver/flag_cookie/print_cookie_driver.ml[31,707+39]..[31,707+53])
+            <arg>
+            Nolabel
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+64]..[31,707+78])
+                Pexp_constant PConst_string("test_cookies",(test/driver/flag_cookie/print_cookie_driver.ml[31,707+65]..[31,707+77]),None)
+          ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[33,787+0]..[33,787+36])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[33,787+4]..[33,787+6])
+          Ppat_construct "()" (test/driver/flag_cookie/print_cookie_driver.ml[33,787+4]..[33,787+6])
+          None
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[33,787+9]..[33,787+36])
+          Pexp_apply
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[33,787+9]..[33,787+33])
+            Pexp_ident "Ppxlib.Driver.standalone" (test/driver/flag_cookie/print_cookie_driver.ml[33,787+9]..[33,787+33])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[33,787+34]..[33,787+36])
+                Pexp_construct "()" (test/driver/flag_cookie/print_cookie_driver.ml[33,787+34]..[33,787+36])
+                None
+          ]
+    ]
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = []
+  }]
+open Ppxlib
+let value_x = ref ""
+let f =
+  function
+  | Some value_of_x ->
+      value_x := (Printf.sprintf "Value of cookie x: %i" value_of_x)
+  | None -> value_x := "Cookie x isn't set."
+let () =
+  let open Ppxlib.Driver.Cookies in
+    add_simple_handler ~f "x" (let open Ast_pattern in eint __)
+let print_cookie_x =
+  object
+    inherit  Ast_traverse.map as super
+    method! structure str =
+      let new_str =
+        List.fold_left
+          (fun acc ->
+             fun str_item ->
+               match str_item with
+               | ({
+                    pstr_desc = Pstr_attribute
+                      { attr_name = { txt = "print_cookie_x"; loc = _ };
+                        attr_payload = PStr []; attr_loc = _ };
+                    pstr_loc = _ }
+                   : Ppxlib_ast.Ast.structure_item) ->
+                   let _ = print_endline (!value_x) in acc
+               | _ -> str_item :: acc) [] str in
+      super#structure (List.rev new_str)
+  end
+let () =
+  Driver.register_transformation ~impl:(print_cookie_x#structure)
+    "test_cookies"
+let () = Ppxlib.Driver.standalone ()
+[
+  structure_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+          ]
+          None
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[1,0+0]..test/driver/flag_cookie/print_cookie_driver.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/flag_cookie/print_cookie_driver.ml[1,0+5]..test/driver/flag_cookie/print_cookie_driver.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[3,13+0]..test/driver/flag_cookie/print_cookie_driver.ml[3,13+20])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[3,13+4]..test/driver/flag_cookie/print_cookie_driver.ml[3,13+11])
+          Tpat_var "value_x/491"
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[3,13+14]..test/driver/flag_cookie/print_cookie_driver.ml[3,13+20])
+          Texp_apply
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[3,13+14]..test/driver/flag_cookie/print_cookie_driver.ml[3,13+17])
+            Texp_ident "Stdlib!.ref"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[3,13+18]..test/driver/flag_cookie/print_cookie_driver.ml[3,13+20])
+                Texp_constant Const_string("",(test/driver/flag_cookie/print_cookie_driver.ml[3,13+19]..test/driver/flag_cookie/print_cookie_driver.ml[3,13+19]),None)
+          ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[5,35+0]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+44])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[5,35+4]..test/driver/flag_cookie/print_cookie_driver.ml[5,35+5])
+          Tpat_var "f/492"
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[5,35+8]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+44])
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (test/driver/flag_cookie/print_cookie_driver.ml[6,52+4]..test/driver/flag_cookie/print_cookie_driver.ml[6,52+19])
+                Tpat_construct "Some"
+                [
+                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[6,52+9]..test/driver/flag_cookie/print_cookie_driver.ml[6,52+19])
+                    Tpat_var "value_of_x/494"
+                ]
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+6]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+66])
+                Texp_apply
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+14]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+16])
+                  Texp_ident "Stdlib!.:="
+                [
+                  <arg>
+                    Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+6]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+13])
+                      Texp_ident "value_x/491"
+                  <arg>
+                    Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+17]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+66])
+                      Texp_apply
+                      expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+17]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+31])
+                        Texp_ident "Stdlib!.Printf.sprintf"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55])
+                            Texp_construct "CamlinternalFormatBasics.Format"
+                            [
+                              expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                Texp_construct "CamlinternalFormatBasics.String_literal"
+                                [
+                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                    Texp_constant Const_string("Value of cookie x: ",(test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost,None)
+                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                    Texp_construct "CamlinternalFormatBasics.Int"
+                                    [
+                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.Int_i"
+                                        []
+                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.No_padding"
+                                        []
+                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.No_precision"
+                                        []
+                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                        []
+                                    ]
+                                ]
+                              expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost
+                                Texp_constant Const_string("Value of cookie x: %i",(test/driver/flag_cookie/print_cookie_driver.ml[7,75+32]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+55]) ghost,None)
+                            ]
+                        <arg>
+                          Nolabel
+                          expression (test/driver/flag_cookie/print_cookie_driver.ml[7,75+56]..test/driver/flag_cookie/print_cookie_driver.ml[7,75+66])
+                            Texp_ident "value_of_x/494"
+                      ]
+                ]
+            <case>
+              pattern (test/driver/flag_cookie/print_cookie_driver.ml[8,142+4]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+8])
+                Tpat_construct "None"
+                []
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+12]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+44])
+                Texp_apply
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+20]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+22])
+                  Texp_ident "Stdlib!.:="
+                [
+                  <arg>
+                    Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+12]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+19])
+                      Texp_ident "value_x/491"
+                  <arg>
+                    Nolabel
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[8,142+23]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+44])
+                      Texp_constant Const_string("Cookie x isn't set.",(test/driver/flag_cookie/print_cookie_driver.ml[8,142+24]..test/driver/flag_cookie/print_cookie_driver.ml[8,142+43]),None)
+                ]
+          ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[10,188+0]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+80])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[10,188+4]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+9]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+80])
+          Texp_open Fresh
+          module_expr (test/driver/flag_cookie/print_cookie_driver.ml[10,188+9]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+30])
+            Tmod_ident "Ppxlib!.Driver.Cookies"
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+32]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+79])
+            Texp_apply
+            expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+32]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+50])
+              Texp_ident "Ppxlib!.Driver.Cookies.add_simple_handler"
+            [
+              <arg>
+                Nolabel
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+54]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+57])
+                  Texp_constant Const_string("x",(test/driver/flag_cookie/print_cookie_driver.ml[10,188+55]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+56]),None)
+              <arg>
+                Nolabel
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+58]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+79])
+                  Texp_open Fresh
+                  module_expr (test/driver/flag_cookie/print_cookie_driver.ml[10,188+58]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+69])
+                    Tmod_ident "Ppxlib!.Ast_pattern"
+                  expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+71]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+78])
+                    Texp_apply
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+71]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+75])
+                      Texp_ident "Ppxlib!.Ast_pattern.eint"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+76]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+78])
+                          Texp_ident "Ppxlib!.Ast_pattern.__"
+                    ]
+              <arg>
+                Labelled "f"
+                expression (test/driver/flag_cookie/print_cookie_driver.ml[10,188+52]..test/driver/flag_cookie/print_cookie_driver.ml[10,188+53])
+                  Texp_ident "f/492"
+            ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[12,270+0]..test/driver/flag_cookie/print_cookie_driver.ml[28,691+5])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[12,270+4]..test/driver/flag_cookie/print_cookie_driver.ml[12,270+18])
+          Tpat_var "print_cookie_x/973"
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[13,291+2]..test/driver/flag_cookie/print_cookie_driver.ml[28,691+5])
+          Texp_object          class_structure
+            pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+              Tpat_alias "selfpat-1/975"
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-*/974"
+                pattern (test/driver/flag_cookie/print_cookie_driver.ml[13,291+8]..test/driver/flag_cookie/print_cookie_driver.ml[13,291+8]) ghost
+                  Tpat_any
+            [
+              class_field (test/driver/flag_cookie/print_cookie_driver.ml[14,300+4]..test/driver/flag_cookie/print_cookie_driver.ml[14,300+37])
+                Tcf_inherit Fresh
+                  class_expr (test/driver/flag_cookie/print_cookie_driver.ml[14,300+12]..test/driver/flag_cookie/print_cookie_driver.ml[14,300+28])
+                    class_expr (test/driver/flag_cookie/print_cookie_driver.ml[14,300+12]..test/driver/flag_cookie/print_cookie_driver.ml[14,300+28])
+                      Tcl_ident "Ppxlib!.Ast_traverse.map"
+                      []
+                  Some
+                    "super"
+              class_field (test/driver/flag_cookie/print_cookie_driver.ml[16,339+4]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+40])
+                Tcf_method "structure" Public
+                  Concrete Override
+                  expression (test/driver/flag_cookie/print_cookie_driver.ml[16,339+22]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+40]) ghost
+                    Texp_function
+                    Nolabel
+                    [
+                      <case>
+                        pattern (test/driver/flag_cookie/print_cookie_driver.ml[13,291+8]..test/driver/flag_cookie/print_cookie_driver.ml[13,291+8]) ghost
+                          Tpat_alias "self-1/1936"
+                          pattern (test/driver/flag_cookie/print_cookie_driver.ml[13,291+8]..test/driver/flag_cookie/print_cookie_driver.ml[13,291+8]) ghost
+                            Tpat_var "self-*/1935"
+                        expression (test/driver/flag_cookie/print_cookie_driver.ml[16,339+22]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+40]) ghost
+                          Texp_poly
+                          None
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (test/driver/flag_cookie/print_cookie_driver.ml[16,339+22]..test/driver/flag_cookie/print_cookie_driver.ml[16,339+25])
+                                  Tpat_var "str/1937"
+                                expression (test/driver/flag_cookie/print_cookie_driver.ml[17,367+6]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+40])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (test/driver/flag_cookie/print_cookie_driver.ml[17,367+10]..test/driver/flag_cookie/print_cookie_driver.ml[17,367+17])
+                                        Tpat_var "new_str/1938"
+                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[18,387+8]..test/driver/flag_cookie/print_cookie_driver.ml[25,624+16])
+                                        Texp_apply
+                                        expression (test/driver/flag_cookie/print_cookie_driver.ml[18,387+8]..test/driver/flag_cookie/print_cookie_driver.ml[18,387+22])
+                                          Texp_ident "Stdlib!.List.fold_left"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (test/driver/flag_cookie/print_cookie_driver.ml[19,410+10]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+35])
+                                              Texp_function
+                                              Nolabel
+                                              [
+                                                <case>
+                                                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[19,410+15]..test/driver/flag_cookie/print_cookie_driver.ml[19,410+18])
+                                                    Tpat_var "acc/2003"
+                                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[19,410+19]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+34]) ghost
+                                                    Texp_function
+                                                    Nolabel
+                                                    [
+                                                      <case>
+                                                        pattern (test/driver/flag_cookie/print_cookie_driver.ml[19,410+19]..test/driver/flag_cookie/print_cookie_driver.ml[19,410+27])
+                                                          Tpat_var "str_item/2004"
+                                                        expression (test/driver/flag_cookie/print_cookie_driver.ml[20,441+12]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+34])
+                                                          Texp_match
+                                                          expression (test/driver/flag_cookie/print_cookie_driver.ml[20,441+18]..test/driver/flag_cookie/print_cookie_driver.ml[20,441+26])
+                                                            Texp_ident "str_item/2004"
+                                                          [
+                                                            <case>
+                                                              pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                Tpat_extra_constraint
+                                                                core_type (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                  Ttyp_constr "Ppxlib_ast!.Ast.structure_item"
+                                                                  []
+                                                                pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                  Tpat_value
+                                                                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                    Tpat_record
+                                                                    [
+                                                                      "pstr_desc"
+                                                                        pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                          Tpat_construct "Pstr_attribute"
+                                                                          [
+                                                                            pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                              Tpat_record
+                                                                              [
+                                                                                "attr_name"
+                                                                                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                                    Tpat_record
+                                                                                    [
+                                                                                      "txt"
+                                                                                        pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                                          Tpat_constant Const_string("print_cookie_x",(test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost,None)
+                                                                                      "loc"
+                                                                                        pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                                          Tpat_any
+                                                                                    ]
+                                                                                "attr_payload"
+                                                                                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                                    Tpat_construct "PStr"
+                                                                                    [
+                                                                                      pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                                        Tpat_construct "[]"
+                                                                                        []
+                                                                                    ]
+                                                                                "attr_loc"
+                                                                                  pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                                    Tpat_any
+                                                                              ]
+                                                                          ]
+                                                                      "pstr_loc"
+                                                                        pattern (test/driver/flag_cookie/print_cookie_driver.ml[21,473+14]..test/driver/flag_cookie/print_cookie_driver.ml[21,473+41]) ghost
+                                                                          Tpat_any
+                                                                    ]
+                                                              expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+16]..test/driver/flag_cookie/print_cookie_driver.ml[23,568+19])
+                                                                Texp_let Nonrec
+                                                                [
+                                                                  <def>
+                                                                    pattern (test/driver/flag_cookie/print_cookie_driver.ml[22,518+20]..test/driver/flag_cookie/print_cookie_driver.ml[22,518+21])
+                                                                      Tpat_any
+                                                                    expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+24]..test/driver/flag_cookie/print_cookie_driver.ml[22,518+46])
+                                                                      Texp_apply
+                                                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+24]..test/driver/flag_cookie/print_cookie_driver.ml[22,518+37])
+                                                                        Texp_ident "Stdlib!.print_endline"
+                                                                      [
+                                                                        <arg>
+                                                                          Nolabel
+                                                                          expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+38]..test/driver/flag_cookie/print_cookie_driver.ml[22,518+46])
+                                                                            Texp_apply
+                                                                            expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+38]..test/driver/flag_cookie/print_cookie_driver.ml[22,518+39])
+                                                                              Texp_ident "Stdlib!.!"
+                                                                            [
+                                                                              <arg>
+                                                                                Nolabel
+                                                                                expression (test/driver/flag_cookie/print_cookie_driver.ml[22,518+39]..test/driver/flag_cookie/print_cookie_driver.ml[22,518+46])
+                                                                                  Texp_ident "value_x/491"
+                                                                            ]
+                                                                      ]
+                                                                ]
+                                                                expression (test/driver/flag_cookie/print_cookie_driver.ml[23,568+16]..test/driver/flag_cookie/print_cookie_driver.ml[23,568+19])
+                                                                  Texp_ident "acc/2003"
+                                                            <case>
+                                                              pattern (test/driver/flag_cookie/print_cookie_driver.ml[24,588+14]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+15])
+                                                                Tpat_value
+                                                                pattern (test/driver/flag_cookie/print_cookie_driver.ml[24,588+14]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+15])
+                                                                  Tpat_any
+                                                              expression (test/driver/flag_cookie/print_cookie_driver.ml[24,588+19]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+34])
+                                                                Texp_construct "::"
+                                                                [
+                                                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[24,588+19]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+27])
+                                                                    Texp_ident "str_item/2004"
+                                                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[24,588+31]..test/driver/flag_cookie/print_cookie_driver.ml[24,588+34])
+                                                                    Texp_ident "acc/2003"
+                                                                ]
+                                                          ]
+                                                          []
+                                                    ]
+                                              ]
+                                          <arg>
+                                            Nolabel
+                                            expression (test/driver/flag_cookie/print_cookie_driver.ml[25,624+10]..test/driver/flag_cookie/print_cookie_driver.ml[25,624+12])
+                                              Texp_construct "[]"
+                                              []
+                                          <arg>
+                                            Nolabel
+                                            expression (test/driver/flag_cookie/print_cookie_driver.ml[25,624+13]..test/driver/flag_cookie/print_cookie_driver.ml[25,624+16])
+                                              Texp_ident "str/1937"
+                                        ]
+                                  ]
+                                  expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+40])
+                                    Texp_apply
+                                    expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+21])
+                                      Texp_send "structure"
+                                      expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+11])
+                                        Texp_ident "super/1838"
+                                      Some
+                                        expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+21])
+                                          Texp_apply
+                                          expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+21])
+                                            Texp_ident "structure/1822"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+6]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+11])
+                                                Texp_ident "self-1/1936"
+                                          ]
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+22]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+40])
+                                          Texp_apply
+                                          expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+23]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+31])
+                                            Texp_ident "Stdlib!.List.rev"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (test/driver/flag_cookie/print_cookie_driver.ml[27,650+32]..test/driver/flag_cookie/print_cookie_driver.ml[27,650+39])
+                                                Texp_ident "new_str/1938"
+                                          ]
+                                    ]
+                            ]
+                    ]
+            ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[30,698+0]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+78])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[30,698+4]..test/driver/flag_cookie/print_cookie_driver.ml[30,698+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+2]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+78])
+          Texp_apply
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+2]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+32])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+39]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+63])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+39]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+63])
+                    Texp_send "structure"
+                    expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+39]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+53])
+                      Texp_ident "print_cookie_x/973"
+                    None
+                ]
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[31,707+64]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+78])
+                Texp_constant Const_string("test_cookies",(test/driver/flag_cookie/print_cookie_driver.ml[31,707+65]..test/driver/flag_cookie/print_cookie_driver.ml[31,707+77]),None)
+          ]
+    ]
+  structure_item (test/driver/flag_cookie/print_cookie_driver.ml[33,787+0]..test/driver/flag_cookie/print_cookie_driver.ml[33,787+36])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/flag_cookie/print_cookie_driver.ml[33,787+4]..test/driver/flag_cookie/print_cookie_driver.ml[33,787+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/flag_cookie/print_cookie_driver.ml[33,787+9]..test/driver/flag_cookie/print_cookie_driver.ml[33,787+36])
+          Texp_apply
+          expression (test/driver/flag_cookie/print_cookie_driver.ml[33,787+9]..test/driver/flag_cookie/print_cookie_driver.ml[33,787+33])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/flag_cookie/print_cookie_driver.ml[33,787+34]..test/driver/flag_cookie/print_cookie_driver.ml[33,787+36])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(let
+  (shared/8219 =a
+     [0:
+      #"arg_label" #"array" #"attribute" #"attributes" #"binding_op" #"bool"
+      #"case" #"cases" #"char" #"class_declaration" #"class_description"
+      #"class_expr" #"class_expr_desc" #"class_field" #"class_field_desc"
+      #"class_field_kind" #"class_infos" #"class_signature"
+      #"class_structure" #"class_type" #"class_type_declaration"
+      #"class_type_desc" #"class_type_field" #"class_type_field_desc"
+      #"closed_flag" #"constant" #"constructor_arguments"
+      #"constructor_declaration" #"core_type" #"core_type_desc"
+      #"direction_flag" #"directive_argument" #"directive_argument_desc"
+      #"expression" #"expression_desc" #"extension" #"extension_constructor"
+      #"extension_constructor_kind" #"functor_parameter"
+      #"include_declaration" #"include_description" #"include_infos"
+      #"injectivity" #"int" #"label" #"label_declaration" #"letop" #"list"
+      #"loc" #"location" #"location_stack" #"longident" #"longident_loc"
+      #"module_binding" #"module_declaration" #"module_expr"
+      #"module_expr_desc" #"module_substitution" #"module_type"
+      #"module_type_declaration" #"module_type_desc" #"mutable_flag"
+      #"object_field" #"object_field_desc" #"open_declaration"
+      #"open_description" #"open_infos" #"option" #"override_flag"
+      #"package_type" #"pattern" #"pattern_desc" #"payload" #"position"
+      #"private_flag" #"rec_flag" #"row_field" #"row_field_desc" #"signature"
+      #"signature_item" #"signature_item_desc" #"string" #"structure"
+      #"structure_item" #"structure_item_desc" #"toplevel_directive"
+      #"toplevel_phrase" #"type_declaration" #"type_exception"
+      #"type_extension" #"type_kind" #"value_binding" #"value_description"
+      #"variance" #"virtual_flag" #"with_constraint"]
+   shared/8227 =a
+     [0:
+      #"bool" #"cases" #"case" #"char" #"value_binding"
+      #"extension_constructor_kind" #"core_type" #"structure" #"list"
+      #"label_declaration" #"module_binding" #"position"
+      #"toplevel_directive" #"directive_argument" #"object_field_desc"
+      #"class_type_field_desc" #"open_infos" #"pattern_desc"
+      #"signature_item" #"extension_constructor" #"toplevel_phrase"
+      #"extension" #"location" #"variance" #"package_type" #"virtual_flag"
+      #"module_type_desc" #"rec_flag" #"payload" #"type_exception" #"label"
+      #"letop" #"location_stack" #"value_description" #"module_declaration"
+      #"class_type_declaration" #"longident_loc" #"closed_flag"
+      #"directive_argument_desc" #"attribute" #"class_infos"
+      #"signature_item_desc" #"int" #"loc" #"row_field_desc" #"override_flag"
+      #"structure_item_desc" #"class_field_desc" #"binding_op"
+      #"module_expr_desc" #"class_signature" #"type_extension"
+      #"class_field_kind" #"module_type_declaration" #"arg_label"
+      #"row_field" #"longident" #"string" #"pattern" #"include_description"
+      #"signature" #"class_type_field" #"attributes" #"open_description"
+      #"with_constraint" #"include_declaration" #"class_type_desc"
+      #"private_flag" #"injectivity" #"open_declaration" #"object_field"
+      #"array" #"constant" #"class_expr" #"functor_parameter"
+      #"direction_flag" #"core_type_desc" #"type_declaration"
+      #"constructor_declaration" #"option" #"type_kind" #"module_expr"
+      #"module_substitution" #"class_description" #"expression" #"class_type"
+      #"structure_item" #"include_infos" #"class_declaration" #"module_type"
+      #"class_expr_desc" #"class_structure" #"mutable_flag"
+      #"expression_desc" #"constructor_arguments" #"class_field"]
+   shared/8222 =a
+     [0:
+      #"with_constraint" #"virtual_flag" #"variance" #"value_description"
+      #"value_binding" #"type_kind" #"type_extension" #"type_exception"
+      #"type_declaration" #"toplevel_phrase" #"toplevel_directive"
+      #"structure_item_desc" #"structure_item" #"structure" #"string"
+      #"signature_item_desc" #"signature_item" #"signature" #"row_field_desc"
+      #"row_field" #"rec_flag" #"private_flag" #"position" #"payload"
+      #"pattern_desc" #"pattern" #"package_type" #"override_flag" #"option"
+      #"open_infos" #"open_description" #"open_declaration"
+      #"object_field_desc" #"object_field" #"mutable_flag"
+      #"module_type_desc" #"module_type_declaration" #"module_type"
+      #"module_substitution" #"module_expr_desc" #"module_expr"
+      #"module_declaration" #"module_binding" #"longident_loc" #"longident"
+      #"location_stack" #"location" #"loc" #"list" #"letop"
+      #"label_declaration" #"label" #"int" #"injectivity" #"include_infos"
+      #"include_description" #"include_declaration" #"functor_parameter"
+      #"extension_constructor_kind" #"extension_constructor" #"extension"
+      #"expression_desc" #"expression" #"directive_argument_desc"
+      #"directive_argument" #"direction_flag" #"core_type_desc" #"core_type"
+      #"constructor_declaration" #"constructor_arguments" #"constant"
+      #"closed_flag" #"class_type_field_desc" #"class_type_field"
+      #"class_type_desc" #"class_type_declaration" #"class_type"
+      #"class_structure" #"class_signature" #"class_infos"
+      #"class_field_kind" #"class_field_desc" #"class_field"
+      #"class_expr_desc" #"class_expr" #"class_description"
+      #"class_declaration" #"char" #"cases" #"case" #"bool" #"binding_op"
+      #"attributes" #"attribute" #"array" #"arg_label"])
+  (seq
+    (let (value_x/491 = (makemutable 0 ""))
+      (setfield_ptr(root-init) 0 (global Dune__exe__Print_cookie_driver!)
+        value_x/491))
+    (let
+      (f/492 =
+         (function param/528
+           (if param/528
+             (let (value_of_x/494 =a (field_imm 0 param/528))
+               (setfield_ptr 0
+                 (field_imm 0 (global Dune__exe__Print_cookie_driver!))
+                 (apply (field_imm 3 (global Stdlib__printf!))
+                   [0:
+                    [11: "Value of cookie x: " [4: 3 0 0 0]]
+                    "Value of cookie x: %i"]
+                   value_of_x/494)))
+             (setfield_ptr 0
+               (field_imm 0 (global Dune__exe__Print_cookie_driver!))
+               "Cookie x isn't set."))))
+      (setfield_ptr(root-init) 1 (global Dune__exe__Print_cookie_driver!)
+        f/492))
+    (let
+      (*match*/8183 =
+         (apply (field_imm 4 (field_imm 2 (global Ppxlib__Driver!))) "x"
+           (apply (field_imm 309 (global Ppxlib__Ast_pattern!))
+             (field_imm 3 (global Ppxlib__Ast_pattern!)))
+           (field_imm 1 (global Dune__exe__Print_cookie_driver!))))
+      0)
+    (let
+      (print_cookie_x/973 =
+         (let
+           (object_tables/8187 =o (makemutable 0 0 0 0)
+            class/8191 =
+              (apply (field_imm 15 (global CamlinternalOO!)) shared/8227)
+            obj_init/8226 =
+              (let
+                (ids/8221 =
+                   (apply (field_imm 7 (global CamlinternalOO!)) class/8191
+                     shared/8222)
+                 with_constraint/1934 =o (field_mut 0 ids/8221)
+                 virtual_flag/1933 =o (field_mut 1 ids/8221)
+                 variance/1932 =o (field_mut 2 ids/8221)
+                 value_description/1931 =o (field_mut 3 ids/8221)
+                 value_binding/1930 =o (field_mut 4 ids/8221)
+                 type_kind/1929 =o (field_mut 5 ids/8221)
+                 type_extension/1928 =o (field_mut 6 ids/8221)
+                 type_exception/1927 =o (field_mut 7 ids/8221)
+                 type_declaration/1926 =o (field_mut 8 ids/8221)
+                 toplevel_phrase/1925 =o (field_mut 9 ids/8221)
+                 toplevel_directive/1924 =o (field_mut 10 ids/8221)
+                 structure_item_desc/1923 =o (field_mut 11 ids/8221)
+                 structure_item/1922 =o (field_mut 12 ids/8221)
+                 structure/1839 =o (field_mut 13 ids/8221)
+                 string/1921 =o (field_mut 14 ids/8221)
+                 signature_item_desc/1920 =o (field_mut 15 ids/8221)
+                 signature_item/1919 =o (field_mut 16 ids/8221)
+                 signature/1918 =o (field_mut 17 ids/8221)
+                 row_field_desc/1917 =o (field_mut 18 ids/8221)
+                 row_field/1916 =o (field_mut 19 ids/8221)
+                 rec_flag/1915 =o (field_mut 20 ids/8221)
+                 private_flag/1914 =o (field_mut 21 ids/8221)
+                 position/1913 =o (field_mut 22 ids/8221)
+                 payload/1912 =o (field_mut 23 ids/8221)
+                 pattern_desc/1911 =o (field_mut 24 ids/8221)
+                 pattern/1910 =o (field_mut 25 ids/8221)
+                 package_type/1909 =o (field_mut 26 ids/8221)
+                 override_flag/1908 =o (field_mut 27 ids/8221)
+                 option/1907 =o (field_mut 28 ids/8221)
+                 open_infos/1906 =o (field_mut 29 ids/8221)
+                 open_description/1905 =o (field_mut 30 ids/8221)
+                 open_declaration/1904 =o (field_mut 31 ids/8221)
+                 object_field_desc/1903 =o (field_mut 32 ids/8221)
+                 object_field/1902 =o (field_mut 33 ids/8221)
+                 mutable_flag/1901 =o (field_mut 34 ids/8221)
+                 module_type_desc/1900 =o (field_mut 35 ids/8221)
+                 module_type_declaration/1899 =o (field_mut 36 ids/8221)
+                 module_type/1898 =o (field_mut 37 ids/8221)
+                 module_substitution/1897 =o (field_mut 38 ids/8221)
+                 module_expr_desc/1896 =o (field_mut 39 ids/8221)
+                 module_expr/1895 =o (field_mut 40 ids/8221)
+                 module_declaration/1894 =o (field_mut 41 ids/8221)
+                 module_binding/1893 =o (field_mut 42 ids/8221)
+                 longident_loc/1892 =o (field_mut 43 ids/8221)
+                 longident/1891 =o (field_mut 44 ids/8221)
+                 location_stack/1890 =o (field_mut 45 ids/8221)
+                 location/1889 =o (field_mut 46 ids/8221)
+                 loc/1888 =o (field_mut 47 ids/8221)
+                 list/1887 =o (field_mut 48 ids/8221)
+                 letop/1886 =o (field_mut 49 ids/8221)
+                 label_declaration/1885 =o (field_mut 50 ids/8221)
+                 label/1884 =o (field_mut 51 ids/8221)
+                 int/1883 =o (field_mut 52 ids/8221)
+                 injectivity/1882 =o (field_mut 53 ids/8221)
+                 include_infos/1881 =o (field_mut 54 ids/8221)
+                 include_description/1880 =o (field_mut 55 ids/8221)
+                 include_declaration/1879 =o (field_mut 56 ids/8221)
+                 functor_parameter/1878 =o (field_mut 57 ids/8221)
+                 extension_constructor_kind/1877 =o (field_mut 58 ids/8221)
+                 extension_constructor/1876 =o (field_mut 59 ids/8221)
+                 extension/1875 =o (field_mut 60 ids/8221)
+                 expression_desc/1874 =o (field_mut 61 ids/8221)
+                 expression/1873 =o (field_mut 62 ids/8221)
+                 directive_argument_desc/1872 =o (field_mut 63 ids/8221)
+                 directive_argument/1871 =o (field_mut 64 ids/8221)
+                 direction_flag/1870 =o (field_mut 65 ids/8221)
+                 core_type_desc/1869 =o (field_mut 66 ids/8221)
+                 core_type/1868 =o (field_mut 67 ids/8221)
+                 constructor_declaration/1867 =o (field_mut 68 ids/8221)
+                 constructor_arguments/1866 =o (field_mut 69 ids/8221)
+                 constant/1865 =o (field_mut 70 ids/8221)
+                 closed_flag/1864 =o (field_mut 71 ids/8221)
+                 class_type_field_desc/1863 =o (field_mut 72 ids/8221)
+                 class_type_field/1862 =o (field_mut 73 ids/8221)
+                 class_type_desc/1861 =o (field_mut 74 ids/8221)
+                 class_type_declaration/1860 =o (field_mut 75 ids/8221)
+                 class_type/1859 =o (field_mut 76 ids/8221)
+                 class_structure/1858 =o (field_mut 77 ids/8221)
+                 class_signature/1857 =o (field_mut 78 ids/8221)
+                 class_infos/1856 =o (field_mut 79 ids/8221)
+                 class_field_kind/1855 =o (field_mut 80 ids/8221)
+                 class_field_desc/1854 =o (field_mut 81 ids/8221)
+                 class_field/1853 =o (field_mut 82 ids/8221)
+                 class_expr_desc/1852 =o (field_mut 83 ids/8221)
+                 class_expr/1851 =o (field_mut 84 ids/8221)
+                 class_description/1850 =o (field_mut 85 ids/8221)
+                 class_declaration/1849 =o (field_mut 86 ids/8221)
+                 char/1848 =o (field_mut 87 ids/8221)
+                 cases/1847 =o (field_mut 88 ids/8221)
+                 case/1846 =o (field_mut 89 ids/8221)
+                 bool/1845 =o (field_mut 90 ids/8221)
+                 binding_op/1844 =o (field_mut 91 ids/8221)
+                 attributes/1843 =o (field_mut 92 ids/8221)
+                 attribute/1842 =o (field_mut 93 ids/8221)
+                 array/1841 =o (field_mut 94 ids/8221)
+                 arg_label/1840 =o (field_mut 95 ids/8221)
+                 inh/8220 =
+                   (apply (field_imm 17 (global CamlinternalOO!)) class/8191
+                     0 0 shared/8219
+                     (field_imm 0 (global Ppxlib__Ast_traverse!)) 1)
+                 obj_init/8195 =o (field_mut 0 inh/8220)
+                 arg_label/1740 =o (field_mut 1 inh/8220)
+                 array/1741 =o (field_mut 2 inh/8220)
+                 attribute/1742 =o (field_mut 3 inh/8220)
+                 attributes/1743 =o (field_mut 4 inh/8220)
+                 binding_op/1744 =o (field_mut 5 inh/8220)
+                 bool/1745 =o (field_mut 6 inh/8220)
+                 case/1746 =o (field_mut 7 inh/8220)
+                 cases/1747 =o (field_mut 8 inh/8220)
+                 char/1748 =o (field_mut 9 inh/8220)
+                 class_declaration/1749 =o (field_mut 10 inh/8220)
+                 class_description/1750 =o (field_mut 11 inh/8220)
+                 class_expr/1751 =o (field_mut 12 inh/8220)
+                 class_expr_desc/1752 =o (field_mut 13 inh/8220)
+                 class_field/1753 =o (field_mut 14 inh/8220)
+                 class_field_desc/1754 =o (field_mut 15 inh/8220)
+                 class_field_kind/1755 =o (field_mut 16 inh/8220)
+                 class_infos/1756 =o (field_mut 17 inh/8220)
+                 class_signature/1757 =o (field_mut 18 inh/8220)
+                 class_structure/1758 =o (field_mut 19 inh/8220)
+                 class_type/1759 =o (field_mut 20 inh/8220)
+                 class_type_declaration/1760 =o (field_mut 21 inh/8220)
+                 class_type_desc/1761 =o (field_mut 22 inh/8220)
+                 class_type_field/1762 =o (field_mut 23 inh/8220)
+                 class_type_field_desc/1763 =o (field_mut 24 inh/8220)
+                 closed_flag/1764 =o (field_mut 25 inh/8220)
+                 constant/1765 =o (field_mut 26 inh/8220)
+                 constructor_arguments/1766 =o (field_mut 27 inh/8220)
+                 constructor_declaration/1767 =o (field_mut 28 inh/8220)
+                 core_type/1768 =o (field_mut 29 inh/8220)
+                 core_type_desc/1769 =o (field_mut 30 inh/8220)
+                 direction_flag/1770 =o (field_mut 31 inh/8220)
+                 directive_argument/1771 =o (field_mut 32 inh/8220)
+                 directive_argument_desc/1772 =o (field_mut 33 inh/8220)
+                 expression/1773 =o (field_mut 34 inh/8220)
+                 expression_desc/1774 =o (field_mut 35 inh/8220)
+                 extension/1775 =o (field_mut 36 inh/8220)
+                 extension_constructor/1776 =o (field_mut 37 inh/8220)
+                 extension_constructor_kind/1777 =o (field_mut 38 inh/8220)
+                 functor_parameter/1778 =o (field_mut 39 inh/8220)
+                 include_declaration/1779 =o (field_mut 40 inh/8220)
+                 include_description/1780 =o (field_mut 41 inh/8220)
+                 include_infos/1781 =o (field_mut 42 inh/8220)
+                 injectivity/1782 =o (field_mut 43 inh/8220)
+                 int/1783 =o (field_mut 44 inh/8220)
+                 label/1784 =o (field_mut 45 inh/8220)
+                 label_declaration/1785 =o (field_mut 46 inh/8220)
+                 letop/1786 =o (field_mut 47 inh/8220)
+                 list/1787 =o (field_mut 48 inh/8220)
+                 loc/1788 =o (field_mut 49 inh/8220)
+                 location/1789 =o (field_mut 50 inh/8220)
+                 location_stack/1790 =o (field_mut 51 inh/8220)
+                 longident/1791 =o (field_mut 52 inh/8220)
+                 longident_loc/1792 =o (field_mut 53 inh/8220)
+                 module_binding/1793 =o (field_mut 54 inh/8220)
+                 module_declaration/1794 =o (field_mut 55 inh/8220)
+                 module_expr/1795 =o (field_mut 56 inh/8220)
+                 module_expr_desc/1796 =o (field_mut 57 inh/8220)
+                 module_substitution/1797 =o (field_mut 58 inh/8220)
+                 module_type/1798 =o (field_mut 59 inh/8220)
+                 module_type_declaration/1799 =o (field_mut 60 inh/8220)
+                 module_type_desc/1800 =o (field_mut 61 inh/8220)
+                 mutable_flag/1801 =o (field_mut 62 inh/8220)
+                 object_field/1802 =o (field_mut 63 inh/8220)
+                 object_field_desc/1803 =o (field_mut 64 inh/8220)
+                 open_declaration/1804 =o (field_mut 65 inh/8220)
+                 open_description/1805 =o (field_mut 66 inh/8220)
+                 open_infos/1806 =o (field_mut 67 inh/8220)
+                 option/1807 =o (field_mut 68 inh/8220)
+                 override_flag/1808 =o (field_mut 69 inh/8220)
+                 package_type/1809 =o (field_mut 70 inh/8220)
+                 pattern/1810 =o (field_mut 71 inh/8220)
+                 pattern_desc/1811 =o (field_mut 72 inh/8220)
+                 payload/1812 =o (field_mut 73 inh/8220)
+                 position/1813 =o (field_mut 74 inh/8220)
+                 private_flag/1814 =o (field_mut 75 inh/8220)
+                 rec_flag/1815 =o (field_mut 76 inh/8220)
+                 row_field/1816 =o (field_mut 77 inh/8220)
+                 row_field_desc/1817 =o (field_mut 78 inh/8220)
+                 signature/1818 =o (field_mut 79 inh/8220)
+                 signature_item/1819 =o (field_mut 80 inh/8220)
+                 signature_item_desc/1820 =o (field_mut 81 inh/8220)
+                 string/1821 =o (field_mut 82 inh/8220)
+                 structure/1822 =o (field_mut 83 inh/8220)
+                 structure_item/1823 =o (field_mut 84 inh/8220)
+                 structure_item_desc/1824 =o (field_mut 85 inh/8220)
+                 toplevel_directive/1825 =o (field_mut 86 inh/8220)
+                 toplevel_phrase/1826 =o (field_mut 87 inh/8220)
+                 type_declaration/1827 =o (field_mut 88 inh/8220)
+                 type_exception/1828 =o (field_mut 89 inh/8220)
+                 type_extension/1829 =o (field_mut 90 inh/8220)
+                 type_kind/1830 =o (field_mut 91 inh/8220)
+                 value_binding/1831 =o (field_mut 92 inh/8220)
+                 value_description/1832 =o (field_mut 93 inh/8220)
+                 variance/1833 =o (field_mut 94 inh/8220)
+                 virtual_flag/1834 =o (field_mut 95 inh/8220)
+                 with_constraint/1835 =o (field_mut 96 inh/8220))
+                (seq
+                  (apply (field_imm 9 (global CamlinternalOO!)) class/8191
+                    structure/1839
+                    (let
+                      (method_structure/8218 =
+                         (function self-1/1936 str/1937
+                           (let
+                             (self-*/1935 =a self-1/1936
+                              new_str/1938 =
+                                (apply (field_imm 24 (global Stdlib__list!))
+                                  (function acc/2003 str_item/2004
+                                    (catch
+                                      (let
+                                        (*match*/8208 =a
+                                           (field_imm 0 str_item/2004))
+                                        (switch *match*/8208
+                                         case tag 13:
+                                          (let
+                                            (*match*/8209 =a
+                                               (field_imm 0 *match*/8208)
+                                             *match*/8210 =a
+                                               (field_imm 0 *match*/8209)
+                                             *match*/8211 =a
+                                               (field_imm 0 *match*/8210))
+                                            (stringswitch *match*/8211
+                                             case "print_cookie_x":
+                                              (let
+                                                (*match*/8213 =a
+                                                   (field_imm 1 *match*/8209))
+                                                (switch *match*/8213
+                                                 case tag 0:
+                                                  (let
+                                                    (*match*/8214 =a
+                                                       (field_imm 0
+                                                         *match*/8213))
+                                                    (if *match*/8214 
+                                                      (exit 4)
+                                                      (let
+                                                        (*match*/8216 =a
+                                                           (field_imm 1
+                                                             str_item/2004)
+                                                         *match*/8215 =a
+                                                           (field_imm 2
+                                                             *match*/8209)
+                                                         *match*/8212 =a
+                                                           (field_imm 1
+                                                             *match*/8210))
+                                                        (seq
+                                                          (apply
+                                                            (field_imm 48
+                                                              (global Stdlib!))
+                                                            (field_mut 0
+                                                              (field_imm 0
+                                                                (global Dune__exe__Print_cookie_driver!))))
+                                                          acc/2003))))
+                                                 default: (exit 4)))
+                                             default: (exit 4)))
+                                         default: (exit 4)))
+                                     with (4)
+                                      (makeblock 0 str_item/2004 acc/2003)))
+                                  0 str/1937))
+                             (apply structure/1822 self-1/1936
+                               (apply (field_imm 8 (global Stdlib__list!))
+                                 new_str/1938)))))
+                      method_structure/8218))
+                  (function env/8193
+                    (let
+                      (self/8194 =
+                         (apply (field_imm 23 (global CamlinternalOO!)) 0
+                           class/8191))
+                      (seq (apply obj_init/8195 self/8194)
+                        (apply (field_imm 25 (global CamlinternalOO!)) 0
+                          self/8194 class/8191)))))))
+           (seq (apply (field_imm 16 (global CamlinternalOO!)) class/8191)
+             (apply obj_init/8226 0))))
+      (setfield_ptr(root-init) 2 (global Dune__exe__Print_cookie_driver!)
+        print_cookie_x/973))
+    (let
+      (*match*/8229 =
+         (apply (field_imm 4 (global Ppxlib__Driver!)) 0 0 0 0
+           (makeblock 0
+             (send (field_imm 2 (global Dune__exe__Print_cookie_driver!))
+               -951102413))
+           0 0 0 0 0 0 0 "test_cookies"))
+      0)
+    (let (*match*/8231 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0))
+      0)
+    0))
+(seq
+  (let (value_x/491 = (makemutable 0 ""))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Print_cookie_driver!)
+      value_x/491))
+  (let
+    (f/492 =
+       (function param/528
+         (if param/528
+           (setfield_ptr 0
+             (field_imm 0 (global Dune__exe__Print_cookie_driver!))
+             (apply (field_imm 3 (global Stdlib__printf!))
+               [0:
+                [11: "Value of cookie x: " [4: 3 0 0 0]]
+                "Value of cookie x: %i"]
+               (field_imm 0 param/528)))
+           (setfield_ptr 0
+             (field_imm 0 (global Dune__exe__Print_cookie_driver!))
+             "Cookie x isn't set."))))
+    (setfield_ptr(root-init) 1 (global Dune__exe__Print_cookie_driver!)
+      f/492))
+  (let
+    (*match*/8183 =
+       (apply (field_imm 4 (field_imm 2 (global Ppxlib__Driver!))) "x"
+         (apply (field_imm 309 (global Ppxlib__Ast_pattern!))
+           (field_imm 3 (global Ppxlib__Ast_pattern!)))
+         (field_imm 1 (global Dune__exe__Print_cookie_driver!))))
+    0)
+  (let
+    (print_cookie_x/973 =
+       (let
+         (class/8191 =
+            (apply (field_imm 15 (global CamlinternalOO!))
+              [0:
+               #"bool" #"cases" #"case" #"char" #"value_binding"
+               #"extension_constructor_kind" #"core_type" #"structure"
+               #"list" #"label_declaration" #"module_binding" #"position"
+               #"toplevel_directive" #"directive_argument"
+               #"object_field_desc" #"class_type_field_desc" #"open_infos"
+               #"pattern_desc" #"signature_item" #"extension_constructor"
+               #"toplevel_phrase" #"extension" #"location" #"variance"
+               #"package_type" #"virtual_flag" #"module_type_desc"
+               #"rec_flag" #"payload" #"type_exception" #"label" #"letop"
+               #"location_stack" #"value_description" #"module_declaration"
+               #"class_type_declaration" #"longident_loc" #"closed_flag"
+               #"directive_argument_desc" #"attribute" #"class_infos"
+               #"signature_item_desc" #"int" #"loc" #"row_field_desc"
+               #"override_flag" #"structure_item_desc" #"class_field_desc"
+               #"binding_op" #"module_expr_desc" #"class_signature"
+               #"type_extension" #"class_field_kind"
+               #"module_type_declaration" #"arg_label" #"row_field"
+               #"longident" #"string" #"pattern" #"include_description"
+               #"signature" #"class_type_field" #"attributes"
+               #"open_description" #"with_constraint" #"include_declaration"
+               #"class_type_desc" #"private_flag" #"injectivity"
+               #"open_declaration" #"object_field" #"array" #"constant"
+               #"class_expr" #"functor_parameter" #"direction_flag"
+               #"core_type_desc" #"type_declaration"
+               #"constructor_declaration" #"option" #"type_kind"
+               #"module_expr" #"module_substitution" #"class_description"
+               #"expression" #"class_type" #"structure_item" #"include_infos"
+               #"class_declaration" #"module_type" #"class_expr_desc"
+               #"class_structure" #"mutable_flag" #"expression_desc"
+               #"constructor_arguments" #"class_field"])
+          obj_init/8226 =
+            (let
+              (ids/8221 =
+                 (apply (field_imm 7 (global CamlinternalOO!)) class/8191
+                   [0:
+                    #"with_constraint" #"virtual_flag" #"variance"
+                    #"value_description" #"value_binding" #"type_kind"
+                    #"type_extension" #"type_exception" #"type_declaration"
+                    #"toplevel_phrase" #"toplevel_directive"
+                    #"structure_item_desc" #"structure_item" #"structure"
+                    #"string" #"signature_item_desc" #"signature_item"
+                    #"signature" #"row_field_desc" #"row_field" #"rec_flag"
+                    #"private_flag" #"position" #"payload" #"pattern_desc"
+                    #"pattern" #"package_type" #"override_flag" #"option"
+                    #"open_infos" #"open_description" #"open_declaration"
+                    #"object_field_desc" #"object_field" #"mutable_flag"
+                    #"module_type_desc" #"module_type_declaration"
+                    #"module_type" #"module_substitution" #"module_expr_desc"
+                    #"module_expr" #"module_declaration" #"module_binding"
+                    #"longident_loc" #"longident" #"location_stack"
+                    #"location" #"loc" #"list" #"letop" #"label_declaration"
+                    #"label" #"int" #"injectivity" #"include_infos"
+                    #"include_description" #"include_declaration"
+                    #"functor_parameter" #"extension_constructor_kind"
+                    #"extension_constructor" #"extension" #"expression_desc"
+                    #"expression" #"directive_argument_desc"
+                    #"directive_argument" #"direction_flag" #"core_type_desc"
+                    #"core_type" #"constructor_declaration"
+                    #"constructor_arguments" #"constant" #"closed_flag"
+                    #"class_type_field_desc" #"class_type_field"
+                    #"class_type_desc" #"class_type_declaration"
+                    #"class_type" #"class_structure" #"class_signature"
+                    #"class_infos" #"class_field_kind" #"class_field_desc"
+                    #"class_field" #"class_expr_desc" #"class_expr"
+                    #"class_description" #"class_declaration" #"char"
+                    #"cases" #"case" #"bool" #"binding_op" #"attributes"
+                    #"attribute" #"array" #"arg_label"])
+               structure/1839 =o (field_mut 13 ids/8221)
+               inh/8220 =
+                 (apply (field_imm 17 (global CamlinternalOO!)) class/8191 0
+                   0
+                   [0:
+                    #"arg_label" #"array" #"attribute" #"attributes"
+                    #"binding_op" #"bool" #"case" #"cases" #"char"
+                    #"class_declaration" #"class_description" #"class_expr"
+                    #"class_expr_desc" #"class_field" #"class_field_desc"
+                    #"class_field_kind" #"class_infos" #"class_signature"
+                    #"class_structure" #"class_type"
+                    #"class_type_declaration" #"class_type_desc"
+                    #"class_type_field" #"class_type_field_desc"
+                    #"closed_flag" #"constant" #"constructor_arguments"
+                    #"constructor_declaration" #"core_type" #"core_type_desc"
+                    #"direction_flag" #"directive_argument"
+                    #"directive_argument_desc" #"expression"
+                    #"expression_desc" #"extension" #"extension_constructor"
+                    #"extension_constructor_kind" #"functor_parameter"
+                    #"include_declaration" #"include_description"
+                    #"include_infos" #"injectivity" #"int" #"label"
+                    #"label_declaration" #"letop" #"list" #"loc" #"location"
+                    #"location_stack" #"longident" #"longident_loc"
+                    #"module_binding" #"module_declaration" #"module_expr"
+                    #"module_expr_desc" #"module_substitution" #"module_type"
+                    #"module_type_declaration" #"module_type_desc"
+                    #"mutable_flag" #"object_field" #"object_field_desc"
+                    #"open_declaration" #"open_description" #"open_infos"
+                    #"option" #"override_flag" #"package_type" #"pattern"
+                    #"pattern_desc" #"payload" #"position" #"private_flag"
+                    #"rec_flag" #"row_field" #"row_field_desc" #"signature"
+                    #"signature_item" #"signature_item_desc" #"string"
+                    #"structure" #"structure_item" #"structure_item_desc"
+                    #"toplevel_directive" #"toplevel_phrase"
+                    #"type_declaration" #"type_exception" #"type_extension"
+                    #"type_kind" #"value_binding" #"value_description"
+                    #"variance" #"virtual_flag" #"with_constraint"]
+                   (field_imm 0 (global Ppxlib__Ast_traverse!)) 1)
+               obj_init/8195 =o (field_mut 0 inh/8220)
+               structure/1822 =o (field_mut 83 inh/8220))
+              (seq
+                (apply (field_imm 9 (global CamlinternalOO!)) class/8191
+                  structure/1839
+                  (function self-1/1936 str/1937
+                    (let
+                      (new_str/1938 =
+                         (apply (field_imm 24 (global Stdlib__list!))
+                           (function acc/2003 str_item/2004
+                             (catch
+                               (let
+                                 (*match*/8208 =a (field_imm 0 str_item/2004))
+                                 (switch *match*/8208
+                                  case tag 13:
+                                   (let
+                                     (*match*/8209 =a
+                                        (field_imm 0 *match*/8208))
+                                     (stringswitch (field_imm 0
+                                                     (field_imm 0
+                                                       *match*/8209))
+                                      case "print_cookie_x":
+                                       (let
+                                         (*match*/8213 =a
+                                            (field_imm 1 *match*/8209))
+                                         (switch *match*/8213
+                                          case tag 0:
+                                           (if (field_imm 0 *match*/8213)
+                                             (exit 4)
+                                             (seq
+                                               (apply
+                                                 (field_imm 48
+                                                   (global Stdlib!))
+                                                 (field_mut 0
+                                                   (field_imm 0
+                                                     (global Dune__exe__Print_cookie_driver!))))
+                                               acc/2003))
+                                          default: (exit 4)))
+                                      default: (exit 4)))
+                                  default: (exit 4)))
+                              with (4) (makeblock 0 str_item/2004 acc/2003)))
+                           0 str/1937))
+                      (apply structure/1822 self-1/1936
+                        (apply (field_imm 8 (global Stdlib__list!))
+                          new_str/1938)))))
+                (function env/8193
+                  (let
+                    (self/8194 =
+                       (apply (field_imm 23 (global CamlinternalOO!)) 0
+                         class/8191))
+                    (seq (apply obj_init/8195 self/8194)
+                      (apply (field_imm 25 (global CamlinternalOO!)) 0
+                        self/8194 class/8191)))))))
+         (seq (apply (field_imm 16 (global CamlinternalOO!)) class/8191)
+           (apply obj_init/8226 0))))
+    (setfield_ptr(root-init) 2 (global Dune__exe__Print_cookie_driver!)
+      print_cookie_x/973))
+  (let
+    (*match*/8229 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0 0 0 0
+         (makeblock 0
+           (send (field_imm 2 (global Dune__exe__Print_cookie_driver!))
+             -951102413))
+         0 0 0 0 0 0 0 "test_cookies"))
+    0)
+  (let (*match*/8231 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)

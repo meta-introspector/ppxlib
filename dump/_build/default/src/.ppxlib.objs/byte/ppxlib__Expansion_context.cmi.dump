@@ -1,0 +1,1312 @@
+[
+  signature_item (src/expansion_context.mli[1,0+0]..[1,0+59])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_context.mli[1,0+0]..[1,0+59])
+        Pstr_eval
+        expression (src/expansion_context.mli[1,0+0]..[1,0+59])
+          Pexp_constant PConst_string(" The context given to rewriting rules when expanding. ",(src/expansion_context.mli[1,0+0]..[1,0+59]),None)
+    ]
+  signature_item (src/expansion_context.mli[3,61+0]..[45,1683+3])
+    Psig_module "Base" (src/expansion_context.mli[3,61+7]..[3,61+11])
+    module_type (src/expansion_context.mli[3,61+14]..[45,1683+3])
+      Pmty_signature
+      [
+        signature_item (src/expansion_context.mli[4,79+2]..[4,79+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/expansion_context.mli[4,79+7]..[4,79+8]) (src/expansion_context.mli[4,79+2]..[4,79+8])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/expansion_context.mli[5,88+2]..[5,88+73])
+                    Pstr_eval
+                    expression (src/expansion_context.mli[5,88+2]..[5,88+73])
+                      Pexp_constant PConst_string(" Type for the location independent parts of the expansion context ",(src/expansion_context.mli[5,88+2]..[5,88+73]),None)
+                ]
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/expansion_context.mli[7,163+2]..[7,163+34])
+          Psig_value
+          value_description "code_path" (src/expansion_context.mli[7,163+6]..[7,163+15]) (src/expansion_context.mli[7,163+2]..[7,163+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[8,198+2]..[14,524+47])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[8,198+2]..[14,524+47])
+                    Pexp_constant PConst_string(" Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives ",(src/expansion_context.mli[8,198+2]..[14,524+47]),None)
+              ]
+            core_type (src/expansion_context.mli[7,163+18]..[7,163+34])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[7,163+18]..[7,163+19])
+                Ptyp_constr "t" (src/expansion_context.mli[7,163+18]..[7,163+19])
+                []
+              core_type (src/expansion_context.mli[7,163+23]..[7,163+34])
+                Ptyp_constr "Code_path.t" (src/expansion_context.mli[7,163+23]..[7,163+34])
+                []
+            []
+        signature_item (src/expansion_context.mli[16,573+2]..[16,573+30])
+          Psig_value
+          value_description "input_name" (src/expansion_context.mli[16,573+6]..[16,573+16]) (src/expansion_context.mli[16,573+2]..[16,573+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[17,604+2]..[25,1008+33])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[17,604+2]..[25,1008+33])
+                    Pexp_constant PConst_string(" Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] ",(src/expansion_context.mli[17,604+2]..[25,1008+33]),None)
+              ]
+            core_type (src/expansion_context.mli[16,573+19]..[16,573+30])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[16,573+19]..[16,573+20])
+                Ptyp_constr "t" (src/expansion_context.mli[16,573+19]..[16,573+20])
+                []
+              core_type (src/expansion_context.mli[16,573+24]..[16,573+30])
+                Ptyp_constr "string" (src/expansion_context.mli[16,573+24]..[16,573+30])
+                []
+            []
+        signature_item (src/expansion_context.mli[27,1043+2]..[27,1043+29])
+          Psig_value
+          value_description "tool_name" (src/expansion_context.mli[27,1043+6]..[27,1043+15]) (src/expansion_context.mli[27,1043+2]..[27,1043+29])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[28,1073+2]..[29,1150+65])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[28,1073+2]..[29,1150+65])
+                    Pexp_constant PConst_string(" Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . ",(src/expansion_context.mli[28,1073+2]..[29,1150+65]),None)
+              ]
+            core_type (src/expansion_context.mli[27,1043+18]..[27,1043+29])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[27,1043+18]..[27,1043+19])
+                Ptyp_constr "t" (src/expansion_context.mli[27,1043+18]..[27,1043+19])
+                []
+              core_type (src/expansion_context.mli[27,1043+23]..[27,1043+29])
+                Ptyp_constr "string" (src/expansion_context.mli[27,1043+23]..[27,1043+29])
+                []
+            []
+        signature_item (src/expansion_context.mli[31,1217+2]..[31,1217+9])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[31,1217+2]..[31,1217+9])
+              Pstr_eval
+              expression (src/expansion_context.mli[31,1217+2]..[31,1217+9])
+                Pexp_constant PConst_string("/*",(src/expansion_context.mli[31,1217+2]..[31,1217+9]),None)
+          ]
+        signature_item (src/expansion_context.mli[33,1228+2]..[33,1228+29])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[33,1228+2]..[33,1228+29])
+              Pstr_eval
+              expression (src/expansion_context.mli[33,1228+2]..[33,1228+29])
+                Pexp_constant PConst_string(" Undocumented section ",(src/expansion_context.mli[33,1228+2]..[33,1228+29]),None)
+          ]
+        signature_item (src/expansion_context.mli[35,1259+2]..[35,1259+80])
+          Psig_value
+          value_description "top_level" (src/expansion_context.mli[35,1259+6]..[35,1259+15]) (src/expansion_context.mli[35,1259+2]..[35,1259+80])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[36,1340+2]..[37,1421+27])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[36,1340+2]..[37,1421+27])
+                    Pexp_constant PConst_string(" Build a new base context at the top level of the given file with the given\n      calling tool name. ",(src/expansion_context.mli[36,1340+2]..[37,1421+27]),None)
+              ]
+            core_type (src/expansion_context.mli[35,1259+18]..[35,1259+80])
+              Ptyp_arrow
+              Labelled "tool_name"
+              core_type (src/expansion_context.mli[35,1259+28]..[35,1259+34])
+                Ptyp_constr "string" (src/expansion_context.mli[35,1259+28]..[35,1259+34])
+                []
+              core_type (src/expansion_context.mli[35,1259+38]..[35,1259+80])
+                Ptyp_arrow
+                Labelled "file_path"
+                core_type (src/expansion_context.mli[35,1259+48]..[35,1259+54])
+                  Ptyp_constr "string" (src/expansion_context.mli[35,1259+48]..[35,1259+54])
+                  []
+                core_type (src/expansion_context.mli[35,1259+58]..[35,1259+80])
+                  Ptyp_arrow
+                  Labelled "input_name"
+                  core_type (src/expansion_context.mli[35,1259+69]..[35,1259+75])
+                    Ptyp_constr "string" (src/expansion_context.mli[35,1259+69]..[35,1259+75])
+                    []
+                  core_type (src/expansion_context.mli[35,1259+79]..[35,1259+80])
+                    Ptyp_constr "t" (src/expansion_context.mli[35,1259+79]..[35,1259+80])
+                    []
+            []
+        signature_item (src/expansion_context.mli[39,1450+2]..[39,1450+25])
+          Psig_value
+          value_description "enter_expr" (src/expansion_context.mli[39,1450+6]..[39,1450+16]) (src/expansion_context.mli[39,1450+2]..[39,1450+25])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[40,1476+2]..[41,1553+17])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[40,1476+2]..[41,1553+17])
+                    Pexp_constant PConst_string(" Proxy functions to update the wrapped code path. See code_path.mli for\n      details. ",(src/expansion_context.mli[40,1476+2]..[41,1553+17]),None)
+              ]
+            core_type (src/expansion_context.mli[39,1450+19]..[39,1450+25])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[39,1450+19]..[39,1450+20])
+                Ptyp_constr "t" (src/expansion_context.mli[39,1450+19]..[39,1450+20])
+                []
+              core_type (src/expansion_context.mli[39,1450+24]..[39,1450+25])
+                Ptyp_constr "t" (src/expansion_context.mli[39,1450+24]..[39,1450+25])
+                []
+            []
+        signature_item (src/expansion_context.mli[43,1572+2]..[43,1572+55])
+          Psig_value
+          value_description "enter_module" (src/expansion_context.mli[43,1572+6]..[43,1572+18]) (src/expansion_context.mli[43,1572+2]..[43,1572+55])
+            core_type (src/expansion_context.mli[43,1572+21]..[43,1572+55])
+              Ptyp_arrow
+              Labelled "loc"
+              core_type (src/expansion_context.mli[43,1572+25]..[43,1572+35])
+                Ptyp_constr "Location.t" (src/expansion_context.mli[43,1572+25]..[43,1572+35])
+                []
+              core_type (src/expansion_context.mli[43,1572+39]..[43,1572+55])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/expansion_context.mli[43,1572+39]..[43,1572+45])
+                  Ptyp_constr "string" (src/expansion_context.mli[43,1572+39]..[43,1572+45])
+                  []
+                core_type (src/expansion_context.mli[43,1572+49]..[43,1572+55])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/expansion_context.mli[43,1572+49]..[43,1572+50])
+                    Ptyp_constr "t" (src/expansion_context.mli[43,1572+49]..[43,1572+50])
+                    []
+                  core_type (src/expansion_context.mli[43,1572+54]..[43,1572+55])
+                    Ptyp_constr "t" (src/expansion_context.mli[43,1572+54]..[43,1572+55])
+                    []
+            []
+        signature_item (src/expansion_context.mli[44,1628+2]..[44,1628+54])
+          Psig_value
+          value_description "enter_value" (src/expansion_context.mli[44,1628+6]..[44,1628+17]) (src/expansion_context.mli[44,1628+2]..[44,1628+54])
+            core_type (src/expansion_context.mli[44,1628+20]..[44,1628+54])
+              Ptyp_arrow
+              Labelled "loc"
+              core_type (src/expansion_context.mli[44,1628+24]..[44,1628+34])
+                Ptyp_constr "Location.t" (src/expansion_context.mli[44,1628+24]..[44,1628+34])
+                []
+              core_type (src/expansion_context.mli[44,1628+38]..[44,1628+54])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/expansion_context.mli[44,1628+38]..[44,1628+44])
+                  Ptyp_constr "string" (src/expansion_context.mli[44,1628+38]..[44,1628+44])
+                  []
+                core_type (src/expansion_context.mli[44,1628+48]..[44,1628+54])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/expansion_context.mli[44,1628+48]..[44,1628+49])
+                    Ptyp_constr "t" (src/expansion_context.mli[44,1628+48]..[44,1628+49])
+                    []
+                  core_type (src/expansion_context.mli[44,1628+53]..[44,1628+54])
+                    Ptyp_constr "t" (src/expansion_context.mli[44,1628+53]..[44,1628+54])
+                    []
+            []
+      ]
+  signature_item (src/expansion_context.mli[47,1688+0]..[88,3287+3])
+    Psig_module "Extension" (src/expansion_context.mli[47,1688+7]..[47,1688+16])
+    module_type (src/expansion_context.mli[47,1688+19]..[88,3287+3])
+      Pmty_signature
+      [
+        signature_item (src/expansion_context.mli[48,1711+2]..[48,1711+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/expansion_context.mli[48,1711+7]..[48,1711+8]) (src/expansion_context.mli[48,1711+2]..[48,1711+8])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/expansion_context.mli[49,1720+2]..[49,1720+50])
+                    Pstr_eval
+                    expression (src/expansion_context.mli[49,1720+2]..[49,1720+50])
+                      Pexp_constant PConst_string(" Type of expansion contexts for extensions ",(src/expansion_context.mli[49,1720+2]..[49,1720+50]),None)
+                ]
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/expansion_context.mli[51,1772+2]..[51,1772+43])
+          Psig_value
+          value_description "extension_point_loc" (src/expansion_context.mli[51,1772+6]..[51,1772+25]) (src/expansion_context.mli[51,1772+2]..[51,1772+43])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[52,1816+2]..[52,1816+66])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[52,1816+2]..[52,1816+66])
+                    Pexp_constant PConst_string(" Return the location of the extension point being expanded ",(src/expansion_context.mli[52,1816+2]..[52,1816+66]),None)
+              ]
+            core_type (src/expansion_context.mli[51,1772+28]..[51,1772+43])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[51,1772+28]..[51,1772+29])
+                Ptyp_constr "t" (src/expansion_context.mli[51,1772+28]..[51,1772+29])
+                []
+              core_type (src/expansion_context.mli[51,1772+33]..[51,1772+43])
+                Ptyp_constr "Location.t" (src/expansion_context.mli[51,1772+33]..[51,1772+43])
+                []
+            []
+        signature_item (src/expansion_context.mli[54,1884+2]..[54,1884+34])
+          Psig_value
+          value_description "code_path" (src/expansion_context.mli[54,1884+6]..[54,1884+15]) (src/expansion_context.mli[54,1884+2]..[54,1884+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[55,1919+2]..[61,2245+47])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[55,1919+2]..[61,2245+47])
+                    Pexp_constant PConst_string(" Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives ",(src/expansion_context.mli[55,1919+2]..[61,2245+47]),None)
+              ]
+            core_type (src/expansion_context.mli[54,1884+18]..[54,1884+34])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[54,1884+18]..[54,1884+19])
+                Ptyp_constr "t" (src/expansion_context.mli[54,1884+18]..[54,1884+19])
+                []
+              core_type (src/expansion_context.mli[54,1884+23]..[54,1884+34])
+                Ptyp_constr "Code_path.t" (src/expansion_context.mli[54,1884+23]..[54,1884+34])
+                []
+            []
+        signature_item (src/expansion_context.mli[63,2294+2]..[63,2294+30])
+          Psig_value
+          value_description "input_name" (src/expansion_context.mli[63,2294+6]..[63,2294+16]) (src/expansion_context.mli[63,2294+2]..[63,2294+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[64,2325+2]..[72,2729+33])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[64,2325+2]..[72,2729+33])
+                    Pexp_constant PConst_string(" Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] ",(src/expansion_context.mli[64,2325+2]..[72,2729+33]),None)
+              ]
+            core_type (src/expansion_context.mli[63,2294+19]..[63,2294+30])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[63,2294+19]..[63,2294+20])
+                Ptyp_constr "t" (src/expansion_context.mli[63,2294+19]..[63,2294+20])
+                []
+              core_type (src/expansion_context.mli[63,2294+24]..[63,2294+30])
+                Ptyp_constr "string" (src/expansion_context.mli[63,2294+24]..[63,2294+30])
+                []
+            []
+        signature_item (src/expansion_context.mli[74,2764+2]..[74,2764+29])
+          Psig_value
+          value_description "tool_name" (src/expansion_context.mli[74,2764+6]..[74,2764+15]) (src/expansion_context.mli[74,2764+2]..[74,2764+29])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[75,2794+2]..[76,2871+65])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[75,2794+2]..[76,2871+65])
+                    Pexp_constant PConst_string(" Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . ",(src/expansion_context.mli[75,2794+2]..[76,2871+65]),None)
+              ]
+            core_type (src/expansion_context.mli[74,2764+18]..[74,2764+29])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[74,2764+18]..[74,2764+19])
+                Ptyp_constr "t" (src/expansion_context.mli[74,2764+18]..[74,2764+19])
+                []
+              core_type (src/expansion_context.mli[74,2764+23]..[74,2764+29])
+                Ptyp_constr "string" (src/expansion_context.mli[74,2764+23]..[74,2764+29])
+                []
+            []
+        signature_item (src/expansion_context.mli[78,2938+2]..[78,2938+79])
+          Psig_value
+          value_description "with_loc_and_path" (src/expansion_context.mli[78,2938+6]..[78,2938+23]) (src/expansion_context.mli[78,2938+2]..[78,2938+79])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[79,3018+2]..[79,3018+51])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[79,3018+2]..[79,3018+51])
+                    Pexp_constant PConst_string(" Wrap a [fun ~loc ~path] into a [fun ~ctxt] ",(src/expansion_context.mli[79,3018+2]..[79,3018+51]),None)
+              ]
+            core_type (src/expansion_context.mli[78,2938+26]..[78,2938+79])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[78,2938+27]..[78,2938+62])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/expansion_context.mli[78,2938+31]..[78,2938+41])
+                  Ptyp_constr "Location.t" (src/expansion_context.mli[78,2938+31]..[78,2938+41])
+                  []
+                core_type (src/expansion_context.mli[78,2938+45]..[78,2938+62])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (src/expansion_context.mli[78,2938+50]..[78,2938+56])
+                    Ptyp_constr "string" (src/expansion_context.mli[78,2938+50]..[78,2938+56])
+                    []
+                  core_type (src/expansion_context.mli[78,2938+60]..[78,2938+62])
+                    Ptyp_var a
+              core_type (src/expansion_context.mli[78,2938+67]..[78,2938+79])
+                Ptyp_arrow
+                Labelled "ctxt"
+                core_type (src/expansion_context.mli[78,2938+72]..[78,2938+73])
+                  Ptyp_constr "t" (src/expansion_context.mli[78,2938+72]..[78,2938+73])
+                  []
+                core_type (src/expansion_context.mli[78,2938+77]..[78,2938+79])
+                  Ptyp_var a
+            []
+        signature_item (src/expansion_context.mli[81,3071+2]..[81,3071+9])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[81,3071+2]..[81,3071+9])
+              Pstr_eval
+              expression (src/expansion_context.mli[81,3071+2]..[81,3071+9])
+                Pexp_constant PConst_string("/*",(src/expansion_context.mli[81,3071+2]..[81,3071+9]),None)
+          ]
+        signature_item (src/expansion_context.mli[83,3082+2]..[83,3082+29])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[83,3082+2]..[83,3082+29])
+              Pstr_eval
+              expression (src/expansion_context.mli[83,3082+2]..[83,3082+29])
+                Pexp_constant PConst_string(" Undocumented section ",(src/expansion_context.mli[83,3082+2]..[83,3082+29]),None)
+          ]
+        signature_item (src/expansion_context.mli[85,3113+2]..[85,3113+71])
+          Psig_value
+          value_description "make" (src/expansion_context.mli[85,3113+6]..[85,3113+10]) (src/expansion_context.mli[85,3113+2]..[85,3113+71])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[86,3185+2]..[87,3265+21])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[86,3185+2]..[87,3265+21])
+                    Pexp_constant PConst_string(" Build a new expansion context with the given extension point location and\n      base context ",(src/expansion_context.mli[86,3185+2]..[87,3265+21]),None)
+              ]
+            core_type (src/expansion_context.mli[85,3113+13]..[85,3113+71])
+              Ptyp_arrow
+              Labelled "extension_point_loc"
+              core_type (src/expansion_context.mli[85,3113+33]..[85,3113+43])
+                Ptyp_constr "Location.t" (src/expansion_context.mli[85,3113+33]..[85,3113+43])
+                []
+              core_type (src/expansion_context.mli[85,3113+47]..[85,3113+71])
+                Ptyp_arrow
+                Labelled "base"
+                core_type (src/expansion_context.mli[85,3113+52]..[85,3113+58])
+                  Ptyp_constr "Base.t" (src/expansion_context.mli[85,3113+52]..[85,3113+58])
+                  []
+                core_type (src/expansion_context.mli[85,3113+62]..[85,3113+71])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/expansion_context.mli[85,3113+62]..[85,3113+66])
+                    Ptyp_constr "unit" (src/expansion_context.mli[85,3113+62]..[85,3113+66])
+                    []
+                  core_type (src/expansion_context.mli[85,3113+70]..[85,3113+71])
+                    Ptyp_constr "t" (src/expansion_context.mli[85,3113+70]..[85,3113+71])
+                    []
+            []
+      ]
+  signature_item (src/expansion_context.mli[90,3292+0]..[134,4989+3])
+    Psig_module "Deriver" (src/expansion_context.mli[90,3292+7]..[90,3292+14])
+    module_type (src/expansion_context.mli[90,3292+17]..[134,4989+3])
+      Pmty_signature
+      [
+        signature_item (src/expansion_context.mli[91,3313+2]..[91,3313+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/expansion_context.mli[91,3313+7]..[91,3313+8]) (src/expansion_context.mli[91,3313+2]..[91,3313+8])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/expansion_context.mli[92,3322+2]..[92,3322+48])
+                    Pstr_eval
+                    expression (src/expansion_context.mli[92,3322+2]..[92,3322+48])
+                      Pexp_constant PConst_string(" Type of expansion contexts for derivers ",(src/expansion_context.mli[92,3322+2]..[92,3322+48]),None)
+                ]
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/expansion_context.mli[94,3372+2]..[94,3372+40])
+          Psig_value
+          value_description "derived_item_loc" (src/expansion_context.mli[94,3372+6]..[94,3372+22]) (src/expansion_context.mli[94,3372+2]..[94,3372+40])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[95,3413+2]..[95,3413+78])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[95,3413+2]..[95,3413+78])
+                    Pexp_constant PConst_string(" Return the location of the item to which the deriver is being applied ",(src/expansion_context.mli[95,3413+2]..[95,3413+78]),None)
+              ]
+            core_type (src/expansion_context.mli[94,3372+25]..[94,3372+40])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[94,3372+25]..[94,3372+26])
+                Ptyp_constr "t" (src/expansion_context.mli[94,3372+25]..[94,3372+26])
+                []
+              core_type (src/expansion_context.mli[94,3372+30]..[94,3372+40])
+                Ptyp_constr "Location.t" (src/expansion_context.mli[94,3372+30]..[94,3372+40])
+                []
+            []
+        signature_item (src/expansion_context.mli[97,3493+2]..[97,3493+34])
+          Psig_value
+          value_description "code_path" (src/expansion_context.mli[97,3493+6]..[97,3493+15]) (src/expansion_context.mli[97,3493+2]..[97,3493+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[98,3528+2]..[104,3854+47])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[98,3528+2]..[104,3854+47])
+                    Pexp_constant PConst_string(" Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives ",(src/expansion_context.mli[98,3528+2]..[104,3854+47]),None)
+              ]
+            core_type (src/expansion_context.mli[97,3493+18]..[97,3493+34])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[97,3493+18]..[97,3493+19])
+                Ptyp_constr "t" (src/expansion_context.mli[97,3493+18]..[97,3493+19])
+                []
+              core_type (src/expansion_context.mli[97,3493+23]..[97,3493+34])
+                Ptyp_constr "Code_path.t" (src/expansion_context.mli[97,3493+23]..[97,3493+34])
+                []
+            []
+        signature_item (src/expansion_context.mli[106,3903+2]..[106,3903+30])
+          Psig_value
+          value_description "input_name" (src/expansion_context.mli[106,3903+6]..[106,3903+16]) (src/expansion_context.mli[106,3903+2]..[106,3903+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[107,3934+2]..[115,4338+33])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[107,3934+2]..[115,4338+33])
+                    Pexp_constant PConst_string(" Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] ",(src/expansion_context.mli[107,3934+2]..[115,4338+33]),None)
+              ]
+            core_type (src/expansion_context.mli[106,3903+19]..[106,3903+30])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[106,3903+19]..[106,3903+20])
+                Ptyp_constr "t" (src/expansion_context.mli[106,3903+19]..[106,3903+20])
+                []
+              core_type (src/expansion_context.mli[106,3903+24]..[106,3903+30])
+                Ptyp_constr "string" (src/expansion_context.mli[106,3903+24]..[106,3903+30])
+                []
+            []
+        signature_item (src/expansion_context.mli[117,4373+2]..[117,4373+29])
+          Psig_value
+          value_description "tool_name" (src/expansion_context.mli[117,4373+6]..[117,4373+15]) (src/expansion_context.mli[117,4373+2]..[117,4373+29])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[118,4403+2]..[119,4480+65])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[118,4403+2]..[119,4480+65])
+                    Pexp_constant PConst_string(" Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . ",(src/expansion_context.mli[118,4403+2]..[119,4480+65]),None)
+              ]
+            core_type (src/expansion_context.mli[117,4373+18]..[117,4373+29])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[117,4373+18]..[117,4373+19])
+                Ptyp_constr "t" (src/expansion_context.mli[117,4373+18]..[117,4373+19])
+                []
+              core_type (src/expansion_context.mli[117,4373+23]..[117,4373+29])
+                Ptyp_constr "string" (src/expansion_context.mli[117,4373+23]..[117,4373+29])
+                []
+            []
+        signature_item (src/expansion_context.mli[121,4547+2]..[121,4547+79])
+          Psig_value
+          value_description "with_loc_and_path" (src/expansion_context.mli[121,4547+6]..[121,4547+23]) (src/expansion_context.mli[121,4547+2]..[121,4547+79])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[122,4627+2]..[122,4627+51])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[122,4627+2]..[122,4627+51])
+                    Pexp_constant PConst_string(" Wrap a [fun ~loc ~path] into a [fun ~ctxt] ",(src/expansion_context.mli[122,4627+2]..[122,4627+51]),None)
+              ]
+            core_type (src/expansion_context.mli[121,4547+26]..[121,4547+79])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[121,4547+27]..[121,4547+62])
+                Ptyp_arrow
+                Labelled "loc"
+                core_type (src/expansion_context.mli[121,4547+31]..[121,4547+41])
+                  Ptyp_constr "Location.t" (src/expansion_context.mli[121,4547+31]..[121,4547+41])
+                  []
+                core_type (src/expansion_context.mli[121,4547+45]..[121,4547+62])
+                  Ptyp_arrow
+                  Labelled "path"
+                  core_type (src/expansion_context.mli[121,4547+50]..[121,4547+56])
+                    Ptyp_constr "string" (src/expansion_context.mli[121,4547+50]..[121,4547+56])
+                    []
+                  core_type (src/expansion_context.mli[121,4547+60]..[121,4547+62])
+                    Ptyp_var a
+              core_type (src/expansion_context.mli[121,4547+67]..[121,4547+79])
+                Ptyp_arrow
+                Labelled "ctxt"
+                core_type (src/expansion_context.mli[121,4547+72]..[121,4547+73])
+                  Ptyp_constr "t" (src/expansion_context.mli[121,4547+72]..[121,4547+73])
+                  []
+                core_type (src/expansion_context.mli[121,4547+77]..[121,4547+79])
+                  Ptyp_var a
+            []
+        signature_item (src/expansion_context.mli[124,4680+2]..[124,4680+24])
+          Psig_value
+          value_description "inline" (src/expansion_context.mli[124,4680+6]..[124,4680+12]) (src/expansion_context.mli[124,4680+2]..[124,4680+24])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[125,4705+2]..[125,4705+70])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[125,4705+2]..[125,4705+70])
+                    Pexp_constant PConst_string(" Whether the derived code is going to be inlined in the source ",(src/expansion_context.mli[125,4705+2]..[125,4705+70]),None)
+              ]
+            core_type (src/expansion_context.mli[124,4680+15]..[124,4680+24])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[124,4680+15]..[124,4680+16])
+                Ptyp_constr "t" (src/expansion_context.mli[124,4680+15]..[124,4680+16])
+                []
+              core_type (src/expansion_context.mli[124,4680+20]..[124,4680+24])
+                Ptyp_constr "bool" (src/expansion_context.mli[124,4680+20]..[124,4680+24])
+                []
+            []
+        signature_item (src/expansion_context.mli[127,4777+2]..[127,4777+9])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[127,4777+2]..[127,4777+9])
+              Pstr_eval
+              expression (src/expansion_context.mli[127,4777+2]..[127,4777+9])
+                Pexp_constant PConst_string("/*",(src/expansion_context.mli[127,4777+2]..[127,4777+9]),None)
+          ]
+        signature_item (src/expansion_context.mli[129,4788+2]..[129,4788+29])
+          Psig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[129,4788+2]..[129,4788+29])
+              Pstr_eval
+              expression (src/expansion_context.mli[129,4788+2]..[129,4788+29])
+                Pexp_constant PConst_string(" Undocumented section ",(src/expansion_context.mli[129,4788+2]..[129,4788+29]),None)
+          ]
+        signature_item (src/expansion_context.mli[131,4819+2]..[132,4832+74])
+          Psig_value
+          value_description "make" (src/expansion_context.mli[131,4819+6]..[131,4819+10]) (src/expansion_context.mli[131,4819+2]..[132,4832+74])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[133,4907+2]..[133,4907+81])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[133,4907+2]..[133,4907+81])
+                    Pexp_constant PConst_string(" Build a new expansion context with the given item location and code path ",(src/expansion_context.mli[133,4907+2]..[133,4907+81]),None)
+              ]
+            core_type (src/expansion_context.mli[132,4832+4]..[132,4832+74])
+              Ptyp_arrow
+              Labelled "derived_item_loc"
+              core_type (src/expansion_context.mli[132,4832+21]..[132,4832+31])
+                Ptyp_constr "Location.t" (src/expansion_context.mli[132,4832+21]..[132,4832+31])
+                []
+              core_type (src/expansion_context.mli[132,4832+35]..[132,4832+74])
+                Ptyp_arrow
+                Labelled "inline"
+                core_type (src/expansion_context.mli[132,4832+42]..[132,4832+46])
+                  Ptyp_constr "bool" (src/expansion_context.mli[132,4832+42]..[132,4832+46])
+                  []
+                core_type (src/expansion_context.mli[132,4832+50]..[132,4832+74])
+                  Ptyp_arrow
+                  Labelled "base"
+                  core_type (src/expansion_context.mli[132,4832+55]..[132,4832+61])
+                    Ptyp_constr "Base.t" (src/expansion_context.mli[132,4832+55]..[132,4832+61])
+                    []
+                  core_type (src/expansion_context.mli[132,4832+65]..[132,4832+74])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/expansion_context.mli[132,4832+65]..[132,4832+69])
+                      Ptyp_constr "unit" (src/expansion_context.mli[132,4832+65]..[132,4832+69])
+                      []
+                    core_type (src/expansion_context.mli[132,4832+73]..[132,4832+74])
+                      Ptyp_constr "t" (src/expansion_context.mli[132,4832+73]..[132,4832+74])
+                      []
+            []
+      ]
+]
+
+[@@@ocaml.text " The context given to rewriting rules when expanding. "]
+module Base :
+sig
+  type t[@@ocaml.doc
+          " Type for the location independent parts of the expansion context "]
+  val code_path : t -> Code_path.t[@@ocaml.doc
+                                    " Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives "]
+  val input_name : t -> string[@@ocaml.doc
+                                " Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] "]
+  val tool_name : t -> string[@@ocaml.doc
+                               " Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . "]
+  [@@@ocaml.text "/*"]
+  [@@@ocaml.text " Undocumented section "]
+  val top_level :
+    tool_name:string -> file_path:string -> input_name:string -> t[@@ocaml.doc
+                                                                    " Build a new base context at the top level of the given file with the given\n      calling tool name. "]
+  val enter_expr : t -> t[@@ocaml.doc
+                           " Proxy functions to update the wrapped code path. See code_path.mli for\n      details. "]
+  val enter_module : loc:Location.t -> string -> t -> t
+  val enter_value : loc:Location.t -> string -> t -> t
+end
+module Extension :
+sig
+  type t[@@ocaml.doc " Type of expansion contexts for extensions "]
+  val extension_point_loc : t -> Location.t[@@ocaml.doc
+                                             " Return the location of the extension point being expanded "]
+  val code_path : t -> Code_path.t[@@ocaml.doc
+                                    " Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives "]
+  val input_name : t -> string[@@ocaml.doc
+                                " Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] "]
+  val tool_name : t -> string[@@ocaml.doc
+                               " Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . "]
+  val with_loc_and_path :
+    (loc:Location.t -> path:string -> 'a) -> ctxt:t -> 'a[@@ocaml.doc
+                                                           " Wrap a [fun ~loc ~path] into a [fun ~ctxt] "]
+  [@@@ocaml.text "/*"]
+  [@@@ocaml.text " Undocumented section "]
+  val make : extension_point_loc:Location.t -> base:Base.t -> unit -> t
+  [@@ocaml.doc
+    " Build a new expansion context with the given extension point location and\n      base context "]
+end
+module Deriver :
+sig
+  type t[@@ocaml.doc " Type of expansion contexts for derivers "]
+  val derived_item_loc : t -> Location.t[@@ocaml.doc
+                                          " Return the location of the item to which the deriver is being applied "]
+  val code_path : t -> Code_path.t[@@ocaml.doc
+                                    " Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives "]
+  val input_name : t -> string[@@ocaml.doc
+                                " Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] "]
+  val tool_name : t -> string[@@ocaml.doc
+                               " Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . "]
+  val with_loc_and_path :
+    (loc:Location.t -> path:string -> 'a) -> ctxt:t -> 'a[@@ocaml.doc
+                                                           " Wrap a [fun ~loc ~path] into a [fun ~ctxt] "]
+  val inline : t -> bool[@@ocaml.doc
+                          " Whether the derived code is going to be inlined in the source "]
+  [@@@ocaml.text "/*"]
+  [@@@ocaml.text " Undocumented section "]
+  val make :
+    derived_item_loc:Location.t -> inline:bool -> base:Base.t -> unit -> t
+  [@@ocaml.doc
+    " Build a new expansion context with the given item location and code path "]
+end
+[
+  signature_item (src/expansion_context.mli[1,0+0]..src/expansion_context.mli[1,0+59])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_context.mli[1,0+0]..[1,0+59])
+        Pstr_eval
+        expression (src/expansion_context.mli[1,0+0]..[1,0+59])
+          Pexp_constant PConst_string(" The context given to rewriting rules when expanding. ",(src/expansion_context.mli[1,0+0]..[1,0+59]),None)
+    ]
+  signature_item (src/expansion_context.mli[3,61+0]..src/expansion_context.mli[45,1683+3])
+    Tsig_module "Base/175"
+    module_type (src/expansion_context.mli[3,61+14]..src/expansion_context.mli[45,1683+3])
+      Tmty_signature
+      [
+        signature_item (src/expansion_context.mli[4,79+2]..src/expansion_context.mli[4,79+8])
+          Tsig_type Rec
+          [
+            type_declaration t/120 (src/expansion_context.mli[4,79+2]..src/expansion_context.mli[4,79+8])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/expansion_context.mli[5,88+2]..[5,88+73])
+                    Pstr_eval
+                    expression (src/expansion_context.mli[5,88+2]..[5,88+73])
+                      Pexp_constant PConst_string(" Type for the location independent parts of the expansion context ",(src/expansion_context.mli[5,88+2]..[5,88+73]),None)
+                ]
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/expansion_context.mli[7,163+2]..src/expansion_context.mli[7,163+34])
+          Tsig_value
+          value_description code_path/136 (src/expansion_context.mli[7,163+2]..src/expansion_context.mli[7,163+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[8,198+2]..[14,524+47])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[8,198+2]..[14,524+47])
+                    Pexp_constant PConst_string(" Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives ",(src/expansion_context.mli[8,198+2]..[14,524+47]),None)
+              ]
+            core_type (src/expansion_context.mli[7,163+18]..src/expansion_context.mli[7,163+34])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[7,163+18]..src/expansion_context.mli[7,163+19])
+                Ttyp_constr "t/120"
+                []
+              core_type (src/expansion_context.mli[7,163+23]..src/expansion_context.mli[7,163+34])
+                Ttyp_constr "Ppxlib__!.Code_path.t"
+                []
+            []
+        signature_item (src/expansion_context.mli[16,573+2]..src/expansion_context.mli[16,573+30])
+          Tsig_value
+          value_description input_name/137 (src/expansion_context.mli[16,573+2]..src/expansion_context.mli[16,573+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[17,604+2]..[25,1008+33])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[17,604+2]..[25,1008+33])
+                    Pexp_constant PConst_string(" Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] ",(src/expansion_context.mli[17,604+2]..[25,1008+33]),None)
+              ]
+            core_type (src/expansion_context.mli[16,573+19]..src/expansion_context.mli[16,573+30])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[16,573+19]..src/expansion_context.mli[16,573+20])
+                Ttyp_constr "t/120"
+                []
+              core_type (src/expansion_context.mli[16,573+24]..src/expansion_context.mli[16,573+30])
+                Ttyp_constr "string/17!"
+                []
+            []
+        signature_item (src/expansion_context.mli[27,1043+2]..src/expansion_context.mli[27,1043+29])
+          Tsig_value
+          value_description tool_name/138 (src/expansion_context.mli[27,1043+2]..src/expansion_context.mli[27,1043+29])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[28,1073+2]..[29,1150+65])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[28,1073+2]..[29,1150+65])
+                    Pexp_constant PConst_string(" Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . ",(src/expansion_context.mli[28,1073+2]..[29,1150+65]),None)
+              ]
+            core_type (src/expansion_context.mli[27,1043+18]..src/expansion_context.mli[27,1043+29])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[27,1043+18]..src/expansion_context.mli[27,1043+19])
+                Ttyp_constr "t/120"
+                []
+              core_type (src/expansion_context.mli[27,1043+23]..src/expansion_context.mli[27,1043+29])
+                Ttyp_constr "string/17!"
+                []
+            []
+        signature_item (src/expansion_context.mli[31,1217+2]..src/expansion_context.mli[31,1217+9])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[31,1217+2]..[31,1217+9])
+              Pstr_eval
+              expression (src/expansion_context.mli[31,1217+2]..[31,1217+9])
+                Pexp_constant PConst_string("/*",(src/expansion_context.mli[31,1217+2]..[31,1217+9]),None)
+          ]
+        signature_item (src/expansion_context.mli[33,1228+2]..src/expansion_context.mli[33,1228+29])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[33,1228+2]..[33,1228+29])
+              Pstr_eval
+              expression (src/expansion_context.mli[33,1228+2]..[33,1228+29])
+                Pexp_constant PConst_string(" Undocumented section ",(src/expansion_context.mli[33,1228+2]..[33,1228+29]),None)
+          ]
+        signature_item (src/expansion_context.mli[35,1259+2]..src/expansion_context.mli[35,1259+80])
+          Tsig_value
+          value_description top_level/139 (src/expansion_context.mli[35,1259+2]..src/expansion_context.mli[35,1259+80])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[36,1340+2]..[37,1421+27])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[36,1340+2]..[37,1421+27])
+                    Pexp_constant PConst_string(" Build a new base context at the top level of the given file with the given\n      calling tool name. ",(src/expansion_context.mli[36,1340+2]..[37,1421+27]),None)
+              ]
+            core_type (src/expansion_context.mli[35,1259+18]..src/expansion_context.mli[35,1259+80])
+              Ttyp_arrow
+              Labelled "tool_name"
+              core_type (src/expansion_context.mli[35,1259+28]..src/expansion_context.mli[35,1259+34])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/expansion_context.mli[35,1259+38]..src/expansion_context.mli[35,1259+80])
+                Ttyp_arrow
+                Labelled "file_path"
+                core_type (src/expansion_context.mli[35,1259+48]..src/expansion_context.mli[35,1259+54])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/expansion_context.mli[35,1259+58]..src/expansion_context.mli[35,1259+80])
+                  Ttyp_arrow
+                  Labelled "input_name"
+                  core_type (src/expansion_context.mli[35,1259+69]..src/expansion_context.mli[35,1259+75])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/expansion_context.mli[35,1259+79]..src/expansion_context.mli[35,1259+80])
+                    Ttyp_constr "t/120"
+                    []
+            []
+        signature_item (src/expansion_context.mli[39,1450+2]..src/expansion_context.mli[39,1450+25])
+          Tsig_value
+          value_description enter_expr/140 (src/expansion_context.mli[39,1450+2]..src/expansion_context.mli[39,1450+25])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[40,1476+2]..[41,1553+17])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[40,1476+2]..[41,1553+17])
+                    Pexp_constant PConst_string(" Proxy functions to update the wrapped code path. See code_path.mli for\n      details. ",(src/expansion_context.mli[40,1476+2]..[41,1553+17]),None)
+              ]
+            core_type (src/expansion_context.mli[39,1450+19]..src/expansion_context.mli[39,1450+25])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[39,1450+19]..src/expansion_context.mli[39,1450+20])
+                Ttyp_constr "t/120"
+                []
+              core_type (src/expansion_context.mli[39,1450+24]..src/expansion_context.mli[39,1450+25])
+                Ttyp_constr "t/120"
+                []
+            []
+        signature_item (src/expansion_context.mli[43,1572+2]..src/expansion_context.mli[43,1572+55])
+          Tsig_value
+          value_description enter_module/173 (src/expansion_context.mli[43,1572+2]..src/expansion_context.mli[43,1572+55])
+            core_type (src/expansion_context.mli[43,1572+21]..src/expansion_context.mli[43,1572+55])
+              Ttyp_arrow
+              Labelled "loc"
+              core_type (src/expansion_context.mli[43,1572+25]..src/expansion_context.mli[43,1572+35])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/expansion_context.mli[43,1572+39]..src/expansion_context.mli[43,1572+55])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/expansion_context.mli[43,1572+39]..src/expansion_context.mli[43,1572+45])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/expansion_context.mli[43,1572+49]..src/expansion_context.mli[43,1572+55])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/expansion_context.mli[43,1572+49]..src/expansion_context.mli[43,1572+50])
+                    Ttyp_constr "t/120"
+                    []
+                  core_type (src/expansion_context.mli[43,1572+54]..src/expansion_context.mli[43,1572+55])
+                    Ttyp_constr "t/120"
+                    []
+            []
+        signature_item (src/expansion_context.mli[44,1628+2]..src/expansion_context.mli[44,1628+54])
+          Tsig_value
+          value_description enter_value/174 (src/expansion_context.mli[44,1628+2]..src/expansion_context.mli[44,1628+54])
+            core_type (src/expansion_context.mli[44,1628+20]..src/expansion_context.mli[44,1628+54])
+              Ttyp_arrow
+              Labelled "loc"
+              core_type (src/expansion_context.mli[44,1628+24]..src/expansion_context.mli[44,1628+34])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/expansion_context.mli[44,1628+38]..src/expansion_context.mli[44,1628+54])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/expansion_context.mli[44,1628+38]..src/expansion_context.mli[44,1628+44])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/expansion_context.mli[44,1628+48]..src/expansion_context.mli[44,1628+54])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/expansion_context.mli[44,1628+48]..src/expansion_context.mli[44,1628+49])
+                    Ttyp_constr "t/120"
+                    []
+                  core_type (src/expansion_context.mli[44,1628+53]..src/expansion_context.mli[44,1628+54])
+                    Ttyp_constr "t/120"
+                    []
+            []
+      ]
+  signature_item (src/expansion_context.mli[47,1688+0]..src/expansion_context.mli[88,3287+3])
+    Tsig_module "Extension/183"
+    module_type (src/expansion_context.mli[47,1688+19]..src/expansion_context.mli[88,3287+3])
+      Tmty_signature
+      [
+        signature_item (src/expansion_context.mli[48,1711+2]..src/expansion_context.mli[48,1711+8])
+          Tsig_type Rec
+          [
+            type_declaration t/176 (src/expansion_context.mli[48,1711+2]..src/expansion_context.mli[48,1711+8])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/expansion_context.mli[49,1720+2]..[49,1720+50])
+                    Pstr_eval
+                    expression (src/expansion_context.mli[49,1720+2]..[49,1720+50])
+                      Pexp_constant PConst_string(" Type of expansion contexts for extensions ",(src/expansion_context.mli[49,1720+2]..[49,1720+50]),None)
+                ]
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/expansion_context.mli[51,1772+2]..src/expansion_context.mli[51,1772+43])
+          Tsig_value
+          value_description extension_point_loc/177 (src/expansion_context.mli[51,1772+2]..src/expansion_context.mli[51,1772+43])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[52,1816+2]..[52,1816+66])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[52,1816+2]..[52,1816+66])
+                    Pexp_constant PConst_string(" Return the location of the extension point being expanded ",(src/expansion_context.mli[52,1816+2]..[52,1816+66]),None)
+              ]
+            core_type (src/expansion_context.mli[51,1772+28]..src/expansion_context.mli[51,1772+43])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[51,1772+28]..src/expansion_context.mli[51,1772+29])
+                Ttyp_constr "t/176"
+                []
+              core_type (src/expansion_context.mli[51,1772+33]..src/expansion_context.mli[51,1772+43])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+            []
+        signature_item (src/expansion_context.mli[54,1884+2]..src/expansion_context.mli[54,1884+34])
+          Tsig_value
+          value_description code_path/178 (src/expansion_context.mli[54,1884+2]..src/expansion_context.mli[54,1884+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[55,1919+2]..[61,2245+47])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[55,1919+2]..[61,2245+47])
+                    Pexp_constant PConst_string(" Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives ",(src/expansion_context.mli[55,1919+2]..[61,2245+47]),None)
+              ]
+            core_type (src/expansion_context.mli[54,1884+18]..src/expansion_context.mli[54,1884+34])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[54,1884+18]..src/expansion_context.mli[54,1884+19])
+                Ttyp_constr "t/176"
+                []
+              core_type (src/expansion_context.mli[54,1884+23]..src/expansion_context.mli[54,1884+34])
+                Ttyp_constr "Ppxlib__!.Code_path.t"
+                []
+            []
+        signature_item (src/expansion_context.mli[63,2294+2]..src/expansion_context.mli[63,2294+30])
+          Tsig_value
+          value_description input_name/179 (src/expansion_context.mli[63,2294+2]..src/expansion_context.mli[63,2294+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[64,2325+2]..[72,2729+33])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[64,2325+2]..[72,2729+33])
+                    Pexp_constant PConst_string(" Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] ",(src/expansion_context.mli[64,2325+2]..[72,2729+33]),None)
+              ]
+            core_type (src/expansion_context.mli[63,2294+19]..src/expansion_context.mli[63,2294+30])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[63,2294+19]..src/expansion_context.mli[63,2294+20])
+                Ttyp_constr "t/176"
+                []
+              core_type (src/expansion_context.mli[63,2294+24]..src/expansion_context.mli[63,2294+30])
+                Ttyp_constr "string/17!"
+                []
+            []
+        signature_item (src/expansion_context.mli[74,2764+2]..src/expansion_context.mli[74,2764+29])
+          Tsig_value
+          value_description tool_name/180 (src/expansion_context.mli[74,2764+2]..src/expansion_context.mli[74,2764+29])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[75,2794+2]..[76,2871+65])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[75,2794+2]..[76,2871+65])
+                    Pexp_constant PConst_string(" Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . ",(src/expansion_context.mli[75,2794+2]..[76,2871+65]),None)
+              ]
+            core_type (src/expansion_context.mli[74,2764+18]..src/expansion_context.mli[74,2764+29])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[74,2764+18]..src/expansion_context.mli[74,2764+19])
+                Ttyp_constr "t/176"
+                []
+              core_type (src/expansion_context.mli[74,2764+23]..src/expansion_context.mli[74,2764+29])
+                Ttyp_constr "string/17!"
+                []
+            []
+        signature_item (src/expansion_context.mli[78,2938+2]..src/expansion_context.mli[78,2938+79])
+          Tsig_value
+          value_description with_loc_and_path/181 (src/expansion_context.mli[78,2938+2]..src/expansion_context.mli[78,2938+79])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[79,3018+2]..[79,3018+51])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[79,3018+2]..[79,3018+51])
+                    Pexp_constant PConst_string(" Wrap a [fun ~loc ~path] into a [fun ~ctxt] ",(src/expansion_context.mli[79,3018+2]..[79,3018+51]),None)
+              ]
+            core_type (src/expansion_context.mli[78,2938+26]..src/expansion_context.mli[78,2938+79])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[78,2938+27]..src/expansion_context.mli[78,2938+62])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/expansion_context.mli[78,2938+31]..src/expansion_context.mli[78,2938+41])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/expansion_context.mli[78,2938+45]..src/expansion_context.mli[78,2938+62])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (src/expansion_context.mli[78,2938+50]..src/expansion_context.mli[78,2938+56])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/expansion_context.mli[78,2938+60]..src/expansion_context.mli[78,2938+62])
+                    Ttyp_var a
+              core_type (src/expansion_context.mli[78,2938+67]..src/expansion_context.mli[78,2938+79])
+                Ttyp_arrow
+                Labelled "ctxt"
+                core_type (src/expansion_context.mli[78,2938+72]..src/expansion_context.mli[78,2938+73])
+                  Ttyp_constr "t/176"
+                  []
+                core_type (src/expansion_context.mli[78,2938+77]..src/expansion_context.mli[78,2938+79])
+                  Ttyp_var a
+            []
+        signature_item (src/expansion_context.mli[81,3071+2]..src/expansion_context.mli[81,3071+9])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[81,3071+2]..[81,3071+9])
+              Pstr_eval
+              expression (src/expansion_context.mli[81,3071+2]..[81,3071+9])
+                Pexp_constant PConst_string("/*",(src/expansion_context.mli[81,3071+2]..[81,3071+9]),None)
+          ]
+        signature_item (src/expansion_context.mli[83,3082+2]..src/expansion_context.mli[83,3082+29])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[83,3082+2]..[83,3082+29])
+              Pstr_eval
+              expression (src/expansion_context.mli[83,3082+2]..[83,3082+29])
+                Pexp_constant PConst_string(" Undocumented section ",(src/expansion_context.mli[83,3082+2]..[83,3082+29]),None)
+          ]
+        signature_item (src/expansion_context.mli[85,3113+2]..src/expansion_context.mli[85,3113+71])
+          Tsig_value
+          value_description make/182 (src/expansion_context.mli[85,3113+2]..src/expansion_context.mli[85,3113+71])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[86,3185+2]..[87,3265+21])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[86,3185+2]..[87,3265+21])
+                    Pexp_constant PConst_string(" Build a new expansion context with the given extension point location and\n      base context ",(src/expansion_context.mli[86,3185+2]..[87,3265+21]),None)
+              ]
+            core_type (src/expansion_context.mli[85,3113+13]..src/expansion_context.mli[85,3113+71])
+              Ttyp_arrow
+              Labelled "extension_point_loc"
+              core_type (src/expansion_context.mli[85,3113+33]..src/expansion_context.mli[85,3113+43])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/expansion_context.mli[85,3113+47]..src/expansion_context.mli[85,3113+71])
+                Ttyp_arrow
+                Labelled "base"
+                core_type (src/expansion_context.mli[85,3113+52]..src/expansion_context.mli[85,3113+58])
+                  Ttyp_constr "Base/175.t"
+                  []
+                core_type (src/expansion_context.mli[85,3113+62]..src/expansion_context.mli[85,3113+71])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/expansion_context.mli[85,3113+62]..src/expansion_context.mli[85,3113+66])
+                    Ttyp_constr "unit/6!"
+                    []
+                  core_type (src/expansion_context.mli[85,3113+70]..src/expansion_context.mli[85,3113+71])
+                    Ttyp_constr "t/176"
+                    []
+            []
+      ]
+  signature_item (src/expansion_context.mli[90,3292+0]..src/expansion_context.mli[134,4989+3])
+    Tsig_module "Deriver/192"
+    module_type (src/expansion_context.mli[90,3292+17]..src/expansion_context.mli[134,4989+3])
+      Tmty_signature
+      [
+        signature_item (src/expansion_context.mli[91,3313+2]..src/expansion_context.mli[91,3313+8])
+          Tsig_type Rec
+          [
+            type_declaration t/184 (src/expansion_context.mli[91,3313+2]..src/expansion_context.mli[91,3313+8])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/expansion_context.mli[92,3322+2]..[92,3322+48])
+                    Pstr_eval
+                    expression (src/expansion_context.mli[92,3322+2]..[92,3322+48])
+                      Pexp_constant PConst_string(" Type of expansion contexts for derivers ",(src/expansion_context.mli[92,3322+2]..[92,3322+48]),None)
+                ]
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/expansion_context.mli[94,3372+2]..src/expansion_context.mli[94,3372+40])
+          Tsig_value
+          value_description derived_item_loc/185 (src/expansion_context.mli[94,3372+2]..src/expansion_context.mli[94,3372+40])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[95,3413+2]..[95,3413+78])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[95,3413+2]..[95,3413+78])
+                    Pexp_constant PConst_string(" Return the location of the item to which the deriver is being applied ",(src/expansion_context.mli[95,3413+2]..[95,3413+78]),None)
+              ]
+            core_type (src/expansion_context.mli[94,3372+25]..src/expansion_context.mli[94,3372+40])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[94,3372+25]..src/expansion_context.mli[94,3372+26])
+                Ttyp_constr "t/184"
+                []
+              core_type (src/expansion_context.mli[94,3372+30]..src/expansion_context.mli[94,3372+40])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+            []
+        signature_item (src/expansion_context.mli[97,3493+2]..src/expansion_context.mli[97,3493+34])
+          Tsig_value
+          value_description code_path/186 (src/expansion_context.mli[97,3493+2]..src/expansion_context.mli[97,3493+34])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[98,3528+2]..[104,3854+47])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[98,3528+2]..[104,3854+47])
+                    Pexp_constant PConst_string(" Return the code path for the given context In Driver, Deriving and\n      Extension, the context is initialized so that the [file_path] component of\n      the [code_path] is determined from the first location found in the input\n      AST. That means that:\n\n      - It's the empty string in empty structures or signatures\n      - It can be altered by line directives ",(src/expansion_context.mli[98,3528+2]..[104,3854+47]),None)
+              ]
+            core_type (src/expansion_context.mli[97,3493+18]..src/expansion_context.mli[97,3493+34])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[97,3493+18]..src/expansion_context.mli[97,3493+19])
+                Ttyp_constr "t/184"
+                []
+              core_type (src/expansion_context.mli[97,3493+23]..src/expansion_context.mli[97,3493+34])
+                Ttyp_constr "Ppxlib__!.Code_path.t"
+                []
+            []
+        signature_item (src/expansion_context.mli[106,3903+2]..src/expansion_context.mli[106,3903+30])
+          Tsig_value
+          value_description input_name/187 (src/expansion_context.mli[106,3903+2]..src/expansion_context.mli[106,3903+30])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[107,3934+2]..[115,4338+33])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[107,3934+2]..[115,4338+33])
+                    Pexp_constant PConst_string(" Return the input name for the given context. In Driver, Deriving and\n      Extension, the context argument is initialized so that the [input_name]\n      matches the input filename passed to the driver on the command line. That\n      means that:\n\n      - It has a value even for empty files\n      - It is not affected by line directives\n      - It is [\"_none_\"] when using [Driver.map_structure] or\n        [Driver.map_signature] ",(src/expansion_context.mli[107,3934+2]..[115,4338+33]),None)
+              ]
+            core_type (src/expansion_context.mli[106,3903+19]..src/expansion_context.mli[106,3903+30])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[106,3903+19]..src/expansion_context.mli[106,3903+20])
+                Ttyp_constr "t/184"
+                []
+              core_type (src/expansion_context.mli[106,3903+24]..src/expansion_context.mli[106,3903+30])
+                Ttyp_constr "string/17!"
+                []
+            []
+        signature_item (src/expansion_context.mli[117,4373+2]..src/expansion_context.mli[117,4373+29])
+          Tsig_value
+          value_description tool_name/188 (src/expansion_context.mli[117,4373+2]..src/expansion_context.mli[117,4373+29])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[118,4403+2]..[119,4480+65])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[118,4403+2]..[119,4480+65])
+                    Pexp_constant PConst_string(" Can be used within a ppx preprocessor to know which tool is calling it\n      [\"ocamlc\"], [\"ocamlopt\"], [\"ocamldep\"], [\"ocaml\"], ... . ",(src/expansion_context.mli[118,4403+2]..[119,4480+65]),None)
+              ]
+            core_type (src/expansion_context.mli[117,4373+18]..src/expansion_context.mli[117,4373+29])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[117,4373+18]..src/expansion_context.mli[117,4373+19])
+                Ttyp_constr "t/184"
+                []
+              core_type (src/expansion_context.mli[117,4373+23]..src/expansion_context.mli[117,4373+29])
+                Ttyp_constr "string/17!"
+                []
+            []
+        signature_item (src/expansion_context.mli[121,4547+2]..src/expansion_context.mli[121,4547+79])
+          Tsig_value
+          value_description with_loc_and_path/189 (src/expansion_context.mli[121,4547+2]..src/expansion_context.mli[121,4547+79])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[122,4627+2]..[122,4627+51])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[122,4627+2]..[122,4627+51])
+                    Pexp_constant PConst_string(" Wrap a [fun ~loc ~path] into a [fun ~ctxt] ",(src/expansion_context.mli[122,4627+2]..[122,4627+51]),None)
+              ]
+            core_type (src/expansion_context.mli[121,4547+26]..src/expansion_context.mli[121,4547+79])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[121,4547+27]..src/expansion_context.mli[121,4547+62])
+                Ttyp_arrow
+                Labelled "loc"
+                core_type (src/expansion_context.mli[121,4547+31]..src/expansion_context.mli[121,4547+41])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/expansion_context.mli[121,4547+45]..src/expansion_context.mli[121,4547+62])
+                  Ttyp_arrow
+                  Labelled "path"
+                  core_type (src/expansion_context.mli[121,4547+50]..src/expansion_context.mli[121,4547+56])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/expansion_context.mli[121,4547+60]..src/expansion_context.mli[121,4547+62])
+                    Ttyp_var a
+              core_type (src/expansion_context.mli[121,4547+67]..src/expansion_context.mli[121,4547+79])
+                Ttyp_arrow
+                Labelled "ctxt"
+                core_type (src/expansion_context.mli[121,4547+72]..src/expansion_context.mli[121,4547+73])
+                  Ttyp_constr "t/184"
+                  []
+                core_type (src/expansion_context.mli[121,4547+77]..src/expansion_context.mli[121,4547+79])
+                  Ttyp_var a
+            []
+        signature_item (src/expansion_context.mli[124,4680+2]..src/expansion_context.mli[124,4680+24])
+          Tsig_value
+          value_description inline/190 (src/expansion_context.mli[124,4680+2]..src/expansion_context.mli[124,4680+24])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[125,4705+2]..[125,4705+70])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[125,4705+2]..[125,4705+70])
+                    Pexp_constant PConst_string(" Whether the derived code is going to be inlined in the source ",(src/expansion_context.mli[125,4705+2]..[125,4705+70]),None)
+              ]
+            core_type (src/expansion_context.mli[124,4680+15]..src/expansion_context.mli[124,4680+24])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/expansion_context.mli[124,4680+15]..src/expansion_context.mli[124,4680+16])
+                Ttyp_constr "t/184"
+                []
+              core_type (src/expansion_context.mli[124,4680+20]..src/expansion_context.mli[124,4680+24])
+                Ttyp_constr "bool/5!"
+                []
+            []
+        signature_item (src/expansion_context.mli[127,4777+2]..src/expansion_context.mli[127,4777+9])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[127,4777+2]..[127,4777+9])
+              Pstr_eval
+              expression (src/expansion_context.mli[127,4777+2]..[127,4777+9])
+                Pexp_constant PConst_string("/*",(src/expansion_context.mli[127,4777+2]..[127,4777+9]),None)
+          ]
+        signature_item (src/expansion_context.mli[129,4788+2]..src/expansion_context.mli[129,4788+29])
+          Tsig_attribute "ocaml.text"
+          [
+            structure_item (src/expansion_context.mli[129,4788+2]..[129,4788+29])
+              Pstr_eval
+              expression (src/expansion_context.mli[129,4788+2]..[129,4788+29])
+                Pexp_constant PConst_string(" Undocumented section ",(src/expansion_context.mli[129,4788+2]..[129,4788+29]),None)
+          ]
+        signature_item (src/expansion_context.mli[131,4819+2]..src/expansion_context.mli[132,4832+74])
+          Tsig_value
+          value_description make/191 (src/expansion_context.mli[131,4819+2]..src/expansion_context.mli[132,4832+74])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/expansion_context.mli[133,4907+2]..[133,4907+81])
+                  Pstr_eval
+                  expression (src/expansion_context.mli[133,4907+2]..[133,4907+81])
+                    Pexp_constant PConst_string(" Build a new expansion context with the given item location and code path ",(src/expansion_context.mli[133,4907+2]..[133,4907+81]),None)
+              ]
+            core_type (src/expansion_context.mli[132,4832+4]..src/expansion_context.mli[132,4832+74])
+              Ttyp_arrow
+              Labelled "derived_item_loc"
+              core_type (src/expansion_context.mli[132,4832+21]..src/expansion_context.mli[132,4832+31])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/expansion_context.mli[132,4832+35]..src/expansion_context.mli[132,4832+74])
+                Ttyp_arrow
+                Labelled "inline"
+                core_type (src/expansion_context.mli[132,4832+42]..src/expansion_context.mli[132,4832+46])
+                  Ttyp_constr "bool/5!"
+                  []
+                core_type (src/expansion_context.mli[132,4832+50]..src/expansion_context.mli[132,4832+74])
+                  Ttyp_arrow
+                  Labelled "base"
+                  core_type (src/expansion_context.mli[132,4832+55]..src/expansion_context.mli[132,4832+61])
+                    Ttyp_constr "Base/175.t"
+                    []
+                  core_type (src/expansion_context.mli[132,4832+65]..src/expansion_context.mli[132,4832+74])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/expansion_context.mli[132,4832+65]..src/expansion_context.mli[132,4832+69])
+                      Ttyp_constr "unit/6!"
+                      []
+                    core_type (src/expansion_context.mli[132,4832+73]..src/expansion_context.mli[132,4832+74])
+                      Ttyp_constr "t/184"
+                      []
+            []
+      ]
+]
+

@@ -1,0 +1,20 @@
+0.381s  281MB 43.9MB 45.7MB src/ast_traverse.ml
+  0.001s 0.01MB ------ ------ parsing
+    0.001s 0.01MB ------ ------ parser
+  0.306s  195MB 38.7MB 40.5MB typing
+  0.005s 6.29MB 0.50MB 41.0MB transl
+  0.050s 41.1MB 3.79MB 44.8MB generate
+    0.001s 2.00MB 0.18MB 41.2MB cmm
+    0.029s 25.9MB 2.78MB 44.0MB compile_phrases
+      0.003s 4.00MB 0.56MB 41.7MB selection
+      0.001s ------ ------ ------ cse
+      0.004s 3.55MB 0.37MB 42.1MB liveness
+      0.002s 2.15MB 0.21MB 42.3MB spill
+      0.001s ------ ------ ------ split
+      0.014s 13.4MB 1.62MB 44.0MB regalloc
+      0.002s 2.36MB ------ ------ emit
+      0.001s 0.44MB ------ ------ other
+    0.007s ------ ------ ------ assemble
+    0.012s 13.2MB 0.82MB 44.8MB other
+  0.020s 39.1MB 0.90MB 45.7MB other
+0.008s 3.07MB 1.75MB ------ other

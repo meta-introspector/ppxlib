@@ -1,0 +1,22 @@
+0.123s  246MB 13.7MB 15.4MB ast/ast_helper_lite.ml
+  0.004s 4.40MB 0.78MB 2.47MB parsing
+    0.004s 4.40MB 0.78MB 2.47MB parser
+  0.051s 71.5MB 7.06MB 9.53MB typing
+  0.004s 8.34MB 0.31MB 9.85MB transl
+  0.042s 73.7MB 5.47MB 15.3MB generate
+    0.001s 0.54MB ------ ------ cmm
+    0.021s 41.4MB 4.00MB 13.8MB compile_phrases
+      0.002s 3.03MB 0.15MB 10.0MB selection
+      0.001s 2.00MB 0.21MB 10.2MB cse
+      0.003s 7.56MB 0.75MB 10.9MB liveness
+      0.001s 0.37MB ------ ------ deadcode
+      0.002s 4.72MB 0.25MB 11.2MB spill
+      0.002s 4.26MB 0.40MB 11.6MB split
+      0.005s 13.4MB 1.53MB 13.1MB regalloc
+      ------ 2.00MB 0.31MB 13.4MB linearize
+      0.001s 2.00MB 0.21MB 13.6MB emit
+      0.002s 2.00MB 0.15MB 13.8MB other
+    0.011s ------ ------ ------ assemble
+    0.009s 31.7MB 1.47MB 15.3MB other
+  0.023s 88.7MB 0.15MB 15.4MB other
+0.009s 3.02MB 1.69MB ------ other

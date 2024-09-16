@@ -1,0 +1,8 @@
+0.160s  124MB 23.7MB 23.7MB src/reconcile.ml
+  0.004s 2.90MB 1.57MB 1.57MB parsing
+    0.004s 2.90MB 1.57MB 1.57MB parser
+  0.137s 84.9MB 21.5MB 23.1MB typing
+  0.002s 4.01MB 0.15MB 23.2MB transl
+  0.005s 12.3MB 0.25MB 23.5MB generate
+  0.012s 20.2MB 0.25MB 23.7MB other
+0.008s ------ ------ ------ other

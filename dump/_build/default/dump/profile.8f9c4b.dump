@@ -1,0 +1,16 @@
+1.104s 72.6MB 8.25MB 8.25MB test/driver/exception_handling/whole_file_exception.exe
+  0.003s 2.00MB 0.09MB 0.09MB selection
+  0.001s 0.16MB ------ ------ polling
+  0.001s 2.00MB 0.09MB 0.18MB comballoc
+  0.003s 6.29MB 0.43MB 0.62MB cse
+  0.004s 6.15MB 0.43MB 1.06MB liveness
+  0.001s 2.00MB 0.18MB 1.25MB deadcode
+  0.004s 4.00MB 0.37MB 1.62MB spill
+  0.001s ------ ------ ------ split
+  0.036s 34.1MB 2.31MB 3.93MB regalloc
+  0.001s 0.26MB ------ ------ linearize
+  0.001s ------ ------ ------ emit
+  0.014s ------ ------ ------ assemble
+  1.009s ------ ------ ------ c-linker
+  0.026s 15.6MB 4.31MB 8.25MB other
+0.007s ------ ------ ------ other

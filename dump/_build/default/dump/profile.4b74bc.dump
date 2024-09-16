@@ -1,0 +1,8 @@
+0.217s  126MB 30.3MB 30.3MB src/utils.ml
+  0.004s 2.90MB 1.57MB 1.57MB parsing
+    0.004s 2.90MB 1.57MB 1.57MB parser
+  0.198s 97.2MB 28.3MB 29.8MB typing
+  0.002s 2.00MB 0.03MB 29.9MB transl
+  0.005s 10.1MB 0.21MB 30.1MB generate
+  0.009s 14.1MB 0.18MB 30.3MB other
+0.007s ------ ------ ------ other

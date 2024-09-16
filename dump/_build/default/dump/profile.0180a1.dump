@@ -1,0 +1,6 @@
+0.303s 70.7MB 25.3MB 25.3MB test/deriving/inline/foo-deriver/ppx_foo_deriver.ml
+  0.287s 65.7MB 23.7MB 23.7MB typing
+  0.001s ------ ------ ------ transl
+  0.003s 2.02MB 0.06MB 23.8MB generate
+  0.012s 3.00MB 1.53MB 25.3MB other
+0.008s ------ ------ ------ other

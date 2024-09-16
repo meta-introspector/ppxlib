@@ -1,0 +1,2304 @@
+[
+  structure_item (src/ast_traverse0.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (src/ast_traverse0.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (src/ast_traverse0.ml[1,0+6]..[1,0+12])
+  structure_item (src/ast_traverse0.ml[3,14+0]..[7,96+5])
+    Pstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[3,14+0]..[7,96+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "map" (src/ast_traverse0.ml[3,14+6]..[3,14+9])
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[4,26+2]..[7,96+5])
+            Pcl_structure
+            class_structure
+              pattern (src/ast_traverse0.ml[4,26+8]..[4,26+8]) ghost
+                Ppat_any
+              [
+                class_field (src/ast_traverse0.ml[5,35+4]..[5,35+40])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[5,35+12]..[5,35+40])
+                      Pcl_constr "Ppxlib_traverse_builtins.map" (src/ast_traverse0.ml[5,35+12]..[5,35+40])
+                      []
+                    None
+                class_field (src/ast_traverse0.ml[6,76+4]..[6,76+19])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[6,76+12]..[6,76+19])
+                      Pcl_constr "Ast.map" (src/ast_traverse0.ml[6,76+12]..[6,76+19])
+                      []
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[9,103+0]..[13,188+5])
+    Pstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[9,103+0]..[13,188+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "iter" (src/ast_traverse0.ml[9,103+6]..[9,103+10])
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[10,116+2]..[13,188+5])
+            Pcl_structure
+            class_structure
+              pattern (src/ast_traverse0.ml[10,116+8]..[10,116+8]) ghost
+                Ppat_any
+              [
+                class_field (src/ast_traverse0.ml[11,125+4]..[11,125+41])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[11,125+12]..[11,125+41])
+                      Pcl_constr "Ppxlib_traverse_builtins.iter" (src/ast_traverse0.ml[11,125+12]..[11,125+41])
+                      []
+                    None
+                class_field (src/ast_traverse0.ml[12,167+4]..[12,167+20])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[12,167+12]..[12,167+20])
+                      Pcl_constr "Ast.iter" (src/ast_traverse0.ml[12,167+12]..[12,167+20])
+                      []
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[15,195+0]..[19,301+5])
+    Pstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[15,195+0]..[19,301+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[15,195+7]..[15,195+11])
+              Ptyp_var acc
+          ]
+        pci_name = "fold" (src/ast_traverse0.ml[15,195+13]..[15,195+17])
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[16,215+2]..[19,301+5])
+            Pcl_structure
+            class_structure
+              pattern (src/ast_traverse0.ml[16,215+8]..[16,215+8]) ghost
+                Ppat_any
+              [
+                class_field (src/ast_traverse0.ml[17,224+4]..[17,224+48])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[17,224+12]..[17,224+48])
+                      Pcl_constr "Ppxlib_traverse_builtins.fold" (src/ast_traverse0.ml[17,224+19]..[17,224+48])
+                      [
+                        core_type (src/ast_traverse0.ml[17,224+13]..[17,224+17])
+                          Ptyp_var acc
+                      ]
+                    None
+                class_field (src/ast_traverse0.ml[18,273+4]..[18,273+27])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[18,273+12]..[18,273+27])
+                      Pcl_constr "Ast.fold" (src/ast_traverse0.ml[18,273+19]..[18,273+27])
+                      [
+                        core_type (src/ast_traverse0.ml[18,273+13]..[18,273+17])
+                          Ptyp_var acc
+                      ]
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[21,308+0]..[25,426+5])
+    Pstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[21,308+0]..[25,426+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[21,308+7]..[21,308+11])
+              Ptyp_var acc
+          ]
+        pci_name = "fold_map" (src/ast_traverse0.ml[21,308+13]..[21,308+21])
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[22,332+2]..[25,426+5])
+            Pcl_structure
+            class_structure
+              pattern (src/ast_traverse0.ml[22,332+8]..[22,332+8]) ghost
+                Ppat_any
+              [
+                class_field (src/ast_traverse0.ml[23,341+4]..[23,341+52])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[23,341+12]..[23,341+52])
+                      Pcl_constr "Ppxlib_traverse_builtins.fold_map" (src/ast_traverse0.ml[23,341+19]..[23,341+52])
+                      [
+                        core_type (src/ast_traverse0.ml[23,341+13]..[23,341+17])
+                          Ptyp_var acc
+                      ]
+                    None
+                class_field (src/ast_traverse0.ml[24,394+4]..[24,394+31])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[24,394+12]..[24,394+31])
+                      Pcl_constr "Ast.fold_map" (src/ast_traverse0.ml[24,394+19]..[24,394+31])
+                      [
+                        core_type (src/ast_traverse0.ml[24,394+13]..[24,394+17])
+                          Ptyp_var acc
+                      ]
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[27,433+0]..[31,575+5])
+    Pstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[27,433+0]..[31,575+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[27,433+7]..[27,433+11])
+              Ptyp_var ctx
+          ]
+        pci_name = "map_with_context" (src/ast_traverse0.ml[27,433+13]..[27,433+29])
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[28,465+2]..[31,575+5])
+            Pcl_structure
+            class_structure
+              pattern (src/ast_traverse0.ml[28,465+8]..[28,465+8]) ghost
+                Ppat_any
+              [
+                class_field (src/ast_traverse0.ml[29,474+4]..[29,474+60])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[29,474+12]..[29,474+60])
+                      Pcl_constr "Ppxlib_traverse_builtins.map_with_context" (src/ast_traverse0.ml[29,474+19]..[29,474+60])
+                      [
+                        core_type (src/ast_traverse0.ml[29,474+13]..[29,474+17])
+                          Ptyp_var ctx
+                      ]
+                    None
+                class_field (src/ast_traverse0.ml[30,535+4]..[30,535+39])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[30,535+12]..[30,535+39])
+                      Pcl_constr "Ast.map_with_context" (src/ast_traverse0.ml[30,535+19]..[30,535+39])
+                      [
+                        core_type (src/ast_traverse0.ml[30,535+13]..[30,535+17])
+                          Ptyp_var ctx
+                      ]
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[33,582+0]..[37,696+5])
+    Pstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[33,582+0]..[37,696+5])
+        pci_virt = Virtual
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[33,582+15]..[33,582+19])
+              Ptyp_var res
+          ]
+        pci_name = "lift" (src/ast_traverse0.ml[33,582+21]..[33,582+25])
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[34,610+2]..[37,696+5])
+            Pcl_structure
+            class_structure
+              pattern (src/ast_traverse0.ml[34,610+8]..[34,610+8]) ghost
+                Ppat_any
+              [
+                class_field (src/ast_traverse0.ml[35,619+4]..[35,619+48])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[35,619+12]..[35,619+48])
+                      Pcl_constr "Ppxlib_traverse_builtins.lift" (src/ast_traverse0.ml[35,619+19]..[35,619+48])
+                      [
+                        core_type (src/ast_traverse0.ml[35,619+13]..[35,619+17])
+                          Ptyp_var res
+                      ]
+                    None
+                class_field (src/ast_traverse0.ml[36,668+4]..[36,668+27])
+                  Pcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[36,668+12]..[36,668+27])
+                      Pcl_constr "Ast.lift" (src/ast_traverse0.ml[36,668+19]..[36,668+27])
+                      [
+                        core_type (src/ast_traverse0.ml[36,668+13]..[36,668+17])
+                          Ptyp_var res
+                      ]
+                    None
+              ]
+    ]
+]
+
+open! Import
+class map = object inherit  Ppxlib_traverse_builtins.map inherit  Ast.map end
+class iter =
+  object inherit  Ppxlib_traverse_builtins.iter inherit  Ast.iter end
+class ['acc] fold =
+  object
+    inherit  ['acc] Ppxlib_traverse_builtins.fold
+    inherit  ['acc] Ast.fold
+  end
+class ['acc] fold_map =
+  object
+    inherit  ['acc] Ppxlib_traverse_builtins.fold_map
+    inherit  ['acc] Ast.fold_map
+  end
+class ['ctx] map_with_context =
+  object
+    inherit  ['ctx] Ppxlib_traverse_builtins.map_with_context
+    inherit  ['ctx] Ast.map_with_context
+  end
+class virtual ['res] lift =
+  object
+    inherit  ['res] Ppxlib_traverse_builtins.lift
+    inherit  ['res] Ast.lift
+  end
+[
+  structure_item (src/ast_traverse0.ml[1,0+0]..src/ast_traverse0.ml[1,0+12])
+    Tstr_open Override
+    module_expr (src/ast_traverse0.ml[1,0+6]..src/ast_traverse0.ml[1,0+12])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/ast_traverse0.ml[3,14+0]..src/ast_traverse0.ml[7,96+5])
+    Tstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[3,14+0]..src/ast_traverse0.ml[7,96+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "map"
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[4,26+2]..src/ast_traverse0.ml[7,96+5])
+            Tcl_structure
+            class_structure
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-1/555"
+                pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Tpat_alias "selfpat-*/554"
+                  pattern (src/ast_traverse0.ml[4,26+8]..src/ast_traverse0.ml[4,26+8]) ghost
+                    Tpat_any
+              [
+                class_field (src/ast_traverse0.ml[5,35+4]..src/ast_traverse0.ml[5,35+40])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[5,35+12]..src/ast_traverse0.ml[5,35+40])
+                      class_expr (src/ast_traverse0.ml[5,35+12]..src/ast_traverse0.ml[5,35+40])
+                        Tcl_ident "Ppxlib_traverse_builtins!.map"
+                        []
+                    None
+                class_field (src/ast_traverse0.ml[6,76+4]..src/ast_traverse0.ml[6,76+19])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[6,76+12]..src/ast_traverse0.ml[6,76+19])
+                      class_expr (src/ast_traverse0.ml[6,76+12]..src/ast_traverse0.ml[6,76+19])
+                        Tcl_ident "Ppxlib__!.Import.Ast.map"
+                        []
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[9,103+0]..src/ast_traverse0.ml[13,188+5])
+    Tstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[9,103+0]..src/ast_traverse0.ml[13,188+5])
+        pci_virt = Concrete
+        pci_params =
+          []
+        pci_name = "iter"
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[10,116+2]..src/ast_traverse0.ml[13,188+5])
+            Tcl_structure
+            class_structure
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-2/1041"
+                pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Tpat_alias "selfpat-*/1040"
+                  pattern (src/ast_traverse0.ml[10,116+8]..src/ast_traverse0.ml[10,116+8]) ghost
+                    Tpat_any
+              [
+                class_field (src/ast_traverse0.ml[11,125+4]..src/ast_traverse0.ml[11,125+41])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[11,125+12]..src/ast_traverse0.ml[11,125+41])
+                      class_expr (src/ast_traverse0.ml[11,125+12]..src/ast_traverse0.ml[11,125+41])
+                        Tcl_ident "Ppxlib_traverse_builtins!.iter"
+                        []
+                    None
+                class_field (src/ast_traverse0.ml[12,167+4]..src/ast_traverse0.ml[12,167+20])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[12,167+12]..src/ast_traverse0.ml[12,167+20])
+                      class_expr (src/ast_traverse0.ml[12,167+12]..src/ast_traverse0.ml[12,167+20])
+                        Tcl_ident "Ppxlib__!.Import.Ast.iter"
+                        []
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[15,195+0]..src/ast_traverse0.ml[19,301+5])
+    Tstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[15,195+0]..src/ast_traverse0.ml[19,301+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[15,195+7]..src/ast_traverse0.ml[15,195+11])
+              Ttyp_var acc
+          ]
+        pci_name = "fold"
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[16,215+2]..src/ast_traverse0.ml[19,301+5])
+            Tcl_structure
+            class_structure
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-3/1244"
+                pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Tpat_alias "selfpat-*/1243"
+                  pattern (src/ast_traverse0.ml[16,215+8]..src/ast_traverse0.ml[16,215+8]) ghost
+                    Tpat_any
+              [
+                class_field (src/ast_traverse0.ml[17,224+4]..src/ast_traverse0.ml[17,224+48])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[17,224+12]..src/ast_traverse0.ml[17,224+48])
+                      class_expr (src/ast_traverse0.ml[17,224+12]..src/ast_traverse0.ml[17,224+48])
+                        Tcl_ident "Ppxlib_traverse_builtins!.fold"
+                        [
+                          core_type (src/ast_traverse0.ml[17,224+13]..src/ast_traverse0.ml[17,224+17])
+                            Ttyp_var acc
+                        ]
+                    None
+                class_field (src/ast_traverse0.ml[18,273+4]..src/ast_traverse0.ml[18,273+27])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[18,273+12]..src/ast_traverse0.ml[18,273+27])
+                      class_expr (src/ast_traverse0.ml[18,273+12]..src/ast_traverse0.ml[18,273+27])
+                        Tcl_ident "Ppxlib__!.Import.Ast.fold"
+                        [
+                          core_type (src/ast_traverse0.ml[18,273+13]..src/ast_traverse0.ml[18,273+17])
+                            Ttyp_var acc
+                        ]
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[21,308+0]..src/ast_traverse0.ml[25,426+5])
+    Tstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[21,308+0]..src/ast_traverse0.ml[25,426+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[21,308+7]..src/ast_traverse0.ml[21,308+11])
+              Ttyp_var acc
+          ]
+        pci_name = "fold_map"
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[22,332+2]..src/ast_traverse0.ml[25,426+5])
+            Tcl_structure
+            class_structure
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-4/1447"
+                pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Tpat_alias "selfpat-*/1446"
+                  pattern (src/ast_traverse0.ml[22,332+8]..src/ast_traverse0.ml[22,332+8]) ghost
+                    Tpat_any
+              [
+                class_field (src/ast_traverse0.ml[23,341+4]..src/ast_traverse0.ml[23,341+52])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[23,341+12]..src/ast_traverse0.ml[23,341+52])
+                      class_expr (src/ast_traverse0.ml[23,341+12]..src/ast_traverse0.ml[23,341+52])
+                        Tcl_ident "Ppxlib_traverse_builtins!.fold_map"
+                        [
+                          core_type (src/ast_traverse0.ml[23,341+13]..src/ast_traverse0.ml[23,341+17])
+                            Ttyp_var acc
+                        ]
+                    None
+                class_field (src/ast_traverse0.ml[24,394+4]..src/ast_traverse0.ml[24,394+31])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[24,394+12]..src/ast_traverse0.ml[24,394+31])
+                      class_expr (src/ast_traverse0.ml[24,394+12]..src/ast_traverse0.ml[24,394+31])
+                        Tcl_ident "Ppxlib__!.Import.Ast.fold_map"
+                        [
+                          core_type (src/ast_traverse0.ml[24,394+13]..src/ast_traverse0.ml[24,394+17])
+                            Ttyp_var acc
+                        ]
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[27,433+0]..src/ast_traverse0.ml[31,575+5])
+    Tstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[27,433+0]..src/ast_traverse0.ml[31,575+5])
+        pci_virt = Concrete
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[27,433+7]..src/ast_traverse0.ml[27,433+11])
+              Ttyp_var ctx
+          ]
+        pci_name = "map_with_context"
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[28,465+2]..src/ast_traverse0.ml[31,575+5])
+            Tcl_structure
+            class_structure
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-5/1650"
+                pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Tpat_alias "selfpat-*/1649"
+                  pattern (src/ast_traverse0.ml[28,465+8]..src/ast_traverse0.ml[28,465+8]) ghost
+                    Tpat_any
+              [
+                class_field (src/ast_traverse0.ml[29,474+4]..src/ast_traverse0.ml[29,474+60])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[29,474+12]..src/ast_traverse0.ml[29,474+60])
+                      class_expr (src/ast_traverse0.ml[29,474+12]..src/ast_traverse0.ml[29,474+60])
+                        Tcl_ident "Ppxlib_traverse_builtins!.map_with_context"
+                        [
+                          core_type (src/ast_traverse0.ml[29,474+13]..src/ast_traverse0.ml[29,474+17])
+                            Ttyp_var ctx
+                        ]
+                    None
+                class_field (src/ast_traverse0.ml[30,535+4]..src/ast_traverse0.ml[30,535+39])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[30,535+12]..src/ast_traverse0.ml[30,535+39])
+                      class_expr (src/ast_traverse0.ml[30,535+12]..src/ast_traverse0.ml[30,535+39])
+                        Tcl_ident "Ppxlib__!.Import.Ast.map_with_context"
+                        [
+                          core_type (src/ast_traverse0.ml[30,535+13]..src/ast_traverse0.ml[30,535+17])
+                            Ttyp_var ctx
+                        ]
+                    None
+              ]
+    ]
+  structure_item (src/ast_traverse0.ml[33,582+0]..src/ast_traverse0.ml[37,696+5])
+    Tstr_class
+    [
+      class_declaration (src/ast_traverse0.ml[33,582+0]..src/ast_traverse0.ml[37,696+5])
+        pci_virt = Virtual
+        pci_params =
+          [
+            core_type (src/ast_traverse0.ml[33,582+15]..src/ast_traverse0.ml[33,582+19])
+              Ttyp_var res
+          ]
+        pci_name = "lift"
+        pci_expr =
+          class_expr (src/ast_traverse0.ml[34,610+2]..src/ast_traverse0.ml[37,696+5])
+            Tcl_structure
+            class_structure
+              pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Tpat_alias "selfpat-6/1853"
+                pattern (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                  Tpat_alias "selfpat-*/1852"
+                  pattern (src/ast_traverse0.ml[34,610+8]..src/ast_traverse0.ml[34,610+8]) ghost
+                    Tpat_any
+              [
+                class_field (src/ast_traverse0.ml[35,619+4]..src/ast_traverse0.ml[35,619+48])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[35,619+12]..src/ast_traverse0.ml[35,619+48])
+                      class_expr (src/ast_traverse0.ml[35,619+12]..src/ast_traverse0.ml[35,619+48])
+                        Tcl_ident "Ppxlib_traverse_builtins!.lift"
+                        [
+                          core_type (src/ast_traverse0.ml[35,619+13]..src/ast_traverse0.ml[35,619+17])
+                            Ttyp_var res
+                        ]
+                    None
+                class_field (src/ast_traverse0.ml[36,668+4]..src/ast_traverse0.ml[36,668+27])
+                  Tcf_inherit Fresh
+                    class_expr (src/ast_traverse0.ml[36,668+12]..src/ast_traverse0.ml[36,668+27])
+                      class_expr (src/ast_traverse0.ml[36,668+12]..src/ast_traverse0.ml[36,668+27])
+                        Tcl_ident "Ppxlib__!.Import.Ast.lift"
+                        [
+                          core_type (src/ast_traverse0.ml[36,668+13]..src/ast_traverse0.ml[36,668+17])
+                            Ttyp_var res
+                        ]
+                    None
+              ]
+    ]
+]
+
+(let
+  (shared/3016 =a
+     [0:
+      #"tuple" #"string" #"record" #"option" #"list" #"int" #"constr" #"char"
+      #"bool"]
+   shared/3018 =a [0: #"list" #"option"]
+   shared/3019 =a
+     [0:
+      #"unit" #"tuple" #"string" #"record" #"other" #"nativeint" #"int64"
+      #"int32" #"int" #"float" #"constr" #"char" #"bool" #"array"]
+   shared/3022 =a
+     [0:
+      #"with_constraint" #"virtual_flag" #"variance" #"value_description"
+      #"value_binding" #"unit" #"type_kind" #"type_extension"
+      #"type_exception" #"type_declaration" #"tuple" #"toplevel_phrase"
+      #"toplevel_directive" #"structure_item_desc" #"structure_item"
+      #"structure" #"string" #"signature_item_desc" #"signature_item"
+      #"signature" #"row_field_desc" #"row_field" #"record" #"rec_flag"
+      #"private_flag" #"position" #"payload" #"pattern_desc" #"pattern"
+      #"package_type" #"override_flag" #"other" #"option" #"open_infos"
+      #"open_description" #"open_declaration" #"object_field_desc"
+      #"object_field" #"nativeint" #"mutable_flag" #"module_type_desc"
+      #"module_type_declaration" #"module_type" #"module_substitution"
+      #"module_expr_desc" #"module_expr" #"module_declaration"
+      #"module_binding" #"longident_loc" #"longident" #"location_stack"
+      #"location" #"loc" #"list" #"letop" #"label_declaration" #"label"
+      #"int64" #"int32" #"int" #"injectivity" #"include_infos"
+      #"include_description" #"include_declaration" #"functor_parameter"
+      #"float" #"extension_constructor_kind" #"extension_constructor"
+      #"extension" #"expression_desc" #"expression"
+      #"directive_argument_desc" #"directive_argument" #"direction_flag"
+      #"core_type_desc" #"core_type" #"constructor_declaration"
+      #"constructor_arguments" #"constr" #"constant" #"closed_flag"
+      #"class_type_field_desc" #"class_type_field" #"class_type_desc"
+      #"class_type_declaration" #"class_type" #"class_structure"
+      #"class_signature" #"class_infos" #"class_field_kind"
+      #"class_field_desc" #"class_field" #"class_expr_desc" #"class_expr"
+      #"class_description" #"class_declaration" #"char" #"cases" #"case"
+      #"bool" #"binding_op" #"attributes" #"attribute" #"array" #"arg_label"
+      #"*dummy method*"]
+   shared/2927 =a
+     [0:
+      #"bool" #"cases" #"case" #"char" #"value_binding"
+      #"extension_constructor_kind" #"core_type" #"structure" #"list"
+      #"label_declaration" #"module_binding" #"position"
+      #"toplevel_directive" #"directive_argument" #"object_field_desc"
+      #"class_type_field_desc" #"open_infos" #"pattern_desc"
+      #"signature_item" #"extension_constructor" #"toplevel_phrase"
+      #"extension" #"location" #"variance" #"package_type" #"virtual_flag"
+      #"module_type_desc" #"rec_flag" #"payload" #"type_exception" #"label"
+      #"letop" #"location_stack" #"value_description" #"module_declaration"
+      #"class_type_declaration" #"longident_loc" #"closed_flag"
+      #"directive_argument_desc" #"attribute" #"class_infos"
+      #"signature_item_desc" #"int" #"loc" #"row_field_desc" #"override_flag"
+      #"structure_item_desc" #"class_field_desc" #"binding_op"
+      #"module_expr_desc" #"class_signature" #"type_extension"
+      #"class_field_kind" #"module_type_declaration" #"arg_label"
+      #"row_field" #"longident" #"string" #"pattern" #"include_description"
+      #"signature" #"class_type_field" #"attributes" #"open_description"
+      #"with_constraint" #"include_declaration" #"class_type_desc"
+      #"private_flag" #"injectivity" #"open_declaration" #"object_field"
+      #"array" #"constant" #"class_expr" #"functor_parameter"
+      #"direction_flag" #"core_type_desc" #"type_declaration"
+      #"constructor_declaration" #"option" #"type_kind" #"module_expr"
+      #"module_substitution" #"class_description" #"expression" #"class_type"
+      #"structure_item" #"include_infos" #"class_declaration" #"module_type"
+      #"class_expr_desc" #"class_structure" #"mutable_flag"
+      #"expression_desc" #"constructor_arguments" #"class_field"]
+   shared/2917 =a [0: #"string" #"option" #"list" #"int" #"char" #"bool"]
+   shared/2919 =a
+     [0: #"array" #"bool" #"char" #"int" #"list" #"option" #"string"]
+   shared/2922 =a
+     [0:
+      #"with_constraint" #"virtual_flag" #"variance" #"value_description"
+      #"value_binding" #"type_kind" #"type_extension" #"type_exception"
+      #"type_declaration" #"toplevel_phrase" #"toplevel_directive"
+      #"structure_item_desc" #"structure_item" #"structure" #"string"
+      #"signature_item_desc" #"signature_item" #"signature" #"row_field_desc"
+      #"row_field" #"rec_flag" #"private_flag" #"position" #"payload"
+      #"pattern_desc" #"pattern" #"package_type" #"override_flag" #"option"
+      #"open_infos" #"open_description" #"open_declaration"
+      #"object_field_desc" #"object_field" #"mutable_flag"
+      #"module_type_desc" #"module_type_declaration" #"module_type"
+      #"module_substitution" #"module_expr_desc" #"module_expr"
+      #"module_declaration" #"module_binding" #"longident_loc" #"longident"
+      #"location_stack" #"location" #"loc" #"list" #"letop"
+      #"label_declaration" #"label" #"int" #"injectivity" #"include_infos"
+      #"include_description" #"include_declaration" #"functor_parameter"
+      #"extension_constructor_kind" #"extension_constructor" #"extension"
+      #"expression_desc" #"expression" #"directive_argument_desc"
+      #"directive_argument" #"direction_flag" #"core_type_desc" #"core_type"
+      #"constructor_declaration" #"constructor_arguments" #"constant"
+      #"closed_flag" #"class_type_field_desc" #"class_type_field"
+      #"class_type_desc" #"class_type_declaration" #"class_type"
+      #"class_structure" #"class_signature" #"class_infos"
+      #"class_field_kind" #"class_field_desc" #"class_field"
+      #"class_expr_desc" #"class_expr" #"class_description"
+      #"class_declaration" #"char" #"cases" #"case" #"bool" #"binding_op"
+      #"attributes" #"attribute" #"array" #"arg_label" #"*dummy method*"]
+   shared/2916 =a
+     [0:
+      #"arg_label" #"attribute" #"attributes" #"binding_op" #"case" #"cases"
+      #"class_declaration" #"class_description" #"class_expr"
+      #"class_expr_desc" #"class_field" #"class_field_desc"
+      #"class_field_kind" #"class_infos" #"class_signature"
+      #"class_structure" #"class_type" #"class_type_declaration"
+      #"class_type_desc" #"class_type_field" #"class_type_field_desc"
+      #"closed_flag" #"constant" #"constructor_arguments"
+      #"constructor_declaration" #"core_type" #"core_type_desc"
+      #"direction_flag" #"directive_argument" #"directive_argument_desc"
+      #"expression" #"expression_desc" #"extension" #"extension_constructor"
+      #"extension_constructor_kind" #"functor_parameter"
+      #"include_declaration" #"include_description" #"include_infos"
+      #"injectivity" #"label" #"label_declaration" #"letop" #"loc"
+      #"location" #"location_stack" #"longident" #"longident_loc"
+      #"module_binding" #"module_declaration" #"module_expr"
+      #"module_expr_desc" #"module_substitution" #"module_type"
+      #"module_type_declaration" #"module_type_desc" #"mutable_flag"
+      #"object_field" #"object_field_desc" #"open_declaration"
+      #"open_description" #"open_infos" #"override_flag" #"package_type"
+      #"pattern" #"pattern_desc" #"payload" #"position" #"private_flag"
+      #"rec_flag" #"row_field" #"row_field_desc" #"signature"
+      #"signature_item" #"signature_item_desc" #"structure" #"structure_item"
+      #"structure_item_desc" #"toplevel_directive" #"toplevel_phrase"
+      #"type_declaration" #"type_exception" #"type_extension" #"type_kind"
+      #"value_binding" #"value_description" #"variance" #"virtual_flag"
+      #"with_constraint"])
+  (seq
+    (letrec
+      (map/553
+         (let
+           (map_tables/2894 =o (makemutable 0 0 0 0)
+            map_init/2924 =
+              (function class/2898
+                (let
+                  (ids/2921 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2898
+                       shared/2922)
+                   with_constraint/1035 =o (field_mut 0 ids/2921)
+                   virtual_flag/1034 =o (field_mut 1 ids/2921)
+                   variance/1033 =o (field_mut 2 ids/2921)
+                   value_description/1032 =o (field_mut 3 ids/2921)
+                   value_binding/1031 =o (field_mut 4 ids/2921)
+                   type_kind/1030 =o (field_mut 5 ids/2921)
+                   type_extension/1029 =o (field_mut 6 ids/2921)
+                   type_exception/1028 =o (field_mut 7 ids/2921)
+                   type_declaration/1027 =o (field_mut 8 ids/2921)
+                   toplevel_phrase/1026 =o (field_mut 9 ids/2921)
+                   toplevel_directive/1025 =o (field_mut 10 ids/2921)
+                   structure_item_desc/1024 =o (field_mut 11 ids/2921)
+                   structure_item/1023 =o (field_mut 12 ids/2921)
+                   structure/1022 =o (field_mut 13 ids/2921)
+                   string/1021 =o (field_mut 14 ids/2921)
+                   signature_item_desc/1020 =o (field_mut 15 ids/2921)
+                   signature_item/1019 =o (field_mut 16 ids/2921)
+                   signature/1018 =o (field_mut 17 ids/2921)
+                   row_field_desc/1017 =o (field_mut 18 ids/2921)
+                   row_field/1016 =o (field_mut 19 ids/2921)
+                   rec_flag/1015 =o (field_mut 20 ids/2921)
+                   private_flag/1014 =o (field_mut 21 ids/2921)
+                   position/1013 =o (field_mut 22 ids/2921)
+                   payload/1012 =o (field_mut 23 ids/2921)
+                   pattern_desc/1011 =o (field_mut 24 ids/2921)
+                   pattern/1010 =o (field_mut 25 ids/2921)
+                   package_type/1009 =o (field_mut 26 ids/2921)
+                   override_flag/1008 =o (field_mut 27 ids/2921)
+                   option/1007 =o (field_mut 28 ids/2921)
+                   open_infos/1006 =o (field_mut 29 ids/2921)
+                   open_description/1005 =o (field_mut 30 ids/2921)
+                   open_declaration/1004 =o (field_mut 31 ids/2921)
+                   object_field_desc/1003 =o (field_mut 32 ids/2921)
+                   object_field/1002 =o (field_mut 33 ids/2921)
+                   mutable_flag/1001 =o (field_mut 34 ids/2921)
+                   module_type_desc/1000 =o (field_mut 35 ids/2921)
+                   module_type_declaration/999 =o (field_mut 36 ids/2921)
+                   module_type/998 =o (field_mut 37 ids/2921)
+                   module_substitution/997 =o (field_mut 38 ids/2921)
+                   module_expr_desc/996 =o (field_mut 39 ids/2921)
+                   module_expr/995 =o (field_mut 40 ids/2921)
+                   module_declaration/994 =o (field_mut 41 ids/2921)
+                   module_binding/993 =o (field_mut 42 ids/2921)
+                   longident_loc/992 =o (field_mut 43 ids/2921)
+                   longident/991 =o (field_mut 44 ids/2921)
+                   location_stack/990 =o (field_mut 45 ids/2921)
+                   location/989 =o (field_mut 46 ids/2921)
+                   loc/988 =o (field_mut 47 ids/2921)
+                   list/987 =o (field_mut 48 ids/2921)
+                   letop/986 =o (field_mut 49 ids/2921)
+                   label_declaration/985 =o (field_mut 50 ids/2921)
+                   label/984 =o (field_mut 51 ids/2921)
+                   int/983 =o (field_mut 52 ids/2921)
+                   injectivity/982 =o (field_mut 53 ids/2921)
+                   include_infos/981 =o (field_mut 54 ids/2921)
+                   include_description/980 =o (field_mut 55 ids/2921)
+                   include_declaration/979 =o (field_mut 56 ids/2921)
+                   functor_parameter/978 =o (field_mut 57 ids/2921)
+                   extension_constructor_kind/977 =o (field_mut 58 ids/2921)
+                   extension_constructor/976 =o (field_mut 59 ids/2921)
+                   extension/975 =o (field_mut 60 ids/2921)
+                   expression_desc/974 =o (field_mut 61 ids/2921)
+                   expression/973 =o (field_mut 62 ids/2921)
+                   directive_argument_desc/972 =o (field_mut 63 ids/2921)
+                   directive_argument/971 =o (field_mut 64 ids/2921)
+                   direction_flag/970 =o (field_mut 65 ids/2921)
+                   core_type_desc/969 =o (field_mut 66 ids/2921)
+                   core_type/968 =o (field_mut 67 ids/2921)
+                   constructor_declaration/967 =o (field_mut 68 ids/2921)
+                   constructor_arguments/966 =o (field_mut 69 ids/2921)
+                   constant/965 =o (field_mut 70 ids/2921)
+                   closed_flag/964 =o (field_mut 71 ids/2921)
+                   class_type_field_desc/963 =o (field_mut 72 ids/2921)
+                   class_type_field/962 =o (field_mut 73 ids/2921)
+                   class_type_desc/961 =o (field_mut 74 ids/2921)
+                   class_type_declaration/960 =o (field_mut 75 ids/2921)
+                   class_type/959 =o (field_mut 76 ids/2921)
+                   class_structure/958 =o (field_mut 77 ids/2921)
+                   class_signature/957 =o (field_mut 78 ids/2921)
+                   class_infos/956 =o (field_mut 79 ids/2921)
+                   class_field_kind/955 =o (field_mut 80 ids/2921)
+                   class_field_desc/954 =o (field_mut 81 ids/2921)
+                   class_field/953 =o (field_mut 82 ids/2921)
+                   class_expr_desc/952 =o (field_mut 83 ids/2921)
+                   class_expr/951 =o (field_mut 84 ids/2921)
+                   class_description/950 =o (field_mut 85 ids/2921)
+                   class_declaration/949 =o (field_mut 86 ids/2921)
+                   char/948 =o (field_mut 87 ids/2921)
+                   cases/947 =o (field_mut 88 ids/2921)
+                   case/946 =o (field_mut 89 ids/2921)
+                   bool/945 =o (field_mut 90 ids/2921)
+                   binding_op/944 =o (field_mut 91 ids/2921)
+                   attributes/943 =o (field_mut 92 ids/2921)
+                   attribute/942 =o (field_mut 93 ids/2921)
+                   array/941 =o (field_mut 94 ids/2921)
+                   arg_label/940 =o (field_mut 95 ids/2921)
+                   *dummy method*/939 =o (field_mut 96 ids/2921)
+                   inh/2920 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2898 0 0 shared/2919
+                       (field_imm 1 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2903 =o (field_mut 0 inh/2920)
+                   array/602 =o (field_mut 1 inh/2920)
+                   bool/603 =o (field_mut 2 inh/2920)
+                   char/604 =o (field_mut 3 inh/2920)
+                   int/605 =o (field_mut 4 inh/2920)
+                   list/606 =o (field_mut 5 inh/2920)
+                   option/607 =o (field_mut 6 inh/2920)
+                   string/608 =o (field_mut 7 inh/2920)
+                   inh/2918 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2898 0 shared/2917 shared/2916
+                       (field_imm 0 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2902 =o (field_mut 0 inh/2918)
+                   arg_label/850 =o (field_mut 1 inh/2918)
+                   attribute/851 =o (field_mut 2 inh/2918)
+                   attributes/852 =o (field_mut 3 inh/2918)
+                   binding_op/853 =o (field_mut 4 inh/2918)
+                   case/854 =o (field_mut 5 inh/2918)
+                   cases/855 =o (field_mut 6 inh/2918)
+                   class_declaration/856 =o (field_mut 7 inh/2918)
+                   class_description/857 =o (field_mut 8 inh/2918)
+                   class_expr/858 =o (field_mut 9 inh/2918)
+                   class_expr_desc/859 =o (field_mut 10 inh/2918)
+                   class_field/860 =o (field_mut 11 inh/2918)
+                   class_field_desc/861 =o (field_mut 12 inh/2918)
+                   class_field_kind/862 =o (field_mut 13 inh/2918)
+                   class_infos/863 =o (field_mut 14 inh/2918)
+                   class_signature/864 =o (field_mut 15 inh/2918)
+                   class_structure/865 =o (field_mut 16 inh/2918)
+                   class_type/866 =o (field_mut 17 inh/2918)
+                   class_type_declaration/867 =o (field_mut 18 inh/2918)
+                   class_type_desc/868 =o (field_mut 19 inh/2918)
+                   class_type_field/869 =o (field_mut 20 inh/2918)
+                   class_type_field_desc/870 =o (field_mut 21 inh/2918)
+                   closed_flag/871 =o (field_mut 22 inh/2918)
+                   constant/872 =o (field_mut 23 inh/2918)
+                   constructor_arguments/873 =o (field_mut 24 inh/2918)
+                   constructor_declaration/874 =o (field_mut 25 inh/2918)
+                   core_type/875 =o (field_mut 26 inh/2918)
+                   core_type_desc/876 =o (field_mut 27 inh/2918)
+                   direction_flag/877 =o (field_mut 28 inh/2918)
+                   directive_argument/878 =o (field_mut 29 inh/2918)
+                   directive_argument_desc/879 =o (field_mut 30 inh/2918)
+                   expression/880 =o (field_mut 31 inh/2918)
+                   expression_desc/881 =o (field_mut 32 inh/2918)
+                   extension/882 =o (field_mut 33 inh/2918)
+                   extension_constructor/883 =o (field_mut 34 inh/2918)
+                   extension_constructor_kind/884 =o (field_mut 35 inh/2918)
+                   functor_parameter/885 =o (field_mut 36 inh/2918)
+                   include_declaration/886 =o (field_mut 37 inh/2918)
+                   include_description/887 =o (field_mut 38 inh/2918)
+                   include_infos/888 =o (field_mut 39 inh/2918)
+                   injectivity/889 =o (field_mut 40 inh/2918)
+                   label/890 =o (field_mut 41 inh/2918)
+                   label_declaration/891 =o (field_mut 42 inh/2918)
+                   letop/892 =o (field_mut 43 inh/2918)
+                   loc/893 =o (field_mut 44 inh/2918)
+                   location/894 =o (field_mut 45 inh/2918)
+                   location_stack/895 =o (field_mut 46 inh/2918)
+                   longident/896 =o (field_mut 47 inh/2918)
+                   longident_loc/897 =o (field_mut 48 inh/2918)
+                   module_binding/898 =o (field_mut 49 inh/2918)
+                   module_declaration/899 =o (field_mut 50 inh/2918)
+                   module_expr/900 =o (field_mut 51 inh/2918)
+                   module_expr_desc/901 =o (field_mut 52 inh/2918)
+                   module_substitution/902 =o (field_mut 53 inh/2918)
+                   module_type/903 =o (field_mut 54 inh/2918)
+                   module_type_declaration/904 =o (field_mut 55 inh/2918)
+                   module_type_desc/905 =o (field_mut 56 inh/2918)
+                   mutable_flag/906 =o (field_mut 57 inh/2918)
+                   object_field/907 =o (field_mut 58 inh/2918)
+                   object_field_desc/908 =o (field_mut 59 inh/2918)
+                   open_declaration/909 =o (field_mut 60 inh/2918)
+                   open_description/910 =o (field_mut 61 inh/2918)
+                   open_infos/911 =o (field_mut 62 inh/2918)
+                   override_flag/912 =o (field_mut 63 inh/2918)
+                   package_type/913 =o (field_mut 64 inh/2918)
+                   pattern/914 =o (field_mut 65 inh/2918)
+                   pattern_desc/915 =o (field_mut 66 inh/2918)
+                   payload/916 =o (field_mut 67 inh/2918)
+                   position/917 =o (field_mut 68 inh/2918)
+                   private_flag/918 =o (field_mut 69 inh/2918)
+                   rec_flag/919 =o (field_mut 70 inh/2918)
+                   row_field/920 =o (field_mut 71 inh/2918)
+                   row_field_desc/921 =o (field_mut 72 inh/2918)
+                   signature/922 =o (field_mut 73 inh/2918)
+                   signature_item/923 =o (field_mut 74 inh/2918)
+                   signature_item_desc/924 =o (field_mut 75 inh/2918)
+                   structure/925 =o (field_mut 76 inh/2918)
+                   structure_item/926 =o (field_mut 77 inh/2918)
+                   structure_item_desc/927 =o (field_mut 78 inh/2918)
+                   toplevel_directive/928 =o (field_mut 79 inh/2918)
+                   toplevel_phrase/929 =o (field_mut 80 inh/2918)
+                   type_declaration/930 =o (field_mut 81 inh/2918)
+                   type_exception/931 =o (field_mut 82 inh/2918)
+                   type_extension/932 =o (field_mut 83 inh/2918)
+                   type_kind/933 =o (field_mut 84 inh/2918)
+                   value_binding/934 =o (field_mut 85 inh/2918)
+                   value_description/935 =o (field_mut 86 inh/2918)
+                   variance/936 =o (field_mut 87 inh/2918)
+                   virtual_flag/937 =o (field_mut 88 inh/2918)
+                   with_constraint/938 =o (field_mut 89 inh/2918))
+                  (function env/2900 self/2899
+                    (let
+                      (self/2901 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2899 class/2898))
+                      (seq
+                        (seq (apply obj_init/2903 self/2901)
+                          (apply obj_init/2902 self/2901))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2899 self/2901 class/2898)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             map_init/2924)))
+      (setfield_ptr(root-init) 0 (global Ppxlib__Ast_traverse0!) map/553))
+    (letrec
+      (iter/1039
+         (let
+           (iter_tables/2930 =o (makemutable 0 0 0 0)
+            iter_init/2944 =
+              (function class/2934
+                (let
+                  (ids/2942 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2934
+                       shared/2922)
+                   with_constraint/1238 =o (field_mut 0 ids/2942)
+                   virtual_flag/1237 =o (field_mut 1 ids/2942)
+                   variance/1236 =o (field_mut 2 ids/2942)
+                   value_description/1235 =o (field_mut 3 ids/2942)
+                   value_binding/1234 =o (field_mut 4 ids/2942)
+                   type_kind/1233 =o (field_mut 5 ids/2942)
+                   type_extension/1232 =o (field_mut 6 ids/2942)
+                   type_exception/1231 =o (field_mut 7 ids/2942)
+                   type_declaration/1230 =o (field_mut 8 ids/2942)
+                   toplevel_phrase/1229 =o (field_mut 9 ids/2942)
+                   toplevel_directive/1228 =o (field_mut 10 ids/2942)
+                   structure_item_desc/1227 =o (field_mut 11 ids/2942)
+                   structure_item/1226 =o (field_mut 12 ids/2942)
+                   structure/1225 =o (field_mut 13 ids/2942)
+                   string/1224 =o (field_mut 14 ids/2942)
+                   signature_item_desc/1223 =o (field_mut 15 ids/2942)
+                   signature_item/1222 =o (field_mut 16 ids/2942)
+                   signature/1221 =o (field_mut 17 ids/2942)
+                   row_field_desc/1220 =o (field_mut 18 ids/2942)
+                   row_field/1219 =o (field_mut 19 ids/2942)
+                   rec_flag/1218 =o (field_mut 20 ids/2942)
+                   private_flag/1217 =o (field_mut 21 ids/2942)
+                   position/1216 =o (field_mut 22 ids/2942)
+                   payload/1215 =o (field_mut 23 ids/2942)
+                   pattern_desc/1214 =o (field_mut 24 ids/2942)
+                   pattern/1213 =o (field_mut 25 ids/2942)
+                   package_type/1212 =o (field_mut 26 ids/2942)
+                   override_flag/1211 =o (field_mut 27 ids/2942)
+                   option/1210 =o (field_mut 28 ids/2942)
+                   open_infos/1209 =o (field_mut 29 ids/2942)
+                   open_description/1208 =o (field_mut 30 ids/2942)
+                   open_declaration/1207 =o (field_mut 31 ids/2942)
+                   object_field_desc/1206 =o (field_mut 32 ids/2942)
+                   object_field/1205 =o (field_mut 33 ids/2942)
+                   mutable_flag/1204 =o (field_mut 34 ids/2942)
+                   module_type_desc/1203 =o (field_mut 35 ids/2942)
+                   module_type_declaration/1202 =o (field_mut 36 ids/2942)
+                   module_type/1201 =o (field_mut 37 ids/2942)
+                   module_substitution/1200 =o (field_mut 38 ids/2942)
+                   module_expr_desc/1199 =o (field_mut 39 ids/2942)
+                   module_expr/1198 =o (field_mut 40 ids/2942)
+                   module_declaration/1197 =o (field_mut 41 ids/2942)
+                   module_binding/1196 =o (field_mut 42 ids/2942)
+                   longident_loc/1195 =o (field_mut 43 ids/2942)
+                   longident/1194 =o (field_mut 44 ids/2942)
+                   location_stack/1193 =o (field_mut 45 ids/2942)
+                   location/1192 =o (field_mut 46 ids/2942)
+                   loc/1191 =o (field_mut 47 ids/2942)
+                   list/1190 =o (field_mut 48 ids/2942)
+                   letop/1189 =o (field_mut 49 ids/2942)
+                   label_declaration/1188 =o (field_mut 50 ids/2942)
+                   label/1187 =o (field_mut 51 ids/2942)
+                   int/1186 =o (field_mut 52 ids/2942)
+                   injectivity/1185 =o (field_mut 53 ids/2942)
+                   include_infos/1184 =o (field_mut 54 ids/2942)
+                   include_description/1183 =o (field_mut 55 ids/2942)
+                   include_declaration/1182 =o (field_mut 56 ids/2942)
+                   functor_parameter/1181 =o (field_mut 57 ids/2942)
+                   extension_constructor_kind/1180 =o (field_mut 58 ids/2942)
+                   extension_constructor/1179 =o (field_mut 59 ids/2942)
+                   extension/1178 =o (field_mut 60 ids/2942)
+                   expression_desc/1177 =o (field_mut 61 ids/2942)
+                   expression/1176 =o (field_mut 62 ids/2942)
+                   directive_argument_desc/1175 =o (field_mut 63 ids/2942)
+                   directive_argument/1174 =o (field_mut 64 ids/2942)
+                   direction_flag/1173 =o (field_mut 65 ids/2942)
+                   core_type_desc/1172 =o (field_mut 66 ids/2942)
+                   core_type/1171 =o (field_mut 67 ids/2942)
+                   constructor_declaration/1170 =o (field_mut 68 ids/2942)
+                   constructor_arguments/1169 =o (field_mut 69 ids/2942)
+                   constant/1168 =o (field_mut 70 ids/2942)
+                   closed_flag/1167 =o (field_mut 71 ids/2942)
+                   class_type_field_desc/1166 =o (field_mut 72 ids/2942)
+                   class_type_field/1165 =o (field_mut 73 ids/2942)
+                   class_type_desc/1164 =o (field_mut 74 ids/2942)
+                   class_type_declaration/1163 =o (field_mut 75 ids/2942)
+                   class_type/1162 =o (field_mut 76 ids/2942)
+                   class_structure/1161 =o (field_mut 77 ids/2942)
+                   class_signature/1160 =o (field_mut 78 ids/2942)
+                   class_infos/1159 =o (field_mut 79 ids/2942)
+                   class_field_kind/1158 =o (field_mut 80 ids/2942)
+                   class_field_desc/1157 =o (field_mut 81 ids/2942)
+                   class_field/1156 =o (field_mut 82 ids/2942)
+                   class_expr_desc/1155 =o (field_mut 83 ids/2942)
+                   class_expr/1154 =o (field_mut 84 ids/2942)
+                   class_description/1153 =o (field_mut 85 ids/2942)
+                   class_declaration/1152 =o (field_mut 86 ids/2942)
+                   char/1151 =o (field_mut 87 ids/2942)
+                   cases/1150 =o (field_mut 88 ids/2942)
+                   case/1149 =o (field_mut 89 ids/2942)
+                   bool/1148 =o (field_mut 90 ids/2942)
+                   binding_op/1147 =o (field_mut 91 ids/2942)
+                   attributes/1146 =o (field_mut 92 ids/2942)
+                   attribute/1145 =o (field_mut 93 ids/2942)
+                   array/1144 =o (field_mut 94 ids/2942)
+                   arg_label/1143 =o (field_mut 95 ids/2942)
+                   *dummy method*/1142 =o (field_mut 96 ids/2942)
+                   inh/2941 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2934 0 0 shared/2919
+                       (field_imm 2 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2939 =o (field_mut 0 inh/2941)
+                   array/1046 =o (field_mut 1 inh/2941)
+                   bool/1047 =o (field_mut 2 inh/2941)
+                   char/1048 =o (field_mut 3 inh/2941)
+                   int/1049 =o (field_mut 4 inh/2941)
+                   list/1050 =o (field_mut 5 inh/2941)
+                   option/1051 =o (field_mut 6 inh/2941)
+                   string/1052 =o (field_mut 7 inh/2941)
+                   inh/2940 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2934 0 shared/2917 shared/2916
+                       (field_imm 1 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2938 =o (field_mut 0 inh/2940)
+                   arg_label/1053 =o (field_mut 1 inh/2940)
+                   attribute/1054 =o (field_mut 2 inh/2940)
+                   attributes/1055 =o (field_mut 3 inh/2940)
+                   binding_op/1056 =o (field_mut 4 inh/2940)
+                   case/1057 =o (field_mut 5 inh/2940)
+                   cases/1058 =o (field_mut 6 inh/2940)
+                   class_declaration/1059 =o (field_mut 7 inh/2940)
+                   class_description/1060 =o (field_mut 8 inh/2940)
+                   class_expr/1061 =o (field_mut 9 inh/2940)
+                   class_expr_desc/1062 =o (field_mut 10 inh/2940)
+                   class_field/1063 =o (field_mut 11 inh/2940)
+                   class_field_desc/1064 =o (field_mut 12 inh/2940)
+                   class_field_kind/1065 =o (field_mut 13 inh/2940)
+                   class_infos/1066 =o (field_mut 14 inh/2940)
+                   class_signature/1067 =o (field_mut 15 inh/2940)
+                   class_structure/1068 =o (field_mut 16 inh/2940)
+                   class_type/1069 =o (field_mut 17 inh/2940)
+                   class_type_declaration/1070 =o (field_mut 18 inh/2940)
+                   class_type_desc/1071 =o (field_mut 19 inh/2940)
+                   class_type_field/1072 =o (field_mut 20 inh/2940)
+                   class_type_field_desc/1073 =o (field_mut 21 inh/2940)
+                   closed_flag/1074 =o (field_mut 22 inh/2940)
+                   constant/1075 =o (field_mut 23 inh/2940)
+                   constructor_arguments/1076 =o (field_mut 24 inh/2940)
+                   constructor_declaration/1077 =o (field_mut 25 inh/2940)
+                   core_type/1078 =o (field_mut 26 inh/2940)
+                   core_type_desc/1079 =o (field_mut 27 inh/2940)
+                   direction_flag/1080 =o (field_mut 28 inh/2940)
+                   directive_argument/1081 =o (field_mut 29 inh/2940)
+                   directive_argument_desc/1082 =o (field_mut 30 inh/2940)
+                   expression/1083 =o (field_mut 31 inh/2940)
+                   expression_desc/1084 =o (field_mut 32 inh/2940)
+                   extension/1085 =o (field_mut 33 inh/2940)
+                   extension_constructor/1086 =o (field_mut 34 inh/2940)
+                   extension_constructor_kind/1087 =o (field_mut 35 inh/2940)
+                   functor_parameter/1088 =o (field_mut 36 inh/2940)
+                   include_declaration/1089 =o (field_mut 37 inh/2940)
+                   include_description/1090 =o (field_mut 38 inh/2940)
+                   include_infos/1091 =o (field_mut 39 inh/2940)
+                   injectivity/1092 =o (field_mut 40 inh/2940)
+                   label/1093 =o (field_mut 41 inh/2940)
+                   label_declaration/1094 =o (field_mut 42 inh/2940)
+                   letop/1095 =o (field_mut 43 inh/2940)
+                   loc/1096 =o (field_mut 44 inh/2940)
+                   location/1097 =o (field_mut 45 inh/2940)
+                   location_stack/1098 =o (field_mut 46 inh/2940)
+                   longident/1099 =o (field_mut 47 inh/2940)
+                   longident_loc/1100 =o (field_mut 48 inh/2940)
+                   module_binding/1101 =o (field_mut 49 inh/2940)
+                   module_declaration/1102 =o (field_mut 50 inh/2940)
+                   module_expr/1103 =o (field_mut 51 inh/2940)
+                   module_expr_desc/1104 =o (field_mut 52 inh/2940)
+                   module_substitution/1105 =o (field_mut 53 inh/2940)
+                   module_type/1106 =o (field_mut 54 inh/2940)
+                   module_type_declaration/1107 =o (field_mut 55 inh/2940)
+                   module_type_desc/1108 =o (field_mut 56 inh/2940)
+                   mutable_flag/1109 =o (field_mut 57 inh/2940)
+                   object_field/1110 =o (field_mut 58 inh/2940)
+                   object_field_desc/1111 =o (field_mut 59 inh/2940)
+                   open_declaration/1112 =o (field_mut 60 inh/2940)
+                   open_description/1113 =o (field_mut 61 inh/2940)
+                   open_infos/1114 =o (field_mut 62 inh/2940)
+                   override_flag/1115 =o (field_mut 63 inh/2940)
+                   package_type/1116 =o (field_mut 64 inh/2940)
+                   pattern/1117 =o (field_mut 65 inh/2940)
+                   pattern_desc/1118 =o (field_mut 66 inh/2940)
+                   payload/1119 =o (field_mut 67 inh/2940)
+                   position/1120 =o (field_mut 68 inh/2940)
+                   private_flag/1121 =o (field_mut 69 inh/2940)
+                   rec_flag/1122 =o (field_mut 70 inh/2940)
+                   row_field/1123 =o (field_mut 71 inh/2940)
+                   row_field_desc/1124 =o (field_mut 72 inh/2940)
+                   signature/1125 =o (field_mut 73 inh/2940)
+                   signature_item/1126 =o (field_mut 74 inh/2940)
+                   signature_item_desc/1127 =o (field_mut 75 inh/2940)
+                   structure/1128 =o (field_mut 76 inh/2940)
+                   structure_item/1129 =o (field_mut 77 inh/2940)
+                   structure_item_desc/1130 =o (field_mut 78 inh/2940)
+                   toplevel_directive/1131 =o (field_mut 79 inh/2940)
+                   toplevel_phrase/1132 =o (field_mut 80 inh/2940)
+                   type_declaration/1133 =o (field_mut 81 inh/2940)
+                   type_exception/1134 =o (field_mut 82 inh/2940)
+                   type_extension/1135 =o (field_mut 83 inh/2940)
+                   type_kind/1136 =o (field_mut 84 inh/2940)
+                   value_binding/1137 =o (field_mut 85 inh/2940)
+                   value_description/1138 =o (field_mut 86 inh/2940)
+                   variance/1139 =o (field_mut 87 inh/2940)
+                   virtual_flag/1140 =o (field_mut 88 inh/2940)
+                   with_constraint/1141 =o (field_mut 89 inh/2940))
+                  (function env/2936 self/2935
+                    (let
+                      (self/2937 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2935 class/2934))
+                      (seq
+                        (seq (apply obj_init/2939 self/2937)
+                          (apply obj_init/2938 self/2937))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2935 self/2937 class/2934)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             iter_init/2944)))
+      (setfield_ptr(root-init) 1 (global Ppxlib__Ast_traverse0!) iter/1039))
+    (letrec
+      (fold/1242
+         (let
+           (fold_tables/2949 =o (makemutable 0 0 0 0)
+            fold_init/2963 =
+              (function class/2953
+                (let
+                  (ids/2961 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2953
+                       shared/2922)
+                   with_constraint/1441 =o (field_mut 0 ids/2961)
+                   virtual_flag/1440 =o (field_mut 1 ids/2961)
+                   variance/1439 =o (field_mut 2 ids/2961)
+                   value_description/1438 =o (field_mut 3 ids/2961)
+                   value_binding/1437 =o (field_mut 4 ids/2961)
+                   type_kind/1436 =o (field_mut 5 ids/2961)
+                   type_extension/1435 =o (field_mut 6 ids/2961)
+                   type_exception/1434 =o (field_mut 7 ids/2961)
+                   type_declaration/1433 =o (field_mut 8 ids/2961)
+                   toplevel_phrase/1432 =o (field_mut 9 ids/2961)
+                   toplevel_directive/1431 =o (field_mut 10 ids/2961)
+                   structure_item_desc/1430 =o (field_mut 11 ids/2961)
+                   structure_item/1429 =o (field_mut 12 ids/2961)
+                   structure/1428 =o (field_mut 13 ids/2961)
+                   string/1427 =o (field_mut 14 ids/2961)
+                   signature_item_desc/1426 =o (field_mut 15 ids/2961)
+                   signature_item/1425 =o (field_mut 16 ids/2961)
+                   signature/1424 =o (field_mut 17 ids/2961)
+                   row_field_desc/1423 =o (field_mut 18 ids/2961)
+                   row_field/1422 =o (field_mut 19 ids/2961)
+                   rec_flag/1421 =o (field_mut 20 ids/2961)
+                   private_flag/1420 =o (field_mut 21 ids/2961)
+                   position/1419 =o (field_mut 22 ids/2961)
+                   payload/1418 =o (field_mut 23 ids/2961)
+                   pattern_desc/1417 =o (field_mut 24 ids/2961)
+                   pattern/1416 =o (field_mut 25 ids/2961)
+                   package_type/1415 =o (field_mut 26 ids/2961)
+                   override_flag/1414 =o (field_mut 27 ids/2961)
+                   option/1413 =o (field_mut 28 ids/2961)
+                   open_infos/1412 =o (field_mut 29 ids/2961)
+                   open_description/1411 =o (field_mut 30 ids/2961)
+                   open_declaration/1410 =o (field_mut 31 ids/2961)
+                   object_field_desc/1409 =o (field_mut 32 ids/2961)
+                   object_field/1408 =o (field_mut 33 ids/2961)
+                   mutable_flag/1407 =o (field_mut 34 ids/2961)
+                   module_type_desc/1406 =o (field_mut 35 ids/2961)
+                   module_type_declaration/1405 =o (field_mut 36 ids/2961)
+                   module_type/1404 =o (field_mut 37 ids/2961)
+                   module_substitution/1403 =o (field_mut 38 ids/2961)
+                   module_expr_desc/1402 =o (field_mut 39 ids/2961)
+                   module_expr/1401 =o (field_mut 40 ids/2961)
+                   module_declaration/1400 =o (field_mut 41 ids/2961)
+                   module_binding/1399 =o (field_mut 42 ids/2961)
+                   longident_loc/1398 =o (field_mut 43 ids/2961)
+                   longident/1397 =o (field_mut 44 ids/2961)
+                   location_stack/1396 =o (field_mut 45 ids/2961)
+                   location/1395 =o (field_mut 46 ids/2961)
+                   loc/1394 =o (field_mut 47 ids/2961)
+                   list/1393 =o (field_mut 48 ids/2961)
+                   letop/1392 =o (field_mut 49 ids/2961)
+                   label_declaration/1391 =o (field_mut 50 ids/2961)
+                   label/1390 =o (field_mut 51 ids/2961)
+                   int/1389 =o (field_mut 52 ids/2961)
+                   injectivity/1388 =o (field_mut 53 ids/2961)
+                   include_infos/1387 =o (field_mut 54 ids/2961)
+                   include_description/1386 =o (field_mut 55 ids/2961)
+                   include_declaration/1385 =o (field_mut 56 ids/2961)
+                   functor_parameter/1384 =o (field_mut 57 ids/2961)
+                   extension_constructor_kind/1383 =o (field_mut 58 ids/2961)
+                   extension_constructor/1382 =o (field_mut 59 ids/2961)
+                   extension/1381 =o (field_mut 60 ids/2961)
+                   expression_desc/1380 =o (field_mut 61 ids/2961)
+                   expression/1379 =o (field_mut 62 ids/2961)
+                   directive_argument_desc/1378 =o (field_mut 63 ids/2961)
+                   directive_argument/1377 =o (field_mut 64 ids/2961)
+                   direction_flag/1376 =o (field_mut 65 ids/2961)
+                   core_type_desc/1375 =o (field_mut 66 ids/2961)
+                   core_type/1374 =o (field_mut 67 ids/2961)
+                   constructor_declaration/1373 =o (field_mut 68 ids/2961)
+                   constructor_arguments/1372 =o (field_mut 69 ids/2961)
+                   constant/1371 =o (field_mut 70 ids/2961)
+                   closed_flag/1370 =o (field_mut 71 ids/2961)
+                   class_type_field_desc/1369 =o (field_mut 72 ids/2961)
+                   class_type_field/1368 =o (field_mut 73 ids/2961)
+                   class_type_desc/1367 =o (field_mut 74 ids/2961)
+                   class_type_declaration/1366 =o (field_mut 75 ids/2961)
+                   class_type/1365 =o (field_mut 76 ids/2961)
+                   class_structure/1364 =o (field_mut 77 ids/2961)
+                   class_signature/1363 =o (field_mut 78 ids/2961)
+                   class_infos/1362 =o (field_mut 79 ids/2961)
+                   class_field_kind/1361 =o (field_mut 80 ids/2961)
+                   class_field_desc/1360 =o (field_mut 81 ids/2961)
+                   class_field/1359 =o (field_mut 82 ids/2961)
+                   class_expr_desc/1358 =o (field_mut 83 ids/2961)
+                   class_expr/1357 =o (field_mut 84 ids/2961)
+                   class_description/1356 =o (field_mut 85 ids/2961)
+                   class_declaration/1355 =o (field_mut 86 ids/2961)
+                   char/1354 =o (field_mut 87 ids/2961)
+                   cases/1353 =o (field_mut 88 ids/2961)
+                   case/1352 =o (field_mut 89 ids/2961)
+                   bool/1351 =o (field_mut 90 ids/2961)
+                   binding_op/1350 =o (field_mut 91 ids/2961)
+                   attributes/1349 =o (field_mut 92 ids/2961)
+                   attribute/1348 =o (field_mut 93 ids/2961)
+                   array/1347 =o (field_mut 94 ids/2961)
+                   arg_label/1346 =o (field_mut 95 ids/2961)
+                   *dummy method*/1345 =o (field_mut 96 ids/2961)
+                   inh/2960 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2953 0 0 shared/2919
+                       (field_imm 3 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2958 =o (field_mut 0 inh/2960)
+                   array/1249 =o (field_mut 1 inh/2960)
+                   bool/1250 =o (field_mut 2 inh/2960)
+                   char/1251 =o (field_mut 3 inh/2960)
+                   int/1252 =o (field_mut 4 inh/2960)
+                   list/1253 =o (field_mut 5 inh/2960)
+                   option/1254 =o (field_mut 6 inh/2960)
+                   string/1255 =o (field_mut 7 inh/2960)
+                   inh/2959 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2953 0 shared/2917 shared/2916
+                       (field_imm 2 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2957 =o (field_mut 0 inh/2959)
+                   arg_label/1256 =o (field_mut 1 inh/2959)
+                   attribute/1257 =o (field_mut 2 inh/2959)
+                   attributes/1258 =o (field_mut 3 inh/2959)
+                   binding_op/1259 =o (field_mut 4 inh/2959)
+                   case/1260 =o (field_mut 5 inh/2959)
+                   cases/1261 =o (field_mut 6 inh/2959)
+                   class_declaration/1262 =o (field_mut 7 inh/2959)
+                   class_description/1263 =o (field_mut 8 inh/2959)
+                   class_expr/1264 =o (field_mut 9 inh/2959)
+                   class_expr_desc/1265 =o (field_mut 10 inh/2959)
+                   class_field/1266 =o (field_mut 11 inh/2959)
+                   class_field_desc/1267 =o (field_mut 12 inh/2959)
+                   class_field_kind/1268 =o (field_mut 13 inh/2959)
+                   class_infos/1269 =o (field_mut 14 inh/2959)
+                   class_signature/1270 =o (field_mut 15 inh/2959)
+                   class_structure/1271 =o (field_mut 16 inh/2959)
+                   class_type/1272 =o (field_mut 17 inh/2959)
+                   class_type_declaration/1273 =o (field_mut 18 inh/2959)
+                   class_type_desc/1274 =o (field_mut 19 inh/2959)
+                   class_type_field/1275 =o (field_mut 20 inh/2959)
+                   class_type_field_desc/1276 =o (field_mut 21 inh/2959)
+                   closed_flag/1277 =o (field_mut 22 inh/2959)
+                   constant/1278 =o (field_mut 23 inh/2959)
+                   constructor_arguments/1279 =o (field_mut 24 inh/2959)
+                   constructor_declaration/1280 =o (field_mut 25 inh/2959)
+                   core_type/1281 =o (field_mut 26 inh/2959)
+                   core_type_desc/1282 =o (field_mut 27 inh/2959)
+                   direction_flag/1283 =o (field_mut 28 inh/2959)
+                   directive_argument/1284 =o (field_mut 29 inh/2959)
+                   directive_argument_desc/1285 =o (field_mut 30 inh/2959)
+                   expression/1286 =o (field_mut 31 inh/2959)
+                   expression_desc/1287 =o (field_mut 32 inh/2959)
+                   extension/1288 =o (field_mut 33 inh/2959)
+                   extension_constructor/1289 =o (field_mut 34 inh/2959)
+                   extension_constructor_kind/1290 =o (field_mut 35 inh/2959)
+                   functor_parameter/1291 =o (field_mut 36 inh/2959)
+                   include_declaration/1292 =o (field_mut 37 inh/2959)
+                   include_description/1293 =o (field_mut 38 inh/2959)
+                   include_infos/1294 =o (field_mut 39 inh/2959)
+                   injectivity/1295 =o (field_mut 40 inh/2959)
+                   label/1296 =o (field_mut 41 inh/2959)
+                   label_declaration/1297 =o (field_mut 42 inh/2959)
+                   letop/1298 =o (field_mut 43 inh/2959)
+                   loc/1299 =o (field_mut 44 inh/2959)
+                   location/1300 =o (field_mut 45 inh/2959)
+                   location_stack/1301 =o (field_mut 46 inh/2959)
+                   longident/1302 =o (field_mut 47 inh/2959)
+                   longident_loc/1303 =o (field_mut 48 inh/2959)
+                   module_binding/1304 =o (field_mut 49 inh/2959)
+                   module_declaration/1305 =o (field_mut 50 inh/2959)
+                   module_expr/1306 =o (field_mut 51 inh/2959)
+                   module_expr_desc/1307 =o (field_mut 52 inh/2959)
+                   module_substitution/1308 =o (field_mut 53 inh/2959)
+                   module_type/1309 =o (field_mut 54 inh/2959)
+                   module_type_declaration/1310 =o (field_mut 55 inh/2959)
+                   module_type_desc/1311 =o (field_mut 56 inh/2959)
+                   mutable_flag/1312 =o (field_mut 57 inh/2959)
+                   object_field/1313 =o (field_mut 58 inh/2959)
+                   object_field_desc/1314 =o (field_mut 59 inh/2959)
+                   open_declaration/1315 =o (field_mut 60 inh/2959)
+                   open_description/1316 =o (field_mut 61 inh/2959)
+                   open_infos/1317 =o (field_mut 62 inh/2959)
+                   override_flag/1318 =o (field_mut 63 inh/2959)
+                   package_type/1319 =o (field_mut 64 inh/2959)
+                   pattern/1320 =o (field_mut 65 inh/2959)
+                   pattern_desc/1321 =o (field_mut 66 inh/2959)
+                   payload/1322 =o (field_mut 67 inh/2959)
+                   position/1323 =o (field_mut 68 inh/2959)
+                   private_flag/1324 =o (field_mut 69 inh/2959)
+                   rec_flag/1325 =o (field_mut 70 inh/2959)
+                   row_field/1326 =o (field_mut 71 inh/2959)
+                   row_field_desc/1327 =o (field_mut 72 inh/2959)
+                   signature/1328 =o (field_mut 73 inh/2959)
+                   signature_item/1329 =o (field_mut 74 inh/2959)
+                   signature_item_desc/1330 =o (field_mut 75 inh/2959)
+                   structure/1331 =o (field_mut 76 inh/2959)
+                   structure_item/1332 =o (field_mut 77 inh/2959)
+                   structure_item_desc/1333 =o (field_mut 78 inh/2959)
+                   toplevel_directive/1334 =o (field_mut 79 inh/2959)
+                   toplevel_phrase/1335 =o (field_mut 80 inh/2959)
+                   type_declaration/1336 =o (field_mut 81 inh/2959)
+                   type_exception/1337 =o (field_mut 82 inh/2959)
+                   type_extension/1338 =o (field_mut 83 inh/2959)
+                   type_kind/1339 =o (field_mut 84 inh/2959)
+                   value_binding/1340 =o (field_mut 85 inh/2959)
+                   value_description/1341 =o (field_mut 86 inh/2959)
+                   variance/1342 =o (field_mut 87 inh/2959)
+                   virtual_flag/1343 =o (field_mut 88 inh/2959)
+                   with_constraint/1344 =o (field_mut 89 inh/2959))
+                  (function env/2955 self/2954
+                    (let
+                      (self/2956 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2954 class/2953))
+                      (seq
+                        (seq (apply obj_init/2958 self/2956)
+                          (apply obj_init/2957 self/2956))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2954 self/2956 class/2953)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             fold_init/2963)))
+      (setfield_ptr(root-init) 2 (global Ppxlib__Ast_traverse0!) fold/1242))
+    (letrec
+      (fold_map/1445
+         (let
+           (fold_map_tables/2968 =o (makemutable 0 0 0 0)
+            fold_map_init/2982 =
+              (function class/2972
+                (let
+                  (ids/2980 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2972
+                       shared/2922)
+                   with_constraint/1644 =o (field_mut 0 ids/2980)
+                   virtual_flag/1643 =o (field_mut 1 ids/2980)
+                   variance/1642 =o (field_mut 2 ids/2980)
+                   value_description/1641 =o (field_mut 3 ids/2980)
+                   value_binding/1640 =o (field_mut 4 ids/2980)
+                   type_kind/1639 =o (field_mut 5 ids/2980)
+                   type_extension/1638 =o (field_mut 6 ids/2980)
+                   type_exception/1637 =o (field_mut 7 ids/2980)
+                   type_declaration/1636 =o (field_mut 8 ids/2980)
+                   toplevel_phrase/1635 =o (field_mut 9 ids/2980)
+                   toplevel_directive/1634 =o (field_mut 10 ids/2980)
+                   structure_item_desc/1633 =o (field_mut 11 ids/2980)
+                   structure_item/1632 =o (field_mut 12 ids/2980)
+                   structure/1631 =o (field_mut 13 ids/2980)
+                   string/1630 =o (field_mut 14 ids/2980)
+                   signature_item_desc/1629 =o (field_mut 15 ids/2980)
+                   signature_item/1628 =o (field_mut 16 ids/2980)
+                   signature/1627 =o (field_mut 17 ids/2980)
+                   row_field_desc/1626 =o (field_mut 18 ids/2980)
+                   row_field/1625 =o (field_mut 19 ids/2980)
+                   rec_flag/1624 =o (field_mut 20 ids/2980)
+                   private_flag/1623 =o (field_mut 21 ids/2980)
+                   position/1622 =o (field_mut 22 ids/2980)
+                   payload/1621 =o (field_mut 23 ids/2980)
+                   pattern_desc/1620 =o (field_mut 24 ids/2980)
+                   pattern/1619 =o (field_mut 25 ids/2980)
+                   package_type/1618 =o (field_mut 26 ids/2980)
+                   override_flag/1617 =o (field_mut 27 ids/2980)
+                   option/1616 =o (field_mut 28 ids/2980)
+                   open_infos/1615 =o (field_mut 29 ids/2980)
+                   open_description/1614 =o (field_mut 30 ids/2980)
+                   open_declaration/1613 =o (field_mut 31 ids/2980)
+                   object_field_desc/1612 =o (field_mut 32 ids/2980)
+                   object_field/1611 =o (field_mut 33 ids/2980)
+                   mutable_flag/1610 =o (field_mut 34 ids/2980)
+                   module_type_desc/1609 =o (field_mut 35 ids/2980)
+                   module_type_declaration/1608 =o (field_mut 36 ids/2980)
+                   module_type/1607 =o (field_mut 37 ids/2980)
+                   module_substitution/1606 =o (field_mut 38 ids/2980)
+                   module_expr_desc/1605 =o (field_mut 39 ids/2980)
+                   module_expr/1604 =o (field_mut 40 ids/2980)
+                   module_declaration/1603 =o (field_mut 41 ids/2980)
+                   module_binding/1602 =o (field_mut 42 ids/2980)
+                   longident_loc/1601 =o (field_mut 43 ids/2980)
+                   longident/1600 =o (field_mut 44 ids/2980)
+                   location_stack/1599 =o (field_mut 45 ids/2980)
+                   location/1598 =o (field_mut 46 ids/2980)
+                   loc/1597 =o (field_mut 47 ids/2980)
+                   list/1596 =o (field_mut 48 ids/2980)
+                   letop/1595 =o (field_mut 49 ids/2980)
+                   label_declaration/1594 =o (field_mut 50 ids/2980)
+                   label/1593 =o (field_mut 51 ids/2980)
+                   int/1592 =o (field_mut 52 ids/2980)
+                   injectivity/1591 =o (field_mut 53 ids/2980)
+                   include_infos/1590 =o (field_mut 54 ids/2980)
+                   include_description/1589 =o (field_mut 55 ids/2980)
+                   include_declaration/1588 =o (field_mut 56 ids/2980)
+                   functor_parameter/1587 =o (field_mut 57 ids/2980)
+                   extension_constructor_kind/1586 =o (field_mut 58 ids/2980)
+                   extension_constructor/1585 =o (field_mut 59 ids/2980)
+                   extension/1584 =o (field_mut 60 ids/2980)
+                   expression_desc/1583 =o (field_mut 61 ids/2980)
+                   expression/1582 =o (field_mut 62 ids/2980)
+                   directive_argument_desc/1581 =o (field_mut 63 ids/2980)
+                   directive_argument/1580 =o (field_mut 64 ids/2980)
+                   direction_flag/1579 =o (field_mut 65 ids/2980)
+                   core_type_desc/1578 =o (field_mut 66 ids/2980)
+                   core_type/1577 =o (field_mut 67 ids/2980)
+                   constructor_declaration/1576 =o (field_mut 68 ids/2980)
+                   constructor_arguments/1575 =o (field_mut 69 ids/2980)
+                   constant/1574 =o (field_mut 70 ids/2980)
+                   closed_flag/1573 =o (field_mut 71 ids/2980)
+                   class_type_field_desc/1572 =o (field_mut 72 ids/2980)
+                   class_type_field/1571 =o (field_mut 73 ids/2980)
+                   class_type_desc/1570 =o (field_mut 74 ids/2980)
+                   class_type_declaration/1569 =o (field_mut 75 ids/2980)
+                   class_type/1568 =o (field_mut 76 ids/2980)
+                   class_structure/1567 =o (field_mut 77 ids/2980)
+                   class_signature/1566 =o (field_mut 78 ids/2980)
+                   class_infos/1565 =o (field_mut 79 ids/2980)
+                   class_field_kind/1564 =o (field_mut 80 ids/2980)
+                   class_field_desc/1563 =o (field_mut 81 ids/2980)
+                   class_field/1562 =o (field_mut 82 ids/2980)
+                   class_expr_desc/1561 =o (field_mut 83 ids/2980)
+                   class_expr/1560 =o (field_mut 84 ids/2980)
+                   class_description/1559 =o (field_mut 85 ids/2980)
+                   class_declaration/1558 =o (field_mut 86 ids/2980)
+                   char/1557 =o (field_mut 87 ids/2980)
+                   cases/1556 =o (field_mut 88 ids/2980)
+                   case/1555 =o (field_mut 89 ids/2980)
+                   bool/1554 =o (field_mut 90 ids/2980)
+                   binding_op/1553 =o (field_mut 91 ids/2980)
+                   attributes/1552 =o (field_mut 92 ids/2980)
+                   attribute/1551 =o (field_mut 93 ids/2980)
+                   array/1550 =o (field_mut 94 ids/2980)
+                   arg_label/1549 =o (field_mut 95 ids/2980)
+                   *dummy method*/1548 =o (field_mut 96 ids/2980)
+                   inh/2979 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2972 0 0 shared/2919
+                       (field_imm 4 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2977 =o (field_mut 0 inh/2979)
+                   array/1452 =o (field_mut 1 inh/2979)
+                   bool/1453 =o (field_mut 2 inh/2979)
+                   char/1454 =o (field_mut 3 inh/2979)
+                   int/1455 =o (field_mut 4 inh/2979)
+                   list/1456 =o (field_mut 5 inh/2979)
+                   option/1457 =o (field_mut 6 inh/2979)
+                   string/1458 =o (field_mut 7 inh/2979)
+                   inh/2978 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2972 0 shared/2917 shared/2916
+                       (field_imm 3 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2976 =o (field_mut 0 inh/2978)
+                   arg_label/1459 =o (field_mut 1 inh/2978)
+                   attribute/1460 =o (field_mut 2 inh/2978)
+                   attributes/1461 =o (field_mut 3 inh/2978)
+                   binding_op/1462 =o (field_mut 4 inh/2978)
+                   case/1463 =o (field_mut 5 inh/2978)
+                   cases/1464 =o (field_mut 6 inh/2978)
+                   class_declaration/1465 =o (field_mut 7 inh/2978)
+                   class_description/1466 =o (field_mut 8 inh/2978)
+                   class_expr/1467 =o (field_mut 9 inh/2978)
+                   class_expr_desc/1468 =o (field_mut 10 inh/2978)
+                   class_field/1469 =o (field_mut 11 inh/2978)
+                   class_field_desc/1470 =o (field_mut 12 inh/2978)
+                   class_field_kind/1471 =o (field_mut 13 inh/2978)
+                   class_infos/1472 =o (field_mut 14 inh/2978)
+                   class_signature/1473 =o (field_mut 15 inh/2978)
+                   class_structure/1474 =o (field_mut 16 inh/2978)
+                   class_type/1475 =o (field_mut 17 inh/2978)
+                   class_type_declaration/1476 =o (field_mut 18 inh/2978)
+                   class_type_desc/1477 =o (field_mut 19 inh/2978)
+                   class_type_field/1478 =o (field_mut 20 inh/2978)
+                   class_type_field_desc/1479 =o (field_mut 21 inh/2978)
+                   closed_flag/1480 =o (field_mut 22 inh/2978)
+                   constant/1481 =o (field_mut 23 inh/2978)
+                   constructor_arguments/1482 =o (field_mut 24 inh/2978)
+                   constructor_declaration/1483 =o (field_mut 25 inh/2978)
+                   core_type/1484 =o (field_mut 26 inh/2978)
+                   core_type_desc/1485 =o (field_mut 27 inh/2978)
+                   direction_flag/1486 =o (field_mut 28 inh/2978)
+                   directive_argument/1487 =o (field_mut 29 inh/2978)
+                   directive_argument_desc/1488 =o (field_mut 30 inh/2978)
+                   expression/1489 =o (field_mut 31 inh/2978)
+                   expression_desc/1490 =o (field_mut 32 inh/2978)
+                   extension/1491 =o (field_mut 33 inh/2978)
+                   extension_constructor/1492 =o (field_mut 34 inh/2978)
+                   extension_constructor_kind/1493 =o (field_mut 35 inh/2978)
+                   functor_parameter/1494 =o (field_mut 36 inh/2978)
+                   include_declaration/1495 =o (field_mut 37 inh/2978)
+                   include_description/1496 =o (field_mut 38 inh/2978)
+                   include_infos/1497 =o (field_mut 39 inh/2978)
+                   injectivity/1498 =o (field_mut 40 inh/2978)
+                   label/1499 =o (field_mut 41 inh/2978)
+                   label_declaration/1500 =o (field_mut 42 inh/2978)
+                   letop/1501 =o (field_mut 43 inh/2978)
+                   loc/1502 =o (field_mut 44 inh/2978)
+                   location/1503 =o (field_mut 45 inh/2978)
+                   location_stack/1504 =o (field_mut 46 inh/2978)
+                   longident/1505 =o (field_mut 47 inh/2978)
+                   longident_loc/1506 =o (field_mut 48 inh/2978)
+                   module_binding/1507 =o (field_mut 49 inh/2978)
+                   module_declaration/1508 =o (field_mut 50 inh/2978)
+                   module_expr/1509 =o (field_mut 51 inh/2978)
+                   module_expr_desc/1510 =o (field_mut 52 inh/2978)
+                   module_substitution/1511 =o (field_mut 53 inh/2978)
+                   module_type/1512 =o (field_mut 54 inh/2978)
+                   module_type_declaration/1513 =o (field_mut 55 inh/2978)
+                   module_type_desc/1514 =o (field_mut 56 inh/2978)
+                   mutable_flag/1515 =o (field_mut 57 inh/2978)
+                   object_field/1516 =o (field_mut 58 inh/2978)
+                   object_field_desc/1517 =o (field_mut 59 inh/2978)
+                   open_declaration/1518 =o (field_mut 60 inh/2978)
+                   open_description/1519 =o (field_mut 61 inh/2978)
+                   open_infos/1520 =o (field_mut 62 inh/2978)
+                   override_flag/1521 =o (field_mut 63 inh/2978)
+                   package_type/1522 =o (field_mut 64 inh/2978)
+                   pattern/1523 =o (field_mut 65 inh/2978)
+                   pattern_desc/1524 =o (field_mut 66 inh/2978)
+                   payload/1525 =o (field_mut 67 inh/2978)
+                   position/1526 =o (field_mut 68 inh/2978)
+                   private_flag/1527 =o (field_mut 69 inh/2978)
+                   rec_flag/1528 =o (field_mut 70 inh/2978)
+                   row_field/1529 =o (field_mut 71 inh/2978)
+                   row_field_desc/1530 =o (field_mut 72 inh/2978)
+                   signature/1531 =o (field_mut 73 inh/2978)
+                   signature_item/1532 =o (field_mut 74 inh/2978)
+                   signature_item_desc/1533 =o (field_mut 75 inh/2978)
+                   structure/1534 =o (field_mut 76 inh/2978)
+                   structure_item/1535 =o (field_mut 77 inh/2978)
+                   structure_item_desc/1536 =o (field_mut 78 inh/2978)
+                   toplevel_directive/1537 =o (field_mut 79 inh/2978)
+                   toplevel_phrase/1538 =o (field_mut 80 inh/2978)
+                   type_declaration/1539 =o (field_mut 81 inh/2978)
+                   type_exception/1540 =o (field_mut 82 inh/2978)
+                   type_extension/1541 =o (field_mut 83 inh/2978)
+                   type_kind/1542 =o (field_mut 84 inh/2978)
+                   value_binding/1543 =o (field_mut 85 inh/2978)
+                   value_description/1544 =o (field_mut 86 inh/2978)
+                   variance/1545 =o (field_mut 87 inh/2978)
+                   virtual_flag/1546 =o (field_mut 88 inh/2978)
+                   with_constraint/1547 =o (field_mut 89 inh/2978))
+                  (function env/2974 self/2973
+                    (let
+                      (self/2975 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2973 class/2972))
+                      (seq
+                        (seq (apply obj_init/2977 self/2975)
+                          (apply obj_init/2976 self/2975))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2973 self/2975 class/2972)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             fold_map_init/2982)))
+      (setfield_ptr(root-init) 3 (global Ppxlib__Ast_traverse0!)
+        fold_map/1445))
+    (letrec
+      (map_with_context/1648
+         (let
+           (map_with_context_tables/2987 =o (makemutable 0 0 0 0)
+            map_with_context_init/3001 =
+              (function class/2991
+                (let
+                  (ids/2999 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2991
+                       shared/2922)
+                   with_constraint/1847 =o (field_mut 0 ids/2999)
+                   virtual_flag/1846 =o (field_mut 1 ids/2999)
+                   variance/1845 =o (field_mut 2 ids/2999)
+                   value_description/1844 =o (field_mut 3 ids/2999)
+                   value_binding/1843 =o (field_mut 4 ids/2999)
+                   type_kind/1842 =o (field_mut 5 ids/2999)
+                   type_extension/1841 =o (field_mut 6 ids/2999)
+                   type_exception/1840 =o (field_mut 7 ids/2999)
+                   type_declaration/1839 =o (field_mut 8 ids/2999)
+                   toplevel_phrase/1838 =o (field_mut 9 ids/2999)
+                   toplevel_directive/1837 =o (field_mut 10 ids/2999)
+                   structure_item_desc/1836 =o (field_mut 11 ids/2999)
+                   structure_item/1835 =o (field_mut 12 ids/2999)
+                   structure/1834 =o (field_mut 13 ids/2999)
+                   string/1833 =o (field_mut 14 ids/2999)
+                   signature_item_desc/1832 =o (field_mut 15 ids/2999)
+                   signature_item/1831 =o (field_mut 16 ids/2999)
+                   signature/1830 =o (field_mut 17 ids/2999)
+                   row_field_desc/1829 =o (field_mut 18 ids/2999)
+                   row_field/1828 =o (field_mut 19 ids/2999)
+                   rec_flag/1827 =o (field_mut 20 ids/2999)
+                   private_flag/1826 =o (field_mut 21 ids/2999)
+                   position/1825 =o (field_mut 22 ids/2999)
+                   payload/1824 =o (field_mut 23 ids/2999)
+                   pattern_desc/1823 =o (field_mut 24 ids/2999)
+                   pattern/1822 =o (field_mut 25 ids/2999)
+                   package_type/1821 =o (field_mut 26 ids/2999)
+                   override_flag/1820 =o (field_mut 27 ids/2999)
+                   option/1819 =o (field_mut 28 ids/2999)
+                   open_infos/1818 =o (field_mut 29 ids/2999)
+                   open_description/1817 =o (field_mut 30 ids/2999)
+                   open_declaration/1816 =o (field_mut 31 ids/2999)
+                   object_field_desc/1815 =o (field_mut 32 ids/2999)
+                   object_field/1814 =o (field_mut 33 ids/2999)
+                   mutable_flag/1813 =o (field_mut 34 ids/2999)
+                   module_type_desc/1812 =o (field_mut 35 ids/2999)
+                   module_type_declaration/1811 =o (field_mut 36 ids/2999)
+                   module_type/1810 =o (field_mut 37 ids/2999)
+                   module_substitution/1809 =o (field_mut 38 ids/2999)
+                   module_expr_desc/1808 =o (field_mut 39 ids/2999)
+                   module_expr/1807 =o (field_mut 40 ids/2999)
+                   module_declaration/1806 =o (field_mut 41 ids/2999)
+                   module_binding/1805 =o (field_mut 42 ids/2999)
+                   longident_loc/1804 =o (field_mut 43 ids/2999)
+                   longident/1803 =o (field_mut 44 ids/2999)
+                   location_stack/1802 =o (field_mut 45 ids/2999)
+                   location/1801 =o (field_mut 46 ids/2999)
+                   loc/1800 =o (field_mut 47 ids/2999)
+                   list/1799 =o (field_mut 48 ids/2999)
+                   letop/1798 =o (field_mut 49 ids/2999)
+                   label_declaration/1797 =o (field_mut 50 ids/2999)
+                   label/1796 =o (field_mut 51 ids/2999)
+                   int/1795 =o (field_mut 52 ids/2999)
+                   injectivity/1794 =o (field_mut 53 ids/2999)
+                   include_infos/1793 =o (field_mut 54 ids/2999)
+                   include_description/1792 =o (field_mut 55 ids/2999)
+                   include_declaration/1791 =o (field_mut 56 ids/2999)
+                   functor_parameter/1790 =o (field_mut 57 ids/2999)
+                   extension_constructor_kind/1789 =o (field_mut 58 ids/2999)
+                   extension_constructor/1788 =o (field_mut 59 ids/2999)
+                   extension/1787 =o (field_mut 60 ids/2999)
+                   expression_desc/1786 =o (field_mut 61 ids/2999)
+                   expression/1785 =o (field_mut 62 ids/2999)
+                   directive_argument_desc/1784 =o (field_mut 63 ids/2999)
+                   directive_argument/1783 =o (field_mut 64 ids/2999)
+                   direction_flag/1782 =o (field_mut 65 ids/2999)
+                   core_type_desc/1781 =o (field_mut 66 ids/2999)
+                   core_type/1780 =o (field_mut 67 ids/2999)
+                   constructor_declaration/1779 =o (field_mut 68 ids/2999)
+                   constructor_arguments/1778 =o (field_mut 69 ids/2999)
+                   constant/1777 =o (field_mut 70 ids/2999)
+                   closed_flag/1776 =o (field_mut 71 ids/2999)
+                   class_type_field_desc/1775 =o (field_mut 72 ids/2999)
+                   class_type_field/1774 =o (field_mut 73 ids/2999)
+                   class_type_desc/1773 =o (field_mut 74 ids/2999)
+                   class_type_declaration/1772 =o (field_mut 75 ids/2999)
+                   class_type/1771 =o (field_mut 76 ids/2999)
+                   class_structure/1770 =o (field_mut 77 ids/2999)
+                   class_signature/1769 =o (field_mut 78 ids/2999)
+                   class_infos/1768 =o (field_mut 79 ids/2999)
+                   class_field_kind/1767 =o (field_mut 80 ids/2999)
+                   class_field_desc/1766 =o (field_mut 81 ids/2999)
+                   class_field/1765 =o (field_mut 82 ids/2999)
+                   class_expr_desc/1764 =o (field_mut 83 ids/2999)
+                   class_expr/1763 =o (field_mut 84 ids/2999)
+                   class_description/1762 =o (field_mut 85 ids/2999)
+                   class_declaration/1761 =o (field_mut 86 ids/2999)
+                   char/1760 =o (field_mut 87 ids/2999)
+                   cases/1759 =o (field_mut 88 ids/2999)
+                   case/1758 =o (field_mut 89 ids/2999)
+                   bool/1757 =o (field_mut 90 ids/2999)
+                   binding_op/1756 =o (field_mut 91 ids/2999)
+                   attributes/1755 =o (field_mut 92 ids/2999)
+                   attribute/1754 =o (field_mut 93 ids/2999)
+                   array/1753 =o (field_mut 94 ids/2999)
+                   arg_label/1752 =o (field_mut 95 ids/2999)
+                   *dummy method*/1751 =o (field_mut 96 ids/2999)
+                   inh/2998 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2991 0 0 shared/2919
+                       (field_imm 5 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2996 =o (field_mut 0 inh/2998)
+                   array/1655 =o (field_mut 1 inh/2998)
+                   bool/1656 =o (field_mut 2 inh/2998)
+                   char/1657 =o (field_mut 3 inh/2998)
+                   int/1658 =o (field_mut 4 inh/2998)
+                   list/1659 =o (field_mut 5 inh/2998)
+                   option/1660 =o (field_mut 6 inh/2998)
+                   string/1661 =o (field_mut 7 inh/2998)
+                   inh/2997 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2991 0 shared/2917 shared/2916
+                       (field_imm 4 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2995 =o (field_mut 0 inh/2997)
+                   arg_label/1662 =o (field_mut 1 inh/2997)
+                   attribute/1663 =o (field_mut 2 inh/2997)
+                   attributes/1664 =o (field_mut 3 inh/2997)
+                   binding_op/1665 =o (field_mut 4 inh/2997)
+                   case/1666 =o (field_mut 5 inh/2997)
+                   cases/1667 =o (field_mut 6 inh/2997)
+                   class_declaration/1668 =o (field_mut 7 inh/2997)
+                   class_description/1669 =o (field_mut 8 inh/2997)
+                   class_expr/1670 =o (field_mut 9 inh/2997)
+                   class_expr_desc/1671 =o (field_mut 10 inh/2997)
+                   class_field/1672 =o (field_mut 11 inh/2997)
+                   class_field_desc/1673 =o (field_mut 12 inh/2997)
+                   class_field_kind/1674 =o (field_mut 13 inh/2997)
+                   class_infos/1675 =o (field_mut 14 inh/2997)
+                   class_signature/1676 =o (field_mut 15 inh/2997)
+                   class_structure/1677 =o (field_mut 16 inh/2997)
+                   class_type/1678 =o (field_mut 17 inh/2997)
+                   class_type_declaration/1679 =o (field_mut 18 inh/2997)
+                   class_type_desc/1680 =o (field_mut 19 inh/2997)
+                   class_type_field/1681 =o (field_mut 20 inh/2997)
+                   class_type_field_desc/1682 =o (field_mut 21 inh/2997)
+                   closed_flag/1683 =o (field_mut 22 inh/2997)
+                   constant/1684 =o (field_mut 23 inh/2997)
+                   constructor_arguments/1685 =o (field_mut 24 inh/2997)
+                   constructor_declaration/1686 =o (field_mut 25 inh/2997)
+                   core_type/1687 =o (field_mut 26 inh/2997)
+                   core_type_desc/1688 =o (field_mut 27 inh/2997)
+                   direction_flag/1689 =o (field_mut 28 inh/2997)
+                   directive_argument/1690 =o (field_mut 29 inh/2997)
+                   directive_argument_desc/1691 =o (field_mut 30 inh/2997)
+                   expression/1692 =o (field_mut 31 inh/2997)
+                   expression_desc/1693 =o (field_mut 32 inh/2997)
+                   extension/1694 =o (field_mut 33 inh/2997)
+                   extension_constructor/1695 =o (field_mut 34 inh/2997)
+                   extension_constructor_kind/1696 =o (field_mut 35 inh/2997)
+                   functor_parameter/1697 =o (field_mut 36 inh/2997)
+                   include_declaration/1698 =o (field_mut 37 inh/2997)
+                   include_description/1699 =o (field_mut 38 inh/2997)
+                   include_infos/1700 =o (field_mut 39 inh/2997)
+                   injectivity/1701 =o (field_mut 40 inh/2997)
+                   label/1702 =o (field_mut 41 inh/2997)
+                   label_declaration/1703 =o (field_mut 42 inh/2997)
+                   letop/1704 =o (field_mut 43 inh/2997)
+                   loc/1705 =o (field_mut 44 inh/2997)
+                   location/1706 =o (field_mut 45 inh/2997)
+                   location_stack/1707 =o (field_mut 46 inh/2997)
+                   longident/1708 =o (field_mut 47 inh/2997)
+                   longident_loc/1709 =o (field_mut 48 inh/2997)
+                   module_binding/1710 =o (field_mut 49 inh/2997)
+                   module_declaration/1711 =o (field_mut 50 inh/2997)
+                   module_expr/1712 =o (field_mut 51 inh/2997)
+                   module_expr_desc/1713 =o (field_mut 52 inh/2997)
+                   module_substitution/1714 =o (field_mut 53 inh/2997)
+                   module_type/1715 =o (field_mut 54 inh/2997)
+                   module_type_declaration/1716 =o (field_mut 55 inh/2997)
+                   module_type_desc/1717 =o (field_mut 56 inh/2997)
+                   mutable_flag/1718 =o (field_mut 57 inh/2997)
+                   object_field/1719 =o (field_mut 58 inh/2997)
+                   object_field_desc/1720 =o (field_mut 59 inh/2997)
+                   open_declaration/1721 =o (field_mut 60 inh/2997)
+                   open_description/1722 =o (field_mut 61 inh/2997)
+                   open_infos/1723 =o (field_mut 62 inh/2997)
+                   override_flag/1724 =o (field_mut 63 inh/2997)
+                   package_type/1725 =o (field_mut 64 inh/2997)
+                   pattern/1726 =o (field_mut 65 inh/2997)
+                   pattern_desc/1727 =o (field_mut 66 inh/2997)
+                   payload/1728 =o (field_mut 67 inh/2997)
+                   position/1729 =o (field_mut 68 inh/2997)
+                   private_flag/1730 =o (field_mut 69 inh/2997)
+                   rec_flag/1731 =o (field_mut 70 inh/2997)
+                   row_field/1732 =o (field_mut 71 inh/2997)
+                   row_field_desc/1733 =o (field_mut 72 inh/2997)
+                   signature/1734 =o (field_mut 73 inh/2997)
+                   signature_item/1735 =o (field_mut 74 inh/2997)
+                   signature_item_desc/1736 =o (field_mut 75 inh/2997)
+                   structure/1737 =o (field_mut 76 inh/2997)
+                   structure_item/1738 =o (field_mut 77 inh/2997)
+                   structure_item_desc/1739 =o (field_mut 78 inh/2997)
+                   toplevel_directive/1740 =o (field_mut 79 inh/2997)
+                   toplevel_phrase/1741 =o (field_mut 80 inh/2997)
+                   type_declaration/1742 =o (field_mut 81 inh/2997)
+                   type_exception/1743 =o (field_mut 82 inh/2997)
+                   type_extension/1744 =o (field_mut 83 inh/2997)
+                   type_kind/1745 =o (field_mut 84 inh/2997)
+                   value_binding/1746 =o (field_mut 85 inh/2997)
+                   value_description/1747 =o (field_mut 86 inh/2997)
+                   variance/1748 =o (field_mut 87 inh/2997)
+                   virtual_flag/1749 =o (field_mut 88 inh/2997)
+                   with_constraint/1750 =o (field_mut 89 inh/2997))
+                  (function env/2993 self/2992
+                    (let
+                      (self/2994 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2992 class/2991))
+                      (seq
+                        (seq (apply obj_init/2996 self/2994)
+                          (apply obj_init/2995 self/2994))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2992 self/2994 class/2991)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             map_with_context_init/3001)))
+      (setfield_ptr(root-init) 4 (global Ppxlib__Ast_traverse0!)
+        map_with_context/1648))
+    (letrec
+      (lift/1851
+         (let (lift_tables/3006 =o (makemutable 0 0 0 0))
+           (makeblock 0 0
+             (function class/3010
+               (let
+                 (ids/3021 =
+                    (apply (field_imm 7 (global CamlinternalOO!)) class/3010
+                      shared/3022)
+                  with_constraint/2054 =o (field_mut 0 ids/3021)
+                  virtual_flag/2053 =o (field_mut 1 ids/3021)
+                  variance/2052 =o (field_mut 2 ids/3021)
+                  value_description/2051 =o (field_mut 3 ids/3021)
+                  value_binding/2050 =o (field_mut 4 ids/3021)
+                  unit/2049 =o (field_mut 5 ids/3021)
+                  type_kind/2048 =o (field_mut 6 ids/3021)
+                  type_extension/2047 =o (field_mut 7 ids/3021)
+                  type_exception/2046 =o (field_mut 8 ids/3021)
+                  type_declaration/2045 =o (field_mut 9 ids/3021)
+                  tuple/2044 =o (field_mut 10 ids/3021)
+                  toplevel_phrase/2043 =o (field_mut 11 ids/3021)
+                  toplevel_directive/2042 =o (field_mut 12 ids/3021)
+                  structure_item_desc/2041 =o (field_mut 13 ids/3021)
+                  structure_item/2040 =o (field_mut 14 ids/3021)
+                  structure/2039 =o (field_mut 15 ids/3021)
+                  string/2038 =o (field_mut 16 ids/3021)
+                  signature_item_desc/2037 =o (field_mut 17 ids/3021)
+                  signature_item/2036 =o (field_mut 18 ids/3021)
+                  signature/2035 =o (field_mut 19 ids/3021)
+                  row_field_desc/2034 =o (field_mut 20 ids/3021)
+                  row_field/2033 =o (field_mut 21 ids/3021)
+                  record/2032 =o (field_mut 22 ids/3021)
+                  rec_flag/2031 =o (field_mut 23 ids/3021)
+                  private_flag/2030 =o (field_mut 24 ids/3021)
+                  position/2029 =o (field_mut 25 ids/3021)
+                  payload/2028 =o (field_mut 26 ids/3021)
+                  pattern_desc/2027 =o (field_mut 27 ids/3021)
+                  pattern/2026 =o (field_mut 28 ids/3021)
+                  package_type/2025 =o (field_mut 29 ids/3021)
+                  override_flag/2024 =o (field_mut 30 ids/3021)
+                  other/2023 =o (field_mut 31 ids/3021)
+                  option/2022 =o (field_mut 32 ids/3021)
+                  open_infos/2021 =o (field_mut 33 ids/3021)
+                  open_description/2020 =o (field_mut 34 ids/3021)
+                  open_declaration/2019 =o (field_mut 35 ids/3021)
+                  object_field_desc/2018 =o (field_mut 36 ids/3021)
+                  object_field/2017 =o (field_mut 37 ids/3021)
+                  nativeint/2016 =o (field_mut 38 ids/3021)
+                  mutable_flag/2015 =o (field_mut 39 ids/3021)
+                  module_type_desc/2014 =o (field_mut 40 ids/3021)
+                  module_type_declaration/2013 =o (field_mut 41 ids/3021)
+                  module_type/2012 =o (field_mut 42 ids/3021)
+                  module_substitution/2011 =o (field_mut 43 ids/3021)
+                  module_expr_desc/2010 =o (field_mut 44 ids/3021)
+                  module_expr/2009 =o (field_mut 45 ids/3021)
+                  module_declaration/2008 =o (field_mut 46 ids/3021)
+                  module_binding/2007 =o (field_mut 47 ids/3021)
+                  longident_loc/2006 =o (field_mut 48 ids/3021)
+                  longident/2005 =o (field_mut 49 ids/3021)
+                  location_stack/2004 =o (field_mut 50 ids/3021)
+                  location/2003 =o (field_mut 51 ids/3021)
+                  loc/2002 =o (field_mut 52 ids/3021)
+                  list/2001 =o (field_mut 53 ids/3021)
+                  letop/2000 =o (field_mut 54 ids/3021)
+                  label_declaration/1999 =o (field_mut 55 ids/3021)
+                  label/1998 =o (field_mut 56 ids/3021)
+                  int64/1997 =o (field_mut 57 ids/3021)
+                  int32/1996 =o (field_mut 58 ids/3021)
+                  int/1995 =o (field_mut 59 ids/3021)
+                  injectivity/1994 =o (field_mut 60 ids/3021)
+                  include_infos/1993 =o (field_mut 61 ids/3021)
+                  include_description/1992 =o (field_mut 62 ids/3021)
+                  include_declaration/1991 =o (field_mut 63 ids/3021)
+                  functor_parameter/1990 =o (field_mut 64 ids/3021)
+                  float/1989 =o (field_mut 65 ids/3021)
+                  extension_constructor_kind/1988 =o (field_mut 66 ids/3021)
+                  extension_constructor/1987 =o (field_mut 67 ids/3021)
+                  extension/1986 =o (field_mut 68 ids/3021)
+                  expression_desc/1985 =o (field_mut 69 ids/3021)
+                  expression/1984 =o (field_mut 70 ids/3021)
+                  directive_argument_desc/1983 =o (field_mut 71 ids/3021)
+                  directive_argument/1982 =o (field_mut 72 ids/3021)
+                  direction_flag/1981 =o (field_mut 73 ids/3021)
+                  core_type_desc/1980 =o (field_mut 74 ids/3021)
+                  core_type/1979 =o (field_mut 75 ids/3021)
+                  constructor_declaration/1978 =o (field_mut 76 ids/3021)
+                  constructor_arguments/1977 =o (field_mut 77 ids/3021)
+                  constr/1976 =o (field_mut 78 ids/3021)
+                  constant/1975 =o (field_mut 79 ids/3021)
+                  closed_flag/1974 =o (field_mut 80 ids/3021)
+                  class_type_field_desc/1973 =o (field_mut 81 ids/3021)
+                  class_type_field/1972 =o (field_mut 82 ids/3021)
+                  class_type_desc/1971 =o (field_mut 83 ids/3021)
+                  class_type_declaration/1970 =o (field_mut 84 ids/3021)
+                  class_type/1969 =o (field_mut 85 ids/3021)
+                  class_structure/1968 =o (field_mut 86 ids/3021)
+                  class_signature/1967 =o (field_mut 87 ids/3021)
+                  class_infos/1966 =o (field_mut 88 ids/3021)
+                  class_field_kind/1965 =o (field_mut 89 ids/3021)
+                  class_field_desc/1964 =o (field_mut 90 ids/3021)
+                  class_field/1963 =o (field_mut 91 ids/3021)
+                  class_expr_desc/1962 =o (field_mut 92 ids/3021)
+                  class_expr/1961 =o (field_mut 93 ids/3021)
+                  class_description/1960 =o (field_mut 94 ids/3021)
+                  class_declaration/1959 =o (field_mut 95 ids/3021)
+                  char/1958 =o (field_mut 96 ids/3021)
+                  cases/1957 =o (field_mut 97 ids/3021)
+                  case/1956 =o (field_mut 98 ids/3021)
+                  bool/1955 =o (field_mut 99 ids/3021)
+                  binding_op/1954 =o (field_mut 100 ids/3021)
+                  attributes/1953 =o (field_mut 101 ids/3021)
+                  attribute/1952 =o (field_mut 102 ids/3021)
+                  array/1951 =o (field_mut 103 ids/3021)
+                  arg_label/1950 =o (field_mut 104 ids/3021)
+                  *dummy method*/1949 =o (field_mut 105 ids/3021)
+                  inh/3020 =
+                    (apply (field_imm 17 (global CamlinternalOO!)) class/3010
+                      0 shared/3019 shared/3018
+                      (field_imm 6 (global Ppxlib_traverse_builtins!)) 1)
+                  obj_init/3015 =o (field_mut 0 inh/3020)
+                  list/1858 =o (field_mut 1 inh/3020)
+                  option/1859 =o (field_mut 2 inh/3020)
+                  inh/3017 =
+                    (apply (field_imm 17 (global CamlinternalOO!)) class/3010
+                      0 shared/3016 shared/2916
+                      (field_imm 5 (global Ppxlib_ast__Ast!)) 1)
+                  obj_init/3014 =o (field_mut 0 inh/3017)
+                  arg_label/1860 =o (field_mut 1 inh/3017)
+                  attribute/1861 =o (field_mut 2 inh/3017)
+                  attributes/1862 =o (field_mut 3 inh/3017)
+                  binding_op/1863 =o (field_mut 4 inh/3017)
+                  case/1864 =o (field_mut 5 inh/3017)
+                  cases/1865 =o (field_mut 6 inh/3017)
+                  class_declaration/1866 =o (field_mut 7 inh/3017)
+                  class_description/1867 =o (field_mut 8 inh/3017)
+                  class_expr/1868 =o (field_mut 9 inh/3017)
+                  class_expr_desc/1869 =o (field_mut 10 inh/3017)
+                  class_field/1870 =o (field_mut 11 inh/3017)
+                  class_field_desc/1871 =o (field_mut 12 inh/3017)
+                  class_field_kind/1872 =o (field_mut 13 inh/3017)
+                  class_infos/1873 =o (field_mut 14 inh/3017)
+                  class_signature/1874 =o (field_mut 15 inh/3017)
+                  class_structure/1875 =o (field_mut 16 inh/3017)
+                  class_type/1876 =o (field_mut 17 inh/3017)
+                  class_type_declaration/1877 =o (field_mut 18 inh/3017)
+                  class_type_desc/1878 =o (field_mut 19 inh/3017)
+                  class_type_field/1879 =o (field_mut 20 inh/3017)
+                  class_type_field_desc/1880 =o (field_mut 21 inh/3017)
+                  closed_flag/1881 =o (field_mut 22 inh/3017)
+                  constant/1882 =o (field_mut 23 inh/3017)
+                  constructor_arguments/1883 =o (field_mut 24 inh/3017)
+                  constructor_declaration/1884 =o (field_mut 25 inh/3017)
+                  core_type/1885 =o (field_mut 26 inh/3017)
+                  core_type_desc/1886 =o (field_mut 27 inh/3017)
+                  direction_flag/1887 =o (field_mut 28 inh/3017)
+                  directive_argument/1888 =o (field_mut 29 inh/3017)
+                  directive_argument_desc/1889 =o (field_mut 30 inh/3017)
+                  expression/1890 =o (field_mut 31 inh/3017)
+                  expression_desc/1891 =o (field_mut 32 inh/3017)
+                  extension/1892 =o (field_mut 33 inh/3017)
+                  extension_constructor/1893 =o (field_mut 34 inh/3017)
+                  extension_constructor_kind/1894 =o (field_mut 35 inh/3017)
+                  functor_parameter/1895 =o (field_mut 36 inh/3017)
+                  include_declaration/1896 =o (field_mut 37 inh/3017)
+                  include_description/1897 =o (field_mut 38 inh/3017)
+                  include_infos/1898 =o (field_mut 39 inh/3017)
+                  injectivity/1899 =o (field_mut 40 inh/3017)
+                  label/1900 =o (field_mut 41 inh/3017)
+                  label_declaration/1901 =o (field_mut 42 inh/3017)
+                  letop/1902 =o (field_mut 43 inh/3017)
+                  loc/1903 =o (field_mut 44 inh/3017)
+                  location/1904 =o (field_mut 45 inh/3017)
+                  location_stack/1905 =o (field_mut 46 inh/3017)
+                  longident/1906 =o (field_mut 47 inh/3017)
+                  longident_loc/1907 =o (field_mut 48 inh/3017)
+                  module_binding/1908 =o (field_mut 49 inh/3017)
+                  module_declaration/1909 =o (field_mut 50 inh/3017)
+                  module_expr/1910 =o (field_mut 51 inh/3017)
+                  module_expr_desc/1911 =o (field_mut 52 inh/3017)
+                  module_substitution/1912 =o (field_mut 53 inh/3017)
+                  module_type/1913 =o (field_mut 54 inh/3017)
+                  module_type_declaration/1914 =o (field_mut 55 inh/3017)
+                  module_type_desc/1915 =o (field_mut 56 inh/3017)
+                  mutable_flag/1916 =o (field_mut 57 inh/3017)
+                  object_field/1917 =o (field_mut 58 inh/3017)
+                  object_field_desc/1918 =o (field_mut 59 inh/3017)
+                  open_declaration/1919 =o (field_mut 60 inh/3017)
+                  open_description/1920 =o (field_mut 61 inh/3017)
+                  open_infos/1921 =o (field_mut 62 inh/3017)
+                  override_flag/1922 =o (field_mut 63 inh/3017)
+                  package_type/1923 =o (field_mut 64 inh/3017)
+                  pattern/1924 =o (field_mut 65 inh/3017)
+                  pattern_desc/1925 =o (field_mut 66 inh/3017)
+                  payload/1926 =o (field_mut 67 inh/3017)
+                  position/1927 =o (field_mut 68 inh/3017)
+                  private_flag/1928 =o (field_mut 69 inh/3017)
+                  rec_flag/1929 =o (field_mut 70 inh/3017)
+                  row_field/1930 =o (field_mut 71 inh/3017)
+                  row_field_desc/1931 =o (field_mut 72 inh/3017)
+                  signature/1932 =o (field_mut 73 inh/3017)
+                  signature_item/1933 =o (field_mut 74 inh/3017)
+                  signature_item_desc/1934 =o (field_mut 75 inh/3017)
+                  structure/1935 =o (field_mut 76 inh/3017)
+                  structure_item/1936 =o (field_mut 77 inh/3017)
+                  structure_item_desc/1937 =o (field_mut 78 inh/3017)
+                  toplevel_directive/1938 =o (field_mut 79 inh/3017)
+                  toplevel_phrase/1939 =o (field_mut 80 inh/3017)
+                  type_declaration/1940 =o (field_mut 81 inh/3017)
+                  type_exception/1941 =o (field_mut 82 inh/3017)
+                  type_extension/1942 =o (field_mut 83 inh/3017)
+                  type_kind/1943 =o (field_mut 84 inh/3017)
+                  value_binding/1944 =o (field_mut 85 inh/3017)
+                  value_description/1945 =o (field_mut 86 inh/3017)
+                  variance/1946 =o (field_mut 87 inh/3017)
+                  virtual_flag/1947 =o (field_mut 88 inh/3017)
+                  with_constraint/1948 =o (field_mut 89 inh/3017))
+                 (function env/3012 self/3011
+                   (let
+                     (self/3013 =
+                        (apply (field_imm 23 (global CamlinternalOO!))
+                          self/3011 class/3010))
+                     (seq
+                       (seq (apply obj_init/3015 self/3013)
+                         (apply obj_init/3014 self/3013))
+                       (apply (field_imm 25 (global CamlinternalOO!))
+                         self/3011 self/3013 class/3010))))))
+             0 0)))
+      (setfield_ptr(root-init) 5 (global Ppxlib__Ast_traverse0!) lift/1851))
+    0))
+(let
+  (shared/3016 =a
+     [0:
+      #"tuple" #"string" #"record" #"option" #"list" #"int" #"constr" #"char"
+      #"bool"]
+   shared/3018 =a [0: #"list" #"option"]
+   shared/3019 =a
+     [0:
+      #"unit" #"tuple" #"string" #"record" #"other" #"nativeint" #"int64"
+      #"int32" #"int" #"float" #"constr" #"char" #"bool" #"array"]
+   shared/3022 =a
+     [0:
+      #"with_constraint" #"virtual_flag" #"variance" #"value_description"
+      #"value_binding" #"unit" #"type_kind" #"type_extension"
+      #"type_exception" #"type_declaration" #"tuple" #"toplevel_phrase"
+      #"toplevel_directive" #"structure_item_desc" #"structure_item"
+      #"structure" #"string" #"signature_item_desc" #"signature_item"
+      #"signature" #"row_field_desc" #"row_field" #"record" #"rec_flag"
+      #"private_flag" #"position" #"payload" #"pattern_desc" #"pattern"
+      #"package_type" #"override_flag" #"other" #"option" #"open_infos"
+      #"open_description" #"open_declaration" #"object_field_desc"
+      #"object_field" #"nativeint" #"mutable_flag" #"module_type_desc"
+      #"module_type_declaration" #"module_type" #"module_substitution"
+      #"module_expr_desc" #"module_expr" #"module_declaration"
+      #"module_binding" #"longident_loc" #"longident" #"location_stack"
+      #"location" #"loc" #"list" #"letop" #"label_declaration" #"label"
+      #"int64" #"int32" #"int" #"injectivity" #"include_infos"
+      #"include_description" #"include_declaration" #"functor_parameter"
+      #"float" #"extension_constructor_kind" #"extension_constructor"
+      #"extension" #"expression_desc" #"expression"
+      #"directive_argument_desc" #"directive_argument" #"direction_flag"
+      #"core_type_desc" #"core_type" #"constructor_declaration"
+      #"constructor_arguments" #"constr" #"constant" #"closed_flag"
+      #"class_type_field_desc" #"class_type_field" #"class_type_desc"
+      #"class_type_declaration" #"class_type" #"class_structure"
+      #"class_signature" #"class_infos" #"class_field_kind"
+      #"class_field_desc" #"class_field" #"class_expr_desc" #"class_expr"
+      #"class_description" #"class_declaration" #"char" #"cases" #"case"
+      #"bool" #"binding_op" #"attributes" #"attribute" #"array" #"arg_label"
+      #"*dummy method*"]
+   shared/2927 =a
+     [0:
+      #"bool" #"cases" #"case" #"char" #"value_binding"
+      #"extension_constructor_kind" #"core_type" #"structure" #"list"
+      #"label_declaration" #"module_binding" #"position"
+      #"toplevel_directive" #"directive_argument" #"object_field_desc"
+      #"class_type_field_desc" #"open_infos" #"pattern_desc"
+      #"signature_item" #"extension_constructor" #"toplevel_phrase"
+      #"extension" #"location" #"variance" #"package_type" #"virtual_flag"
+      #"module_type_desc" #"rec_flag" #"payload" #"type_exception" #"label"
+      #"letop" #"location_stack" #"value_description" #"module_declaration"
+      #"class_type_declaration" #"longident_loc" #"closed_flag"
+      #"directive_argument_desc" #"attribute" #"class_infos"
+      #"signature_item_desc" #"int" #"loc" #"row_field_desc" #"override_flag"
+      #"structure_item_desc" #"class_field_desc" #"binding_op"
+      #"module_expr_desc" #"class_signature" #"type_extension"
+      #"class_field_kind" #"module_type_declaration" #"arg_label"
+      #"row_field" #"longident" #"string" #"pattern" #"include_description"
+      #"signature" #"class_type_field" #"attributes" #"open_description"
+      #"with_constraint" #"include_declaration" #"class_type_desc"
+      #"private_flag" #"injectivity" #"open_declaration" #"object_field"
+      #"array" #"constant" #"class_expr" #"functor_parameter"
+      #"direction_flag" #"core_type_desc" #"type_declaration"
+      #"constructor_declaration" #"option" #"type_kind" #"module_expr"
+      #"module_substitution" #"class_description" #"expression" #"class_type"
+      #"structure_item" #"include_infos" #"class_declaration" #"module_type"
+      #"class_expr_desc" #"class_structure" #"mutable_flag"
+      #"expression_desc" #"constructor_arguments" #"class_field"]
+   shared/2917 =a [0: #"string" #"option" #"list" #"int" #"char" #"bool"]
+   shared/2919 =a
+     [0: #"array" #"bool" #"char" #"int" #"list" #"option" #"string"]
+   shared/2922 =a
+     [0:
+      #"with_constraint" #"virtual_flag" #"variance" #"value_description"
+      #"value_binding" #"type_kind" #"type_extension" #"type_exception"
+      #"type_declaration" #"toplevel_phrase" #"toplevel_directive"
+      #"structure_item_desc" #"structure_item" #"structure" #"string"
+      #"signature_item_desc" #"signature_item" #"signature" #"row_field_desc"
+      #"row_field" #"rec_flag" #"private_flag" #"position" #"payload"
+      #"pattern_desc" #"pattern" #"package_type" #"override_flag" #"option"
+      #"open_infos" #"open_description" #"open_declaration"
+      #"object_field_desc" #"object_field" #"mutable_flag"
+      #"module_type_desc" #"module_type_declaration" #"module_type"
+      #"module_substitution" #"module_expr_desc" #"module_expr"
+      #"module_declaration" #"module_binding" #"longident_loc" #"longident"
+      #"location_stack" #"location" #"loc" #"list" #"letop"
+      #"label_declaration" #"label" #"int" #"injectivity" #"include_infos"
+      #"include_description" #"include_declaration" #"functor_parameter"
+      #"extension_constructor_kind" #"extension_constructor" #"extension"
+      #"expression_desc" #"expression" #"directive_argument_desc"
+      #"directive_argument" #"direction_flag" #"core_type_desc" #"core_type"
+      #"constructor_declaration" #"constructor_arguments" #"constant"
+      #"closed_flag" #"class_type_field_desc" #"class_type_field"
+      #"class_type_desc" #"class_type_declaration" #"class_type"
+      #"class_structure" #"class_signature" #"class_infos"
+      #"class_field_kind" #"class_field_desc" #"class_field"
+      #"class_expr_desc" #"class_expr" #"class_description"
+      #"class_declaration" #"char" #"cases" #"case" #"bool" #"binding_op"
+      #"attributes" #"attribute" #"array" #"arg_label" #"*dummy method*"]
+   shared/2916 =a
+     [0:
+      #"arg_label" #"attribute" #"attributes" #"binding_op" #"case" #"cases"
+      #"class_declaration" #"class_description" #"class_expr"
+      #"class_expr_desc" #"class_field" #"class_field_desc"
+      #"class_field_kind" #"class_infos" #"class_signature"
+      #"class_structure" #"class_type" #"class_type_declaration"
+      #"class_type_desc" #"class_type_field" #"class_type_field_desc"
+      #"closed_flag" #"constant" #"constructor_arguments"
+      #"constructor_declaration" #"core_type" #"core_type_desc"
+      #"direction_flag" #"directive_argument" #"directive_argument_desc"
+      #"expression" #"expression_desc" #"extension" #"extension_constructor"
+      #"extension_constructor_kind" #"functor_parameter"
+      #"include_declaration" #"include_description" #"include_infos"
+      #"injectivity" #"label" #"label_declaration" #"letop" #"loc"
+      #"location" #"location_stack" #"longident" #"longident_loc"
+      #"module_binding" #"module_declaration" #"module_expr"
+      #"module_expr_desc" #"module_substitution" #"module_type"
+      #"module_type_declaration" #"module_type_desc" #"mutable_flag"
+      #"object_field" #"object_field_desc" #"open_declaration"
+      #"open_description" #"open_infos" #"override_flag" #"package_type"
+      #"pattern" #"pattern_desc" #"payload" #"position" #"private_flag"
+      #"rec_flag" #"row_field" #"row_field_desc" #"signature"
+      #"signature_item" #"signature_item_desc" #"structure" #"structure_item"
+      #"structure_item_desc" #"toplevel_directive" #"toplevel_phrase"
+      #"type_declaration" #"type_exception" #"type_extension" #"type_kind"
+      #"value_binding" #"value_description" #"variance" #"virtual_flag"
+      #"with_constraint"])
+  (seq
+    (letrec
+      (map/553
+         (let
+           (map_init/2924 =
+              (function class/2898
+                (let
+                  (ids/2921 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2898
+                       shared/2922)
+                   inh/2920 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2898 0 0 shared/2919
+                       (field_imm 1 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2903 =o (field_mut 0 inh/2920)
+                   inh/2918 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2898 0 shared/2917 shared/2916
+                       (field_imm 0 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2902 =o (field_mut 0 inh/2918))
+                  (function env/2900 self/2899
+                    (let
+                      (self/2901 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2899 class/2898))
+                      (seq
+                        (seq (apply obj_init/2903 self/2901)
+                          (apply obj_init/2902 self/2901))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2899 self/2901 class/2898)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             map_init/2924)))
+      (setfield_ptr(root-init) 0 (global Ppxlib__Ast_traverse0!) map/553))
+    (letrec
+      (iter/1039
+         (let
+           (iter_init/2944 =
+              (function class/2934
+                (let
+                  (ids/2942 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2934
+                       shared/2922)
+                   inh/2941 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2934 0 0 shared/2919
+                       (field_imm 2 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2939 =o (field_mut 0 inh/2941)
+                   inh/2940 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2934 0 shared/2917 shared/2916
+                       (field_imm 1 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2938 =o (field_mut 0 inh/2940))
+                  (function env/2936 self/2935
+                    (let
+                      (self/2937 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2935 class/2934))
+                      (seq
+                        (seq (apply obj_init/2939 self/2937)
+                          (apply obj_init/2938 self/2937))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2935 self/2937 class/2934)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             iter_init/2944)))
+      (setfield_ptr(root-init) 1 (global Ppxlib__Ast_traverse0!) iter/1039))
+    (letrec
+      (fold/1242
+         (let
+           (fold_init/2963 =
+              (function class/2953
+                (let
+                  (ids/2961 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2953
+                       shared/2922)
+                   inh/2960 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2953 0 0 shared/2919
+                       (field_imm 3 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2958 =o (field_mut 0 inh/2960)
+                   inh/2959 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2953 0 shared/2917 shared/2916
+                       (field_imm 2 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2957 =o (field_mut 0 inh/2959))
+                  (function env/2955 self/2954
+                    (let
+                      (self/2956 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2954 class/2953))
+                      (seq
+                        (seq (apply obj_init/2958 self/2956)
+                          (apply obj_init/2957 self/2956))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2954 self/2956 class/2953)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             fold_init/2963)))
+      (setfield_ptr(root-init) 2 (global Ppxlib__Ast_traverse0!) fold/1242))
+    (letrec
+      (fold_map/1445
+         (let
+           (fold_map_init/2982 =
+              (function class/2972
+                (let
+                  (ids/2980 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2972
+                       shared/2922)
+                   inh/2979 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2972 0 0 shared/2919
+                       (field_imm 4 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2977 =o (field_mut 0 inh/2979)
+                   inh/2978 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2972 0 shared/2917 shared/2916
+                       (field_imm 3 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2976 =o (field_mut 0 inh/2978))
+                  (function env/2974 self/2973
+                    (let
+                      (self/2975 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2973 class/2972))
+                      (seq
+                        (seq (apply obj_init/2977 self/2975)
+                          (apply obj_init/2976 self/2975))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2973 self/2975 class/2972)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             fold_map_init/2982)))
+      (setfield_ptr(root-init) 3 (global Ppxlib__Ast_traverse0!)
+        fold_map/1445))
+    (letrec
+      (map_with_context/1648
+         (let
+           (map_with_context_init/3001 =
+              (function class/2991
+                (let
+                  (ids/2999 =
+                     (apply (field_imm 7 (global CamlinternalOO!)) class/2991
+                       shared/2922)
+                   inh/2998 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2991 0 0 shared/2919
+                       (field_imm 5 (global Ppxlib_traverse_builtins!)) 1)
+                   obj_init/2996 =o (field_mut 0 inh/2998)
+                   inh/2997 =
+                     (apply (field_imm 17 (global CamlinternalOO!))
+                       class/2991 0 shared/2917 shared/2916
+                       (field_imm 4 (global Ppxlib_ast__Ast!)) 1)
+                   obj_init/2995 =o (field_mut 0 inh/2997))
+                  (function env/2993 self/2992
+                    (let
+                      (self/2994 =
+                         (apply (field_imm 23 (global CamlinternalOO!))
+                           self/2992 class/2991))
+                      (seq
+                        (seq (apply obj_init/2996 self/2994)
+                          (apply obj_init/2995 self/2994))
+                        (apply (field_imm 25 (global CamlinternalOO!))
+                          self/2992 self/2994 class/2991)))))))
+           (apply (field_imm 18 (global CamlinternalOO!)) shared/2927
+             map_with_context_init/3001)))
+      (setfield_ptr(root-init) 4 (global Ppxlib__Ast_traverse0!)
+        map_with_context/1648))
+    (letrec
+      (lift/1851
+         (makeblock 0 0
+           (function class/3010
+             (let
+               (ids/3021 =
+                  (apply (field_imm 7 (global CamlinternalOO!)) class/3010
+                    shared/3022)
+                inh/3020 =
+                  (apply (field_imm 17 (global CamlinternalOO!)) class/3010 0
+                    shared/3019 shared/3018
+                    (field_imm 6 (global Ppxlib_traverse_builtins!)) 1)
+                obj_init/3015 =o (field_mut 0 inh/3020)
+                inh/3017 =
+                  (apply (field_imm 17 (global CamlinternalOO!)) class/3010 0
+                    shared/3016 shared/2916
+                    (field_imm 5 (global Ppxlib_ast__Ast!)) 1)
+                obj_init/3014 =o (field_mut 0 inh/3017))
+               (function env/3012 self/3011
+                 (let
+                   (self/3013 =
+                      (apply (field_imm 23 (global CamlinternalOO!))
+                        self/3011 class/3010))
+                   (seq
+                     (seq (apply obj_init/3015 self/3013)
+                       (apply obj_init/3014 self/3013))
+                     (apply (field_imm 25 (global CamlinternalOO!)) self/3011
+                       self/3013 class/3010))))))
+           0 0))
+      (setfield_ptr(root-init) 5 (global Ppxlib__Ast_traverse0!) lift/1851))
+    0))

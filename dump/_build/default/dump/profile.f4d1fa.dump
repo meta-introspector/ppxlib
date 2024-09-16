@@ -1,0 +1,6 @@
+0.037s 59.1MB 14.0MB 14.0MB src/ast_pattern.mli
+  0.002s 2.89MB 1.53MB 1.53MB parsing
+    0.002s 2.89MB 1.53MB 1.53MB parser
+  0.029s 45.9MB 12.2MB 13.8MB typing
+  0.007s 10.3MB 0.21MB 14.0MB other
+0.004s ------ ------ ------ other

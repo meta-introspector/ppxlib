@@ -1,0 +1,8 @@
+1.556s 4.38GB  115MB  115MB ast/ast.ml
+  0.036s 0.07GB 12.7MB 12.7MB parsing
+    0.036s 0.07GB 12.7MB 12.7MB parser
+  1.123s 2.82GB 98.5MB  111MB typing
+  0.022s 0.06GB 0.25MB ------ transl
+  0.140s 0.56GB 1.09MB  112MB generate
+  0.234s 0.85GB 2.84MB  115MB other
+0.004s ------ ------ ------ other

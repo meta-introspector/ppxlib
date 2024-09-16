@@ -1,0 +1,12 @@
+0.153s 69.5MB 24.1MB 25.8MB test/deriving/inline/foo-deriver/ppx_foo_deriver.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ parser
+  0.142s 63.0MB 23.8MB 25.6MB typing
+  ------ 2.00MB ------ ------ transl
+  0.004s 2.14MB 0.15MB 25.7MB generate
+    0.001s 2.00MB 0.15MB 25.7MB compile_phrases
+      ------ 2.00MB 0.15MB 25.7MB regalloc
+    0.002s ------ ------ ------ assemble
+    0.001s 0.14MB ------ ------ other
+  0.006s 2.32MB 0.09MB 25.8MB other
+0.019s 3.02MB 1.72MB ------ other

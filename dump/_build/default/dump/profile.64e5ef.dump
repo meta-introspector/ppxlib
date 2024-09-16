@@ -1,0 +1,6 @@
+0.044s 57.8MB 19.5MB 19.5MB src/attribute.mli
+  0.002s 2.91MB 1.57MB 1.57MB parsing
+    0.002s 2.91MB 1.57MB 1.57MB parser
+  0.039s 48.8MB 17.8MB 19.4MB typing
+  0.003s 6.12MB 0.09MB 19.5MB other
+0.004s ------ ------ ------ other

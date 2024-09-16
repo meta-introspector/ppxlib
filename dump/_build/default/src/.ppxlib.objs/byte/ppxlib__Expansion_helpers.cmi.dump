@@ -1,0 +1,438 @@
+[
+  signature_item (src/expansion_helpers.mli[1,0+0]..[2,81+25])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[1,0+0]..[2,81+25])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[1,0+0]..[2,81+25])
+          Pexp_constant PConst_string(" Various helpers for expansion, such as quoting expressions in their context,\n    or mangling names. ",(src/expansion_helpers.mli[1,0+0]..[2,81+25]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[4,108+0]..[4,108+11])
+    Psig_open Fresh "Import" (src/expansion_helpers.mli[4,108+5]..[4,108+11])
+  signature_item (src/expansion_helpers.mli[6,121+0]..[6,121+19])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[6,121+0]..[6,121+19])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[6,121+0]..[6,121+19])
+          Pexp_constant PConst_string(" {2 Mangling} ",(src/expansion_helpers.mli[6,121+0]..[6,121+19]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[8,142+0]..[10,302+14])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[8,142+0]..[10,302+14])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[8,142+0]..[10,302+14])
+          Pexp_constant PConst_string(" Derive mangled names from type names in a deriver. For instance, the [t] can\n    be turned into [t_of_yojson] or [yojson_of_t] with the functions from this\n    module. ",(src/expansion_helpers.mli[8,142+0]..[10,302+14]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[13,358+0]..[16,485+35])
+    Psig_type Rec
+    [
+      type_declaration "affix" (src/expansion_helpers.mli[13,358+5]..[13,358+10]) (src/expansion_helpers.mli[13,358+0]..[16,485+35])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/expansion_helpers.mli[12,318+0]..[12,318+39])
+              Pstr_eval
+              expression (src/expansion_helpers.mli[12,318+0]..[12,318+39])
+                Pexp_constant PConst_string(" Specification for name mangling. ",(src/expansion_helpers.mli[12,318+0]..[12,318+39]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (src/expansion_helpers.mli[14,371+2]..[14,371+20])
+                "Prefix" (src/expansion_helpers.mli[14,371+4]..[14,371+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (src/expansion_helpers.mli[14,371+22]..[14,371+56])
+                      Pstr_eval
+                      expression (src/expansion_helpers.mli[14,371+22]..[14,371+56])
+                        Pexp_constant PConst_string(" [Prefix p] adds prefix [p]. ",(src/expansion_helpers.mli[14,371+22]..[14,371+56]),None)
+                  ]
+                [
+                  core_type (src/expansion_helpers.mli[14,371+14]..[14,371+20])
+                    Ptyp_constr "string" (src/expansion_helpers.mli[14,371+14]..[14,371+20])
+                    []
+                ]
+                None
+              (src/expansion_helpers.mli[15,428+2]..[15,428+20])
+                "Suffix" (src/expansion_helpers.mli[15,428+4]..[15,428+10])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (src/expansion_helpers.mli[15,428+22]..[15,428+56])
+                      Pstr_eval
+                      expression (src/expansion_helpers.mli[15,428+22]..[15,428+56])
+                        Pexp_constant PConst_string(" [Suffix s] adds suffix [s]. ",(src/expansion_helpers.mli[15,428+22]..[15,428+56]),None)
+                  ]
+                [
+                  core_type (src/expansion_helpers.mli[15,428+14]..[15,428+20])
+                    Ptyp_constr "string" (src/expansion_helpers.mli[15,428+14]..[15,428+20])
+                    []
+                ]
+                None
+              (src/expansion_helpers.mli[16,485+2]..[16,485+35])
+                "PrefixSuffix" (src/expansion_helpers.mli[16,485+4]..[16,485+16])
+                attribute "ocaml.doc"
+                  [
+                    structure_item (src/expansion_helpers.mli[17,521+6]..[17,521+71])
+                      Pstr_eval
+                      expression (src/expansion_helpers.mli[17,521+6]..[17,521+71])
+                        Pexp_constant PConst_string(" [PrefixSuffix (p, s)] adds both prefix [p] and suffix [s]. ",(src/expansion_helpers.mli[17,521+6]..[17,521+71]),None)
+                  ]
+                [
+                  core_type (src/expansion_helpers.mli[16,485+20]..[16,485+26])
+                    Ptyp_constr "string" (src/expansion_helpers.mli[16,485+20]..[16,485+26])
+                    []
+                  core_type (src/expansion_helpers.mli[16,485+29]..[16,485+35])
+                    Ptyp_constr "string" (src/expansion_helpers.mli[16,485+29]..[16,485+35])
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/expansion_helpers.mli[19,594+0]..[19,594+58])
+    Psig_value
+    value_description "mangle" (src/expansion_helpers.mli[19,594+4]..[19,594+10]) (src/expansion_helpers.mli[19,594+0]..[19,594+58])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/expansion_helpers.mli[20,653+0]..[22,815+44])
+            Pstr_eval
+            expression (src/expansion_helpers.mli[20,653+0]..[22,815+44])
+              Pexp_constant PConst_string(" [mangle ~fixpoint affix s] derives a mangled name from [s] with the mangling\n    specified by [affix]. If [s] is equal to [fixpoint] ([\"t\"] by default), then\n    [s] is omitted from the mangled name. ",(src/expansion_helpers.mli[20,653+0]..[22,815+44]),None)
+        ]
+      core_type (src/expansion_helpers.mli[19,594+13]..[19,594+58])
+        Ptyp_arrow
+        Optional "fixpoint"
+        core_type (src/expansion_helpers.mli[19,594+23]..[19,594+29])
+          Ptyp_constr "string" (src/expansion_helpers.mli[19,594+23]..[19,594+29])
+          []
+        core_type (src/expansion_helpers.mli[19,594+33]..[19,594+58])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/expansion_helpers.mli[19,594+33]..[19,594+38])
+            Ptyp_constr "affix" (src/expansion_helpers.mli[19,594+33]..[19,594+38])
+            []
+          core_type (src/expansion_helpers.mli[19,594+42]..[19,594+58])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/expansion_helpers.mli[19,594+42]..[19,594+48])
+              Ptyp_constr "string" (src/expansion_helpers.mli[19,594+42]..[19,594+48])
+              []
+            core_type (src/expansion_helpers.mli[19,594+52]..[19,594+58])
+              Ptyp_constr "string" (src/expansion_helpers.mli[19,594+52]..[19,594+58])
+              []
+      []
+  signature_item (src/expansion_helpers.mli[24,861+0]..[24,861+78])
+    Psig_value
+    value_description "mangle_type_decl" (src/expansion_helpers.mli[24,861+4]..[24,861+20]) (src/expansion_helpers.mli[24,861+0]..[24,861+78])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/expansion_helpers.mli[25,940+0]..[26,1018+24])
+            Pstr_eval
+            expression (src/expansion_helpers.mli[25,940+0]..[26,1018+24])
+              Pexp_constant PConst_string(" [mangle_type_decl ~fixpoint affix td] does the same as {!mangle}, but for\n    the name of [td]. ",(src/expansion_helpers.mli[25,940+0]..[26,1018+24]),None)
+        ]
+      core_type (src/expansion_helpers.mli[24,861+23]..[24,861+78])
+        Ptyp_arrow
+        Optional "fixpoint"
+        core_type (src/expansion_helpers.mli[24,861+33]..[24,861+39])
+          Ptyp_constr "string" (src/expansion_helpers.mli[24,861+33]..[24,861+39])
+          []
+        core_type (src/expansion_helpers.mli[24,861+43]..[24,861+78])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/expansion_helpers.mli[24,861+43]..[24,861+48])
+            Ptyp_constr "affix" (src/expansion_helpers.mli[24,861+43]..[24,861+48])
+            []
+          core_type (src/expansion_helpers.mli[24,861+52]..[24,861+78])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/expansion_helpers.mli[24,861+52]..[24,861+68])
+              Ptyp_constr "type_declaration" (src/expansion_helpers.mli[24,861+52]..[24,861+68])
+              []
+            core_type (src/expansion_helpers.mli[24,861+72]..[24,861+78])
+              Ptyp_constr "string" (src/expansion_helpers.mli[24,861+72]..[24,861+78])
+              []
+      []
+  signature_item (src/expansion_helpers.mli[28,1044+0]..[28,1044+72])
+    Psig_value
+    value_description "mangle_lid" (src/expansion_helpers.mli[28,1044+4]..[28,1044+14]) (src/expansion_helpers.mli[28,1044+0]..[28,1044+72])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/expansion_helpers.mli[29,1117+0]..[30,1194+31])
+            Pstr_eval
+            expression (src/expansion_helpers.mli[29,1117+0]..[30,1194+31])
+              Pexp_constant PConst_string(" [mangle_lid ~fixpoint affix lid] does the same as {!mangle}, but for the\n    last component of [lid]. ",(src/expansion_helpers.mli[29,1117+0]..[30,1194+31]),None)
+        ]
+      core_type (src/expansion_helpers.mli[28,1044+17]..[28,1044+72])
+        Ptyp_arrow
+        Optional "fixpoint"
+        core_type (src/expansion_helpers.mli[28,1044+27]..[28,1044+33])
+          Ptyp_constr "string" (src/expansion_helpers.mli[28,1044+27]..[28,1044+33])
+          []
+        core_type (src/expansion_helpers.mli[28,1044+37]..[28,1044+72])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/expansion_helpers.mli[28,1044+37]..[28,1044+42])
+            Ptyp_constr "affix" (src/expansion_helpers.mli[28,1044+37]..[28,1044+42])
+            []
+          core_type (src/expansion_helpers.mli[28,1044+46]..[28,1044+72])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/expansion_helpers.mli[28,1044+46]..[28,1044+57])
+              Ptyp_constr "Longident.t" (src/expansion_helpers.mli[28,1044+46]..[28,1044+57])
+              []
+            core_type (src/expansion_helpers.mli[28,1044+61]..[28,1044+72])
+              Ptyp_constr "Longident.t" (src/expansion_helpers.mli[28,1044+61]..[28,1044+72])
+              []
+      []
+  signature_item (src/expansion_helpers.mli[32,1227+0]..[32,1227+18])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[32,1227+0]..[32,1227+18])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[32,1227+0]..[32,1227+18])
+          Pexp_constant PConst_string(" {2 Quoting} ",(src/expansion_helpers.mli[32,1227+0]..[32,1227+18]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[34,1247+0]..[34,1247+22])
+    Psig_module "Quoter" (src/expansion_helpers.mli[34,1247+7]..[34,1247+13])
+    module_type (src/expansion_helpers.mli[34,1247+16]..[34,1247+22])
+      Pmty_alias "Quoter" (src/expansion_helpers.mli[34,1247+16]..[34,1247+22])
+]
+
+[@@@ocaml.text
+  " Various helpers for expansion, such as quoting expressions in their context,\n    or mangling names. "]
+open Import
+[@@@ocaml.text " {2 Mangling} "]
+[@@@ocaml.text
+  " Derive mangled names from type names in a deriver. For instance, the [t] can\n    be turned into [t_of_yojson] or [yojson_of_t] with the functions from this\n    module. "]
+type affix =
+  | Prefix of string [@ocaml.doc " [Prefix p] adds prefix [p]. "]
+  | Suffix of string [@ocaml.doc " [Suffix s] adds suffix [s]. "]
+  | PrefixSuffix of string * string
+  [@ocaml.doc " [PrefixSuffix (p, s)] adds both prefix [p] and suffix [s]. "]
+[@@ocaml.doc " Specification for name mangling. "]
+val mangle : ?fixpoint:string -> affix -> string -> string[@@ocaml.doc
+                                                            " [mangle ~fixpoint affix s] derives a mangled name from [s] with the mangling\n    specified by [affix]. If [s] is equal to [fixpoint] ([\"t\"] by default), then\n    [s] is omitted from the mangled name. "]
+val mangle_type_decl :
+  ?fixpoint:string -> affix -> type_declaration -> string[@@ocaml.doc
+                                                           " [mangle_type_decl ~fixpoint affix td] does the same as {!mangle}, but for\n    the name of [td]. "]
+val mangle_lid : ?fixpoint:string -> affix -> Longident.t -> Longident.t
+[@@ocaml.doc
+  " [mangle_lid ~fixpoint affix lid] does the same as {!mangle}, but for the\n    last component of [lid]. "]
+[@@@ocaml.text " {2 Quoting} "]
+module Quoter = Quoter
+[
+  signature_item (src/expansion_helpers.mli[1,0+0]..src/expansion_helpers.mli[2,81+25])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[1,0+0]..[2,81+25])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[1,0+0]..[2,81+25])
+          Pexp_constant PConst_string(" Various helpers for expansion, such as quoting expressions in their context,\n    or mangling names. ",(src/expansion_helpers.mli[1,0+0]..[2,81+25]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[4,108+0]..src/expansion_helpers.mli[4,108+11])
+    Tsig_open Fresh "Ppxlib__!.Import"
+  signature_item (src/expansion_helpers.mli[6,121+0]..src/expansion_helpers.mli[6,121+19])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[6,121+0]..[6,121+19])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[6,121+0]..[6,121+19])
+          Pexp_constant PConst_string(" {2 Mangling} ",(src/expansion_helpers.mli[6,121+0]..[6,121+19]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[8,142+0]..src/expansion_helpers.mli[10,302+14])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[8,142+0]..[10,302+14])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[8,142+0]..[10,302+14])
+          Pexp_constant PConst_string(" Derive mangled names from type names in a deriver. For instance, the [t] can\n    be turned into [t_of_yojson] or [yojson_of_t] with the functions from this\n    module. ",(src/expansion_helpers.mli[8,142+0]..[10,302+14]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[13,358+0]..src/expansion_helpers.mli[16,485+35])
+    Tsig_type Rec
+    [
+      type_declaration affix/550 (src/expansion_helpers.mli[13,358+0]..src/expansion_helpers.mli[16,485+35])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/expansion_helpers.mli[12,318+0]..[12,318+39])
+              Pstr_eval
+              expression (src/expansion_helpers.mli[12,318+0]..[12,318+39])
+                Pexp_constant PConst_string(" Specification for name mangling. ",(src/expansion_helpers.mli[12,318+0]..[12,318+39]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (src/expansion_helpers.mli[14,371+2]..src/expansion_helpers.mli[14,371+20])
+                Prefix/551
+                attribute "ocaml.doc"
+                  [
+                    structure_item (src/expansion_helpers.mli[14,371+22]..[14,371+56])
+                      Pstr_eval
+                      expression (src/expansion_helpers.mli[14,371+22]..[14,371+56])
+                        Pexp_constant PConst_string(" [Prefix p] adds prefix [p]. ",(src/expansion_helpers.mli[14,371+22]..[14,371+56]),None)
+                  ]
+                [
+                  core_type (src/expansion_helpers.mli[14,371+14]..src/expansion_helpers.mli[14,371+20])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+              (src/expansion_helpers.mli[15,428+2]..src/expansion_helpers.mli[15,428+20])
+                Suffix/552
+                attribute "ocaml.doc"
+                  [
+                    structure_item (src/expansion_helpers.mli[15,428+22]..[15,428+56])
+                      Pstr_eval
+                      expression (src/expansion_helpers.mli[15,428+22]..[15,428+56])
+                        Pexp_constant PConst_string(" [Suffix s] adds suffix [s]. ",(src/expansion_helpers.mli[15,428+22]..[15,428+56]),None)
+                  ]
+                [
+                  core_type (src/expansion_helpers.mli[15,428+14]..src/expansion_helpers.mli[15,428+20])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+              (src/expansion_helpers.mli[16,485+2]..src/expansion_helpers.mli[16,485+35])
+                PrefixSuffix/553
+                attribute "ocaml.doc"
+                  [
+                    structure_item (src/expansion_helpers.mli[17,521+6]..[17,521+71])
+                      Pstr_eval
+                      expression (src/expansion_helpers.mli[17,521+6]..[17,521+71])
+                        Pexp_constant PConst_string(" [PrefixSuffix (p, s)] adds both prefix [p] and suffix [s]. ",(src/expansion_helpers.mli[17,521+6]..[17,521+71]),None)
+                  ]
+                [
+                  core_type (src/expansion_helpers.mli[16,485+20]..src/expansion_helpers.mli[16,485+26])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/expansion_helpers.mli[16,485+29]..src/expansion_helpers.mli[16,485+35])
+                    Ttyp_constr "string/17!"
+                    []
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/expansion_helpers.mli[19,594+0]..src/expansion_helpers.mli[19,594+58])
+    Tsig_value
+    value_description mangle/554 (src/expansion_helpers.mli[19,594+0]..src/expansion_helpers.mli[19,594+58])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/expansion_helpers.mli[20,653+0]..[22,815+44])
+            Pstr_eval
+            expression (src/expansion_helpers.mli[20,653+0]..[22,815+44])
+              Pexp_constant PConst_string(" [mangle ~fixpoint affix s] derives a mangled name from [s] with the mangling\n    specified by [affix]. If [s] is equal to [fixpoint] ([\"t\"] by default), then\n    [s] is omitted from the mangled name. ",(src/expansion_helpers.mli[20,653+0]..[22,815+44]),None)
+        ]
+      core_type (src/expansion_helpers.mli[19,594+13]..src/expansion_helpers.mli[19,594+58])
+        Ttyp_arrow
+        Optional "fixpoint"
+        core_type (src/expansion_helpers.mli[19,594+23]..src/expansion_helpers.mli[19,594+29])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/expansion_helpers.mli[19,594+33]..src/expansion_helpers.mli[19,594+58])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/expansion_helpers.mli[19,594+33]..src/expansion_helpers.mli[19,594+38])
+            Ttyp_constr "affix/550"
+            []
+          core_type (src/expansion_helpers.mli[19,594+42]..src/expansion_helpers.mli[19,594+58])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/expansion_helpers.mli[19,594+42]..src/expansion_helpers.mli[19,594+48])
+              Ttyp_constr "string/17!"
+              []
+            core_type (src/expansion_helpers.mli[19,594+52]..src/expansion_helpers.mli[19,594+58])
+              Ttyp_constr "string/17!"
+              []
+      []
+  signature_item (src/expansion_helpers.mli[24,861+0]..src/expansion_helpers.mli[24,861+78])
+    Tsig_value
+    value_description mangle_type_decl/555 (src/expansion_helpers.mli[24,861+0]..src/expansion_helpers.mli[24,861+78])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/expansion_helpers.mli[25,940+0]..[26,1018+24])
+            Pstr_eval
+            expression (src/expansion_helpers.mli[25,940+0]..[26,1018+24])
+              Pexp_constant PConst_string(" [mangle_type_decl ~fixpoint affix td] does the same as {!mangle}, but for\n    the name of [td]. ",(src/expansion_helpers.mli[25,940+0]..[26,1018+24]),None)
+        ]
+      core_type (src/expansion_helpers.mli[24,861+23]..src/expansion_helpers.mli[24,861+78])
+        Ttyp_arrow
+        Optional "fixpoint"
+        core_type (src/expansion_helpers.mli[24,861+33]..src/expansion_helpers.mli[24,861+39])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/expansion_helpers.mli[24,861+43]..src/expansion_helpers.mli[24,861+78])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/expansion_helpers.mli[24,861+43]..src/expansion_helpers.mli[24,861+48])
+            Ttyp_constr "affix/550"
+            []
+          core_type (src/expansion_helpers.mli[24,861+52]..src/expansion_helpers.mli[24,861+78])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/expansion_helpers.mli[24,861+52]..src/expansion_helpers.mli[24,861+68])
+              Ttyp_constr "Ppxlib__!.Import.type_declaration"
+              []
+            core_type (src/expansion_helpers.mli[24,861+72]..src/expansion_helpers.mli[24,861+78])
+              Ttyp_constr "string/17!"
+              []
+      []
+  signature_item (src/expansion_helpers.mli[28,1044+0]..src/expansion_helpers.mli[28,1044+72])
+    Tsig_value
+    value_description mangle_lid/654 (src/expansion_helpers.mli[28,1044+0]..src/expansion_helpers.mli[28,1044+72])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/expansion_helpers.mli[29,1117+0]..[30,1194+31])
+            Pstr_eval
+            expression (src/expansion_helpers.mli[29,1117+0]..[30,1194+31])
+              Pexp_constant PConst_string(" [mangle_lid ~fixpoint affix lid] does the same as {!mangle}, but for the\n    last component of [lid]. ",(src/expansion_helpers.mli[29,1117+0]..[30,1194+31]),None)
+        ]
+      core_type (src/expansion_helpers.mli[28,1044+17]..src/expansion_helpers.mli[28,1044+72])
+        Ttyp_arrow
+        Optional "fixpoint"
+        core_type (src/expansion_helpers.mli[28,1044+27]..src/expansion_helpers.mli[28,1044+33])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/expansion_helpers.mli[28,1044+37]..src/expansion_helpers.mli[28,1044+72])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/expansion_helpers.mli[28,1044+37]..src/expansion_helpers.mli[28,1044+42])
+            Ttyp_constr "affix/550"
+            []
+          core_type (src/expansion_helpers.mli[28,1044+46]..src/expansion_helpers.mli[28,1044+72])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/expansion_helpers.mli[28,1044+46]..src/expansion_helpers.mli[28,1044+57])
+              Ttyp_constr "Ppxlib__!.Longident.t"
+              []
+            core_type (src/expansion_helpers.mli[28,1044+61]..src/expansion_helpers.mli[28,1044+72])
+              Ttyp_constr "Ppxlib__!.Longident.t"
+              []
+      []
+  signature_item (src/expansion_helpers.mli[32,1227+0]..src/expansion_helpers.mli[32,1227+18])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/expansion_helpers.mli[32,1227+0]..[32,1227+18])
+        Pstr_eval
+        expression (src/expansion_helpers.mli[32,1227+0]..[32,1227+18])
+          Pexp_constant PConst_string(" {2 Quoting} ",(src/expansion_helpers.mli[32,1227+0]..[32,1227+18]),None)
+    ]
+  signature_item (src/expansion_helpers.mli[34,1247+0]..src/expansion_helpers.mli[34,1247+22])
+    Tsig_module "Quoter/655"
+    module_type (src/expansion_helpers.mli[34,1247+16]..src/expansion_helpers.mli[34,1247+22])
+      Tmty_alias "Ppxlib__!.Quoter"
+]
+

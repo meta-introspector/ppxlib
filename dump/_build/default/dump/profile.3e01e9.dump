@@ -1,0 +1,9 @@
+0.065s 62.1MB 20.3MB 22.1MB src/quoter.ml
+  0.059s 55.5MB 19.9MB 21.6MB typing
+  0.004s 4.07MB 0.25MB 21.9MB generate
+    0.001s 0.07MB ------ ------ compile_phrases
+      ------ 0.07MB ------ ------ spill
+    0.002s ------ ------ ------ assemble
+    0.001s 4.00MB 0.25MB 21.9MB other
+  0.002s 2.45MB 0.15MB 22.1MB other
+0.007s 3.04MB 1.72MB ------ other

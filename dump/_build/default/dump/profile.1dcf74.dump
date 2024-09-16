@@ -1,0 +1,9 @@
+0.062s 65.6MB 20.2MB 21.9MB ast/location_error.ml
+  0.056s 59.3MB 20.0MB 21.7MB typing
+  0.004s 2.19MB 0.12MB 21.8MB generate
+    0.001s 2.00MB 0.12MB 21.8MB compile_phrases
+      ------ 2.00MB 0.12MB 21.8MB regalloc
+    0.003s ------ ------ ------ assemble
+    0.001s 0.19MB ------ ------ other
+  0.002s 4.16MB 0.09MB 21.9MB other
+0.007s 3.02MB 1.69MB ------ other

@@ -1,0 +1,7 @@
+0.203s 88.2MB 24.7MB 24.7MB bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.ml
+  0.006s 2.85MB 1.53MB 1.53MB parsing
+    0.006s 2.85MB 1.53MB 1.53MB parser
+  0.185s 73.2MB 23.0MB 24.6MB typing
+  0.002s 4.09MB 0.12MB 24.7MB generate
+  0.009s 8.14MB ------ ------ other
+0.010s ------ ------ ------ other

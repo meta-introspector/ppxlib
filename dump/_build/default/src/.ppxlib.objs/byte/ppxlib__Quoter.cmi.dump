@@ -1,0 +1,208 @@
+[
+  signature_item (src/quoter.mli[1,0+0]..[9,422+46])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/quoter.mli[1,0+0]..[9,422+46])
+        Pstr_eval
+        expression (src/quoter.mli[1,0+0]..[9,422+46])
+          Pexp_constant PConst_string(" Generate expressions in a hygienic way.\n\n    The idea is that whenever we want to refer to an expression in generated\n    code we first quote it. The result will be an identifier that is guaranteed\n    to refer to the expression it was created from. This way it is impossible\n    for quoted fragments to refer to newly introduced expressions.\n\n    For more information, see the {{!\"good-practices\".quoting} section on\n    quoting} in the good practices section. ",(src/quoter.mli[1,0+0]..[9,422+46]),None)
+    ]
+  signature_item (src/quoter.mli[11,470+0]..[11,470+11])
+    Psig_open Fresh "Import" (src/quoter.mli[11,470+5]..[11,470+11])
+  signature_item (src/quoter.mli[13,483+0]..[13,483+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (src/quoter.mli[13,483+5]..[13,483+6]) (src/quoter.mli[13,483+0]..[13,483+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/quoter.mli[15,491+0]..[15,491+22])
+    Psig_value
+    value_description "create" (src/quoter.mli[15,491+4]..[15,491+10]) (src/quoter.mli[15,491+0]..[15,491+22])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/quoter.mli[16,514+0]..[17,593+34])
+            Pstr_eval
+            expression (src/quoter.mli[16,514+0]..[17,593+34])
+              Pexp_constant PConst_string(" Creates a quoter. A quoter guarantees to give names that do not clash with\n    any other names used before ",(src/quoter.mli[16,514+0]..[17,593+34]),None)
+        ]
+      core_type (src/quoter.mli[15,491+13]..[15,491+22])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/quoter.mli[15,491+13]..[15,491+17])
+          Ptyp_constr "unit" (src/quoter.mli[15,491+13]..[15,491+17])
+          []
+        core_type (src/quoter.mli[15,491+21]..[15,491+22])
+          Ptyp_constr "t" (src/quoter.mli[15,491+21]..[15,491+22])
+          []
+      []
+  signature_item (src/quoter.mli[19,629+0]..[19,629+41])
+    Psig_value
+    value_description "quote" (src/quoter.mli[19,629+4]..[19,629+9]) (src/quoter.mli[19,629+0]..[19,629+41])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/quoter.mli[20,671+0]..[21,749+20])
+            Pstr_eval
+            expression (src/quoter.mli[20,671+0]..[21,749+20])
+              Pexp_constant PConst_string(" [quote t e] returns the expression that is safe to use in place of [e] in\n    generated code",(src/quoter.mli[20,671+0]..[21,749+20]),None)
+        ]
+      core_type (src/quoter.mli[19,629+12]..[19,629+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/quoter.mli[19,629+12]..[19,629+13])
+          Ptyp_constr "t" (src/quoter.mli[19,629+12]..[19,629+13])
+          []
+        core_type (src/quoter.mli[19,629+17]..[19,629+41])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/quoter.mli[19,629+17]..[19,629+27])
+            Ptyp_constr "expression" (src/quoter.mli[19,629+17]..[19,629+27])
+            []
+          core_type (src/quoter.mli[19,629+31]..[19,629+41])
+            Ptyp_constr "expression" (src/quoter.mli[19,629+31]..[19,629+41])
+            []
+      []
+  signature_item (src/quoter.mli[23,771+0]..[23,771+44])
+    Psig_value
+    value_description "sanitize" (src/quoter.mli[23,771+4]..[23,771+12]) (src/quoter.mli[23,771+0]..[23,771+44])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/quoter.mli[24,816+0]..[25,896+24])
+            Pstr_eval
+            expression (src/quoter.mli[24,816+0]..[25,896+24])
+              Pexp_constant PConst_string(" [sanitize t e] Returns [e] wrapped with bindings for all quoted expressions\n    in the quoter [t] ",(src/quoter.mli[24,816+0]..[25,896+24]),None)
+        ]
+      core_type (src/quoter.mli[23,771+15]..[23,771+44])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/quoter.mli[23,771+15]..[23,771+16])
+          Ptyp_constr "t" (src/quoter.mli[23,771+15]..[23,771+16])
+          []
+        core_type (src/quoter.mli[23,771+20]..[23,771+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/quoter.mli[23,771+20]..[23,771+30])
+            Ptyp_constr "expression" (src/quoter.mli[23,771+20]..[23,771+30])
+            []
+          core_type (src/quoter.mli[23,771+34]..[23,771+44])
+            Ptyp_constr "expression" (src/quoter.mli[23,771+34]..[23,771+44])
+            []
+      []
+]
+
+[@@@ocaml.text
+  " Generate expressions in a hygienic way.\n\n    The idea is that whenever we want to refer to an expression in generated\n    code we first quote it. The result will be an identifier that is guaranteed\n    to refer to the expression it was created from. This way it is impossible\n    for quoted fragments to refer to newly introduced expressions.\n\n    For more information, see the {{!\"good-practices\".quoting} section on\n    quoting} in the good practices section. "]
+open Import
+type t
+val create : unit -> t[@@ocaml.doc
+                        " Creates a quoter. A quoter guarantees to give names that do not clash with\n    any other names used before "]
+val quote : t -> expression -> expression[@@ocaml.doc
+                                           " [quote t e] returns the expression that is safe to use in place of [e] in\n    generated code"]
+val sanitize : t -> expression -> expression[@@ocaml.doc
+                                              " [sanitize t e] Returns [e] wrapped with bindings for all quoted expressions\n    in the quoter [t] "]
+[
+  signature_item (src/quoter.mli[1,0+0]..src/quoter.mli[9,422+46])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/quoter.mli[1,0+0]..[9,422+46])
+        Pstr_eval
+        expression (src/quoter.mli[1,0+0]..[9,422+46])
+          Pexp_constant PConst_string(" Generate expressions in a hygienic way.\n\n    The idea is that whenever we want to refer to an expression in generated\n    code we first quote it. The result will be an identifier that is guaranteed\n    to refer to the expression it was created from. This way it is impossible\n    for quoted fragments to refer to newly introduced expressions.\n\n    For more information, see the {{!\"good-practices\".quoting} section on\n    quoting} in the good practices section. ",(src/quoter.mli[1,0+0]..[9,422+46]),None)
+    ]
+  signature_item (src/quoter.mli[11,470+0]..src/quoter.mli[11,470+11])
+    Tsig_open Fresh "Ppxlib__!.Import"
+  signature_item (src/quoter.mli[13,483+0]..src/quoter.mli[13,483+6])
+    Tsig_type Rec
+    [
+      type_declaration t/550 (src/quoter.mli[13,483+0]..src/quoter.mli[13,483+6])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/quoter.mli[15,491+0]..src/quoter.mli[15,491+22])
+    Tsig_value
+    value_description create/551 (src/quoter.mli[15,491+0]..src/quoter.mli[15,491+22])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/quoter.mli[16,514+0]..[17,593+34])
+            Pstr_eval
+            expression (src/quoter.mli[16,514+0]..[17,593+34])
+              Pexp_constant PConst_string(" Creates a quoter. A quoter guarantees to give names that do not clash with\n    any other names used before ",(src/quoter.mli[16,514+0]..[17,593+34]),None)
+        ]
+      core_type (src/quoter.mli[15,491+13]..src/quoter.mli[15,491+22])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/quoter.mli[15,491+13]..src/quoter.mli[15,491+17])
+          Ttyp_constr "unit/6!"
+          []
+        core_type (src/quoter.mli[15,491+21]..src/quoter.mli[15,491+22])
+          Ttyp_constr "t/550"
+          []
+      []
+  signature_item (src/quoter.mli[19,629+0]..src/quoter.mli[19,629+41])
+    Tsig_value
+    value_description quote/552 (src/quoter.mli[19,629+0]..src/quoter.mli[19,629+41])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/quoter.mli[20,671+0]..[21,749+20])
+            Pstr_eval
+            expression (src/quoter.mli[20,671+0]..[21,749+20])
+              Pexp_constant PConst_string(" [quote t e] returns the expression that is safe to use in place of [e] in\n    generated code",(src/quoter.mli[20,671+0]..[21,749+20]),None)
+        ]
+      core_type (src/quoter.mli[19,629+12]..src/quoter.mli[19,629+41])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/quoter.mli[19,629+12]..src/quoter.mli[19,629+13])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/quoter.mli[19,629+17]..src/quoter.mli[19,629+41])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/quoter.mli[19,629+17]..src/quoter.mli[19,629+27])
+            Ttyp_constr "Ppxlib__!.Import.expression"
+            []
+          core_type (src/quoter.mli[19,629+31]..src/quoter.mli[19,629+41])
+            Ttyp_constr "Ppxlib__!.Import.expression"
+            []
+      []
+  signature_item (src/quoter.mli[23,771+0]..src/quoter.mli[23,771+44])
+    Tsig_value
+    value_description sanitize/553 (src/quoter.mli[23,771+0]..src/quoter.mli[23,771+44])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/quoter.mli[24,816+0]..[25,896+24])
+            Pstr_eval
+            expression (src/quoter.mli[24,816+0]..[25,896+24])
+              Pexp_constant PConst_string(" [sanitize t e] Returns [e] wrapped with bindings for all quoted expressions\n    in the quoter [t] ",(src/quoter.mli[24,816+0]..[25,896+24]),None)
+        ]
+      core_type (src/quoter.mli[23,771+15]..src/quoter.mli[23,771+44])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/quoter.mli[23,771+15]..src/quoter.mli[23,771+16])
+          Ttyp_constr "t/550"
+          []
+        core_type (src/quoter.mli[23,771+20]..src/quoter.mli[23,771+44])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/quoter.mli[23,771+20]..src/quoter.mli[23,771+30])
+            Ttyp_constr "Ppxlib__!.Import.expression"
+            []
+          core_type (src/quoter.mli[23,771+34]..src/quoter.mli[23,771+44])
+            Ttyp_constr "Ppxlib__!.Import.expression"
+            []
+      []
+]
+

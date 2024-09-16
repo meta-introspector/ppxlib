@@ -1,0 +1,218 @@
+[
+  structure_item (ast/stdlib0.ml[1,0+0]..[3,52+3])
+    Pstr_module
+    "Int" (ast/stdlib0.ml[1,0+7]..[1,0+10])
+      module_expr (ast/stdlib0.ml[1,0+13]..[3,52+3])
+        Pmod_structure
+        [
+          structure_item (ast/stdlib0.ml[2,20+2]..[2,20+31])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (ast/stdlib0.ml[2,20+6]..[2,20+15])
+                  Ppat_var "to_string" (ast/stdlib0.ml[2,20+6]..[2,20+15])
+                expression (ast/stdlib0.ml[2,20+18]..[2,20+31])
+                  Pexp_ident "string_of_int" (ast/stdlib0.ml[2,20+18]..[2,20+31])
+            ]
+        ]
+  structure_item (ast/stdlib0.ml[5,57+0]..[7,145+3])
+    Pstr_module
+    "Option" (ast/stdlib0.ml[5,57+7]..[5,57+13])
+      module_expr (ast/stdlib0.ml[5,57+16]..[7,145+3])
+        Pmod_structure
+        [
+          structure_item (ast/stdlib0.ml[6,80+2]..[6,80+64])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (ast/stdlib0.ml[6,80+6]..[6,80+9])
+                  Ppat_var "map" (ast/stdlib0.ml[6,80+6]..[6,80+9])
+                expression (ast/stdlib0.ml[6,80+10]..[6,80+64]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (ast/stdlib0.ml[6,80+10]..[6,80+11])
+                    Ppat_var "f" (ast/stdlib0.ml[6,80+10]..[6,80+11])
+                  expression (ast/stdlib0.ml[6,80+12]..[6,80+64]) ghost
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (ast/stdlib0.ml[6,80+12]..[6,80+13])
+                      Ppat_var "o" (ast/stdlib0.ml[6,80+12]..[6,80+13])
+                    expression (ast/stdlib0.ml[6,80+16]..[6,80+64])
+                      Pexp_match
+                      expression (ast/stdlib0.ml[6,80+22]..[6,80+23])
+                        Pexp_ident "o" (ast/stdlib0.ml[6,80+22]..[6,80+23])
+                      [
+                        <case>
+                          pattern (ast/stdlib0.ml[6,80+29]..[6,80+33])
+                            Ppat_construct "None" (ast/stdlib0.ml[6,80+29]..[6,80+33])
+                            None
+                          expression (ast/stdlib0.ml[6,80+37]..[6,80+41])
+                            Pexp_construct "None" (ast/stdlib0.ml[6,80+37]..[6,80+41])
+                            None
+                        <case>
+                          pattern (ast/stdlib0.ml[6,80+44]..[6,80+50])
+                            Ppat_construct "Some" (ast/stdlib0.ml[6,80+44]..[6,80+48])
+                            Some
+                              pattern (ast/stdlib0.ml[6,80+49]..[6,80+50])
+                                Ppat_var "v" (ast/stdlib0.ml[6,80+49]..[6,80+50])
+                          expression (ast/stdlib0.ml[6,80+54]..[6,80+64])
+                            Pexp_construct "Some" (ast/stdlib0.ml[6,80+54]..[6,80+58])
+                            Some
+                              expression (ast/stdlib0.ml[6,80+59]..[6,80+64])
+                                Pexp_apply
+                                expression (ast/stdlib0.ml[6,80+60]..[6,80+61])
+                                  Pexp_ident "f" (ast/stdlib0.ml[6,80+60]..[6,80+61])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (ast/stdlib0.ml[6,80+62]..[6,80+63])
+                                      Pexp_ident "v" (ast/stdlib0.ml[6,80+62]..[6,80+63])
+                                ]
+                      ]
+            ]
+        ]
+]
+
+module Int = struct let to_string = string_of_int end
+module Option =
+  struct let map f o = match o with | None -> None | Some v -> Some (f v) end
+[
+  structure_item (ast/stdlib0.ml[1,0+0]..ast/stdlib0.ml[3,52+3])
+    Tstr_module
+    Int/94
+      module_expr (ast/stdlib0.ml[1,0+13]..ast/stdlib0.ml[3,52+3])
+        Tmod_structure
+        [
+          structure_item (ast/stdlib0.ml[2,20+2]..ast/stdlib0.ml[2,20+31])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (ast/stdlib0.ml[2,20+6]..ast/stdlib0.ml[2,20+15])
+                  Tpat_var "to_string/93"
+                expression (ast/stdlib0.ml[2,20+18]..ast/stdlib0.ml[2,20+31])
+                  Texp_ident "Stdlib!.string_of_int"
+            ]
+        ]
+  structure_item (ast/stdlib0.ml[5,57+0]..ast/stdlib0.ml[7,145+3])
+    Tstr_module
+    Option/100
+      module_expr (ast/stdlib0.ml[5,57+16]..ast/stdlib0.ml[7,145+3])
+        Tmod_structure
+        [
+          structure_item (ast/stdlib0.ml[6,80+2]..ast/stdlib0.ml[6,80+64])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (ast/stdlib0.ml[6,80+6]..ast/stdlib0.ml[6,80+9])
+                  Tpat_var "map/95"
+                expression (ast/stdlib0.ml[6,80+10]..ast/stdlib0.ml[6,80+64]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (ast/stdlib0.ml[6,80+10]..ast/stdlib0.ml[6,80+11])
+                        Tpat_var "f/97"
+                      expression (ast/stdlib0.ml[6,80+12]..ast/stdlib0.ml[6,80+64]) ghost
+                        Texp_function
+                        Nolabel
+                        [
+                          <case>
+                            pattern (ast/stdlib0.ml[6,80+12]..ast/stdlib0.ml[6,80+13])
+                              Tpat_var "o/98"
+                            expression (ast/stdlib0.ml[6,80+16]..ast/stdlib0.ml[6,80+64])
+                              Texp_match
+                              expression (ast/stdlib0.ml[6,80+22]..ast/stdlib0.ml[6,80+23])
+                                Texp_ident "o/98"
+                              [
+                                <case>
+                                  pattern (ast/stdlib0.ml[6,80+29]..ast/stdlib0.ml[6,80+33])
+                                    Tpat_value
+                                    pattern (ast/stdlib0.ml[6,80+29]..ast/stdlib0.ml[6,80+33])
+                                      Tpat_construct "None"
+                                      []
+                                  expression (ast/stdlib0.ml[6,80+37]..ast/stdlib0.ml[6,80+41])
+                                    Texp_construct "None"
+                                    []
+                                <case>
+                                  pattern (ast/stdlib0.ml[6,80+44]..ast/stdlib0.ml[6,80+50])
+                                    Tpat_value
+                                    pattern (ast/stdlib0.ml[6,80+44]..ast/stdlib0.ml[6,80+50])
+                                      Tpat_construct "Some"
+                                      [
+                                        pattern (ast/stdlib0.ml[6,80+49]..ast/stdlib0.ml[6,80+50])
+                                          Tpat_var "v/99"
+                                      ]
+                                  expression (ast/stdlib0.ml[6,80+54]..ast/stdlib0.ml[6,80+64])
+                                    Texp_construct "Some"
+                                    [
+                                      expression (ast/stdlib0.ml[6,80+59]..ast/stdlib0.ml[6,80+64])
+                                        Texp_apply
+                                        expression (ast/stdlib0.ml[6,80+60]..ast/stdlib0.ml[6,80+61])
+                                          Texp_ident "f/97"
+                                        [
+                                          <arg>
+                                            Nolabel
+                                            expression (ast/stdlib0.ml[6,80+62]..ast/stdlib0.ml[6,80+63])
+                                              Texp_ident "v/99"
+                                        ]
+                                    ]
+                              ]
+                              []
+                        ]
+                  ]
+            ]
+        ]
+]
+
+(setglobal Ppxlib_ast__Stdlib0!
+  (let
+    (Int/94 =
+       (module-defn(Int/94) Ppxlib_ast__Stdlib0 ast/stdlib0.ml(1):0-55
+         (let (to_string/93 = (field_imm 35 (global Stdlib!)))
+           (pseudo Ppxlib_ast__Stdlib0.Int ast/stdlib0.ml(1):13-55
+             (makeblock 0 to_string/93))))
+     Option/100 =
+       (module-defn(Option/100) Ppxlib_ast__Stdlib0 ast/stdlib0.ml(5):57-148
+         (let
+           (map/95 =
+              (function f/97 o/98
+                (funct-body Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6)<ghost>:90-144
+                  (before Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):96-144
+                    (if o/98
+                      (let (v/99 =a (field_imm 0 o/98))
+                        (before Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):134-144
+                          (makeblock 0
+                            (after Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):139-144
+                              (apply f/97 v/99)))))
+                      (before Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):117-121
+                        0))))))
+           (pseudo Ppxlib_ast__Stdlib0.Option ast/stdlib0.ml(5):73-148
+             (makeblock 0 map/95)))))
+    (pseudo <unknown location> (makeblock 0 Int/94 Option/100))))
+(setglobal Ppxlib_ast__Stdlib0!
+  (let
+    (Int/94 =
+       (module-defn(Int/94) Ppxlib_ast__Stdlib0 ast/stdlib0.ml(1):0-55
+         (let (to_string/93 = (field_imm 35 (global Stdlib!)))
+           (pseudo Ppxlib_ast__Stdlib0.Int ast/stdlib0.ml(1):13-55
+             (makeblock 0 to_string/93))))
+     Option/100 =
+       (module-defn(Option/100) Ppxlib_ast__Stdlib0 ast/stdlib0.ml(5):57-148
+         (let
+           (map/95 =
+              (function f/97 o/98
+                (funct-body Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6)<ghost>:90-144
+                  (before Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):96-144
+                    (if o/98
+                      (let (v/99 =a (field_imm 0 o/98))
+                        (before Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):134-144
+                          (makeblock 0
+                            (after Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):139-144
+                              (apply f/97 v/99)))))
+                      (before Ppxlib_ast__Stdlib0.Option.map ast/stdlib0.ml(6):117-121
+                        0))))))
+           (pseudo Ppxlib_ast__Stdlib0.Option ast/stdlib0.ml(5):73-148
+             (makeblock 0 map/95)))))
+    (pseudo <unknown location> (makeblock 0 Int/94 Option/100))))

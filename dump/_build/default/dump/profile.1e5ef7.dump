@@ -1,0 +1,11 @@
+0.009s 6.76MB 2.35MB 2.35MB bench/vendored/ppx_sexp_conv.v0.15.1/runtime-lib/ppx_sexp_conv_lib.ml
+  0.002s 2.94MB 1.60MB 1.60MB parsing
+    0.002s 2.94MB 1.60MB 1.60MB parser
+  0.002s 0.13MB ------ ------ typing
+  0.004s 0.07MB ------ ------ generate
+    0.001s 0.07MB ------ ------ compile_phrases
+      ------ 0.07MB ------ ------ liveness
+    0.002s ------ ------ ------ assemble
+    0.001s ------ ------ ------ other
+  0.001s 3.61MB 0.75MB 2.35MB other
+0.004s ------ ------ ------ other

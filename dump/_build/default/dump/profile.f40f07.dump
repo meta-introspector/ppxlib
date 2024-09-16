@@ -1,0 +1,8 @@
+0.224s  332MB 46.5MB 46.5MB traverse/ppxlib_traverse.pp.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ other
+  0.174s  177MB 41.1MB 41.1MB typing
+  0.006s 10.5MB 0.75MB 41.9MB transl
+  0.015s 59.8MB 1.68MB 43.6MB generate
+  0.028s 84.7MB 2.97MB 46.5MB other
+0.004s ------ ------ ------ other

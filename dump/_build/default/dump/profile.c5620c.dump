@@ -1,0 +1,5 @@
+0.008s 12.7MB 2.49MB 2.49MB print-diff/ppxlib_print_diff.ml
+  0.004s 5.78MB 0.96MB 0.96MB typing
+  0.001s 2.01MB 0.06MB 1.03MB generate
+  0.003s 4.96MB 1.46MB 2.49MB other
+0.004s ------ ------ ------ other

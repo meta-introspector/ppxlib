@@ -1,0 +1,6 @@
+0.262s 60.0MB 21.0MB 21.0MB test/driver/standalone_run_as_ppx/print_stuff.ml
+  0.247s 54.9MB 19.4MB 19.4MB typing
+  0.001s 2.00MB 0.06MB 19.5MB transl
+  0.003s 0.05MB ------ ------ generate
+  0.011s 3.07MB 1.53MB 21.0MB other
+0.007s ------ ------ ------ other

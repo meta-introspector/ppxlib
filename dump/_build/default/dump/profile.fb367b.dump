@@ -1,0 +1,7 @@
+0.008s 2.37MB 0.37MB 2.07MB ast/stdlib0.ml
+  0.002s 0.15MB ------ ------ typing
+  0.006s 2.22MB 0.37MB 2.07MB generate
+    0.004s ------ ------ ------ assemble
+    0.002s 2.22MB 0.37MB 2.07MB other
+  0.001s ------ ------ ------ other
+0.014s 3.02MB 1.69MB ------ other

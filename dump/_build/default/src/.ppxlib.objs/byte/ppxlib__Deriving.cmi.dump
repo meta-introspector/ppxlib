@@ -1,0 +1,2009 @@
+[
+  signature_item (src/deriving.mli[1,0+0]..[1,0+44])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/deriving.mli[1,0+0]..[1,0+44])
+        Pstr_eval
+        expression (src/deriving.mli[1,0+0]..[1,0+44])
+          Pexp_constant PConst_string(" Deriving code from type declarations. ",(src/deriving.mli[1,0+0]..[1,0+44]),None)
+    ]
+  signature_item (src/deriving.mli[3,46+0]..[3,46+11])
+    Psig_open Fresh "Import" (src/deriving.mli[3,46+5]..[3,46+11])
+  signature_item (src/deriving.mli[6,103+0]..[37,963+3])
+    Psig_module "Args" (src/deriving.mli[6,103+7]..[6,103+11])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[5,59+0]..[5,59+43])
+            Pstr_eval
+            expression (src/deriving.mli[5,59+0]..[5,59+43])
+              Pexp_constant PConst_string(" Specification of generator arguments ",(src/deriving.mli[5,59+0]..[5,59+43]),None)
+        ]
+    module_type (src/deriving.mli[6,103+14]..[37,963+3])
+      Pmty_signature
+      [
+        signature_item (src/deriving.mli[7,121+2]..[7,121+17])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/deriving.mli[7,121+16]..[7,121+17]) (src/deriving.mli[7,121+2]..[7,121+17])
+              ptype_params =
+                [
+                  core_type (src/deriving.mli[7,121+8]..[7,121+10])
+                    Ptyp_var a
+                  core_type (src/deriving.mli[7,121+12]..[7,121+14])
+                    Ptyp_var b
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/deriving.mli[8,139+2]..[8,139+15])
+          Psig_type Rec
+          [
+            type_declaration "param" (src/deriving.mli[8,139+10]..[8,139+15]) (src/deriving.mli[8,139+2]..[8,139+15])
+              ptype_params =
+                [
+                  core_type (src/deriving.mli[8,139+7]..[8,139+9])
+                    Ptyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/deriving.mli[10,156+2]..[10,156+24])
+          Psig_value
+          value_description "empty" (src/deriving.mli[10,156+6]..[10,156+11]) (src/deriving.mli[10,156+2]..[10,156+24])
+            core_type (src/deriving.mli[10,156+14]..[10,156+24])
+              Ptyp_constr "t" (src/deriving.mli[10,156+23]..[10,156+24])
+              [
+                core_type (src/deriving.mli[10,156+15]..[10,156+17])
+                  Ptyp_var m
+                core_type (src/deriving.mli[10,156+19]..[10,156+21])
+                  Ptyp_var m
+              ]
+            []
+        signature_item (src/deriving.mli[12,182+2]..[15,270+19])
+          Psig_value
+          value_description "arg" (src/deriving.mli[12,182+6]..[12,182+9]) (src/deriving.mli[12,182+2]..[15,270+19])
+            core_type (src/deriving.mli[13,194+4]..[15,270+19])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/deriving.mli[13,194+4]..[13,194+10])
+                Ptyp_constr "string" (src/deriving.mli[13,194+4]..[13,194+10])
+                []
+              core_type (src/deriving.mli[14,208+4]..[15,270+19])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/deriving.mli[14,208+4]..[14,208+58])
+                  Ptyp_constr "Ast_pattern.t" (src/deriving.mli[14,208+45]..[14,208+58])
+                  [
+                    core_type (src/deriving.mli[14,208+5]..[14,208+15])
+                      Ptyp_constr "expression" (src/deriving.mli[14,208+5]..[14,208+15])
+                      []
+                    core_type (src/deriving.mli[14,208+17]..[14,208+32])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[14,208+17]..[14,208+19])
+                        Ptyp_var a
+                      core_type (src/deriving.mli[14,208+23]..[14,208+32])
+                        Ptyp_constr "option" (src/deriving.mli[14,208+26]..[14,208+32])
+                        [
+                          core_type (src/deriving.mli[14,208+23]..[14,208+25])
+                            Ptyp_var a
+                        ]
+                    core_type (src/deriving.mli[14,208+34]..[14,208+43])
+                      Ptyp_constr "option" (src/deriving.mli[14,208+37]..[14,208+43])
+                      [
+                        core_type (src/deriving.mli[14,208+34]..[14,208+36])
+                          Ptyp_var a
+                      ]
+                  ]
+                core_type (src/deriving.mli[15,270+4]..[15,270+19])
+                  Ptyp_constr "param" (src/deriving.mli[15,270+14]..[15,270+19])
+                  [
+                    core_type (src/deriving.mli[15,270+4]..[15,270+13])
+                      Ptyp_constr "option" (src/deriving.mli[15,270+7]..[15,270+13])
+                      [
+                        core_type (src/deriving.mli[15,270+4]..[15,270+6])
+                          Ptyp_var a
+                      ]
+                  ]
+            []
+        signature_item (src/deriving.mli[17,291+2]..[17,291+33])
+          Psig_value
+          value_description "flag" (src/deriving.mli[17,291+6]..[17,291+10]) (src/deriving.mli[17,291+2]..[17,291+33])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/deriving.mli[18,325+2]..[19,406+44])
+                  Pstr_eval
+                  expression (src/deriving.mli[18,325+2]..[19,406+44])
+                    Pexp_constant PConst_string(" Flag matches punned labelled argument, i.e. of the form [~foo]. It returns\n      [true] iff the argument is present. ",(src/deriving.mli[18,325+2]..[19,406+44]),None)
+              ]
+            core_type (src/deriving.mli[17,291+13]..[17,291+33])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/deriving.mli[17,291+13]..[17,291+19])
+                Ptyp_constr "string" (src/deriving.mli[17,291+13]..[17,291+19])
+                []
+              core_type (src/deriving.mli[17,291+23]..[17,291+33])
+                Ptyp_constr "param" (src/deriving.mli[17,291+28]..[17,291+33])
+                [
+                  core_type (src/deriving.mli[17,291+23]..[17,291+27])
+                    Ptyp_constr "bool" (src/deriving.mli[17,291+23]..[17,291+27])
+                    []
+                ]
+            []
+        signature_item (src/deriving.mli[21,452+2]..[21,452+61])
+          Psig_value
+          value_description "+>" (src/deriving.mli[21,452+6]..[21,452+12]) (src/deriving.mli[21,452+2]..[21,452+61])
+            core_type (src/deriving.mli[21,452+15]..[21,452+61])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/deriving.mli[21,452+15]..[21,452+33])
+                Ptyp_constr "t" (src/deriving.mli[21,452+32]..[21,452+33])
+                [
+                  core_type (src/deriving.mli[21,452+16]..[21,452+19])
+                    Ptyp_var m1
+                  core_type (src/deriving.mli[21,452+21]..[21,452+30])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/deriving.mli[21,452+21]..[21,452+23])
+                      Ptyp_var a
+                    core_type (src/deriving.mli[21,452+27]..[21,452+30])
+                      Ptyp_var m2
+                ]
+              core_type (src/deriving.mli[21,452+37]..[21,452+61])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/deriving.mli[21,452+37]..[21,452+45])
+                  Ptyp_constr "param" (src/deriving.mli[21,452+40]..[21,452+45])
+                  [
+                    core_type (src/deriving.mli[21,452+37]..[21,452+39])
+                      Ptyp_var a
+                  ]
+                core_type (src/deriving.mli[21,452+49]..[21,452+61])
+                  Ptyp_constr "t" (src/deriving.mli[21,452+60]..[21,452+61])
+                  [
+                    core_type (src/deriving.mli[21,452+50]..[21,452+53])
+                      Ptyp_var m1
+                    core_type (src/deriving.mli[21,452+55]..[21,452+58])
+                      Ptyp_var m2
+                  ]
+            []
+        signature_item (src/deriving.mli[33,838+2]..[36,904+58])
+          Psig_include
+          module_type (src/deriving.mli[33,838+10]..[36,904+58])
+            Pmty_with
+            module_type (src/deriving.mli[33,838+10]..[35,896+7])
+              Pmty_typeof
+              module_expr (src/deriving.mli[33,838+25]..[35,896+7])
+                Pmod_structure
+                [
+                  structure_item (src/deriving.mli[34,870+6]..[34,870+25])
+                    Pstr_include                    module_expr (src/deriving.mli[34,870+14]..[34,870+25])
+                      Pmod_ident "Ast_pattern" (src/deriving.mli[34,870+14]..[34,870+25])
+                ]
+            [
+              Pwith_typesubst "t" (src/deriving.mli[36,904+27]..[36,904+28])
+                type_declaration "t" (src/deriving.mli[36,904+27]..[36,904+28]) (src/deriving.mli[36,904+9]..[36,904+58])
+                  ptype_params =
+                    [
+                      core_type (src/deriving.mli[36,904+15]..[36,904+17])
+                        Ptyp_var a
+                      core_type (src/deriving.mli[36,904+19]..[36,904+21])
+                        Ptyp_var b
+                      core_type (src/deriving.mli[36,904+23]..[36,904+25])
+                        Ptyp_var c
+                    ]
+                  ptype_cstrs =
+                    []
+                  ptype_kind =
+                    Ptype_abstract
+                  ptype_private = Public
+                  ptype_manifest =
+                    Some
+                      core_type (src/deriving.mli[36,904+32]..[36,904+58])
+                        Ptyp_constr "Ast_pattern.t" (src/deriving.mli[36,904+45]..[36,904+58])
+                        [
+                          core_type (src/deriving.mli[36,904+33]..[36,904+35])
+                            Ptyp_var a
+                          core_type (src/deriving.mli[36,904+37]..[36,904+39])
+                            Ptyp_var b
+                          core_type (src/deriving.mli[36,904+41]..[36,904+43])
+                            Ptyp_var c
+                        ]
+            ]
+            attribute "ocaml.doc"
+              [
+                structure_item (src/deriving.mli[23,515+2]..[32,826+11])
+                  Pstr_eval
+                  expression (src/deriving.mli[23,515+2]..[32,826+11])
+                    Pexp_constant PConst_string(" For convenience, so that one can write the following without having to\n      open both [Ast_pattern] and [Deriving.Args]:\n\n      {[\n        Deriving.Args.(\n          empty\n          +> arg_option \"foo\" (estring __)\n          +> arg_option \"bar\" (pack2 (eint __ ** eint __))\n          +> flag \"dotdotdot\")\n      ]} ",(src/deriving.mli[23,515+2]..[32,826+11]),None)
+              ]
+      ]
+  signature_item (src/deriving.mli[39,968+0]..[39,968+33])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/deriving.mli[39,968+0]..[39,968+33])
+        Pstr_eval
+        expression (src/deriving.mli[39,968+0]..[39,968+33])
+          Pexp_constant PConst_string(" {5 Generator registration} ",(src/deriving.mli[39,968+0]..[39,968+33]),None)
+    ]
+  signature_item (src/deriving.mli[41,1003+0]..[41,1003+6])
+    Psig_type Rec
+    [
+      type_declaration "t" (src/deriving.mli[41,1003+5]..[41,1003+6]) (src/deriving.mli[41,1003+0]..[41,1003+6])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/deriving.mli[42,1010+0]..[42,1010+34])
+              Pstr_eval
+              expression (src/deriving.mli[42,1010+0]..[42,1010+34])
+                Pexp_constant PConst_string(" Type of registered derivers ",(src/deriving.mli[42,1010+0]..[42,1010+34]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/deriving.mli[44,1046+0]..[104,3154+22])
+    Psig_module "Generator" (src/deriving.mli[44,1046+7]..[44,1046+16])
+    module_type (src/deriving.mli[44,1046+19]..[104,3154+22])
+      Pmty_with
+      module_type (src/deriving.mli[44,1046+19]..[103,3150+3])
+        Pmty_signature
+        [
+          signature_item (src/deriving.mli[45,1069+2]..[45,1069+18])
+            Psig_type Rec
+            [
+              type_declaration "deriver" (src/deriving.mli[45,1069+7]..[45,1069+14]) (src/deriving.mli[45,1069+2]..[45,1069+18])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (src/deriving.mli[45,1069+17]..[45,1069+18])
+                      Ptyp_constr "t" (src/deriving.mli[45,1069+17]..[45,1069+18])
+                      []
+            ]
+          signature_item (src/deriving.mli[46,1088+2]..[46,1088+34])
+            Psig_type Rec
+            [
+              type_declaration "t" (src/deriving.mli[46,1088+33]..[46,1088+34]) (src/deriving.mli[46,1088+2]..[46,1088+34])
+                ptype_params =
+                  [
+                    core_type (src/deriving.mli[46,1088+8]..[46,1088+19])
+                      Ptyp_var output_ast
+                    core_type (src/deriving.mli[46,1088+21]..[46,1088+31])
+                      Ptyp_var input_ast
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/deriving.mli[48,1124+2]..[54,1354+31])
+            Psig_value
+            value_description "make" (src/deriving.mli[48,1124+6]..[48,1124+10]) (src/deriving.mli[48,1124+2]..[54,1354+31])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/deriving.mli[55,1386+2]..[65,1867+39])
+                    Pstr_eval
+                    expression (src/deriving.mli[55,1386+2]..[65,1867+39])
+                      Pexp_constant PConst_string(" [make args gen] creates a generator that can be passed to {!Deriving.add}\n      to generate an output AST from an input AST and generator arguments.\n\n      [deps] is a list of derivers that this generator depends on.\n\n      [attributes] is deprecated and unused. It is only kept for backward\n      compatibility.\n\n      [unused_code_warning] controls whether unused code warnings (e.g. warnings\n      32 and 60) are enabled or suppressed in emitted code. Default is [false],\n      which suppresses the warnings. ",(src/deriving.mli[55,1386+2]..[65,1867+39]),None)
+                ]
+              core_type (src/deriving.mli[49,1137+4]..[54,1354+31])
+                Ptyp_arrow
+                Optional "attributes"
+                core_type (src/deriving.mli[49,1137+16]..[49,1137+37])
+                  Ptyp_constr "list" (src/deriving.mli[49,1137+33]..[49,1137+37])
+                  [
+                    core_type (src/deriving.mli[49,1137+16]..[49,1137+32])
+                      Ptyp_constr "Attribute.packed" (src/deriving.mli[49,1137+16]..[49,1137+32])
+                      []
+                  ]
+                core_type (src/deriving.mli[50,1203+4]..[54,1354+31])
+                  Ptyp_arrow
+                  Optional "deps"
+                  core_type (src/deriving.mli[50,1203+10]..[50,1203+22])
+                    Ptyp_constr "list" (src/deriving.mli[50,1203+18]..[50,1203+22])
+                    [
+                      core_type (src/deriving.mli[50,1203+10]..[50,1203+17])
+                        Ptyp_constr "deriver" (src/deriving.mli[50,1203+10]..[50,1203+17])
+                        []
+                    ]
+                  core_type (src/deriving.mli[51,1229+4]..[54,1354+31])
+                    Ptyp_arrow
+                    Optional "unused_code_warnings"
+                    core_type (src/deriving.mli[51,1229+26]..[51,1229+30])
+                      Ptyp_constr "bool" (src/deriving.mli[51,1229+26]..[51,1229+30])
+                      []
+                    core_type (src/deriving.mli[52,1263+4]..[54,1354+31])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[52,1263+4]..[52,1263+28])
+                        Ptyp_constr "Args.t" (src/deriving.mli[52,1263+22]..[52,1263+28])
+                        [
+                          core_type (src/deriving.mli[52,1263+5]..[52,1263+7])
+                            Ptyp_var f
+                          core_type (src/deriving.mli[52,1263+9]..[52,1263+20])
+                            Ptyp_var output_ast
+                        ]
+                      core_type (src/deriving.mli[53,1295+4]..[54,1354+31])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/deriving.mli[53,1295+5]..[53,1295+54])
+                          Ptyp_arrow
+                          Labelled "loc"
+                          core_type (src/deriving.mli[53,1295+9]..[53,1295+19])
+                            Ptyp_constr "Location.t" (src/deriving.mli[53,1295+9]..[53,1295+19])
+                            []
+                          core_type (src/deriving.mli[53,1295+23]..[53,1295+54])
+                            Ptyp_arrow
+                            Labelled "path"
+                            core_type (src/deriving.mli[53,1295+28]..[53,1295+34])
+                              Ptyp_constr "string" (src/deriving.mli[53,1295+28]..[53,1295+34])
+                              []
+                            core_type (src/deriving.mli[53,1295+38]..[53,1295+54])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/deriving.mli[53,1295+38]..[53,1295+48])
+                                Ptyp_var input_ast
+                              core_type (src/deriving.mli[53,1295+52]..[53,1295+54])
+                                Ptyp_var f
+                        core_type (src/deriving.mli[54,1354+4]..[54,1354+31])
+                          Ptyp_constr "t" (src/deriving.mli[54,1354+30]..[54,1354+31])
+                          [
+                            core_type (src/deriving.mli[54,1354+5]..[54,1354+16])
+                              Ptyp_var output_ast
+                            core_type (src/deriving.mli[54,1354+18]..[54,1354+28])
+                              Ptyp_var input_ast
+                          ]
+              []
+          signature_item (src/deriving.mli[67,1908+2]..[72,2121+31])
+            Psig_value
+            value_description "make_noarg" (src/deriving.mli[67,1908+6]..[67,1908+16]) (src/deriving.mli[67,1908+2]..[72,2121+31])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/deriving.mli[73,2153+2]..[73,2153+48])
+                    Pstr_eval
+                    expression (src/deriving.mli[73,2153+2]..[73,2153+48])
+                      Pexp_constant PConst_string(" Same as {!make}, but without arguments. ",(src/deriving.mli[73,2153+2]..[73,2153+48]),None)
+                ]
+              core_type (src/deriving.mli[68,1927+4]..[72,2121+31])
+                Ptyp_arrow
+                Optional "attributes"
+                core_type (src/deriving.mli[68,1927+16]..[68,1927+37])
+                  Ptyp_constr "list" (src/deriving.mli[68,1927+33]..[68,1927+37])
+                  [
+                    core_type (src/deriving.mli[68,1927+16]..[68,1927+32])
+                      Ptyp_constr "Attribute.packed" (src/deriving.mli[68,1927+16]..[68,1927+32])
+                      []
+                  ]
+                core_type (src/deriving.mli[69,1993+4]..[72,2121+31])
+                  Ptyp_arrow
+                  Optional "deps"
+                  core_type (src/deriving.mli[69,1993+10]..[69,1993+22])
+                    Ptyp_constr "list" (src/deriving.mli[69,1993+18]..[69,1993+22])
+                    [
+                      core_type (src/deriving.mli[69,1993+10]..[69,1993+17])
+                        Ptyp_constr "deriver" (src/deriving.mli[69,1993+10]..[69,1993+17])
+                        []
+                    ]
+                  core_type (src/deriving.mli[70,2019+4]..[72,2121+31])
+                    Ptyp_arrow
+                    Optional "unused_code_warnings"
+                    core_type (src/deriving.mli[70,2019+26]..[70,2019+30])
+                      Ptyp_constr "bool" (src/deriving.mli[70,2019+26]..[70,2019+30])
+                      []
+                    core_type (src/deriving.mli[71,2053+4]..[72,2121+31])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[71,2053+5]..[71,2053+63])
+                        Ptyp_arrow
+                        Labelled "loc"
+                        core_type (src/deriving.mli[71,2053+9]..[71,2053+19])
+                          Ptyp_constr "Location.t" (src/deriving.mli[71,2053+9]..[71,2053+19])
+                          []
+                        core_type (src/deriving.mli[71,2053+23]..[71,2053+63])
+                          Ptyp_arrow
+                          Labelled "path"
+                          core_type (src/deriving.mli[71,2053+28]..[71,2053+34])
+                            Ptyp_constr "string" (src/deriving.mli[71,2053+28]..[71,2053+34])
+                            []
+                          core_type (src/deriving.mli[71,2053+38]..[71,2053+63])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/deriving.mli[71,2053+38]..[71,2053+48])
+                              Ptyp_var input_ast
+                            core_type (src/deriving.mli[71,2053+52]..[71,2053+63])
+                              Ptyp_var output_ast
+                      core_type (src/deriving.mli[72,2121+4]..[72,2121+31])
+                        Ptyp_constr "t" (src/deriving.mli[72,2121+30]..[72,2121+31])
+                        [
+                          core_type (src/deriving.mli[72,2121+5]..[72,2121+16])
+                            Ptyp_var output_ast
+                          core_type (src/deriving.mli[72,2121+18]..[72,2121+28])
+                            Ptyp_var input_ast
+                        ]
+              []
+          signature_item (src/deriving.mli[75,2203+2]..[94,2967+5])
+            Psig_module "V2" (src/deriving.mli[75,2203+9]..[75,2203+11])
+            module_type (src/deriving.mli[75,2203+14]..[94,2967+5])
+              Pmty_signature
+              [
+                signature_item (src/deriving.mli[76,2221+4]..[82,2466+33])
+                  Psig_value
+                  value_description "make" (src/deriving.mli[76,2221+8]..[76,2221+12]) (src/deriving.mli[76,2221+4]..[82,2466+33])
+                    attribute "ocaml.doc"
+                      [
+                        structure_item (src/deriving.mli[83,2500+4]..[84,2580+19])
+                          Pstr_eval
+                          expression (src/deriving.mli[83,2500+4]..[84,2580+19])
+                            Pexp_constant PConst_string(" Same as {!Generator.make}, but the generator has access to an expansion\n        context. ",(src/deriving.mli[83,2500+4]..[84,2580+19]),None)
+                      ]
+                    core_type (src/deriving.mli[77,2236+6]..[82,2466+33])
+                      Ptyp_arrow
+                      Optional "attributes"
+                      core_type (src/deriving.mli[77,2236+18]..[77,2236+39])
+                        Ptyp_constr "list" (src/deriving.mli[77,2236+35]..[77,2236+39])
+                        [
+                          core_type (src/deriving.mli[77,2236+18]..[77,2236+34])
+                            Ptyp_constr "Attribute.packed" (src/deriving.mli[77,2236+18]..[77,2236+34])
+                            []
+                        ]
+                      core_type (src/deriving.mli[78,2304+6]..[82,2466+33])
+                        Ptyp_arrow
+                        Optional "deps"
+                        core_type (src/deriving.mli[78,2304+12]..[78,2304+24])
+                          Ptyp_constr "list" (src/deriving.mli[78,2304+20]..[78,2304+24])
+                          [
+                            core_type (src/deriving.mli[78,2304+12]..[78,2304+19])
+                              Ptyp_constr "deriver" (src/deriving.mli[78,2304+12]..[78,2304+19])
+                              []
+                          ]
+                        core_type (src/deriving.mli[79,2332+6]..[82,2466+33])
+                          Ptyp_arrow
+                          Optional "unused_code_warnings"
+                          core_type (src/deriving.mli[79,2332+28]..[79,2332+32])
+                            Ptyp_constr "bool" (src/deriving.mli[79,2332+28]..[79,2332+32])
+                            []
+                          core_type (src/deriving.mli[80,2368+6]..[82,2466+33])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/deriving.mli[80,2368+6]..[80,2368+30])
+                              Ptyp_constr "Args.t" (src/deriving.mli[80,2368+24]..[80,2368+30])
+                              [
+                                core_type (src/deriving.mli[80,2368+7]..[80,2368+9])
+                                  Ptyp_var f
+                                core_type (src/deriving.mli[80,2368+11]..[80,2368+22])
+                                  Ptyp_var output_ast
+                              ]
+                            core_type (src/deriving.mli[81,2402+6]..[82,2466+33])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/deriving.mli[81,2402+7]..[81,2402+59])
+                                Ptyp_arrow
+                                Labelled "ctxt"
+                                core_type (src/deriving.mli[81,2402+12]..[81,2402+39])
+                                  Ptyp_constr "Expansion_context.Deriver.t" (src/deriving.mli[81,2402+12]..[81,2402+39])
+                                  []
+                                core_type (src/deriving.mli[81,2402+43]..[81,2402+59])
+                                  Ptyp_arrow
+                                  Nolabel
+                                  core_type (src/deriving.mli[81,2402+43]..[81,2402+53])
+                                    Ptyp_var input_ast
+                                  core_type (src/deriving.mli[81,2402+57]..[81,2402+59])
+                                    Ptyp_var f
+                              core_type (src/deriving.mli[82,2466+6]..[82,2466+33])
+                                Ptyp_constr "t" (src/deriving.mli[82,2466+32]..[82,2466+33])
+                                [
+                                  core_type (src/deriving.mli[82,2466+7]..[82,2466+18])
+                                    Ptyp_var output_ast
+                                  core_type (src/deriving.mli[82,2466+20]..[82,2466+30])
+                                    Ptyp_var input_ast
+                                ]
+                    []
+                signature_item (src/deriving.mli[86,2601+4]..[91,2827+33])
+                  Psig_value
+                  value_description "make_noarg" (src/deriving.mli[86,2601+8]..[86,2601+18]) (src/deriving.mli[86,2601+4]..[91,2827+33])
+                    attribute "ocaml.doc"
+                      [
+                        structure_item (src/deriving.mli[92,2861+4]..[93,2937+29])
+                          Pstr_eval
+                          expression (src/deriving.mli[92,2861+4]..[93,2937+29])
+                            Pexp_constant PConst_string(" Same as {!Generator.make_noarg}, but the generator has access to an\n        expansion context. ",(src/deriving.mli[92,2861+4]..[93,2937+29]),None)
+                      ]
+                    core_type (src/deriving.mli[87,2622+6]..[91,2827+33])
+                      Ptyp_arrow
+                      Optional "attributes"
+                      core_type (src/deriving.mli[87,2622+18]..[87,2622+39])
+                        Ptyp_constr "list" (src/deriving.mli[87,2622+35]..[87,2622+39])
+                        [
+                          core_type (src/deriving.mli[87,2622+18]..[87,2622+34])
+                            Ptyp_constr "Attribute.packed" (src/deriving.mli[87,2622+18]..[87,2622+34])
+                            []
+                        ]
+                      core_type (src/deriving.mli[88,2690+6]..[91,2827+33])
+                        Ptyp_arrow
+                        Optional "deps"
+                        core_type (src/deriving.mli[88,2690+12]..[88,2690+24])
+                          Ptyp_constr "list" (src/deriving.mli[88,2690+20]..[88,2690+24])
+                          [
+                            core_type (src/deriving.mli[88,2690+12]..[88,2690+19])
+                              Ptyp_constr "deriver" (src/deriving.mli[88,2690+12]..[88,2690+19])
+                              []
+                          ]
+                        core_type (src/deriving.mli[89,2718+6]..[91,2827+33])
+                          Ptyp_arrow
+                          Optional "unused_code_warnings"
+                          core_type (src/deriving.mli[89,2718+28]..[89,2718+32])
+                            Ptyp_constr "bool" (src/deriving.mli[89,2718+28]..[89,2718+32])
+                            []
+                          core_type (src/deriving.mli[90,2754+6]..[91,2827+33])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/deriving.mli[90,2754+7]..[90,2754+68])
+                              Ptyp_arrow
+                              Labelled "ctxt"
+                              core_type (src/deriving.mli[90,2754+12]..[90,2754+39])
+                                Ptyp_constr "Expansion_context.Deriver.t" (src/deriving.mli[90,2754+12]..[90,2754+39])
+                                []
+                              core_type (src/deriving.mli[90,2754+43]..[90,2754+68])
+                                Ptyp_arrow
+                                Nolabel
+                                core_type (src/deriving.mli[90,2754+43]..[90,2754+53])
+                                  Ptyp_var input_ast
+                                core_type (src/deriving.mli[90,2754+57]..[90,2754+68])
+                                  Ptyp_var output_ast
+                            core_type (src/deriving.mli[91,2827+6]..[91,2827+33])
+                              Ptyp_constr "t" (src/deriving.mli[91,2827+32]..[91,2827+33])
+                              [
+                                core_type (src/deriving.mli[91,2827+7]..[91,2827+18])
+                                  Ptyp_var output_ast
+                                core_type (src/deriving.mli[91,2827+20]..[91,2827+30])
+                                  Ptyp_var input_ast
+                              ]
+                    []
+              ]
+          signature_item (src/deriving.mli[96,2974+2]..[102,3134+15])
+            Psig_value
+            value_description "apply" (src/deriving.mli[96,2974+6]..[96,2974+11]) (src/deriving.mli[96,2974+2]..[102,3134+15])
+              core_type (src/deriving.mli[97,2988+4]..[102,3134+15])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/deriving.mli[97,2988+4]..[97,2988+31])
+                  Ptyp_constr "t" (src/deriving.mli[97,2988+30]..[97,2988+31])
+                  [
+                    core_type (src/deriving.mli[97,2988+5]..[97,2988+16])
+                      Ptyp_var output_ast
+                    core_type (src/deriving.mli[97,2988+18]..[97,2988+28])
+                      Ptyp_var input_ast
+                  ]
+                core_type (src/deriving.mli[98,3023+4]..[102,3134+15])
+                  Ptyp_arrow
+                  Labelled "name"
+                  core_type (src/deriving.mli[98,3023+9]..[98,3023+15])
+                    Ptyp_constr "string" (src/deriving.mli[98,3023+9]..[98,3023+15])
+                    []
+                  core_type (src/deriving.mli[99,3042+4]..[102,3134+15])
+                    Ptyp_arrow
+                    Labelled "ctxt"
+                    core_type (src/deriving.mli[99,3042+9]..[99,3042+36])
+                      Ptyp_constr "Expansion_context.Deriver.t" (src/deriving.mli[99,3042+9]..[99,3042+36])
+                      []
+                    core_type (src/deriving.mli[100,3082+4]..[102,3134+15])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[100,3082+4]..[100,3082+14])
+                        Ptyp_var input_ast
+                      core_type (src/deriving.mli[101,3100+4]..[102,3134+15])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/deriving.mli[101,3100+4]..[101,3100+30])
+                          Ptyp_constr "list" (src/deriving.mli[101,3100+26]..[101,3100+30])
+                          [
+                            core_type (src/deriving.mli[101,3100+5]..[101,3100+24])
+                              Ptyp_tuple
+                              [
+                                core_type (src/deriving.mli[101,3100+5]..[101,3100+11])
+                                  Ptyp_constr "string" (src/deriving.mli[101,3100+5]..[101,3100+11])
+                                  []
+                                core_type (src/deriving.mli[101,3100+14]..[101,3100+24])
+                                  Ptyp_constr "expression" (src/deriving.mli[101,3100+14]..[101,3100+24])
+                                  []
+                              ]
+                          ]
+                        core_type (src/deriving.mli[102,3134+4]..[102,3134+15])
+                          Ptyp_var output_ast
+              []
+        ]
+      [
+        Pwith_typesubst "deriver" (src/deriving.mli[104,3154+10]..[104,3154+17])
+          type_declaration "deriver" (src/deriving.mli[104,3154+10]..[104,3154+17]) (src/deriving.mli[104,3154+5]..[104,3154+22])
+            ptype_params =
+              []
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (src/deriving.mli[104,3154+21]..[104,3154+22])
+                  Ptyp_constr "t" (src/deriving.mli[104,3154+21]..[104,3154+22])
+                  []
+      ]
+  signature_item (src/deriving.mli[106,3178+0]..[117,3821+3])
+    Psig_value
+    value_description "add" (src/deriving.mli[106,3178+4]..[106,3178+7]) (src/deriving.mli[106,3178+0]..[117,3821+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[118,3825+0]..[129,4351+63])
+            Pstr_eval
+            expression (src/deriving.mli[118,3825+0]..[129,4351+63])
+              Pexp_constant PConst_string(" Register a new deriving generator.\n\n    The various arguments are for the various items on which derivers can be\n    attached in structure and signatures.\n\n    We distinguish [exception] from [type_extension] as [exception E] is not\n    exactly the same as [type exn += E]. Indeed if the type [exn] is redefined,\n    then [type exn += E] will add [E] to the new [exn] type while [exception E]\n    will add [E] to the predefined [exn] type.\n\n    [extension] register an expander for extension with the name of the deriver.\n    This is here mostly to support the ppx_deriving backend. ",(src/deriving.mli[118,3825+0]..[129,4351+63]),None)
+        ]
+      core_type (src/deriving.mli[107,3188+2]..[117,3821+3])
+        Ptyp_arrow
+        Optional "str_type_decl"
+        core_type (src/deriving.mli[107,3188+17]..[107,3188+74])
+          Ptyp_constr "Generator.t" (src/deriving.mli[107,3188+63]..[107,3188+74])
+          [
+            core_type (src/deriving.mli[107,3188+18]..[107,3188+27])
+              Ptyp_constr "structure" (src/deriving.mli[107,3188+18]..[107,3188+27])
+              []
+            core_type (src/deriving.mli[107,3188+29]..[107,3188+61])
+              Ptyp_tuple
+              [
+                core_type (src/deriving.mli[107,3188+29]..[107,3188+37])
+                  Ptyp_constr "rec_flag" (src/deriving.mli[107,3188+29]..[107,3188+37])
+                  []
+                core_type (src/deriving.mli[107,3188+40]..[107,3188+61])
+                  Ptyp_constr "list" (src/deriving.mli[107,3188+57]..[107,3188+61])
+                  [
+                    core_type (src/deriving.mli[107,3188+40]..[107,3188+56])
+                      Ptyp_constr "type_declaration" (src/deriving.mli[107,3188+40]..[107,3188+56])
+                      []
+                  ]
+              ]
+          ]
+        core_type (src/deriving.mli[108,3266+2]..[117,3821+3])
+          Ptyp_arrow
+          Optional "str_type_ext"
+          core_type (src/deriving.mli[108,3266+16]..[108,3266+55])
+            Ptyp_constr "Generator.t" (src/deriving.mli[108,3266+44]..[108,3266+55])
+            [
+              core_type (src/deriving.mli[108,3266+17]..[108,3266+26])
+                Ptyp_constr "structure" (src/deriving.mli[108,3266+17]..[108,3266+26])
+                []
+              core_type (src/deriving.mli[108,3266+28]..[108,3266+42])
+                Ptyp_constr "type_extension" (src/deriving.mli[108,3266+28]..[108,3266+42])
+                []
+            ]
+          core_type (src/deriving.mli[109,3325+2]..[117,3821+3])
+            Ptyp_arrow
+            Optional "str_exception"
+            core_type (src/deriving.mli[109,3325+17]..[109,3325+56])
+              Ptyp_constr "Generator.t" (src/deriving.mli[109,3325+45]..[109,3325+56])
+              [
+                core_type (src/deriving.mli[109,3325+18]..[109,3325+27])
+                  Ptyp_constr "structure" (src/deriving.mli[109,3325+18]..[109,3325+27])
+                  []
+                core_type (src/deriving.mli[109,3325+29]..[109,3325+43])
+                  Ptyp_constr "type_exception" (src/deriving.mli[109,3325+29]..[109,3325+43])
+                  []
+              ]
+            core_type (src/deriving.mli[110,3385+2]..[117,3821+3])
+              Ptyp_arrow
+              Optional "str_module_type_decl"
+              core_type (src/deriving.mli[110,3385+24]..[110,3385+72])
+                Ptyp_constr "Generator.t" (src/deriving.mli[110,3385+61]..[110,3385+72])
+                [
+                  core_type (src/deriving.mli[110,3385+25]..[110,3385+34])
+                    Ptyp_constr "structure" (src/deriving.mli[110,3385+25]..[110,3385+34])
+                    []
+                  core_type (src/deriving.mli[110,3385+36]..[110,3385+59])
+                    Ptyp_constr "module_type_declaration" (src/deriving.mli[110,3385+36]..[110,3385+59])
+                    []
+                ]
+              core_type (src/deriving.mli[111,3461+2]..[117,3821+3])
+                Ptyp_arrow
+                Optional "sig_type_decl"
+                core_type (src/deriving.mli[111,3461+17]..[111,3461+74])
+                  Ptyp_constr "Generator.t" (src/deriving.mli[111,3461+63]..[111,3461+74])
+                  [
+                    core_type (src/deriving.mli[111,3461+18]..[111,3461+27])
+                      Ptyp_constr "signature" (src/deriving.mli[111,3461+18]..[111,3461+27])
+                      []
+                    core_type (src/deriving.mli[111,3461+29]..[111,3461+61])
+                      Ptyp_tuple
+                      [
+                        core_type (src/deriving.mli[111,3461+29]..[111,3461+37])
+                          Ptyp_constr "rec_flag" (src/deriving.mli[111,3461+29]..[111,3461+37])
+                          []
+                        core_type (src/deriving.mli[111,3461+40]..[111,3461+61])
+                          Ptyp_constr "list" (src/deriving.mli[111,3461+57]..[111,3461+61])
+                          [
+                            core_type (src/deriving.mli[111,3461+40]..[111,3461+56])
+                              Ptyp_constr "type_declaration" (src/deriving.mli[111,3461+40]..[111,3461+56])
+                              []
+                          ]
+                      ]
+                  ]
+                core_type (src/deriving.mli[112,3539+2]..[117,3821+3])
+                  Ptyp_arrow
+                  Optional "sig_type_ext"
+                  core_type (src/deriving.mli[112,3539+16]..[112,3539+55])
+                    Ptyp_constr "Generator.t" (src/deriving.mli[112,3539+44]..[112,3539+55])
+                    [
+                      core_type (src/deriving.mli[112,3539+17]..[112,3539+26])
+                        Ptyp_constr "signature" (src/deriving.mli[112,3539+17]..[112,3539+26])
+                        []
+                      core_type (src/deriving.mli[112,3539+28]..[112,3539+42])
+                        Ptyp_constr "type_extension" (src/deriving.mli[112,3539+28]..[112,3539+42])
+                        []
+                    ]
+                  core_type (src/deriving.mli[113,3598+2]..[117,3821+3])
+                    Ptyp_arrow
+                    Optional "sig_exception"
+                    core_type (src/deriving.mli[113,3598+17]..[113,3598+56])
+                      Ptyp_constr "Generator.t" (src/deriving.mli[113,3598+45]..[113,3598+56])
+                      [
+                        core_type (src/deriving.mli[113,3598+18]..[113,3598+27])
+                          Ptyp_constr "signature" (src/deriving.mli[113,3598+18]..[113,3598+27])
+                          []
+                        core_type (src/deriving.mli[113,3598+29]..[113,3598+43])
+                          Ptyp_constr "type_exception" (src/deriving.mli[113,3598+29]..[113,3598+43])
+                          []
+                      ]
+                    core_type (src/deriving.mli[114,3658+2]..[117,3821+3])
+                      Ptyp_arrow
+                      Optional "sig_module_type_decl"
+                      core_type (src/deriving.mli[114,3658+24]..[114,3658+72])
+                        Ptyp_constr "Generator.t" (src/deriving.mli[114,3658+61]..[114,3658+72])
+                        [
+                          core_type (src/deriving.mli[114,3658+25]..[114,3658+34])
+                            Ptyp_constr "signature" (src/deriving.mli[114,3658+25]..[114,3658+34])
+                            []
+                          core_type (src/deriving.mli[114,3658+36]..[114,3658+59])
+                            Ptyp_constr "module_type_declaration" (src/deriving.mli[114,3658+36]..[114,3658+59])
+                            []
+                        ]
+                      core_type (src/deriving.mli[115,3734+2]..[117,3821+3])
+                        Ptyp_arrow
+                        Optional "extension"
+                        core_type (src/deriving.mli[115,3734+14]..[115,3734+70])
+                          Ptyp_arrow
+                          Labelled "loc"
+                          core_type (src/deriving.mli[115,3734+18]..[115,3734+28])
+                            Ptyp_constr "Location.t" (src/deriving.mli[115,3734+18]..[115,3734+28])
+                            []
+                          core_type (src/deriving.mli[115,3734+32]..[115,3734+70])
+                            Ptyp_arrow
+                            Labelled "path"
+                            core_type (src/deriving.mli[115,3734+37]..[115,3734+43])
+                              Ptyp_constr "string" (src/deriving.mli[115,3734+37]..[115,3734+43])
+                              []
+                            core_type (src/deriving.mli[115,3734+47]..[115,3734+70])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/deriving.mli[115,3734+47]..[115,3734+56])
+                                Ptyp_constr "core_type" (src/deriving.mli[115,3734+47]..[115,3734+56])
+                                []
+                              core_type (src/deriving.mli[115,3734+60]..[115,3734+70])
+                                Ptyp_constr "expression" (src/deriving.mli[115,3734+60]..[115,3734+70])
+                                []
+                        core_type (src/deriving.mli[116,3809+2]..[117,3821+3])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/deriving.mli[116,3809+2]..[116,3809+8])
+                            Ptyp_constr "string" (src/deriving.mli[116,3809+2]..[116,3809+8])
+                            []
+                          core_type (src/deriving.mli[117,3821+2]..[117,3821+3])
+                            Ptyp_constr "t" (src/deriving.mli[117,3821+2]..[117,3821+3])
+                            []
+      []
+  signature_item (src/deriving.mli[131,4416+0]..[142,4684+3])
+    Psig_value
+    value_description "add_alias" (src/deriving.mli[131,4416+4]..[131,4416+13]) (src/deriving.mli[131,4416+0]..[142,4684+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[143,4688+0]..[146,4919+40])
+            Pstr_eval
+            expression (src/deriving.mli[143,4688+0]..[146,4919+40])
+              Pexp_constant PConst_string(" [add_alias name set] add an alias. When the user write the alias, all the\n    generator of [set] will be used instead. It is possible to override the set\n    for any of the context by passing the specific set in the approriate\n    optional argument of [add_alias]. ",(src/deriving.mli[143,4688+0]..[146,4919+40]),None)
+        ]
+      core_type (src/deriving.mli[132,4432+2]..[142,4684+3])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/deriving.mli[132,4432+2]..[132,4432+8])
+          Ptyp_constr "string" (src/deriving.mli[132,4432+2]..[132,4432+8])
+          []
+        core_type (src/deriving.mli[133,4444+2]..[142,4684+3])
+          Ptyp_arrow
+          Optional "str_type_decl"
+          core_type (src/deriving.mli[133,4444+17]..[133,4444+23])
+            Ptyp_constr "list" (src/deriving.mli[133,4444+19]..[133,4444+23])
+            [
+              core_type (src/deriving.mli[133,4444+17]..[133,4444+18])
+                Ptyp_constr "t" (src/deriving.mli[133,4444+17]..[133,4444+18])
+                []
+            ]
+          core_type (src/deriving.mli[134,4471+2]..[142,4684+3])
+            Ptyp_arrow
+            Optional "str_type_ext"
+            core_type (src/deriving.mli[134,4471+16]..[134,4471+22])
+              Ptyp_constr "list" (src/deriving.mli[134,4471+18]..[134,4471+22])
+              [
+                core_type (src/deriving.mli[134,4471+16]..[134,4471+17])
+                  Ptyp_constr "t" (src/deriving.mli[134,4471+16]..[134,4471+17])
+                  []
+              ]
+            core_type (src/deriving.mli[135,4497+2]..[142,4684+3])
+              Ptyp_arrow
+              Optional "str_exception"
+              core_type (src/deriving.mli[135,4497+17]..[135,4497+23])
+                Ptyp_constr "list" (src/deriving.mli[135,4497+19]..[135,4497+23])
+                [
+                  core_type (src/deriving.mli[135,4497+17]..[135,4497+18])
+                    Ptyp_constr "t" (src/deriving.mli[135,4497+17]..[135,4497+18])
+                    []
+                ]
+              core_type (src/deriving.mli[136,4524+2]..[142,4684+3])
+                Ptyp_arrow
+                Optional "str_module_type_decl"
+                core_type (src/deriving.mli[136,4524+24]..[136,4524+30])
+                  Ptyp_constr "list" (src/deriving.mli[136,4524+26]..[136,4524+30])
+                  [
+                    core_type (src/deriving.mli[136,4524+24]..[136,4524+25])
+                      Ptyp_constr "t" (src/deriving.mli[136,4524+24]..[136,4524+25])
+                      []
+                  ]
+                core_type (src/deriving.mli[137,4558+2]..[142,4684+3])
+                  Ptyp_arrow
+                  Optional "sig_type_decl"
+                  core_type (src/deriving.mli[137,4558+17]..[137,4558+23])
+                    Ptyp_constr "list" (src/deriving.mli[137,4558+19]..[137,4558+23])
+                    [
+                      core_type (src/deriving.mli[137,4558+17]..[137,4558+18])
+                        Ptyp_constr "t" (src/deriving.mli[137,4558+17]..[137,4558+18])
+                        []
+                    ]
+                  core_type (src/deriving.mli[138,4585+2]..[142,4684+3])
+                    Ptyp_arrow
+                    Optional "sig_type_ext"
+                    core_type (src/deriving.mli[138,4585+16]..[138,4585+22])
+                      Ptyp_constr "list" (src/deriving.mli[138,4585+18]..[138,4585+22])
+                      [
+                        core_type (src/deriving.mli[138,4585+16]..[138,4585+17])
+                          Ptyp_constr "t" (src/deriving.mli[138,4585+16]..[138,4585+17])
+                          []
+                      ]
+                    core_type (src/deriving.mli[139,4611+2]..[142,4684+3])
+                      Ptyp_arrow
+                      Optional "sig_exception"
+                      core_type (src/deriving.mli[139,4611+17]..[139,4611+23])
+                        Ptyp_constr "list" (src/deriving.mli[139,4611+19]..[139,4611+23])
+                        [
+                          core_type (src/deriving.mli[139,4611+17]..[139,4611+18])
+                            Ptyp_constr "t" (src/deriving.mli[139,4611+17]..[139,4611+18])
+                            []
+                        ]
+                      core_type (src/deriving.mli[140,4638+2]..[142,4684+3])
+                        Ptyp_arrow
+                        Optional "sig_module_type_decl"
+                        core_type (src/deriving.mli[140,4638+24]..[140,4638+30])
+                          Ptyp_constr "list" (src/deriving.mli[140,4638+26]..[140,4638+30])
+                          [
+                            core_type (src/deriving.mli[140,4638+24]..[140,4638+25])
+                              Ptyp_constr "t" (src/deriving.mli[140,4638+24]..[140,4638+25])
+                              []
+                          ]
+                        core_type (src/deriving.mli[141,4672+2]..[142,4684+3])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/deriving.mli[141,4672+2]..[141,4672+8])
+                            Ptyp_constr "list" (src/deriving.mli[141,4672+4]..[141,4672+8])
+                            [
+                              core_type (src/deriving.mli[141,4672+2]..[141,4672+3])
+                                Ptyp_constr "t" (src/deriving.mli[141,4672+2]..[141,4672+3])
+                                []
+                            ]
+                          core_type (src/deriving.mli[142,4684+2]..[142,4684+3])
+                            Ptyp_constr "t" (src/deriving.mli[142,4684+2]..[142,4684+3])
+                            []
+      []
+  signature_item (src/deriving.mli[148,4961+0]..[148,4961+22])
+    Psig_value
+    value_description "ignore" (src/deriving.mli[148,4961+4]..[148,4961+10]) (src/deriving.mli[148,4961+0]..[148,4961+22])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[149,4984+0]..[151,5054+23])
+            Pstr_eval
+            expression (src/deriving.mli[149,4984+0]..[151,5054+23])
+              Pexp_constant PConst_string(" Ignore a deriver. So that one can write:\n    [Deriving.add ... |>\n    Deriving.ignore] ",(src/deriving.mli[149,4984+0]..[151,5054+23]),None)
+        ]
+      core_type (src/deriving.mli[148,4961+13]..[148,4961+22])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/deriving.mli[148,4961+13]..[148,4961+14])
+          Ptyp_constr "t" (src/deriving.mli[148,4961+13]..[148,4961+14])
+          []
+        core_type (src/deriving.mli[148,4961+18]..[148,4961+22])
+          Ptyp_constr "unit" (src/deriving.mli[148,4961+18]..[148,4961+22])
+          []
+      []
+]
+
+[@@@ocaml.text " Deriving code from type declarations. "]
+open Import
+module Args :
+sig
+  type ('a, 'b) t
+  type 'a param
+  val empty : ('m, 'm) t
+  val arg :
+    string ->
+      (expression, 'a -> 'a option, 'a option) Ast_pattern.t ->
+        'a option param
+  val flag : string -> bool param[@@ocaml.doc
+                                   " Flag matches punned labelled argument, i.e. of the form [~foo]. It returns\n      [true] iff the argument is present. "]
+  val (+>) : ('m1, 'a -> 'm2) t -> 'a param -> ('m1, 'm2) t
+  include
+    module type of struct include Ast_pattern end with type ('a,'b,'c) t := 
+      ('a, 'b, 'c) Ast_pattern.t[@@ocaml.doc
+                                  " For convenience, so that one can write the following without having to\n      open both [Ast_pattern] and [Deriving.Args]:\n\n      {[\n        Deriving.Args.(\n          empty\n          +> arg_option \"foo\" (estring __)\n          +> arg_option \"bar\" (pack2 (eint __ ** eint __))\n          +> flag \"dotdotdot\")\n      ]} "]
+end[@@ocaml.doc " Specification of generator arguments "]
+[@@@ocaml.text " {5 Generator registration} "]
+type t[@@ocaml.doc " Type of registered derivers "]
+module Generator :
+sig
+  type deriver = t
+  type ('output_ast, 'input_ast) t
+  val make :
+    ?attributes:Attribute.packed list ->
+      ?deps:deriver list ->
+        ?unused_code_warnings:bool ->
+          ('f, 'output_ast) Args.t ->
+            (loc:Location.t -> path:string -> 'input_ast -> 'f) ->
+              ('output_ast, 'input_ast) t[@@ocaml.doc
+                                           " [make args gen] creates a generator that can be passed to {!Deriving.add}\n      to generate an output AST from an input AST and generator arguments.\n\n      [deps] is a list of derivers that this generator depends on.\n\n      [attributes] is deprecated and unused. It is only kept for backward\n      compatibility.\n\n      [unused_code_warning] controls whether unused code warnings (e.g. warnings\n      32 and 60) are enabled or suppressed in emitted code. Default is [false],\n      which suppresses the warnings. "]
+  val make_noarg :
+    ?attributes:Attribute.packed list ->
+      ?deps:deriver list ->
+        ?unused_code_warnings:bool ->
+          (loc:Location.t -> path:string -> 'input_ast -> 'output_ast) ->
+            ('output_ast, 'input_ast) t[@@ocaml.doc
+                                         " Same as {!make}, but without arguments. "]
+  module V2 :
+  sig
+    val make :
+      ?attributes:Attribute.packed list ->
+        ?deps:deriver list ->
+          ?unused_code_warnings:bool ->
+            ('f, 'output_ast) Args.t ->
+              (ctxt:Expansion_context.Deriver.t -> 'input_ast -> 'f) ->
+                ('output_ast, 'input_ast) t[@@ocaml.doc
+                                             " Same as {!Generator.make}, but the generator has access to an expansion\n        context. "]
+    val make_noarg :
+      ?attributes:Attribute.packed list ->
+        ?deps:deriver list ->
+          ?unused_code_warnings:bool ->
+            (ctxt:Expansion_context.Deriver.t -> 'input_ast -> 'output_ast)
+              -> ('output_ast, 'input_ast) t[@@ocaml.doc
+                                              " Same as {!Generator.make_noarg}, but the generator has access to an\n        expansion context. "]
+  end
+  val apply :
+    ('output_ast, 'input_ast) t ->
+      name:string ->
+        ctxt:Expansion_context.Deriver.t ->
+          'input_ast -> (string * expression) list -> 'output_ast
+end with type  deriver :=  t
+val add :
+  ?str_type_decl:(structure, (rec_flag * type_declaration list)) Generator.t
+    ->
+    ?str_type_ext:(structure, type_extension) Generator.t ->
+      ?str_exception:(structure, type_exception) Generator.t ->
+        ?str_module_type_decl:(structure, module_type_declaration)
+          Generator.t ->
+          ?sig_type_decl:(signature, (rec_flag * type_declaration list))
+            Generator.t ->
+            ?sig_type_ext:(signature, type_extension) Generator.t ->
+              ?sig_exception:(signature, type_exception) Generator.t ->
+                ?sig_module_type_decl:(signature, module_type_declaration)
+                  Generator.t ->
+                  ?extension:(loc:Location.t ->
+                                path:string -> core_type -> expression)
+                    -> string -> t[@@ocaml.doc
+                                    " Register a new deriving generator.\n\n    The various arguments are for the various items on which derivers can be\n    attached in structure and signatures.\n\n    We distinguish [exception] from [type_extension] as [exception E] is not\n    exactly the same as [type exn += E]. Indeed if the type [exn] is redefined,\n    then [type exn += E] will add [E] to the new [exn] type while [exception E]\n    will add [E] to the predefined [exn] type.\n\n    [extension] register an expander for extension with the name of the deriver.\n    This is here mostly to support the ppx_deriving backend. "]
+val add_alias :
+  string ->
+    ?str_type_decl:t list ->
+      ?str_type_ext:t list ->
+        ?str_exception:t list ->
+          ?str_module_type_decl:t list ->
+            ?sig_type_decl:t list ->
+              ?sig_type_ext:t list ->
+                ?sig_exception:t list ->
+                  ?sig_module_type_decl:t list -> t list -> t[@@ocaml.doc
+                                                               " [add_alias name set] add an alias. When the user write the alias, all the\n    generator of [set] will be used instead. It is possible to override the set\n    for any of the context by passing the specific set in the approriate\n    optional argument of [add_alias]. "]
+val ignore : t -> unit[@@ocaml.doc
+                        " Ignore a deriver. So that one can write:\n    [Deriving.add ... |>\n    Deriving.ignore] "]
+[
+  signature_item (src/deriving.mli[1,0+0]..src/deriving.mli[1,0+44])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/deriving.mli[1,0+0]..[1,0+44])
+        Pstr_eval
+        expression (src/deriving.mli[1,0+0]..[1,0+44])
+          Pexp_constant PConst_string(" Deriving code from type declarations. ",(src/deriving.mli[1,0+0]..[1,0+44]),None)
+    ]
+  signature_item (src/deriving.mli[3,46+0]..src/deriving.mli[3,46+11])
+    Tsig_open Fresh "Ppxlib__!.Import"
+  signature_item (src/deriving.mli[6,103+0]..src/deriving.mli[37,963+3])
+    Tsig_module "Args/2235"
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[5,59+0]..[5,59+43])
+            Pstr_eval
+            expression (src/deriving.mli[5,59+0]..[5,59+43])
+              Pexp_constant PConst_string(" Specification of generator arguments ",(src/deriving.mli[5,59+0]..[5,59+43]),None)
+        ]
+    module_type (src/deriving.mli[6,103+14]..src/deriving.mli[37,963+3])
+      Tmty_signature
+      [
+        signature_item (src/deriving.mli[7,121+2]..src/deriving.mli[7,121+17])
+          Tsig_type Rec
+          [
+            type_declaration t/550 (src/deriving.mli[7,121+2]..src/deriving.mli[7,121+17])
+              ptype_params =
+                [
+                  core_type (src/deriving.mli[7,121+8]..src/deriving.mli[7,121+10])
+                    Ttyp_var a
+                  core_type (src/deriving.mli[7,121+12]..src/deriving.mli[7,121+14])
+                    Ttyp_var b
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/deriving.mli[8,139+2]..src/deriving.mli[8,139+15])
+          Tsig_type Rec
+          [
+            type_declaration param/551 (src/deriving.mli[8,139+2]..src/deriving.mli[8,139+15])
+              ptype_params =
+                [
+                  core_type (src/deriving.mli[8,139+7]..src/deriving.mli[8,139+9])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/deriving.mli[10,156+2]..src/deriving.mli[10,156+24])
+          Tsig_value
+          value_description empty/552 (src/deriving.mli[10,156+2]..src/deriving.mli[10,156+24])
+            core_type (src/deriving.mli[10,156+14]..src/deriving.mli[10,156+24])
+              Ttyp_constr "t/550"
+              [
+                core_type (src/deriving.mli[10,156+15]..src/deriving.mli[10,156+17])
+                  Ttyp_var m
+                core_type (src/deriving.mli[10,156+19]..src/deriving.mli[10,156+21])
+                  Ttyp_var m
+              ]
+            []
+        signature_item (src/deriving.mli[12,182+2]..src/deriving.mli[15,270+19])
+          Tsig_value
+          value_description arg/893 (src/deriving.mli[12,182+2]..src/deriving.mli[15,270+19])
+            core_type (src/deriving.mli[13,194+4]..src/deriving.mli[15,270+19])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/deriving.mli[13,194+4]..src/deriving.mli[13,194+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/deriving.mli[14,208+4]..src/deriving.mli[15,270+19])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/deriving.mli[14,208+4]..src/deriving.mli[14,208+58])
+                  Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                  [
+                    core_type (src/deriving.mli[14,208+5]..src/deriving.mli[14,208+15])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                    core_type (src/deriving.mli[14,208+17]..src/deriving.mli[14,208+32])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[14,208+17]..src/deriving.mli[14,208+19])
+                        Ttyp_var a
+                      core_type (src/deriving.mli[14,208+23]..src/deriving.mli[14,208+32])
+                        Ttyp_constr "option/12!"
+                        [
+                          core_type (src/deriving.mli[14,208+23]..src/deriving.mli[14,208+25])
+                            Ttyp_var a
+                        ]
+                    core_type (src/deriving.mli[14,208+34]..src/deriving.mli[14,208+43])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/deriving.mli[14,208+34]..src/deriving.mli[14,208+36])
+                          Ttyp_var a
+                      ]
+                  ]
+                core_type (src/deriving.mli[15,270+4]..src/deriving.mli[15,270+19])
+                  Ttyp_constr "param/551"
+                  [
+                    core_type (src/deriving.mli[15,270+4]..src/deriving.mli[15,270+13])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/deriving.mli[15,270+4]..src/deriving.mli[15,270+6])
+                          Ttyp_var a
+                      ]
+                  ]
+            []
+        signature_item (src/deriving.mli[17,291+2]..src/deriving.mli[17,291+33])
+          Tsig_value
+          value_description flag/894 (src/deriving.mli[17,291+2]..src/deriving.mli[17,291+33])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/deriving.mli[18,325+2]..[19,406+44])
+                  Pstr_eval
+                  expression (src/deriving.mli[18,325+2]..[19,406+44])
+                    Pexp_constant PConst_string(" Flag matches punned labelled argument, i.e. of the form [~foo]. It returns\n      [true] iff the argument is present. ",(src/deriving.mli[18,325+2]..[19,406+44]),None)
+              ]
+            core_type (src/deriving.mli[17,291+13]..src/deriving.mli[17,291+33])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/deriving.mli[17,291+13]..src/deriving.mli[17,291+19])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/deriving.mli[17,291+23]..src/deriving.mli[17,291+33])
+                Ttyp_constr "param/551"
+                [
+                  core_type (src/deriving.mli[17,291+23]..src/deriving.mli[17,291+27])
+                    Ttyp_constr "bool/5!"
+                    []
+                ]
+            []
+        signature_item (src/deriving.mli[21,452+2]..src/deriving.mli[21,452+61])
+          Tsig_value
+          value_description +>/895 (src/deriving.mli[21,452+2]..src/deriving.mli[21,452+61])
+            core_type (src/deriving.mli[21,452+15]..src/deriving.mli[21,452+61])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/deriving.mli[21,452+15]..src/deriving.mli[21,452+33])
+                Ttyp_constr "t/550"
+                [
+                  core_type (src/deriving.mli[21,452+16]..src/deriving.mli[21,452+19])
+                    Ttyp_var m1
+                  core_type (src/deriving.mli[21,452+21]..src/deriving.mli[21,452+30])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/deriving.mli[21,452+21]..src/deriving.mli[21,452+23])
+                      Ttyp_var a
+                    core_type (src/deriving.mli[21,452+27]..src/deriving.mli[21,452+30])
+                      Ttyp_var m2
+                ]
+              core_type (src/deriving.mli[21,452+37]..src/deriving.mli[21,452+61])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/deriving.mli[21,452+37]..src/deriving.mli[21,452+45])
+                  Ttyp_constr "param/551"
+                  [
+                    core_type (src/deriving.mli[21,452+37]..src/deriving.mli[21,452+39])
+                      Ttyp_var a
+                  ]
+                core_type (src/deriving.mli[21,452+49]..src/deriving.mli[21,452+61])
+                  Ttyp_constr "t/550"
+                  [
+                    core_type (src/deriving.mli[21,452+50]..src/deriving.mli[21,452+53])
+                      Ttyp_var m1
+                    core_type (src/deriving.mli[21,452+55]..src/deriving.mli[21,452+58])
+                      Ttyp_var m2
+                  ]
+            []
+        signature_item (src/deriving.mli[33,838+2]..src/deriving.mli[36,904+58])
+          Tsig_include
+            attribute "ocaml.doc"
+              [
+                structure_item (src/deriving.mli[23,515+2]..[32,826+11])
+                  Pstr_eval
+                  expression (src/deriving.mli[23,515+2]..[32,826+11])
+                    Pexp_constant PConst_string(" For convenience, so that one can write the following without having to\n      open both [Ast_pattern] and [Deriving.Args]:\n\n      {[\n        Deriving.Args.(\n          empty\n          +> arg_option \"foo\" (estring __)\n          +> arg_option \"bar\" (pack2 (eint __ ** eint __))\n          +> flag \"dotdotdot\")\n      ]} ",(src/deriving.mli[23,515+2]..[32,826+11]),None)
+              ]
+          module_type (src/deriving.mli[33,838+10]..src/deriving.mli[36,904+58])
+            Tmty_with
+            module_type (src/deriving.mli[33,838+10]..src/deriving.mli[35,896+7])
+              Tmty_typeof
+              module_expr (src/deriving.mli[33,838+25]..src/deriving.mli[35,896+7])
+                Tmod_structure
+                [
+                  structure_item (src/deriving.mli[34,870+6]..src/deriving.mli[34,870+25])
+                    Tstr_include                    module_expr (src/deriving.mli[34,870+14]..src/deriving.mli[34,870+25])
+                      module_expr (src/deriving.mli[34,870+14]..src/deriving.mli[34,870+25])
+                        Tmod_ident "Ppxlib__!.Ast_pattern"
+                ]
+            [
+              "t/896"
+                Twith_typesubst
+                  type_declaration t/896 (src/deriving.mli[36,904+9]..src/deriving.mli[36,904+58])
+                    ptype_params =
+                      [
+                        core_type (src/deriving.mli[36,904+15]..src/deriving.mli[36,904+17])
+                          Ttyp_var a
+                        core_type (src/deriving.mli[36,904+19]..src/deriving.mli[36,904+21])
+                          Ttyp_var b
+                        core_type (src/deriving.mli[36,904+23]..src/deriving.mli[36,904+25])
+                          Ttyp_var c
+                      ]
+                    ptype_cstrs =
+                      []
+                    ptype_kind =
+                      Ttype_abstract
+                    ptype_private = Public
+                    ptype_manifest =
+                      Some
+                        core_type (src/deriving.mli[36,904+32]..src/deriving.mli[36,904+58])
+                          Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                          [
+                            core_type (src/deriving.mli[36,904+33]..src/deriving.mli[36,904+35])
+                              Ttyp_var a
+                            core_type (src/deriving.mli[36,904+37]..src/deriving.mli[36,904+39])
+                              Ttyp_var b
+                            core_type (src/deriving.mli[36,904+41]..src/deriving.mli[36,904+43])
+                              Ttyp_var c
+                          ]
+            ]
+      ]
+  signature_item (src/deriving.mli[39,968+0]..src/deriving.mli[39,968+33])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/deriving.mli[39,968+0]..[39,968+33])
+        Pstr_eval
+        expression (src/deriving.mli[39,968+0]..[39,968+33])
+          Pexp_constant PConst_string(" {5 Generator registration} ",(src/deriving.mli[39,968+0]..[39,968+33]),None)
+    ]
+  signature_item (src/deriving.mli[41,1003+0]..src/deriving.mli[41,1003+6])
+    Tsig_type Rec
+    [
+      type_declaration t/2236 (src/deriving.mli[41,1003+0]..src/deriving.mli[41,1003+6])
+        attribute "ocaml.doc"
+          [
+            structure_item (src/deriving.mli[42,1010+0]..[42,1010+34])
+              Pstr_eval
+              expression (src/deriving.mli[42,1010+0]..[42,1010+34])
+                Pexp_constant PConst_string(" Type of registered derivers ",(src/deriving.mli[42,1010+0]..[42,1010+34]),None)
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (src/deriving.mli[44,1046+0]..src/deriving.mli[104,3154+22])
+    Tsig_module "Generator/2408"
+    module_type (src/deriving.mli[44,1046+19]..src/deriving.mli[104,3154+22])
+      Tmty_with
+      module_type (src/deriving.mli[44,1046+19]..src/deriving.mli[103,3150+3])
+        Tmty_signature
+        [
+          signature_item (src/deriving.mli[45,1069+2]..src/deriving.mli[45,1069+18])
+            Tsig_type Rec
+            [
+              type_declaration deriver/2237 (src/deriving.mli[45,1069+2]..src/deriving.mli[45,1069+18])
+                ptype_params =
+                  []
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (src/deriving.mli[45,1069+17]..src/deriving.mli[45,1069+18])
+                      Ttyp_constr "t/2236"
+                      []
+            ]
+          signature_item (src/deriving.mli[46,1088+2]..src/deriving.mli[46,1088+34])
+            Tsig_type Rec
+            [
+              type_declaration t/2238 (src/deriving.mli[46,1088+2]..src/deriving.mli[46,1088+34])
+                ptype_params =
+                  [
+                    core_type (src/deriving.mli[46,1088+8]..src/deriving.mli[46,1088+19])
+                      Ttyp_var output_ast
+                    core_type (src/deriving.mli[46,1088+21]..src/deriving.mli[46,1088+31])
+                      Ttyp_var input_ast
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  None
+            ]
+          signature_item (src/deriving.mli[48,1124+2]..src/deriving.mli[54,1354+31])
+            Tsig_value
+            value_description make/2347 (src/deriving.mli[48,1124+2]..src/deriving.mli[54,1354+31])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/deriving.mli[55,1386+2]..[65,1867+39])
+                    Pstr_eval
+                    expression (src/deriving.mli[55,1386+2]..[65,1867+39])
+                      Pexp_constant PConst_string(" [make args gen] creates a generator that can be passed to {!Deriving.add}\n      to generate an output AST from an input AST and generator arguments.\n\n      [deps] is a list of derivers that this generator depends on.\n\n      [attributes] is deprecated and unused. It is only kept for backward\n      compatibility.\n\n      [unused_code_warning] controls whether unused code warnings (e.g. warnings\n      32 and 60) are enabled or suppressed in emitted code. Default is [false],\n      which suppresses the warnings. ",(src/deriving.mli[55,1386+2]..[65,1867+39]),None)
+                ]
+              core_type (src/deriving.mli[49,1137+4]..src/deriving.mli[54,1354+31])
+                Ttyp_arrow
+                Optional "attributes"
+                core_type (src/deriving.mli[49,1137+16]..src/deriving.mli[49,1137+37])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/deriving.mli[49,1137+16]..src/deriving.mli[49,1137+32])
+                      Ttyp_constr "Ppxlib__!.Attribute.packed"
+                      []
+                  ]
+                core_type (src/deriving.mli[50,1203+4]..src/deriving.mli[54,1354+31])
+                  Ttyp_arrow
+                  Optional "deps"
+                  core_type (src/deriving.mli[50,1203+10]..src/deriving.mli[50,1203+22])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/deriving.mli[50,1203+10]..src/deriving.mli[50,1203+17])
+                        Ttyp_constr "deriver/2237"
+                        []
+                    ]
+                  core_type (src/deriving.mli[51,1229+4]..src/deriving.mli[54,1354+31])
+                    Ttyp_arrow
+                    Optional "unused_code_warnings"
+                    core_type (src/deriving.mli[51,1229+26]..src/deriving.mli[51,1229+30])
+                      Ttyp_constr "bool/5!"
+                      []
+                    core_type (src/deriving.mli[52,1263+4]..src/deriving.mli[54,1354+31])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[52,1263+4]..src/deriving.mli[52,1263+28])
+                        Ttyp_constr "Args/2235.t"
+                        [
+                          core_type (src/deriving.mli[52,1263+5]..src/deriving.mli[52,1263+7])
+                            Ttyp_var f
+                          core_type (src/deriving.mli[52,1263+9]..src/deriving.mli[52,1263+20])
+                            Ttyp_var output_ast
+                        ]
+                      core_type (src/deriving.mli[53,1295+4]..src/deriving.mli[54,1354+31])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/deriving.mli[53,1295+5]..src/deriving.mli[53,1295+54])
+                          Ttyp_arrow
+                          Labelled "loc"
+                          core_type (src/deriving.mli[53,1295+9]..src/deriving.mli[53,1295+19])
+                            Ttyp_constr "Ppxlib__!.Location.t"
+                            []
+                          core_type (src/deriving.mli[53,1295+23]..src/deriving.mli[53,1295+54])
+                            Ttyp_arrow
+                            Labelled "path"
+                            core_type (src/deriving.mli[53,1295+28]..src/deriving.mli[53,1295+34])
+                              Ttyp_constr "string/17!"
+                              []
+                            core_type (src/deriving.mli[53,1295+38]..src/deriving.mli[53,1295+54])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/deriving.mli[53,1295+38]..src/deriving.mli[53,1295+48])
+                                Ttyp_var input_ast
+                              core_type (src/deriving.mli[53,1295+52]..src/deriving.mli[53,1295+54])
+                                Ttyp_var f
+                        core_type (src/deriving.mli[54,1354+4]..src/deriving.mli[54,1354+31])
+                          Ttyp_constr "t/2238"
+                          [
+                            core_type (src/deriving.mli[54,1354+5]..src/deriving.mli[54,1354+16])
+                              Ttyp_var output_ast
+                            core_type (src/deriving.mli[54,1354+18]..src/deriving.mli[54,1354+28])
+                              Ttyp_var input_ast
+                          ]
+              []
+          signature_item (src/deriving.mli[67,1908+2]..src/deriving.mli[72,2121+31])
+            Tsig_value
+            value_description make_noarg/2348 (src/deriving.mli[67,1908+2]..src/deriving.mli[72,2121+31])
+              attribute "ocaml.doc"
+                [
+                  structure_item (src/deriving.mli[73,2153+2]..[73,2153+48])
+                    Pstr_eval
+                    expression (src/deriving.mli[73,2153+2]..[73,2153+48])
+                      Pexp_constant PConst_string(" Same as {!make}, but without arguments. ",(src/deriving.mli[73,2153+2]..[73,2153+48]),None)
+                ]
+              core_type (src/deriving.mli[68,1927+4]..src/deriving.mli[72,2121+31])
+                Ttyp_arrow
+                Optional "attributes"
+                core_type (src/deriving.mli[68,1927+16]..src/deriving.mli[68,1927+37])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/deriving.mli[68,1927+16]..src/deriving.mli[68,1927+32])
+                      Ttyp_constr "Ppxlib__!.Attribute.packed"
+                      []
+                  ]
+                core_type (src/deriving.mli[69,1993+4]..src/deriving.mli[72,2121+31])
+                  Ttyp_arrow
+                  Optional "deps"
+                  core_type (src/deriving.mli[69,1993+10]..src/deriving.mli[69,1993+22])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/deriving.mli[69,1993+10]..src/deriving.mli[69,1993+17])
+                        Ttyp_constr "deriver/2237"
+                        []
+                    ]
+                  core_type (src/deriving.mli[70,2019+4]..src/deriving.mli[72,2121+31])
+                    Ttyp_arrow
+                    Optional "unused_code_warnings"
+                    core_type (src/deriving.mli[70,2019+26]..src/deriving.mli[70,2019+30])
+                      Ttyp_constr "bool/5!"
+                      []
+                    core_type (src/deriving.mli[71,2053+4]..src/deriving.mli[72,2121+31])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[71,2053+5]..src/deriving.mli[71,2053+63])
+                        Ttyp_arrow
+                        Labelled "loc"
+                        core_type (src/deriving.mli[71,2053+9]..src/deriving.mli[71,2053+19])
+                          Ttyp_constr "Ppxlib__!.Location.t"
+                          []
+                        core_type (src/deriving.mli[71,2053+23]..src/deriving.mli[71,2053+63])
+                          Ttyp_arrow
+                          Labelled "path"
+                          core_type (src/deriving.mli[71,2053+28]..src/deriving.mli[71,2053+34])
+                            Ttyp_constr "string/17!"
+                            []
+                          core_type (src/deriving.mli[71,2053+38]..src/deriving.mli[71,2053+63])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/deriving.mli[71,2053+38]..src/deriving.mli[71,2053+48])
+                              Ttyp_var input_ast
+                            core_type (src/deriving.mli[71,2053+52]..src/deriving.mli[71,2053+63])
+                              Ttyp_var output_ast
+                      core_type (src/deriving.mli[72,2121+4]..src/deriving.mli[72,2121+31])
+                        Ttyp_constr "t/2238"
+                        [
+                          core_type (src/deriving.mli[72,2121+5]..src/deriving.mli[72,2121+16])
+                            Ttyp_var output_ast
+                          core_type (src/deriving.mli[72,2121+18]..src/deriving.mli[72,2121+28])
+                            Ttyp_var input_ast
+                        ]
+              []
+          signature_item (src/deriving.mli[75,2203+2]..src/deriving.mli[94,2967+5])
+            Tsig_module "V2/2392"
+            module_type (src/deriving.mli[75,2203+14]..src/deriving.mli[94,2967+5])
+              Tmty_signature
+              [
+                signature_item (src/deriving.mli[76,2221+4]..src/deriving.mli[82,2466+33])
+                  Tsig_value
+                  value_description make/2390 (src/deriving.mli[76,2221+4]..src/deriving.mli[82,2466+33])
+                    attribute "ocaml.doc"
+                      [
+                        structure_item (src/deriving.mli[83,2500+4]..[84,2580+19])
+                          Pstr_eval
+                          expression (src/deriving.mli[83,2500+4]..[84,2580+19])
+                            Pexp_constant PConst_string(" Same as {!Generator.make}, but the generator has access to an expansion\n        context. ",(src/deriving.mli[83,2500+4]..[84,2580+19]),None)
+                      ]
+                    core_type (src/deriving.mli[77,2236+6]..src/deriving.mli[82,2466+33])
+                      Ttyp_arrow
+                      Optional "attributes"
+                      core_type (src/deriving.mli[77,2236+18]..src/deriving.mli[77,2236+39])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/deriving.mli[77,2236+18]..src/deriving.mli[77,2236+34])
+                            Ttyp_constr "Ppxlib__!.Attribute.packed"
+                            []
+                        ]
+                      core_type (src/deriving.mli[78,2304+6]..src/deriving.mli[82,2466+33])
+                        Ttyp_arrow
+                        Optional "deps"
+                        core_type (src/deriving.mli[78,2304+12]..src/deriving.mli[78,2304+24])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/deriving.mli[78,2304+12]..src/deriving.mli[78,2304+19])
+                              Ttyp_constr "deriver/2237"
+                              []
+                          ]
+                        core_type (src/deriving.mli[79,2332+6]..src/deriving.mli[82,2466+33])
+                          Ttyp_arrow
+                          Optional "unused_code_warnings"
+                          core_type (src/deriving.mli[79,2332+28]..src/deriving.mli[79,2332+32])
+                            Ttyp_constr "bool/5!"
+                            []
+                          core_type (src/deriving.mli[80,2368+6]..src/deriving.mli[82,2466+33])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/deriving.mli[80,2368+6]..src/deriving.mli[80,2368+30])
+                              Ttyp_constr "Args/2235.t"
+                              [
+                                core_type (src/deriving.mli[80,2368+7]..src/deriving.mli[80,2368+9])
+                                  Ttyp_var f
+                                core_type (src/deriving.mli[80,2368+11]..src/deriving.mli[80,2368+22])
+                                  Ttyp_var output_ast
+                              ]
+                            core_type (src/deriving.mli[81,2402+6]..src/deriving.mli[82,2466+33])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/deriving.mli[81,2402+7]..src/deriving.mli[81,2402+59])
+                                Ttyp_arrow
+                                Labelled "ctxt"
+                                core_type (src/deriving.mli[81,2402+12]..src/deriving.mli[81,2402+39])
+                                  Ttyp_constr "Ppxlib__!.Expansion_context.Deriver.t"
+                                  []
+                                core_type (src/deriving.mli[81,2402+43]..src/deriving.mli[81,2402+59])
+                                  Ttyp_arrow
+                                  Nolabel
+                                  core_type (src/deriving.mli[81,2402+43]..src/deriving.mli[81,2402+53])
+                                    Ttyp_var input_ast
+                                  core_type (src/deriving.mli[81,2402+57]..src/deriving.mli[81,2402+59])
+                                    Ttyp_var f
+                              core_type (src/deriving.mli[82,2466+6]..src/deriving.mli[82,2466+33])
+                                Ttyp_constr "t/2238"
+                                [
+                                  core_type (src/deriving.mli[82,2466+7]..src/deriving.mli[82,2466+18])
+                                    Ttyp_var output_ast
+                                  core_type (src/deriving.mli[82,2466+20]..src/deriving.mli[82,2466+30])
+                                    Ttyp_var input_ast
+                                ]
+                    []
+                signature_item (src/deriving.mli[86,2601+4]..src/deriving.mli[91,2827+33])
+                  Tsig_value
+                  value_description make_noarg/2391 (src/deriving.mli[86,2601+4]..src/deriving.mli[91,2827+33])
+                    attribute "ocaml.doc"
+                      [
+                        structure_item (src/deriving.mli[92,2861+4]..[93,2937+29])
+                          Pstr_eval
+                          expression (src/deriving.mli[92,2861+4]..[93,2937+29])
+                            Pexp_constant PConst_string(" Same as {!Generator.make_noarg}, but the generator has access to an\n        expansion context. ",(src/deriving.mli[92,2861+4]..[93,2937+29]),None)
+                      ]
+                    core_type (src/deriving.mli[87,2622+6]..src/deriving.mli[91,2827+33])
+                      Ttyp_arrow
+                      Optional "attributes"
+                      core_type (src/deriving.mli[87,2622+18]..src/deriving.mli[87,2622+39])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/deriving.mli[87,2622+18]..src/deriving.mli[87,2622+34])
+                            Ttyp_constr "Ppxlib__!.Attribute.packed"
+                            []
+                        ]
+                      core_type (src/deriving.mli[88,2690+6]..src/deriving.mli[91,2827+33])
+                        Ttyp_arrow
+                        Optional "deps"
+                        core_type (src/deriving.mli[88,2690+12]..src/deriving.mli[88,2690+24])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/deriving.mli[88,2690+12]..src/deriving.mli[88,2690+19])
+                              Ttyp_constr "deriver/2237"
+                              []
+                          ]
+                        core_type (src/deriving.mli[89,2718+6]..src/deriving.mli[91,2827+33])
+                          Ttyp_arrow
+                          Optional "unused_code_warnings"
+                          core_type (src/deriving.mli[89,2718+28]..src/deriving.mli[89,2718+32])
+                            Ttyp_constr "bool/5!"
+                            []
+                          core_type (src/deriving.mli[90,2754+6]..src/deriving.mli[91,2827+33])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/deriving.mli[90,2754+7]..src/deriving.mli[90,2754+68])
+                              Ttyp_arrow
+                              Labelled "ctxt"
+                              core_type (src/deriving.mli[90,2754+12]..src/deriving.mli[90,2754+39])
+                                Ttyp_constr "Ppxlib__!.Expansion_context.Deriver.t"
+                                []
+                              core_type (src/deriving.mli[90,2754+43]..src/deriving.mli[90,2754+68])
+                                Ttyp_arrow
+                                Nolabel
+                                core_type (src/deriving.mli[90,2754+43]..src/deriving.mli[90,2754+53])
+                                  Ttyp_var input_ast
+                                core_type (src/deriving.mli[90,2754+57]..src/deriving.mli[90,2754+68])
+                                  Ttyp_var output_ast
+                            core_type (src/deriving.mli[91,2827+6]..src/deriving.mli[91,2827+33])
+                              Ttyp_constr "t/2238"
+                              [
+                                core_type (src/deriving.mli[91,2827+7]..src/deriving.mli[91,2827+18])
+                                  Ttyp_var output_ast
+                                core_type (src/deriving.mli[91,2827+20]..src/deriving.mli[91,2827+30])
+                                  Ttyp_var input_ast
+                              ]
+                    []
+              ]
+          signature_item (src/deriving.mli[96,2974+2]..src/deriving.mli[102,3134+15])
+            Tsig_value
+            value_description apply/2393 (src/deriving.mli[96,2974+2]..src/deriving.mli[102,3134+15])
+              core_type (src/deriving.mli[97,2988+4]..src/deriving.mli[102,3134+15])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/deriving.mli[97,2988+4]..src/deriving.mli[97,2988+31])
+                  Ttyp_constr "t/2238"
+                  [
+                    core_type (src/deriving.mli[97,2988+5]..src/deriving.mli[97,2988+16])
+                      Ttyp_var output_ast
+                    core_type (src/deriving.mli[97,2988+18]..src/deriving.mli[97,2988+28])
+                      Ttyp_var input_ast
+                  ]
+                core_type (src/deriving.mli[98,3023+4]..src/deriving.mli[102,3134+15])
+                  Ttyp_arrow
+                  Labelled "name"
+                  core_type (src/deriving.mli[98,3023+9]..src/deriving.mli[98,3023+15])
+                    Ttyp_constr "string/17!"
+                    []
+                  core_type (src/deriving.mli[99,3042+4]..src/deriving.mli[102,3134+15])
+                    Ttyp_arrow
+                    Labelled "ctxt"
+                    core_type (src/deriving.mli[99,3042+9]..src/deriving.mli[99,3042+36])
+                      Ttyp_constr "Ppxlib__!.Expansion_context.Deriver.t"
+                      []
+                    core_type (src/deriving.mli[100,3082+4]..src/deriving.mli[102,3134+15])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/deriving.mli[100,3082+4]..src/deriving.mli[100,3082+14])
+                        Ttyp_var input_ast
+                      core_type (src/deriving.mli[101,3100+4]..src/deriving.mli[102,3134+15])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/deriving.mli[101,3100+4]..src/deriving.mli[101,3100+30])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/deriving.mli[101,3100+5]..src/deriving.mli[101,3100+24])
+                              Ttyp_tuple
+                              [
+                                core_type (src/deriving.mli[101,3100+5]..src/deriving.mli[101,3100+11])
+                                  Ttyp_constr "string/17!"
+                                  []
+                                core_type (src/deriving.mli[101,3100+14]..src/deriving.mli[101,3100+24])
+                                  Ttyp_constr "Ppxlib__!.Import.expression"
+                                  []
+                              ]
+                          ]
+                        core_type (src/deriving.mli[102,3134+4]..src/deriving.mli[102,3134+15])
+                          Ttyp_var output_ast
+              []
+        ]
+      [
+        "deriver/2237"
+          Twith_typesubst
+            type_declaration deriver/2237 (src/deriving.mli[104,3154+5]..src/deriving.mli[104,3154+22])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (src/deriving.mli[104,3154+21]..src/deriving.mli[104,3154+22])
+                    Ttyp_constr "t/2236"
+                    []
+      ]
+  signature_item (src/deriving.mli[106,3178+0]..src/deriving.mli[117,3821+3])
+    Tsig_value
+    value_description add/2409 (src/deriving.mli[106,3178+0]..src/deriving.mli[117,3821+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[118,3825+0]..[129,4351+63])
+            Pstr_eval
+            expression (src/deriving.mli[118,3825+0]..[129,4351+63])
+              Pexp_constant PConst_string(" Register a new deriving generator.\n\n    The various arguments are for the various items on which derivers can be\n    attached in structure and signatures.\n\n    We distinguish [exception] from [type_extension] as [exception E] is not\n    exactly the same as [type exn += E]. Indeed if the type [exn] is redefined,\n    then [type exn += E] will add [E] to the new [exn] type while [exception E]\n    will add [E] to the predefined [exn] type.\n\n    [extension] register an expander for extension with the name of the deriver.\n    This is here mostly to support the ppx_deriving backend. ",(src/deriving.mli[118,3825+0]..[129,4351+63]),None)
+        ]
+      core_type (src/deriving.mli[107,3188+2]..src/deriving.mli[117,3821+3])
+        Ttyp_arrow
+        Optional "str_type_decl"
+        core_type (src/deriving.mli[107,3188+17]..src/deriving.mli[107,3188+74])
+          Ttyp_constr "Generator/2408.t"
+          [
+            core_type (src/deriving.mli[107,3188+18]..src/deriving.mli[107,3188+27])
+              Ttyp_constr "Ppxlib__!.Import.structure"
+              []
+            core_type (src/deriving.mli[107,3188+29]..src/deriving.mli[107,3188+61])
+              Ttyp_tuple
+              [
+                core_type (src/deriving.mli[107,3188+29]..src/deriving.mli[107,3188+37])
+                  Ttyp_constr "Ppxlib__!.Import.rec_flag"
+                  []
+                core_type (src/deriving.mli[107,3188+40]..src/deriving.mli[107,3188+61])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/deriving.mli[107,3188+40]..src/deriving.mli[107,3188+56])
+                      Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                      []
+                  ]
+              ]
+          ]
+        core_type (src/deriving.mli[108,3266+2]..src/deriving.mli[117,3821+3])
+          Ttyp_arrow
+          Optional "str_type_ext"
+          core_type (src/deriving.mli[108,3266+16]..src/deriving.mli[108,3266+55])
+            Ttyp_constr "Generator/2408.t"
+            [
+              core_type (src/deriving.mli[108,3266+17]..src/deriving.mli[108,3266+26])
+                Ttyp_constr "Ppxlib__!.Import.structure"
+                []
+              core_type (src/deriving.mli[108,3266+28]..src/deriving.mli[108,3266+42])
+                Ttyp_constr "Ppxlib__!.Import.type_extension"
+                []
+            ]
+          core_type (src/deriving.mli[109,3325+2]..src/deriving.mli[117,3821+3])
+            Ttyp_arrow
+            Optional "str_exception"
+            core_type (src/deriving.mli[109,3325+17]..src/deriving.mli[109,3325+56])
+              Ttyp_constr "Generator/2408.t"
+              [
+                core_type (src/deriving.mli[109,3325+18]..src/deriving.mli[109,3325+27])
+                  Ttyp_constr "Ppxlib__!.Import.structure"
+                  []
+                core_type (src/deriving.mli[109,3325+29]..src/deriving.mli[109,3325+43])
+                  Ttyp_constr "Ppxlib__!.Import.type_exception"
+                  []
+              ]
+            core_type (src/deriving.mli[110,3385+2]..src/deriving.mli[117,3821+3])
+              Ttyp_arrow
+              Optional "str_module_type_decl"
+              core_type (src/deriving.mli[110,3385+24]..src/deriving.mli[110,3385+72])
+                Ttyp_constr "Generator/2408.t"
+                [
+                  core_type (src/deriving.mli[110,3385+25]..src/deriving.mli[110,3385+34])
+                    Ttyp_constr "Ppxlib__!.Import.structure"
+                    []
+                  core_type (src/deriving.mli[110,3385+36]..src/deriving.mli[110,3385+59])
+                    Ttyp_constr "Ppxlib__!.Import.module_type_declaration"
+                    []
+                ]
+              core_type (src/deriving.mli[111,3461+2]..src/deriving.mli[117,3821+3])
+                Ttyp_arrow
+                Optional "sig_type_decl"
+                core_type (src/deriving.mli[111,3461+17]..src/deriving.mli[111,3461+74])
+                  Ttyp_constr "Generator/2408.t"
+                  [
+                    core_type (src/deriving.mli[111,3461+18]..src/deriving.mli[111,3461+27])
+                      Ttyp_constr "Ppxlib__!.Import.signature"
+                      []
+                    core_type (src/deriving.mli[111,3461+29]..src/deriving.mli[111,3461+61])
+                      Ttyp_tuple
+                      [
+                        core_type (src/deriving.mli[111,3461+29]..src/deriving.mli[111,3461+37])
+                          Ttyp_constr "Ppxlib__!.Import.rec_flag"
+                          []
+                        core_type (src/deriving.mli[111,3461+40]..src/deriving.mli[111,3461+61])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/deriving.mli[111,3461+40]..src/deriving.mli[111,3461+56])
+                              Ttyp_constr "Ppxlib__!.Import.type_declaration"
+                              []
+                          ]
+                      ]
+                  ]
+                core_type (src/deriving.mli[112,3539+2]..src/deriving.mli[117,3821+3])
+                  Ttyp_arrow
+                  Optional "sig_type_ext"
+                  core_type (src/deriving.mli[112,3539+16]..src/deriving.mli[112,3539+55])
+                    Ttyp_constr "Generator/2408.t"
+                    [
+                      core_type (src/deriving.mli[112,3539+17]..src/deriving.mli[112,3539+26])
+                        Ttyp_constr "Ppxlib__!.Import.signature"
+                        []
+                      core_type (src/deriving.mli[112,3539+28]..src/deriving.mli[112,3539+42])
+                        Ttyp_constr "Ppxlib__!.Import.type_extension"
+                        []
+                    ]
+                  core_type (src/deriving.mli[113,3598+2]..src/deriving.mli[117,3821+3])
+                    Ttyp_arrow
+                    Optional "sig_exception"
+                    core_type (src/deriving.mli[113,3598+17]..src/deriving.mli[113,3598+56])
+                      Ttyp_constr "Generator/2408.t"
+                      [
+                        core_type (src/deriving.mli[113,3598+18]..src/deriving.mli[113,3598+27])
+                          Ttyp_constr "Ppxlib__!.Import.signature"
+                          []
+                        core_type (src/deriving.mli[113,3598+29]..src/deriving.mli[113,3598+43])
+                          Ttyp_constr "Ppxlib__!.Import.type_exception"
+                          []
+                      ]
+                    core_type (src/deriving.mli[114,3658+2]..src/deriving.mli[117,3821+3])
+                      Ttyp_arrow
+                      Optional "sig_module_type_decl"
+                      core_type (src/deriving.mli[114,3658+24]..src/deriving.mli[114,3658+72])
+                        Ttyp_constr "Generator/2408.t"
+                        [
+                          core_type (src/deriving.mli[114,3658+25]..src/deriving.mli[114,3658+34])
+                            Ttyp_constr "Ppxlib__!.Import.signature"
+                            []
+                          core_type (src/deriving.mli[114,3658+36]..src/deriving.mli[114,3658+59])
+                            Ttyp_constr "Ppxlib__!.Import.module_type_declaration"
+                            []
+                        ]
+                      core_type (src/deriving.mli[115,3734+2]..src/deriving.mli[117,3821+3])
+                        Ttyp_arrow
+                        Optional "extension"
+                        core_type (src/deriving.mli[115,3734+14]..src/deriving.mli[115,3734+70])
+                          Ttyp_arrow
+                          Labelled "loc"
+                          core_type (src/deriving.mli[115,3734+18]..src/deriving.mli[115,3734+28])
+                            Ttyp_constr "Ppxlib__!.Location.t"
+                            []
+                          core_type (src/deriving.mli[115,3734+32]..src/deriving.mli[115,3734+70])
+                            Ttyp_arrow
+                            Labelled "path"
+                            core_type (src/deriving.mli[115,3734+37]..src/deriving.mli[115,3734+43])
+                              Ttyp_constr "string/17!"
+                              []
+                            core_type (src/deriving.mli[115,3734+47]..src/deriving.mli[115,3734+70])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/deriving.mli[115,3734+47]..src/deriving.mli[115,3734+56])
+                                Ttyp_constr "Ppxlib__!.Import.core_type"
+                                []
+                              core_type (src/deriving.mli[115,3734+60]..src/deriving.mli[115,3734+70])
+                                Ttyp_constr "Ppxlib__!.Import.expression"
+                                []
+                        core_type (src/deriving.mli[116,3809+2]..src/deriving.mli[117,3821+3])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/deriving.mli[116,3809+2]..src/deriving.mli[116,3809+8])
+                            Ttyp_constr "string/17!"
+                            []
+                          core_type (src/deriving.mli[117,3821+2]..src/deriving.mli[117,3821+3])
+                            Ttyp_constr "t/2236"
+                            []
+      []
+  signature_item (src/deriving.mli[131,4416+0]..src/deriving.mli[142,4684+3])
+    Tsig_value
+    value_description add_alias/2410 (src/deriving.mli[131,4416+0]..src/deriving.mli[142,4684+3])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[143,4688+0]..[146,4919+40])
+            Pstr_eval
+            expression (src/deriving.mli[143,4688+0]..[146,4919+40])
+              Pexp_constant PConst_string(" [add_alias name set] add an alias. When the user write the alias, all the\n    generator of [set] will be used instead. It is possible to override the set\n    for any of the context by passing the specific set in the approriate\n    optional argument of [add_alias]. ",(src/deriving.mli[143,4688+0]..[146,4919+40]),None)
+        ]
+      core_type (src/deriving.mli[132,4432+2]..src/deriving.mli[142,4684+3])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/deriving.mli[132,4432+2]..src/deriving.mli[132,4432+8])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/deriving.mli[133,4444+2]..src/deriving.mli[142,4684+3])
+          Ttyp_arrow
+          Optional "str_type_decl"
+          core_type (src/deriving.mli[133,4444+17]..src/deriving.mli[133,4444+23])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/deriving.mli[133,4444+17]..src/deriving.mli[133,4444+18])
+                Ttyp_constr "t/2236"
+                []
+            ]
+          core_type (src/deriving.mli[134,4471+2]..src/deriving.mli[142,4684+3])
+            Ttyp_arrow
+            Optional "str_type_ext"
+            core_type (src/deriving.mli[134,4471+16]..src/deriving.mli[134,4471+22])
+              Ttyp_constr "list/11!"
+              [
+                core_type (src/deriving.mli[134,4471+16]..src/deriving.mli[134,4471+17])
+                  Ttyp_constr "t/2236"
+                  []
+              ]
+            core_type (src/deriving.mli[135,4497+2]..src/deriving.mli[142,4684+3])
+              Ttyp_arrow
+              Optional "str_exception"
+              core_type (src/deriving.mli[135,4497+17]..src/deriving.mli[135,4497+23])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/deriving.mli[135,4497+17]..src/deriving.mli[135,4497+18])
+                    Ttyp_constr "t/2236"
+                    []
+                ]
+              core_type (src/deriving.mli[136,4524+2]..src/deriving.mli[142,4684+3])
+                Ttyp_arrow
+                Optional "str_module_type_decl"
+                core_type (src/deriving.mli[136,4524+24]..src/deriving.mli[136,4524+30])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/deriving.mli[136,4524+24]..src/deriving.mli[136,4524+25])
+                      Ttyp_constr "t/2236"
+                      []
+                  ]
+                core_type (src/deriving.mli[137,4558+2]..src/deriving.mli[142,4684+3])
+                  Ttyp_arrow
+                  Optional "sig_type_decl"
+                  core_type (src/deriving.mli[137,4558+17]..src/deriving.mli[137,4558+23])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/deriving.mli[137,4558+17]..src/deriving.mli[137,4558+18])
+                        Ttyp_constr "t/2236"
+                        []
+                    ]
+                  core_type (src/deriving.mli[138,4585+2]..src/deriving.mli[142,4684+3])
+                    Ttyp_arrow
+                    Optional "sig_type_ext"
+                    core_type (src/deriving.mli[138,4585+16]..src/deriving.mli[138,4585+22])
+                      Ttyp_constr "list/11!"
+                      [
+                        core_type (src/deriving.mli[138,4585+16]..src/deriving.mli[138,4585+17])
+                          Ttyp_constr "t/2236"
+                          []
+                      ]
+                    core_type (src/deriving.mli[139,4611+2]..src/deriving.mli[142,4684+3])
+                      Ttyp_arrow
+                      Optional "sig_exception"
+                      core_type (src/deriving.mli[139,4611+17]..src/deriving.mli[139,4611+23])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/deriving.mli[139,4611+17]..src/deriving.mli[139,4611+18])
+                            Ttyp_constr "t/2236"
+                            []
+                        ]
+                      core_type (src/deriving.mli[140,4638+2]..src/deriving.mli[142,4684+3])
+                        Ttyp_arrow
+                        Optional "sig_module_type_decl"
+                        core_type (src/deriving.mli[140,4638+24]..src/deriving.mli[140,4638+30])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/deriving.mli[140,4638+24]..src/deriving.mli[140,4638+25])
+                              Ttyp_constr "t/2236"
+                              []
+                          ]
+                        core_type (src/deriving.mli[141,4672+2]..src/deriving.mli[142,4684+3])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/deriving.mli[141,4672+2]..src/deriving.mli[141,4672+8])
+                            Ttyp_constr "list/11!"
+                            [
+                              core_type (src/deriving.mli[141,4672+2]..src/deriving.mli[141,4672+3])
+                                Ttyp_constr "t/2236"
+                                []
+                            ]
+                          core_type (src/deriving.mli[142,4684+2]..src/deriving.mli[142,4684+3])
+                            Ttyp_constr "t/2236"
+                            []
+      []
+  signature_item (src/deriving.mli[148,4961+0]..src/deriving.mli[148,4961+22])
+    Tsig_value
+    value_description ignore/2411 (src/deriving.mli[148,4961+0]..src/deriving.mli[148,4961+22])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/deriving.mli[149,4984+0]..[151,5054+23])
+            Pstr_eval
+            expression (src/deriving.mli[149,4984+0]..[151,5054+23])
+              Pexp_constant PConst_string(" Ignore a deriver. So that one can write:\n    [Deriving.add ... |>\n    Deriving.ignore] ",(src/deriving.mli[149,4984+0]..[151,5054+23]),None)
+        ]
+      core_type (src/deriving.mli[148,4961+13]..src/deriving.mli[148,4961+22])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/deriving.mli[148,4961+13]..src/deriving.mli[148,4961+14])
+          Ttyp_constr "t/2236"
+          []
+        core_type (src/deriving.mli[148,4961+18]..src/deriving.mli[148,4961+22])
+          Ttyp_constr "unit/6!"
+          []
+      []
+]
+

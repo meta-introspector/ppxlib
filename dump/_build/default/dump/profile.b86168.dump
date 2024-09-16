@@ -1,0 +1,8 @@
+0.120s  119MB 20.7MB 20.7MB src/name.ml
+  0.005s 2.91MB 1.57MB 1.57MB parsing
+    0.005s 2.91MB 1.57MB 1.57MB parser
+  0.095s 76.0MB 18.5MB 20.1MB typing
+  0.001s 2.00MB 0.12MB 20.2MB transl
+  0.004s 14.3MB 0.15MB 20.4MB generate
+  0.014s 24.3MB 0.34MB 20.7MB other
+0.010s ------ ------ ------ other

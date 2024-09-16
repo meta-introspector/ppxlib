@@ -1,0 +1,16 @@
+0.195s  121MB 24.8MB 26.5MB src/gen/import.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ parser
+  0.168s 88.6MB 23.2MB 24.9MB typing
+  0.001s 0.04MB ------ ------ transl
+  0.010s 11.9MB 0.93MB 25.9MB generate
+    ------ 0.16MB ------ ------ cmm
+    0.003s 5.53MB 0.65MB 25.6MB compile_phrases
+      0.001s 2.00MB 0.40MB 25.3MB selection
+      0.001s 1.43MB 0.09MB 25.4MB cse
+      0.001s 0.10MB ------ ------ regalloc
+      ------ 2.00MB 0.15MB 25.6MB emit
+    0.004s ------ ------ ------ assemble
+    0.002s 6.30MB 0.28MB 25.9MB other
+  0.015s 20.7MB 0.59MB 26.5MB other
+0.017s 3.02MB 1.69MB ------ other

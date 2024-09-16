@@ -1,0 +1,7 @@
+[]
+
+
+[]
+
+(setglobal Empty_rewriter! (pseudo <unknown location> (makeblock 0)))
+(setglobal Empty_rewriter! (pseudo <unknown location> (makeblock 0)))

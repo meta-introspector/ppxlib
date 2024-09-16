@@ -1,0 +1,469 @@
+[
+  signature_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Psig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[1,0+0]..[1,0+10])
+    Psig_open Override "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[1,0+6]..[1,0+10])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[2,11+0]..[2,11+11])
+    Psig_open Fresh "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[2,11+5]..[2,11+11])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+0]..[7,288+9])
+    Psig_type Rec
+    [
+      type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+8]..[7,288+9]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+0]..[7,288+9])
+        attribute "ocaml.doc"
+          [
+            structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[4,24+0]..[6,200+87])
+              Pstr_eval
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[4,24+0]..[6,200+87])
+                Pexp_constant PConst_string(" Represents an ['a], along with some user expressions that should lifted out of the\n    scope of internal bindings. For example, if a user writes [[@@default x]], they mean\n    [x] in the surface code, not some temporary variable [x] added by ppx machinery. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[4,24+0]..[6,200+87]),None)
+          ]
+        ptype_params =
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+5]..[7,288+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+0]..[11,418+38])
+    Psig_include
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+8]..[11,418+38])
+      Pmty_with
+      module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+8]..[11,418+15])
+        Pmty_ident "Monad.S" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+8]..[11,418+15])
+      [
+        Pwith_typesubst "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+29]..[11,418+30])
+          type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+29]..[11,418+30]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+21]..[11,418+38])
+            ptype_params =
+              [
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+26]..[11,418+28])
+                  Ptyp_var a
+              ]
+            ptype_cstrs =
+              []
+            ptype_kind =
+              Ptype_abstract
+            ptype_private = Public
+            ptype_manifest =
+              Some
+                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+34]..[11,418+38])
+                  Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+37]..[11,418+38])
+                  [
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+34]..[11,418+36])
+                      Ptyp_var a
+                  ]
+      ]
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[9,299+0]..[10,386+31])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[9,299+0]..[10,386+31])
+              Pexp_constant PConst_string(" As a monad, combines all client expressions so they can be lifted to the outermost\n    level of generated code. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[9,299+0]..[10,386+31]),None)
+        ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+0]..[16,681+88])
+    Psig_value
+    value_description "create" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+4]..[16,681+10]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+0]..[16,681+88])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[13,458+0]..[15,637+43])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[13,458+0]..[15,637+43])
+              Pexp_constant PConst_string(" Lifts the given expression and binds it to a fresh variable starting with [prefix].\n    The expression is evaluated each time it is referred to. The binding is annotated with\n    [ty]. Uses [loc] for generated code. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[13,458+0]..[15,637+43]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+13]..[16,681+88])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+17]..[16,681+25])
+          Ptyp_constr "location" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+17]..[16,681+25])
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+29]..[16,681+88])
+          Ptyp_arrow
+          Labelled "prefix"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+36]..[16,681+42])
+            Ptyp_constr "string" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+36]..[16,681+42])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+46]..[16,681+88])
+            Ptyp_arrow
+            Labelled "ty"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+49]..[16,681+58])
+              Ptyp_constr "core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+49]..[16,681+58])
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+62]..[16,681+88])
+              Ptyp_arrow
+              Nolabel
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+62]..[16,681+72])
+                Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+62]..[16,681+72])
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+76]..[16,681+88])
+                Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+87]..[16,681+88])
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+76]..[16,681+86])
+                    Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+76]..[16,681+86])
+                    []
+                ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+0]..[21,946+74])
+    Psig_value
+    value_description "let_bind_user_expressions" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+4]..[21,946+29]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+0]..[21,946+74])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[19,772+0]..[20,861+84])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[19,772+0]..[20,861+84])
+              Pexp_constant PConst_string(" Uses [let] to bind all lifted user expressions, with the contained expression as the\n    body. Should be called in whatever scope the user should be able to refer to. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[19,772+0]..[20,861+84]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+32]..[21,946+74])
+        Ptyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+32]..[21,946+44])
+          Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+43]..[21,946+44])
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+32]..[21,946+42])
+              Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+32]..[21,946+42])
+              []
+          ]
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+48]..[21,946+74])
+          Ptyp_arrow
+          Labelled "loc"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+52]..[21,946+60])
+            Ptyp_constr "location" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+52]..[21,946+60])
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+64]..[21,946+74])
+            Ptyp_constr "expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+64]..[21,946+74])
+            []
+      []
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+open! Base
+open Ppxlib
+type 'a t[@@ocaml.doc
+           " Represents an ['a], along with some user expressions that should lifted out of the\n    scope of internal bindings. For example, if a user writes [[@@default x]], they mean\n    [x] in the surface code, not some temporary variable [x] added by ppx machinery. "]
+include Monad.S with type 'a t :=  'a t[@@ocaml.doc
+                                         " As a monad, combines all client expressions so they can be lifted to the outermost\n    level of generated code. "]
+val create :
+  loc:location -> prefix:string -> ty:core_type -> expression -> expression t
+[@@ocaml.doc
+  " Lifts the given expression and binds it to a fresh variable starting with [prefix].\n    The expression is evaluated each time it is referred to. The binding is annotated with\n    [ty]. Uses [loc] for generated code. "]
+val let_bind_user_expressions : expression t -> loc:location -> expression
+[@@ocaml.doc
+  " Uses [let] to bind all lifted user expressions, with the contained expression as the\n    body. Should be called in whatever scope the user should be able to refer to. "]
+[
+  signature_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tsig_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[1,0+10])
+    Tsig_open Override "Base!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[2,11+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[2,11+11])
+    Tsig_open Fresh "Ppxlib!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+9])
+    Tsig_type Rec
+    [
+      type_declaration t/656 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+9])
+        attribute "ocaml.doc"
+          [
+            structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[4,24+0]..[6,200+87])
+              Pstr_eval
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[4,24+0]..[6,200+87])
+                Pexp_constant PConst_string(" Represents an ['a], along with some user expressions that should lifted out of the\n    scope of internal bindings. For example, if a user writes [[@@default x]], they mean\n    [x] in the surface code, not some temporary variable [x] added by ppx machinery. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[4,24+0]..[6,200+87]),None)
+          ]
+        ptype_params =
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[7,288+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+38])
+    Tsig_include
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[9,299+0]..[10,386+31])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[9,299+0]..[10,386+31])
+              Pexp_constant PConst_string(" As a monad, combines all client expressions so they can be lifted to the outermost\n    level of generated code. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[9,299+0]..[10,386+31]),None)
+        ]
+    module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+38])
+      Tmty_with
+      module_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+15])
+        Tmty_ident "Base!.Monad.S"
+      [
+        "t/1767"
+          Twith_typesubst
+            type_declaration t/1767 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+38])
+              ptype_params =
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+26]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+28])
+                    Ttyp_var a
+                ]
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                Some
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+38])
+                    Ttyp_constr "t/656"
+                    [
+                      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[11,418+36])
+                        Ttyp_var a
+                    ]
+      ]
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+88])
+    Tsig_value
+    value_description create/2600 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+88])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[13,458+0]..[15,637+43])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[13,458+0]..[15,637+43])
+              Pexp_constant PConst_string(" Lifts the given expression and binds it to a fresh variable starting with [prefix].\n    The expression is evaluated each time it is referred to. The binding is annotated with\n    [ty]. Uses [loc] for generated code. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[13,458+0]..[15,637+43]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+88])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+25])
+          Ttyp_constr "Ppxlib!.location"
+          []
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+29]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+88])
+          Ttyp_arrow
+          Labelled "prefix"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+36]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+42])
+            Ttyp_constr "Base!.string"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+46]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+88])
+            Ttyp_arrow
+            Labelled "ty"
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+49]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+58])
+              Ttyp_constr "Ppxlib!.core_type"
+              []
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+62]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+88])
+              Ttyp_arrow
+              Nolabel
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+62]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+72])
+                Ttyp_constr "Ppxlib!.expression"
+                []
+              core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+76]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+88])
+                Ttyp_constr "t/656"
+                [
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+76]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[16,681+86])
+                    Ttyp_constr "Ppxlib!.expression"
+                    []
+                ]
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+74])
+    Tsig_value
+    value_description let_bind_user_expressions/2601 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+74])
+      attribute "ocaml.doc"
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[19,772+0]..[20,861+84])
+            Pstr_eval
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[19,772+0]..[20,861+84])
+              Pexp_constant PConst_string(" Uses [let] to bind all lifted user expressions, with the contained expression as the\n    body. Should be called in whatever scope the user should be able to refer to. ",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[19,772+0]..[20,861+84]),None)
+        ]
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+74])
+        Ttyp_arrow
+        Nolabel
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+44])
+          Ttyp_constr "t/656"
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+42])
+              Ttyp_constr "Ppxlib!.expression"
+              []
+          ]
+        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+48]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+74])
+          Ttyp_arrow
+          Labelled "loc"
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+52]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+60])
+            Ttyp_constr "Ppxlib!.location"
+            []
+          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+64]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.mli[21,946+74])
+            Ttyp_constr "Ppxlib!.expression"
+            []
+      []
+]
+

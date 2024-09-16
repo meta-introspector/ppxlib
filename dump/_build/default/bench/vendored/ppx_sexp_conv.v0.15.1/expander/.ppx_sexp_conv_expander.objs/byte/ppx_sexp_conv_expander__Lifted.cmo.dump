@@ -1,0 +1,2139 @@
+[
+  structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Pstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[1,0+0]..[1,0+10])
+    Pstr_open Override
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[1,0+6]..[1,0+10])
+      Pmod_ident "Base" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[1,0+6]..[1,0+10])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[2,11+0]..[2,11+11])
+    Pstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[2,11+5]..[2,11+11])
+      Pmod_ident "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[2,11+5]..[2,11+11])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[3,23+0]..[3,23+24])
+    Pstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[3,23+5]..[3,23+24])
+      Pmod_ident "Ast_builder.Default" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[3,23+5]..[3,23+24])
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+0]..[8,115+3])
+    Pstr_type Rec
+    [
+      type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+8]..[5,49+9]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+0]..[8,115+3])
+        ptype_params =
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+5]..[5,49+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+4]..[7,101+3])
+                Immutable
+                "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+4]..[6,61+18])                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+21]..[6,61+39])
+                  Ptyp_constr "list" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+35]..[6,61+39])
+                  [
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+21]..[6,61+34])
+                      Ptyp_constr "value_binding" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+21]..[6,61+34])
+                      []
+                  ]
+              (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+4]..[7,101+13])
+                Immutable
+                "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+4]..[7,101+8])                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+11]..[7,101+13])
+                  Ptyp_var a
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+0]..[21,394+6])
+    Pstr_include    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+8]..[21,394+6])
+      Pmod_apply
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+8]..[10,120+18])
+        Pmod_ident "Monad.Make" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+8]..[10,120+18])
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+20]..[21,394+5])
+        Pmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+4]..[11,147+27])
+            Pstr_type Nonrec
+            [
+              type_declaration "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+19]..[11,147+20]) (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+4]..[11,147+27])
+                ptype_params =
+                  [
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+16]..[11,147+18])
+                      Ptyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ptype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+23]..[11,147+27])
+                      Ptyp_constr "t" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+26]..[11,147+27])
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+23]..[11,147+25])
+                          Ptyp_var a
+                      ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+4]..[13,176+51])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+8]..[13,176+14])
+                  Ppat_var "return" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+8]..[13,176+14])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+15]..[13,176+51]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+15]..[13,176+19])
+                    Ppat_var "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+15]..[13,176+19])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+22]..[13,176+51])
+                    Pexp_record
+                    [
+                      "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+24]..[13,176+38])
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+41]..[13,176+43])
+                          Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+41]..[13,176+43])
+                          None
+                      "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+45]..[13,176+49])
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+45]..[13,176+49]) ghost
+                          Pexp_ident "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+45]..[13,176+49]) ghost
+                    ]
+                    None
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+4]..[17,275+77])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+8]..[15,229+12])
+                  Ppat_var "bind" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+8]..[15,229+12])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+13]..[17,275+77]) ghost
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+13]..[15,229+14])
+                    Ppat_var "a" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+13]..[15,229+14])
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+15]..[17,275+77]) ghost
+                    Pexp_fun
+                    Labelled "f"
+                    None
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+16]..[15,229+17])
+                      Ppat_var "f" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+16]..[15,229+17])
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+6]..[17,275+77])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+10]..[16,249+11])
+                            Ppat_var "b" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+10]..[16,249+11])
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+14]..[16,249+22])
+                            Pexp_apply
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+14]..[16,249+15])
+                              Pexp_ident "f" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+14]..[16,249+15])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+16]..[16,249+22])
+                                  Pexp_field
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+16]..[16,249+17])
+                                    Pexp_ident "a" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+16]..[16,249+17])
+                                  "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+18]..[16,249+22])
+                            ]
+                      ]
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+6]..[17,275+77])
+                        Pexp_record
+                        [
+                          "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+8]..[17,275+22])
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+25]..[17,275+60])
+                              Pexp_apply
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+42]..[17,275+43])
+                                Pexp_ident "@" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+42]..[17,275+43])
+                              [
+                                <arg>
+                                Nolabel
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+25]..[17,275+41])
+                                    Pexp_field
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+25]..[17,275+26])
+                                      Pexp_ident "a" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+25]..[17,275+26])
+                                    "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+27]..[17,275+41])
+                                <arg>
+                                Nolabel
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+44]..[17,275+60])
+                                    Pexp_field
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+44]..[17,275+45])
+                                      Pexp_ident "b" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+44]..[17,275+45])
+                                    "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+46]..[17,275+60])
+                              ]
+                          "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+62]..[17,275+66])
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+69]..[17,275+75])
+                              Pexp_field
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+69]..[17,275+70])
+                                Pexp_ident "b" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+69]..[17,275+70])
+                              "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+71]..[17,275+75])
+                        ]
+                        None
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+4]..[20,361+32])
+            Pstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+8]..[20,361+11])
+                  Ppat_var "map" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+8]..[20,361+11])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+14]..[20,361+32])
+                  Pexp_variant "Define_using_bind"
+                  None
+            ]
+        ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+0]..[39,954+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+4]..[23,402+10])
+          Ppat_var "create" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+4]..[23,402+10])
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+11]..[39,954+3]) ghost
+          Pexp_fun
+          Labelled "loc"
+          None
+          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+12]..[23,402+15])
+            Ppat_var "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+12]..[23,402+15])
+          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+16]..[39,954+3]) ghost
+            Pexp_fun
+            Labelled "prefix"
+            None
+            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+17]..[23,402+23])
+              Ppat_var "prefix" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+17]..[23,402+23])
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+24]..[39,954+3]) ghost
+              Pexp_fun
+              Labelled "ty"
+              None
+              pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+25]..[23,402+27])
+                Ppat_var "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+25]..[23,402+27])
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+28]..[39,954+3]) ghost
+                Pexp_fun
+                Nolabel
+                None
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+28]..[23,402+31])
+                  Ppat_var "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+28]..[23,402+31])
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+2]..[39,954+3])
+                  Pexp_let Nonrec
+                  [
+                    <def>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+6]..[24,436+10])
+                        Ppat_var "name" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+6]..[24,436+10])
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+13]..[24,436+34])
+                        Pexp_apply
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+13]..[24,436+23])
+                          Pexp_ident "gen_symbol" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+13]..[24,436+23])
+                        [
+                          <arg>
+                          Labelled "prefix"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+25]..[24,436+31])
+                              Pexp_ident "prefix" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+25]..[24,436+31])
+                          <arg>
+                          Nolabel
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+32]..[24,436+34])
+                              Pexp_construct "()" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+32]..[24,436+34])
+                              None
+                        ]
+                  ]
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+2]..[39,954+3])
+                    Pexp_let Nonrec
+                    [
+                      <def>
+                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+6]..[25,474+9])
+                          Ppat_var "lhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+6]..[25,474+9])
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+12]..[25,474+26])
+                          Pexp_apply
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+12]..[25,474+16])
+                            Pexp_ident "pvar" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+12]..[25,474+16])
+                          [
+                            <arg>
+                            Labelled "loc"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+18]..[25,474+21])
+                                Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+18]..[25,474+21])
+                            <arg>
+                            Nolabel
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+22]..[25,474+26])
+                                Pexp_ident "name" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+22]..[25,474+26])
+                          ]
+                    ]
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+2]..[39,954+3])
+                      Pexp_let Nonrec
+                      [
+                        <def>
+                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+6]..[26,504+10])
+                            Ppat_var "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+6]..[26,504+10])
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+13]..[26,504+27])
+                            Pexp_apply
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+13]..[26,504+17])
+                              Pexp_ident "evar" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+13]..[26,504+17])
+                            [
+                              <arg>
+                              Labelled "loc"
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+19]..[26,504+22])
+                                  Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+19]..[26,504+22])
+                              <arg>
+                              Nolabel
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+23]..[26,504+27])
+                                  Pexp_ident "name" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+23]..[26,504+27])
+                            ]
+                      ]
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+2]..[39,954+3])
+                        Pexp_let Nonrec
+                        [
+                          <def>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+6]..[27,535+19])
+                              Ppat_tuple
+                              [
+                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+6]..[27,535+8])
+                                  Ppat_var "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+6]..[27,535+8])
+                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+10]..[27,535+13])
+                                  Ppat_var "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+10]..[27,535+13])
+                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+15]..[27,535+19])
+                                  Ppat_var "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+15]..[27,535+19])
+                              ]
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+4]..[35,830+20])
+                              Pexp_ifthenelse
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+7]..[28,557+38])
+                                Pexp_apply
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+7]..[28,557+34])
+                                  Pexp_ident "Helpers.is_value_expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+7]..[28,557+34])
+                                [
+                                  <arg>
+                                  Nolabel
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+35]..[28,557+38])
+                                      Pexp_ident "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+35]..[28,557+38])
+                                ]
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+9]..[29,596+22])
+                                Pexp_tuple
+                                [
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+9]..[29,596+11])
+                                    Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+9]..[29,596+11])
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+13]..[29,596+16])
+                                    Pexp_ident "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+13]..[29,596+16])
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+18]..[29,596+22])
+                                    Pexp_ident "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+18]..[29,596+22])
+                                ]
+                              Some
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[30,619+9]..[35,830+20])
+                                  Pexp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+10]..[32,691+12])
+                                        Ppat_var "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+10]..[32,691+12])
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                        Pexp_constraint
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                          Pexp_record
+                                          [
+                                            "ptyp_desc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                Pexp_construct "Ptyp_arrow" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                Some
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                    Pexp_tuple
+                                                    [
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                        Pexp_construct "Nolabel" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                        None
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                        Pexp_record
+                                                        [
+                                                          "ptyp_desc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                              Pexp_construct "Ptyp_constr" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                              Some
+                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                                  Pexp_tuple
+                                                                  [
+                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                                      Pexp_record
+                                                                      [
+"txt" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+    Pexp_construct "Ldot" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+    Some
+      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+        Pexp_tuple
+        [
+          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+            Pexp_construct "Ldot" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+            Some
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                Pexp_tuple
+                [
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                    Pexp_construct "Lident" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                    Some
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                        Pexp_constant PConst_string("Stdlib",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost,None)
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                    Pexp_constant PConst_string("Unit",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost,None)
+                ]
+          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+            Pexp_constant PConst_string("t",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost,None)
+        ]
+"loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+    Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                                      ]
+                                                                      None
+                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                                      Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                                      None
+                                                                  ]
+                                                          "ptyp_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                              Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                          "ptyp_loc_stack" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                              Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                              None
+                                                          "ptyp_attributes" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                              Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                              None
+                                                        ]
+                                                        None
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                        Pexp_constraint
+                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+44]..[32,691+46])
+                                                          Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+44]..[32,691+46])
+                                                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                          Ptyp_constr "Ppxlib_ast.Ast.core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                          []
+                                                    ]
+                                            "ptyp_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                            "ptyp_loc_stack" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                None
+                                            "ptyp_attributes" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                                None
+                                          ]
+                                          None
+                                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                          Ptyp_constr "Ppxlib_ast.Ast.core_type" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..[32,691+48]) ghost
+                                          []
+                                  ]
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+6]..[35,830+19])
+                                    Pexp_let Nonrec
+                                    [
+                                      <def>
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+10]..[33,743+13])
+                                          Ppat_var "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+10]..[33,743+13])
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                          Pexp_constraint
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                            Pexp_record
+                                            [
+                                              "pexp_desc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                  Pexp_construct "Pexp_fun" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                  Some
+                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                      Pexp_tuple
+                                                      [
+                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                          Pexp_construct "Nolabel" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                          None
+                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                          Pexp_construct "None" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                          None
+                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                          Pexp_record
+                                                          [
+                                                            "ppat_desc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                Pexp_construct "Ppat_construct" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                Some
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+Pexp_record
+[
+  "txt" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+      Pexp_construct "Lident" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+      Some
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+          Pexp_constant PConst_string("()",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost,None)
+  "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+      Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+]
+None
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+Pexp_construct "None" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+None
+                                                                    ]
+                                                            "ppat_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                            "ppat_loc_stack" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                None
+                                                            "ppat_attributes" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                                None
+                                                          ]
+                                                          None
+                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                          Pexp_constraint
+                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+37]..[33,743+40])
+                                                            Pexp_ident "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+37]..[33,743+40])
+                                                          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                            Ptyp_constr "Ppxlib_ast.Ast.expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                            []
+                                                      ]
+                                              "pexp_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                  Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                              "pexp_loc_stack" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                  Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                  None
+                                              "pexp_attributes" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                  Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                                  None
+                                            ]
+                                            None
+                                          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                            Ptyp_constr "Ppxlib_ast.Ast.expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..[33,743+42]) ghost
+                                            []
+                                    ]
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+6]..[35,830+19])
+                                      Pexp_let Nonrec
+                                      [
+                                        <def>
+                                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+10]..[34,789+14])
+                                            Ppat_var "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+10]..[34,789+14])
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                            Pexp_constraint
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                              Pexp_record
+                                              [
+                                                "pexp_desc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                    Pexp_construct "Pexp_apply" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                    Some
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                        Pexp_tuple
+                                                        [
+                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                            Pexp_constraint
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+28]..[34,789+32])
+                                                              Pexp_ident "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+28]..[34,789+32])
+                                                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                              Ptyp_constr "Ppxlib_ast.Ast.expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                              []
+                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                            Pexp_construct "::" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                            Some
+                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                                Pexp_tuple
+                                                                [
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                                    Pexp_tuple
+                                                                    [
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+Pexp_construct "Nolabel" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+None
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+Pexp_record
+[
+  "pexp_desc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+      Pexp_construct "Pexp_construct" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+      Some
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+          Pexp_tuple
+          [
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+              Pexp_record
+              [
+                "txt" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                    Pexp_construct "Lident" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                    Some
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                        Pexp_constant PConst_string("()",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost,None)
+                "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                    Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+              ]
+              None
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+              Pexp_construct "None" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+              None
+          ]
+  "pexp_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+      Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+  "pexp_loc_stack" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+      Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+      None
+  "pexp_attributes" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+      Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+      None
+]
+None
+                                                                    ]
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                                    Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                                    None
+                                                                ]
+                                                        ]
+                                                "pexp_loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                    Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                "pexp_loc_stack" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                    Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                    None
+                                                "pexp_attributes" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                    Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                                    None
+                                              ]
+                                              None
+                                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                              Ptyp_constr "Ppxlib_ast.Ast.expression" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..[34,789+37]) ghost
+                                              []
+                                      ]
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+6]..[35,830+19])
+                                        Pexp_tuple
+                                        [
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+6]..[35,830+8])
+                                            Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+6]..[35,830+8])
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+10]..[35,830+13])
+                                            Pexp_ident "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+10]..[35,830+13])
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+15]..[35,830+19])
+                                            Pexp_ident "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+15]..[35,830+19])
+                                        ]
+                        ]
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+2]..[39,954+3])
+                          Pexp_record
+                          [
+                            "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+4]..[37,856+18])
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+21]..[37,856+88])
+                                Pexp_construct "::" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+23]..[37,856+88]) ghost
+                                Some
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+23]..[37,856+88]) ghost
+                                    Pexp_tuple
+                                    [
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+23]..[37,856+86])
+                                        Pexp_apply
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+23]..[37,856+36])
+                                          Pexp_ident "value_binding" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+23]..[37,856+36])
+                                        [
+                                          <arg>
+                                          Labelled "loc"
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+38]..[37,856+41])
+                                              Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+38]..[37,856+41])
+                                          <arg>
+                                          Labelled "pat"
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+47]..[37,856+76])
+                                              Pexp_apply
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+48]..[37,856+63])
+                                                Pexp_ident "ppat_constraint" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+48]..[37,856+63])
+                                              [
+                                                <arg>
+                                                Labelled "loc"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+65]..[37,856+68])
+                                                    Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+65]..[37,856+68])
+                                                <arg>
+                                                Nolabel
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+69]..[37,856+72])
+                                                    Pexp_ident "lhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+69]..[37,856+72])
+                                                <arg>
+                                                Nolabel
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+73]..[37,856+75])
+                                                    Pexp_ident "ty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+73]..[37,856+75])
+                                              ]
+                                          <arg>
+                                          Labelled "expr"
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+83]..[37,856+86])
+                                              Pexp_ident "rhs" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+83]..[37,856+86])
+                                        ]
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+87]..[37,856+88]) ghost
+                                        Pexp_construct "[]" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+87]..[37,856+88]) ghost
+                                        None
+                                    ]
+                            "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[38,945+4]..[38,945+8])
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[38,945+4]..[38,945+8]) ghost
+                                Pexp_ident "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[38,945+4]..[38,945+8]) ghost
+                          ]
+                          None
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+0]..[45,1070+53])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+4]..[42,962+29])
+          Ppat_var "let_bind_user_expressions" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+4]..[42,962+29])
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+30]..[45,1070+53]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+30]..[42,962+54])
+            Ppat_record Closed
+            [
+              "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+32]..[42,962+46]) ghost
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+32]..[42,962+46])
+                  Ppat_var "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+32]..[42,962+46])
+              "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+48]..[42,962+52]) ghost
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+48]..[42,962+52])
+                  Ppat_var "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+48]..[42,962+52])
+            ]
+          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+55]..[45,1070+53]) ghost
+            Pexp_fun
+            Labelled "loc"
+            None
+            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+56]..[42,962+59])
+              Ppat_var "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+56]..[42,962+59])
+            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+2]..[45,1070+53])
+              Pexp_ifthenelse
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+5]..[43,1024+33])
+                Pexp_apply
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+5]..[43,1024+18])
+                  Pexp_ident "List.is_empty" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+5]..[43,1024+18])
+                [
+                  <arg>
+                  Nolabel
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+19]..[43,1024+33])
+                      Pexp_ident "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+19]..[43,1024+33])
+                ]
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[44,1058+7]..[44,1058+11])
+                Pexp_ident "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[44,1058+7]..[44,1058+11])
+              Some
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+7]..[45,1070+53])
+                  Pexp_apply
+                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+7]..[45,1070+15])
+                    Pexp_ident "pexp_let" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+7]..[45,1070+15])
+                  [
+                    <arg>
+                    Labelled "loc"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+17]..[45,1070+20])
+                        Pexp_ident "loc" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+17]..[45,1070+20])
+                    <arg>
+                    Nolabel
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+21]..[45,1070+33])
+                        Pexp_construct "Nonrecursive" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+21]..[45,1070+33])
+                        None
+                    <arg>
+                    Nolabel
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+34]..[45,1070+48])
+                        Pexp_ident "value_bindings" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+34]..[45,1070+48])
+                    <arg>
+                    Nolabel
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+49]..[45,1070+53])
+                        Pexp_ident "body" (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+49]..[45,1070+53])
+                  ]
+    ]
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_sexp_conv_expander")]
+  }]
+open! Base
+open Ppxlib
+open Ast_builder.Default
+type 'a t = {
+  value_bindings: value_binding list ;
+  body: 'a }
+include
+  (Monad.Make)(struct
+                 type nonrec 'a t = 'a t
+                 let return body = { value_bindings = []; body }
+                 let bind a ~f  =
+                   let b = f a.body in
+                   {
+                     value_bindings = (a.value_bindings @ b.value_bindings);
+                     body = (b.body)
+                   }
+                 let map = `Define_using_bind
+               end)
+let create ~loc  ~prefix  ~ty  rhs =
+  let name = gen_symbol ~prefix () in
+  let lhs = pvar ~loc name in
+  let body = evar ~loc name in
+  let (ty, rhs, body) =
+    if Helpers.is_value_expression rhs
+    then (ty, rhs, body)
+    else
+      (let ty =
+         ({
+            ptyp_desc =
+              (Ptyp_arrow
+                 (Nolabel,
+                   {
+                     ptyp_desc =
+                       (Ptyp_constr
+                          ({
+                             txt =
+                               (Ldot
+                                  ((Ldot ((Lident "Stdlib"), "Unit")), "t"));
+                             loc
+                           }, []));
+                     ptyp_loc = loc;
+                     ptyp_loc_stack = [];
+                     ptyp_attributes = []
+                   }, (ty : Ppxlib_ast.Ast.core_type)));
+            ptyp_loc = loc;
+            ptyp_loc_stack = [];
+            ptyp_attributes = []
+          } : Ppxlib_ast.Ast.core_type) in
+       let rhs =
+         ({
+            pexp_desc =
+              (Pexp_fun
+                 (Nolabel, None,
+                   {
+                     ppat_desc =
+                       (Ppat_construct ({ txt = (Lident "()"); loc }, None));
+                     ppat_loc = loc;
+                     ppat_loc_stack = [];
+                     ppat_attributes = []
+                   }, (rhs : Ppxlib_ast.Ast.expression)));
+            pexp_loc = loc;
+            pexp_loc_stack = [];
+            pexp_attributes = []
+          } : Ppxlib_ast.Ast.expression) in
+       let body =
+         ({
+            pexp_desc =
+              (Pexp_apply
+                 ((body : Ppxlib_ast.Ast.expression),
+                   [(Nolabel,
+                      {
+                        pexp_desc =
+                          (Pexp_construct
+                             ({ txt = (Lident "()"); loc }, None));
+                        pexp_loc = loc;
+                        pexp_loc_stack = [];
+                        pexp_attributes = []
+                      })]));
+            pexp_loc = loc;
+            pexp_loc_stack = [];
+            pexp_attributes = []
+          } : Ppxlib_ast.Ast.expression) in
+       (ty, rhs, body)) in
+  {
+    value_bindings =
+      [value_binding ~loc ~pat:(ppat_constraint ~loc lhs ty) ~expr:rhs];
+    body
+  }
+let let_bind_user_expressions { value_bindings; body } ~loc  =
+  if List.is_empty value_bindings
+  then body
+  else pexp_let ~loc Nonrecursive value_bindings body
+[
+  structure_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+24])
+                            Pexp_constant PConst_string("ppx_sexp_conv_expander",(<command-line>[1,0+1]..[1,0+23]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[1,0+10])
+    Tstr_open Override
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[1,0+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[1,0+10])
+      Tmod_ident "Base!"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[2,11+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[2,11+11])
+    Tstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[2,11+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[2,11+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[3,23+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[3,23+24])
+    Tstr_open Fresh
+    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[3,23+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[3,23+24])
+      Tmod_ident "Ppxlib!.Ast_builder.Default"
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[8,115+3])
+    Tstr_type Rec
+    [
+      type_declaration t/2223 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[8,115+3])
+        ptype_params =
+          [
+            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[5,49+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+3])
+                Immutable
+                value_bindings/2224                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+39])
+                  Ttyp_poly
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+39])
+                    Ttyp_constr "Base!.list"
+                    [
+                      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[6,61+34])
+                        Ttyp_constr "Ppxlib!.value_binding"
+                        []
+                    ]
+              (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+13])
+                Immutable
+                body/2225                core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+13])
+                  Ttyp_poly
+                  core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[7,101+13])
+                    Ttyp_var a
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[21,394+6])
+    Tstr_include    module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[21,394+6])
+      Tmod_apply
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+18])
+        module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+18])
+          Tmod_ident "Base!.Monad.Make"
+      module_expr (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[10,120+20]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[21,394+5])
+        Tmod_structure
+        [
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+27])
+            Tstr_type Nonrec
+            [
+              type_declaration t/2579 (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+27])
+                ptype_params =
+                  [
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+18])
+                      Ttyp_var a
+                  ]
+                ptype_cstrs =
+                  []
+                ptype_kind =
+                  Ttype_abstract
+                ptype_private = Public
+                ptype_manifest =
+                  Some
+                    core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+23]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+27])
+                      Ttyp_constr "t/2223"
+                      [
+                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+23]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[11,147+25])
+                          Ttyp_var a
+                      ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+51])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+14])
+                  Tpat_var "return/2580"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+51]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+19])
+                        Tpat_var "body/2582"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+51])
+                        Texp_record
+                          fields =
+                            [
+                              "value_bindings"
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+41]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+43])
+                                  Texp_construct "[]"
+                                  []
+                              "body"
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+45]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[13,176+49]) ghost
+                                  Texp_ident "body/2582"
+                            ]
+                          representation =
+                            Record_regular
+                          extended_expression =
+                            None
+                  ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+77])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+12])
+                  Tpat_var "bind/2583"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+77]) ghost
+                  Texp_function
+                  Nolabel
+                  [
+                    <case>
+                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+14])
+                        Tpat_var "a/2585"
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+77]) ghost
+                        Texp_function
+                        Labelled "f"
+                        [
+                          <case>
+                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[15,229+17])
+                              Tpat_var "f/2586"
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+77])
+                              Texp_let Nonrec
+                              [
+                                <def>
+                                  pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+11])
+                                    Tpat_var "b/2587"
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+22])
+                                    Texp_apply
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+15])
+                                      Texp_ident "f/2586"
+                                    [
+                                      <arg>
+                                        Nolabel
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+22])
+                                          Texp_field
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[16,249+17])
+                                            Texp_ident "a/2585"
+                                          "body"
+                                    ]
+                              ]
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+77])
+                                Texp_record
+                                  fields =
+                                    [
+                                      "value_bindings"
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+60])
+                                          Texp_apply
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+42]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+43])
+                                            Texp_ident "Base!.@"
+                                          [
+                                            <arg>
+                                              Nolabel
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+41])
+                                                Texp_field
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+26])
+                                                  Texp_ident "a/2585"
+                                                "value_bindings"
+                                            <arg>
+                                              Nolabel
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+44]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+60])
+                                                Texp_field
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+44]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+45])
+                                                  Texp_ident "b/2587"
+                                                "value_bindings"
+                                          ]
+                                      "body"
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+69]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+75])
+                                          Texp_field
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+69]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[17,275+70])
+                                            Texp_ident "b/2587"
+                                          "body"
+                                    ]
+                                  representation =
+                                    Record_regular
+                                  extended_expression =
+                                    None
+                        ]
+                  ]
+            ]
+          structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+32])
+            Tstr_value Nonrec
+            [
+              <def>
+                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+8]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+11])
+                  Tpat_var "map/3721"
+                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+14]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[20,361+32])
+                  Texp_variant "Define_using_bind"
+                  None
+            ]
+        ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+10])
+          Tpat_var "create/4987"
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+11]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3]) ghost
+          Texp_function
+          Labelled "loc"
+          [
+            <case>
+              pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+15])
+                Tpat_var "loc/4989"
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3]) ghost
+                Texp_function
+                Labelled "prefix"
+                [
+                  <case>
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+23])
+                      Tpat_var "prefix/4990"
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+24]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3]) ghost
+                      Texp_function
+                      Labelled "ty"
+                      [
+                        <case>
+                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+27])
+                            Tpat_var "ty/4991"
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3]) ghost
+                            Texp_function
+                            Nolabel
+                            [
+                              <case>
+                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[23,402+31])
+                                  Tpat_var "rhs/4992"
+                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3])
+                                  Texp_let Nonrec
+                                  [
+                                    <def>
+                                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+10])
+                                        Tpat_var "name/4993"
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+34])
+                                        Texp_apply
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+23])
+                                          Texp_ident "Ppxlib!.gen_symbol"
+                                        [
+                                          <arg>
+                                            Optional "prefix"
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+31])
+                                              Texp_construct "Some"
+                                              [
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+25]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+31])
+                                                  Texp_ident "prefix/4990"
+                                              ]
+                                          <arg>
+                                            Nolabel
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[24,436+34])
+                                              Texp_construct "()"
+                                              []
+                                        ]
+                                  ]
+                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3])
+                                    Texp_let Nonrec
+                                    [
+                                      <def>
+                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+9])
+                                          Tpat_var "lhs/4994"
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+26])
+                                          Texp_apply
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+12]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+16])
+                                            Texp_ident "Ppxlib!.Ast_builder.Default.pvar"
+                                          [
+                                            <arg>
+                                              Labelled "loc"
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+21])
+                                                Texp_ident "loc/4989"
+                                            <arg>
+                                              Nolabel
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+22]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[25,474+26])
+                                                Texp_ident "name/4993"
+                                          ]
+                                    ]
+                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3])
+                                      Texp_let Nonrec
+                                      [
+                                        <def>
+                                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+10])
+                                            Tpat_var "body/6368"
+                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+27])
+                                            Texp_apply
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+17])
+                                              Texp_ident "Ppxlib!.Ast_builder.Default.evar"
+                                            [
+                                              <arg>
+                                                Labelled "loc"
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+22])
+                                                  Texp_ident "loc/4989"
+                                              <arg>
+                                                Nolabel
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+23]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[26,504+27])
+                                                  Texp_ident "name/4993"
+                                            ]
+                                      ]
+                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3])
+                                        Texp_let Nonrec
+                                        [
+                                          <def>
+                                            pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+19])
+                                              Tpat_tuple
+                                              [
+                                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+8])
+                                                  Tpat_var "ty/6369"
+                                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+13])
+                                                  Tpat_var "rhs/6370"
+                                                pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[27,535+19])
+                                                  Tpat_var "body/6371"
+                                              ]
+                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+20])
+                                              Texp_ifthenelse
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+38])
+                                                Texp_apply
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+34])
+                                                  Texp_ident "Ppx_sexp_conv_expander__!.Helpers.is_value_expression"
+                                                [
+                                                  <arg>
+                                                    Nolabel
+                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+35]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[28,557+38])
+                                                      Texp_ident "rhs/4992"
+                                                ]
+                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+9]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+22])
+                                                Texp_tuple
+                                                [
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+9]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+11])
+                                                    Texp_ident "ty/4991"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+13]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+16])
+                                                    Texp_ident "rhs/4992"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+18]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[29,596+22])
+                                                    Texp_ident "body/6368"
+                                                ]
+                                              Some
+                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[30,619+9]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+20])
+                                                  Texp_let Nonrec
+                                                  [
+                                                    <def>
+                                                      pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+12])
+                                                        Tpat_var "ty/6415"
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                        Texp_constraint
+                                                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                          Ttyp_constr "Ppxlib_ast!.Ast.core_type"
+                                                          []
+                                                          Texp_record
+                                                            fields =
+                                                              [
+                                                                "ptyp_desc"
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                    Texp_construct "Ptyp_arrow"
+                                                                    [
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                        Texp_construct "Nolabel"
+                                                                        []
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                        Texp_record
+                                                                          fields =
+                                                                            [
+                                                                              "ptyp_desc"
+                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                  Texp_construct "Ptyp_constr"
+                                                                                  [
+                                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                      Texp_record
+                                                                                        fields =
+                                                                                          [
+                                                                                            "txt"
+                                                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                                Texp_construct "Ldot"
+                                                                                                [
+                                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                                    Texp_construct "Ldot"
+                                                                                                    [
+                                                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                                        Texp_construct "Lident"
+                                                                                                        [
+                                                                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                                            Texp_constant Const_string("Stdlib",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost,None)
+                                                                                                        ]
+                                                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                                        Texp_constant Const_string("Unit",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost,None)
+                                                                                                    ]
+                                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                                    Texp_constant Const_string("t",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost,None)
+                                                                                                ]
+                                                                                            "loc"
+                                                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                                Texp_ident "loc/4989"
+                                                                                          ]
+                                                                                        representation =
+                                                                                          Record_regular
+                                                                                        extended_expression =
+                                                                                          None
+                                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                      Texp_construct "[]"
+                                                                                      []
+                                                                                  ]
+                                                                              "ptyp_loc"
+                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                  Texp_ident "loc/4989"
+                                                                              "ptyp_loc_stack"
+                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                  Texp_construct "[]"
+                                                                                  []
+                                                                              "ptyp_attributes"
+                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                                  Texp_construct "[]"
+                                                                                  []
+                                                                            ]
+                                                                          representation =
+                                                                            Record_regular
+                                                                          extended_expression =
+                                                                            None
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+44]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+46])
+                                                                        Texp_constraint
+                                                                        core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                          Ttyp_constr "Ppxlib_ast!.Ast.core_type"
+                                                                          []
+                                                                          Texp_ident "ty/4991"
+                                                                    ]
+                                                                "ptyp_loc"
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                    Texp_ident "loc/4989"
+                                                                "ptyp_loc_stack"
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                    Texp_construct "[]"
+                                                                    []
+                                                                "ptyp_attributes"
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[32,691+48]) ghost
+                                                                    Texp_construct "[]"
+                                                                    []
+                                                              ]
+                                                            representation =
+                                                              Record_regular
+                                                            extended_expression =
+                                                              None
+                                                  ]
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+19])
+                                                    Texp_let Nonrec
+                                                    [
+                                                      <def>
+                                                        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+13])
+                                                          Tpat_var "rhs/6722"
+                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                          Texp_constraint
+                                                          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                            Ttyp_constr "Ppxlib_ast!.Ast.expression"
+                                                            []
+                                                            Texp_record
+                                                              fields =
+                                                                [
+                                                                  "pexp_desc"
+                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                      Texp_construct "Pexp_fun"
+                                                                      [
+                                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                          Texp_construct "Nolabel"
+                                                                          []
+                                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                          Texp_construct "None"
+                                                                          []
+                                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                          Texp_record
+                                                                            fields =
+                                                                              [
+                                                                                "ppat_desc"
+                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                    Texp_construct "Ppat_construct"
+                                                                                    [
+                                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                        Texp_record
+                                                                                          fields =
+                                                                                            [
+                                                                                              "txt"
+                                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                                  Texp_construct "Lident"
+                                                                                                  [
+                                                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                                      Texp_constant Const_string("()",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost,None)
+                                                                                                  ]
+                                                                                              "loc"
+                                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                                  Texp_ident "loc/4989"
+                                                                                            ]
+                                                                                          representation =
+                                                                                            Record_regular
+                                                                                          extended_expression =
+                                                                                            None
+                                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                        Texp_construct "None"
+                                                                                        []
+                                                                                    ]
+                                                                                "ppat_loc"
+                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                    Texp_ident "loc/4989"
+                                                                                "ppat_loc_stack"
+                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                    Texp_construct "[]"
+                                                                                    []
+                                                                                "ppat_attributes"
+                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                                    Texp_construct "[]"
+                                                                                    []
+                                                                              ]
+                                                                            representation =
+                                                                              Record_regular
+                                                                            extended_expression =
+                                                                              None
+                                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+37]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+40])
+                                                                          Texp_constraint
+                                                                          core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                            Ttyp_constr "Ppxlib_ast!.Ast.expression"
+                                                                            []
+                                                                            Texp_ident "rhs/4992"
+                                                                      ]
+                                                                  "pexp_loc"
+                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                      Texp_ident "loc/4989"
+                                                                  "pexp_loc_stack"
+                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                      Texp_construct "[]"
+                                                                      []
+                                                                  "pexp_attributes"
+                                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+16]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[33,743+42]) ghost
+                                                                      Texp_construct "[]"
+                                                                      []
+                                                                ]
+                                                              representation =
+                                                                Record_regular
+                                                              extended_expression =
+                                                                None
+                                                    ]
+                                                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+19])
+                                                      Texp_let Nonrec
+                                                      [
+                                                        <def>
+                                                          pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+14])
+                                                            Tpat_var "body/6723"
+                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                            Texp_constraint
+                                                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                              Ttyp_constr "Ppxlib_ast!.Ast.expression"
+                                                              []
+                                                              Texp_record
+                                                                fields =
+                                                                  [
+                                                                    "pexp_desc"
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                        Texp_construct "Pexp_apply"
+                                                                        [
+                                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+28]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+32])
+                                                                            Texp_constraint
+                                                                            core_type (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                              Ttyp_constr "Ppxlib_ast!.Ast.expression"
+                                                                              []
+                                                                              Texp_ident "body/6368"
+                                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                            Texp_construct "::"
+                                                                            [
+                                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                Texp_tuple
+                                                                                [
+                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                    Texp_construct "Nolabel"
+                                                                                    []
+                                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                    Texp_record
+                                                                                      fields =
+                                                                                        [
+                                                                                          "pexp_desc"
+                                                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                              Texp_construct "Pexp_construct"
+                                                                                              [
+                                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                                  Texp_record
+                                                                                                    fields =
+                                                                                                      [
+                                                                                                        "txt"
+                                                                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                                            Texp_construct "Lident"
+                                                                                                            [
+                                                                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                                                Texp_constant Const_string("()",(bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost,None)
+                                                                                                            ]
+                                                                                                        "loc"
+                                                                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                                            Texp_ident "loc/4989"
+                                                                                                      ]
+                                                                                                    representation =
+                                                                                                      Record_regular
+                                                                                                    extended_expression =
+                                                                                                      None
+                                                                                                expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                                  Texp_construct "None"
+                                                                                                  []
+                                                                                              ]
+                                                                                          "pexp_loc"
+                                                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                              Texp_ident "loc/4989"
+                                                                                          "pexp_loc_stack"
+                                                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                              Texp_construct "[]"
+                                                                                              []
+                                                                                          "pexp_attributes"
+                                                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                              Texp_construct "[]"
+                                                                                              []
+                                                                                        ]
+                                                                                      representation =
+                                                                                        Record_regular
+                                                                                      extended_expression =
+                                                                                        None
+                                                                                ]
+                                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                                Texp_construct "[]"
+                                                                                []
+                                                                            ]
+                                                                        ]
+                                                                    "pexp_loc"
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                        Texp_ident "loc/4989"
+                                                                    "pexp_loc_stack"
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                        Texp_construct "[]"
+                                                                        []
+                                                                    "pexp_attributes"
+                                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[34,789+37]) ghost
+                                                                        Texp_construct "[]"
+                                                                        []
+                                                                  ]
+                                                                representation =
+                                                                  Record_regular
+                                                                extended_expression =
+                                                                  None
+                                                      ]
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+19])
+                                                        Texp_tuple
+                                                        [
+                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+6]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+8])
+                                                            Texp_ident "ty/6415"
+                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+10]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+13])
+                                                            Texp_ident "rhs/6722"
+                                                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+15]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[35,830+19])
+                                                            Texp_ident "body/6723"
+                                                        ]
+                                        ]
+                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[39,954+3])
+                                          Texp_record
+                                            fields =
+                                              [
+                                                "value_bindings"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+88])
+                                                    Texp_construct "::"
+                                                    [
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+23]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+86])
+                                                        Texp_apply
+                                                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+23]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+36])
+                                                          Texp_ident "Ppxlib!.Ast_builder.Default.value_binding"
+                                                        [
+                                                          <arg>
+                                                            Labelled "loc"
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+38]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+41])
+                                                              Texp_ident "loc/4989"
+                                                          <arg>
+                                                            Labelled "pat"
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+47]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+76])
+                                                              Texp_apply
+                                                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+48]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+63])
+                                                                Texp_ident "Ppxlib!.Ast_builder.Default.ppat_constraint"
+                                                              [
+                                                                <arg>
+                                                                  Labelled "loc"
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+65]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+68])
+                                                                    Texp_ident "loc/4989"
+                                                                <arg>
+                                                                  Nolabel
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+69]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+72])
+                                                                    Texp_ident "lhs/4994"
+                                                                <arg>
+                                                                  Nolabel
+                                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+73]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+75])
+                                                                    Texp_ident "ty/6369"
+                                                              ]
+                                                          <arg>
+                                                            Labelled "expr"
+                                                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+83]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+86])
+                                                              Texp_ident "rhs/6370"
+                                                        ]
+                                                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+87]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[37,856+88]) ghost
+                                                        Texp_construct "[]"
+                                                        []
+                                                    ]
+                                                "body"
+                                                  expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[38,945+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[38,945+8]) ghost
+                                                    Texp_ident "body/6371"
+                                              ]
+                                            representation =
+                                              Record_regular
+                                            extended_expression =
+                                              None
+                            ]
+                      ]
+                ]
+          ]
+    ]
+  structure_item (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+0]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+53])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+4]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+29])
+          Tpat_var "let_bind_user_expressions/6724"
+        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+30]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+53]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+30]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+54])
+                Tpat_record
+                [
+                  "value_bindings"
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+32]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+46])
+                      Tpat_var "value_bindings/6726"
+                  "body"
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+48]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+52])
+                      Tpat_var "body/6727"
+                ]
+              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+55]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+53]) ghost
+                Texp_function
+                Labelled "loc"
+                [
+                  <case>
+                    pattern (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+56]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[42,962+59])
+                      Tpat_var "loc/6728"
+                    expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+2]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+53])
+                      Texp_ifthenelse
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+33])
+                        Texp_apply
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+5]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+18])
+                          Texp_ident "Base!.List.is_empty"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+19]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[43,1024+33])
+                              Texp_ident "value_bindings/6726"
+                        ]
+                      expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[44,1058+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[44,1058+11])
+                        Texp_ident "body/6727"
+                      Some
+                        expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+53])
+                          Texp_apply
+                          expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+7]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+15])
+                            Texp_ident "Ppxlib!.Ast_builder.Default.pexp_let"
+                          [
+                            <arg>
+                              Labelled "loc"
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+17]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+20])
+                                Texp_ident "loc/6728"
+                            <arg>
+                              Nolabel
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+21]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+33])
+                                Texp_construct "Nonrecursive"
+                                []
+                            <arg>
+                              Nolabel
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+34]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+48])
+                                Texp_ident "value_bindings/6726"
+                            <arg>
+                              Nolabel
+                              expression (bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+49]..bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml[45,1070+53])
+                                Texp_ident "body/6727"
+                          ]
+                ]
+          ]
+    ]
+]
+
+(setglobal Ppx_sexp_conv_expander__Lifted!
+  (let
+    (include/15053 =
+       (apply
+         (let (let/15072 = (field_imm 0 (global Base__Monad!)))
+           (field_imm 0 (global Base__Monad!)))
+         (let
+           (return/2580 =
+              (function body/2582
+                (funct-body Ppx_sexp_conv_expander__Lifted.return bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(13)<ghost>:191-227
+                  (before Ppx_sexp_conv_expander__Lifted.return bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(13):198-227
+                    (makeblock 0 0 body/2582))))
+            bind/2583 =
+              (function a/2585 f/2586
+                (funct-body Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(15)<ghost>:242-352
+                  (before Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(16):255-352
+                    (let
+                      (b/2587 =
+                         (after Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(16):263-271
+                           (apply f/2586 (field_imm 1 a/2585))))
+                      (before Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(17):281-352
+                        (makeblock 0
+                          (after Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(17):300-335
+                            (apply (field_imm 180 (global Base!))
+                              (field_imm 0 a/2585) (field_imm 0 b/2587)))
+                          (field_imm 1 b/2587)))))))
+            map/3721 = -349054340)
+           (pseudo Ppx_sexp_conv_expander__Lifted bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(10):140-399
+             (makeblock 0 bind/2583 return/2580 map/3721))))
+     >>=/4965 =a (field_mut 0 include/15053)
+     >>|/4966 =a (field_mut 1 include/15053)
+     Monad_infix/4967 =a (field_mut 2 include/15053)
+     bind/4968 =a (field_mut 3 include/15053)
+     return/4969 =a (field_mut 4 include/15053)
+     map/4970 =a (field_mut 5 include/15053)
+     join/4971 =a (field_mut 6 include/15053)
+     ignore_m/4972 =a (field_mut 7 include/15053)
+     all/4973 =a (field_mut 8 include/15053)
+     all_unit/4974 =a (field_mut 9 include/15053)
+     Let_syntax/4975 =a (field_mut 10 include/15053)
+     create/4987 =
+       (function loc/4989 prefix/4990 ty/4991 rhs/4992
+         (funct-body Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(23)<ghost>:413-957
+           (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(24):438-957
+             (let
+               (name/4993 =
+                  (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(24):449-470
+                    (apply (field_imm 5 (global Ppxlib!))
+                      (makeblock 0 prefix/4990) 0)))
+               (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(25):476-957
+                 (let
+                   (lhs/4994 =
+                      (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(25):486-500
+                        (apply
+                          (field_imm 191
+                            (field_imm 0 (global Ppxlib__Ast_builder!)))
+                          loc/4989 name/4993)))
+                   (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(26):506-957
+                     (let
+                       (body/6368 =
+                          (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(26):517-531
+                            (apply
+                              (field_imm 190
+                                (field_imm 0 (global Ppxlib__Ast_builder!)))
+                              loc/4989 name/4993)))
+                       (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(27):537-957
+                         (catch
+                           (if
+                             (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(28):564-595
+                               (apply
+                                 (field_imm 5
+                                   (global Ppx_sexp_conv_expander__Helpers!))
+                                 rhs/4992))
+                             (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(29):605-618
+                               (let
+                                 (body/15069 =a body/6368
+                                  rhs/15068 =a rhs/4992
+                                  ty/15067 =a ty/4991)
+                                 (exit 1 ty/15067 rhs/15068 body/15069)))
+                             (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(30):628-850
+                               (let
+                                 (ty/6415 =
+                                    (makeblock 0
+                                      (makeblock 1 0
+                                        (makeblock 0
+                                          (makeblock 3
+                                            (makeblock 0
+                                              [1:
+                                               [1: [0: "Stdlib"] "Unit"] "t"]
+                                              loc/4989)
+                                            0)
+                                          loc/4989 0 0)
+                                        ty/4991)
+                                      loc/4989 0 0))
+                                 (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(33):749-849
+                                   (let
+                                     (rhs/6722 =
+                                        (makeblock 0
+                                          (makeblock 4 0 0
+                                            (makeblock 0
+                                              (makeblock 5
+                                                (makeblock 0 [0: "()"]
+                                                  loc/4989)
+                                                0)
+                                              loc/4989 0 0)
+                                            rhs/4992)
+                                          loc/4989 0 0))
+                                     (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(34):795-849
+                                       (let
+                                         (body/6723 =
+                                            (makeblock 0
+                                              (makeblock 5 body/6368
+                                                (makeblock 0
+                                                  (makeblock 0 0
+                                                    (makeblock 0
+                                                      (makeblock 9
+                                                        (makeblock 0
+                                                          [0: "()"] loc/4989)
+                                                        0)
+                                                      loc/4989 0 0))
+                                                  0))
+                                              loc/4989 0 0))
+                                         (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(35):836-849
+                                           (let
+                                             (body/15066 =a body/6723
+                                              rhs/15065 =a rhs/6722
+                                              ty/15064 =a ty/6415)
+                                             (exit 1 ty/15064 rhs/15065
+                                               body/15066))))))))))
+                          with (1 ty/6369 rhs/6370 body/6371)
+                           (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(37):858-957
+                             (makeblock 0
+                               (makeblock 0
+                                 (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(37):879-942
+                                   (apply
+                                     (field_imm 167
+                                       (field_imm 0
+                                         (global Ppxlib__Ast_builder!)))
+                                     loc/4989
+                                     (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(37):903-932
+                                       (apply
+                                         (field_imm 122
+                                           (field_imm 0
+                                             (global Ppxlib__Ast_builder!)))
+                                         loc/4989 lhs/4994 ty/6369))
+                                     rhs/6370))
+                                 0)
+                               body/6371))))))))))))
+     let_bind_user_expressions/6724 =
+       (function param/6729 loc/6728
+         (funct-body Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(42)<ghost>:992-1123
+           (let
+             (body/6727 =a (field_imm 1 param/6729)
+              value_bindings/6726 =a (field_imm 0 param/6729))
+             (before Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(43):1026-1123
+               (if
+                 (after Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(43):1029-1057
+                   (apply (field_imm 7 (global Base__List!))
+                     value_bindings/6726))
+                 (before Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(44):1065-1069
+                   body/6727)
+                 (before Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(45):1077-1123
+                   (after Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(45):1077-1123
+                     (apply
+                       (field_imm 51
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       loc/6728 0 value_bindings/6726 body/6727)))))))))
+    (pseudo <unknown location>
+      (makeblock 0 >>=/4965 >>|/4966 Monad_infix/4967 bind/4968 return/4969
+        map/4970 join/4971 ignore_m/4972 all/4973 all_unit/4974
+        Let_syntax/4975 create/4987 let_bind_user_expressions/6724))))
+(setglobal Ppx_sexp_conv_expander__Lifted!
+  (let
+    (include/15053 =
+       (apply
+         (let (let/15072 = (field_imm 0 (global Base__Monad!)))
+           (field_imm 0 (global Base__Monad!)))
+         (let
+           (return/2580 =
+              (function body/2582
+                (funct-body Ppx_sexp_conv_expander__Lifted.return bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(13)<ghost>:191-227
+                  (before Ppx_sexp_conv_expander__Lifted.return bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(13):198-227
+                    (makeblock 0 0 body/2582))))
+            bind/2583 =
+              (function a/2585 f/2586
+                (funct-body Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(15)<ghost>:242-352
+                  (before Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(16):255-352
+                    (let
+                      (b/2587 =
+                         (after Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(16):263-271
+                           (apply f/2586 (field_imm 1 a/2585))))
+                      (before Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(17):281-352
+                        (makeblock 0
+                          (after Ppx_sexp_conv_expander__Lifted.bind bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(17):300-335
+                            (apply (field_imm 180 (global Base!))
+                              (field_imm 0 a/2585) (field_imm 0 b/2587)))
+                          (field_imm 1 b/2587)))))))
+            map/3721 = -349054340)
+           (pseudo Ppx_sexp_conv_expander__Lifted bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(10):140-399
+             (makeblock 0 bind/2583 return/2580 map/3721))))
+     >>=/4965 =a (field_mut 0 include/15053)
+     >>|/4966 =a (field_mut 1 include/15053)
+     Monad_infix/4967 =a (field_mut 2 include/15053)
+     bind/4968 =a (field_mut 3 include/15053)
+     return/4969 =a (field_mut 4 include/15053)
+     map/4970 =a (field_mut 5 include/15053)
+     join/4971 =a (field_mut 6 include/15053)
+     ignore_m/4972 =a (field_mut 7 include/15053)
+     all/4973 =a (field_mut 8 include/15053)
+     all_unit/4974 =a (field_mut 9 include/15053)
+     Let_syntax/4975 =a (field_mut 10 include/15053)
+     create/4987 =
+       (function loc/4989 prefix/4990 ty/4991 rhs/4992
+         (funct-body Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(23)<ghost>:413-957
+           (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(24):438-957
+             (let
+               (name/4993 =
+                  (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(24):449-470
+                    (apply (field_imm 5 (global Ppxlib!))
+                      (makeblock 0 prefix/4990) 0)))
+               (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(25):476-957
+                 (let
+                   (lhs/4994 =
+                      (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(25):486-500
+                        (apply
+                          (field_imm 191
+                            (field_imm 0 (global Ppxlib__Ast_builder!)))
+                          loc/4989 name/4993)))
+                   (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(26):506-957
+                     (let
+                       (body/6368 =
+                          (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(26):517-531
+                            (apply
+                              (field_imm 190
+                                (field_imm 0 (global Ppxlib__Ast_builder!)))
+                              loc/4989 name/4993)))
+                       (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(27):537-957
+                         (catch
+                           (if
+                             (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(28):564-595
+                               (apply
+                                 (field_imm 5
+                                   (global Ppx_sexp_conv_expander__Helpers!))
+                                 rhs/4992))
+                             (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(29):605-618
+                               (let
+                                 (body/15069 =a body/6368
+                                  rhs/15068 =a rhs/4992
+                                  ty/15067 =a ty/4991)
+                                 (exit 1 ty/15067 rhs/15068 body/15069)))
+                             (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(30):628-850
+                               (let
+                                 (ty/6415 =
+                                    (makeblock 0
+                                      (makeblock 1 0
+                                        (makeblock 0
+                                          (makeblock 3
+                                            (makeblock 0
+                                              [1:
+                                               [1: [0: "Stdlib"] "Unit"] "t"]
+                                              loc/4989)
+                                            0)
+                                          loc/4989 0 0)
+                                        ty/4991)
+                                      loc/4989 0 0))
+                                 (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(33):749-849
+                                   (let
+                                     (rhs/6722 =
+                                        (makeblock 0
+                                          (makeblock 4 0 0
+                                            (makeblock 0
+                                              (makeblock 5
+                                                (makeblock 0 [0: "()"]
+                                                  loc/4989)
+                                                0)
+                                              loc/4989 0 0)
+                                            rhs/4992)
+                                          loc/4989 0 0))
+                                     (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(34):795-849
+                                       (let
+                                         (body/6723 =
+                                            (makeblock 0
+                                              (makeblock 5 body/6368
+                                                (makeblock 0
+                                                  (makeblock 0 0
+                                                    (makeblock 0
+                                                      (makeblock 9
+                                                        (makeblock 0
+                                                          [0: "()"] loc/4989)
+                                                        0)
+                                                      loc/4989 0 0))
+                                                  0))
+                                              loc/4989 0 0))
+                                         (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(35):836-849
+                                           (let
+                                             (body/15066 =a body/6723
+                                              rhs/15065 =a rhs/6722
+                                              ty/15064 =a ty/6415)
+                                             (exit 1 ty/15064 rhs/15065
+                                               body/15066))))))))))
+                          with (1 ty/6369 rhs/6370 body/6371)
+                           (before Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(37):858-957
+                             (makeblock 0
+                               (makeblock 0
+                                 (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(37):879-942
+                                   (apply
+                                     (field_imm 167
+                                       (field_imm 0
+                                         (global Ppxlib__Ast_builder!)))
+                                     loc/4989
+                                     (after Ppx_sexp_conv_expander__Lifted.create bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(37):903-932
+                                       (apply
+                                         (field_imm 122
+                                           (field_imm 0
+                                             (global Ppxlib__Ast_builder!)))
+                                         loc/4989 lhs/4994 ty/6369))
+                                     rhs/6370))
+                                 0)
+                               body/6371))))))))))))
+     let_bind_user_expressions/6724 =
+       (function param/6729 loc/6728
+         (funct-body Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(42)<ghost>:992-1123
+           (let
+             (body/6727 =a (field_imm 1 param/6729)
+              value_bindings/6726 =a (field_imm 0 param/6729))
+             (before Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(43):1026-1123
+               (if
+                 (after Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(43):1029-1057
+                   (apply (field_imm 7 (global Base__List!))
+                     value_bindings/6726))
+                 (before Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(44):1065-1069
+                   body/6727)
+                 (before Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(45):1077-1123
+                   (after Ppx_sexp_conv_expander__Lifted.let_bind_user_expressions bench/vendored/ppx_sexp_conv.v0.15.1/expander/lifted.ml(45):1077-1123
+                     (apply
+                       (field_imm 51
+                         (field_imm 0 (global Ppxlib__Ast_builder!)))
+                       loc/6728 0 value_bindings/6726 body/6727)))))))))
+    (pseudo <unknown location>
+      (makeblock 0 >>=/4965 >>|/4966 Monad_infix/4967 bind/4968 return/4969
+        map/4970 join/4971 ignore_m/4972 all/4973 all_unit/4974
+        Let_syntax/4975 create/4987 let_bind_user_expressions/6724))))

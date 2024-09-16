@@ -1,0 +1,334 @@
+[
+  structure_item (src/import.ml[1,0+0]..[1,0+14])
+    Pstr_include    module_expr (src/import.ml[1,0+8]..[1,0+14])
+      Pmod_ident "Stdppx" (src/import.ml[1,0+8]..[1,0+14])
+  structure_item (src/import.ml[2,15+0]..[2,15+18])
+    Pstr_include    module_expr (src/import.ml[2,15+8]..[2,15+18])
+      Pmod_ident "Ppxlib_ast" (src/import.ml[2,15+8]..[2,15+18])
+  structure_item (src/import.ml[5,110+0]..[5,110+40])
+    Pstr_primitive
+    value_description "__FILE__" (src/import.ml[5,110+9]..[5,110+17]) (src/import.ml[5,110+0]..[5,110+40])
+      core_type (src/import.ml[5,110+20]..[5,110+26])
+        Ptyp_constr "string" (src/import.ml[5,110+20]..[5,110+26])
+        []
+      [
+        "%loc_FILE"
+      ]
+  structure_item (src/import.ml[7,152+0]..[7,152+11])
+    Pstr_include    module_expr (src/import.ml[7,152+8]..[7,152+11])
+      Pmod_ident "Ast" (src/import.ml[7,152+8]..[7,152+11])
+]
+
+include Stdppx
+include Ppxlib_ast
+external __FILE__ : string = "%loc_FILE"
+include Ast
+[
+  structure_item (src/import.ml[1,0+0]..src/import.ml[1,0+14])
+    Tstr_include    module_expr (src/import.ml[1,0+8]..src/import.ml[1,0+14])
+      Tmod_ident "Stdppx!"
+  structure_item (src/import.ml[2,15+0]..src/import.ml[2,15+18])
+    Tstr_include    module_expr (src/import.ml[2,15+8]..src/import.ml[2,15+18])
+      Tmod_ident "Ppxlib_ast!"
+  structure_item (src/import.ml[5,110+0]..src/import.ml[5,110+40])
+    Tstr_primitive
+    value_description __FILE__/881 (src/import.ml[5,110+0]..src/import.ml[5,110+40])
+      core_type (src/import.ml[5,110+20]..src/import.ml[5,110+26])
+        Ttyp_constr "string/17!"
+        []
+      [
+        "%loc_FILE"
+      ]
+  structure_item (src/import.ml[7,152+0]..src/import.ml[7,152+11])
+    Tstr_include    module_expr (src/import.ml[7,152+8]..src/import.ml[7,152+11])
+      module_expr (src/import.ml[7,152+8]..src/import.ml[7,152+11])
+        Tmod_ident "Ast/866"
+]
+
+(setglobal Ppxlib__Import!
+  (let
+    (include/2708 =a (global Stdppx!)
+     default_string_of_float/735 =a (field_mut 0 include/2708)
+     write_old_option_format/736 =a (field_mut 1 include/2708)
+     read_old_option_format/737 =a (field_mut 2 include/2708)
+     list_map/738 =a (field_mut 3 include/2708)
+     sexp_of_unit/739 =a (field_mut 4 include/2708)
+     sexp_of_bool/740 =a (field_mut 5 include/2708)
+     sexp_of_string/741 =a (field_mut 6 include/2708)
+     sexp_of_bytes/742 =a (field_mut 7 include/2708)
+     sexp_of_char/743 =a (field_mut 8 include/2708)
+     sexp_of_int/744 =a (field_mut 9 include/2708)
+     sexp_of_float/745 =a (field_mut 10 include/2708)
+     sexp_of_int32/746 =a (field_mut 11 include/2708)
+     sexp_of_int64/747 =a (field_mut 12 include/2708)
+     sexp_of_nativeint/748 =a (field_mut 13 include/2708)
+     sexp_of_ref/749 =a (field_mut 14 include/2708)
+     sexp_of_lazy_t/750 =a (field_mut 15 include/2708)
+     sexp_of_option/751 =a (field_mut 16 include/2708)
+     sexp_of_pair/752 =a (field_mut 17 include/2708)
+     sexp_of_triple/753 =a (field_mut 18 include/2708)
+     sexp_of_list/754 =a (field_mut 19 include/2708)
+     sexp_of_array/755 =a (field_mut 20 include/2708)
+     sexp_of_hashtbl/756 =a (field_mut 21 include/2708)
+     sexp_of_opaque/757 =a (field_mut 22 include/2708)
+     sexp_of_fun/758 =a (field_mut 23 include/2708)
+     Of_sexp_error/759 =a (field_mut 24 include/2708)
+     record_check_extra_fields/760 =a (field_mut 25 include/2708)
+     of_sexp_error/761 =a (field_mut 26 include/2708)
+     of_sexp_error_exn/762 =a (field_mut 27 include/2708)
+     unit_of_sexp/763 =a (field_mut 28 include/2708)
+     bool_of_sexp/764 =a (field_mut 29 include/2708)
+     string_of_sexp/765 =a (field_mut 30 include/2708)
+     bytes_of_sexp/766 =a (field_mut 31 include/2708)
+     char_of_sexp/767 =a (field_mut 32 include/2708)
+     int_of_sexp/768 =a (field_mut 33 include/2708)
+     float_of_sexp/769 =a (field_mut 34 include/2708)
+     int32_of_sexp/770 =a (field_mut 35 include/2708)
+     int64_of_sexp/771 =a (field_mut 36 include/2708)
+     nativeint_of_sexp/772 =a (field_mut 37 include/2708)
+     ref_of_sexp/773 =a (field_mut 38 include/2708)
+     lazy_t_of_sexp/774 =a (field_mut 39 include/2708)
+     option_of_sexp/775 =a (field_mut 40 include/2708)
+     pair_of_sexp/776 =a (field_mut 41 include/2708)
+     triple_of_sexp/777 =a (field_mut 42 include/2708)
+     list_of_sexp/778 =a (field_mut 43 include/2708)
+     array_of_sexp/779 =a (field_mut 44 include/2708)
+     hashtbl_of_sexp/780 =a (field_mut 45 include/2708)
+     opaque_of_sexp/781 =a (field_mut 46 include/2708)
+     fun_of_sexp/782 =a (field_mut 47 include/2708)
+     unit_sexp_grammar/783 =a (field_mut 48 include/2708)
+     bool_sexp_grammar/784 =a (field_mut 49 include/2708)
+     string_sexp_grammar/785 =a (field_mut 50 include/2708)
+     bytes_sexp_grammar/786 =a (field_mut 51 include/2708)
+     char_sexp_grammar/787 =a (field_mut 52 include/2708)
+     int_sexp_grammar/788 =a (field_mut 53 include/2708)
+     float_sexp_grammar/789 =a (field_mut 54 include/2708)
+     int32_sexp_grammar/790 =a (field_mut 55 include/2708)
+     int64_sexp_grammar/791 =a (field_mut 56 include/2708)
+     nativeint_sexp_grammar/792 =a (field_mut 57 include/2708)
+     sexp_t_sexp_grammar/793 =a (field_mut 58 include/2708)
+     ref_sexp_grammar/794 =a (field_mut 59 include/2708)
+     lazy_t_sexp_grammar/795 =a (field_mut 60 include/2708)
+     option_sexp_grammar/796 =a (field_mut 61 include/2708)
+     list_sexp_grammar/797 =a (field_mut 62 include/2708)
+     array_sexp_grammar/798 =a (field_mut 63 include/2708)
+     opaque_sexp_grammar/799 =a (field_mut 64 include/2708)
+     fun_sexp_grammar/800 =a (field_mut 65 include/2708)
+     sexp_of_exn/801 =a (field_mut 66 include/2708)
+     printexc_prefer_sexp/802 =a (field_mut 67 include/2708)
+     sexp_of_exn_opt/803 =a (field_mut 68 include/2708)
+     Exn_converter/804 =a (field_mut 69 include/2708)
+     Poly/807 =a (field_mut 70 include/2708)
+     compare/808 =a (field_mut 71 include/2708)
+     equal/809 =a (field_mut 72 include/2708)
+     =/810 =a (field_mut 73 include/2708)
+     </811 =a (field_mut 74 include/2708)
+     >/812 =a (field_mut 75 include/2708)
+     <>/813 =a (field_mut 76 include/2708)
+     <=/814 =a (field_mut 77 include/2708)
+     >=/815 =a (field_mut 78 include/2708)
+     min/816 =a (field_mut 79 include/2708)
+     max/817 =a (field_mut 80 include/2708)
+     Bool/819 =a (field_mut 81 include/2708)
+     Bytes/820 =a (field_mut 82 include/2708)
+     Char/821 =a (field_mut 83 include/2708)
+     Exn/822 =a (field_mut 84 include/2708)
+     Float/823 =a (field_mut 85 include/2708)
+     Fn/824 =a (field_mut 86 include/2708)
+     Hashtbl/825 =a (field_mut 87 include/2708)
+     In_channel/826 =a (field_mut 88 include/2708)
+     Int/827 =a (field_mut 89 include/2708)
+     Either/828 =a (field_mut 90 include/2708)
+     List/829 =a (field_mut 91 include/2708)
+     Option/830 =a (field_mut 92 include/2708)
+     Result/831 =a (field_mut 93 include/2708)
+     NonEmptyList/832 =a (field_mut 94 include/2708)
+     Out_channel/833 =a (field_mut 95 include/2708)
+     String/834 =a (field_mut 96 include/2708)
+     @/835 =a (field_mut 97 include/2708)
+     output/836 =a (field_mut 98 include/2708)
+     output_substring/837 =a (field_mut 99 include/2708)
+     include/2709 =a (global Ppxlib_ast!)
+     include/2710 =a
+       (let (let/2711 = (global Ppxlib_ast__Ast!)) (global Ppxlib_ast__Ast!))
+     map/1102 =a (field_mut 0 include/2710)
+     iter/1106 =a (field_mut 1 include/2710)
+     fold/1110 =a (field_mut 2 include/2710)
+     fold_map/1114 =a (field_mut 3 include/2710)
+     map_with_context/1118 =a (field_mut 4 include/2710)
+     lift/1122 =a (field_mut 5 include/2710)
+     lift_map_with_context/1126 =a (field_mut 6 include/2710))
+    (pseudo <unknown location>
+      (makeblock 0 default_string_of_float/735 write_old_option_format/736
+        read_old_option_format/737 list_map/738 sexp_of_unit/739
+        sexp_of_bool/740 sexp_of_string/741 sexp_of_bytes/742
+        sexp_of_char/743 sexp_of_int/744 sexp_of_float/745 sexp_of_int32/746
+        sexp_of_int64/747 sexp_of_nativeint/748 sexp_of_ref/749
+        sexp_of_lazy_t/750 sexp_of_option/751 sexp_of_pair/752
+        sexp_of_triple/753 sexp_of_list/754 sexp_of_array/755
+        sexp_of_hashtbl/756 sexp_of_opaque/757 sexp_of_fun/758
+        Of_sexp_error/759 record_check_extra_fields/760 of_sexp_error/761
+        of_sexp_error_exn/762 unit_of_sexp/763 bool_of_sexp/764
+        string_of_sexp/765 bytes_of_sexp/766 char_of_sexp/767 int_of_sexp/768
+        float_of_sexp/769 int32_of_sexp/770 int64_of_sexp/771
+        nativeint_of_sexp/772 ref_of_sexp/773 lazy_t_of_sexp/774
+        option_of_sexp/775 pair_of_sexp/776 triple_of_sexp/777
+        list_of_sexp/778 array_of_sexp/779 hashtbl_of_sexp/780
+        opaque_of_sexp/781 fun_of_sexp/782 unit_sexp_grammar/783
+        bool_sexp_grammar/784 string_sexp_grammar/785 bytes_sexp_grammar/786
+        char_sexp_grammar/787 int_sexp_grammar/788 float_sexp_grammar/789
+        int32_sexp_grammar/790 int64_sexp_grammar/791
+        nativeint_sexp_grammar/792 sexp_t_sexp_grammar/793
+        ref_sexp_grammar/794 lazy_t_sexp_grammar/795 option_sexp_grammar/796
+        list_sexp_grammar/797 array_sexp_grammar/798 opaque_sexp_grammar/799
+        fun_sexp_grammar/800 sexp_of_exn/801 printexc_prefer_sexp/802
+        sexp_of_exn_opt/803 Exn_converter/804 Poly/807 compare/808 equal/809
+        =/810 </811 >/812 <>/813 <=/814 >=/815 min/816 max/817 Bool/819
+        Bytes/820 Char/821 Exn/822 Float/823 Fn/824 Hashtbl/825
+        In_channel/826 Int/827 Either/828 List/829 Option/830 Result/831
+        NonEmptyList/832 Out_channel/833 String/834 @/835 output/836
+        output_substring/837 map/1102 iter/1106 fold/1110 fold_map/1114
+        map_with_context/1118 lift/1122 lift_map_with_context/1126))))
+(setglobal Ppxlib__Import!
+  (let
+    (include/2708 =a (global Stdppx!)
+     default_string_of_float/735 =a (field_mut 0 include/2708)
+     write_old_option_format/736 =a (field_mut 1 include/2708)
+     read_old_option_format/737 =a (field_mut 2 include/2708)
+     list_map/738 =a (field_mut 3 include/2708)
+     sexp_of_unit/739 =a (field_mut 4 include/2708)
+     sexp_of_bool/740 =a (field_mut 5 include/2708)
+     sexp_of_string/741 =a (field_mut 6 include/2708)
+     sexp_of_bytes/742 =a (field_mut 7 include/2708)
+     sexp_of_char/743 =a (field_mut 8 include/2708)
+     sexp_of_int/744 =a (field_mut 9 include/2708)
+     sexp_of_float/745 =a (field_mut 10 include/2708)
+     sexp_of_int32/746 =a (field_mut 11 include/2708)
+     sexp_of_int64/747 =a (field_mut 12 include/2708)
+     sexp_of_nativeint/748 =a (field_mut 13 include/2708)
+     sexp_of_ref/749 =a (field_mut 14 include/2708)
+     sexp_of_lazy_t/750 =a (field_mut 15 include/2708)
+     sexp_of_option/751 =a (field_mut 16 include/2708)
+     sexp_of_pair/752 =a (field_mut 17 include/2708)
+     sexp_of_triple/753 =a (field_mut 18 include/2708)
+     sexp_of_list/754 =a (field_mut 19 include/2708)
+     sexp_of_array/755 =a (field_mut 20 include/2708)
+     sexp_of_hashtbl/756 =a (field_mut 21 include/2708)
+     sexp_of_opaque/757 =a (field_mut 22 include/2708)
+     sexp_of_fun/758 =a (field_mut 23 include/2708)
+     Of_sexp_error/759 =a (field_mut 24 include/2708)
+     record_check_extra_fields/760 =a (field_mut 25 include/2708)
+     of_sexp_error/761 =a (field_mut 26 include/2708)
+     of_sexp_error_exn/762 =a (field_mut 27 include/2708)
+     unit_of_sexp/763 =a (field_mut 28 include/2708)
+     bool_of_sexp/764 =a (field_mut 29 include/2708)
+     string_of_sexp/765 =a (field_mut 30 include/2708)
+     bytes_of_sexp/766 =a (field_mut 31 include/2708)
+     char_of_sexp/767 =a (field_mut 32 include/2708)
+     int_of_sexp/768 =a (field_mut 33 include/2708)
+     float_of_sexp/769 =a (field_mut 34 include/2708)
+     int32_of_sexp/770 =a (field_mut 35 include/2708)
+     int64_of_sexp/771 =a (field_mut 36 include/2708)
+     nativeint_of_sexp/772 =a (field_mut 37 include/2708)
+     ref_of_sexp/773 =a (field_mut 38 include/2708)
+     lazy_t_of_sexp/774 =a (field_mut 39 include/2708)
+     option_of_sexp/775 =a (field_mut 40 include/2708)
+     pair_of_sexp/776 =a (field_mut 41 include/2708)
+     triple_of_sexp/777 =a (field_mut 42 include/2708)
+     list_of_sexp/778 =a (field_mut 43 include/2708)
+     array_of_sexp/779 =a (field_mut 44 include/2708)
+     hashtbl_of_sexp/780 =a (field_mut 45 include/2708)
+     opaque_of_sexp/781 =a (field_mut 46 include/2708)
+     fun_of_sexp/782 =a (field_mut 47 include/2708)
+     unit_sexp_grammar/783 =a (field_mut 48 include/2708)
+     bool_sexp_grammar/784 =a (field_mut 49 include/2708)
+     string_sexp_grammar/785 =a (field_mut 50 include/2708)
+     bytes_sexp_grammar/786 =a (field_mut 51 include/2708)
+     char_sexp_grammar/787 =a (field_mut 52 include/2708)
+     int_sexp_grammar/788 =a (field_mut 53 include/2708)
+     float_sexp_grammar/789 =a (field_mut 54 include/2708)
+     int32_sexp_grammar/790 =a (field_mut 55 include/2708)
+     int64_sexp_grammar/791 =a (field_mut 56 include/2708)
+     nativeint_sexp_grammar/792 =a (field_mut 57 include/2708)
+     sexp_t_sexp_grammar/793 =a (field_mut 58 include/2708)
+     ref_sexp_grammar/794 =a (field_mut 59 include/2708)
+     lazy_t_sexp_grammar/795 =a (field_mut 60 include/2708)
+     option_sexp_grammar/796 =a (field_mut 61 include/2708)
+     list_sexp_grammar/797 =a (field_mut 62 include/2708)
+     array_sexp_grammar/798 =a (field_mut 63 include/2708)
+     opaque_sexp_grammar/799 =a (field_mut 64 include/2708)
+     fun_sexp_grammar/800 =a (field_mut 65 include/2708)
+     sexp_of_exn/801 =a (field_mut 66 include/2708)
+     printexc_prefer_sexp/802 =a (field_mut 67 include/2708)
+     sexp_of_exn_opt/803 =a (field_mut 68 include/2708)
+     Exn_converter/804 =a (field_mut 69 include/2708)
+     Poly/807 =a (field_mut 70 include/2708)
+     compare/808 =a (field_mut 71 include/2708)
+     equal/809 =a (field_mut 72 include/2708)
+     =/810 =a (field_mut 73 include/2708)
+     </811 =a (field_mut 74 include/2708)
+     >/812 =a (field_mut 75 include/2708)
+     <>/813 =a (field_mut 76 include/2708)
+     <=/814 =a (field_mut 77 include/2708)
+     >=/815 =a (field_mut 78 include/2708)
+     min/816 =a (field_mut 79 include/2708)
+     max/817 =a (field_mut 80 include/2708)
+     Bool/819 =a (field_mut 81 include/2708)
+     Bytes/820 =a (field_mut 82 include/2708)
+     Char/821 =a (field_mut 83 include/2708)
+     Exn/822 =a (field_mut 84 include/2708)
+     Float/823 =a (field_mut 85 include/2708)
+     Fn/824 =a (field_mut 86 include/2708)
+     Hashtbl/825 =a (field_mut 87 include/2708)
+     In_channel/826 =a (field_mut 88 include/2708)
+     Int/827 =a (field_mut 89 include/2708)
+     Either/828 =a (field_mut 90 include/2708)
+     List/829 =a (field_mut 91 include/2708)
+     Option/830 =a (field_mut 92 include/2708)
+     Result/831 =a (field_mut 93 include/2708)
+     NonEmptyList/832 =a (field_mut 94 include/2708)
+     Out_channel/833 =a (field_mut 95 include/2708)
+     String/834 =a (field_mut 96 include/2708)
+     @/835 =a (field_mut 97 include/2708)
+     output/836 =a (field_mut 98 include/2708)
+     output_substring/837 =a (field_mut 99 include/2708)
+     include/2710 =a
+       (let (let/2711 = (global Ppxlib_ast__Ast!)) (global Ppxlib_ast__Ast!))
+     map/1102 =a (field_mut 0 include/2710)
+     iter/1106 =a (field_mut 1 include/2710)
+     fold/1110 =a (field_mut 2 include/2710)
+     fold_map/1114 =a (field_mut 3 include/2710)
+     map_with_context/1118 =a (field_mut 4 include/2710)
+     lift/1122 =a (field_mut 5 include/2710)
+     lift_map_with_context/1126 =a (field_mut 6 include/2710))
+    (pseudo <unknown location>
+      (makeblock 0 default_string_of_float/735 write_old_option_format/736
+        read_old_option_format/737 list_map/738 sexp_of_unit/739
+        sexp_of_bool/740 sexp_of_string/741 sexp_of_bytes/742
+        sexp_of_char/743 sexp_of_int/744 sexp_of_float/745 sexp_of_int32/746
+        sexp_of_int64/747 sexp_of_nativeint/748 sexp_of_ref/749
+        sexp_of_lazy_t/750 sexp_of_option/751 sexp_of_pair/752
+        sexp_of_triple/753 sexp_of_list/754 sexp_of_array/755
+        sexp_of_hashtbl/756 sexp_of_opaque/757 sexp_of_fun/758
+        Of_sexp_error/759 record_check_extra_fields/760 of_sexp_error/761
+        of_sexp_error_exn/762 unit_of_sexp/763 bool_of_sexp/764
+        string_of_sexp/765 bytes_of_sexp/766 char_of_sexp/767 int_of_sexp/768
+        float_of_sexp/769 int32_of_sexp/770 int64_of_sexp/771
+        nativeint_of_sexp/772 ref_of_sexp/773 lazy_t_of_sexp/774
+        option_of_sexp/775 pair_of_sexp/776 triple_of_sexp/777
+        list_of_sexp/778 array_of_sexp/779 hashtbl_of_sexp/780
+        opaque_of_sexp/781 fun_of_sexp/782 unit_sexp_grammar/783
+        bool_sexp_grammar/784 string_sexp_grammar/785 bytes_sexp_grammar/786
+        char_sexp_grammar/787 int_sexp_grammar/788 float_sexp_grammar/789
+        int32_sexp_grammar/790 int64_sexp_grammar/791
+        nativeint_sexp_grammar/792 sexp_t_sexp_grammar/793
+        ref_sexp_grammar/794 lazy_t_sexp_grammar/795 option_sexp_grammar/796
+        list_sexp_grammar/797 array_sexp_grammar/798 opaque_sexp_grammar/799
+        fun_sexp_grammar/800 sexp_of_exn/801 printexc_prefer_sexp/802
+        sexp_of_exn_opt/803 Exn_converter/804 Poly/807 compare/808 equal/809
+        =/810 </811 >/812 <>/813 <=/814 >=/815 min/816 max/817 Bool/819
+        Bytes/820 Char/821 Exn/822 Float/823 Fn/824 Hashtbl/825
+        In_channel/826 Int/827 Either/828 List/829 Option/830 Result/831
+        NonEmptyList/832 Out_channel/833 String/834 @/835 output/836
+        output_substring/837 map/1102 iter/1106 fold/1110 fold_map/1114
+        map_with_context/1118 lift/1122 lift_map_with_context/1126))))

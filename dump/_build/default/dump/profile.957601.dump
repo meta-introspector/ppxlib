@@ -1,0 +1,9 @@
+0.071s 22.0MB 9.12MB 10.8MB src/loc.ml
+  0.059s 19.5MB 8.59MB 10.2MB typing
+  0.009s 0.50MB ------ ------ generate
+    0.002s 0.50MB ------ ------ compile_phrases
+      0.001s 0.50MB ------ ------ spill
+    0.006s ------ ------ ------ assemble
+    0.001s ------ ------ ------ other
+  0.003s 2.00MB 0.53MB 10.8MB other
+0.016s 3.03MB 1.69MB ------ other

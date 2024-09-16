@@ -1,0 +1,6 @@
+0.016s 6.96MB 1.69MB 1.69MB src/expansion_context.mli
+  0.006s 2.89MB 1.53MB 1.53MB parsing
+    0.006s 2.89MB 1.53MB 1.53MB parser
+  0.004s 2.07MB 0.12MB 1.66MB typing
+  0.006s 2.00MB 0.03MB 1.69MB other
+0.010s ------ ------ ------ other

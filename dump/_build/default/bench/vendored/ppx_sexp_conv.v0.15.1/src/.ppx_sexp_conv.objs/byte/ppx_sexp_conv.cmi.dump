@@ -1,0 +1,101 @@
+[
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[1,0+0]..[1,0+11])
+    Psig_open Fresh "Ppxlib" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[1,0+5]..[1,0+11])
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+0]..[3,13+24])
+    Psig_value
+    value_description "of_sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+4]..[3,13+11]) (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+0]..[3,13+24])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+14]..[3,13+24])
+        Ptyp_constr "Deriving.t" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+14]..[3,13+24])
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+0]..[4,38+24])
+    Psig_value
+    value_description "sexp_of" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+4]..[4,38+11]) (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+0]..[4,38+24])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+14]..[4,38+24])
+        Ptyp_constr "Deriving.t" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+14]..[4,38+24])
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+0]..[5,63+21])
+    Psig_value
+    value_description "sexp" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+4]..[5,63+8]) (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+0]..[5,63+21])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+11]..[5,63+21])
+        Ptyp_constr "Deriving.t" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+11]..[5,63+21])
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+0]..[6,85+29])
+    Psig_value
+    value_description "of_sexp_poly" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+4]..[6,85+16]) (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+0]..[6,85+29])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+19]..[6,85+29])
+        Ptyp_constr "Deriving.t" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+19]..[6,85+29])
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+0]..[7,115+26])
+    Psig_value
+    value_description "sexp_poly" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+4]..[7,115+13]) (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+0]..[7,115+26])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+16]..[7,115+26])
+        Ptyp_constr "Deriving.t" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+16]..[7,115+26])
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+0]..[8,142+29])
+    Psig_value
+    value_description "sexp_grammar" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+4]..[8,142+16]) (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+0]..[8,142+29])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+19]..[8,142+29])
+        Ptyp_constr "Deriving.t" (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+19]..[8,142+29])
+        []
+      []
+]
+
+open Ppxlib
+val of_sexp : Deriving.t
+val sexp_of : Deriving.t
+val sexp : Deriving.t
+val of_sexp_poly : Deriving.t
+val sexp_poly : Deriving.t
+val sexp_grammar : Deriving.t
+[
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[1,0+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[1,0+11])
+    Tsig_open Fresh "Ppxlib!"
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+24])
+    Tsig_value
+    value_description of_sexp/879 (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+24])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+14]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[3,13+24])
+        Ttyp_constr "Ppxlib!.Deriving.t"
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+24])
+    Tsig_value
+    value_description sexp_of/880 (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+24])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+14]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[4,38+24])
+        Ttyp_constr "Ppxlib!.Deriving.t"
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+21])
+    Tsig_value
+    value_description sexp/881 (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+21])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+11]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[5,63+21])
+        Ttyp_constr "Ppxlib!.Deriving.t"
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+29])
+    Tsig_value
+    value_description of_sexp_poly/882 (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+29])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+19]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[6,85+29])
+        Ttyp_constr "Ppxlib!.Deriving.t"
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+26])
+    Tsig_value
+    value_description sexp_poly/883 (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+26])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+16]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[7,115+26])
+        Ttyp_constr "Ppxlib!.Deriving.t"
+        []
+      []
+  signature_item (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+29])
+    Tsig_value
+    value_description sexp_grammar/884 (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+0]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+29])
+      core_type (bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+19]..bench/vendored/ppx_sexp_conv.v0.15.1/src/ppx_sexp_conv.mli[8,142+29])
+        Ttyp_constr "Ppxlib!.Deriving.t"
+        []
+      []
+]
+

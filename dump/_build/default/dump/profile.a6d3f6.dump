@@ -1,0 +1,8 @@
+0.181s  102MB 28.7MB 28.7MB src/ignore_unused_warning.ml
+  0.003s 2.91MB 1.57MB 1.57MB parsing
+    0.003s 2.91MB 1.57MB 1.57MB parser
+  0.159s 77.4MB 26.1MB 27.7MB typing
+  0.005s 4.19MB 0.28MB 28.0MB transl
+  0.010s 13.6MB 0.69MB 28.7MB generate
+  0.005s 4.05MB 0.03MB ------ other
+0.008s ------ ------ ------ other

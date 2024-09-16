@@ -1,0 +1,17 @@
+0.184s  131MB 21.3MB 23.0MB src/gen/gen_ast_pattern.ml
+  0.002s ------ ------ ------ parsing
+    0.002s ------ ------ ------ parser
+  0.148s 76.9MB 18.6MB 20.3MB typing
+  0.002s 2.00MB 0.12MB 20.4MB transl
+  0.016s 24.0MB 2.19MB 22.6MB generate
+    0.007s 13.7MB 1.34MB 21.7MB compile_phrases
+      0.001s 0.40MB ------ ------ selection
+      0.001s 4.22MB 0.34MB 20.7MB cse
+      0.001s 2.33MB 0.25MB 21.0MB liveness
+      0.001s 0.21MB ------ ------ spill
+      0.003s 6.26MB 0.75MB 21.7MB regalloc
+      0.001s 0.26MB ------ ------ other
+    0.005s ------ ------ ------ assemble
+    0.004s 10.3MB 0.84MB 22.6MB other
+  0.017s 28.5MB 0.40MB 23.0MB other
+0.016s 3.02MB 1.69MB ------ other

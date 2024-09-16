@@ -1,0 +1,6 @@
+0.051s 59.3MB 17.3MB 17.3MB src/deriving.mli
+  0.002s 2.90MB 1.53MB 1.53MB parsing
+    0.002s 2.90MB 1.53MB 1.53MB parser
+  0.041s 53.6MB 15.7MB 17.3MB typing
+  0.008s 2.84MB 0.06MB ------ other
+0.004s ------ ------ ------ other

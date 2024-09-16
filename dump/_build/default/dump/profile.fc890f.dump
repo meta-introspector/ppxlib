@@ -1,0 +1,6 @@
+0.122s 98.4MB 21.6MB 21.6MB ast/versions.pp.mli
+  0.004s 2.83MB 1.53MB 1.53MB parsing
+    0.004s 2.83MB 1.53MB 1.53MB parser
+  0.080s 84.5MB 18.1MB 19.7MB typing
+  0.038s 11.0MB 1.96MB 21.6MB other
+0.010s ------ ------ ------ other

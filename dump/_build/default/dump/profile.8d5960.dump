@@ -1,0 +1,7 @@
+0.013s 3.96MB 1.00MB 2.69MB test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml
+  0.005s 2.17MB 0.90MB 2.60MB typing
+  0.006s ------ ------ ------ generate
+    0.005s ------ ------ ------ assemble
+    0.001s ------ ------ ------ other
+  0.001s 1.78MB 0.09MB 2.69MB other
+0.014s 3.02MB 1.69MB ------ other

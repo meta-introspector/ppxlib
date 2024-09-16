@@ -1,0 +1,12 @@
+0.011s 14.8MB 3.62MB 3.62MB ast/cinaps/ast_cinaps_helpers.ml
+  0.001s 2.93MB 1.59MB 1.59MB parsing
+    0.001s 2.93MB 1.59MB 1.59MB parser
+  0.004s 6.28MB 1.81MB 3.40MB typing
+  0.004s 4.08MB 0.15MB 3.55MB generate
+    0.001s 2.08MB 0.15MB 3.55MB compile_phrases
+      ------ 2.00MB 0.15MB 3.55MB liveness
+      ------ 0.08MB ------ ------ emit
+    0.002s ------ ------ ------ assemble
+    0.001s 2.00MB ------ ------ other
+  0.001s 1.57MB 0.06MB 3.62MB other
+0.005s ------ ------ ------ other

@@ -1,0 +1,15 @@
+1.098s 70.5MB 8.19MB 8.19MB test/501_migrations/identity_driver.exe
+  0.005s 2.49MB 0.06MB 0.06MB selection
+  ------ 0.14MB ------ ------ polling
+  0.003s 4.17MB 0.28MB 0.34MB cse
+  0.005s 6.28MB 0.34MB 0.68MB liveness
+  0.001s 2.14MB 0.12MB 0.81MB deadcode
+  0.004s 2.14MB 0.15MB 0.96MB spill
+  0.001s ------ ------ ------ split
+  0.040s 37.9MB 2.84MB 3.81MB regalloc
+  0.001s 0.15MB ------ ------ linearize
+  0.001s ------ ------ ------ emit
+  0.014s ------ ------ ------ assemble
+  0.995s ------ ------ ------ c-linker
+  0.029s 15.1MB 4.38MB 8.19MB other
+0.005s ------ ------ ------ other

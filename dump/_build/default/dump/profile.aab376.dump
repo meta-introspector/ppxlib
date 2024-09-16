@@ -1,0 +1,4 @@
+0.173s 77.8MB 19.0MB 19.0MB src/ast_traverse0.mli
+  0.147s 74.7MB 17.5MB 17.5MB typing
+  0.026s 3.12MB 1.53MB 19.0MB other
+0.005s ------ ------ ------ other

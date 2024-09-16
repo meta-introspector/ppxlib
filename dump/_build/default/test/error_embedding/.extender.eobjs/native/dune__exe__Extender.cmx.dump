@@ -1,0 +1,504 @@
+[
+  structure_item (test/error_embedding/extender.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/error_embedding/extender.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/error_embedding/extender.ml[1,0+5]..[1,0+11])
+  structure_item (test/error_embedding/extender.ml[3,13+0]..[6,143+16])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[3,13+4]..[3,13+17])
+          Ppat_var "export_string" (test/error_embedding/extender.ml[3,13+4]..[3,13+17])
+        expression (test/error_embedding/extender.ml[3,13+18]..[6,143+16]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/error_embedding/extender.ml[3,13+19]..[3,13+23])
+            Ppat_var "ctxt" (test/error_embedding/extender.ml[3,13+19]..[3,13+23])
+          expression (test/error_embedding/extender.ml[3,13+24]..[6,143+16]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (test/error_embedding/extender.ml[3,13+24]..[3,13+25])
+              Ppat_var "e" (test/error_embedding/extender.ml[3,13+24]..[3,13+25])
+            expression (test/error_embedding/extender.ml[4,41+2]..[6,143+16])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/error_embedding/extender.ml[4,41+6]..[4,41+9])
+                    Ppat_var "loc" (test/error_embedding/extender.ml[4,41+6]..[4,41+9])
+                  expression (test/error_embedding/extender.ml[4,41+12]..[4,41+64])
+                    Pexp_apply
+                    expression (test/error_embedding/extender.ml[4,41+12]..[4,41+59])
+                      Pexp_ident "Expansion_context.Extension.extension_point_loc" (test/error_embedding/extender.ml[4,41+12]..[4,41+59])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/error_embedding/extender.ml[4,41+60]..[4,41+64])
+                          Pexp_ident "ctxt" (test/error_embedding/extender.ml[4,41+60]..[4,41+64])
+                    ]
+              ]
+              expression (test/error_embedding/extender.ml[5,109+2]..[6,143+16])
+                Pexp_open Fresh
+                module_expr (test/error_embedding/extender.ml[5,109+11]..[5,109+30])
+                  Pmod_ident "Ast_builder.Default" (test/error_embedding/extender.ml[5,109+11]..[5,109+30])
+                expression (test/error_embedding/extender.ml[6,143+2]..[6,143+16])
+                  Pexp_apply
+                  expression (test/error_embedding/extender.ml[6,143+2]..[6,143+9])
+                    Pexp_ident "estring" (test/error_embedding/extender.ml[6,143+2]..[6,143+9])
+                  [
+                    <arg>
+                    Labelled "loc"
+                      expression (test/error_embedding/extender.ml[6,143+11]..[6,143+14])
+                        Pexp_ident "loc" (test/error_embedding/extender.ml[6,143+11]..[6,143+14])
+                    <arg>
+                    Nolabel
+                      expression (test/error_embedding/extender.ml[6,143+15]..[6,143+16])
+                        Pexp_ident "e" (test/error_embedding/extender.ml[6,143+15]..[6,143+16])
+                  ]
+    ]
+  structure_item (test/error_embedding/extender.ml[8,161+0]..[11,310+17])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[8,161+4]..[8,161+27])
+          Ppat_var "export_string_extension" (test/error_embedding/extender.ml[8,161+4]..[8,161+27])
+        expression (test/error_embedding/extender.ml[9,191+2]..[11,310+17])
+          Pexp_apply
+          expression (test/error_embedding/extender.ml[9,191+2]..[9,191+22])
+            Pexp_ident "Extension.V3.declare" (test/error_embedding/extender.ml[9,191+2]..[9,191+22])
+          [
+            <arg>
+            Nolabel
+              expression (test/error_embedding/extender.ml[9,191+23]..[9,191+38])
+                Pexp_constant PConst_string("export_string",(test/error_embedding/extender.ml[9,191+24]..[9,191+37]),None)
+            <arg>
+            Nolabel
+              expression (test/error_embedding/extender.ml[9,191+39]..[9,191+67])
+                Pexp_ident "Extension.Context.expression" (test/error_embedding/extender.ml[9,191+39]..[9,191+67])
+            <arg>
+            Nolabel
+              expression (test/error_embedding/extender.ml[10,259+4]..[10,259+50])
+                Pexp_open Fresh
+                module_expr (test/error_embedding/extender.ml[10,259+4]..[10,259+15])
+                  Pmod_ident "Ast_pattern" (test/error_embedding/extender.ml[10,259+4]..[10,259+15])
+                expression (test/error_embedding/extender.ml[10,259+17]..[10,259+49])
+                  Pexp_apply
+                  expression (test/error_embedding/extender.ml[10,259+17]..[10,259+36])
+                    Pexp_ident "single_expr_payload" (test/error_embedding/extender.ml[10,259+17]..[10,259+36])
+                  [
+                    <arg>
+                    Nolabel
+                      expression (test/error_embedding/extender.ml[10,259+37]..[10,259+49])
+                        Pexp_apply
+                        expression (test/error_embedding/extender.ml[10,259+38]..[10,259+45])
+                          Pexp_ident "estring" (test/error_embedding/extender.ml[10,259+38]..[10,259+45])
+                        [
+                          <arg>
+                          Nolabel
+                            expression (test/error_embedding/extender.ml[10,259+46]..[10,259+48])
+                              Pexp_ident "__" (test/error_embedding/extender.ml[10,259+46]..[10,259+48])
+                        ]
+                  ]
+            <arg>
+            Nolabel
+              expression (test/error_embedding/extender.ml[11,310+4]..[11,310+17])
+                Pexp_ident "export_string" (test/error_embedding/extender.ml[11,310+4]..[11,310+17])
+          ]
+    ]
+  structure_item (test/error_embedding/extender.ml[13,329+0]..[13,329+69])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[13,329+4]..[13,329+8])
+          Ppat_var "rule" (test/error_embedding/extender.ml[13,329+4]..[13,329+8])
+        expression (test/error_embedding/extender.ml[13,329+11]..[13,329+69])
+          Pexp_apply
+          expression (test/error_embedding/extender.ml[13,329+11]..[13,329+45])
+            Pexp_ident "Ppxlib.Context_free.Rule.extension" (test/error_embedding/extender.ml[13,329+11]..[13,329+45])
+          [
+            <arg>
+            Nolabel
+              expression (test/error_embedding/extender.ml[13,329+46]..[13,329+69])
+                Pexp_ident "export_string_extension" (test/error_embedding/extender.ml[13,329+46]..[13,329+69])
+          ]
+    ]
+  structure_item (test/error_embedding/extender.ml[14,399+0]..[14,399+71])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[14,399+4]..[14,399+6])
+          Ppat_construct "()" (test/error_embedding/extender.ml[14,399+4]..[14,399+6])
+          None
+        expression (test/error_embedding/extender.ml[14,399+9]..[14,399+71])
+          Pexp_apply
+          expression (test/error_embedding/extender.ml[14,399+9]..[14,399+39])
+            Pexp_ident "Driver.register_transformation" (test/error_embedding/extender.ml[14,399+9]..[14,399+39])
+          [
+            <arg>
+            Labelled "rules"
+              expression (test/error_embedding/extender.ml[14,399+47]..[14,399+55])
+                Pexp_construct "::" (test/error_embedding/extender.ml[14,399+49]..[14,399+55]) ghost
+                Some
+                  expression (test/error_embedding/extender.ml[14,399+49]..[14,399+55]) ghost
+                    Pexp_tuple
+                    [
+                      expression (test/error_embedding/extender.ml[14,399+49]..[14,399+53])
+                        Pexp_ident "rule" (test/error_embedding/extender.ml[14,399+49]..[14,399+53])
+                      expression (test/error_embedding/extender.ml[14,399+54]..[14,399+55]) ghost
+                        Pexp_construct "[]" (test/error_embedding/extender.ml[14,399+54]..[14,399+55]) ghost
+                        None
+                    ]
+            <arg>
+            Nolabel
+              expression (test/error_embedding/extender.ml[14,399+56]..[14,399+71])
+                Pexp_constant PConst_string("export_string",(test/error_embedding/extender.ml[14,399+57]..[14,399+70]),None)
+          ]
+    ]
+  structure_item (test/error_embedding/extender.ml[15,471+0]..[15,471+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[15,471+4]..[15,471+6])
+          Ppat_construct "()" (test/error_embedding/extender.ml[15,471+4]..[15,471+6])
+          None
+        expression (test/error_embedding/extender.ml[15,471+9]..[15,471+29])
+          Pexp_apply
+          expression (test/error_embedding/extender.ml[15,471+9]..[15,471+26])
+            Pexp_ident "Driver.standalone" (test/error_embedding/extender.ml[15,471+9]..[15,471+26])
+          [
+            <arg>
+            Nolabel
+              expression (test/error_embedding/extender.ml[15,471+27]..[15,471+29])
+                Pexp_construct "()" (test/error_embedding/extender.ml[15,471+27]..[15,471+29])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let export_string ~ctxt  e =
+  let loc = Expansion_context.Extension.extension_point_loc ctxt in
+  let open Ast_builder.Default in estring ~loc e
+let export_string_extension =
+  Extension.V3.declare "export_string" Extension.Context.expression
+    (let open Ast_pattern in single_expr_payload (estring __)) export_string
+let rule = Ppxlib.Context_free.Rule.extension export_string_extension
+let () = Driver.register_transformation ~rules:[rule] "export_string"
+let () = Driver.standalone ()
+[
+  structure_item (test/error_embedding/extender.ml[1,0+0]..test/error_embedding/extender.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/error_embedding/extender.ml[1,0+5]..test/error_embedding/extender.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/error_embedding/extender.ml[3,13+0]..test/error_embedding/extender.ml[6,143+16])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[3,13+4]..test/error_embedding/extender.ml[3,13+17])
+          Tpat_var "export_string/493"
+        expression (test/error_embedding/extender.ml[3,13+18]..test/error_embedding/extender.ml[6,143+16]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/error_embedding/extender.ml[3,13+19]..test/error_embedding/extender.ml[3,13+23])
+                Tpat_var "ctxt/495"
+              expression (test/error_embedding/extender.ml[3,13+24]..test/error_embedding/extender.ml[6,143+16]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (test/error_embedding/extender.ml[3,13+24]..test/error_embedding/extender.ml[3,13+25])
+                      Tpat_var "e/496"
+                    expression (test/error_embedding/extender.ml[4,41+2]..test/error_embedding/extender.ml[6,143+16])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/error_embedding/extender.ml[4,41+6]..test/error_embedding/extender.ml[4,41+9])
+                            Tpat_var "loc/497"
+                          expression (test/error_embedding/extender.ml[4,41+12]..test/error_embedding/extender.ml[4,41+64])
+                            Texp_apply
+                            expression (test/error_embedding/extender.ml[4,41+12]..test/error_embedding/extender.ml[4,41+59])
+                              Texp_ident "Ppxlib!.Expansion_context.Extension.extension_point_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/error_embedding/extender.ml[4,41+60]..test/error_embedding/extender.ml[4,41+64])
+                                  Texp_ident "ctxt/495"
+                            ]
+                      ]
+                      expression (test/error_embedding/extender.ml[5,109+2]..test/error_embedding/extender.ml[6,143+16])
+                        Texp_open Fresh
+                        module_expr (test/error_embedding/extender.ml[5,109+11]..test/error_embedding/extender.ml[5,109+30])
+                          Tmod_ident "Ppxlib!.Ast_builder.Default"
+                        expression (test/error_embedding/extender.ml[6,143+2]..test/error_embedding/extender.ml[6,143+16])
+                          Texp_apply
+                          expression (test/error_embedding/extender.ml[6,143+2]..test/error_embedding/extender.ml[6,143+9])
+                            Texp_ident "Ppxlib!.Ast_builder.Default.estring"
+                          [
+                            <arg>
+                              Labelled "loc"
+                              expression (test/error_embedding/extender.ml[6,143+11]..test/error_embedding/extender.ml[6,143+14])
+                                Texp_ident "loc/497"
+                            <arg>
+                              Nolabel
+                              expression (test/error_embedding/extender.ml[6,143+15]..test/error_embedding/extender.ml[6,143+16])
+                                Texp_ident "e/496"
+                          ]
+                ]
+          ]
+    ]
+  structure_item (test/error_embedding/extender.ml[8,161+0]..test/error_embedding/extender.ml[11,310+17])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[8,161+4]..test/error_embedding/extender.ml[8,161+27])
+          Tpat_var "export_string_extension/3908"
+        expression (test/error_embedding/extender.ml[9,191+2]..test/error_embedding/extender.ml[11,310+17])
+          Texp_apply
+          expression (test/error_embedding/extender.ml[9,191+2]..test/error_embedding/extender.ml[9,191+22])
+            Texp_ident "Ppxlib!.Extension.V3.declare"
+          [
+            <arg>
+              Nolabel
+              expression (test/error_embedding/extender.ml[9,191+23]..test/error_embedding/extender.ml[9,191+38])
+                Texp_constant Const_string("export_string",(test/error_embedding/extender.ml[9,191+24]..test/error_embedding/extender.ml[9,191+37]),None)
+            <arg>
+              Nolabel
+              expression (test/error_embedding/extender.ml[9,191+39]..test/error_embedding/extender.ml[9,191+67])
+                Texp_ident "Ppxlib!.Extension.Context.expression"
+            <arg>
+              Nolabel
+              expression (test/error_embedding/extender.ml[10,259+4]..test/error_embedding/extender.ml[10,259+50])
+                Texp_open Fresh
+                module_expr (test/error_embedding/extender.ml[10,259+4]..test/error_embedding/extender.ml[10,259+15])
+                  Tmod_ident "Ppxlib!.Ast_pattern"
+                expression (test/error_embedding/extender.ml[10,259+17]..test/error_embedding/extender.ml[10,259+49])
+                  Texp_apply
+                  expression (test/error_embedding/extender.ml[10,259+17]..test/error_embedding/extender.ml[10,259+36])
+                    Texp_ident "Ppxlib!.Ast_pattern.single_expr_payload"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (test/error_embedding/extender.ml[10,259+37]..test/error_embedding/extender.ml[10,259+49])
+                        Texp_apply
+                        expression (test/error_embedding/extender.ml[10,259+38]..test/error_embedding/extender.ml[10,259+45])
+                          Texp_ident "Ppxlib!.Ast_pattern.estring"
+                        [
+                          <arg>
+                            Nolabel
+                            expression (test/error_embedding/extender.ml[10,259+46]..test/error_embedding/extender.ml[10,259+48])
+                              Texp_ident "Ppxlib!.Ast_pattern.__"
+                        ]
+                  ]
+            <arg>
+              Nolabel
+              expression (test/error_embedding/extender.ml[11,310+4]..test/error_embedding/extender.ml[11,310+17])
+                Texp_ident "export_string/493"
+          ]
+    ]
+  structure_item (test/error_embedding/extender.ml[13,329+0]..test/error_embedding/extender.ml[13,329+69])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[13,329+4]..test/error_embedding/extender.ml[13,329+8])
+          Tpat_var "rule/4354"
+        expression (test/error_embedding/extender.ml[13,329+11]..test/error_embedding/extender.ml[13,329+69])
+          Texp_apply
+          expression (test/error_embedding/extender.ml[13,329+11]..test/error_embedding/extender.ml[13,329+45])
+            Texp_ident "Ppxlib!.Context_free.Rule.extension"
+          [
+            <arg>
+              Nolabel
+              expression (test/error_embedding/extender.ml[13,329+46]..test/error_embedding/extender.ml[13,329+69])
+                Texp_ident "export_string_extension/3908"
+          ]
+    ]
+  structure_item (test/error_embedding/extender.ml[14,399+0]..test/error_embedding/extender.ml[14,399+71])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[14,399+4]..test/error_embedding/extender.ml[14,399+6])
+          Tpat_construct "()"
+          []
+        expression (test/error_embedding/extender.ml[14,399+9]..test/error_embedding/extender.ml[14,399+71])
+          Texp_apply
+          expression (test/error_embedding/extender.ml[14,399+9]..test/error_embedding/extender.ml[14,399+39])
+            Texp_ident "Ppxlib!.Driver.register_transformation"
+          [
+            <arg>
+              Optional "extensions"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "rules"
+              expression (test/error_embedding/extender.ml[14,399+47]..test/error_embedding/extender.ml[14,399+55])
+                Texp_construct "Some"
+                [
+                  expression (test/error_embedding/extender.ml[14,399+47]..test/error_embedding/extender.ml[14,399+55])
+                    Texp_construct "::"
+                    [
+                      expression (test/error_embedding/extender.ml[14,399+49]..test/error_embedding/extender.ml[14,399+53])
+                        Texp_ident "rule/4354"
+                      expression (test/error_embedding/extender.ml[14,399+54]..test/error_embedding/extender.ml[14,399+55]) ghost
+                        Texp_construct "[]"
+                        []
+                    ]
+                ]
+            <arg>
+              Optional "enclose_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "enclose_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "lint_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_impl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "preprocess_intf"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "instrument"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "aliases"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/error_embedding/extender.ml[14,399+56]..test/error_embedding/extender.ml[14,399+71])
+                Texp_constant Const_string("export_string",(test/error_embedding/extender.ml[14,399+57]..test/error_embedding/extender.ml[14,399+70]),None)
+          ]
+    ]
+  structure_item (test/error_embedding/extender.ml[15,471+0]..test/error_embedding/extender.ml[15,471+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/error_embedding/extender.ml[15,471+4]..test/error_embedding/extender.ml[15,471+6])
+          Tpat_construct "()"
+          []
+        expression (test/error_embedding/extender.ml[15,471+9]..test/error_embedding/extender.ml[15,471+29])
+          Texp_apply
+          expression (test/error_embedding/extender.ml[15,471+9]..test/error_embedding/extender.ml[15,471+26])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/error_embedding/extender.ml[15,471+27]..test/error_embedding/extender.ml[15,471+29])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(seq
+  (let
+    (export_string/493 =
+       (function ctxt/495 e/496
+         (let
+           (loc/497 =
+              (apply
+                (field_imm 0
+                  (field_imm 1 (global Ppxlib__Expansion_context!)))
+                ctxt/495))
+           (apply (field_imm 174 (field_imm 0 (global Ppxlib__Ast_builder!)))
+             loc/497 e/496))))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Extender!)
+      export_string/493))
+  (let
+    (export_string_extension/3908 =
+       (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+         "export_string"
+         (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+         (apply (field_imm 323 (global Ppxlib__Ast_pattern!))
+           (apply (field_imm 311 (global Ppxlib__Ast_pattern!))
+             (field_imm 3 (global Ppxlib__Ast_pattern!))))
+         (field_imm 0 (global Dune__exe__Extender!))))
+    (setfield_ptr(root-init) 1 (global Dune__exe__Extender!)
+      export_string_extension/3908))
+  (let
+    (rule/4354 =
+       (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+         (field_imm 1 (global Dune__exe__Extender!))))
+    (setfield_ptr(root-init) 2 (global Dune__exe__Extender!) rule/4354))
+  (let
+    (*match*/9095 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0
+           (makeblock 0 (field_imm 2 (global Dune__exe__Extender!)) 0))
+         0 0 0 0 0 0 0 0 0 0 "export_string"))
+    0)
+  (let (*match*/9097 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)
+(seq
+  (let
+    (export_string/493 =
+       (function ctxt/495 e/496
+         (let
+           (loc/497 =
+              (apply
+                (field_imm 0
+                  (field_imm 1 (global Ppxlib__Expansion_context!)))
+                ctxt/495))
+           (apply (field_imm 174 (field_imm 0 (global Ppxlib__Ast_builder!)))
+             loc/497 e/496))))
+    (setfield_ptr(root-init) 0 (global Dune__exe__Extender!)
+      export_string/493))
+  (let
+    (export_string_extension/3908 =
+       (apply (field_imm 0 (field_imm 11 (global Ppxlib__Extension!)))
+         "export_string"
+         (field_imm 5 (field_imm 0 (global Ppxlib__Extension!)))
+         (apply (field_imm 323 (global Ppxlib__Ast_pattern!))
+           (apply (field_imm 311 (global Ppxlib__Ast_pattern!))
+             (field_imm 3 (global Ppxlib__Ast_pattern!))))
+         (field_imm 0 (global Dune__exe__Extender!))))
+    (setfield_ptr(root-init) 1 (global Dune__exe__Extender!)
+      export_string_extension/3908))
+  (let
+    (rule/4354 =
+       (apply (field_imm 0 (field_imm 0 (global Ppxlib__Context_free!)))
+         (field_imm 1 (global Dune__exe__Extender!))))
+    (setfield_ptr(root-init) 2 (global Dune__exe__Extender!) rule/4354))
+  (let
+    (*match*/9095 =
+       (apply (field_imm 4 (global Ppxlib__Driver!)) 0
+         (makeblock 0
+           (makeblock 0 (field_imm 2 (global Dune__exe__Extender!)) 0))
+         0 0 0 0 0 0 0 0 0 0 "export_string"))
+    0)
+  (let (*match*/9097 = (apply (field_imm 11 (global Ppxlib__Driver!)) 0)) 0)
+  0)

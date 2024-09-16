@@ -1,0 +1,5 @@
+0.005s 6.21MB 2.08MB 2.08MB src/skip_hash_bang.ml
+  0.002s 2.04MB 0.48MB 0.48MB typing
+  0.001s 0.01MB ------ ------ generate
+  0.003s 4.15MB 1.60MB 2.08MB other
+0.004s ------ ------ ------ other

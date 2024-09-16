@@ -1,0 +1,378 @@
+[
+  structure_item (src/loc.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (src/loc.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (src/loc.ml[1,0+6]..[1,0+12])
+  structure_item (src/loc.ml[3,14+0]..[3,14+51])
+    Pstr_type Rec
+    [
+      type_declaration "t" (src/loc.ml[3,14+8]..[3,14+9]) (src/loc.ml[3,14+0]..[3,14+51])
+        ptype_params =
+          [
+            core_type (src/loc.ml[3,14+5]..[3,14+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (src/loc.ml[3,14+23]..[3,14+32])
+                Immutable
+                "txt" (src/loc.ml[3,14+23]..[3,14+26])                core_type (src/loc.ml[3,14+29]..[3,14+31])
+                  Ptyp_var a
+              (src/loc.ml[3,14+33]..[3,14+49])
+                Immutable
+                "loc" (src/loc.ml[3,14+33]..[3,14+36])                core_type (src/loc.ml[3,14+39]..[3,14+49])
+                  Ptyp_constr "Location.t" (src/loc.ml[3,14+39]..[3,14+49])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/loc.ml[3,14+12]..[3,14+18])
+              Ptyp_constr "loc" (src/loc.ml[3,14+15]..[3,14+18])
+              [
+                core_type (src/loc.ml[3,14+12]..[3,14+14])
+                  Ptyp_var a
+              ]
+    ]
+  structure_item (src/loc.ml[5,67+0]..[5,67+17])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[5,67+4]..[5,67+7])
+          Ppat_var "txt" (src/loc.ml[5,67+4]..[5,67+7])
+        expression (src/loc.ml[5,67+8]..[5,67+17]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/loc.ml[5,67+8]..[5,67+9])
+            Ppat_var "t" (src/loc.ml[5,67+8]..[5,67+9])
+          expression (src/loc.ml[5,67+12]..[5,67+17])
+            Pexp_field
+            expression (src/loc.ml[5,67+12]..[5,67+13])
+              Pexp_ident "t" (src/loc.ml[5,67+12]..[5,67+13])
+            "txt" (src/loc.ml[5,67+14]..[5,67+17])
+    ]
+  structure_item (src/loc.ml[6,85+0]..[6,85+17])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[6,85+4]..[6,85+7])
+          Ppat_var "loc" (src/loc.ml[6,85+4]..[6,85+7])
+        expression (src/loc.ml[6,85+8]..[6,85+17]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/loc.ml[6,85+8]..[6,85+9])
+            Ppat_var "t" (src/loc.ml[6,85+8]..[6,85+9])
+          expression (src/loc.ml[6,85+12]..[6,85+17])
+            Pexp_field
+            expression (src/loc.ml[6,85+12]..[6,85+13])
+              Pexp_ident "t" (src/loc.ml[6,85+12]..[6,85+13])
+            "loc" (src/loc.ml[6,85+14]..[6,85+17])
+    ]
+  structure_item (src/loc.ml[7,103+0]..[7,103+32])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[7,103+4]..[7,103+8])
+          Ppat_var "make" (src/loc.ml[7,103+4]..[7,103+8])
+        expression (src/loc.ml[7,103+9]..[7,103+32]) ghost
+          Pexp_fun
+          Labelled "loc"
+          None
+          pattern (src/loc.ml[7,103+10]..[7,103+13])
+            Ppat_var "loc" (src/loc.ml[7,103+10]..[7,103+13])
+          expression (src/loc.ml[7,103+14]..[7,103+32]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/loc.ml[7,103+14]..[7,103+17])
+              Ppat_var "txt" (src/loc.ml[7,103+14]..[7,103+17])
+            expression (src/loc.ml[7,103+20]..[7,103+32])
+              Pexp_record
+              [
+                "loc" (src/loc.ml[7,103+22]..[7,103+25])
+                  expression (src/loc.ml[7,103+22]..[7,103+25]) ghost
+                    Pexp_ident "loc" (src/loc.ml[7,103+22]..[7,103+25]) ghost
+                "txt" (src/loc.ml[7,103+27]..[7,103+30])
+                  expression (src/loc.ml[7,103+27]..[7,103+30]) ghost
+                    Pexp_ident "txt" (src/loc.ml[7,103+27]..[7,103+30]) ghost
+              ]
+              None
+    ]
+  structure_item (src/loc.ml[8,136+0]..[8,136+39])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[8,136+4]..[8,136+7])
+          Ppat_var "map" (src/loc.ml[8,136+4]..[8,136+7])
+        expression (src/loc.ml[8,136+8]..[8,136+39]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/loc.ml[8,136+8]..[8,136+9])
+            Ppat_var "t" (src/loc.ml[8,136+8]..[8,136+9])
+          expression (src/loc.ml[8,136+10]..[8,136+39]) ghost
+            Pexp_fun
+            Labelled "f"
+            None
+            pattern (src/loc.ml[8,136+11]..[8,136+12])
+              Ppat_var "f" (src/loc.ml[8,136+11]..[8,136+12])
+            expression (src/loc.ml[8,136+15]..[8,136+39])
+              Pexp_record
+              [
+                "txt" (src/loc.ml[8,136+24]..[8,136+27])
+                  expression (src/loc.ml[8,136+30]..[8,136+37])
+                    Pexp_apply
+                    expression (src/loc.ml[8,136+30]..[8,136+31])
+                      Pexp_ident "f" (src/loc.ml[8,136+30]..[8,136+31])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (src/loc.ml[8,136+32]..[8,136+37])
+                          Pexp_field
+                          expression (src/loc.ml[8,136+32]..[8,136+33])
+                            Pexp_ident "t" (src/loc.ml[8,136+32]..[8,136+33])
+                          "txt" (src/loc.ml[8,136+34]..[8,136+37])
+                    ]
+              ]
+              Some
+                expression (src/loc.ml[8,136+17]..[8,136+18])
+                  Pexp_ident "t" (src/loc.ml[8,136+17]..[8,136+18])
+    ]
+]
+
+open! Import
+type 'a t = 'a loc = {
+  txt: 'a ;
+  loc: Location.t }
+let txt t = t.txt
+let loc t = t.loc
+let make ~loc  txt = { loc; txt }
+let map t ~f  = { t with txt = (f t.txt) }
+[
+  structure_item (src/loc.ml[1,0+0]..src/loc.ml[1,0+12])
+    Tstr_open Override
+    module_expr (src/loc.ml[1,0+6]..src/loc.ml[1,0+12])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/loc.ml[3,14+0]..src/loc.ml[3,14+51])
+    Tstr_type Rec
+    [
+      type_declaration t/550 (src/loc.ml[3,14+0]..src/loc.ml[3,14+51])
+        ptype_params =
+          [
+            core_type (src/loc.ml[3,14+5]..src/loc.ml[3,14+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (src/loc.ml[3,14+23]..src/loc.ml[3,14+32])
+                Immutable
+                txt/551                core_type (src/loc.ml[3,14+29]..src/loc.ml[3,14+31])
+                  Ttyp_poly
+                  core_type (src/loc.ml[3,14+29]..src/loc.ml[3,14+31])
+                    Ttyp_var a
+              (src/loc.ml[3,14+33]..src/loc.ml[3,14+49])
+                Immutable
+                loc/584                core_type (src/loc.ml[3,14+39]..src/loc.ml[3,14+49])
+                  Ttyp_poly
+                  core_type (src/loc.ml[3,14+39]..src/loc.ml[3,14+49])
+                    Ttyp_constr "Ppxlib__!.Location.t"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/loc.ml[3,14+12]..src/loc.ml[3,14+18])
+              Ttyp_constr "Ppxlib__!.Import.loc"
+              [
+                core_type (src/loc.ml[3,14+12]..src/loc.ml[3,14+14])
+                  Ttyp_var a
+              ]
+    ]
+  structure_item (src/loc.ml[5,67+0]..src/loc.ml[5,67+17])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[5,67+4]..src/loc.ml[5,67+7])
+          Tpat_var "txt/866"
+        expression (src/loc.ml[5,67+8]..src/loc.ml[5,67+17]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/loc.ml[5,67+8]..src/loc.ml[5,67+9])
+                Tpat_var "t/868"
+              expression (src/loc.ml[5,67+12]..src/loc.ml[5,67+17])
+                Texp_field
+                expression (src/loc.ml[5,67+12]..src/loc.ml[5,67+13])
+                  Texp_ident "t/868"
+                "txt"
+          ]
+    ]
+  structure_item (src/loc.ml[6,85+0]..src/loc.ml[6,85+17])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[6,85+4]..src/loc.ml[6,85+7])
+          Tpat_var "loc/869"
+        expression (src/loc.ml[6,85+8]..src/loc.ml[6,85+17]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/loc.ml[6,85+8]..src/loc.ml[6,85+9])
+                Tpat_var "t/871"
+              expression (src/loc.ml[6,85+12]..src/loc.ml[6,85+17])
+                Texp_field
+                expression (src/loc.ml[6,85+12]..src/loc.ml[6,85+13])
+                  Texp_ident "t/871"
+                "loc"
+          ]
+    ]
+  structure_item (src/loc.ml[7,103+0]..src/loc.ml[7,103+32])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[7,103+4]..src/loc.ml[7,103+8])
+          Tpat_var "make/872"
+        expression (src/loc.ml[7,103+9]..src/loc.ml[7,103+32]) ghost
+          Texp_function
+          Labelled "loc"
+          [
+            <case>
+              pattern (src/loc.ml[7,103+10]..src/loc.ml[7,103+13])
+                Tpat_var "loc/874"
+              expression (src/loc.ml[7,103+14]..src/loc.ml[7,103+32]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/loc.ml[7,103+14]..src/loc.ml[7,103+17])
+                      Tpat_var "txt/875"
+                    expression (src/loc.ml[7,103+20]..src/loc.ml[7,103+32])
+                      Texp_record
+                        fields =
+                          [
+                            "txt"
+                              expression (src/loc.ml[7,103+27]..src/loc.ml[7,103+30]) ghost
+                                Texp_ident "txt/875"
+                            "loc"
+                              expression (src/loc.ml[7,103+22]..src/loc.ml[7,103+25]) ghost
+                                Texp_ident "loc/874"
+                          ]
+                        representation =
+                          Record_regular
+                        extended_expression =
+                          None
+                ]
+          ]
+    ]
+  structure_item (src/loc.ml[8,136+0]..src/loc.ml[8,136+39])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/loc.ml[8,136+4]..src/loc.ml[8,136+7])
+          Tpat_var "map/876"
+        expression (src/loc.ml[8,136+8]..src/loc.ml[8,136+39]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/loc.ml[8,136+8]..src/loc.ml[8,136+9])
+                Tpat_var "t/878"
+              expression (src/loc.ml[8,136+10]..src/loc.ml[8,136+39]) ghost
+                Texp_function
+                Labelled "f"
+                [
+                  <case>
+                    pattern (src/loc.ml[8,136+11]..src/loc.ml[8,136+12])
+                      Tpat_var "f/879"
+                    expression (src/loc.ml[8,136+15]..src/loc.ml[8,136+39])
+                      Texp_record
+                        fields =
+                          [
+                            "txt"
+                              expression (src/loc.ml[8,136+30]..src/loc.ml[8,136+37])
+                                Texp_apply
+                                expression (src/loc.ml[8,136+30]..src/loc.ml[8,136+31])
+                                  Texp_ident "f/879"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (src/loc.ml[8,136+32]..src/loc.ml[8,136+37])
+                                      Texp_field
+                                      expression (src/loc.ml[8,136+32]..src/loc.ml[8,136+33])
+                                        Texp_ident "t/878"
+                                      "txt"
+                                ]
+                            <kept>                          ]
+                        representation =
+                          Record_regular
+                        extended_expression =
+                          Some
+                            expression (src/loc.ml[8,136+17]..src/loc.ml[8,136+18])
+                              Texp_ident "t/878"
+                ]
+          ]
+    ]
+]
+
+(setglobal Ppxlib__Loc!
+  (let
+    (txt/866 =
+       (function t/868
+         (funct-body Ppxlib__Loc.txt src/loc.ml(5)<ghost>:75-84
+           (before Ppxlib__Loc.txt src/loc.ml(5):79-84 (field_imm 0 t/868))))
+     loc/869 =
+       (function t/871
+         (funct-body Ppxlib__Loc.loc src/loc.ml(6)<ghost>:93-102
+           (before Ppxlib__Loc.loc src/loc.ml(6):97-102 (field_imm 1 t/871))))
+     make/872 =
+       (function loc/874 txt/875
+         (funct-body Ppxlib__Loc.make src/loc.ml(7)<ghost>:112-135
+           (before Ppxlib__Loc.make src/loc.ml(7):123-135
+             (makeblock 0 txt/875 loc/874))))
+     map/876 =
+       (function t/878 f/879
+         (funct-body Ppxlib__Loc.map src/loc.ml(8)<ghost>:144-175
+           (before Ppxlib__Loc.map src/loc.ml(8):151-175
+             (let (init/2019 = t/878)
+               (makeblock 0
+                 (after Ppxlib__Loc.map src/loc.ml(8):166-173
+                   (apply f/879 (field_imm 0 t/878)))
+                 (field_imm 1 init/2019)))))))
+    (pseudo <unknown location>
+      (makeblock 0 txt/866 loc/869 make/872 map/876))))
+(setglobal Ppxlib__Loc!
+  (let
+    (txt/866 =
+       (function t/868
+         (funct-body Ppxlib__Loc.txt src/loc.ml(5)<ghost>:75-84
+           (before Ppxlib__Loc.txt src/loc.ml(5):79-84 (field_imm 0 t/868))))
+     loc/869 =
+       (function t/871
+         (funct-body Ppxlib__Loc.loc src/loc.ml(6)<ghost>:93-102
+           (before Ppxlib__Loc.loc src/loc.ml(6):97-102 (field_imm 1 t/871))))
+     make/872 =
+       (function loc/874 txt/875
+         (funct-body Ppxlib__Loc.make src/loc.ml(7)<ghost>:112-135
+           (before Ppxlib__Loc.make src/loc.ml(7):123-135
+             (makeblock 0 txt/875 loc/874))))
+     map/876 =
+       (function t/878 f/879
+         (funct-body Ppxlib__Loc.map src/loc.ml(8)<ghost>:144-175
+           (before Ppxlib__Loc.map src/loc.ml(8):151-175
+             (let (init/2019 = t/878)
+               (makeblock 0
+                 (after Ppxlib__Loc.map src/loc.ml(8):166-173
+                   (apply f/879 (field_imm 0 t/878)))
+                 (field_imm 1 init/2019)))))))
+    (pseudo <unknown location>
+      (makeblock 0 txt/866 loc/869 make/872 map/876))))

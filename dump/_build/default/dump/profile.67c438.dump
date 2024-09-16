@@ -1,0 +1,21 @@
+0.092s  208MB 17.0MB 17.0MB stdppx/stdppx.ml
+  0.002s 4.94MB 1.94MB 1.94MB parsing
+    0.002s 4.94MB 1.94MB 1.94MB parser
+  0.030s 57.2MB 6.78MB 8.72MB typing
+  0.001s 2.26MB 0.25MB 8.97MB transl
+  0.042s 76.2MB 7.51MB 16.4MB generate
+    0.024s 45.5MB 5.69MB 14.6MB compile_phrases
+      0.004s 10.5MB 1.50MB 10.4MB selection
+      0.001s 1.49MB 0.34MB 10.8MB comballoc
+      0.002s 2.37MB 0.25MB 11.0MB cse
+      0.002s 2.27MB 0.56MB 11.6MB liveness
+      0.001s 2.00MB 0.78MB 12.4MB deadcode
+      0.004s 9.17MB 0.78MB 13.1MB spill
+      0.001s 0.49MB ------ ------ split
+      0.006s 12.4MB 0.46MB 13.6MB regalloc
+      0.002s 2.78MB 0.37MB 14.0MB emit
+      0.002s 2.00MB 0.62MB 14.6MB other
+    0.009s ------ ------ ------ assemble
+    0.010s 30.7MB 1.82MB 16.4MB other
+  0.016s 67.9MB 0.53MB 17.0MB other
+0.005s ------ ------ ------ other

@@ -1,0 +1,16 @@
+0.227s  132MB 30.0MB 31.8MB src/utils.ml
+  0.001s 0.01MB ------ ------ parsing
+    0.001s 0.01MB ------ ------ parser
+  0.196s 98.3MB 28.3MB 30.0MB typing
+  0.002s ------ ------ ------ transl
+  0.018s 15.2MB 1.31MB 31.3MB generate
+    0.007s 6.81MB 0.62MB 30.6MB compile_phrases
+      0.001s 0.17MB ------ ------ selection
+      0.001s 0.24MB ------ ------ liveness
+      0.001s ------ ------ ------ spill
+      0.003s 4.39MB 0.40MB 30.4MB regalloc
+      0.001s 2.00MB 0.21MB 30.6MB emit
+    0.005s ------ ------ ------ assemble
+    0.005s 8.47MB 0.68MB 31.3MB other
+  0.011s 18.4MB 0.43MB 31.8MB other
+0.012s 3.07MB 1.75MB ------ other

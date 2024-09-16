@@ -1,0 +1,24 @@
+0.692s  466MB 59.4MB 61.1MB src/deriving.ml
+  0.007s 4.73MB 0.68MB 2.44MB parsing
+    0.007s 4.73MB 0.68MB 2.44MB parser
+  0.418s  225MB 41.1MB 43.5MB typing
+  0.010s 5.41MB 0.53MB 44.1MB transl
+  0.202s  136MB 15.7MB 59.8MB generate
+    0.004s 2.63MB 0.62MB 44.7MB cmm
+    0.123s 85.0MB 11.7MB 56.4MB compile_phrases
+      0.016s 12.0MB 1.87MB 46.6MB selection
+      0.002s 0.53MB ------ ------ polling
+      0.002s 0.23MB ------ ------ comballoc
+      0.007s 5.33MB 0.59MB 47.1MB cse
+      0.017s 7.91MB 2.06MB 49.2MB liveness
+      0.007s 5.01MB 0.84MB 50.1MB deadcode
+      0.017s 17.3MB 1.53MB 51.6MB spill
+      0.007s 2.00MB 1.00MB 52.6MB split
+      0.033s 28.8MB 2.78MB 55.4MB regalloc
+      0.001s ------ ------ ------ linearize
+      0.009s 3.52MB 1.00MB 56.4MB emit
+      0.004s 2.21MB 0.06MB ------ other
+    0.033s ------ ------ ------ assemble
+    0.042s 49.0MB 3.40MB 59.8MB other
+  0.056s 93.5MB 1.31MB 61.1MB other
+0.013s 3.07MB 1.75MB ------ other

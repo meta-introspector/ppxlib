@@ -1,0 +1,435 @@
+[
+  structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+    Pstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+22])
+                            Pexp_constant PConst_string("ppx_deriving_example",(<command-line>[1,0+1]..[1,0+21]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (test/deriving/inline/example/ppx_deriving_example.ml[1,0+0]..[1,0+34])
+    Pstr_type Rec
+    [
+      type_declaration "t" (test/deriving/inline/example/ppx_deriving_example.ml[1,0+5]..[1,0+6]) (test/deriving/inline/example/ppx_deriving_example.ml[1,0+0]..[1,0+34])
+        attribute "deriving_inline"
+          [
+            structure_item (test/deriving/inline/example/ppx_deriving_example.ml[1,0+30]..[1,0+33])
+              Pstr_eval
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[1,0+30]..[1,0+33])
+                Pexp_ident "foo" (test/deriving/inline/example/ppx_deriving_example.ml[1,0+30]..[1,0+33])
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (test/deriving/inline/example/ppx_deriving_example.ml[1,0+9]..[1,0+10])
+                "A" (test/deriving/inline/example/ppx_deriving_example.ml[1,0+9]..[1,0+10])
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (test/deriving/inline/example/ppx_deriving_example.ml[3,36+0]..[14,172+27])
+    Pstr_include      attribute "ocaml.doc"
+        [
+          structure_item (test/deriving/inline/example/ppx_deriving_example.ml[14,172+17]..[14,172+26])
+            Pstr_eval
+            expression (test/deriving/inline/example/ppx_deriving_example.ml[14,172+17]..[14,172+26])
+              Pexp_constant PConst_string("@inline",(test/deriving/inline/example/ppx_deriving_example.ml[14,172+18]..[14,172+25]),None)
+        ]
+    module_expr (test/deriving/inline/example/ppx_deriving_example.ml[3,36+8]..[14,172+3])
+      Pmod_structure
+      [
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[4,51+2]..[4,51+26])
+          Pstr_attribute "ocaml.warning"
+          [
+            structure_item (test/deriving/inline/example/ppx_deriving_example.ml[4,51+20]..[4,51+25])
+              Pstr_eval
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[4,51+20]..[4,51+25])
+                Pexp_constant PConst_string("-60",(test/deriving/inline/example/ppx_deriving_example.ml[4,51+21]..[4,51+24]),None)
+          ]
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[6,79+2]..[6,79+27])
+          Pstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving/inline/example/ppx_deriving_example.ml[6,79+6]..[6,79+7])
+                Ppat_any
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[6,79+10]..[6,79+27])
+                Pexp_fun
+                Nolabel
+                None
+                pattern (test/deriving/inline/example/ppx_deriving_example.ml[6,79+14]..[6,79+21])
+                  Ppat_constraint
+                  pattern (test/deriving/inline/example/ppx_deriving_example.ml[6,79+15]..[6,79+16])
+                    Ppat_any
+                  core_type (test/deriving/inline/example/ppx_deriving_example.ml[6,79+19]..[6,79+20])
+                    Ptyp_constr "t" (test/deriving/inline/example/ppx_deriving_example.ml[6,79+19]..[6,79+20])
+                    []
+                expression (test/deriving/inline/example/ppx_deriving_example.ml[6,79+25]..[6,79+27])
+                  Pexp_construct "()" (test/deriving/inline/example/ppx_deriving_example.ml[6,79+25]..[6,79+27])
+                  None
+          ]
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[8,108+2]..[8,108+25])
+          Pstr_module
+          "Foo" (test/deriving/inline/example/ppx_deriving_example.ml[8,108+9]..[8,108+12])
+            module_expr (test/deriving/inline/example/ppx_deriving_example.ml[8,108+15]..[8,108+25])
+              Pmod_structure
+              []
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[10,135+2]..[13,161+10])
+          Pstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving/inline/example/ppx_deriving_example.ml[10,135+6]..[10,135+7])
+                Ppat_any
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[11,145+4]..[13,161+10])
+                Pexp_sequence
+                expression (test/deriving/inline/example/ppx_deriving_example.ml[11,145+4]..[11,145+6])
+                  Pexp_construct "()" (test/deriving/inline/example/ppx_deriving_example.ml[11,145+4]..[11,145+6])
+                  None
+                expression (test/deriving/inline/example/ppx_deriving_example.ml[12,153+4]..[13,161+10])
+                  Pexp_sequence
+                  expression (test/deriving/inline/example/ppx_deriving_example.ml[12,153+4]..[12,153+6])
+                    Pexp_construct "()" (test/deriving/inline/example/ppx_deriving_example.ml[12,153+4]..[12,153+6])
+                    None
+                  expression (test/deriving/inline/example/ppx_deriving_example.ml[13,161+4]..[13,161+10])
+                    Pexp_constant PConst_string("foo",(test/deriving/inline/example/ppx_deriving_example.ml[13,161+4]..[13,161+10]),None)
+          ]
+      ]
+  structure_item (test/deriving/inline/example/ppx_deriving_example.ml[16,201+0]..[16,201+17])
+    Pstr_attribute "deriving.end"
+    []
+]
+
+[@@@ocaml.ppx.context
+  {
+    tool_name = "ppx_driver";
+    include_dirs = [];
+    load_path = [];
+    open_modules = [];
+    for_package = None;
+    debug = false;
+    use_threads = false;
+    use_vmthreads = false;
+    recursive_types = false;
+    principal = false;
+    transparent_modules = false;
+    unboxed_types = false;
+    unsafe_string = false;
+    cookies = [("library-name", "ppx_deriving_example")]
+  }]
+type t =
+  | A [@@deriving_inline foo]
+include
+  struct
+    [@@@ocaml.warning "-60"]
+    let _ = fun (_ : t) -> ()
+    module Foo = struct  end
+    let _ = (); (); "foo"
+  end[@@ocaml.doc "@inline"]
+[@@@deriving.end ]
+[
+  structure_item (_none_[0,0+-1].._none_[0,0+-1]) ghost
+    Tstr_attribute "ocaml.ppx.context"
+    [
+      structure_item (_none_[0,0+-1]..[0,0+-1]) ghost
+        Pstr_eval
+        expression (_none_[0,0+-1]..[0,0+-1]) ghost
+          Pexp_record
+          [
+            "tool_name" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_constant PConst_string("ppx_driver",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+            "include_dirs" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "load_path" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "open_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "for_package" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "None" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "debug" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_threads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "use_vmthreads" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "recursive_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "principal" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "transparent_modules" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unboxed_types" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "unsafe_string" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "false" (_none_[0,0+-1]..[0,0+-1]) ghost
+                None
+            "cookies" (_none_[0,0+-1]..[0,0+-1]) ghost
+              expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                Pexp_construct "::" (_none_[0,0+-1]..[0,0+-1]) ghost
+                Some
+                  expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                    Pexp_tuple
+                    [
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_tuple
+                        [
+                          expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                            Pexp_constant PConst_string("library-name",(_none_[0,0+-1]..[0,0+-1]) ghost,None)
+                          expression (<command-line>[1,0+0]..[1,0+22])
+                            Pexp_constant PConst_string("ppx_deriving_example",(<command-line>[1,0+1]..[1,0+21]),None)
+                        ]
+                      expression (_none_[0,0+-1]..[0,0+-1]) ghost
+                        Pexp_construct "[]" (_none_[0,0+-1]..[0,0+-1]) ghost
+                        None
+                    ]
+          ]
+          None
+    ]
+  structure_item (test/deriving/inline/example/ppx_deriving_example.ml[1,0+0]..test/deriving/inline/example/ppx_deriving_example.ml[1,0+34])
+    Tstr_type Rec
+    [
+      type_declaration t/86 (test/deriving/inline/example/ppx_deriving_example.ml[1,0+0]..test/deriving/inline/example/ppx_deriving_example.ml[1,0+34])
+        attribute "deriving_inline"
+          [
+            structure_item (test/deriving/inline/example/ppx_deriving_example.ml[1,0+30]..[1,0+33])
+              Pstr_eval
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[1,0+30]..[1,0+33])
+                Pexp_ident "foo" (test/deriving/inline/example/ppx_deriving_example.ml[1,0+30]..[1,0+33])
+          ]
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (test/deriving/inline/example/ppx_deriving_example.ml[1,0+9]..test/deriving/inline/example/ppx_deriving_example.ml[1,0+10])
+                A/87
+                []
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (test/deriving/inline/example/ppx_deriving_example.ml[3,36+0]..test/deriving/inline/example/ppx_deriving_example.ml[14,172+27])
+    Tstr_include      attribute "ocaml.doc"
+        [
+          structure_item (test/deriving/inline/example/ppx_deriving_example.ml[14,172+17]..[14,172+26])
+            Pstr_eval
+            expression (test/deriving/inline/example/ppx_deriving_example.ml[14,172+17]..[14,172+26])
+              Pexp_constant PConst_string("@inline",(test/deriving/inline/example/ppx_deriving_example.ml[14,172+18]..[14,172+25]),None)
+        ]
+    module_expr (test/deriving/inline/example/ppx_deriving_example.ml[3,36+8]..test/deriving/inline/example/ppx_deriving_example.ml[14,172+3])
+      Tmod_structure
+      [
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[4,51+2]..test/deriving/inline/example/ppx_deriving_example.ml[4,51+26])
+          Tstr_attribute "ocaml.warning"
+          [
+            structure_item (test/deriving/inline/example/ppx_deriving_example.ml[4,51+20]..[4,51+25])
+              Pstr_eval
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[4,51+20]..[4,51+25])
+                Pexp_constant PConst_string("-60",(test/deriving/inline/example/ppx_deriving_example.ml[4,51+21]..[4,51+24]),None)
+          ]
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[6,79+2]..test/deriving/inline/example/ppx_deriving_example.ml[6,79+27])
+          Tstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving/inline/example/ppx_deriving_example.ml[6,79+6]..test/deriving/inline/example/ppx_deriving_example.ml[6,79+7])
+                Tpat_any
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[6,79+10]..test/deriving/inline/example/ppx_deriving_example.ml[6,79+27])
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (test/deriving/inline/example/ppx_deriving_example.ml[6,79+15]..test/deriving/inline/example/ppx_deriving_example.ml[6,79+16])
+                      Tpat_extra_constraint
+                      core_type (test/deriving/inline/example/ppx_deriving_example.ml[6,79+19]..test/deriving/inline/example/ppx_deriving_example.ml[6,79+20])
+                        Ttyp_constr "t/86"
+                        []
+                      pattern (test/deriving/inline/example/ppx_deriving_example.ml[6,79+15]..test/deriving/inline/example/ppx_deriving_example.ml[6,79+16])
+                        Tpat_any
+                    expression (test/deriving/inline/example/ppx_deriving_example.ml[6,79+25]..test/deriving/inline/example/ppx_deriving_example.ml[6,79+27])
+                      Texp_construct "()"
+                      []
+                ]
+          ]
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[8,108+2]..test/deriving/inline/example/ppx_deriving_example.ml[8,108+25])
+          Tstr_module
+          Foo/89
+            module_expr (test/deriving/inline/example/ppx_deriving_example.ml[8,108+15]..test/deriving/inline/example/ppx_deriving_example.ml[8,108+25])
+              Tmod_structure
+              []
+        structure_item (test/deriving/inline/example/ppx_deriving_example.ml[10,135+2]..test/deriving/inline/example/ppx_deriving_example.ml[13,161+10])
+          Tstr_value Nonrec
+          [
+            <def>
+              pattern (test/deriving/inline/example/ppx_deriving_example.ml[10,135+6]..test/deriving/inline/example/ppx_deriving_example.ml[10,135+7])
+                Tpat_any
+              expression (test/deriving/inline/example/ppx_deriving_example.ml[11,145+4]..test/deriving/inline/example/ppx_deriving_example.ml[13,161+10])
+                Texp_sequence
+                expression (test/deriving/inline/example/ppx_deriving_example.ml[11,145+4]..test/deriving/inline/example/ppx_deriving_example.ml[11,145+6])
+                  Texp_construct "()"
+                  []
+                expression (test/deriving/inline/example/ppx_deriving_example.ml[12,153+4]..test/deriving/inline/example/ppx_deriving_example.ml[13,161+10])
+                  Texp_sequence
+                  expression (test/deriving/inline/example/ppx_deriving_example.ml[12,153+4]..test/deriving/inline/example/ppx_deriving_example.ml[12,153+6])
+                    Texp_construct "()"
+                    []
+                  expression (test/deriving/inline/example/ppx_deriving_example.ml[13,161+4]..test/deriving/inline/example/ppx_deriving_example.ml[13,161+10])
+                    Texp_constant Const_string("foo",(test/deriving/inline/example/ppx_deriving_example.ml[13,161+4]..test/deriving/inline/example/ppx_deriving_example.ml[13,161+10]),None)
+          ]
+      ]
+  structure_item (test/deriving/inline/example/ppx_deriving_example.ml[16,201+0]..test/deriving/inline/example/ppx_deriving_example.ml[16,201+17])
+    Tstr_attribute "deriving.end"
+    []
+]
+
+(setglobal Ppx_deriving_example!
+  (let
+    (include/323 =
+       (seq
+         (function param/88
+           (funct-body Ppx_deriving_example.(fun) test/deriving/inline/example/ppx_deriving_example.ml(6):89-106
+             (before Ppx_deriving_example.(fun) test/deriving/inline/example/ppx_deriving_example.ml(6):104-106
+               0)))
+         (let
+           (Foo/89 =
+              (module-defn(Foo/89) Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(8):110-133
+                (pseudo Ppx_deriving_example.Foo test/deriving/inline/example/ppx_deriving_example.ml(8):123-133
+                  (makeblock 0))))
+           (seq
+             (seq 0
+               (before Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(12):157-171
+                 (seq 0
+                   (before Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(13):165-171
+                     "foo"))))
+             (pseudo Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(3):44-175
+               (makeblock 0 Foo/89)))))
+     Foo/90 =a (field_mut 0 include/323))
+    (pseudo <unknown location> (makeblock 0 Foo/90))))
+(setglobal Ppx_deriving_example!
+  (let
+    (include/323 =
+       (seq
+         (function param/88
+           (funct-body Ppx_deriving_example.(fun) test/deriving/inline/example/ppx_deriving_example.ml(6):89-106
+             (before Ppx_deriving_example.(fun) test/deriving/inline/example/ppx_deriving_example.ml(6):104-106
+               0)))
+         (let
+           (Foo/89 =
+              (module-defn(Foo/89) Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(8):110-133
+                (pseudo Ppx_deriving_example.Foo test/deriving/inline/example/ppx_deriving_example.ml(8):123-133
+                  (makeblock 0))))
+           (seq
+             (seq 0
+               (before Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(12):157-171
+                 (seq 0
+                   (before Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(13):165-171
+                     "foo"))))
+             (pseudo Ppx_deriving_example test/deriving/inline/example/ppx_deriving_example.ml(3):44-175
+               (makeblock 0 Foo/89)))))
+     Foo/90 =a (field_mut 0 include/323))
+    (pseudo <unknown location> (makeblock 0 Foo/90))))

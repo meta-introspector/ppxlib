@@ -1,0 +1,40 @@
+[
+  structure_item (src/keyword.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (src/keyword.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (src/keyword.ml[1,0+6]..[1,0+12])
+  structure_item (src/keyword.ml[3,14+0]..[3,14+42])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/keyword.ml[3,14+4]..[3,14+14])
+          Ppat_var "is_keyword" (src/keyword.ml[3,14+4]..[3,14+14])
+        expression (src/keyword.ml[3,14+17]..[3,14+42])
+          Pexp_ident "Astlib.Keyword.is_keyword" (src/keyword.ml[3,14+17]..[3,14+42])
+    ]
+]
+
+open! Import
+let is_keyword = Astlib.Keyword.is_keyword
+[
+  structure_item (src/keyword.ml[1,0+0]..src/keyword.ml[1,0+12])
+    Tstr_open Override
+    module_expr (src/keyword.ml[1,0+6]..src/keyword.ml[1,0+12])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/keyword.ml[3,14+0]..src/keyword.ml[3,14+42])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/keyword.ml[3,14+4]..src/keyword.ml[3,14+14])
+          Tpat_var "is_keyword/550"
+        expression (src/keyword.ml[3,14+17]..src/keyword.ml[3,14+42])
+          Texp_ident "Astlib!.Keyword.is_keyword"
+    ]
+]
+
+(setglobal Ppxlib__Keyword!
+  (let (is_keyword/550 = (field_imm 0 (global Astlib__Keyword!)))
+    (pseudo <unknown location> (makeblock 0 is_keyword/550))))
+(setglobal Ppxlib__Keyword!
+  (let (is_keyword/550 = (field_imm 0 (global Astlib__Keyword!)))
+    (pseudo <unknown location> (makeblock 0 is_keyword/550))))

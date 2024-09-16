@@ -1,0 +1,8 @@
+0.117s  244MB 23.6MB 23.6MB src/ast_builder_generated.ml
+  0.004s 10.6MB 2.63MB 2.63MB parsing
+    0.004s 10.6MB 2.63MB 2.63MB parser
+  0.074s  101MB 19.4MB 22.1MB typing
+  0.006s 10.4MB 0.43MB 22.5MB transl
+  0.011s 36.8MB 0.87MB 23.4MB generate
+  0.022s 84.4MB 0.18MB 23.6MB other
+0.003s ------ ------ ------ other

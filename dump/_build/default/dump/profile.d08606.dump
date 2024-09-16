@@ -1,0 +1,8 @@
+0.171s 58.8MB 20.7MB 22.5MB test/error_embedding/extender.ml
+  0.166s 56.4MB 20.6MB 22.4MB typing
+  0.003s 2.00MB 0.09MB 22.5MB generate
+    0.001s 2.00MB 0.09MB 22.5MB compile_phrases
+      ------ 2.00MB 0.09MB 22.5MB regalloc
+    0.002s ------ ------ ------ assemble
+  0.001s 0.31MB ------ ------ other
+0.014s 3.02MB 1.72MB ------ other

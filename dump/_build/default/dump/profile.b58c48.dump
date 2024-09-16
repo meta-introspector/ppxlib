@@ -1,0 +1,24 @@
+0.403s  418MB 44.5MB 46.2MB src/attribute.ml
+  0.002s 4.74MB 0.68MB 2.44MB parsing
+    0.002s 4.74MB 0.68MB 2.44MB parser
+  0.234s  203MB 34.9MB 37.3MB typing
+  0.025s 25.2MB 1.22MB 38.6MB transl
+  0.098s 91.1MB 6.56MB 45.1MB generate
+    0.001s 0.34MB ------ ------ cmm
+    0.060s 60.8MB 4.72MB 43.3MB compile_phrases
+      ------ 0.17MB ------ ------ cmm_invariants
+      0.007s 6.00MB 0.84MB 39.4MB selection
+      0.001s 2.48MB ------ ------ comballoc
+      0.002s 0.19MB ------ ------ cse
+      0.004s 0.44MB ------ ------ liveness
+      0.001s 2.00MB 0.34MB 39.7MB deadcode
+      0.007s 6.63MB 0.31MB 40.1MB spill
+      0.002s ------ ------ ------ split
+      0.027s 34.1MB 2.75MB 42.8MB regalloc
+      0.001s 2.00MB ------ ------ linearize
+      0.003s 2.35MB 0.25MB 43.1MB emit
+      0.004s 4.36MB 0.21MB 43.3MB other
+    0.014s ------ ------ ------ assemble
+    0.022s 29.9MB 1.84MB 45.1MB other
+  0.043s 94.0MB 1.12MB 46.2MB other
+0.007s 3.07MB 1.75MB ------ other

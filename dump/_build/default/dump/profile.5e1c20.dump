@@ -1,0 +1,6 @@
+0.062s 39.7MB 15.2MB 17.0MB test/expansion_context/map_structure_print_ctxt.ml
+  0.057s 38.8MB 15.2MB 17.0MB typing
+  0.004s 0.87MB ------ ------ generate
+    0.002s ------ ------ ------ assemble
+    0.001s 0.87MB ------ ------ other
+0.012s 3.02MB 1.72MB ------ other

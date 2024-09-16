@@ -1,0 +1,23 @@
+0.781s  556MB 57.1MB 58.8MB src/driver.ml
+  0.013s 8.21MB 1.22MB 2.97MB parsing
+    0.013s 8.21MB 1.22MB 2.97MB parser
+  0.623s  287MB 44.1MB 47.1MB typing
+  0.018s 10.8MB 0.71MB 47.8MB transl
+  0.072s  115MB 10.4MB 58.2MB generate
+    0.002s 2.48MB 0.69MB 48.5MB cmm
+    0.032s 63.3MB 6.25MB 54.7MB compile_phrases
+      0.004s 10.9MB 1.56MB 50.0MB selection
+      0.001s 0.44MB ------ ------ comballoc
+      0.001s 4.35MB 0.40MB 50.4MB cse
+      0.003s 4.62MB 0.40MB 50.8MB liveness
+      0.001s 2.00MB 0.15MB 51.0MB deadcode
+      0.004s 10.8MB 1.28MB 52.3MB spill
+      0.001s ------ ------ ------ split
+      0.010s 20.5MB 1.75MB 54.0MB regalloc
+      0.001s 0.37MB ------ ------ linearize
+      0.002s 9.00MB 0.68MB 54.7MB emit
+      0.003s 0.19MB ------ ------ other
+    0.014s ------ ------ ------ assemble
+    0.024s 49.3MB 3.46MB 58.2MB other
+  0.054s  133MB 0.62MB 58.8MB other
+0.013s 3.07MB 1.75MB ------ other

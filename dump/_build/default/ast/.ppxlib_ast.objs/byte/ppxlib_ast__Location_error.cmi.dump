@@ -1,0 +1,385 @@
+[
+  signature_item (ast/location_error.mli[1,0+0]..[1,0+11])
+    Psig_open Fresh "Import" (ast/location_error.mli[1,0+5]..[1,0+11])
+  signature_item (ast/location_error.mli[3,13+0]..[3,13+32])
+    Psig_type Rec
+    [
+      type_declaration "t" (ast/location_error.mli[3,13+5]..[3,13+6]) (ast/location_error.mli[3,13+0]..[3,13+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ast/location_error.mli[3,13+9]..[3,13+32])
+              Ptyp_constr "Astlib.Location.Error.t" (ast/location_error.mli[3,13+9]..[3,13+32])
+              []
+    ]
+  signature_item (ast/location_error.mli[5,47+0]..[5,47+28])
+    Psig_value
+    value_description "of_exn" (ast/location_error.mli[5,47+4]..[5,47+10]) (ast/location_error.mli[5,47+0]..[5,47+28])
+      core_type (ast/location_error.mli[5,47+13]..[5,47+28])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[5,47+13]..[5,47+16])
+          Ptyp_constr "exn" (ast/location_error.mli[5,47+13]..[5,47+16])
+          []
+        core_type (ast/location_error.mli[5,47+20]..[5,47+28])
+          Ptyp_constr "option" (ast/location_error.mli[5,47+22]..[5,47+28])
+          [
+            core_type (ast/location_error.mli[5,47+20]..[5,47+21])
+              Ptyp_constr "t" (ast/location_error.mli[5,47+20]..[5,47+21])
+              []
+          ]
+      []
+  signature_item (ast/location_error.mli[6,76+0]..[6,76+53])
+    Psig_value
+    value_description "register_error_of_exn" (ast/location_error.mli[6,76+4]..[6,76+25]) (ast/location_error.mli[6,76+0]..[6,76+53])
+      core_type (ast/location_error.mli[6,76+28]..[6,76+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[6,76+29]..[6,76+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[6,76+29]..[6,76+32])
+            Ptyp_constr "exn" (ast/location_error.mli[6,76+29]..[6,76+32])
+            []
+          core_type (ast/location_error.mli[6,76+36]..[6,76+44])
+            Ptyp_constr "option" (ast/location_error.mli[6,76+38]..[6,76+44])
+            [
+              core_type (ast/location_error.mli[6,76+36]..[6,76+37])
+                Ptyp_constr "t" (ast/location_error.mli[6,76+36]..[6,76+37])
+                []
+            ]
+        core_type (ast/location_error.mli[6,76+49]..[6,76+53])
+          Ptyp_constr "unit" (ast/location_error.mli[6,76+49]..[6,76+53])
+          []
+      []
+  signature_item (ast/location_error.mli[7,130+0]..[7,130+25])
+    Psig_value
+    value_description "message" (ast/location_error.mli[7,130+4]..[7,130+11]) (ast/location_error.mli[7,130+0]..[7,130+25])
+      core_type (ast/location_error.mli[7,130+14]..[7,130+25])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[7,130+14]..[7,130+15])
+          Ptyp_constr "t" (ast/location_error.mli[7,130+14]..[7,130+15])
+          []
+        core_type (ast/location_error.mli[7,130+19]..[7,130+25])
+          Ptyp_constr "string" (ast/location_error.mli[7,130+19]..[7,130+25])
+          []
+      []
+  signature_item (ast/location_error.mli[8,156+0]..[8,156+34])
+    Psig_value
+    value_description "set_message" (ast/location_error.mli[8,156+4]..[8,156+15]) (ast/location_error.mli[8,156+0]..[8,156+34])
+      core_type (ast/location_error.mli[8,156+18]..[8,156+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[8,156+18]..[8,156+19])
+          Ptyp_constr "t" (ast/location_error.mli[8,156+18]..[8,156+19])
+          []
+        core_type (ast/location_error.mli[8,156+23]..[8,156+34])
+          Ptyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[8,156+23]..[8,156+29])
+            Ptyp_constr "string" (ast/location_error.mli[8,156+23]..[8,156+29])
+            []
+          core_type (ast/location_error.mli[8,156+33]..[8,156+34])
+            Ptyp_constr "t" (ast/location_error.mli[8,156+33]..[8,156+34])
+            []
+      []
+  signature_item (ast/location_error.mli[9,191+0]..[9,191+74])
+    Psig_value
+    value_description "make" (ast/location_error.mli[9,191+4]..[9,191+8]) (ast/location_error.mli[9,191+0]..[9,191+74])
+      core_type (ast/location_error.mli[9,191+11]..[9,191+74])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (ast/location_error.mli[9,191+15]..[9,191+25])
+          Ptyp_constr "Location.t" (ast/location_error.mli[9,191+15]..[9,191+25])
+          []
+        core_type (ast/location_error.mli[9,191+29]..[9,191+74])
+          Ptyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[9,191+29]..[9,191+35])
+            Ptyp_constr "string" (ast/location_error.mli[9,191+29]..[9,191+35])
+            []
+          core_type (ast/location_error.mli[9,191+39]..[9,191+74])
+            Ptyp_arrow
+            Labelled "sub"
+            core_type (ast/location_error.mli[9,191+43]..[9,191+69])
+              Ptyp_constr "list" (ast/location_error.mli[9,191+65]..[9,191+69])
+              [
+                core_type (ast/location_error.mli[9,191+44]..[9,191+63])
+                  Ptyp_tuple
+                  [
+                    core_type (ast/location_error.mli[9,191+44]..[9,191+54])
+                      Ptyp_constr "Location.t" (ast/location_error.mli[9,191+44]..[9,191+54])
+                      []
+                    core_type (ast/location_error.mli[9,191+57]..[9,191+63])
+                      Ptyp_constr "string" (ast/location_error.mli[9,191+57]..[9,191+63])
+                      []
+                  ]
+              ]
+            core_type (ast/location_error.mli[9,191+73]..[9,191+74])
+              Ptyp_constr "t" (ast/location_error.mli[9,191+73]..[9,191+74])
+              []
+      []
+  signature_item (ast/location_error.mli[10,266+0]..[10,266+50])
+    Psig_value
+    value_description "to_extension" (ast/location_error.mli[10,266+4]..[10,266+16]) (ast/location_error.mli[10,266+0]..[10,266+50])
+      core_type (ast/location_error.mli[10,266+19]..[10,266+50])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[10,266+19]..[10,266+20])
+          Ptyp_constr "t" (ast/location_error.mli[10,266+19]..[10,266+20])
+          []
+        core_type (ast/location_error.mli[10,266+24]..[10,266+50])
+          Ptyp_constr "Import.Parsetree.extension" (ast/location_error.mli[10,266+24]..[10,266+50])
+          []
+      []
+  signature_item (ast/location_error.mli[11,317+0]..[11,317+19])
+    Psig_value
+    value_description "raise" (ast/location_error.mli[11,317+4]..[11,317+9]) (ast/location_error.mli[11,317+0]..[11,317+19])
+      core_type (ast/location_error.mli[11,317+12]..[11,317+19])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[11,317+12]..[11,317+13])
+          Ptyp_constr "t" (ast/location_error.mli[11,317+12]..[11,317+13])
+          []
+        core_type (ast/location_error.mli[11,317+17]..[11,317+19])
+          Ptyp_var a
+      []
+  signature_item (ast/location_error.mli[12,337+0]..[12,337+37])
+    Psig_value
+    value_description "update_loc" (ast/location_error.mli[12,337+4]..[12,337+14]) (ast/location_error.mli[12,337+0]..[12,337+37])
+      core_type (ast/location_error.mli[12,337+17]..[12,337+37])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[12,337+17]..[12,337+18])
+          Ptyp_constr "t" (ast/location_error.mli[12,337+17]..[12,337+18])
+          []
+        core_type (ast/location_error.mli[12,337+22]..[12,337+37])
+          Ptyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[12,337+22]..[12,337+32])
+            Ptyp_constr "Location.t" (ast/location_error.mli[12,337+22]..[12,337+32])
+            []
+          core_type (ast/location_error.mli[12,337+36]..[12,337+37])
+            Ptyp_constr "t" (ast/location_error.mli[12,337+36]..[12,337+37])
+            []
+      []
+  signature_item (ast/location_error.mli[13,375+0]..[13,375+34])
+    Psig_value
+    value_description "get_location" (ast/location_error.mli[13,375+4]..[13,375+16]) (ast/location_error.mli[13,375+0]..[13,375+34])
+      core_type (ast/location_error.mli[13,375+19]..[13,375+34])
+        Ptyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[13,375+19]..[13,375+20])
+          Ptyp_constr "t" (ast/location_error.mli[13,375+19]..[13,375+20])
+          []
+        core_type (ast/location_error.mli[13,375+24]..[13,375+34])
+          Ptyp_constr "Location.t" (ast/location_error.mli[13,375+24]..[13,375+34])
+          []
+      []
+]
+
+open Import
+type t = Astlib.Location.Error.t
+val of_exn : exn -> t option
+val register_error_of_exn : (exn -> t option) -> unit
+val message : t -> string
+val set_message : t -> string -> t
+val make : loc:Location.t -> string -> sub:(Location.t * string) list -> t
+val to_extension : t -> Import.Parsetree.extension
+val raise : t -> 'a
+val update_loc : t -> Location.t -> t
+val get_location : t -> Location.t
+[
+  signature_item (ast/location_error.mli[1,0+0]..ast/location_error.mli[1,0+11])
+    Tsig_open Fresh "Ppxlib_ast__!.Import"
+  signature_item (ast/location_error.mli[3,13+0]..ast/location_error.mli[3,13+32])
+    Tsig_type Rec
+    [
+      type_declaration t/245 (ast/location_error.mli[3,13+0]..ast/location_error.mli[3,13+32])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_abstract
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (ast/location_error.mli[3,13+9]..ast/location_error.mli[3,13+32])
+              Ttyp_constr "Astlib!.Location.Error.t"
+              []
+    ]
+  signature_item (ast/location_error.mli[5,47+0]..ast/location_error.mli[5,47+28])
+    Tsig_value
+    value_description of_exn/382 (ast/location_error.mli[5,47+0]..ast/location_error.mli[5,47+28])
+      core_type (ast/location_error.mli[5,47+13]..ast/location_error.mli[5,47+28])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[5,47+13]..ast/location_error.mli[5,47+16])
+          Ttyp_constr "exn/7!"
+          []
+        core_type (ast/location_error.mli[5,47+20]..ast/location_error.mli[5,47+28])
+          Ttyp_constr "option/12!"
+          [
+            core_type (ast/location_error.mli[5,47+20]..ast/location_error.mli[5,47+21])
+              Ttyp_constr "t/245"
+              []
+          ]
+      []
+  signature_item (ast/location_error.mli[6,76+0]..ast/location_error.mli[6,76+53])
+    Tsig_value
+    value_description register_error_of_exn/383 (ast/location_error.mli[6,76+0]..ast/location_error.mli[6,76+53])
+      core_type (ast/location_error.mli[6,76+28]..ast/location_error.mli[6,76+53])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[6,76+29]..ast/location_error.mli[6,76+44])
+          Ttyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[6,76+29]..ast/location_error.mli[6,76+32])
+            Ttyp_constr "exn/7!"
+            []
+          core_type (ast/location_error.mli[6,76+36]..ast/location_error.mli[6,76+44])
+            Ttyp_constr "option/12!"
+            [
+              core_type (ast/location_error.mli[6,76+36]..ast/location_error.mli[6,76+37])
+                Ttyp_constr "t/245"
+                []
+            ]
+        core_type (ast/location_error.mli[6,76+49]..ast/location_error.mli[6,76+53])
+          Ttyp_constr "unit/6!"
+          []
+      []
+  signature_item (ast/location_error.mli[7,130+0]..ast/location_error.mli[7,130+25])
+    Tsig_value
+    value_description message/384 (ast/location_error.mli[7,130+0]..ast/location_error.mli[7,130+25])
+      core_type (ast/location_error.mli[7,130+14]..ast/location_error.mli[7,130+25])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[7,130+14]..ast/location_error.mli[7,130+15])
+          Ttyp_constr "t/245"
+          []
+        core_type (ast/location_error.mli[7,130+19]..ast/location_error.mli[7,130+25])
+          Ttyp_constr "string/17!"
+          []
+      []
+  signature_item (ast/location_error.mli[8,156+0]..ast/location_error.mli[8,156+34])
+    Tsig_value
+    value_description set_message/385 (ast/location_error.mli[8,156+0]..ast/location_error.mli[8,156+34])
+      core_type (ast/location_error.mli[8,156+18]..ast/location_error.mli[8,156+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[8,156+18]..ast/location_error.mli[8,156+19])
+          Ttyp_constr "t/245"
+          []
+        core_type (ast/location_error.mli[8,156+23]..ast/location_error.mli[8,156+34])
+          Ttyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[8,156+23]..ast/location_error.mli[8,156+29])
+            Ttyp_constr "string/17!"
+            []
+          core_type (ast/location_error.mli[8,156+33]..ast/location_error.mli[8,156+34])
+            Ttyp_constr "t/245"
+            []
+      []
+  signature_item (ast/location_error.mli[9,191+0]..ast/location_error.mli[9,191+74])
+    Tsig_value
+    value_description make/390 (ast/location_error.mli[9,191+0]..ast/location_error.mli[9,191+74])
+      core_type (ast/location_error.mli[9,191+11]..ast/location_error.mli[9,191+74])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (ast/location_error.mli[9,191+15]..ast/location_error.mli[9,191+25])
+          Ttyp_constr "Ppxlib_ast__!.Import.Location.t"
+          []
+        core_type (ast/location_error.mli[9,191+29]..ast/location_error.mli[9,191+74])
+          Ttyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[9,191+29]..ast/location_error.mli[9,191+35])
+            Ttyp_constr "string/17!"
+            []
+          core_type (ast/location_error.mli[9,191+39]..ast/location_error.mli[9,191+74])
+            Ttyp_arrow
+            Labelled "sub"
+            core_type (ast/location_error.mli[9,191+43]..ast/location_error.mli[9,191+69])
+              Ttyp_constr "list/11!"
+              [
+                core_type (ast/location_error.mli[9,191+44]..ast/location_error.mli[9,191+63])
+                  Ttyp_tuple
+                  [
+                    core_type (ast/location_error.mli[9,191+44]..ast/location_error.mli[9,191+54])
+                      Ttyp_constr "Ppxlib_ast__!.Import.Location.t"
+                      []
+                    core_type (ast/location_error.mli[9,191+57]..ast/location_error.mli[9,191+63])
+                      Ttyp_constr "string/17!"
+                      []
+                  ]
+              ]
+            core_type (ast/location_error.mli[9,191+73]..ast/location_error.mli[9,191+74])
+              Ttyp_constr "t/245"
+              []
+      []
+  signature_item (ast/location_error.mli[10,266+0]..ast/location_error.mli[10,266+50])
+    Tsig_value
+    value_description to_extension/783 (ast/location_error.mli[10,266+0]..ast/location_error.mli[10,266+50])
+      core_type (ast/location_error.mli[10,266+19]..ast/location_error.mli[10,266+50])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[10,266+19]..ast/location_error.mli[10,266+20])
+          Ttyp_constr "t/245"
+          []
+        core_type (ast/location_error.mli[10,266+24]..ast/location_error.mli[10,266+50])
+          Ttyp_constr "Ppxlib_ast__!.Import.Parsetree.extension"
+          []
+      []
+  signature_item (ast/location_error.mli[11,317+0]..ast/location_error.mli[11,317+19])
+    Tsig_value
+    value_description raise/784 (ast/location_error.mli[11,317+0]..ast/location_error.mli[11,317+19])
+      core_type (ast/location_error.mli[11,317+12]..ast/location_error.mli[11,317+19])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[11,317+12]..ast/location_error.mli[11,317+13])
+          Ttyp_constr "t/245"
+          []
+        core_type (ast/location_error.mli[11,317+17]..ast/location_error.mli[11,317+19])
+          Ttyp_var a
+      []
+  signature_item (ast/location_error.mli[12,337+0]..ast/location_error.mli[12,337+37])
+    Tsig_value
+    value_description update_loc/785 (ast/location_error.mli[12,337+0]..ast/location_error.mli[12,337+37])
+      core_type (ast/location_error.mli[12,337+17]..ast/location_error.mli[12,337+37])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[12,337+17]..ast/location_error.mli[12,337+18])
+          Ttyp_constr "t/245"
+          []
+        core_type (ast/location_error.mli[12,337+22]..ast/location_error.mli[12,337+37])
+          Ttyp_arrow
+          Nolabel
+          core_type (ast/location_error.mli[12,337+22]..ast/location_error.mli[12,337+32])
+            Ttyp_constr "Ppxlib_ast__!.Import.Location.t"
+            []
+          core_type (ast/location_error.mli[12,337+36]..ast/location_error.mli[12,337+37])
+            Ttyp_constr "t/245"
+            []
+      []
+  signature_item (ast/location_error.mli[13,375+0]..ast/location_error.mli[13,375+34])
+    Tsig_value
+    value_description get_location/786 (ast/location_error.mli[13,375+0]..ast/location_error.mli[13,375+34])
+      core_type (ast/location_error.mli[13,375+19]..ast/location_error.mli[13,375+34])
+        Ttyp_arrow
+        Nolabel
+        core_type (ast/location_error.mli[13,375+19]..ast/location_error.mli[13,375+20])
+          Ttyp_constr "t/245"
+          []
+        core_type (ast/location_error.mli[13,375+24]..ast/location_error.mli[13,375+34])
+          Ttyp_constr "Ppxlib_ast__!.Import.Location.t"
+          []
+      []
+]
+

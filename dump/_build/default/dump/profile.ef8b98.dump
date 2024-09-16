@@ -1,0 +1,3 @@
+0.003s 2.75MB 1.43MB 1.43MB test/deriving_warning/disable/ppx_warning_flags_test.pp.mli
+  0.002s 2.75MB 1.43MB 1.43MB other
+0.004s ------ ------ ------ other

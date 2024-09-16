@@ -1,0 +1,11 @@
+0.007s 6.72MB 2.30MB 2.30MB astlib/pp/pp.ml
+  0.001s 2.93MB 1.59MB 1.59MB parsing
+    0.001s 2.93MB 1.59MB 1.59MB parser
+  0.002s 2.22MB 0.65MB 2.24MB typing
+  0.003s 0.17MB ------ ------ generate
+    ------ 0.17MB ------ ------ compile_phrases
+      ------ 0.17MB ------ ------ cse
+    0.002s ------ ------ ------ assemble
+    0.001s ------ ------ ------ other
+  0.001s 1.39MB 0.06MB 2.30MB other
+0.004s ------ ------ ------ other

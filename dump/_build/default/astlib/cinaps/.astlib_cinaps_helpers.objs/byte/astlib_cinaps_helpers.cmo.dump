@@ -1,0 +1,1846 @@
+[
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[3,22+0]..[3,22+14])
+    Pstr_open Fresh
+    module_expr (astlib/cinaps/astlib_cinaps_helpers.ml[3,22+5]..[3,22+14])
+      Pmod_ident "StdLabels" (astlib/cinaps/astlib_cinaps_helpers.ml[3,22+5]..[3,22+14])
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[4,37+0]..[4,37+11])
+    Pstr_open Fresh
+    module_expr (astlib/cinaps/astlib_cinaps_helpers.ml[4,37+5]..[4,37+11])
+      Pmod_ident "Printf" (astlib/cinaps/astlib_cinaps_helpers.ml[4,37+5]..[4,37+11])
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+0]..[6,50+23])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+4]..[6,50+6])
+          Ppat_var "nl" (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+4]..[6,50+6])
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+7]..[6,50+23]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+7]..[6,50+9])
+            Ppat_construct "()" (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+7]..[6,50+9])
+            None
+          expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+12]..[6,50+23])
+            Pexp_apply
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+12]..[6,50+18])
+              Pexp_ident "printf" (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+12]..[6,50+18])
+            [
+              <arg>
+              Nolabel
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+19]..[6,50+23])
+                  Pexp_constant PConst_string("\n",(astlib/cinaps/astlib_cinaps_helpers.ml[6,50+20]..[6,50+22]),None)
+            ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[8,75+0]..[25,419+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[8,75+4]..[8,75+22])
+          Ppat_var "supported_versions" (astlib/cinaps/astlib_cinaps_helpers.ml[8,75+4]..[8,75+22])
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[9,100+2]..[25,419+3])
+          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+4]..[25,419+3]) ghost
+          Some
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+4]..[25,419+3]) ghost
+              Pexp_tuple
+              [
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+4]..[10,104+19])
+                  Pexp_tuple
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+5]..[10,104+10])
+                      Pexp_constant PConst_string("402",(astlib/cinaps/astlib_cinaps_helpers.ml[10,104+6]..[10,104+9]),None)
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+12]..[10,104+18])
+                      Pexp_constant PConst_string("4.02",(astlib/cinaps/astlib_cinaps_helpers.ml[10,104+13]..[10,104+17]),None)
+                  ]
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+4]..[25,419+3]) ghost
+                  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+4]..[25,419+3]) ghost
+                  Some
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+4]..[25,419+3]) ghost
+                      Pexp_tuple
+                      [
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+4]..[11,125+19])
+                          Pexp_tuple
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+5]..[11,125+10])
+                              Pexp_constant PConst_string("403",(astlib/cinaps/astlib_cinaps_helpers.ml[11,125+6]..[11,125+9]),None)
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+12]..[11,125+18])
+                              Pexp_constant PConst_string("4.03",(astlib/cinaps/astlib_cinaps_helpers.ml[11,125+13]..[11,125+17]),None)
+                          ]
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+4]..[25,419+3]) ghost
+                          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+4]..[25,419+3]) ghost
+                          Some
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+4]..[25,419+3]) ghost
+                              Pexp_tuple
+                              [
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+4]..[12,146+19])
+                                  Pexp_tuple
+                                  [
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+5]..[12,146+10])
+                                      Pexp_constant PConst_string("404",(astlib/cinaps/astlib_cinaps_helpers.ml[12,146+6]..[12,146+9]),None)
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+12]..[12,146+18])
+                                      Pexp_constant PConst_string("4.04",(astlib/cinaps/astlib_cinaps_helpers.ml[12,146+13]..[12,146+17]),None)
+                                  ]
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+4]..[25,419+3]) ghost
+                                  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+4]..[25,419+3]) ghost
+                                  Some
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+4]..[25,419+3]) ghost
+                                      Pexp_tuple
+                                      [
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+4]..[13,167+19])
+                                          Pexp_tuple
+                                          [
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+5]..[13,167+10])
+                                              Pexp_constant PConst_string("405",(astlib/cinaps/astlib_cinaps_helpers.ml[13,167+6]..[13,167+9]),None)
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+12]..[13,167+18])
+                                              Pexp_constant PConst_string("4.05",(astlib/cinaps/astlib_cinaps_helpers.ml[13,167+13]..[13,167+17]),None)
+                                          ]
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+4]..[25,419+3]) ghost
+                                          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+4]..[25,419+3]) ghost
+                                          Some
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+4]..[25,419+3]) ghost
+                                              Pexp_tuple
+                                              [
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+4]..[14,188+19])
+                                                  Pexp_tuple
+                                                  [
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+5]..[14,188+10])
+                                                      Pexp_constant PConst_string("406",(astlib/cinaps/astlib_cinaps_helpers.ml[14,188+6]..[14,188+9]),None)
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+12]..[14,188+18])
+                                                      Pexp_constant PConst_string("4.06",(astlib/cinaps/astlib_cinaps_helpers.ml[14,188+13]..[14,188+17]),None)
+                                                  ]
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+4]..[25,419+3]) ghost
+                                                  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+4]..[25,419+3]) ghost
+                                                  Some
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+4]..[25,419+3]) ghost
+                                                      Pexp_tuple
+                                                      [
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+4]..[15,209+19])
+                                                          Pexp_tuple
+                                                          [
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+5]..[15,209+10])
+                                                              Pexp_constant PConst_string("407",(astlib/cinaps/astlib_cinaps_helpers.ml[15,209+6]..[15,209+9]),None)
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+12]..[15,209+18])
+                                                              Pexp_constant PConst_string("4.07",(astlib/cinaps/astlib_cinaps_helpers.ml[15,209+13]..[15,209+17]),None)
+                                                          ]
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+4]..[25,419+3]) ghost
+                                                          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+4]..[25,419+3]) ghost
+                                                          Some
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+4]..[25,419+3]) ghost
+                                                              Pexp_tuple
+                                                              [
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+4]..[16,230+19])
+                                                                  Pexp_tuple
+                                                                  [
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+5]..[16,230+10])
+                                                                      Pexp_constant PConst_string("408",(astlib/cinaps/astlib_cinaps_helpers.ml[16,230+6]..[16,230+9]),None)
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+12]..[16,230+18])
+                                                                      Pexp_constant PConst_string("4.08",(astlib/cinaps/astlib_cinaps_helpers.ml[16,230+13]..[16,230+17]),None)
+                                                                  ]
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+4]..[25,419+3]) ghost
+                                                                  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+4]..[25,419+3]) ghost
+                                                                  Some
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+4]..[25,419+3]) ghost
+                                                                      Pexp_tuple
+                                                                      [
+expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+4]..[17,251+19])
+  Pexp_tuple
+  [
+    expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+5]..[17,251+10])
+      Pexp_constant PConst_string("409",(astlib/cinaps/astlib_cinaps_helpers.ml[17,251+6]..[17,251+9]),None)
+    expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+12]..[17,251+18])
+      Pexp_constant PConst_string("4.09",(astlib/cinaps/astlib_cinaps_helpers.ml[17,251+13]..[17,251+17]),None)
+  ]
+expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+4]..[25,419+3]) ghost
+  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+4]..[25,419+3]) ghost
+  Some
+    expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+4]..[25,419+3]) ghost
+      Pexp_tuple
+      [
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+4]..[18,272+19])
+          Pexp_tuple
+          [
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+5]..[18,272+10])
+              Pexp_constant PConst_string("410",(astlib/cinaps/astlib_cinaps_helpers.ml[18,272+6]..[18,272+9]),None)
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+12]..[18,272+18])
+              Pexp_constant PConst_string("4.10",(astlib/cinaps/astlib_cinaps_helpers.ml[18,272+13]..[18,272+17]),None)
+          ]
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+4]..[25,419+3]) ghost
+          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+4]..[25,419+3]) ghost
+          Some
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+4]..[25,419+3]) ghost
+              Pexp_tuple
+              [
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+4]..[19,293+19])
+                  Pexp_tuple
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+5]..[19,293+10])
+                      Pexp_constant PConst_string("411",(astlib/cinaps/astlib_cinaps_helpers.ml[19,293+6]..[19,293+9]),None)
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+12]..[19,293+18])
+                      Pexp_constant PConst_string("4.11",(astlib/cinaps/astlib_cinaps_helpers.ml[19,293+13]..[19,293+17]),None)
+                  ]
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+4]..[25,419+3]) ghost
+                  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+4]..[25,419+3]) ghost
+                  Some
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+4]..[25,419+3]) ghost
+                      Pexp_tuple
+                      [
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+4]..[20,314+19])
+                          Pexp_tuple
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+5]..[20,314+10])
+                              Pexp_constant PConst_string("412",(astlib/cinaps/astlib_cinaps_helpers.ml[20,314+6]..[20,314+9]),None)
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+12]..[20,314+18])
+                              Pexp_constant PConst_string("4.12",(astlib/cinaps/astlib_cinaps_helpers.ml[20,314+13]..[20,314+17]),None)
+                          ]
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+4]..[25,419+3]) ghost
+                          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+4]..[25,419+3]) ghost
+                          Some
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+4]..[25,419+3]) ghost
+                              Pexp_tuple
+                              [
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+4]..[21,335+19])
+                                  Pexp_tuple
+                                  [
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+5]..[21,335+10])
+                                      Pexp_constant PConst_string("413",(astlib/cinaps/astlib_cinaps_helpers.ml[21,335+6]..[21,335+9]),None)
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+12]..[21,335+18])
+                                      Pexp_constant PConst_string("4.13",(astlib/cinaps/astlib_cinaps_helpers.ml[21,335+13]..[21,335+17]),None)
+                                  ]
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+4]..[25,419+3]) ghost
+                                  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+4]..[25,419+3]) ghost
+                                  Some
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+4]..[25,419+3]) ghost
+                                      Pexp_tuple
+                                      [
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+4]..[22,356+19])
+                                          Pexp_tuple
+                                          [
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+5]..[22,356+10])
+                                              Pexp_constant PConst_string("414",(astlib/cinaps/astlib_cinaps_helpers.ml[22,356+6]..[22,356+9]),None)
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+12]..[22,356+18])
+                                              Pexp_constant PConst_string("4.14",(astlib/cinaps/astlib_cinaps_helpers.ml[22,356+13]..[22,356+17]),None)
+                                          ]
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+4]..[25,419+3]) ghost
+                                          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+4]..[25,419+3]) ghost
+                                          Some
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+4]..[25,419+3]) ghost
+                                              Pexp_tuple
+                                              [
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+4]..[23,377+19])
+                                                  Pexp_tuple
+                                                  [
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+5]..[23,377+10])
+                                                      Pexp_constant PConst_string("500",(astlib/cinaps/astlib_cinaps_helpers.ml[23,377+6]..[23,377+9]),None)
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+12]..[23,377+18])
+                                                      Pexp_constant PConst_string("5.00",(astlib/cinaps/astlib_cinaps_helpers.ml[23,377+13]..[23,377+17]),None)
+                                                  ]
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+4]..[25,419+3]) ghost
+                                                  Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+4]..[25,419+3]) ghost
+                                                  Some
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+4]..[25,419+3]) ghost
+                                                      Pexp_tuple
+                                                      [
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+4]..[24,398+19])
+                                                          Pexp_tuple
+                                                          [
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+5]..[24,398+10])
+                                                              Pexp_constant PConst_string("501",(astlib/cinaps/astlib_cinaps_helpers.ml[24,398+6]..[24,398+9]),None)
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+12]..[24,398+18])
+                                                              Pexp_constant PConst_string("5.01",(astlib/cinaps/astlib_cinaps_helpers.ml[24,398+13]..[24,398+17]),None)
+                                                          ]
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[25,419+2]..[25,419+3]) ghost
+                                                          Pexp_construct "[]" (astlib/cinaps/astlib_cinaps_helpers.ml[25,419+2]..[25,419+3]) ghost
+                                                          None
+                                                      ]
+                                              ]
+                                      ]
+                              ]
+                      ]
+              ]
+      ]
+                                                                      ]
+                                                              ]
+                                                      ]
+                                              ]
+                                      ]
+                              ]
+                      ]
+              ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+0]..[29,457+77])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+4]..[27,424+19])
+          Ppat_var "foreach_version" (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+4]..[27,424+19])
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+20]..[29,457+77]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+20]..[27,424+21])
+            Ppat_var "f" (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+20]..[27,424+21])
+          expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+2]..[29,457+77])
+            Pexp_sequence
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+2]..[28,448+7])
+              Pexp_apply
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+2]..[28,448+4])
+                Pexp_ident "nl" (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+2]..[28,448+4])
+              [
+                <arg>
+                Nolabel
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+5]..[28,448+7])
+                    Pexp_construct "()" (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+5]..[28,448+7])
+                    None
+              ]
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+2]..[29,457+77])
+              Pexp_apply
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+2]..[29,457+11])
+                Pexp_ident "List.iter" (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+2]..[29,457+11])
+              [
+                <arg>
+                Nolabel
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+12]..[29,457+30])
+                    Pexp_ident "supported_versions" (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+12]..[29,457+30])
+                <arg>
+                Labelled "f"
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+34]..[29,457+77])
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+39]..[29,457+56])
+                      Ppat_tuple
+                      [
+                        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+40]..[29,457+46])
+                          Ppat_var "suffix" (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+40]..[29,457+46])
+                        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+48]..[29,457+55])
+                          Ppat_var "version" (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+48]..[29,457+55])
+                      ]
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+60]..[29,457+76])
+                      Pexp_apply
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+60]..[29,457+61])
+                        Pexp_ident "f" (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+60]..[29,457+61])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+62]..[29,457+68])
+                            Pexp_ident "suffix" (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+62]..[29,457+68])
+                        <arg>
+                        Nolabel
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+69]..[29,457+76])
+                            Pexp_ident "version" (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+69]..[29,457+76])
+                      ]
+              ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+0]..[39,700+24])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+4]..[31,536+24])
+          Ppat_var "foreach_version_pair" (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+4]..[31,536+24])
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+25]..[39,700+24]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+25]..[31,536+26])
+            Ppat_var "f" (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+25]..[31,536+26])
+          expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+2]..[39,700+24])
+            Pexp_sequence
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+2]..[32,565+7])
+              Pexp_apply
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+2]..[32,565+4])
+                Pexp_ident "nl" (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+2]..[32,565+4])
+              [
+                <arg>
+                Nolabel
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+5]..[32,565+7])
+                    Pexp_construct "()" (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+5]..[32,565+7])
+                    None
+              ]
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[33,574+2]..[39,700+24])
+              Pexp_let Rec
+              [
+                <def>
+                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[33,574+10]..[33,574+13])
+                    Ppat_var "aux" (astlib/cinaps/astlib_cinaps_helpers.ml[33,574+10]..[33,574+13])
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[33,574+16]..[37,672+22])
+                    Pexp_function
+                    [
+                      <case>
+                        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+6]..[34,599+37])
+                          Ppat_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+13]..[34,599+15])
+                          Some
+                            pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+6]..[34,599+37]) ghost
+                              Ppat_tuple
+                              [
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+6]..[34,599+12])
+                                  Ppat_tuple
+                                  [
+                                    pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+7]..[34,599+8])
+                                      Ppat_var "x" (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+7]..[34,599+8])
+                                    pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+10]..[34,599+11])
+                                      Ppat_any
+                                  ]
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+16]..[34,599+37])
+                                  Ppat_alias "tail" (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+32]..[34,599+36])
+                                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+17]..[34,599+28])
+                                    Ppat_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+24]..[34,599+26])
+                                    Some
+                                      pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+17]..[34,599+28]) ghost
+                                        Ppat_tuple
+                                        [
+                                          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+17]..[34,599+23])
+                                            Ppat_tuple
+                                            [
+                                              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+18]..[34,599+19])
+                                                Ppat_var "y" (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+18]..[34,599+19])
+                                              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+21]..[34,599+22])
+                                                Ppat_any
+                                            ]
+                                          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+27]..[34,599+28])
+                                            Ppat_any
+                                        ]
+                              ]
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+8]..[36,655+16])
+                          Pexp_sequence
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+8]..[35,640+13])
+                            Pexp_apply
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+8]..[35,640+9])
+                              Pexp_ident "f" (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+8]..[35,640+9])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+10]..[35,640+11])
+                                  Pexp_ident "x" (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+10]..[35,640+11])
+                              <arg>
+                              Nolabel
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+12]..[35,640+13])
+                                  Pexp_ident "y" (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+12]..[35,640+13])
+                            ]
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+8]..[36,655+16])
+                            Pexp_apply
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+8]..[36,655+11])
+                              Pexp_ident "aux" (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+8]..[36,655+11])
+                            [
+                              <arg>
+                              Nolabel
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+12]..[36,655+16])
+                                  Pexp_ident "tail" (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+12]..[36,655+16])
+                            ]
+                      <case>
+                        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+6]..[37,672+16])
+                          Ppat_or
+                          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+6]..[37,672+11])
+                            Ppat_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+8]..[37,672+11]) ghost
+                            Some
+                              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+8]..[37,672+11]) ghost
+                                Ppat_tuple
+                                [
+                                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+8]..[37,672+9])
+                                    Ppat_any
+                                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+10]..[37,672+11]) ghost
+                                    Ppat_construct "[]" (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+10]..[37,672+11]) ghost
+                                    None
+                                ]
+                          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+14]..[37,672+16])
+                            Ppat_construct "[]" (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+14]..[37,672+16])
+                            None
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+20]..[37,672+22])
+                          Pexp_construct "()" (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+20]..[37,672+22])
+                          None
+                    ]
+              ]
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+2]..[39,700+24])
+                Pexp_apply
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+2]..[39,700+5])
+                  Pexp_ident "aux" (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+2]..[39,700+5])
+                [
+                  <arg>
+                  Nolabel
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+6]..[39,700+24])
+                      Pexp_ident "supported_versions" (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+6]..[39,700+24])
+                ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[43,793+0]..[67,1311+3])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[43,793+4]..[43,793+19])
+          Ppat_var "qualified_types" (astlib/cinaps/astlib_cinaps_helpers.ml[43,793+4]..[43,793+19])
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[44,815+2]..[67,1311+3])
+          Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[45,819+4]..[67,1311+3]) ghost
+          Some
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[45,819+4]..[67,1311+3]) ghost
+              Pexp_tuple
+              [
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[45,819+4]..[66,1300+9])
+                  Pexp_tuple
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[45,819+6]..[45,819+17])
+                      Pexp_constant PConst_string("Parsetree",(astlib/cinaps/astlib_cinaps_helpers.ml[45,819+7]..[45,819+16]),None)
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[46,838+6]..[66,1300+7])
+                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[47,846+8]..[66,1300+7]) ghost
+                      Some
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[47,846+8]..[66,1300+7]) ghost
+                          Pexp_tuple
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[47,846+8]..[47,846+19])
+                              Pexp_constant PConst_string("structure",(astlib/cinaps/astlib_cinaps_helpers.ml[47,846+9]..[47,846+18]),None)
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[48,867+8]..[66,1300+7]) ghost
+                              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[48,867+8]..[66,1300+7]) ghost
+                              Some
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[48,867+8]..[66,1300+7]) ghost
+                                  Pexp_tuple
+                                  [
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[48,867+8]..[48,867+19])
+                                      Pexp_constant PConst_string("signature",(astlib/cinaps/astlib_cinaps_helpers.ml[48,867+9]..[48,867+18]),None)
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[49,888+8]..[66,1300+7]) ghost
+                                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[49,888+8]..[66,1300+7]) ghost
+                                      Some
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[49,888+8]..[66,1300+7]) ghost
+                                          Pexp_tuple
+                                          [
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[49,888+8]..[49,888+25])
+                                              Pexp_constant PConst_string("toplevel_phrase",(astlib/cinaps/astlib_cinaps_helpers.ml[49,888+9]..[49,888+24]),None)
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[50,915+8]..[66,1300+7]) ghost
+                                              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[50,915+8]..[66,1300+7]) ghost
+                                              Some
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[50,915+8]..[66,1300+7]) ghost
+                                                  Pexp_tuple
+                                                  [
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[50,915+8]..[50,915+19])
+                                                      Pexp_constant PConst_string("core_type",(astlib/cinaps/astlib_cinaps_helpers.ml[50,915+9]..[50,915+18]),None)
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[51,936+8]..[66,1300+7]) ghost
+                                                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[51,936+8]..[66,1300+7]) ghost
+                                                      Some
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[51,936+8]..[66,1300+7]) ghost
+                                                          Pexp_tuple
+                                                          [
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[51,936+8]..[51,936+20])
+                                                              Pexp_constant PConst_string("expression",(astlib/cinaps/astlib_cinaps_helpers.ml[51,936+9]..[51,936+19]),None)
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[52,958+8]..[66,1300+7]) ghost
+                                                              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[52,958+8]..[66,1300+7]) ghost
+                                                              Some
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[52,958+8]..[66,1300+7]) ghost
+                                                                  Pexp_tuple
+                                                                  [
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[52,958+8]..[52,958+17])
+                                                                      Pexp_constant PConst_string("pattern",(astlib/cinaps/astlib_cinaps_helpers.ml[52,958+9]..[52,958+16]),None)
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[53,977+8]..[66,1300+7]) ghost
+                                                                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[53,977+8]..[66,1300+7]) ghost
+                                                                      Some
+expression (astlib/cinaps/astlib_cinaps_helpers.ml[53,977+8]..[66,1300+7]) ghost
+  Pexp_tuple
+  [
+    expression (astlib/cinaps/astlib_cinaps_helpers.ml[53,977+8]..[53,977+14])
+      Pexp_constant PConst_string("case",(astlib/cinaps/astlib_cinaps_helpers.ml[53,977+9]..[53,977+13]),None)
+    expression (astlib/cinaps/astlib_cinaps_helpers.ml[54,993+8]..[66,1300+7]) ghost
+      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[54,993+8]..[66,1300+7]) ghost
+      Some
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[54,993+8]..[66,1300+7]) ghost
+          Pexp_tuple
+          [
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[54,993+8]..[54,993+26])
+              Pexp_constant PConst_string("type_declaration",(astlib/cinaps/astlib_cinaps_helpers.ml[54,993+9]..[54,993+25]),None)
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+8]..[66,1300+7]) ghost
+              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+8]..[66,1300+7]) ghost
+              Some
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+8]..[66,1300+7]) ghost
+                  Pexp_tuple
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+8]..[55,1021+24])
+                      Pexp_constant PConst_string("type_extension",(astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+9]..[55,1021+23]),None)
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+8]..[66,1300+7]) ghost
+                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+8]..[66,1300+7]) ghost
+                      Some
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+8]..[66,1300+7]) ghost
+                          Pexp_tuple
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+8]..[56,1047+31])
+                              Pexp_constant PConst_string("extension_constructor",(astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+9]..[56,1047+30]),None)
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+8]..[66,1300+7]) ghost
+                              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+8]..[66,1300+7]) ghost
+                              Some
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+8]..[66,1300+7]) ghost
+                                  Pexp_tuple
+                                  [
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+8]..[57,1080+20])
+                                      Pexp_constant PConst_string("class_expr",(astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+9]..[57,1080+19]),None)
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+8]..[66,1300+7]) ghost
+                                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+8]..[66,1300+7]) ghost
+                                      Some
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+8]..[66,1300+7]) ghost
+                                          Pexp_tuple
+                                          [
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+8]..[58,1102+21])
+                                              Pexp_constant PConst_string("class_field",(astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+9]..[58,1102+20]),None)
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+8]..[66,1300+7]) ghost
+                                              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+8]..[66,1300+7]) ghost
+                                              Some
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+8]..[66,1300+7]) ghost
+                                                  Pexp_tuple
+                                                  [
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+8]..[59,1125+20])
+                                                      Pexp_constant PConst_string("class_type",(astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+9]..[59,1125+19]),None)
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+8]..[66,1300+7]) ghost
+                                                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+8]..[66,1300+7]) ghost
+                                                      Some
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+8]..[66,1300+7]) ghost
+                                                          Pexp_tuple
+                                                          [
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+8]..[60,1147+25])
+                                                              Pexp_constant PConst_string("class_signature",(astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+9]..[60,1147+24]),None)
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+8]..[66,1300+7]) ghost
+                                                              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+8]..[66,1300+7]) ghost
+                                                              Some
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+8]..[66,1300+7]) ghost
+                                                                  Pexp_tuple
+                                                                  [
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+8]..[61,1174+26])
+                                                                      Pexp_constant PConst_string("class_type_field",(astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+9]..[61,1174+25]),None)
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+8]..[66,1300+7]) ghost
+                                                                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+8]..[66,1300+7]) ghost
+                                                                      Some
+expression (astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+8]..[66,1300+7]) ghost
+  Pexp_tuple
+  [
+    expression (astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+8]..[62,1202+21])
+      Pexp_constant PConst_string("module_expr",(astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+9]..[62,1202+20]),None)
+    expression (astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+8]..[66,1300+7]) ghost
+      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+8]..[66,1300+7]) ghost
+      Some
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+8]..[66,1300+7]) ghost
+          Pexp_tuple
+          [
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+8]..[63,1225+21])
+              Pexp_constant PConst_string("module_type",(astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+9]..[63,1225+20]),None)
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+8]..[66,1300+7]) ghost
+              Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+8]..[66,1300+7]) ghost
+              Some
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+8]..[66,1300+7]) ghost
+                  Pexp_tuple
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+8]..[64,1248+24])
+                      Pexp_constant PConst_string("signature_item",(astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+9]..[64,1248+23]),None)
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+8]..[66,1300+7]) ghost
+                      Pexp_construct "::" (astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+8]..[66,1300+7]) ghost
+                      Some
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+8]..[66,1300+7]) ghost
+                          Pexp_tuple
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+8]..[65,1274+24])
+                              Pexp_constant PConst_string("structure_item",(astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+9]..[65,1274+23]),None)
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+6]..[66,1300+7]) ghost
+                              Pexp_construct "[]" (astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+6]..[66,1300+7]) ghost
+                              None
+                          ]
+                  ]
+          ]
+  ]
+                                                                  ]
+                                                          ]
+                                                  ]
+                                          ]
+                                  ]
+                          ]
+                  ]
+          ]
+  ]
+                                                                  ]
+                                                          ]
+                                                  ]
+                                          ]
+                                  ]
+                          ]
+                  ]
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[67,1311+2]..[67,1311+3]) ghost
+                  Pexp_construct "[]" (astlib/cinaps/astlib_cinaps_helpers.ml[67,1311+2]..[67,1311+3]) ghost
+                  None
+              ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+0]..[71,1348+60])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+4]..[69,1316+18])
+          Ppat_var "foreach_module" (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+4]..[69,1316+18])
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+19]..[71,1348+60]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+19]..[69,1316+20])
+            Ppat_var "f" (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+19]..[69,1316+20])
+          expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+2]..[71,1348+60])
+            Pexp_sequence
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+2]..[70,1339+7])
+              Pexp_apply
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+2]..[70,1339+4])
+                Pexp_ident "nl" (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+2]..[70,1339+4])
+              [
+                <arg>
+                Nolabel
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+5]..[70,1339+7])
+                    Pexp_construct "()" (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+5]..[70,1339+7])
+                    None
+              ]
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+2]..[71,1348+60])
+              Pexp_apply
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+2]..[71,1348+11])
+                Pexp_ident "List.iter" (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+2]..[71,1348+11])
+              [
+                <arg>
+                Nolabel
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+12]..[71,1348+27])
+                    Pexp_ident "qualified_types" (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+12]..[71,1348+27])
+                <arg>
+                Labelled "f"
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+31]..[71,1348+60])
+                    Pexp_fun
+                    Nolabel
+                    None
+                    pattern (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+36]..[71,1348+46])
+                      Ppat_tuple
+                      [
+                        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+37]..[71,1348+38])
+                          Ppat_var "m" (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+37]..[71,1348+38])
+                        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+40]..[71,1348+45])
+                          Ppat_var "types" (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+40]..[71,1348+45])
+                      ]
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+50]..[71,1348+59])
+                      Pexp_apply
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+50]..[71,1348+51])
+                        Pexp_ident "f" (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+50]..[71,1348+51])
+                      [
+                        <arg>
+                        Nolabel
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+52]..[71,1348+53])
+                            Pexp_ident "m" (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+52]..[71,1348+53])
+                        <arg>
+                        Nolabel
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+54]..[71,1348+59])
+                            Pexp_ident "types" (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+54]..[71,1348+59])
+                      ]
+              ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+0]..[73,1410+65])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+4]..[73,1410+16])
+          Ppat_var "foreach_type" (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+4]..[73,1410+16])
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+17]..[73,1410+65]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+17]..[73,1410+18])
+            Ppat_var "f" (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+17]..[73,1410+18])
+          expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+21]..[73,1410+65])
+            Pexp_apply
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+21]..[73,1410+35])
+              Pexp_ident "foreach_module" (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+21]..[73,1410+35])
+            [
+              <arg>
+              Nolabel
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+36]..[73,1410+65])
+                  Pexp_fun
+                  Nolabel
+                  None
+                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+41]..[73,1410+42])
+                    Ppat_var "m" (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+41]..[73,1410+42])
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+46]..[73,1410+64])
+                    Pexp_apply
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+46]..[73,1410+55])
+                      Pexp_ident "List.iter" (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+46]..[73,1410+55])
+                    [
+                      <arg>
+                      Labelled "f"
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+59]..[73,1410+64])
+                          Pexp_apply
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+60]..[73,1410+61])
+                            Pexp_ident "f" (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+60]..[73,1410+61])
+                          [
+                            <arg>
+                            Nolabel
+                              expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+62]..[73,1410+63])
+                                Pexp_ident "m" (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+62]..[73,1410+63])
+                          ]
+                    ]
+            ]
+    ]
+]
+
+open StdLabels
+open Printf
+let nl () = printf "\n"
+let supported_versions =
+  [("402", "4.02");
+  ("403", "4.03");
+  ("404", "4.04");
+  ("405", "4.05");
+  ("406", "4.06");
+  ("407", "4.07");
+  ("408", "4.08");
+  ("409", "4.09");
+  ("410", "4.10");
+  ("411", "4.11");
+  ("412", "4.12");
+  ("413", "4.13");
+  ("414", "4.14");
+  ("500", "5.00");
+  ("501", "5.01")]
+let foreach_version f =
+  nl ();
+  List.iter supported_versions ~f:(fun (suffix, version) -> f suffix version)
+let foreach_version_pair f =
+  nl ();
+  (let rec aux =
+     function
+     | (x, _)::((y, _)::_ as tail) -> (f x y; aux tail)
+     | _::[] | [] -> () in
+   aux supported_versions)
+let qualified_types =
+  [("Parsetree",
+     ["structure";
+     "signature";
+     "toplevel_phrase";
+     "core_type";
+     "expression";
+     "pattern";
+     "case";
+     "type_declaration";
+     "type_extension";
+     "extension_constructor";
+     "class_expr";
+     "class_field";
+     "class_type";
+     "class_signature";
+     "class_type_field";
+     "module_expr";
+     "module_type";
+     "signature_item";
+     "structure_item"])]
+let foreach_module f =
+  nl (); List.iter qualified_types ~f:(fun (m, types) -> f m types)
+let foreach_type f = foreach_module (fun m -> List.iter ~f:(f m))
+[
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[3,22+0]..astlib/cinaps/astlib_cinaps_helpers.ml[3,22+14])
+    Tstr_open Fresh
+    module_expr (astlib/cinaps/astlib_cinaps_helpers.ml[3,22+5]..astlib/cinaps/astlib_cinaps_helpers.ml[3,22+14])
+      Tmod_ident "Stdlib!.StdLabels"
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[4,37+0]..astlib/cinaps/astlib_cinaps_helpers.ml[4,37+11])
+    Tstr_open Fresh
+    module_expr (astlib/cinaps/astlib_cinaps_helpers.ml[4,37+5]..astlib/cinaps/astlib_cinaps_helpers.ml[4,37+11])
+      Tmod_ident "Stdlib!.Printf"
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+0]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+4]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+6])
+          Tpat_var "nl/107"
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+7]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+7]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+9])
+                Tpat_construct "()"
+                []
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+12]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23])
+                Texp_apply
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+12]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+18])
+                  Texp_ident "Stdlib!.Printf.printf"
+                [
+                  <arg>
+                    Nolabel
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+19]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23])
+                      Texp_construct "CamlinternalFormatBasics.Format"
+                      [
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+19]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23]) ghost
+                          Texp_construct "CamlinternalFormatBasics.Char_literal"
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+19]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23]) ghost
+                              Texp_constant Const_char 0a
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+19]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23]) ghost
+                              Texp_construct "CamlinternalFormatBasics.End_of_format"
+                              []
+                          ]
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[6,50+19]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23]) ghost
+                          Texp_constant Const_string("\n",(astlib/cinaps/astlib_cinaps_helpers.ml[6,50+19]..astlib/cinaps/astlib_cinaps_helpers.ml[6,50+23]) ghost,None)
+                      ]
+                ]
+          ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[8,75+0]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[8,75+4]..astlib/cinaps/astlib_cinaps_helpers.ml[8,75+22])
+          Tpat_var "supported_versions/130"
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[9,100+2]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3])
+          Texp_construct "::"
+          [
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+4]..astlib/cinaps/astlib_cinaps_helpers.ml[10,104+19])
+              Texp_tuple
+              [
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+5]..astlib/cinaps/astlib_cinaps_helpers.ml[10,104+10])
+                  Texp_constant Const_string("402",(astlib/cinaps/astlib_cinaps_helpers.ml[10,104+6]..astlib/cinaps/astlib_cinaps_helpers.ml[10,104+9]),None)
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[10,104+12]..astlib/cinaps/astlib_cinaps_helpers.ml[10,104+18])
+                  Texp_constant Const_string("4.02",(astlib/cinaps/astlib_cinaps_helpers.ml[10,104+13]..astlib/cinaps/astlib_cinaps_helpers.ml[10,104+17]),None)
+              ]
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+              Texp_construct "::"
+              [
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+4]..astlib/cinaps/astlib_cinaps_helpers.ml[11,125+19])
+                  Texp_tuple
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+5]..astlib/cinaps/astlib_cinaps_helpers.ml[11,125+10])
+                      Texp_constant Const_string("403",(astlib/cinaps/astlib_cinaps_helpers.ml[11,125+6]..astlib/cinaps/astlib_cinaps_helpers.ml[11,125+9]),None)
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[11,125+12]..astlib/cinaps/astlib_cinaps_helpers.ml[11,125+18])
+                      Texp_constant Const_string("4.03",(astlib/cinaps/astlib_cinaps_helpers.ml[11,125+13]..astlib/cinaps/astlib_cinaps_helpers.ml[11,125+17]),None)
+                  ]
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                  Texp_construct "::"
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+4]..astlib/cinaps/astlib_cinaps_helpers.ml[12,146+19])
+                      Texp_tuple
+                      [
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+5]..astlib/cinaps/astlib_cinaps_helpers.ml[12,146+10])
+                          Texp_constant Const_string("404",(astlib/cinaps/astlib_cinaps_helpers.ml[12,146+6]..astlib/cinaps/astlib_cinaps_helpers.ml[12,146+9]),None)
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[12,146+12]..astlib/cinaps/astlib_cinaps_helpers.ml[12,146+18])
+                          Texp_constant Const_string("4.04",(astlib/cinaps/astlib_cinaps_helpers.ml[12,146+13]..astlib/cinaps/astlib_cinaps_helpers.ml[12,146+17]),None)
+                      ]
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                      Texp_construct "::"
+                      [
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+4]..astlib/cinaps/astlib_cinaps_helpers.ml[13,167+19])
+                          Texp_tuple
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+5]..astlib/cinaps/astlib_cinaps_helpers.ml[13,167+10])
+                              Texp_constant Const_string("405",(astlib/cinaps/astlib_cinaps_helpers.ml[13,167+6]..astlib/cinaps/astlib_cinaps_helpers.ml[13,167+9]),None)
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[13,167+12]..astlib/cinaps/astlib_cinaps_helpers.ml[13,167+18])
+                              Texp_constant Const_string("4.05",(astlib/cinaps/astlib_cinaps_helpers.ml[13,167+13]..astlib/cinaps/astlib_cinaps_helpers.ml[13,167+17]),None)
+                          ]
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                          Texp_construct "::"
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+4]..astlib/cinaps/astlib_cinaps_helpers.ml[14,188+19])
+                              Texp_tuple
+                              [
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+5]..astlib/cinaps/astlib_cinaps_helpers.ml[14,188+10])
+                                  Texp_constant Const_string("406",(astlib/cinaps/astlib_cinaps_helpers.ml[14,188+6]..astlib/cinaps/astlib_cinaps_helpers.ml[14,188+9]),None)
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[14,188+12]..astlib/cinaps/astlib_cinaps_helpers.ml[14,188+18])
+                                  Texp_constant Const_string("4.06",(astlib/cinaps/astlib_cinaps_helpers.ml[14,188+13]..astlib/cinaps/astlib_cinaps_helpers.ml[14,188+17]),None)
+                              ]
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                              Texp_construct "::"
+                              [
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+4]..astlib/cinaps/astlib_cinaps_helpers.ml[15,209+19])
+                                  Texp_tuple
+                                  [
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+5]..astlib/cinaps/astlib_cinaps_helpers.ml[15,209+10])
+                                      Texp_constant Const_string("407",(astlib/cinaps/astlib_cinaps_helpers.ml[15,209+6]..astlib/cinaps/astlib_cinaps_helpers.ml[15,209+9]),None)
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[15,209+12]..astlib/cinaps/astlib_cinaps_helpers.ml[15,209+18])
+                                      Texp_constant Const_string("4.07",(astlib/cinaps/astlib_cinaps_helpers.ml[15,209+13]..astlib/cinaps/astlib_cinaps_helpers.ml[15,209+17]),None)
+                                  ]
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                  Texp_construct "::"
+                                  [
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+4]..astlib/cinaps/astlib_cinaps_helpers.ml[16,230+19])
+                                      Texp_tuple
+                                      [
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+5]..astlib/cinaps/astlib_cinaps_helpers.ml[16,230+10])
+                                          Texp_constant Const_string("408",(astlib/cinaps/astlib_cinaps_helpers.ml[16,230+6]..astlib/cinaps/astlib_cinaps_helpers.ml[16,230+9]),None)
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[16,230+12]..astlib/cinaps/astlib_cinaps_helpers.ml[16,230+18])
+                                          Texp_constant Const_string("4.08",(astlib/cinaps/astlib_cinaps_helpers.ml[16,230+13]..astlib/cinaps/astlib_cinaps_helpers.ml[16,230+17]),None)
+                                      ]
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                      Texp_construct "::"
+                                      [
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+4]..astlib/cinaps/astlib_cinaps_helpers.ml[17,251+19])
+                                          Texp_tuple
+                                          [
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+5]..astlib/cinaps/astlib_cinaps_helpers.ml[17,251+10])
+                                              Texp_constant Const_string("409",(astlib/cinaps/astlib_cinaps_helpers.ml[17,251+6]..astlib/cinaps/astlib_cinaps_helpers.ml[17,251+9]),None)
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[17,251+12]..astlib/cinaps/astlib_cinaps_helpers.ml[17,251+18])
+                                              Texp_constant Const_string("4.09",(astlib/cinaps/astlib_cinaps_helpers.ml[17,251+13]..astlib/cinaps/astlib_cinaps_helpers.ml[17,251+17]),None)
+                                          ]
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                          Texp_construct "::"
+                                          [
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+4]..astlib/cinaps/astlib_cinaps_helpers.ml[18,272+19])
+                                              Texp_tuple
+                                              [
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+5]..astlib/cinaps/astlib_cinaps_helpers.ml[18,272+10])
+                                                  Texp_constant Const_string("410",(astlib/cinaps/astlib_cinaps_helpers.ml[18,272+6]..astlib/cinaps/astlib_cinaps_helpers.ml[18,272+9]),None)
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[18,272+12]..astlib/cinaps/astlib_cinaps_helpers.ml[18,272+18])
+                                                  Texp_constant Const_string("4.10",(astlib/cinaps/astlib_cinaps_helpers.ml[18,272+13]..astlib/cinaps/astlib_cinaps_helpers.ml[18,272+17]),None)
+                                              ]
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                              Texp_construct "::"
+                                              [
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+4]..astlib/cinaps/astlib_cinaps_helpers.ml[19,293+19])
+                                                  Texp_tuple
+                                                  [
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+5]..astlib/cinaps/astlib_cinaps_helpers.ml[19,293+10])
+                                                      Texp_constant Const_string("411",(astlib/cinaps/astlib_cinaps_helpers.ml[19,293+6]..astlib/cinaps/astlib_cinaps_helpers.ml[19,293+9]),None)
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[19,293+12]..astlib/cinaps/astlib_cinaps_helpers.ml[19,293+18])
+                                                      Texp_constant Const_string("4.11",(astlib/cinaps/astlib_cinaps_helpers.ml[19,293+13]..astlib/cinaps/astlib_cinaps_helpers.ml[19,293+17]),None)
+                                                  ]
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                                  Texp_construct "::"
+                                                  [
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+4]..astlib/cinaps/astlib_cinaps_helpers.ml[20,314+19])
+                                                      Texp_tuple
+                                                      [
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+5]..astlib/cinaps/astlib_cinaps_helpers.ml[20,314+10])
+                                                          Texp_constant Const_string("412",(astlib/cinaps/astlib_cinaps_helpers.ml[20,314+6]..astlib/cinaps/astlib_cinaps_helpers.ml[20,314+9]),None)
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[20,314+12]..astlib/cinaps/astlib_cinaps_helpers.ml[20,314+18])
+                                                          Texp_constant Const_string("4.12",(astlib/cinaps/astlib_cinaps_helpers.ml[20,314+13]..astlib/cinaps/astlib_cinaps_helpers.ml[20,314+17]),None)
+                                                      ]
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                                      Texp_construct "::"
+                                                      [
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+4]..astlib/cinaps/astlib_cinaps_helpers.ml[21,335+19])
+                                                          Texp_tuple
+                                                          [
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+5]..astlib/cinaps/astlib_cinaps_helpers.ml[21,335+10])
+                                                              Texp_constant Const_string("413",(astlib/cinaps/astlib_cinaps_helpers.ml[21,335+6]..astlib/cinaps/astlib_cinaps_helpers.ml[21,335+9]),None)
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[21,335+12]..astlib/cinaps/astlib_cinaps_helpers.ml[21,335+18])
+                                                              Texp_constant Const_string("4.13",(astlib/cinaps/astlib_cinaps_helpers.ml[21,335+13]..astlib/cinaps/astlib_cinaps_helpers.ml[21,335+17]),None)
+                                                          ]
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                                          Texp_construct "::"
+                                                          [
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+4]..astlib/cinaps/astlib_cinaps_helpers.ml[22,356+19])
+                                                              Texp_tuple
+                                                              [
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+5]..astlib/cinaps/astlib_cinaps_helpers.ml[22,356+10])
+                                                                  Texp_constant Const_string("414",(astlib/cinaps/astlib_cinaps_helpers.ml[22,356+6]..astlib/cinaps/astlib_cinaps_helpers.ml[22,356+9]),None)
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[22,356+12]..astlib/cinaps/astlib_cinaps_helpers.ml[22,356+18])
+                                                                  Texp_constant Const_string("4.14",(astlib/cinaps/astlib_cinaps_helpers.ml[22,356+13]..astlib/cinaps/astlib_cinaps_helpers.ml[22,356+17]),None)
+                                                              ]
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                                              Texp_construct "::"
+                                                              [
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+4]..astlib/cinaps/astlib_cinaps_helpers.ml[23,377+19])
+                                                                  Texp_tuple
+                                                                  [
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+5]..astlib/cinaps/astlib_cinaps_helpers.ml[23,377+10])
+                                                                      Texp_constant Const_string("500",(astlib/cinaps/astlib_cinaps_helpers.ml[23,377+6]..astlib/cinaps/astlib_cinaps_helpers.ml[23,377+9]),None)
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[23,377+12]..astlib/cinaps/astlib_cinaps_helpers.ml[23,377+18])
+                                                                      Texp_constant Const_string("5.00",(astlib/cinaps/astlib_cinaps_helpers.ml[23,377+13]..astlib/cinaps/astlib_cinaps_helpers.ml[23,377+17]),None)
+                                                                  ]
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+4]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                                                  Texp_construct "::"
+                                                                  [
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+4]..astlib/cinaps/astlib_cinaps_helpers.ml[24,398+19])
+                                                                      Texp_tuple
+                                                                      [
+                                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+5]..astlib/cinaps/astlib_cinaps_helpers.ml[24,398+10])
+                                                                          Texp_constant Const_string("501",(astlib/cinaps/astlib_cinaps_helpers.ml[24,398+6]..astlib/cinaps/astlib_cinaps_helpers.ml[24,398+9]),None)
+                                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[24,398+12]..astlib/cinaps/astlib_cinaps_helpers.ml[24,398+18])
+                                                                          Texp_constant Const_string("5.01",(astlib/cinaps/astlib_cinaps_helpers.ml[24,398+13]..astlib/cinaps/astlib_cinaps_helpers.ml[24,398+17]),None)
+                                                                      ]
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[25,419+2]..astlib/cinaps/astlib_cinaps_helpers.ml[25,419+3]) ghost
+                                                                      Texp_construct "[]"
+                                                                      []
+                                                                  ]
+                                                              ]
+                                                          ]
+                                                      ]
+                                                  ]
+                                              ]
+                                          ]
+                                      ]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+          ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+0]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+77])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+4]..astlib/cinaps/astlib_cinaps_helpers.ml[27,424+19])
+          Tpat_var "foreach_version/131"
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+20]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+77]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[27,424+20]..astlib/cinaps/astlib_cinaps_helpers.ml[27,424+21])
+                Tpat_var "f/133"
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+2]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+77])
+                Texp_sequence
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+2]..astlib/cinaps/astlib_cinaps_helpers.ml[28,448+7])
+                  Texp_apply
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+2]..astlib/cinaps/astlib_cinaps_helpers.ml[28,448+4])
+                    Texp_ident "nl/107"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[28,448+5]..astlib/cinaps/astlib_cinaps_helpers.ml[28,448+7])
+                        Texp_construct "()"
+                        []
+                  ]
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+2]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+77])
+                  Texp_apply
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+2]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+11])
+                    Texp_ident "Stdlib!.StdLabels.List.iter"
+                  [
+                    <arg>
+                      Labelled "f"
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+34]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+77])
+                        Texp_function
+                        Nolabel
+                        [
+                          <case>
+                            pattern (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+39]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+56])
+                              Tpat_tuple
+                              [
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+40]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+46])
+                                  Tpat_var "suffix/198"
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+48]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+55])
+                                  Tpat_var "version/199"
+                              ]
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+60]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+76])
+                              Texp_apply
+                              expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+60]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+61])
+                                Texp_ident "f/133"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+62]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+68])
+                                    Texp_ident "suffix/198"
+                                <arg>
+                                  Nolabel
+                                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+69]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+76])
+                                    Texp_ident "version/199"
+                              ]
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[29,457+12]..astlib/cinaps/astlib_cinaps_helpers.ml[29,457+30])
+                        Texp_ident "supported_versions/130"
+                  ]
+          ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+0]..astlib/cinaps/astlib_cinaps_helpers.ml[39,700+24])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+4]..astlib/cinaps/astlib_cinaps_helpers.ml[31,536+24])
+          Tpat_var "foreach_version_pair/201"
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+25]..astlib/cinaps/astlib_cinaps_helpers.ml[39,700+24]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[31,536+25]..astlib/cinaps/astlib_cinaps_helpers.ml[31,536+26])
+                Tpat_var "f/203"
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+2]..astlib/cinaps/astlib_cinaps_helpers.ml[39,700+24])
+                Texp_sequence
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+2]..astlib/cinaps/astlib_cinaps_helpers.ml[32,565+7])
+                  Texp_apply
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+2]..astlib/cinaps/astlib_cinaps_helpers.ml[32,565+4])
+                    Texp_ident "nl/107"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[32,565+5]..astlib/cinaps/astlib_cinaps_helpers.ml[32,565+7])
+                        Texp_construct "()"
+                        []
+                  ]
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[33,574+2]..astlib/cinaps/astlib_cinaps_helpers.ml[39,700+24])
+                  Texp_let Rec
+                  [
+                    <def>
+                      pattern (astlib/cinaps/astlib_cinaps_helpers.ml[33,574+10]..astlib/cinaps/astlib_cinaps_helpers.ml[33,574+13])
+                        Tpat_var "aux/204"
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[33,574+16]..astlib/cinaps/astlib_cinaps_helpers.ml[37,672+22])
+                        Texp_function
+                        Nolabel
+                        [
+                          <case>
+                            pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+6]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+37])
+                              Tpat_construct "::"
+                              [
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+6]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+12])
+                                  Tpat_tuple
+                                  [
+                                    pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+7]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+8])
+                                      Tpat_var "x/205"
+                                    pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+10]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+11])
+                                      Tpat_any
+                                  ]
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+16]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+37])
+                                  Tpat_alias "tail/207"
+                                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+17]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+28])
+                                    Tpat_construct "::"
+                                    [
+                                      pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+17]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+23])
+                                        Tpat_tuple
+                                        [
+                                          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+18]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+19])
+                                            Tpat_var "y/206"
+                                          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+21]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+22])
+                                            Tpat_any
+                                        ]
+                                      pattern (astlib/cinaps/astlib_cinaps_helpers.ml[34,599+27]..astlib/cinaps/astlib_cinaps_helpers.ml[34,599+28])
+                                        Tpat_any
+                                    ]
+                              ]
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+8]..astlib/cinaps/astlib_cinaps_helpers.ml[36,655+16])
+                              Texp_sequence
+                              expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+8]..astlib/cinaps/astlib_cinaps_helpers.ml[35,640+13])
+                                Texp_apply
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+8]..astlib/cinaps/astlib_cinaps_helpers.ml[35,640+9])
+                                  Texp_ident "f/203"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+10]..astlib/cinaps/astlib_cinaps_helpers.ml[35,640+11])
+                                      Texp_ident "x/205"
+                                  <arg>
+                                    Nolabel
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[35,640+12]..astlib/cinaps/astlib_cinaps_helpers.ml[35,640+13])
+                                      Texp_ident "y/206"
+                                ]
+                              expression (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+8]..astlib/cinaps/astlib_cinaps_helpers.ml[36,655+16])
+                                Texp_apply
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+8]..astlib/cinaps/astlib_cinaps_helpers.ml[36,655+11])
+                                  Texp_ident "aux/204"
+                                [
+                                  <arg>
+                                    Nolabel
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[36,655+12]..astlib/cinaps/astlib_cinaps_helpers.ml[36,655+16])
+                                      Texp_ident "tail/207"
+                                ]
+                          <case>
+                            pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+6]..astlib/cinaps/astlib_cinaps_helpers.ml[37,672+16])
+                              Tpat_or
+                              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+6]..astlib/cinaps/astlib_cinaps_helpers.ml[37,672+11])
+                                Tpat_construct "::"
+                                [
+                                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+8]..astlib/cinaps/astlib_cinaps_helpers.ml[37,672+9])
+                                    Tpat_any
+                                  pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+10]..astlib/cinaps/astlib_cinaps_helpers.ml[37,672+11]) ghost
+                                    Tpat_construct "[]"
+                                    []
+                                ]
+                              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+14]..astlib/cinaps/astlib_cinaps_helpers.ml[37,672+16])
+                                Tpat_construct "[]"
+                                []
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[37,672+20]..astlib/cinaps/astlib_cinaps_helpers.ml[37,672+22])
+                              Texp_construct "()"
+                              []
+                        ]
+                  ]
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+2]..astlib/cinaps/astlib_cinaps_helpers.ml[39,700+24])
+                    Texp_apply
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+2]..astlib/cinaps/astlib_cinaps_helpers.ml[39,700+5])
+                      Texp_ident "aux/204"
+                    [
+                      <arg>
+                        Nolabel
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[39,700+6]..astlib/cinaps/astlib_cinaps_helpers.ml[39,700+24])
+                          Texp_ident "supported_versions/130"
+                    ]
+          ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[43,793+0]..astlib/cinaps/astlib_cinaps_helpers.ml[67,1311+3])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[43,793+4]..astlib/cinaps/astlib_cinaps_helpers.ml[43,793+19])
+          Tpat_var "qualified_types/209"
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[44,815+2]..astlib/cinaps/astlib_cinaps_helpers.ml[67,1311+3])
+          Texp_construct "::"
+          [
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[45,819+4]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+9])
+              Texp_tuple
+              [
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[45,819+6]..astlib/cinaps/astlib_cinaps_helpers.ml[45,819+17])
+                  Texp_constant Const_string("Parsetree",(astlib/cinaps/astlib_cinaps_helpers.ml[45,819+7]..astlib/cinaps/astlib_cinaps_helpers.ml[45,819+16]),None)
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[46,838+6]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7])
+                  Texp_construct "::"
+                  [
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[47,846+8]..astlib/cinaps/astlib_cinaps_helpers.ml[47,846+19])
+                      Texp_constant Const_string("structure",(astlib/cinaps/astlib_cinaps_helpers.ml[47,846+9]..astlib/cinaps/astlib_cinaps_helpers.ml[47,846+18]),None)
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[48,867+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                      Texp_construct "::"
+                      [
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[48,867+8]..astlib/cinaps/astlib_cinaps_helpers.ml[48,867+19])
+                          Texp_constant Const_string("signature",(astlib/cinaps/astlib_cinaps_helpers.ml[48,867+9]..astlib/cinaps/astlib_cinaps_helpers.ml[48,867+18]),None)
+                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[49,888+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                          Texp_construct "::"
+                          [
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[49,888+8]..astlib/cinaps/astlib_cinaps_helpers.ml[49,888+25])
+                              Texp_constant Const_string("toplevel_phrase",(astlib/cinaps/astlib_cinaps_helpers.ml[49,888+9]..astlib/cinaps/astlib_cinaps_helpers.ml[49,888+24]),None)
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[50,915+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                              Texp_construct "::"
+                              [
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[50,915+8]..astlib/cinaps/astlib_cinaps_helpers.ml[50,915+19])
+                                  Texp_constant Const_string("core_type",(astlib/cinaps/astlib_cinaps_helpers.ml[50,915+9]..astlib/cinaps/astlib_cinaps_helpers.ml[50,915+18]),None)
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[51,936+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                  Texp_construct "::"
+                                  [
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[51,936+8]..astlib/cinaps/astlib_cinaps_helpers.ml[51,936+20])
+                                      Texp_constant Const_string("expression",(astlib/cinaps/astlib_cinaps_helpers.ml[51,936+9]..astlib/cinaps/astlib_cinaps_helpers.ml[51,936+19]),None)
+                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[52,958+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                      Texp_construct "::"
+                                      [
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[52,958+8]..astlib/cinaps/astlib_cinaps_helpers.ml[52,958+17])
+                                          Texp_constant Const_string("pattern",(astlib/cinaps/astlib_cinaps_helpers.ml[52,958+9]..astlib/cinaps/astlib_cinaps_helpers.ml[52,958+16]),None)
+                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[53,977+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                          Texp_construct "::"
+                                          [
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[53,977+8]..astlib/cinaps/astlib_cinaps_helpers.ml[53,977+14])
+                                              Texp_constant Const_string("case",(astlib/cinaps/astlib_cinaps_helpers.ml[53,977+9]..astlib/cinaps/astlib_cinaps_helpers.ml[53,977+13]),None)
+                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[54,993+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                              Texp_construct "::"
+                                              [
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[54,993+8]..astlib/cinaps/astlib_cinaps_helpers.ml[54,993+26])
+                                                  Texp_constant Const_string("type_declaration",(astlib/cinaps/astlib_cinaps_helpers.ml[54,993+9]..astlib/cinaps/astlib_cinaps_helpers.ml[54,993+25]),None)
+                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                  Texp_construct "::"
+                                                  [
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+8]..astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+24])
+                                                      Texp_constant Const_string("type_extension",(astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+9]..astlib/cinaps/astlib_cinaps_helpers.ml[55,1021+23]),None)
+                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                      Texp_construct "::"
+                                                      [
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+8]..astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+31])
+                                                          Texp_constant Const_string("extension_constructor",(astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+9]..astlib/cinaps/astlib_cinaps_helpers.ml[56,1047+30]),None)
+                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                          Texp_construct "::"
+                                                          [
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+8]..astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+20])
+                                                              Texp_constant Const_string("class_expr",(astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+9]..astlib/cinaps/astlib_cinaps_helpers.ml[57,1080+19]),None)
+                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                              Texp_construct "::"
+                                                              [
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+8]..astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+21])
+                                                                  Texp_constant Const_string("class_field",(astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+9]..astlib/cinaps/astlib_cinaps_helpers.ml[58,1102+20]),None)
+                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                  Texp_construct "::"
+                                                                  [
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+8]..astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+20])
+                                                                      Texp_constant Const_string("class_type",(astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+9]..astlib/cinaps/astlib_cinaps_helpers.ml[59,1125+19]),None)
+                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                      Texp_construct "::"
+                                                                      [
+                                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+8]..astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+25])
+                                                                          Texp_constant Const_string("class_signature",(astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+9]..astlib/cinaps/astlib_cinaps_helpers.ml[60,1147+24]),None)
+                                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                          Texp_construct "::"
+                                                                          [
+                                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+8]..astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+26])
+                                                                              Texp_constant Const_string("class_type_field",(astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+9]..astlib/cinaps/astlib_cinaps_helpers.ml[61,1174+25]),None)
+                                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                              Texp_construct "::"
+                                                                              [
+                                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+8]..astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+21])
+                                                                                  Texp_constant Const_string("module_expr",(astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+9]..astlib/cinaps/astlib_cinaps_helpers.ml[62,1202+20]),None)
+                                                                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                                  Texp_construct "::"
+                                                                                  [
+                                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+8]..astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+21])
+                                                                                      Texp_constant Const_string("module_type",(astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+9]..astlib/cinaps/astlib_cinaps_helpers.ml[63,1225+20]),None)
+                                                                                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                                      Texp_construct "::"
+                                                                                      [
+                                                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+8]..astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+24])
+                                                                                          Texp_constant Const_string("signature_item",(astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+9]..astlib/cinaps/astlib_cinaps_helpers.ml[64,1248+23]),None)
+                                                                                        expression (astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+8]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                                          Texp_construct "::"
+                                                                                          [
+                                                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+8]..astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+24])
+                                                                                              Texp_constant Const_string("structure_item",(astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+9]..astlib/cinaps/astlib_cinaps_helpers.ml[65,1274+23]),None)
+                                                                                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+6]..astlib/cinaps/astlib_cinaps_helpers.ml[66,1300+7]) ghost
+                                                                                              Texp_construct "[]"
+                                                                                              []
+                                                                                          ]
+                                                                                      ]
+                                                                                  ]
+                                                                              ]
+                                                                          ]
+                                                                      ]
+                                                                  ]
+                                                              ]
+                                                          ]
+                                                      ]
+                                                  ]
+                                              ]
+                                          ]
+                                      ]
+                                  ]
+                              ]
+                          ]
+                      ]
+                  ]
+              ]
+            expression (astlib/cinaps/astlib_cinaps_helpers.ml[67,1311+2]..astlib/cinaps/astlib_cinaps_helpers.ml[67,1311+3]) ghost
+              Texp_construct "[]"
+              []
+          ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+0]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+60])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+4]..astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+18])
+          Tpat_var "foreach_module/210"
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+19]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+60]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+19]..astlib/cinaps/astlib_cinaps_helpers.ml[69,1316+20])
+                Tpat_var "f/212"
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+2]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+60])
+                Texp_sequence
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+2]..astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+7])
+                  Texp_apply
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+2]..astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+4])
+                    Texp_ident "nl/107"
+                  [
+                    <arg>
+                      Nolabel
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+5]..astlib/cinaps/astlib_cinaps_helpers.ml[70,1339+7])
+                        Texp_construct "()"
+                        []
+                  ]
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+2]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+60])
+                  Texp_apply
+                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+2]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+11])
+                    Texp_ident "Stdlib!.StdLabels.List.iter"
+                  [
+                    <arg>
+                      Labelled "f"
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+31]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+60])
+                        Texp_function
+                        Nolabel
+                        [
+                          <case>
+                            pattern (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+36]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+46])
+                              Tpat_tuple
+                              [
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+37]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+38])
+                                  Tpat_var "m/213"
+                                pattern (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+40]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+45])
+                                  Tpat_var "types/214"
+                              ]
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+50]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+59])
+                              Texp_apply
+                              expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+50]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+51])
+                                Texp_ident "f/212"
+                              [
+                                <arg>
+                                  Nolabel
+                                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+52]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+53])
+                                    Texp_ident "m/213"
+                                <arg>
+                                  Nolabel
+                                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+54]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+59])
+                                    Texp_ident "types/214"
+                              ]
+                        ]
+                    <arg>
+                      Nolabel
+                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+12]..astlib/cinaps/astlib_cinaps_helpers.ml[71,1348+27])
+                        Texp_ident "qualified_types/209"
+                  ]
+          ]
+    ]
+  structure_item (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+0]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+65])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+4]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+16])
+          Tpat_var "foreach_type/216"
+        expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+17]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+65]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+17]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+18])
+                Tpat_var "f/218"
+              expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+21]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+65])
+                Texp_apply
+                expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+21]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+35])
+                  Texp_ident "foreach_module/210"
+                [
+                  <arg>
+                    Nolabel
+                    expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+36]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+65])
+                      Texp_function
+                      Nolabel
+                      [
+                        <case>
+                          pattern (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+41]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+42])
+                            Tpat_var "m/219"
+                          expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+46]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+64])
+                            Texp_apply
+                            expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+46]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+55])
+                              Texp_ident "Stdlib!.StdLabels.List.iter"
+                            [
+                              <arg>
+                                Labelled "f"
+                                expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+59]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+64])
+                                  Texp_apply
+                                  expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+60]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+61])
+                                    Texp_ident "f/218"
+                                  [
+                                    <arg>
+                                      Nolabel
+                                      expression (astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+62]..astlib/cinaps/astlib_cinaps_helpers.ml[73,1410+63])
+                                        Texp_ident "m/219"
+                                  ]
+                            ]
+                      ]
+                ]
+          ]
+    ]
+]
+
+(setglobal Astlib_cinaps_helpers!
+  (let
+    (nl/107 =
+       (function param/129
+         (funct-body Astlib_cinaps_helpers.nl astlib/cinaps/astlib_cinaps_helpers.ml(6)<ghost>:57-73
+           (before Astlib_cinaps_helpers.nl astlib/cinaps/astlib_cinaps_helpers.ml(6):62-73
+             (after Astlib_cinaps_helpers.nl astlib/cinaps/astlib_cinaps_helpers.ml(6):62-73
+               (apply (field_imm 1 (global Stdlib__printf!))
+                 [0: [12: '\n' 0] "\n"])))))
+     supported_versions/130 =
+       [0:
+        [0: "402" "4.02"]
+        [0:
+         [0: "403" "4.03"]
+         [0:
+          [0: "404" "4.04"]
+          [0:
+           [0: "405" "4.05"]
+           [0:
+            [0: "406" "4.06"]
+            [0:
+             [0: "407" "4.07"]
+             [0:
+              [0: "408" "4.08"]
+              [0:
+               [0: "409" "4.09"]
+               [0:
+                [0: "410" "4.10"]
+                [0:
+                 [0: "411" "4.11"]
+                 [0:
+                  [0: "412" "4.12"]
+                  [0:
+                   [0: "413" "4.13"]
+                   [0:
+                    [0: "414" "4.14"]
+                    [0: [0: "500" "5.00"] [0: [0: "501" "5.01"] 0]]]]]]]]]]]]]]]
+     foreach_version/131 =
+       (function f/133
+         (funct-body Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(27)<ghost>:444-534
+           (before Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(28):450-534
+             (seq
+               (after Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(28):450-455
+                 (apply nl/107 0))
+               (before Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(29):459-534
+                 (after Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(29):459-534
+                   (apply (field_imm 16 (global Stdlib__listLabels!))
+                     (function param/200
+                       (funct-body Astlib_cinaps_helpers.foreach_version.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(29):491-534
+                         (let
+                           (version/199 =a (field_imm 1 param/200)
+                            suffix/198 =a (field_imm 0 param/200))
+                           (before Astlib_cinaps_helpers.foreach_version.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(29):517-533
+                             (after Astlib_cinaps_helpers.foreach_version.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(29):517-533
+                               (apply f/133 suffix/198 version/199))))))
+                     supported_versions/130)))))))
+     foreach_version_pair/201 =
+       (function f/203
+         (funct-body Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(31)<ghost>:561-724
+           (before Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(32):567-724
+             (seq
+               (after Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(32):567-572
+                 (apply nl/107 0))
+               (before Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(33):576-724
+                 (letrec
+                   (aux/204
+                      (function param/208
+                        (funct-body Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(33):590-694
+                          (catch
+                            (if param/208
+                              (let (tail/207 =a (field_imm 1 param/208))
+                                (if tail/207
+                                  (let
+                                    (*match*/305 =a (field_imm 1 tail/207)
+                                     *match*/303 =a (field_imm 0 tail/207)
+                                     *match*/304 =a (field_imm 1 *match*/303)
+                                     y/206 =a (field_imm 0 *match*/303)
+                                     *match*/301 =a (field_imm 0 param/208)
+                                     *match*/302 =a (field_imm 1 *match*/301)
+                                     x/205 =a (field_imm 0 *match*/301))
+                                    (before Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(35):648-671
+                                      (seq
+                                        (after Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(35):648-653
+                                          (apply f/203 x/205 y/206))
+                                        (before Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(36):663-671
+                                          (after Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(36):663-671
+                                            (apply aux/204 tail/207))))))
+                                  (exit 1)))
+                              (exit 1))
+                           with (1)
+                            (before Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(37):692-694
+                              0)))))
+                   (before Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(39):702-724
+                     (after Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(39):702-724
+                       (apply aux/204 supported_versions/130)))))))))
+     qualified_types/209 =
+       [0:
+        [0:
+         "Parsetree"
+         [0:
+          "structure"
+          [0:
+           "signature"
+           [0:
+            "toplevel_phrase"
+            [0:
+             "core_type"
+             [0:
+              "expression"
+              [0:
+               "pattern"
+               [0:
+                "case"
+                [0:
+                 "type_declaration"
+                 [0:
+                  "type_extension"
+                  [0:
+                   "extension_constructor"
+                   [0:
+                    "class_expr"
+                    [0:
+                     "class_field"
+                     [0:
+                      "class_type"
+                      [0:
+                       "class_signature"
+                       [0:
+                        "class_type_field"
+                        [0:
+                         "module_expr"
+                         [0:
+                          "module_type"
+                          [0: "signature_item" [0: "structure_item" 0]]]]]]]]]]]]]]]]]]]]
+        0]
+     foreach_module/210 =
+       (function f/212
+         (funct-body Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(69)<ghost>:1335-1408
+           (before Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(70):1341-1408
+             (seq
+               (after Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(70):1341-1346
+                 (apply nl/107 0))
+               (before Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(71):1350-1408
+                 (after Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(71):1350-1408
+                   (apply (field_imm 16 (global Stdlib__listLabels!))
+                     (function param/215
+                       (funct-body Astlib_cinaps_helpers.foreach_module.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(71):1379-1408
+                         (let
+                           (types/214 =a (field_imm 1 param/215)
+                            m/213 =a (field_imm 0 param/215))
+                           (before Astlib_cinaps_helpers.foreach_module.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(71):1398-1407
+                             (after Astlib_cinaps_helpers.foreach_module.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(71):1398-1407
+                               (apply f/212 m/213 types/214))))))
+                     qualified_types/209)))))))
+     foreach_type/216 =
+       (function f/218
+         (funct-body Astlib_cinaps_helpers.foreach_type astlib/cinaps/astlib_cinaps_helpers.ml(73)<ghost>:1427-1475
+           (before Astlib_cinaps_helpers.foreach_type astlib/cinaps/astlib_cinaps_helpers.ml(73):1431-1475
+             (after Astlib_cinaps_helpers.foreach_type astlib/cinaps/astlib_cinaps_helpers.ml(73):1431-1475
+               (apply foreach_module/210
+                 (function m/219
+                   (funct-body Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1446-1475
+                     (before Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1456-1474
+                       (after Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1456-1474
+                         (apply (field_imm 16 (global Stdlib__listLabels!))
+                           (after Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1469-1474
+                             (apply f/218 m/219)))))))))))))
+    (pseudo <unknown location>
+      (makeblock 0 nl/107 supported_versions/130 foreach_version/131
+        foreach_version_pair/201 qualified_types/209 foreach_module/210
+        foreach_type/216))))
+(setglobal Astlib_cinaps_helpers!
+  (let
+    (nl/107 =
+       (function param/129
+         (funct-body Astlib_cinaps_helpers.nl astlib/cinaps/astlib_cinaps_helpers.ml(6)<ghost>:57-73
+           (before Astlib_cinaps_helpers.nl astlib/cinaps/astlib_cinaps_helpers.ml(6):62-73
+             (after Astlib_cinaps_helpers.nl astlib/cinaps/astlib_cinaps_helpers.ml(6):62-73
+               (apply (field_imm 1 (global Stdlib__printf!))
+                 [0: [12: '\n' 0] "\n"])))))
+     supported_versions/130 =
+       [0:
+        [0: "402" "4.02"]
+        [0:
+         [0: "403" "4.03"]
+         [0:
+          [0: "404" "4.04"]
+          [0:
+           [0: "405" "4.05"]
+           [0:
+            [0: "406" "4.06"]
+            [0:
+             [0: "407" "4.07"]
+             [0:
+              [0: "408" "4.08"]
+              [0:
+               [0: "409" "4.09"]
+               [0:
+                [0: "410" "4.10"]
+                [0:
+                 [0: "411" "4.11"]
+                 [0:
+                  [0: "412" "4.12"]
+                  [0:
+                   [0: "413" "4.13"]
+                   [0:
+                    [0: "414" "4.14"]
+                    [0: [0: "500" "5.00"] [0: [0: "501" "5.01"] 0]]]]]]]]]]]]]]]
+     foreach_version/131 =
+       (function f/133
+         (funct-body Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(27)<ghost>:444-534
+           (before Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(28):450-534
+             (seq
+               (after Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(28):450-455
+                 (apply nl/107 0))
+               (before Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(29):459-534
+                 (after Astlib_cinaps_helpers.foreach_version astlib/cinaps/astlib_cinaps_helpers.ml(29):459-534
+                   (apply (field_imm 16 (global Stdlib__listLabels!))
+                     (function param/200
+                       (funct-body Astlib_cinaps_helpers.foreach_version.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(29):491-534
+                         (let
+                           (version/199 =a (field_imm 1 param/200)
+                            suffix/198 =a (field_imm 0 param/200))
+                           (before Astlib_cinaps_helpers.foreach_version.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(29):517-533
+                             (after Astlib_cinaps_helpers.foreach_version.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(29):517-533
+                               (apply f/133 suffix/198 version/199))))))
+                     supported_versions/130)))))))
+     foreach_version_pair/201 =
+       (function f/203
+         (funct-body Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(31)<ghost>:561-724
+           (before Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(32):567-724
+             (seq
+               (after Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(32):567-572
+                 (apply nl/107 0))
+               (before Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(33):576-724
+                 (letrec
+                   (aux/204
+                      (function param/208
+                        (funct-body Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(33):590-694
+                          (catch
+                            (if param/208
+                              (let (tail/207 =a (field_imm 1 param/208))
+                                (if tail/207
+                                  (let
+                                    (*match*/303 =a (field_imm 0 tail/207)
+                                     y/206 =a (field_imm 0 *match*/303)
+                                     *match*/301 =a (field_imm 0 param/208)
+                                     x/205 =a (field_imm 0 *match*/301))
+                                    (before Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(35):648-671
+                                      (seq
+                                        (after Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(35):648-653
+                                          (apply f/203 x/205 y/206))
+                                        (before Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(36):663-671
+                                          (after Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(36):663-671
+                                            (apply aux/204 tail/207))))))
+                                  (exit 1)))
+                              (exit 1))
+                           with (1)
+                            (before Astlib_cinaps_helpers.foreach_version_pair.aux astlib/cinaps/astlib_cinaps_helpers.ml(37):692-694
+                              0)))))
+                   (before Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(39):702-724
+                     (after Astlib_cinaps_helpers.foreach_version_pair astlib/cinaps/astlib_cinaps_helpers.ml(39):702-724
+                       (apply aux/204 supported_versions/130)))))))))
+     qualified_types/209 =
+       [0:
+        [0:
+         "Parsetree"
+         [0:
+          "structure"
+          [0:
+           "signature"
+           [0:
+            "toplevel_phrase"
+            [0:
+             "core_type"
+             [0:
+              "expression"
+              [0:
+               "pattern"
+               [0:
+                "case"
+                [0:
+                 "type_declaration"
+                 [0:
+                  "type_extension"
+                  [0:
+                   "extension_constructor"
+                   [0:
+                    "class_expr"
+                    [0:
+                     "class_field"
+                     [0:
+                      "class_type"
+                      [0:
+                       "class_signature"
+                       [0:
+                        "class_type_field"
+                        [0:
+                         "module_expr"
+                         [0:
+                          "module_type"
+                          [0: "signature_item" [0: "structure_item" 0]]]]]]]]]]]]]]]]]]]]
+        0]
+     foreach_module/210 =
+       (function f/212
+         (funct-body Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(69)<ghost>:1335-1408
+           (before Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(70):1341-1408
+             (seq
+               (after Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(70):1341-1346
+                 (apply nl/107 0))
+               (before Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(71):1350-1408
+                 (after Astlib_cinaps_helpers.foreach_module astlib/cinaps/astlib_cinaps_helpers.ml(71):1350-1408
+                   (apply (field_imm 16 (global Stdlib__listLabels!))
+                     (function param/215
+                       (funct-body Astlib_cinaps_helpers.foreach_module.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(71):1379-1408
+                         (let
+                           (types/214 =a (field_imm 1 param/215)
+                            m/213 =a (field_imm 0 param/215))
+                           (before Astlib_cinaps_helpers.foreach_module.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(71):1398-1407
+                             (after Astlib_cinaps_helpers.foreach_module.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(71):1398-1407
+                               (apply f/212 m/213 types/214))))))
+                     qualified_types/209)))))))
+     foreach_type/216 =
+       (function f/218
+         (funct-body Astlib_cinaps_helpers.foreach_type astlib/cinaps/astlib_cinaps_helpers.ml(73)<ghost>:1427-1475
+           (before Astlib_cinaps_helpers.foreach_type astlib/cinaps/astlib_cinaps_helpers.ml(73):1431-1475
+             (after Astlib_cinaps_helpers.foreach_type astlib/cinaps/astlib_cinaps_helpers.ml(73):1431-1475
+               (apply foreach_module/210
+                 (function m/219
+                   (funct-body Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1446-1475
+                     (before Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1456-1474
+                       (after Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1456-1474
+                         (apply (field_imm 16 (global Stdlib__listLabels!))
+                           (after Astlib_cinaps_helpers.foreach_type.(fun) astlib/cinaps/astlib_cinaps_helpers.ml(73):1469-1474
+                             (apply f/218 m/219)))))))))))))
+    (pseudo <unknown location>
+      (makeblock 0 nl/107 supported_versions/130 foreach_version/131
+        foreach_version_pair/201 qualified_types/209 foreach_module/210
+        foreach_type/216))))

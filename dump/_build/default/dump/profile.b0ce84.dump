@@ -1,0 +1,11 @@
+0.010s 10.7MB 2.71MB 2.71MB ast/supported_version/supported_version.ml
+  0.002s 2.93MB 1.59MB 1.59MB parsing
+    0.002s 2.93MB 1.59MB 1.59MB parser
+  0.003s 3.66MB 0.68MB 2.27MB typing
+  0.003s 2.00MB 0.25MB 2.52MB generate
+    ------ 2.00MB 0.25MB 2.52MB compile_phrases
+      ------ 2.00MB 0.25MB 2.52MB regalloc
+    0.002s ------ ------ ------ assemble
+    0.001s ------ ------ ------ other
+  0.001s 2.18MB 0.18MB 2.71MB other
+0.004s ------ ------ ------ other

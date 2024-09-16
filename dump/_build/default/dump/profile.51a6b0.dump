@@ -1,0 +1,17 @@
+0.039s 76.9MB 5.47MB 5.47MB traverse_builtins/ppxlib_traverse_builtins.ml
+  0.003s 4.92MB 1.87MB 1.87MB parsing
+    0.003s 4.92MB 1.87MB 1.87MB parser
+  0.012s 25.3MB 2.31MB 4.18MB typing
+  0.001s 2.04MB 0.09MB 4.27MB transl
+  0.015s 18.0MB 1.16MB 5.44MB generate
+    0.006s 12.7MB 0.87MB 5.15MB compile_phrases
+      ------ 0.13MB ------ ------ comballoc
+      ------ 2.00MB 0.15MB 4.43MB liveness
+      ------ 2.00MB 0.15MB 4.59MB split
+      0.002s 4.50MB 0.28MB 4.87MB regalloc
+      ------ 2.00MB 0.15MB 5.02MB emit
+      0.001s 2.14MB 0.12MB 5.15MB other
+    0.005s ------ ------ ------ assemble
+    0.004s 5.30MB 0.28MB 5.44MB other
+  0.009s 26.4MB 0.03MB 5.47MB other
+0.005s ------ ------ ------ other

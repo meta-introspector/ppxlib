@@ -1,0 +1,12 @@
+0.094s 34.3MB 9.62MB 11.3MB src/expansion_context.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ parser
+  0.077s 23.6MB 9.15MB 10.8MB typing
+  0.008s 6.14MB 0.28MB 11.1MB generate
+    0.002s 2.11MB 0.12MB 10.9MB compile_phrases
+      ------ 0.11MB ------ ------ spill
+      ------ 2.00MB 0.12MB 10.9MB regalloc
+    0.004s ------ ------ ------ assemble
+    0.002s 4.03MB 0.15MB 11.1MB other
+  0.008s 4.54MB 0.18MB 11.3MB other
+0.020s 3.04MB 1.69MB ------ other

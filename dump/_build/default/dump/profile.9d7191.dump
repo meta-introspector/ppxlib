@@ -1,0 +1,12 @@
+0.206s  104MB 27.3MB 29.1MB src/ignore_unused_warning.ml
+  0.183s 76.6MB 25.6MB 27.4MB typing
+  0.004s 4.28MB 0.28MB 27.6MB transl
+  0.010s 8.53MB 0.71MB 28.4MB generate
+    0.003s 4.40MB 0.43MB 28.1MB compile_phrases
+      0.001s 2.16MB 0.25MB 27.9MB spill
+      0.001s 0.24MB ------ ------ regalloc
+      ------ 2.00MB 0.18MB 28.1MB emit
+    0.004s ------ ------ ------ assemble
+    0.002s 4.12MB 0.28MB 28.4MB other
+  0.010s 14.7MB 0.72MB 29.1MB other
+0.011s 3.07MB 1.75MB ------ other

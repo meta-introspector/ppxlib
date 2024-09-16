@@ -1,0 +1,43 @@
+[
+  structure_item (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+0]..[1,0+36])
+    Pstr_eval
+    expression (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+0]..[1,0+36])
+      Pexp_apply
+      expression (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+0]..[1,0+33])
+        Pexp_ident "Ppxlib.Driver.run_as_ppx_rewriter" (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+0]..[1,0+33])
+      [
+        <arg>
+        Nolabel
+          expression (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+34]..[1,0+36])
+            Pexp_construct "()" (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+34]..[1,0+36])
+            None
+      ]
+]
+
+;;Ppxlib.Driver.run_as_ppx_rewriter ()
+[
+  structure_item (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+0]..runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+36])
+    Tstr_eval
+    expression (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+0]..runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+36])
+      Texp_apply
+      expression (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+0]..runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+33])
+        Texp_ident "Ppxlib!.Driver.run_as_ppx_rewriter"
+      [
+        <arg>
+          Nolabel
+          expression (runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+34]..runner_as_ppx/ppx_driver_runner_as_ppx.ml[1,0+36])
+            Texp_construct "()"
+            []
+      ]
+]
+
+(setglobal Ppxlib_runner_as_ppx__Ppx_driver_runner_as_ppx!
+  (seq
+    (after Ppxlib_runner_as_ppx__Ppx_driver_runner_as_ppx runner_as_ppx/ppx_driver_runner_as_ppx.ml(1):0-36
+      (apply (field_imm 12 (global Ppxlib__Driver!)) 0))
+    (pseudo <unknown location> (makeblock 0))))
+(setglobal Ppxlib_runner_as_ppx__Ppx_driver_runner_as_ppx!
+  (seq
+    (after Ppxlib_runner_as_ppx__Ppx_driver_runner_as_ppx runner_as_ppx/ppx_driver_runner_as_ppx.ml(1):0-36
+      (apply (field_imm 12 (global Ppxlib__Driver!)) 0))
+    (pseudo <unknown location> (makeblock 0))))

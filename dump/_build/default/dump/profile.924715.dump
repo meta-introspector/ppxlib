@@ -1,0 +1,6 @@
+0.006s 3.07MB 1.58MB 1.58MB test/driver/skip-hash-bang/test2.pp.ml
+  0.001s 0.14MB ------ ------ typing
+  0.003s ------ ------ ------ generate
+    0.002s ------ ------ ------ assemble
+  0.002s 2.92MB 1.58MB 1.58MB other
+0.005s ------ ------ ------ other

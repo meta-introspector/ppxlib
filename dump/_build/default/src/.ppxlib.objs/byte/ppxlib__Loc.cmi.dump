@@ -1,0 +1,269 @@
+[
+  signature_item (src/loc.mli[1,0+0]..[1,0+20])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/loc.mli[1,0+0]..[1,0+20])
+        Pstr_eval
+        expression (src/loc.mli[1,0+0]..[1,0+20])
+          Pexp_constant PConst_string(" Located items ",(src/loc.mli[1,0+0]..[1,0+20]),None)
+    ]
+  signature_item (src/loc.mli[3,22+0]..[3,22+12])
+    Psig_open Override "Import" (src/loc.mli[3,22+6]..[3,22+12])
+  signature_item (src/loc.mli[5,36+0]..[5,36+51])
+    Psig_type Rec
+    [
+      type_declaration "t" (src/loc.mli[5,36+8]..[5,36+9]) (src/loc.mli[5,36+0]..[5,36+51])
+        ptype_params =
+          [
+            core_type (src/loc.mli[5,36+5]..[5,36+7])
+              Ptyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (src/loc.mli[5,36+23]..[5,36+32])
+                Immutable
+                "txt" (src/loc.mli[5,36+23]..[5,36+26])                core_type (src/loc.mli[5,36+29]..[5,36+31])
+                  Ptyp_var a
+              (src/loc.mli[5,36+33]..[5,36+49])
+                Immutable
+                "loc" (src/loc.mli[5,36+33]..[5,36+36])                core_type (src/loc.mli[5,36+39]..[5,36+49])
+                  Ptyp_constr "Location.t" (src/loc.mli[5,36+39]..[5,36+49])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/loc.mli[5,36+12]..[5,36+18])
+              Ptyp_constr "loc" (src/loc.mli[5,36+15]..[5,36+18])
+              [
+                core_type (src/loc.mli[5,36+12]..[5,36+14])
+                  Ptyp_var a
+              ]
+    ]
+  signature_item (src/loc.mli[7,89+0]..[7,89+20])
+    Psig_value
+    value_description "txt" (src/loc.mli[7,89+4]..[7,89+7]) (src/loc.mli[7,89+0]..[7,89+20])
+      core_type (src/loc.mli[7,89+10]..[7,89+20])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/loc.mli[7,89+10]..[7,89+14])
+          Ptyp_constr "t" (src/loc.mli[7,89+13]..[7,89+14])
+          [
+            core_type (src/loc.mli[7,89+10]..[7,89+12])
+              Ptyp_var a
+          ]
+        core_type (src/loc.mli[7,89+18]..[7,89+20])
+          Ptyp_var a
+      []
+  signature_item (src/loc.mli[8,110+0]..[8,110+27])
+    Psig_value
+    value_description "loc" (src/loc.mli[8,110+4]..[8,110+7]) (src/loc.mli[8,110+0]..[8,110+27])
+      core_type (src/loc.mli[8,110+10]..[8,110+27])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/loc.mli[8,110+10]..[8,110+13])
+          Ptyp_constr "t" (src/loc.mli[8,110+12]..[8,110+13])
+          [
+            core_type (src/loc.mli[8,110+10]..[8,110+11])
+              Ptyp_any
+          ]
+        core_type (src/loc.mli[8,110+17]..[8,110+27])
+          Ptyp_constr "Location.t" (src/loc.mli[8,110+17]..[8,110+27])
+          []
+      []
+  signature_item (src/loc.mli[9,138+0]..[9,138+39])
+    Psig_value
+    value_description "make" (src/loc.mli[9,138+4]..[9,138+8]) (src/loc.mli[9,138+0]..[9,138+39])
+      core_type (src/loc.mli[9,138+11]..[9,138+39])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (src/loc.mli[9,138+15]..[9,138+25])
+          Ptyp_constr "Location.t" (src/loc.mli[9,138+15]..[9,138+25])
+          []
+        core_type (src/loc.mli[9,138+29]..[9,138+39])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/loc.mli[9,138+29]..[9,138+31])
+            Ptyp_var a
+          core_type (src/loc.mli[9,138+35]..[9,138+39])
+            Ptyp_constr "t" (src/loc.mli[9,138+38]..[9,138+39])
+            [
+              core_type (src/loc.mli[9,138+35]..[9,138+37])
+                Ptyp_var a
+            ]
+      []
+  signature_item (src/loc.mli[10,178+0]..[10,178+38])
+    Psig_value
+    value_description "map" (src/loc.mli[10,178+4]..[10,178+7]) (src/loc.mli[10,178+0]..[10,178+38])
+      core_type (src/loc.mli[10,178+10]..[10,178+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/loc.mli[10,178+10]..[10,178+14])
+          Ptyp_constr "t" (src/loc.mli[10,178+13]..[10,178+14])
+          [
+            core_type (src/loc.mli[10,178+10]..[10,178+12])
+              Ptyp_var a
+          ]
+        core_type (src/loc.mli[10,178+18]..[10,178+38])
+          Ptyp_arrow
+          Labelled "f"
+          core_type (src/loc.mli[10,178+21]..[10,178+29])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/loc.mli[10,178+21]..[10,178+23])
+              Ptyp_var a
+            core_type (src/loc.mli[10,178+27]..[10,178+29])
+              Ptyp_var b
+          core_type (src/loc.mli[10,178+34]..[10,178+38])
+            Ptyp_constr "t" (src/loc.mli[10,178+37]..[10,178+38])
+            [
+              core_type (src/loc.mli[10,178+34]..[10,178+36])
+                Ptyp_var b
+            ]
+      []
+]
+
+[@@@ocaml.text " Located items "]
+open! Import
+type 'a t = 'a loc = {
+  txt: 'a ;
+  loc: Location.t }
+val txt : 'a t -> 'a
+val loc : _ t -> Location.t
+val make : loc:Location.t -> 'a -> 'a t
+val map : 'a t -> f:('a -> 'b) -> 'b t
+[
+  signature_item (src/loc.mli[1,0+0]..src/loc.mli[1,0+20])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/loc.mli[1,0+0]..[1,0+20])
+        Pstr_eval
+        expression (src/loc.mli[1,0+0]..[1,0+20])
+          Pexp_constant PConst_string(" Located items ",(src/loc.mli[1,0+0]..[1,0+20]),None)
+    ]
+  signature_item (src/loc.mli[3,22+0]..src/loc.mli[3,22+12])
+    Tsig_open Override "Ppxlib__!.Import"
+  signature_item (src/loc.mli[5,36+0]..src/loc.mli[5,36+51])
+    Tsig_type Rec
+    [
+      type_declaration t/550 (src/loc.mli[5,36+0]..src/loc.mli[5,36+51])
+        ptype_params =
+          [
+            core_type (src/loc.mli[5,36+5]..src/loc.mli[5,36+7])
+              Ttyp_var a
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (src/loc.mli[5,36+23]..src/loc.mli[5,36+32])
+                Immutable
+                txt/551                core_type (src/loc.mli[5,36+29]..src/loc.mli[5,36+31])
+                  Ttyp_poly
+                  core_type (src/loc.mli[5,36+29]..src/loc.mli[5,36+31])
+                    Ttyp_var a
+              (src/loc.mli[5,36+33]..src/loc.mli[5,36+49])
+                Immutable
+                loc/584                core_type (src/loc.mli[5,36+39]..src/loc.mli[5,36+49])
+                  Ttyp_poly
+                  core_type (src/loc.mli[5,36+39]..src/loc.mli[5,36+49])
+                    Ttyp_constr "Ppxlib__!.Location.t"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          Some
+            core_type (src/loc.mli[5,36+12]..src/loc.mli[5,36+18])
+              Ttyp_constr "Ppxlib__!.Import.loc"
+              [
+                core_type (src/loc.mli[5,36+12]..src/loc.mli[5,36+14])
+                  Ttyp_var a
+              ]
+    ]
+  signature_item (src/loc.mli[7,89+0]..src/loc.mli[7,89+20])
+    Tsig_value
+    value_description txt/866 (src/loc.mli[7,89+0]..src/loc.mli[7,89+20])
+      core_type (src/loc.mli[7,89+10]..src/loc.mli[7,89+20])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/loc.mli[7,89+10]..src/loc.mli[7,89+14])
+          Ttyp_constr "t/550"
+          [
+            core_type (src/loc.mli[7,89+10]..src/loc.mli[7,89+12])
+              Ttyp_var a
+          ]
+        core_type (src/loc.mli[7,89+18]..src/loc.mli[7,89+20])
+          Ttyp_var a
+      []
+  signature_item (src/loc.mli[8,110+0]..src/loc.mli[8,110+27])
+    Tsig_value
+    value_description loc/867 (src/loc.mli[8,110+0]..src/loc.mli[8,110+27])
+      core_type (src/loc.mli[8,110+10]..src/loc.mli[8,110+27])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/loc.mli[8,110+10]..src/loc.mli[8,110+13])
+          Ttyp_constr "t/550"
+          [
+            core_type (src/loc.mli[8,110+10]..src/loc.mli[8,110+11])
+              Ttyp_any
+          ]
+        core_type (src/loc.mli[8,110+17]..src/loc.mli[8,110+27])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+      []
+  signature_item (src/loc.mli[9,138+0]..src/loc.mli[9,138+39])
+    Tsig_value
+    value_description make/868 (src/loc.mli[9,138+0]..src/loc.mli[9,138+39])
+      core_type (src/loc.mli[9,138+11]..src/loc.mli[9,138+39])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (src/loc.mli[9,138+15]..src/loc.mli[9,138+25])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+        core_type (src/loc.mli[9,138+29]..src/loc.mli[9,138+39])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/loc.mli[9,138+29]..src/loc.mli[9,138+31])
+            Ttyp_var a
+          core_type (src/loc.mli[9,138+35]..src/loc.mli[9,138+39])
+            Ttyp_constr "t/550"
+            [
+              core_type (src/loc.mli[9,138+35]..src/loc.mli[9,138+37])
+                Ttyp_var a
+            ]
+      []
+  signature_item (src/loc.mli[10,178+0]..src/loc.mli[10,178+38])
+    Tsig_value
+    value_description map/869 (src/loc.mli[10,178+0]..src/loc.mli[10,178+38])
+      core_type (src/loc.mli[10,178+10]..src/loc.mli[10,178+38])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/loc.mli[10,178+10]..src/loc.mli[10,178+14])
+          Ttyp_constr "t/550"
+          [
+            core_type (src/loc.mli[10,178+10]..src/loc.mli[10,178+12])
+              Ttyp_var a
+          ]
+        core_type (src/loc.mli[10,178+18]..src/loc.mli[10,178+38])
+          Ttyp_arrow
+          Labelled "f"
+          core_type (src/loc.mli[10,178+21]..src/loc.mli[10,178+29])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/loc.mli[10,178+21]..src/loc.mli[10,178+23])
+              Ttyp_var a
+            core_type (src/loc.mli[10,178+27]..src/loc.mli[10,178+29])
+              Ttyp_var b
+          core_type (src/loc.mli[10,178+34]..src/loc.mli[10,178+38])
+            Ttyp_constr "t/550"
+            [
+              core_type (src/loc.mli[10,178+34]..src/loc.mli[10,178+36])
+                Ttyp_var b
+            ]
+      []
+]
+

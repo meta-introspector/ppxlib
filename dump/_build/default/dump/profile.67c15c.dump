@@ -1,0 +1,6 @@
+0.117s 59.9MB 20.8MB 20.8MB src/context_free.mli
+  0.003s 2.90MB 1.57MB 1.57MB parsing
+    0.003s 2.90MB 1.57MB 1.57MB parser
+  0.107s 55.0MB 19.2MB 20.8MB typing
+  0.007s 2.03MB 0.06MB ------ other
+0.007s ------ ------ ------ other

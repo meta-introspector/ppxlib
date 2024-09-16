@@ -1,0 +1,12 @@
+0.012s 18.2MB 3.07MB 3.07MB astlib/pp/pp_rewrite.ml
+  0.002s 2.92MB 1.59MB 1.59MB parsing
+    0.002s 2.92MB 1.59MB 1.59MB parser
+  0.003s 5.66MB 0.86MB 2.45MB typing
+  0.005s 5.33MB 0.53MB 2.98MB generate
+    0.001s 2.16MB 0.25MB 2.70MB compile_phrases
+      ------ 0.16MB ------ ------ selection
+      ------ 2.00MB 0.25MB 2.70MB regalloc
+    0.002s ------ ------ ------ assemble
+    0.001s 3.16MB 0.28MB 2.98MB other
+  0.002s 4.28MB 0.09MB 3.07MB other
+0.004s ------ ------ ------ other

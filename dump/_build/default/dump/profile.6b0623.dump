@@ -1,0 +1,11 @@
+0.248s  104MB 31.7MB 33.4MB test/expansion_context/register_print_ctxt.ml
+  0.235s 93.1MB 31.0MB 32.7MB typing
+  0.001s 2.00MB 0.21MB 32.9MB transl
+  0.006s 4.41MB 0.25MB 33.2MB generate
+    0.002s 2.04MB 0.25MB 33.2MB compile_phrases
+      ------ 0.04MB ------ ------ selection
+      ------ 2.00MB 0.25MB 33.2MB cse
+    0.002s ------ ------ ------ assemble
+    0.002s 2.36MB ------ ------ other
+  0.005s 4.70MB 0.21MB 33.4MB other
+0.016s 3.02MB 1.72MB ------ other

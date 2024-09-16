@@ -1,0 +1,2743 @@
+[
+  signature_item (src/driver.mli[1,0+0]..[5,168+25])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/driver.mli[1,0+0]..[5,168+25])
+        Pstr_eval
+        expression (src/driver.mli[1,0+0]..[5,168+25])
+          Pexp_constant PConst_string(" Interaction with the driver, such as getting/seeting cookies, adding\n    arguments.\n\n    The relevant part in the manual is {{!driver.driver_execution} the section\n    on its execution}. ",(src/driver.mli[1,0+0]..[5,168+25]),None)
+    ]
+  signature_item (src/driver.mli[7,195+0]..[7,195+11])
+    Psig_open Fresh "Import" (src/driver.mli[7,195+5]..[7,195+11])
+  signature_item (src/driver.mli[9,208+0]..[9,208+69])
+    Psig_value
+    value_description "add_arg" (src/driver.mli[9,208+4]..[9,208+11]) (src/driver.mli[9,208+0]..[9,208+69])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[10,278+0]..[10,278+43])
+            Pstr_eval
+            expression (src/driver.mli[10,278+0]..[10,278+43])
+              Pexp_constant PConst_string(" Add one argument to the command line ",(src/driver.mli[10,278+0]..[10,278+43]),None)
+        ]
+      core_type (src/driver.mli[9,208+14]..[9,208+69])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[9,208+14]..[9,208+28])
+          Ptyp_constr "Stdlib.Arg.key" (src/driver.mli[9,208+14]..[9,208+28])
+          []
+        core_type (src/driver.mli[9,208+32]..[9,208+69])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/driver.mli[9,208+32]..[9,208+47])
+            Ptyp_constr "Stdlib.Arg.spec" (src/driver.mli[9,208+32]..[9,208+47])
+            []
+          core_type (src/driver.mli[9,208+51]..[9,208+69])
+            Ptyp_arrow
+            Labelled "doc"
+            core_type (src/driver.mli[9,208+55]..[9,208+61])
+              Ptyp_constr "string" (src/driver.mli[9,208+55]..[9,208+61])
+              []
+            core_type (src/driver.mli[9,208+65]..[9,208+69])
+              Ptyp_constr "unit" (src/driver.mli[9,208+65]..[9,208+69])
+              []
+      []
+  signature_item (src/driver.mli[13,356+0]..[17,434+3])
+    Psig_module "Lint_error" (src/driver.mli[13,356+7]..[13,356+17])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[12,323+0]..[12,323+32])
+            Pstr_eval
+            expression (src/driver.mli[12,323+0]..[12,323+32])
+              Pexp_constant PConst_string(" Error reported by linters ",(src/driver.mli[12,323+0]..[12,323+32]),None)
+        ]
+    module_type (src/driver.mli[13,356+20]..[17,434+3])
+      Pmty_signature
+      [
+        signature_item (src/driver.mli[14,380+2]..[14,380+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/driver.mli[14,380+7]..[14,380+8]) (src/driver.mli[14,380+2]..[14,380+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[16,390+2]..[16,390+43])
+          Psig_value
+          value_description "of_string" (src/driver.mli[16,390+6]..[16,390+15]) (src/driver.mli[16,390+2]..[16,390+43])
+            core_type (src/driver.mli[16,390+18]..[16,390+43])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[16,390+18]..[16,390+28])
+                Ptyp_constr "Location.t" (src/driver.mli[16,390+18]..[16,390+28])
+                []
+              core_type (src/driver.mli[16,390+32]..[16,390+43])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[16,390+32]..[16,390+38])
+                  Ptyp_constr "string" (src/driver.mli[16,390+32]..[16,390+38])
+                  []
+                core_type (src/driver.mli[16,390+42]..[16,390+43])
+                  Ptyp_constr "t" (src/driver.mli[16,390+42]..[16,390+43])
+                  []
+            []
+      ]
+  signature_item (src/driver.mli[19,439+0]..[55,1840+3])
+    Psig_module "Cookies" (src/driver.mli[19,439+7]..[19,439+14])
+    module_type (src/driver.mli[19,439+17]..[55,1840+3])
+      Pmty_signature
+      [
+        signature_item (src/driver.mli[20,460+2]..[20,460+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/driver.mli[20,460+7]..[20,460+8]) (src/driver.mli[20,460+2]..[20,460+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[22,470+2]..[22,470+80])
+          Psig_value
+          value_description "get" (src/driver.mli[22,470+6]..[22,470+9]) (src/driver.mli[22,470+2]..[22,470+80])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[23,551+2]..[24,628+54])
+                  Pstr_eval
+                  expression (src/driver.mli[23,551+2]..[24,628+54])
+                    Pexp_constant PConst_string(" [get cookies name pattern] look for a cookie named [name] and parse it\n      using [pattern]. Raises if the parsing fails. ",(src/driver.mli[23,551+2]..[24,628+54]),None)
+              ]
+            core_type (src/driver.mli[22,470+12]..[22,470+80])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[22,470+12]..[22,470+13])
+                Ptyp_constr "t" (src/driver.mli[22,470+12]..[22,470+13])
+                []
+              core_type (src/driver.mli[22,470+17]..[22,470+80])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[22,470+17]..[22,470+23])
+                  Ptyp_constr "string" (src/driver.mli[22,470+17]..[22,470+23])
+                  []
+                core_type (src/driver.mli[22,470+27]..[22,470+80])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[22,470+27]..[22,470+67])
+                    Ptyp_constr "Ast_pattern.t" (src/driver.mli[22,470+54]..[22,470+67])
+                    [
+                      core_type (src/driver.mli[22,470+28]..[22,470+38])
+                        Ptyp_constr "expression" (src/driver.mli[22,470+28]..[22,470+38])
+                        []
+                      core_type (src/driver.mli[22,470+40]..[22,470+48])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[22,470+40]..[22,470+42])
+                          Ptyp_var a
+                        core_type (src/driver.mli[22,470+46]..[22,470+48])
+                          Ptyp_var a
+                      core_type (src/driver.mli[22,470+50]..[22,470+52])
+                        Ptyp_var b
+                    ]
+                  core_type (src/driver.mli[22,470+71]..[22,470+80])
+                    Ptyp_constr "option" (src/driver.mli[22,470+74]..[22,470+80])
+                    [
+                      core_type (src/driver.mli[22,470+71]..[22,470+73])
+                        Ptyp_var b
+                    ]
+            []
+        signature_item (src/driver.mli[26,684+2]..[30,771+55])
+          Psig_value
+          value_description "get_res" (src/driver.mli[26,684+6]..[26,684+13]) (src/driver.mli[26,684+2]..[30,771+55])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[31,827+2]..[33,984+15])
+                  Pstr_eval
+                  expression (src/driver.mli[31,827+2]..[33,984+15])
+                    Pexp_constant PConst_string(" [get cookies name pattern] look for a cookie named [name] and parse it\n      using [pattern], returning a [result] instead of raising when the parsing\n      fails. ",(src/driver.mli[31,827+2]..[33,984+15]),None)
+              ]
+            core_type (src/driver.mli[27,700+4]..[30,771+55])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[27,700+4]..[27,700+5])
+                Ptyp_constr "t" (src/driver.mli[27,700+4]..[27,700+5])
+                []
+              core_type (src/driver.mli[28,709+4]..[30,771+55])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[28,709+4]..[28,709+10])
+                  Ptyp_constr "string" (src/driver.mli[28,709+4]..[28,709+10])
+                  []
+                core_type (src/driver.mli[29,723+4]..[30,771+55])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[29,723+4]..[29,723+44])
+                    Ptyp_constr "Ast_pattern.t" (src/driver.mli[29,723+31]..[29,723+44])
+                    [
+                      core_type (src/driver.mli[29,723+5]..[29,723+15])
+                        Ptyp_constr "expression" (src/driver.mli[29,723+5]..[29,723+15])
+                        []
+                      core_type (src/driver.mli[29,723+17]..[29,723+25])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[29,723+17]..[29,723+19])
+                          Ptyp_var a
+                        core_type (src/driver.mli[29,723+23]..[29,723+25])
+                          Ptyp_var a
+                      core_type (src/driver.mli[29,723+27]..[29,723+29])
+                        Ptyp_var b
+                    ]
+                  core_type (src/driver.mli[30,771+4]..[30,771+55])
+                    Ptyp_constr "result" (src/driver.mli[30,771+49]..[30,771+55])
+                    [
+                      core_type (src/driver.mli[30,771+5]..[30,771+14])
+                        Ptyp_constr "option" (src/driver.mli[30,771+8]..[30,771+14])
+                        [
+                          core_type (src/driver.mli[30,771+5]..[30,771+7])
+                            Ptyp_var b
+                        ]
+                      core_type (src/driver.mli[30,771+16]..[30,771+47])
+                        Ptyp_constr "NonEmptyList.t" (src/driver.mli[30,771+33]..[30,771+47])
+                        [
+                          core_type (src/driver.mli[30,771+16]..[30,771+32])
+                            Ptyp_constr "Location.Error.t" (src/driver.mli[30,771+16]..[30,771+32])
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/driver.mli[35,1001+2]..[35,1001+45])
+          Psig_value
+          value_description "set" (src/driver.mli[35,1001+6]..[35,1001+9]) (src/driver.mli[35,1001+2]..[35,1001+45])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[36,1047+2]..[36,1047+61])
+                  Pstr_eval
+                  expression (src/driver.mli[36,1047+2]..[36,1047+61])
+                    Pexp_constant PConst_string(" [set cookies name expr] set cookie [name] to [expr]. ",(src/driver.mli[36,1047+2]..[36,1047+61]),None)
+              ]
+            core_type (src/driver.mli[35,1001+12]..[35,1001+45])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[35,1001+12]..[35,1001+13])
+                Ptyp_constr "t" (src/driver.mli[35,1001+12]..[35,1001+13])
+                []
+              core_type (src/driver.mli[35,1001+17]..[35,1001+45])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[35,1001+17]..[35,1001+23])
+                  Ptyp_constr "string" (src/driver.mli[35,1001+17]..[35,1001+23])
+                  []
+                core_type (src/driver.mli[35,1001+27]..[35,1001+45])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[35,1001+27]..[35,1001+37])
+                    Ptyp_constr "expression" (src/driver.mli[35,1001+27]..[35,1001+37])
+                    []
+                  core_type (src/driver.mli[35,1001+41]..[35,1001+45])
+                    Ptyp_constr "unit" (src/driver.mli[35,1001+41]..[35,1001+45])
+                    []
+            []
+        signature_item (src/driver.mli[38,1110+2]..[38,1110+39])
+          Psig_value
+          value_description "add_handler" (src/driver.mli[38,1110+6]..[38,1110+17]) (src/driver.mli[38,1110+2]..[38,1110+39])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[39,1150+2]..[43,1377+75])
+                  Pstr_eval
+                  expression (src/driver.mli[39,1150+2]..[43,1377+75])
+                    Pexp_constant PConst_string(" Register a callback that is called before a rewriting. The handler is\n      expected to lookup some cookies and set some global variables.\n\n      This API is a temporary hack to allow to migrate from [add_arg] to the use\n      of cookie, until ppxlib has been upgraded to pass cookies through. ",(src/driver.mli[39,1150+2]..[43,1377+75]),None)
+              ]
+            core_type (src/driver.mli[38,1110+20]..[38,1110+39])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[38,1110+21]..[38,1110+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[38,1110+21]..[38,1110+22])
+                  Ptyp_constr "t" (src/driver.mli[38,1110+21]..[38,1110+22])
+                  []
+                core_type (src/driver.mli[38,1110+26]..[38,1110+30])
+                  Ptyp_constr "unit" (src/driver.mli[38,1110+26]..[38,1110+30])
+                  []
+              core_type (src/driver.mli[38,1110+35]..[38,1110+39])
+                Ptyp_constr "unit" (src/driver.mli[38,1110+35]..[38,1110+39])
+                []
+            []
+        signature_item (src/driver.mli[45,1454+2]..[49,1572+8])
+          Psig_value
+          value_description "add_simple_handler" (src/driver.mli[45,1454+6]..[45,1454+24]) (src/driver.mli[45,1454+2]..[49,1572+8])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[50,1581+2]..[50,1581+71])
+                  Pstr_eval
+                  expression (src/driver.mli[50,1581+2]..[50,1581+71])
+                    Pexp_constant PConst_string(" Shorthand for: [add_handler (fun t -> f (get t name pattern))] ",(src/driver.mli[50,1581+2]..[50,1581+71]),None)
+              ]
+            core_type (src/driver.mli[46,1481+4]..[49,1572+8])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[46,1481+4]..[46,1481+10])
+                Ptyp_constr "string" (src/driver.mli[46,1481+4]..[46,1481+10])
+                []
+              core_type (src/driver.mli[47,1495+4]..[49,1572+8])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[47,1495+4]..[47,1495+44])
+                  Ptyp_constr "Ast_pattern.t" (src/driver.mli[47,1495+31]..[47,1495+44])
+                  [
+                    core_type (src/driver.mli[47,1495+5]..[47,1495+15])
+                      Ptyp_constr "expression" (src/driver.mli[47,1495+5]..[47,1495+15])
+                      []
+                    core_type (src/driver.mli[47,1495+17]..[47,1495+25])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[47,1495+17]..[47,1495+19])
+                        Ptyp_var a
+                      core_type (src/driver.mli[47,1495+23]..[47,1495+25])
+                        Ptyp_var a
+                    core_type (src/driver.mli[47,1495+27]..[47,1495+29])
+                      Ptyp_var b
+                  ]
+                core_type (src/driver.mli[48,1543+4]..[49,1572+8])
+                  Ptyp_arrow
+                  Labelled "f"
+                  core_type (src/driver.mli[48,1543+7]..[48,1543+24])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[48,1543+7]..[48,1543+16])
+                      Ptyp_constr "option" (src/driver.mli[48,1543+10]..[48,1543+16])
+                      [
+                        core_type (src/driver.mli[48,1543+7]..[48,1543+9])
+                          Ptyp_var b
+                      ]
+                    core_type (src/driver.mli[48,1543+20]..[48,1543+24])
+                      Ptyp_constr "unit" (src/driver.mli[48,1543+20]..[48,1543+24])
+                      []
+                  core_type (src/driver.mli[49,1572+4]..[49,1572+8])
+                    Ptyp_constr "unit" (src/driver.mli[49,1572+4]..[49,1572+8])
+                    []
+            []
+        signature_item (src/driver.mli[52,1654+2]..[52,1654+44])
+          Psig_value
+          value_description "add_post_handler" (src/driver.mli[52,1654+6]..[52,1654+22]) (src/driver.mli[52,1654+2]..[52,1654+44])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[53,1699+2]..[54,1774+65])
+                  Pstr_eval
+                  expression (src/driver.mli[53,1699+2]..[54,1774+65])
+                    Pexp_constant PConst_string(" Register a callback that is called after a rewriting. The handler is\n      expected to set some cookies from some global variables. ",(src/driver.mli[53,1699+2]..[54,1774+65]),None)
+              ]
+            core_type (src/driver.mli[52,1654+25]..[52,1654+44])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[52,1654+26]..[52,1654+35])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[52,1654+26]..[52,1654+27])
+                  Ptyp_constr "t" (src/driver.mli[52,1654+26]..[52,1654+27])
+                  []
+                core_type (src/driver.mli[52,1654+31]..[52,1654+35])
+                  Ptyp_constr "unit" (src/driver.mli[52,1654+31]..[52,1654+35])
+                  []
+              core_type (src/driver.mli[52,1654+40]..[52,1654+44])
+                Ptyp_constr "unit" (src/driver.mli[52,1654+40]..[52,1654+44])
+                []
+            []
+      ]
+  signature_item (src/driver.mli[57,1845+0]..[77,2702+3])
+    Psig_module "Instrument" (src/driver.mli[57,1845+7]..[57,1845+17])
+    module_type (src/driver.mli[57,1845+20]..[77,2702+3])
+      Pmty_signature
+      [
+        signature_item (src/driver.mli[58,1869+2]..[58,1869+8])
+          Psig_type Rec
+          [
+            type_declaration "t" (src/driver.mli[58,1869+7]..[58,1869+8]) (src/driver.mli[58,1869+2]..[58,1869+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[59,1878+2]..[59,1878+27])
+          Psig_type Rec
+          [
+            type_declaration "pos" (src/driver.mli[59,1878+7]..[59,1878+10]) (src/driver.mli[59,1878+2]..[59,1878+27])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ptype_variant
+                  [
+                    (src/driver.mli[59,1878+13]..[59,1878+19])
+                      "Before" (src/driver.mli[59,1878+13]..[59,1878+19])
+                      []
+                      None
+                    (src/driver.mli[59,1878+20]..[59,1878+27])
+                      "After" (src/driver.mli[59,1878+22]..[59,1878+27])
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[61,1907+2]..[61,1907+78])
+          Psig_value
+          value_description "make" (src/driver.mli[61,1907+6]..[61,1907+10]) (src/driver.mli[61,1907+2]..[61,1907+78])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[62,1986+2]..[66,2295+72])
+                  Pstr_eval
+                  expression (src/driver.mli[62,1986+2]..[66,2295+72])
+                    Pexp_constant PConst_string(" [make transformation ~position] creates an instrumentation that can be\n      passed to [Driver.register_transformation] to instrument an implementation\n      file. [transformation] is the transformation that will be applied to the\n      AST; [position] specifies if it should be applied before or after\n      rewriters defined through [rules], [impl] or [intf] are applied.",(src/driver.mli[62,1986+2]..[66,2295+72]),None)
+              ]
+            core_type (src/driver.mli[61,1907+13]..[61,1907+78])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[61,1907+14]..[61,1907+56])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[61,1907+14]..[61,1907+33])
+                  Ptyp_constr "Parsetree.structure" (src/driver.mli[61,1907+14]..[61,1907+33])
+                  []
+                core_type (src/driver.mli[61,1907+37]..[61,1907+56])
+                  Ptyp_constr "Parsetree.structure" (src/driver.mli[61,1907+37]..[61,1907+56])
+                  []
+              core_type (src/driver.mli[61,1907+61]..[61,1907+78])
+                Ptyp_arrow
+                Labelled "position"
+                core_type (src/driver.mli[61,1907+70]..[61,1907+73])
+                  Ptyp_constr "pos" (src/driver.mli[61,1907+70]..[61,1907+73])
+                  []
+                core_type (src/driver.mli[61,1907+77]..[61,1907+78])
+                  Ptyp_constr "t" (src/driver.mli[61,1907+77]..[61,1907+78])
+                  []
+            []
+        signature_item (src/driver.mli[68,2369+2]..[76,2696+5])
+          Psig_module "V2" (src/driver.mli[68,2369+9]..[68,2369+11])
+          module_type (src/driver.mli[68,2369+14]..[76,2696+5])
+            Pmty_signature
+            [
+              signature_item (src/driver.mli[69,2387+4]..[72,2506+7])
+                Psig_value
+                value_description "make" (src/driver.mli[69,2387+8]..[69,2387+12]) (src/driver.mli[69,2387+4]..[72,2506+7])
+                  attribute "ocaml.doc"
+                    [
+                      structure_item (src/driver.mli[73,2514+4]..[75,2673+22])
+                        Pstr_eval
+                        expression (src/driver.mli[73,2514+4]..[75,2673+22])
+                          Pexp_constant PConst_string(" Same as [Instrument.make], but the transformation that will be applied\n        to the AST has access to an expansion context. To be used together with\n        [Driver.V2].",(src/driver.mli[73,2514+4]..[75,2673+22]),None)
+                    ]
+                  core_type (src/driver.mli[70,2402+6]..[72,2506+7])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[70,2402+7]..[70,2402+77])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[70,2402+7]..[70,2402+31])
+                        Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[70,2402+7]..[70,2402+31])
+                        []
+                      core_type (src/driver.mli[70,2402+35]..[70,2402+77])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[70,2402+35]..[70,2402+54])
+                          Ptyp_constr "Parsetree.structure" (src/driver.mli[70,2402+35]..[70,2402+54])
+                          []
+                        core_type (src/driver.mli[70,2402+58]..[70,2402+77])
+                          Ptyp_constr "Parsetree.structure" (src/driver.mli[70,2402+58]..[70,2402+77])
+                          []
+                    core_type (src/driver.mli[71,2484+6]..[72,2506+7])
+                      Ptyp_arrow
+                      Labelled "position"
+                      core_type (src/driver.mli[71,2484+15]..[71,2484+18])
+                        Ptyp_constr "pos" (src/driver.mli[71,2484+15]..[71,2484+18])
+                        []
+                      core_type (src/driver.mli[72,2506+6]..[72,2506+7])
+                        Ptyp_constr "t" (src/driver.mli[72,2506+6]..[72,2506+7])
+                        []
+                  []
+            ]
+      ]
+  signature_item (src/driver.mli[79,2707+0]..[93,3305+6])
+    Psig_value
+    value_description "register_transformation" (src/driver.mli[79,2707+4]..[79,2707+27]) (src/driver.mli[79,2707+0]..[93,3305+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[94,3312+0]..[127,5110+47])
+            Pstr_eval
+            expression (src/driver.mli[94,3312+0]..[127,5110+47])
+              Pexp_constant PConst_string(" [register_transformation name] registers a code transformation.\n\n    [name] is a logical name for the set of transformations (such as [sexp_conv]\n    or [bin_prot]). It is mostly used for debugging purposes.\n\n    [rules] is a list of context independent rewriting rules, such as extension\n    point expanders. This is what most code transformation should use.\n\n    [extensions] is a special cases of [rules] and is deprecated. It is only\n    kept for backward compatibility.\n\n    [enclose_impl] and [enclose_intf] produces a header and footer for\n    implementation/interface files. They are a special case of [impl] and\n    [intf]. The header is placed after any initial module-level attributes; the\n    footer is placed after everything else. Both functions receive a location\n    that denotes all of the items between header and footer, or [None] if the\n    that list of items is empty.\n\n    [impl] is an optional function that is applied on implementation files and\n    [intf] is an optional function that is applied on interface files. These two\n    functions are applied on the AST of the whole file. They should only be used\n    when the other mechanism are not enough. For instance if the transformation\n    expands extension points that depend on the context.\n\n    [lint_impl] and [lint_intf] are applied to the unprocessed source. Errors\n    they return will be reported to the user as preprocessor warnings.\n\n    [instrument] can be used to instrument implementation files. Its\n    transformation is applied to the AST of the whole file. The difference to\n    [impl] is that you can specify if it should be applied before or after all\n    rewriters defined through [rules], [impl] or [intf] are applied.\n\n    More information on each phase, and their relative order, can be found in\n    the {{!driver.driver_execution} manual}. ",(src/driver.mli[94,3312+0]..[127,5110+47]),None)
+        ]
+      core_type (src/driver.mli[80,2737+2]..[93,3305+6])
+        Ptyp_arrow
+        Optional "extensions"
+        core_type (src/driver.mli[80,2737+14]..[80,2737+30])
+          Ptyp_constr "list" (src/driver.mli[80,2737+26]..[80,2737+30])
+          [
+            core_type (src/driver.mli[80,2737+14]..[80,2737+25])
+              Ptyp_constr "Extension.t" (src/driver.mli[80,2737+14]..[80,2737+25])
+              []
+          ]
+        core_type (src/driver.mli[81,2808+2]..[93,3305+6])
+          Ptyp_arrow
+          Optional "rules"
+          core_type (src/driver.mli[81,2808+9]..[81,2808+33])
+            Ptyp_constr "list" (src/driver.mli[81,2808+29]..[81,2808+33])
+            [
+              core_type (src/driver.mli[81,2808+9]..[81,2808+28])
+                Ptyp_constr "Context_free.Rule.t" (src/driver.mli[81,2808+9]..[81,2808+28])
+                []
+            ]
+          core_type (src/driver.mli[82,2845+2]..[93,3305+6])
+            Ptyp_arrow
+            Optional "enclose_impl"
+            core_type (src/driver.mli[82,2845+17]..[82,2845+59])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[82,2845+17]..[82,2845+34])
+                Ptyp_constr "option" (src/driver.mli[82,2845+28]..[82,2845+34])
+                [
+                  core_type (src/driver.mli[82,2845+17]..[82,2845+27])
+                    Ptyp_constr "Location.t" (src/driver.mli[82,2845+17]..[82,2845+27])
+                    []
+                ]
+              core_type (src/driver.mli[82,2845+38]..[82,2845+59])
+                Ptyp_tuple
+                [
+                  core_type (src/driver.mli[82,2845+38]..[82,2845+47])
+                    Ptyp_constr "structure" (src/driver.mli[82,2845+38]..[82,2845+47])
+                    []
+                  core_type (src/driver.mli[82,2845+50]..[82,2845+59])
+                    Ptyp_constr "structure" (src/driver.mli[82,2845+50]..[82,2845+59])
+                    []
+                ]
+            core_type (src/driver.mli[83,2909+2]..[93,3305+6])
+              Ptyp_arrow
+              Optional "enclose_intf"
+              core_type (src/driver.mli[83,2909+17]..[83,2909+59])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[83,2909+17]..[83,2909+34])
+                  Ptyp_constr "option" (src/driver.mli[83,2909+28]..[83,2909+34])
+                  [
+                    core_type (src/driver.mli[83,2909+17]..[83,2909+27])
+                      Ptyp_constr "Location.t" (src/driver.mli[83,2909+17]..[83,2909+27])
+                      []
+                  ]
+                core_type (src/driver.mli[83,2909+38]..[83,2909+59])
+                  Ptyp_tuple
+                  [
+                    core_type (src/driver.mli[83,2909+38]..[83,2909+47])
+                      Ptyp_constr "signature" (src/driver.mli[83,2909+38]..[83,2909+47])
+                      []
+                    core_type (src/driver.mli[83,2909+50]..[83,2909+59])
+                      Ptyp_constr "signature" (src/driver.mli[83,2909+50]..[83,2909+59])
+                      []
+                  ]
+              core_type (src/driver.mli[84,2973+2]..[93,3305+6])
+                Ptyp_arrow
+                Optional "impl"
+                core_type (src/driver.mli[84,2973+9]..[84,2973+31])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[84,2973+9]..[84,2973+18])
+                    Ptyp_constr "structure" (src/driver.mli[84,2973+9]..[84,2973+18])
+                    []
+                  core_type (src/driver.mli[84,2973+22]..[84,2973+31])
+                    Ptyp_constr "structure" (src/driver.mli[84,2973+22]..[84,2973+31])
+                    []
+                core_type (src/driver.mli[85,3009+2]..[93,3305+6])
+                  Ptyp_arrow
+                  Optional "intf"
+                  core_type (src/driver.mli[85,3009+9]..[85,3009+31])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[85,3009+9]..[85,3009+18])
+                      Ptyp_constr "signature" (src/driver.mli[85,3009+9]..[85,3009+18])
+                      []
+                    core_type (src/driver.mli[85,3009+22]..[85,3009+31])
+                      Ptyp_constr "signature" (src/driver.mli[85,3009+22]..[85,3009+31])
+                      []
+                  core_type (src/driver.mli[86,3045+2]..[93,3305+6])
+                    Ptyp_arrow
+                    Optional "lint_impl"
+                    core_type (src/driver.mli[86,3045+14]..[86,3045+44])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[86,3045+14]..[86,3045+23])
+                        Ptyp_constr "structure" (src/driver.mli[86,3045+14]..[86,3045+23])
+                        []
+                      core_type (src/driver.mli[86,3045+27]..[86,3045+44])
+                        Ptyp_constr "list" (src/driver.mli[86,3045+40]..[86,3045+44])
+                        [
+                          core_type (src/driver.mli[86,3045+27]..[86,3045+39])
+                            Ptyp_constr "Lint_error.t" (src/driver.mli[86,3045+27]..[86,3045+39])
+                            []
+                        ]
+                    core_type (src/driver.mli[87,3094+2]..[93,3305+6])
+                      Ptyp_arrow
+                      Optional "lint_intf"
+                      core_type (src/driver.mli[87,3094+14]..[87,3094+44])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[87,3094+14]..[87,3094+23])
+                          Ptyp_constr "signature" (src/driver.mli[87,3094+14]..[87,3094+23])
+                          []
+                        core_type (src/driver.mli[87,3094+27]..[87,3094+44])
+                          Ptyp_constr "list" (src/driver.mli[87,3094+40]..[87,3094+44])
+                          [
+                            core_type (src/driver.mli[87,3094+27]..[87,3094+39])
+                              Ptyp_constr "Lint_error.t" (src/driver.mli[87,3094+27]..[87,3094+39])
+                              []
+                          ]
+                      core_type (src/driver.mli[88,3143+2]..[93,3305+6])
+                        Ptyp_arrow
+                        Optional "preprocess_impl"
+                        core_type (src/driver.mli[88,3143+20]..[88,3143+42])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/driver.mli[88,3143+20]..[88,3143+29])
+                            Ptyp_constr "structure" (src/driver.mli[88,3143+20]..[88,3143+29])
+                            []
+                          core_type (src/driver.mli[88,3143+33]..[88,3143+42])
+                            Ptyp_constr "structure" (src/driver.mli[88,3143+33]..[88,3143+42])
+                            []
+                        core_type (src/driver.mli[89,3190+2]..[93,3305+6])
+                          Ptyp_arrow
+                          Optional "preprocess_intf"
+                          core_type (src/driver.mli[89,3190+20]..[89,3190+42])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/driver.mli[89,3190+20]..[89,3190+29])
+                              Ptyp_constr "signature" (src/driver.mli[89,3190+20]..[89,3190+29])
+                              []
+                            core_type (src/driver.mli[89,3190+33]..[89,3190+42])
+                              Ptyp_constr "signature" (src/driver.mli[89,3190+33]..[89,3190+42])
+                              []
+                          core_type (src/driver.mli[90,3237+2]..[93,3305+6])
+                            Ptyp_arrow
+                            Optional "instrument"
+                            core_type (src/driver.mli[90,3237+14]..[90,3237+26])
+                              Ptyp_constr "Instrument.t" (src/driver.mli[90,3237+14]..[90,3237+26])
+                              []
+                            core_type (src/driver.mli[91,3267+2]..[93,3305+6])
+                              Ptyp_arrow
+                              Optional "aliases"
+                              core_type (src/driver.mli[91,3267+11]..[91,3267+22])
+                                Ptyp_constr "list" (src/driver.mli[91,3267+18]..[91,3267+22])
+                                [
+                                  core_type (src/driver.mli[91,3267+11]..[91,3267+17])
+                                    Ptyp_constr "string" (src/driver.mli[91,3267+11]..[91,3267+17])
+                                    []
+                                ]
+                              core_type (src/driver.mli[92,3293+2]..[93,3305+6])
+                                Ptyp_arrow
+                                Nolabel
+                                core_type (src/driver.mli[92,3293+2]..[92,3293+8])
+                                  Ptyp_constr "string" (src/driver.mli[92,3293+2]..[92,3293+8])
+                                  []
+                                core_type (src/driver.mli[93,3305+2]..[93,3305+6])
+                                  Ptyp_constr "unit" (src/driver.mli[93,3305+2]..[93,3305+6])
+                                  []
+      []
+  signature_item (src/driver.mli[129,5159+0]..[138,5465+6])
+    Psig_value
+    value_description "register_transformation_using_ocaml_current_ast" (src/driver.mli[129,5159+4]..[129,5159+51]) (src/driver.mli[129,5159+0]..[138,5465+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[139,5472+0]..[144,5737+15])
+            Pstr_eval
+            expression (src/driver.mli[139,5472+0]..[144,5737+15])
+              Pexp_constant PConst_string(" Same as [register_transformation] except that it uses the same AST as the\n    current ocaml compiler.\n\n    This is not the intended way of using driver. This is only for ppx rewriters\n    that are not written using ppxlib but want to export a driver compatible\n    library. ",(src/driver.mli[139,5472+0]..[144,5737+15]),None)
+        ]
+      core_type (src/driver.mli[130,5213+2]..[138,5465+6])
+        Ptyp_arrow
+        Optional "impl"
+        core_type (src/driver.mli[131,5222+5]..[132,5271+44])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/driver.mli[131,5222+5]..[131,5222+45])
+            Ptyp_constr "Compiler_version.Ast.Parsetree.structure" (src/driver.mli[131,5222+5]..[131,5222+45])
+            []
+          core_type (src/driver.mli[132,5271+4]..[132,5271+44])
+            Ptyp_constr "Compiler_version.Ast.Parsetree.structure" (src/driver.mli[132,5271+4]..[132,5271+44])
+            []
+        core_type (src/driver.mli[133,5320+2]..[138,5465+6])
+          Ptyp_arrow
+          Optional "intf"
+          core_type (src/driver.mli[134,5329+5]..[135,5378+44])
+            Ptyp_arrow
+            Nolabel
+            core_type (src/driver.mli[134,5329+5]..[134,5329+45])
+              Ptyp_constr "Compiler_version.Ast.Parsetree.signature" (src/driver.mli[134,5329+5]..[134,5329+45])
+              []
+            core_type (src/driver.mli[135,5378+4]..[135,5378+44])
+              Ptyp_constr "Compiler_version.Ast.Parsetree.signature" (src/driver.mli[135,5378+4]..[135,5378+44])
+              []
+          core_type (src/driver.mli[136,5427+2]..[138,5465+6])
+            Ptyp_arrow
+            Optional "aliases"
+            core_type (src/driver.mli[136,5427+11]..[136,5427+22])
+              Ptyp_constr "list" (src/driver.mli[136,5427+18]..[136,5427+22])
+              [
+                core_type (src/driver.mli[136,5427+11]..[136,5427+17])
+                  Ptyp_constr "string" (src/driver.mli[136,5427+11]..[136,5427+17])
+                  []
+              ]
+            core_type (src/driver.mli[137,5453+2]..[138,5465+6])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[137,5453+2]..[137,5453+8])
+                Ptyp_constr "string" (src/driver.mli[137,5453+2]..[137,5453+8])
+                []
+              core_type (src/driver.mli[138,5465+2]..[138,5465+6])
+                Ptyp_constr "unit" (src/driver.mli[138,5465+2]..[138,5465+6])
+                []
+      []
+  signature_item (src/driver.mli[146,5754+0]..[152,5909+70])
+    Psig_value
+    value_description "register_code_transformation" (src/driver.mli[146,5754+4]..[146,5754+32]) (src/driver.mli[146,5754+0]..[152,5909+70])
+      attribute "deprecated"
+        [
+          structure_item (src/driver.mli[152,5909+16]..[152,5909+69])
+            Pstr_eval
+            expression (src/driver.mli[152,5909+16]..[152,5909+69])
+              Pexp_constant PConst_string("[since 2015-11] use register_transformation instead",(src/driver.mli[152,5909+17]..[152,5909+68]),None)
+        ]
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[153,5980+0]..[157,6052+9])
+            Pstr_eval
+            expression (src/driver.mli[153,5980+0]..[157,6052+9])
+              Pexp_constant PConst_string(" Same as:\n\n    {[\n      register_transformation ~name ~impl ~intf ()\n    ]} ",(src/driver.mli[153,5980+0]..[157,6052+9]),None)
+        ]
+      core_type (src/driver.mli[147,5789+2]..[151,5902+6])
+        Ptyp_arrow
+        Labelled "name"
+        core_type (src/driver.mli[147,5789+7]..[147,5789+13])
+          Ptyp_constr "string" (src/driver.mli[147,5789+7]..[147,5789+13])
+          []
+        core_type (src/driver.mli[148,5806+2]..[151,5902+6])
+          Ptyp_arrow
+          Optional "aliases"
+          core_type (src/driver.mli[148,5806+11]..[148,5806+22])
+            Ptyp_constr "list" (src/driver.mli[148,5806+18]..[148,5806+22])
+            [
+              core_type (src/driver.mli[148,5806+11]..[148,5806+17])
+                Ptyp_constr "string" (src/driver.mli[148,5806+11]..[148,5806+17])
+                []
+            ]
+          core_type (src/driver.mli[149,5832+2]..[151,5902+6])
+            Ptyp_arrow
+            Labelled "impl"
+            core_type (src/driver.mli[149,5832+8]..[149,5832+30])
+              Ptyp_arrow
+              Nolabel
+              core_type (src/driver.mli[149,5832+8]..[149,5832+17])
+                Ptyp_constr "structure" (src/driver.mli[149,5832+8]..[149,5832+17])
+                []
+              core_type (src/driver.mli[149,5832+21]..[149,5832+30])
+                Ptyp_constr "structure" (src/driver.mli[149,5832+21]..[149,5832+30])
+                []
+            core_type (src/driver.mli[150,5867+2]..[151,5902+6])
+              Ptyp_arrow
+              Labelled "intf"
+              core_type (src/driver.mli[150,5867+8]..[150,5867+30])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[150,5867+8]..[150,5867+17])
+                  Ptyp_constr "signature" (src/driver.mli[150,5867+8]..[150,5867+17])
+                  []
+                core_type (src/driver.mli[150,5867+21]..[150,5867+30])
+                  Ptyp_constr "signature" (src/driver.mli[150,5867+21]..[150,5867+30])
+                  []
+              core_type (src/driver.mli[151,5902+2]..[151,5902+6])
+                Ptyp_constr "unit" (src/driver.mli[151,5902+2]..[151,5902+6])
+                []
+      []
+  signature_item (src/driver.mli[159,6063+0]..[159,6063+63])
+    Psig_value
+    value_description "register_correction" (src/driver.mli[159,6063+4]..[159,6063+23]) (src/driver.mli[159,6063+0]..[159,6063+63])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[160,6127+0]..[164,6408+25])
+            Pstr_eval
+            expression (src/driver.mli[160,6127+0]..[164,6408+25])
+              Pexp_constant PConst_string(" Rewriters might call this function to suggest a correction to the code\n    source. When they do this, the driver will generate a\n    [file.ml.ppx-corrected] file with the suggested replacement. The build\n    system will then show the diff to the user who is free to accept the\n    correction or not. ",(src/driver.mli[160,6127+0]..[164,6408+25]),None)
+        ]
+      core_type (src/driver.mli[159,6063+26]..[159,6063+63])
+        Ptyp_arrow
+        Labelled "loc"
+        core_type (src/driver.mli[159,6063+30]..[159,6063+40])
+          Ptyp_constr "Location.t" (src/driver.mli[159,6063+30]..[159,6063+40])
+          []
+        core_type (src/driver.mli[159,6063+44]..[159,6063+63])
+          Ptyp_arrow
+          Labelled "repl"
+          core_type (src/driver.mli[159,6063+49]..[159,6063+55])
+            Ptyp_constr "string" (src/driver.mli[159,6063+49]..[159,6063+55])
+            []
+          core_type (src/driver.mli[159,6063+59]..[159,6063+63])
+            Ptyp_constr "unit" (src/driver.mli[159,6063+59]..[159,6063+63])
+            []
+      []
+  signature_item (src/driver.mli[166,6435+0]..[166,6435+55])
+    Psig_value
+    value_description "register_process_file_hook" (src/driver.mli[166,6435+4]..[166,6435+30]) (src/driver.mli[166,6435+0]..[166,6435+55])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[167,6491+0]..[167,6491+43])
+            Pstr_eval
+            expression (src/driver.mli[167,6491+0]..[167,6491+43])
+              Pexp_constant PConst_string(" Hook called before processing a file ",(src/driver.mli[167,6491+0]..[167,6491+43]),None)
+        ]
+      core_type (src/driver.mli[166,6435+33]..[166,6435+55])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[166,6435+34]..[166,6435+46])
+          Ptyp_arrow
+          Nolabel
+          core_type (src/driver.mli[166,6435+34]..[166,6435+38])
+            Ptyp_constr "unit" (src/driver.mli[166,6435+34]..[166,6435+38])
+            []
+          core_type (src/driver.mli[166,6435+42]..[166,6435+46])
+            Ptyp_constr "unit" (src/driver.mli[166,6435+42]..[166,6435+46])
+            []
+        core_type (src/driver.mli[166,6435+51]..[166,6435+55])
+          Ptyp_constr "unit" (src/driver.mli[166,6435+51]..[166,6435+55])
+          []
+      []
+  signature_item (src/driver.mli[169,6536+0]..[205,8219+3])
+    Psig_module "V2" (src/driver.mli[169,6536+7]..[169,6536+9])
+    module_type (src/driver.mli[169,6536+12]..[205,8219+3])
+      Pmty_signature
+      [
+        signature_item (src/driver.mli[170,6552+2]..[186,7416+8])
+          Psig_value
+          value_description "register_transformation" (src/driver.mli[170,6552+6]..[170,6552+29]) (src/driver.mli[170,6552+2]..[186,7416+8])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[187,7425+2]..[189,7587+73])
+                  Pstr_eval
+                  expression (src/driver.mli[187,7425+2]..[189,7587+73])
+                    Pexp_constant PConst_string(" Same as [Driver.register_transformation], but the callbacks have access to\n      an expansion context. Their signatures coincide with the signatures of the\n      respective methods in [Ast_traverse.map_with_expansion_context]. ",(src/driver.mli[187,7425+2]..[189,7587+73]),None)
+              ]
+            core_type (src/driver.mli[171,6584+4]..[186,7416+8])
+              Ptyp_arrow
+              Optional "extensions"
+              core_type (src/driver.mli[171,6584+16]..[171,6584+32])
+                Ptyp_constr "list" (src/driver.mli[171,6584+28]..[171,6584+32])
+                [
+                  core_type (src/driver.mli[171,6584+16]..[171,6584+27])
+                    Ptyp_constr "Extension.t" (src/driver.mli[171,6584+16]..[171,6584+27])
+                    []
+                ]
+              core_type (src/driver.mli[172,6657+4]..[186,7416+8])
+                Ptyp_arrow
+                Optional "rules"
+                core_type (src/driver.mli[172,6657+11]..[172,6657+35])
+                  Ptyp_constr "list" (src/driver.mli[172,6657+31]..[172,6657+35])
+                  [
+                    core_type (src/driver.mli[172,6657+11]..[172,6657+30])
+                      Ptyp_constr "Context_free.Rule.t" (src/driver.mli[172,6657+11]..[172,6657+30])
+                      []
+                  ]
+                core_type (src/driver.mli[173,6696+4]..[186,7416+8])
+                  Ptyp_arrow
+                  Optional "enclose_impl"
+                  core_type (src/driver.mli[174,6715+7]..[174,6715+77])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[174,6715+7]..[174,6715+31])
+                      Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[174,6715+7]..[174,6715+31])
+                      []
+                    core_type (src/driver.mli[174,6715+35]..[174,6715+77])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[174,6715+35]..[174,6715+52])
+                        Ptyp_constr "option" (src/driver.mli[174,6715+46]..[174,6715+52])
+                        [
+                          core_type (src/driver.mli[174,6715+35]..[174,6715+45])
+                            Ptyp_constr "Location.t" (src/driver.mli[174,6715+35]..[174,6715+45])
+                            []
+                        ]
+                      core_type (src/driver.mli[174,6715+56]..[174,6715+77])
+                        Ptyp_tuple
+                        [
+                          core_type (src/driver.mli[174,6715+56]..[174,6715+65])
+                            Ptyp_constr "structure" (src/driver.mli[174,6715+56]..[174,6715+65])
+                            []
+                          core_type (src/driver.mli[174,6715+68]..[174,6715+77])
+                            Ptyp_constr "structure" (src/driver.mli[174,6715+68]..[174,6715+77])
+                            []
+                        ]
+                  core_type (src/driver.mli[175,6797+4]..[186,7416+8])
+                    Ptyp_arrow
+                    Optional "enclose_intf"
+                    core_type (src/driver.mli[176,6816+7]..[176,6816+77])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[176,6816+7]..[176,6816+31])
+                        Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[176,6816+7]..[176,6816+31])
+                        []
+                      core_type (src/driver.mli[176,6816+35]..[176,6816+77])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[176,6816+35]..[176,6816+52])
+                          Ptyp_constr "option" (src/driver.mli[176,6816+46]..[176,6816+52])
+                          [
+                            core_type (src/driver.mli[176,6816+35]..[176,6816+45])
+                              Ptyp_constr "Location.t" (src/driver.mli[176,6816+35]..[176,6816+45])
+                              []
+                          ]
+                        core_type (src/driver.mli[176,6816+56]..[176,6816+77])
+                          Ptyp_tuple
+                          [
+                            core_type (src/driver.mli[176,6816+56]..[176,6816+65])
+                              Ptyp_constr "signature" (src/driver.mli[176,6816+56]..[176,6816+65])
+                              []
+                            core_type (src/driver.mli[176,6816+68]..[176,6816+77])
+                              Ptyp_constr "signature" (src/driver.mli[176,6816+68]..[176,6816+77])
+                              []
+                          ]
+                    core_type (src/driver.mli[177,6898+4]..[186,7416+8])
+                      Ptyp_arrow
+                      Optional "impl"
+                      core_type (src/driver.mli[177,6898+11]..[177,6898+61])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[177,6898+11]..[177,6898+35])
+                          Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[177,6898+11]..[177,6898+35])
+                          []
+                        core_type (src/driver.mli[177,6898+39]..[177,6898+61])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/driver.mli[177,6898+39]..[177,6898+48])
+                            Ptyp_constr "structure" (src/driver.mli[177,6898+39]..[177,6898+48])
+                            []
+                          core_type (src/driver.mli[177,6898+52]..[177,6898+61])
+                            Ptyp_constr "structure" (src/driver.mli[177,6898+52]..[177,6898+61])
+                            []
+                      core_type (src/driver.mli[178,6964+4]..[186,7416+8])
+                        Ptyp_arrow
+                        Optional "intf"
+                        core_type (src/driver.mli[178,6964+11]..[178,6964+61])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/driver.mli[178,6964+11]..[178,6964+35])
+                            Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[178,6964+11]..[178,6964+35])
+                            []
+                          core_type (src/driver.mli[178,6964+39]..[178,6964+61])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/driver.mli[178,6964+39]..[178,6964+48])
+                              Ptyp_constr "signature" (src/driver.mli[178,6964+39]..[178,6964+48])
+                              []
+                            core_type (src/driver.mli[178,6964+52]..[178,6964+61])
+                              Ptyp_constr "signature" (src/driver.mli[178,6964+52]..[178,6964+61])
+                              []
+                        core_type (src/driver.mli[179,7030+4]..[186,7416+8])
+                          Ptyp_arrow
+                          Optional "lint_impl"
+                          core_type (src/driver.mli[179,7030+16]..[179,7030+74])
+                            Ptyp_arrow
+                            Nolabel
+                            core_type (src/driver.mli[179,7030+16]..[179,7030+40])
+                              Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[179,7030+16]..[179,7030+40])
+                              []
+                            core_type (src/driver.mli[179,7030+44]..[179,7030+74])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/driver.mli[179,7030+44]..[179,7030+53])
+                                Ptyp_constr "structure" (src/driver.mli[179,7030+44]..[179,7030+53])
+                                []
+                              core_type (src/driver.mli[179,7030+57]..[179,7030+74])
+                                Ptyp_constr "list" (src/driver.mli[179,7030+70]..[179,7030+74])
+                                [
+                                  core_type (src/driver.mli[179,7030+57]..[179,7030+69])
+                                    Ptyp_constr "Lint_error.t" (src/driver.mli[179,7030+57]..[179,7030+69])
+                                    []
+                                ]
+                          core_type (src/driver.mli[180,7109+4]..[186,7416+8])
+                            Ptyp_arrow
+                            Optional "lint_intf"
+                            core_type (src/driver.mli[180,7109+16]..[180,7109+74])
+                              Ptyp_arrow
+                              Nolabel
+                              core_type (src/driver.mli[180,7109+16]..[180,7109+40])
+                                Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[180,7109+16]..[180,7109+40])
+                                []
+                              core_type (src/driver.mli[180,7109+44]..[180,7109+74])
+                                Ptyp_arrow
+                                Nolabel
+                                core_type (src/driver.mli[180,7109+44]..[180,7109+53])
+                                  Ptyp_constr "signature" (src/driver.mli[180,7109+44]..[180,7109+53])
+                                  []
+                                core_type (src/driver.mli[180,7109+57]..[180,7109+74])
+                                  Ptyp_constr "list" (src/driver.mli[180,7109+70]..[180,7109+74])
+                                  [
+                                    core_type (src/driver.mli[180,7109+57]..[180,7109+69])
+                                      Ptyp_constr "Lint_error.t" (src/driver.mli[180,7109+57]..[180,7109+69])
+                                      []
+                                  ]
+                            core_type (src/driver.mli[181,7188+4]..[186,7416+8])
+                              Ptyp_arrow
+                              Optional "preprocess_impl"
+                              core_type (src/driver.mli[181,7188+22]..[181,7188+72])
+                                Ptyp_arrow
+                                Nolabel
+                                core_type (src/driver.mli[181,7188+22]..[181,7188+46])
+                                  Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[181,7188+22]..[181,7188+46])
+                                  []
+                                core_type (src/driver.mli[181,7188+50]..[181,7188+72])
+                                  Ptyp_arrow
+                                  Nolabel
+                                  core_type (src/driver.mli[181,7188+50]..[181,7188+59])
+                                    Ptyp_constr "structure" (src/driver.mli[181,7188+50]..[181,7188+59])
+                                    []
+                                  core_type (src/driver.mli[181,7188+63]..[181,7188+72])
+                                    Ptyp_constr "structure" (src/driver.mli[181,7188+63]..[181,7188+72])
+                                    []
+                              core_type (src/driver.mli[182,7265+4]..[186,7416+8])
+                                Ptyp_arrow
+                                Optional "preprocess_intf"
+                                core_type (src/driver.mli[182,7265+22]..[182,7265+72])
+                                  Ptyp_arrow
+                                  Nolabel
+                                  core_type (src/driver.mli[182,7265+22]..[182,7265+46])
+                                    Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[182,7265+22]..[182,7265+46])
+                                    []
+                                  core_type (src/driver.mli[182,7265+50]..[182,7265+72])
+                                    Ptyp_arrow
+                                    Nolabel
+                                    core_type (src/driver.mli[182,7265+50]..[182,7265+59])
+                                      Ptyp_constr "signature" (src/driver.mli[182,7265+50]..[182,7265+59])
+                                      []
+                                    core_type (src/driver.mli[182,7265+63]..[182,7265+72])
+                                      Ptyp_constr "signature" (src/driver.mli[182,7265+63]..[182,7265+72])
+                                      []
+                                core_type (src/driver.mli[183,7342+4]..[186,7416+8])
+                                  Ptyp_arrow
+                                  Optional "instrument"
+                                  core_type (src/driver.mli[183,7342+16]..[183,7342+28])
+                                    Ptyp_constr "Instrument.t" (src/driver.mli[183,7342+16]..[183,7342+28])
+                                    []
+                                  core_type (src/driver.mli[184,7374+4]..[186,7416+8])
+                                    Ptyp_arrow
+                                    Optional "aliases"
+                                    core_type (src/driver.mli[184,7374+13]..[184,7374+24])
+                                      Ptyp_constr "list" (src/driver.mli[184,7374+20]..[184,7374+24])
+                                      [
+                                        core_type (src/driver.mli[184,7374+13]..[184,7374+19])
+                                          Ptyp_constr "string" (src/driver.mli[184,7374+13]..[184,7374+19])
+                                          []
+                                      ]
+                                    core_type (src/driver.mli[185,7402+4]..[186,7416+8])
+                                      Ptyp_arrow
+                                      Nolabel
+                                      core_type (src/driver.mli[185,7402+4]..[185,7402+10])
+                                        Ptyp_constr "string" (src/driver.mli[185,7402+4]..[185,7402+10])
+                                        []
+                                      core_type (src/driver.mli[186,7416+4]..[186,7416+8])
+                                        Ptyp_constr "unit" (src/driver.mli[186,7416+4]..[186,7416+8])
+                                        []
+            []
+        signature_item (src/driver.mli[191,7662+2]..[202,8054+8])
+          Psig_value
+          value_description "register_transformation_using_ocaml_current_ast" (src/driver.mli[191,7662+6]..[191,7662+53]) (src/driver.mli[191,7662+2]..[202,8054+8])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[203,8063+2]..[204,8143+75])
+                  Pstr_eval
+                  expression (src/driver.mli[203,8063+2]..[204,8143+75])
+                    Pexp_constant PConst_string(" Same as [Driver.register_transformation_using_ocaml_current_ast], but the\n      callbacks [?impl] and [?intf] have access to an expansion context. ",(src/driver.mli[203,8063+2]..[204,8143+75]),None)
+              ]
+            core_type (src/driver.mli[192,7718+4]..[202,8054+8])
+              Ptyp_arrow
+              Optional "impl"
+              core_type (src/driver.mli[193,7729+7]..[195,7814+46])
+                Ptyp_arrow
+                Nolabel
+                core_type (src/driver.mli[193,7729+7]..[193,7729+31])
+                  Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[193,7729+7]..[193,7729+31])
+                  []
+                core_type (src/driver.mli[194,7764+6]..[195,7814+46])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[194,7764+6]..[194,7764+46])
+                    Ptyp_constr "Compiler_version.Ast.Parsetree.structure" (src/driver.mli[194,7764+6]..[194,7764+46])
+                    []
+                  core_type (src/driver.mli[195,7814+6]..[195,7814+46])
+                    Ptyp_constr "Compiler_version.Ast.Parsetree.structure" (src/driver.mli[195,7814+6]..[195,7814+46])
+                    []
+              core_type (src/driver.mli[196,7865+4]..[202,8054+8])
+                Ptyp_arrow
+                Optional "intf"
+                core_type (src/driver.mli[197,7876+7]..[199,7961+46])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[197,7876+7]..[197,7876+31])
+                    Ptyp_constr "Expansion_context.Base.t" (src/driver.mli[197,7876+7]..[197,7876+31])
+                    []
+                  core_type (src/driver.mli[198,7911+6]..[199,7961+46])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[198,7911+6]..[198,7911+46])
+                      Ptyp_constr "Compiler_version.Ast.Parsetree.signature" (src/driver.mli[198,7911+6]..[198,7911+46])
+                      []
+                    core_type (src/driver.mli[199,7961+6]..[199,7961+46])
+                      Ptyp_constr "Compiler_version.Ast.Parsetree.signature" (src/driver.mli[199,7961+6]..[199,7961+46])
+                      []
+                core_type (src/driver.mli[200,8012+4]..[202,8054+8])
+                  Ptyp_arrow
+                  Optional "aliases"
+                  core_type (src/driver.mli[200,8012+13]..[200,8012+24])
+                    Ptyp_constr "list" (src/driver.mli[200,8012+20]..[200,8012+24])
+                    [
+                      core_type (src/driver.mli[200,8012+13]..[200,8012+19])
+                        Ptyp_constr "string" (src/driver.mli[200,8012+13]..[200,8012+19])
+                        []
+                    ]
+                  core_type (src/driver.mli[201,8040+4]..[202,8054+8])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[201,8040+4]..[201,8040+10])
+                      Ptyp_constr "string" (src/driver.mli[201,8040+4]..[201,8040+10])
+                      []
+                    core_type (src/driver.mli[202,8054+4]..[202,8054+8])
+                      Ptyp_constr "unit" (src/driver.mli[202,8054+4]..[202,8054+8])
+                      []
+            []
+      ]
+  signature_item (src/driver.mli[220,8857+0]..[225,8969+3])
+    Psig_module "Create_file_property" (src/driver.mli[220,8857+7]..[220,8857+27])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[207,8224+0]..[219,8792+64])
+            Pstr_eval
+            expression (src/driver.mli[207,8224+0]..[219,8792+64])
+              Pexp_constant PConst_string(" Create a new file property.\n\n    A file property represent a piece of information about a file that can be\n    set during preprocessing. If the [-output-metadata FILE] command line option\n    was passed to the driver, then it will output this information to the given\n    file.\n\n    This mechanism is used to pass information gathered while preprocessing the\n    file to the build system. For instance, this is used by ppx_inline_test to\n    tell whether a file contains tests or not.\n\n    In the future we could also use this to directly compute the dependencies\n    and pass them here, to avoid calling ocamldep separately. ",(src/driver.mli[207,8224+0]..[219,8792+64]),None)
+        ]
+    module_type (src/driver.mli[220,8857+28]..[225,8969+3])
+      Pmty_functor "Name" (src/driver.mli[220,8857+29]..[220,8857+33])
+      module_type (src/driver.mli[220,8857+36]..[222,8917+3])
+        Pmty_signature
+        [
+          signature_item (src/driver.mli[221,8897+2]..[221,8897+19])
+            Psig_value
+            value_description "name" (src/driver.mli[221,8897+6]..[221,8897+10]) (src/driver.mli[221,8897+2]..[221,8897+19])
+              core_type (src/driver.mli[221,8897+13]..[221,8897+19])
+                Ptyp_constr "string" (src/driver.mli[221,8897+13]..[221,8897+19])
+                []
+              []
+        ]
+      module_type (src/driver.mli[223,8922+0]..[225,8969+3])
+        Pmty_functor "T" (src/driver.mli[223,8922+1]..[223,8922+2])
+        module_type (src/driver.mli[223,8922+5]..[223,8922+15])
+          Pmty_ident "Sexpable.S" (src/driver.mli[223,8922+5]..[223,8922+15])
+        module_type (src/driver.mli[223,8922+19]..[225,8969+3])
+          Pmty_signature
+          [
+            signature_item (src/driver.mli[224,8945+2]..[224,8945+23])
+              Psig_value
+              value_description "set" (src/driver.mli[224,8945+6]..[224,8945+9]) (src/driver.mli[224,8945+2]..[224,8945+23])
+                core_type (src/driver.mli[224,8945+12]..[224,8945+23])
+                  Ptyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[224,8945+12]..[224,8945+15])
+                    Ptyp_constr "T.t" (src/driver.mli[224,8945+12]..[224,8945+15])
+                    []
+                  core_type (src/driver.mli[224,8945+19]..[224,8945+23])
+                    Ptyp_constr "unit" (src/driver.mli[224,8945+19]..[224,8945+23])
+                    []
+                []
+          ]
+  signature_item (src/driver.mli[227,8974+0]..[227,8974+29])
+    Psig_value
+    value_description "standalone" (src/driver.mli[227,8974+4]..[227,8974+14]) (src/driver.mli[227,8974+0]..[227,8974+29])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[228,9004+0]..[231,9155+16])
+            Pstr_eval
+            expression (src/driver.mli[228,9004+0]..[231,9155+16])
+              Pexp_constant PConst_string(" Suitable for -pp and also usable as a standalone command line tool.\n\n    If the first command line argument is [-as-ppx] then it will run as a ppx\n    rewriter. ",(src/driver.mli[228,9004+0]..[231,9155+16]),None)
+        ]
+      core_type (src/driver.mli[227,8974+17]..[227,8974+29])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[227,8974+17]..[227,8974+21])
+          Ptyp_constr "unit" (src/driver.mli[227,8974+17]..[227,8974+21])
+          []
+        core_type (src/driver.mli[227,8974+25]..[227,8974+29])
+          Ptyp_constr "unit" (src/driver.mli[227,8974+25]..[227,8974+29])
+          []
+      []
+  signature_item (src/driver.mli[233,9173+0]..[233,9173+38])
+    Psig_value
+    value_description "run_as_ppx_rewriter" (src/driver.mli[233,9173+4]..[233,9173+23]) (src/driver.mli[233,9173+0]..[233,9173+38])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[234,9212+0]..[234,9212+59])
+            Pstr_eval
+            expression (src/driver.mli[234,9212+0]..[234,9212+59])
+              Pexp_constant PConst_string(" Suitable for -ppx. Used only for the public release. ",(src/driver.mli[234,9212+0]..[234,9212+59]),None)
+        ]
+      core_type (src/driver.mli[233,9173+26]..[233,9173+38])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[233,9173+26]..[233,9173+30])
+          Ptyp_constr "unit" (src/driver.mli[233,9173+26]..[233,9173+30])
+          []
+        core_type (src/driver.mli[233,9173+34]..[233,9173+38])
+          Ptyp_constr "unit" (src/driver.mli[233,9173+34]..[233,9173+38])
+          []
+      []
+  signature_item (src/driver.mli[236,9273+0]..[236,9273+25])
+    Psig_value
+    value_description "pretty" (src/driver.mli[236,9273+4]..[236,9273+10]) (src/driver.mli[236,9273+0]..[236,9273+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[237,9299+0]..[238,9376+58])
+            Pstr_eval
+            expression (src/driver.mli[237,9299+0]..[238,9376+58])
+              Pexp_constant PConst_string(" If [true], code transformations should avoid generating code that is not\n    strictly necessary, such as extra type annotations. ",(src/driver.mli[237,9299+0]..[238,9376+58]),None)
+        ]
+      core_type (src/driver.mli[236,9273+13]..[236,9273+25])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[236,9273+13]..[236,9273+17])
+          Ptyp_constr "unit" (src/driver.mli[236,9273+13]..[236,9273+17])
+          []
+        core_type (src/driver.mli[236,9273+21]..[236,9273+25])
+          Ptyp_constr "bool" (src/driver.mli[236,9273+21]..[236,9273+25])
+          []
+      []
+  signature_item (src/driver.mli[240,9436+0]..[240,9436+7])
+    Psig_attribute "ocaml.text"
+    [
+      structure_item (src/driver.mli[240,9436+0]..[240,9436+7])
+        Pstr_eval
+        expression (src/driver.mli[240,9436+0]..[240,9436+7])
+          Pexp_constant PConst_string("/*",(src/driver.mli[240,9436+0]..[240,9436+7]),None)
+    ]
+  signature_item (src/driver.mli[242,9445+0]..[242,9445+42])
+    Psig_value
+    value_description "map_structure" (src/driver.mli[242,9445+4]..[242,9445+17]) (src/driver.mli[242,9445+0]..[242,9445+42])
+      core_type (src/driver.mli[242,9445+20]..[242,9445+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[242,9445+20]..[242,9445+29])
+          Ptyp_constr "structure" (src/driver.mli[242,9445+20]..[242,9445+29])
+          []
+        core_type (src/driver.mli[242,9445+33]..[242,9445+42])
+          Ptyp_constr "structure" (src/driver.mli[242,9445+33]..[242,9445+42])
+          []
+      []
+  signature_item (src/driver.mli[243,9488+0]..[243,9488+42])
+    Psig_value
+    value_description "map_signature" (src/driver.mli[243,9488+4]..[243,9488+17]) (src/driver.mli[243,9488+0]..[243,9488+42])
+      core_type (src/driver.mli[243,9488+20]..[243,9488+42])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[243,9488+20]..[243,9488+29])
+          Ptyp_constr "signature" (src/driver.mli[243,9488+20]..[243,9488+29])
+          []
+        core_type (src/driver.mli[243,9488+33]..[243,9488+42])
+          Ptyp_constr "signature" (src/driver.mli[243,9488+33]..[243,9488+42])
+          []
+      []
+  signature_item (src/driver.mli[244,9531+0]..[244,9531+32])
+    Psig_value
+    value_description "enable_checks" (src/driver.mli[244,9531+4]..[244,9531+17]) (src/driver.mli[244,9531+0]..[244,9531+32])
+      core_type (src/driver.mli[244,9531+20]..[244,9531+32])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[244,9531+20]..[244,9531+24])
+          Ptyp_constr "unit" (src/driver.mli[244,9531+20]..[244,9531+24])
+          []
+        core_type (src/driver.mli[244,9531+28]..[244,9531+32])
+          Ptyp_constr "unit" (src/driver.mli[244,9531+28]..[244,9531+32])
+          []
+      []
+  signature_item (src/driver.mli[245,9564+0]..[245,9564+40])
+    Psig_value
+    value_description "enable_location_check" (src/driver.mli[245,9564+4]..[245,9564+25]) (src/driver.mli[245,9564+0]..[245,9564+40])
+      core_type (src/driver.mli[245,9564+28]..[245,9564+40])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[245,9564+28]..[245,9564+32])
+          Ptyp_constr "unit" (src/driver.mli[245,9564+28]..[245,9564+32])
+          []
+        core_type (src/driver.mli[245,9564+36]..[245,9564+40])
+          Ptyp_constr "unit" (src/driver.mli[245,9564+36]..[245,9564+40])
+          []
+      []
+  signature_item (src/driver.mli[246,9605+0]..[246,9605+41])
+    Psig_value
+    value_description "disable_location_check" (src/driver.mli[246,9605+4]..[246,9605+26]) (src/driver.mli[246,9605+0]..[246,9605+41])
+      core_type (src/driver.mli[246,9605+29]..[246,9605+41])
+        Ptyp_arrow
+        Nolabel
+        core_type (src/driver.mli[246,9605+29]..[246,9605+33])
+          Ptyp_constr "unit" (src/driver.mli[246,9605+29]..[246,9605+33])
+          []
+        core_type (src/driver.mli[246,9605+37]..[246,9605+41])
+          Ptyp_constr "unit" (src/driver.mli[246,9605+37]..[246,9605+41])
+          []
+      []
+]
+
+[@@@ocaml.text
+  " Interaction with the driver, such as getting/seeting cookies, adding\n    arguments.\n\n    The relevant part in the manual is {{!driver.driver_execution} the section\n    on its execution}. "]
+open Import
+val add_arg : Stdlib.Arg.key -> Stdlib.Arg.spec -> doc:string -> unit
+[@@ocaml.doc " Add one argument to the command line "]
+module Lint_error : sig type t val of_string : Location.t -> string -> t end
+[@@ocaml.doc " Error reported by linters "]
+module Cookies :
+sig
+  type t
+  val get :
+    t -> string -> (expression, 'a -> 'a, 'b) Ast_pattern.t -> 'b option
+  [@@ocaml.doc
+    " [get cookies name pattern] look for a cookie named [name] and parse it\n      using [pattern]. Raises if the parsing fails. "]
+  val get_res :
+    t ->
+      string ->
+        (expression, 'a -> 'a, 'b) Ast_pattern.t ->
+          ('b option, Location.Error.t NonEmptyList.t) result[@@ocaml.doc
+                                                               " [get cookies name pattern] look for a cookie named [name] and parse it\n      using [pattern], returning a [result] instead of raising when the parsing\n      fails. "]
+  val set : t -> string -> expression -> unit[@@ocaml.doc
+                                               " [set cookies name expr] set cookie [name] to [expr]. "]
+  val add_handler : (t -> unit) -> unit[@@ocaml.doc
+                                         " Register a callback that is called before a rewriting. The handler is\n      expected to lookup some cookies and set some global variables.\n\n      This API is a temporary hack to allow to migrate from [add_arg] to the use\n      of cookie, until ppxlib has been upgraded to pass cookies through. "]
+  val add_simple_handler :
+    string ->
+      (expression, 'a -> 'a, 'b) Ast_pattern.t ->
+        f:('b option -> unit) -> unit[@@ocaml.doc
+                                       " Shorthand for: [add_handler (fun t -> f (get t name pattern))] "]
+  val add_post_handler : (t -> unit) -> unit[@@ocaml.doc
+                                              " Register a callback that is called after a rewriting. The handler is\n      expected to set some cookies from some global variables. "]
+end
+module Instrument :
+sig
+  type t
+  type pos =
+    | Before 
+    | After 
+  val make :
+    (Parsetree.structure -> Parsetree.structure) -> position:pos -> t
+  [@@ocaml.doc
+    " [make transformation ~position] creates an instrumentation that can be\n      passed to [Driver.register_transformation] to instrument an implementation\n      file. [transformation] is the transformation that will be applied to the\n      AST; [position] specifies if it should be applied before or after\n      rewriters defined through [rules], [impl] or [intf] are applied."]
+  module V2 :
+  sig
+    val make :
+      (Expansion_context.Base.t -> Parsetree.structure -> Parsetree.structure)
+        -> position:pos -> t[@@ocaml.doc
+                              " Same as [Instrument.make], but the transformation that will be applied\n        to the AST has access to an expansion context. To be used together with\n        [Driver.V2]."]
+  end
+end
+val register_transformation :
+  ?extensions:Extension.t list ->
+    ?rules:Context_free.Rule.t list ->
+      ?enclose_impl:(Location.t option -> (structure * structure)) ->
+        ?enclose_intf:(Location.t option -> (signature * signature)) ->
+          ?impl:(structure -> structure) ->
+            ?intf:(signature -> signature) ->
+              ?lint_impl:(structure -> Lint_error.t list) ->
+                ?lint_intf:(signature -> Lint_error.t list) ->
+                  ?preprocess_impl:(structure -> structure) ->
+                    ?preprocess_intf:(signature -> signature) ->
+                      ?instrument:Instrument.t ->
+                        ?aliases:string list -> string -> unit[@@ocaml.doc
+                                                                " [register_transformation name] registers a code transformation.\n\n    [name] is a logical name for the set of transformations (such as [sexp_conv]\n    or [bin_prot]). It is mostly used for debugging purposes.\n\n    [rules] is a list of context independent rewriting rules, such as extension\n    point expanders. This is what most code transformation should use.\n\n    [extensions] is a special cases of [rules] and is deprecated. It is only\n    kept for backward compatibility.\n\n    [enclose_impl] and [enclose_intf] produces a header and footer for\n    implementation/interface files. They are a special case of [impl] and\n    [intf]. The header is placed after any initial module-level attributes; the\n    footer is placed after everything else. Both functions receive a location\n    that denotes all of the items between header and footer, or [None] if the\n    that list of items is empty.\n\n    [impl] is an optional function that is applied on implementation files and\n    [intf] is an optional function that is applied on interface files. These two\n    functions are applied on the AST of the whole file. They should only be used\n    when the other mechanism are not enough. For instance if the transformation\n    expands extension points that depend on the context.\n\n    [lint_impl] and [lint_intf] are applied to the unprocessed source. Errors\n    they return will be reported to the user as preprocessor warnings.\n\n    [instrument] can be used to instrument implementation files. Its\n    transformation is applied to the AST of the whole file. The difference to\n    [impl] is that you can specify if it should be applied before or after all\n    rewriters defined through [rules], [impl] or [intf] are applied.\n\n    More information on each phase, and their relative order, can be found in\n    the {{!driver.driver_execution} manual}. "]
+val register_transformation_using_ocaml_current_ast :
+  ?impl:(Compiler_version.Ast.Parsetree.structure ->
+           Compiler_version.Ast.Parsetree.structure)
+    ->
+    ?intf:(Compiler_version.Ast.Parsetree.signature ->
+             Compiler_version.Ast.Parsetree.signature)
+      -> ?aliases:string list -> string -> unit[@@ocaml.doc
+                                                 " Same as [register_transformation] except that it uses the same AST as the\n    current ocaml compiler.\n\n    This is not the intended way of using driver. This is only for ppx rewriters\n    that are not written using ppxlib but want to export a driver compatible\n    library. "]
+val register_code_transformation :
+  name:string ->
+    ?aliases:string list ->
+      impl:(structure -> structure) -> intf:(signature -> signature) -> unit
+[@@deprecated "[since 2015-11] use register_transformation instead"][@@ocaml.doc
+                                                                    " Same as:\n\n    {[\n      register_transformation ~name ~impl ~intf ()\n    ]} "]
+val register_correction : loc:Location.t -> repl:string -> unit[@@ocaml.doc
+                                                                 " Rewriters might call this function to suggest a correction to the code\n    source. When they do this, the driver will generate a\n    [file.ml.ppx-corrected] file with the suggested replacement. The build\n    system will then show the diff to the user who is free to accept the\n    correction or not. "]
+val register_process_file_hook : (unit -> unit) -> unit[@@ocaml.doc
+                                                         " Hook called before processing a file "]
+module V2 :
+sig
+  val register_transformation :
+    ?extensions:Extension.t list ->
+      ?rules:Context_free.Rule.t list ->
+        ?enclose_impl:(Expansion_context.Base.t ->
+                         Location.t option -> (structure * structure))
+          ->
+          ?enclose_intf:(Expansion_context.Base.t ->
+                           Location.t option -> (signature * signature))
+            ->
+            ?impl:(Expansion_context.Base.t -> structure -> structure) ->
+              ?intf:(Expansion_context.Base.t -> signature -> signature) ->
+                ?lint_impl:(Expansion_context.Base.t ->
+                              structure -> Lint_error.t list)
+                  ->
+                  ?lint_intf:(Expansion_context.Base.t ->
+                                signature -> Lint_error.t list)
+                    ->
+                    ?preprocess_impl:(Expansion_context.Base.t ->
+                                        structure -> structure)
+                      ->
+                      ?preprocess_intf:(Expansion_context.Base.t ->
+                                          signature -> signature)
+                        ->
+                        ?instrument:Instrument.t ->
+                          ?aliases:string list -> string -> unit[@@ocaml.doc
+                                                                  " Same as [Driver.register_transformation], but the callbacks have access to\n      an expansion context. Their signatures coincide with the signatures of the\n      respective methods in [Ast_traverse.map_with_expansion_context]. "]
+  val register_transformation_using_ocaml_current_ast :
+    ?impl:(Expansion_context.Base.t ->
+             Compiler_version.Ast.Parsetree.structure ->
+               Compiler_version.Ast.Parsetree.structure)
+      ->
+      ?intf:(Expansion_context.Base.t ->
+               Compiler_version.Ast.Parsetree.signature ->
+                 Compiler_version.Ast.Parsetree.signature)
+        -> ?aliases:string list -> string -> unit[@@ocaml.doc
+                                                   " Same as [Driver.register_transformation_using_ocaml_current_ast], but the\n      callbacks [?impl] and [?intf] have access to an expansion context. "]
+end
+module Create_file_property :
+functor (Name : sig val name : string end) ->
+  functor (T : Sexpable.S) -> sig val set : T.t -> unit end[@@ocaml.doc
+                                                             " Create a new file property.\n\n    A file property represent a piece of information about a file that can be\n    set during preprocessing. If the [-output-metadata FILE] command line option\n    was passed to the driver, then it will output this information to the given\n    file.\n\n    This mechanism is used to pass information gathered while preprocessing the\n    file to the build system. For instance, this is used by ppx_inline_test to\n    tell whether a file contains tests or not.\n\n    In the future we could also use this to directly compute the dependencies\n    and pass them here, to avoid calling ocamldep separately. "]
+val standalone : unit -> unit[@@ocaml.doc
+                               " Suitable for -pp and also usable as a standalone command line tool.\n\n    If the first command line argument is [-as-ppx] then it will run as a ppx\n    rewriter. "]
+val run_as_ppx_rewriter : unit -> unit[@@ocaml.doc
+                                        " Suitable for -ppx. Used only for the public release. "]
+val pretty : unit -> bool[@@ocaml.doc
+                           " If [true], code transformations should avoid generating code that is not\n    strictly necessary, such as extra type annotations. "]
+[@@@ocaml.text "/*"]
+val map_structure : structure -> structure
+val map_signature : signature -> signature
+val enable_checks : unit -> unit
+val enable_location_check : unit -> unit
+val disable_location_check : unit -> unit
+[
+  signature_item (src/driver.mli[1,0+0]..src/driver.mli[5,168+25])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/driver.mli[1,0+0]..[5,168+25])
+        Pstr_eval
+        expression (src/driver.mli[1,0+0]..[5,168+25])
+          Pexp_constant PConst_string(" Interaction with the driver, such as getting/seeting cookies, adding\n    arguments.\n\n    The relevant part in the manual is {{!driver.driver_execution} the section\n    on its execution}. ",(src/driver.mli[1,0+0]..[5,168+25]),None)
+    ]
+  signature_item (src/driver.mli[7,195+0]..src/driver.mli[7,195+11])
+    Tsig_open Fresh "Ppxlib__!.Import"
+  signature_item (src/driver.mli[9,208+0]..src/driver.mli[9,208+69])
+    Tsig_value
+    value_description add_arg/578 (src/driver.mli[9,208+0]..src/driver.mli[9,208+69])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[10,278+0]..[10,278+43])
+            Pstr_eval
+            expression (src/driver.mli[10,278+0]..[10,278+43])
+              Pexp_constant PConst_string(" Add one argument to the command line ",(src/driver.mli[10,278+0]..[10,278+43]),None)
+        ]
+      core_type (src/driver.mli[9,208+14]..src/driver.mli[9,208+69])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[9,208+14]..src/driver.mli[9,208+28])
+          Ttyp_constr "Stdlib!.Arg.key"
+          []
+        core_type (src/driver.mli[9,208+32]..src/driver.mli[9,208+69])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/driver.mli[9,208+32]..src/driver.mli[9,208+47])
+            Ttyp_constr "Stdlib!.Arg.spec"
+            []
+          core_type (src/driver.mli[9,208+51]..src/driver.mli[9,208+69])
+            Ttyp_arrow
+            Labelled "doc"
+            core_type (src/driver.mli[9,208+55]..src/driver.mli[9,208+61])
+              Ttyp_constr "string/17!"
+              []
+            core_type (src/driver.mli[9,208+65]..src/driver.mli[9,208+69])
+              Ttyp_constr "unit/6!"
+              []
+      []
+  signature_item (src/driver.mli[13,356+0]..src/driver.mli[17,434+3])
+    Tsig_module "Lint_error/613"
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[12,323+0]..[12,323+32])
+            Pstr_eval
+            expression (src/driver.mli[12,323+0]..[12,323+32])
+              Pexp_constant PConst_string(" Error reported by linters ",(src/driver.mli[12,323+0]..[12,323+32]),None)
+        ]
+    module_type (src/driver.mli[13,356+20]..src/driver.mli[17,434+3])
+      Tmty_signature
+      [
+        signature_item (src/driver.mli[14,380+2]..src/driver.mli[14,380+8])
+          Tsig_type Rec
+          [
+            type_declaration t/579 (src/driver.mli[14,380+2]..src/driver.mli[14,380+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[16,390+2]..src/driver.mli[16,390+43])
+          Tsig_value
+          value_description of_string/612 (src/driver.mli[16,390+2]..src/driver.mli[16,390+43])
+            core_type (src/driver.mli[16,390+18]..src/driver.mli[16,390+43])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[16,390+18]..src/driver.mli[16,390+28])
+                Ttyp_constr "Ppxlib__!.Location.t"
+                []
+              core_type (src/driver.mli[16,390+32]..src/driver.mli[16,390+43])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[16,390+32]..src/driver.mli[16,390+38])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/driver.mli[16,390+42]..src/driver.mli[16,390+43])
+                  Ttyp_constr "t/579"
+                  []
+            []
+      ]
+  signature_item (src/driver.mli[19,439+0]..src/driver.mli[55,1840+3])
+    Tsig_module "Cookies/1029"
+    module_type (src/driver.mli[19,439+17]..src/driver.mli[55,1840+3])
+      Tmty_signature
+      [
+        signature_item (src/driver.mli[20,460+2]..src/driver.mli[20,460+8])
+          Tsig_type Rec
+          [
+            type_declaration t/614 (src/driver.mli[20,460+2]..src/driver.mli[20,460+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[22,470+2]..src/driver.mli[22,470+80])
+          Tsig_value
+          value_description get/955 (src/driver.mli[22,470+2]..src/driver.mli[22,470+80])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[23,551+2]..[24,628+54])
+                  Pstr_eval
+                  expression (src/driver.mli[23,551+2]..[24,628+54])
+                    Pexp_constant PConst_string(" [get cookies name pattern] look for a cookie named [name] and parse it\n      using [pattern]. Raises if the parsing fails. ",(src/driver.mli[23,551+2]..[24,628+54]),None)
+              ]
+            core_type (src/driver.mli[22,470+12]..src/driver.mli[22,470+80])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[22,470+12]..src/driver.mli[22,470+13])
+                Ttyp_constr "t/614"
+                []
+              core_type (src/driver.mli[22,470+17]..src/driver.mli[22,470+80])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[22,470+17]..src/driver.mli[22,470+23])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/driver.mli[22,470+27]..src/driver.mli[22,470+80])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[22,470+27]..src/driver.mli[22,470+67])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/driver.mli[22,470+28]..src/driver.mli[22,470+38])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                      core_type (src/driver.mli[22,470+40]..src/driver.mli[22,470+48])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[22,470+40]..src/driver.mli[22,470+42])
+                          Ttyp_var a
+                        core_type (src/driver.mli[22,470+46]..src/driver.mli[22,470+48])
+                          Ttyp_var a
+                      core_type (src/driver.mli[22,470+50]..src/driver.mli[22,470+52])
+                        Ttyp_var b
+                    ]
+                  core_type (src/driver.mli[22,470+71]..src/driver.mli[22,470+80])
+                    Ttyp_constr "option/12!"
+                    [
+                      core_type (src/driver.mli[22,470+71]..src/driver.mli[22,470+73])
+                        Ttyp_var b
+                    ]
+            []
+        signature_item (src/driver.mli[26,684+2]..src/driver.mli[30,771+55])
+          Tsig_value
+          value_description get_res/1024 (src/driver.mli[26,684+2]..src/driver.mli[30,771+55])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[31,827+2]..[33,984+15])
+                  Pstr_eval
+                  expression (src/driver.mli[31,827+2]..[33,984+15])
+                    Pexp_constant PConst_string(" [get cookies name pattern] look for a cookie named [name] and parse it\n      using [pattern], returning a [result] instead of raising when the parsing\n      fails. ",(src/driver.mli[31,827+2]..[33,984+15]),None)
+              ]
+            core_type (src/driver.mli[27,700+4]..src/driver.mli[30,771+55])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[27,700+4]..src/driver.mli[27,700+5])
+                Ttyp_constr "t/614"
+                []
+              core_type (src/driver.mli[28,709+4]..src/driver.mli[30,771+55])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[28,709+4]..src/driver.mli[28,709+10])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/driver.mli[29,723+4]..src/driver.mli[30,771+55])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[29,723+4]..src/driver.mli[29,723+44])
+                    Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                    [
+                      core_type (src/driver.mli[29,723+5]..src/driver.mli[29,723+15])
+                        Ttyp_constr "Ppxlib__!.Import.expression"
+                        []
+                      core_type (src/driver.mli[29,723+17]..src/driver.mli[29,723+25])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[29,723+17]..src/driver.mli[29,723+19])
+                          Ttyp_var a
+                        core_type (src/driver.mli[29,723+23]..src/driver.mli[29,723+25])
+                          Ttyp_var a
+                      core_type (src/driver.mli[29,723+27]..src/driver.mli[29,723+29])
+                        Ttyp_var b
+                    ]
+                  core_type (src/driver.mli[30,771+4]..src/driver.mli[30,771+55])
+                    Ttyp_constr "Stdlib!.result"
+                    [
+                      core_type (src/driver.mli[30,771+5]..src/driver.mli[30,771+14])
+                        Ttyp_constr "option/12!"
+                        [
+                          core_type (src/driver.mli[30,771+5]..src/driver.mli[30,771+7])
+                            Ttyp_var b
+                        ]
+                      core_type (src/driver.mli[30,771+16]..src/driver.mli[30,771+47])
+                        Ttyp_constr "Ppxlib__!.Import.NonEmptyList.t"
+                        [
+                          core_type (src/driver.mli[30,771+16]..src/driver.mli[30,771+32])
+                            Ttyp_constr "Ppxlib__!.Location.Error.t"
+                            []
+                        ]
+                    ]
+            []
+        signature_item (src/driver.mli[35,1001+2]..src/driver.mli[35,1001+45])
+          Tsig_value
+          value_description set/1025 (src/driver.mli[35,1001+2]..src/driver.mli[35,1001+45])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[36,1047+2]..[36,1047+61])
+                  Pstr_eval
+                  expression (src/driver.mli[36,1047+2]..[36,1047+61])
+                    Pexp_constant PConst_string(" [set cookies name expr] set cookie [name] to [expr]. ",(src/driver.mli[36,1047+2]..[36,1047+61]),None)
+              ]
+            core_type (src/driver.mli[35,1001+12]..src/driver.mli[35,1001+45])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[35,1001+12]..src/driver.mli[35,1001+13])
+                Ttyp_constr "t/614"
+                []
+              core_type (src/driver.mli[35,1001+17]..src/driver.mli[35,1001+45])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[35,1001+17]..src/driver.mli[35,1001+23])
+                  Ttyp_constr "string/17!"
+                  []
+                core_type (src/driver.mli[35,1001+27]..src/driver.mli[35,1001+45])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[35,1001+27]..src/driver.mli[35,1001+37])
+                    Ttyp_constr "Ppxlib__!.Import.expression"
+                    []
+                  core_type (src/driver.mli[35,1001+41]..src/driver.mli[35,1001+45])
+                    Ttyp_constr "unit/6!"
+                    []
+            []
+        signature_item (src/driver.mli[38,1110+2]..src/driver.mli[38,1110+39])
+          Tsig_value
+          value_description add_handler/1026 (src/driver.mli[38,1110+2]..src/driver.mli[38,1110+39])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[39,1150+2]..[43,1377+75])
+                  Pstr_eval
+                  expression (src/driver.mli[39,1150+2]..[43,1377+75])
+                    Pexp_constant PConst_string(" Register a callback that is called before a rewriting. The handler is\n      expected to lookup some cookies and set some global variables.\n\n      This API is a temporary hack to allow to migrate from [add_arg] to the use\n      of cookie, until ppxlib has been upgraded to pass cookies through. ",(src/driver.mli[39,1150+2]..[43,1377+75]),None)
+              ]
+            core_type (src/driver.mli[38,1110+20]..src/driver.mli[38,1110+39])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[38,1110+21]..src/driver.mli[38,1110+30])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[38,1110+21]..src/driver.mli[38,1110+22])
+                  Ttyp_constr "t/614"
+                  []
+                core_type (src/driver.mli[38,1110+26]..src/driver.mli[38,1110+30])
+                  Ttyp_constr "unit/6!"
+                  []
+              core_type (src/driver.mli[38,1110+35]..src/driver.mli[38,1110+39])
+                Ttyp_constr "unit/6!"
+                []
+            []
+        signature_item (src/driver.mli[45,1454+2]..src/driver.mli[49,1572+8])
+          Tsig_value
+          value_description add_simple_handler/1027 (src/driver.mli[45,1454+2]..src/driver.mli[49,1572+8])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[50,1581+2]..[50,1581+71])
+                  Pstr_eval
+                  expression (src/driver.mli[50,1581+2]..[50,1581+71])
+                    Pexp_constant PConst_string(" Shorthand for: [add_handler (fun t -> f (get t name pattern))] ",(src/driver.mli[50,1581+2]..[50,1581+71]),None)
+              ]
+            core_type (src/driver.mli[46,1481+4]..src/driver.mli[49,1572+8])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[46,1481+4]..src/driver.mli[46,1481+10])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/driver.mli[47,1495+4]..src/driver.mli[49,1572+8])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[47,1495+4]..src/driver.mli[47,1495+44])
+                  Ttyp_constr "Ppxlib__!.Ast_pattern.t"
+                  [
+                    core_type (src/driver.mli[47,1495+5]..src/driver.mli[47,1495+15])
+                      Ttyp_constr "Ppxlib__!.Import.expression"
+                      []
+                    core_type (src/driver.mli[47,1495+17]..src/driver.mli[47,1495+25])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[47,1495+17]..src/driver.mli[47,1495+19])
+                        Ttyp_var a
+                      core_type (src/driver.mli[47,1495+23]..src/driver.mli[47,1495+25])
+                        Ttyp_var a
+                    core_type (src/driver.mli[47,1495+27]..src/driver.mli[47,1495+29])
+                      Ttyp_var b
+                  ]
+                core_type (src/driver.mli[48,1543+4]..src/driver.mli[49,1572+8])
+                  Ttyp_arrow
+                  Labelled "f"
+                  core_type (src/driver.mli[48,1543+7]..src/driver.mli[48,1543+24])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[48,1543+7]..src/driver.mli[48,1543+16])
+                      Ttyp_constr "option/12!"
+                      [
+                        core_type (src/driver.mli[48,1543+7]..src/driver.mli[48,1543+9])
+                          Ttyp_var b
+                      ]
+                    core_type (src/driver.mli[48,1543+20]..src/driver.mli[48,1543+24])
+                      Ttyp_constr "unit/6!"
+                      []
+                  core_type (src/driver.mli[49,1572+4]..src/driver.mli[49,1572+8])
+                    Ttyp_constr "unit/6!"
+                    []
+            []
+        signature_item (src/driver.mli[52,1654+2]..src/driver.mli[52,1654+44])
+          Tsig_value
+          value_description add_post_handler/1028 (src/driver.mli[52,1654+2]..src/driver.mli[52,1654+44])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[53,1699+2]..[54,1774+65])
+                  Pstr_eval
+                  expression (src/driver.mli[53,1699+2]..[54,1774+65])
+                    Pexp_constant PConst_string(" Register a callback that is called after a rewriting. The handler is\n      expected to set some cookies from some global variables. ",(src/driver.mli[53,1699+2]..[54,1774+65]),None)
+              ]
+            core_type (src/driver.mli[52,1654+25]..src/driver.mli[52,1654+44])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[52,1654+26]..src/driver.mli[52,1654+35])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[52,1654+26]..src/driver.mli[52,1654+27])
+                  Ttyp_constr "t/614"
+                  []
+                core_type (src/driver.mli[52,1654+31]..src/driver.mli[52,1654+35])
+                  Ttyp_constr "unit/6!"
+                  []
+              core_type (src/driver.mli[52,1654+40]..src/driver.mli[52,1654+44])
+                Ttyp_constr "unit/6!"
+                []
+            []
+      ]
+  signature_item (src/driver.mli[57,1845+0]..src/driver.mli[77,2702+3])
+    Tsig_module "Instrument/1629"
+    module_type (src/driver.mli[57,1845+20]..src/driver.mli[77,2702+3])
+      Tmty_signature
+      [
+        signature_item (src/driver.mli[58,1869+2]..src/driver.mli[58,1869+8])
+          Tsig_type Rec
+          [
+            type_declaration t/1030 (src/driver.mli[58,1869+2]..src/driver.mli[58,1869+8])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_abstract
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[59,1878+2]..src/driver.mli[59,1878+27])
+          Tsig_type Rec
+          [
+            type_declaration pos/1031 (src/driver.mli[59,1878+2]..src/driver.mli[59,1878+27])
+              ptype_params =
+                []
+              ptype_cstrs =
+                []
+              ptype_kind =
+                Ttype_variant
+                  [
+                    (src/driver.mli[59,1878+13]..src/driver.mli[59,1878+19])
+                      Before/1032
+                      []
+                      None
+                    (src/driver.mli[59,1878+20]..src/driver.mli[59,1878+27])
+                      After/1033
+                      []
+                      None
+                  ]
+              ptype_private = Public
+              ptype_manifest =
+                None
+          ]
+        signature_item (src/driver.mli[61,1907+2]..src/driver.mli[61,1907+78])
+          Tsig_value
+          value_description make/1585 (src/driver.mli[61,1907+2]..src/driver.mli[61,1907+78])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[62,1986+2]..[66,2295+72])
+                  Pstr_eval
+                  expression (src/driver.mli[62,1986+2]..[66,2295+72])
+                    Pexp_constant PConst_string(" [make transformation ~position] creates an instrumentation that can be\n      passed to [Driver.register_transformation] to instrument an implementation\n      file. [transformation] is the transformation that will be applied to the\n      AST; [position] specifies if it should be applied before or after\n      rewriters defined through [rules], [impl] or [intf] are applied.",(src/driver.mli[62,1986+2]..[66,2295+72]),None)
+              ]
+            core_type (src/driver.mli[61,1907+13]..src/driver.mli[61,1907+78])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[61,1907+14]..src/driver.mli[61,1907+56])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[61,1907+14]..src/driver.mli[61,1907+33])
+                  Ttyp_constr "Ppxlib__!.Import.Parsetree.structure"
+                  []
+                core_type (src/driver.mli[61,1907+37]..src/driver.mli[61,1907+56])
+                  Ttyp_constr "Ppxlib__!.Import.Parsetree.structure"
+                  []
+              core_type (src/driver.mli[61,1907+61]..src/driver.mli[61,1907+78])
+                Ttyp_arrow
+                Labelled "position"
+                core_type (src/driver.mli[61,1907+70]..src/driver.mli[61,1907+73])
+                  Ttyp_constr "pos/1031"
+                  []
+                core_type (src/driver.mli[61,1907+77]..src/driver.mli[61,1907+78])
+                  Ttyp_constr "t/1030"
+                  []
+            []
+        signature_item (src/driver.mli[68,2369+2]..src/driver.mli[76,2696+5])
+          Tsig_module "V2/1628"
+          module_type (src/driver.mli[68,2369+14]..src/driver.mli[76,2696+5])
+            Tmty_signature
+            [
+              signature_item (src/driver.mli[69,2387+4]..src/driver.mli[72,2506+7])
+                Tsig_value
+                value_description make/1627 (src/driver.mli[69,2387+4]..src/driver.mli[72,2506+7])
+                  attribute "ocaml.doc"
+                    [
+                      structure_item (src/driver.mli[73,2514+4]..[75,2673+22])
+                        Pstr_eval
+                        expression (src/driver.mli[73,2514+4]..[75,2673+22])
+                          Pexp_constant PConst_string(" Same as [Instrument.make], but the transformation that will be applied\n        to the AST has access to an expansion context. To be used together with\n        [Driver.V2].",(src/driver.mli[73,2514+4]..[75,2673+22]),None)
+                    ]
+                  core_type (src/driver.mli[70,2402+6]..src/driver.mli[72,2506+7])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[70,2402+7]..src/driver.mli[70,2402+77])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[70,2402+7]..src/driver.mli[70,2402+31])
+                        Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                        []
+                      core_type (src/driver.mli[70,2402+35]..src/driver.mli[70,2402+77])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[70,2402+35]..src/driver.mli[70,2402+54])
+                          Ttyp_constr "Ppxlib__!.Import.Parsetree.structure"
+                          []
+                        core_type (src/driver.mli[70,2402+58]..src/driver.mli[70,2402+77])
+                          Ttyp_constr "Ppxlib__!.Import.Parsetree.structure"
+                          []
+                    core_type (src/driver.mli[71,2484+6]..src/driver.mli[72,2506+7])
+                      Ttyp_arrow
+                      Labelled "position"
+                      core_type (src/driver.mli[71,2484+15]..src/driver.mli[71,2484+18])
+                        Ttyp_constr "pos/1031"
+                        []
+                      core_type (src/driver.mli[72,2506+6]..src/driver.mli[72,2506+7])
+                        Ttyp_constr "t/1030"
+                        []
+                  []
+            ]
+      ]
+  signature_item (src/driver.mli[79,2707+0]..src/driver.mli[93,3305+6])
+    Tsig_value
+    value_description register_transformation/1765 (src/driver.mli[79,2707+0]..src/driver.mli[93,3305+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[94,3312+0]..[127,5110+47])
+            Pstr_eval
+            expression (src/driver.mli[94,3312+0]..[127,5110+47])
+              Pexp_constant PConst_string(" [register_transformation name] registers a code transformation.\n\n    [name] is a logical name for the set of transformations (such as [sexp_conv]\n    or [bin_prot]). It is mostly used for debugging purposes.\n\n    [rules] is a list of context independent rewriting rules, such as extension\n    point expanders. This is what most code transformation should use.\n\n    [extensions] is a special cases of [rules] and is deprecated. It is only\n    kept for backward compatibility.\n\n    [enclose_impl] and [enclose_intf] produces a header and footer for\n    implementation/interface files. They are a special case of [impl] and\n    [intf]. The header is placed after any initial module-level attributes; the\n    footer is placed after everything else. Both functions receive a location\n    that denotes all of the items between header and footer, or [None] if the\n    that list of items is empty.\n\n    [impl] is an optional function that is applied on implementation files and\n    [intf] is an optional function that is applied on interface files. These two\n    functions are applied on the AST of the whole file. They should only be used\n    when the other mechanism are not enough. For instance if the transformation\n    expands extension points that depend on the context.\n\n    [lint_impl] and [lint_intf] are applied to the unprocessed source. Errors\n    they return will be reported to the user as preprocessor warnings.\n\n    [instrument] can be used to instrument implementation files. Its\n    transformation is applied to the AST of the whole file. The difference to\n    [impl] is that you can specify if it should be applied before or after all\n    rewriters defined through [rules], [impl] or [intf] are applied.\n\n    More information on each phase, and their relative order, can be found in\n    the {{!driver.driver_execution} manual}. ",(src/driver.mli[94,3312+0]..[127,5110+47]),None)
+        ]
+      core_type (src/driver.mli[80,2737+2]..src/driver.mli[93,3305+6])
+        Ttyp_arrow
+        Optional "extensions"
+        core_type (src/driver.mli[80,2737+14]..src/driver.mli[80,2737+30])
+          Ttyp_constr "list/11!"
+          [
+            core_type (src/driver.mli[80,2737+14]..src/driver.mli[80,2737+25])
+              Ttyp_constr "Ppxlib__!.Extension.t"
+              []
+          ]
+        core_type (src/driver.mli[81,2808+2]..src/driver.mli[93,3305+6])
+          Ttyp_arrow
+          Optional "rules"
+          core_type (src/driver.mli[81,2808+9]..src/driver.mli[81,2808+33])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/driver.mli[81,2808+9]..src/driver.mli[81,2808+28])
+                Ttyp_constr "Ppxlib__!.Context_free.Rule.t"
+                []
+            ]
+          core_type (src/driver.mli[82,2845+2]..src/driver.mli[93,3305+6])
+            Ttyp_arrow
+            Optional "enclose_impl"
+            core_type (src/driver.mli[82,2845+17]..src/driver.mli[82,2845+59])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[82,2845+17]..src/driver.mli[82,2845+34])
+                Ttyp_constr "option/12!"
+                [
+                  core_type (src/driver.mli[82,2845+17]..src/driver.mli[82,2845+27])
+                    Ttyp_constr "Ppxlib__!.Location.t"
+                    []
+                ]
+              core_type (src/driver.mli[82,2845+38]..src/driver.mli[82,2845+59])
+                Ttyp_tuple
+                [
+                  core_type (src/driver.mli[82,2845+38]..src/driver.mli[82,2845+47])
+                    Ttyp_constr "Ppxlib__!.Import.structure"
+                    []
+                  core_type (src/driver.mli[82,2845+50]..src/driver.mli[82,2845+59])
+                    Ttyp_constr "Ppxlib__!.Import.structure"
+                    []
+                ]
+            core_type (src/driver.mli[83,2909+2]..src/driver.mli[93,3305+6])
+              Ttyp_arrow
+              Optional "enclose_intf"
+              core_type (src/driver.mli[83,2909+17]..src/driver.mli[83,2909+59])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[83,2909+17]..src/driver.mli[83,2909+34])
+                  Ttyp_constr "option/12!"
+                  [
+                    core_type (src/driver.mli[83,2909+17]..src/driver.mli[83,2909+27])
+                      Ttyp_constr "Ppxlib__!.Location.t"
+                      []
+                  ]
+                core_type (src/driver.mli[83,2909+38]..src/driver.mli[83,2909+59])
+                  Ttyp_tuple
+                  [
+                    core_type (src/driver.mli[83,2909+38]..src/driver.mli[83,2909+47])
+                      Ttyp_constr "Ppxlib__!.Import.signature"
+                      []
+                    core_type (src/driver.mli[83,2909+50]..src/driver.mli[83,2909+59])
+                      Ttyp_constr "Ppxlib__!.Import.signature"
+                      []
+                  ]
+              core_type (src/driver.mli[84,2973+2]..src/driver.mli[93,3305+6])
+                Ttyp_arrow
+                Optional "impl"
+                core_type (src/driver.mli[84,2973+9]..src/driver.mli[84,2973+31])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[84,2973+9]..src/driver.mli[84,2973+18])
+                    Ttyp_constr "Ppxlib__!.Import.structure"
+                    []
+                  core_type (src/driver.mli[84,2973+22]..src/driver.mli[84,2973+31])
+                    Ttyp_constr "Ppxlib__!.Import.structure"
+                    []
+                core_type (src/driver.mli[85,3009+2]..src/driver.mli[93,3305+6])
+                  Ttyp_arrow
+                  Optional "intf"
+                  core_type (src/driver.mli[85,3009+9]..src/driver.mli[85,3009+31])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[85,3009+9]..src/driver.mli[85,3009+18])
+                      Ttyp_constr "Ppxlib__!.Import.signature"
+                      []
+                    core_type (src/driver.mli[85,3009+22]..src/driver.mli[85,3009+31])
+                      Ttyp_constr "Ppxlib__!.Import.signature"
+                      []
+                  core_type (src/driver.mli[86,3045+2]..src/driver.mli[93,3305+6])
+                    Ttyp_arrow
+                    Optional "lint_impl"
+                    core_type (src/driver.mli[86,3045+14]..src/driver.mli[86,3045+44])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[86,3045+14]..src/driver.mli[86,3045+23])
+                        Ttyp_constr "Ppxlib__!.Import.structure"
+                        []
+                      core_type (src/driver.mli[86,3045+27]..src/driver.mli[86,3045+44])
+                        Ttyp_constr "list/11!"
+                        [
+                          core_type (src/driver.mli[86,3045+27]..src/driver.mli[86,3045+39])
+                            Ttyp_constr "Lint_error/613.t"
+                            []
+                        ]
+                    core_type (src/driver.mli[87,3094+2]..src/driver.mli[93,3305+6])
+                      Ttyp_arrow
+                      Optional "lint_intf"
+                      core_type (src/driver.mli[87,3094+14]..src/driver.mli[87,3094+44])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[87,3094+14]..src/driver.mli[87,3094+23])
+                          Ttyp_constr "Ppxlib__!.Import.signature"
+                          []
+                        core_type (src/driver.mli[87,3094+27]..src/driver.mli[87,3094+44])
+                          Ttyp_constr "list/11!"
+                          [
+                            core_type (src/driver.mli[87,3094+27]..src/driver.mli[87,3094+39])
+                              Ttyp_constr "Lint_error/613.t"
+                              []
+                          ]
+                      core_type (src/driver.mli[88,3143+2]..src/driver.mli[93,3305+6])
+                        Ttyp_arrow
+                        Optional "preprocess_impl"
+                        core_type (src/driver.mli[88,3143+20]..src/driver.mli[88,3143+42])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/driver.mli[88,3143+20]..src/driver.mli[88,3143+29])
+                            Ttyp_constr "Ppxlib__!.Import.structure"
+                            []
+                          core_type (src/driver.mli[88,3143+33]..src/driver.mli[88,3143+42])
+                            Ttyp_constr "Ppxlib__!.Import.structure"
+                            []
+                        core_type (src/driver.mli[89,3190+2]..src/driver.mli[93,3305+6])
+                          Ttyp_arrow
+                          Optional "preprocess_intf"
+                          core_type (src/driver.mli[89,3190+20]..src/driver.mli[89,3190+42])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/driver.mli[89,3190+20]..src/driver.mli[89,3190+29])
+                              Ttyp_constr "Ppxlib__!.Import.signature"
+                              []
+                            core_type (src/driver.mli[89,3190+33]..src/driver.mli[89,3190+42])
+                              Ttyp_constr "Ppxlib__!.Import.signature"
+                              []
+                          core_type (src/driver.mli[90,3237+2]..src/driver.mli[93,3305+6])
+                            Ttyp_arrow
+                            Optional "instrument"
+                            core_type (src/driver.mli[90,3237+14]..src/driver.mli[90,3237+26])
+                              Ttyp_constr "Instrument/1629.t"
+                              []
+                            core_type (src/driver.mli[91,3267+2]..src/driver.mli[93,3305+6])
+                              Ttyp_arrow
+                              Optional "aliases"
+                              core_type (src/driver.mli[91,3267+11]..src/driver.mli[91,3267+22])
+                                Ttyp_constr "list/11!"
+                                [
+                                  core_type (src/driver.mli[91,3267+11]..src/driver.mli[91,3267+17])
+                                    Ttyp_constr "string/17!"
+                                    []
+                                ]
+                              core_type (src/driver.mli[92,3293+2]..src/driver.mli[93,3305+6])
+                                Ttyp_arrow
+                                Nolabel
+                                core_type (src/driver.mli[92,3293+2]..src/driver.mli[92,3293+8])
+                                  Ttyp_constr "string/17!"
+                                  []
+                                core_type (src/driver.mli[93,3305+2]..src/driver.mli[93,3305+6])
+                                  Ttyp_constr "unit/6!"
+                                  []
+      []
+  signature_item (src/driver.mli[129,5159+0]..src/driver.mli[138,5465+6])
+    Tsig_value
+    value_description register_transformation_using_ocaml_current_ast/3621 (src/driver.mli[129,5159+0]..src/driver.mli[138,5465+6])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[139,5472+0]..[144,5737+15])
+            Pstr_eval
+            expression (src/driver.mli[139,5472+0]..[144,5737+15])
+              Pexp_constant PConst_string(" Same as [register_transformation] except that it uses the same AST as the\n    current ocaml compiler.\n\n    This is not the intended way of using driver. This is only for ppx rewriters\n    that are not written using ppxlib but want to export a driver compatible\n    library. ",(src/driver.mli[139,5472+0]..[144,5737+15]),None)
+        ]
+      core_type (src/driver.mli[130,5213+2]..src/driver.mli[138,5465+6])
+        Ttyp_arrow
+        Optional "impl"
+        core_type (src/driver.mli[131,5222+5]..src/driver.mli[132,5271+44])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/driver.mli[131,5222+5]..src/driver.mli[131,5222+45])
+            Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.structure"
+            []
+          core_type (src/driver.mli[132,5271+4]..src/driver.mli[132,5271+44])
+            Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.structure"
+            []
+        core_type (src/driver.mli[133,5320+2]..src/driver.mli[138,5465+6])
+          Ttyp_arrow
+          Optional "intf"
+          core_type (src/driver.mli[134,5329+5]..src/driver.mli[135,5378+44])
+            Ttyp_arrow
+            Nolabel
+            core_type (src/driver.mli[134,5329+5]..src/driver.mli[134,5329+45])
+              Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.signature"
+              []
+            core_type (src/driver.mli[135,5378+4]..src/driver.mli[135,5378+44])
+              Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.signature"
+              []
+          core_type (src/driver.mli[136,5427+2]..src/driver.mli[138,5465+6])
+            Ttyp_arrow
+            Optional "aliases"
+            core_type (src/driver.mli[136,5427+11]..src/driver.mli[136,5427+22])
+              Ttyp_constr "list/11!"
+              [
+                core_type (src/driver.mli[136,5427+11]..src/driver.mli[136,5427+17])
+                  Ttyp_constr "string/17!"
+                  []
+              ]
+            core_type (src/driver.mli[137,5453+2]..src/driver.mli[138,5465+6])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[137,5453+2]..src/driver.mli[137,5453+8])
+                Ttyp_constr "string/17!"
+                []
+              core_type (src/driver.mli[138,5465+2]..src/driver.mli[138,5465+6])
+                Ttyp_constr "unit/6!"
+                []
+      []
+  signature_item (src/driver.mli[146,5754+0]..src/driver.mli[152,5909+70])
+    Tsig_value
+    value_description register_code_transformation/3622 (src/driver.mli[146,5754+0]..src/driver.mli[152,5909+70])
+      attribute "deprecated"
+        [
+          structure_item (src/driver.mli[152,5909+16]..[152,5909+69])
+            Pstr_eval
+            expression (src/driver.mli[152,5909+16]..[152,5909+69])
+              Pexp_constant PConst_string("[since 2015-11] use register_transformation instead",(src/driver.mli[152,5909+17]..[152,5909+68]),None)
+        ]
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[153,5980+0]..[157,6052+9])
+            Pstr_eval
+            expression (src/driver.mli[153,5980+0]..[157,6052+9])
+              Pexp_constant PConst_string(" Same as:\n\n    {[\n      register_transformation ~name ~impl ~intf ()\n    ]} ",(src/driver.mli[153,5980+0]..[157,6052+9]),None)
+        ]
+      core_type (src/driver.mli[147,5789+2]..src/driver.mli[151,5902+6])
+        Ttyp_arrow
+        Labelled "name"
+        core_type (src/driver.mli[147,5789+7]..src/driver.mli[147,5789+13])
+          Ttyp_constr "string/17!"
+          []
+        core_type (src/driver.mli[148,5806+2]..src/driver.mli[151,5902+6])
+          Ttyp_arrow
+          Optional "aliases"
+          core_type (src/driver.mli[148,5806+11]..src/driver.mli[148,5806+22])
+            Ttyp_constr "list/11!"
+            [
+              core_type (src/driver.mli[148,5806+11]..src/driver.mli[148,5806+17])
+                Ttyp_constr "string/17!"
+                []
+            ]
+          core_type (src/driver.mli[149,5832+2]..src/driver.mli[151,5902+6])
+            Ttyp_arrow
+            Labelled "impl"
+            core_type (src/driver.mli[149,5832+8]..src/driver.mli[149,5832+30])
+              Ttyp_arrow
+              Nolabel
+              core_type (src/driver.mli[149,5832+8]..src/driver.mli[149,5832+17])
+                Ttyp_constr "Ppxlib__!.Import.structure"
+                []
+              core_type (src/driver.mli[149,5832+21]..src/driver.mli[149,5832+30])
+                Ttyp_constr "Ppxlib__!.Import.structure"
+                []
+            core_type (src/driver.mli[150,5867+2]..src/driver.mli[151,5902+6])
+              Ttyp_arrow
+              Labelled "intf"
+              core_type (src/driver.mli[150,5867+8]..src/driver.mli[150,5867+30])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[150,5867+8]..src/driver.mli[150,5867+17])
+                  Ttyp_constr "Ppxlib__!.Import.signature"
+                  []
+                core_type (src/driver.mli[150,5867+21]..src/driver.mli[150,5867+30])
+                  Ttyp_constr "Ppxlib__!.Import.signature"
+                  []
+              core_type (src/driver.mli[151,5902+2]..src/driver.mli[151,5902+6])
+                Ttyp_constr "unit/6!"
+                []
+      []
+  signature_item (src/driver.mli[159,6063+0]..src/driver.mli[159,6063+63])
+    Tsig_value
+    value_description register_correction/3623 (src/driver.mli[159,6063+0]..src/driver.mli[159,6063+63])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[160,6127+0]..[164,6408+25])
+            Pstr_eval
+            expression (src/driver.mli[160,6127+0]..[164,6408+25])
+              Pexp_constant PConst_string(" Rewriters might call this function to suggest a correction to the code\n    source. When they do this, the driver will generate a\n    [file.ml.ppx-corrected] file with the suggested replacement. The build\n    system will then show the diff to the user who is free to accept the\n    correction or not. ",(src/driver.mli[160,6127+0]..[164,6408+25]),None)
+        ]
+      core_type (src/driver.mli[159,6063+26]..src/driver.mli[159,6063+63])
+        Ttyp_arrow
+        Labelled "loc"
+        core_type (src/driver.mli[159,6063+30]..src/driver.mli[159,6063+40])
+          Ttyp_constr "Ppxlib__!.Location.t"
+          []
+        core_type (src/driver.mli[159,6063+44]..src/driver.mli[159,6063+63])
+          Ttyp_arrow
+          Labelled "repl"
+          core_type (src/driver.mli[159,6063+49]..src/driver.mli[159,6063+55])
+            Ttyp_constr "string/17!"
+            []
+          core_type (src/driver.mli[159,6063+59]..src/driver.mli[159,6063+63])
+            Ttyp_constr "unit/6!"
+            []
+      []
+  signature_item (src/driver.mli[166,6435+0]..src/driver.mli[166,6435+55])
+    Tsig_value
+    value_description register_process_file_hook/3624 (src/driver.mli[166,6435+0]..src/driver.mli[166,6435+55])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[167,6491+0]..[167,6491+43])
+            Pstr_eval
+            expression (src/driver.mli[167,6491+0]..[167,6491+43])
+              Pexp_constant PConst_string(" Hook called before processing a file ",(src/driver.mli[167,6491+0]..[167,6491+43]),None)
+        ]
+      core_type (src/driver.mli[166,6435+33]..src/driver.mli[166,6435+55])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[166,6435+34]..src/driver.mli[166,6435+46])
+          Ttyp_arrow
+          Nolabel
+          core_type (src/driver.mli[166,6435+34]..src/driver.mli[166,6435+38])
+            Ttyp_constr "unit/6!"
+            []
+          core_type (src/driver.mli[166,6435+42]..src/driver.mli[166,6435+46])
+            Ttyp_constr "unit/6!"
+            []
+        core_type (src/driver.mli[166,6435+51]..src/driver.mli[166,6435+55])
+          Ttyp_constr "unit/6!"
+          []
+      []
+  signature_item (src/driver.mli[169,6536+0]..src/driver.mli[205,8219+3])
+    Tsig_module "V2/3627"
+    module_type (src/driver.mli[169,6536+12]..src/driver.mli[205,8219+3])
+      Tmty_signature
+      [
+        signature_item (src/driver.mli[170,6552+2]..src/driver.mli[186,7416+8])
+          Tsig_value
+          value_description register_transformation/3625 (src/driver.mli[170,6552+2]..src/driver.mli[186,7416+8])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[187,7425+2]..[189,7587+73])
+                  Pstr_eval
+                  expression (src/driver.mli[187,7425+2]..[189,7587+73])
+                    Pexp_constant PConst_string(" Same as [Driver.register_transformation], but the callbacks have access to\n      an expansion context. Their signatures coincide with the signatures of the\n      respective methods in [Ast_traverse.map_with_expansion_context]. ",(src/driver.mli[187,7425+2]..[189,7587+73]),None)
+              ]
+            core_type (src/driver.mli[171,6584+4]..src/driver.mli[186,7416+8])
+              Ttyp_arrow
+              Optional "extensions"
+              core_type (src/driver.mli[171,6584+16]..src/driver.mli[171,6584+32])
+                Ttyp_constr "list/11!"
+                [
+                  core_type (src/driver.mli[171,6584+16]..src/driver.mli[171,6584+27])
+                    Ttyp_constr "Ppxlib__!.Extension.t"
+                    []
+                ]
+              core_type (src/driver.mli[172,6657+4]..src/driver.mli[186,7416+8])
+                Ttyp_arrow
+                Optional "rules"
+                core_type (src/driver.mli[172,6657+11]..src/driver.mli[172,6657+35])
+                  Ttyp_constr "list/11!"
+                  [
+                    core_type (src/driver.mli[172,6657+11]..src/driver.mli[172,6657+30])
+                      Ttyp_constr "Ppxlib__!.Context_free.Rule.t"
+                      []
+                  ]
+                core_type (src/driver.mli[173,6696+4]..src/driver.mli[186,7416+8])
+                  Ttyp_arrow
+                  Optional "enclose_impl"
+                  core_type (src/driver.mli[174,6715+7]..src/driver.mli[174,6715+77])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[174,6715+7]..src/driver.mli[174,6715+31])
+                      Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                      []
+                    core_type (src/driver.mli[174,6715+35]..src/driver.mli[174,6715+77])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[174,6715+35]..src/driver.mli[174,6715+52])
+                        Ttyp_constr "option/12!"
+                        [
+                          core_type (src/driver.mli[174,6715+35]..src/driver.mli[174,6715+45])
+                            Ttyp_constr "Ppxlib__!.Location.t"
+                            []
+                        ]
+                      core_type (src/driver.mli[174,6715+56]..src/driver.mli[174,6715+77])
+                        Ttyp_tuple
+                        [
+                          core_type (src/driver.mli[174,6715+56]..src/driver.mli[174,6715+65])
+                            Ttyp_constr "Ppxlib__!.Import.structure"
+                            []
+                          core_type (src/driver.mli[174,6715+68]..src/driver.mli[174,6715+77])
+                            Ttyp_constr "Ppxlib__!.Import.structure"
+                            []
+                        ]
+                  core_type (src/driver.mli[175,6797+4]..src/driver.mli[186,7416+8])
+                    Ttyp_arrow
+                    Optional "enclose_intf"
+                    core_type (src/driver.mli[176,6816+7]..src/driver.mli[176,6816+77])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/driver.mli[176,6816+7]..src/driver.mli[176,6816+31])
+                        Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                        []
+                      core_type (src/driver.mli[176,6816+35]..src/driver.mli[176,6816+77])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[176,6816+35]..src/driver.mli[176,6816+52])
+                          Ttyp_constr "option/12!"
+                          [
+                            core_type (src/driver.mli[176,6816+35]..src/driver.mli[176,6816+45])
+                              Ttyp_constr "Ppxlib__!.Location.t"
+                              []
+                          ]
+                        core_type (src/driver.mli[176,6816+56]..src/driver.mli[176,6816+77])
+                          Ttyp_tuple
+                          [
+                            core_type (src/driver.mli[176,6816+56]..src/driver.mli[176,6816+65])
+                              Ttyp_constr "Ppxlib__!.Import.signature"
+                              []
+                            core_type (src/driver.mli[176,6816+68]..src/driver.mli[176,6816+77])
+                              Ttyp_constr "Ppxlib__!.Import.signature"
+                              []
+                          ]
+                    core_type (src/driver.mli[177,6898+4]..src/driver.mli[186,7416+8])
+                      Ttyp_arrow
+                      Optional "impl"
+                      core_type (src/driver.mli[177,6898+11]..src/driver.mli[177,6898+61])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/driver.mli[177,6898+11]..src/driver.mli[177,6898+35])
+                          Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                          []
+                        core_type (src/driver.mli[177,6898+39]..src/driver.mli[177,6898+61])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/driver.mli[177,6898+39]..src/driver.mli[177,6898+48])
+                            Ttyp_constr "Ppxlib__!.Import.structure"
+                            []
+                          core_type (src/driver.mli[177,6898+52]..src/driver.mli[177,6898+61])
+                            Ttyp_constr "Ppxlib__!.Import.structure"
+                            []
+                      core_type (src/driver.mli[178,6964+4]..src/driver.mli[186,7416+8])
+                        Ttyp_arrow
+                        Optional "intf"
+                        core_type (src/driver.mli[178,6964+11]..src/driver.mli[178,6964+61])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/driver.mli[178,6964+11]..src/driver.mli[178,6964+35])
+                            Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                            []
+                          core_type (src/driver.mli[178,6964+39]..src/driver.mli[178,6964+61])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/driver.mli[178,6964+39]..src/driver.mli[178,6964+48])
+                              Ttyp_constr "Ppxlib__!.Import.signature"
+                              []
+                            core_type (src/driver.mli[178,6964+52]..src/driver.mli[178,6964+61])
+                              Ttyp_constr "Ppxlib__!.Import.signature"
+                              []
+                        core_type (src/driver.mli[179,7030+4]..src/driver.mli[186,7416+8])
+                          Ttyp_arrow
+                          Optional "lint_impl"
+                          core_type (src/driver.mli[179,7030+16]..src/driver.mli[179,7030+74])
+                            Ttyp_arrow
+                            Nolabel
+                            core_type (src/driver.mli[179,7030+16]..src/driver.mli[179,7030+40])
+                              Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                              []
+                            core_type (src/driver.mli[179,7030+44]..src/driver.mli[179,7030+74])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/driver.mli[179,7030+44]..src/driver.mli[179,7030+53])
+                                Ttyp_constr "Ppxlib__!.Import.structure"
+                                []
+                              core_type (src/driver.mli[179,7030+57]..src/driver.mli[179,7030+74])
+                                Ttyp_constr "list/11!"
+                                [
+                                  core_type (src/driver.mli[179,7030+57]..src/driver.mli[179,7030+69])
+                                    Ttyp_constr "Lint_error/613.t"
+                                    []
+                                ]
+                          core_type (src/driver.mli[180,7109+4]..src/driver.mli[186,7416+8])
+                            Ttyp_arrow
+                            Optional "lint_intf"
+                            core_type (src/driver.mli[180,7109+16]..src/driver.mli[180,7109+74])
+                              Ttyp_arrow
+                              Nolabel
+                              core_type (src/driver.mli[180,7109+16]..src/driver.mli[180,7109+40])
+                                Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                                []
+                              core_type (src/driver.mli[180,7109+44]..src/driver.mli[180,7109+74])
+                                Ttyp_arrow
+                                Nolabel
+                                core_type (src/driver.mli[180,7109+44]..src/driver.mli[180,7109+53])
+                                  Ttyp_constr "Ppxlib__!.Import.signature"
+                                  []
+                                core_type (src/driver.mli[180,7109+57]..src/driver.mli[180,7109+74])
+                                  Ttyp_constr "list/11!"
+                                  [
+                                    core_type (src/driver.mli[180,7109+57]..src/driver.mli[180,7109+69])
+                                      Ttyp_constr "Lint_error/613.t"
+                                      []
+                                  ]
+                            core_type (src/driver.mli[181,7188+4]..src/driver.mli[186,7416+8])
+                              Ttyp_arrow
+                              Optional "preprocess_impl"
+                              core_type (src/driver.mli[181,7188+22]..src/driver.mli[181,7188+72])
+                                Ttyp_arrow
+                                Nolabel
+                                core_type (src/driver.mli[181,7188+22]..src/driver.mli[181,7188+46])
+                                  Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                                  []
+                                core_type (src/driver.mli[181,7188+50]..src/driver.mli[181,7188+72])
+                                  Ttyp_arrow
+                                  Nolabel
+                                  core_type (src/driver.mli[181,7188+50]..src/driver.mli[181,7188+59])
+                                    Ttyp_constr "Ppxlib__!.Import.structure"
+                                    []
+                                  core_type (src/driver.mli[181,7188+63]..src/driver.mli[181,7188+72])
+                                    Ttyp_constr "Ppxlib__!.Import.structure"
+                                    []
+                              core_type (src/driver.mli[182,7265+4]..src/driver.mli[186,7416+8])
+                                Ttyp_arrow
+                                Optional "preprocess_intf"
+                                core_type (src/driver.mli[182,7265+22]..src/driver.mli[182,7265+72])
+                                  Ttyp_arrow
+                                  Nolabel
+                                  core_type (src/driver.mli[182,7265+22]..src/driver.mli[182,7265+46])
+                                    Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                                    []
+                                  core_type (src/driver.mli[182,7265+50]..src/driver.mli[182,7265+72])
+                                    Ttyp_arrow
+                                    Nolabel
+                                    core_type (src/driver.mli[182,7265+50]..src/driver.mli[182,7265+59])
+                                      Ttyp_constr "Ppxlib__!.Import.signature"
+                                      []
+                                    core_type (src/driver.mli[182,7265+63]..src/driver.mli[182,7265+72])
+                                      Ttyp_constr "Ppxlib__!.Import.signature"
+                                      []
+                                core_type (src/driver.mli[183,7342+4]..src/driver.mli[186,7416+8])
+                                  Ttyp_arrow
+                                  Optional "instrument"
+                                  core_type (src/driver.mli[183,7342+16]..src/driver.mli[183,7342+28])
+                                    Ttyp_constr "Instrument/1629.t"
+                                    []
+                                  core_type (src/driver.mli[184,7374+4]..src/driver.mli[186,7416+8])
+                                    Ttyp_arrow
+                                    Optional "aliases"
+                                    core_type (src/driver.mli[184,7374+13]..src/driver.mli[184,7374+24])
+                                      Ttyp_constr "list/11!"
+                                      [
+                                        core_type (src/driver.mli[184,7374+13]..src/driver.mli[184,7374+19])
+                                          Ttyp_constr "string/17!"
+                                          []
+                                      ]
+                                    core_type (src/driver.mli[185,7402+4]..src/driver.mli[186,7416+8])
+                                      Ttyp_arrow
+                                      Nolabel
+                                      core_type (src/driver.mli[185,7402+4]..src/driver.mli[185,7402+10])
+                                        Ttyp_constr "string/17!"
+                                        []
+                                      core_type (src/driver.mli[186,7416+4]..src/driver.mli[186,7416+8])
+                                        Ttyp_constr "unit/6!"
+                                        []
+            []
+        signature_item (src/driver.mli[191,7662+2]..src/driver.mli[202,8054+8])
+          Tsig_value
+          value_description register_transformation_using_ocaml_current_ast/3626 (src/driver.mli[191,7662+2]..src/driver.mli[202,8054+8])
+            attribute "ocaml.doc"
+              [
+                structure_item (src/driver.mli[203,8063+2]..[204,8143+75])
+                  Pstr_eval
+                  expression (src/driver.mli[203,8063+2]..[204,8143+75])
+                    Pexp_constant PConst_string(" Same as [Driver.register_transformation_using_ocaml_current_ast], but the\n      callbacks [?impl] and [?intf] have access to an expansion context. ",(src/driver.mli[203,8063+2]..[204,8143+75]),None)
+              ]
+            core_type (src/driver.mli[192,7718+4]..src/driver.mli[202,8054+8])
+              Ttyp_arrow
+              Optional "impl"
+              core_type (src/driver.mli[193,7729+7]..src/driver.mli[195,7814+46])
+                Ttyp_arrow
+                Nolabel
+                core_type (src/driver.mli[193,7729+7]..src/driver.mli[193,7729+31])
+                  Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                  []
+                core_type (src/driver.mli[194,7764+6]..src/driver.mli[195,7814+46])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[194,7764+6]..src/driver.mli[194,7764+46])
+                    Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.structure"
+                    []
+                  core_type (src/driver.mli[195,7814+6]..src/driver.mli[195,7814+46])
+                    Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.structure"
+                    []
+              core_type (src/driver.mli[196,7865+4]..src/driver.mli[202,8054+8])
+                Ttyp_arrow
+                Optional "intf"
+                core_type (src/driver.mli[197,7876+7]..src/driver.mli[199,7961+46])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[197,7876+7]..src/driver.mli[197,7876+31])
+                    Ttyp_constr "Ppxlib__!.Expansion_context.Base.t"
+                    []
+                  core_type (src/driver.mli[198,7911+6]..src/driver.mli[199,7961+46])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[198,7911+6]..src/driver.mli[198,7911+46])
+                      Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.signature"
+                      []
+                    core_type (src/driver.mli[199,7961+6]..src/driver.mli[199,7961+46])
+                      Ttyp_constr "Ppxlib__!.Import.Compiler_version.Ast.Parsetree.signature"
+                      []
+                core_type (src/driver.mli[200,8012+4]..src/driver.mli[202,8054+8])
+                  Ttyp_arrow
+                  Optional "aliases"
+                  core_type (src/driver.mli[200,8012+13]..src/driver.mli[200,8012+24])
+                    Ttyp_constr "list/11!"
+                    [
+                      core_type (src/driver.mli[200,8012+13]..src/driver.mli[200,8012+19])
+                        Ttyp_constr "string/17!"
+                        []
+                    ]
+                  core_type (src/driver.mli[201,8040+4]..src/driver.mli[202,8054+8])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/driver.mli[201,8040+4]..src/driver.mli[201,8040+10])
+                      Ttyp_constr "string/17!"
+                      []
+                    core_type (src/driver.mli[202,8054+4]..src/driver.mli[202,8054+8])
+                      Ttyp_constr "unit/6!"
+                      []
+            []
+      ]
+  signature_item (src/driver.mli[220,8857+0]..src/driver.mli[225,8969+3])
+    Tsig_module "Create_file_property/3687"
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[207,8224+0]..[219,8792+64])
+            Pstr_eval
+            expression (src/driver.mli[207,8224+0]..[219,8792+64])
+              Pexp_constant PConst_string(" Create a new file property.\n\n    A file property represent a piece of information about a file that can be\n    set during preprocessing. If the [-output-metadata FILE] command line option\n    was passed to the driver, then it will output this information to the given\n    file.\n\n    This mechanism is used to pass information gathered while preprocessing the\n    file to the build system. For instance, this is used by ppx_inline_test to\n    tell whether a file contains tests or not.\n\n    In the future we could also use this to directly compute the dependencies\n    and pass them here, to avoid calling ocamldep separately. ",(src/driver.mli[207,8224+0]..[219,8792+64]),None)
+        ]
+    module_type (src/driver.mli[220,8857+28]..src/driver.mli[225,8969+3])
+      Tmty_functor "Name/3629"
+      module_type (src/driver.mli[220,8857+36]..src/driver.mli[222,8917+3])
+        Tmty_signature
+        [
+          signature_item (src/driver.mli[221,8897+2]..src/driver.mli[221,8897+19])
+            Tsig_value
+            value_description name/3628 (src/driver.mli[221,8897+2]..src/driver.mli[221,8897+19])
+              core_type (src/driver.mli[221,8897+13]..src/driver.mli[221,8897+19])
+                Ttyp_constr "string/17!"
+                []
+              []
+        ]
+      module_type (src/driver.mli[223,8922+0]..src/driver.mli[225,8969+3])
+        Tmty_functor "T/3685"
+        module_type (src/driver.mli[223,8922+5]..src/driver.mli[223,8922+15])
+          Tmty_ident "Ppxlib__!.Import.Sexpable.S"
+        module_type (src/driver.mli[223,8922+19]..src/driver.mli[225,8969+3])
+          Tmty_signature
+          [
+            signature_item (src/driver.mli[224,8945+2]..src/driver.mli[224,8945+23])
+              Tsig_value
+              value_description set/3686 (src/driver.mli[224,8945+2]..src/driver.mli[224,8945+23])
+                core_type (src/driver.mli[224,8945+12]..src/driver.mli[224,8945+23])
+                  Ttyp_arrow
+                  Nolabel
+                  core_type (src/driver.mli[224,8945+12]..src/driver.mli[224,8945+15])
+                    Ttyp_constr "T/3685.t"
+                    []
+                  core_type (src/driver.mli[224,8945+19]..src/driver.mli[224,8945+23])
+                    Ttyp_constr "unit/6!"
+                    []
+                []
+          ]
+  signature_item (src/driver.mli[227,8974+0]..src/driver.mli[227,8974+29])
+    Tsig_value
+    value_description standalone/3688 (src/driver.mli[227,8974+0]..src/driver.mli[227,8974+29])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[228,9004+0]..[231,9155+16])
+            Pstr_eval
+            expression (src/driver.mli[228,9004+0]..[231,9155+16])
+              Pexp_constant PConst_string(" Suitable for -pp and also usable as a standalone command line tool.\n\n    If the first command line argument is [-as-ppx] then it will run as a ppx\n    rewriter. ",(src/driver.mli[228,9004+0]..[231,9155+16]),None)
+        ]
+      core_type (src/driver.mli[227,8974+17]..src/driver.mli[227,8974+29])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[227,8974+17]..src/driver.mli[227,8974+21])
+          Ttyp_constr "unit/6!"
+          []
+        core_type (src/driver.mli[227,8974+25]..src/driver.mli[227,8974+29])
+          Ttyp_constr "unit/6!"
+          []
+      []
+  signature_item (src/driver.mli[233,9173+0]..src/driver.mli[233,9173+38])
+    Tsig_value
+    value_description run_as_ppx_rewriter/3689 (src/driver.mli[233,9173+0]..src/driver.mli[233,9173+38])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[234,9212+0]..[234,9212+59])
+            Pstr_eval
+            expression (src/driver.mli[234,9212+0]..[234,9212+59])
+              Pexp_constant PConst_string(" Suitable for -ppx. Used only for the public release. ",(src/driver.mli[234,9212+0]..[234,9212+59]),None)
+        ]
+      core_type (src/driver.mli[233,9173+26]..src/driver.mli[233,9173+38])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[233,9173+26]..src/driver.mli[233,9173+30])
+          Ttyp_constr "unit/6!"
+          []
+        core_type (src/driver.mli[233,9173+34]..src/driver.mli[233,9173+38])
+          Ttyp_constr "unit/6!"
+          []
+      []
+  signature_item (src/driver.mli[236,9273+0]..src/driver.mli[236,9273+25])
+    Tsig_value
+    value_description pretty/3690 (src/driver.mli[236,9273+0]..src/driver.mli[236,9273+25])
+      attribute "ocaml.doc"
+        [
+          structure_item (src/driver.mli[237,9299+0]..[238,9376+58])
+            Pstr_eval
+            expression (src/driver.mli[237,9299+0]..[238,9376+58])
+              Pexp_constant PConst_string(" If [true], code transformations should avoid generating code that is not\n    strictly necessary, such as extra type annotations. ",(src/driver.mli[237,9299+0]..[238,9376+58]),None)
+        ]
+      core_type (src/driver.mli[236,9273+13]..src/driver.mli[236,9273+25])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[236,9273+13]..src/driver.mli[236,9273+17])
+          Ttyp_constr "unit/6!"
+          []
+        core_type (src/driver.mli[236,9273+21]..src/driver.mli[236,9273+25])
+          Ttyp_constr "bool/5!"
+          []
+      []
+  signature_item (src/driver.mli[240,9436+0]..src/driver.mli[240,9436+7])
+    Tsig_attribute "ocaml.text"
+    [
+      structure_item (src/driver.mli[240,9436+0]..[240,9436+7])
+        Pstr_eval
+        expression (src/driver.mli[240,9436+0]..[240,9436+7])
+          Pexp_constant PConst_string("/*",(src/driver.mli[240,9436+0]..[240,9436+7]),None)
+    ]
+  signature_item (src/driver.mli[242,9445+0]..src/driver.mli[242,9445+42])
+    Tsig_value
+    value_description map_structure/3691 (src/driver.mli[242,9445+0]..src/driver.mli[242,9445+42])
+      core_type (src/driver.mli[242,9445+20]..src/driver.mli[242,9445+42])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[242,9445+20]..src/driver.mli[242,9445+29])
+          Ttyp_constr "Ppxlib__!.Import.structure"
+          []
+        core_type (src/driver.mli[242,9445+33]..src/driver.mli[242,9445+42])
+          Ttyp_constr "Ppxlib__!.Import.structure"
+          []
+      []
+  signature_item (src/driver.mli[243,9488+0]..src/driver.mli[243,9488+42])
+    Tsig_value
+    value_description map_signature/3692 (src/driver.mli[243,9488+0]..src/driver.mli[243,9488+42])
+      core_type (src/driver.mli[243,9488+20]..src/driver.mli[243,9488+42])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[243,9488+20]..src/driver.mli[243,9488+29])
+          Ttyp_constr "Ppxlib__!.Import.signature"
+          []
+        core_type (src/driver.mli[243,9488+33]..src/driver.mli[243,9488+42])
+          Ttyp_constr "Ppxlib__!.Import.signature"
+          []
+      []
+  signature_item (src/driver.mli[244,9531+0]..src/driver.mli[244,9531+32])
+    Tsig_value
+    value_description enable_checks/3693 (src/driver.mli[244,9531+0]..src/driver.mli[244,9531+32])
+      core_type (src/driver.mli[244,9531+20]..src/driver.mli[244,9531+32])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[244,9531+20]..src/driver.mli[244,9531+24])
+          Ttyp_constr "unit/6!"
+          []
+        core_type (src/driver.mli[244,9531+28]..src/driver.mli[244,9531+32])
+          Ttyp_constr "unit/6!"
+          []
+      []
+  signature_item (src/driver.mli[245,9564+0]..src/driver.mli[245,9564+40])
+    Tsig_value
+    value_description enable_location_check/3694 (src/driver.mli[245,9564+0]..src/driver.mli[245,9564+40])
+      core_type (src/driver.mli[245,9564+28]..src/driver.mli[245,9564+40])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[245,9564+28]..src/driver.mli[245,9564+32])
+          Ttyp_constr "unit/6!"
+          []
+        core_type (src/driver.mli[245,9564+36]..src/driver.mli[245,9564+40])
+          Ttyp_constr "unit/6!"
+          []
+      []
+  signature_item (src/driver.mli[246,9605+0]..src/driver.mli[246,9605+41])
+    Tsig_value
+    value_description disable_location_check/3695 (src/driver.mli[246,9605+0]..src/driver.mli[246,9605+41])
+      core_type (src/driver.mli[246,9605+29]..src/driver.mli[246,9605+41])
+        Ttyp_arrow
+        Nolabel
+        core_type (src/driver.mli[246,9605+29]..src/driver.mli[246,9605+33])
+          Ttyp_constr "unit/6!"
+          []
+        core_type (src/driver.mli[246,9605+37]..src/driver.mli[246,9605+41])
+          Ttyp_constr "unit/6!"
+          []
+      []
+]
+

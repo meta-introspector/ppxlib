@@ -1,0 +1,12 @@
+0.107s 35.0MB 10.4MB 12.1MB src/code_path.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ parser
+  0.087s 24.7MB 9.90MB 11.6MB typing
+  0.009s 4.04MB 0.25MB 11.8MB generate
+    0.002s 2.04MB 0.25MB 11.8MB compile_phrases
+      0.001s 2.00MB 0.25MB 11.8MB spill
+      ------ 0.04MB ------ ------ regalloc
+    0.005s ------ ------ ------ assemble
+    0.002s 2.00MB ------ ------ other
+  0.010s 6.28MB 0.28MB 12.1MB other
+0.021s 3.04MB 1.69MB ------ other

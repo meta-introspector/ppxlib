@@ -1,0 +1,15 @@
+0.908s 48.0MB 6.51MB 6.51MB test/driver/error_embedding/pp.exe
+  0.002s ------ ------ ------ selection
+  0.002s 1.40MB 0.09MB 0.09MB comballoc
+  0.003s 4.11MB 0.21MB 0.31MB cse
+  0.003s 2.48MB 0.15MB 0.46MB liveness
+  0.001s 0.15MB ------ ------ deadcode
+  0.003s 0.32MB ------ ------ spill
+  0.001s 2.00MB 0.15MB 0.62MB split
+  0.021s 20.5MB 1.84MB 2.46MB regalloc
+  0.001s 2.00MB 0.12MB 2.59MB scheduling
+  0.002s 4.00MB 0.40MB 3.00MB emit
+  0.017s ------ ------ ------ assemble
+  0.830s 0.14MB ------ ------ c-linker
+  0.020s 10.8MB 3.51MB 6.51MB other
+0.007s ------ ------ ------ other

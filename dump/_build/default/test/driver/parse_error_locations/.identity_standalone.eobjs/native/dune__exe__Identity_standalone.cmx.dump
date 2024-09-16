@@ -1,0 +1,45 @@
+[
+  structure_item (test/driver/parse_error_locations/identity_standalone.ml[1,0+0]..[1,0+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/parse_error_locations/identity_standalone.ml[1,0+4]..[1,0+5])
+          Ppat_any
+        expression (test/driver/parse_error_locations/identity_standalone.ml[1,0+8]..[1,0+35])
+          Pexp_apply
+          expression (test/driver/parse_error_locations/identity_standalone.ml[1,0+8]..[1,0+32])
+            Pexp_ident "Ppxlib.Driver.standalone" (test/driver/parse_error_locations/identity_standalone.ml[1,0+8]..[1,0+32])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/parse_error_locations/identity_standalone.ml[1,0+33]..[1,0+35])
+                Pexp_construct "()" (test/driver/parse_error_locations/identity_standalone.ml[1,0+33]..[1,0+35])
+                None
+          ]
+    ]
+]
+
+let _ = Ppxlib.Driver.standalone ()
+[
+  structure_item (test/driver/parse_error_locations/identity_standalone.ml[1,0+0]..test/driver/parse_error_locations/identity_standalone.ml[1,0+35])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/parse_error_locations/identity_standalone.ml[1,0+4]..test/driver/parse_error_locations/identity_standalone.ml[1,0+5])
+          Tpat_any
+        expression (test/driver/parse_error_locations/identity_standalone.ml[1,0+8]..test/driver/parse_error_locations/identity_standalone.ml[1,0+35])
+          Texp_apply
+          expression (test/driver/parse_error_locations/identity_standalone.ml[1,0+8]..test/driver/parse_error_locations/identity_standalone.ml[1,0+32])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/parse_error_locations/identity_standalone.ml[1,0+33]..test/driver/parse_error_locations/identity_standalone.ml[1,0+35])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(seq (seq (apply (field_imm 11 (global Ppxlib__Driver!)) 0) 0) 0)
+(seq (seq (apply (field_imm 11 (global Ppxlib__Driver!)) 0) 0) 0)

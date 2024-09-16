@@ -1,0 +1,21 @@
+0.378s  269MB 39.8MB 41.6MB src/extension.ml
+  0.005s 3.41MB 0.59MB 2.35MB parsing
+    0.005s 3.41MB 0.59MB 2.35MB parser
+  0.301s  161MB 35.4MB 37.7MB typing
+  0.008s 10.6MB 0.62MB 38.3MB transl
+  0.034s 41.9MB 2.81MB 41.1MB generate
+    0.001s 2.00MB 0.46MB 38.8MB cmm
+    0.018s 22.9MB 1.40MB 40.2MB compile_phrases
+      0.002s 4.41MB 0.15MB 39.0MB selection
+      0.001s 0.19MB ------ ------ cse
+      0.002s 0.69MB ------ ------ liveness
+      0.001s 2.20MB 0.25MB 39.2MB deadcode
+      0.001s 2.00MB ------ ------ spill
+      0.001s ------ ------ ------ split
+      0.007s 11.4MB 0.84MB 40.1MB regalloc
+      0.001s 2.00MB 0.15MB 40.2MB emit
+      0.002s ------ ------ ------ other
+    0.007s ------ ------ ------ assemble
+    0.009s 17.0MB 0.94MB 41.1MB other
+  0.029s 51.6MB 0.43MB 41.6MB other
+0.013s 3.07MB 1.75MB ------ other

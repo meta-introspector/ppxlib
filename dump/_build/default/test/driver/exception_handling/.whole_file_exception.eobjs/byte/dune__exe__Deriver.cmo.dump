@@ -1,0 +1,1090 @@
+[
+  structure_item (test/driver/exception_handling/deriver.ml[1,0+0]..[1,0+11])
+    Pstr_open Fresh
+    module_expr (test/driver/exception_handling/deriver.ml[1,0+5]..[1,0+11])
+      Pmod_ident "Ppxlib" (test/driver/exception_handling/deriver.ml[1,0+5]..[1,0+11])
+  structure_item (test/driver/exception_handling/deriver.ml[3,13+0]..[8,252+63])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[3,13+4]..[3,13+32])
+          Ppat_var "generate_impl_extension_node" (test/driver/exception_handling/deriver.ml[3,13+4]..[3,13+32])
+        expression (test/driver/exception_handling/deriver.ml[3,13+33]..[8,252+63]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/driver/exception_handling/deriver.ml[3,13+34]..[3,13+38])
+            Ppat_var "ctxt" (test/driver/exception_handling/deriver.ml[3,13+34]..[3,13+38])
+          expression (test/driver/exception_handling/deriver.ml[3,13+39]..[8,252+63]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (test/driver/exception_handling/deriver.ml[3,13+39]..[3,13+70])
+              Ppat_tuple
+              [
+                pattern (test/driver/exception_handling/deriver.ml[3,13+40]..[3,13+49])
+                  Ppat_var "_rec_flag" (test/driver/exception_handling/deriver.ml[3,13+40]..[3,13+49])
+                pattern (test/driver/exception_handling/deriver.ml[3,13+51]..[3,13+69])
+                  Ppat_var "_type_declarations" (test/driver/exception_handling/deriver.ml[3,13+51]..[3,13+69])
+              ]
+            expression (test/driver/exception_handling/deriver.ml[4,86+2]..[8,252+63])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/driver/exception_handling/deriver.ml[4,86+6]..[4,86+9])
+                    Ppat_var "loc" (test/driver/exception_handling/deriver.ml[4,86+6]..[4,86+9])
+                  expression (test/driver/exception_handling/deriver.ml[4,86+12]..[4,86+59])
+                    Pexp_apply
+                    expression (test/driver/exception_handling/deriver.ml[4,86+12]..[4,86+54])
+                      Pexp_ident "Expansion_context.Deriver.derived_item_loc" (test/driver/exception_handling/deriver.ml[4,86+12]..[4,86+54])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/driver/exception_handling/deriver.ml[4,86+55]..[4,86+59])
+                          Pexp_ident "ctxt" (test/driver/exception_handling/deriver.ml[4,86+55]..[4,86+59])
+                    ]
+              ]
+              expression (test/driver/exception_handling/deriver.ml[5,149+2]..[8,252+63])
+                Pexp_let Nonrec
+                [
+                  <def>
+                    pattern (test/driver/exception_handling/deriver.ml[5,149+6]..[5,149+20])
+                      Ppat_var "extension_node" (test/driver/exception_handling/deriver.ml[5,149+6]..[5,149+20])
+                    expression (test/driver/exception_handling/deriver.ml[6,172+4]..[6,172+74])
+                      Pexp_apply
+                      expression (test/driver/exception_handling/deriver.ml[6,172+4]..[6,172+29])
+                        Pexp_ident "Location.error_extensionf" (test/driver/exception_handling/deriver.ml[6,172+4]..[6,172+29])
+                      [
+                        <arg>
+                        Labelled "loc"
+                          expression (test/driver/exception_handling/deriver.ml[6,172+31]..[6,172+34])
+                            Pexp_ident "loc" (test/driver/exception_handling/deriver.ml[6,172+31]..[6,172+34])
+                        <arg>
+                        Nolabel
+                          expression (test/driver/exception_handling/deriver.ml[6,172+35]..[6,172+74])
+                            Pexp_constant PConst_string("An error message in an extension node",(test/driver/exception_handling/deriver.ml[6,172+36]..[6,172+73]),None)
+                      ]
+                ]
+                expression (test/driver/exception_handling/deriver.ml[8,252+2]..[8,252+63])
+                  Pexp_construct "::" (test/driver/exception_handling/deriver.ml[8,252+4]..[8,252+63]) ghost
+                  Some
+                    expression (test/driver/exception_handling/deriver.ml[8,252+4]..[8,252+63]) ghost
+                      Pexp_tuple
+                      [
+                        expression (test/driver/exception_handling/deriver.ml[8,252+4]..[8,252+61])
+                          Pexp_apply
+                          expression (test/driver/exception_handling/deriver.ml[8,252+4]..[8,252+38])
+                            Pexp_ident "Ast_builder.Default.pstr_extension" (test/driver/exception_handling/deriver.ml[8,252+4]..[8,252+38])
+                          [
+                            <arg>
+                            Labelled "loc"
+                              expression (test/driver/exception_handling/deriver.ml[8,252+40]..[8,252+43])
+                                Pexp_ident "loc" (test/driver/exception_handling/deriver.ml[8,252+40]..[8,252+43])
+                            <arg>
+                            Nolabel
+                              expression (test/driver/exception_handling/deriver.ml[8,252+44]..[8,252+58])
+                                Pexp_ident "extension_node" (test/driver/exception_handling/deriver.ml[8,252+44]..[8,252+58])
+                            <arg>
+                            Nolabel
+                              expression (test/driver/exception_handling/deriver.ml[8,252+59]..[8,252+61])
+                                Pexp_construct "[]" (test/driver/exception_handling/deriver.ml[8,252+59]..[8,252+61])
+                                None
+                          ]
+                        expression (test/driver/exception_handling/deriver.ml[8,252+62]..[8,252+63]) ghost
+                          Pexp_construct "[]" (test/driver/exception_handling/deriver.ml[8,252+62]..[8,252+63]) ghost
+                          None
+                      ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[10,317+0]..[12,452+53])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[10,317+4]..[10,317+31])
+          Ppat_var "generate_impl_located_error" (test/driver/exception_handling/deriver.ml[10,317+4]..[10,317+31])
+        expression (test/driver/exception_handling/deriver.ml[10,317+32]..[12,452+53]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/driver/exception_handling/deriver.ml[10,317+33]..[10,317+37])
+            Ppat_var "ctxt" (test/driver/exception_handling/deriver.ml[10,317+33]..[10,317+37])
+          expression (test/driver/exception_handling/deriver.ml[10,317+38]..[12,452+53]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (test/driver/exception_handling/deriver.ml[10,317+38]..[10,317+69])
+              Ppat_tuple
+              [
+                pattern (test/driver/exception_handling/deriver.ml[10,317+39]..[10,317+48])
+                  Ppat_var "_rec_flag" (test/driver/exception_handling/deriver.ml[10,317+39]..[10,317+48])
+                pattern (test/driver/exception_handling/deriver.ml[10,317+50]..[10,317+68])
+                  Ppat_var "_type_declarations" (test/driver/exception_handling/deriver.ml[10,317+50]..[10,317+68])
+              ]
+            expression (test/driver/exception_handling/deriver.ml[11,389+2]..[12,452+53])
+              Pexp_let Nonrec
+              [
+                <def>
+                  pattern (test/driver/exception_handling/deriver.ml[11,389+6]..[11,389+9])
+                    Ppat_var "loc" (test/driver/exception_handling/deriver.ml[11,389+6]..[11,389+9])
+                  expression (test/driver/exception_handling/deriver.ml[11,389+12]..[11,389+59])
+                    Pexp_apply
+                    expression (test/driver/exception_handling/deriver.ml[11,389+12]..[11,389+54])
+                      Pexp_ident "Expansion_context.Deriver.derived_item_loc" (test/driver/exception_handling/deriver.ml[11,389+12]..[11,389+54])
+                    [
+                      <arg>
+                      Nolabel
+                        expression (test/driver/exception_handling/deriver.ml[11,389+55]..[11,389+59])
+                          Pexp_ident "ctxt" (test/driver/exception_handling/deriver.ml[11,389+55]..[11,389+59])
+                    ]
+              ]
+              expression (test/driver/exception_handling/deriver.ml[12,452+2]..[12,452+53])
+                Pexp_apply
+                expression (test/driver/exception_handling/deriver.ml[12,452+2]..[12,452+23])
+                  Pexp_ident "Location.raise_errorf" (test/driver/exception_handling/deriver.ml[12,452+2]..[12,452+23])
+                [
+                  <arg>
+                  Labelled "loc"
+                    expression (test/driver/exception_handling/deriver.ml[12,452+25]..[12,452+28])
+                      Pexp_ident "loc" (test/driver/exception_handling/deriver.ml[12,452+25]..[12,452+28])
+                  <arg>
+                  Nolabel
+                    expression (test/driver/exception_handling/deriver.ml[12,452+29]..[12,452+53])
+                      Pexp_constant PConst_string("A raised located error",(test/driver/exception_handling/deriver.ml[12,452+30]..[12,452+52]),None)
+                ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[14,507+0]..[15,584+31])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[14,507+4]..[14,507+34])
+          Ppat_var "generate_impl_raised_exception" (test/driver/exception_handling/deriver.ml[14,507+4]..[14,507+34])
+        expression (test/driver/exception_handling/deriver.ml[14,507+35]..[15,584+31]) ghost
+          Pexp_fun
+          Labelled "ctxt"
+          None
+          pattern (test/driver/exception_handling/deriver.ml[14,507+41]..[14,507+42])
+            Ppat_any
+          expression (test/driver/exception_handling/deriver.ml[14,507+43]..[15,584+31]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (test/driver/exception_handling/deriver.ml[14,507+43]..[14,507+74])
+              Ppat_tuple
+              [
+                pattern (test/driver/exception_handling/deriver.ml[14,507+44]..[14,507+53])
+                  Ppat_var "_rec_flag" (test/driver/exception_handling/deriver.ml[14,507+44]..[14,507+53])
+                pattern (test/driver/exception_handling/deriver.ml[14,507+55]..[14,507+73])
+                  Ppat_var "_type_declarations" (test/driver/exception_handling/deriver.ml[14,507+55]..[14,507+73])
+              ]
+            expression (test/driver/exception_handling/deriver.ml[15,584+2]..[15,584+31])
+              Pexp_apply
+              expression (test/driver/exception_handling/deriver.ml[15,584+2]..[15,584+10])
+                Pexp_ident "failwith" (test/driver/exception_handling/deriver.ml[15,584+2]..[15,584+10])
+              [
+                <arg>
+                Nolabel
+                  expression (test/driver/exception_handling/deriver.ml[15,584+11]..[15,584+31])
+                    Pexp_constant PConst_string("A raised exception",(test/driver/exception_handling/deriver.ml[15,584+12]..[15,584+30]),None)
+              ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[17,617+0]..[18,653+63])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[17,617+4]..[17,617+33])
+          Ppat_var "impl_generator_extension_node" (test/driver/exception_handling/deriver.ml[17,617+4]..[17,617+33])
+        expression (test/driver/exception_handling/deriver.ml[18,653+2]..[18,653+63])
+          Pexp_apply
+          expression (test/driver/exception_handling/deriver.ml[18,653+2]..[18,653+34])
+            Pexp_ident "Deriving.Generator.V2.make_noarg" (test/driver/exception_handling/deriver.ml[18,653+2]..[18,653+34])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/deriver.ml[18,653+35]..[18,653+63])
+                Pexp_ident "generate_impl_extension_node" (test/driver/exception_handling/deriver.ml[18,653+35]..[18,653+63])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[20,718+0]..[21,753+62])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[20,718+4]..[20,718+32])
+          Ppat_var "impl_generator_located_error" (test/driver/exception_handling/deriver.ml[20,718+4]..[20,718+32])
+        expression (test/driver/exception_handling/deriver.ml[21,753+2]..[21,753+62])
+          Pexp_apply
+          expression (test/driver/exception_handling/deriver.ml[21,753+2]..[21,753+34])
+            Pexp_ident "Deriving.Generator.V2.make_noarg" (test/driver/exception_handling/deriver.ml[21,753+2]..[21,753+34])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/deriver.ml[21,753+35]..[21,753+62])
+                Pexp_ident "generate_impl_located_error" (test/driver/exception_handling/deriver.ml[21,753+35]..[21,753+62])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[23,817+0]..[24,855+65])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[23,817+4]..[23,817+35])
+          Ppat_var "impl_generator_raised_exception" (test/driver/exception_handling/deriver.ml[23,817+4]..[23,817+35])
+        expression (test/driver/exception_handling/deriver.ml[24,855+2]..[24,855+65])
+          Pexp_apply
+          expression (test/driver/exception_handling/deriver.ml[24,855+2]..[24,855+34])
+            Pexp_ident "Deriving.Generator.V2.make_noarg" (test/driver/exception_handling/deriver.ml[24,855+2]..[24,855+34])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/deriver.ml[24,855+35]..[24,855+65])
+                Pexp_ident "generate_impl_raised_exception" (test/driver/exception_handling/deriver.ml[24,855+35]..[24,855+65])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[26,922+0]..[28,994+48])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[26,922+4]..[26,922+29])
+          Ppat_var "my_deriver_extension_node" (test/driver/exception_handling/deriver.ml[26,922+4]..[26,922+29])
+        expression (test/driver/exception_handling/deriver.ml[27,954+2]..[28,994+48])
+          Pexp_apply
+          expression (test/driver/exception_handling/deriver.ml[27,954+2]..[27,954+14])
+            Pexp_ident "Deriving.add" (test/driver/exception_handling/deriver.ml[27,954+2]..[27,954+14])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/deriver.ml[27,954+15]..[27,954+39])
+                Pexp_constant PConst_string("deriver_extension_node",(test/driver/exception_handling/deriver.ml[27,954+16]..[27,954+38]),None)
+            <arg>
+            Labelled "str_type_decl"
+              expression (test/driver/exception_handling/deriver.ml[28,994+19]..[28,994+48])
+                Pexp_ident "impl_generator_extension_node" (test/driver/exception_handling/deriver.ml[28,994+19]..[28,994+48])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[30,1044+0]..[32,1114+47])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[30,1044+4]..[30,1044+28])
+          Ppat_var "my_deriver_located_error" (test/driver/exception_handling/deriver.ml[30,1044+4]..[30,1044+28])
+        expression (test/driver/exception_handling/deriver.ml[31,1075+2]..[32,1114+47])
+          Pexp_apply
+          expression (test/driver/exception_handling/deriver.ml[31,1075+2]..[31,1075+14])
+            Pexp_ident "Deriving.add" (test/driver/exception_handling/deriver.ml[31,1075+2]..[31,1075+14])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/deriver.ml[31,1075+15]..[31,1075+38])
+                Pexp_constant PConst_string("deriver_located_error",(test/driver/exception_handling/deriver.ml[31,1075+16]..[31,1075+37]),None)
+            <arg>
+            Labelled "str_type_decl"
+              expression (test/driver/exception_handling/deriver.ml[32,1114+19]..[32,1114+47])
+                Pexp_ident "impl_generator_located_error" (test/driver/exception_handling/deriver.ml[32,1114+19]..[32,1114+47])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[34,1163+0]..[36,1239+50])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[34,1163+4]..[34,1163+31])
+          Ppat_var "my_deriver_raised_exception" (test/driver/exception_handling/deriver.ml[34,1163+4]..[34,1163+31])
+        expression (test/driver/exception_handling/deriver.ml[35,1197+2]..[36,1239+50])
+          Pexp_apply
+          expression (test/driver/exception_handling/deriver.ml[35,1197+2]..[35,1197+14])
+            Pexp_ident "Deriving.add" (test/driver/exception_handling/deriver.ml[35,1197+2]..[35,1197+14])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/deriver.ml[35,1197+15]..[35,1197+41])
+                Pexp_constant PConst_string("deriver_raised_exception",(test/driver/exception_handling/deriver.ml[35,1197+16]..[35,1197+40]),None)
+            <arg>
+            Labelled "str_type_decl"
+              expression (test/driver/exception_handling/deriver.ml[36,1239+19]..[36,1239+50])
+                Pexp_ident "impl_generator_raised_exception" (test/driver/exception_handling/deriver.ml[36,1239+19]..[36,1239+50])
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[38,1291+0]..[38,1291+29])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[38,1291+4]..[38,1291+6])
+          Ppat_construct "()" (test/driver/exception_handling/deriver.ml[38,1291+4]..[38,1291+6])
+          None
+        expression (test/driver/exception_handling/deriver.ml[38,1291+9]..[38,1291+29])
+          Pexp_apply
+          expression (test/driver/exception_handling/deriver.ml[38,1291+9]..[38,1291+26])
+            Pexp_ident "Driver.standalone" (test/driver/exception_handling/deriver.ml[38,1291+9]..[38,1291+26])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/exception_handling/deriver.ml[38,1291+27]..[38,1291+29])
+                Pexp_construct "()" (test/driver/exception_handling/deriver.ml[38,1291+27]..[38,1291+29])
+                None
+          ]
+    ]
+]
+
+open Ppxlib
+let generate_impl_extension_node ~ctxt  (_rec_flag, _type_declarations) =
+  let loc = Expansion_context.Deriver.derived_item_loc ctxt in
+  let extension_node =
+    Location.error_extensionf ~loc "An error message in an extension node" in
+  [Ast_builder.Default.pstr_extension ~loc extension_node []]
+let generate_impl_located_error ~ctxt  (_rec_flag, _type_declarations) =
+  let loc = Expansion_context.Deriver.derived_item_loc ctxt in
+  Location.raise_errorf ~loc "A raised located error"
+let generate_impl_raised_exception ~ctxt:_  (_rec_flag, _type_declarations) =
+  failwith "A raised exception"
+let impl_generator_extension_node =
+  Deriving.Generator.V2.make_noarg generate_impl_extension_node
+let impl_generator_located_error =
+  Deriving.Generator.V2.make_noarg generate_impl_located_error
+let impl_generator_raised_exception =
+  Deriving.Generator.V2.make_noarg generate_impl_raised_exception
+let my_deriver_extension_node =
+  Deriving.add "deriver_extension_node"
+    ~str_type_decl:impl_generator_extension_node
+let my_deriver_located_error =
+  Deriving.add "deriver_located_error"
+    ~str_type_decl:impl_generator_located_error
+let my_deriver_raised_exception =
+  Deriving.add "deriver_raised_exception"
+    ~str_type_decl:impl_generator_raised_exception
+let () = Driver.standalone ()
+[
+  structure_item (test/driver/exception_handling/deriver.ml[1,0+0]..test/driver/exception_handling/deriver.ml[1,0+11])
+    Tstr_open Fresh
+    module_expr (test/driver/exception_handling/deriver.ml[1,0+5]..test/driver/exception_handling/deriver.ml[1,0+11])
+      Tmod_ident "Ppxlib!"
+  structure_item (test/driver/exception_handling/deriver.ml[3,13+0]..test/driver/exception_handling/deriver.ml[8,252+63])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[3,13+4]..test/driver/exception_handling/deriver.ml[3,13+32])
+          Tpat_var "generate_impl_extension_node/496"
+        expression (test/driver/exception_handling/deriver.ml[3,13+33]..test/driver/exception_handling/deriver.ml[8,252+63]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/driver/exception_handling/deriver.ml[3,13+34]..test/driver/exception_handling/deriver.ml[3,13+38])
+                Tpat_var "ctxt/498"
+              expression (test/driver/exception_handling/deriver.ml[3,13+39]..test/driver/exception_handling/deriver.ml[8,252+63]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (test/driver/exception_handling/deriver.ml[3,13+39]..test/driver/exception_handling/deriver.ml[3,13+70])
+                      Tpat_tuple
+                      [
+                        pattern (test/driver/exception_handling/deriver.ml[3,13+40]..test/driver/exception_handling/deriver.ml[3,13+49])
+                          Tpat_var "_rec_flag/499"
+                        pattern (test/driver/exception_handling/deriver.ml[3,13+51]..test/driver/exception_handling/deriver.ml[3,13+69])
+                          Tpat_var "_type_declarations/500"
+                      ]
+                    expression (test/driver/exception_handling/deriver.ml[4,86+2]..test/driver/exception_handling/deriver.ml[8,252+63])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/driver/exception_handling/deriver.ml[4,86+6]..test/driver/exception_handling/deriver.ml[4,86+9])
+                            Tpat_var "loc/501"
+                          expression (test/driver/exception_handling/deriver.ml[4,86+12]..test/driver/exception_handling/deriver.ml[4,86+59])
+                            Texp_apply
+                            expression (test/driver/exception_handling/deriver.ml[4,86+12]..test/driver/exception_handling/deriver.ml[4,86+54])
+                              Texp_ident "Ppxlib!.Expansion_context.Deriver.derived_item_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/driver/exception_handling/deriver.ml[4,86+55]..test/driver/exception_handling/deriver.ml[4,86+59])
+                                  Texp_ident "ctxt/498"
+                            ]
+                      ]
+                      expression (test/driver/exception_handling/deriver.ml[5,149+2]..test/driver/exception_handling/deriver.ml[8,252+63])
+                        Texp_let Nonrec
+                        [
+                          <def>
+                            pattern (test/driver/exception_handling/deriver.ml[5,149+6]..test/driver/exception_handling/deriver.ml[5,149+20])
+                              Tpat_var "extension_node/1209"
+                            expression (test/driver/exception_handling/deriver.ml[6,172+4]..test/driver/exception_handling/deriver.ml[6,172+74])
+                              Texp_apply
+                              expression (test/driver/exception_handling/deriver.ml[6,172+4]..test/driver/exception_handling/deriver.ml[6,172+29])
+                                Texp_ident "Ppxlib!.Location.error_extensionf"
+                              [
+                                <arg>
+                                  Labelled "loc"
+                                  expression (test/driver/exception_handling/deriver.ml[6,172+31]..test/driver/exception_handling/deriver.ml[6,172+34])
+                                    Texp_ident "loc/501"
+                                <arg>
+                                  Nolabel
+                                  expression (test/driver/exception_handling/deriver.ml[6,172+35]..test/driver/exception_handling/deriver.ml[6,172+74])
+                                    Texp_construct "CamlinternalFormatBasics.Format"
+                                    [
+                                      expression (test/driver/exception_handling/deriver.ml[6,172+35]..test/driver/exception_handling/deriver.ml[6,172+74]) ghost
+                                        Texp_construct "CamlinternalFormatBasics.String_literal"
+                                        [
+                                          expression (test/driver/exception_handling/deriver.ml[6,172+35]..test/driver/exception_handling/deriver.ml[6,172+74]) ghost
+                                            Texp_constant Const_string("An error message in an extension node",(test/driver/exception_handling/deriver.ml[6,172+35]..test/driver/exception_handling/deriver.ml[6,172+74]) ghost,None)
+                                          expression (test/driver/exception_handling/deriver.ml[6,172+35]..test/driver/exception_handling/deriver.ml[6,172+74]) ghost
+                                            Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                            []
+                                        ]
+                                      expression (test/driver/exception_handling/deriver.ml[6,172+35]..test/driver/exception_handling/deriver.ml[6,172+74]) ghost
+                                        Texp_constant Const_string("An error message in an extension node",(test/driver/exception_handling/deriver.ml[6,172+35]..test/driver/exception_handling/deriver.ml[6,172+74]) ghost,None)
+                                    ]
+                              ]
+                        ]
+                        expression (test/driver/exception_handling/deriver.ml[8,252+2]..test/driver/exception_handling/deriver.ml[8,252+63])
+                          Texp_construct "::"
+                          [
+                            expression (test/driver/exception_handling/deriver.ml[8,252+4]..test/driver/exception_handling/deriver.ml[8,252+61])
+                              Texp_apply
+                              expression (test/driver/exception_handling/deriver.ml[8,252+4]..test/driver/exception_handling/deriver.ml[8,252+38])
+                                Texp_ident "Ppxlib!.Ast_builder.Default.pstr_extension"
+                              [
+                                <arg>
+                                  Labelled "loc"
+                                  expression (test/driver/exception_handling/deriver.ml[8,252+40]..test/driver/exception_handling/deriver.ml[8,252+43])
+                                    Texp_ident "loc/501"
+                                <arg>
+                                  Nolabel
+                                  expression (test/driver/exception_handling/deriver.ml[8,252+44]..test/driver/exception_handling/deriver.ml[8,252+58])
+                                    Texp_ident "extension_node/1209"
+                                <arg>
+                                  Nolabel
+                                  expression (test/driver/exception_handling/deriver.ml[8,252+59]..test/driver/exception_handling/deriver.ml[8,252+61])
+                                    Texp_construct "[]"
+                                    []
+                              ]
+                            expression (test/driver/exception_handling/deriver.ml[8,252+62]..test/driver/exception_handling/deriver.ml[8,252+63]) ghost
+                              Texp_construct "[]"
+                              []
+                          ]
+                ]
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[10,317+0]..test/driver/exception_handling/deriver.ml[12,452+53])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[10,317+4]..test/driver/exception_handling/deriver.ml[10,317+31])
+          Tpat_var "generate_impl_located_error/3150"
+        expression (test/driver/exception_handling/deriver.ml[10,317+32]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/driver/exception_handling/deriver.ml[10,317+33]..test/driver/exception_handling/deriver.ml[10,317+37])
+                Tpat_var "ctxt/3152"
+              expression (test/driver/exception_handling/deriver.ml[10,317+38]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (test/driver/exception_handling/deriver.ml[10,317+38]..test/driver/exception_handling/deriver.ml[10,317+69])
+                      Tpat_tuple
+                      [
+                        pattern (test/driver/exception_handling/deriver.ml[10,317+39]..test/driver/exception_handling/deriver.ml[10,317+48])
+                          Tpat_var "_rec_flag/3153"
+                        pattern (test/driver/exception_handling/deriver.ml[10,317+50]..test/driver/exception_handling/deriver.ml[10,317+68])
+                          Tpat_var "_type_declarations/3154"
+                      ]
+                    expression (test/driver/exception_handling/deriver.ml[11,389+2]..test/driver/exception_handling/deriver.ml[12,452+53])
+                      Texp_let Nonrec
+                      [
+                        <def>
+                          pattern (test/driver/exception_handling/deriver.ml[11,389+6]..test/driver/exception_handling/deriver.ml[11,389+9])
+                            Tpat_var "loc/3155"
+                          expression (test/driver/exception_handling/deriver.ml[11,389+12]..test/driver/exception_handling/deriver.ml[11,389+59])
+                            Texp_apply
+                            expression (test/driver/exception_handling/deriver.ml[11,389+12]..test/driver/exception_handling/deriver.ml[11,389+54])
+                              Texp_ident "Ppxlib!.Expansion_context.Deriver.derived_item_loc"
+                            [
+                              <arg>
+                                Nolabel
+                                expression (test/driver/exception_handling/deriver.ml[11,389+55]..test/driver/exception_handling/deriver.ml[11,389+59])
+                                  Texp_ident "ctxt/3152"
+                            ]
+                      ]
+                      expression (test/driver/exception_handling/deriver.ml[12,452+2]..test/driver/exception_handling/deriver.ml[12,452+53])
+                        Texp_apply
+                        expression (test/driver/exception_handling/deriver.ml[12,452+2]..test/driver/exception_handling/deriver.ml[12,452+23])
+                          Texp_ident "Ppxlib!.Location.raise_errorf"
+                        [
+                          <arg>
+                            Optional "loc"
+                            expression (test/driver/exception_handling/deriver.ml[12,452+25]..test/driver/exception_handling/deriver.ml[12,452+28])
+                              Texp_construct "Some"
+                              [
+                                expression (test/driver/exception_handling/deriver.ml[12,452+25]..test/driver/exception_handling/deriver.ml[12,452+28])
+                                  Texp_ident "loc/3155"
+                              ]
+                          <arg>
+                            Nolabel
+                            expression (test/driver/exception_handling/deriver.ml[12,452+29]..test/driver/exception_handling/deriver.ml[12,452+53])
+                              Texp_construct "CamlinternalFormatBasics.Format"
+                              [
+                                expression (test/driver/exception_handling/deriver.ml[12,452+29]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost
+                                  Texp_construct "CamlinternalFormatBasics.String_literal"
+                                  [
+                                    expression (test/driver/exception_handling/deriver.ml[12,452+29]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost
+                                      Texp_constant Const_string("A raised located error",(test/driver/exception_handling/deriver.ml[12,452+29]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost,None)
+                                    expression (test/driver/exception_handling/deriver.ml[12,452+29]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost
+                                      Texp_construct "CamlinternalFormatBasics.End_of_format"
+                                      []
+                                  ]
+                                expression (test/driver/exception_handling/deriver.ml[12,452+29]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost
+                                  Texp_constant Const_string("A raised located error",(test/driver/exception_handling/deriver.ml[12,452+29]..test/driver/exception_handling/deriver.ml[12,452+53]) ghost,None)
+                              ]
+                        ]
+                ]
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[14,507+0]..test/driver/exception_handling/deriver.ml[15,584+31])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[14,507+4]..test/driver/exception_handling/deriver.ml[14,507+34])
+          Tpat_var "generate_impl_raised_exception/3157"
+        expression (test/driver/exception_handling/deriver.ml[14,507+35]..test/driver/exception_handling/deriver.ml[15,584+31]) ghost
+          Texp_function
+          Labelled "ctxt"
+          [
+            <case>
+              pattern (test/driver/exception_handling/deriver.ml[14,507+41]..test/driver/exception_handling/deriver.ml[14,507+42])
+                Tpat_any
+              expression (test/driver/exception_handling/deriver.ml[14,507+43]..test/driver/exception_handling/deriver.ml[15,584+31]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (test/driver/exception_handling/deriver.ml[14,507+43]..test/driver/exception_handling/deriver.ml[14,507+74])
+                      Tpat_tuple
+                      [
+                        pattern (test/driver/exception_handling/deriver.ml[14,507+44]..test/driver/exception_handling/deriver.ml[14,507+53])
+                          Tpat_var "_rec_flag/3159"
+                        pattern (test/driver/exception_handling/deriver.ml[14,507+55]..test/driver/exception_handling/deriver.ml[14,507+73])
+                          Tpat_var "_type_declarations/3160"
+                      ]
+                    expression (test/driver/exception_handling/deriver.ml[15,584+2]..test/driver/exception_handling/deriver.ml[15,584+31])
+                      Texp_apply
+                      expression (test/driver/exception_handling/deriver.ml[15,584+2]..test/driver/exception_handling/deriver.ml[15,584+10])
+                        Texp_ident "Stdlib!.failwith"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (test/driver/exception_handling/deriver.ml[15,584+11]..test/driver/exception_handling/deriver.ml[15,584+31])
+                            Texp_constant Const_string("A raised exception",(test/driver/exception_handling/deriver.ml[15,584+12]..test/driver/exception_handling/deriver.ml[15,584+30]),None)
+                      ]
+                ]
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[17,617+0]..test/driver/exception_handling/deriver.ml[18,653+63])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[17,617+4]..test/driver/exception_handling/deriver.ml[17,617+33])
+          Tpat_var "impl_generator_extension_node/3163"
+        expression (test/driver/exception_handling/deriver.ml[18,653+2]..test/driver/exception_handling/deriver.ml[18,653+63])
+          Texp_apply
+          expression (test/driver/exception_handling/deriver.ml[18,653+2]..test/driver/exception_handling/deriver.ml[18,653+34])
+            Texp_ident "Ppxlib!.Deriving.Generator.V2.make_noarg"
+          [
+            <arg>
+              Optional "attributes"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "deps"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "unused_code_warnings"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/deriver.ml[18,653+35]..test/driver/exception_handling/deriver.ml[18,653+63])
+                Texp_ident "generate_impl_extension_node/496"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[20,718+0]..test/driver/exception_handling/deriver.ml[21,753+62])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[20,718+4]..test/driver/exception_handling/deriver.ml[20,718+32])
+          Tpat_var "impl_generator_located_error/3538"
+        expression (test/driver/exception_handling/deriver.ml[21,753+2]..test/driver/exception_handling/deriver.ml[21,753+62])
+          Texp_apply
+          expression (test/driver/exception_handling/deriver.ml[21,753+2]..test/driver/exception_handling/deriver.ml[21,753+34])
+            Texp_ident "Ppxlib!.Deriving.Generator.V2.make_noarg"
+          [
+            <arg>
+              Optional "attributes"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "deps"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "unused_code_warnings"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/deriver.ml[21,753+35]..test/driver/exception_handling/deriver.ml[21,753+62])
+                Texp_ident "generate_impl_located_error/3150"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[23,817+0]..test/driver/exception_handling/deriver.ml[24,855+65])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[23,817+4]..test/driver/exception_handling/deriver.ml[23,817+35])
+          Tpat_var "impl_generator_raised_exception/3539"
+        expression (test/driver/exception_handling/deriver.ml[24,855+2]..test/driver/exception_handling/deriver.ml[24,855+65])
+          Texp_apply
+          expression (test/driver/exception_handling/deriver.ml[24,855+2]..test/driver/exception_handling/deriver.ml[24,855+34])
+            Texp_ident "Ppxlib!.Deriving.Generator.V2.make_noarg"
+          [
+            <arg>
+              Optional "attributes"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "deps"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "unused_code_warnings"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/deriver.ml[24,855+35]..test/driver/exception_handling/deriver.ml[24,855+65])
+                Texp_ident "generate_impl_raised_exception/3157"
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[26,922+0]..test/driver/exception_handling/deriver.ml[28,994+48])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[26,922+4]..test/driver/exception_handling/deriver.ml[26,922+29])
+          Tpat_var "my_deriver_extension_node/3540"
+        expression (test/driver/exception_handling/deriver.ml[27,954+2]..test/driver/exception_handling/deriver.ml[28,994+48])
+          Texp_apply
+          expression (test/driver/exception_handling/deriver.ml[27,954+2]..test/driver/exception_handling/deriver.ml[27,954+14])
+            Texp_ident "Ppxlib!.Deriving.add"
+          [
+            <arg>
+              Optional "str_type_decl"
+              expression (test/driver/exception_handling/deriver.ml[28,994+19]..test/driver/exception_handling/deriver.ml[28,994+48])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/exception_handling/deriver.ml[28,994+19]..test/driver/exception_handling/deriver.ml[28,994+48])
+                    Texp_ident "impl_generator_extension_node/3163"
+                ]
+            <arg>
+              Optional "str_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "extension"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/deriver.ml[27,954+15]..test/driver/exception_handling/deriver.ml[27,954+39])
+                Texp_constant Const_string("deriver_extension_node",(test/driver/exception_handling/deriver.ml[27,954+16]..test/driver/exception_handling/deriver.ml[27,954+38]),None)
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[30,1044+0]..test/driver/exception_handling/deriver.ml[32,1114+47])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[30,1044+4]..test/driver/exception_handling/deriver.ml[30,1044+28])
+          Tpat_var "my_deriver_located_error/3541"
+        expression (test/driver/exception_handling/deriver.ml[31,1075+2]..test/driver/exception_handling/deriver.ml[32,1114+47])
+          Texp_apply
+          expression (test/driver/exception_handling/deriver.ml[31,1075+2]..test/driver/exception_handling/deriver.ml[31,1075+14])
+            Texp_ident "Ppxlib!.Deriving.add"
+          [
+            <arg>
+              Optional "str_type_decl"
+              expression (test/driver/exception_handling/deriver.ml[32,1114+19]..test/driver/exception_handling/deriver.ml[32,1114+47])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/exception_handling/deriver.ml[32,1114+19]..test/driver/exception_handling/deriver.ml[32,1114+47])
+                    Texp_ident "impl_generator_located_error/3538"
+                ]
+            <arg>
+              Optional "str_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "extension"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/deriver.ml[31,1075+15]..test/driver/exception_handling/deriver.ml[31,1075+38])
+                Texp_constant Const_string("deriver_located_error",(test/driver/exception_handling/deriver.ml[31,1075+16]..test/driver/exception_handling/deriver.ml[31,1075+37]),None)
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[34,1163+0]..test/driver/exception_handling/deriver.ml[36,1239+50])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[34,1163+4]..test/driver/exception_handling/deriver.ml[34,1163+31])
+          Tpat_var "my_deriver_raised_exception/3542"
+        expression (test/driver/exception_handling/deriver.ml[35,1197+2]..test/driver/exception_handling/deriver.ml[36,1239+50])
+          Texp_apply
+          expression (test/driver/exception_handling/deriver.ml[35,1197+2]..test/driver/exception_handling/deriver.ml[35,1197+14])
+            Texp_ident "Ppxlib!.Deriving.add"
+          [
+            <arg>
+              Optional "str_type_decl"
+              expression (test/driver/exception_handling/deriver.ml[36,1239+19]..test/driver/exception_handling/deriver.ml[36,1239+50])
+                Texp_construct "Some"
+                [
+                  expression (test/driver/exception_handling/deriver.ml[36,1239+19]..test/driver/exception_handling/deriver.ml[36,1239+50])
+                    Texp_ident "impl_generator_raised_exception/3539"
+                ]
+            <arg>
+              Optional "str_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "str_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_type_ext"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_exception"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "sig_module_type_decl"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Optional "extension"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/deriver.ml[35,1197+15]..test/driver/exception_handling/deriver.ml[35,1197+41])
+                Texp_constant Const_string("deriver_raised_exception",(test/driver/exception_handling/deriver.ml[35,1197+16]..test/driver/exception_handling/deriver.ml[35,1197+40]),None)
+          ]
+    ]
+  structure_item (test/driver/exception_handling/deriver.ml[38,1291+0]..test/driver/exception_handling/deriver.ml[38,1291+29])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/exception_handling/deriver.ml[38,1291+4]..test/driver/exception_handling/deriver.ml[38,1291+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/exception_handling/deriver.ml[38,1291+9]..test/driver/exception_handling/deriver.ml[38,1291+29])
+          Texp_apply
+          expression (test/driver/exception_handling/deriver.ml[38,1291+9]..test/driver/exception_handling/deriver.ml[38,1291+26])
+            Texp_ident "Ppxlib!.Driver.standalone"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/exception_handling/deriver.ml[38,1291+27]..test/driver/exception_handling/deriver.ml[38,1291+29])
+                Texp_construct "()"
+                []
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Deriver!
+  (let
+    (generate_impl_extension_node/496 =
+       (function ctxt/498 param/3149
+         (funct-body Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(3)<ghost>:46-315
+           (let
+             (_type_declarations/500 =a (field_imm 1 param/3149)
+              _rec_flag/499 =a (field_imm 0 param/3149))
+             (before Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(4):88-315
+               (let
+                 (loc/501 =
+                    (after Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(4):98-145
+                      (apply
+                        (field_imm 0
+                          (field_imm 2 (global Ppxlib__Expansion_context!)))
+                        ctxt/498)))
+                 (before Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(5):151-315
+                   (let
+                     (extension_node/1209 =
+                        (after Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(6):176-246
+                          (apply (field_imm 13 (global Ppxlib__Location!))
+                            loc/501
+                            [0:
+                             [11: "An error message in an extension node" 0]
+                             "An error message in an extension node"])))
+                     (before Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(8):254-315
+                       (makeblock 0
+                         (after Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(8):256-313
+                           (apply
+                             (field_imm 162
+                               (field_imm 0 (global Ppxlib__Ast_builder!)))
+                             loc/501 extension_node/1209 0))
+                         0)))))))))
+     generate_impl_located_error/3150 =
+       (function ctxt/3152 param/3156
+         (funct-body Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(10)<ghost>:349-505
+           (let
+             (_type_declarations/3154 =a (field_imm 1 param/3156)
+              _rec_flag/3153 =a (field_imm 0 param/3156))
+             (before Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(11):391-505
+               (let
+                 (loc/3155 =
+                    (after Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(11):401-448
+                      (apply
+                        (field_imm 0
+                          (field_imm 2 (global Ppxlib__Expansion_context!)))
+                        ctxt/3152)))
+                 (before Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(12):454-505
+                   (after Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(12):454-505
+                     (apply (field_imm 4 (global Ppxlib__Location!))
+                       (makeblock 0 loc/3155)
+                       [0:
+                        [11: "A raised located error" 0]
+                        "A raised located error"]))))))))
+     generate_impl_raised_exception/3157 =
+       (function param/3162 param/3161
+         (funct-body Dune__exe__Deriver.generate_impl_raised_exception test/driver/exception_handling/deriver.ml(14)<ghost>:542-615
+           (let
+             (_type_declarations/3160 =a (field_imm 1 param/3161)
+              _rec_flag/3159 =a (field_imm 0 param/3161))
+             (before Dune__exe__Deriver.generate_impl_raised_exception test/driver/exception_handling/deriver.ml(15):586-615
+               (after Dune__exe__Deriver.generate_impl_raised_exception test/driver/exception_handling/deriver.ml(15):586-615
+                 (apply (field_imm 1 (global Stdlib!)) "A raised exception"))))))
+     impl_generator_extension_node/3163 =
+       (after Dune__exe__Deriver.impl_generator_extension_node test/driver/exception_handling/deriver.ml(18):655-716
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 generate_impl_extension_node/496))
+     impl_generator_located_error/3538 =
+       (after Dune__exe__Deriver.impl_generator_located_error test/driver/exception_handling/deriver.ml(21):755-815
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 generate_impl_located_error/3150))
+     impl_generator_raised_exception/3539 =
+       (after Dune__exe__Deriver.impl_generator_raised_exception test/driver/exception_handling/deriver.ml(24):857-920
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 generate_impl_raised_exception/3157))
+     my_deriver_extension_node/3540 =
+       (after Dune__exe__Deriver.my_deriver_extension_node test/driver/exception_handling/deriver.ml(27):956-1042
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_extension_node/3163) 0 0 0 0 0 0 0 0
+           "deriver_extension_node"))
+     my_deriver_located_error/3541 =
+       (after Dune__exe__Deriver.my_deriver_located_error test/driver/exception_handling/deriver.ml(31):1077-1161
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_located_error/3538) 0 0 0 0 0 0 0 0
+           "deriver_located_error"))
+     my_deriver_raised_exception/3542 =
+       (after Dune__exe__Deriver.my_deriver_raised_exception test/driver/exception_handling/deriver.ml(35):1199-1289
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_raised_exception/3539) 0 0 0 0 0 0 0 0
+           "deriver_raised_exception"))
+     *match*/9132 =
+       (after Dune__exe__Deriver test/driver/exception_handling/deriver.ml(38):1300-1320
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location>
+      (makeblock 0 generate_impl_extension_node/496
+        generate_impl_located_error/3150 generate_impl_raised_exception/3157
+        impl_generator_extension_node/3163 impl_generator_located_error/3538
+        impl_generator_raised_exception/3539 my_deriver_extension_node/3540
+        my_deriver_located_error/3541 my_deriver_raised_exception/3542))))
+(setglobal Dune__exe__Deriver!
+  (let
+    (generate_impl_extension_node/496 =
+       (function ctxt/498 param/3149
+         (funct-body Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(3)<ghost>:46-315
+           (before Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(4):88-315
+             (let
+               (loc/501 =
+                  (after Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(4):98-145
+                    (apply
+                      (field_imm 0
+                        (field_imm 2 (global Ppxlib__Expansion_context!)))
+                      ctxt/498)))
+               (before Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(5):151-315
+                 (let
+                   (extension_node/1209 =
+                      (after Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(6):176-246
+                        (apply (field_imm 13 (global Ppxlib__Location!))
+                          loc/501
+                          [0:
+                           [11: "An error message in an extension node" 0]
+                           "An error message in an extension node"])))
+                   (before Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(8):254-315
+                     (makeblock 0
+                       (after Dune__exe__Deriver.generate_impl_extension_node test/driver/exception_handling/deriver.ml(8):256-313
+                         (apply
+                           (field_imm 162
+                             (field_imm 0 (global Ppxlib__Ast_builder!)))
+                           loc/501 extension_node/1209 0))
+                       0))))))))
+     generate_impl_located_error/3150 =
+       (function ctxt/3152 param/3156
+         (funct-body Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(10)<ghost>:349-505
+           (before Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(11):391-505
+             (let
+               (loc/3155 =
+                  (after Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(11):401-448
+                    (apply
+                      (field_imm 0
+                        (field_imm 2 (global Ppxlib__Expansion_context!)))
+                      ctxt/3152)))
+               (before Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(12):454-505
+                 (after Dune__exe__Deriver.generate_impl_located_error test/driver/exception_handling/deriver.ml(12):454-505
+                   (apply (field_imm 4 (global Ppxlib__Location!))
+                     (makeblock 0 loc/3155)
+                     [0:
+                      [11: "A raised located error" 0]
+                      "A raised located error"])))))))
+     generate_impl_raised_exception/3157 =
+       (function param/3162 param/3161
+         (funct-body Dune__exe__Deriver.generate_impl_raised_exception test/driver/exception_handling/deriver.ml(14)<ghost>:542-615
+           (before Dune__exe__Deriver.generate_impl_raised_exception test/driver/exception_handling/deriver.ml(15):586-615
+             (after Dune__exe__Deriver.generate_impl_raised_exception test/driver/exception_handling/deriver.ml(15):586-615
+               (apply (field_imm 1 (global Stdlib!)) "A raised exception")))))
+     impl_generator_extension_node/3163 =
+       (after Dune__exe__Deriver.impl_generator_extension_node test/driver/exception_handling/deriver.ml(18):655-716
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 generate_impl_extension_node/496))
+     impl_generator_located_error/3538 =
+       (after Dune__exe__Deriver.impl_generator_located_error test/driver/exception_handling/deriver.ml(21):755-815
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 generate_impl_located_error/3150))
+     impl_generator_raised_exception/3539 =
+       (after Dune__exe__Deriver.impl_generator_raised_exception test/driver/exception_handling/deriver.ml(24):857-920
+         (apply
+           (field_imm 1
+             (field_imm 2 (field_imm 1 (global Ppxlib__Deriving!))))
+           0 0 0 generate_impl_raised_exception/3157))
+     my_deriver_extension_node/3540 =
+       (after Dune__exe__Deriver.my_deriver_extension_node test/driver/exception_handling/deriver.ml(27):956-1042
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_extension_node/3163) 0 0 0 0 0 0 0 0
+           "deriver_extension_node"))
+     my_deriver_located_error/3541 =
+       (after Dune__exe__Deriver.my_deriver_located_error test/driver/exception_handling/deriver.ml(31):1077-1161
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_located_error/3538) 0 0 0 0 0 0 0 0
+           "deriver_located_error"))
+     my_deriver_raised_exception/3542 =
+       (after Dune__exe__Deriver.my_deriver_raised_exception test/driver/exception_handling/deriver.ml(35):1199-1289
+         (apply (field_imm 2 (global Ppxlib__Deriving!))
+           (makeblock 0 impl_generator_raised_exception/3539) 0 0 0 0 0 0 0 0
+           "deriver_raised_exception"))
+     *match*/9132 =
+       (after Dune__exe__Deriver test/driver/exception_handling/deriver.ml(38):1300-1320
+         (apply (field_imm 11 (global Ppxlib__Driver!)) 0)))
+    (pseudo <unknown location>
+      (makeblock 0 generate_impl_extension_node/496
+        generate_impl_located_error/3150 generate_impl_raised_exception/3157
+        impl_generator_extension_node/3163 impl_generator_located_error/3538
+        impl_generator_raised_exception/3539 my_deriver_extension_node/3540
+        my_deriver_located_error/3541 my_deriver_raised_exception/3542))))

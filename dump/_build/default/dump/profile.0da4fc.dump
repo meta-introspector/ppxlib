@@ -1,0 +1,15 @@
+1.153s 70.5MB 8.19MB 8.19MB test/driver/stdin_input/identity_driver.exe
+  0.007s 2.49MB 0.06MB 0.06MB selection
+  0.001s 0.14MB ------ ------ polling
+  0.004s 4.17MB 0.28MB 0.34MB cse
+  0.008s 6.28MB 0.34MB 0.68MB liveness
+  0.002s 2.14MB 0.12MB 0.81MB deadcode
+  0.005s 2.14MB 0.15MB 0.96MB spill
+  0.001s ------ ------ ------ split
+  0.062s 37.9MB 2.84MB 3.81MB regalloc
+  0.001s 0.15MB ------ ------ linearize
+  0.002s ------ ------ ------ emit
+  0.020s ------ ------ ------ assemble
+  0.998s ------ ------ ------ c-linker
+  0.040s 15.1MB 4.38MB 8.19MB other
+0.006s ------ ------ ------ other

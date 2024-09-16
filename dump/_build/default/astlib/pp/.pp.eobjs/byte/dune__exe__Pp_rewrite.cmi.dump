@@ -1,0 +1,57 @@
+[
+  signature_item (astlib/pp/pp_rewrite.mli[1,0+0]..[1,0+53])
+    Psig_value
+    value_description "rewrite" (astlib/pp/pp_rewrite.mli[1,0+4]..[1,0+11]) (astlib/pp/pp_rewrite.mli[1,0+0]..[1,0+53])
+      core_type (astlib/pp/pp_rewrite.mli[1,0+14]..[1,0+53])
+        Ptyp_arrow
+        Nolabel
+        core_type (astlib/pp/pp_rewrite.mli[1,0+14]..[1,0+18])
+          Ptyp_constr "bool" (astlib/pp/pp_rewrite.mli[1,0+14]..[1,0+18])
+          []
+        core_type (astlib/pp/pp_rewrite.mli[1,0+22]..[1,0+53])
+          Ptyp_arrow
+          Nolabel
+          core_type (astlib/pp/pp_rewrite.mli[1,0+22]..[1,0+28])
+            Ptyp_constr "string" (astlib/pp/pp_rewrite.mli[1,0+22]..[1,0+28])
+            []
+          core_type (astlib/pp/pp_rewrite.mli[1,0+32]..[1,0+53])
+            Ptyp_arrow
+            Nolabel
+            core_type (astlib/pp/pp_rewrite.mli[1,0+32]..[1,0+45])
+              Ptyp_constr "Lexing.lexbuf" (astlib/pp/pp_rewrite.mli[1,0+32]..[1,0+45])
+              []
+            core_type (astlib/pp/pp_rewrite.mli[1,0+49]..[1,0+53])
+              Ptyp_constr "unit" (astlib/pp/pp_rewrite.mli[1,0+49]..[1,0+53])
+              []
+      []
+]
+
+val rewrite : bool -> string -> Lexing.lexbuf -> unit
+[
+  signature_item (astlib/pp/pp_rewrite.mli[1,0+0]..astlib/pp/pp_rewrite.mli[1,0+53])
+    Tsig_value
+    value_description rewrite/115 (astlib/pp/pp_rewrite.mli[1,0+0]..astlib/pp/pp_rewrite.mli[1,0+53])
+      core_type (astlib/pp/pp_rewrite.mli[1,0+14]..astlib/pp/pp_rewrite.mli[1,0+53])
+        Ttyp_arrow
+        Nolabel
+        core_type (astlib/pp/pp_rewrite.mli[1,0+14]..astlib/pp/pp_rewrite.mli[1,0+18])
+          Ttyp_constr "bool/5!"
+          []
+        core_type (astlib/pp/pp_rewrite.mli[1,0+22]..astlib/pp/pp_rewrite.mli[1,0+53])
+          Ttyp_arrow
+          Nolabel
+          core_type (astlib/pp/pp_rewrite.mli[1,0+22]..astlib/pp/pp_rewrite.mli[1,0+28])
+            Ttyp_constr "string/17!"
+            []
+          core_type (astlib/pp/pp_rewrite.mli[1,0+32]..astlib/pp/pp_rewrite.mli[1,0+53])
+            Ttyp_arrow
+            Nolabel
+            core_type (astlib/pp/pp_rewrite.mli[1,0+32]..astlib/pp/pp_rewrite.mli[1,0+45])
+              Ttyp_constr "Stdlib!.Lexing.lexbuf"
+              []
+            core_type (astlib/pp/pp_rewrite.mli[1,0+49]..astlib/pp/pp_rewrite.mli[1,0+53])
+              Ttyp_constr "unit/6!"
+              []
+      []
+]
+

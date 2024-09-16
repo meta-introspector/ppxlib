@@ -1,0 +1,11 @@
+0.184s 61.7MB 20.0MB 21.8MB test/driver/standalone_run_as_ppx/print_stuff.ml
+  0.001s ------ ------ ------ parsing
+    0.001s ------ ------ ------ parser
+  0.171s 55.7MB 19.8MB 21.6MB typing
+  0.008s 4.02MB 0.15MB 21.7MB generate
+    0.001s 0.02MB ------ ------ compile_phrases
+      ------ 0.02MB ------ ------ liveness
+    0.005s ------ ------ ------ assemble
+    0.002s 4.00MB 0.15MB 21.7MB other
+  0.005s 2.03MB 0.06MB 21.8MB other
+0.017s 3.02MB 1.72MB ------ other

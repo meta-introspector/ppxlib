@@ -1,0 +1,15 @@
+1.124s 72.6MB 8.32MB 8.32MB test/501_migrations/reverse_migrations.exe
+  0.001s ------ ------ ------ cmm_invariants
+  0.006s 2.29MB 0.12MB 0.12MB selection
+  0.004s 4.47MB 0.25MB 0.37MB cse
+  0.010s 12.1MB 0.87MB 1.25MB liveness
+  0.001s ------ ------ ------ deadcode
+  0.007s 4.19MB 0.37MB 1.62MB spill
+  0.002s ------ ------ ------ split
+  0.061s 34.0MB 2.31MB 3.93MB regalloc
+  0.001s ------ ------ ------ linearize
+  0.003s 0.20MB ------ ------ emit
+  0.016s ------ ------ ------ assemble
+  0.973s ------ ------ ------ c-linker
+  0.037s 15.3MB 4.38MB 8.32MB other
+0.005s ------ ------ ------ other

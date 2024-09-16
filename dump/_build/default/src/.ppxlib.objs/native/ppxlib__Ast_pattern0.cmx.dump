@@ -1,0 +1,306 @@
+[
+  structure_item (src/ast_pattern0.ml[1,0+0]..[1,0+12])
+    Pstr_open Override
+    module_expr (src/ast_pattern0.ml[1,0+6]..[1,0+12])
+      Pmod_ident "Import" (src/ast_pattern0.ml[1,0+6]..[1,0+12])
+  structure_item (src/ast_pattern0.ml[3,14+0]..[3,14+41])
+    Pstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (src/ast_pattern0.ml[3,14+0]..[3,14+41])
+          pext_name = "Expected"
+          pext_kind =
+            Pext_decl
+              [
+                core_type (src/ast_pattern0.ml[3,14+22]..[3,14+32])
+                  Ptyp_constr "Location.t" (src/ast_pattern0.ml[3,14+22]..[3,14+32])
+                  []
+                core_type (src/ast_pattern0.ml[3,14+35]..[3,14+41])
+                  Ptyp_constr "string" (src/ast_pattern0.ml[3,14+35]..[3,14+41])
+                  []
+              ]
+              None
+  structure_item (src/ast_pattern0.ml[5,57+0]..[5,57+56])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (src/ast_pattern0.ml[5,57+4]..[5,57+8])
+          Ppat_var "fail" (src/ast_pattern0.ml[5,57+4]..[5,57+8])
+        expression (src/ast_pattern0.ml[5,57+9]..[5,57+56]) ghost
+          Pexp_fun
+          Nolabel
+          None
+          pattern (src/ast_pattern0.ml[5,57+9]..[5,57+12])
+            Ppat_var "loc" (src/ast_pattern0.ml[5,57+9]..[5,57+12])
+          expression (src/ast_pattern0.ml[5,57+13]..[5,57+56]) ghost
+            Pexp_fun
+            Nolabel
+            None
+            pattern (src/ast_pattern0.ml[5,57+13]..[5,57+21])
+              Ppat_var "expected" (src/ast_pattern0.ml[5,57+13]..[5,57+21])
+            expression (src/ast_pattern0.ml[5,57+24]..[5,57+56])
+              Pexp_apply
+              expression (src/ast_pattern0.ml[5,57+24]..[5,57+29])
+                Pexp_ident "raise" (src/ast_pattern0.ml[5,57+24]..[5,57+29])
+              [
+                <arg>
+                Nolabel
+                  expression (src/ast_pattern0.ml[5,57+30]..[5,57+56])
+                    Pexp_construct "Expected" (src/ast_pattern0.ml[5,57+31]..[5,57+39])
+                    Some
+                      expression (src/ast_pattern0.ml[5,57+40]..[5,57+55])
+                        Pexp_tuple
+                        [
+                          expression (src/ast_pattern0.ml[5,57+41]..[5,57+44])
+                            Pexp_ident "loc" (src/ast_pattern0.ml[5,57+41]..[5,57+44])
+                          expression (src/ast_pattern0.ml[5,57+46]..[5,57+54])
+                            Pexp_ident "expected" (src/ast_pattern0.ml[5,57+46]..[5,57+54])
+                        ]
+              ]
+    ]
+  structure_item (src/ast_pattern0.ml[7,115+0]..[15,492+1])
+    Pstr_type Rec
+    [
+      type_declaration "context" (src/ast_pattern0.ml[7,115+5]..[7,115+12]) (src/ast_pattern0.ml[7,115+0]..[15,492+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_record
+            [
+              (src/ast_pattern0.ml[14,467+2]..[14,467+24])
+                Mutable
+                "matched" (src/ast_pattern0.ml[14,467+10]..[14,467+17])                core_type (src/ast_pattern0.ml[14,467+20]..[14,467+23])
+                  Ptyp_constr "int" (src/ast_pattern0.ml[14,467+20]..[14,467+23])
+                  []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/ast_pattern0.ml[17,495+0]..[18,536+69])
+    Pstr_type Rec
+    [
+      type_declaration "t" (src/ast_pattern0.ml[17,495+37]..[17,495+38]) (src/ast_pattern0.ml[17,495+0]..[18,536+69])
+        ptype_params =
+          [
+            core_type (src/ast_pattern0.ml[17,495+6]..[17,495+20])
+              Ptyp_var matched_value
+            core_type (src/ast_pattern0.ml[17,495+22]..[17,495+24])
+              Ptyp_var k
+            core_type (src/ast_pattern0.ml[17,495+26]..[17,495+35])
+              Ptyp_var k_result
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ptype_variant
+            [
+              (src/ast_pattern0.ml[18,536+2]..[18,536+69])
+                "T" (src/ast_pattern0.ml[18,536+4]..[18,536+5])
+                [
+                  core_type (src/ast_pattern0.ml[18,536+10]..[18,536+68])
+                    Ptyp_arrow
+                    Nolabel
+                    core_type (src/ast_pattern0.ml[18,536+10]..[18,536+17])
+                      Ptyp_constr "context" (src/ast_pattern0.ml[18,536+10]..[18,536+17])
+                      []
+                    core_type (src/ast_pattern0.ml[18,536+21]..[18,536+68])
+                      Ptyp_arrow
+                      Nolabel
+                      core_type (src/ast_pattern0.ml[18,536+21]..[18,536+31])
+                        Ptyp_constr "Location.t" (src/ast_pattern0.ml[18,536+21]..[18,536+31])
+                        []
+                      core_type (src/ast_pattern0.ml[18,536+35]..[18,536+68])
+                        Ptyp_arrow
+                        Nolabel
+                        core_type (src/ast_pattern0.ml[18,536+35]..[18,536+49])
+                          Ptyp_var matched_value
+                        core_type (src/ast_pattern0.ml[18,536+53]..[18,536+68])
+                          Ptyp_arrow
+                          Nolabel
+                          core_type (src/ast_pattern0.ml[18,536+53]..[18,536+55])
+                            Ptyp_var k
+                          core_type (src/ast_pattern0.ml[18,536+59]..[18,536+68])
+                            Ptyp_var k_result
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+
+open! Import
+exception Expected of Location.t * string 
+let fail loc expected = raise (Expected (loc, expected))
+type context = {
+  mutable matched: int }
+type ('matched_value, 'k, 'k_result) t =
+  | T of (context -> Location.t -> 'matched_value -> 'k -> 'k_result) 
+[
+  structure_item (src/ast_pattern0.ml[1,0+0]..src/ast_pattern0.ml[1,0+12])
+    Tstr_open Override
+    module_expr (src/ast_pattern0.ml[1,0+6]..src/ast_pattern0.ml[1,0+12])
+      Tmod_ident "Ppxlib__!.Import"
+  structure_item (src/ast_pattern0.ml[3,14+0]..src/ast_pattern0.ml[3,14+41])
+    Tstr_exception
+    type_exception
+      ptyext_constructor =
+        extension_constructor (src/ast_pattern0.ml[3,14+0]..src/ast_pattern0.ml[3,14+41])
+          pext_name = "Expected/550"
+          pext_kind =
+            Text_decl
+              [
+                core_type (src/ast_pattern0.ml[3,14+22]..src/ast_pattern0.ml[3,14+32])
+                  Ttyp_constr "Ppxlib__!.Location.t"
+                  []
+                core_type (src/ast_pattern0.ml[3,14+35]..src/ast_pattern0.ml[3,14+41])
+                  Ttyp_constr "string/17!"
+                  []
+              ]
+              None
+  structure_item (src/ast_pattern0.ml[5,57+0]..src/ast_pattern0.ml[5,57+56])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (src/ast_pattern0.ml[5,57+4]..src/ast_pattern0.ml[5,57+8])
+          Tpat_var "fail/583"
+        expression (src/ast_pattern0.ml[5,57+9]..src/ast_pattern0.ml[5,57+56]) ghost
+          Texp_function
+          Nolabel
+          [
+            <case>
+              pattern (src/ast_pattern0.ml[5,57+9]..src/ast_pattern0.ml[5,57+12])
+                Tpat_var "loc/585"
+              expression (src/ast_pattern0.ml[5,57+13]..src/ast_pattern0.ml[5,57+56]) ghost
+                Texp_function
+                Nolabel
+                [
+                  <case>
+                    pattern (src/ast_pattern0.ml[5,57+13]..src/ast_pattern0.ml[5,57+21])
+                      Tpat_var "expected/586"
+                    expression (src/ast_pattern0.ml[5,57+24]..src/ast_pattern0.ml[5,57+56])
+                      Texp_apply
+                      expression (src/ast_pattern0.ml[5,57+24]..src/ast_pattern0.ml[5,57+29])
+                        Texp_ident "Stdlib!.raise"
+                      [
+                        <arg>
+                          Nolabel
+                          expression (src/ast_pattern0.ml[5,57+30]..src/ast_pattern0.ml[5,57+56])
+                            Texp_construct "Expected"
+                            [
+                              expression (src/ast_pattern0.ml[5,57+41]..src/ast_pattern0.ml[5,57+44])
+                                Texp_ident "loc/585"
+                              expression (src/ast_pattern0.ml[5,57+46]..src/ast_pattern0.ml[5,57+54])
+                                Texp_ident "expected/586"
+                            ]
+                      ]
+                ]
+          ]
+    ]
+  structure_item (src/ast_pattern0.ml[7,115+0]..src/ast_pattern0.ml[15,492+1])
+    Tstr_type Rec
+    [
+      type_declaration context/868 (src/ast_pattern0.ml[7,115+0]..src/ast_pattern0.ml[15,492+1])
+        ptype_params =
+          []
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_record
+            [
+              (src/ast_pattern0.ml[14,467+2]..src/ast_pattern0.ml[14,467+24])
+                Mutable
+                matched/869                core_type (src/ast_pattern0.ml[14,467+20]..src/ast_pattern0.ml[14,467+23])
+                  Ttyp_poly
+                  core_type (src/ast_pattern0.ml[14,467+20]..src/ast_pattern0.ml[14,467+23])
+                    Ttyp_constr "int/1!"
+                    []
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+  structure_item (src/ast_pattern0.ml[17,495+0]..src/ast_pattern0.ml[18,536+69])
+    Tstr_type Rec
+    [
+      type_declaration t/870 (src/ast_pattern0.ml[17,495+0]..src/ast_pattern0.ml[18,536+69])
+        ptype_params =
+          [
+            core_type (src/ast_pattern0.ml[17,495+6]..src/ast_pattern0.ml[17,495+20])
+              Ttyp_var matched_value
+            core_type (src/ast_pattern0.ml[17,495+22]..src/ast_pattern0.ml[17,495+24])
+              Ttyp_var k
+            core_type (src/ast_pattern0.ml[17,495+26]..src/ast_pattern0.ml[17,495+35])
+              Ttyp_var k_result
+          ]
+        ptype_cstrs =
+          []
+        ptype_kind =
+          Ttype_variant
+            [
+              (src/ast_pattern0.ml[18,536+2]..src/ast_pattern0.ml[18,536+69])
+                T/871
+                [
+                  core_type (src/ast_pattern0.ml[18,536+10]..src/ast_pattern0.ml[18,536+68])
+                    Ttyp_arrow
+                    Nolabel
+                    core_type (src/ast_pattern0.ml[18,536+10]..src/ast_pattern0.ml[18,536+17])
+                      Ttyp_constr "context/868"
+                      []
+                    core_type (src/ast_pattern0.ml[18,536+21]..src/ast_pattern0.ml[18,536+68])
+                      Ttyp_arrow
+                      Nolabel
+                      core_type (src/ast_pattern0.ml[18,536+21]..src/ast_pattern0.ml[18,536+31])
+                        Ttyp_constr "Ppxlib__!.Location.t"
+                        []
+                      core_type (src/ast_pattern0.ml[18,536+35]..src/ast_pattern0.ml[18,536+68])
+                        Ttyp_arrow
+                        Nolabel
+                        core_type (src/ast_pattern0.ml[18,536+35]..src/ast_pattern0.ml[18,536+49])
+                          Ttyp_var matched_value
+                        core_type (src/ast_pattern0.ml[18,536+53]..src/ast_pattern0.ml[18,536+68])
+                          Ttyp_arrow
+                          Nolabel
+                          core_type (src/ast_pattern0.ml[18,536+53]..src/ast_pattern0.ml[18,536+55])
+                            Ttyp_var k
+                          core_type (src/ast_pattern0.ml[18,536+59]..src/ast_pattern0.ml[18,536+68])
+                            Ttyp_var k_result
+                ]
+                None
+            ]
+        ptype_private = Public
+        ptype_manifest =
+          None
+    ]
+]
+
+(seq
+  (let
+    (Expected/550 =
+       (makeblock 248 "Ppxlib__Ast_pattern0.Expected" (caml_fresh_oo_id 0)))
+    (setfield_ptr(root-init) 0 (global Ppxlib__Ast_pattern0!) Expected/550))
+  (let
+    (fail/583 =
+       (function loc/585 expected/586
+         (raise
+           (makeblock 0 (field_imm 0 (global Ppxlib__Ast_pattern0!)) loc/585
+             expected/586))))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Ast_pattern0!) fail/583))
+  0)
+(seq
+  (let
+    (Expected/550 =
+       (makeblock 248 "Ppxlib__Ast_pattern0.Expected" (caml_fresh_oo_id 0)))
+    (setfield_ptr(root-init) 0 (global Ppxlib__Ast_pattern0!) Expected/550))
+  (let
+    (fail/583 =
+       (function loc/585 expected/586
+         (raise
+           (makeblock 0 (field_imm 0 (global Ppxlib__Ast_pattern0!)) loc/585
+             expected/586))))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Ast_pattern0!) fail/583))
+  0)

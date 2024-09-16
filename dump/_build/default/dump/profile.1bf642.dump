@@ -1,0 +1,18 @@
+0.373s  238MB 43.8MB 45.5MB metaquot/ppxlib_metaquot.ml
+  0.288s  180MB 39.9MB 41.7MB typing
+  0.008s 2.12MB 0.12MB 41.8MB transl
+  0.050s 28.6MB 2.63MB 44.4MB generate
+    0.028s 17.8MB 1.93MB 43.7MB compile_phrases
+      0.003s 2.19MB 0.15MB 41.9MB selection
+      0.001s ------ ------ ------ cse
+      0.006s 4.18MB 0.56MB 42.5MB liveness
+      0.002s ------ ------ ------ spill
+      0.001s ------ ------ ------ split
+      0.010s 8.91MB 0.93MB 43.4MB regalloc
+      0.001s 2.00MB 0.28MB 43.7MB linearize
+      0.002s 0.58MB ------ ------ emit
+      0.001s ------ ------ ------ other
+    0.008s ------ ------ ------ assemble
+    0.014s 10.7MB 0.69MB 44.4MB other
+  0.027s 27.1MB 1.12MB 45.5MB other
+0.006s 3.07MB 1.75MB ------ other

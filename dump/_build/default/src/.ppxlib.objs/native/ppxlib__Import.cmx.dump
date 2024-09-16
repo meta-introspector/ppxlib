@@ -1,0 +1,1103 @@
+[
+  structure_item (src/import.ml[1,0+0]..[1,0+14])
+    Pstr_include    module_expr (src/import.ml[1,0+8]..[1,0+14])
+      Pmod_ident "Stdppx" (src/import.ml[1,0+8]..[1,0+14])
+  structure_item (src/import.ml[2,15+0]..[2,15+18])
+    Pstr_include    module_expr (src/import.ml[2,15+8]..[2,15+18])
+      Pmod_ident "Ppxlib_ast" (src/import.ml[2,15+8]..[2,15+18])
+  structure_item (src/import.ml[5,110+0]..[5,110+40])
+    Pstr_primitive
+    value_description "__FILE__" (src/import.ml[5,110+9]..[5,110+17]) (src/import.ml[5,110+0]..[5,110+40])
+      core_type (src/import.ml[5,110+20]..[5,110+26])
+        Ptyp_constr "string" (src/import.ml[5,110+20]..[5,110+26])
+        []
+      [
+        "%loc_FILE"
+      ]
+  structure_item (src/import.ml[7,152+0]..[7,152+11])
+    Pstr_include    module_expr (src/import.ml[7,152+8]..[7,152+11])
+      Pmod_ident "Ast" (src/import.ml[7,152+8]..[7,152+11])
+]
+
+include Stdppx
+include Ppxlib_ast
+external __FILE__ : string = "%loc_FILE"
+include Ast
+[
+  structure_item (src/import.ml[1,0+0]..src/import.ml[1,0+14])
+    Tstr_include    module_expr (src/import.ml[1,0+8]..src/import.ml[1,0+14])
+      Tmod_ident "Stdppx!"
+  structure_item (src/import.ml[2,15+0]..src/import.ml[2,15+18])
+    Tstr_include    module_expr (src/import.ml[2,15+8]..src/import.ml[2,15+18])
+      Tmod_ident "Ppxlib_ast!"
+  structure_item (src/import.ml[5,110+0]..src/import.ml[5,110+40])
+    Tstr_primitive
+    value_description __FILE__/881 (src/import.ml[5,110+0]..src/import.ml[5,110+40])
+      core_type (src/import.ml[5,110+20]..src/import.ml[5,110+26])
+        Ttyp_constr "string/17!"
+        []
+      [
+        "%loc_FILE"
+      ]
+  structure_item (src/import.ml[7,152+0]..src/import.ml[7,152+11])
+    Tstr_include    module_expr (src/import.ml[7,152+8]..src/import.ml[7,152+11])
+      module_expr (src/import.ml[7,152+8]..src/import.ml[7,152+11])
+        Tmod_ident "Ast/866"
+]
+
+(let
+  (include/2708 = (global Stdppx!)
+   default_string_of_float/735 =a (field_mut 0 include/2708))
+  (seq
+    (setfield_ptr(root-init) 0 (global Ppxlib__Import!)
+      default_string_of_float/735)
+    (let (write_old_option_format/736 =a (field_mut 1 include/2708))
+      (seq
+        (setfield_ptr(root-init) 1 (global Ppxlib__Import!)
+          write_old_option_format/736)
+        (let (read_old_option_format/737 =a (field_mut 2 include/2708))
+          (seq
+            (setfield_ptr(root-init) 2 (global Ppxlib__Import!)
+              read_old_option_format/737)
+            (let (list_map/738 =a (field_mut 3 include/2708))
+              (seq
+                (setfield_ptr(root-init) 3 (global Ppxlib__Import!)
+                  list_map/738)
+                (let (sexp_of_unit/739 =a (field_mut 4 include/2708))
+                  (seq
+                    (setfield_ptr(root-init) 4 (global Ppxlib__Import!)
+                      sexp_of_unit/739)
+                    (let (sexp_of_bool/740 =a (field_mut 5 include/2708))
+                      (seq
+                        (setfield_ptr(root-init) 5 (global Ppxlib__Import!)
+                          sexp_of_bool/740)
+                        (let
+                          (sexp_of_string/741 =a (field_mut 6 include/2708))
+                          (seq
+                            (setfield_ptr(root-init) 6
+                              (global Ppxlib__Import!) sexp_of_string/741)
+                            (let
+                              (sexp_of_bytes/742 =a
+                                 (field_mut 7 include/2708))
+                              (seq
+                                (setfield_ptr(root-init) 7
+                                  (global Ppxlib__Import!) sexp_of_bytes/742)
+                                (let
+                                  (sexp_of_char/743 =a
+                                     (field_mut 8 include/2708))
+                                  (seq
+                                    (setfield_ptr(root-init) 8
+                                      (global Ppxlib__Import!)
+                                      sexp_of_char/743)
+                                    (let
+                                      (sexp_of_int/744 =a
+                                         (field_mut 9 include/2708))
+                                      (seq
+                                        (setfield_ptr(root-init) 9
+                                          (global Ppxlib__Import!)
+                                          sexp_of_int/744)
+                                        (let
+                                          (sexp_of_float/745 =a
+                                             (field_mut 10 include/2708))
+                                          (seq
+                                            (setfield_ptr(root-init) 10
+                                              (global Ppxlib__Import!)
+                                              sexp_of_float/745)
+                                            (let
+                                              (sexp_of_int32/746 =a
+                                                 (field_mut 11 include/2708))
+                                              (seq
+                                                (setfield_ptr(root-init) 11
+                                                  (global Ppxlib__Import!)
+                                                  sexp_of_int32/746)
+                                                (let
+                                                  (sexp_of_int64/747 =a
+                                                     (field_mut 12
+                                                       include/2708))
+                                                  (seq
+                                                    (setfield_ptr(root-init) 12
+                                                      (global Ppxlib__Import!)
+                                                      sexp_of_int64/747)
+                                                    (let
+                                                      (sexp_of_nativeint/748 =a
+                                                         (field_mut 13
+                                                           include/2708))
+                                                      (seq
+                                                        (setfield_ptr(root-init) 13
+                                                          (global Ppxlib__Import!)
+                                                          sexp_of_nativeint/748)
+                                                        (let
+                                                          (sexp_of_ref/749 =a
+                                                             (field_mut 14
+                                                               include/2708))
+                                                          (seq
+                                                            (setfield_ptr(root-init) 14
+                                                              (global Ppxlib__Import!)
+                                                              sexp_of_ref/749)
+                                                            (let
+                                                              (sexp_of_lazy_t/750 =a
+                                                                 (field_mut 15
+                                                                   include/2708))
+                                                              (seq
+                                                                (setfield_ptr(root-init) 15
+                                                                  (global Ppxlib__Import!)
+                                                                  sexp_of_lazy_t/750)
+                                                                (let
+                                                                  (sexp_of_option/751 =a
+                                                                    (field_mut 16
+                                                                    include/2708))
+                                                                  (seq
+                                                                    (setfield_ptr(root-init) 16
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_option/751)
+                                                                    (let
+                                                                    (sexp_of_pair/752 =a
+                                                                    (field_mut 17
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 17
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_pair/752)
+                                                                    (let
+                                                                    (sexp_of_triple/753 =a
+                                                                    (field_mut 18
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 18
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_triple/753)
+                                                                    (let
+                                                                    (sexp_of_list/754 =a
+                                                                    (field_mut 19
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 19
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_list/754)
+                                                                    (let
+                                                                    (sexp_of_array/755 =a
+                                                                    (field_mut 20
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 20
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_array/755)
+                                                                    (let
+                                                                    (sexp_of_hashtbl/756 =a
+                                                                    (field_mut 21
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 21
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_hashtbl/756)
+                                                                    (let
+                                                                    (sexp_of_opaque/757 =a
+                                                                    (field_mut 22
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 22
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_opaque/757)
+                                                                    (let
+                                                                    (sexp_of_fun/758 =a
+                                                                    (field_mut 23
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 23
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_fun/758)
+                                                                    (let
+                                                                    (Of_sexp_error/759 =a
+                                                                    (field_mut 24
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 24
+                                                                    (global Ppxlib__Import!)
+                                                                    Of_sexp_error/759)
+                                                                    (let
+                                                                    (record_check_extra_fields/760 =a
+                                                                    (field_mut 25
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 25
+                                                                    (global Ppxlib__Import!)
+                                                                    record_check_extra_fields/760)
+                                                                    (let
+                                                                    (of_sexp_error/761 =a
+                                                                    (field_mut 26
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 26
+                                                                    (global Ppxlib__Import!)
+                                                                    of_sexp_error/761)
+                                                                    (let
+                                                                    (of_sexp_error_exn/762 =a
+                                                                    (field_mut 27
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 27
+                                                                    (global Ppxlib__Import!)
+                                                                    of_sexp_error_exn/762)
+                                                                    (let
+                                                                    (unit_of_sexp/763 =a
+                                                                    (field_mut 28
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 28
+                                                                    (global Ppxlib__Import!)
+                                                                    unit_of_sexp/763)
+                                                                    (let
+                                                                    (bool_of_sexp/764 =a
+                                                                    (field_mut 29
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 29
+                                                                    (global Ppxlib__Import!)
+                                                                    bool_of_sexp/764)
+                                                                    (let
+                                                                    (string_of_sexp/765 =a
+                                                                    (field_mut 30
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 30
+                                                                    (global Ppxlib__Import!)
+                                                                    string_of_sexp/765)
+                                                                    (let
+                                                                    (bytes_of_sexp/766 =a
+                                                                    (field_mut 31
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 31
+                                                                    (global Ppxlib__Import!)
+                                                                    bytes_of_sexp/766)
+                                                                    (let
+                                                                    (char_of_sexp/767 =a
+                                                                    (field_mut 32
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 32
+                                                                    (global Ppxlib__Import!)
+                                                                    char_of_sexp/767)
+                                                                    (let
+                                                                    (int_of_sexp/768 =a
+                                                                    (field_mut 33
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 33
+                                                                    (global Ppxlib__Import!)
+                                                                    int_of_sexp/768)
+                                                                    (let
+                                                                    (float_of_sexp/769 =a
+                                                                    (field_mut 34
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 34
+                                                                    (global Ppxlib__Import!)
+                                                                    float_of_sexp/769)
+                                                                    (let
+                                                                    (int32_of_sexp/770 =a
+                                                                    (field_mut 35
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 35
+                                                                    (global Ppxlib__Import!)
+                                                                    int32_of_sexp/770)
+                                                                    (let
+                                                                    (int64_of_sexp/771 =a
+                                                                    (field_mut 36
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 36
+                                                                    (global Ppxlib__Import!)
+                                                                    int64_of_sexp/771)
+                                                                    (let
+                                                                    (nativeint_of_sexp/772 =a
+                                                                    (field_mut 37
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 37
+                                                                    (global Ppxlib__Import!)
+                                                                    nativeint_of_sexp/772)
+                                                                    (let
+                                                                    (ref_of_sexp/773 =a
+                                                                    (field_mut 38
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 38
+                                                                    (global Ppxlib__Import!)
+                                                                    ref_of_sexp/773)
+                                                                    (let
+                                                                    (lazy_t_of_sexp/774 =a
+                                                                    (field_mut 39
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 39
+                                                                    (global Ppxlib__Import!)
+                                                                    lazy_t_of_sexp/774)
+                                                                    (let
+                                                                    (option_of_sexp/775 =a
+                                                                    (field_mut 40
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 40
+                                                                    (global Ppxlib__Import!)
+                                                                    option_of_sexp/775)
+                                                                    (let
+                                                                    (pair_of_sexp/776 =a
+                                                                    (field_mut 41
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 41
+                                                                    (global Ppxlib__Import!)
+                                                                    pair_of_sexp/776)
+                                                                    (let
+                                                                    (triple_of_sexp/777 =a
+                                                                    (field_mut 42
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 42
+                                                                    (global Ppxlib__Import!)
+                                                                    triple_of_sexp/777)
+                                                                    (let
+                                                                    (list_of_sexp/778 =a
+                                                                    (field_mut 43
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 43
+                                                                    (global Ppxlib__Import!)
+                                                                    list_of_sexp/778)
+                                                                    (let
+                                                                    (array_of_sexp/779 =a
+                                                                    (field_mut 44
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 44
+                                                                    (global Ppxlib__Import!)
+                                                                    array_of_sexp/779)
+                                                                    (let
+                                                                    (hashtbl_of_sexp/780 =a
+                                                                    (field_mut 45
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 45
+                                                                    (global Ppxlib__Import!)
+                                                                    hashtbl_of_sexp/780)
+                                                                    (let
+                                                                    (opaque_of_sexp/781 =a
+                                                                    (field_mut 46
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 46
+                                                                    (global Ppxlib__Import!)
+                                                                    opaque_of_sexp/781)
+                                                                    (let
+                                                                    (fun_of_sexp/782 =a
+                                                                    (field_mut 47
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 47
+                                                                    (global Ppxlib__Import!)
+                                                                    fun_of_sexp/782)
+                                                                    (let
+                                                                    (unit_sexp_grammar/783 =a
+                                                                    (field_mut 48
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 48
+                                                                    (global Ppxlib__Import!)
+                                                                    unit_sexp_grammar/783)
+                                                                    (let
+                                                                    (bool_sexp_grammar/784 =a
+                                                                    (field_mut 49
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 49
+                                                                    (global Ppxlib__Import!)
+                                                                    bool_sexp_grammar/784)
+                                                                    (let
+                                                                    (string_sexp_grammar/785 =a
+                                                                    (field_mut 50
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 50
+                                                                    (global Ppxlib__Import!)
+                                                                    string_sexp_grammar/785)
+                                                                    (let
+                                                                    (bytes_sexp_grammar/786 =a
+                                                                    (field_mut 51
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 51
+                                                                    (global Ppxlib__Import!)
+                                                                    bytes_sexp_grammar/786)
+                                                                    (let
+                                                                    (char_sexp_grammar/787 =a
+                                                                    (field_mut 52
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 52
+                                                                    (global Ppxlib__Import!)
+                                                                    char_sexp_grammar/787)
+                                                                    (let
+                                                                    (int_sexp_grammar/788 =a
+                                                                    (field_mut 53
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 53
+                                                                    (global Ppxlib__Import!)
+                                                                    int_sexp_grammar/788)
+                                                                    (let
+                                                                    (float_sexp_grammar/789 =a
+                                                                    (field_mut 54
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 54
+                                                                    (global Ppxlib__Import!)
+                                                                    float_sexp_grammar/789)
+                                                                    (let
+                                                                    (int32_sexp_grammar/790 =a
+                                                                    (field_mut 55
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 55
+                                                                    (global Ppxlib__Import!)
+                                                                    int32_sexp_grammar/790)
+                                                                    (let
+                                                                    (int64_sexp_grammar/791 =a
+                                                                    (field_mut 56
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 56
+                                                                    (global Ppxlib__Import!)
+                                                                    int64_sexp_grammar/791)
+                                                                    (let
+                                                                    (nativeint_sexp_grammar/792 =a
+                                                                    (field_mut 57
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 57
+                                                                    (global Ppxlib__Import!)
+                                                                    nativeint_sexp_grammar/792)
+                                                                    (let
+                                                                    (sexp_t_sexp_grammar/793 =a
+                                                                    (field_mut 58
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 58
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_t_sexp_grammar/793)
+                                                                    (let
+                                                                    (ref_sexp_grammar/794 =a
+                                                                    (field_mut 59
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 59
+                                                                    (global Ppxlib__Import!)
+                                                                    ref_sexp_grammar/794)
+                                                                    (let
+                                                                    (lazy_t_sexp_grammar/795 =a
+                                                                    (field_mut 60
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 60
+                                                                    (global Ppxlib__Import!)
+                                                                    lazy_t_sexp_grammar/795)
+                                                                    (let
+                                                                    (option_sexp_grammar/796 =a
+                                                                    (field_mut 61
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 61
+                                                                    (global Ppxlib__Import!)
+                                                                    option_sexp_grammar/796)
+                                                                    (let
+                                                                    (list_sexp_grammar/797 =a
+                                                                    (field_mut 62
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 62
+                                                                    (global Ppxlib__Import!)
+                                                                    list_sexp_grammar/797)
+                                                                    (let
+                                                                    (array_sexp_grammar/798 =a
+                                                                    (field_mut 63
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 63
+                                                                    (global Ppxlib__Import!)
+                                                                    array_sexp_grammar/798)
+                                                                    (let
+                                                                    (opaque_sexp_grammar/799 =a
+                                                                    (field_mut 64
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 64
+                                                                    (global Ppxlib__Import!)
+                                                                    opaque_sexp_grammar/799)
+                                                                    (let
+                                                                    (fun_sexp_grammar/800 =a
+                                                                    (field_mut 65
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 65
+                                                                    (global Ppxlib__Import!)
+                                                                    fun_sexp_grammar/800)
+                                                                    (let
+                                                                    (sexp_of_exn/801 =a
+                                                                    (field_mut 66
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 66
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_exn/801)
+                                                                    (let
+                                                                    (printexc_prefer_sexp/802 =a
+                                                                    (field_mut 67
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 67
+                                                                    (global Ppxlib__Import!)
+                                                                    printexc_prefer_sexp/802)
+                                                                    (let
+                                                                    (sexp_of_exn_opt/803 =a
+                                                                    (field_mut 68
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 68
+                                                                    (global Ppxlib__Import!)
+                                                                    sexp_of_exn_opt/803)
+                                                                    (let
+                                                                    (Exn_converter/804 =a
+                                                                    (field_mut 69
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 69
+                                                                    (global Ppxlib__Import!)
+                                                                    Exn_converter/804)
+                                                                    (let
+                                                                    (Poly/807 =a
+                                                                    (field_mut 70
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 70
+                                                                    (global Ppxlib__Import!)
+                                                                    Poly/807)
+                                                                    (let
+                                                                    (compare/808 =a
+                                                                    (field_mut 71
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 71
+                                                                    (global Ppxlib__Import!)
+                                                                    compare/808)
+                                                                    (let
+                                                                    (equal/809 =a
+                                                                    (field_mut 72
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 72
+                                                                    (global Ppxlib__Import!)
+                                                                    equal/809)
+                                                                    (let
+                                                                    (=/810 =a
+                                                                    (field_mut 73
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 73
+                                                                    (global Ppxlib__Import!)
+                                                                    =/810)
+                                                                    (let
+                                                                    (</811 =a
+                                                                    (field_mut 74
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 74
+                                                                    (global Ppxlib__Import!)
+                                                                    </811)
+                                                                    (let
+                                                                    (>/812 =a
+                                                                    (field_mut 75
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 75
+                                                                    (global Ppxlib__Import!)
+                                                                    >/812)
+                                                                    (let
+                                                                    (<>/813 =a
+                                                                    (field_mut 76
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 76
+                                                                    (global Ppxlib__Import!)
+                                                                    <>/813)
+                                                                    (let
+                                                                    (<=/814 =a
+                                                                    (field_mut 77
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 77
+                                                                    (global Ppxlib__Import!)
+                                                                    <=/814)
+                                                                    (let
+                                                                    (>=/815 =a
+                                                                    (field_mut 78
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 78
+                                                                    (global Ppxlib__Import!)
+                                                                    >=/815)
+                                                                    (let
+                                                                    (min/816 =a
+                                                                    (field_mut 79
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 79
+                                                                    (global Ppxlib__Import!)
+                                                                    min/816)
+                                                                    (let
+                                                                    (max/817 =a
+                                                                    (field_mut 80
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 80
+                                                                    (global Ppxlib__Import!)
+                                                                    max/817)
+                                                                    (let
+                                                                    (Bool/819 =a
+                                                                    (field_mut 81
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 81
+                                                                    (global Ppxlib__Import!)
+                                                                    Bool/819)
+                                                                    (let
+                                                                    (Bytes/820 =a
+                                                                    (field_mut 82
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 82
+                                                                    (global Ppxlib__Import!)
+                                                                    Bytes/820)
+                                                                    (let
+                                                                    (Char/821 =a
+                                                                    (field_mut 83
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 83
+                                                                    (global Ppxlib__Import!)
+                                                                    Char/821)
+                                                                    (let
+                                                                    (Exn/822 =a
+                                                                    (field_mut 84
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 84
+                                                                    (global Ppxlib__Import!)
+                                                                    Exn/822)
+                                                                    (let
+                                                                    (Float/823 =a
+                                                                    (field_mut 85
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 85
+                                                                    (global Ppxlib__Import!)
+                                                                    Float/823)
+                                                                    (let
+                                                                    (Fn/824 =a
+                                                                    (field_mut 86
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 86
+                                                                    (global Ppxlib__Import!)
+                                                                    Fn/824)
+                                                                    (let
+                                                                    (Hashtbl/825 =a
+                                                                    (field_mut 87
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 87
+                                                                    (global Ppxlib__Import!)
+                                                                    Hashtbl/825)
+                                                                    (let
+                                                                    (In_channel/826 =a
+                                                                    (field_mut 88
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 88
+                                                                    (global Ppxlib__Import!)
+                                                                    In_channel/826)
+                                                                    (let
+                                                                    (Int/827 =a
+                                                                    (field_mut 89
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 89
+                                                                    (global Ppxlib__Import!)
+                                                                    Int/827)
+                                                                    (let
+                                                                    (Either/828 =a
+                                                                    (field_mut 90
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 90
+                                                                    (global Ppxlib__Import!)
+                                                                    Either/828)
+                                                                    (let
+                                                                    (List/829 =a
+                                                                    (field_mut 91
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 91
+                                                                    (global Ppxlib__Import!)
+                                                                    List/829)
+                                                                    (let
+                                                                    (Option/830 =a
+                                                                    (field_mut 92
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 92
+                                                                    (global Ppxlib__Import!)
+                                                                    Option/830)
+                                                                    (let
+                                                                    (Result/831 =a
+                                                                    (field_mut 93
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 93
+                                                                    (global Ppxlib__Import!)
+                                                                    Result/831)
+                                                                    (let
+                                                                    (NonEmptyList/832 =a
+                                                                    (field_mut 94
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 94
+                                                                    (global Ppxlib__Import!)
+                                                                    NonEmptyList/832)
+                                                                    (let
+                                                                    (Out_channel/833 =a
+                                                                    (field_mut 95
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 95
+                                                                    (global Ppxlib__Import!)
+                                                                    Out_channel/833)
+                                                                    (let
+                                                                    (String/834 =a
+                                                                    (field_mut 96
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 96
+                                                                    (global Ppxlib__Import!)
+                                                                    String/834)
+                                                                    (let
+                                                                    (@/835 =a
+                                                                    (field_mut 97
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 97
+                                                                    (global Ppxlib__Import!)
+                                                                    @/835)
+                                                                    (let
+                                                                    (output/836 =a
+                                                                    (field_mut 98
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 98
+                                                                    (global Ppxlib__Import!)
+                                                                    output/836)
+                                                                    (let
+                                                                    (output_substring/837 =a
+                                                                    (field_mut 99
+                                                                    include/2708))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 99
+                                                                    (global Ppxlib__Import!)
+                                                                    output_substring/837)
+                                                                    (let
+                                                                    (include/2709 =
+                                                                    (global Ppxlib_ast!)
+                                                                    include/2710 =
+                                                                    (let
+                                                                    (let/2711 =
+                                                                    (global Ppxlib_ast__Ast!))
+                                                                    (global Ppxlib_ast__Ast!))
+                                                                    map/1102 =a
+                                                                    (field_mut 0
+                                                                    include/2710))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 100
+                                                                    (global Ppxlib__Import!)
+                                                                    map/1102)
+                                                                    (let
+                                                                    (iter/1106 =a
+                                                                    (field_mut 1
+                                                                    include/2710))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 101
+                                                                    (global Ppxlib__Import!)
+                                                                    iter/1106)
+                                                                    (let
+                                                                    (fold/1110 =a
+                                                                    (field_mut 2
+                                                                    include/2710))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 102
+                                                                    (global Ppxlib__Import!)
+                                                                    fold/1110)
+                                                                    (let
+                                                                    (fold_map/1114 =a
+                                                                    (field_mut 3
+                                                                    include/2710))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 103
+                                                                    (global Ppxlib__Import!)
+                                                                    fold_map/1114)
+                                                                    (let
+                                                                    (map_with_context/1118 =a
+                                                                    (field_mut 4
+                                                                    include/2710))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 104
+                                                                    (global Ppxlib__Import!)
+                                                                    map_with_context/1118)
+                                                                    (let
+                                                                    (lift/1122 =a
+                                                                    (field_mut 5
+                                                                    include/2710))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 105
+                                                                    (global Ppxlib__Import!)
+                                                                    lift/1122)
+                                                                    (let
+                                                                    (lift_map_with_context/1126 =a
+                                                                    (field_mut 6
+                                                                    include/2710))
+                                                                    (seq
+                                                                    (setfield_ptr(root-init) 106
+                                                                    (global Ppxlib__Import!)
+                                                                    lift_map_with_context/1126)
+                                                                    0))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+(let (include/2708 = (global Stdppx!))
+  (seq
+    (setfield_ptr(root-init) 0 (global Ppxlib__Import!)
+      (field_mut 0 include/2708))
+    (setfield_ptr(root-init) 1 (global Ppxlib__Import!)
+      (field_mut 1 include/2708))
+    (setfield_ptr(root-init) 2 (global Ppxlib__Import!)
+      (field_mut 2 include/2708))
+    (setfield_ptr(root-init) 3 (global Ppxlib__Import!)
+      (field_mut 3 include/2708))
+    (setfield_ptr(root-init) 4 (global Ppxlib__Import!)
+      (field_mut 4 include/2708))
+    (setfield_ptr(root-init) 5 (global Ppxlib__Import!)
+      (field_mut 5 include/2708))
+    (setfield_ptr(root-init) 6 (global Ppxlib__Import!)
+      (field_mut 6 include/2708))
+    (setfield_ptr(root-init) 7 (global Ppxlib__Import!)
+      (field_mut 7 include/2708))
+    (setfield_ptr(root-init) 8 (global Ppxlib__Import!)
+      (field_mut 8 include/2708))
+    (setfield_ptr(root-init) 9 (global Ppxlib__Import!)
+      (field_mut 9 include/2708))
+    (setfield_ptr(root-init) 10 (global Ppxlib__Import!)
+      (field_mut 10 include/2708))
+    (setfield_ptr(root-init) 11 (global Ppxlib__Import!)
+      (field_mut 11 include/2708))
+    (setfield_ptr(root-init) 12 (global Ppxlib__Import!)
+      (field_mut 12 include/2708))
+    (setfield_ptr(root-init) 13 (global Ppxlib__Import!)
+      (field_mut 13 include/2708))
+    (setfield_ptr(root-init) 14 (global Ppxlib__Import!)
+      (field_mut 14 include/2708))
+    (setfield_ptr(root-init) 15 (global Ppxlib__Import!)
+      (field_mut 15 include/2708))
+    (setfield_ptr(root-init) 16 (global Ppxlib__Import!)
+      (field_mut 16 include/2708))
+    (setfield_ptr(root-init) 17 (global Ppxlib__Import!)
+      (field_mut 17 include/2708))
+    (setfield_ptr(root-init) 18 (global Ppxlib__Import!)
+      (field_mut 18 include/2708))
+    (setfield_ptr(root-init) 19 (global Ppxlib__Import!)
+      (field_mut 19 include/2708))
+    (setfield_ptr(root-init) 20 (global Ppxlib__Import!)
+      (field_mut 20 include/2708))
+    (setfield_ptr(root-init) 21 (global Ppxlib__Import!)
+      (field_mut 21 include/2708))
+    (setfield_ptr(root-init) 22 (global Ppxlib__Import!)
+      (field_mut 22 include/2708))
+    (setfield_ptr(root-init) 23 (global Ppxlib__Import!)
+      (field_mut 23 include/2708))
+    (setfield_ptr(root-init) 24 (global Ppxlib__Import!)
+      (field_mut 24 include/2708))
+    (setfield_ptr(root-init) 25 (global Ppxlib__Import!)
+      (field_mut 25 include/2708))
+    (setfield_ptr(root-init) 26 (global Ppxlib__Import!)
+      (field_mut 26 include/2708))
+    (setfield_ptr(root-init) 27 (global Ppxlib__Import!)
+      (field_mut 27 include/2708))
+    (setfield_ptr(root-init) 28 (global Ppxlib__Import!)
+      (field_mut 28 include/2708))
+    (setfield_ptr(root-init) 29 (global Ppxlib__Import!)
+      (field_mut 29 include/2708))
+    (setfield_ptr(root-init) 30 (global Ppxlib__Import!)
+      (field_mut 30 include/2708))
+    (setfield_ptr(root-init) 31 (global Ppxlib__Import!)
+      (field_mut 31 include/2708))
+    (setfield_ptr(root-init) 32 (global Ppxlib__Import!)
+      (field_mut 32 include/2708))
+    (setfield_ptr(root-init) 33 (global Ppxlib__Import!)
+      (field_mut 33 include/2708))
+    (setfield_ptr(root-init) 34 (global Ppxlib__Import!)
+      (field_mut 34 include/2708))
+    (setfield_ptr(root-init) 35 (global Ppxlib__Import!)
+      (field_mut 35 include/2708))
+    (setfield_ptr(root-init) 36 (global Ppxlib__Import!)
+      (field_mut 36 include/2708))
+    (setfield_ptr(root-init) 37 (global Ppxlib__Import!)
+      (field_mut 37 include/2708))
+    (setfield_ptr(root-init) 38 (global Ppxlib__Import!)
+      (field_mut 38 include/2708))
+    (setfield_ptr(root-init) 39 (global Ppxlib__Import!)
+      (field_mut 39 include/2708))
+    (setfield_ptr(root-init) 40 (global Ppxlib__Import!)
+      (field_mut 40 include/2708))
+    (setfield_ptr(root-init) 41 (global Ppxlib__Import!)
+      (field_mut 41 include/2708))
+    (setfield_ptr(root-init) 42 (global Ppxlib__Import!)
+      (field_mut 42 include/2708))
+    (setfield_ptr(root-init) 43 (global Ppxlib__Import!)
+      (field_mut 43 include/2708))
+    (setfield_ptr(root-init) 44 (global Ppxlib__Import!)
+      (field_mut 44 include/2708))
+    (setfield_ptr(root-init) 45 (global Ppxlib__Import!)
+      (field_mut 45 include/2708))
+    (setfield_ptr(root-init) 46 (global Ppxlib__Import!)
+      (field_mut 46 include/2708))
+    (setfield_ptr(root-init) 47 (global Ppxlib__Import!)
+      (field_mut 47 include/2708))
+    (setfield_ptr(root-init) 48 (global Ppxlib__Import!)
+      (field_mut 48 include/2708))
+    (setfield_ptr(root-init) 49 (global Ppxlib__Import!)
+      (field_mut 49 include/2708))
+    (setfield_ptr(root-init) 50 (global Ppxlib__Import!)
+      (field_mut 50 include/2708))
+    (setfield_ptr(root-init) 51 (global Ppxlib__Import!)
+      (field_mut 51 include/2708))
+    (setfield_ptr(root-init) 52 (global Ppxlib__Import!)
+      (field_mut 52 include/2708))
+    (setfield_ptr(root-init) 53 (global Ppxlib__Import!)
+      (field_mut 53 include/2708))
+    (setfield_ptr(root-init) 54 (global Ppxlib__Import!)
+      (field_mut 54 include/2708))
+    (setfield_ptr(root-init) 55 (global Ppxlib__Import!)
+      (field_mut 55 include/2708))
+    (setfield_ptr(root-init) 56 (global Ppxlib__Import!)
+      (field_mut 56 include/2708))
+    (setfield_ptr(root-init) 57 (global Ppxlib__Import!)
+      (field_mut 57 include/2708))
+    (setfield_ptr(root-init) 58 (global Ppxlib__Import!)
+      (field_mut 58 include/2708))
+    (setfield_ptr(root-init) 59 (global Ppxlib__Import!)
+      (field_mut 59 include/2708))
+    (setfield_ptr(root-init) 60 (global Ppxlib__Import!)
+      (field_mut 60 include/2708))
+    (setfield_ptr(root-init) 61 (global Ppxlib__Import!)
+      (field_mut 61 include/2708))
+    (setfield_ptr(root-init) 62 (global Ppxlib__Import!)
+      (field_mut 62 include/2708))
+    (setfield_ptr(root-init) 63 (global Ppxlib__Import!)
+      (field_mut 63 include/2708))
+    (setfield_ptr(root-init) 64 (global Ppxlib__Import!)
+      (field_mut 64 include/2708))
+    (setfield_ptr(root-init) 65 (global Ppxlib__Import!)
+      (field_mut 65 include/2708))
+    (setfield_ptr(root-init) 66 (global Ppxlib__Import!)
+      (field_mut 66 include/2708))
+    (setfield_ptr(root-init) 67 (global Ppxlib__Import!)
+      (field_mut 67 include/2708))
+    (setfield_ptr(root-init) 68 (global Ppxlib__Import!)
+      (field_mut 68 include/2708))
+    (setfield_ptr(root-init) 69 (global Ppxlib__Import!)
+      (field_mut 69 include/2708))
+    (setfield_ptr(root-init) 70 (global Ppxlib__Import!)
+      (field_mut 70 include/2708))
+    (setfield_ptr(root-init) 71 (global Ppxlib__Import!)
+      (field_mut 71 include/2708))
+    (setfield_ptr(root-init) 72 (global Ppxlib__Import!)
+      (field_mut 72 include/2708))
+    (setfield_ptr(root-init) 73 (global Ppxlib__Import!)
+      (field_mut 73 include/2708))
+    (setfield_ptr(root-init) 74 (global Ppxlib__Import!)
+      (field_mut 74 include/2708))
+    (setfield_ptr(root-init) 75 (global Ppxlib__Import!)
+      (field_mut 75 include/2708))
+    (setfield_ptr(root-init) 76 (global Ppxlib__Import!)
+      (field_mut 76 include/2708))
+    (setfield_ptr(root-init) 77 (global Ppxlib__Import!)
+      (field_mut 77 include/2708))
+    (setfield_ptr(root-init) 78 (global Ppxlib__Import!)
+      (field_mut 78 include/2708))
+    (setfield_ptr(root-init) 79 (global Ppxlib__Import!)
+      (field_mut 79 include/2708))
+    (setfield_ptr(root-init) 80 (global Ppxlib__Import!)
+      (field_mut 80 include/2708))
+    (setfield_ptr(root-init) 81 (global Ppxlib__Import!)
+      (field_mut 81 include/2708))
+    (setfield_ptr(root-init) 82 (global Ppxlib__Import!)
+      (field_mut 82 include/2708))
+    (setfield_ptr(root-init) 83 (global Ppxlib__Import!)
+      (field_mut 83 include/2708))
+    (setfield_ptr(root-init) 84 (global Ppxlib__Import!)
+      (field_mut 84 include/2708))
+    (setfield_ptr(root-init) 85 (global Ppxlib__Import!)
+      (field_mut 85 include/2708))
+    (setfield_ptr(root-init) 86 (global Ppxlib__Import!)
+      (field_mut 86 include/2708))
+    (setfield_ptr(root-init) 87 (global Ppxlib__Import!)
+      (field_mut 87 include/2708))
+    (setfield_ptr(root-init) 88 (global Ppxlib__Import!)
+      (field_mut 88 include/2708))
+    (setfield_ptr(root-init) 89 (global Ppxlib__Import!)
+      (field_mut 89 include/2708))
+    (setfield_ptr(root-init) 90 (global Ppxlib__Import!)
+      (field_mut 90 include/2708))
+    (setfield_ptr(root-init) 91 (global Ppxlib__Import!)
+      (field_mut 91 include/2708))
+    (setfield_ptr(root-init) 92 (global Ppxlib__Import!)
+      (field_mut 92 include/2708))
+    (setfield_ptr(root-init) 93 (global Ppxlib__Import!)
+      (field_mut 93 include/2708))
+    (setfield_ptr(root-init) 94 (global Ppxlib__Import!)
+      (field_mut 94 include/2708))
+    (setfield_ptr(root-init) 95 (global Ppxlib__Import!)
+      (field_mut 95 include/2708))
+    (setfield_ptr(root-init) 96 (global Ppxlib__Import!)
+      (field_mut 96 include/2708))
+    (setfield_ptr(root-init) 97 (global Ppxlib__Import!)
+      (field_mut 97 include/2708))
+    (setfield_ptr(root-init) 98 (global Ppxlib__Import!)
+      (field_mut 98 include/2708))
+    (setfield_ptr(root-init) 99 (global Ppxlib__Import!)
+      (field_mut 99 include/2708))
+    (let
+      (include/2709 = (global Ppxlib_ast!)
+       include/2710 =
+         (let (let/2711 = (global Ppxlib_ast__Ast!))
+           (global Ppxlib_ast__Ast!)))
+      (seq
+        (setfield_ptr(root-init) 100 (global Ppxlib__Import!)
+          (field_mut 0 include/2710))
+        (setfield_ptr(root-init) 101 (global Ppxlib__Import!)
+          (field_mut 1 include/2710))
+        (setfield_ptr(root-init) 102 (global Ppxlib__Import!)
+          (field_mut 2 include/2710))
+        (setfield_ptr(root-init) 103 (global Ppxlib__Import!)
+          (field_mut 3 include/2710))
+        (setfield_ptr(root-init) 104 (global Ppxlib__Import!)
+          (field_mut 4 include/2710))
+        (setfield_ptr(root-init) 105 (global Ppxlib__Import!)
+          (field_mut 5 include/2710))
+        (setfield_ptr(root-init) 106 (global Ppxlib__Import!)
+          (field_mut 6 include/2710))
+        0))))

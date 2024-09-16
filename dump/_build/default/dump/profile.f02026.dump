@@ -1,0 +1,9 @@
+0.127s 45.6MB 17.2MB 19.0MB test/driver/exception_handling/whole_file_exception.ml
+  0.116s 42.9MB 16.6MB 18.3MB typing
+  0.011s 2.62MB 0.62MB 19.0MB generate
+    0.002s 2.00MB 0.56MB 18.9MB compile_phrases
+      0.002s 2.00MB 0.56MB 18.9MB regalloc
+    0.005s ------ ------ ------ assemble
+    0.003s 0.62MB 0.06MB 19.0MB other
+  0.001s ------ ------ ------ other
+0.015s 3.02MB 1.72MB ------ other

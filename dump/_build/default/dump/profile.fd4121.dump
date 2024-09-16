@@ -1,0 +1,8 @@
+0.146s 52.5MB 18.5MB 20.2MB test/driver/exception_handling/whole_file_extension_point.ml
+  0.140s 49.9MB 18.4MB 20.1MB typing
+  0.004s 2.00MB 0.09MB 20.2MB generate
+    0.001s 2.00MB 0.09MB 20.2MB compile_phrases
+      ------ 2.00MB 0.09MB 20.2MB liveness
+    0.003s ------ ------ ------ assemble
+  0.002s 0.62MB ------ ------ other
+0.019s 3.02MB 1.72MB ------ other

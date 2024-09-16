@@ -1,0 +1,24 @@
+0.608s  810MB 46.1MB 47.8MB src/ast_pattern_generated.ml
+  0.009s 23.2MB 3.18MB 4.94MB parsing
+    0.009s 23.2MB 3.18MB 4.94MB parser
+  0.279s  270MB 28.3MB 33.3MB typing
+  0.024s 27.0MB 0.78MB 34.1MB transl
+  0.192s  191MB 12.8MB 46.9MB generate
+    0.010s 5.08MB 1.21MB 35.3MB cmm
+    0.093s  101MB 8.68MB 44.0MB compile_phrases
+      0.012s 9.95MB 0.90MB 36.2MB selection
+      0.001s 2.00MB 0.21MB 36.4MB polling
+      0.002s 0.39MB ------ ------ comballoc
+      0.005s 4.62MB 0.46MB 36.9MB cse
+      0.009s 4.17MB 0.28MB 37.1MB liveness
+      0.002s 0.18MB ------ ------ deadcode
+      0.011s 11.6MB 0.84MB 38.0MB spill
+      0.003s ------ ------ ------ split
+      0.032s 48.8MB 4.37MB 42.4MB regalloc
+      0.001s 0.17MB ------ ------ linearize
+      0.007s 6.93MB 0.40MB 42.8MB emit
+      0.009s 12.1MB 1.18MB 44.0MB other
+    0.043s ------ ------ ------ assemble
+    0.047s 85.6MB 2.96MB 46.9MB other
+  0.103s  297MB 0.90MB 47.8MB other
+0.007s 3.07MB 1.75MB ------ other

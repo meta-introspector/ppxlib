@@ -1,0 +1,16 @@
+1.050s 70.5MB 8.16MB 8.16MB test/driver/run_as_ppx_rewriter_preserve_version/identity_standalone.exe
+  0.007s 2.49MB 0.06MB 0.06MB selection
+  ------ 0.14MB ------ ------ polling
+  0.001s ------ ------ ------ comballoc
+  0.004s 3.35MB 0.21MB 0.28MB cse
+  0.008s 6.28MB 0.31MB 0.59MB liveness
+  0.003s 4.00MB 0.31MB 0.90MB deadcode
+  0.005s 2.14MB 0.15MB 1.06MB spill
+  0.002s ------ ------ ------ split
+  0.058s 36.8MB 2.75MB 3.81MB regalloc
+  0.001s 0.15MB ------ ------ linearize
+  0.002s ------ ------ ------ emit
+  0.017s ------ ------ ------ assemble
+  0.905s ------ ------ ------ c-linker
+  0.037s 15.1MB 4.35MB 8.16MB other
+0.004s ------ ------ ------ other

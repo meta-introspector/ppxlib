@@ -1,0 +1,7 @@
+0.012s 4.85MB 1.49MB 1.49MB test/deriving/inline/foo-deriver/ppx_foo_deriver.cmxs
+  ------ 2.00MB 0.12MB 0.12MB liveness
+  0.002s 2.66MB 1.37MB 1.49MB regalloc
+  0.002s ------ ------ ------ assemble
+  0.006s ------ ------ ------ c-linker
+  0.001s 0.18MB ------ ------ other
+0.004s ------ ------ ------ other

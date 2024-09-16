@@ -1,0 +1,79 @@
+[
+  structure_item (test/driver/error_embedding/pp.ml[1,0+0]..[1,0+71])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/pp.ml[1,0+4]..[1,0+6])
+          Ppat_construct "()" (test/driver/error_embedding/pp.ml[1,0+4]..[1,0+6])
+          None
+        expression (test/driver/error_embedding/pp.ml[1,0+9]..[1,0+71])
+          Pexp_apply
+          expression (test/driver/error_embedding/pp.ml[1,0+9]..[1,0+37])
+            Pexp_ident "Ppxlib.Location.raise_errorf" (test/driver/error_embedding/pp.ml[1,0+9]..[1,0+37])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/error_embedding/pp.ml[1,0+38]..[1,0+71])
+                Pexp_constant PConst_string("Raising inside the preprocessor",(test/driver/error_embedding/pp.ml[1,0+39]..[1,0+70]),None)
+          ]
+    ]
+]
+
+let () = Ppxlib.Location.raise_errorf "Raising inside the preprocessor"
+[
+  structure_item (test/driver/error_embedding/pp.ml[1,0+0]..test/driver/error_embedding/pp.ml[1,0+71])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/error_embedding/pp.ml[1,0+4]..test/driver/error_embedding/pp.ml[1,0+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/error_embedding/pp.ml[1,0+9]..test/driver/error_embedding/pp.ml[1,0+71])
+          Texp_apply
+          expression (test/driver/error_embedding/pp.ml[1,0+9]..test/driver/error_embedding/pp.ml[1,0+37])
+            Texp_ident "Ppxlib!.Location.raise_errorf"
+          [
+            <arg>
+              Optional "loc"
+              expression (_none_[0,0+-1].._none_[0,0+-1]) ghost
+                Texp_construct "None"
+                []
+            <arg>
+              Nolabel
+              expression (test/driver/error_embedding/pp.ml[1,0+38]..test/driver/error_embedding/pp.ml[1,0+71])
+                Texp_construct "CamlinternalFormatBasics.Format"
+                [
+                  expression (test/driver/error_embedding/pp.ml[1,0+38]..test/driver/error_embedding/pp.ml[1,0+71]) ghost
+                    Texp_construct "CamlinternalFormatBasics.String_literal"
+                    [
+                      expression (test/driver/error_embedding/pp.ml[1,0+38]..test/driver/error_embedding/pp.ml[1,0+71]) ghost
+                        Texp_constant Const_string("Raising inside the preprocessor",(test/driver/error_embedding/pp.ml[1,0+38]..test/driver/error_embedding/pp.ml[1,0+71]) ghost,None)
+                      expression (test/driver/error_embedding/pp.ml[1,0+38]..test/driver/error_embedding/pp.ml[1,0+71]) ghost
+                        Texp_construct "CamlinternalFormatBasics.End_of_format"
+                        []
+                    ]
+                  expression (test/driver/error_embedding/pp.ml[1,0+38]..test/driver/error_embedding/pp.ml[1,0+71]) ghost
+                    Texp_constant Const_string("Raising inside the preprocessor",(test/driver/error_embedding/pp.ml[1,0+38]..test/driver/error_embedding/pp.ml[1,0+71]) ghost,None)
+                ]
+          ]
+    ]
+]
+
+(seq
+  (let
+    (*match*/1509 =
+       (apply (field_imm 4 (global Ppxlib__Location!)) 0
+         [0:
+          [11: "Raising inside the preprocessor" 0]
+          "Raising inside the preprocessor"]))
+    0)
+  0)
+(seq
+  (let
+    (*match*/1509 =
+       (apply (field_imm 4 (global Ppxlib__Location!)) 0
+         [0:
+          [11: "Raising inside the preprocessor" 0]
+          "Raising inside the preprocessor"]))
+    0)
+  0)

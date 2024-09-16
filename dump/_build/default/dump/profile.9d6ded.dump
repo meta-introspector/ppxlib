@@ -1,0 +1,11 @@
+0.390s  141MB 41.6MB 43.4MB bench/vendored/ppx_sexp_conv.v0.15.1/expander/renaming.pp.ml
+  0.368s  120MB 39.6MB 41.4MB typing
+  0.001s 2.00MB 0.12MB 41.5MB transl
+  0.012s 9.06MB 1.31MB 42.8MB generate
+    0.004s 4.83MB 1.06MB 42.6MB compile_phrases
+      0.001s 2.00MB 0.25MB 41.7MB selection
+      0.002s 2.83MB 0.81MB 42.6MB regalloc
+    0.004s ------ ------ ------ assemble
+    0.004s 4.22MB 0.25MB 42.8MB other
+  0.009s 9.81MB 0.62MB 43.4MB other
+0.011s 3.10MB 1.79MB ------ other

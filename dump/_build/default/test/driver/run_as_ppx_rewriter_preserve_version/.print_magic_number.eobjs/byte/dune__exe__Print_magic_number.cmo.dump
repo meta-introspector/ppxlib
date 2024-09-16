@@ -1,0 +1,291 @@
+[
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+0]..[1,0+68])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+4]..[1,0+16])
+          Ppat_var "magic_length" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+4]..[1,0+16])
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+19]..[1,0+68])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+19]..[1,0+32])
+            Pexp_ident "String.length" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+19]..[1,0+32])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+33]..[1,0+68])
+                Pexp_ident "Astlib.Config.ast_impl_magic_number" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+33]..[1,0+68])
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+0]..[2,69+35])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+4]..[2,69+7])
+          Ppat_var "buf" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+4]..[2,69+7])
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+10]..[2,69+35])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+10]..[2,69+22])
+            Pexp_ident "Bytes.create" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+10]..[2,69+22])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+23]..[2,69+35])
+                Pexp_ident "magic_length" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+23]..[2,69+35])
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+0]..[3,105+40])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+4]..[3,105+7])
+          Ppat_var "len" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+4]..[3,105+7])
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+10]..[3,105+40])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+10]..[3,105+15])
+            Pexp_ident "input" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+10]..[3,105+15])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+16]..[3,105+21])
+                Pexp_ident "stdin" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+16]..[3,105+21])
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+22]..[3,105+25])
+                Pexp_ident "buf" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+22]..[3,105+25])
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+26]..[3,105+27])
+                Pexp_constant PConst_int (0,None)
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+28]..[3,105+40])
+                Pexp_ident "magic_length" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+28]..[3,105+40])
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+0]..[4,146+34])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+4]..[4,146+5])
+          Ppat_var "s" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+4]..[4,146+5])
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+8]..[4,146+34])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+8]..[4,146+24])
+            Pexp_ident "Bytes.sub_string" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+8]..[4,146+24])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+25]..[4,146+28])
+                Pexp_ident "buf" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+25]..[4,146+28])
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+29]..[4,146+30])
+                Pexp_constant PConst_int (0,None)
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+31]..[4,146+34])
+                Pexp_ident "len" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+31]..[4,146+34])
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+0]..[5,181+43])
+    Pstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+4]..[5,181+6])
+          Ppat_construct "()" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+4]..[5,181+6])
+          None
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+9]..[5,181+43])
+          Pexp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+9]..[5,181+22])
+            Pexp_ident "Printf.printf" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+9]..[5,181+22])
+          [
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..[5,181+41])
+                Pexp_constant PConst_string("Magic number: %s",(test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+24]..[5,181+40]),None)
+            <arg>
+            Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+42]..[5,181+43])
+                Pexp_ident "s" (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+42]..[5,181+43])
+          ]
+    ]
+]
+
+let magic_length = String.length Astlib.Config.ast_impl_magic_number
+let buf = Bytes.create magic_length
+let len = input stdin buf 0 magic_length
+let s = Bytes.sub_string buf 0 len
+let () = Printf.printf "Magic number: %s" s
+[
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+0]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+68])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+4]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+16])
+          Tpat_var "magic_length/86"
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+19]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+68])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+19]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+32])
+            Texp_ident "Stdlib!.String.length"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+33]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[1,0+68])
+                Texp_ident "Astlib!.Config.ast_impl_magic_number"
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+0]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+35])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+4]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+7])
+          Tpat_var "buf/238"
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+10]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+35])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+10]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+22])
+            Texp_ident "Stdlib!.Bytes.create"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[2,69+35])
+                Texp_ident "magic_length/86"
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+0]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+40])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+4]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+7])
+          Tpat_var "len/324"
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+10]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+40])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+10]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+15])
+            Texp_ident "Stdlib!.input"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+16]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+21])
+                Texp_ident "Stdlib!.stdin"
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+22]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+25])
+                Texp_ident "buf/238"
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+26]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+27])
+                Texp_constant Const_int 0
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+28]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[3,105+40])
+                Texp_ident "magic_length/86"
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+0]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+34])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+4]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+5])
+          Tpat_var "s/325"
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+8]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+34])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+8]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+24])
+            Texp_ident "Stdlib!.Bytes.sub_string"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+25]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+28])
+                Texp_ident "buf/238"
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+29]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+30])
+                Texp_constant Const_int 0
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+31]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[4,146+34])
+                Texp_ident "len/324"
+          ]
+    ]
+  structure_item (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+0]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+43])
+    Tstr_value Nonrec
+    [
+      <def>
+        pattern (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+4]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+6])
+          Tpat_construct "()"
+          []
+        expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+9]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+43])
+          Texp_apply
+          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+9]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+22])
+            Texp_ident "Stdlib!.Printf.printf"
+          [
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41])
+                Texp_construct "CamlinternalFormatBasics.Format"
+                [
+                  expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost
+                    Texp_construct "CamlinternalFormatBasics.String_literal"
+                    [
+                      expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost
+                        Texp_constant Const_string("Magic number: ",(test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost,None)
+                      expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost
+                        Texp_construct "CamlinternalFormatBasics.String"
+                        [
+                          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost
+                            Texp_construct "CamlinternalFormatBasics.No_padding"
+                            []
+                          expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost
+                            Texp_construct "CamlinternalFormatBasics.End_of_format"
+                            []
+                        ]
+                    ]
+                  expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost
+                    Texp_constant Const_string("Magic number: %s",(test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+23]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+41]) ghost,None)
+                ]
+            <arg>
+              Nolabel
+              expression (test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+42]..test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml[5,181+43])
+                Texp_ident "s/325"
+          ]
+    ]
+]
+
+(setglobal Dune__exe__Print_magic_number!
+  (let
+    (magic_length/86 =[int]
+       (string.length (field_imm 1 (global Astlib__Config!)))
+     buf/238 =
+       (after Dune__exe__Print_magic_number.buf test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(2):79-104
+         (caml_create_bytes magic_length/86))
+     len/324 =[int]
+       (after Dune__exe__Print_magic_number.len test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(3):115-145
+         (apply (field_imm 86 (global Stdlib!))
+           (field_imm 40 (global Stdlib!)) buf/238 0 magic_length/86))
+     s/325 =
+       (after Dune__exe__Print_magic_number.s test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(4):154-180
+         (apply (field_imm 7 (global Stdlib__bytes!)) buf/238 0 len/324))
+     *match*/708 =
+       (after Dune__exe__Print_magic_number test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(5):190-224
+         (apply (field_imm 1 (global Stdlib__printf!))
+           [0: [11: "Magic number: " [2: 0 0]] "Magic number: %s"] s/325)))
+    (pseudo <unknown location>
+      (makeblock 0 magic_length/86 buf/238 len/324 s/325))))
+(setglobal Dune__exe__Print_magic_number!
+  (let
+    (magic_length/86 =[int]
+       (string.length (field_imm 1 (global Astlib__Config!)))
+     buf/238 =
+       (after Dune__exe__Print_magic_number.buf test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(2):79-104
+         (caml_create_bytes magic_length/86))
+     len/324 =[int]
+       (after Dune__exe__Print_magic_number.len test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(3):115-145
+         (apply (field_imm 86 (global Stdlib!))
+           (field_imm 40 (global Stdlib!)) buf/238 0 magic_length/86))
+     s/325 =
+       (after Dune__exe__Print_magic_number.s test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(4):154-180
+         (apply (field_imm 7 (global Stdlib__bytes!)) buf/238 0 len/324))
+     *match*/708 =
+       (after Dune__exe__Print_magic_number test/driver/run_as_ppx_rewriter_preserve_version/print_magic_number.ml(5):190-224
+         (apply (field_imm 1 (global Stdlib__printf!))
+           [0: [11: "Magic number: " [2: 0 0]] "Magic number: %s"] s/325)))
+    (pseudo <unknown location>
+      (makeblock 0 magic_length/86 buf/238 len/324 s/325))))

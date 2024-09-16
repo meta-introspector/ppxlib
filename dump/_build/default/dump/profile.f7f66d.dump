@@ -1,0 +1,9 @@
+0.051s 6.96MB 1.62MB 1.62MB metaquot/ppxlib_metaquot.cmxs
+  0.001s ------ ------ ------ selection
+  0.002s 2.00MB 0.21MB 0.21MB liveness
+  0.011s 4.66MB 1.40MB 1.62MB spill
+  0.005s 0.17MB ------ ------ regalloc
+  0.009s ------ ------ ------ assemble
+  0.017s ------ ------ ------ c-linker
+  0.005s 0.12MB ------ ------ other
+0.015s ------ ------ ------ other
